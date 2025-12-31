@@ -908,6 +908,7 @@ potion.poison=Poison
 potion.wither=Wither
 potion.healthBoost=Health Boost
 potion.absorption=Absorption
+potion.saturation=Saturation
 
 potion.moveSpeed.postfix=Potion of Swiftness
 potion.moveSlowdown.postfix=Potion of Slowness
@@ -931,6 +932,7 @@ potion.poison.postfix=Potion of Poison
 potion.wither.postfix=Potion of Decay
 potion.healthBoost.postfix=Potion of Health Boost
 potion.absorption.postfix=Potion of Absorption
+potion.saturation.postfix=Potion of Saturation
 
 potion.potency.0=
 potion.potency.1=II
@@ -1127,6 +1129,9 @@ commands.xp.success=Given %d experience to %s
 commands.xp.success.levels=Given %d levels to %s
 commands.xp.success.negative.levels=Taken %d levels from %s
 commands.xp.usage=/xp <amount> [player] OR /xp <amount>L [player]
+commands.playsound.usage=/playsound <sound> <player> [x] [y] [z] [volume] [pitch] [minimumVolume]
+commands.playsound.success=Played sound '%s' to %s
+commands.playsound.playerTooFar=Player %s is too far away to hear the sound
 commands.give.usage=/give <player> <item> [amount] [data]
 commands.give.notFound=There is no such item with ID %d
 commands.give.success=Given %s (ID %d) * %d to %s
@@ -1335,27 +1340,28 @@ advMode.notAllowed=Must be an opped player in creative mode
 mco.title=Minecraft Realms
 mount.onboard=Press %1$s to dismount
 
-mco.selectServer.select=Join Server
+mco.selectServer.play=Play
 mco.selectServer.configure=Configure
-mco.selectServer.create=Create World
+mco.selectServer.leave=Leave Realm
+mco.selectServer.create=Create Realm
 mco.selectServer.moreinfo=More Info
 
-mco.configure.world.edit.title=Edit World
+mco.configure.world.edit.title=Edit Realm
 
-mco.configure.world.title=Configure World
+mco.configure.world.title=Configure Realm
 mco.configure.world.name=Name
 mco.configure.world.description=Description
 mco.configure.world.location=Location
 mco.configure.world.invited=Invited
 mco.configure.world.buttons.edit=Edit
-mco.configure.world.buttons.reset=Reset World
+mco.configure.world.buttons.reset=Reset Realm
 mco.configure.world.buttons.done=Done
 mco.configure.world.buttons.delete=Delete
-mco.configure.world.buttons.open=Open World
-mco.configure.world.buttons.close=Close World
+mco.configure.world.buttons.open=Open Realm
+mco.configure.world.buttons.close=Close Realm
 mco.configure.world.buttons.invite=Invite
 mco.configure.world.buttons.uninvite=Uninvite
-mco.configure.world.buttons.backup=Backup
+mco.configure.world.buttons.backup=Backups
 mco.configure.world.buttons.subscription=Subscription
 mco.configure.world.invite.profile.name=Name
 mco.configure.world.uninvite.question=Are you sure that you want to uninvite
@@ -1368,16 +1374,25 @@ mco.configure.world.subscription.extend=Extend
 
 mco.create.world.location.title=Locations
 mco.create.world.location.warning=You may not get the exact location you select
-mco.create.world.wait=Creating the world...
+mco.create.world.wait=Creating the realm...
 mco.create.world.seed=Seed (Optional)
 
-mco.reset.world.title=Reset World
-mco.reset.world.warning=This will permanently delete your world!
+mco.reset.world.title=Reset Realm
+mco.reset.world.warning=This will permanently delete your realm!
 mco.reset.world.seed=Seed (Optional)
-mco.reset.world.resetting.screen.title=Resetting World...
+mco.reset.world.resetting.screen.title=Resetting Realm...
 
-mco.configure.world.close.question.line1=Your world will become unavailable.
+mco.configure.world.close.question.line1=Your realm will become unavailable.
 mco.configure.world.close.question.line2=Are you sure you want to do that?
+
+mco.configure.world.leave.question.line1=If you leave this realm you won't see it unless invited again
+mco.configure.world.leave.question.line2=Are you sure you want to do that?
+
+mco.configure.world.reset.question.line1=Your realm will be regenerated and your current realm will be lost
+mco.configure.world.reset.question.line2=Are you sure you want to do that?
+
+mco.configure.world.restore.question.line1=Your realm will be restored to a previous version
+mco.configure.world.restore.question.line2=Are you sure you want to do that?
 
 mco.connect.connecting=Connecting to the online server...
 mco.connect.authorizing=Logging in...
@@ -1385,11 +1400,14 @@ mco.connect.failed=Failed to connect to the online server
 
 mco.create.world=Create
 
+mco.client.outdated.title=Client Outdated!
+mco.client.outdated.msg=Your client is outdated, please consider updating it to use Realms
+
 mco.backup.title=Backups
 mco.backup.button.restore=Restore
-mco.backup.restoring=Restoring your world
+mco.backup.restoring=Restoring your realm
 
-mco.template.title=World Templates
+mco.template.title=Realm Templates
 mco.template.button.select=Select
 mco.template.default.name=Select Template (Optional)
 mco.template.name=Template
