@@ -39,24 +39,29 @@ createWorldScreen.playerdamage=Player Damage
 createWorldScreen.pvpdamage=Player VS Player Damage
 
 edu.cloudError.generic.code=Error code: 
-edu.cloudError.generic.download.title=Your world didn't download from the cloud #### {MaxLength="45"}
-edu.cloudError.generic.linkDescription=Learn more about cloud support
+edu.cloudError.generic.download.title=World download failed #### {MaxLength="45"}
+edu.cloudError.generic.linkDescription=Learn more about this error
 edu.cloudError.generic.message=Something went wrong when uploading your world to the cloud.
+edu.cloudError.generic.download.message=Something went wrong when downloading your world from the cloud.
 edu.cloudError.generic.upload.title=Upload failed #### {MaxLength="45"}
-edu.cloudError.largeWorld.message=The maximum file size supported for cloud upload is 250MB.
+edu.cloudError.largeWorld.message=This world will only be saved to this local device. The maximum file size supported for cloud upload is 250MB.
 edu.cloudError.largeWorld.title=World too big #### {MaxLength="45"}
 edu.cloudError.notfound.download.message=We can't locate this world on the cloud. Exit and return to My Worlds to get a refreshed view of your worlds.
 edu.cloudError.notfound.download.title=File not found on OneDrive #### {MaxLength="45"}
-edu.cloudError.outOfStorage.linkDescription=How to back up your worlds
-edu.cloudError.outOfStorage.message=Your OneDrive folder doesn't have enough room for this world. You can back up another way if you want it saved elsewhere.
+edu.cloudError.outOfStorage.linkDescription=How to back up your worlds when you're out of space on OneDrive
+edu.cloudError.outOfStorage.download.message=Your device is out of space! Why not delete some stuff you don't need so that you can keep saving new stuff?
+edu.cloudError.outOfStorage.message=Your OneDrive doesn't have enough room for this world.
 edu.cloudError.outOfStorage.title=Your upload didn't make it to the cloud #### {MaxLength="45"}
-edu.cloudError.unauthorized.download.message=Ask a system administrator to check your OneDrive settings.
-edu.cloudError.unauthorized.download.title=You don't have permission to download this file #### {MaxLength="45"}
-edu.cloudError.unauthorized.message=You don't have access to cloud storage. Check your OneDrive settings.
+edu.cloudError.unauthorized.download.message=You don't have permission to download this file. Ask a system administrator to check your OneDrive settings.
+edu.cloudError.unauthorized.download.title=Permission error #### {MaxLength="45"}
+edu.cloudError.unauthorized.linkDescription=How to check OneDrive settings
+edu.cloudError.unauthorized.message=You don't have access to cloud storage. Check your OneDrive settings if you'd like to keep your world files backed up and synchronized across devices.
 edu.cloudError.unauthorized.title=Cloud access problem #### {MaxLength="45"}
 edu.cloudError.uploadFailed.message=Please try again to upload to the cloud.
+edu.cloudError.uploadFailed.linkDescription=Get help with this error
 
 item.spawn_egg.entity.npc.failed.edu=You need worldbuilder permissions to spawn an NPC
+item.worldbuilder.block.failed.edu=You need worldbuilder permissions to place this block
 
 library.connection.failed.body=We're unable to connect to the Library. This can happen if your computer is offline or if access to the Library catalog is blocked.
 library.connection.failed.help=Get Help
@@ -320,21 +325,32 @@ menu.eduLocalStorage=Local Storage
 menu.eduCloudStorage=Cloud Storage
 menu.eduCloudStorage.caps=CLOUD STORAGE SETTINGS
 
+newAndFeatured.name=New & Featured	## This will appear on a button on our home screen, so needs to remain short after translation. If the translation for "New & Featured" is too long, the category label can be translated as "featured".  Please try for less than 20 characters including spaces
+newAndFeatured.description=This collection features lessons and worlds that are new to the Library, monthly highlights, and all-time favorites. We hope you find something new to explore!	## "Library" here is a destination, refers to the name for the EDU-equivalent of the Marketplace. Please treat this as a proper noun.
+
 options.eduCloud.toggleCloud=Enable World Backups to OneDrive
-options.eduCloud.fileDate=OneDrive File Last Changed
-options.eduCloud.fileName=OneDrive File Name
 options.eduCloud.folder.body=View and download worlds stored in the "%s" OneDrive folder.	## Token in quotes will be "Minecraft Education" or "Minecraft Education Preview". Both are brand names and will not be localized.
 options.eduCloud.folder.header=Access OneDrive
 options.eduCloud.oneDrive=OneDrive
-options.eduCloud.learnMore.text=Learn more about cloud support
+options.eduCloud.learnMore.text=Learn more about cloud storage
 
 options.cloudStorage=Cloud Storage
 options.cloudStorageTitle=Cloud Storage Settings
 options.cloudFileNameTitle=OneDrive File Name
 options.cloudFileLastChangedTitle=OneDrive File Last Changed
-options.cloudHelpText=Learn more about cloud support
+options.cloudHelpText=Learn more about cloud storage
 options.cloudToggleCloudSave=Enable World Backup to OneDrive
 options.cloudNotAvailableText=Not Available
+
+popup.title.eduCloudConflictResolution=Out of Sync	#### {MaxLength="45"}
+popup.message.eduConflictResolution.description=Uh oh. Your world on this device is out of sync with the one in the cloud. What do you want to do?%1You can make both world files the same as the LOCAL version, the CLOUD version, or ... KEEP BOTH! Keeping both will make your local file a copy, separate from the OneDrive version referenced below.	## %1 will be replaced with a newline. LOCAL should match the word used in popup.buttons.eduConflictResolution.local, CLOUD should match the word used in popup.buttons.eduConflictResolution.cloud, KEEP BOTH should match popup.buttons.eduConflictResolution.both
+popup.message.eduConflictResolution.localWorldName=Local World Name: "%1"	## %1 will be the name of the local world wrapped in quotes
+popup.message.eduConflictResolution.localWorldDate=Local World Last Changed: %1 (local)	## %1 will be the date
+popup.message.eduConflictResolution.cloudName=OneDrive File Name: "%1"	## %1 will be the name of the world on OneDrive wrapped in quotes
+popup.message.eduConflictResolution.cloudDate=OneDrive World Last Updated: %1 (local)	## %1 will be the date
+popup.buttons.eduConflictResolution.local=Keep Local
+popup.buttons.eduConflictResolution.cloud=Keep Cloud
+popup.buttons.eduConflictResolution.both=Keep Both
 
 progressScreen.title.eduCloudFetch=Cloud Syncing
 progressScreen.message.eduFetchingCloudWorld=Checking...
@@ -344,7 +360,9 @@ progressScreen.message.eduUploadingCloudWorld=Uploading...
 progressScreen.message.eduFinishedCloudUpload=Complete!
 progressScreen.title.eduCloudDownload=Downloading from the cloud
 progressScreen.message.eduDownloadingCloudWorld=Downloading...
+progressScreen.message.eduImportingCloudWorld=Importing...
 progressScreen.message.eduFinishedCloudDownload=Complete!
+progressScreen.message.eduLaunchingCloudWorld=Launching...
 
 resourceUri.launch.success=Opened the Resource Link.
 resourceUri.launch.failure=Unable to open the Resource Link. This doesn't look like a supported URL.
