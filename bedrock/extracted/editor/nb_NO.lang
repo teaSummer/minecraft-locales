@@ -40,24 +40,6 @@ resourcePack.editor.locate.goto.biome=Gå til biomet	#
 
 resourcePack.editor.statusBar.connectedPlayers=Tilkoblede spillere %s	#
 
-resourcePack.editor.toolRail.crossModuleBrushTool.title=Pensel	#
-resourcePack.editor.toolRail.crossModuleBrushTool.description=Klikk med venstre museknapp eller dra for å male	#
-resourcePack.editor.toolRail.crossModuleBrushSettings.targetMode=Mål	#
-resourcePack.editor.toolRail.crossModuleBrushSettings.targetMode.face=Nærliggende	#
-resourcePack.editor.toolRail.crossModuleBrushSettings.targetMode.block=Blokk	#
-resourcePack.editor.toolRail.crossModuleBrushSettings.brush=Pensel	#
-resourcePack.editor.toolRail.crossModuleBrushSettings.pane=Penselinnstillinger	#
-resourcePack.editor.toolRail.crossModuleBrushSettings.brushSettings=Innstillinger for hver pensel	#
-resourcePack.editor.toolRail.crossModuleBrushSettings.extraSettings=Ekstra innstillinger	#
-resourcePack.editor.toolRail.crossModuleBrushSettings.fillConstraints=Fyll begrensninger	#
-resourcePack.editor.toolRail.crossModuleBrushSettings.mask.title=Maskeringsmodus	#
-resourcePack.editor.toolRail.crossModuleBrushSettings.mask=Maske	#
-resourcePack.editor.toolRail.crossModuleBrushSettings.replace=Erstatt	#
-resourcePack.editor.toolRail.crossModuleBrushSettings.keyBinding.targetFaceMode=Målmerk nærliggende blokker	#
-resourcePack.editor.toolRail.crossModuleBrushSettings.keyBinding.targetBlockMode=Målblokk	#
-resourcePack.editor.toolRail.crossModuleBrushSettings.keyBinding.replaceMask=Erstatt skrivemodus	#
-resourcePack.editor.toolRail.crossModuleBrushSettings.keyBinding.maskMask=Maskert skrivemodus	#
-
 resourcePack.editor.brushShape.common.settings.uniform=Uniform	#
 resourcePack.editor.brushShape.common.settings.radius=Radius	#
 resourcePack.editor.brushShape.common.settings.length=Lengde	#
@@ -151,6 +133,12 @@ resourcePack.editor.goToMark.pane.locationPane.dropdownLabel=Lagret posisjon	#
 
 resourcePack.editor.grapple.keyBinding.flyToCursor=Fly til markøren	#
 resourcePack.editor.grapple.keyBinding.flyToSelection=Fly til utvalg	#
+
+resourcePack.editor.selectionTool.modeSelection.title=Velg modus	#
+resourcePack.editor.selectionTool.modeSelection.marquee.title=Markeringsmodus	#
+resourcePack.editor.selectionTool.modeSelection.marquee.tooltip=Velg blokker i verdenen ved å bruke et rektangulært volum	#
+resourcePack.editor.selectionTool.modeSelection.freehand.title=Frihåndspenselmodus	#
+resourcePack.editor.selectionTool.modeSelection.freehand.tooltip=Velg blokker i verdenen ved å bruke en frihåndspenselform	#
 
 resourcePack.editor.selectionTool.deselect=Opphev merking	#
 resourcePack.editor.selectionTool.fillPane.title=Fyll utvalg	#
@@ -407,7 +395,7 @@ resourcePack.editor.pastepreview.keyBinding.rotateClockWise=Roter forhåndsvisni
 resourcePack.editor.pastepreview.keyBinding.rotateCounterClockWise=Roter forhåndsvisning mot klokken	#
 resourcePack.editor.pastepreview.keyBinding.toggleMirrorX=Vis/skjul speil X	#
 resourcePack.editor.pastepreview.keyBinding.toggleMirrorZ=Vis/skjul speil Z	#
-resourcePack.editor.pastepreview.keyBinding.toggleMouseTracking=Aktiver musesporing	#
+resourcePack.editor.pastepreview.keyBinding.toggleMouseTracking=Aktiver/deaktiver musesporing	#
 resourcePack.editor.pastepreview.keyBinding.toggleFixedDistance=Aktiver fast avstand	#
 
 resourcePack.editor.deferredLightingSettings.menu.title=Utsatte lysinnstillinger	#
@@ -418,3 +406,63 @@ resourcePack.editor.datatransferaccessors.pbr_fallbacks=PBR-alternativer	#
 resourcePack.editor.datatransferaccessors.point_lights=Punktlys	#
 resourcePack.editor.datatransferaccessors.water=Vann	#
 
+resourcePack.editor.viewSettings.menu=Visningsinnstillinger	#
+resourcePack.editor.viewSettings.title=Visningsinnstillinger	#
+resourcePack.editor.viewSettings.invisible.title=Vis usynlige blokker	#
+resourcePack.editor.viewSettings.invisible.tip=Vis usynlige blokker (f.eks. tomrom, barriere osv.)	#
+resourcePack.editor.viewSettings.chunk.title=Vis delgrenser	#
+resourcePack.editor.viewSettings.chunk.tip=Vis omrisset av delgrensene på kartet	#
+
+resourcePack.editor.brushPaint.title=Penselmaling	#
+resourcePack.editor.brushPaint.tooltip=Bruk pensler til å male blokker i verdenen	#
+resourcePack.editor.brushPaint.inputContext.title=Penselmaling	#
+resourcePack.editor.brushPaint.inputContext.oneshot=Mal én gang	#
+resourcePack.editor.brushPaint.inputContext.activateBrushPaint=Aktiver penselmaling	#
+
+resourcePack.editor.CursorModeControl.rootPane.title=Markørinnstillinger	#
+resourcePack.editor.CursorModeControl.mouseControlMode.title=Inndatametode	#
+resourcePack.editor.CursorModeControl.mouseControlMode.tooltip=Velg inndatametode for verdensblokkmarkøren	#
+resourcePack.editor.CursorModeControl.mouseControlMode.keyboard=Kun tastatur	#
+resourcePack.editor.CursorModeControl.mouseControlMode.keyboardAndMouse=Mus og taster	#
+resourcePack.editor.CursorModeControl.mouseControlMode.fixed=Fast avstand	#
+resourcePack.editor.CursorModeControl.cursorTargetMode.title=Mål	#
+resourcePack.editor.CursorModeControl.cursorTargetMode.tooltip=Velg markørmålmodus	#
+resourcePack.editor.CursorModeControl.cursorTargetMode.block=Blokk	#
+resourcePack.editor.CursorModeControl.cursorTargetMode.block.tooltip=Blokken under musepekeren	#
+resourcePack.editor.CursorModeControl.cursorTargetMode.face=Nærliggende	#
+resourcePack.editor.CursorModeControl.cursorTargetMode.face.tooltip=Blokken som er rett ved siden av overflaten til blokken under markøren	#
+resourcePack.editor.CursorModeControl.projectThroughWater.title=Projiser gjennom vann	#
+resourcePack.editor.CursorModeControl.projectThroughWater.tooltip=Musens stråler projiseres gjennom vann, noe som gjør det mulig å velge elementer under vann	#
+resourcePack.editor.CursorModeControl.fixedDistance.slider.title=Fast markøravstand	#
+resourcePack.editor.CursorModeControl.fixedDistance.slider.tooltip=Juster den faste avstanden fra spilleren der blokkmarkøren skal plasseres	#
+resourcePack.editor.CursorModeControl.keybinding.moveCursorForward=Dytt fremover	#
+resourcePack.editor.CursorModeControl.keybinding.moveCursorBack=Flytt markøren bakover	#
+resourcePack.editor.CursorModeControl.keybinding.moveCursorUp=Flytt markøren oppover	#
+resourcePack.editor.CursorModeControl.keybinding.moveCursorDown=Flytt markøren nedover	#
+resourcePack.editor.CursorModeControl.keybinding.moveCursorLeft=Flytt markøren til venstre	#
+resourcePack.editor.CursorModeControl.keybinding.moveCursorRight=Flytt markøren til høyre	#
+resourcePack.editor.CursorModeControl.keybinding.toggleMouseTracking=Aktiver/deaktiver musesporing	#
+resourcePack.editor.CursorModeControl.keybinding.toggleBlockTargetMode=Veksle mellom blokkmodus og tilstøtende modus	#
+resourcePack.editor.CursorModeControl.keybinding.toggleFixedDistance=Aktiver/deaktiver avstandsmodus	#
+
+resourcePack.editor.BrushPaintControl.rootPane.title=Penselinnstillinger	#
+resourcePack.editor.BrushPaintControl.brush.title=Pensel	#
+resourcePack.editor.BrushPaintControl.brushSettings.title=Penselinnstillinger	#
+resourcePack.editor.BrushPaintControl.fillConstraints.title=Fyll begrensninger	#
+resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.title=Penselblokkfilter	#
+resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.mask=Maske	#
+resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.mask.tooltip=Blokker som samsvarer med listen, blir ignorert og forblir upåvirket	#
+resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.replace=Erstatt	#
+resourcePack.editor.BrushPaintControl.fillConstraints.replace.title=Erstatningsliste	#
+resourcePack.editor.BrushPaintControl.fillConstraints.replace.tooltip=Blokker som samsvarer med listen, påvirkes	#
+resourcePack.editor.BrushPaintControl.fillConstraints.mask.title=Maskeliste	#
+resourcePack.editor.BrushPaintControl.offset.title=Forskyvning	#
+resourcePack.editor.BrushPaintControl.offset.tooltip=Forskyvningen fra markørens plassering	#
+resourcePack.editor.BrushPaintControl.keybinding.replaceMask=Maskemodus – erstatt	#
+resourcePack.editor.BrushPaintControl.keybinding.maskMask=Maskemodus – masker	#
+resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetUp=Dytt forskyvningen opp	#
+resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetDown=Dytt forskyvningen ned	#
+resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetLeft=Dytt forskyvningen til venstre	#
+resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetRight=Dytt forskyvningen til høyre	#
+resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetForward=Dytt forskyvningen fremover	#
+resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetBack=Dytt forskyvningen bakover	#

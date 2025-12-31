@@ -46,15 +46,15 @@ edu.cloudError.generic.download.message=世界をクラウドからダウンロ�
 edu.cloudError.generic.upload.title=アップロード失敗 	##### {MaxLength="45"}
 edu.cloudError.largeWorld.message=この世界はこのローカル デバイスにのみ保存されます。クラウド アップロードでサポートされる最大ファイルサイズは 250 MB です。	#
 edu.cloudError.largeWorld.title=世界が大きすぎます 	##### {MaxLength="45"}
-edu.cloudError.local.download.title=World Download Error 	##### {MaxLength="45"}
-edu.cloudError.local.download.message=There was a problem downloading the latest version from the cloud. You can open the version last saved on this device and decide later which world version you want to keep.	#
-edu.cloudError.local.download.linkDescription=Learn more about download errors	#
+edu.cloudError.local.download.title=ワールド ダウンロード エラー 	##### {MaxLength="45"}
+edu.cloudError.local.download.message=クラウドから最新バージョンをダウンロードする際に問題が発生しました。このデバイスに最後に保存したバージョンを開いて、保持するワールドのバージョンを後で決定できます。	#
+edu.cloudError.local.download.linkDescription=ダウンロード エラーの詳細	#
 edu.cloudError.local.download.open=開く	#
-edu.cloudError.local.sync.title=World Sync Error 	##### {MaxLength="45"}
-edu.cloudError.local.sync.message=There was a problem syncing to the cloud. Your world may be out of date. You can still open the version last saved on this device.	#
+edu.cloudError.local.sync.title=ワールド同期エラー 	##### {MaxLength="45"}
+edu.cloudError.local.sync.message=クラウドへの同期に問題がありました。あなたのワールドは古いバージョンである可能性があります。このデバイスに最後に保存したバージョンを引き続き開くことができます。	#
 edu.cloudError.notfound.download.message=クラウド上にこの世界が見つかりません。終了して自分の世界に戻り、再読み込みしてください。	#
 edu.cloudError.notfound.download.title=OneDrive にファイルが見つかりません 	##### {MaxLength="45"}
-edu.cloudError.outOfStorage.linkDescription=OneDrive の空き容量が足りないときに世界をバックアップする方法 	##### {MaxLength="64"}
+edu.cloudError.outOfStorage.linkDescription=OneDrive の容量が足りないときの世界のバックアップ方法 	##### {MaxLength="64"}
 edu.cloudError.outOfStorage.download.message=お使いのデバイスには、十分な空き容量がありません。新しいデータを今後も保存できるよう、不要な古いデータを削除することをお勧めします。	#
 edu.cloudError.outOfStorage.message=お使いの OneDrive には、この世界を保存する十分な容量がありません。	#
 edu.cloudError.outOfStorage.title=クラウドにアップロードできませんでした 	##### {MaxLength="45"}
@@ -107,6 +107,7 @@ library.item.button.shareEducator=割り当てまたは共有	#
 library.item.button.plan=レッスンプラン	#
 library.item.button.resources=リソース	#
 library.item.progress.body=新しい世界のインポートを準備しています。これには数分かかる可能性があります。	#
+library.item.progress.title=Downloading World...	#
 library.item.description=説明	#
 library.item.overview=概観	#
 library.item.expandable.readLess=詳細を隠す	#
@@ -327,6 +328,7 @@ library.search.multipleResults=ライブラリ全体での "%s" の検索結果 
 library.search.sortMethod.lexicographic.ascending=A から Z にソート	#
 library.search.sortMethod.relevance=関連度順	#
 
+menu.eduPlayScreen.header=Play	#
 menu.ai_lesson_crafter=レッスン クラフター 	###Lesson Crafter is the name of our AI Lesson generator for teachers. Lesson as in classroom teaching, crafter as in creating or generating a new teaching plan
 menu.eduLocalStorage=ローカル ストレージ	#
 menu.eduCloudStorage=クラウド ストレージ	#
@@ -399,7 +401,7 @@ joincode.invalid.title=参加コードが正しくありません	#
 joincode.invalid.body=入力された %1 件の参加コードに誤りがあります。コードが正確かどうかホストに問い合わせるか、接続 ID での参加をお試しください。	#
 joincode.invalid.button.tryagain=もう一度やり直す	#
 joincode.invalid.button.enterip=接続 ID を入力	#
-joincode.invalid.abuse.body=入力された %1 件の参加コードに誤りがあります。しばらくお待ちいただくか、接続 ID を使用して世界に参加してみてください。	#
+joincode.invalid.abuse.body=入力している参加コードが多すぎます。接続 ID を使用してください。	#
 
 joincode.item.sharepopup.title.simple=リンクを共有	#
 joincode.popup.body=リンクを共有して他のプレイヤーを招待し、あなたの世界に参加させましょう。注意: このリンクは、あなたがホストしている間にのみ有効です。	#
@@ -407,16 +409,6 @@ joincode.share.body=%1 から、Minecraft Education にある彼らの世界へ�
 joincode.share.subject=Minecraft Education マルチプレイヤーの招待	#
 
 manage.delete.notification=%1が削除されました。	#
-manage.item.sharepopup.title.simple=コピーを共有	#
-manage.sharepopup.link.body.top=世界のコピーを共有する準備ができました!	#
-manage.sharepopup.link.body.bottom=この世界へのリンクを共有すると、そのリンクを入手した学校や組織の誰でも、世界のコピーをダウンロードできるようになります。ただし、他のプレイヤーがあなたの世界のコピーを変更したり、編集したりすることはできません。	#
-manage.sharepopup.copy.body.top=共有してみよう!	#
-manage.sharepopup.copy.body.bottom=この世界のコピーは、あなたの OneDrive のクラウド ストレージに保存されます。クラウド ストレージへのコピーが完了したら、選択したプレイヤーにリンクを共有できるようになります。 	#
-manage.sharepopup.copy.hyperlink=詳細を見る	#
-manage.sharepopup.copy.cancel=キャンセル	#
-manage.sharepopup.copy.continue=続ける	#
-manage.sharepopup.link.manage=アクセス管理	#
-manage.sharepopup.link.done=完了	#
 
 pause.externalLink=リンクを開く	#
 

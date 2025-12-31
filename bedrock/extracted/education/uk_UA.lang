@@ -1,5 +1,5 @@
 ﻿authentication.popup.setup.title=Налаштування облікового запису	#
-authentication.popup.setup.firstPage.body=Вітаємо в Minecraft: Education Edition!%1%1Перш ніж почати, нам потрібно підтвердити ваш вік. Для цього ми відкриємо ваш браузер і попросимо вас увійти в особистий обліковий запис Microsoft.%1%1Якщо ви не маєте особистого облікового запису Microsoft, ви можете створити його на сторінці входу.		### %1 will be replaced with a new line so two will result in an empty line seperating the two pieces of text
+authentication.popup.setup.firstPage.body=Вітаємо в Minecraft Education!%1%1Перш ніж почати, нам потрібно підтвердити ваш вік. Для цього ми відкриємо ваш браузер і попросимо вас увійти в особистий обліковий запис Microsoft.%1%1Якщо ви не маєте особистого облікового запису Microsoft, ви можете створити його на сторінці входу.		### %1 will be replaced with a new line so two will result in an empty line seperating the two pieces of text
 authentication.popup.setup.firstPage.learnMore=Навіщо перевіряти мій вік?	#
 authentication.popup.setup.firstPage.button=Перевірити зараз	#
 authentication.popup.setup.secondPage.body=Ми відкрили сторінку налаштування облікового запису у веб-браузері. На ній ви можете увійти у свій особистий обліковий запис Microsoft і підтвердити свій вік.%1%1Повідомте нам, коли закінчите.		### %1 will be replaced with a new line so two will result in an empty line seperating the two pieces of text
@@ -46,12 +46,12 @@ edu.cloudError.generic.download.message=Виникла помилка під ч�
 edu.cloudError.generic.upload.title=Помилка вивантаження 	##### {MaxLength="45"}
 edu.cloudError.largeWorld.message=Цей світ буде збережено лише на цьому локальному пристрої. Максимальний розмір файлу, який підтримується для завантаження в хмару, становить 250 МБ.	#
 edu.cloudError.largeWorld.title=Завеликий світ 	##### {MaxLength="45"}
-edu.cloudError.local.download.title=World Download Error 	##### {MaxLength="45"}
-edu.cloudError.local.download.message=There was a problem downloading the latest version from the cloud. You can open the version last saved on this device and decide later which world version you want to keep.	#
-edu.cloudError.local.download.linkDescription=Learn more about download errors	#
+edu.cloudError.local.download.title=Помилка завантаження світу 	##### {MaxLength="45"}
+edu.cloudError.local.download.message=Виникла проблема із завантаженням останньої версії з хмари. Ви можете відкрити останню збережену на цьому пристрої версію, а потім вирішити, яку саме версію світу хочете зберегти.	#
+edu.cloudError.local.download.linkDescription=Докладніше про помилки завантаження	#
 edu.cloudError.local.download.open=Відкрити	#
-edu.cloudError.local.sync.title=World Sync Error 	##### {MaxLength="45"}
-edu.cloudError.local.sync.message=There was a problem syncing to the cloud. Your world may be out of date. You can still open the version last saved on this device.	#
+edu.cloudError.local.sync.title=Помилка синхронізації світу 	##### {MaxLength="45"}
+edu.cloudError.local.sync.message=Виникла проблема з синхронізацією з хмарою. Можливо, ваш світ застарів. Ви все ще можете відкрити версію, яку востаннє зберігали на цьому пристрої.	#
 edu.cloudError.notfound.download.message=Ми не можемо знайти цей світ у хмарі. Вийдіть і поверніться до розділу «Мої світи», щоб отримати оновлене подання своїх світів.	#
 edu.cloudError.notfound.download.title=Файл не знайдено у OneDrive 	##### {MaxLength="45"}
 edu.cloudError.outOfStorage.linkDescription=Як створити резервні копії світів у разі браку місця у OneDrive 	##### {MaxLength="64"}
@@ -106,7 +106,8 @@ library.item.button.share=Поділитися посиланням	#
 library.item.button.shareEducator=ПРИЗНАЧИТИ ЧИ НАДІСЛАТИ	#
 library.item.button.plan=ПЛАН УРОКУ	#
 library.item.button.resources=РЕСУРСИ	#
-library.item.progress.body=Підготовка до імпорту нового світу. Це може тривати кілька хвилин.	#
+library.item.progress.body=Завантажуємо ваш світ. Це може зайняти кілька хвилин.	#
+library.item.progress.title=Завантаження світу…	#
 library.item.description=ОПИС	#
 library.item.overview=ОГЛЯД	#
 library.item.expandable.readLess=Згорнути	#
@@ -327,6 +328,7 @@ library.search.multipleResults=%1 результати(-ів) пошуку "%s" 
 library.search.sortMethod.lexicographic.ascending=Сортування по алфавіту	#
 library.search.sortMethod.relevance=Відсортовано за релевантністю	#
 
+menu.eduPlayScreen.header=Грати	#
 menu.ai_lesson_crafter=Крафтер уроків 	###Lesson Crafter is the name of our AI Lesson generator for teachers. Lesson as in classroom teaching, crafter as in creating or generating a new teaching plan
 menu.eduLocalStorage=Локальне сховище	#
 menu.eduCloudStorage=Хмарне сховище	#
@@ -399,7 +401,7 @@ joincode.invalid.title=Неправильний код приєднання 	#
 joincode.invalid.body=Ви ввели неправильні коди приєднання (%1). Зверніться до організатора та перевірте, чи правильний у вас код, або спробуйте приєднатися за ідентифікатором підключення.	#
 joincode.invalid.button.tryagain=Спробувати ще раз	#
 joincode.invalid.button.enterip=Введіть ідентифікатор підключення	#
-joincode.invalid.abuse.body=Ви ввели неправильні коди приєднання (%1). Зачекайте і повторіть спробу або спробуйте приєднатися до світу за ідентифікатором підключення.	#
+joincode.invalid.abuse.body=Ви ввели забагато кодів приєднання, скористайтеся ідентифікатором підключення.	#
 
 joincode.item.sharepopup.title.simple=Поділитися посиланням	#
 joincode.popup.body=Поділіться посиланням, щоб запросити інших гравців до вашого світу. Зверніть увагу: це посилання працюватиме, лише поки ви є хостом світу.	#
@@ -407,16 +409,6 @@ joincode.share.body=%1 запрошує вас приєднатися до св�
 joincode.share.subject=Запрошення в мультиплеєр для Minecraft Education	#
 
 manage.delete.notification=%1 видалено.	#
-manage.item.sharepopup.title.simple=Надіслати копію	#
-manage.sharepopup.link.body.top=Копію вашого світу вже можна надіслати!	#
-manage.sharepopup.link.body.bottom=Коли ви ділитеся посиланням на цей світ, усі люди з вашого навчального закладу чи організації з посиланням можуть завантажити власну копію світу. Інші гравці не можуть змінювати або редагувати вашу копію світу. 	#
-manage.sharepopup.copy.body.top=Ділімося!	#
-manage.sharepopup.copy.body.bottom=Щоб надіслати цей світ, ми помістимо його копію у ваше хмарне сховище OneDrive. Коли копія буде у хмарі, ми допоможемо вам поділитися посиланням із вибраними людьми. 	#
-manage.sharepopup.copy.hyperlink=Дізнайтеся більше	#
-manage.sharepopup.copy.cancel=Скасувати	#
-manage.sharepopup.copy.continue=Продовжити	#
-manage.sharepopup.link.manage=Налаштувати доступ	#
-manage.sharepopup.link.done=Готово	#
 
 pause.externalLink=ВІДКРИТИ ПОСИЛАННЯ	#
 
