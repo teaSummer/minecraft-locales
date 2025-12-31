@@ -12,6 +12,10 @@ gui.down=Down
 gui.yes=Yes
 gui.no=No
 
+translation.test.none=Hello, world!
+translation.test.args=%s %s
+translation.test.world=world
+
 menu.singleplayer=Singleplayer
 menu.multiplayer=Multiplayer
 menu.online=Minecraft Realms
@@ -131,20 +135,25 @@ multiplayer.connect=Connect
 multiplayer.info1=Minecraft Multiplayer is currently not finished, but there
 multiplayer.info2=is some buggy early testing going on.
 multiplayer.ipinfo=Enter the IP of a server to connect to it:
-
 multiplayer.texturePrompt.line1=This server recommends the use of a custom texture pack.
 multiplayer.texturePrompt.line2=Would you like to download and install it automagically?
-
 multiplayer.downloadingTerrain=Downloading terrain
-
 multiplayer.stopSleeping=Leave Bed
+multiplayer.player.joined=%s joined the game
+multiplayer.player.left=%s left the game
 
+chat.cannotSend=Cannot send chat message
+chat.type.text=<%s> %s
+chat.type.emote=* %s %s
+chat.type.announcement=[%s] %s
+chat.type.admin=[%s: %s]
 chat.link.confirm=Are you sure you want to open the following website?
 chat.link.warning=Never open links from people that you don't trust!
 chat.copy=Copy to Clipboard
 
 menu.playdemo=Play Demo World
 menu.resetdemo=Reset Demo World
+
 demo.day.1=This demo will last five game days, do your best!
 demo.day.2=Day Two
 demo.day.3=Day Three
@@ -872,6 +881,7 @@ deathScreen.hardcoreInfo=You cannot respawn in hardcore mode!
 deathScreen.title=You died!
 deathScreen.leaveServer=Leave server
 
+potion.effects.whenDrank=When Applied:
 potion.empty=No Effects
 potion.moveSpeed=Speed
 potion.moveSlowdown=Slowness
@@ -1093,9 +1103,10 @@ achievement.bookcase=Librarian
 achievement.bookcase.desc=Build some bookshelves to improve your enchantment table
 
 commands.generic.exception=An unknown error occurred while attempting to perform this command
+commands.generic.permission=You do not have permission to use this command
 commands.generic.syntax=Invalid command syntax
 commands.generic.player.notFound=That player cannot be found
-commands.generic.notFound=Unknown command. Try /help for a list of commands.
+commands.generic.notFound=Unknown command. Try /help for a list of commands
 commands.generic.num.invalid='%s' is not a valid number
 commands.generic.num.tooSmall=The number you have entered (%d) is too small, it must be at least %d
 commands.generic.num.tooBig=The number you have entered (%d) is too big, it must be at most %d
@@ -1125,14 +1136,18 @@ commands.enchant.success=Enchanting succeeded
 commands.clear.usage=/clear <player> [item] [data]
 commands.clear.success=Cleared the inventory of %s, removing %d items
 commands.clear.failure=Could not clear the inventory of %s, no items to remove
+commands.downfall.usage=/toggledownfall
 commands.downfall.success=Toggled downfall
 commands.time.usage=/time <set|add> <value>
 commands.time.added=Added %d to the time
 commands.time.set=Set the time to %d
+commands.players.usage=/list
 commands.players.list=There are %d/%d players online:
 commands.banlist.ips=There are %d total banned IP addresses:
 commands.banlist.players=There are %d total banned players:
 commands.banlist.usage=/banlist [ips|players]
+commands.kill.usage=/kill
+commands.kill.success=Ouch! That looked like it hurt
 commands.kick.success=Kicked %s from the game
 commands.kick.success.reason=Kicked %s from the game: '%s'
 commands.kick.usage=/kick <player> [reason ...]
@@ -1152,11 +1167,15 @@ commands.banip.usage=/ban-ip <address|name> [reason ...]
 commands.unbanip.invalid=You have entered an invalid IP address
 commands.unbanip.success=Unbanned IP address %s
 commands.unbanip.usage=/pardon-ip <address>
+commands.save.usage=/save-all
+commands.save-on.usage=/save-on
+commands.save-off.usage=/save-off
 commands.save.enabled=Turned on world auto-saving
 commands.save.disabled=Turned off world auto-saving
 commands.save.start=Saving...
 commands.save.success=Saved the world
 commands.save.failed=Saving failed: %s
+commands.stop.usage=/stop
 commands.stop.start=Stopping the server
 commands.tp.success=Teleported %s to %s
 commands.tp.success.coordinates=Teleported %s to %.2f,%.2f,%.2f
@@ -1240,6 +1259,7 @@ commands.me.usage=/me <action ...>
 commands.help.header=--- Showing help page %d of %d (/help <page>) ---
 commands.help.footer=Tip: Use the <tab> key while typing a command to auto-complete the command or its arguments
 commands.help.usage=/help [page|command name]
+commands.publish.usage=/publish
 commands.publish.started=Local game hosted on %s
 commands.publish.failed=Unable to host local game
 commands.debug.start=Started debug profiling
@@ -1263,6 +1283,8 @@ commands.weather.rain=Changing to rainy weather
 commands.weather.thunder=Changing to rain and thunder
 commands.testfor.usage=/testfor <player>
 commands.testfor.failed=/testfor is only usable by commandblocks with analog output
+commands.seed.usage=/seed
+commands.seed.success=Seed: %s
 
 itemGroup.buildingBlocks=Building Blocks
 itemGroup.decorations=Decoration Blocks
@@ -1280,6 +1302,7 @@ itemGroup.inventory=Survival Inventory
 inventory.binSlot=Destroy Item
 
 advMode.setCommand=Set Console Command for Block
+advMode.setCommand.success=Command set: %s
 advMode.command=Console Command
 advMode.nearestPlayer=Use "@p" to target nearest player
 advMode.randomPlayer=Use "@r" to target random player
@@ -1337,3 +1360,20 @@ mco.connect.authorizing=Logging in...
 mco.connect.failed=Failed to connect to the online server
 
 mco.create.world=Create
+
+build.tooHigh=Height limit for building is %s blocks
+
+attribute.modifier.plus.0=+%d %s
+attribute.modifier.plus.1=+%d%% %s
+attribute.modifier.plus.2=+%d%% %s
+attribute.modifier.take.0=-%d %s
+attribute.modifier.take.1=-%d%% %s
+attribute.modifier.take.2=-%d%% %s
+
+attribute.name.horse.jumpStrength=Horse Jump Strength
+attribute.name.zombie.spawnReinforcements=Zombie Reinforcements
+attribute.name.generic.maxHealth=Max Health
+attribute.name.generic.followRange=Mob Follow Range
+attribute.name.generic.knockbackResistance=Knockback Resistance
+attribute.name.generic.movementSpeed=Speed
+attribute.name.generic.attackDamage=Attack Damage
