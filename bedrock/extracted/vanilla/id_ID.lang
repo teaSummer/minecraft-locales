@@ -2144,7 +2144,7 @@ howtoplay.controls.text.7.windowsmr_controller=Jika kamu memegang item di tangan
 howtoplay.controls.text.7.touch=Jika kamu memegang item di tangan, sentuh layar untuk menggunakan item tersebut atau sentuh dan tahan item di bilah pilihan untuk melepaskannya.	#
 howtoplay.controls.header.3=Menyelinap	#
 howtoplay.controls.text.8.keyboard=Menyelinap sangat berguna dalam Minecraft, menyelinap menjagamu agar tidak jatuh dari blok dan menyembunyikan label namamu. Untuk menyelinap, tahan tombol :_input_key.sneak:.	#
-howtoplay.controls.text.8.gamepad=Menyelinap sangat berguna dalam Minecraft, menyelinap menjagamu agar tidak jatuh dari blok dan menyembunyikan label namamu. Untuk beralih ke posisi menyelinap, tekan :_input_key.sneak: or click :_gamepad_stick_right:.	#
+howtoplay.controls.text.8.gamepad=Menyelinap sangat berguna dalam Minecraft, menyelinap menjagamu agar tidak jatuh dari blok dan menyembunyikan label namamu. Untuk beralih ke posisi menyelinap, tekan :_input_key.sneak: atau klik :_gamepad_stick_right:.	#
 howtoplay.controls.text.8.touch=Menyelinap sangat berguna dalam Minecraft, menyelinap menjagamu agar tidak jatuh dari blok dan menyembunyikan label namamu. Untuk beralih ke posisi menyelinap, ketuk :touch_sneak:.	#
 howtoplay.controls.text.8.rift_controller=Menyelinap sangat berguna dalam Minecraft, menyelinap menjagamu agar tidak jatuh dari blok dan menyembunyikan label namamu. Untuk beralih ke posisi menyelinap, tekan :rift_X:.	#
 howtoplay.controls.text.8.windowsmr_controller=Menyelinap sangat berguna dalam Minecraft, menyelinap menjagamu agar tidak jatuh dari blok dan menyembunyikan label namamu. Untuk beralih ke posisi menyelinap, tekan :windowsmr_right_stick:.	#
@@ -4004,6 +4004,8 @@ multiplayer.info2=sejumlah pengujian awal yang belum sempurna sedang berlangsung
 multiplayer.ipinfo=Masukkan IP server untuk tersambung:	#
 multiplayer.packErrors=Setidaknya salah satu paket sumber daya atau perilaku gagal dimuat.	#
 multiplayer.packErrors.realms=Setidaknya salah satu paket sumber daya atau perilaku gagal dimuat.  Coba unduh dunia ini dari pengaturan Realm untuk melihat detail lebih lanjut tentang kesalahan.	#
+multiplayer.player.inventory.recovered=Persediaan dipulihkan dan ditempatkan di peti di dekatmu.	#
+multiplayer.player.inventory.failed=Persediaan dipulihkan. Temukan tempat yang aman, dan kami akan menempatkan peti di dekatmu saat berikutnya kamu bergabung dengan dunia.	#
 multiplayer.player.joined=%s bergabung dengan permainan	#
 multiplayer.player.joined.renamed=%s (sebelumnya dikenal sebagai %s) bergabung dengan permainan	#
 multiplayer.player.joined.realms=%s bergabung dengan Realm	#
@@ -5258,16 +5260,10 @@ store.createdBy=Oleh %s	#
 store.seeMoreBy=Lihat lainnya oleh %s	#
 store.fetchingItem=Menyambung ke toko...	#
  
-store.timer.daysAbbreviated=%sh	#
-store.timer.hoursAbbreviated=%sj	#
-store.timer.minutesAbbreviated=%smnt	#
-store.timer.secondsAbbreviated=%sdtk	#
-store.timer.left=%s tersisa	#
-
-store.timer.daysAbbreviated=%sh	#
-store.timer.hoursAbbreviated=%sj	#
-store.timer.minutesAbbreviated=%smnt	#
-store.timer.secondsAbbreviated=%sdtk	#
+store.timer.daysAbbreviated=%sh		### This is to let player know how many days are left in a sale. It needs to be abbreviated with no more than 3 characters
+store.timer.hoursAbbreviated=%sj		### This is to let player know how many days are left in a sale. It needs to be abbreviated with no more than 3 characters
+store.timer.minutesAbbreviated=%smnt		### This is to let player know how many days are left in a sale. It needs to be abbreviated with no more than 3 characters
+store.timer.secondsAbbreviated=%sdtk		### This is to let player know how many days are left in a sale. It needs to be abbreviated with no more than 3 characters
 store.timer.left=%s tersisa	#
 
 store.startMenu.sale=Diskon!	#
@@ -5433,12 +5429,6 @@ store.suggestedOffers.defaultTitle=Cara Seru untuk Bermain	#
 store.minecoin.notavailable=Pembelian koin tidak tersedia di versi Minecraft ini.	#
 
 store.itemDetail.back=Detail	#
-
-store.sales.allByCreator=Diskon Sekarang!	#
-store.sales.mashupsOnSale=Diskon Perpaduan Sekarang!	#
-store.sales.skinsOnSale=Diskon Skin Sekarang!	#
-store.sales.texturesOnSale=Diskon Paket Tekstur Sekarang!	#
-store.sales.worldsOnSale=Diskon Dunia Sekarang!	#
 
 store.search.allResults=%d Hasil	#
 store.search.dynamicPlaceHolderText=Mencoba mencari %s!	#

@@ -2600,7 +2600,7 @@ howtoplay.transportation.text.3.gamepad=Druk op :_input_key.use: terwijl je naar
 howtoplay.transportation.text.3.touch=Tik op de knop Rijden bij een mijnkarretje om erin te springen en te rijden. Druk op :_input_key.forward: om naar voren te gaan en tik op :_input_key.jump: om eruit te gaan. 	#
 howtoplay.transportation.header.2=Boten	#
 howtoplay.transportation.text.4=Met boten kun je over water varen. Plaats er een op een waterblok en je bent klaar om te vertrekken.	#
-howtoplay.transportation.text.5.keyboard=Druk op :_input_key.use: terwijl je naar een boot kijkt om aan boord te gaan. Druk op :_input_key.left: of :_input_key.right: om naar links of rechts om te sturen. Druk op :_input_key.forward: om naar voren te varen. Druk op :_input_key.jump: of :_input_key.sneak: om eraf te gaan.	#
+howtoplay.transportation.text.5.keyboard=Druk op :_input_key.use: terwijl je naar een boot kijkt om aan boord te gaan. Druk op :_input_key.left: of :_input_key.right: om naar links of rechts om te sturen. Druk op :_input_key.forward: om naar voren te varen. Druk op :_input_key.jump: of :_input_key.sneak: om de boot te verlaten.	#
 howtoplay.transportation.text.5.gamepad=Druk op :_input_key.use: terwijl je naar een boot kijkt om aan boord te gaan. Druk :_gamepad_stick_left: naar links of rechts om te draaien. Druk :_gamepad_stick_left: naar voren om vooruit te gaan. Druk op :_input_key.jump: of :_input_key.sneak: om de boot te verlaten.	#
 howtoplay.transportation.text.5.touch=Tik op de knop Aan boord gaan terwijl je je bij een boot bevindt om aan boord te gaan. Druk op :_input_key.left: of :_input_key.right: om naar links of rechts te sturen. Druk op beide knoppen om naar voren te varen. Tik op de knop Boot verlaten om eraf te gaan.	#
 
@@ -3687,7 +3687,7 @@ item.written_book.name=Geschreven boek	#
 item.glowstone_dust.name=Gloeisteenstof	#
 item.shulker_shell.name=Sjoelkerschelp	#
 item.totem.name=Totem van Onsterfelijkheid	#
-item.turtle_helmet.name=Schildpadschil	#
+item.turtle_helmet.name=Schildpadschild	#
 item.turtle_shell_piece.name=Hoornschild	#
 
 itemGroup.search=Zoeken	#
@@ -4004,6 +4004,8 @@ multiplayer.info2=er wordt al voorzichtig mee getest.	#
 multiplayer.ipinfo=Voer het IP-adres van een server in om er een verbinding mee te maken:	#
 multiplayer.packErrors=Eén of meerdere van je hulpbron- of gedragspakketten kunnen niet worden geladen.	#
 multiplayer.packErrors.realms=Eén of meerdere van je hulpbron- of gedragspakketten kunnen niet worden geladen.  Probeer deze wereld te downloaden vanuit je Realm-instellingen voor meer details over de fout.	#
+multiplayer.player.inventory.recovered=Inventaris hersteld en in kisten bij jou in de buurt geplaatst.	#
+multiplayer.player.inventory.failed=Inventaris hersteld. Zoek een veilig plekje en wij plaatsen een kist bij jou in de buurt de volgende keer dat je deze wereld betreedt.	#
 multiplayer.player.joined=%s heeft zich aangesloten bij het spel	#
 multiplayer.player.joined.renamed=%s (ook wel bekend als %s) heeft zich aangesloten bij het spel	#
 multiplayer.player.joined.realms=%s heeft zich aangesloten bij de realm	#
@@ -4697,7 +4699,7 @@ potion.saturation=Verzadiging	#
 potion.saturation.postfix=Drankje van Verzadiging	#
 potion.turtleMaster=Traagheid	#
 potion.turtleMaster2=Weerstand	#
-potion.turtleMaster.postfix=Drank van de schildpadmeester	#
+potion.turtleMaster.postfix=Drankje van de Schildpadmeester	#
 potion.waterBreathing=Wateradem	#
 potion.waterBreathing.postfix=Drankje des Wateradems	#
 potion.weakness=Zwakheid	#
@@ -5258,16 +5260,10 @@ store.createdBy=Door %s	#
 store.seeMoreBy=Bekijk meer van %s	#
 store.fetchingItem=Verbinding maken met winkel...	#
  
-store.timer.daysAbbreviated=%s d	#
-store.timer.hoursAbbreviated=%s u	#
-store.timer.minutesAbbreviated=%s min	#
-store.timer.secondsAbbreviated=%s s	#
-store.timer.left=%s resterend	#
-
-store.timer.daysAbbreviated=%s d	#
-store.timer.hoursAbbreviated=%s u	#
-store.timer.minutesAbbreviated=%s min	#
-store.timer.secondsAbbreviated=%s s	#
+store.timer.daysAbbreviated=%s d		### This is to let player know how many days are left in a sale. It needs to be abbreviated with no more than 3 characters
+store.timer.hoursAbbreviated=%s u		### This is to let player know how many days are left in a sale. It needs to be abbreviated with no more than 3 characters
+store.timer.minutesAbbreviated=%s min		### This is to let player know how many days are left in a sale. It needs to be abbreviated with no more than 3 characters
+store.timer.secondsAbbreviated=%s s		### This is to let player know how many days are left in a sale. It needs to be abbreviated with no more than 3 characters
 store.timer.left=%s resterend	#
 
 store.startMenu.sale=Aanbieding!	#
@@ -5433,12 +5429,6 @@ store.suggestedOffers.defaultTitle=Leuke manieren om te spelen	#
 store.minecoin.notavailable=Er kunnen geen munten worden gekocht in deze Minecraft-versie.	#
 
 store.itemDetail.back=Details	#
-
-store.sales.allByCreator=Nu in de aanbieding!	#
-store.sales.mashupsOnSale=Mashups nu in de aanbieding!	#
-store.sales.skinsOnSale=Skins nu in de aanbieding!	#
-store.sales.texturesOnSale=Texturepakketten nu in de aanbieding!	#
-store.sales.worldsOnSale=Werelden nu in de aanbieding!	#
 
 store.search.allResults=%d resultaten	#
 store.search.dynamicPlaceHolderText=Probeer eens te zoeken naar %s.	#
@@ -6122,7 +6112,7 @@ tipped_arrow.effect.weakness=Pijl van Zwakheid	#
 tipped_arrow.effect.levitation=Pijl van Levitatie	#
 tipped_arrow.effect.luck=Pijl van Geluk	#
 tipped_arrow.effect.wither=Pijl van Verval	#
-tipped_arrow.effect.turtleMaster=Pijl van de schildpadmeester	#
+tipped_arrow.effect.turtleMaster=Pijl van de Schildpadmeester	#
 
 structure_block.title=Constructieblok	#
 structure_block.structure_name=Constructienaam	#

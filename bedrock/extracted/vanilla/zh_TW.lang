@@ -2105,7 +2105,7 @@ howtoplay.commands.text.2=您可以透過大量的指令來達成許多有趣的
 howtoplay.conduits=導管	#
 howtoplay.conduits.title=遊戲說明：導管	#
 howtoplay.conduits.text.1=當您在水底的時候，有可用的導管就能讓您獲得力量。	#
-howtoplay.conduits.text.2=導管是以鸚鵡螺殼和海洋之心製造而程。導管可以收集海磷石和海燈籠的力量。	#
+howtoplay.conduits.text.2=導管是以鸚鵡螺殼和海洋之心製造而成。導管可以收集海磷石和海燈籠的力量。	#
 howtoplay.conduits.header.1=建築	#
 howtoplay.conduits.text.3=啟用後，導管就會賦予任何在附近的東西導管力量。	#
 howtoplay.conduits.text.4=汲取的力量越多，能力的範圍就越廣。	#
@@ -2600,7 +2600,7 @@ howtoplay.transportation.text.3.gamepad=在望向礦車時按 :_input_key.use:�
 howtoplay.transportation.text.3.touch=在望向礦車時輕觸「搭乘」按鈕，即可進入並搭乘礦車。輕觸 :_input_key.forward: 可往前行駛，輕觸 :_input_key.jump: 則能離開礦車。	#
 howtoplay.transportation.header.2=小船	#
 howtoplay.transportation.text.4=小船可讓您在水上航行，只要在水方塊上放置小船就能出航。	#
-howtoplay.transportation.text.5.keyboard=在望向小船時按 :_input_key.use: 即可上傳。按 :_input_key.left: 或 :_input_key.right: 就能下船。按 :_input_key.forward: 可往前移動。按 :_input_key.jump: 或 :_input_key.sneak: 就能下船。	#
+howtoplay.transportation.text.5.keyboard=在望向小船時按 :_input_key.use: 即可上船。按 :_input_key.left: 或 :_input_key.right: 可向左或向右轉。按 :_input_key.forward: 可往前移動。按 :_input_key.jump: 或 :_input_key.sneak: 就能下船。	#
 howtoplay.transportation.text.5.gamepad=在視野朝向小船時按 :_input_key.use: 即可上船。往左或往右推動 :_gamepad_stick_left: 轉向，往前推動 :_gamepad_stick_left: 則可前進。按 :_input_key.jump: 或 :_input_key.sneak: 即可下船。	#
 howtoplay.transportation.text.5.touch=在小船附近輕觸「上船」按鈕即可上船。按 :_input_key.left: 或 :_input_key.right: 可向左或向右轉，同時按則能往前移動。輕觸「下船」按鈕就能下船。	#
 
@@ -4004,6 +4004,8 @@ multiplayer.info2=正在進行一些早期漏洞測試。	#
 multiplayer.ipinfo=請輸入伺服器的 IP：	#
 multiplayer.packErrors=至少有一項資源或行為模式包無法載入。	#
 multiplayer.packErrors.realms=至少有一項資源或行為模式包無法載入。請從 Realm 設定下載這個世界以了解錯誤的細節。	#
+multiplayer.player.inventory.recovered=物品欄已還原，並放置在您附近的寶箱中。	#
+multiplayer.player.inventory.failed=物品欄已還原。請尋找一個安全的地點，然後我們就會在下次您加入世界時放置在您附近的寶箱中。	#
 multiplayer.player.joined=%s 加入了遊戲	#
 multiplayer.player.joined.renamed=%s (之前是 %s) 加入遊戲	#
 multiplayer.player.joined.realms=%s 加入了 Realm	#
@@ -5258,16 +5260,10 @@ store.createdBy=作者：%s	#
 store.seeMoreBy=查看更多 %s 的作品	#
 store.fetchingItem=連接至商店……	#
  
-store.timer.daysAbbreviated=%s 天	#
-store.timer.hoursAbbreviated=%s 小時	#
-store.timer.minutesAbbreviated=%s 分鐘	#
-store.timer.secondsAbbreviated=%s 秒	#
-store.timer.left=剩餘 %s	#
-
-store.timer.daysAbbreviated=%s 天	#
-store.timer.hoursAbbreviated=%s 小時	#
-store.timer.minutesAbbreviated=%s 分鐘	#
-store.timer.secondsAbbreviated=%s 秒	#
+store.timer.daysAbbreviated=%s 天		### This is to let player know how many days are left in a sale. It needs to be abbreviated with no more than 3 characters
+store.timer.hoursAbbreviated=%s 小時		### This is to let player know how many days are left in a sale. It needs to be abbreviated with no more than 3 characters
+store.timer.minutesAbbreviated=%s 分鐘		### This is to let player know how many days are left in a sale. It needs to be abbreviated with no more than 3 characters
+store.timer.secondsAbbreviated=%s 秒		### This is to let player know how many days are left in a sale. It needs to be abbreviated with no more than 3 characters
 store.timer.left=剩餘 %s	#
 
 store.startMenu.sale=大拍賣！	#
@@ -5433,12 +5429,6 @@ store.suggestedOffers.defaultTitle=玩遊戲的有趣方式	#
 store.minecoin.notavailable=此 Minecraft 版本未開放錢幣購買。	#
 
 store.itemDetail.back=詳細資料	#
-
-store.sales.allByCreator=現正特賣中！	#
-store.sales.mashupsOnSale=混搭套件現正特賣中！	#
-store.sales.skinsOnSale=外觀現正特賣中！	#
-store.sales.texturesOnSale=材質套件現正特賣中！	#
-store.sales.worldsOnSale=世界現正特賣中！	#
 
 store.search.allResults=%d 筆搜尋結果	#
 store.search.dynamicPlaceHolderText=嘗試搜尋 %s！	#
