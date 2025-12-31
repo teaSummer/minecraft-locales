@@ -1108,6 +1108,7 @@ commands.generic.syntax=Invalid command syntax
 commands.generic.player.notFound=That player cannot be found
 commands.generic.notFound=Unknown command. Try /help for a list of commands
 commands.generic.num.invalid='%s' is not a valid number
+commands.generic.boolean.invalid='%s' is not true or false
 commands.generic.num.tooSmall=The number you have entered (%d) is too small, it must be at least %d
 commands.generic.num.tooBig=The number you have entered (%d) is too big, it must be at most %d
 commands.generic.double.tooSmall=The number you have entered (%.2f) is too small, it must be at least %.2f
@@ -1285,6 +1286,15 @@ commands.testfor.usage=/testfor <player>
 commands.testfor.failed=/testfor is only usable by commandblocks with analog output
 commands.seed.usage=/seed
 commands.seed.success=Seed: %s
+commands.spreadplayers.usage=/spreadplayers <x> <z> <spreadDistance> <maxRange> <respectTeams true|false> <player ...>
+commands.spreadplayers.spreading.teams=Spreading %s teams %s blocks around %s,%s (min %s blocks apart)
+commands.spreadplayers.spreading.players=Spreading %s players %s blocks around %s,%s (min %s blocks apart)
+commands.spreadplayers.success.teams=Successfully spread %s teams around %s,%s
+commands.spreadplayers.success.players=Successfully spread %s players around %s,%s
+commands.spreadplayers.info.teams=(Average distance between teams is %s blocks apart after %s iterations)
+commands.spreadplayers.info.players=(Average distance between players is %s blocks apart after %s iterations)
+commands.spreadplayers.failure.teams=Could not spread %s teams around %s,%s (too many players for space - try using spread of at most %s)
+commands.spreadplayers.failure.players=Could not spread %s players around %s,%s (too many players for space - try using spread of at most %s)
 
 itemGroup.buildingBlocks=Building Blocks
 itemGroup.decorations=Decoration Blocks
@@ -1338,6 +1348,7 @@ mco.configure.world.buttons.backup=Backup
 mco.configure.world.buttons.subscription=Subscription
 mco.configure.world.invite.profile.name=Name
 mco.configure.world.uninvite.question=Are you sure that you want to uninvite
+mco.configure.world.status=Status
 
 mco.configure.world.subscription.title=Subscription Info
 mco.configure.world.subscription.daysleft=Days Left
@@ -1347,6 +1358,7 @@ mco.configure.world.subscription.extend=Extend
 mco.create.world.location.title=Locations
 mco.create.world.location.warning=You may not get the exact location you select
 mco.create.world.wait=Creating the world...
+mco.create.world.seed=Seed (Optional)
 
 mco.reset.world.title=Reset World
 mco.reset.world.warning=This will permanently delete your world!
@@ -1365,6 +1377,11 @@ mco.create.world=Create
 mco.backup.title=Backups
 mco.backup.button.restore=Restore
 mco.backup.restoring=Restoring your world
+
+mco.template.title=World Templates
+mco.template.button.select=Select
+mco.template.default.name=Select Template (Optional)
+mco.template.name=Template
 
 build.tooHigh=Height limit for building is %s blocks
 
