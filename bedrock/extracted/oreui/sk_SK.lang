@@ -861,6 +861,10 @@ hbui.CreateNewWorld.resourcePacks.inactivePacksEmptyTitle=Zatiaľ nevlastníte �
 hbui.CreateNewWorld.resourcePacks.inactivePacksEmptyTitle.edu=Nemáte žiadne balíky zdrojov	#
 hbui.CreateNewWorld.resourcePacks.inactivePacksOnExpandAccordionHint=Prechodom nadol získate prístup k vlastným balíkom	#
 hbui.CreateNewWorld.resourcePacks.localPacksListHeader=Miestne	#
+hbui.CreateNewWorld.resourcePacks.marketPlacePassPacksAccordionHeader=Marketplace Pass	#
+hbui.CreateNewWorld.resourcePacks.marketPlacePassPromotionBody=Získajte prístup k viac ako 150 kúskom vzrušujúceho obsahu s novým predplatným Marketplace Pass! (Služba Realms Plus teraz zahŕňa obsah predplatného Marketplace Pass.)	#
+hbui.CreateNewWorld.resourcePacks.marketPlacePassPromotionButtonInputLegend=Marketplace Pass	#
+hbui.CreateNewWorld.resourcePacks.marketPlacePassPromotionTitle=Nemáte predplatné Marketplace Pass!	#
 hbui.CreateNewWorld.resourcePacks.missingDependencyBody=Tomuto balíku chýba minimálne jedna závislosť. Chcete ho aj tak použiť?	#
 hbui.CreateNewWorld.resourcePacks.missingDependencyNewBody=Tomuto balíku chýba minimálne jedna závislosť a jeho aktivácia môže narušiť hru	#
 hbui.CreateNewWorld.resourcePacks.missingDependencyTitle=Chýbajúce závislosti	#
@@ -872,19 +876,15 @@ hbui.CreateNewWorld.resourcePacks.narrationPackListItemWrapper=%1$s. Položka zo
 hbui.CreateNewWorld.resourcePacks.narrationPackRemoved=Odstránené	#
 hbui.CreateNewWorld.resourcePacks.packPriorityInfoMessage=Ak sa na rovnakom majetku zmenia viaceré balíčky, použijú sa zmeny z najvyššie hodnoteného balíčka.	#
 hbui.CreateNewWorld.resourcePacks.realmsPlusPacksAccordionHeader=Realms Plus	#
-hbui.CreateNewWorld.resourcePacks.realmsPlusPacksAccordionHeaderMPP=Marketplace Pass	#
 hbui.CreateNewWorld.resourcePacks.realmsPlusPacksAccordionHint=Rozbalením získate prístup k všetkým balíkom Realms Plus	#
 hbui.CreateNewWorld.resourcePacks.realmsPlusPacksEmptyBody=Prejdite na Trhovisko alebo online, aby ste našli balíčky a mohli hrať svoj svet iným spôsobom!	#
 hbui.CreateNewWorld.resourcePacks.realmsPlusPacksEmptyBody.edu=Balíky zdrojov, ktoré vytvoríte a nainštalujete, budú k dispozícii na aktivovanie a používanie vo vašich svetoch.	#
 hbui.CreateNewWorld.resourcePacks.realmsPlusPacksEmptyTitle=Žiadne dostupné balíky zdrojov	#
 hbui.CreateNewWorld.resourcePacks.realmsPlusPacksOnExpandAccordionHint=Prechodom nadol získate prístup k balíkom Realms	#
 hbui.CreateNewWorld.resourcePacks.realmsPlusPromotionBody=Hľadáte ďalšie dobrodružstvo? Realms Plus vám poskytne prístup ku kompletnej zbierke viac ako 100 vzrušujúcich balíčkov, ku ktorým každý mesiac pribúda nový obsah.	#
-hbui.CreateNewWorld.resourcePacks.realmsPlusPromotionBodyMPP=Získajte prístup k viac ako 150 kúskom vzrušujúceho obsahu s novým predplatným Marketplace Pass! (Služba Realms Plus teraz zahŕňa obsah predplatného Marketplace Pass.)	#
 hbui.CreateNewWorld.resourcePacks.realmsPlusPromotionButtonInputLegend=Realms Plus	#
-hbui.CreateNewWorld.resourcePacks.realmsPlusPromotionButtonInputLegendMPP=Marketplace Pass	#
 hbui.CreateNewWorld.resourcePacks.realmsPlusPromotionButtonLabel=Ďalšie informácie	#
 hbui.CreateNewWorld.resourcePacks.realmsPlusPromotionTitle=Nemáte predplatné Realms Plus!	#
-hbui.CreateNewWorld.resourcePacks.realmsPlusPromotionTitleMPP=Nemáte predplatné Marketplace Pass!	#
 hbui.CreateNewWorld.resourcePacks.removeNarration=Odstránené	#
 hbui.CreateNewWorld.resourcePacks.sharedPacksActivatingGlobalPacks=Hráči musia prevziať všetky aktívne balíky, aby sa mohli pripojiť	#
 hbui.CreateNewWorld.resourcePacks.sharedPacksDeactivatingGlobalPacks=S týmto nastavením sú deaktivované globálne balíčky	#
@@ -1091,6 +1091,7 @@ hbui.gameplay.DeathScreen.respawnInputLegend=Objaviť sa znova	#
 hbui.gameplay.DeathScreen.select=Vybrať	#
 hbui.gameplay.DeathScreen.youDied=Zomreli ste!	#
 hbui.GuidedCreateWorldRoute.title=Riadená tvorba sveta	#
+hbui.HeroItem.role=Textový blok	#
 hbui.InboxListItem.accept=Prijať	#
 hbui.InboxListItem.delete=Odstrániť	#
 hbui.InboxListItem.go=Prejsť	#
@@ -1361,8 +1362,6 @@ hbui.PlayerCard.muted=Stlmené	#
 hbui.PlayerCard.offline=Offline	#
 hbui.PlayerCard.online=Online	#
 hbui.PlayerCard.optionsButton=Možnosti konta	#
-hbui.PlayerListRoute.headerFollowers=Sledovatelia	#
-hbui.PlayerListRoute.headerFriends=Priatelia	#
 hbui.PlayerOptionsModal.appearOffline=Zobrazený ako offline	#
 hbui.PlayerOptionsModal.block=Blokovať	#
 hbui.PlayerOptionsModal.manageAccount=Spravovať konto	#
@@ -1502,6 +1501,10 @@ hbui.PlayScreen.serverTab.externalServerDetails.name=Názov servera	#
 hbui.PlayScreen.serverTab.externalServerDetails.port=Port servera	#
 hbui.PlayScreen.serverTab.featuredServer=Odporúčané (%1$s)	#
 hbui.PlayScreen.serverTab.joinServerErrorModal.cancel=Zavrieť	#
+hbui.PlayScreen.serverTab.joinServerErrorModal.NoInternetError.message=Momentálne nie ste pripojení k internetu. Ak chcete hrať na serveroch, znova sa pripojte.	#
+hbui.PlayScreen.serverTab.joinServerErrorModal.NoInternetError.title=Žiadny internet	#
+hbui.PlayScreen.serverTab.joinServerErrorModal.ThirdPartyBadIPError.message=Adresa servera nemá správny formát. Uistite sa, že ste ju zadali správne, a skúste to znova.	#
+hbui.PlayScreen.serverTab.joinServerErrorModal.ThirdPartyBadIPError.title=Nesprávna adresa servera	#
 hbui.PlayScreen.serverTab.joinServerErrorModal.UnknownError.message=Skúste to znova neskôr.	#
 hbui.PlayScreen.serverTab.joinServerErrorModal.UnknownError.title=Vyskytla sa chyba	#
 hbui.PlayScreen.serverTab.joinServerModal.back=Naspäť	#
@@ -1593,6 +1596,15 @@ hbui.PlayScreen.worldMissingEntitlementModal.close=Zavrieť	#
 hbui.PlayScreen.worldMissingEntitlementModal.doNotShowAgain=Nabudúce nezobrazovať	#
 hbui.PlayScreen.worldMissingEntitlementModal.goBackButtonText=Naspäť	#
 hbui.PlayScreen.worldMissingEntitlementModal.title=Svety (%1$s) boli skryté	#
+hbui.PlayScreen.worldsByCreatorsNotAvailable.close=Zavrieť	#
+hbui.PlayScreen.worldsByCreatorsNotAvailable.select=Vybrať	#
+hbui.PlayScreen.worldsByCreatorsNotAvailable.signIn=Prihláste sa alebo sa zaregistrujte	#
+hbui.PlayScreen.worldsByCreatorsNotAvailable.text=Ak chcete získať prístup k službe Svety od tvorcov, budete sa musieť prihlásiť alebo si vytvoriť účet.	#
+hbui.PlayScreen.worldsByCreatorsNotAvailable.title=Prihláste sa	#
+hbui.PlayScreen.worldsByCreatorsNotAvailableInPreview.close=Zavrieť	#
+hbui.PlayScreen.worldsByCreatorsNotAvailableInPreview.select=Vybrať	#
+hbui.PlayScreen.worldsByCreatorsNotAvailableInPreview.text=Služba Svety od tvorcov je k dispozícii iba vo vydanej verzii hry Minecraft.	#
+hbui.PlayScreen.worldsByCreatorsNotAvailableInPreview.title=Nie je k dispozícii	#
 hbui.PrivacyAndOnlineSafetyModal.buttonAction=Otvoriť webovú lokalitu Realms bezpečnosti	#
 hbui.PrivacyAndOnlineSafetyModal.clubPermissionMessage=Povoliť vytváranie klubov a vstupovanie do nich	#
 hbui.PrivacyAndOnlineSafetyModal.externalLinkText=Pomôžte mi opraviť to	#
@@ -1612,6 +1624,9 @@ hbui.PrivacyAndOnlineSafetySuccessModal.header=Povolenia sú aktivované!	#
 hbui.ProfanityWarningModalRoute.body=Zadaný text obsahuje slová, ktoré môžu iní považovať za urážlivé, a preto ho nemožno použiť. Skúste to znova.	#
 hbui.ProfanityWarningModalRoute.close=Zavrieť	#
 hbui.ProfanityWarningModalRoute.title=Filter nadávok	#
+hbui.ProfileFollowersListRoute.header=Sledovatelia	#
+hbui.ProfileFriendsListRoute.headerOther=Priatelia hráča %1$s	#
+hbui.ProfileFriendsListRoute.headerSelf=Priatelia	#
 hbui.ProfileRoute.achievementsInputLegend=Zobraziť dosiahnuté výsledky	#
 hbui.ProfileRoute.achievementsItemLabel=Dosiahnuté výsledky	#
 hbui.ProfileRoute.achievementsNarration=Dosiahnuté výsledky %1$s z %2$s	#
@@ -1646,6 +1661,8 @@ hbui.ProfileRoute.statsTabButtonLabel=Štatistiky	#
 hbui.ProfileRoute.suggestedAchievementsListLabel=Navrhované ďalšie úspechy	#
 hbui.ProfileRoute.tabNarration=%1$s, karta %2$s z %3$s	#
 hbui.ProgressSpinnerModal.title=Načítava sa	#
+hbui.PromoListItem.enumeration=%1$s z %2$s	#
+hbui.PromoListItem.role=Textový blok	#
 hbui.QuickWorldCreationRoute.Difficulty.createInputLegend=Vytvoriť	#
 hbui.QuickWorldCreationRoute.Difficulty.easyDescription=Nepriateľské tvory sa síce objavujú, ale spôsobujú menšie škody.	#
 hbui.QuickWorldCreationRoute.Difficulty.easyTitle=Jednoduchá	#
@@ -1718,7 +1735,72 @@ hbui.RealmsNewStoryRoute.removeScreenshotImage=Odstrániť snímku obrazovky	#
 hbui.RealmsNewStoryRoute.selectScreenshot=Vybrať snímku obrazovky	#
 hbui.RealmsNewStoryRoute.selectScreenshotOptional=Vyberte snímku obrazovky (voliteľné)	#
 hbui.RealmsNewStoryRoute.textBoxPlaceholder=Napíšte svoj príbeh...	#
-hbui.RealmsPDPScreen.title=Vyberte si plán	#
+hbui.RealmsPDPFAQAccordion.clickToExpand=Kliknutím rozbaľte	#
+hbui.RealmsPDPFAQAccordion.enumeration=%1$s z %2$s	#
+hbui.RealmsPDPFAQAccordion.textBlock=Textový blok	#
+hbui.RealmsPDPScreen.FAQ.Cost.description1=Môžete sa prihlásiť na odber služby Realms:  	#### {StrContains="Realms"}
+hbui.RealmsPDPScreen.FAQ.Cost.description2=Plán Realms Core: %1$s mesačne. Pridajte nekonečné množstvo členov a hrajte online s 2 ďalšími hráčmi súčasne.   	#### {StrContains="Realms"}
+hbui.RealmsPDPScreen.FAQ.Cost.description3=Plán Realms Plus: %1$s mesačne. Pridajte nekonečné množstvo členov a hrajte online s ďalšími 10 hráčmi súčasne. Okrem toho si môžete zadarmo užiť viac ako 150 kusov obsahu z Trhoviska z katalógu Marketplace Pass.   	#### {StrContains="Realms"}
+hbui.RealmsPDPScreen.FAQ.Cost.title=Koľko stojí predplatné Realm? 	#### {StrContains="Realm"}
+hbui.RealmsPDPScreen.FAQ.Expiry.description=Vaše svety vám zostanú. Po uplynutí platnosti predplatného máte 18 mesiacov na ich stiahnutie do zariadenia. Ak sa v tomto čase znova prihlásite na odber, získate znova prístup k svojmu serveru Realm tak, ako ste ho opustili.   	#### {StrContains="Realm"}
+hbui.RealmsPDPScreen.FAQ.Expiry.title=Čo sa stane so svetmi na mojom serveri Realm po uplynutí platnosti predplatného?  	#### {StrContains="Realm"}
+hbui.RealmsPDPScreen.FAQ.Friends.description=Ľudia, ktorých pozvete (členovia), si nemusia kupovať predplatné Realms, aby mohli hrať na vašom serveri Realm. Môžete pozvať ktoréhokoľvek hráča hry Minecraft, aby sa pripojil a hral na vašom serveri Realm zadarmo.    	#### {StrContains="Realms"} {StrContains="Realm"}
+hbui.RealmsPDPScreen.FAQ.Friends.title=Musia si moji priatelia kúpiť predplatné Realms, aby mohli hrať na mojom serveri Realm?    	#### {StrContains="Realms"} {StrContains="Realm"}
+hbui.RealmsPDPScreen.FAQ.header=Najčastejšie otázky	#
+hbui.RealmsPDPScreen.FAQ.HowMany.description=Na svojom serveri Realm si môžete naraz uložiť až 3 svety. Aktivujte ktorýkoľvek z nich, aby ste v ňom mohli hrať. Naraz je možné hrať iba v jednom svete.    	#### {StrContains="Realm"}
+hbui.RealmsPDPScreen.FAQ.HowMany.title=Koľko svetov môžem mať na serveri Realm?  	#### {StrContains="Realm"}
+hbui.RealmsPDPScreen.FAQ.PersonalServer.description=Váš svet sme umiestnili do superpočítača s obrovskou rýchlosťou a výkonom. Počítač udržiavame neustále v prevádzke, takže môžete hrať v tomto svete, kedykoľvek budete vy a vaši priatelia chcieť. Chránime váš svet pred poškodením tým, že ho neustále automaticky ukladáme. Vy rozhodujete, kto sa pripojí k svetu. Ako v ňom budete hrať, je len na vás (server urobí všetku ťažkú prácu).	#
+hbui.RealmsPDPScreen.FAQ.PersonalServer.title=Čo je to osobný server?	#
+hbui.RealmsPDPScreen.FAQ.Realms.description=Realms sú malé osobné servery na hosťovanie vášho sveta Minecraft. Na rozdiel od bežnej relácie pre viacerých hráčov je Realm vždy online, takže nemusíte byť pri tom, keď sa tam vaši priatelia chcú hrať. Na rozdiel od veľkého verejného servera hry Minecraft prístup do servera Realms je iba na pozvanie, takže vy rozhodujete o tom, kto sa doň dostane.  	#### {StrContains="Realms"}
+hbui.RealmsPDPScreen.FAQ.Realms.title=Čo sú Realms?  	#### {StrContains="Realms"}
+hbui.RealmsPDPScreen.hero.content.header=Získajte ďalší obsah s Realms Plus    	#### {StrContains="Realms"}
+hbui.RealmsPDPScreen.hero.content.text=Realms Plus zahŕňa predplatné Marketplace Pass: viac ako dve 64-stohové zásobníky obsahu Trhoviska, ktoré sa aktualizujú mesačne. S textúrami, položkami pre Tvorcu postavy, svetmi, textúrami a mash-up balíkmi môžete vždy vyskúšať niečo nové.  	#### {MaxLength="250"} {StrContains="Realms"}
+hbui.RealmsPDPScreen.hero.content.title=Prístup k viac ako 150 balíkom z Trhoviska    	#### {MaxLength="56"}
+hbui.RealmsPDPScreen.hero.perks.header=Ďalšie výhody zahrnuté v službe Realms    	#### {StrContains="Realms"}
+hbui.RealmsPDPScreen.hero.perks.text=Podeľte sa o svoje dobrodružstvá v informačnom kanáli príbehov, sledujte, ako sa váš server Realm rozrastá na karte Členovia a zistite, kedy ľudia hrajú v ríši Realm s Časovou osou.    	#### {MaxLength="250"} {StrContains="Realm"}
+hbui.RealmsPDPScreen.hero.perks.title=Socializujte sa s Príbehmi Realms    	#### {MaxLength="56"} {StrContains="Realms"}
+hbui.RealmsPDPScreen.promos.easy.description=Nie sú potrebné technické znalosti. Bezplatné a bezproblémové zálohovanie. Žiadne zdieľanie osobných údajov.	#
+hbui.RealmsPDPScreen.promos.easy.title=Jednoduché a bezpečné	#
+hbui.RealmsPDPScreen.promos.free.description=Ľudia, ktorých pozvete, sa stanú členmi ríše Realm. Nemusia platiť za pripojenie sa a hranie v ríši Realm. Potrebujú len hru Minecraft: Bedrock. 	#### {StrContains="Realm"}
+hbui.RealmsPDPScreen.promos.free.title=Členovia hrajú zadarmo	#
+hbui.RealmsPDPScreen.promos.header=Čo sú Realms? 	#### {StrContains="Realms"}
+hbui.RealmsPDPScreen.promos.persistent.description=Svety nahrané na váš server Realm sú vždy k dispozícii vám a pozvaným členom servera Realm kedykoľvek a na akomkoľvek zariadení. Členovia môžu hrať, aj keď ste preč.   	#### {StrContains="Realm"}
+hbui.RealmsPDPScreen.promos.persistent.title=Trvalé svety pre viacerých hráčov	#
+hbui.RealmsPDPScreen.splash.buyNow=Kúpiť  	#### {MaxLength="20"}
+hbui.RealmsPDPScreen.splash.text=Prevádzkujte vlastný server hry Minecraft! Vy nastavujete pravidlá: kto sa môže pripojiť a ako hrať. Členovia hrajú zdarma, aj keď ste offline. Jednoduché nastavenie, správa a prístup odkiaľkoľvek.   	#### {MaxLength="200"}
+hbui.RealmsPDPScreen.splash.title=Vlastný server, vždy online    	#### {MaxLength="50"}
+hbui.RealmsPDPScreen.splash.tryFree=Vyskúšať zadarmo    	#### {MaxLength="20"}
+hbui.RealmsPDPScreen.title=Minecraft Realms 	#### {StrContains="Realms"}
+hbui.RealmsPlanPickerScreen.buyButton=Kúpiť	#
+hbui.RealmsPlanPickerScreen.buyRealmsPlusButtonTrial=Bezplatná skúšobná verzia	#
+hbui.RealmsPlanPickerScreen.currency=$	#
+hbui.RealmsPlanPickerScreen.error.body=Skontrolujte, či ste prihlásení do hry Minecraft aj obchodu platformy vášho zariadenia s rovnakým účtom, a skúste to znova.	#
+hbui.RealmsPlanPickerScreen.error.button=Skúsiť znova	#
+hbui.RealmsPlanPickerScreen.error.title=Nepodarilo sa získať prístup k obchodu s platformami	#
+hbui.RealmsPlanPickerScreen.featureLine0=Vy + 2 priatelia	#
+hbui.RealmsPlanPickerScreen.featureLine0Narration=Vy a 2 priatelia	#
+hbui.RealmsPlanPickerScreen.featureLine0Plus=Vy	#
+hbui.RealmsPlanPickerScreen.featureLine0PlusNarration=Vy a 10 priateľov	#
+hbui.RealmsPlanPickerScreen.featureLine0PlusNum=+ 10 priateľov	#
+hbui.RealmsPlanPickerScreen.featureLine1=3 sloty na svety	#
+hbui.RealmsPlanPickerScreen.featureLine2=Server je k dispozícii nepretržite	#
+hbui.RealmsPlanPickerScreen.featureLine2Narration=Server k dispozícii 24 7	#
+hbui.RealmsPlanPickerScreen.featureLine3=Členovia hrajú zadarmo	#
+hbui.RealmsPlanPickerScreen.featureLine4=Hra na rôznych platformách	#
+hbui.RealmsPlanPickerScreen.featureLine5=Automatické bezplatné zálohovanie	#
+hbui.RealmsPlanPickerScreen.featureLine5Narration=Automatické bezplatné zálohovanie	#
+hbui.RealmsPlanPickerScreen.featureLine6=Príbehy Realms	#### {StrContains="Realms"}
+hbui.RealmsPlanPickerScreen.featureLine7=Bezplatná 30-dňová skúšobná verzia	#
+hbui.RealmsPlanPickerScreen.featureLine8=Zahŕňa predplatné Marketplace Pass	#
+hbui.RealmsPlanPickerScreen.featureNarrationCore=Realms podrobnosti základného balíka. Textový blok				#### {StrContains="Realms"}
+hbui.RealmsPlanPickerScreen.featureNarrationPlus=Realms plus podrobnosti o balení. Textový blok				#### {StrContains="Realms"}
+hbui.RealmsPlanPickerScreen.planCoreCardNarration=Vertikálny panel. Skupina. Základné %1$s za mesiac	#
+hbui.RealmsPlanPickerScreen.planRealmsPlusCardNarration=Vertikálny panel. Skupina. Plus %1$s mesačne	#
+hbui.RealmsPlanPickerScreen.priceCore=Core	#
+hbui.RealmsPlanPickerScreen.priceMonthly=mesiac	#
+hbui.RealmsPlanPickerScreen.pricePlus=Plus	#
+hbui.RealmsPlanPickerScreen.title=Vyberte si plán	#
+hbui.RealmsPlanPickerScreen.titleNarrationHint=Vyberte si z dvoch plánov	#
 hbui.RealmsPreviews.create.cancel.beta=Nie, nevytvoriť beta verziu ríše.	#
 hbui.RealmsPreviews.create.cancel.preview=Nie, nevytvoriť ukážku ríše.	#
 hbui.RealmsPreviews.create.message.beta=Chystáte sa vytvoriť bezplatnú beta verziu ríše, ktorá bude spárovaná s vaším plateným predplatným služby Realms. Táto nová beta verzia ríše bude prístupná, kým bude aktívne platené predplatné. Na vašu platenú službu Realms to nebude mať vplyv.	#
@@ -2107,6 +2189,8 @@ hbui.SignInWorldsFriendsServersRoute.signInList3=Pripojte sa k stovkám ďalší
 hbui.SignInWorldsFriendsServersRoute.signInList3PS=Pripojte sa k stovkám ďalších hráčov na serveri s jedinečnými funkciami	#
 hbui.SignInWorldsFriendsServersRoute.signInList4=Získajte prístup k obsahu Trhoviska a postavám na viacerých platformách	#
 hbui.SignInWorldsFriendsServersRoute.signInPrompt=Prihláste sa so svojím kontom Microsoft a odomknite rôzne funkcie vrátane:	#
+hbui.Splash.role=Textový blok	#
+hbui.Splash.select=Vybrať	#
 hbui.StatListItem.compareNarration=%1$s proti %2$s	#
 hbui.StatListItem.itemNarration=%1$s z %2$s	#
 hbui.StorageIndicator.bytes=%1$s bajtov	#

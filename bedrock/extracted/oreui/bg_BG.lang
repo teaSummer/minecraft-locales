@@ -861,6 +861,10 @@ hbui.CreateNewWorld.resourcePacks.inactivePacksEmptyTitle=Все още не п�
 hbui.CreateNewWorld.resourcePacks.inactivePacksEmptyTitle.edu=Нямате пакети с ресурси	#
 hbui.CreateNewWorld.resourcePacks.inactivePacksOnExpandAccordionHint=Навигирайте надолу, за да получите достъп до пакетите, които притежавате	#
 hbui.CreateNewWorld.resourcePacks.localPacksListHeader=Локална	#
+hbui.CreateNewWorld.resourcePacks.marketPlacePassPacksAccordionHeader=Marketplace Pass	#
+hbui.CreateNewWorld.resourcePacks.marketPlacePassPromotionBody=Получете достъп до над 150 вълнуващи неща с новия абонамент за Marketplace Pass! (Realms Plus вече включва съдържанието на Marketplace Pass)	#
+hbui.CreateNewWorld.resourcePacks.marketPlacePassPromotionButtonInputLegend=Marketplace Pass	#
+hbui.CreateNewWorld.resourcePacks.marketPlacePassPromotionTitle=Нямате абонамент за Marketplace Pass!	#
 hbui.CreateNewWorld.resourcePacks.missingDependencyBody=За този пакет липсва една или повече зависимости. Искате ли да го приложите въпреки това?	#
 hbui.CreateNewWorld.resourcePacks.missingDependencyNewBody=В този пакет липсват една или повече зависимости и активирането му може да наруши изживяването ви	#
 hbui.CreateNewWorld.resourcePacks.missingDependencyTitle=Липсващи зависимости	#
@@ -872,19 +876,15 @@ hbui.CreateNewWorld.resourcePacks.narrationPackListItemWrapper=%1$s. Елеме�
 hbui.CreateNewWorld.resourcePacks.narrationPackRemoved=Премахнат	#
 hbui.CreateNewWorld.resourcePacks.packPriorityInfoMessage=Ако няколко пакета направят промени в един и същи ресурс, ще бъдат приложени промените от пакета с най-висок ранг.	#
 hbui.CreateNewWorld.resourcePacks.realmsPlusPacksAccordionHeader=Realms Plus	#
-hbui.CreateNewWorld.resourcePacks.realmsPlusPacksAccordionHeaderMPP=Marketplace Pass	#
 hbui.CreateNewWorld.resourcePacks.realmsPlusPacksAccordionHint=Разширете, за да получите достъп до всички пакети на Realms Plus	#
 hbui.CreateNewWorld.resourcePacks.realmsPlusPacksEmptyBody=Отидете на пазара или онлайн, за да намерите пакети, с които да играете в своя свят по различен начин!	#
 hbui.CreateNewWorld.resourcePacks.realmsPlusPacksEmptyBody.edu=Пакетите с ресурси, които създавате и инсталирате, ще бъдат достъпни тук, за да ги активирате и използвате в световете си	#
 hbui.CreateNewWorld.resourcePacks.realmsPlusPacksEmptyTitle=Няма повече налични пакети с ресурси	#
 hbui.CreateNewWorld.resourcePacks.realmsPlusPacksOnExpandAccordionHint=Навигирайте надолу, за да получите достъп до пакетите с обители	#
 hbui.CreateNewWorld.resourcePacks.realmsPlusPromotionBody=Търсите следващото си приключение ли? Realms Plus ви дава достъп до подбрана колекция от над 100 вълнуващи пакета, където всеки месец се добавя ново съдържание!	#
-hbui.CreateNewWorld.resourcePacks.realmsPlusPromotionBodyMPP=Получете достъп до над 150 вълнуващи неща с новия абонамент за Marketplace Pass! (Realms Plus вече включва съдържанието на Marketplace Pass)	#
 hbui.CreateNewWorld.resourcePacks.realmsPlusPromotionButtonInputLegend=Realms Plus	#
-hbui.CreateNewWorld.resourcePacks.realmsPlusPromotionButtonInputLegendMPP=Marketplace Pass	#
 hbui.CreateNewWorld.resourcePacks.realmsPlusPromotionButtonLabel=Научете повече	#
 hbui.CreateNewWorld.resourcePacks.realmsPlusPromotionTitle=Нямате абонамент за Realms Plus!	#
-hbui.CreateNewWorld.resourcePacks.realmsPlusPromotionTitleMPP=Нямате абонамент за Marketplace Pass!	#
 hbui.CreateNewWorld.resourcePacks.removeNarration=Премахнато	#
 hbui.CreateNewWorld.resourcePacks.sharedPacksActivatingGlobalPacks=Играчите трябва да изтеглят всички активни пакети, за да се присъединят	#
 hbui.CreateNewWorld.resourcePacks.sharedPacksDeactivatingGlobalPacks=Глобалните пакети се деактивират с тази настройка	#
@@ -1091,6 +1091,7 @@ hbui.gameplay.DeathScreen.respawnInputLegend=Повторно появяване
 hbui.gameplay.DeathScreen.select=Избор	#
 hbui.gameplay.DeathScreen.youDied=Умряхте!	#
 hbui.GuidedCreateWorldRoute.title=Създаване на свят с помощ	#
+hbui.HeroItem.role=Текстов блок	#
 hbui.InboxListItem.accept=Приемане	#
 hbui.InboxListItem.delete=Изтриване	#
 hbui.InboxListItem.go=Напред	#
@@ -1361,8 +1362,6 @@ hbui.PlayerCard.muted=Без звук	#
 hbui.PlayerCard.offline=Офлайн	#
 hbui.PlayerCard.online=Онлайн	#
 hbui.PlayerCard.optionsButton=Опции на акаунта	#
-hbui.PlayerListRoute.headerFollowers=Последователи	#
-hbui.PlayerListRoute.headerFriends=Приятели	#
 hbui.PlayerOptionsModal.appearOffline=Показване като офлайн	#
 hbui.PlayerOptionsModal.block=Блокиране	#
 hbui.PlayerOptionsModal.manageAccount=Управление на акаунта	#
@@ -1502,6 +1501,10 @@ hbui.PlayScreen.serverTab.externalServerDetails.name=Име на сървъра	
 hbui.PlayScreen.serverTab.externalServerDetails.port=Порт на сървъра	#
 hbui.PlayScreen.serverTab.featuredServer=Представен (%1$s)	#
 hbui.PlayScreen.serverTab.joinServerErrorModal.cancel=Затваряне	#
+hbui.PlayScreen.serverTab.joinServerErrorModal.NoInternetError.message=В момента не сте свързани с интернет. Свържете се отново, за да играете на сървърите.	#
+hbui.PlayScreen.serverTab.joinServerErrorModal.NoInternetError.title=Няма интернет	#
+hbui.PlayScreen.serverTab.joinServerErrorModal.ThirdPartyBadIPError.message=Адресът на сървъра не е форматиран правилно. Уверете се, че сте го въвели правилно, и опитайте отново.	#
+hbui.PlayScreen.serverTab.joinServerErrorModal.ThirdPartyBadIPError.title=Неправилен адрес на сървъра	#
 hbui.PlayScreen.serverTab.joinServerErrorModal.UnknownError.message=Моля, опитайте отново по-късно.	#
 hbui.PlayScreen.serverTab.joinServerErrorModal.UnknownError.title=Възникна грешка	#
 hbui.PlayScreen.serverTab.joinServerModal.back=Назад	#
@@ -1593,6 +1596,15 @@ hbui.PlayScreen.worldMissingEntitlementModal.close=Затваряне	#
 hbui.PlayScreen.worldMissingEntitlementModal.doNotShowAgain=Да не се показва повече	#
 hbui.PlayScreen.worldMissingEntitlementModal.goBackButtonText=Връщане назад	#
 hbui.PlayScreen.worldMissingEntitlementModal.title=%1$s свят(а) са скрити	#
+hbui.PlayScreen.worldsByCreatorsNotAvailable.close=Затваряне	#
+hbui.PlayScreen.worldsByCreatorsNotAvailable.select=Избор	#
+hbui.PlayScreen.worldsByCreatorsNotAvailable.signIn=Влезте или се регистрирайте	#
+hbui.PlayScreen.worldsByCreatorsNotAvailable.text=Трябва да влезете или да си създадете акаунт, за да получите достъп до световете от създатели.	#
+hbui.PlayScreen.worldsByCreatorsNotAvailable.title=Моля, влезте	#
+hbui.PlayScreen.worldsByCreatorsNotAvailableInPreview.close=Затваряне	#
+hbui.PlayScreen.worldsByCreatorsNotAvailableInPreview.select=Избор	#
+hbui.PlayScreen.worldsByCreatorsNotAvailableInPreview.text=Световете от създателите са достъпни само в публикуваната версия на Minecraft.	#
+hbui.PlayScreen.worldsByCreatorsNotAvailableInPreview.title=Не е достъпно	#
 hbui.PrivacyAndOnlineSafetyModal.buttonAction=Отваряне на сайта за безопасност на Realms	#
 hbui.PrivacyAndOnlineSafetyModal.clubPermissionMessage=Разрешено за „Можете да създавате и да се присъединявате към клубове“	#
 hbui.PrivacyAndOnlineSafetyModal.externalLinkText=Помогнете ми да оправя това	#
@@ -1612,6 +1624,9 @@ hbui.PrivacyAndOnlineSafetySuccessModal.header=Разрешенията са в�
 hbui.ProfanityWarningModalRoute.body=Текстът, който въведохте, съдържа думи, които други биха могли да намерят за обидни, и не може да се използват. Опитайте отново.	#
 hbui.ProfanityWarningModalRoute.close=Затваряне	#
 hbui.ProfanityWarningModalRoute.title=Филтър за вулгарности	#
+hbui.ProfileFollowersListRoute.header=Последователи	#
+hbui.ProfileFriendsListRoute.headerOther=Приятелите на %1$s	#
+hbui.ProfileFriendsListRoute.headerSelf=Приятели	#
 hbui.ProfileRoute.achievementsInputLegend=Преглед на постиженията	#
 hbui.ProfileRoute.achievementsItemLabel=Постижения	#
 hbui.ProfileRoute.achievementsNarration=Постижения %1$s от %2$s	#
@@ -1646,6 +1661,8 @@ hbui.ProfileRoute.statsTabButtonLabel=Статистика	#
 hbui.ProfileRoute.suggestedAchievementsListLabel=Предложени следващи постижения	#
 hbui.ProfileRoute.tabNarration=%1$s, раздел %2$s от %3$s	#
 hbui.ProgressSpinnerModal.title=Зареждане	#
+hbui.PromoListItem.enumeration=%1$s от %2$s	#
+hbui.PromoListItem.role=Текстов блок	#
 hbui.QuickWorldCreationRoute.Difficulty.createInputLegend=Създаване	#
 hbui.QuickWorldCreationRoute.Difficulty.easyDescription=Враждебните мобове се появяват, но нанасят по-малко щети.	#
 hbui.QuickWorldCreationRoute.Difficulty.easyTitle=Лесна	#
@@ -1718,7 +1735,72 @@ hbui.RealmsNewStoryRoute.removeScreenshotImage=Премахване на изо�
 hbui.RealmsNewStoryRoute.selectScreenshot=Избор на екранната снимка	#
 hbui.RealmsNewStoryRoute.selectScreenshotOptional=Избор на екранната снимка (по желание)	#
 hbui.RealmsNewStoryRoute.textBoxPlaceholder=Напишете историята си...	#
-hbui.RealmsPDPScreen.title=Изберете плана си	#
+hbui.RealmsPDPFAQAccordion.clickToExpand=Щракнете, за да разгънете	#
+hbui.RealmsPDPFAQAccordion.enumeration=%1$s от %2$s	#
+hbui.RealmsPDPFAQAccordion.textBlock=Текстов блок	#
+hbui.RealmsPDPScreen.FAQ.Cost.description1=Можете да се абонирате за план за Realms:  	#### {StrContains="Realms"}
+hbui.RealmsPDPScreen.FAQ.Cost.description2=План Realms Core: %1$s на месец. Добавяйте неограничен брой членове, играйте онлайн с двама други играчи едновременно.   	#### {StrContains="Realms"}
+hbui.RealmsPDPScreen.FAQ.Cost.description3=План Realms Plus: %1$s на месец. Добавяйте неограничен брой членове, играйте онлайн с десетима други играчи едновременно. Освен това се насладете и на над 150 пакета съдържание от пазара с каталога на Marketplace Pass безплатно.   	#### {StrContains="Realms"}
+hbui.RealmsPDPScreen.FAQ.Cost.title=Колко струва един Realm? 	#### {StrContains="Realm"}
+hbui.RealmsPDPScreen.FAQ.Expiry.description=Световете ви си остават ваши. След като абонаментът ви изтече, имате 18 месеца да ги изтеглите на устройството си. Ако се абонирате отново в рамките на този срок, пак ще получите достъп до своя Realm – такъв, какъвто сте го оставили.   	#### {StrContains="Realm"}
+hbui.RealmsPDPScreen.FAQ.Expiry.title=Какво се случва със световете в моя Realm, когато абонаментът ми изтече?  	#### {StrContains="Realm"}
+hbui.RealmsPDPScreen.FAQ.Friends.description=Хората, които каните (членовете), няма нужда да си купуват абонамент за Realms, за да играят във вашия Realm. Можете да поканите всеки играч на Minecraft да се присъедини и да играе безплатно във вашия Realm.    	#### {StrContains="Realms"} {StrContains="Realm"}
+hbui.RealmsPDPScreen.FAQ.Friends.title=Приятелите ми трябва ли да закупят абонамент за Realms, за да играят в моя Realm?    	#### {StrContains="Realms"} {StrContains="Realm"}
+hbui.RealmsPDPScreen.FAQ.header=Често задавани въпроси	#
+hbui.RealmsPDPScreen.FAQ.HowMany.description=Можете да съхранявате до 3 свята в своя Realm. Активирайте някой от тях, за да можете да играете в него. В даден момент може да се играе само на един свят.    	#### {StrContains="Realm"}
+hbui.RealmsPDPScreen.FAQ.HowMany.title=Колко свята мога да имам в своя Realm?  	#### {StrContains="Realm"}
+hbui.RealmsPDPScreen.FAQ.PersonalServer.description=Поставихме вашия свят на суперкомпютър с огромни скорост и мощност. Държим компютъра включен постоянно, за да можете да играете в този свят с приятелите си, когато пожелаете. Защитаваме света ви от повреди, като го запазваме автоматично през цялото време. Вие контролирате кой се свързва със света. Вие решавате как ще играете на него. (Сървърът ще свърши трудната работа)	#
+hbui.RealmsPDPScreen.FAQ.PersonalServer.title=Какво е личен сървър?	#
+hbui.RealmsPDPScreen.FAQ.Realms.description=Realms са малки лични сървъри, на които можете да държите света си в Minecraft. За разлика от обикновените групови игри, Realms са винаги онлайн, така че не е нужно да сте на линия, за да могат приятелите ви да играят. За разлика от големия публичен сървър на Minecraft, Realms работят само с покани, така че вие контролирате кой ще влезе.  	#### {StrContains="Realms"}
+hbui.RealmsPDPScreen.FAQ.Realms.title=Какво са Realms?  	#### {StrContains="Realms"}
+hbui.RealmsPDPScreen.hero.content.header=Получете допълнително съдържание с Realms Plus    	#### {StrContains="Realms"}
+hbui.RealmsPDPScreen.hero.content.text=Абонаментите Realms Plus включват Marketplace Pass – повече от два пакета с 64 броя съдържание от пазара, което се актуализира ежемесечно. Скинове, предмети за създателя на персонажи, светове, текстури и пакети с гости – винаги има нещо ново.  	#### {MaxLength="250"} {StrContains="Realms"}
+hbui.RealmsPDPScreen.hero.content.title=Достъп до над 150 пакета на пазара    	#### {MaxLength="56"}
+hbui.RealmsPDPScreen.hero.perks.header=Допълнителни екстри, включени в Realms    	#### {StrContains="Realms"}
+hbui.RealmsPDPScreen.hero.perks.text=Споделяйте приключенията си в лентата с истории, наблюдавайте как вашият Realm расте в раздела за членове и научавайте кога хората са играли в този Realm в хронологията.    	#### {MaxLength="250"} {StrContains="Realm"}
+hbui.RealmsPDPScreen.hero.perks.title=Социализирайте се с Realms Stories    	#### {MaxLength="56"} {StrContains="Realms"}
+hbui.RealmsPDPScreen.promos.easy.description=Не е нужно да разбирате от технологии. Безплатни и безпроблемни резервни копия. Без споделяне на лична информация.	#
+hbui.RealmsPDPScreen.promos.easy.title=Лесно и безопасно	#
+hbui.RealmsPDPScreen.promos.free.description=Хората, които сте поканили, стават членове на вашия Realm. Няма нужда да плащат, за да се присъединят и да играят в този Realm – трябва само да имат копие на Minecraft: Bedrock. 	#### {StrContains="Realm"}
+hbui.RealmsPDPScreen.promos.free.title=Членовете играят безплатно	#
+hbui.RealmsPDPScreen.promos.header=Какво са Realms? 	#### {StrContains="Realms"}
+hbui.RealmsPDPScreen.promos.persistent.description=Световете, качени във вашия Realm, винаги ще са достъпни за вас и поканените членове – по всяко време и на всяко устройство. Членовете могат да играят дори когато вас ви няма.   	#### {StrContains="Realm"}
+hbui.RealmsPDPScreen.promos.persistent.title=Трайни светове за групова игра	#
+hbui.RealmsPDPScreen.splash.buyNow=Купете сега  	#### {MaxLength="20"}
+hbui.RealmsPDPScreen.splash.text=Управлявайте свой сървър за Minecraft! Вие решавате кой ще се присъедини и как се играе. Членовете играят безплатно, дори да сте офлайн. Лесни достъп, настройки и управление от всяко устройство.   	#### {MaxLength="200"}
+hbui.RealmsPDPScreen.splash.title=Ваш личен сървър, който винаги е онлайн    	#### {MaxLength="50"}
+hbui.RealmsPDPScreen.splash.tryFree=Безплатна проба    	#### {MaxLength="20"}
+hbui.RealmsPDPScreen.title=Minecraft Realms 	#### {StrContains="Realms"}
+hbui.RealmsPlanPickerScreen.buyButton=Купете сега	#
+hbui.RealmsPlanPickerScreen.buyRealmsPlusButtonTrial=Безплатна пробна версия	#
+hbui.RealmsPlanPickerScreen.currency=$	#
+hbui.RealmsPlanPickerScreen.error.body=Моля, проверете дали сте влезли както в Minecraft, така и в магазина на платформата на вашето устройство с един и същ акаунт, и опитайте отново.	#
+hbui.RealmsPlanPickerScreen.error.button=Опитайте отново	#
+hbui.RealmsPlanPickerScreen.error.title=Няма достъп до хранилището на платформата	#
+hbui.RealmsPlanPickerScreen.featureLine0=Вие + 2 приятели	#
+hbui.RealmsPlanPickerScreen.featureLine0Narration=Ти и двама приятели	#
+hbui.RealmsPlanPickerScreen.featureLine0Plus=Вие	#
+hbui.RealmsPlanPickerScreen.featureLine0PlusNarration=Ти и 10 приятели	#
+hbui.RealmsPlanPickerScreen.featureLine0PlusNum=+ 10 приятели	#
+hbui.RealmsPlanPickerScreen.featureLine1=3 слота за светове	#
+hbui.RealmsPlanPickerScreen.featureLine2=Сървърът е достъпен денонощно	#
+hbui.RealmsPlanPickerScreen.featureLine2Narration=Наличен сървър 24 7	#
+hbui.RealmsPlanPickerScreen.featureLine3=Членовете играят безплатно	#
+hbui.RealmsPlanPickerScreen.featureLine4=Игра на различни платформи	#
+hbui.RealmsPlanPickerScreen.featureLine5=Автоматични и безплатни резервни копия	#
+hbui.RealmsPlanPickerScreen.featureLine5Narration=Автоматично безплатно архивиране	#
+hbui.RealmsPlanPickerScreen.featureLine6=Истории за Realms	#### {StrContains="Realms"}
+hbui.RealmsPlanPickerScreen.featureLine7=Безплатна 30-дневна пробна версия	#
+hbui.RealmsPlanPickerScreen.featureLine8=Включва Marketplace Pass	#
+hbui.RealmsPlanPickerScreen.featureNarrationCore=Realms основни подробности за пакета. Текстов блок				#### {StrContains="Realms"}
+hbui.RealmsPlanPickerScreen.featureNarrationPlus=Realms плюс подробности за пакета. Текстов блок				#### {StrContains="Realms"}
+hbui.RealmsPlanPickerScreen.planCoreCardNarration=Вертикален панел. Група. Основни %1$s на месец	#
+hbui.RealmsPlanPickerScreen.planRealmsPlusCardNarration=Вертикален панел. Група. Плюс %1$s на месец	#
+hbui.RealmsPlanPickerScreen.priceCore=Core	#
+hbui.RealmsPlanPickerScreen.priceMonthly=месец	#
+hbui.RealmsPlanPickerScreen.pricePlus=Плюс	#
+hbui.RealmsPlanPickerScreen.title=Изберете своя план	#
+hbui.RealmsPlanPickerScreen.titleNarrationHint=Изберете между два плана	#
 hbui.RealmsPreviews.create.cancel.beta=Да не се създава бета-обител	#
 hbui.RealmsPreviews.create.cancel.preview=Да не се създава обител за предварителен преглед	#
 hbui.RealmsPreviews.create.message.beta=Ще създадете безплатна бета-обител, която ще бъде свързана с платения ви абонамент за Realms. Тази нова бета-обител ще бъде достъпна, докато е активен платеният абонамент. Платената ви обител няма да бъде засегната.	#
@@ -2107,6 +2189,8 @@ hbui.SignInWorldsFriendsServersRoute.signInList3=Присъединете се �
 hbui.SignInWorldsFriendsServersRoute.signInList3PS=Присъединете се към стотици други играчи в уникални изживявания на актуални сървъри	#
 hbui.SignInWorldsFriendsServersRoute.signInList4=Получете достъп до героите си и съдържанието от пазара на различни платформи	#
 hbui.SignInWorldsFriendsServersRoute.signInPrompt=Влезте с акаунта си в Microsoft сега, за да отключите различни функции, включително:	#
+hbui.Splash.role=Текстов блок	#
+hbui.Splash.select=Избор	#
 hbui.StatListItem.compareNarration=%1$s срещу %2$s	#
 hbui.StatListItem.itemNarration=%1$s от %2$s	#
 hbui.StorageIndicator.bytes=%1$s байта	#
