@@ -185,9 +185,9 @@ authentication.clickToPurchaseMessage=请你的教育负责人为你在此购买
 authentication.clickToPurchaseStudent=http://aka.ms/meestore	#
 authentication.clickToPurchaseTeacher=点击此处购买许可	#
 authentication.adalException=我们无法连接至您现在所需的服务。请检查您的网络连接，或者稍后重试。	#
-authentication.buyMinecraft=前往 App Store	#
-authentication.educationOnly=我的世界：教育版 免费试用 只供学校使用。您需要一个 Office 365 教育版 账号才能进行游戏。	#
-authentication.minecraftInstead=不是教育版用户，但仍然想玩 我的世界？	#
+authentication.buyMinecraft=获取《我的世界》	#
+authentication.educationOnly=《我的世界：教育版 免费试用》只可用于从 Microsoft 购买了订阅的学校、实验室以及博物馆。	#
+authentication.minecraftInstead=如果您不是上述用户，请玩《我的世界》:	#
 authentication.signInButton=使用您的学校账户注册	#
 
 
@@ -643,6 +643,7 @@ commands.scoreboard.players.list.player.entry=- %2$s: %1$s (%3$s)											###1
 commands.scoreboard.players.operation.invalidOperation=操作 %1$s 无效								###
 commands.scoreboard.players.operation.notFound=未找到 %2$s 的 %1$s 分数									###1: Objective Name ##2: Player Name
 commands.scoreboard.players.operation.success=操作已成功应用								###
+commands.scoreboard.players.random.invalidRange=最小值 %1$d 不小于最大值 %2$d                   	###1: Min Range Value ##2: Max Range Value
 commands.scoreboard.players.reset.success=已重置玩家 %1$s 的分数										###1: Player Name
 commands.scoreboard.players.resetscore.success=已重置玩家 %2$s 的 %1$s 分数								###1: Objective Name ##2: Player Name
 commands.scoreboard.players.set.success=将玩家 %2$s  的 %1$s  分数设置为 %3$d							###1: Objective Name ##2: Player Name ##3: Score Value
@@ -1239,7 +1240,6 @@ realmsCreateScreen.incomplete.override.realm=你正在尝试更新领域，但�
 realmsCreateScreen.prepare.store.title=需要购买历史记录	#
 realmsCreateScreen.prepare.store.body=我们需要您登录到商店查看您的购买历史记录，然后才能继续。	#
 realmsCreateScreen.prepare.store.button=登录到商店	#
-realmsCreateScreen.nsoinfotext=若要使用 Realms，您需要订阅 Nintendo Switch Online。	#
 
 realmsCreateScreen.title=创建领域	#
 realmsCreateScreen.nameHeader=领域名称	#
@@ -1603,7 +1603,6 @@ disconnectionScreen.realmsWorldUnassigned=在开发选项中指派版本。	#
 disconnectionScreen.realmsWorldUnassigned.title=领域已取消指派！	#
 disconnectionScreen.serverFull=哇，该服务器非常受欢迎！请稍后再回来查看空间是否开放。	#
 disconnectionScreen.serverFull.title=服务器已满	#
-disconnectionScreen.serverIdConflict=无法加入世界。您所注册的账户目前正在另一个设备上的这个世界中玩游戏。	#
 disconnectionScreen.sessionNotFound=无法连接至世界。此世界已不再开放加入。	#
 disconnectionScreen.timeout=连接超时。	#
 disconnectionScreen.nowifi=你必须连接 Wifi 才能与好友一起畅玩。	#
@@ -1819,7 +1818,7 @@ feed.comments=评论	#
 feed.edit=编辑	#
 feed.screenshots=屏幕截图	#
 feed.return=菜单	#
-feed.goToFeed=动态信息	#
+feed.goToFeed=喂养	#
 feed.cancel=取消	#
 feed.previous=上一个	#
 feed.next=下一个	#
@@ -1913,7 +1912,6 @@ gui.up=向上	#
 gui.warning.exitGameWarning=是否要退出 我的世界？	#
 gui.worldTemplate=《我的世界》世界模板	#
 gui.yes=是	#
-gui.feedbackYes=是的，前往反馈网站	#
 gui.resourcepacks=资源包…	#
 gui.submit=提交	#
 gui.playOffline=离线游戏	#
@@ -4004,8 +4002,6 @@ multiplayer.info2=正在进行一些早期测试。	#
 multiplayer.ipinfo=输入服务器的IP来连接：	#
 multiplayer.packErrors=至少一个资源或行为包加载失败。	#
 multiplayer.packErrors.realms=至少一个资源或行为包加载失败。可以尝试从您的领域设置中下载这个世界和查看错误的详细信息。	#
-multiplayer.player.inventory.recovered=物品栏已恢复并被放置在您附近的箱子里。	#
-multiplayer.player.inventory.failed=物品栏已恢复。找一个安全的地方，我们将会在您下一次加入世界时在您附近放置一个箱子。	#
 multiplayer.player.joined=%s 加入了游戏	#
 multiplayer.player.joined.renamed=%s (之前被称为 %s)加入了游戏	#
 multiplayer.player.joined.realms=%s 加入了领域	#
@@ -4501,7 +4497,7 @@ pauseScreen.header=游戏菜单	#
 pauseScreen.options=选项	#
 pauseScreen.quit=保存并退出	#
 pauseScreen.secondaryClientLeave=保存和退出	#
-pauseScreen.feed=动态信息	#
+pauseScreen.feed=信息提要	#
 pauseScreen.invite=邀请加入游戏	#
 pauseScreen.ipAddress=IP：%1	#
 pauseScreen.title=游戏暂停	#
@@ -4550,8 +4546,7 @@ playscreen.lastPlayed.weeksAgo=%1周前	#
 playscreen.lastPlayed.yesterday=昨天	#
 playscreen.new=新	#
 playscreen.remoteWorld=远程世界:	#
-playscreen.realmsTrialWorld=30 天免费试玩	#
-playscreen.realmsCreateFirstWorld=创建您的第一个领域	#
+playScreen.realmsTrialWorld=30 天免费试玩	#
 playscreen.checkingRealmsCompatibility=正在检查领域兼容性……	#
 playscreen.fetchingRealms=正在提取领域……	#
 playscreen.confirmLeaveMessage=你确定要退出领域%1$s吗？	#
@@ -5195,6 +5190,7 @@ stats.tooltip.type.statistic=统计	#
 store.title=商店	#
 store.allStores=全部商店	#
 store.menu.home=首页	#
+store.itemDetail.back=详情	#
 
 store.inventory.button=物品栏	#
 store.inventory.title=物品栏	#
@@ -5254,16 +5250,15 @@ store.popup.purchaseFailed.msg=抱歉，无法完成购买。请检查网络连�
 store.popup.purchaseFailedInsufficientFunds.title=您需要更多硬币	#
 store.popup.purchaseFailedInsufficientFunds.msg=您没有足够的硬币来解除锁定此物品。您可以从应用程序商店购买硬币。	#
 store.popup.purchaseFailedInsufficientFunds.buyButton=获取硬币	#
-store.popup.purchasePriceMismatch.msg=对不起，我们无法完成您的购买。请稍后在试。	#
 store.purchase.success=你刚刚购买了：%s	#
 store.createdBy=作者：%s	#
 store.seeMoreBy=查看由 %s 提供的更多内容	#
 store.fetchingItem=正在连接到商店……	#
  
-store.timer.daysAbbreviated=%s 天		### This is to let player know how many days are left in a sale. It needs to be abbreviated with no more than 3 characters
-store.timer.hoursAbbreviated=%s 小时		### This is to let player know how many days are left in a sale. It needs to be abbreviated with no more than 3 characters
-store.timer.minutesAbbreviated=%s 分		### This is to let player know how many days are left in a sale. It needs to be abbreviated with no more than 3 characters
-store.timer.secondsAbbreviated=%s 秒		### This is to let player know how many days are left in a sale. It needs to be abbreviated with no more than 3 characters
+store.timer.daysAbbreviated=%s 天	#
+store.timer.hoursAbbreviated=%s 小时	#
+store.timer.minutesAbbreviated=%s 分	#
+store.timer.secondsAbbreviated=%s 秒	#
 store.timer.left=剩余 %s	#
 
 store.startMenu.sale=特惠！	#
@@ -5415,12 +5410,6 @@ store.xbl.disconnected=已断开连接	#
 store.xbl.conversionFailedTitle=出错了	#
 store.xbl.conversionFailedMessage=请稍后再试。	#
 
-store.sales.allByCreator=特惠中！	#
-store.sales.mashupsOnSale=混搭包特惠中！	#
-store.sales.skinsOnSale=皮肤特惠中！	#
-store.sales.texturesOnSale=材质包特惠中！	#
-store.sales.worldsOnSale=世界特惠中！	#
-
 store.showalloffers.list.title=%s 商店	#
 store.showalloffers.list.back=返回	#
 
@@ -5429,6 +5418,14 @@ store.suggestedOffers.defaultTitle=有趣的玩法	#
 store.minecoin.notavailable=此版本的《我的世界》尚未推出硬币购买。	#
 
 store.itemDetail.back=详情	#
+store.timeRemaining=剩余时间：%s	#
+store.daysRemaining=剩余 %s 天	#
+
+store.sales.allByCreator=特惠中！	#
+store.sales.mashupsOnSale=混搭包特惠中！	#
+store.sales.skinsOnSale=皮肤特惠中！	#
+store.sales.texturesOnSale=材质包特惠中！	#
+store.sales.worldsOnSale=世界特惠中！	#
 
 store.search.allResults=%d项结果	#
 store.search.dynamicPlaceHolderText=尝试搜索%s！	#
@@ -6242,8 +6239,7 @@ trial.upsell.description.updated=探索、制作、建造并享受乐趣！在�
 trial.upsell.unlock=解锁完整游戏	#
 trial.upsell.startTrial=开始试玩	#
 
-ratingPopUp.title=喜欢《我的世界》吗？	#
-feedbackPopup.title=您有任何反馈要告诉我们吗？	#
+
 
 ## NOTE: The following five lines are all related and shown together. When localizing, you may add line breaks to fit the paragraph,
 ## as opposed to trying to literally translate each line.

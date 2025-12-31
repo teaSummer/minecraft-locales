@@ -185,9 +185,9 @@ authentication.clickToPurchaseMessage=Požádejte svého vyučujícího, aby vá
 authentication.clickToPurchaseStudent=http://aka.ms/meestore	#
 authentication.clickToPurchaseTeacher=Kliknutím sem zakoupíte licenci	#
 authentication.adalException=K požadované službě se nyní nelze připojit. Zkontrolujte si síťové připojení nebo to zkuste znovu později.	#
-authentication.buyMinecraft=Přejít do obchodu App Store	#
-authentication.educationOnly=Verze Minecraft: Education Edition je dostupná pouze školám. K jejímu hraní potřebujete účet Office 365 Education.	#
-authentication.minecraftInstead=Nejste uživatel verze Education, a přesto chcete hrát Minecraft?	#
+authentication.buyMinecraft=Získat Minecraft	#
+authentication.educationOnly=Hra Minecraft: Education Edition je dostupná pouze školám, knihovnám a muzeím, která již zakoupila předplatné od společnosti Microsoft.	#
+authentication.minecraftInstead=Pokud mezi ně nepatříte, hrajte místo toho Minecraft:	#
 authentication.signInButton=Přihlásit se pomocí školního účtu	#
 
 
@@ -643,6 +643,7 @@ commands.scoreboard.players.list.player.entry=- %2$s: %1$d (%3$s)											###1
 commands.scoreboard.players.operation.invalidOperation=Neplatná operace %1$s								###
 commands.scoreboard.players.operation.notFound=Pro hráče %1$s nebylo nalezeno žádné skóre %2$s									###1: Objective Name ##2: Player Name
 commands.scoreboard.players.operation.success=Operace byla úspěšně použita								###
+commands.scoreboard.players.random.invalidRange=Minimum %1$d není nižší než maximum %2$d	###1: Min Range Value ##2: Max Range Value
 commands.scoreboard.players.reset.success=Resetovat skóre hráče %1$s										###1: Player Name
 commands.scoreboard.players.resetscore.success=Resetovat skóre %1$s hráče %2$s								###1: Objective Name ##2: Player Name
 commands.scoreboard.players.set.success=Nastavit skóre %1$s hráče %2$s na %3$d							###1: Objective Name ##2: Player Name ##3: Score Value
@@ -1239,7 +1240,6 @@ realmsCreateScreen.incomplete.override.realm=Pokoušíte se obnovit říši, av�
 realmsCreateScreen.prepare.store.title=Vyžaduje historii nákupů	#
 realmsCreateScreen.prepare.store.body=Než budeme pokračovat, musíme vás přihlásit do obchodu Store ke zobrazení historie vašich nákupů.	#
 realmsCreateScreen.prepare.store.button=Přihlásit se do obchodu Store	#
-realmsCreateScreen.nsoinfotext=Chcete-li využívat služby Realms, musíte mít předplatné služby Nintendo Switch Online.	#
 
 realmsCreateScreen.title=Vytvořte si říši	#
 realmsCreateScreen.nameHeader=Název říše	#
@@ -1603,7 +1603,6 @@ disconnectionScreen.realmsWorldUnassigned=Přiřaďte verzi v možnostech zaří
 disconnectionScreen.realmsWorldUnassigned.title=Říše není přiřazena!	#
 disconnectionScreen.serverFull=Paráda, tento server je oblíbený! Zkontrolujte později, zda se uvolní nějaké místo.	#
 disconnectionScreen.serverFull.title=Server je plný	#
-disconnectionScreen.serverIdConflict=Ke světu se nelze připojit. Účet, ke kterému jste přihlášeni, aktuálně hraje v tomto světě na jiném zařízení.	#
 disconnectionScreen.sessionNotFound=Ke světu se nelze připojit. Svět již není dostupný a nelze se k němu přidat.	#
 disconnectionScreen.timeout=Vypršel časový limit připojení.	#
 disconnectionScreen.nowifi=Abyste mohli hrát se svými přáteli, musíte se připojit k síti Wifi.	#
@@ -1913,7 +1912,6 @@ gui.up=Nahoru	#
 gui.warning.exitGameWarning=Chcete Minecraft ukončit?	#
 gui.worldTemplate=Šablona světa pro Minecraft	#
 gui.yes=Ano	#
-gui.feedbackYes=Ano, přejít na web pro zpětnou vazbu	#
 gui.resourcepacks=Balíčky zdrojů...	#
 gui.submit=Odeslat	#
 gui.playOffline=Hrát offline	#
@@ -2102,12 +2100,12 @@ howtoplay.commands.title=Pravidla hry: příkazy	#
 howtoplay.commands.text.1=Příkazy lze provádět v chatu. Před samotný příkaz zadejte /.	#
 howtoplay.commands.text.2=Příkazů existuje celá spousta a můžete s jejich pomocí dělat úžasné věci. K dispozici je řada externích zdrojů, které vám poskytnou informace o všem, co byste kdy mohli potřebovat.	#
 
-howtoplay.conduits=Zářiče	#
-howtoplay.conduits.title=Pravidla hry: Zářiče	#
-howtoplay.conduits.text.1=Aktivní zářič poskytuje napájení, když jste pod vodou.	#
-howtoplay.conduits.text.2=Zářič lze vyrobit ze schránek loděnky a srdce moře. Zářič čerpá energii z prismarinu a mořských luceren.	#
+howtoplay.conduits=Potrubí	#
+howtoplay.conduits.title=Pravidla hry: Potrubí	#
+howtoplay.conduits.text.1=Aktivní potrubí poskytuje napájení, když jste pod vodou.	#
+howtoplay.conduits.text.2=Potrubí lze vyrobit ze schránek loděnky a srdce moře. Potrubí čerpá energii z prismarinu a mořských luceren.	#
 howtoplay.conduits.header.1=Výroba	#
-howtoplay.conduits.text.3=Po aktivaci dodává zářič energii ze zářiče předmětům v okolí.	#
+howtoplay.conduits.text.3=Po aktivaci dodává potrubí potrubní energii předmětům v okolí.	#
 howtoplay.conduits.text.4=Čím více energie načerpá, tím dále dosáhnou jeho funkce.	#
 
 howtoplay.controls=Ovládání	#
@@ -4004,8 +4002,6 @@ multiplayer.info2=probíhá předběžné testování ne zcela funkční verze.	
 multiplayer.ipinfo=Zadejte IP adresu serveru pro připojení:	#
 multiplayer.packErrors=Načtení alespoň jednoho balíčku zdrojů nebo chování se nezdařilo.	#
 multiplayer.packErrors.realms=Načtení alespoň jednoho balíčku zdrojů nebo chování se nezdařilo. Chcete-li zobrazit podrobnosti této chyby, zkuste tento svět stáhnout z vašich nastavení služby Realms.	#
-multiplayer.player.inventory.recovered=Získali jste zpět inventář a nachází se v truhlách okolo.	#
-multiplayer.player.inventory.failed=Získali jste zpět inventář. Najděte bezpečné místo a my do vaší blízkosti umístíme truhlu, až se příště připojíte ke světu.	#
 multiplayer.player.joined=Hráč %s vstupuje do hry	#
 multiplayer.player.joined.renamed=Hráč %s (dříve známý jako %s) vstupuje do hry	#
 multiplayer.player.joined.realms=Hráč %s vstupuje do říše	#
@@ -4550,8 +4546,7 @@ playscreen.lastPlayed.weeksAgo=Před %1 týdny	#
 playscreen.lastPlayed.yesterday=Včera	#
 playscreen.new=Nový	#
 playscreen.remoteWorld=Vzdálený svět na:	#
-playscreen.realmsTrialWorld=30denní bezplatná zkušební verze	#
-playscreen.realmsCreateFirstWorld=Vytvořte si svou první říši	#
+playScreen.realmsTrialWorld=30denní bezplatná zkušební verze	#
 playscreen.checkingRealmsCompatibility=Kontrola kompatibility služby Realms...	#
 playscreen.fetchingRealms=Načítání služby Realms...	#
 playscreen.confirmLeaveMessage=Opravdu chcete opustit říši %1$s?	#
@@ -4615,7 +4610,7 @@ potion.absorption=Pohlcení	#
 potion.absorption.postfix=Lektvar pohlcení	#
 potion.blindness=Slepota	#
 potion.blindness.postfix=Lektvar slepoty	#
-potion.conduitPower=Energie ze zářiče	#
+potion.conduitPower=Potrubní energie	#
 potion.confusion=Nevolnost	#
 potion.confusion.postfix=Lektvar nevolnosti	#
 potion.damageBoost=Síla	#
@@ -5195,6 +5190,7 @@ stats.tooltip.type.statistic=Statistika	#
 store.title=Obchod	#
 store.allStores=Všechny obchody	#
 store.menu.home=Domů	#
+store.itemDetail.back=Podrobnosti	#
 
 store.inventory.button=Inventář	#
 store.inventory.title=Inventář	#
@@ -5254,16 +5250,15 @@ store.popup.purchaseFailed.msg=Je nám líto, váš nákup jsme nemohli dokonči
 store.popup.purchaseFailedInsufficientFunds.title=Potřebujete více mincí	#
 store.popup.purchaseFailedInsufficientFunds.msg=Na odemčení tohoto předmětu nemáte dost mincí. Můžete je koupit ve svém obchodu s aplikacemi.	#
 store.popup.purchaseFailedInsufficientFunds.buyButton=Získat mince	#
-store.popup.purchasePriceMismatch.msg=Omlouváme se, ale nepodařilo se nám dokončit váš nákup. Zkuste to znovu později.	#
 store.purchase.success=Právě zakoupeno: %s	#
 store.createdBy=Autor: %s	#
 store.seeMoreBy=Prohlédnout další od uživatele %s	#
 store.fetchingItem=Připojování k obchodu...	#
  
-store.timer.daysAbbreviated=%s d		### This is to let player know how many days are left in a sale. It needs to be abbreviated with no more than 3 characters
-store.timer.hoursAbbreviated=%s hod		### This is to let player know how many days are left in a sale. It needs to be abbreviated with no more than 3 characters
-store.timer.minutesAbbreviated=%s min		### This is to let player know how many days are left in a sale. It needs to be abbreviated with no more than 3 characters
-store.timer.secondsAbbreviated=%s s		### This is to let player know how many days are left in a sale. It needs to be abbreviated with no more than 3 characters
+store.timer.daysAbbreviated=%s d	#
+store.timer.hoursAbbreviated=%s h	#
+store.timer.minutesAbbreviated=%s min	#
+store.timer.secondsAbbreviated=%s s	#
 store.timer.left=zbývá %s	#
 
 store.startMenu.sale=Akce!	#
@@ -5415,12 +5410,6 @@ store.xbl.disconnected=Odpojeno	#
 store.xbl.conversionFailedTitle=Něco se nepovedlo	#
 store.xbl.conversionFailedMessage=Zkuste to znovu později.	#
 
-store.sales.allByCreator=Nyní v akci!	#
-store.sales.mashupsOnSale=Mash-upy nyní v akci!	#
-store.sales.skinsOnSale=Skiny nyní v akci!	#
-store.sales.texturesOnSale=Sady textur nyní v akci!	#
-store.sales.worldsOnSale=Světy nyní v akci!	#
-
 store.showalloffers.list.title=Obchod %s	#
 store.showalloffers.list.back=Jít zpět	#
 
@@ -5429,6 +5418,14 @@ store.suggestedOffers.defaultTitle=Zábavné způsoby hry	#
 store.minecoin.notavailable=V této verzi Minecraftu zatím nelze nakupovat za mince.	#
 
 store.itemDetail.back=Podrobnosti	#
+store.timeRemaining=Zbývající čas: %s	#
+store.daysRemaining=Zbývá dnů: %s	#
+
+store.sales.allByCreator=Nyní v akci!	#
+store.sales.mashupsOnSale=Mash-upy nyní v akci!	#
+store.sales.skinsOnSale=Skiny nyní v akci!	#
+store.sales.texturesOnSale=Sady textur nyní v akci!	#
+store.sales.worldsOnSale=Světy nyní v akci!	#
 
 store.search.allResults=%d výsledků	#
 store.search.dynamicPlaceHolderText=Zkuste hledat %s!	#
@@ -5554,7 +5551,7 @@ tile.bed.respawnSet=Počáteční místo nastaveno	#
 tile.bed.tooFar=Postel je příliš daleko	#
 tile.bedrock.name=Základní hornina	#
 tile.camera.name=Fotoaparát	#
-tile.conduit.name=Zářič	#
+tile.conduit.name=Potrubí	#
 tile.invisibleBedrock.name=Neviditelná základní hornina	#
 tile.beetroot.name=Řepa	#
 tile.birchFence.name=Březový plot	#
@@ -6242,8 +6239,7 @@ trial.upsell.description.updated=Vyrábějte, budujte, prozkoumávejte... prost�
 trial.upsell.unlock=Odemknout plnou hru	#
 trial.upsell.startTrial=Spustit zkušební verzi	#
 
-ratingPopUp.title=Líbí se vám hraní Minecraftu?	#
-feedbackPopup.title=Chcete nám sdělit nějakou zpětnou vazbu?	#
+
 
 ## NOTE: The following five lines are all related and shown together. When localizing, you may add line breaks to fit the paragraph,
 ## as opposed to trying to literally translate each line.

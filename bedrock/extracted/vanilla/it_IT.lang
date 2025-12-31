@@ -185,9 +185,9 @@ authentication.clickToPurchaseMessage=Chiedi all'insegnante di acquistarti una l
 authentication.clickToPurchaseStudent=http://aka.ms/meestore	#
 authentication.clickToPurchaseTeacher=Fai clic qui per acquistare una licenza	#
 authentication.adalException=Impossibile connettersi al servizio necessario in questo momento. Verifica la connessione di rete o ritenta l'operazione in seguito.	#
-authentication.buyMinecraft=Vai all'App Store	#
-authentication.educationOnly=Minecraft: Education Edition è disponibile solamente per le scuole. Hai bisogno di un account Office 365 Education per giocare.	#
-authentication.minecraftInstead=Non sei un utente Education ma vuoi comunque giocare a Minecraft?	#
+authentication.buyMinecraft=Ottieni Minecraft	#
+authentication.educationOnly=La Minecraft: Education Edition è disponibile solamente per scuole, librerie e musei che hanno già acquistato un abbonamento da Microsoft.	#
+authentication.minecraftInstead=Se non è il tuo caso, gioca a Minecraft:	#
 authentication.signInButton=Effettua l'accesso con l'account della tua scuola	#
 
 
@@ -643,6 +643,7 @@ commands.scoreboard.players.list.player.entry=- %2$s: %1$d (%3$s)											###1
 commands.scoreboard.players.operation.invalidOperation=Operazione %1$s non valida								###
 commands.scoreboard.players.operation.notFound=Nessun punteggio di %1$s è stato trovato per %2$s									###1: Objective Name ##2: Player Name
 commands.scoreboard.players.operation.success=L'operazione è stata svolta con successo								###
+commands.scoreboard.players.random.invalidRange=Il valore minimo %1$d non è inferiore al valore massimo %2$d	###1: Min Range Value ##2: Max Range Value
 commands.scoreboard.players.reset.success=Azzera i punteggi del giocatore %1$s										###1: Player Name
 commands.scoreboard.players.resetscore.success=Azzera il punteggio %1$s del giocatore %2$s								###1: Objective Name ##2: Player Name
 commands.scoreboard.players.set.success=Il punteggio di %1$s per il giocatore %2$s è stato impostato a %3$d							###1: Objective Name ##2: Player Name ##3: Score Value
@@ -1239,7 +1240,6 @@ realmsCreateScreen.incomplete.override.realm=Stai tentando di effettuare un rinn
 realmsCreateScreen.prepare.store.title=Cronologia acquisti necessaria	#
 realmsCreateScreen.prepare.store.body=Per poter continuare, devi accedere allo Store per visualizzare la tua cronologia acquisti.	#
 realmsCreateScreen.prepare.store.button=Accedi al negozio	#
-realmsCreateScreen.nsoinfotext=Per usufruire di Realms hai bisogno di un abbonamento ai servizi Nintendo Switch Online.	#
 
 realmsCreateScreen.title=Crea un reame	#
 realmsCreateScreen.nameHeader=Nome reame	#
@@ -1603,7 +1603,6 @@ disconnectionScreen.realmsWorldUnassigned=Assegna la versione nelle opzioni per 
 disconnectionScreen.realmsWorldUnassigned.title=Reame non assegnato!	#
 disconnectionScreen.serverFull=Wow, questo server è richiestissimo! Torna più tardi a vedere se si è liberato dello spazio.	#
 disconnectionScreen.serverFull.title=Server pieno	#
-disconnectionScreen.serverIdConflict=Impossibile unirsi al mondo. È in corso una partita in questo mondo con l'account che stai usando, ma su un dispositivo diverso.	#
 disconnectionScreen.sessionNotFound=Impossibile connettersi al mondo di gioco: non è più disponibile.	#
 disconnectionScreen.timeout=Tempo massimo per la connessione esaurito.	#
 disconnectionScreen.nowifi=È necessario connettersi via WiFi per giocare con i propri amici.	#
@@ -1913,7 +1912,6 @@ gui.up=Su	#
 gui.warning.exitGameWarning=Uscire da Minecraft?	#
 gui.worldTemplate=Modello di mondo di Minecraft	#
 gui.yes=Sì	#
-gui.feedbackYes=Sì, visita il sito di feedback	#
 gui.resourcepacks=Pacchetti di risorse...	#
 gui.submit=Invia	#
 gui.playOffline=Gioca offline	#
@@ -3529,7 +3527,7 @@ item.leather_leggings.name=Gambiera di cuoio	#
 item.diamond_leggings.name=Gambali di diamante	#
 item.golden_leggings.name=Gambali d'oro	#
 item.iron_leggings.name=Gambali di ferro	#
-item.nautilus_shell.name=Conchiglia di nautilo	#
+item.nautilus_shell.name=Conchiglia di nautilus	#
 item.heart_of_the_sea.name=Cuore del mare	#
 item.magma_cream.name=Crema di magma	#
 item.map.name=Mappa	#
@@ -3595,7 +3593,7 @@ item.spawn_egg.entity.shulker.name=Uovo di Shulker	#
 item.spawn_egg.entity.endermite.name=Uovo di Endermite	#
 item.spawn_egg.entity.evocation_illager.name=Uovo di evocatore	#
 item.spawn_egg.entity.vex.name=Uovo di Vex	#
-item.spawn_egg.entity.turtle.name=Uovo di tartaruga marina	#
+item.spawn_egg.entity.turtle.name=Genera una tartaruga marina	#
 item.spawn_egg.entity.dolphin.name=Uovo di delfino	#
 item.spawn_egg.entity.unknown.name=Uovo	#
 item.trident.name=Tridente	#
@@ -4004,8 +4002,6 @@ multiplayer.info2=dei controlli preliminari buggati.	#
 multiplayer.ipinfo=Inserisci l'IP di un server a cui connetterti:	#
 multiplayer.packErrors=Almeno un pacchetto di comportamenti o di risorse non caricato.	#
 multiplayer.packErrors.realms=Almeno un pacchetto di comportamenti o di risorse non caricato. Prova a scaricare questo mondo dalle impostazioni di Realm per visualizzare i dettagli dell'errore.	#
-multiplayer.player.inventory.recovered=Inventario recuperato e posizionato nelle casse vicino a te.	#
-multiplayer.player.inventory.failed=Inventario recuperato. Trova un posto sicuro: la prossima volta che ti unirai al mondo, posizioneremo una cassa vicino a te.	#
 multiplayer.player.joined=%s si unisce alla partita	#
 multiplayer.player.joined.renamed=%s (in precedenza %s) è ora in partita	#
 multiplayer.player.joined.realms=%s è ora nel reame	#
@@ -4550,8 +4546,7 @@ playscreen.lastPlayed.weeksAgo=%1 settimane fa	#
 playscreen.lastPlayed.yesterday=Ieri	#
 playscreen.new=Nuovo	#
 playscreen.remoteWorld=Mondo remoto su:	#
-playscreen.realmsTrialWorld=Versione di prova gratuita di 30 giorni	#
-playscreen.realmsCreateFirstWorld=Crea il tuo primo reame	#
+playScreen.realmsTrialWorld=Versione di prova gratuita di 30 giorni	#
 playscreen.checkingRealmsCompatibility=Analisi compatibilità Realms in corso...	#
 playscreen.fetchingRealms=Recupero reami in corso...	#
 playscreen.confirmLeaveMessage=Uscire dal reame %1$s?	#
@@ -5195,6 +5190,7 @@ stats.tooltip.type.statistic=Statistica	#
 store.title=Negozio	#
 store.allStores=Tutti i negozi	#
 store.menu.home=Home	#
+store.itemDetail.back=Dettagli	#
 
 store.inventory.button=Inventario	#
 store.inventory.title=Inventario	#
@@ -5254,16 +5250,15 @@ store.popup.purchaseFailed.msg=Siamo spiacenti, non è stato possibile completar
 store.popup.purchaseFailedInsufficientFunds.title=Hai bisogno di più monete	#
 store.popup.purchaseFailedInsufficientFunds.msg=Non possiedi monete sufficienti per sbloccare questo oggetto. Puoi acquistare monete dall'App Store.	#
 store.popup.purchaseFailedInsufficientFunds.buyButton=Ottieni monete	#
-store.popup.purchasePriceMismatch.msg=Siamo spiacenti, non è stato possibile completare il tuo acquisto. Riprova più tardi.	#
 store.purchase.success=Hai acquistato: %s	#
 store.createdBy=di %s	#
 store.seeMoreBy=Visualizza altri per %s	#
 store.fetchingItem=Connessione al negozio in corso...	#
  
-store.timer.daysAbbreviated=%sg		### This is to let player know how many days are left in a sale. It needs to be abbreviated with no more than 3 characters
-store.timer.hoursAbbreviated=%sh		### This is to let player know how many days are left in a sale. It needs to be abbreviated with no more than 3 characters
-store.timer.minutesAbbreviated=%smin		### This is to let player know how many days are left in a sale. It needs to be abbreviated with no more than 3 characters
-store.timer.secondsAbbreviated=%ssec		### This is to let player know how many days are left in a sale. It needs to be abbreviated with no more than 3 characters
+store.timer.daysAbbreviated=%s gg	#
+store.timer.hoursAbbreviated=%s h	#
+store.timer.minutesAbbreviated=%s min	#
+store.timer.secondsAbbreviated=%s sec	#
 store.timer.left=%s rimanenti	#
 
 store.startMenu.sale=Offerta!	#
@@ -5415,12 +5410,6 @@ store.xbl.disconnected=Disconnesso	#
 store.xbl.conversionFailedTitle=Si è verificato un errore	#
 store.xbl.conversionFailedMessage=Riprova più tardi.	#
 
-store.sales.allByCreator=In offerta!	#
-store.sales.mashupsOnSale=Mash-up in offerta!	#
-store.sales.skinsOnSale=Skin in offerta!	#
-store.sales.texturesOnSale=Pacchetti texture in offerta!	#
-store.sales.worldsOnSale=Mondi in offerta!	#
-
 store.showalloffers.list.title=Negozio %s 	#
 store.showalloffers.list.back=Indietro	#
 
@@ -5429,6 +5418,14 @@ store.suggestedOffers.defaultTitle=Modi di giocare divertenti	#
 store.minecoin.notavailable=L'acquisto di monete non è disponibile in questa versione di Minecraft.	#
 
 store.itemDetail.back=Dettagli	#
+store.timeRemaining=Tempo restante: %s	#
+store.daysRemaining=Restano %s giorni	#
+
+store.sales.allByCreator=In offerta!	#
+store.sales.mashupsOnSale=Mash-up in offerta!	#
+store.sales.skinsOnSale=Skin in offerta!	#
+store.sales.texturesOnSale=Pacchetti texture in offerta!	#
+store.sales.worldsOnSale=Mondi in offerta!	#
 
 store.search.allResults=%d risultati	#
 store.search.dynamicPlaceHolderText=Prova a cercare %s!	#
@@ -6242,8 +6239,7 @@ trial.upsell.description.updated=Esplora, crea, costruisci e divertiti! Questa v
 trial.upsell.unlock=Sblocca gioco completo	#
 trial.upsell.startTrial=Avvia versione di prova	#
 
-ratingPopUp.title=Ti piace Minecraft?	#
-feedbackPopup.title=Vuoi inviarci un feedback?	#
+
 
 ## NOTE: The following five lines are all related and shown together. When localizing, you may add line breaks to fit the paragraph,
 ## as opposed to trying to literally translate each line.

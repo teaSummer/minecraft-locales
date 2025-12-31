@@ -185,9 +185,9 @@ authentication.clickToPurchaseMessage=Попросіть свого виклад
 authentication.clickToPurchaseStudent=http://aka.ms/meestore	#
 authentication.clickToPurchaseTeacher=Клацніть тут, щоб придбати ліцензію	#
 authentication.adalException=Зараз не вдалося підключитися до потрібної вам служби. Перевірте своє з’єднання з мережею або спробуйте ще раз пізніше.	#
-authentication.buyMinecraft=Перейти в App Store	#
-authentication.educationOnly=Minecraft: Education Edition надається лише навчальним закладам. Щоб грати, вам потрібен обліковий запис Office 365 Education.	#
-authentication.minecraftInstead=Не маєте стосунку до навчального закладу, але все одно хочете грати в Minecraft?	#
+authentication.buyMinecraft=Отримати Minecraft	#
+authentication.educationOnly=Minecraft: Education Edition надається лише навчальним закладам, бібліотекам і музеям, які вже придбали передплату в Microsoft.	#
+authentication.minecraftInstead=Якщо ви не відповідаєте цим критеріям, грайте в Minecraft:	#
 authentication.signInButton=Увійти під навчальним обліковим записом	#
 
 
@@ -643,6 +643,7 @@ commands.scoreboard.players.list.player.entry=- %2$s: %1$d (%3$s)											###1
 commands.scoreboard.players.operation.invalidOperation=Неприпустима операція %1$s								###
 commands.scoreboard.players.operation.notFound=Очки %1$s для %2$s не знайдено									###1: Objective Name ##2: Player Name
 commands.scoreboard.players.operation.success=Операцію виконано успішно								###
+commands.scoreboard.players.random.invalidRange=Мін. %1$d не перевищує макс. %2$d                   	###1: Min Range Value ##2: Max Range Value
 commands.scoreboard.players.reset.success=Скинуто очки гравця %1$s										###1: Player Name
 commands.scoreboard.players.resetscore.success=Скинуто очки %1$s гравця %2$s								###1: Objective Name ##2: Player Name
 commands.scoreboard.players.set.success=Установлено очки %1$s для гравця %2$s на %3$d							###1: Objective Name ##2: Player Name ##3: Score Value
@@ -1239,7 +1240,6 @@ realmsCreateScreen.incomplete.override.realm=Ви намагаєтеся пон�
 realmsCreateScreen.prepare.store.title=Потрібен журнал покупок	#
 realmsCreateScreen.prepare.store.body=Перш ніж продовжити, ви маєте ввійти в обліковий запис магазину, щоб переглянути свій журнал покупок.	#
 realmsCreateScreen.prepare.store.button=Увійти в Магазин	#
-realmsCreateScreen.nsoinfotext=Щоб використовувати Realms, потрібна передплата на Nintendo Switch Online.	#
 
 realmsCreateScreen.title=Створення реалму	#
 realmsCreateScreen.nameHeader=Назва реалму	#
@@ -1603,7 +1603,6 @@ disconnectionScreen.realmsWorldUnassigned=Призначте версію в п�
 disconnectionScreen.realmsWorldUnassigned.title=Реалм не призначено!	#
 disconnectionScreen.serverFull=Ого, цей сервер такий популярний! Поверніться трохи згодом, може, якраз звільниться місце.	#
 disconnectionScreen.serverFull.title=Сервер заповнено	#
-disconnectionScreen.serverIdConflict=Не вдалося приєднатися до світу. З цим обліковим записом уже хтось грає на іншому пристрої.	#
 disconnectionScreen.sessionNotFound=Не вдається підключитися до світу. До цього світу більше не можна приєднатися.	#
 disconnectionScreen.timeout=Вичерпано час підключення.	#
 disconnectionScreen.nowifi=Щоб грати з друзями, вам потрібно підключитися через Wi-Fi.	#
@@ -1913,7 +1912,6 @@ gui.up=Угору	#
 gui.warning.exitGameWarning=Хочете вийти з Minecraft?	#
 gui.worldTemplate=Шаблон світу Minecraft	#
 gui.yes=Так	#
-gui.feedbackYes=Так, перейти на сайт відгуків	#
 gui.resourcepacks=Пакети ресурсів…	#
 gui.submit=Надіслати	#
 gui.playOffline=Грати офлайн	#
@@ -4004,8 +4002,6 @@ multiplayer.info2=але ми потроху починаємо його тес�
 multiplayer.ipinfo=Введіть IP-адресу сервера, до якого потрібно підключитися:	#
 multiplayer.packErrors=Не вдалося завантажити принаймні один пакет ресурсів або поведінки.	#
 multiplayer.packErrors.realms=Не вдалося завантажити принаймні один пакет ресурсів або поведінки. Спробуйте завантажити цей світ із параметрів реалму, щоб побачити більше відомостей про помилку.	#
-multiplayer.player.inventory.recovered=Інвентар відновлено та розміщено в скринях біля вас.	#
-multiplayer.player.inventory.failed=Інвентар відновлено. Знайдіть безпечне місце, і наступного разу, коли ви приєднаєтеся до світу, ваша скриня з’явиться біля вас.	#
 multiplayer.player.joined=%s приєднується до гри	#
 multiplayer.player.joined.renamed=%s (раніше – %s) приєднується до гри	#
 multiplayer.player.joined.realms=%s приєднується до реалму	#
@@ -4550,8 +4546,7 @@ playscreen.lastPlayed.weeksAgo=%1 тижн. тому	#
 playscreen.lastPlayed.yesterday=Учора	#
 playscreen.new=Створити	#
 playscreen.remoteWorld=Віддалений світ у:	#
-playscreen.realmsTrialWorld=30-денне безкоштовне ознайомлення	#
-playscreen.realmsCreateFirstWorld=Створіть свій перши реалм	#
+playScreen.realmsTrialWorld=30-денне безкоштовне ознайомлення	#
 playscreen.checkingRealmsCompatibility=Перевірка сумісності з реалмами…	#
 playscreen.fetchingRealms=Отримання реалмів…	#
 playscreen.confirmLeaveMessage=Ви справді хочете покинути реалм %1$s?	#
@@ -5195,6 +5190,7 @@ stats.tooltip.type.statistic=Статистика	#
 store.title=Магазин	#
 store.allStores=Усі магазини	#
 store.menu.home=Головна	#
+store.itemDetail.back=Докладно	#
 
 store.inventory.button=Інвентар	#
 store.inventory.title=Інвентар	#
@@ -5254,16 +5250,15 @@ store.popup.purchaseFailed.msg=На жаль, не вдалося виконат
 store.popup.purchaseFailedInsufficientFunds.title=Потрібно більше монет Minecoins	#
 store.popup.purchaseFailedInsufficientFunds.msg=У вас недостатньо монет Minecoins, щоб розблокувати цей предмет. Ви можете придбати монети Minecoins у своєму магазині програм.	#
 store.popup.purchaseFailedInsufficientFunds.buyButton=Отримати монети Minecoins	#
-store.popup.purchasePriceMismatch.msg=Не вдалося завершити покупку. Повторіть спробу пізніше.	#
 store.purchase.success=Ви щойно придбали: %s	#
 store.createdBy=Автор: %s	#
 store.seeMoreBy=Показати більше: %s	#
 store.fetchingItem=Підключення до магазину…	#
  
-store.timer.daysAbbreviated=%s дн		### This is to let player know how many days are left in a sale. It needs to be abbreviated with no more than 3 characters
-store.timer.hoursAbbreviated=%s год		### This is to let player know how many days are left in a sale. It needs to be abbreviated with no more than 3 characters
-store.timer.minutesAbbreviated=%s хв		### This is to let player know how many days are left in a sale. It needs to be abbreviated with no more than 3 characters
-store.timer.secondsAbbreviated=%s с		### This is to let player know how many days are left in a sale. It needs to be abbreviated with no more than 3 characters
+store.timer.daysAbbreviated=%s дн.	#
+store.timer.hoursAbbreviated=%s год.	#
+store.timer.minutesAbbreviated=%s хв.	#
+store.timer.secondsAbbreviated=%s с	#
 store.timer.left=%s залишилося	#
 
 store.startMenu.sale=Розпродаж!	#
@@ -5415,12 +5410,6 @@ store.xbl.disconnected=Відключено	#
 store.xbl.conversionFailedTitle=Щось пішло не так	#
 store.xbl.conversionFailedMessage=Спробуйте ще раз згодом.	#
 
-store.sales.allByCreator=Розпродаж!	#
-store.sales.mashupsOnSale=Розпродаж збірних пакетів!	#
-store.sales.skinsOnSale=Розпродаж скінів!	#
-store.sales.texturesOnSale=Розпродаж пакетів текстур!	#
-store.sales.worldsOnSale=Розпродаж світів!	#
-
 store.showalloffers.list.title=Магазин %s 	#
 store.showalloffers.list.back=Повернутися	#
 
@@ -5429,6 +5418,14 @@ store.suggestedOffers.defaultTitle=Цікаві способи гри	#
 store.minecoin.notavailable=Придбання за монети недоступне в цій версії Minecraft.	#
 
 store.itemDetail.back=Докладно	#
+store.timeRemaining=Залишилося часу: %s	#
+store.daysRemaining=%s дн. залишилося	#
+
+store.sales.allByCreator=Розпродаж!	#
+store.sales.mashupsOnSale=Розпродаж збірних пакетів!	#
+store.sales.skinsOnSale=Розпродаж скінів!	#
+store.sales.texturesOnSale=Розпродаж пакетів текстур!	#
+store.sales.worldsOnSale=Розпродаж світів!	#
 
 store.search.allResults=Результатів: %d	#
 store.search.dynamicPlaceHolderText=Спробуйте пошукати "%s"!	#
@@ -6242,8 +6239,7 @@ trial.upsell.description.updated=Досліджуйте, крафтіть, бу�
 trial.upsell.unlock=Розблокувати повну версію гри	#
 trial.upsell.startTrial=Почати ознайомлення	#
 
-ratingPopUp.title=Чи подобається вам Minecraft?	#
-feedbackPopup.title=Хочете залишити відгук?	#
+
 
 ## NOTE: The following five lines are all related and shown together. When localizing, you may add line breaks to fit the paragraph,
 ## as opposed to trying to literally translate each line.

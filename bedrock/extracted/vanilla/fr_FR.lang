@@ -185,9 +185,9 @@ authentication.clickToPurchaseMessage=Demandez à votre Éducateur de vous achet
 authentication.clickToPurchaseStudent=http://aka.ms/meestore	#
 authentication.clickToPurchaseTeacher=Cliquez ici pour acheter une licence	#
 authentication.adalException=Impossible de vous connecter au service demandé pour le moment. Vérifiez votre connexion ou réessayez plus tard.	#
-authentication.buyMinecraft=Aller sur l'App Store	#
-authentication.educationOnly=Minecraft: Education Edition est disponible uniquement pour les établissements scolaires. Pour jouer, vous devez avoir un compte Office 365 Éducation.	#
-authentication.minecraftInstead=Vous n'avez pas de version Éducation, mais vous voulez jouer à Minecraft ?	#
+authentication.buyMinecraft=Achetez Minecraft	#
+authentication.educationOnly=Minecraft: Education Edition est disponible uniquement pour les écoles, bibliothèques et musées qui ont déjà acheté un abonnement auprès de Microsoft.	#
+authentication.minecraftInstead=Si ce n'est pas vous, jouez plutôt à Minecraft :	#
 authentication.signInButton=Connectez-vous avec le compte de votre école	#
 
 
@@ -227,7 +227,7 @@ chat.mute=Couper micro	#
 chat.realmsFilterDisabled=Le filtre de tchat du Realm est désactivé.	#
 chat.stream.emote=(%s) * %s %s	#
 chat.stream.text=(%s) <%s> %s	#
-chat.title=Tchat	#
+chat.title=Tchat 	#
 chat.title.cheats=Tchat et commandes	#
 chat.type.achievement=%s vient d'obtenir le succès %s	#
 chat.type.achievement.taken=%s a perdu le succès %s	#
@@ -643,6 +643,7 @@ commands.scoreboard.players.list.player.entry=- %2$s : %1$d (%3$s)											###
 commands.scoreboard.players.operation.invalidOperation=Opération invalide %1$s								###
 commands.scoreboard.players.operation.notFound=Pas de score %1$s trouvé pour %2$s									###1: Objective Name ##2: Player Name
 commands.scoreboard.players.operation.success=L'opération a été appliquée avec succès								###
+commands.scoreboard.players.random.invalidRange=La valeur minimum %1$d est supérieure ou égale au maximum %2$d                   	###1: Min Range Value ##2: Max Range Value
 commands.scoreboard.players.reset.success=Scores du joueur %1$s réinitialisés										###1: Player Name
 commands.scoreboard.players.resetscore.success=Score %1$s du joueur %2$s réinitialisé								###1: Objective Name ##2: Player Name
 commands.scoreboard.players.set.success=Score de %1$s pour le joueur %2$s défini à %3$d							###1: Objective Name ##2: Player Name ##3: Score Value
@@ -1239,7 +1240,6 @@ realmsCreateScreen.incomplete.override.realm=Vous tentez de renouveler un Realm,
 realmsCreateScreen.prepare.store.title=Historique d'achats requis	#
 realmsCreateScreen.prepare.store.body=Vous devez vous connecter au Magasin pour accéder à votre historique d'achats et pouvoir continuer.	#
 realmsCreateScreen.prepare.store.button=Se connecter au Magasin	#
-realmsCreateScreen.nsoinfotext=Pour utiliser les Realms, vous devez être abonné au service Nintendo Switch Online.	#
 
 realmsCreateScreen.title=Créer un Realm	#
 realmsCreateScreen.nameHeader=Nom du Realm	#
@@ -1603,7 +1603,6 @@ disconnectionScreen.realmsWorldUnassigned=Assigner la version dans les options d
 disconnectionScreen.realmsWorldUnassigned.title=Realm non assigné !	#
 disconnectionScreen.serverFull=Woah ! Ce serveur a du succès ! Revenez plus tard pour voir si une place s'est libérée.	#
 disconnectionScreen.serverFull.title=Serveur complet	#
-disconnectionScreen.serverIdConflict=Impossible de rejoindre ce monde. Le compte auquel vous êtes connecté est déjà utilisé dans ce monde sur un appareil différent.	#
 disconnectionScreen.sessionNotFound=Connexion au monde impossible. Il n'est plus possible de rejoindre ce monde.	#
 disconnectionScreen.timeout=Délai de connexion dépassé.	#
 disconnectionScreen.nowifi=Vous devez être connecté en Wi-Fi pour jouer entre amis.	#
@@ -1913,7 +1912,6 @@ gui.up=Haut	#
 gui.warning.exitGameWarning=Voulez-vous quitter Minecraft ?	#
 gui.worldTemplate=Modèle de monde Minecraft	#
 gui.yes=Oui	#
-gui.feedbackYes=Oui, accéder au site	#
 gui.resourcepacks=Packs de ressources...	#
 gui.submit=Envoyer	#
 gui.playOffline=Jouer hors ligne	#
@@ -2066,7 +2064,7 @@ howtoplay.cauldron.text.5.notTouch=Pour teindre une armure en cuir ou un capara�
 howtoplay.cauldron.text.5.touch=Pour teindre une armure en cuir ou un caparaçon en cuir, appuyez sur un chaudron rempli d'eau tout en tenant le colorant voulu. Cela changera la couleur de l'eau à l'intérieur du chaudron. Trempez ensuite votre armure dans le chaudron en appuyant sur celui-ci tout en tenant votre armure à la main.	#
 howtoplay.cauldron.text.6=Si vous voulez enlever le colorant, trempez l'objet coloré dans un chaudron contenant de l'eau non teintée.	#
 
-howtoplay.chat=Tchat	#
+howtoplay.chat=Tchat 	#
 howtoplay.chat.title=Comment jouer : tchat	#
 howtoplay.chat.text.1.keyboard=Appuyez sur :_input_key.chat: pour ouvrir le tchat. Saisissez votre message et appuyez sur ENTRÉE.	#
 howtoplay.chat.text.1.gamepad=Appuyez sur :_input_key.chat: pour ouvrir le tchat. Saisissez votre message et appuyez sur le bouton d'envoi.	#
@@ -2300,7 +2298,7 @@ howtoplay.fireworks.text.6.4=  - Éclat : ajouter une plume pour donner un effet
 howtoplay.fireworks.text.6.5=  - Traînée : ajoutez un diamant pour ajouter une traînée à l'explosion.	#
 howtoplay.fireworks.text.6.6=  - Forme d'étoile : ajoutez une pépite d'or pour créer un motif étoilé dans le ciel.	#
 howtoplay.fireworks.header.3=Pyrotechnie	#
-howtoplay.fireworks.text.7=Les feux d'artifice peuvent être lancés depuis un distributeur. Ils seront lancés dans la direction dans laquelle est orienté le distributeur.	#
+howtoplay.fireworks.text.7=Les feux d'artifice peuvent être lancés depuis un distributeur. Ils seront lancés dans la direction dans laquelle est orienté le distributeur. 	#
 
 howtoplay.fishing=Pêche	#
 howtoplay.fishing.title=Comment jouer : pêche	#
@@ -2354,7 +2352,7 @@ howtoplay.gameSettings.text.22=-Cycle météorologique : la météo ne change pa
 howtoplay.hoppers=Entonnoirs	#
 howtoplay.hoppers.title=Comment jouer : entonnoirs	#
 howtoplay.hoppers.text.1=Les entonnoirs sont utilisés pour déplacer automatiquement des objets. Ils peuvent être attachés à d'autres conteneurs comme les coffres ou les juke-box. 	#
-howtoplay.hoppers.text.2=Les entonnoirs cherchent en permanence à retirer un objet d'un conteneur compatible placé au-dessus et essaient d'insérer cet objet dans le conteneur vers lequel ils sont orientés.	#
+howtoplay.hoppers.text.2=Les entonnoirs cherchent en permanence à retirer un objet d'un conteneur compatible placé au-dessus et essaient d'insérer cet objet dans le conteneur vers lequel ils sont orientés. 	#
 howtoplay.hoppers.header.1=Utilisation	#
 howtoplay.hoppers.text.3=Pour orienter un entonnoir vers un bloc précis, placez-le contre ce bloc tout en vous faufilant.	#
 howtoplay.hoppers.text.4=Si un entonnoir est alimenté par un bloc de redstone, il devient inactif et arrête de déplacer les objets.	#
@@ -4004,8 +4002,6 @@ multiplayer.info2=mais des premiers tests sont en train d'être effectués.	#
 multiplayer.ipinfo=Entrez l'adresse IP d'un serveur pour vous y connecter :	#
 multiplayer.packErrors=Au moins un de vos packs de ressources ou de comportement n'a pas pu être chargé.	#
 multiplayer.packErrors.realms=Au moins un de vos packs de ressources ou de comportement n'a pas pu être chargé. Essayez de télécharger ce monde depuis vos paramètres Realm pour plus d'informations sur l'erreur.	#
-multiplayer.player.inventory.recovered=L'inventaire a été récupéré et placé dans des coffres à proximité.	#
-multiplayer.player.inventory.failed=L'inventaire a été récupéré. Trouvez un lieu sûr et nous placerons un coffre à proximité la prochaine fois que vous rejoindrez ce monde.	#
 multiplayer.player.joined=%s a rejoint la partie	#
 multiplayer.player.joined.renamed=%s (anciennement %s) a rejoint la partie	#
 multiplayer.player.joined.realms=%s a rejoint le Realm	#
@@ -4104,7 +4100,7 @@ options.chat.links.prompt=Avertir sur les liens 	#
 options.chat.opacity=Opacité 	#
 options.chat.scale=Échelle 	#
 options.chat.title=Options de discussion...	#
-options.chat.visibility=Tchat	#
+options.chat.visibility=Tchat 	#
 options.chat.visibility.full=Visible	#
 options.chat.visibility.hidden=Masqué	#
 options.chat.visibility.system=Commandes seulement	#
@@ -4550,8 +4546,7 @@ playscreen.lastPlayed.weeksAgo=Il y a %1 semaines	#
 playscreen.lastPlayed.yesterday=Hier	#
 playscreen.new=Nouveau	#
 playscreen.remoteWorld=Monde distant à l'adresse :	#
-playscreen.realmsTrialWorld=Essai gratuit de 30 jours	#
-playscreen.realmsCreateFirstWorld=Créez votre premier royaume	#
+playScreen.realmsTrialWorld=Essai gratuit de 30 jours	#
 playscreen.checkingRealmsCompatibility=Vérification de la compatibilité Realms...	#
 playscreen.fetchingRealms=Accès aux Realms...	#
 playscreen.confirmLeaveMessage=Voulez-vous vraiment quitter le Realm %1$s ?	#
@@ -5195,6 +5190,7 @@ stats.tooltip.type.statistic=Statistique	#
 store.title=Magasin	#
 store.allStores=Tous les magasins	#
 store.menu.home=Accueil	#
+store.itemDetail.back=Détails	#
 
 store.inventory.button=Inventaire	#
 store.inventory.title=Inventaire	#
@@ -5254,17 +5250,16 @@ store.popup.purchaseFailed.msg=Impossible de terminer votre achat. Peut-être de
 store.popup.purchaseFailedInsufficientFunds.title=Il vous faut plus de Pièces	#
 store.popup.purchaseFailedInsufficientFunds.msg=Vous n'avez pas assez de Pièces pour déverrouiller cet objet. Vous pouvez acheter des Pièces dans votre boutique d'applications.	#
 store.popup.purchaseFailedInsufficientFunds.buyButton=Obtenir des Pièces	#
-store.popup.purchasePriceMismatch.msg=Désolé, nous n'avons pas pu terminer votre achat. Réessayez plus tard.	#
 store.purchase.success=Vous venez d'acheter : %s	#
 store.createdBy=De %s	#
 store.seeMoreBy=En voir d'autres par %s	#
 store.fetchingItem=Connexion au magasin...	#
  
-store.timer.daysAbbreviated=%s j		### This is to let player know how many days are left in a sale. It needs to be abbreviated with no more than 3 characters
-store.timer.hoursAbbreviated=%s h		### This is to let player know how many days are left in a sale. It needs to be abbreviated with no more than 3 characters
-store.timer.minutesAbbreviated=%s min		### This is to let player know how many days are left in a sale. It needs to be abbreviated with no more than 3 characters
-store.timer.secondsAbbreviated=%s sec		### This is to let player know how many days are left in a sale. It needs to be abbreviated with no more than 3 characters
-store.timer.left=%s restant(e)s	#
+store.timer.daysAbbreviated=%sj	#
+store.timer.hoursAbbreviated=%shr	#
+store.timer.minutesAbbreviated=%smin	#
+store.timer.secondsAbbreviated=%ssec	#
+store.timer.left=%s gauche	#
 
 store.startMenu.sale=Soldes !	#
 
@@ -5415,12 +5410,6 @@ store.xbl.disconnected=Déconnecté	#
 store.xbl.conversionFailedTitle=Une erreur s'est produite	#
 store.xbl.conversionFailedMessage=Veuillez réessayer ultérieurement.	#
 
-store.sales.allByCreator=En soldes maintenant !	#
-store.sales.mashupsOnSale=Mash-ups en soldes maintenant !	#
-store.sales.skinsOnSale=Skins en soldes maintenant !	#
-store.sales.texturesOnSale=Packs de textures en soldes maintenant !	#
-store.sales.worldsOnSale=Mondes en soldes maintenant !	#
-
 store.showalloffers.list.title=Magasin %s 	#
 store.showalloffers.list.back=Revenir	#
 
@@ -5429,6 +5418,14 @@ store.suggestedOffers.defaultTitle=Différentes façons de s'amuser	#
 store.minecoin.notavailable=L'achat de Pièces n'est pas disponible dans cette version de Minecraft.	#
 
 store.itemDetail.back=Détails	#
+store.timeRemaining=Temps restant : %s	#
+store.daysRemaining=%s jours restants	#
+
+store.sales.allByCreator=En vente maintenant !	#
+store.sales.mashupsOnSale=Mash-ups en vente maintenant !	#
+store.sales.skinsOnSale=Skins en vente maintenant !	#
+store.sales.texturesOnSale=Packs de textures en vente maintenant !	#
+store.sales.worldsOnSale=Mondes en vente maintenant !	#
 
 store.search.allResults=%d résultats	#
 store.search.dynamicPlaceHolderText=Essayez de rechercher %s !	#
@@ -6242,8 +6239,7 @@ trial.upsell.description.updated=Explorez, fabriquez, construisez et amusez-vous
 trial.upsell.unlock=Déverrouiller le jeu complet	#
 trial.upsell.startTrial=Commencer l'essai	#
 
-ratingPopUp.title=Vous aimez Minecraft ?	#
-feedbackPopup.title=Voulez-vous nous donner votre avis ?	#
+
 
 ## NOTE: The following five lines are all related and shown together. When localizing, you may add line breaks to fit the paragraph,
 ## as opposed to trying to literally translate each line.

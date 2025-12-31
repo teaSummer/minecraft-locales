@@ -185,9 +185,9 @@ authentication.clickToPurchaseMessage=Bed din underviser om at købe en licens t
 authentication.clickToPurchaseStudent=http://aka.ms/meestore	#
 authentication.clickToPurchaseTeacher=Klik her for at købe en licens	#
 authentication.adalException=Vi kan ikke oprette forbindelse til den relevante tjeneste. Tjek din internetforbindelse, eller prøv igen senere.	#
-authentication.buyMinecraft=Åbn App Store	#
-authentication.educationOnly=Minecraft: Education Edition er kun for skoler. Du kan kun spille, hvis du har en Office 365 Education-konto.	#
-authentication.minecraftInstead=Vil du spille Minecraft i en anden version?	#
+authentication.buyMinecraft=Få Minecraft	#
+authentication.educationOnly=Minecraft: Education Edition er kun tilgængelig for skoler, biblioteker og museer som allerede har købt et abonnement fra Microsoft.	#
+authentication.minecraftInstead=Hvis dette ikke er dig, spil Minecraft i stedet.	#
 authentication.signInButton=Log på med din skole-konto	#
 
 
@@ -643,6 +643,7 @@ commands.scoreboard.players.list.player.entry=- %2$s: %1$d (%3$s)											###1
 commands.scoreboard.players.operation.invalidOperation=Operationen %1$s er ugyldig								###
 commands.scoreboard.players.operation.notFound=Der er ingen %1$s-score for %2$s									###1: Objective Name ##2: Player Name
 commands.scoreboard.players.operation.success=Operationen lykkedes								###
+commands.scoreboard.players.random.invalidRange=Min. %1$d er ikke mindre end maks. %2$d                   	###1: Min Range Value ##2: Max Range Value
 commands.scoreboard.players.reset.success=Scorerne for spilleren %1$s er nulstillet										###1: Player Name
 commands.scoreboard.players.resetscore.success=%1$s-scoren for spilleren %2$s er nulstillet								###1: Objective Name ##2: Player Name
 commands.scoreboard.players.set.success=%1$s-scoren for spilleren %2$s er sat til %3$d							###1: Objective Name ##2: Player Name ##3: Score Value
@@ -1239,7 +1240,6 @@ realmsCreateScreen.incomplete.override.realm=Du forsøger at forny et realm, sel
 realmsCreateScreen.prepare.store.title=Vi mangler din købshistorik	#
 realmsCreateScreen.prepare.store.body=Du er nødt til at logge på butikken, så vi kan se din købshistorik, inden vi kan fortsætte.	#
 realmsCreateScreen.prepare.store.button=Log på butikken	#
-realmsCreateScreen.nsoinfotext=Du kan kun bruge Realms, hvis du har et abonnement på Nintendo Switch Online.	#
 
 realmsCreateScreen.title=Opret et realm	#
 realmsCreateScreen.nameHeader=Realmnavn	#
@@ -1603,7 +1603,6 @@ disconnectionScreen.realmsWorldUnassigned=Tildel version i udviklerindstillinger
 disconnectionScreen.realmsWorldUnassigned.title=Realmet er ikke tildelt!	#
 disconnectionScreen.serverFull=Wow, den her server er populær! Kig forbi igen senere, og se, om der er blevet plads.	#
 disconnectionScreen.serverFull.title=Serveren er fyldt	#
-disconnectionScreen.serverIdConflict=Du kan ikke komme ind i verdenen. Du er logget på en konto, der allerede spiller i samme verden på en anden enhed.	#
 disconnectionScreen.sessionNotFound=Der kunne ikke oprettes forbindelse til verdenen. Den er ikke længere tilgængelig for deltagelse.	#
 disconnectionScreen.timeout=Forbindelsen fik timeout.	#
 disconnectionScreen.nowifi=Du skal have forbindelse til wi-fi for at spille med dine venner.	#
@@ -1705,7 +1704,7 @@ entity.item.name=Genstand	#
 entity.leash_knot.name=Lineknude	#
 entity.lightning_bolt.name=Lyn	#
 entity.lingering_potion.name=Langvarig eliksir	#
-entity.llama.name=Lama	#
+entity.llama.name=Llama	#
 entity.llama_spit.name=Lamaspyt	#
 entity.magma_cube.name=Magmakube	#
 entity.minecart.name=Minevogn	#
@@ -1913,7 +1912,6 @@ gui.up=Op	#
 gui.warning.exitGameWarning=Vil du forlade Minecraft?	#
 gui.worldTemplate=Skabelon for Minecraft-verden	#
 gui.yes=Ja	#
-gui.feedbackYes=Ja, åbn feedbackwebsite	#
 gui.resourcepacks=Ressourcepakker ...	#
 gui.submit=Send	#
 gui.playOffline=Spil offline	#
@@ -3565,7 +3563,7 @@ item.spawn_egg.entity.snow_golem.name=Spawn snegolem	#
 item.spawn_egg.entity.ocelot.name=Spawn ozelot	#
 item.spawn_egg.entity.parrot.name=Spawn papegøje	#
 item.spawn_egg.entity.horse.name=Spawn hest	#
-item.spawn_egg.entity.llama.name=Spawn lama	#
+item.spawn_egg.entity.llama.name=Spawn llama	#
 item.spawn_egg.entity.polar_bear.name=Spawn isbjørn	#
 item.spawn_egg.entity.donkey.name=Spawn æsel	#
 item.spawn_egg.entity.mule.name=Spawn muldyr	#
@@ -4004,8 +4002,6 @@ multiplayer.info2=er en form for tidlig fejltestning i gang.	#
 multiplayer.ipinfo=Angiv ip-adressen på serveren for at oprette forbindelse til den:	#
 multiplayer.packErrors=Mindst én af dine ressource- eller adfærdspakker kunne ikke indlæses.	#
 multiplayer.packErrors.realms=Mindst én af dine ressource- eller adfærdspakker kunne ikke indlæses. Du kan se flere detaljer om fejlen, hvis du downloader verdenen fra dine realm-indstillinger.	#
-multiplayer.player.inventory.recovered=Inventar er fundet og er placeret i kister nær dig.	#
-multiplayer.player.inventory.failed=Inventar er fundet. Find et sikkert sted, og vi placerer en kiste nær dig næste gang du tilslutter dig en verden.	#
 multiplayer.player.joined=%s sluttede sig til spillet	#
 multiplayer.player.joined.renamed=%s (tidligere kendt som %s) sluttede sig til spillet	#
 multiplayer.player.joined.realms=%s sluttede sig til realmet	#
@@ -4550,8 +4546,7 @@ playscreen.lastPlayed.weeksAgo=%1 uger siden	#
 playscreen.lastPlayed.yesterday=I går	#
 playscreen.new=Ny	#
 playscreen.remoteWorld=Ekstern verden på:	#
-playscreen.realmsTrialWorld=30 dages gratis prøveversion	#
-playscreen.realmsCreateFirstWorld=Opret dit første realm	#
+playScreen.realmsTrialWorld=30 dages gratis prøveversion	#
 playscreen.checkingRealmsCompatibility=Tjekker Realms-kompatibilitet ...	#
 playscreen.fetchingRealms=Henter Realms ...	#
 playscreen.confirmLeaveMessage=Er du sikker på, at du vil forlade realmet %1$s?	#
@@ -5195,6 +5190,7 @@ stats.tooltip.type.statistic=Statistik	#
 store.title=Butik	#
 store.allStores=Alle butikker	#
 store.menu.home=Start	#
+store.itemDetail.back=Detaljer	#
 
 store.inventory.button=Lager	#
 store.inventory.title=Lager	#
@@ -5254,16 +5250,15 @@ store.popup.purchaseFailed.msg=Vi kunne ikke gennemføre dit køb. Måske skulle
 store.popup.purchaseFailedInsufficientFunds.title=Du har brug for flere mønter	#
 store.popup.purchaseFailedInsufficientFunds.msg=Du har ikke nok mønter til at købe genstanden. Du kan købe mønter i din appbutik.	#
 store.popup.purchaseFailedInsufficientFunds.buyButton=Køb mønter	#
-store.popup.purchasePriceMismatch.msg=Vi kunne ikke gennemføre dit køb. Prøv igen senere.	#
 store.purchase.success=Du har lige købt: %s	#
 store.createdBy=Af %s	#
 store.seeMoreBy=Se mere fra %s	#
 store.fetchingItem=Opretter forbindelse til butik ...	#
  
-store.timer.daysAbbreviated=%sd		### This is to let player know how many days are left in a sale. It needs to be abbreviated with no more than 3 characters
-store.timer.hoursAbbreviated=%st		### This is to let player know how many days are left in a sale. It needs to be abbreviated with no more than 3 characters
-store.timer.minutesAbbreviated=%smin		### This is to let player know how many days are left in a sale. It needs to be abbreviated with no more than 3 characters
-store.timer.secondsAbbreviated=%ssek		### This is to let player know how many days are left in a sale. It needs to be abbreviated with no more than 3 characters
+store.timer.daysAbbreviated=%sd	#
+store.timer.hoursAbbreviated=%st.	#
+store.timer.minutesAbbreviated=%smin.	#
+store.timer.secondsAbbreviated=%ssek.	#
 store.timer.left=%s resterende	#
 
 store.startMenu.sale=Udsalg!	#
@@ -5415,12 +5410,6 @@ store.xbl.disconnected=Afbrudt	#
 store.xbl.conversionFailedTitle=Der gik noget galt	#
 store.xbl.conversionFailedMessage=Prøv igen senere.	#
 
-store.sales.allByCreator=På udsalg!	#
-store.sales.mashupsOnSale=Mashups på udsalg!	#
-store.sales.skinsOnSale=Skins på udsalg!	#
-store.sales.texturesOnSale=Teksturpakker på udsalg!	#
-store.sales.worldsOnSale=Verdener på udsalg!	#
-
 store.showalloffers.list.title=%s-butik 	#
 store.showalloffers.list.back=Gå tilbage	#
 
@@ -5429,6 +5418,14 @@ store.suggestedOffers.defaultTitle=Sjove spilidéer	#
 store.minecoin.notavailable=Køb med mønter understøttes ikke i denne version af Minecraft.	#
 
 store.itemDetail.back=Detaljer	#
+store.timeRemaining=Resterende tid: %s	#
+store.daysRemaining=%s dage tilbage	#
+
+store.sales.allByCreator=På udsalg!	#
+store.sales.mashupsOnSale=Mashups på udsalg!	#
+store.sales.skinsOnSale=Skins på udsalg!	#
+store.sales.texturesOnSale=Teksturpakker på udsalg!	#
+store.sales.worldsOnSale=Verdener på udsalg!	#
 
 store.search.allResults=%d resultater	#
 store.search.dynamicPlaceHolderText=Prøv at søge efter %s!	#
@@ -6242,8 +6239,7 @@ trial.upsell.description.updated=Fremstil, byg, udforsk, og hav det sjovt! Prøv
 trial.upsell.unlock=Lås op for det komplette spil	#
 trial.upsell.startTrial=Start prøveversion	#
 
-ratingPopUp.title=Er du glad for at spille Minecraft?	#
-feedbackPopup.title=Har du noget feedback til os?	#
+
 
 ## NOTE: The following five lines are all related and shown together. When localizing, you may add line breaks to fit the paragraph,
 ## as opposed to trying to literally translate each line.

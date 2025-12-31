@@ -185,9 +185,9 @@ authentication.clickToPurchaseMessage=Demandez à votre Éducateur de vous achet
 authentication.clickToPurchaseStudent=http://aka.ms/meestore	#
 authentication.clickToPurchaseTeacher=Cliquez ici pour acheter une licence	#
 authentication.adalException=Nous ne pouvons nous connecter au service dont vous avez besoin pour le moment. Veuillez vérifier votre connexion Internet ou réessayer plus tard.	#
-authentication.buyMinecraft=Se rendre au magasin d'applications	#
-authentication.educationOnly=La version Minecraft: Education Edition n'est offerte qu'aux écoles. Vous devez avoir un compte Office 365 Éducation pour y jouer.	#
-authentication.minecraftInstead=Vous n'êtes pas un utilisateur de la version Éducation, mais vous souhaitez quand même jouer à Minecraft?	#
+authentication.buyMinecraft=Obtenir Minecraft	#
+authentication.educationOnly=La version Minecraft: Education Edition n'est offerte qu'aux écoles, bibliothèques et musées qui ont déjà un abonnement à Microsoft.	#
+authentication.minecraftInstead=Si ce n'est pas votre cas, jouez plutôt à l'une de ces versions de Minecraft :	#
 authentication.signInButton=Se connecter avec votre compte scolaire	#
 
 
@@ -643,6 +643,7 @@ commands.scoreboard.players.list.player.entry=- %2$s : %1$d (%3$s)											###
 commands.scoreboard.players.operation.invalidOperation=Opération invalide %1$s								###
 commands.scoreboard.players.operation.notFound=Aucun score %1$s de trouvé pour %2$s									###1: Objective Name ##2: Player Name
 commands.scoreboard.players.operation.success=L'opération a été appliquée avec succès								###
+commands.scoreboard.players.random.invalidRange=Min. %1$d n'est pas moins que max. %2$d                   	###1: Min Range Value ##2: Max Range Value
 commands.scoreboard.players.reset.success=Réinitialisation des scores du joueur %1$s										###1: Player Name
 commands.scoreboard.players.resetscore.success=Réinitialisation du score %1$s du joueur%2$s								###1: Objective Name ##2: Player Name
 commands.scoreboard.players.set.success=Définir le score de l'objectif %1$s pour le joueur %2$s à %3$d							###1: Objective Name ##2: Player Name ##3: Score Value
@@ -1239,7 +1240,6 @@ realmsCreateScreen.incomplete.override.realm=Vous tentez de renouveler un Realm,
 realmsCreateScreen.prepare.store.title=Historique d'achat requis	#
 realmsCreateScreen.prepare.store.body=Vous devez vous connecter au magasin pour afficher votre historique d'achat avant que nous puissions continuer.	#
 realmsCreateScreen.prepare.store.button=Se connecter au magasin	#
-realmsCreateScreen.nsoinfotext=Vous devez vous abonner aux services en ligne Nintendo Switch pour utiliser les Realms.	#
 
 realmsCreateScreen.title=Créer un Realm	#
 realmsCreateScreen.nameHeader=Nom du Realm	#
@@ -1603,7 +1603,6 @@ disconnectionScreen.realmsWorldUnassigned=Assigner la version dans les options d
 disconnectionScreen.realmsWorldUnassigned.title=Realm non assigné !	#
 disconnectionScreen.serverFull=Oh! Ce serveur est très populaire. Réessayez plus tard pour voir si une place s'est libérée.	#
 disconnectionScreen.serverFull.title=Serveur complet	#
-disconnectionScreen.serverIdConflict=Impossible de rejoindre le monde. Le compte avec lequel vous êtes connecté est déjà dans une partie sur ce monde au moyen d'un autre appareil.	#
 disconnectionScreen.sessionNotFound=Connexion au monde impossible. Il n'est plus possible de rejoindre ce monde.	#
 disconnectionScreen.timeout=Délai de connexion dépassé.	#
 disconnectionScreen.nowifi=Vous devez être connecté en Wi-Fi pour jouer entre amis.	#
@@ -1913,7 +1912,6 @@ gui.up=Haut	#
 gui.warning.exitGameWarning=Voulez-vous quitter Minecraft ?	#
 gui.worldTemplate=Modèle de monde Minecraft	#
 gui.yes=Oui	#
-gui.feedbackYes=Oui, accéder au site Web	#
 gui.resourcepacks=Packs de ressources...	#
 gui.submit=Soumettre	#
 gui.playOffline=Jouer hors ligne	#
@@ -2105,7 +2103,7 @@ howtoplay.commands.text.2=De multiples commandes vous permettront de faire des c
 howtoplay.conduits=Tuyaux	#
 howtoplay.conduits.title=Guide pratique : les tuyaux	#
 howtoplay.conduits.text.1=Un tuyau actif vous donne de la puissance lorsque vous êtes sous l'eau.	#
-howtoplay.conduits.text.2=Un tuyau est fabriqué de coques de nautile et d'un cœur de la mer. Le tuyau tire sa puissance des prismarins et des lanternes de mer.	#
+howtoplay.conduits.text.2=Un tuyau est fabriqué de coques de nautile et d'un cœur de la mer. Le tuyau transporte la puissance des prismarins aux lanternes de mer.	#
 howtoplay.conduits.header.1=Construction	#
 howtoplay.conduits.text.3=Dès son activation, un tuyau alimentera les tuyaux à proximité.	#
 howtoplay.conduits.text.4=Plus il tire de puissance, plus loin celle-ci se rendra.	#
@@ -2618,8 +2616,8 @@ howtoplay.weapons.text.4=Les arcs infligeront plus de dégâts si leur corde est
 howtoplay.weapons.header.3=Armes enchantées	#
 howtoplay.weapons.text.5=L'épée, l'arc et le Trident ont tous des enchantements particuliers que vous pouvez obtenir sur une table d'enchantement ou sur une enclume. Ceci améliorera l'intensité des dégâts infligés et leur durabilité. Vous pourrez même incendier des créatures!	#
 howtoplay.weapons.header.trident=Trident	#
-howtoplay.weapons.text.trident.notTouch=Le Trident est une arme à double usage : de mêlée et de portée. Appuyez sur :_input_key.attack: pour attaquer. Appuyez sur :_input_key.use: et maintenez enfoncé pour amener le Trident vers l'arrière. Relâchez :_input_key.use: pour lancer le Trident. Le Trident est la meilleure arme sous-marine.	#
-howtoplay.weapons.text.trident.touch=Le Trident est une arme à double usage : de mêlée et de portée. Touchez les créatures pour les attaquer. Appuyez sur l'écran en maintenant votre toucher pour amener le Trident vers l'arrière. Relâchez votre toucher pour lancer le Trident. Le Trident est la meilleure arme sous-marine.	#
+howtoplay.weapons.text.trident.notTouch=Le Trident est une arme à double usage : de mêlée et de portée. Appuyez sur :_input_key.attack: pour attaquer. Appuyez sur :_input_key.use: et maintenez enfoncé pour retirer le Trident. Relâchez :_input_key.use: pour lancer le Trident. Le Trident est la meilleure arme sous-marine.	#
+howtoplay.weapons.text.trident.touch=Le Trident est une arme à double usage : de mêlée et de portée. Touchez les créatures pour les attaquer. Appuyez sur l'écran en maintenant votre toucher pour retirer le Trident. Relâchez votre toucher pour lancer le Trident. Le Trident est la meilleure arme sous-marine.	#
 
 howtoplay.whatsNew=Nouveautés	#
 
@@ -4004,8 +4002,6 @@ multiplayer.info2=mais des premiers tests sont en train d'être effectués.	#
 multiplayer.ipinfo=Entrez l'adresse IP d'un serveur pour vous y connecter :	#
 multiplayer.packErrors=Au moins un de vos packs de ressources ou de comportement n’a pas été chargé correctement.	#
 multiplayer.packErrors.realms=Au moins un de vos packs de ressources ou de comportement n’a pas été chargé correctement. Essayez de télécharger ce monde depuis vos paramètres Realm afin de voir plus de détails sur cette erreur.	#
-multiplayer.player.inventory.recovered=L'inventaire a été récupéré et placé dans des coffres à proximité.	#
-multiplayer.player.inventory.failed=L'inventaire a été récupéré. Trouvez un lieu sûr et nous placerons un coffre à proximité la prochaine fois où vous rejoindrez ce monde.	#
 multiplayer.player.joined=%s a rejoint la partie	#
 multiplayer.player.joined.renamed=%s (anciennement nommé(e) %s) a rejoint la partie	#
 multiplayer.player.joined.realms=%s a rejoint le Realm	#
@@ -4550,8 +4546,7 @@ playscreen.lastPlayed.weeksAgo=Il y a %1 semaine(s)	#
 playscreen.lastPlayed.yesterday=Hier	#
 playscreen.new=Nouveau	#
 playscreen.remoteWorld=Monde distant à :	#
-playscreen.realmsTrialWorld=Essai gratuit de 30 jours	#
-playscreen.realmsCreateFirstWorld=Créer votre premier Realm	#
+playScreen.realmsTrialWorld=Essai gratuit de 30 jours	#
 playscreen.checkingRealmsCompatibility=Vérification de la compatibilité Realms...	#
 playscreen.fetchingRealms=Accès aux Realms...	#
 playscreen.confirmLeaveMessage=Voulez-vous vraiment quitter le Realm %1$s?	#
@@ -5195,6 +5190,7 @@ stats.tooltip.type.statistic=Statistique	#
 store.title=Magasin	#
 store.allStores=Tous les magasins	#
 store.menu.home=Accueil	#
+store.itemDetail.back=Détails	#
 
 store.inventory.button=Inventaire	#
 store.inventory.title=Inventaire	#
@@ -5254,16 +5250,15 @@ store.popup.purchaseFailed.msg=Désolé, nous sommes dans l'incapacité de termi
 store.popup.purchaseFailedInsufficientFunds.title=Vous avez besoin de plus de pièces	#
 store.popup.purchaseFailedInsufficientFunds.msg=Vous n'avez pas assez de pièces pour déverrouiller cet objet. Vous pouvez acheter des pièces auprès de votre magasin d'applications.	#
 store.popup.purchaseFailedInsufficientFunds.buyButton=Obtenir des pièces	#
-store.popup.purchasePriceMismatch.msg=Désolé, votre achat n'a pu être complété.  Veuillez réessayer plus tard.	#
 store.purchase.success=Vous venez d'acheter : %s	#
 store.createdBy=Par %s	#
 store.seeMoreBy=En voir plus de %s	#
 store.fetchingItem=Connexion au magasin...	#
  
-store.timer.daysAbbreviated=%s j		### This is to let player know how many days are left in a sale. It needs to be abbreviated with no more than 3 characters
-store.timer.hoursAbbreviated=%s h		### This is to let player know how many days are left in a sale. It needs to be abbreviated with no more than 3 characters
-store.timer.minutesAbbreviated=%s min		### This is to let player know how many days are left in a sale. It needs to be abbreviated with no more than 3 characters
-store.timer.secondsAbbreviated=%s s		### This is to let player know how many days are left in a sale. It needs to be abbreviated with no more than 3 characters
+store.timer.daysAbbreviated=%s j	#
+store.timer.hoursAbbreviated=%s h	#
+store.timer.minutesAbbreviated=%s min	#
+store.timer.secondsAbbreviated=%s s	#
 store.timer.left=%s restant(e)s	#
 
 store.startMenu.sale=Soldes!	#
@@ -5278,7 +5273,7 @@ store.content.requireXbl.signedIn=Télécharger gratuitement avec Xbox Live.	#
 store.content.requireXbl.notSignedIn=Se connecter à Xbox Live pour déverrouiller.	#
 
 store.mashup.continue=Continuer	#
-store.mashup.createWorld=Créer ce monde!	#
+store.mashup.createWorld=Créer ce monde !	#
 store.mashup.equipSkin=Équiper	#
 store.mashup.equipThisSkin=Équiper la skin %s!	#
 store.mashup.readMore=En savoir plus	#
@@ -5335,7 +5330,7 @@ store.coins.purchase.toast.withCoinCount=Vous venez d'acheter %s pièces!	#
 store.coins.purchase.toast.unknownCoinCount=Vous venez d'acheter des pièces!	#
 store.coins.purchased.failed.title=Une erreur s'est produite	#
 store.coins.purchased.failed.body=La connexion au magasin d'applications a échoué. Veuillez tenter de vous connecter au magasin d'applications ou vérifiez votre connexion Internet.	#
-store.coins.tooManyCoins=Utilisez quelques-unes de vos pièces, vous pourrez par la suite en acheter plus.	#
+store.coins.tooManyCoins=Utilisez de vos pièces, vous pourrez par la suite en acheter plus.	#
 store.coins.incomplete.title=Achat de pièces incomplet	#
 store.coins.incomplete.fulfill.a=On dirait que nous n'avions pas tout à terminé votre achat, alors allons-y.	#
 store.coins.incomplete.fulfill.b=On dirait que vous avez commencé un achat avec un autre compte Xbox Live. Voulez-vous plutôt procéder à l'achat avec ce compte Xbox Live?	#
@@ -5415,12 +5410,6 @@ store.xbl.disconnected=Déconnecté	#
 store.xbl.conversionFailedTitle=Une erreur s'est produite	#
 store.xbl.conversionFailedMessage=Veuillez réessayer plus tard.	#
 
-store.sales.allByCreator=En solde maintenant!	#
-store.sales.mashupsOnSale=Mash-ups en solde maintenant!	#
-store.sales.skinsOnSale=Skins en solde maintenant!	#
-store.sales.texturesOnSale=Pack de textures en solde maintenant!	#
-store.sales.worldsOnSale=Mondes en solde maintenant!	#
-
 store.showalloffers.list.title=Magasin %s 	#
 store.showalloffers.list.back=Revenir	#
 
@@ -5429,6 +5418,14 @@ store.suggestedOffers.defaultTitle=Des façons amusantes de jouer	#
 store.minecoin.notavailable=Les achats avec des pièces ne sont pas possibles sur cette version de Minecraft.	#
 
 store.itemDetail.back=Détails	#
+store.timeRemaining=Temps restant : %s	#
+store.daysRemaining=%s jours restants	#
+
+store.sales.allByCreator=En vente maintenant!	#
+store.sales.mashupsOnSale=Mash-ups en vente maintenant!	#
+store.sales.skinsOnSale=Skins en vente maintenant!	#
+store.sales.texturesOnSale=Pack de textures en vente maintenant!	#
+store.sales.worldsOnSale=Mondes en vente maintenant!	#
 
 store.search.allResults=%d résultats	#
 store.search.dynamicPlaceHolderText=Essayez de rechercher %s!	#
@@ -6242,8 +6239,7 @@ trial.upsell.description.updated=Explorez, fabriquez, construisez et amusez-vous
 trial.upsell.unlock=Déverrouiller le jeu complet	#
 trial.upsell.startTrial=Commencer l'essai	#
 
-ratingPopUp.title=Est-ce que vous aimez Minecraft?	#
-feedbackPopup.title=Vous avez des commentaires pour nous?	#
+
 
 ## NOTE: The following five lines are all related and shown together. When localizing, you may add line breaks to fit the paragraph,
 ## as opposed to trying to literally translate each line.

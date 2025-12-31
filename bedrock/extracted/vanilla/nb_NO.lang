@@ -185,9 +185,9 @@ authentication.clickToPurchaseMessage=Be en lærer om å kjøpe en lisens til de
 authentication.clickToPurchaseStudent=http://aka.ms/meestore	#
 authentication.clickToPurchaseTeacher=Klikk her for å kjøpe en lisens	#
 authentication.adalException=Vi kan ikke koble deg til den nødvendige tjenesten akkurat nå. Sjekk nettverkstilkoblingen, eller prøv på nytt senere.	#
-authentication.buyMinecraft=Gå til App Store	#
-authentication.educationOnly=Minecraft: Education Edition er bare tilgjengelig for skoler. Du må ha en Office 365 Education-konto for å spille.	#
-authentication.minecraftInstead=Er du ikke skolebruker, men har lyst til å spille Minecraft likevel?	#
+authentication.buyMinecraft=Kjøp Minecraft	#
+authentication.educationOnly=Minecraft: Education Edition er bare tilgjengelig for skoler, biblioteker og museer som allerede har kjøpt et abonnement fra Microsoft.	#
+authentication.minecraftInstead=Hvis dette ikke beskriver deg, kan du spille Minecraft i stedet:	#
 authentication.signInButton=Logg deg på med skolekontoen din	#
 
 
@@ -643,6 +643,7 @@ commands.scoreboard.players.list.player.entry=– %2$s: %1$d (%3$s)											##
 commands.scoreboard.players.operation.invalidOperation=Operasjonen "%1$s" er ugyldig								###
 commands.scoreboard.players.operation.notFound=Fant ikke resultatet %1$s for %2$s									###1: Objective Name ##2: Player Name
 commands.scoreboard.players.operation.success=Operasjonen ble utført								###
+commands.scoreboard.players.random.invalidRange=Min. %1$d er ikke mindre enn maks. %2$d                   	###1: Min Range Value ##2: Max Range Value
 commands.scoreboard.players.reset.success=Tilbakestilte resultatene for spilleren %1$s										###1: Player Name
 commands.scoreboard.players.resetscore.success=Tilbakestilte resultatet %1$s for spilleren %2$s								###1: Objective Name ##2: Player Name
 commands.scoreboard.players.set.success=Satte resultatet for %1$s for spilleren %2$s til %3$d							###1: Objective Name ##2: Player Name ##3: Score Value
@@ -1239,7 +1240,6 @@ realmsCreateScreen.incomplete.override.realm=Du prøver å fornye en realm, men 
 realmsCreateScreen.prepare.store.title=Kjøpslogg kreves	#
 realmsCreateScreen.prepare.store.body=Du må logge deg på butikken for å se kjøpsloggen din før vi kan fortsette.	#
 realmsCreateScreen.prepare.store.button=Logg på Store	#
-realmsCreateScreen.nsoinfotext=Du må abonnere på Nintendo Switch Online for å bruke Realms.	#
 
 realmsCreateScreen.title=Lag en realm	#
 realmsCreateScreen.nameHeader=Realmens navn	#
@@ -1603,7 +1603,6 @@ disconnectionScreen.realmsWorldUnassigned=Tilordne versjon i alternativene for u
 disconnectionScreen.realmsWorldUnassigned.title=Realmen er ikke tilordnet!	#
 disconnectionScreen.serverFull=Wow, denne serveren er populær! Kom tilbake senere for å se om det er ledig plass.	#
 disconnectionScreen.serverFull.title=Serveren er full	#
-disconnectionScreen.serverIdConflict=Kan ikke bli med i verdenen. Kontoen du er logget på, brukes for øyeblikket til å spille i denne verdenen på en annen enhet.	#
 disconnectionScreen.sessionNotFound=Kan ikke koble til verdenen. Det er ikke lenger mulig å bli med i den.	#
 disconnectionScreen.timeout=Tilkoblingen ble tidsavbrutt.	#
 disconnectionScreen.nowifi=Du må være tilkoblet via Wi-Fi for å spille med vennene dine.	#
@@ -1913,7 +1912,6 @@ gui.up=Opp	#
 gui.warning.exitGameWarning=Vil du avslutte Minecraft?	#
 gui.worldTemplate=Minecraft-verdensmal	#
 gui.yes=Ja	#
-gui.feedbackYes=Ja, gå til tilbakemeldinger	#
 gui.resourcepacks=Ressurspakker…	#
 gui.submit=Send	#
 gui.playOffline=Spill uten Internett-tilkobling	#
@@ -4004,8 +4002,6 @@ multiplayer.info2=foregår litt tidlig testing (med mange feil).	#
 multiplayer.ipinfo=Oppgi IP-en til en server for å koble deg til den:	#
 multiplayer.packErrors=Kan ikke laste inn minst én av ressurs- eller atferdspakkene.	#
 multiplayer.packErrors.realms=Kan ikke laste inn minst én av ressurs- eller atferdspakkene. Prøv å laste inn denne verdenen fra realminnstillingene for å se mer informasjon om feilen.	#
-multiplayer.player.inventory.recovered=Inventaret har blitt gjenopprettet og plassert i kister nær deg.	#
-multiplayer.player.inventory.failed=Inventaret har blitt gjenopprettet. Finn deg et trygt sted, så plasserer vi en kiste nær deg neste gang du blir med i verdenen.	#
 multiplayer.player.joined=%s har blitt med i spillet	#
 multiplayer.player.joined.renamed=%s (tidligere kjent som %s) har blitt med i spillet	#
 multiplayer.player.joined.realms=%s har blitt med i realmen	#
@@ -4550,8 +4546,7 @@ playscreen.lastPlayed.weeksAgo=%1 uker siden	#
 playscreen.lastPlayed.yesterday=I går	#
 playscreen.new=Nytt	#
 playscreen.remoteWorld=Ekstern verden på:	#
-playscreen.realmsTrialWorld=Prøv gratis i 30 dager	#
-playscreen.realmsCreateFirstWorld=Lag den første realmen din	#
+playScreen.realmsTrialWorld=Prøv gratis i 30 dager	#
 playscreen.checkingRealmsCompatibility=Sjekker kompatibiliteten med Realms …	#
 playscreen.fetchingRealms=Henter Realms …	#
 playscreen.confirmLeaveMessage=Er du sikker på at du vil forlate realmen %1$s?	#
@@ -5105,7 +5100,7 @@ skins.picker.default=Standard	#
 skins.picker.recent=Sist brukte	#
 skins.picker.no.cross.platform=Plattformbegrenset skallpakke	#
 skins.picker.no.multiplayer=Skallpakke med flerspillerbegrensning	#
-skins.store.upsell.buy.button=Lås opp alle %s skall for %s:minecoin:	#
+skins.store.upsell.buy.button=Lås opp alle %s-skall for %s:minecoin:	#
 skins.store.upsell.equip.button=Bruk dette skallet	#
 skins.store.upsell.info=Du må låse opp denne pakken for å bruke det valgte skallet.	#
 skins.store.equipped=Du har tatt på deg skallet %s.	#
@@ -5195,6 +5190,7 @@ stats.tooltip.type.statistic=Statistikk	#
 store.title=Butikk	#
 store.allStores=Alle butikker	#
 store.menu.home=Hjem	#
+store.itemDetail.back=Detaljer	#
 
 store.inventory.button=Inventar	#
 store.inventory.title=Inventar	#
@@ -5254,16 +5250,15 @@ store.popup.purchaseFailed.msg=Beklager, men vi kunne ikke fullføre kjøpet dit
 store.popup.purchaseFailedInsufficientFunds.title=Du trenger flere mynter	#
 store.popup.purchaseFailedInsufficientFunds.msg=Du har ikke nok mynter til å låse opp denne gjenstanden. Du kan kjøpe mynter i appbutikken.	#
 store.popup.purchaseFailedInsufficientFunds.buyButton=Skaff deg mynter	#
-store.popup.purchasePriceMismatch.msg=Beklager, men vi kunne ikke fullføre kjøpet ditt. Prøv på nytt senere.	#
 store.purchase.success=Du kjøpte nettopp: %s	#
 store.createdBy=Av %s	#
 store.seeMoreBy=Se mer av %s	#
 store.fetchingItem=Kobler til butikken …	#
  
-store.timer.daysAbbreviated=%s d		### This is to let player know how many days are left in a sale. It needs to be abbreviated with no more than 3 characters
-store.timer.hoursAbbreviated=%s t		### This is to let player know how many days are left in a sale. It needs to be abbreviated with no more than 3 characters
-store.timer.minutesAbbreviated=%s min		### This is to let player know how many days are left in a sale. It needs to be abbreviated with no more than 3 characters
-store.timer.secondsAbbreviated=%s s		### This is to let player know how many days are left in a sale. It needs to be abbreviated with no more than 3 characters
+store.timer.daysAbbreviated=%s d	#
+store.timer.hoursAbbreviated=%s t	#
+store.timer.minutesAbbreviated=%s min	#
+store.timer.secondsAbbreviated=%s s	#
 store.timer.left=%s igjen	#
 
 store.startMenu.sale=Salg!	#
@@ -5286,7 +5281,7 @@ store.mashup.mashupPack=Mash-Up-pakke	#
 store.mashup.skinPack=Skallpakke	#
 store.mashup.texturePack=Teksturpakke	#
 store.mashup.ratings=Vurderinger	#
-store.mashup.unlockAll=Lås opp %s skall, teksturpakke og verden for %s:minecoin:	#
+store.mashup.unlockAll=Lås opp %s-skall, teksturpakke og verden for %s:minecoin:	#
 store.mashup.unlockMashup=Lås opp mash-up-pakke for %s:minecoin:	#
 store.mashup.world=Verden	#
 store.mashup.missingContent=Kan ikke fullføre handlingen. Mangler lokalt innhold.	#
@@ -5294,11 +5289,11 @@ store.mashup.title.resourcePack=Ta en rundtur!	#
 store.mashup.title.skinPack=%s: %s	#
 store.mashup.title.worldView=Reis i en ny verden!	#
 store.mashup.title.ratings=Vurderinger fra nettsamfunnet	#
-store.mashup.mashupContentsFull=%s skall, teksturpakke og verden	#
-store.mashup.mashupContentsSkinAndTexturePack=%s skall og en teksturpakke	#
-store.mashup.mashupContentsSkinAndWorld=%s skall og en verden	#
+store.mashup.mashupContentsFull=%s-skall, teksturpakke og verden	#
+store.mashup.mashupContentsSkinAndTexturePack=%s-skall og en teksturpakke	#
+store.mashup.mashupContentsSkinAndWorld=%s-skall og en verden	#
 store.mashup.mashupContentsTexturePackAndWorld=Teksturpakke og en verden	#
-store.mashup.mashupContentsSkinPack=%s skall	#
+store.mashup.mashupContentsSkinPack=%s-skall	#
 store.mashup.purchase.generalContent=Kjøp innhold for %s:minecoin:	#
 
 store.offerDescription.title=Pakkebeskrivelse	#
@@ -5415,12 +5410,6 @@ store.xbl.disconnected=Koblet fra	#
 store.xbl.conversionFailedTitle=Noe gikk galt	#
 store.xbl.conversionFailedMessage=Prøv på nytt senere.	#
 
-store.sales.allByCreator=På salg nå!	#
-store.sales.mashupsOnSale=Mash-up-pakker på salg nå!	#
-store.sales.skinsOnSale=Skall på salg nå!	#
-store.sales.texturesOnSale=Teksturpakker på salg nå!	#
-store.sales.worldsOnSale=Verdener på salg nå!	#
-
 store.showalloffers.list.title=%s-butikk 	#
 store.showalloffers.list.back=Gå tilbake	#
 
@@ -5429,6 +5418,14 @@ store.suggestedOffers.defaultTitle=Morsomme måter å spille på	#
 store.minecoin.notavailable=Mynter kan ikke kjøpes i denne versjonen av Minecraft.	#
 
 store.itemDetail.back=Detaljer	#
+store.timeRemaining=Tid igjen: %s	#
+store.daysRemaining=%s dager igjen	#
+
+store.sales.allByCreator=På salg nå!	#
+store.sales.mashupsOnSale=Mash-up-pakker på salg nå!	#
+store.sales.skinsOnSale=Skall på salg nå!	#
+store.sales.texturesOnSale=Teksturpakker på salg nå!	#
+store.sales.worldsOnSale=Verdener på salg nå!	#
 
 store.search.allResults=%d treff	#
 store.search.dynamicPlaceHolderText=Prøv å søke etter "%s"!	#
@@ -6242,8 +6239,7 @@ trial.upsell.description.updated=Utforsk, lag ting, bygg og ha det moro! Du kan 
 trial.upsell.unlock=Lås opp fullversjonen	#
 trial.upsell.startTrial=Start prøveversjonen	#
 
-ratingPopUp.title=Liker du Minecraft?	#
-feedbackPopup.title=Har du noen tilbakemeldinger til oss?	#
+
 
 ## NOTE: The following five lines are all related and shown together. When localizing, you may add line breaks to fit the paragraph,
 ## as opposed to trying to literally translate each line.

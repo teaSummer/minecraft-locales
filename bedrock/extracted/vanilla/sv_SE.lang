@@ -185,9 +185,9 @@ authentication.clickToPurchaseMessage=Be din lärare att köpa en licens åt dig
 authentication.clickToPurchaseStudent=http://aka.ms/meestore	#
 authentication.clickToPurchaseTeacher=Klicka här för att köpa en licens	#
 authentication.adalException=Det går inte att ansluta till tjänsten du behöver just nu. Kontrollera nätverksanslutningen eller försök igen senare.	#
-authentication.buyMinecraft=Gå till App Store	#
-authentication.educationOnly=Minecraft: Education Edition är endast tillgängligt för skolor. Du behöver ett Office 365 Education-konto för att spela.	#
-authentication.minecraftInstead=Är du inte student, men vill ändå spela Minecraft?	#
+authentication.buyMinecraft=Skaffa Minecraft	#
+authentication.educationOnly=Minecraft: Education Edition är bara tillgängligt för skolor, bibliotek och museum som redan har köpt ett abonnemang från Microsoft.	#
+authentication.minecraftInstead=Om det inte är du, spela Minecraft i stället:	#
 authentication.signInButton=Logga in med ditt skolkonto	#
 
 
@@ -643,6 +643,7 @@ commands.scoreboard.players.list.player.entry=- %2$s: %1$d (%3$s)											###1
 commands.scoreboard.players.operation.invalidOperation=Ogiltig åtgärd %1$s								###
 commands.scoreboard.players.operation.notFound=Hittade inget %1$s-resultat för %2$s									###1: Objective Name ##2: Player Name
 commands.scoreboard.players.operation.success=Åtgärden slutfördes								###
+commands.scoreboard.players.random.invalidRange=Min %1$d är inte mindre än max %2$d                   	###1: Min Range Value ##2: Max Range Value
 commands.scoreboard.players.reset.success=Nollställ resultat för spelare %1$s										###1: Player Name
 commands.scoreboard.players.resetscore.success=Nollställ resultatet %1$s för spelare %2$s								###1: Objective Name ##2: Player Name
 commands.scoreboard.players.set.success=Ställ in resultatet %1$s för spelare %2$s till %3$d							###1: Objective Name ##2: Player Name ##3: Score Value
@@ -1239,7 +1240,6 @@ realmsCreateScreen.incomplete.override.realm=Du försöker att förnya ett Realm
 realmsCreateScreen.prepare.store.title=Köphistorik krävs	#
 realmsCreateScreen.prepare.store.body=Du måste logga in i Store så vi får granska din köphistorik innan vi kan fortsätta.	#
 realmsCreateScreen.prepare.store.button=Logga in i Store	#
-realmsCreateScreen.nsoinfotext=Du behöver ett abonnemang på Nintendo Switch Online för att använda Realms.	#
 
 realmsCreateScreen.title=Skapa ett Realm	#
 realmsCreateScreen.nameHeader=Realm-namn	#
@@ -1603,7 +1603,6 @@ disconnectionScreen.realmsWorldUnassigned=Tilldela en version under utvecklaralt
 disconnectionScreen.realmsWorldUnassigned.title=Otilldelat Realm!	#
 disconnectionScreen.serverFull=Jösses vilken populär server! Kom tillbaka senare för att se om det finns några lediga platser då.	#
 disconnectionScreen.serverFull.title=Full server	#
-disconnectionScreen.serverIdConflict=Kan inte ansluta till världen. Kontot du är inloggad med spelar i den här världen på en annan enhet just nu.	#
 disconnectionScreen.sessionNotFound=Kunde inte ansluta till världen. Världen är inte längre öppen för anslutningar.	#
 disconnectionScreen.timeout=Anslutningen tog för lång tid.	#
 disconnectionScreen.nowifi=Du måste vara ansluten till ett trådlöst nätverk för att spela med kompisar.	#
@@ -1913,7 +1912,6 @@ gui.up=Upp	#
 gui.warning.exitGameWarning=Vill du avsluta Minecraft?	#
 gui.worldTemplate=Minecraft-världsmall	#
 gui.yes=Ja	#
-gui.feedbackYes=Ja, gå till feedbacksidan	#
 gui.resourcepacks=Resurspaket ...	#
 gui.submit=Skicka	#
 gui.playOffline=Spela offline	#
@@ -4004,8 +4002,6 @@ multiplayer.info2=håller på med lite tidig (och buggig) testning.	#
 multiplayer.ipinfo=Ange IP-adressen till en server för att ansluta till den:	#
 multiplayer.packErrors=Minst ett av dina resurs- eller beteendepaket kunde inte laddas.	#
 multiplayer.packErrors.realms=Minst ett av dina resurs- eller beteendepaket kunde inte laddas. Prova att ladda ned världen från ditt Realms inställning för att se mer information om felet.	#
-multiplayer.player.inventory.recovered=Förrådet har återhämtats och placerats i kistor nära dig.	#
-multiplayer.player.inventory.failed=Förrådet har återhämtats. Leta upp en trygg plats så placerar vi en kista nära dig nästa gång du ansluter till världen.	#
 multiplayer.player.joined=%s har anslutit till spelet	#
 multiplayer.player.joined.renamed=%s (tidigare känd som %s) har anslutit till spelet	#
 multiplayer.player.joined.realms=%s har anslutit till detta Realm	#
@@ -4550,8 +4546,7 @@ playscreen.lastPlayed.weeksAgo=%1 veckor sedan	#
 playscreen.lastPlayed.yesterday=I går	#
 playscreen.new=Ny	#
 playscreen.remoteWorld=Fjärrvärld på:	#
-playscreen.realmsTrialWorld=Kostnadsfritt 30-dagarsdemo	#
-playscreen.realmsCreateFirstWorld=Skapa din första värld	#
+playScreen.realmsTrialWorld=Kostnadsfritt 30-dagarsdemo	#
 playscreen.checkingRealmsCompatibility=Kontrollerar Realms kompatibilitet ...	#
 playscreen.fetchingRealms=Hämtar Realms ...	#
 playscreen.confirmLeaveMessage=Vill du lämna följande Realm: %1$s?	#
@@ -5195,6 +5190,7 @@ stats.tooltip.type.statistic=Statistik	#
 store.title=Butik	#
 store.allStores=Alla butiker	#
 store.menu.home=Hem	#
+store.itemDetail.back=Detaljer	#
 
 store.inventory.button=Förråd	#
 store.inventory.title=Förråd	#
@@ -5254,16 +5250,15 @@ store.popup.purchaseFailed.msg=Tyvärr, ditt köp gick inte att slutföra. Har d
 store.popup.purchaseFailedInsufficientFunds.title=Du behöver fler mynt	#
 store.popup.purchaseFailedInsufficientFunds.msg=Du har inte tillräckligt med mynt för att låsa upp det här föremålet. Du kan köpa mynt i appbutiken.	#
 store.popup.purchaseFailedInsufficientFunds.buyButton=Skaffa mynt	#
-store.popup.purchasePriceMismatch.msg=Tyvärr, ditt köp gick inte att slutföra. Försök igen senare.	#
 store.purchase.success=Du har köpt: %s	#
 store.createdBy=Av %s	#
 store.seeMoreBy=Visa fler av %s	#
 store.fetchingItem=Ansluter till butiken ...	#
  
-store.timer.daysAbbreviated=%s d		### This is to let player know how many days are left in a sale. It needs to be abbreviated with no more than 3 characters
-store.timer.hoursAbbreviated=%s h		### This is to let player know how many days are left in a sale. It needs to be abbreviated with no more than 3 characters
-store.timer.minutesAbbreviated=%s m		### This is to let player know how many days are left in a sale. It needs to be abbreviated with no more than 3 characters
-store.timer.secondsAbbreviated=%s s		### This is to let player know how many days are left in a sale. It needs to be abbreviated with no more than 3 characters
+store.timer.daysAbbreviated=%s d	#
+store.timer.hoursAbbreviated=%s h	#
+store.timer.minutesAbbreviated=%s m	#
+store.timer.secondsAbbreviated=%s s	#
 store.timer.left=%s kvar	#
 
 store.startMenu.sale=Rea!	#
@@ -5415,12 +5410,6 @@ store.xbl.disconnected=Nedkopplad	#
 store.xbl.conversionFailedTitle=Någonting gick fel	#
 store.xbl.conversionFailedMessage=Försök igen senare.	#
 
-store.sales.allByCreator=På rea nu!	#
-store.sales.mashupsOnSale=Mixpaket på rea nu!	#
-store.sales.skinsOnSale=Utseenden på rea nu!	#
-store.sales.texturesOnSale=Texturpaket på rea nu!	#
-store.sales.worldsOnSale=Världar på rea nu!	#
-
 store.showalloffers.list.title=%s-butik 	#
 store.showalloffers.list.back=Gå tillbaka	#
 
@@ -5429,6 +5418,14 @@ store.suggestedOffers.defaultTitle=Roliga sätt att spela på	#
 store.minecoin.notavailable=Köp med mynt är inte tillgängliga i den här versionen av Minecraft.	#
 
 store.itemDetail.back=Detaljer	#
+store.timeRemaining=Tid kvar: %s	#
+store.daysRemaining=%s dagar kvar	#
+
+store.sales.allByCreator=På rea nu!	#
+store.sales.mashupsOnSale=Mixpaket på rea nu!	#
+store.sales.skinsOnSale=Utseenden på rea nu!	#
+store.sales.texturesOnSale=Texturpaket på rea nu!	#
+store.sales.worldsOnSale=Världar på rea nu!	#
 
 store.search.allResults=%d resultat	#
 store.search.dynamicPlaceHolderText=Prova att söka på %s!	#
@@ -6242,8 +6239,7 @@ trial.upsell.description.updated=Tillverka, bygg, utforska och roa dig! Du är b
 trial.upsell.unlock=Lås upp hela spelet	#
 trial.upsell.startTrial=Starta demo	#
 
-ratingPopUp.title=Gillar du Minecraft?	#
-feedbackPopup.title=Har du något du vill dela med dig av till oss?	#
+
 
 ## NOTE: The following five lines are all related and shown together. When localizing, you may add line breaks to fit the paragraph,
 ## as opposed to trying to literally translate each line.

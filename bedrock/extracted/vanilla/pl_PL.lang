@@ -185,9 +185,9 @@ authentication.clickToPurchaseMessage=Poproś nauczyciela o zakup licencji pod n
 authentication.clickToPurchaseStudent=http://aka.ms/meestore	#
 authentication.clickToPurchaseTeacher=Kliknij tutaj, żeby zakupić licencję	#
 authentication.adalException=Nie możemy się połączyć z żądaną usługą. Sprawdź swoje połączenie z siecią lub spróbuj ponownie później.	#
-authentication.buyMinecraft=Przejdź do App Store	#
-authentication.educationOnly=Minecraft: Education Edition jest dostępna wyłącznie dla szkół. Do gry potrzebne jest konto Office 365 Education.	#
-authentication.minecraftInstead=Nie jesteś użytkownikiem wersji Education, ale chcesz grać w Minecrafta?	#
+authentication.buyMinecraft=Pobierz Minecraft	#
+authentication.educationOnly=Gra Minecraft: Education Edition jest dostępna tylko dla szkół, bibliotek i muzeów, o ile te organizacje wykupiły w Microsoft subskrypcję.	#
+authentication.minecraftInstead=Jeśli to Cię nie dotyczy, zagraj zamiast tego w Minecraft:	#
 authentication.signInButton=Zaloguj się przy użyciu konta szkoły	#
 
 
@@ -643,6 +643,7 @@ commands.scoreboard.players.list.player.entry=- %2$s: %1$d (%3$s)											###1
 commands.scoreboard.players.operation.invalidOperation=%1$s – nieprawidłowe działanie								###
 commands.scoreboard.players.operation.notFound=Nie znaleziono wyniku (%1$s) dla %2$s									###1: Objective Name ##2: Player Name
 commands.scoreboard.players.operation.success=Działanie przeprowadzone pomyślnie								###
+commands.scoreboard.players.random.invalidRange=Min. %1$d to nie mniej niż maks. %2$d                   	###1: Min Range Value ##2: Max Range Value
 commands.scoreboard.players.reset.success=Zresetuj wyniki gracza %1$s										###1: Player Name
 commands.scoreboard.players.resetscore.success=Zresetuj wynik (%1$s) gracza %2$s								###1: Objective Name ##2: Player Name
 commands.scoreboard.players.set.success=Ustaw wynik (%1$s) dla gracza %2$s na %3$d							###1: Objective Name ##2: Player Name ##3: Score Value
@@ -1239,7 +1240,6 @@ realmsCreateScreen.incomplete.override.realm=Próbujesz odnowić świat Realms, 
 realmsCreateScreen.prepare.store.title=Wymagana historia zakupów	#
 realmsCreateScreen.prepare.store.body=Musisz zalogować się do sklepu, aby zobaczyć swoją historię zakupów przed kontynuowaniem.	#
 realmsCreateScreen.prepare.store.button=Zaloguj się do sklepu	#
-realmsCreateScreen.nsoinfotext=Do korzystania ze światów Realms potrzeba subskrypcji Nintendo Switch Online.	#
 
 realmsCreateScreen.title=Stwórz świat Realms	#
 realmsCreateScreen.nameHeader=Nazwa świata Realms	#
@@ -1603,7 +1603,6 @@ disconnectionScreen.realmsWorldUnassigned=Przypisz wersję w opcjach dewelopersk
 disconnectionScreen.realmsWorldUnassigned.title=Nieprzypisany świat Realms!	#
 disconnectionScreen.serverFull=Ale ten serwer jest popularny! Zobacz później, czy zwolniło się jakieś miejsce.	#
 disconnectionScreen.serverFull.title=Serwer zapełniony	#
-disconnectionScreen.serverIdConflict=Nie można dołączyć do świata. Konto, na którym jesteś, aktualnie gra na tym świecie przy użyciu innego urządzenia.	#
 disconnectionScreen.sessionNotFound=Nie można połączyć ze światem. Do tego świata nie można już dołączać.	#
 disconnectionScreen.timeout=Upłynął limit czasu połączenia.	#
 disconnectionScreen.nowifi=Do gry ze znajomymi jest wymagane połączenie Wi-Fi.	#
@@ -1913,7 +1912,6 @@ gui.up=W górę	#
 gui.warning.exitGameWarning=Chcesz wyjść z Minecrafta?	#
 gui.worldTemplate=Szablon świata Minecraft	#
 gui.yes=Tak	#
-gui.feedbackYes=Tak, przejdź do strony z opiniami	#
 gui.resourcepacks=Paczki zasobów...	#
 gui.submit=Prześlij	#
 gui.playOffline=Graj offline	#
@@ -2602,7 +2600,7 @@ howtoplay.transportation.header.2=Łodzie	#
 howtoplay.transportation.text.4=W łodziach możesz podróżować po wodzie. Umieść łódź na bloku wody i wypływaj.	#
 howtoplay.transportation.text.5.keyboard=Naciśnij :_input_key.use:, patrząc na łódkę, by na nią wejść. Naciśnij :_input_key.left: albo :_input_key.right:, by skręcić w lewo albo prawo. Naciśnij :_input_key.forward:, by płynąć naprzód. Naciśnij :_input_key.jump: lub :_input_key.sneak:, by opuścić łódkę.	#
 howtoplay.transportation.text.5.gamepad=Naciśnij :_input_key.use:, patrząc na łódź, aby do niej wsiąść. Przechyl :_gamepad_stick_left: w lewo lub prawo, aby skręcić. Przechyl :_gamepad_stick_left: do przodu, aby płynąć w tym kierunku. Naciśnij :_input_key.jump: lub :_input_key.sneak:, aby wysiąść.	#
-howtoplay.transportation.text.5.touch=Stuknij przycisk wejścia na pokład, będąc w pobliżu łodzi, aby na nią wsiąść. Naciśnij :_input_key.left: lub :_input_key.right:, aby skręcić w lewo lub prawo. Naciśnij oba, aby płynąć do przodu. Stuknij przycisk opuszczenia łodzi, aby wysiąść.	#
+howtoplay.transportation.text.5.touch=Stuknij przycisk wejścia na pokład, będąc w pobliżu łodzi, aby na nią wsiąść. Naciśnij :_input_key.left: lub :_input_key.right:, aby skręcić w lewo lub prawo. Naciśnij oba, aby płynąc do przodu. Stuknij przycisk opuszczenia łodzi, aby wysiąść.	#
 
 
 howtoplay.weapons=Broń	#
@@ -4004,8 +4002,6 @@ multiplayer.info2=ale jesteśmy w trakcie przeprowadzania testów.	#
 multiplayer.ipinfo=Wprowadź adres IP serwera, aby się z nim połączyć:	#
 multiplayer.packErrors=Nie udało się załadować co najmniej jednej paczki zasobów lub zachowań.	#
 multiplayer.packErrors.realms=Nie udało się załadować co najmniej jednej paczki zasobów lub zachowań. Pobierz ten świat z poziomu ustawień Realms, żeby dowiedzieć się więcej o tym błędzie.	#
-multiplayer.player.inventory.recovered=Ekwipunek odzyskany i umieszczony w skrzyniach w pobliżu.	#
-multiplayer.player.inventory.failed=Ekwipunek odzyskany. Znajdź bezpieczne miejsce, a skrzynia pojawi się koło ciebie przy najbliższym dołączeniu do świata.	#
 multiplayer.player.joined=Gracz %s dołączył do gry.	#
 multiplayer.player.joined.renamed=Gracz %s (poprzednio znany jako %s) dołączył do gry	#
 multiplayer.player.joined.realms=Gracz %s dołączył do świata Realms	#
@@ -4550,8 +4546,7 @@ playscreen.lastPlayed.weeksAgo=%1 tygodni/e temu	#
 playscreen.lastPlayed.yesterday=Wczoraj	#
 playscreen.new=Nowy	#
 playscreen.remoteWorld=Oddalony świat:	#
-playscreen.realmsTrialWorld=Darmowa, 30-dniowa wersja próbna	#
-playscreen.realmsCreateFirstWorld=Stwórz swoje pierwsze królestwo	#
+playScreen.realmsTrialWorld=Darmowa, 30-dniowa wersja próbna	#
 playscreen.checkingRealmsCompatibility=Sprawdzanie zgodności Realms...	#
 playscreen.fetchingRealms=Pobieranie Realms...	#
 playscreen.confirmLeaveMessage=Na pewno chcesz opuścić świat Realms %1$s?	#
@@ -5195,6 +5190,7 @@ stats.tooltip.type.statistic=Statystyka	#
 store.title=Sklep	#
 store.allStores=Wszystkie sklepy	#
 store.menu.home=Strona główna	#
+store.itemDetail.back=Szczegóły	#
 
 store.inventory.button=W sprzedaży	#
 store.inventory.title=W sprzedaży	#
@@ -5254,16 +5250,15 @@ store.popup.purchaseFailed.msg=Niestety nie mogliśmy ukończyć twojego zakupu.
 store.popup.purchaseFailedInsufficientFunds.title=Potrzebujesz więcej monet	#
 store.popup.purchaseFailedInsufficientFunds.msg=Masz zbyt mało monet, aby odblokować ten przedmiot. Monety możesz kupić w swoim App Store.	#
 store.popup.purchaseFailedInsufficientFunds.buyButton=Zdobądź monety	#
-store.popup.purchasePriceMismatch.msg=Niestety nie mogliśmy sfinalizować Twojego zakupu. Spróbuj ponownie później.	#
 store.purchase.success=Kupujesz: %s	#
 store.createdBy=Autor: %s	#
 store.seeMoreBy=Zobacz więcej dzieł, których autorem jest %s	#
 store.fetchingItem=Łączenie ze sklepem...	#
  
-store.timer.daysAbbreviated=%sd		### This is to let player know how many days are left in a sale. It needs to be abbreviated with no more than 3 characters
-store.timer.hoursAbbreviated=%sg.		### This is to let player know how many days are left in a sale. It needs to be abbreviated with no more than 3 characters
-store.timer.minutesAbbreviated=%sm.		### This is to let player know how many days are left in a sale. It needs to be abbreviated with no more than 3 characters
-store.timer.secondsAbbreviated=%ss.		### This is to let player know how many days are left in a sale. It needs to be abbreviated with no more than 3 characters
+store.timer.daysAbbreviated=%sd.	#
+store.timer.hoursAbbreviated=%sgodz.	#
+store.timer.minutesAbbreviated=%smin.	#
+store.timer.secondsAbbreviated=%ssek.	#
 store.timer.left=Zostało %s	#
 
 store.startMenu.sale=Wyprzedaż!	#
@@ -5415,12 +5410,6 @@ store.xbl.disconnected=Rozłączono	#
 store.xbl.conversionFailedTitle=Coś poszło nie tak	#
 store.xbl.conversionFailedMessage=Spróbuj ponownie później.	#
 
-store.sales.allByCreator=Wyprzedaż!	#
-store.sales.mashupsOnSale=Wyprzedaż pakietów łączonych!	#
-store.sales.skinsOnSale=Wyprzedaż skórek!	#
-store.sales.texturesOnSale=Wyprzedaż zestawów tekstur!	#
-store.sales.worldsOnSale=Wyprzedaż światów!	#
-
 store.showalloffers.list.title=Sklep (%s) 	#
 store.showalloffers.list.back=Wróć	#
 
@@ -5429,6 +5418,14 @@ store.suggestedOffers.defaultTitle=Fajne sposoby na grę	#
 store.minecoin.notavailable=W tej wersji Minecrafta nie można jeszcze kupować monet.	#
 
 store.itemDetail.back=Szczegóły	#
+store.timeRemaining=Pozostały czas: %s	#
+store.daysRemaining=Pozostało dni: %s	#
+
+store.sales.allByCreator=Wyprzedaż!	#
+store.sales.mashupsOnSale=Wyprzedaż pakietów łączonych!	#
+store.sales.skinsOnSale=Wyprzedaż skórek!	#
+store.sales.texturesOnSale=Wyprzedaż zestawów tekstur!	#
+store.sales.worldsOnSale=Wyprzedaż światów!	#
 
 store.search.allResults=Wyniki – %d	#
 store.search.dynamicPlaceHolderText=Spróbuj wyszukać: %s!	#
@@ -6242,8 +6239,7 @@ trial.upsell.description.updated=Twórz, buduj, odkrywaj i baw się! W tej wersj
 trial.upsell.unlock=Odblokuj pełną wersję gry	#
 trial.upsell.startTrial=Rozpocznij wersję próbną	#
 
-ratingPopUp.title=Podoba Ci się Minecraft?	#
-feedbackPopup.title=Chcesz nam przekazać jakieś uwagi?	#
+
 
 ## NOTE: The following five lines are all related and shown together. When localizing, you may add line breaks to fit the paragraph,
 ## as opposed to trying to literally translate each line.

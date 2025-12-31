@@ -185,9 +185,9 @@ authentication.clickToPurchaseMessage=担当の教育者に言って、以下か
 authentication.clickToPurchaseStudent=http://aka.ms/meestore	#
 authentication.clickToPurchaseTeacher=ライセンスを購入するにはここをクリック	#
 authentication.adalException=ご希望のサービスには現在接続できません。ネットワーク接続を確認するか、後でもう一度試してください。	#
-authentication.buyMinecraft=App Store に移動	#
-authentication.educationOnly=Minecraft: Education Edition は学校のアカウントのみでプレイ可能です。プレイするには Office 365 Education のアカウントが必要です。	#
-authentication.minecraftInstead=Education のユーザーではないけれど、 Minecraft をプレイしたいのですか?	#
+authentication.buyMinecraft=Minecraft を入手	#
+authentication.educationOnly=Minecraft: Education Edition は、Microsoft からサブスクリプションを購入済みの教育機関、図書館、および美術館にのみ利用可能です。	#
+authentication.minecraftInstead=あなたが以下でない場合、代わりに通常の Minecraft をプレイします:	#
 authentication.signInButton=自分の学校アカウントでログイン	#
 
 
@@ -643,6 +643,7 @@ commands.scoreboard.players.list.player.entry=- %2$s: %1$d (%3$s)											###1
 commands.scoreboard.players.operation.invalidOperation=%1$s は無効な操作です								###
 commands.scoreboard.players.operation.notFound=%2$s には %1$s のスコアはありません									###1: Objective Name ##2: Player Name
 commands.scoreboard.players.operation.success=操作は正常に適用されました								###
+commands.scoreboard.players.random.invalidRange=最小値である %1$d は最大値である %2$d 以下にします                 	###1: Min Range Value ##2: Max Range Value
 commands.scoreboard.players.reset.success=プレイヤー %1$s のスコアをリセットしました										###1: Player Name
 commands.scoreboard.players.resetscore.success=プレイヤー %2$s のスコア %1$s をリセットしました								###1: Objective Name ##2: Player Name
 commands.scoreboard.players.set.success=プレイヤー %2$s の %1$s のスコアを %3$d に設定しました							###1: Objective Name ##2: Player Name ##3: Score Value
@@ -1239,7 +1240,6 @@ realmsCreateScreen.incomplete.override.realm=Realm を更新しようとして�
 realmsCreateScreen.prepare.store.title=購入履歴の要求	#
 realmsCreateScreen.prepare.store.body=購入履歴を閲覧するには、ストアにログインする必要があります。	#
 realmsCreateScreen.prepare.store.button=ストアにログイン	#
-realmsCreateScreen.nsoinfotext=Realms の利用には、Nintendo Switch Online への加入が必要です。	#
 
 realmsCreateScreen.title=Realm の作成	#
 realmsCreateScreen.nameHeader=Realm の名前	#
@@ -1420,7 +1420,7 @@ xblLogin.LoginMessage=お使いのアカウントにサインインするため�
 xbl.savePurchase.description.line1=お持ちのコインとパックへのセキュリティを高めたいですか?  今すぐ Xbox Live にサインインして、購入したコイン、スキン、テクスチャ パック、世界、マッシュアップ パックを、どのデバイスからでも確認できるようにしましょう。	#
 xbl.savePurchase.description.line2=お使いのデバイスを紛失したり、Minecraft をアンインストールしたりした場合、そのデバイスに保存された購入は利用できなくなる可能性があります。	#
 xbl.savePurchase.leaveOnDevice=デバイス上に残す	#
-xbl.savePurchase.title=購入を Xbox Live に保存しますか?	#
+xbl.savePurchase.title=購入を Xbox Live に保存しますか? 	#
 xbl.savePurchase.saveButton=Xbox Live に保存する	#
 xbl.savePurchase.toast.title=完了しました!	#
 xbl.savePurchase.toast.message=Xbox Live への購入の転送	#
@@ -1603,7 +1603,6 @@ disconnectionScreen.realmsWorldUnassigned=開発者オプションでバージ�
 disconnectionScreen.realmsWorldUnassigned.title=Realm が未割り当てです!	#
 disconnectionScreen.serverFull=このサーバーは満員です! 時間をおいてからアクセスしてみてください。	#
 disconnectionScreen.serverFull.title=サーバーが満員です	#
-disconnectionScreen.serverIdConflict=世界に参加できません。サインインしているアカウントは、他のデバイスでこの世界を現在プレイしています。	#
 disconnectionScreen.sessionNotFound=ワールドに接続できません。このワールドにはもう参加できません。	#
 disconnectionScreen.timeout=接続がタイムアウトしました。	#
 disconnectionScreen.nowifi=フレンドとプレイするにはWi-Fiに接続する必要があります。	#
@@ -1913,7 +1912,6 @@ gui.up=上	#
 gui.warning.exitGameWarning=Minecraft を終了しますか?	#
 gui.worldTemplate=Minecraft の世界テンプレート	#
 gui.yes=はい	#
-gui.feedbackYes=はい。フィードバック Web サイトに移動します	#
 gui.resourcepacks=リソース パック...	#
 gui.submit=送信	#
 gui.playOffline=オフラインでプレイ	#
@@ -3595,7 +3593,7 @@ item.spawn_egg.entity.shulker.name=シュルカーを出現させる	#
 item.spawn_egg.entity.endermite.name=エンダーマイトを出現させる	#
 item.spawn_egg.entity.evocation_illager.name=エヴォーカーを出現させる	#
 item.spawn_egg.entity.vex.name=ヴェックスを出現させる	#
-item.spawn_egg.entity.turtle.name=ウミガメを出現させる	#
+item.spawn_egg.entity.turtle.name=ウミガメ スポーン	#
 item.spawn_egg.entity.dolphin.name=イルカを出現させる	#
 item.spawn_egg.entity.unknown.name=スポーン	#
 item.trident.name=トライデント	#
@@ -4004,8 +4002,6 @@ multiplayer.info2=初期段階のテストが実施されています。	#
 multiplayer.ipinfo=接続先のサーバーIPアドレスを入力してください:	#
 multiplayer.packErrors=いずれかのリソース パックまたはビヘイビアー パックの読み込みに失敗しました。	#
 multiplayer.packErrors.realms=いずれかのリソース パックまたはビヘイビアー パックの読み込みに失敗しました。Realm の設定からこのワールドをダウンロードして、エラーの詳細をご確認ください。	#
-multiplayer.player.inventory.recovered=持ち物が復元され、近くのチェストにしまわれました。	#
-multiplayer.player.inventory.failed=持ち物が復元されました。復元された持ち物は、次にこの世界に参加するときに近くに配置されるチェストの中にしまわれます。安全な場所を見つけてください。	#
 multiplayer.player.joined=%s が世界にやってきました	#
 multiplayer.player.joined.renamed=%s (旧称 %s) が世界にやってきました	#
 multiplayer.player.joined.realms=%s が Realm にやってきました	#
@@ -4550,8 +4546,7 @@ playscreen.lastPlayed.weeksAgo=%1 週間前	#
 playscreen.lastPlayed.yesterday=昨日	#
 playscreen.new=新規	#
 playscreen.remoteWorld=世界を遠隔操作:	#
-playscreen.realmsTrialWorld=30 日間の無料試用版	#
-playscreen.realmsCreateFirstWorld=最初の世界を作成する	#
+playScreen.realmsTrialWorld=30 日間の無料試用版	#
 playscreen.checkingRealmsCompatibility=Realms の互換性をチェック中...	#
 playscreen.fetchingRealms=Realms を取得中...	#
 playscreen.confirmLeaveMessage=本当に Realm %1$s を出てもよろしいですか?	#
@@ -5195,6 +5190,7 @@ stats.tooltip.type.statistic=統計	#
 store.title=ストア	#
 store.allStores=すべてのストア	#
 store.menu.home=ホーム	#
+store.itemDetail.back=詳細	#
 
 store.inventory.button=持ち物	#
 store.inventory.title=持ち物	#
@@ -5254,16 +5250,15 @@ store.popup.purchaseFailed.msg=購入ができませんでした。インター�
 store.popup.purchaseFailedInsufficientFunds.title=Minecoin が足りません	#
 store.popup.purchaseFailedInsufficientFunds.msg=Minecoin が足りないため、このアイテムを購入できません。Minecoin はアプリ ストアから購入できます。	#
 store.popup.purchaseFailedInsufficientFunds.buyButton=Minecoin を入手	#
-store.popup.purchasePriceMismatch.msg=購入手続きを完了できませんでした。 後でもう一度やり直してください。	#
 store.purchase.success=%s を購入しました	#
 store.createdBy=作者: %s	#
 store.seeMoreBy=詳しくは %s をご覧ください	#
 store.fetchingItem=ストアに接続中...	#
  
-store.timer.daysAbbreviated=%s 日		### This is to let player know how many days are left in a sale. It needs to be abbreviated with no more than 3 characters
-store.timer.hoursAbbreviated=%s 時間		### This is to let player know how many days are left in a sale. It needs to be abbreviated with no more than 3 characters
-store.timer.minutesAbbreviated=%s 分		### This is to let player know how many days are left in a sale. It needs to be abbreviated with no more than 3 characters
-store.timer.secondsAbbreviated=%s 秒		### This is to let player know how many days are left in a sale. It needs to be abbreviated with no more than 3 characters
+store.timer.daysAbbreviated=%s 日	#
+store.timer.hoursAbbreviated=%s 時間	#
+store.timer.minutesAbbreviated=%s 分	#
+store.timer.secondsAbbreviated=%s 秒	#
 store.timer.left=残り %s	#
 
 store.startMenu.sale=セール中!	#
@@ -5415,12 +5410,6 @@ store.xbl.disconnected=インターネット接続なし	#
 store.xbl.conversionFailedTitle=問題が発生しました	#
 store.xbl.conversionFailedMessage=後でもう一度やり直してください	#
 
-store.sales.allByCreator=発売中!	#
-store.sales.mashupsOnSale=マッシュアップ発売中!	#
-store.sales.skinsOnSale=スキン発売中!	#
-store.sales.texturesOnSale=テクスチャ パック発売中!	#
-store.sales.worldsOnSale=世界発売中!	#
-
 store.showalloffers.list.title=%s ストア	#
 store.showalloffers.list.back=戻る	#
 
@@ -5429,6 +5418,14 @@ store.suggestedOffers.defaultTitle=一味違う楽しみ方	#
 store.minecoin.notavailable=このバージョンの Minecraft ではコインを購入できません。	#
 
 store.itemDetail.back=詳細	#
+store.timeRemaining=残り時間: %s	#
+store.daysRemaining=あと %s 日	#
+
+store.sales.allByCreator=発売中!	#
+store.sales.mashupsOnSale=マッシュアップ発売中!	#
+store.sales.skinsOnSale=スキン発売中!	#
+store.sales.texturesOnSale=テクスチャ パック発売中!	#
+store.sales.worldsOnSale=世界発売中!	#
 
 store.search.allResults=検索結果: %d 件	#
 store.search.dynamicPlaceHolderText=%s を検索してみましょう!	#
@@ -5445,7 +5442,7 @@ store.search.singularPossibleResult=件の検索結果候補	#
 store.search.title=検索	#
 store.search.trendingRowTitle=トレンドの検索: %s	#
 
-store.search.filters.clear=フィルターをクリアする	#
+store.search.filters.clear=フィルターをクリアにする	#
 store.search.filters.reset=フィルターをリセットする	#
 store.search.filter.clearCreatorFilters=クリエイター フィルターをクリアにする	#
 store.search.filter.clearPackTypeFilters=パック タイプ フィルターをクリアにする	#
@@ -6242,8 +6239,7 @@ trial.upsell.description.updated=探検して、クラフトして、ビルド�
 trial.upsell.unlock=完全版を購入	#
 trial.upsell.startTrial=試用版を開始	#
 
-ratingPopUp.title=Minecraft をお楽しみいただけていますか	#
-feedbackPopup.title=フィードバックをお寄せいただけますか	#
+
 
 ## NOTE: The following five lines are all related and shown together. When localizing, you may add line breaks to fit the paragraph,
 ## as opposed to trying to literally translate each line.
