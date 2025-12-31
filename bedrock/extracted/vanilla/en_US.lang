@@ -8,6 +8,9 @@ accessibility.enableTTS=Text To Speech enabled
 ## Translator note:
 ## This section of phrases will be given audibly to the user using text to speech
 
+accessibility.chat.tts.gamepad.back=Press the %s to go back
+accessibility.chat.tts.gamepad.exitChat=Press the %s to exit chat
+accessibility.chat.tts.gamepad.sendMessage=Press the %s to send message
 accessibility.chat.tts.says=%s says %s
 accessibility.chat.tts.hideChat=Hide chat
 accessibility.chat.tts.keyboard=Keyboard
@@ -100,6 +103,7 @@ accessibility.screenName.settings=Game Settings Screen
 accessibility.screenName.skinPicker=Choose Skin Screen
 accessibility.screenName.start=Main Menu
 accessibility.screenName.vrAlignment=VR Alignment Screen 
+accessibility.screenName.emoteWheel=Emotes Screen
 
 accessibility.settings.reset=reset
 accessibility.settings.chooseSeed=Choose Seed
@@ -189,6 +193,13 @@ accessibility.gamepad.bumper.left=Left Bumper
 accessibility.keyboard.leftBracket=Left square bracket key		## left square bracket means '[' on the english keyboard
 accessibility.keyboard.rightBracket=Right square bracket key	## right square bracket means ']' on the english keyboard
 
+accessibility.emotes.hovered=%s, %s button %d, %d of %d
+accessibility.emotes.buttonName=Emote
+accessibility.emotes.assigned=The %s emote assigned
+accessibility.emotes.unassigned=Unassigned
+accessibility.emotes.playSuccess=Play emote
+accessibility.emotes.playFailed=No emote assigned to this button, press down arrow to access the Change Emotes button
+accessibility.emotes.instruction.keyboard=Press right or left to cycle through emote buttons. Press the down arrow to access the Change Emotes button.
 
 ## End of audible phrases section
 
@@ -407,8 +418,6 @@ authentication.store.confirmPurchase=Confirm Purchase
 authentication.store.intro=Your trial of Minecraft: Education Edition is complete. To continue playing Minecraft: Education Edition, you will need to purchase a license.
 authentication.store.popup.purchaseFailed.title=Something Went Wrong
 authentication.store.popup.purchaseFailed.msg=Sorry, we were unable to complete your purchase. Maybe check your internet connection?
-authentication.store.purchase.info1=The payment will be charged to your iTunes account at confirmation of purchase and the subscription automatically renews unless auto-renew is turned off at least 24-hours before the end of the current period. Your account will be charged for renewal within 24-hours prior to the end of the current period, at the subscription price option you have previously selected. 
-authentication.store.purchase.info2=You can manage your subscription and turn off auto-renewal by accessing your iTunes Account settings after purchase. If you cancel after your subscription has activated, you won't be refunded for the remaining active period of the subscription. Your iTunes account will be linked to your O365 Education Account for this subscription, so you will not be eligible to purchase additional Minecraft: Education Edition licenses with this iTunes account.
 authentication.store.purchase.button=Purchase license (%s/year)
 authentication.store.terms=Terms of Use
 authentication.store.viewTermsAndConditions=Terms and Conditions
@@ -1225,6 +1234,7 @@ commands.time.stop=Time %1$s
 commands.title.description=Controls screen titles.
 commands.title.success=Title command successfully executed
 commands.titleraw.description=Controls screen titles with JSON messages.
+commands.titleraw.success=Titleraw command successfully executed
 commands.toggledownfall.description=Toggles the weather.
 commands.tp.description=Teleports entities (players, mobs, etc.).
 commands.tp.notSameDimension=Unable to teleport because players are not in the same dimension
@@ -1869,6 +1879,8 @@ realmsPlusUpgradeNotice.body=Your Realms subscription has been upgraded to Realm
 realmsPlusUpgradeNotice.continue=Continue
 realmsPlusUpgradeNotice.viewpacks=View Realms Plus Packs
 
+raytracing.RTX.name=RTX##Brand name, don't localize
+
 network.onlinePlay.title=Play with Friends
 network.onlinePlay.msg=You can invite friends to your worlds, view your friends' creations, and craft in each other's worlds.
 network.onlinePlay.instruction=From the Play menu, you can join your friends' worlds or invite them to your worlds and Realms.
@@ -2041,7 +2053,7 @@ realmsSettingsScreen.dev_prev_page_label=Prev
 realmsSettingsScreen.dev_next_page_label=Next
 realmsSettingsScreen.uploadConfirmationMessage=This will remove your current world from your Realm and let you replace it with a new one.  Your Realm members won't have access to your current world anymore. Do you want to continue?
 realmsSettingsScreen.uploadConfirmationTitle=Replace World?
-realmsSettingsScreen.whitelist_invite=Invite
+realmsSettingsScreen.allowlist_invite=Invite
 realmsSettingsScreen.searchBox=Search...
 realmsSettingsScreen.unknownPackName=Unknown Name
 realmsSettingsScreen.viewSubscriptionsButton=View Subscriptions
@@ -2306,6 +2318,7 @@ disconnectionScreen.outdatedClientRealms=You need to update your game to continu
 disconnectionScreen.outdatedClientRealms.title=Realms Has Updated
 disconnectionScreen.outdatedServerRealms=Your game is up-to-date but this Realm is not.
 disconnectionScreen.outdatedServerRealms.title=Realms Update Pending Within 48 Hours
+disconnectionScreen.outdatedServerRealmsNonOwner.title=The Realm you are attempting to access is a different version. Contact the owner of the Realm to address the issue.
 disconnectionScreen.realmsServerUpdateIncoming=Your Realm will soon be updated. You will need an update too.
 disconnectionScreen.realmsServerUpdateIncoming.title=Check For Game Update Now?
 disconnectionScreen.realmsWorldUnassigned=Assign version in dev options.
@@ -2327,6 +2340,7 @@ disconnectionScreen.incompatiblePack.memory=You are unable to join the world bec
 disconnectionScreen.incompatiblePack.graphics.raytracing=You are unable to join the world because your device doesn't have compatible hardware to support ray tracing
 disconnectionScreen.worldCorruption.message=Try reopening the world or restoring it from a previous backup
 disconnectionScreen.worldCorruption=Disconnected due to world corruption
+disconnectionScreen.hostSuspended=Disconnected due to the server being unavailable
 
 storageSpaceWarningScreen.frontend=You are almost out of data storage space! Minecraft has restricted access to this feature until you clear up additional storage space.
 storageSpaceWarningScreen.lowduringgameplay=Your device is almost out of the space that Minecraft can use to save worlds and settings on this device.  Why not delete some old stuff you don't need so that you can keep saving new stuff?
@@ -3658,6 +3672,7 @@ invite.sendUnnumbered=Send Invites
 invite.title=Invite Friends to your Game
 invite.error.message=Some of your invites may have failed to send.
 invite.noFriends=You haven't added anyone to your friend's list!
+invite.noRealmFriends=You haven't added anyone to your Realm!
 invite.OnlineFriends=Online Friends
 invite.OfflineFriends=Offline Friends
 invite.SuggestedFriends=Suggested Friends
@@ -5594,6 +5609,9 @@ options.graphics=Fancy Graphics
 options.transparentleaves=Fancy Leaves
 options.bubbleparticles=Fancy Bubbles
 options.smooth_lighting=Smooth Lighting
+options.upscaling=Upscaling
+options.raytracing=Ray Tracing
+options.raytracing.disabled.upsell=This feature is only available in a ray tracing capable world.  Find one in the Marketplace, or create your own ray tracing capable resource pack.
 options.graphics.fancy=Fancy
 options.graphics.fast=Fast
 options.renderingProfile=Graphics
@@ -5684,7 +5702,10 @@ options.qualityVideoTitle=Video Quality Settings
 options.reducedDebugInfo=Reduced Debug Info
 options.renderClouds=Clouds
 options.renderDistance=Render Distance
+options.raytracing.renderDistance=Ray Tracing Render Distance
+options.raytracing.renderDistanceFormat=%s chunks
 options.renderDistanceFormat=%s chunks
+options.raytracing.renderdistance.warning=This setting may cause performance issues while playing the game.
 options.resetSettings=Reset to Default
 options.resetSettings.popUp=Do you really want to reset the settings?
 options.maxFramerate=Max Framerate (Experimental)
@@ -5786,6 +5807,8 @@ options.uiprofile.pocket=Pocket
 options.usetouchpad=Split Controls
 options.viewSubscriptions=Subscriptions
 options.viewSubscriptions.button.info=Info
+options.viewSubscriptions.button.price=%s
+options.viewSubscriptions.button.pricePerMonth=%s/MONTH
 options.viewSubscriptions.button.manage=Manage
 options.viewSubscriptions.renew=Renews every 30 days
 options.viewSubscriptions.daysRemaining=%d days remaining
@@ -6388,7 +6411,7 @@ resourcePack.legacyPackName=Legacy Resource Pack
 
 storageManager.contentType.world=World
 storageManager.contentType.worldTemplate=World Template
-storageManager.contentType.resourcePack=Resource Pack
+storageManager.contentType.resourcePack=Resource
 storageManager.contentType.behaviorPack=Behavior Pack
 storageManager.contentType.skinPack=Skin Pack
 storageManager.contentType.invalid=Invalid
@@ -6447,7 +6470,8 @@ storageManager.mcpack=Minecraft Pack
 storageManager.mcaddon=Minecraft Addon
 storageManager.mcworld=Minecraft World
 
-
+raycasting.purchase.error=We have detected that your device does not meet the system requirements to run this pack so you are unable to download this pack. You can review the minimum system requirements below: %s+ GPU: Hardware ray tracing capable GPU such as NVIDIA GeForce RTX 2060 or better. See our FAQ on minecraft.net for more details. %s+ RAM: 8GB or better %s+ CPU: Intel Core i5 or equivalent ##the %s will be turned into linebreaks. Don't reorder.
+raycasting.purchase.error.title=System Requirements Warning
 
 resourcepack.City=City Texture Pack
 resourcepack.Plastic=Plastic Texture Pack
@@ -6690,11 +6714,11 @@ skins.store.equipped=You have equipped the %s skin.
 soundCategory.ambient=Ambient/Environment
 soundCategory.block=Blocks
 soundCategory.hostile=Hostile Creatures
-soundCategory.master=Master Volume
+soundCategory.master=Main
 soundCategory.music=Music
 soundCategory.neutral=Friendly Creatures
 soundCategory.player=Players
-soundCategory.record=Jukebox/Noteblocks
+soundCategory.record=Jukebox/Note Blocks
 soundCategory.weather=Weather
 
 stat.animalsBred=Animals Bred
@@ -6782,6 +6806,8 @@ store.realmsPlus.content=Content
 store.realmsPlus.faq=FAQ
 store.realmsPlus.buyFor=BUY FOR %s
 store.realmsPlus.buyNow=BUY NOW
+store.realmsPlus.buyNowPerMonth=Buy for %s/MONTH
+store.realmsPlus.buyNowTrialPerMonth=START FREE TRIAL (%s/MONTH AFTER)
 store.realmsPlus.errorNoOffer=ERROR NO OFFER FOUND
 store.realmsPlus.manageSubscription=MANAGE SUBSCRIPTION
 store.realmsPlus.viewAllPacksTitle=A GREAT VALUE - PACKS WORTH OVER §g$150 (USD)!§r
@@ -6799,8 +6825,8 @@ store.realmsPlus.noTrial.description=Your Realm and 100+ marketplace packs will 
 store.realmsPlus.noTrial.description.iap=Your Realm and 100+ marketplace packs will be immediately available. Up to 10 players can play at one time, and they get access to the worlds in your Realm for free! Your subscription will be available for 30 days at the price of %s.
 store.realmsPlus.realmName.placeholder=%s's Realm		#The string passed in here is the gamertag of the player to indicate the name of the player's world.
 
-store.realmsPlus.recurring.offerTrial=Your Realm and 100+ marketplace packs will be immediately available. Up to 10 players can play at one time, and they get access to the worlds in your Realm for free! Your first month will be free, and you'll be billed %s/month afterwards and can cancel at any time.
-store.realmsPlus.recurring.withoutTrial=Your Realm and 100+ marketplace packs will be immediately available. Up to 10 players can play at one time, and they get access to the worlds in your Realm for free! You'll be billed %s/month and can cancel at any time.
+store.realmsPlus.recurring.offerTrial=Realms Plus is an ongoing subscription with a recurring subscription fee which is charged automatically every month until the subscription is cancelled.%sYour Realm and 100+ marketplace packs will be immediately available. Up to 10 players can play at one time, and they get access to the worlds in your Realm for free! Your first 30 days will be free, and you'll be billed %s/month afterwards and can cancel at any time.
+store.realmsPlus.recurring.withoutTrial=Realms Plus is an ongoing subscription with a recurring subscription fee which is charged automatically every month until the subscription is cancelled.%sYour Realm and 100+ marketplace packs will be immediately available. Up to 10 players can play at one time, and they get access to the worlds in your Realm for free! You'll be billed %s/month and can cancel at any time.
 store.realmsPlus.consumable.offerTrial=Your Realm and 100+ marketplace packs will be immediately available. Up to 10 players can play at one time, and they get access to the worlds in your Realm for free! Your first 30 days will be free and you can renew for 30 days at the price of %s afterwards.
 store.realmsPlus.consumable.withoutTrial=Your Realm and 100+ marketplace packs will be immediately available. Up to 10 players can play at one time, and they get access to the worlds in your Realm for free! Your subscription will be available for 30 days at the price of %s.
 
@@ -6813,7 +6839,8 @@ store.realmsPlus.landing.info1.line3=- Friends play for free in your Realm
 store.realmsPlus.landing.info2.line1=- Secure cloud storage
 store.realmsPlus.landing.info2.line2=- Play on any device with Realms and the Minecraft Marketplace
 store.realmsPlus.landing.info2.line3=- Support the Minecraft Community
-store.realmsPlus.landing.info2.line4=- Free 1 month trial
+store.realmsPlus.landing.info2.line4=- Free 30 day trial, then %s per month
+store.realmsPlus.landing.info2.line5=- %s per month
 
 store.realmsPlus.faq.header=FREQUENTLY ASKED QUESTIONS
 store.realmsPlus.faq.question1=What is Realms Plus?
@@ -6856,7 +6883,7 @@ store.realmsPlus.content.viewAllPacks=VIEW ALL PACKS
 store.realmsPlus.content.contentDescription=Tap into the source of amazing Minecraft content! With Realms Plus, you get instant access to 100+ marketplace items like mash-ups, worlds, skin packs and epic adventures – with new additions each month. Your content is stored on your own personal server, and made available on any platform where you enjoy both Realms and the Minecraft Marketplace. Up to 10 players can play at one time, and they get access to the worlds in your Realm for free!
 
 
-store.realmsPlus.freeTrial=START 1 MONTH FREE TRIAL
+store.realmsPlus.freeTrial=START FREE TRIAL (%s/MONTH AFTER)
 
 store.inventory.button=Inventory
 store.inventory.title=Inventory
@@ -6941,7 +6968,7 @@ store.popup.trialUpgradeFail.msg=It looks like you are signed into a different M
 store.popup.downloaded.unOwnedTemplate.title=Purchase World Template?
 store.popup.downloaded.unOwnedTemplate.msg=You do not own this template, and must purchase it to unlock it.  Would you like to purchase the template?
 store.popup.rtx.title=Download Ray Tracing Packs?
-store.popup.rtx.msg=This world has ray tracing enabled Resource Packs applied to it. Your device is not compatible with advanced lighting and texture features so you will see the world without any advanced effects. Would you like to download and join?
+store.popup.rtx.msg=This world has ray tracing enabled resource packs applied that you must download in order to play. Your device is not compatible with ray tracing so you will only see the basic textures after downloading. Would you like to download this pack?
 store.purchase.success=You just bought: %s
 store.purchase.bundle=Unlock %d of %d Packs?
 store.purchase.bundle.confirm=Unlock now!
@@ -7584,7 +7611,7 @@ tile.furnace.name=Furnace
 tile.glass.name=Glass
 tile.golden_rail.name=Powered Rail
 tile.grass.name=Grass Block
-tile.grass_path.name=Grass Path
+tile.grass_path.name=Dirt Path
 tile.gravel.name=Gravel
 tile.hay_block.name=Hay Bale
 tile.netherrack.name=Netherrack
@@ -8947,13 +8974,14 @@ dr.color.steve_blue=Steve Blue
 dr.color.steve_brown=Steve Brown
 dr.color.steve_mouth=Steve Mouth
 dr.color.steve_skin=Steve Skin
-dr.color.strawberry_blone=Strawberry Blonde
+dr.color.strawberry_blonde=Strawberry Blonde
 dr.color.tangaroa_dark_blue=Tangaroa Dark Blue
 dr.color.vanilla=Vanilla
 dr.color.warm_bisque=Warm Bisque
 
 emotes.change_emotes=Change Emotes
 emotes.execute=Execute
+emotes.header_text=Emotes
 
 ## Dynamic Package Manager
 ## Google Play APK Expansion file downloader notification
