@@ -39,24 +39,29 @@ createWorldScreen.playerdamage=Spielerschaden	#
 createWorldScreen.pvpdamage=Spieler gegen Spieler-Schaden	#
 
 edu.cloudError.generic.code=Fehler-Code: 	#
-edu.cloudError.generic.download.title=Welt nicht aus der Cloud heruntergeladen. 	##### {MaxLength="45"}
-edu.cloudError.generic.linkDescription=Weitere Informationen zur Cloud-Unterstützung	#
+edu.cloudError.generic.download.title=Download der Welt fehlgeschlagen 	##### {MaxLength="45"}
+edu.cloudError.generic.linkDescription=Mehr über diesen Fehler erfahren	#
 edu.cloudError.generic.message=Beim Hochladen deiner Welt in die Cloud ist ein Fehler aufgetreten.	#
+edu.cloudError.generic.download.message=Beim Herunterladen deiner Welt von der Cloud ist ein Fehler aufgetreten.	#
 edu.cloudError.generic.upload.title=Hochladen fehlgeschlagen. 	##### {MaxLength="45"}
-edu.cloudError.largeWorld.message=Die maximale Dateigröße für Cloud-Uploads ist 250 MB.	#
+edu.cloudError.largeWorld.message=Diese Welt wird nur auf diesem lokalen Gerät gespeichert. Die maximale Dateigröße, die für den Cloud-Upload unterstützt wird, ist 250 MB.	#
 edu.cloudError.largeWorld.title=Welt zu groß. 	##### {MaxLength="45"}
 edu.cloudError.notfound.download.message=Wir können diese Welt nicht in der Cloud orten. Verlasse "Meine Welten" und öffne sie erneut, um die Ansicht deiner Welten zu aktualisieren.	#
 edu.cloudError.notfound.download.title=Datei nicht auf OneDrive gefunden. 	##### {MaxLength="45"}
-edu.cloudError.outOfStorage.linkDescription=So sicherst du deine Welten	#
-edu.cloudError.outOfStorage.message=Dein OneDrive-Ordner hat nicht genügend Platz für diese Welt. Du kannst auf eine andere Weise sichern, wenn du sie an einem anderen Ort speichern möchtest.	#
+edu.cloudError.outOfStorage.linkDescription=So kannst du deine Welten sichern, wenn dir der Platz auf OneDrive ausgegangen ist	#
+edu.cloudError.outOfStorage.download.message=Auf deinem Gerät ist kein Platz mehr! Warum löschst du nicht ein paar Dinge, die du nicht brauchst, damit du weiterhin neue Inhalte speichern kannst?	#
+edu.cloudError.outOfStorage.message=Dein OneDrive hat nicht genügend Platz für diese Welt.	#
 edu.cloudError.outOfStorage.title=Dein Upload schaffte es nicht in die Cloud. 	##### {MaxLength="45"}
-edu.cloudError.unauthorized.download.message=Bitte einen Systemadministrator, deine OneDrive-Einstellungen zu überprüfen.	#
-edu.cloudError.unauthorized.download.title=Berechtigungen für Dateidownload fehlen. 	##### {MaxLength="45"}
-edu.cloudError.unauthorized.message=Du hast keinen Zugriff auf den Cloud-Speicher. Überprüfe deine OneDrive-Einstellungen.	#
+edu.cloudError.unauthorized.download.message=Du hast nicht die benötigte Berechtigung, um diese Datei herunterzuladen. Bitte einen Systemadministrator, deine OneDrive-Einstellungen zu überprüfen.	#
+edu.cloudError.unauthorized.download.title=Berechtigungsfehler 	##### {MaxLength="45"}
+edu.cloudError.unauthorized.linkDescription=So überprüft man die OneDrive-Einstellungen	#
+edu.cloudError.unauthorized.message=Du hast keinen Zugriff auf den Cloud-Speicher. Überprüfe deine OneDrive-Einstellungen, wenn du deine Weltdateien speichern und auf verschiedenen Geräten synchronisieren möchtest.	#
 edu.cloudError.unauthorized.title=Cloud-Zugriffsproblem. 	##### {MaxLength="45"}
 edu.cloudError.uploadFailed.message=Bitte versuche erneut, in die Cloud hochzuladen.	#
+edu.cloudError.uploadFailed.linkDescription=Hilfe zu diesem Fehler erhalten	#
 
 item.spawn_egg.entity.npc.failed.edu=Du benötigst Worldbuilder-Berechtigungen, um einen NPC zu spawnen	#
+item.worldbuilder.block.failed.edu=Du benötigst Worldbuilder-Berechtigungen, um diesen Block zu platzieren	#
 
 library.connection.failed.body=Es konnte keine Verbindung mit der Bibliothek hergestellt werden. Dies kann passieren, wenn dein Computer offline ist oder der Zugang zum Katalog der Bibliothek gesperrt wurde.	#
 library.connection.failed.help=Hilfe	#
@@ -320,31 +325,43 @@ menu.eduLocalStorage=Lokaler Speicher	#
 menu.eduCloudStorage=Cloud-Speicher	#
 menu.eduCloudStorage.caps=CLOUD-SPEICHEREINSTELLUNGEN	#
 
+newAndFeatured.name=Neues und Highlights		### This will appear on a button on our home screen, so needs to remain short after translation. If the translation for "New & Featured" is too long, the category label can be translated as "featured".  Please try for less than 20 characters including spaces
+newAndFeatured.description=Diese Sammlung enthält Lektionen und Welten, die neu in der Bibliothek sind, monatliche Highlights und Dauerbrenner. Wir hoffen, du findest etwas Neues zum Entdecken!		### "Library" here is a destination, refers to the name for the EDU-equivalent of the Marketplace. Please treat this as a proper noun.
+
 options.eduCloud.toggleCloud=Weltsicherungen auf OneDrive aktivieren	#
-options.eduCloud.fileDate=Zuletzt geänderte OneDrive-Datei	#
-options.eduCloud.fileName=OneDrive-Dateiname	#
 options.eduCloud.folder.body=Anzeigen und Herunterladen von Welten, die im OneDrive-Ordner „%s“ gespeichert sind.		### Token in quotes will be "Minecraft Education" or "Minecraft Education Preview". Both are brand names and will not be localized.
 options.eduCloud.folder.header=Zugriff auf OneDrive	#
 options.eduCloud.oneDrive=OneDrive	#
-options.eduCloud.learnMore.text=Weitere Informationen zur Cloud-Unterstützung	#
+options.eduCloud.learnMore.text=Weitere Informationen zum Cloud-Speicher	#
 
 options.cloudStorage=Cloud-Speicher	#
 options.cloudStorageTitle=Cloud-Speichereinstellungen	#
 options.cloudFileNameTitle=OneDrive-Dateiname	#
 options.cloudFileLastChangedTitle=Zuletzt geänderte OneDrive-Datei	#
-options.cloudHelpText=Weitere Informationen zur Cloud-Unterstützung	#
+options.cloudHelpText=Weitere Informationen zum Cloud-Speicher	#
 options.cloudToggleCloudSave=Weltsicherung auf OneDrive aktivieren	#
 options.cloudNotAvailableText=Nicht verfügbar	#
 
+popup.title.eduCloudConflictResolution=Nicht mehr synchron		##### {MaxLength="45"}
+popup.message.eduConflictResolution.description=Oje. Deine Welt auf diesem Gerät ist nicht mit der in der Cloud synchronisiert. Was möchtest du tun?%1Du kannst dich dafür entscheiden, beide Welt-Dateien gleich wie die LOKALE Version oder die CLOUD-Version zu machen, oder du kannst ... BEIDE BEHALTEN! Wenn du beide beibehältst, wird deine lokale Datei zu einer Kopie, die von der unten angegebenen OneDrive-Version getrennt bestehen wird.		### %1 will be replaced with a newline. LOCAL should match the word used in popup.buttons.eduConflictResolution.local, CLOUD should match the word used in popup.buttons.eduConflictResolution.cloud, KEEP BOTH should match popup.buttons.eduConflictResolution.both
+popup.message.eduConflictResolution.localWorldName=Name der lokalen Welt: "%1"		### %1 will be the name of the local world wrapped in quotes
+popup.message.eduConflictResolution.localWorldDate=Lokale Welt zuletzt geändert: %1 (lokal)		### %1 will be the date
+popup.message.eduConflictResolution.cloudName=OneDrive-Dateiname: "%1"		### %1 will be the name of the world on OneDrive wrapped in quotes
+popup.message.eduConflictResolution.cloudDate=OneDrive-Welt zuletzt aktualisiert: %1 (lokal)		### %1 will be the date
+popup.buttons.eduConflictResolution.local=Lokal behalten	#
+popup.buttons.eduConflictResolution.cloud=Cloud behalten	#
+popup.buttons.eduConflictResolution.both=Beide behalten	#
+
 progressScreen.title.eduCloudFetch=Cloud-Synchronisierung	#
 progressScreen.message.eduFetchingCloudWorld=Prüfen …	#
-
 progressScreen.title.eduCloudUpload=In die Cloud hochladen	#
 progressScreen.message.eduUploadingCloudWorld=Übertragung läuft …	#
 progressScreen.message.eduFinishedCloudUpload=Abgeschlossen!	#
 progressScreen.title.eduCloudDownload=Herunterladen aus der Cloud	#
 progressScreen.message.eduDownloadingCloudWorld=Herunterladen ...	#
+progressScreen.message.eduImportingCloudWorld=Import...	#
 progressScreen.message.eduFinishedCloudDownload=Abgeschlossen!	#
+progressScreen.message.eduLaunchingCloudWorld=Starten ...	#
 
 resourceUri.launch.success=Ressourcenlink wurde geöffnet.	#
 resourceUri.launch.failure=Ressourcenlink konnte nicht geöffnet werden. Offenbar handelt es sich nicht um einen unterstützten URL.	#

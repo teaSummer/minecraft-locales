@@ -39,24 +39,29 @@ createWorldScreen.playerdamage=Урон от игроков	#
 createWorldScreen.pvpdamage=Урон «игрок против игрока»	#
 
 edu.cloudError.generic.code=Код ошибки: 	#
-edu.cloudError.generic.download.title=Мир не был загружен из облачного сервиса 	##### {MaxLength="45"}
-edu.cloudError.generic.linkDescription=Дополнительные сведения о поддержке облачных сервисов	#
+edu.cloudError.generic.download.title=Не удалось загрузить мир 	##### {MaxLength="45"}
+edu.cloudError.generic.linkDescription=Подробнее об этой ошибке	#
 edu.cloudError.generic.message=При отправке вашего мира в облачный сервис что-то пошло не так.	#
+edu.cloudError.generic.download.message=При загрузке вашего мира из облачного сервиса что-то пошло не так.	#
 edu.cloudError.generic.upload.title=Сбой отправки 	##### {MaxLength="45"}
-edu.cloudError.largeWorld.message=Максимальный размер файла для отправки в облако — 250 МБ.	#
+edu.cloudError.largeWorld.message=Мир будет сохранен только на этом устройстве. Максимальный размер файла для отправки в облако — 250 МБ.	#
 edu.cloudError.largeWorld.title=Мир слишком велик 	##### {MaxLength="45"}
 edu.cloudError.notfound.download.message=Не удается найти мир в облачном сервисе. Выйдите в «Мои миры», чтобы вернуться к просмотру ваших миров.	#
 edu.cloudError.notfound.download.title=Не найден файл в OneDrive 	##### {MaxLength="45"}
-edu.cloudError.outOfStorage.linkDescription=Как создать резервную копию миров	#
-edu.cloudError.outOfStorage.message=В папке OneDrive недостаточно места для этого мира. Если вы хотите создать резервную копию мира, сохраните его в другом месте.	#
+edu.cloudError.outOfStorage.linkDescription=Как создать резервную копию миров, когда у вас закончилось место на OneDrive	#
+edu.cloudError.outOfStorage.download.message=На вашем устройстве почти закончилось место! Удалите старые ненужные файлы, чтобы не потерять возможность сохранять новые.	#
+edu.cloudError.outOfStorage.message=В папке OneDrive недостаточно места для этого мира.	#
 edu.cloudError.outOfStorage.title=Отправка в облачный сервис не удалась 	##### {MaxLength="45"}
-edu.cloudError.unauthorized.download.message=Попросите администратора проверить параметры OneDrive.	#
-edu.cloudError.unauthorized.download.title=У вас нет разрешения на скачивание файла 	##### {MaxLength="45"}
-edu.cloudError.unauthorized.message=У вас нет доступа к облачному хранилищу. Проверьте параметры OneDrive.	#
+edu.cloudError.unauthorized.download.message=У вас нет разрешения на скачивание файла. Попросите администратора проверить параметры OneDrive.	#
+edu.cloudError.unauthorized.download.title=Проблема с разрешением 	##### {MaxLength="45"}
+edu.cloudError.unauthorized.linkDescription=Проверьте настройки OneDrive	#
+edu.cloudError.unauthorized.message=У вас нет доступа к облачному хранилищу. Проверьте параметры OneDrive, если хотите сохранить резервную копию файлов мира и синхронизировать их на разных устройствах.	#
 edu.cloudError.unauthorized.title=Проблема с доступом к облачному сервису 	##### {MaxLength="45"}
 edu.cloudError.uploadFailed.message=Повторно попытайтесь отправить данные в облачный сервис.	#
+edu.cloudError.uploadFailed.linkDescription=Помощь в устранении ошибки	#
 
 item.spawn_egg.entity.npc.failed.edu=Чтобы создать неигрового персонажа, нужно иметь разрешение создателя мира	#
+item.worldbuilder.block.failed.edu=Чтобы поставить этот блок, нужно иметь разрешение создателя мира	#
 
 library.connection.failed.body=Не удается подключиться к библиотеке. Такое может случаться, если компьютер не подключен к Интернету или заблокирован доступ к каталогу библиотеки.	#
 library.connection.failed.help=Справка	#
@@ -320,31 +325,43 @@ menu.eduLocalStorage=Локальное хранилище	#
 menu.eduCloudStorage=Облачное хранилище	#
 menu.eduCloudStorage.caps=ПАРАМЕТРЫ ОБЛАЧНОГО ХРАНИЛИЩА	#
 
+newAndFeatured.name=Новинки и рекомендации		### This will appear on a button on our home screen, so needs to remain short after translation. If the translation for "New & Featured" is too long, the category label can be translated as "featured".  Please try for less than 20 characters including spaces
+newAndFeatured.description=В этой коллекции представлены уроки и миры, которые были добавлены в библиотеку совсем недавно, лучшие за месяц и не теряющие своей актуальности. Скорее заглядывайте — может, найдете что-нибудь новенькое для себя?		### "Library" here is a destination, refers to the name for the EDU-equivalent of the Marketplace. Please treat this as a proper noun.
+
 options.eduCloud.toggleCloud=Включить резервное копирование мира в OneDrive	#
-options.eduCloud.fileDate=Последний измененный файл в OneDrive	#
-options.eduCloud.fileName=Имя файла OneDrive	#
 options.eduCloud.folder.body=Просмотреть и скачать миры, хранящиеся в папке «%s» OneDrive.		### Token in quotes will be "Minecraft Education" or "Minecraft Education Preview". Both are brand names and will not be localized.
 options.eduCloud.folder.header=Доступ к OneDrive	#
 options.eduCloud.oneDrive=OneDrive	#
-options.eduCloud.learnMore.text=Дополнительные сведения о поддержке облачных сервисов	#
+options.eduCloud.learnMore.text=Дополнительные сведения об облачном хранилище	#
 
 options.cloudStorage=Облачное хранилище	#
 options.cloudStorageTitle=Параметры облачного хранилища	#
 options.cloudFileNameTitle=Имя файла OneDrive	#
 options.cloudFileLastChangedTitle=Последний измененный файл в OneDrive	#
-options.cloudHelpText=Дополнительные сведения о поддержке облачных сервисов	#
+options.cloudHelpText=Дополнительные сведения об облачном хранилище	#
 options.cloudToggleCloudSave=Включить резервное копирование мира в OneDrive	#
 options.cloudNotAvailableText=Недоступно	#
 
+popup.title.eduCloudConflictResolution=Произошла ошибка синхронизации		##### {MaxLength="45"}
+popup.message.eduConflictResolution.description=Ой-ой. Кажется, при попытке синхронизации мира на этом устройстве произошла ошибка. Что делать?%1Вы можете сделать оба файла мира одинаковыми: либо их ЛОКАЛЬНУЮ версию, либо ОБЛАЧНУЮ, либо... ОБЕ СРАЗУ! Сохранение двух версий сделает ваш локальный файл копией, отдельной от версии OneDrive, о которой говорится ниже.		### %1 will be replaced with a newline. LOCAL should match the word used in popup.buttons.eduConflictResolution.local, CLOUD should match the word used in popup.buttons.eduConflictResolution.cloud, KEEP BOTH should match popup.buttons.eduConflictResolution.both
+popup.message.eduConflictResolution.localWorldName=Название локального мира: «%1»		### %1 will be the name of the local world wrapped in quotes
+popup.message.eduConflictResolution.localWorldDate=Последнее изменение локального мира: %1 (локальный)		### %1 will be the date
+popup.message.eduConflictResolution.cloudName=Имя файла OneDrive: «%1»		### %1 will be the name of the world on OneDrive wrapped in quotes
+popup.message.eduConflictResolution.cloudDate=Последнее изменение мира OneDrive: %1 (локальный)		### %1 will be the date
+popup.buttons.eduConflictResolution.local=Сохранить как «локальный»	#
+popup.buttons.eduConflictResolution.cloud=Сохранить как «облачный»	#
+popup.buttons.eduConflictResolution.both=Сохранить оба сразу	#
+
 progressScreen.title.eduCloudFetch=Синхронизация с облаком	#
 progressScreen.message.eduFetchingCloudWorld=Проверка…	#
-
 progressScreen.title.eduCloudUpload=Отправка в облачный сервис	#
 progressScreen.message.eduUploadingCloudWorld=Отправка...	#
 progressScreen.message.eduFinishedCloudUpload=Задание выполнено	#
 progressScreen.title.eduCloudDownload=Загрузка из облачного сервиса	#
 progressScreen.message.eduDownloadingCloudWorld=Загрузка...	#
+progressScreen.message.eduImportingCloudWorld=Импорт...	#
 progressScreen.message.eduFinishedCloudDownload=Задание выполнено	#
+progressScreen.message.eduLaunchingCloudWorld=Запуск…	#
 
 resourceUri.launch.success=Открыта ссылка на ресурс.	#
 resourceUri.launch.failure=Невозможно открыть ссылку на ресурс. Похоже, этот URL-адрес не поддерживается.	#

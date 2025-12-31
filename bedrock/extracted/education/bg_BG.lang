@@ -39,24 +39,29 @@ createWorldScreen.playerdamage=Щети на играча	#
 createWorldScreen.pvpdamage=Щети на играч срещу играч	#
 
 edu.cloudError.generic.code=Код на грешката: 	#
-edu.cloudError.generic.download.title=Светът ви не се изтегли от облака 	##### {MaxLength="45"}
-edu.cloudError.generic.linkDescription=Научете повече за поддръжката в облака	#
+edu.cloudError.generic.download.title=Неуспешно изтегляне на света 	##### {MaxLength="45"}
+edu.cloudError.generic.linkDescription=Научете повече за тази грешка	#
 edu.cloudError.generic.message=Нещо се обърка при качването на света ви в облака.	#
+edu.cloudError.generic.download.message=Нещо се обърка при изтеглянето на света ви от облака.	#
 edu.cloudError.generic.upload.title=Качването е неуспешно 	##### {MaxLength="45"}
-edu.cloudError.largeWorld.message=Максималният размер на файла, който се поддържа за качване в облака, е 250 MB.	#
+edu.cloudError.largeWorld.message=Този свят ще бъде запазен само на това локално устройство. Максималният размер на файловете, който се поддържа за качване в облака, е 250 MB.	#
 edu.cloudError.largeWorld.title=Светът е твърде голям 	##### {MaxLength="45"}
 edu.cloudError.notfound.download.message=Не можем да намерим този свят в облака. Излезте и се върнете в „Моите светове“, за да намерите освежен преглед на световете си.	#
 edu.cloudError.notfound.download.title=Файлът не е намерен в OneDrive 	##### {MaxLength="45"}
-edu.cloudError.outOfStorage.linkDescription=Как да направите резервни копия на световете си	#
-edu.cloudError.outOfStorage.message=В папката ви в OneDrive няма достатъчно място за този свят. Можете да направите резервно копие по друг начин, ако искате да го запазите на друго място.	#
+edu.cloudError.outOfStorage.linkDescription=Как да създадете резервно копие на световете си, когато мястото ви в OneDrive е изчерпано	#
+edu.cloudError.outOfStorage.download.message=Вашето устройство няма свободно място за съхранение! Защо не изтриете някои стари неща, които вече не ви трябват, за да можете да запазвате нови неща?	#
+edu.cloudError.outOfStorage.message=Във вашия OneDrive няма достатъчно място за този свят.	#
 edu.cloudError.outOfStorage.title=Вашето качване не стигна до облака 	##### {MaxLength="45"}
-edu.cloudError.unauthorized.download.message=Помолете системен администратор да провери настройките ви на OneDrive.	#
-edu.cloudError.unauthorized.download.title=Нямате разрешение да изтеглите този файл 	##### {MaxLength="45"}
-edu.cloudError.unauthorized.message=Нямате достъп до съхранението в облака. Проверете настройките на OneDrive.	#
+edu.cloudError.unauthorized.download.message=Нямате разрешение да изтеглите този файл. Помолете системен администратор да провери настройките ви на OneDrive.	#
+edu.cloudError.unauthorized.download.title=Грешка в разрешението 	##### {MaxLength="45"}
+edu.cloudError.unauthorized.linkDescription=Как да проверите настройките на OneDrive	#
+edu.cloudError.unauthorized.message=Нямате достъп до съхранение в облака. Проверете настройките на OneDrive, ако искате файловете на световете ви да са запазени и синхронизирани между устройствата ви.	#
 edu.cloudError.unauthorized.title=Проблем с достъпа до облака 	##### {MaxLength="45"}
 edu.cloudError.uploadFailed.message=Моля, опитайте да качите в облака отново.	#
+edu.cloudError.uploadFailed.linkDescription=Получете помощ за тази грешка	#
 
 item.spawn_egg.entity.npc.failed.edu=Имате нужда от разрешения за worldbuilder, за да извикате NPC	#
+item.worldbuilder.block.failed.edu=Имате нужда от разрешения за worldbuilder, за да поставите този блок	#
 
 library.connection.failed.body=Не можем да се свържем с библиотеката. Това може да се случи, ако компютърът ви е офлайн или ако достъпът до каталога на библиотеката е блокиран.	#
 library.connection.failed.help=Получаване на помощ	#
@@ -320,31 +325,43 @@ menu.eduLocalStorage=Локално съхранение	#
 menu.eduCloudStorage=Съхранение в облака	#
 menu.eduCloudStorage.caps=НАСТРОЙКИ ЗА СЪХРАНЕНИЕ В ОБЛАКА	#
 
+newAndFeatured.name=Нови и актуални		### This will appear on a button on our home screen, so needs to remain short after translation. If the translation for "New & Featured" is too long, the category label can be translated as "featured".  Please try for less than 20 characters including spaces
+newAndFeatured.description=Тази колекция предлага уроци и светове, които тъкмо са пристигнали в библиотеката, месечните акценти и най-любимите на всички времена. Надяваме се, че ще намерите нещо ново, което да разгледате!		### "Library" here is a destination, refers to the name for the EDU-equivalent of the Marketplace. Please treat this as a proper noun.
+
 options.eduCloud.toggleCloud=Активиране на резервни копия на света в OneDrive	#
-options.eduCloud.fileDate=Последно променен файл в OneDrive	#
-options.eduCloud.fileName=Име на файла в OneDrive	#
 options.eduCloud.folder.body=Преглед и изтегляне на светове, съхранявани в папката в OneDrive, „%s“.		### Token in quotes will be "Minecraft Education" or "Minecraft Education Preview". Both are brand names and will not be localized.
 options.eduCloud.folder.header=Достъп до OneDrive	#
 options.eduCloud.oneDrive=OneDrive	#
-options.eduCloud.learnMore.text=Научете повече за поддръжката в облака	#
+options.eduCloud.learnMore.text=Научете повече за съхранението в облака	#
 
 options.cloudStorage=Съхранение в облака	#
 options.cloudStorageTitle=Настройки за съхранение в облака	#
 options.cloudFileNameTitle=Име на файла в OneDrive	#
 options.cloudFileLastChangedTitle=Последно променен файл в OneDrive	#
-options.cloudHelpText=Научете повече за поддръжката в облака	#
+options.cloudHelpText=Научете повече за съхранението в облака	#
 options.cloudToggleCloudSave=Активиране на резервно копие на света в OneDrive	#
 options.cloudNotAvailableText=Не е достъпно	#
 
+popup.title.eduCloudConflictResolution=Несинхронизиран		##### {MaxLength="45"}
+popup.message.eduConflictResolution.description=Опа. Светът ви на това устройство не е синхронизиран с този в облака. Какво искате да направите?%1Можете да направите така, че и двата файла на света да са еднакви с локалната версия, версията в облака или... ДА ЗАПАЗИТЕ И ДВАТА! При запазването и на двата, локалният ви файл ще стане копие, отделно от версията в OneDrive, посочена по-долу.		### %1 will be replaced with a newline. LOCAL should match the word used in popup.buttons.eduConflictResolution.local, CLOUD should match the word used in popup.buttons.eduConflictResolution.cloud, KEEP BOTH should match popup.buttons.eduConflictResolution.both
+popup.message.eduConflictResolution.localWorldName=Име на локален свят: „%1“		### %1 will be the name of the local world wrapped in quotes
+popup.message.eduConflictResolution.localWorldDate=Последна промяна на локалния свят: %1 (локално)		### %1 will be the date
+popup.message.eduConflictResolution.cloudName=Име на файла в OneDrive: „%1“		### %1 will be the name of the world on OneDrive wrapped in quotes
+popup.message.eduConflictResolution.cloudDate=Последна актуализация на света в OneDrive: %1 (локално)		### %1 will be the date
+popup.buttons.eduConflictResolution.local=Запазване на локалния	#
+popup.buttons.eduConflictResolution.cloud=Запазване на този в облака	#
+popup.buttons.eduConflictResolution.both=Запазване и на двата	#
+
 progressScreen.title.eduCloudFetch=Синхронизиране с облака	#
 progressScreen.message.eduFetchingCloudWorld=Проверка...	#
-
 progressScreen.title.eduCloudUpload=Качване в облака	#
 progressScreen.message.eduUploadingCloudWorld=Качване...	#
 progressScreen.message.eduFinishedCloudUpload=Завършено!	#
 progressScreen.title.eduCloudDownload=Изтегляне от облака	#
 progressScreen.message.eduDownloadingCloudWorld=Изтегляне...	#
+progressScreen.message.eduImportingCloudWorld=Импортиране...	#
 progressScreen.message.eduFinishedCloudDownload=Завършено!	#
+progressScreen.message.eduLaunchingCloudWorld=Стартиране...	#
 
 resourceUri.launch.success=Успешно отваряне на връзката към ресурса.	#
 resourceUri.launch.failure=Връзката към ресурса не може да се отвори. Това не изглежда като поддържан URL адрес.	#

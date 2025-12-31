@@ -39,24 +39,29 @@ createWorldScreen.playerdamage=Obrażenia graczy	#
 createWorldScreen.pvpdamage=Obrażenia w pojedynku graczy	#
 
 edu.cloudError.generic.code=Kod błędu: 	#
-edu.cloudError.generic.download.title=Twój świat nie został pobrany z chmury 	##### {MaxLength="45"}
-edu.cloudError.generic.linkDescription=Dowiedz się więcej o wsparciu usług w chmurze	#
+edu.cloudError.generic.download.title=Pobieranie świata nie powiodło się 	##### {MaxLength="45"}
+edu.cloudError.generic.linkDescription=Dowiedz się więcej o tym błędzie	#
 edu.cloudError.generic.message=Coś poszło nie tak podczas przesyłania Twojego świata do chmury.	#
+edu.cloudError.generic.download.message=Coś poszło nie tak podczas pobierania twojego świata z chmury.	#
 edu.cloudError.generic.upload.title=Przesyłanie nie powiodło się 	##### {MaxLength="45"}
-edu.cloudError.largeWorld.message=Maksymalny rozmiar pliku, jaki można przesłać do chmury, to 250 MB.	#
+edu.cloudError.largeWorld.message=Ten świat zostanie zapisany tylko lokalnie na tym urządzeniu. Maksymalny rozmiar pliku, który można przesłać do chmury, to 250 MB.	#
 edu.cloudError.largeWorld.title=Świat jest zbyt duży 	##### {MaxLength="45"}
 edu.cloudError.notfound.download.message=Nie możemy zlokalizować tego świata w chmurze. Wyjdź i wróć do „Moich światów”, aby uzyskać odświeżony widok swoich światów.	#
 edu.cloudError.notfound.download.title=Nie znaleziono pliku w usłudze OneDrive 	##### {MaxLength="45"}
-edu.cloudError.outOfStorage.linkDescription=Jak tworzyć kopie zapasowe światów	#
-edu.cloudError.outOfStorage.message=W Twoim folderze OneDrive nie ma wystarczająco dużo miejsca, aby przechować ten świat. Jeśli chcesz zapisać świat gdzie indziej, możesz wykonać kopię zapasową w inny sposób.	#
+edu.cloudError.outOfStorage.linkDescription=Jak tworzyć kopie zapasowe światów, gdy zabrakło ci miejsca w usłudze OneDrive	#
+edu.cloudError.outOfStorage.download.message=Brak wolnej pamięci w urządzeniu! Usuń niepotrzebne rzeczy, aby zwolnić miejsce na zapis nowych.	#
+edu.cloudError.outOfStorage.message=Twój dysk OneDrive nie ma wystarczającej ilości miejsca dla tego świata.	#
 edu.cloudError.outOfStorage.title=Przesyłanie do chmury nie powiodło się 	##### {MaxLength="45"}
-edu.cloudError.unauthorized.download.message=Poproś administratora systemu o sprawdzenie ustawień usługi OneDrive.	#
-edu.cloudError.unauthorized.download.title=Nie masz uprawnień do pobrania tego pliku 	##### {MaxLength="45"}
-edu.cloudError.unauthorized.message=Nie masz dostępu do chmury. Sprawdź ustawienia usługi OneDrive.	#
+edu.cloudError.unauthorized.download.message=Nie masz uprawnień do pobrania tego pliku. Poproś administratora systemu, aby sprawdził twoje ustawienia OneDrive.	#
+edu.cloudError.unauthorized.download.title=Błąd uprawnień 	##### {MaxLength="45"}
+edu.cloudError.unauthorized.linkDescription=Jak sprawdzić ustawienia OneDrive	#
+edu.cloudError.unauthorized.message=Nie masz dostępu do pamięci w chmurze. Sprawdź swoje ustawienia OneDrive, jeśli chcesz zachowywać kopie zapasowe plików świata i zsynchronizować je na różnych urządzeniach.	#
 edu.cloudError.unauthorized.title=Problem z dostępem do chmury 	##### {MaxLength="45"}
 edu.cloudError.uploadFailed.message=Spróbuj ponownie przesłać plik do chmury.	#
+edu.cloudError.uploadFailed.linkDescription=Uzyskaj pomoc związaną z tym błędem	#
 
 item.spawn_egg.entity.npc.failed.edu=Aby zespawnować BN-a, potrzebujesz uprawnień worldbuilder	#
+item.worldbuilder.block.failed.edu=Aby umieścić ten blok, potrzebujesz uprawnień budowniczego świata	#
 
 library.connection.failed.body=Nie można nawiązać połączenia z Biblioteką. Dzieje się tak, kiedy komputer nie jest połączony z siecią lub dostęp do katalogu Biblioteki jest zablokowany.	#
 library.connection.failed.help=Uzyskaj pomoc	#
@@ -320,31 +325,43 @@ menu.eduLocalStorage=Pamięć lokalna	#
 menu.eduCloudStorage=Przechowywanie w chmurze	#
 menu.eduCloudStorage.caps=USTAWIENIA PRZECHOWYWANIA W CHMURZE	#
 
+newAndFeatured.name=Nowości i polecane		### This will appear on a button on our home screen, so needs to remain short after translation. If the translation for "New & Featured" is too long, the category label can be translated as "featured".  Please try for less than 20 characters including spaces
+newAndFeatured.description=Ta kolekcja zawiera lekcje i światy debiutujące w Bibliotece, najciekawszą zawartość z danego miesiąca oraz treści, które podbiły serca wszystkich. Mamy nadzieję, że znajdziesz coś nowego do zbadania!		### "Library" here is a destination, refers to the name for the EDU-equivalent of the Marketplace. Please treat this as a proper noun.
+
 options.eduCloud.toggleCloud=Włącz tworzenie kopii zapasowych świata na dysku OneDrive	#
-options.eduCloud.fileDate=Ostatnia zmiana pliku OneDrive	#
-options.eduCloud.fileName=Nazwa pliku OneDrive	#
 options.eduCloud.folder.body=Wyświetl i pobierz światy przechowywane w folderze „%s” w usłudze OneDrive.		### Token in quotes will be "Minecraft Education" or "Minecraft Education Preview". Both are brand names and will not be localized.
 options.eduCloud.folder.header=Uzyskaj dostęp do OneDrive	#
 options.eduCloud.oneDrive=OneDrive	#
-options.eduCloud.learnMore.text=Dowiedz się więcej o wsparciu usług w chmurze	#
+options.eduCloud.learnMore.text=Dowiedz się więcej o pamięci w chmurze	#
 
 options.cloudStorage=Przechowywanie w chmurze	#
 options.cloudStorageTitle=Ustawienia przechowywania w chmurze	#
 options.cloudFileNameTitle=Nazwa pliku OneDrive	#
 options.cloudFileLastChangedTitle=Ostatnia zmiana pliku OneDrive	#
-options.cloudHelpText=Dowiedz się więcej o wsparciu usług w chmurze	#
+options.cloudHelpText=Dowiedz się więcej o pamięci w chmurze	#
 options.cloudToggleCloudSave=Włącz tworzenie kopii zapasowej świata na dysku OneDrive	#
 options.cloudNotAvailableText=Niedostępna	#
 
+popup.title.eduCloudConflictResolution=Brak synchronizacji		##### {MaxLength="45"}
+popup.message.eduConflictResolution.description=Ojej. Twój świat na tym urządzeniu nie jest zsynchronizowany z tym w chmurze. Co chcesz zrobić?%1Możesz ustawić oba pliki świata, aby były identyczne z wersją LOKALNĄ, wersją w CHMURZE lub… ZACHOWAĆ OBIE! Zachowanie obu spowoduje, że plik lokalny stanie się kopią, oddzieloną od wersji w usłudze OneDrive, o której mowa poniżej		### %1 will be replaced with a newline. LOCAL should match the word used in popup.buttons.eduConflictResolution.local, CLOUD should match the word used in popup.buttons.eduConflictResolution.cloud, KEEP BOTH should match popup.buttons.eduConflictResolution.both
+popup.message.eduConflictResolution.localWorldName=Nazwa świata zapisanego lokalnie:  %1		### %1 will be the name of the local world wrapped in quotes
+popup.message.eduConflictResolution.localWorldDate=Ostatnia zmiana świata zapisanego lokalnie: %1 (lokalnie)		### %1 will be the date
+popup.message.eduConflictResolution.cloudName=Nazwa pliku w usłudze OneDrive: %1		### %1 will be the name of the world on OneDrive wrapped in quotes
+popup.message.eduConflictResolution.cloudDate=Ostatnia aktualizacja świata OneDrive: %1 (lokalnie)		### %1 will be the date
+popup.buttons.eduConflictResolution.local=Zachowaj wersję lokalną	#
+popup.buttons.eduConflictResolution.cloud=Zachowaj wersję w chmurze	#
+popup.buttons.eduConflictResolution.both=Zachowaj obie wersje	#
+
 progressScreen.title.eduCloudFetch=Synchronizacja z chmurą	#
 progressScreen.message.eduFetchingCloudWorld=Sprawdzanie…	#
-
 progressScreen.title.eduCloudUpload=Przesyłanie do chmury	#
 progressScreen.message.eduUploadingCloudWorld=Przesyłanie…	#
 progressScreen.message.eduFinishedCloudUpload=Ukończono!	#
 progressScreen.title.eduCloudDownload=Pobieranie z chmury	#
 progressScreen.message.eduDownloadingCloudWorld=Pobieranie...	#
+progressScreen.message.eduImportingCloudWorld=Importowanie...	#
 progressScreen.message.eduFinishedCloudDownload=Ukończono!	#
+progressScreen.message.eduLaunchingCloudWorld=Uruchamianie…	#
 
 resourceUri.launch.success=Otwarto łącze zasobów.	#
 resourceUri.launch.failure=Nie można otworzyć łącza zasobu. Nie wygląda na obsługiwany adres URL.	#

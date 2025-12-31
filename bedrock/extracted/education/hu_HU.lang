@@ -39,24 +39,29 @@ createWorldScreen.playerdamage=Játékos sérülése	#
 createWorldScreen.pvpdamage="Játékos játékos ellen" sérülés	#
 
 edu.cloudError.generic.code=Hibakód: 	#
-edu.cloudError.generic.download.title=Nem sikerült letölteni a világot a felhőből 	##### {MaxLength="45"}
-edu.cloudError.generic.linkDescription=További információ a felhőalapú támogatásról	#
+edu.cloudError.generic.download.title=Nem sikerült letölteni a világot 	##### {MaxLength="45"}
+edu.cloudError.generic.linkDescription=További információ a hibáról	#
 edu.cloudError.generic.message=Hiba történt a világod felhőbe való feltöltése közben.	#
+edu.cloudError.generic.download.message=Hiba történt a világod felhőből való letöltése közben.	#
 edu.cloudError.generic.upload.title=A feltöltés sikertelen 	##### {MaxLength="45"}
-edu.cloudError.largeWorld.message=A felhőbe való feltöltéskor a támogatott maximális fájlméret 250 MB.	#
+edu.cloudError.largeWorld.message=Ez a világ csak erre a helyi eszközre menthető. A felhőbe történő feltöltéskor a támogatott maximális fájlméret 250 MB.	#
 edu.cloudError.largeWorld.title=A világ túl nagy 	##### {MaxLength="45"}
 edu.cloudError.notfound.download.message=Nem találjuk ezt a világot a felhőben. Lépj ki, és térj vissza Saját világok részre a világaid nézetének frissítéséhez.	#
 edu.cloudError.notfound.download.title=A fájl nem található a OneDrive-on 	##### {MaxLength="45"}
-edu.cloudError.outOfStorage.linkDescription=Biztonsági másolatok készítése a világokról	#
-edu.cloudError.outOfStorage.message=A OneDrive-mappádban nincs elég szabad hely ennek a világnak. Másik biztonsági mentési módszert is választhatsz, ha inkább máshová szeretnéd menteni a világot.	#
+edu.cloudError.outOfStorage.linkDescription=Biztonsági másolatok készítése a világokról, ha elfogyott a OneDrive-tárhelyed	#
+edu.cloudError.outOfStorage.download.message=Elfogyott a hely az eszközödön! Miért nem törölsz néhány régi cuccot, amire már nincs szükséged, hogy elmenthesd az új tartalmakat?	#
+edu.cloudError.outOfStorage.message=Nincs elég szabad hely a OneDrive-odon ahhoz, hogy ez a világ elférjen benne.	#
 edu.cloudError.outOfStorage.title=A feltöltött tartalom nem került a felhőbe 	##### {MaxLength="45"}
-edu.cloudError.unauthorized.download.message=Kérd meg a rendszergazdát, hogy ellenőrizze a OneDrive-beállításaidat.	#
-edu.cloudError.unauthorized.download.title=Nincs engedélyed a fájl letöltéséhez 	##### {MaxLength="45"}
-edu.cloudError.unauthorized.message=Nincs hozzáférésed a felhőtárhelyhez. Ellenőrizd a OneDrive beállításait.	#
+edu.cloudError.unauthorized.download.message=Nincs engedélyed a fájl letöltéséhez. Kérd meg a rendszergazdát, hogy ellenőrizze a OneDrive-beállításaidat.	#
+edu.cloudError.unauthorized.download.title=Engedélyezési hiba 	##### {MaxLength="45"}
+edu.cloudError.unauthorized.linkDescription=Így ellenőrizheted a OneDrive-beállításokat	#
+edu.cloudError.unauthorized.message=Nincs hozzáférésed a felhőtárhelyhez. Ellenőrizd a OneDrive beállításait, ha szeretnéd minden eszközödön megőrizni a világfájlok biztonsági mentéseit és szinkronizálását.	#
 edu.cloudError.unauthorized.title=Felhőhozzáférési probléma 	##### {MaxLength="45"}
 edu.cloudError.uploadFailed.message=Próbálkozz újra a felhőbe való feltöltéssel.	#
+edu.cloudError.uploadFailed.linkDescription=Segítség kérése a hiba elhárításához	#
 
 item.spawn_egg.entity.npc.failed.edu=Egy NJK idézéséhez világépítési engedélyek szükségesek	#
+item.worldbuilder.block.failed.edu=A blokk elhelyezéséhez világépítési engedélyek szükségesek	#
 
 library.connection.failed.body=Nem sikerült kapcsolódni a könyvtárhoz. Ez akkor történhet, ha a számítógép nem csatlakozik az internetre, illetve ha nincs kapcsolat a könyvtárkatalógushoz.	#
 library.connection.failed.help=Kérj segítséget	#
@@ -320,31 +325,43 @@ menu.eduLocalStorage=Helyi tárhely	#
 menu.eduCloudStorage=Felhőtárhely	#
 menu.eduCloudStorage.caps=FELHŐTÁRHELY BEÁLLÍTÁSAI	#
 
+newAndFeatured.name=Új és kiemelt tartalmak		### This will appear on a button on our home screen, so needs to remain short after translation. If the translation for "New & Featured" is too long, the category label can be translated as "featured".  Please try for less than 20 characters including spaces
+newAndFeatured.description=Ez a gyűjtemény a Könyvtárba újonnan bekerült világokat és leckéket, a hónap kiemelt tartalmait és minden idők legnépszerűbb letöltéseit tartalmazza. Reméljük, találsz új felfedeznivalót!		### "Library" here is a destination, refers to the name for the EDU-equivalent of the Marketplace. Please treat this as a proper noun.
+
 options.eduCloud.toggleCloud=Világ OneDrive-ra való biztonsági mentésének bekapcsolása	#
-options.eduCloud.fileDate=A OneDrive-beli fájl utolsó módosítása	#
-options.eduCloud.fileName=A OneDrive-beli fájl neve	#
 options.eduCloud.folder.body=A OneDrive „%s” mappájában tárolt világok megtekintése és letöltése.		### Token in quotes will be "Minecraft Education" or "Minecraft Education Preview". Both are brand names and will not be localized.
 options.eduCloud.folder.header=OneDrive-hozzáférés	#
 options.eduCloud.oneDrive=OneDrive	#
-options.eduCloud.learnMore.text=További információ a felhőalapú támogatásról	#
+options.eduCloud.learnMore.text=További információ a felhőalapú tárhelyről	#
 
 options.cloudStorage=Felhőtárhely	#
 options.cloudStorageTitle=Felhőtárhely beállításai	#
 options.cloudFileNameTitle=A OneDrive-beli fájl neve	#
 options.cloudFileLastChangedTitle=A OneDrive-beli fájl utolsó módosítása	#
-options.cloudHelpText=További információ a felhőalapú támogatásról	#
+options.cloudHelpText=További információ a felhőalapú tárhelyről	#
 options.cloudToggleCloudSave=Világ OneDrive-ra való biztonsági mentésének bekapcsolása	#
 options.cloudNotAvailableText=Nem elérhető	#
 
+popup.title.eduCloudConflictResolution=Nincs szinkronizálva		##### {MaxLength="45"}
+popup.message.eduConflictResolution.description=Ajjaj! Az eszközön található világ nincs szinkronizálva a felhőben tárolt verzióval. Mit szeretnél tenni?%1Dönthetsz úgy, hogy mindkettő a HELYI verzióval egyezzen meg, vagy mindkettő a FELHŐBELI verzió legyen, de úgy is dönthetsz, hogy MIND A KÉT VERZIÓT MEGTARTOD! Ha mindkettőt megtartod, a helyi fájl egy különálló másolat lesz, teljesen elkülönülve a fent hivatkozott OneDrive-verziótól.		### %1 will be replaced with a newline. LOCAL should match the word used in popup.buttons.eduConflictResolution.local, CLOUD should match the word used in popup.buttons.eduConflictResolution.cloud, KEEP BOTH should match popup.buttons.eduConflictResolution.both
+popup.message.eduConflictResolution.localWorldName=Helyi világ neve: „%1”		### %1 will be the name of the local world wrapped in quotes
+popup.message.eduConflictResolution.localWorldDate=Helyi világ legutóbbi módosítása: %1 (helyi)		### %1 will be the date
+popup.message.eduConflictResolution.cloudName=A OneDrive-beli fájl neve: „%1”		### %1 will be the name of the world on OneDrive wrapped in quotes
+popup.message.eduConflictResolution.cloudDate=OneDrive-beli világ legutóbbi frissítése: %1 (helyi)		### %1 will be the date
+popup.buttons.eduConflictResolution.local=Helyi megtartása	#
+popup.buttons.eduConflictResolution.cloud=Felhőbeli megtartása	#
+popup.buttons.eduConflictResolution.both=Mindkettő megtartása	#
+
 progressScreen.title.eduCloudFetch=Szinkronizálás a felhőbe	#
 progressScreen.message.eduFetchingCloudWorld=Ellenőrzés…	#
-
 progressScreen.title.eduCloudUpload=Feltöltés a felhőbe	#
 progressScreen.message.eduUploadingCloudWorld=Feltöltés...	#
 progressScreen.message.eduFinishedCloudUpload=Kész!	#
 progressScreen.title.eduCloudDownload=Letöltés a felhőből	#
 progressScreen.message.eduDownloadingCloudWorld=Letöltés...	#
+progressScreen.message.eduImportingCloudWorld=Importálás…	#
 progressScreen.message.eduFinishedCloudDownload=Kész!	#
+progressScreen.message.eduLaunchingCloudWorld=Indítás…	#
 
 resourceUri.launch.success=Erőforrás-hivatkozás megnyitva.	#
 resourceUri.launch.failure=Az erőforrás-hivatkozás nem nyitható meg. Ez nem tűnik támogatott URL-címnek.	#

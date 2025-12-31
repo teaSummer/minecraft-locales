@@ -39,24 +39,29 @@ createWorldScreen.playerdamage=Poškození hráče	#
 createWorldScreen.pvpdamage=Poškození hráče proti hráči	#
 
 edu.cloudError.generic.code=Kód chyby: 	#
-edu.cloudError.generic.download.title=Váš svět se nepodařilo stáhnout z cloudu 	##### {MaxLength="45"}
-edu.cloudError.generic.linkDescription=Další informace o podpoře cloudu	#
+edu.cloudError.generic.download.title=Stahování světa se nezdařilo 	##### {MaxLength="45"}
+edu.cloudError.generic.linkDescription=Dozvědět se více o této chybě	#
 edu.cloudError.generic.message=Při nahrávání vašeho světa do cloudu se něco pokazilo.	#
+edu.cloudError.generic.download.message=Při stahování vašeho světa z cloudu se něco pokazilo.	#
 edu.cloudError.generic.upload.title=Položku se nepodařilo nahrát 	##### {MaxLength="45"}
-edu.cloudError.largeWorld.message=Maximální velikost souboru podporovaná pro nahrávání do cloudu je 250 MB.	#
+edu.cloudError.largeWorld.message=Tento svět bude uložen pouze do tohoto zařízení. Maximální velikost souboru pro nahrávání do cloudu je 250 MB.	#
 edu.cloudError.largeWorld.title=Svět je příliš velký 	##### {MaxLength="45"}
 edu.cloudError.notfound.download.message=Tento svět nemůžeme lokalizovat v cloudu. Odejděte a vraťte se do sekce Moje světy, aby bylo obnoveno zobrazení vašich světů.	#
 edu.cloudError.notfound.download.title=Soubor nebyl na OneDrive nalezen 	##### {MaxLength="45"}
-edu.cloudError.outOfStorage.linkDescription=Jak zálohovat své světy	#
-edu.cloudError.outOfStorage.message=Ve složce OneDrive není pro tento svět dost místa. Pokud jej chcete uložit jinam, můžete zálohovat jiným způsobem.	#
+edu.cloudError.outOfStorage.linkDescription=Jak zálohovat vaše světy, pokud vám došlo místo na OneDrive	#
+edu.cloudError.outOfStorage.download.message=Ve vašem systému není dostatek místa! Co takhle vymazat starý obsah, který již nepotřebujete, aby bylo místo na nový?	#
+edu.cloudError.outOfStorage.message=Váš OneDrive nemá dostatek místa k uložení tohoto světa.	#
 edu.cloudError.outOfStorage.title=Vaše nahraná verze se nedostala do cloudu 	##### {MaxLength="45"}
-edu.cloudError.unauthorized.download.message=Požádejte správce systému o kontrolu nastavení služby OneDrive.	#
-edu.cloudError.unauthorized.download.title=Nemáte oprávnění ke stažení tohoto souboru 	##### {MaxLength="45"}
-edu.cloudError.unauthorized.message=Nemáte přístup ke cloudovému úložišti. Zkontrolujte nastavení OneDrivu.	#
+edu.cloudError.unauthorized.download.message=Nemáte oprávnění ke stažení tohoto souboru. Zeptejte se systémového správce na vaše nastavení OneDrive.	#
+edu.cloudError.unauthorized.download.title=Chyba oprávnění 	##### {MaxLength="45"}
+edu.cloudError.unauthorized.linkDescription=Jak zkontrolovat nastavení OneDrive	#
+edu.cloudError.unauthorized.message=Nemáte přístup k cloudovému úložišti. Pokud chcete mít své světy zálohované a synchronizované napříč zařízeními, zkontrolujte své nastavení.	#
 edu.cloudError.unauthorized.title=Problém s přístupem ke cloudu 	##### {MaxLength="45"}
 edu.cloudError.uploadFailed.message=Zkuste to prosím znovu nahrát do cloudu.	#
+edu.cloudError.uploadFailed.linkDescription=Získejte pomoc s touto chybou	#
 
 item.spawn_egg.entity.npc.failed.edu=K vytvoření NPC potřebujete oprávnění stavitele světů	#
+item.worldbuilder.block.failed.edu=K umístění tohoto bloku potřebujete oprávnění stavitele světů	#
 
 library.connection.failed.body=Nemůžeme se připojit ke knihovně. Může k tomu dojít, pokud je váš počítač offline nebo pokud je přístup ke katalogu knihovny zablokován.	#
 library.connection.failed.help=Získat pomoc	#
@@ -320,31 +325,43 @@ menu.eduLocalStorage=Místní úložiště	#
 menu.eduCloudStorage=Cloudové úložiště	#
 menu.eduCloudStorage.caps=NASTAVENÍ CLOUDOVÉHO ÚLOŽIŠTĚ	#
 
+newAndFeatured.name=Nové & vybrané		### This will appear on a button on our home screen, so needs to remain short after translation. If the translation for "New & Featured" is too long, the category label can be translated as "featured".  Please try for less than 20 characters including spaces
+newAndFeatured.description=Tato kolekce obsahuje lekce a světy, které jsou v knihovně nové, nejlepší z měsíce a nejvíce oblíbené. Doufáme, že najdete něco nového k průzkumu!		### "Library" here is a destination, refers to the name for the EDU-equivalent of the Marketplace. Please treat this as a proper noun.
+
 options.eduCloud.toggleCloud=Povolit zálohování světa na OneDrive	#
-options.eduCloud.fileDate=Poslední změna souboru OneDrivu	#
-options.eduCloud.fileName=Název souboru OneDrivu	#
 options.eduCloud.folder.body=Prohlížejte a stahujte světy uložené ve složce ''%s'' OneDrive.		### Token in quotes will be "Minecraft Education" or "Minecraft Education Preview". Both are brand names and will not be localized.
 options.eduCloud.folder.header=Přístup k OneDrivu	#
 options.eduCloud.oneDrive=OneDrive	#
-options.eduCloud.learnMore.text=Další informace o podpoře cloudu	#
+options.eduCloud.learnMore.text=Dozvědět se více o cloudovém úložišti	#
 
 options.cloudStorage=Cloudové úložiště	#
 options.cloudStorageTitle=Nastavení cloudového úložiště	#
 options.cloudFileNameTitle=Název souboru na OneDrive	#
 options.cloudFileLastChangedTitle=Poslední změna souboru na OneDrive	#
-options.cloudHelpText=Další informace o podpoře cloudu	#
+options.cloudHelpText=Dozvědět se více o cloudovém úložišti	#
 options.cloudToggleCloudSave=Povolit zálohování světa na OneDrive	#
 options.cloudNotAvailableText=Není k dispozici	#
 
+popup.title.eduCloudConflictResolution=Nesynchronizováno		##### {MaxLength="45"}
+popup.message.eduConflictResolution.description=Jejda. Váš svět na tomto zařízení není synchronizovaný se světem v cloudu. Co chcete udělat?%1Můžete nastavit oba soubory světa podle MÍSTNÍ verze, CLOUDOVÉ verze nebo ... ZACHOVAT OBĚ! Pokud zachováte obě, váš místní soubor bude kopií oddělenou od verze na disku OneDrive, na kterou se odkazuje níže.		### %1 will be replaced with a newline. LOCAL should match the word used in popup.buttons.eduConflictResolution.local, CLOUD should match the word used in popup.buttons.eduConflictResolution.cloud, KEEP BOTH should match popup.buttons.eduConflictResolution.both
+popup.message.eduConflictResolution.localWorldName=Název místního světa: „%1“		### %1 will be the name of the local world wrapped in quotes
+popup.message.eduConflictResolution.localWorldDate=Místní svět naposledy změněn: %1 (místní)		### %1 will be the date
+popup.message.eduConflictResolution.cloudName=Název souboru na disku OneDrive: „%1“		### %1 will be the name of the world on OneDrive wrapped in quotes
+popup.message.eduConflictResolution.cloudDate=Poslední aktualizace světa na disku OneDrive: %1 (místní)		### %1 will be the date
+popup.buttons.eduConflictResolution.local=Ponechat místní	#
+popup.buttons.eduConflictResolution.cloud=Ponechat cloudový	#
+popup.buttons.eduConflictResolution.both=Ponechat oba	#
+
 progressScreen.title.eduCloudFetch=Synchronizace cloudu	#
 progressScreen.message.eduFetchingCloudWorld=Probíhá kontrola...	#
-
 progressScreen.title.eduCloudUpload=Nahrávání do cloudu	#
 progressScreen.message.eduUploadingCloudWorld=Probíhá odesílání...	#
 progressScreen.message.eduFinishedCloudUpload=Dokončeno!	#
 progressScreen.title.eduCloudDownload=Probíhá stahování z cloudu	#
 progressScreen.message.eduDownloadingCloudWorld=Stahování...	#
+progressScreen.message.eduImportingCloudWorld=Import...	#
 progressScreen.message.eduFinishedCloudDownload=Dokončeno!	#
+progressScreen.message.eduLaunchingCloudWorld=Spouštění...	#
 
 resourceUri.launch.success=Byl otevřen odkaz na zdroj.	#
 resourceUri.launch.failure=Odkaz na zdroj nelze otevřít. Zřejmě se jedná o nepodporovanou adresu URL.	#

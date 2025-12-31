@@ -39,24 +39,29 @@ createWorldScreen.playerdamage=Kerusakan Pemain	#
 createWorldScreen.pvpdamage=Pemain VS Kerusakan Pemain	#
 
 edu.cloudError.generic.code=Kode kesalahan: 	#
-edu.cloudError.generic.download.title=Duniamu tidak diunduh dari cloud 	##### {MaxLength="45"}
-edu.cloudError.generic.linkDescription=Pelajari lebih lanjut tentang dukungan cloud	#
+edu.cloudError.generic.download.title=Pengunduhan dunia gagal 	##### {MaxLength="45"}
+edu.cloudError.generic.linkDescription=Pelajari lebih lanjut tentang kesalahan ini	#
 edu.cloudError.generic.message=Terjadi kesalahan saat mengunggah duniamu ke cloud.	#
+edu.cloudError.generic.download.message=Terjadi kesalahan saat mengunduh duniamu dari cloud.	#
 edu.cloudError.generic.upload.title=Pengunggahan gagal 	##### {MaxLength="45"}
-edu.cloudError.largeWorld.message=Ukuran file maksimal yang bisa diunggah ke cloud adalah 250 MB.	#
+edu.cloudError.largeWorld.message=Dunia ini hanya akan disimpan di perangkat lokal ini. Ukuran file maksimum yang didukung pengunggahan cloud adalah 250 MB.	#
 edu.cloudError.largeWorld.title=Dunia terlalu besar 	##### {MaxLength="45"}
 edu.cloudError.notfound.download.message=Kami tidak dapat menemukan dunia ini di cloud. Keluar dan kembali ke Dunia Saya untuk menyegarkan tampilan duniamu.	#
 edu.cloudError.notfound.download.title=File tidak ditemukan di OneDrive 	##### {MaxLength="45"}
-edu.cloudError.outOfStorage.linkDescription=Cara mencadangkan duniamu	#
-edu.cloudError.outOfStorage.message=Folder OneDrive kamu tidak punya cukup ruang untuk dunia ini. Kamu bisa mencadangkannya dengan cara lain kalau ingin menyimpannya di tempat lain.	#
+edu.cloudError.outOfStorage.linkDescription=Cara menyalin duniamu saat ruang di OneDrive tidak cukup	#
+edu.cloudError.outOfStorage.download.message=Sistem kamu kehabisan ruang! Coba hapus simpanan yang tidak kamu butuhkan lagi agar kamu bisa menyimpan yang baru.	#
+edu.cloudError.outOfStorage.message=Ruang di OneDrive kamu tidak cukup untuk dunia ini.	#
 edu.cloudError.outOfStorage.title=Pengunggahan ke cloud tidak berhasil 	##### {MaxLength="45"}
-edu.cloudError.unauthorized.download.message=Minta administrator sistem untuk memeriksa pengaturan OneDrive.	#
-edu.cloudError.unauthorized.download.title=Kamu tidak punya izin untuk mengunduh file 	##### {MaxLength="45"}
-edu.cloudError.unauthorized.message=Kamu tidak punya akses ke penyimpanan cloud. Periksa pengaturan OneDrive.	#
+edu.cloudError.unauthorized.download.message=Kamu tidak diizinkan untuk mengunduh file ini. Minta administrator sistem untuk memeriksa pengaturan OneDrive kamu.	#
+edu.cloudError.unauthorized.download.title=Kesalahan izin 	##### {MaxLength="45"}
+edu.cloudError.unauthorized.linkDescription=Cara memeriksa pengaturan OneDrive	#
+edu.cloudError.unauthorized.message=Kamu tidak punya akses ke penyimpanan cloud. Periksa pengaturan OneDrive kalau kamu ingin mencadangkan file duniamu dan menyinkronkannya di berbagai perangkat.	#
 edu.cloudError.unauthorized.title=Masalah akses cloud 	##### {MaxLength="45"}
 edu.cloudError.uploadFailed.message=Silakan mencoba lagi untuk mengunggah ke cloud.	#
+edu.cloudError.uploadFailed.linkDescription=Dapatkan bantuan untuk kesalahan ini	#
 
 item.spawn_egg.entity.npc.failed.edu=Kamu memerlukan izin worldbuilder untuk memunculkan NPC	#
+item.worldbuilder.block.failed.edu=Kamu perlu izin worldbuilder untuk menaruh blok ini	#
 
 library.connection.failed.body=Kami tidak bisa tersambung ke Perpustakaan. Masalah ini bisa terjadi jika komputermu offline atau akses ke katalog Perpustakaan diblokir.	#
 library.connection.failed.help=Dapatkan Bantuan	#
@@ -320,31 +325,43 @@ menu.eduLocalStorage=Penyimpanan Lokal	#
 menu.eduCloudStorage=Penyimpanan Cloud	#
 menu.eduCloudStorage.caps=PENGATURAN PENYIMPANAN CLOUD	#
 
+newAndFeatured.name=Baru & Tampil		### This will appear on a button on our home screen, so needs to remain short after translation. If the translation for "New & Featured" is too long, the category label can be translated as "featured".  Please try for less than 20 characters including spaces
+newAndFeatured.description=Koleksi ini menampilkan pelajaran dan dunia yang baru di Perpustakaan, sorotan bulanan, dan favorit sepanjang waktu. Kami harap kamu menemukan sesuatu yang baru untuk dijelajahi!		### "Library" here is a destination, refers to the name for the EDU-equivalent of the Marketplace. Please treat this as a proper noun.
+
 options.eduCloud.toggleCloud=Aktifkan Cadangan Dunia ke OneDrive	#
-options.eduCloud.fileDate=File OneDrive Terakhir Kali Diubah	#
-options.eduCloud.fileName=Nama File OneDrive	#
 options.eduCloud.folder.body=Lihat dan unduh dunia yang disimpan di folder “%s” OneDrive.		### Token in quotes will be "Minecraft Education" or "Minecraft Education Preview". Both are brand names and will not be localized.
 options.eduCloud.folder.header=Akses OneDrive	#
 options.eduCloud.oneDrive=OneDrive	#
-options.eduCloud.learnMore.text=Pelajari lebih lanjut tentang dukungan cloud	#
+options.eduCloud.learnMore.text=Pelajari lebih lanjut tentang penyimpanan cloud	#
 
 options.cloudStorage=Penyimpanan Cloud	#
 options.cloudStorageTitle=Pengaturan Penyimpanan Cloud	#
 options.cloudFileNameTitle=Nama File OneDrive	#
 options.cloudFileLastChangedTitle=File OneDrive Terakhir Kali Diubah	#
-options.cloudHelpText=Pelajari lebih lanjut tentang dukungan cloud	#
+options.cloudHelpText=Pelajari lebih lanjut tentang penyimpanan cloud	#
 options.cloudToggleCloudSave=Aktifkan Cadangan Dunia ke OneDrive	#
 options.cloudNotAvailableText=Tidak Tersedia	#
 
+popup.title.eduCloudConflictResolution=Tidak Sinkron		##### {MaxLength="45"}
+popup.message.eduConflictResolution.description=Ups, duniamu di perangkat ini tidak sinkron dengan yang ada di cloud. Apa yang ingin kamu lakukan?%1Kamu bisa buat kedua file dunia itu sama dengan versi LOKAL, versi CLOUD, atau ... SIMPAN KEDUA-DUANYA! Menyimpan kedua-duanya akan membuat file lokalmu menjadi salinan terpisah dari versi OneDrive yang tercantum di bawah.		### %1 will be replaced with a newline. LOCAL should match the word used in popup.buttons.eduConflictResolution.local, CLOUD should match the word used in popup.buttons.eduConflictResolution.cloud, KEEP BOTH should match popup.buttons.eduConflictResolution.both
+popup.message.eduConflictResolution.localWorldName=Nama Dunia Lokal: “%1”		### %1 will be the name of the local world wrapped in quotes
+popup.message.eduConflictResolution.localWorldDate=Dunia Lokal Terakhir Diubah: %1 (lokal)		### %1 will be the date
+popup.message.eduConflictResolution.cloudName=Nama File OneDrive: “%1”		### %1 will be the name of the world on OneDrive wrapped in quotes
+popup.message.eduConflictResolution.cloudDate=Dunia OneDrive Terakhir Diperbarui: %1 (lokal)		### %1 will be the date
+popup.buttons.eduConflictResolution.local=Simpan Lokal	#
+popup.buttons.eduConflictResolution.cloud=Simpan Cloud	#
+popup.buttons.eduConflictResolution.both=Simpan Keduanya	#
+
 progressScreen.title.eduCloudFetch=Menyinkronkan Cloud	#
 progressScreen.message.eduFetchingCloudWorld=Memeriksa ...	#
-
 progressScreen.title.eduCloudUpload=Mengunggah ke cloud	#
 progressScreen.message.eduUploadingCloudWorld=Mengunggah ...	#
 progressScreen.message.eduFinishedCloudUpload=Selesai!	#
 progressScreen.title.eduCloudDownload=Mengunduh dari cloud	#
 progressScreen.message.eduDownloadingCloudWorld=Mengunduh...	#
+progressScreen.message.eduImportingCloudWorld=Mengimpor...	#
 progressScreen.message.eduFinishedCloudDownload=Selesai!	#
+progressScreen.message.eduLaunchingCloudWorld=Meluncurkan ....	#
 
 resourceUri.launch.success=Membuka Tautan Sumber Daya.	#
 resourceUri.launch.failure=Tidak bisa membuka Tautan Sumber Daya. Ini tidak terlihat seperti URL yang didukung.	#

@@ -39,24 +39,29 @@ createWorldScreen.playerdamage=플레이어 대미지	#
 createWorldScreen.pvpdamage=플레이어 대 플레이어 대미지	#
 
 edu.cloudError.generic.code=오류 코드: 	#
-edu.cloudError.generic.download.title=월드가 클라우드에서 다운로드되지 않았습니다 	##### {MaxLength="45"}
-edu.cloudError.generic.linkDescription=클라우드 지원에 대해 자세히 알아보기	#
+edu.cloudError.generic.download.title=월드 다운로드 실패 	##### {MaxLength="45"}
+edu.cloudError.generic.linkDescription=이 오류에 대해 자세히 알아보기	#
 edu.cloudError.generic.message=월드를 클라우드에 업로드할 때 문제가 발생했습니다.	#
+edu.cloudError.generic.download.message=클라우드에서 월드를 다운로드할 때 문제가 발생했습니다.	#
 edu.cloudError.generic.upload.title=업로드 실패 	##### {MaxLength="45"}
-edu.cloudError.largeWorld.message=클라우드 업로드에 지원되는 최대 파일 크기는 250MB입니다.	#
+edu.cloudError.largeWorld.message=이 월드는 이 로컬 장치에만 저장할 수 있습니다. 클라우드 업로드가 지원되는 최대 파일 크기는 250MB입니다.	#
 edu.cloudError.largeWorld.title=월드가 너무 큽니다 	##### {MaxLength="45"}
 edu.cloudError.notfound.download.message=클라우드에서 이 월드를 찾을 수 없습니다. 나간 다음 내 월드로 돌아오면 월드의 새로워진 모습을 볼 수 있습니다.	#
 edu.cloudError.notfound.download.title=OneDrive에서 파일을 찾을 수 없습니다 	##### {MaxLength="45"}
-edu.cloudError.outOfStorage.linkDescription=월드를 백업하는 방법	#
-edu.cloudError.outOfStorage.message=OneDrive 폴더에 이 월드를 수용할 공간이 부족합니다. 다른 곳에 저장하려면 다른 방법으로 백업할 수 있습니다.	#
+edu.cloudError.outOfStorage.linkDescription=OneDrive 저장 공간이 없을 때 월드를 백업하는 방법	#
+edu.cloudError.outOfStorage.download.message=기기에 용량이 부족합니다! 기존에 저장된 필요 없는 정보를 삭제하고 새로 저장할 공간을 확보하세요.	#
+edu.cloudError.outOfStorage.message=OneDrive에 이 월드를 저장할 공간이 부족합니다.	#
 edu.cloudError.outOfStorage.title=업로드가 클라우드에 저장되지 않았습니다 	##### {MaxLength="45"}
-edu.cloudError.unauthorized.download.message=시스템 관리자에게 문의해 OneDrive 설정을 확인하세요.	#
-edu.cloudError.unauthorized.download.title=이 파일을 다운로드할 권한이 없습니다 	##### {MaxLength="45"}
-edu.cloudError.unauthorized.message=클라우드 저장 공간에 액세스할 수 없습니다. OneDrive 설정을 확인하세요.	#
+edu.cloudError.unauthorized.download.message=이 파일을 다운로드할 권한이 없습니다. 시스템 관리자에게 OneDrive 설정 확인을 요청하세요.	#
+edu.cloudError.unauthorized.download.title=권한 오류 	##### {MaxLength="45"}
+edu.cloudError.unauthorized.linkDescription=OneDrive 설정 확인 방법	#
+edu.cloudError.unauthorized.message=클라우드 스토리지에 접근할 수 없습니다. 월드 파일을 백업하고 모든 기기에서 동기화 하려면 OneDrive 설정을 확인하세요.	#
 edu.cloudError.unauthorized.title=클라우드 액세스 문제 	##### {MaxLength="45"}
 edu.cloudError.uploadFailed.message=클라우드에 업로드하려면 다시 시도하세요.	#
+edu.cloudError.uploadFailed.linkDescription=이 오류 해결에 도움을 받기	#
 
 item.spawn_egg.entity.npc.failed.edu=NPC를 생성하려면 월드 빌더 권한이 필요합니다.	#
+item.worldbuilder.block.failed.edu=이 블록을 배치하려면 월드빌더의 허가가 필요합니다	#
 
 library.connection.failed.body=라이브러리에 연결할 수 없습니다. 컴퓨터가 오프라인 상태이거나 라이브러리 카탈로그에 대한 액세스가 차단된 경우 이런 문제가 발생할 수 있습니다.	#
 library.connection.failed.help=도움 요청	#
@@ -320,31 +325,43 @@ menu.eduLocalStorage=로컬 저장 공간	#
 menu.eduCloudStorage=클라우드 저장 공간	#
 menu.eduCloudStorage.caps=클라우드 저장 공간 설정	#
 
+newAndFeatured.name=신규 및 주요 기능		### This will appear on a button on our home screen, so needs to remain short after translation. If the translation for "New & Featured" is too long, the category label can be translated as "featured".  Please try for less than 20 characters including spaces
+newAndFeatured.description=이 컬렉션에는 라이브러리에 새로 추가된 수업과 월드, 월간 하이라이트, 역대 인기 작품이 포함되어 있습니다. 새로운 탐험거리를 발견해 보세요!		### "Library" here is a destination, refers to the name for the EDU-equivalent of the Marketplace. Please treat this as a proper noun.
+
 options.eduCloud.toggleCloud=OneDrive에 월드 백업 활성화	#
-options.eduCloud.fileDate=OneDrive 파일의 마지막 변경	#
-options.eduCloud.fileName=OneDrive 파일 이름	#
 options.eduCloud.folder.body='%s' OneDrive 폴더에 저장된 월드를 확인하고 다운로드하세요.		### Token in quotes will be "Minecraft Education" or "Minecraft Education Preview". Both are brand names and will not be localized.
 options.eduCloud.folder.header=OneDrive 액세스	#
 options.eduCloud.oneDrive=OneDrive	#
-options.eduCloud.learnMore.text=클라우드 지원에 대해 자세히 알아보기	#
+options.eduCloud.learnMore.text=클라우드 스토리지에 대해 자세히 알아보기	#
 
 options.cloudStorage=클라우드 저장 공간	#
 options.cloudStorageTitle=클라우드 저장 공간 설정	#
 options.cloudFileNameTitle=OneDrive 파일 이름	#
 options.cloudFileLastChangedTitle=OneDrive 파일의 마지막 변경	#
-options.cloudHelpText=클라우드 지원에 대해 자세히 알아보기	#
+options.cloudHelpText=클라우드 스토리지에 대해 자세히 알아보기	#
 options.cloudToggleCloudSave=OneDrive에 월드 백업 활성화	#
 options.cloudNotAvailableText=사용 불가능	#
 
+popup.title.eduCloudConflictResolution=동기화되지 않음		##### {MaxLength="45"}
+popup.message.eduConflictResolution.description=이런, 이 장치의 월드는 클라우드의 월드와 동기화되지 않았습니다. 어떻게 하겠습니까?%1두 월드 파일을 모두 로컬 버전, 클라우드 버전 또는 양쪽 모두 생성할 수 있습니다! 양쪽 월드를 모두 유지하는 경우 아래에 참조된 OneDrive 버전과 별개의 로컬 파일 사본을 생성하게 됩니다.		### %1 will be replaced with a newline. LOCAL should match the word used in popup.buttons.eduConflictResolution.local, CLOUD should match the word used in popup.buttons.eduConflictResolution.cloud, KEEP BOTH should match popup.buttons.eduConflictResolution.both
+popup.message.eduConflictResolution.localWorldName=로컬 월드 이름: “%1”		### %1 will be the name of the local world wrapped in quotes
+popup.message.eduConflictResolution.localWorldDate=로컬 월드 마지막 변경: %1 (로컬)		### %1 will be the date
+popup.message.eduConflictResolution.cloudName=OneDrive 파일 이름: “%1”		### %1 will be the name of the world on OneDrive wrapped in quotes
+popup.message.eduConflictResolution.cloudDate=OneDrive 월드 마지막 업데이트: %1 (로컬)		### %1 will be the date
+popup.buttons.eduConflictResolution.local=로컬 유지	#
+popup.buttons.eduConflictResolution.cloud=클라우드 유지	#
+popup.buttons.eduConflictResolution.both=둘 다 유지	#
+
 progressScreen.title.eduCloudFetch=클라우드 동기화 중	#
 progressScreen.message.eduFetchingCloudWorld=확인 중…	#
-
-progressScreen.title.eduCloudUpload=클라우드에 업로드 중	#
+progressScreen.title.eduCloudUpload=클라우드에 업로드	#
 progressScreen.message.eduUploadingCloudWorld=업로드 중...	#
 progressScreen.message.eduFinishedCloudUpload=완료!	#
-progressScreen.title.eduCloudDownload=클라우드에서 다운로드 중	#
+progressScreen.title.eduCloudDownload=클라우드에서 다운로드	#
 progressScreen.message.eduDownloadingCloudWorld=다운로드 중...	#
+progressScreen.message.eduImportingCloudWorld=가져오는 중...	#
 progressScreen.message.eduFinishedCloudDownload=완료!	#
+progressScreen.message.eduLaunchingCloudWorld=시작 중...	#
 
 resourceUri.launch.success=리소스 링크를 열었습니다.	#
 resourceUri.launch.failure=리소스 링크를 열 수 없습니다. 유효한 URL처럼 보이지 않습니다.	#
@@ -367,10 +384,10 @@ toast.genericLinkOpened=웹 브라우저에서 링크를 열었습니다.	#
 structure_block.export.default_name=내 구조물 블록	#
 
 joincode.invalid.title=잘못된 참여 코드 	#
-joincode.invalid.body=잘못된 참여 코드 %1을(를) 입력했습니다. 호스트에 올바른 코드가 있는지 확인하거나 IP 주소로 참가를 시도하세요. 	#
+joincode.invalid.body=잘못된 참여 코드 %1을(를) 입력했습니다. 호스트에 올바른 코드가 있는지 확인하거나 IP 주소로 참여를 시도하세요. 	#
 joincode.invalid.button.tryagain=다시 시도	#
 joincode.invalid.button.enterip=IP 주소 입력	#
-joincode.invalid.abuse.body=잘못된 참여 코드 %1을(를) 입력했습니다. 대신 IP 주소를 사용하여 월드에 참가하세요.	#
+joincode.invalid.abuse.body=잘못된 참여 코드 %1을(를) 입력했습니다. 대신 IP 주소를 사용하여 월드에 참여하세요.	#
 
 joincode.item.sharepopup.title.simple=링크 공유	#
 joincode.popup.body=다른 플레이어를 여러분의 월드로 초대하는 링크를 공유합니다. 참고로 이 링크는 호스팅하는 동안에만 유효합니다.	#

@@ -39,24 +39,29 @@ createWorldScreen.playerdamage=玩家傷害	#
 createWorldScreen.pvpdamage=玩家對玩家的傷害	#
 
 edu.cloudError.generic.code=錯誤代碼： 	#
-edu.cloudError.generic.download.title=您的世界並未從雲端下載 	##### {MaxLength="45"}
-edu.cloudError.generic.linkDescription=了解更多有關雲端支援的資訊	#
+edu.cloudError.generic.download.title=世界下載失敗 	##### {MaxLength="45"}
+edu.cloudError.generic.linkDescription=了解更多有關此錯誤的資訊	#
 edu.cloudError.generic.message=在將你的世界上傳至雲端時出了點問題。	#
+edu.cloudError.generic.download.message=在將你的世界從雲端下載時出了點問題。	#
 edu.cloudError.generic.upload.title=上傳失敗 	##### {MaxLength="45"}
-edu.cloudError.largeWorld.message=支援雲端上傳的最大檔案大小為 250MB。	#
+edu.cloudError.largeWorld.message=此世界將只會儲存至本機裝置。支援雲端上傳的最大檔案大小為 250MB。	#
 edu.cloudError.largeWorld.title=世界太大了 	##### {MaxLength="45"}
 edu.cloudError.notfound.download.message=我們無法在雲端上找到這個世界。請退出並返回到「我的世界」，以獲得世界的更新畫面。	#
 edu.cloudError.notfound.download.title=未在 OneDrive 上找到檔案 	##### {MaxLength="45"}
-edu.cloudError.outOfStorage.linkDescription=如何備份您的世界	#
-edu.cloudError.outOfStorage.message=您的 OneDrive 資料夾沒有足夠的空間來儲存這個世界。如果您希望將其保存在其他地方，可以採用其他方式進行備份。	#
+edu.cloudError.outOfStorage.linkDescription=OneDrive 的空間不足時，如何備份您的世界	#
+edu.cloudError.outOfStorage.download.message=你的裝置上沒有空間了。不如刪除一些不需要的東西，好繼續儲存新的內容？	#
+edu.cloudError.outOfStorage.message=您的 OneDrive 資料夾沒有足夠空間來儲存這個世界。	#
 edu.cloudError.outOfStorage.title=您上傳到雲端的作業並未完成 	##### {MaxLength="45"}
-edu.cloudError.unauthorized.download.message=請系統管理員檢查您的 OneDrive 設定。	#
-edu.cloudError.unauthorized.download.title=您沒有下載此檔案的權限 	##### {MaxLength="45"}
-edu.cloudError.unauthorized.message=您無權存取雲端儲存空間。請檢查 OneDrive 設定。	#
+edu.cloudError.unauthorized.download.message=您無權下載此檔案。請系統管理員檢查您的 OneDrive 設定。	#
+edu.cloudError.unauthorized.download.title=權限錯誤 	##### {MaxLength="45"}
+edu.cloudError.unauthorized.linkDescription=如何檢查 OneDrive 設定	#
+edu.cloudError.unauthorized.message=您無權存取雲端儲存空間。如果您想要保持備份您的世界檔案並在跨裝置間同步，請檢查 OneDrive 設定。	#
 edu.cloudError.unauthorized.title=雲端存取問題 	##### {MaxLength="45"}
 edu.cloudError.uploadFailed.message=請再次嘗試上傳到雲端。	#
+edu.cloudError.uploadFailed.linkDescription=取得此錯誤的說明	#
 
 item.spawn_egg.entity.npc.failed.edu=您需要創世者的權限才能生成 NPC	#
+item.worldbuilder.block.failed.edu=你需要世界建造權限才能放置此方塊	#
 
 library.connection.failed.body=我們無法連接至 [資料庫]。如果您的電腦離線或禁止存取 [資料庫] 目錄，則可能會發生這種情況。	#
 library.connection.failed.help=取得說明	#
@@ -320,31 +325,43 @@ menu.eduLocalStorage=本機儲存空間	#
 menu.eduCloudStorage=雲端儲存空間	#
 menu.eduCloudStorage.caps=雲端儲存空間設定	#
 
+newAndFeatured.name=全新與精選		### This will appear on a button on our home screen, so needs to remain short after translation. If the translation for "New & Featured" is too long, the category label can be translated as "featured".  Please try for less than 20 characters including spaces
+newAndFeatured.description=這個系列收錄了內容保存庫的全新課程和世界、每月精選以及歷年最受歡迎的內容。希望你能找到新的內容可供探索！		### "Library" here is a destination, refers to the name for the EDU-equivalent of the Marketplace. Please treat this as a proper noun.
+
 options.eduCloud.toggleCloud=啟用世界備份到 OneDrive	#
-options.eduCloud.fileDate=最後變更的 OneDrive 檔案	#
-options.eduCloud.fileName=OneDrive 檔名	#
 options.eduCloud.folder.body=檢視並下載儲存在「%s」OneDrive 資料夾中的世界。		### Token in quotes will be "Minecraft Education" or "Minecraft Education Preview". Both are brand names and will not be localized.
 options.eduCloud.folder.header=存取 OneDrive	#
 options.eduCloud.oneDrive=OneDrive	#
-options.eduCloud.learnMore.text=了解更多有關雲端支援的資訊	#
+options.eduCloud.learnMore.text=了解更多有關雲端儲存空間的資訊	#
 
 options.cloudStorage=雲端儲存空間	#
 options.cloudStorageTitle=雲端儲存空間設定	#
 options.cloudFileNameTitle=OneDrive 檔名	#
 options.cloudFileLastChangedTitle=最後變更的 OneDrive 檔案	#
-options.cloudHelpText=了解更多有關雲端支援的資訊	#
+options.cloudHelpText=了解更多有關雲端儲存空間的資訊	#
 options.cloudToggleCloudSave=啟用世界備份到 OneDrive	#
 options.cloudNotAvailableText=無法使用	#
 
+popup.title.eduCloudConflictResolution=不同步		##### {MaxLength="45"}
+popup.message.eduConflictResolution.description=糟糕。你在此裝置上的世界與雲端上的世界不同步。你想要做什麼？？%1你可以讓兩邊的世界與本地版本或雲端版本相同，或者是將兩個版本都保存下來！若你選擇保存兩邊的版本，將使你的本地檔案成為副本，與以下參引用的 OneDrive 版本分開。		### %1 will be replaced with a newline. LOCAL should match the word used in popup.buttons.eduConflictResolution.local, CLOUD should match the word used in popup.buttons.eduConflictResolution.cloud, KEEP BOTH should match popup.buttons.eduConflictResolution.both
+popup.message.eduConflictResolution.localWorldName=本地世界名稱：「%1」		### %1 will be the name of the local world wrapped in quotes
+popup.message.eduConflictResolution.localWorldDate=本地世界最後更新時間：%1 (本地)		### %1 will be the date
+popup.message.eduConflictResolution.cloudName=OneDrive 檔案名稱：「%1 」		### %1 will be the name of the world on OneDrive wrapped in quotes
+popup.message.eduConflictResolution.cloudDate=OneDrive 世界最後更新時間：%1 (本地)		### %1 will be the date
+popup.buttons.eduConflictResolution.local=保留本地版本	#
+popup.buttons.eduConflictResolution.cloud=保留雲端版本	#
+popup.buttons.eduConflictResolution.both=兩者都保留	#
+
 progressScreen.title.eduCloudFetch=雲端同步中	#
 progressScreen.message.eduFetchingCloudWorld=正在檢查...	#
-
 progressScreen.title.eduCloudUpload=上傳到雲端	#
 progressScreen.message.eduUploadingCloudWorld=正在上傳...	#
 progressScreen.message.eduFinishedCloudUpload=完成！	#
 progressScreen.title.eduCloudDownload=從雲端下載中	#
 progressScreen.message.eduDownloadingCloudWorld=正在下載...	#
+progressScreen.message.eduImportingCloudWorld=正在匯入…	#
 progressScreen.message.eduFinishedCloudDownload=完成！	#
+progressScreen.message.eduLaunchingCloudWorld=正在啟動...	#
 
 resourceUri.launch.success=已開啟資源連結。	#
 resourceUri.launch.failure=無法開啟資源連結。這似乎不是受支援的 URL。	#

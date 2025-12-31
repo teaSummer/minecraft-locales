@@ -39,24 +39,29 @@ createWorldScreen.playerdamage=Spillerskade	#
 createWorldScreen.pvpdamage=Spiller vs. spiller-skade	#
 
 edu.cloudError.generic.code=Fejlkode: 	#
-edu.cloudError.generic.download.title=Din verden blev ikke downloadet fra skyen 	##### {MaxLength="45"}
-edu.cloudError.generic.linkDescription=Få mere at vide om sky-understøttelse	#
+edu.cloudError.generic.download.title=Verdenen kunne ikke downloades 	##### {MaxLength="45"}
+edu.cloudError.generic.linkDescription=Få mere at vide om denne fejl	#
 edu.cloudError.generic.message=Der gik noget galt under uploading af din verden til skyen.	#
+edu.cloudError.generic.download.message=Der gik noget galt under downloading af din verden fra skyen.	#
 edu.cloudError.generic.upload.title=Upload mislykkedes 	##### {MaxLength="45"}
-edu.cloudError.largeWorld.message=Den maksimale filstørrelse, der understøttes til upload i skyen, er 250 MB.	#
+edu.cloudError.largeWorld.message=Denne verden gemmes kun på denne lokale enhed. Den maksimale filstørrelse, der understøttes til upload i skyen, er 250 MB.	#
 edu.cloudError.largeWorld.title=Verdenen er for stor 	##### {MaxLength="45"}
 edu.cloudError.notfound.download.message=Vi kan ikke finde denne verden på skyen. Luk, og vend tilbage til Mine verdener for at få en opdateret visning af dine verdener.	#
 edu.cloudError.notfound.download.title=Filen blev ikke fundet på OneDrive 	##### {MaxLength="45"}
-edu.cloudError.outOfStorage.linkDescription=Sådan sikkerhedskopierer du dine verdener	#
-edu.cloudError.outOfStorage.message=Din OneDrive-mappe har ikke nok plads til denne verden. Du kan sikkerhedskopiere på en anden måde, hvis du vil gemme den et andet sted.	#
+edu.cloudError.outOfStorage.linkDescription=Sådan sikkerhedskopierer du dine verdener, når du ikke har mere plads på OneDrive	#
+edu.cloudError.outOfStorage.download.message=Dit enhed er løbet tør for plads! Måske kan du slette noget, du ikke bruger, så du kan gemme det nye?	#
+edu.cloudError.outOfStorage.message=Din OneDrive har ikke nok plads til denne verden.	#
 edu.cloudError.outOfStorage.title=Din upload nåede ikke frem til skyen 	##### {MaxLength="45"}
-edu.cloudError.unauthorized.download.message=Bed en systemadministrator om at gennemse dine OneDrive-indstillinger.	#
-edu.cloudError.unauthorized.download.title=Du har ikke tilladelse til at downloade fil 	##### {MaxLength="45"}
-edu.cloudError.unauthorized.message=Du har ikke adgang til skylagring. Tjek dine OneDrive-indstillinger.	#
+edu.cloudError.unauthorized.download.message=Du har ikke tilladelse til at downloade denne fil. Bed en systemadministrator om at tjekke dine OneDrive-indstillinger.	#
+edu.cloudError.unauthorized.download.title=Tilladelsesfejl 	##### {MaxLength="45"}
+edu.cloudError.unauthorized.linkDescription=Sådan kontrolleres OneDrive-indstillinger	#
+edu.cloudError.unauthorized.message=Du har ikke adgang til skylager. Tjek dine OneDrive-indstillinger, hvis du vil holde dine verdensfiler sikkerhedskopieret og synkroniseret på tværs af enheder.	#
 edu.cloudError.unauthorized.title=Problem med adgang til skyen 	##### {MaxLength="45"}
 edu.cloudError.uploadFailed.message=Prøv at uploade til skyen igen.	#
+edu.cloudError.uploadFailed.linkDescription=Få hjælp til denne fejl	#
 
 item.spawn_egg.entity.npc.failed.edu=Du skal have verdensbygger-tilladelser for at spawne en NPC	#
+item.worldbuilder.block.failed.edu=Du skal have verdensbygger-tilladelser for at placere denne blok	#
 
 library.connection.failed.body=Vi kan ikke oprette forbindelse til biblioteket. Det kan ske, hvis din computer er offline, eller hvis adgangen til biblioteket er blokeret.	#
 library.connection.failed.help=Hjælp	#
@@ -320,31 +325,43 @@ menu.eduLocalStorage=Lokal lagring	#
 menu.eduCloudStorage=Skylagring	#
 menu.eduCloudStorage.caps=INDSTILLINGER FOR SKYLAGRING	#
 
+newAndFeatured.name=Nyheder og udvalgte		### This will appear on a button on our home screen, so needs to remain short after translation. If the translation for "New & Featured" is too long, the category label can be translated as "featured".  Please try for less than 20 characters including spaces
+newAndFeatured.description=Denne samling indeholder lektioner og verdener, der er nye i biblioteket, månedlige højdepunkter og gamle favoritter . Vi håber, du finder noget nyt at udforske!		### "Library" here is a destination, refers to the name for the EDU-equivalent of the Marketplace. Please treat this as a proper noun.
+
 options.eduCloud.toggleCloud=Aktivér sikkerhedskopier af verden til OneDrive	#
-options.eduCloud.fileDate=OneDrive-fil sidst ændret	#
-options.eduCloud.fileName=Navn på OneDrive-fil	#
 options.eduCloud.folder.body=Se og download verdener, der er gemt i ''%s'' OneDrive-mappen.		### Token in quotes will be "Minecraft Education" or "Minecraft Education Preview". Both are brand names and will not be localized.
 options.eduCloud.folder.header=Få adgang til OneDrive	#
 options.eduCloud.oneDrive=OneDrive	#
-options.eduCloud.learnMore.text=Få mere at vide om sky-understøttelse	#
+options.eduCloud.learnMore.text=Få mere at vide om skylager	#
 
 options.cloudStorage=Skylagring	#
 options.cloudStorageTitle=Indstillinger for skylager	#
 options.cloudFileNameTitle=Navn på OneDrive-fil	#
 options.cloudFileLastChangedTitle=OneDrive-fil sidst ændret	#
-options.cloudHelpText=Få mere at vide om sky-understøttelse	#
+options.cloudHelpText=Få mere at vide om skylager	#
 options.cloudToggleCloudSave=Aktivér sikkerhedskopi af verden til OneDrive	#
 options.cloudNotAvailableText=Ikke tilgængelig	#
 
+popup.title.eduCloudConflictResolution=Ikke synkroniseret		##### {MaxLength="45"}
+popup.message.eduConflictResolution.description=Åh åh. Din verden på denne enhed er ikke synkroniseret med den i skyen. Hvad vil du gøre?%1You kan gøre begge verdensfiler de samme som den LOKALE version, SKY-versionen eller ... BEHOLDE BEGGE! Hvis du beholder begge, bliver din lokale fil til en kopi, adskilt fra den OneDrive-version, der henvises til nedenfor.		### %1 will be replaced with a newline. LOCAL should match the word used in popup.buttons.eduConflictResolution.local, CLOUD should match the word used in popup.buttons.eduConflictResolution.cloud, KEEP BOTH should match popup.buttons.eduConflictResolution.both
+popup.message.eduConflictResolution.localWorldName=Lokalt verdensnavn: ''%1''		### %1 will be the name of the local world wrapped in quotes
+popup.message.eduConflictResolution.localWorldDate=Lokal verden sidst ændret: %1 (lokalt)		### %1 will be the date
+popup.message.eduConflictResolution.cloudName=OneDrive-filnavn: ''%1''		### %1 will be the name of the world on OneDrive wrapped in quotes
+popup.message.eduConflictResolution.cloudDate=OneDrive-verden senest opdateret: %1 (lokalt)		### %1 will be the date
+popup.buttons.eduConflictResolution.local=Behold den som lokal	#
+popup.buttons.eduConflictResolution.cloud=Behold sky	#
+popup.buttons.eduConflictResolution.both=Behold begge to	#
+
 progressScreen.title.eduCloudFetch=Skysynkronisering	#
 progressScreen.message.eduFetchingCloudWorld=Kontrollerer…	#
-
 progressScreen.title.eduCloudUpload=Uploader til skyen	#
 progressScreen.message.eduUploadingCloudWorld=Uploader ...	#
 progressScreen.message.eduFinishedCloudUpload=Gennemført!	#
 progressScreen.title.eduCloudDownload=Downloader fra skyen	#
 progressScreen.message.eduDownloadingCloudWorld=Downloader ...	#
+progressScreen.message.eduImportingCloudWorld=Importerer ...	#
 progressScreen.message.eduFinishedCloudDownload=Gennemført!	#
+progressScreen.message.eduLaunchingCloudWorld=Starter ...	#
 
 resourceUri.launch.success=Ressourcelinket er åbnet.	#
 resourceUri.launch.failure=Ressourcelinket kunne ikke åbnes. Det ligner ikke en understøttet webadresse.	#

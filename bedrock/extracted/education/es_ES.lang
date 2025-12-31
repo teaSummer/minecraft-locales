@@ -39,24 +39,29 @@ createWorldScreen.playerdamage=Daño al jugador	#
 createWorldScreen.pvpdamage=Daño jugador contra jugador	#
 
 edu.cloudError.generic.code=Código de error: 	#
-edu.cloudError.generic.download.title=Tu mundo no se ha descargado de la nube 	##### {MaxLength="45"}
-edu.cloudError.generic.linkDescription=Más información sobre el soporte en la nube	#
+edu.cloudError.generic.download.title=Error al descargar el mundo 	##### {MaxLength="45"}
+edu.cloudError.generic.linkDescription=Más información sobre este error	#
 edu.cloudError.generic.message=Algo salió mal al subir tu mundo a la nube.	#
+edu.cloudError.generic.download.message=Algo salió mal al descargar el mundo de la nube.	#
 edu.cloudError.generic.upload.title=Error al cargar 	##### {MaxLength="45"}
-edu.cloudError.largeWorld.message=El tamaño máximo de archivo que se puede cargar en la nube es de 250 MB.	#
+edu.cloudError.largeWorld.message=Este mundo solo se guardará en este dispositivo local. El tamaño máximo del archivo que se puede cargar en la nube es de 250 MB.	#
 edu.cloudError.largeWorld.title=El mundo es demasiado grande 	##### {MaxLength="45"}
 edu.cloudError.notfound.download.message=No se ha podido localizar este mundo en la nube. Sal y regresa a Mis mundos para obtener una vista actualizada de tus mundos.	#
 edu.cloudError.notfound.download.title=Archivo no encontrado en OneDrive 	##### {MaxLength="45"}
-edu.cloudError.outOfStorage.linkDescription=Cómo hacer una copia de seguridad de tus mundos	#
-edu.cloudError.outOfStorage.message=Tu carpeta de OneDrive no tiene suficiente espacio para este mundo. Puedes hacer una copia de seguridad de otro modo si quieres que se quede guardado en otro sitio.	#
+edu.cloudError.outOfStorage.linkDescription=Cómo hacer una copia de seguridad de tus mundos cuando te quedas sin espacio en OneDrive	#
+edu.cloudError.outOfStorage.download.message=¡Casi no queda espacio en tu dispositivo! ¿Por qué no borras lo que no necesites para poder seguir guardando cosas?	#
+edu.cloudError.outOfStorage.message=Tu cuenta de OneDrive no tiene suficiente espacio para este mundo.	#
 edu.cloudError.outOfStorage.title=El archivo cargado no llegó a la nube 	##### {MaxLength="45"}
-edu.cloudError.unauthorized.download.message=Pídele a un administrador del sistema que compruebe tu configuración de OneDrive.	#
-edu.cloudError.unauthorized.download.title=You don't have permission to download this file 	##### {MaxLength="45"}
-edu.cloudError.unauthorized.message=No tienes acceso al almacenamiento en la nube. Comprueba la configuración de OneDrive.	#
+edu.cloudError.unauthorized.download.message=No tienes permiso para descargar este archivo. Pídele a un administrador del sistema que compruebe tu configuración de OneDrive.	#
+edu.cloudError.unauthorized.download.title=Error de permiso 	##### {MaxLength="45"}
+edu.cloudError.unauthorized.linkDescription=Cómo comprobar la configuración de OneDrive	#
+edu.cloudError.unauthorized.message=No tienes acceso al almacenamiento en la nube. Comprueba la configuración de OneDrive si deseas mantener los archivos de tus mundos con una copia de seguridad y sincronizados en todos los dispositivos.	#
 edu.cloudError.unauthorized.title=Problema de acceso a la nube 	##### {MaxLength="45"}
 edu.cloudError.uploadFailed.message=Vuelve a intentar cargar en la nube.	#
+edu.cloudError.uploadFailed.linkDescription=Solicitar ayuda para solucionar este error	#
 
 item.spawn_egg.entity.npc.failed.edu=Necesitas permisos de creación de mundos para generar a un PNJ	#
+item.worldbuilder.block.failed.edu=Necesitas permisos de creación de mundos para colocar este bloque	#
 
 library.connection.failed.body=No se ha podido conectar con la biblioteca. Esto puede ocurrir si tu equipo está desconectado o si el acceso al catálogo de la biblioteca está bloqueado.	#
 library.connection.failed.help=Obtener ayuda	#
@@ -320,31 +325,43 @@ menu.eduLocalStorage=Almacenamiento local	#
 menu.eduCloudStorage=Almacenamiento en la nube	#
 menu.eduCloudStorage.caps=CONFIGURACIÓN DE ALMACENAMIENTO EN LA NUBE	#
 
+newAndFeatured.name=Novedades y destacados		### This will appear on a button on our home screen, so needs to remain short after translation. If the translation for "New & Featured" is too long, the category label can be translated as "featured".  Please try for less than 20 characters including spaces
+newAndFeatured.description=Esta colección incluye lecciones y mundos nuevos en la biblioteca, momentos destacados mensuales y favoritos de todos los tiempos. ¡Esperamos que encuentres algo nuevo para explorar!		### "Library" here is a destination, refers to the name for the EDU-equivalent of the Marketplace. Please treat this as a proper noun.
+
 options.eduCloud.toggleCloud=Habilitar copia de seguridad de los mundos a OneDrive	#
-options.eduCloud.fileDate=Archivo de OneDrive modificado por última vez	#
-options.eduCloud.fileName=Nombre de archivo de OneDrive	#
 options.eduCloud.folder.body=Ver y descargar los mundos almacenados en la carpeta «%s» de OneDrive.		### Token in quotes will be "Minecraft Education" or "Minecraft Education Preview". Both are brand names and will not be localized.
 options.eduCloud.folder.header=Acceder a OneDrive	#
 options.eduCloud.oneDrive=OneDrive	#
-options.eduCloud.learnMore.text=Más información sobre el soporte en la nube	#
+options.eduCloud.learnMore.text=Más información sobre el almacenamiento en la nube	#
 
 options.cloudStorage=Almacenamiento en la nube	#
 options.cloudStorageTitle=Configuración de almacenamiento en la nube	#
 options.cloudFileNameTitle=Nombre de archivo de OneDrive	#
 options.cloudFileLastChangedTitle=Archivo de OneDrive modificado por última vez	#
-options.cloudHelpText=Más información sobre el soporte en la nube	#
+options.cloudHelpText=Más información sobre el almacenamiento en la nube	#
 options.cloudToggleCloudSave=Habilitar copia de seguridad de los mundos a OneDrive	#
 options.cloudNotAvailableText=No disponible	#
 
+popup.title.eduCloudConflictResolution=Sin sincronizar		##### {MaxLength="45"}
+popup.message.eduConflictResolution.description=Oh, oh. Tu mundo de este dispositivo no está sincronizado con el de la nube. ¿Cómo quieres proceder?%1Puedes hacer que ambos archivos del mundo sean idénticos a la versión LOCAL, a la versión en la NUBE... ¡o mantener AMBOS! Si eliges esta última opción, se creará una copia de tu archivo local aparte de la versión de OneDrive que figura a continuación.		### %1 will be replaced with a newline. LOCAL should match the word used in popup.buttons.eduConflictResolution.local, CLOUD should match the word used in popup.buttons.eduConflictResolution.cloud, KEEP BOTH should match popup.buttons.eduConflictResolution.both
+popup.message.eduConflictResolution.localWorldName=Nombre del mundo local: «%1»		### %1 will be the name of the local world wrapped in quotes
+popup.message.eduConflictResolution.localWorldDate=Mundo local modificado por última vez: %1 (local)		### %1 will be the date
+popup.message.eduConflictResolution.cloudName=Nombre del archivo de OneDrive: «%1»		### %1 will be the name of the world on OneDrive wrapped in quotes
+popup.message.eduConflictResolution.cloudDate=Mundo de OneDrive actualizado por última vez: %1 (local)		### %1 will be the date
+popup.buttons.eduConflictResolution.local=Mantener la versión local	#
+popup.buttons.eduConflictResolution.cloud=Mantener la versión de la nube	#
+popup.buttons.eduConflictResolution.both=Mantener ambas versiones	#
+
 progressScreen.title.eduCloudFetch=Sincronización en la nube	#
 progressScreen.message.eduFetchingCloudWorld=Comprobando...	#
-
 progressScreen.title.eduCloudUpload=Cargando a la nube	#
 progressScreen.message.eduUploadingCloudWorld=Cargando...	#
 progressScreen.message.eduFinishedCloudUpload=¡Completado!	#
 progressScreen.title.eduCloudDownload=Descargando desde la nube	#
 progressScreen.message.eduDownloadingCloudWorld=Descargando...	#
+progressScreen.message.eduImportingCloudWorld=Importando...	#
 progressScreen.message.eduFinishedCloudDownload=¡Completado!	#
+progressScreen.message.eduLaunchingCloudWorld=Iniciando...	#
 
 resourceUri.launch.success=Se ha abierto el enlace del recurso.	#
 resourceUri.launch.failure=No se ha podido abrir el enlace del recurso. Parece que la URL no es compatible.	#
