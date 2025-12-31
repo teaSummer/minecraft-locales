@@ -929,6 +929,8 @@ potion.nightVision.postfix=Potion of Night Vision
 potion.hunger.postfix=Potion of Hunger
 potion.poison.postfix=Potion of Poison
 potion.wither.postfix=Potion of Decay
+potion.healthBoost.postfix=Potion of Health Boost
+potion.absorption.postfix=Potion of Absorption
 
 potion.potency.0=
 potion.potency.1=II
@@ -1132,7 +1134,9 @@ commands.effect.usage=/effect <player> <effect> [seconds] [amplifier]
 commands.effect.notFound=There is no such mob effect with ID %d
 commands.effect.success=Given %1$s (ID %2$d) * %3$d to %4$s for %5$d seconds
 commands.effect.success.removed=Took %1$s from %2$s
+commands.effect.success.removed.all=Took all effects from %s
 commands.effect.failure.notActive=Couldn't take %1$s from %2$s as they do not have the effect
+commands.effect.failure.notActive.all=Couldn't take any effects from %s as they do not have any
 commands.enchant.usage=/enchant <player> <enchantment ID> [level]
 commands.enchant.notFound=There is no such enchantment with ID %d
 commands.enchant.noItem=The target doesn't hold an item
@@ -1393,6 +1397,7 @@ mco.template.name=Template
 mco.invites.button.accept=Accept
 mco.invites.button.reject=Reject
 mco.invites.title=Pending Invitations
+mco.invites.pending=New invitations!
 
 build.tooHigh=Height limit for building is %s blocks
 
