@@ -1,16 +1,27 @@
-﻿classroomSettings.uriResource.header.title=資源連結	#
-classroomSettings.uriResource.header.description=新增評估工具、網站或其他資源的連結	#
-classroomSettings.uriResource.name.placeHolder=請輸入您按鈕的新名稱	#
+﻿authentication.popup.setup.title=帳戶設置	#
+authentication.popup.setup.firstPage.body=歡迎來到 Minecraft: Education Edition！%1%1在開始之前，我們必須先驗證你的年齡。為此，我們將開啟你的網頁瀏覽器，並請你使用個人的 Microsoft 帳戶登入。%1%1如果你沒有個人 Microsoft 帳戶，請不用擔心...你可以在登入頁面上建立一個。		### %1 will be replaced with a new line so two will result in an empty line seperating the two pieces of text
+authentication.popup.setup.firstPage.learnMore=為什麼需要驗證我的年齡？	#
+authentication.popup.setup.firstPage.button=立即驗證	#
+authentication.popup.setup.secondPage.body=我們在你的網頁瀏覽器中開啟了「帳戶設置」頁面。請在此頁面上登入你的個人 Microsoft 帳戶並驗證你的年齡。%1%1完成後請告知我們。		### %1 will be replaced with a new line so two will result in an empty line seperating the two pieces of text
+authentication.popup.setup.secondPage.openAgain=重新開啟「帳戶設置」頁面。	#
+authentication.popup.setup.secondPage.button=我完成了	#
+authentication.popup.demoLink=嘗試體驗課程。	#
+
+classroomSettings.uriResource.header.title=資源連結	#
+classroomSettings.uriResource.header.description=在「暫停」功能表上建立新按鈕，連結至評估工具、網站或其他可用於世界的資源。	#
+classroomSettings.uriResource.name.placeHolder=開啟連結 (預設)		### Text before (Default) should match pause.externalLink
 classroomSettings.uriResource.name.title=資源按鈕名稱	#
-classroomSettings.uriResource.uri.placeHolder=輸入資源的 URL	#
+classroomSettings.uriResource.uri.placeHolder=啟用按鈕的必要條件	#
 classroomSettings.uriResource.uri.title=資源按鈕 URL	#
+classroomSettings.uriResource.uri.warning.invalidUri=僅支援以 http 或 https 開頭的 URL。	#
+classroomSettings.uriResource.uri.warning.emptyUri=別忘了新增一個 URL 來啟用按鈕。	#
 
 commands.codebuilder.description=設定玩家的程式碼生成器狀態。	#
 commands.codebuilder.invalidRuntimeAction=這不是有效的執行階段動作。	#
-commands.resourceuri.description=在暫停選單中設置資源 URI。	#
-commands.resourceuri.named=資源 URI 已設定為 '%s'，按鈕名稱 '%s'	#
+commands.resourceuri.description=在暫停選單中設置資源 URI	#
+commands.resourceuri.named=資源 URI 已設定為「%s」，按鈕名稱為「%s」	#
 commands.resourceuri.default=資源 URI 已設定為「%s」	#
-commands.resourceuri.clear=資源 URI 已清除。	#
+commands.resourceuri.clear=資源 URI 已清除	#
 commands.takepicture.description=拍下玩家或玩家視角的照片。	#
 commands.takepicture.cameranotfound=尋找攝影機失敗。	#
 commands.takepicture.cameranotspawned=生成攝影機失敗。	#
@@ -96,18 +107,19 @@ library.item.sharepopup.body=分享這個世界的連結。	#
 library.item.sharepopup.copy=複製	#
 library.item.sharepopup.copyButton=複製連結	#
 library.item.sharepopup.addResourceButton=新增資源	#
-library.item.sharepopup.secondayText=在分享之前，您是否要將評估工具、Flipgrid 主題或網站新增至全世界？	#
-library.item.sharepopup.addResource.labelOne=複製測驗、Flipgrid 主題或網站的 URL，並將貼至下方。	#
+library.item.sharepopup.secondaryText=在分享之前，您是否要將評估工具、Flipgrid 主題或網站新增至世界？	#
+library.item.sharepopup.addResource.labelOne=複製測驗、Flipgrid 主題或網站的 URL，並將其黏貼至下方。	#
 library.item.sharepopup.addResource.labelTwo=這將在「暫停」功能表上建立一個新按鈕，以便玩家可以隨時從世界各地存取資源。	#
 library.item.sharepopup.addResource.learnMoreLinkText=深入了解	#
-library.item.sharepopup.addResource.urlLabel=資源按鈕 URL	#
-library.item.sharepopup.addResource.urlHintText=在此處輸入 URL	#
-library.item.sharepopup.addResource.buttonNameLabel=資源按鈕名稱	#
-library.item.sharepopup.addResource.buttonNameHintText=為按鈕命名	#
+library.item.sharepopup.addResource.urlLabel=資源按鈕 URL：	#
+library.item.sharepopup.addResource.urlHintText=啟用按鈕必需	#
+library.item.sharepopup.addResource.buttonNameLabel=資源按鈕名稱：	#
+library.item.sharepopup.addResource.buttonNameHintText=開啟連結 (預設)		### Text before (Default) should match pause.externalLink
 library.item.sharepopup.addResource.doneButton=完成	#
 library.item.sharepopup.addResource.cancelButton=取消	#
 library.item.sharepopup.addResource.deleteButton=刪除	#
-library.item.sharepopup.editResourceLabel=以下是我們將新增至「暫停」畫面的按鈕預覽，可供開啟世界的任何人使用。	#
+library.item.sharepopup.addResource.invalidSchema=請輸入以 http 或 https 開頭的 URL 以繼續。	#
+library.item.sharepopup.editResourceLabel=以下是我們將新增至「暫停」選單的按鈕預覽，可提供所有開啟世界的人使用。	#
 library.item.sharepopup.editResource.button.accessibility=編輯資源 URL	#
 library.item.share.toast.title=連結已複製到您的剪貼簿。	#
 
@@ -274,6 +286,16 @@ library.category.description.commonCoreMath=這些有趣的活動，是為了協
 
 library.notification.label.resourceUri=此世界會透過連結向其他的資源分享。建立世界後，請尋找「暫停」畫面上的「%1」按鈕。	#
 
+npcUri.launch.success=已開啟 NPC 連結。	#
+npcUri.launch.failure=無法開啟 NPC 連結。這似乎不是受支援的 URL。	#
+
+resourceUri.launch.success=已開啟資源連結。	#
+resourceUri.launch.failure=無法開啟資源連結。這似乎不是受支援的 URL。	#
+
+resourceUri.tooltip.infotext=這個可編輯連結可用於將 Minecraft 世界連線至線上資源。	#
+resourceUri.tooltip.infotext.disabled=您可在「設定」>「教室」中將 URL 添加至資源連結欄位中以啟用此按鈕。	#
+resourceUri.tooltip.label=資源連結	#
+
 signin.acceptTerms=接受條款	#
 signin.welcome.header.line1=歡迎	#
 signin.welcome.header.line2=Minecraft: Education Edition！	#
@@ -283,16 +305,18 @@ signin.demo.header=試用示範課程	#
 signin.demo.body=透過免費體驗課程，在 Minecraft: Education Edition 中展開你的旅程 (所有學生均可用)。	#
 signin.progress.title=正在下載資源	#
 
+toast.genericLinkOpened=在網頁瀏覽器中開啟連結。	#
+
 joincode.invalid.title=加入代碼不正確 	#
 joincode.invalid.body=您輸入了 %1 次不正確的加入代碼。請向主持人確認您的代碼是否正確，或嘗試以 IP 位址加入。 	#
 joincode.invalid.button.tryagain=再試一次	#
 joincode.invalid.button.enterip=輸入 IP 位址	#
 joincode.invalid.abuse.body=您輸入了 %1 次不正確的加入代碼。請嘗試改用 IP 位址加入世界	#
 
-joincode.popup.title =分享連結	#
-joincode.popup.body =分享一個連結，邀請其他玩家加入您的世界。請注意：此連結僅在您主持時有效。	#
-joincode.share.body = %1 邀請您加入 Minecraft: Education Edition。請依照連結內容，開始一起建設！(%2，由 %1 主持)	#
-joincode.share.subject =Minecraft: Education Edition 的多人邀請	#
+joincode.item.sharepopup.title.simple=分享連結	#
+joincode.popup.body=分享一個連結，邀請其他玩家加入你的世界。請注意，此連結僅在你主持時有效。	#
+joincode.share.body=%1 邀請你加入他們在 Minecraft: Education Edition 中的世界。請透過此連結，開始一起建設！(%2，由 %1 主持)	#
+joincode.share.subject=Minecraft: Education Edition 的多人邀請	#
 
 pause.externalLink=打開連結	#
 

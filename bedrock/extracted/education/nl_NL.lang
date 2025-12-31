@@ -1,16 +1,27 @@
-﻿classroomSettings.uriResource.header.title=Koppeling naar bron	#
-classroomSettings.uriResource.header.description=Voeg een koppeling toe naar een beoordelingstool, website of andere bron	#
-classroomSettings.uriResource.name.placeHolder=Voer een naam in voor je knop	#
+﻿authentication.popup.setup.title=Account instellen	#
+authentication.popup.setup.firstPage.body=Welkom bij Minecraft: Education Edition!%1%1Voordat we aan de slag kunnen, moeten we je leeftijd verifiëren. Hiervoor openen we je webbrowser en vragen we je om je aan te melden met je persoonlijke Microsoft-account.%1%1Maak je geen zorgen als je nog geen persoonlijk Microsoft-account hebt, want je kunt er een maken op de aanmeldingspagina.		### %1 will be replaced with a new line so two will result in an empty line seperating the two pieces of text
+authentication.popup.setup.firstPage.learnMore=Waarom moet ik mijn leeftijd verifiëren?	#
+authentication.popup.setup.firstPage.button=Nu verifiëren	#
+authentication.popup.setup.secondPage.body=We hebben de pagina Account instellen in je webbrowser geopend. Je kunt je hier aanmelden met je persoonlijke Microsoft-account en je leeftijd te verifiëren.%1%1Laat het ons weten wanneer je klaar bent.		### %1 will be replaced with a new line so two will result in an empty line seperating the two pieces of text
+authentication.popup.setup.secondPage.openAgain=Open de pagina 'Account instellen' opnieuw.	#
+authentication.popup.setup.secondPage.button=Klaar	#
+authentication.popup.demoLink=Probeer een demoles.	#
+
+classroomSettings.uriResource.header.title=Koppeling naar bron	#
+classroomSettings.uriResource.header.description=Maak een nieuwe knop in het pauzemenu die verwijst naar een beoordelingsinstrument, website of andere bron voor je wereld.	#
+classroomSettings.uriResource.name.placeHolder=KOPPELING OPENEN (standaard)		### Text before (Default) should match pause.externalLink
 classroomSettings.uriResource.name.title=Naam van bronknop	#
-classroomSettings.uriResource.uri.placeHolder=Voer de URL van je bron in	#
+classroomSettings.uriResource.uri.placeHolder=Vereist om knop in te schakelen	#
 classroomSettings.uriResource.uri.title=URL van bronknop	#
+classroomSettings.uriResource.uri.warning.invalidUri=Alleen URL's die beginnen met 'http' of 'https' worden ondersteund.	#
+classroomSettings.uriResource.uri.warning.emptyUri=Vergeet niet om een URL toe te voegen om je knop in te schakelen.	#
 
 commands.codebuilder.description=Hiermee stel je een Code Builder-status voor een speler in.	#
 commands.codebuilder.invalidRuntimeAction=Dit is geen geldige runtimeactie.	#
-commands.resourceuri.description=Hiermee stel je de resource-URI in in het pauzemenu.	#
-commands.resourceuri.named=Resource-URI ingesteld op %s met knopnaam'%s	#
+commands.resourceuri.description=Hiermee stel je de resource-URI in in het pauzemenu	#
+commands.resourceuri.named=Resource-URI ingesteld op %s met knopnaam %s	#
 commands.resourceuri.default=Resource-URI ingesteld op %s	#
-commands.resourceuri.clear=Resource-URI is gewist.	#
+commands.resourceuri.clear=Resource-URI is gewist	#
 commands.takepicture.description=Hiermee maak je een foto van een speler of vanuit het oogpunt van een speler.	#
 commands.takepicture.cameranotfound=Kan geen camera vinden.	#
 commands.takepicture.cameranotspawned=Kan geen camera spawnen.	#
@@ -96,18 +107,19 @@ library.item.sharepopup.body=Deel een koppeling naar deze wereld.	#
 library.item.sharepopup.copy=KOPIËREN	#
 library.item.sharepopup.copyButton=Koppeling kopiëren	#
 library.item.sharepopup.addResourceButton=Een resource toevoegen	#
-library.item.sharepopup.secondayText=Wil je een beoordelingsinstrument, Flipgrid-onderwerp of website toevoegen aan de wereld voordat je deze deelt?	#
+library.item.sharepopup.secondaryText=Wil je een beoordelingsinstrument, Flipgrid-onderwerp of website toevoegen aan de wereld voordat je deze deelt?	#
 library.item.sharepopup.addResource.labelOne=Kopieer de URL voor je quiz, Flipgrid-onderwerp of website en plak deze hieronder.	#
 library.item.sharepopup.addResource.labelTwo=Hiermee wordt er een nieuwe knop in het pauzemenu gemaakt, zodat spelers vanuit de wereld toegang hebben tot de resource.	#
 library.item.sharepopup.addResource.learnMoreLinkText=Meer informatie	#
-library.item.sharepopup.addResource.urlLabel=URL van bronknop	#
-library.item.sharepopup.addResource.urlHintText=Voer hier de URL in	#
-library.item.sharepopup.addResource.buttonNameLabel=Naam van bronknop	#
-library.item.sharepopup.addResource.buttonNameHintText=Geef de knop een naam	#
+library.item.sharepopup.addResource.urlLabel=URL van bronknop:	#
+library.item.sharepopup.addResource.urlHintText=Vereist om knop in te schakelen	#
+library.item.sharepopup.addResource.buttonNameLabel=Naam van bronknop:	#
+library.item.sharepopup.addResource.buttonNameHintText=KOPPELING OPENEN (standaard)		### Text before (Default) should match pause.externalLink
 library.item.sharepopup.addResource.doneButton=Klaar	#
 library.item.sharepopup.addResource.cancelButton=Annuleren	#
 library.item.sharepopup.addResource.deleteButton=Verwijderen	#
-library.item.sharepopup.editResourceLabel=Hier is een voorbeeld van de knop die we toevoegen aan het scherm Pauze voor iedereen die de wereld opent.	#
+library.item.sharepopup.addResource.invalidSchema=Voer een URL in die begint met 'http' of 'https' om door te gaan.	#
+library.item.sharepopup.editResourceLabel=Hier is een voorbeeld van de knop die we toevoegen aan het pauzemenu voor iedereen die de wereld opent.	#
 library.item.sharepopup.editResource.button.accessibility=URL van bron bewerken	#
 library.item.share.toast.title=Koppeling naar het klembord gekopieerd.	#
 
@@ -274,6 +286,16 @@ library.category.description.commonCoreMath=Deze boeiende activiteiten zijn ontw
 
 library.notification.label.resourceUri=Deze wereld is gedeeld met een koppeling naar een extra bron. Zoek naar de knop %1 op het scherm Pauze nadat je de wereld hebt gemaakt.	#
 
+npcUri.launch.success=De NPC-koppeling is geopend.	#
+npcUri.launch.failure=Kan de NPC-koppeling niet openen. Dit lijkt geen ondersteunde URL.	#
+
+resourceUri.launch.success=De koppeling naar de bron is geopend.	#
+resourceUri.launch.failure=Kan de koppeling naar de bron niet openen. Dit ziet er niet uit als een ondersteunde URL.	#
+
+resourceUri.tooltip.infotext=Deze bewerkbare koppeling kan worden gebruikt om Minecraft-werelden te verbinden met online bronnen.	#
+resourceUri.tooltip.infotext.disabled=Je kunt deze knop inschakelen door een URL toe te voegen aan het veld koppeling naar bron in Instellingen > Klaslokaal.	#
+resourceUri.tooltip.label=KOPPELING NAAR BRON	#
+
 signin.acceptTerms=Voorwaarden accepteren	#
 signin.welcome.header.line1=Welkom bij	#
 signin.welcome.header.line2=Minecraft: Education Edition!	#
@@ -283,16 +305,18 @@ signin.demo.header=DEMOLES PROBEREN	#
 signin.demo.body=Begin je reis in Minecraft: Education Edition met een gratis demoles, beschikbaar voor alle leerlingen.	#
 signin.progress.title=Bronnen downloaden	#
 
+toast.genericLinkOpened=De koppeling is geopend in je webbrowser.	#
+
 joincode.invalid.title=Onjuiste aansluitingscode	#
 joincode.invalid.body=Je hebt %1 onjuiste aansluitingscodes ingevoerd. Vraag aan de host of je de juiste code hebt of probeer je aan te sluiten met een IP-adres. 	#
 joincode.invalid.button.tryagain=Opnieuw proberen	#
 joincode.invalid.button.enterip=IP-adres invoeren	#
 joincode.invalid.abuse.body=Je hebt %1 onjuiste aansluitingscodes ingevoerd. Probeer je bij de wereld aan te sluiten met een IP-adres.	#
 
-joincode.popup.title =Een koppeling delen	#
-joincode.popup.body =Deel een koppeling om andere spelers uit te nodigen om deel te nemen aan je wereld. Let op: deze koppeling werkt alleen als jij de host bent.	#
-joincode.share.body = %1 heeft je uitgenodigd om je bij hun wereld aan te sluiten in Minecraft: Education Edition. Volg deze koppeling om samen te beginnen met bouwen! (%2, gehost door %1)	#
-joincode.share.subject =Multiplayeruitnodiging voor Minecraft: Education Edition	#
+joincode.item.sharepopup.title.simple=Een koppeling delen	#
+joincode.popup.body=Deel een koppeling om andere spelers uit te nodigen om deel te nemen aan je wereld. Let op: deze koppeling werkt alleen als jij de host bent.	#
+joincode.share.body=%1 heeft je uitgenodigd om je bij hun wereld aan te sluiten in Minecraft: Education Edition. Volg deze koppeling om samen te beginnen met bouwen! (%2, gehost door %1)	#
+joincode.share.subject=Multiplayeruitnodiging voor Minecraft: Education Edition	#
 
 pause.externalLink=KOPPELING OPENEN	#
 

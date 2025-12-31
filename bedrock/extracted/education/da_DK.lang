@@ -1,16 +1,27 @@
-﻿classroomSettings.uriResource.header.title=Ressourcelink	#
-classroomSettings.uriResource.header.description=Tilføj et link til et evalueringsværktøj, et website eller en anden ressource	#
-classroomSettings.uriResource.name.placeHolder=Giv din knap et navn	#
+﻿authentication.popup.setup.title=Kontokonfiguration	#
+authentication.popup.setup.firstPage.body=Velkommen til Minecraft: Education Edition!%1%1Inden vi kan komme i gang, skal vi have bekræftet din alder. Det gør vi ved at åbne din webbrowser, så du kan logge på med din personlige Microsoft-konto.%1%1Hvis du ikke har en personlig Microsoft-konto, kan du oprette en på logonsiden.		### %1 will be replaced with a new line so two will result in an empty line seperating the two pieces of text
+authentication.popup.setup.firstPage.learnMore=Hvorfor skal jeg bekræfte min alder?	#
+authentication.popup.setup.firstPage.button=Bekræft nu	#
+authentication.popup.setup.secondPage.body=Vi har åbnet siden Kontokonfiguration i din webbrowser. Brug den til at logge på med din personlige Microsoft-konto og bekræfte din alder.%1%1Giv os besked, når du er færdig.		### %1 will be replaced with a new line so two will result in an empty line seperating the two pieces of text
+authentication.popup.setup.secondPage.openAgain=Åbn siden "Kontokonfiguration" igen.	#
+authentication.popup.setup.secondPage.button=Det var det	#
+authentication.popup.demoLink=Prøv en demolektion.	#
+
+classroomSettings.uriResource.header.title=Ressourcelink	#
+classroomSettings.uriResource.header.description=Opret en ny knap i pausemenuen, der linker til et evalueringsværktøj, et website eller en anden ressource til din verden.	#
+classroomSettings.uriResource.name.placeHolder=ÅBN LINK (standard)		### Text before (Default) should match pause.externalLink
 classroomSettings.uriResource.name.title=Navn på ressourceknap	#
-classroomSettings.uriResource.uri.placeHolder=Angiv webadressen til din ressource	#
+classroomSettings.uriResource.uri.placeHolder=Kræves for at aktivere knappen	#
 classroomSettings.uriResource.uri.title=URL til ressourceknap	#
+classroomSettings.uriResource.uri.warning.invalidUri=Vi understøtter kun webadresser, der begynder med "http" eller "https".	#
+classroomSettings.uriResource.uri.warning.emptyUri=Husk at tilføje en webadresse for at aktivere din knap.	#
 
 commands.codebuilder.description=Gør en spiller til Code Builder.	#
 commands.codebuilder.invalidRuntimeAction=Dette er ikke en gyldig kørselshandling.	#
-commands.resourceuri.description=Angiver ressource-URI i pausemenuen.	#
+commands.resourceuri.description=Angiver ressource-URI i pausemenuen	#
 commands.resourceuri.named=Ressource-URI er angivet til "%s" med knapnavnet "%s"	#
 commands.resourceuri.default=Ressource-URI er angivet til "%s"	#
-commands.resourceuri.clear=Ressource-URI er ryddet.	#
+commands.resourceuri.clear=Ressource-URI er ryddet	#
 commands.takepicture.description=Tager et billede af en spiller eller fra en spillers synsvinkel.	#
 commands.takepicture.cameranotfound=Vi kunne ikke finde et kamera.	#
 commands.takepicture.cameranotspawned=Kameraet kunne ikke spawnes.	#
@@ -96,18 +107,19 @@ library.item.sharepopup.body=Del linket til din verden.	#
 library.item.sharepopup.copy=Kopiér	#
 library.item.sharepopup.copyButton=Kopier link	#
 library.item.sharepopup.addResourceButton=Tilføj en ressource	#
-library.item.sharepopup.secondayText=Vil du tilføje et evalueringsværktøj, et Flipgrid-emne eller et website til verdenen, før du deler?	#
+library.item.sharepopup.secondaryText=Vil du tilføje et evalueringsværktøj, et Flipgrid-emne eller et website til verdenen, før du deler?	#
 library.item.sharepopup.addResource.labelOne=Kopier URL'en til din quiz, dit Flipgrid-emne eller dit website, og indsæt den nedenfor.	#
 library.item.sharepopup.addResource.labelTwo=Det opretter en ny knap i pausemenuen, så spillerne får adgang til ressourcen inde fra verdenen.	#
 library.item.sharepopup.addResource.learnMoreLinkText=Læs mere	#
-library.item.sharepopup.addResource.urlLabel=URL til ressourceknap	#
-library.item.sharepopup.addResource.urlHintText=Angiv webadressen her	#
-library.item.sharepopup.addResource.buttonNameLabel=Navn på ressourceknap	#
-library.item.sharepopup.addResource.buttonNameHintText=Giv din knap et navn	#
+library.item.sharepopup.addResource.urlLabel=URL til ressourceknap:	#
+library.item.sharepopup.addResource.urlHintText=Kræves for at aktivere knappen	#
+library.item.sharepopup.addResource.buttonNameLabel=Navn på ressourceknap:	#
+library.item.sharepopup.addResource.buttonNameHintText=ÅBN LINK (standard)		### Text before (Default) should match pause.externalLink
 library.item.sharepopup.addResource.doneButton=OK	#
 library.item.sharepopup.addResource.cancelButton=Annuller	#
 library.item.sharepopup.addResource.deleteButton=Slet	#
-library.item.sharepopup.editResourceLabel=Her er den knap, vi tilføjer på pauseskærmen hos alle, der åbner verdenen.	#
+library.item.sharepopup.addResource.invalidSchema=Angiv en webadresse, der begynder med "http" eller "https".	#
+library.item.sharepopup.editResourceLabel=Her er den knap, vi tilføjer i pausemenuen hos alle, der åbner verdenen.	#
 library.item.sharepopup.editResource.button.accessibility=Rediger URL til ressource	#
 library.item.share.toast.title=Linket er kopieret til din udklipsholder.	#
 
@@ -274,6 +286,16 @@ library.category.description.commonCoreMath=Spændende aktiviteter, der er udvik
 
 library.notification.label.resourceUri=Verdenen er delt med et link til en ekstra ressource. Se efter "%1" på pauseskærmen, når du har oprettet verdenen.	#
 
+npcUri.launch.success=NPC-linket er åbnet.	#
+npcUri.launch.failure=NPC-linket kunne ikke åbnes. Det ligner ikke en understøttet webadresse.	#
+
+resourceUri.launch.success=Ressourcelinket er åbnet.	#
+resourceUri.launch.failure=Ressourcelinket kunne ikke åbnes. Det ligner ikke en understøttet webadresse.	#
+
+resourceUri.tooltip.infotext=Dette redigerbare link kan bruges til at forbinde Minecraft-verdener med onlineressourcer.	#
+resourceUri.tooltip.infotext.disabled=Du aktiverer knappen ved at tilføje en URL i feltet Ressourcelink under Indstillinger > Klasse.	#
+resourceUri.tooltip.label=RESSOURCELINK	#
+
 signin.acceptTerms=Acceptér vilkår	#
 signin.welcome.header.line1=Velkommen til	#
 signin.welcome.header.line2=Minecraft: Education Edition!	#
@@ -283,16 +305,18 @@ signin.demo.header=TAG EN DEMO-LEKTION	#
 signin.demo.body=Start din rejse i Minecraft: Education Edition med en gratis demolektion for alle elever.	#
 signin.progress.title=Downloader ressourcer	#
 
+toast.genericLinkOpened=Hyperlinket er åbnet i din webbrowser.	#
+
 joincode.invalid.title=Forkert deltagerkode	#
 joincode.invalid.body=Du har indtastet %1 forkerte deltagskoder. Kontakt udbyderen for at sikre dig, at du har den rigtige kode eller prøv at tilmelde dig via IP-adresse	#
 joincode.invalid.button.tryagain=Prøv igen	#
 joincode.invalid.button.enterip=Angiv IP-adresse	#
 joincode.invalid.abuse.body=Du har indtastet %1 forkerte deltagskoder. Prøv at deltage med IP-adresse istedet for	#
 
-joincode.popup.title = Del et link	#
-joincode.popup.body = Del et link for at invitere andre spillere ind i din verden. Bemærk: Linket virker kun, mens du er host.	#
-joincode.share.body = %1 har inviteret dig ind i sin verden i Minecraft: Education Edition. Tryk på linket for at begynde at bygge sammen! (%2, hostet af %1)	#
-joincode.share.subject = Multiplayer-invitation til Minecraft: Education Edition	#
+joincode.item.sharepopup.title.simple=Del et link	#
+joincode.popup.body=Del et link for at invitere andre spillere ind i din verden. Vær opmærksom på, at linket kun virker, mens du er host.	#
+joincode.share.body=%1 har inviteret dig ind i sin verden i Minecraft: Education Edition. Tryk på linket for at begynde at bygge sammen! (%2, hostet af %1)	#
+joincode.share.subject=Multiplayer-invitation til Minecraft: Education Edition	#
 
 pause.externalLink=ÅBN LINK	#
 

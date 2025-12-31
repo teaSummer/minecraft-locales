@@ -1,16 +1,27 @@
-﻿classroomSettings.uriResource.header.title=Посилання на ресурс	#
-classroomSettings.uriResource.header.description=Додайте посилання на інструмент для оцінювання, веб-сайт або інший ресурс	#
-classroomSettings.uriResource.name.placeHolder=Введіть ім’я вашої кнопки	#
+﻿authentication.popup.setup.title=Налаштування облікового запису	#
+authentication.popup.setup.firstPage.body=Ласкаво просимо до Minecraft: Education Edition!%1%1Перш ніж почати, нам потрібно перевірити ваш вік. Для цього ми відкриємо веб-браузер і попросимо вас увійти за допомогою особистого облікового запису Microsoft.%1%1Якщо у вас немає особистого облікового запису Microsoft, не хвилюйтеся... його можна створити на сторінці входу.		### %1 will be replaced with a new line so two will result in an empty line seperating the two pieces of text
+authentication.popup.setup.firstPage.learnMore=Навіщо перевіряти мій вік?	#
+authentication.popup.setup.firstPage.button=Перевірити зараз	#
+authentication.popup.setup.secondPage.body=Ми відкрили сторінку налаштування облікового запису у веб-браузері. Скористайтеся нею, щоб увійти за допомогою особистого облікового запису Microsoft і підтвердити вік.%1%1Повідомте нам, коли все буде готово.		### %1 will be replaced with a new line so two will result in an empty line seperating the two pieces of text
+authentication.popup.setup.secondPage.openAgain=Знову відкрийте сторінку "Налаштування облікового запису".	#
+authentication.popup.setup.secondPage.button=Готово!	#
+authentication.popup.demoLink=Спробуйте відкритий урок.	#
+
+classroomSettings.uriResource.header.title=Посилання на ресурс	#
+classroomSettings.uriResource.header.description=Створіть нову кнопку в меню паузи, яка посилається на інструмент для оцінювання, веб-сайт або інший ресурс для вашого світу.	#
+classroomSettings.uriResource.name.placeHolder=ВІДКРИТИ ПОСИЛАННЯ (за замовчуванням)		### Text before (Default) should match pause.externalLink
 classroomSettings.uriResource.name.title=Ім’я кнопки ресурсу	#
-classroomSettings.uriResource.uri.placeHolder=Введіть URL-адресу вашого ресурсу	#
+classroomSettings.uriResource.uri.placeHolder=Обов'язково, щоб увімкнути кнопку	#
 classroomSettings.uriResource.uri.title=URL-адреса кнопки ресурсу	#
+classroomSettings.uriResource.uri.warning.invalidUri=Підтримуються лише URL-адреси, які починаються з "http" або "https".	#
+classroomSettings.uriResource.uri.warning.emptyUri=Не забудьте додати URL-адресу, щоб увімкнути кнопку.	#
 
 commands.codebuilder.description=Установлює для гравця стан "Конструктор коду".	#
 commands.codebuilder.invalidRuntimeAction=Це не дійсна дія середовища виконання.	#
-commands.resourceuri.description=Установлює URI ресурсу в меню паузи.	#
+commands.resourceuri.description=Установлює URI ресурсу в меню паузи	#
 commands.resourceuri.named=URI ресурсу встановлено на "%s" з ім’ям кнопки "%s"	#
 commands.resourceuri.default=URI ресурсу встановлено на "%s"	#
-commands.resourceuri.clear=URI ресурсу очищено.	#
+commands.resourceuri.clear=URI ресурсу очищено	#
 commands.takepicture.description=Робить фото гравця або з його точки зору.	#
 commands.takepicture.cameranotfound=Не вдалося знайти камеру.	#
 commands.takepicture.cameranotspawned=Не вдалося викликати камеру.	#
@@ -96,18 +107,19 @@ library.item.sharepopup.body=Поділіться посиланням на це
 library.item.sharepopup.copy=КОПІЮВАТИ	#
 library.item.sharepopup.copyButton=Копіювати посилання	#
 library.item.sharepopup.addResourceButton=Додавання ресурсу	#
-library.item.sharepopup.secondayText=Додати до вашого світу інструмент для оцінювання, тему Flipgrid або веб-сайт перед надсиланням?	#
+library.item.sharepopup.secondaryText=Додати до вашого світу інструмент для оцінювання, тему Flipgrid або веб-сайт перед надсиланням?	#
 library.item.sharepopup.addResource.labelOne=Скопіюйте URL-посилання на вашу вікторину, тему Flipgrid або веб-сайт і вставте його нижче.	#
 library.item.sharepopup.addResource.labelTwo=Після цього створиться нова кнопка в меню паузи, натискаючи яку гравці відкриватимуть ресурс у будь-який час перебування у світі.	#
 library.item.sharepopup.addResource.learnMoreLinkText=Дізнайтеся більше	#
-library.item.sharepopup.addResource.urlLabel=URL-посилання кнопки ресурсу	#
-library.item.sharepopup.addResource.urlHintText=Введіть тут URL-адресу	#
-library.item.sharepopup.addResource.buttonNameLabel=Ім’я кнопки ресурсу	#
-library.item.sharepopup.addResource.buttonNameHintText=Назвіть вашу кнопку	#
+library.item.sharepopup.addResource.urlLabel=URL-адреса кнопки ресурсу:	#
+library.item.sharepopup.addResource.urlHintText=Потрібно для активації кнопки	#
+library.item.sharepopup.addResource.buttonNameLabel=Ім’я кнопки ресурсу:	#
+library.item.sharepopup.addResource.buttonNameHintText=ВІДКРИТИ ПОСИЛАННЯ (за замовчуванням)		### Text before (Default) should match pause.externalLink
 library.item.sharepopup.addResource.doneButton=Готово	#
 library.item.sharepopup.addResource.cancelButton=Скасувати	#
 library.item.sharepopup.addResource.deleteButton=Видалити	#
-library.item.sharepopup.editResourceLabel=Ось ескіз кнопки, яку ми додамо до екрана паузи для всіх, хто відкриває світ.	#
+library.item.sharepopup.addResource.invalidSchema=Введіть URL-адресу, яка починається з "http" або "https", щоб продовжити.	#
+library.item.sharepopup.editResourceLabel=Ось ескіз кнопки, яку ми додамо до меню паузи для всіх, хто відкриває світ.	#
 library.item.sharepopup.editResource.button.accessibility=Змінити URL-посилання ресурсу	#
 library.item.share.toast.title=Посилання скопійовано до буфера обміну.	#
 
@@ -274,6 +286,16 @@ library.category.description.commonCoreMath=Ці захоплюючі завда
 
 library.notification.label.resourceUri=Цей світ поширено за допомогою посилання на додатковий ресурс. Пошукайте кнопку "%1" на екрані паузи після створення світу.	#
 
+npcUri.launch.success=Відкрито посилання на NPC.	#
+npcUri.launch.failure=Не вдалося відкрити посилання на NPC. Схоже, це не дійсна URL-адреса.	#
+
+resourceUri.launch.success=Відкрито посилання на ресурс.	#
+resourceUri.launch.failure=Не вдалося відкрити посилання на ресурс. Схоже, це не дійсна URL-адреса.	#
+
+resourceUri.tooltip.infotext=Це посилання можна редагувати й використовувати, щоб з’єднувати світи Minecraft з онлайновими ресурсами.	#
+resourceUri.tooltip.infotext.disabled=Можна активувати цю кнопку, додавши URL-адресу до посилання на ресурс, перейшовши в "Параметри > Клас".	#
+resourceUri.tooltip.label=ПОСИЛАННЯ НА РЕСУРС	#
+
 signin.acceptTerms=Прийняти умови	#
 signin.welcome.header.line1=Ласкаво просимо до	#
 signin.welcome.header.line2=Minecraft: Education Edition!	#
@@ -283,16 +305,18 @@ signin.demo.header=СПРОБУВАТИ ВІДКРИТИЙ УРОК	#
 signin.demo.body=Почніть своє знайомство з Minecraft: Education Edition із цього безкоштовного відкритого уроку, доступного для всіх учнів.	#
 signin.progress.title=Завантаження ресурсів	#
 
+toast.genericLinkOpened=Відкрито посилання у браузері.	#
+
 joincode.invalid.title=Неправильний код приєднання 	#
 joincode.invalid.body=Ви ввели неправильні коди приєднання (%1). Зверніться до хоста й перевірте, чи правильний у вас код або спробуйте приєднатися за IP-адресою. 	#
 joincode.invalid.button.tryagain=Спробувати ще раз	#
 joincode.invalid.button.enterip=Введіть IP-адресу	#
 joincode.invalid.abuse.body=Ви ввели неправильні коди приєднання (%1). Натомість спробуйте приєднатися до світу за допомогою IP-адреси	#
 
-joincode.popup.title = Поділитися посиланням	#
-joincode.popup.body = Поділіться посиланням, щоб запросити інших гравців до вашого світу. Зверніть увагу: це посилання працюватиме, лише поки ви є хостом світу.	#
-joincode.share.body = %1 запрошує вас приєднатися до свого світу в Minecraft: Education Edition. Перейдіть за цим посиланням, що почати будувати разом! (%2, хост: %1)	#
-joincode.share.subject = Запрошення в мультиплеєр для Minecraft: Education Edition	#
+joincode.item.sharepopup.title.simple=Поділитися посиланням	#
+joincode.popup.body=Поділіться посиланням, щоб запросити інших гравців до вашого світу. Зверніть увагу: це посилання працюватиме, лише поки ви є хостом світу.	#
+joincode.share.body=%1 запрошує вас приєднатися до свого світу в Minecraft: Education Edition. Перейдіть за цим посиланням, що почати будувати разом! (%2, хост: %1)	#
+joincode.share.subject=Запрошення в мультиплеєр для Minecraft: Education Edition	#
 
 pause.externalLink=ВІДКРИТИ ПОСИЛАННЯ	#
 

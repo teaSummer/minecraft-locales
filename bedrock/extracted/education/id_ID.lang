@@ -1,16 +1,27 @@
-﻿classroomSettings.uriResource.header.title=Tautan Sumber Daya	#
-classroomSettings.uriResource.header.description=Tambahkan tautan ke alat penilaian, situs web, atau sumber daya lainnya	#
-classroomSettings.uriResource.name.placeHolder=Masukkan nama untuk tombolmu	#
+﻿authentication.popup.setup.title=Penyiapan Akun	#
+authentication.popup.setup.firstPage.body=Selamat datang di Minecraft: Education Edition!%1%1Sebelum memulai, kami perlu memverifikasi usiamu. Untuk melakukannya, kami akan membuka browser web dan meminta kamu untuk masuk dengan Akun Microsoft pribadi.%1%1Jika belum punya Akun Microsoft pribadi, jangan khawatir ... kamu bisa membuatnya di halaman masuk.		### %1 will be replaced with a new line so two will result in an empty line seperating the two pieces of text
+authentication.popup.setup.firstPage.learnMore=Mengapa saya perlu memverifikasi usia saya?	#
+authentication.popup.setup.firstPage.button=Verifikasi Sekarang	#
+authentication.popup.setup.secondPage.body=Kami membuka halaman Penyiapan Akun di browser web kamu. Gunakan halaman itu untuk masuk dengan Akun Microsoft pribadi dan verifikasi usiamu.%1%1Beri tahu kami saat kamu selesai.		### %1 will be replaced with a new line so two will result in an empty line seperating the two pieces of text
+authentication.popup.setup.secondPage.openAgain=Buka kembali halaman "Penyiapan Akun".	#
+authentication.popup.setup.secondPage.button=Saya Selesai	#
+authentication.popup.demoLink=Coba pelajaran demo.	#
+
+classroomSettings.uriResource.header.title=Tautan Sumber Daya	#
+classroomSettings.uriResource.header.description=Buat tombol baru pada menu Jeda yang ditautkan ke alat penilaian, situs web, atau sumber daya lain untuk duniamu.	#
+classroomSettings.uriResource.name.placeHolder=BUKA TAUTAN (Default)		### Text before (Default) should match pause.externalLink
 classroomSettings.uriResource.name.title=Nama Tombol Sumber Daya	#
-classroomSettings.uriResource.uri.placeHolder=Masukkan URL untuk sumber dayamu	#
+classroomSettings.uriResource.uri.placeHolder=Diperlukan untuk mengaktifkan tombol	#
 classroomSettings.uriResource.uri.title=URL Tombol Sumber Daya	#
+classroomSettings.uriResource.uri.warning.invalidUri=Hanya URL yang berawalan "http" atau "https" yang didukung.	#
+classroomSettings.uriResource.uri.warning.emptyUri=Jangan lupa tambahkan URL untuk mengaktifkan tombolmu.	#
 
 commands.codebuilder.description=Menetapkan status Pembuat Kode untuk pemain.	#
 commands.codebuilder.invalidRuntimeAction=Ini bukan tindakan runtime yang valid.	#
-commands.resourceuri.description=Mengatur URI sumber daya di menu jeda.	#
-commands.resourceuri.named=URI sumber daya diatur ke '%s' dengan nama tombol '%s'	#
+commands.resourceuri.description=Mengatur URI sumber daya di menu jeda	#
+commands.resourceuri.named=URI sumber daya diatur ke "%s" dengan nama tombol "%s"	#
 commands.resourceuri.default=URI sumber daya diatur ke "%s"	#
-commands.resourceuri.clear=URI sumber daya telah dihapus.	#
+commands.resourceuri.clear=URI sumber daya telah dihapus	#
 commands.takepicture.description=Memotret pemain atau dari sudut pandang pemain.	#
 commands.takepicture.cameranotfound=Gagal menemukan kamera.	#
 commands.takepicture.cameranotspawned=Gagal memunculkan kamera.	#
@@ -96,18 +107,19 @@ library.item.sharepopup.body=Bagikan tautan ke dunia ini.	#
 library.item.sharepopup.copy=SALIN	#
 library.item.sharepopup.copyButton=Salin Tautan	#
 library.item.sharepopup.addResourceButton=Tambah Sumber Daya	#
-library.item.sharepopup.secondayText=Apakah kamu ingin menambahkan alat penilaian, topik Flipgrid, atau situs web ke dunia sebelum membagikannya?	#
-library.item.sharepopup.addResource.labelOne=Salin URL kuis, topik Flipgrid, atau situs web kamu dan tempelkan di bawah ini.	#
+library.item.sharepopup.secondaryText=Apakah kamu ingin menambahkan alat penilaian, Topik Flipgrid, atau situs web ke dunia sebelum membagikannya?	#
+library.item.sharepopup.addResource.labelOne=Salin URL kuis, Topik Flipgrid, atau situs web kamu dan tempelkan di bawah ini.	#
 library.item.sharepopup.addResource.labelTwo=Tindakan ini akan membuat tombol baru pada menu Jeda sehingga pemain dapat mengakses sumber daya kapan saja dari dalam dunia.	#
 library.item.sharepopup.addResource.learnMoreLinkText=Selengkapnya	#
-library.item.sharepopup.addResource.urlLabel=URL Tombol Sumber Daya	#
-library.item.sharepopup.addResource.urlHintText=Masukkan URL di sini	#
-library.item.sharepopup.addResource.buttonNameLabel=Nama Tombol Sumber Daya	#
-library.item.sharepopup.addResource.buttonNameHintText=Beri nama tombolmu	#
+library.item.sharepopup.addResource.urlLabel=URL Tombol Sumber Daya:	#
+library.item.sharepopup.addResource.urlHintText=Diperlukan untuk mengaktifkan tombol	#
+library.item.sharepopup.addResource.buttonNameLabel=Nama Tombol Sumber Daya:	#
+library.item.sharepopup.addResource.buttonNameHintText=BUKA TAUTAN (Default)		### Text before (Default) should match pause.externalLink
 library.item.sharepopup.addResource.doneButton=Selesai	#
 library.item.sharepopup.addResource.cancelButton=Batal	#
 library.item.sharepopup.addResource.deleteButton=Hapus	#
-library.item.sharepopup.editResourceLabel=Berikut adalah pratinjau tombol yang akan kami tambahkan ke layar Jeda untuk siapa saja yang membuka dunia tersebut.	#
+library.item.sharepopup.addResource.invalidSchema=Masukkan URL yang berawalan "http" atau "https" untuk melanjutkan.	#
+library.item.sharepopup.editResourceLabel=Berikut adalah pratinjau tombol yang akan kami tambahkan ke menu Jeda untuk siapa saja yang membuka dunia tersebut.	#
 library.item.sharepopup.editResource.button.accessibility=Edit URL Sumber Daya	#
 library.item.share.toast.title=Tautan disalin ke clipboard.	#
 
@@ -274,6 +286,16 @@ library.category.description.commonCoreMath=Aktivitas yang mendorong partisipasi
 
 library.notification.label.resourceUri=Dunia ini dibagikan dengan tautan ke sumber daya tambahan. Cari tombol "%1" di layar Jeda setelah membuat dunia.	#
 
+npcUri.launch.success=Membuka Tautan NPC.	#
+npcUri.launch.failure=Tidak bisa membuka Tautan NPC. Ini tidak terlihat seperti URL yang didukung.	#
+
+resourceUri.launch.success=Membuka Tautan Sumber Daya.	#
+resourceUri.launch.failure=Tidak bisa membuka Tautan Sumber Daya. Ini tidak terlihat seperti URL yang didukung.	#
+
+resourceUri.tooltip.infotext=Tautan yang bisa diedit ini bisa digunakan untuk menghubungkan dunia Minecraft ke sumber daya online.	#
+resourceUri.tooltip.infotext.disabled=Tombol ini dapat diaktifkan dengan menambahkan URL ke bidang Tautan Sumber Daya di Pengaturan > Kelas.	#
+resourceUri.tooltip.label=TAUTAN SUMBER DAYA	#
+
 signin.acceptTerms=Terima Ketentuan	#
 signin.welcome.header.line1=Selamat datang di	#
 signin.welcome.header.line2=Minecraft: Education Edition!	#
@@ -283,16 +305,18 @@ signin.demo.header=COBA PELAJARAN DEMO	#
 signin.demo.body=Mulai perjalananmu di Minecraft: Education Edition dengan pelajaran demo gratis, tersedia untuk semua murid.	#
 signin.progress.title=Mengunduh Sumber Daya	#
 
+toast.genericLinkOpened=Membuka tautan di browser web.	#
+
 joincode.invalid.title=Kode Bergabung Salah 	#
 joincode.invalid.body=Kamu telah memasukkan %1 kode bergabung yang salah. Tanyakan kepada host untuk memastikan kode yang kamu miliki benar atau coba bergabung menggunakan Alamat IP. 	#
 joincode.invalid.button.tryagain=Coba Lagi	#
 joincode.invalid.button.enterip=Masukkan Alamat IP	#
 joincode.invalid.abuse.body=Kamu telah memasukkan %1 kode bergabung yang salah. Coba bergabung ke dunia menggunakan Alamat IP	#
 
-joincode.popup.title =Bagikan Tautan	#
-joincode.popup.body = Bagikan tautan untuk mengundang pemain lain untuk bergabung dengan duniamu. Harap diketahui: tautan ini hanya akan berfungsi saat kamu menjadi host.	#
-joincode.share.body = %1 mengundang kamu untuk bergabung dengan dunia mereka di Minecraft: Education Edition. Ikuti tautan ini untuk mulai membangun bersama-sama! (%2, dihosting oleh %1)	#
-joincode.share.subject = Undangan multipemain untuk Minecraft: Education Edition	#
+joincode.item.sharepopup.title.simple=Bagikan Tautan	#
+joincode.popup.body=Bagikan tautan untuk mengundang pemain lain bergabung dengan duniamu. Harap diketahui, tautan ini hanya akan berfungsi saat kamu menjadi host.	#
+joincode.share.body=%1 mengundangmu bergabung dengan dunianya di Minecraft: Education Edition. Ikuti tautan ini untuk mulai membangun bersama! (%2, dihosting oleh %1)	#
+joincode.share.subject=Undangan multipemain untuk Minecraft: Education Edition	#
 
 pause.externalLink=BUKA TAUTAN	#
 

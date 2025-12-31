@@ -1,16 +1,27 @@
-﻿classroomSettings.uriResource.header.title=Resurssilinkki	#
-classroomSettings.uriResource.header.description=Lisää linkki arviointityökaluun, verkkosivustoon tai muuhun resurssiin	#
-classroomSettings.uriResource.name.placeHolder=Anna painikkeen nimi	#
+﻿authentication.popup.setup.title=Tilin määritys	#
+authentication.popup.setup.firstPage.body=Tervetuloa Minecraft: Education Editioniin!%1%1Ennen kuin voimme aloittaa, meidän on vahvistettava ikäsi. Tätä varten avaamme selaimesi ja pyydämme sinua kirjautumaan sisään henkilökohtaisella Microsoft-tililläsi.%1%1Jos sinulla ei ole henkilökohtaista Microsoft-tiliä, älä huoli... voit luoda tilin kirjautumissivulla.		### %1 will be replaced with a new line so two will result in an empty line seperating the two pieces of text
+authentication.popup.setup.firstPage.learnMore=Miksi minun on vahvistettava ikäni?	#
+authentication.popup.setup.firstPage.button=Vahvista nyt	#
+authentication.popup.setup.secondPage.body=Avasimme Tilin määritys -sivun selaimessasi. Kirjaudu sisään henkilökohtaisella Microsoft-tililläsi ja vahvista ikäsi.%1%1Ilmoita meille, kun olet valmis.		### %1 will be replaced with a new line so two will result in an empty line seperating the two pieces of text
+authentication.popup.setup.secondPage.openAgain=Avaa Tilin määritys -sivu uudelleen.	#
+authentication.popup.setup.secondPage.button=Olen valmis	#
+authentication.popup.demoLink=Kokeile esittelyluentoa.	#
+
+classroomSettings.uriResource.header.title=Resurssilinkki	#
+classroomSettings.uriResource.header.description=Luo Tauko-valikkoon uusi painike, jonka avulla arviointityökalua, verkkosivua tai jotain muuta resurssia voi käyttää maailman sisältä.	#
+classroomSettings.uriResource.name.placeHolder=AVAA LINKKI (oletus)		### Text before (Default) should match pause.externalLink
 classroomSettings.uriResource.name.title=Resurssipainikkeen nimi	#
-classroomSettings.uriResource.uri.placeHolder=Anna resurssin URL-osoite	#
+classroomSettings.uriResource.uri.placeHolder=Edellytetään, jotta painikkeen voi ottaa käyttöön	#
 classroomSettings.uriResource.uri.title=Resurssipainikkeen URL-osoite	#
+classroomSettings.uriResource.uri.warning.invalidUri=Vain http- ja https-alkuiset URL-osoitteet ovat tuettuja.	#
+classroomSettings.uriResource.uri.warning.emptyUri=Muista lisätä URL-osoite, jotta voit ottaa painikkeen käyttöön.	#
 
 commands.codebuilder.description=Määrittää Koodinrakentajan tilan pelaajalle.	#
 commands.codebuilder.invalidRuntimeAction=Tämä ei ole kelvollinen suorituksenaikainen toiminto.	#
-commands.resourceuri.description=Määrittää resurssin URI-osoitteen pysäytysvalikossa.	#
-commands.resourceuri.named=Resurssin URI-osoitteeksi on määritetty '%s' painikkeelle '%s'	#
+commands.resourceuri.description=Määrittää resurssin URI-osoitteen pysäytysvalikossa	#
+commands.resourceuri.named=Resurssin URI-osoitteeksi on määritetty %s, ja painikkeen nimi on %s	#
 commands.resourceuri.default=Resurssin URI-osoitteeksi on määritetty "%s"	#
-commands.resourceuri.clear=Resurssin URI-osoite on poistettu.	#
+commands.resourceuri.clear=Resurssin URI-osoite on poistettu	#
 commands.takepicture.description=Ottaa kuvan pelaajasta pelaajan näkökulmasta.	#
 commands.takepicture.cameranotfound=Kameraa ei löytynyt.	#
 commands.takepicture.cameranotspawned=Kameran luonti epäonnistui.	#
@@ -96,17 +107,18 @@ library.item.sharepopup.body=Jaa linkki tähän maailmaan.	#
 library.item.sharepopup.copy=KOPIOI	#
 library.item.sharepopup.copyButton=Kopioi linkki	#
 library.item.sharepopup.addResourceButton=Lisää resurssi	#
-library.item.sharepopup.secondayText=Haluatko lisästä arviointityökalun, Flipgrid-aiheen tai verkkosivuston maailmaan, ennen kuin jaat sen?	#
+library.item.sharepopup.secondaryText=Haluatko lisätä arviointityökalun, Flipgrid-aiheen tai verkkosivuston maailmaan, ennen kuin jaat sen?	#
 library.item.sharepopup.addResource.labelOne=Kopioi tietovisan, Flipgrid-aiheen tai verkkosivun URL-osoite ja liitä se alle.	#
 library.item.sharepopup.addResource.labelTwo=Tämä luo uuden painikkeen Tauko-valikkoon, jotta pelaajat voivat käyttää resurssia milloin tahansa maailman sisältä.	#
 library.item.sharepopup.addResource.learnMoreLinkText=Lisätietoja	#
-library.item.sharepopup.addResource.urlLabel=Resurssipainikkeen URL-osoite	#
-library.item.sharepopup.addResource.urlHintText=Kirjoita URL-osoite tähän	#
-library.item.sharepopup.addResource.buttonNameLabel=Resurssipainikkeen nimi	#
-library.item.sharepopup.addResource.buttonNameHintText=Anna painikkeelle nimi	#
+library.item.sharepopup.addResource.urlLabel=Resurssipainikkeen URL-osoite:	#
+library.item.sharepopup.addResource.urlHintText=Edellytetään, jotta painikkeen voi ottaa käyttöön	#
+library.item.sharepopup.addResource.buttonNameLabel=Resurssipainikkeen nimi:	#
+library.item.sharepopup.addResource.buttonNameHintText=AVAA LINKKI (oletus)		### Text before (Default) should match pause.externalLink
 library.item.sharepopup.addResource.doneButton=Valmis	#
 library.item.sharepopup.addResource.cancelButton=Peruuta	#
 library.item.sharepopup.addResource.deleteButton=Poista	#
+library.item.sharepopup.addResource.invalidSchema=Jatka kirjoittamalla URL-osoite, joka alkaa joko http- tai https-tunnuksella.	#
 library.item.sharepopup.editResourceLabel=Tässä on esikatselu painikkeesta, jonka lisäämme kaikille maailman avaaville näkyvään Tauko-valikkoon.	#
 library.item.sharepopup.editResource.button.accessibility=Muokkaa resurssin URL-osoitetta	#
 library.item.share.toast.title=Linkki kopioitu leikepöydällesi.	#
@@ -274,6 +286,16 @@ library.category.description.commonCoreMath=Nämä mukaansatempaavat aktiviteeti
 
 library.notification.label.resourceUri=Tähän maailmaan on lisätty linkki lisäresurssiin. Etsi "%1"-painike Tauko-valikosta, kun olet luonut maailman.	#
 
+npcUri.launch.success=NPC-linkki avattu.	#
+npcUri.launch.failure=NPC-linkin avaaminen epäonnistui. Tämä ei näytä tuetulta URL-osoitteelta.	#
+
+resourceUri.launch.success=Resurssilinkki avattu.	#
+resourceUri.launch.failure=Resurssilinkin avaaminen epäonnistui. Tämä ei näytä tuetulta URL-osoitteelta.	#
+
+resourceUri.tooltip.infotext=Tämän muokattavan linkin avulla Minecraft-maailmoja voidaan yhdistää online-resursseihin.	#
+resourceUri.tooltip.infotext.disabled=Voit ottaa tämän painikkeen käyttöön lisäämällä URL-osoitteen Resurssilinkki-kenttään kohdassa Asetukset > Luokkahuone.	#
+resourceUri.tooltip.label=RESURSSILINKKI	#
+
 signin.acceptTerms=Hyväksy ehdot	#
 signin.welcome.header.line1=Tervetuloa	#
 signin.welcome.header.line2=Minecraft: Education Editioniin!	#
@@ -283,16 +305,18 @@ signin.demo.header=KOKEILE ESITTELYLUENTOA	#
 signin.demo.body=Aloita matkasi Minecraft: Education Editionissa maksuttomalla esittelyluennolla, joka on kaikkien oppijoiden käytettävissä.	#
 signin.progress.title=Ladataan resursseja	#
 
+toast.genericLinkOpened=Linkki avattu selaimessasi.	#
+
 joincode.invalid.title=Virheellinen liittymiskoodi	#
 joincode.invalid.body=Olet antanut %1 virheellistä liittymiskoodia. Tarkista isännältä, että sinulla on oikea koodi tai kokeile liittymistä IP-osoitteella.	#
 joincode.invalid.button.tryagain=Yritä uudelleen	#
 joincode.invalid.button.enterip=Anna IP-osoite	#
 joincode.invalid.abuse.body=Olet antanut %1 virheellistä liittymiskoodia. Yritä liittyä maailmaan IP-osoitteen avulla.	#
 
-joincode.popup.title =Jaa linkki	#
-joincode.popup.body =Kutsu muita pelaajia liittymään maailmaasi jakamalla linkki. Huomaa: tämä linkki toimii vain, kun isännöit.	#
-joincode.share.body = %1 on kutsunut sinut mukaan maailmaansa Minecraft: Education Editionissa. Aloita rakentaminen hänen kanssaan avaamalla tämä linkki! (%2, %1 isännöi)	#
-joincode.share.subject =Moninpelikutsu Minecraft: Education Editioniin	#
+joincode.item.sharepopup.title.simple=Jaa linkki	#
+joincode.popup.body=Kutsu muita pelaajia liittymään maailmaasi jakamalla linkki. Huomaa: tämä linkki toimii vain, kun isännöit.	#
+joincode.share.body=%1 on kutsunut sinut mukaan maailmaansa Minecraft: Education Editionissa. Aloita rakentaminen hänen kanssaan avaamalla tämä linkki! (%2, %1 isännöi)	#
+joincode.share.subject=Moninpelikutsu Minecraft: Education Editioniin	#
 
 pause.externalLink=AVAA LINKKI	#
 

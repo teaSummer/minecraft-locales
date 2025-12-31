@@ -1,16 +1,27 @@
-﻿classroomSettings.uriResource.header.title=Collegamento alla risorsa	#
-classroomSettings.uriResource.header.description=Aggiungi un collegamento a uno strumento di valutazione, a un sito Web o a un'altra risorsa	#
-classroomSettings.uriResource.name.placeHolder=Inserisci il nome del tuo pulsante	#
+﻿authentication.popup.setup.title=Configurazione account	#
+authentication.popup.setup.firstPage.body=Benvenuto in Minecraft: Education Edition!%1%1Prima di iniziare dovremo verificare la tua età. A tale scopo apriremo il browser Web e ti chiederemo di accedere con il tuo account Microsoft personale.%1%1Se non hai un account Microsoft personale, non preoccuparti... puoi crearne uno nella pagina di accesso.		### %1 will be replaced with a new line so two will result in an empty line seperating the two pieces of text
+authentication.popup.setup.firstPage.learnMore=Perché devo verificare la mia età?	#
+authentication.popup.setup.firstPage.button=Verifica ora	#
+authentication.popup.setup.secondPage.body=Abbiamo aperto la pagina Configurazione account nel browser Web. Utilizzala per accedere con il tuo account Microsoft personale e per verificare la tua età.%1%1Facci sapere quando hai finito.		### %1 will be replaced with a new line so two will result in an empty line seperating the two pieces of text
+authentication.popup.setup.secondPage.openAgain=Riapri la pagina "Configurazione account".	#
+authentication.popup.setup.secondPage.button=Fatto	#
+authentication.popup.demoLink=Prova una lezione demo.	#
+
+classroomSettings.uriResource.header.title=Collegamento alla risorsa	#
+classroomSettings.uriResource.header.description=Nel menu Pausa, crea un nuovo pulsante che si collega a uno strumento di valutazione, a un sito Web o a un'altra risorsa del tuo mondo.	#
+classroomSettings.uriResource.name.placeHolder=APRI LINK (Normale)		### Text before (Default) should match pause.externalLink
 classroomSettings.uriResource.name.title=Nome pulsante risorsa	#
-classroomSettings.uriResource.uri.placeHolder=Inserisci l'URL della risorsa	#
+classroomSettings.uriResource.uri.placeHolder=Necessario per abilitare il pulsante	#
 classroomSettings.uriResource.uri.title=URL pulsante risorsa	#
+classroomSettings.uriResource.uri.warning.invalidUri=Sono supportati solo gli URL che iniziano con "http" o "https".	#
+classroomSettings.uriResource.uri.warning.emptyUri=Non dimenticare di aggiungere un URL per abilitare il pulsante.	#
 
 commands.codebuilder.description=Imposta lo stato Code Builder per un giocatore.	#
 commands.codebuilder.invalidRuntimeAction=Non è un'azione di runtime valida.	#
-commands.resourceuri.description=Imposta l'URI della risorsa nel menu di pausa.	#
+commands.resourceuri.description=Imposta l'URI della risorsa nel menu di pausa	#
 commands.resourceuri.named=URI risorsa impostato su "%s" con nome pulsante "%s"	#
 commands.resourceuri.default=URI risorsa impostato su "%s"	#
-commands.resourceuri.clear=L'URI della risorsa è stato eliminato.	#
+commands.resourceuri.clear=L'URI della risorsa è stato eliminato	#
 commands.takepicture.description=Scatta una foto di un giocatore o dalla prospettiva di un giocatore.	#
 commands.takepicture.cameranotfound=Impossibile trovare una fotocamera.	#
 commands.takepicture.cameranotspawned=Impossibile generare una fotocamera.	#
@@ -96,18 +107,19 @@ library.item.sharepopup.body=Condividi il link per questo mondo.	#
 library.item.sharepopup.copy=COPIA	#
 library.item.sharepopup.copyButton=Copia collegamento	#
 library.item.sharepopup.addResourceButton=Aggiungi una risorsa	#
-library.item.sharepopup.secondayText=Vuoi aggiungere al mondo uno strumento di valutazione, un argomento Flipgrid o un sito Web prima di condividere?	#
-library.item.sharepopup.addResource.labelOne=Copia l'URL dell'esame, dell'argomento Flipgrid o del sito Web e incollalo di seguito.	#
+library.item.sharepopup.secondaryText=Vuoi aggiungere al mondo uno strumento di valutazione, un Argomento Flipgrid o un sito Web prima di condividere?	#
+library.item.sharepopup.addResource.labelOne=Copia l'URL dell'esame, dell'Argomento Flipgrid o del sito Web e incollalo di seguito.	#
 library.item.sharepopup.addResource.labelTwo=Verrà creato un nuovo pulsante nel menu Pausa in modo che i giocatori possano accedere alla risorsa in qualsiasi momento dall'interno del mondo.	#
 library.item.sharepopup.addResource.learnMoreLinkText=Ulteriori informazioni	#
-library.item.sharepopup.addResource.urlLabel=URL pulsante risorsa	#
-library.item.sharepopup.addResource.urlHintText=Inserisci qui l'URL	#
-library.item.sharepopup.addResource.buttonNameLabel=Nome pulsante risorsa	#
-library.item.sharepopup.addResource.buttonNameHintText=Assegna un nome al pulsante	#
+library.item.sharepopup.addResource.urlLabel=URL pulsante risorsa:	#
+library.item.sharepopup.addResource.urlHintText=Necessario per abilitare il pulsante	#
+library.item.sharepopup.addResource.buttonNameLabel=Nome pulsante risorsa:	#
+library.item.sharepopup.addResource.buttonNameHintText=APRI LINK (Normale)		### Text before (Default) should match pause.externalLink
 library.item.sharepopup.addResource.doneButton=Fatto	#
 library.item.sharepopup.addResource.cancelButton=Annulla	#
 library.item.sharepopup.addResource.deleteButton=Elimina	#
-library.item.sharepopup.editResourceLabel=Ecco un'anteprima del pulsante che aggiungeremo alla schermata Pausa per chiunque apra il mondo.	#
+library.item.sharepopup.addResource.invalidSchema=Inserisci un URL che inizia con "http" o "https" per continuare.	#
+library.item.sharepopup.editResourceLabel=Ecco un'anteprima del pulsante che aggiungeremo al menu Pausa per chiunque apra il mondo.	#
 library.item.sharepopup.editResource.button.accessibility=Modifica URL risorsa	#
 library.item.share.toast.title=Link copiato nei tuoi appunti.	#
 
@@ -274,6 +286,16 @@ library.category.description.commonCoreMath=Queste interessanti attività sono s
 
 library.notification.label.resourceUri=Questo mondo è stato condiviso con un collegamento a una risorsa aggiuntiva. Cerca il pulsante "%1" nella schermata Pausa dopo aver creato il mondo.	#
 
+npcUri.launch.success=Collegamento al PNG aperto.	#
+npcUri.launch.failure=Impossibile aprire il collegamento al PNG. Sembra che l'URL non sia supportato.	#
+
+resourceUri.launch.success=Collegamento alla risorsa aperto.	#
+resourceUri.launch.failure=Impossibile aprire il collegamento alla risorsa. Sembra che l'URL non sia supportato.	#
+
+resourceUri.tooltip.infotext=Questo link modificabile può essere utilizzato per collegare i mondi di Minecraft alle risorse online.	#
+resourceUri.tooltip.infotext.disabled=Puoi abilitare questo pulsante aggiungendo un URL al campo Collegamento alla risorsa in Impostazioni > Classe.	#
+resourceUri.tooltip.label=COLLEGAMENTO ALLA RISORSA	#
+
 signin.acceptTerms=Accetta i termini	#
 signin.welcome.header.line1=Benvenuto in	#
 signin.welcome.header.line2=Minecraft: Education Edition!	#
@@ -283,16 +305,18 @@ signin.demo.header=PROVA UNA LEZIONE DEMO	#
 signin.demo.body=Inizia il tuo viaggio in Minecraft: Education Edition con una lezione demo gratuita, disponibile per tutti gli studenti.	#
 signin.progress.title=Download delle risorse in corso	#
 
+toast.genericLinkOpened=Il link è stato aperto nel browser Web.	#
+
 joincode.invalid.title=Codice unione errato	#
 joincode.invalid.body=Hai inserito %1 codici unione errati. Verifica il codice con l'host o prova a unirti mediante indirizzo IP.	#
 joincode.invalid.button.tryagain=Riprova	#
 joincode.invalid.button.enterip=Inserisci indirizzo IP	#
 joincode.invalid.abuse.body=Hai inserito %1 codici unione errati. Prova a unirti al mondo mediante indirizzo IP.	#
 
-joincode.popup.title = Condividi un link	#
-joincode.popup.body = Condividi un link per invitare altri giocatori a unirsi al tuo mondo. Nota: questo link funzionerà solo quando sei tu l'ospitante.	#
-joincode.share.body = %1 ti ha invitato a entrare a far parte del suo mondo in Minecraft: Education Edition. Segui questo link per iniziare a costruire insieme! (%2, ospitato da %1)	#
-joincode.share.subject = Invito multigiocatore per Minecraft: Education Edition	#
+joincode.item.sharepopup.title.simple=Condividi un link	#
+joincode.popup.body=Condividi un link per invitare altri giocatori a unirsi al tuo mondo. Ricorda, questo link funzionerà solo quando sei tu l'ospitante.	#
+joincode.share.body=%1 ti ha invitato a entrare a far parte del suo mondo in Microsoft: Education Edition. Segui questo link per iniziare a costruire insieme! (%2, ospitato da %1)	#
+joincode.share.subject=Invito multigiocatore per Minecraft: Education Edition	#
 
 pause.externalLink=APRI COLLEGAMENTO	#
 

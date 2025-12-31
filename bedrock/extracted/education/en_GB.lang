@@ -1,16 +1,27 @@
-﻿classroomSettings.uriResource.header.title=Resource Link	#
-classroomSettings.uriResource.header.description=Add a link to an assessment tool, website or other resource	#
-classroomSettings.uriResource.name.placeHolder=Enter the name for your button	#
+﻿authentication.popup.setup.title=Account Setup	#
+authentication.popup.setup.firstPage.body=Welcome to Minecraft: Education Edition!%1%1Before we can get started we'll need to verify your age. To do this, we'll open your web browser and ask you to sign in with your personal Microsoft Account.%1%1If you don't have a personal Microsoft Account, don't worry... you can create one on the sign-in page.		### %1 will be replaced with a new line so two will result in an empty line seperating the two pieces of text
+authentication.popup.setup.firstPage.learnMore=Why do I need to verify my age?	#
+authentication.popup.setup.firstPage.button=Verify Now	#
+authentication.popup.setup.secondPage.body=We have opened the Account Setup page in your web browser. Please use it to sign in with your personal Microsoft Account and verify your age.%1%1Let us know when you're ready.		### %1 will be replaced with a new line so two will result in an empty line seperating the two pieces of text
+authentication.popup.setup.secondPage.openAgain=Re-open the "Account Setup" page.	#
+authentication.popup.setup.secondPage.button=I'm ready	#
+authentication.popup.demoLink=Try a demo lesson.	#
+
+classroomSettings.uriResource.header.title=Resource Link	#
+classroomSettings.uriResource.header.description=Create a new button on the Pause menu that links to an assessment tool, website or other resource for your world.	#
+classroomSettings.uriResource.name.placeHolder=OPEN LINK (Default)		### Text before (Default) should match pause.externalLink
 classroomSettings.uriResource.name.title=Resource Button Name	#
-classroomSettings.uriResource.uri.placeHolder=Enter the URL for your resource	#
+classroomSettings.uriResource.uri.placeHolder=Required to enable the button	#
 classroomSettings.uriResource.uri.title=Resource Button URL	#
+classroomSettings.uriResource.uri.warning.invalidUri=Only URLs beginning with "http" or "https" are supported.	#
+classroomSettings.uriResource.uri.warning.emptyUri=Don't forget to add a URL to enable your button.	#
 
 commands.codebuilder.description=Sets Code Builder state for a player.	#
 commands.codebuilder.invalidRuntimeAction=This is not a valid runtime action.	#
-commands.resourceuri.description=Sets the resource URI in pause menu.	#
-commands.resourceuri.named=Resource URI set to '%s' with button name '%s'	#
+commands.resourceuri.description=Sets the resource URI in the pause menu	#
+commands.resourceuri.named=Resource URI set to "%s" with button name "%s"	#
 commands.resourceuri.default=Resource URI set to "%s"	#
-commands.resourceuri.clear=Resource URI has been cleared.	#
+commands.resourceuri.clear=Resource URI has been cleared	#
 commands.takepicture.description=Takes a photo of a player or from a player's point of view.	#
 commands.takepicture.cameranotfound=Failed to find a camera.	#
 commands.takepicture.cameranotspawned=Failed to spawn a camera.	#
@@ -96,18 +107,19 @@ library.item.sharepopup.body=Share a link to this world.	#
 library.item.sharepopup.copy=COPY	#
 library.item.sharepopup.copyButton=Copy Link	#
 library.item.sharepopup.addResourceButton=Add a Resource	#
-library.item.sharepopup.secondayText=Would you like to add an assessment tool, Flipgrid topic or website to the world before you share?	#
-library.item.sharepopup.addResource.labelOne=Copy the URL for your quiz, Flipgrid topic, or website and paste it below.	#
+library.item.sharepopup.secondaryText=Would you like to add an assessment tool, Flipgrid Topic or website to the world before you share?	#
+library.item.sharepopup.addResource.labelOne=Copy the URL for your quiz, Flipgrid Topic or website and paste it below.	#
 library.item.sharepopup.addResource.labelTwo=This will create a new button on the Pause menu so players can access the resource at any time from within the world.	#
 library.item.sharepopup.addResource.learnMoreLinkText=Learn more	#
-library.item.sharepopup.addResource.urlLabel=Resource Button URL	#
-library.item.sharepopup.addResource.urlHintText=Enter the URL here	#
-library.item.sharepopup.addResource.buttonNameLabel=Resource Button name	#
-library.item.sharepopup.addResource.buttonNameHintText=Give your button a name	#
+library.item.sharepopup.addResource.urlLabel=Resource Button URL:	#
+library.item.sharepopup.addResource.urlHintText=Required to enable button	#
+library.item.sharepopup.addResource.buttonNameLabel=Resource Button Name:	#
+library.item.sharepopup.addResource.buttonNameHintText=OPEN LINK (Default)		### Text before (Default) should match pause.externalLink
 library.item.sharepopup.addResource.doneButton=Done	#
 library.item.sharepopup.addResource.cancelButton=Cancel	#
 library.item.sharepopup.addResource.deleteButton=Delete	#
-library.item.sharepopup.editResourceLabel=Here's a preview of the button we'll add to the Pause screen for anyone who opens the world.	#
+library.item.sharepopup.addResource.invalidSchema=Please enter a URL beginning with "http" or "https" to continue.	#
+library.item.sharepopup.editResourceLabel=Here's a preview of the button we'll add to the Pause menu for anyone who opens the world.	#
 library.item.sharepopup.editResource.button.accessibility=Edit Resource URL	#
 library.item.share.toast.title=Link copied to your clipboard.	#
 
@@ -274,6 +286,16 @@ library.category.description.commonCoreMath=These engaging activities were creat
 
 library.notification.label.resourceUri=This world was shared with a link to an additional resource. Look for the "%1" button on the Pause screen after you create the world.	#
 
+npcUri.launch.success=Opened the NPC Link.	#
+npcUri.launch.failure=Unable to open the NPC Link. This doesn't look like a supported URL.	#
+
+resourceUri.launch.success=Opened the Resource Link.	#
+resourceUri.launch.failure=Unable to open the Resource Link. This doesn't look like a supported URL.	#
+
+resourceUri.tooltip.infotext=This editable link can be used to connect Minecraft worlds to online resources.	#
+resourceUri.tooltip.infotext.disabled=You can enable this button by adding a URL to the Resource Link field in Settings > Classroom.	#
+resourceUri.tooltip.label=RESOURCE LINK	#
+
 signin.acceptTerms=Accept Terms	#
 signin.welcome.header.line1=Welcome to	#
 signin.welcome.header.line2=Minecraft: Education Edition!	#
@@ -283,16 +305,18 @@ signin.demo.header=TRY A DEMO LESSON	#
 signin.demo.body=Start your journey in Minecraft: Education Edition with a free demo lesson, available to all students.	#
 signin.progress.title=Downloading Resources	#
 
+toast.genericLinkOpened=Opened the link in your web browser.	#
+
 joincode.invalid.title=Incorrect Join Code 	#
 joincode.invalid.body=You have entered %1 incorrect join codes. Please check with the host to make sure that you have the correct code or try to join by IP Address. 	#
 joincode.invalid.button.tryagain=Try Again	#
 joincode.invalid.button.enterip=Enter IP Address	#
 joincode.invalid.abuse.body=You have entered %1 incorrect join codes. Please try joining the world using IP Address instead	#
 
-joincode.popup.title = Share a Link	#
-joincode.popup.body = Share a link to invite other players to join your world. Please note: this link will only work while you are hosting.	#
-joincode.share.body = %1 has invited you to join their world in Minecraft: Education Edition. Follow this link to start building together! (%2, hosted by %1)	#
-joincode.share.subject = Multiplayer invitation for Minecraft: Education Edition	#
+joincode.item.sharepopup.title.simple=Share a Link	#
+joincode.popup.body=Share a link to invite other players to join your world. Please note, this link will only work while you are hosting.	#
+joincode.share.body=%1 has invited you to join their world in Microsoft: Education Edition. Follow this link to start building together! (%2, hosted by %1)	#
+joincode.share.subject=Multiplayer invitation for Minecraft: Education Edition	#
 
 pause.externalLink=OPEN LINK	#
 

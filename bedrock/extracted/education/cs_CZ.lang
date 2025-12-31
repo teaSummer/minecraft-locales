@@ -1,14 +1,25 @@
-﻿classroomSettings.uriResource.header.title=Odkaz na zdroj	#
-classroomSettings.uriResource.header.description=Přidání odkazu na hodnoticí nástroj, web nebo jiný zdroj	#
-classroomSettings.uriResource.name.placeHolder=Zadejte název tlačítka	#
+﻿authentication.popup.setup.title=Nastavení účtu	#
+authentication.popup.setup.firstPage.body=Vítejte ve hře Minecraft: Education Edition!%1%1Než začneme, musíme ověřit váš věk. K tomu spustíme webový prohlížeč a požádáme vás, abyste se přihlásili pomocí svého osobního účtu Microsoft.%1%1Nemáte-li osobní účet Microsoft, nebojte se… můžete si ho vytvořit na přihlašovací stránce.		### %1 will be replaced with a new line so two will result in an empty line seperating the two pieces of text
+authentication.popup.setup.firstPage.learnMore=Proč musím ověřit svůj věk?	#
+authentication.popup.setup.firstPage.button=Ověřit	#
+authentication.popup.setup.secondPage.body=Ve webovém prohlížeči jsme otevřeli stránku Nastavení účtu. Na ní se přihlaste pomocí svého osobního účtu Microsoft a ověřte svůj věk.%1%1Dejte nám vědět, až to budete mít.		### %1 will be replaced with a new line so two will result in an empty line seperating the two pieces of text
+authentication.popup.setup.secondPage.openAgain=Znovu otevřete stránku Nastavení účtu.	#
+authentication.popup.setup.secondPage.button=Mám to	#
+authentication.popup.demoLink=Vyzkoušejte ukázkovou lekci.	#
+
+classroomSettings.uriResource.header.title=Odkaz na zdroj	#
+classroomSettings.uriResource.header.description=V nabídce Pozastavit vytvořte nové tlačítko, které odkazuje na hodnoticí nástroj, webové stránky nebo jiný zdroj vašeho světa.	#
+classroomSettings.uriResource.name.placeHolder=OTEVŘÍT ODKAZ (výchozí)		### Text before (Default) should match pause.externalLink
 classroomSettings.uriResource.name.title=Název tlačítka zdroje	#
-classroomSettings.uriResource.uri.placeHolder=Zadejte adresu URL zdroje	#
+classroomSettings.uriResource.uri.placeHolder=Požadováno k povolení tlačítka	#
 classroomSettings.uriResource.uri.title=Adresa URL tlačítka zdroje	#
+classroomSettings.uriResource.uri.warning.invalidUri=Podporovány jsou pouze adresy URL začínající na „http“ nebo „https“.	#
+classroomSettings.uriResource.uri.warning.emptyUri=Nezapomeňte přidat adresu URL, aby bylo tlačítko povoleno.	#
 
 commands.codebuilder.description=Stanovuje pro hráče stav nástroje pro tvorbu kódu.	#
 commands.codebuilder.invalidRuntimeAction=Nejedná se o platnou akci běhu.	#
 commands.resourceuri.description=Nastaví identifikátor URI zdroje v nabídce pozastavení.	#
-commands.resourceuri.named=Identifikátor URI zdroje nastaven na „%s“ s názvem tlačítka „%s“	#
+commands.resourceuri.named=Identifikátor URI zdroje nastaven na „%s“ s názvem tlačítka „%s“.	#
 commands.resourceuri.default=Identifikátor URI zdroje nastaven na „%s“	#
 commands.resourceuri.clear=Identifikátor URI zdroje byl vymazán.	#
 commands.takepicture.description=Vyfotí hráče nebo to, co vidí.	#
@@ -96,18 +107,19 @@ library.item.sharepopup.body=Sdílejte odkaz na tento svět.	#
 library.item.sharepopup.copy=KOPÍROVAT	#
 library.item.sharepopup.copyButton=Kopírovat odkaz	#
 library.item.sharepopup.addResourceButton=Přidání zdroje	#
-library.item.sharepopup.secondayText=Chtěli byste před sdílením do světa přidat hodnoticí nástroj, téma Flipgrid nebo webové stránky?	#
+library.item.sharepopup.secondaryText=Chtěli byste před sdílením do světa přidat hodnoticí nástroj, téma Flipgrid nebo webové stránky?	#
 library.item.sharepopup.addResource.labelOne=Zkopírujte adresu URL svého kvízu, tématu Flipgrid nebo webových stránek a vložte ji níže.	#
 library.item.sharepopup.addResource.labelTwo=Slouží k vytvoření nového tlačítka v nabídce pozastavení, aby měli hráči z celého světa kdykoli přístup ke zdroji.	#
 library.item.sharepopup.addResource.learnMoreLinkText=Další informace	#
-library.item.sharepopup.addResource.urlLabel=Adresa URL tlačítka zdroje	#
-library.item.sharepopup.addResource.urlHintText=Sem zadejte adresu URL	#
-library.item.sharepopup.addResource.buttonNameLabel=Název tlačítka zdroje	#
-library.item.sharepopup.addResource.buttonNameHintText=Pojmenujte tlačítko	#
+library.item.sharepopup.addResource.urlLabel=Adresa URL tlačítka zdroje:	#
+library.item.sharepopup.addResource.urlHintText=Požadováno k povolení tlačítka	#
+library.item.sharepopup.addResource.buttonNameLabel=Název tlačítka zdroje:	#
+library.item.sharepopup.addResource.buttonNameHintText=OTEVŘÍT ODKAZ (výchozí)		### Text before (Default) should match pause.externalLink
 library.item.sharepopup.addResource.doneButton=Hotovo	#
 library.item.sharepopup.addResource.cancelButton=Zrušit	#
 library.item.sharepopup.addResource.deleteButton=Odstranit	#
-library.item.sharepopup.editResourceLabel=Zde je náhled tlačítka, které přidáme na obrazovku pozastavení pro každého, kdo otevře svět.	#
+library.item.sharepopup.addResource.invalidSchema=Pro pokračování zadejte adresu URL začínající na „http“ nebo „https“.	#
+library.item.sharepopup.editResourceLabel=Zde je náhled tlačítka, které přidáme do nabídky pozastavení pro každého, kdo otevře svět.	#
 library.item.sharepopup.editResource.button.accessibility=Upravit adresu URL zdroje	#
 library.item.share.toast.title=Odkaz byl zkopírován do schránky.	#
 
@@ -274,6 +286,16 @@ library.category.description.commonCoreMath=Tyto poutavé aktivity jsme vytvoři
 
 library.notification.label.resourceUri=Tento svět byl sdílen s odkazem na další zdroj. Po vytvoření světa vyhledejte tlačítko „%1“ na obrazovce pozastavení.	#
 
+npcUri.launch.success=Byl otevřen odkaz na postavu NPC.	#
+npcUri.launch.failure=Odkaz na postavu NPC nelze otevřít. Zřejmě se jedná o nepodporovanou adresu URL.	#
+
+resourceUri.launch.success=Byl otevřen odkaz na zdroj.	#
+resourceUri.launch.failure=Odkaz na zdroj nelze otevřít. Zřejmě se jedná o nepodporovanou adresu URL.	#
+
+resourceUri.tooltip.infotext=Tento upravitelný odkaz lze použít k propojení světů Minecraftu a online zdrojů.	#
+resourceUri.tooltip.infotext.disabled=Toto tlačítko povolíte přidáním adresy URL do pole Odkaz na zdroj v nabídce Nastavení > Učebna.	#
+resourceUri.tooltip.label=ODKAZ NA ZDROJ	#
+
 signin.acceptTerms=Přijmout podmínky	#
 signin.welcome.header.line1=Vítejte ve hře	#
 signin.welcome.header.line2=Minecraft: Education Edition!	#
@@ -283,16 +305,18 @@ signin.demo.header=VYZKOUŠEJTE UKÁZKOVOU LEKCI	#
 signin.demo.body=Začněte své putování hrou Minecraft: Education Edition ukázkovou lekcí zdarma, která je dostupná pro všechny studenty.	#
 signin.progress.title=Stahování zdrojů	#
 
+toast.genericLinkOpened=Odkaz se otevřel ve webovém prohlížeči.	#
+
 joincode.invalid.title=Nesprávný kód pro připojení	#
 joincode.invalid.body=Zadali jste %1 nesprávné kódy pro připojení. Obraťte se na zakládajícího hráče a zkontrolujte, že máte správný kód, nebo se zkuste připojit pomocí IP adresy.	#
 joincode.invalid.button.tryagain=Zkusit znovu	#
 joincode.invalid.button.enterip=Zadat IP adresu	#
 joincode.invalid.abuse.body=Zadali jste %1 nesprávné kódy pro připojení. Zkuste se místo toho ke světu připojit pomocí IP adresy.	#
 
-joincode.popup.title = Sdílet odkaz	#
-joincode.popup.body = Sdílejte odkaz, pomocí něhož můžete do svého světa pozvat další hráče. Upozornění: Tento odkaz bude fungovat pouze v případě, že jste hostitelem.	#
-joincode.share.body =Hráč %1 vás pozval do svého světa hry Minecraft: Education Edition. Pomocí tohoto odkazu můžete začít budovat společně! (%2, hostitel %1)	#
-joincode.share.subject = Pozvánka ke hře pro více hráčů Minecraft: Education Edition	#
+joincode.item.sharepopup.title.simple=Sdílení odkazu	#
+joincode.popup.body=Sdílejte odkaz, pomocí něhož můžete do svého světa pozvat další hráče. Upozornění: Tento odkaz bude fungovat pouze v případě, že jste hostitelem.	#
+joincode.share.body=Hráč %1 vás pozval do svého světa hry Minecraft: Education Edition. Pomocí tohoto odkazu můžete začít budovat společně! (%2, hostitel %1)	#
+joincode.share.subject=Pozvánka ke hře pro více hráčů Minecraft: Education Edition	#
 
 pause.externalLink=OTEVŘÍT ODKAZ	#
 
