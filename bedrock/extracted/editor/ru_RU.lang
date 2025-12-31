@@ -3,12 +3,616 @@
 ## Note, trailing spaces will NOT be trimmed. If you want room between the end of the string and the start of a
 ## comment on the same line, use TABs.
 
+commands.editor.project.beginExport=Экспорт...	#
+commands.editor.project.description=Управление текущим загруженным проектом	#
+commands.editor.project.export=экспорт проекта	#
+commands.editor.project.exportComplete=Экспорт завершен, файлы загружены в %s	#
+commands.editor.project.exportCopyFailed=Не удалось скопировать данные уровня %s	#
+commands.editor.project.unknownSubcommand=Неизвестная подкоманда	#
+
+resourcePack.editor.actionBar.redo.tooltipDescription=Повторить действие	#
+resourcePack.editor.actionBar.redo.tooltipTitle=Повторить действие	#
+resourcePack.editor.actionBar.redo=Повторить	#
+resourcePack.editor.actionBar.undo.tooltipDescription=Отменить действие	#
+resourcePack.editor.actionBar.undo.tooltipTitle=Отменить	#
+resourcePack.editor.actionBar.undo=Отменить	#
+
+resourcePack.editor.agfx.settings.error.title=Возникла ошибка...	#
+resourcePack.editor.agfx.pane.title=Редактор настроек	#
+resourcePack.editor.agfx.pane.settings_selector=Выбрать настройки	#
+resourcePack.editor.agfx.pane.settings.title=Настройки	#
+resourcePack.editor.agfx.pane.settings.revert_changes=Отменить изменения	#
+resourcePack.editor.agfx.pane.settings.export_to_clipboard=Экспортировать в буфер обмена	#
+
+
+resourcePack.editor.blockPalette.addSearchItem=Использовать найденный блок	#
+resourcePack.editor.blockPalette.blockPicker=Поиск	#
+resourcePack.editor.blockPalette.paletteDropdown.title=Палитра	#
+resourcePack.editor.blockPalette.title=Палитра блоков	#
+
+
+resourcePack.editor.brushPaint.inputContext.activateBrushPaint=Включить кисть	#
+resourcePack.editor.brushPaint.inputContext.oneshot=Покрасьте один раз	#
+resourcePack.editor.brushPaint.inputContext.title=Кисть	#
+resourcePack.editor.brushPaint.title=Кисть	#
+resourcePack.editor.brushPaint.tooltip=Используйте кисти, чтобы раскрасить блоки в мире	#
+
+
+resourcePack.editor.BrushPaintControl.brush.title=Кисть	#
+resourcePack.editor.BrushPaintControl.brushSettings.title=Настройки кисти	#
+resourcePack.editor.BrushPaintControl.fillConstraints.mask.title=Список масок	#
+resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.disabled.tooltip=Отключить фильтры блоков	#
+resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.disabled=Отключено	#
+resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.mask.tooltip=Блоки, соответствующие списку, не будут выбраны и останутся неизменными	#
+resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.mask=Маска	#
+resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.replace=Заменить	#
+resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.title=Фильтр кисти блока	#
+resourcePack.editor.BrushPaintControl.fillConstraints.replace.title=Заменить список	#
+resourcePack.editor.BrushPaintControl.fillConstraints.replace.tooltip=Блоки, соответствующие списку, будут обработаны	#
+resourcePack.editor.BrushPaintControl.fillConstraints.title=Ограничения на заполнение	#
+resourcePack.editor.BrushPaintControl.keybinding.maskMask=Режим маски — Маска	#
+resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetBack=Подтолкнуть область смещения назад	#
+resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetDown=Подтолкнуть область смещения вниз	#
+resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetForward=Подтолкнуть область смещения вперед	#
+resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetLeft=Подтолкнуть область смещения влево	#
+resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetRight=Подтолкнуть область смещения вправо	#
+resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetUp=Подтолкнуть область смещения вверх	#
+resourcePack.editor.BrushPaintControl.keybinding.replaceMask=Режим маски — Заменить	#
+resourcePack.editor.BrushPaintControl.offset.title=Смещение	#
+resourcePack.editor.BrushPaintControl.offset.tooltip=Смещение от точки курсора	#
+resourcePack.editor.BrushPaintControl.rootPane.title=Настройки кисти	#
+
+
+resourcePack.editor.brushShape.common.settings.axis=Ось растяжения	#
+resourcePack.editor.brushShape.common.settings.height=Высота	#
+resourcePack.editor.brushShape.common.settings.length=Длина	#
+resourcePack.editor.brushShape.common.settings.radius=Радиус	#
+resourcePack.editor.brushShape.common.settings.uniform=Юниформ	#
+resourcePack.editor.brushShape.common.settings.xAxis=Ось X	#
+resourcePack.editor.brushShape.common.settings.xAxisNeg=Ось X	#
+resourcePack.editor.brushShape.common.settings.yAxis=Ось Y	#
+resourcePack.editor.brushShape.common.settings.yAxisNeg=Ось Y	#
+resourcePack.editor.brushShape.common.settings.zAxis=Ось Z	#
+resourcePack.editor.brushShape.common.settings.zAxisNeg=Ось Z	#
+resourcePack.editor.brushShape.cone.name=Конус	#
+resourcePack.editor.brushShape.cone.settings.depth=Радиус глубины	#
+resourcePack.editor.brushShape.cone.settings.width=Радиус ширины	#
+resourcePack.editor.brushShape.cuboid.name=Кубоид	#
+resourcePack.editor.brushShape.cuboid.settings.depth=Глубина	#
+resourcePack.editor.brushShape.cuboid.settings.height=Высота	#
+resourcePack.editor.brushShape.cuboid.settings.width=Ширина	#
+resourcePack.editor.brushShape.cylinder.name=Цилиндр	#
+resourcePack.editor.brushShape.cylinder.settings.depth_radius=Радиус глубины	#
+resourcePack.editor.brushShape.cylinder.settings.width_radius=Радиус ширины	#
+resourcePack.editor.brushShape.ellipsoid.name=Эллипсоид	#
+resourcePack.editor.brushShape.ellipsoid.settings.depth_radius=Радиус глубины	#
+resourcePack.editor.brushShape.ellipsoid.settings.height_radius=Радиус высоты	#
+resourcePack.editor.brushShape.ellipsoid.settings.width_radius=Радиус ширины	#
+resourcePack.editor.brushShape.pyramid.name=Пирамида	#
+resourcePack.editor.brushShape.pyramid.settings.depth=Интенсивность	#
+resourcePack.editor.brushShape.pyramid.settings.height=Высота	#
+resourcePack.editor.brushShape.pyramid.settings.width=Ширина	#
+resourcePack.editor.brushShape.singleBlock.name=Одиночный блок	#
+
+
 resourcePack.editor.client.description=Клиентские ресурсы редактора	#
 resourcePack.editor.client.name=Ресурсы редактора	#
+
+
+resourcePack.editor.ClipboardPreviewControl.keybinding.moveOriginBack=Переместить точку начала координат назад	#
+resourcePack.editor.ClipboardPreviewControl.keybinding.moveOriginDown=Переместить точку начала координат вниз	#
+resourcePack.editor.ClipboardPreviewControl.keybinding.moveOriginForward=Переместить точку начала координат вперед	#
+resourcePack.editor.ClipboardPreviewControl.keybinding.moveOriginLeft=Переместить точку начала координат влево	#
+resourcePack.editor.ClipboardPreviewControl.keybinding.moveOriginRight=Переместить точку начала координат вправо	#
+resourcePack.editor.ClipboardPreviewControl.keybinding.moveOriginUp=Переместить точку начала координат вверх	#
+resourcePack.editor.ClipboardPreviewControl.keyBinding.nudgeOffsetBack=Подтолкнуть область смещения назад	#
+resourcePack.editor.ClipboardPreviewControl.keyBinding.nudgeOffsetDown=Подтолкнуть область смещения вниз	#
+resourcePack.editor.ClipboardPreviewControl.keyBinding.nudgeOffsetForward=Подтолкнуть область смещения вперед	#
+resourcePack.editor.ClipboardPreviewControl.keyBinding.nudgeOffsetLeft=Подтолкнуть область смещения влево	#
+resourcePack.editor.ClipboardPreviewControl.keyBinding.nudgeOffsetRight=Подтолкнуть область смещения вправо	#
+resourcePack.editor.ClipboardPreviewControl.keyBinding.nudgeOffsetUp=Подтолкнуть область смещения вверх	#
+resourcePack.editor.ClipboardPreviewControl.keybinding.rotateClockWise=Повернуть область предварительного просмотра по часовой стрелке	#
+resourcePack.editor.ClipboardPreviewControl.keybinding.rotateCounterClockWise=Повернуть область предварительного просмотра против часовой стрелки	#
+resourcePack.editor.ClipboardPreviewControl.keybinding.toggleMirrorX=Включить/выключить отражение оси координат X	#
+resourcePack.editor.ClipboardPreviewControl.keybinding.toggleMirrorZ=Включить/выключить отражение оси координат Z	#
+resourcePack.editor.ClipboardPreviewControl.mirror.axis.x.tooltip=Зеркальное отображение элемента буфера обмена вокруг оси X в начальной точке	#
+resourcePack.editor.ClipboardPreviewControl.mirror.axis.x=Отражение (ось X)	#
+resourcePack.editor.ClipboardPreviewControl.mirror.axis.z.tooltip=Зеркальное отображение элемента буфера обмена вокруг оси Z в начальной точке	#
+resourcePack.editor.ClipboardPreviewControl.mirror.axis.z=Отражение (ось Z)	#
+resourcePack.editor.ClipboardPreviewControl.offset.title=Смещение	#
+resourcePack.editor.ClipboardPreviewControl.offset.tooltip=Дополнительное смещение от точки размещения к началу буфера обмена	#
+resourcePack.editor.ClipboardPreviewControl.origin.title=Начало координат	#
+resourcePack.editor.ClipboardPreviewControl.origin.tooltip=Отправная точка: используется как привязка для размещения, а также как место, вокруг которого вращается и отражается буфер обмена	#
+resourcePack.editor.ClipboardPreviewControl.placement.title=Настройки	#
+resourcePack.editor.ClipboardPreviewControl.rootPane.title=Информация о буфере обмена	#
+resourcePack.editor.ClipboardPreviewControl.rotation.180=180°	#
+resourcePack.editor.ClipboardPreviewControl.rotation.270=270°	#
+resourcePack.editor.ClipboardPreviewControl.rotation.90=90°	#
+resourcePack.editor.ClipboardPreviewControl.rotation.none=Нет	#
+resourcePack.editor.ClipboardPreviewControl.rotation.title=Вращение	#
+resourcePack.editor.ClipboardPreviewControl.rotation.tooltip=Поворот вокруг оси Y в точке начала координат	#
+resourcePack.editor.ClipboardPreviewControl.structureSize.title=Размер буфера обмена	#
+
+
+resourcePack.editor.copypaste.actionbar.copy.title=Копировать	#
+resourcePack.editor.copypaste.actionbar.copy.tooltip=Копировать выбранное в буфер обмена	#
+resourcePack.editor.copypaste.actionbar.copy.tooltipDescription=Скопировать выбранные блоки в буфер обмена, оставив их нетронутыми	#
+resourcePack.editor.copypaste.actionbar.cut.title=Вырезать	#
+resourcePack.editor.copypaste.actionbar.cut.tooltip=Вырезать/переместить выбранное в буфер обмена	#
+resourcePack.editor.copypaste.actionbar.cut.tooltipDescription=Скопировать выбранное в буфер обмена и удалить содержимое	#
+resourcePack.editor.copypaste.keyBinding.copy=Копировать выбранное в буфер обмена	#
+resourcePack.editor.copypaste.keyBinding.cut=Вырезать/переместить выбранное в буфер обмена	#
+resourcePack.editor.copypaste.keyBinding.paste=Вставить буфер обмена в мир	#
+resourcePack.editor.copypaste.menu.copy.title=Копировать область выделения	#
+resourcePack.editor.copypaste.menu.cut.title=Вырезать область выделения	#
+
+
+resourcePack.editor.core.keyBinding.showGameMenu=Показать игровое меню	#
+resourcePack.editor.core.keyBinding.showLogPanel=Показать панель журнала	#
+
+
+resourcePack.editor.CursorModeControl.cursorTargetMode.block.tooltip=Блок под курсором мыши	#
+resourcePack.editor.CursorModeControl.cursorTargetMode.block=Заблокировать	#
+resourcePack.editor.CursorModeControl.cursorTargetMode.face.tooltip=Блок рядом с лицевой частью блока под курсором	#
+resourcePack.editor.CursorModeControl.cursorTargetMode.face=Рядом	#
+resourcePack.editor.CursorModeControl.cursorTargetMode.title=Цель	#
+resourcePack.editor.CursorModeControl.cursorTargetMode.tooltip=Выберите режим цели курсора	#
+resourcePack.editor.CursorModeControl.fixedDistance.slider.title=Фиксированное расстояние до курсора	#
+resourcePack.editor.CursorModeControl.fixedDistance.slider.tooltip=Отрегулируйте фиксированное расстояние от игрока, на котором находится курсор блока	#
+resourcePack.editor.CursorModeControl.keybinding.moveCursorBack=Переместить курсор назад	#
+resourcePack.editor.CursorModeControl.keybinding.moveCursorDown=Переместить курсор вниз	#
+resourcePack.editor.CursorModeControl.keybinding.moveCursorForward=Подтолкнуть вперед	#
+resourcePack.editor.CursorModeControl.keybinding.moveCursorLeft=Переместить курсор влево	#
+resourcePack.editor.CursorModeControl.keybinding.moveCursorRight=Переместить курсор вправо	#
+resourcePack.editor.CursorModeControl.keybinding.moveCursorUp=Переместить курсор вверх	#
+resourcePack.editor.CursorModeControl.keybinding.toggleBlockTargetMode=Переключить режим блок/смежный	#
+resourcePack.editor.CursorModeControl.keybinding.toggleFixedDistance=Переключить режим фиксированного расстояния	#
+resourcePack.editor.CursorModeControl.keybinding.toggleMouseTracking=Перекл. отслеж. мыши	#
+resourcePack.editor.CursorModeControl.mouseControlMode.fixed=Фиксированное расстояние	#
+resourcePack.editor.CursorModeControl.mouseControlMode.keyboard=Только клавиатура	#
+resourcePack.editor.CursorModeControl.mouseControlMode.keyboardAndMouse=Мышь и клавиатура	#
+resourcePack.editor.CursorModeControl.mouseControlMode.title=Способ ввода	#
+resourcePack.editor.CursorModeControl.mouseControlMode.tooltip=Выберите способ ввода для курсора блоков мира	#
+resourcePack.editor.CursorModeControl.projectThroughWater.title=Проецировать через воду	#
+resourcePack.editor.CursorModeControl.projectThroughWater.tooltip=Лучи от мыши будут проецироваться сквозь воду, что позволит выбирать подводные элементы	#
+resourcePack.editor.CursorModeControl.rootPane.title=Настройки указателя	#
+
+
+resourcePack.editor.datatransferaccessors.atmospheric_scattering=Атмосферное рассеивание	#
+resourcePack.editor.datatransferaccessors.color_grading=Цветокоррекция	#
+resourcePack.editor.datatransferaccessors.lighting_group=Глобальное освещение	#
+resourcePack.editor.datatransferaccessors.pbr_fallbacks=Резервн. PBR	#
+resourcePack.editor.datatransferaccessors.point_lights=Точечные источники света	#
+resourcePack.editor.datatransferaccessors.water=Вода	#
+
+
+resourcePack.editor.deferredLightingSettings.menu.title=Настройки отложенного освещения	#
+
+
+resourcePack.editor.delete.keyBinding=Удалить содержимое области выделения	#
+
+
+resourcePack.editor.exportProject.exportType=Тип экспорта	#
+resourcePack.editor.exportProject.exportType.playableWorld=Играбельный мир	#
+resourcePack.editor.exportProject.exportNotes=Заметки во время экспорта	#
+resourcePack.editor.exportProject.exportNotes.warning=Вы экспортируете мир v%1. Экспортированные миры нельзя использовать в версиях Minecraft ниже v%1. Для конвертации до предыдущих версий используйте сайт https://chunker.app/ (некоторые функции могут быть недоступны на ранних версиях)	#
+resourcePack.editor.exportProject.generalSettings=Общие параметры	#
+resourcePack.editor.exportProject.generalSettings.worldName=Название мира	#
+resourcePack.editor.exportProject.generalSettings.gameMode=Режим игры	#
+resourcePack.editor.exportProject.generalSettings.difficulty=Уровень сложности	#
+resourcePack.editor.exportProject.generalSettings.hardcore=Хардкор	#
+resourcePack.editor.exportProject.advancedSettings=Расширенные настройки	#
+resourcePack.editor.exportProject.advancedSettings.startingMap=Начальная карта	#
+resourcePack.editor.exportProject.advancedSettings.bonusChest=Бонусный сундук	#
+resourcePack.editor.exportProject.advancedSettings.showCoordinates=Показать координаты	#
+resourcePack.editor.exportProject.advancedSettings.showDaysPlayed=Показать количество дней в игре	#
+resourcePack.editor.exportProject.advancedSettings.recipeUnlocking=Разблокировка рецепта	#
+resourcePack.editor.exportProject.advancedSettings.fireSpreads=Распространение огня	#
+resourcePack.editor.exportProject.advancedSettings.tntExplodes=Детонация динамита	#
+resourcePack.editor.exportProject.advancedSettings.resawnBlocksExplode=Возрождающиеся блоки взрываются	#
+resourcePack.editor.exportProject.advancedSettings.mobLoot=Добыча от мобов	#
+resourcePack.editor.exportProject.advancedSettings.naturalRegeneration=Естественная регенерация	#
+resourcePack.editor.exportProject.advancedSettings.tileDrops=Выпадение плиток	#
+resourcePack.editor.exportProject.advancedSettings.immediateRespawn=Мгновенное возрождение	#
+resourcePack.editor.exportProject.advancedSettings.respawnRadius=Радиус возрождения	#
+resourcePack.editor.exportProject.advancedSettings.simulationDistance=Дистанция симуляции	#
+resourcePack.editor.exportProject.advancedSettings.bedsWork=Кровати работают	#
+resourcePack.editor.exportProject.advancedSettings.requiredSleepingPlayers=Необходимы спящие игроки (%1%)	#
+resourcePack.editor.exportProject.multiplayerSettings=Настройки сетевой игры	#
+resourcePack.editor.exportProject.multiplayerSettings.multiplayerGame=Многопользовательская игра	#
+resourcePack.editor.exportProject.multiplayerSettings.playerAccess=Доступ игрока	#
+resourcePack.editor.exportProject.multiplayerSettings.playerPermissions=Разрешения игрока	#
+resourcePack.editor.exportProject.multiplayerSettings.visibleToLAN=Видят игроки в локальной сети	#
+resourcePack.editor.exportProject.multiplayerSettings.friendlyFire=Огонь по своим	#
+resourcePack.editor.exportProject.cheatsSettings=Настройки отладки	#
+resourcePack.editor.exportProject.cheatsSettings.cheats=Читы	#
+resourcePack.editor.exportProject.cheatsSettings.daylightCycle=Смена дня и ночи	#
+resourcePack.editor.exportProject.cheatsSettings.keepInventory=Сохранять инвентарь	#
+resourcePack.editor.exportProject.cheatsSettings.mobSpawning=Появление мобов	#
+resourcePack.editor.exportProject.cheatsSettings.mobGriefing=След мобов	#
+resourcePack.editor.exportProject.cheatsSettings.entitiesDropLoot=Выпадение добычи из сущностей	#
+resourcePack.editor.exportProject.cheatsSettings.weatherCycle=Смена погоды	#
+resourcePack.editor.exportProject.cheatsSettings.commandBlocks=Командные блоки	#
+resourcePack.editor.exportProject.cheatsSettings.educationFeatures=Образовательные возможности	#
+resourcePack.editor.exportProject.cheatsSettings.randomTickSpeed=Случайная скорость такта	#
+resourcePack.editor.exportProject.export=Экспорт	#
+resourcePack.editor.exportProject.resetToDefault=Сбросить до значений по умолчанию	#
+resourcePack.editor.exportProject.gameMode.survival=Выживание	#
+resourcePack.editor.exportProject.gameMode.creative=Творческий	#
+resourcePack.editor.exportProject.gameMode.adventure=Приключение	#
+resourcePack.editor.exportProject.difficulty.peaceful=Мирно	#
+resourcePack.editor.exportProject.difficulty.easy=Легко	#
+resourcePack.editor.exportProject.difficulty.normal=Нормально	#
+resourcePack.editor.exportProject.difficulty.hard=Сложно	#
+
+
+resourcePack.editor.toolRail.ExtrudeTool.title=Инструмент «Экструдирование»	#
+resourcePack.editor.toolRail.ExtrudeTool.tooltip=Инструмент для расширения и уменьшения блоков	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.ContiguousSelectionBlockListSubPane.title=Список блоков смежного выбора	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.TrailingBlocksSettingsSubPane.title=Настройки примыкающих блоков	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.SampleLayerCount.title=Количество слоев образца	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.ContiguousSelectionSettings.title=Настройки смежного выделения	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.ContiguousSelectionType.title=Тип смежного выбора	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.ContiguousSelectionType.SameBlocks=Одинаковые блоки	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.ContiguousSelectionType.SameBlocksAndStates=Одинаковые блоки и состояния	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.ContiguousSelectionType.SolidBlocks=Сплошные блоки	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.ContiguousSelectionType.AllBlocks=Все блоки	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.ContiguousSelectionType.CustomBlockList=Список оригинальных блоков	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.ToleranceLevel.title=Уровень допустимого отклонения	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.HasAdjacentBlocks.title=Имеет соседние блоки	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.ExtruderSettings.title=Настройки экструдирования	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.Radius.title=Радиус	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.title=Режим выбора	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.ContiguousSelection=Смежный выбор	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.MarqueeSelection=Выбор области	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.ContiguousSettings.title=Настройки смежного выделения	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.TrailingBlocks.title=Примыкающие блоки	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.TrailingBlocksSettings.title=Настройки примыкающих блоков	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.QuickExtrudeSettings.title=Быстрые настройки экструдирования	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.QuickExtrudeMode.title=Режим быстрого экструдирования	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.QuickExtrudeMode.decrease.title=Меньше	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.QuickExtrudeMode.decrease.tooltip=Снизить экструдирование	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.QuickExtrudeMode.expand.title=Расширить	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.QuickExtrudeMode.expand.tooltip=Увеличить экструдирование	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.LayerCount.title=Количество слоев	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.ExtrusionType.title=Тип экструдирования	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.ExtrusionType.Extrude=Экструдировать	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.ExtrusionType.QuickExtrude=Быстрое экструдирование	#
+resourcePack.editor.toolRail.ExtrudeTool.keyBinding.deselect=Отменить выбор	#
+resourcePack.editor.toolRail.ExtrudeTool.keyBinding.toggleTool=Включить/выключить инструмент «Экструдирование»	#
+
+
+resourcePack.editor.toolRail.FarmGenerator.tool.title=Генератор фермы	#
+resourcePack.editor.toolRail.FarmGenerator.tool.tooltip=Моментально создает пользовательскую ферму	#
+resourcePack.editor.toolRail.FarmGenerator.pane.title=Генератор фермы	#
+resourcePack.editor.toolRail.FarmGenerator.pane.length=Длина	#
+resourcePack.editor.toolRail.FarmGenerator.pane.width=Ширина	#
+resourcePack.editor.toolRail.FarmGenerator.pane.fence=Забор	#
+resourcePack.editor.toolRail.FarmGenerator.pane.irrigation=Добавить полив	#
+resourcePack.editor.toolRail.FarmGenerator.pane.irrigation.tooltip=Добавляет водные блоки для орошения культур.	#
+resourcePack.editor.toolRail.FarmGenerator.pane.crops.title=Культуры	#
+resourcePack.editor.toolRail.FarmGenerator.pane.crops.wheat=Пшеница	#
+resourcePack.editor.toolRail.FarmGenerator.pane.crops.potato=Картофель	#
+resourcePack.editor.toolRail.FarmGenerator.pane.crops.beets=Свекла	#
+resourcePack.editor.toolRail.FarmGenerator.pane.crops.pumpkin=Тыква	#
+resourcePack.editor.toolRail.FarmGenerator.pane.crops.carrot=Морковь	#
+resourcePack.editor.toolRail.FarmGenerator.pane.animals.title=Животные	#
+resourcePack.editor.toolRail.FarmGenerator.pane.animals.cow=Корова	#
+resourcePack.editor.toolRail.FarmGenerator.pane.animals.sheep=Овца	#
+resourcePack.editor.toolRail.FarmGenerator.pane.animals.pig=Свинья	#
+resourcePack.editor.toolRail.FarmGenerator.keyBinding.toggleTool=Включить/выключить инструмент «Генератор фермы»	#
+resourcePack.editor.toolRail.FarmGenerator.keyBinding.place=Разместить ферму в точке, на которую указывает курсор	#
+
+
+resourcePack.editor.global.keyBinding.toggleMode=Вкл./выкл.	#
+
+
+resourcePack.editor.goToMark.actionBar.tooltip.description=Вспомогательная панель для навигации игрока	#
+resourcePack.editor.goToMark.actionBar.tooltip.title=Панель навигации	#
+resourcePack.editor.goToMark.pane.goToSpawn=Перейти к точке появления	#
+resourcePack.editor.goToMark.pane.location=Местоположение игрока	#
+resourcePack.editor.goToMark.pane.locationPane.delete=Удалить сохраненное местоположение	#
+resourcePack.editor.goToMark.pane.locationPane.dropdownLabel=Сохраненное местоположение	#
+resourcePack.editor.goToMark.pane.locationPane.inputName=Новое название	#
+resourcePack.editor.goToMark.pane.locationPane.markColor=Цвет метки местоположения	#
+resourcePack.editor.goToMark.pane.locationPane.store=Сохранить текущее местоположение как...	#
+resourcePack.editor.goToMark.pane.locationPane.teleport=Перенестись к сохраненному местоположению %1$s	#
+resourcePack.editor.goToMark.pane.locationPane.title=Сохраненные местоположения	#
+resourcePack.editor.goToMark.pane.mapSize=Размер карты	#
+resourcePack.editor.goToMark.pane.refreshMap=Обновить карту	#
+resourcePack.editor.goToMark.pane.setSpawn=Установить как текущую точку появления	#
+resourcePack.editor.goToMark.pane.showMap=Показать карту	#
+resourcePack.editor.goToMark.pane.teleport=Перенестись к местоположению	#
+resourcePack.editor.goToMark.title=Панель навигации	#
+
+
+resourcePack.editor.grapple.keyBinding.flyToCursor=Переместиться к курсору	#
+resourcePack.editor.grapple.keyBinding.flyToSelection=Переместиться к области выделения	#
+
+
+resourcePack.editor.locate.biome.find=Найти биом	#
+resourcePack.editor.locate.biome.title=Биом	#
+resourcePack.editor.locate.keyBinding.toggleTool=Включить/выключить инструмент «Обнаружение биомов»	#
+resourcePack.editor.locate.locatetype.biome=Биом	#
+resourcePack.editor.locate.locatetype.structure=Строение	#
+resourcePack.editor.locate.locatetype.title=Поиск по типу	#
+resourcePack.editor.locate.results.foundat.title=Найдено в:	#
+resourcePack.editor.locate.results.foundat=Найдено в:	#
+resourcePack.editor.locate.results.goto=Перейти к	#
+resourcePack.editor.locate.results.notfound.title=Результатов нет	#
+resourcePack.editor.locate.results.notfound=Ничего не найдено.	#
+resourcePack.editor.locate.results.title=Результаты	#
+resourcePack.editor.locate.structure.message=Поиск по строению в настоящее время не поддерживается.	#
+resourcePack.editor.locate.structure.title=Строение	#
+resourcePack.editor.locate.title=Обнаружить	#
+
+
+resourcePack.editor.menuBar.edit.copy=Копировать	#
+resourcePack.editor.menuBar.edit.cut=Вырезать	#
+resourcePack.editor.menuBar.edit.delete=Удалить	#
+resourcePack.editor.menuBar.edit.deselect=Отменить выбор	#
+resourcePack.editor.menuBar.edit.quickFill=Быстрое заполнение	#
+resourcePack.editor.menuBar.edit.quickPaste=Быстрая вставка	#
+resourcePack.editor.menuBar.edit.redo=Повторить действие	#
+resourcePack.editor.menuBar.edit.undo=Отменить	#
+resourcePack.editor.menuBar.edit=Изменить	#
+resourcePack.editor.menuBar.experimental=Экспериментальный	#
+resourcePack.editor.menuBar.extensions=Расширениe	#
+resourcePack.editor.menuBar.file.cursor.projectThroughLiquid=Проецировать через жидкость	#
+resourcePack.editor.menuBar.file.cursor=Настройки указателя	#
+resourcePack.editor.menuBar.file.export.project=Редактор проекта	#
+resourcePack.editor.menuBar.file.export.world=Играбельный мир	#
+resourcePack.editor.menuBar.file.export=Экспорт	#
+resourcePack.editor.menuBar.file.pauseScreen=Меню игры	#
+resourcePack.editor.menuBar.file.settings=Настройки интерфейса	#
+resourcePack.editor.menuBar.file=Файл	#
+resourcePack.editor.menuBar.help.documentation=Документация	#
+resourcePack.editor.menuBar.help.feedback=Обратная связь	#
+resourcePack.editor.menuBar.help.quickStart=Быстрый старт	#
+resourcePack.editor.menuBar.help=Справка	#
+resourcePack.editor.menuBar.locate=Обнаружить	#
+resourcePack.editor.menuBar.parentMenu.weather.clear=Очистить	#
+resourcePack.editor.menuBar.parentMenu.weather.rain=Дождь	#
+resourcePack.editor.menuBar.parentMenu.weather.thunder=Гроза	#
+resourcePack.editor.menuBar.parentMenu.weather=Погода	#
+resourcePack.editor.menuBar.view.blockPalette=Палитра блоков	#
+resourcePack.editor.menuBar.view.logging=Панель журнала	#
+resourcePack.editor.menuBar.view.navigationLogging=Запись навигации	#
+resourcePack.editor.menuBar.view=Просмотр	#
+resourcePack.editor.menuBar.worldOptions.changeDimension.end=Край	#
+resourcePack.editor.menuBar.worldOptions.changeDimension.nether=Нижний мир	#
+resourcePack.editor.menuBar.worldOptions.changeDimension.overworld=Верхний мир	#
+resourcePack.editor.menuBar.worldOptions.changeDimension=Изменить измерение	#
+resourcePack.editor.menuBar.worldOptions.pause.entities=Сущности	#
+resourcePack.editor.menuBar.worldOptions.pause=Пауза	#
+resourcePack.editor.menuBar.worldOptions=Параметры мира	#
+
+
+resourcePack.editor.navigation.keyBinding.add=Добавить точку для навигации	#
+resourcePack.editor.navigation.keyBinding.next=Перейти к следующей точке навигации	#
+resourcePack.editor.navigation.keyBinding.previous=Перейти к предыдущей точке навигации	#
+
+
+resourcePack.editor.paste.pane.submitButton=Подтвердить вставку	#
+resourcePack.editor.paste.pane.title=Вставить	#
+resourcePack.editor.paste.pane.transform.mirrorX=Отражение оси координат X	#
+resourcePack.editor.paste.pane.transform.mirrorZ=Отражение оси координат Z	#
+resourcePack.editor.paste.pane.transform.origin.title=Смещение	#
+resourcePack.editor.paste.pane.transform.rotation.180=180°	#
+resourcePack.editor.paste.pane.transform.rotation.270=270°	#
+resourcePack.editor.paste.pane.transform.rotation.90=90°	#
+resourcePack.editor.paste.pane.transform.rotation.none=0°	#
+resourcePack.editor.paste.pane.transform.rotation.title=Повернуть	#
+resourcePack.editor.paste.pane.transform.title=Превратить	#
+resourcePack.editor.paste.toolRail.description=Щелкните левой кнопкой мыши, чтобы выбрать блок, а затем вставить предмет из буфера обмена	#
+resourcePack.editor.paste.toolRail.title=Вставить пред. версию	#
+
+
+resourcePack.editor.pastepreview.inputContext.title=Вставить предварительную версию	#
+resourcePack.editor.pastepreview.keyBinding.clearPreview=Очистить область предварительного просмотра	#
+resourcePack.editor.pastepreview.keyBinding.copy=Копировать область выделения	#
+resourcePack.editor.pastepreview.keyBinding.cut=Вырезать область выделения	#
+resourcePack.editor.pastepreview.keyBinding.moveBack=Переместить область предварительного просмотра назад	#
+resourcePack.editor.pastepreview.keyBinding.moveDown=Переместить область предварительного просмотра вниз	#
+resourcePack.editor.pastepreview.keyBinding.moveForward=Переместить область предварительного просмотра вперед	#
+resourcePack.editor.pastepreview.keyBinding.moveLeft=Переместить область предварительного просмотра влево	#
+resourcePack.editor.pastepreview.keyBinding.moveOffsetBack=Переместить область смещения назад	#
+resourcePack.editor.pastepreview.keyBinding.moveOffsetDown=Переместить область смещения вниз	#
+resourcePack.editor.pastepreview.keyBinding.moveOffsetForward=Переместить область смещения вперед	#
+resourcePack.editor.pastepreview.keyBinding.moveOffsetLeft=Переместить область смещения влево	#
+resourcePack.editor.pastepreview.keyBinding.moveOffsetRight=Переместить область смещения вправо	#
+resourcePack.editor.pastepreview.keyBinding.moveOffsetUp=Переместить область смещения вверх	#
+resourcePack.editor.pastepreview.keyBinding.moveOriginBack=Переместить точку начала координат назад	#
+resourcePack.editor.pastepreview.keyBinding.moveOriginDown=Переместить точку начала координат вниз	#
+resourcePack.editor.pastepreview.keyBinding.moveOriginForward=Переместить точку начала координат вперед	#
+resourcePack.editor.pastepreview.keyBinding.moveOriginLeft=Переместить точку начала координат влево	#
+resourcePack.editor.pastepreview.keyBinding.moveOriginRight=Переместить точку начала координат вправо	#
+resourcePack.editor.pastepreview.keyBinding.moveOriginUp=Переместить точку начала координат вверх	#
+resourcePack.editor.pastepreview.keyBinding.moveRight=Переместить область предварительного просмотра вправо	#
+resourcePack.editor.pastepreview.keyBinding.moveUp=Переместить область предварительного просмотра вверх	#
+resourcePack.editor.pastepreview.keyBinding.paste=Вставить	#
+resourcePack.editor.pastepreview.keyBinding.pasteAtCursor=Вставить в точке, на которую указывает курсор	#
+resourcePack.editor.pastepreview.keyBinding.pastepreview=Вставить предварительную версию	#
+resourcePack.editor.pastepreview.keyBinding.quickPaste=Быстрая вставка	#
+resourcePack.editor.pastepreview.keyBinding.rotateClockWise=Повернуть область предварительного просмотра по часовой стрелке	#
+resourcePack.editor.pastepreview.keyBinding.rotateCounterClockWise=Повернуть область предварительного просмотра против часовой стрелки	#
+resourcePack.editor.pastepreview.keyBinding.toggleAdjacentTarget=Включить/выключить режим соседней цели	#
+resourcePack.editor.pastepreview.keyBinding.toggleBlockTarget=Включить/выключить режим блокировки цели	#
+resourcePack.editor.pastepreview.keyBinding.toggleFixedDistance=Включить фиксированное расстояние	#
+resourcePack.editor.pastepreview.keyBinding.toggleMirrorX=Включить/выключить отражение оси координат X	#
+resourcePack.editor.pastepreview.keyBinding.toggleMirrorZ=Включить/выключить отражение оси координат Z	#
+resourcePack.editor.pastepreview.keyBinding.toggleMouseTracking=Перекл. отслеж. мыши	#
+resourcePack.editor.pastepreview.pane.controls.cursor.fixed=Фиксированное расстояние	#
+resourcePack.editor.pastepreview.pane.controls.cursor.keyboard=Только клавиши	#
+resourcePack.editor.pastepreview.pane.controls.cursor.mouseandkeys=Мышь и клавиатура	#
+resourcePack.editor.pastepreview.pane.controls.cursor.target.block=Заблокировать	#
+resourcePack.editor.pastepreview.pane.controls.cursor.target.face=Рядом	#
+resourcePack.editor.pastepreview.pane.controls.cursor.target.title=Мишень	#
+resourcePack.editor.pastepreview.pane.controls.cursor=Управление	#
+resourcePack.editor.pastepreview.pane.controls.title=Управление курсора	#
+resourcePack.editor.pastepreview.pane.placement.mirrorX=Отражение оси координат X	#
+resourcePack.editor.pastepreview.pane.placement.mirrorZ=Отражение оси координат Z	#
+resourcePack.editor.pastepreview.pane.placement.offset=Смещение	#
+resourcePack.editor.pastepreview.pane.placement.origin=Начало координат	#
+resourcePack.editor.pastepreview.pane.placement.pastebutton=Вставить	#
+resourcePack.editor.pastepreview.pane.placement.rotation=Поворот (ось Y)	#
+resourcePack.editor.pastepreview.pane.placement.title=Настройки размещения	#
+resourcePack.editor.pastepreview.pane.root.size=Размер	#
+resourcePack.editor.pastepreview.pane.root.title=Вставить пред. версию	#
+resourcePack.editor.pastepreview.tool.tip=Используйте мышь, чтобы настроить положение предварительного просмотра из буфера обмена, а затем вставьте его в мир	#
+resourcePack.editor.pastepreview.tool.title=Вставить пред. версию	#
+
+
+resourcePack.editor.playerPositionExtension.dimension=Измерение	#
+resourcePack.editor.playerPositionExtension.menu.player=Игрок	#
+resourcePack.editor.playerPositionExtension.menu.showPlayerSettings=Показать настройки игрока	#
+resourcePack.editor.playerPositionExtension.nether=Нижний мир	#
+resourcePack.editor.playerPositionExtension.overworld=Верхний мир	#
+resourcePack.editor.playerPositionExtension.pane=Настройки игрока	#
+resourcePack.editor.playerPositionExtension.theEnd=Край	#
+resourcePack.editor.playerPositionExtension.worldSettings=Настройки мира	#
+
+
+resourcePack.editor.playtest.AdvancedSettings.title=Расширенные настройки	#
+resourcePack.editor.playtest.Dialog.DaylightCycle=Смена дня и ночи	#
+resourcePack.editor.playtest.Dialog.Difficulty=Уровень сложности	#
+resourcePack.editor.playtest.Dialog.GameMode=Режим игры	#
+resourcePack.editor.playtest.Dialog.OverrideSpawn=Начать игру в текущей точке	#
+resourcePack.editor.playtest.Dialog.ShowCoordinates=Показать координаты	#
+resourcePack.editor.playtest.Dialog.TestButton=Протестировать мир	#
+resourcePack.editor.playtest.Dialog.TimeOfDay=Время суток	#
+resourcePack.editor.playtest.Dialog.Title=Настройки тестирования	#
+resourcePack.editor.playtest.Dialog.Weather=Погода	#
+resourcePack.editor.playtest.Dialog.WeatherCycle=Смена погоды	#
+resourcePack.editor.playtest.Menu.Title=Протестировать мир	#
+resourcePack.editor.playtest.Title.Tooltip=Протестируйте созданный вами мир в игре. Изменения мира сохранены не будут. Доступно только во время запуска одиночного проекта.	#
+
+
+resourcePack.editor.playtestResult.EditorSystemFailure=Ошибка в работе системы редактора	#
+resourcePack.editor.playtestResult.InvalidLevelId=Номер уровня недействителен	#
+resourcePack.editor.playtestResult.InvalidSessionHandle=Недопустимое название сессии	#
+resourcePack.editor.playtestResult.OK=Успешно	#
+resourcePack.editor.playtestResult.PlayerNotFound=Игрок не найден	#
+resourcePack.editor.playtestResult.ResponseTimeout=Время ожидания ответа	#
+resourcePack.editor.playtestResult.SessionInfoNotFound=Информация о сессии не найдена	#
+resourcePack.editor.playtestResult.TooManyPlayers=Вы не можете тестировать мир, пока в нем находятся другие игроки	#
+resourcePack.editor.playtestResult.UnspecifiedError=Неизвестная ошибка	#
+resourcePack.editor.playtestResult.UnsupportedScenario=Вы должны запустить редактор проекта для тестирования мира	#
+resourcePack.editor.playtestResult.WorldExportBusy=Загруженность экспорта мира	#
+resourcePack.editor.playtestResult.WorldExportFailed=Сбой экспорта мира	#
+
+
+resourcePack.editor.toolRail.RepeaterTool.title=Инструмент «Повторитель»	#
+resourcePack.editor.toolRail.RepeaterTool.tooltip=Инструмент для повторного выделенного объема	#
+resourcePack.editor.toolRail.RepeaterTool.pane.Spacing=Интервал	#
+resourcePack.editor.toolRail.RepeaterTool.pane.Repetitions=Повторения	#
+resourcePack.editor.toolRail.RepeaterTool.pane.Preview=Предварительный просмотр	#
+resourcePack.editor.toolRail.RepeaterTool.pane.Clear=Очистить	#
+resourcePack.editor.toolRail.RepeaterTool.pane.Apply=Применить	#
+resourcePack.editor.toolRail.RepeaterTool.statusMessage.noSelection=Используйте инструмент «Выбор», чтобы выбрать объем для повтора	#
+
+
+resourcePack.editor.selectionTool.deselect=Отменить выбор	#
+resourcePack.editor.selectionTool.fillPane.fillAction=Заполнить выделение	#
+resourcePack.editor.selectionTool.fillPane.title=Выбор заполнения	#
+resourcePack.editor.selectionTool.keyBinding.deselect=Снять выделение	#
+resourcePack.editor.selectionTool.keyBinding.fill=Заполнить содержимое выделения	#
+resourcePack.editor.selectionTool.keyBinding.growBack=Увеличить область выделения назад	#
+resourcePack.editor.selectionTool.keyBinding.growDown=Увеличить область выделения вниз	#
+resourcePack.editor.selectionTool.keyBinding.growForward=Увеличить область выделения вперед	#
+resourcePack.editor.selectionTool.keyBinding.growLeft=Увеличить область выделения влево	#
+resourcePack.editor.selectionTool.keyBinding.growRight=Увеличить область выделения вправо	#
+resourcePack.editor.selectionTool.keyBinding.growUp=Увеличить область выделения вверх	#
+resourcePack.editor.selectionTool.keyBinding.moveAllSelectionBack=Переместить всю область выделения назад	#
+resourcePack.editor.selectionTool.keyBinding.moveAllSelectionDown=Переместить всю область выделения вниз	#
+resourcePack.editor.selectionTool.keyBinding.moveAllSelectionForward=Переместить всю область выделения вперед	#
+resourcePack.editor.selectionTool.keyBinding.moveAllSelectionLeft=Переместить всю область выделения влево	#
+resourcePack.editor.selectionTool.keyBinding.moveAllSelectionRight=Переместить всю область выделения вправо	#
+resourcePack.editor.selectionTool.keyBinding.moveAllSelectionUp=Переместить всю область выделения вверх	#
+resourcePack.editor.selectionTool.keyBinding.moveCursorBack=Переместить курсор назад	#
+resourcePack.editor.selectionTool.keyBinding.moveCursorDown=Переместить курсор вниз	#
+resourcePack.editor.selectionTool.keyBinding.moveCursorForward=Переместить курсор вперед	#
+resourcePack.editor.selectionTool.keyBinding.moveCursorLeft=Переместить курсор влево	#
+resourcePack.editor.selectionTool.keyBinding.moveCursorRight=Переместить курсор вправо	#
+resourcePack.editor.selectionTool.keyBinding.moveCursorUp=Переместить курсор вверх	#
+resourcePack.editor.selectionTool.keyBinding.moveSelectionBack=Переместить область выделения назад	#
+resourcePack.editor.selectionTool.keyBinding.moveSelectionDown=Переместить область выделения вниз	#
+resourcePack.editor.selectionTool.keyBinding.moveSelectionForward=Переместить область выделения вперед	#
+resourcePack.editor.selectionTool.keyBinding.moveSelectionLeft=Переместить область выделения влево	#
+resourcePack.editor.selectionTool.keyBinding.moveSelectionRight=Переместить область выделения вправо	#
+resourcePack.editor.selectionTool.keyBinding.moveSelectionUp=Переместить область выделения вверх	#
+resourcePack.editor.selectionTool.keyBinding.shrinkBack=Уменьшить область выделения сзади	#
+resourcePack.editor.selectionTool.keyBinding.shrinkDown=Уменьшить область выделения снизу	#
+resourcePack.editor.selectionTool.keyBinding.shrinkForward=Уменьшить область выделения спереди	#
+resourcePack.editor.selectionTool.keyBinding.shrinkLeft=Уменьшить область выделения слева	#
+resourcePack.editor.selectionTool.keyBinding.shrinkRight=Уменьшить область выделения справа	#
+resourcePack.editor.selectionTool.keyBinding.shrinkUp=Уменьшить область выделения сверху	#
+resourcePack.editor.selectionTool.keyBinding.toggleTool=Вкл./выкл. «Выделение»	#
+resourcePack.editor.selectionTool.marquee.title=Выбор области	#
+resourcePack.editor.selectionTool.modeSelection.freehand.title=Режим свободной кисти	#
+resourcePack.editor.selectionTool.modeSelection.freehand.tooltip=Выберите блоки в мире, используя форму свободной кисти	#
+resourcePack.editor.selectionTool.modeSelection.marquee.title=Режим выделяющей рамки	#
+resourcePack.editor.selectionTool.modeSelection.marquee.tooltip=Выберите блоки в мире, используя прямоугольное выделение	#
+resourcePack.editor.selectionTool.modeSelection.title=Режим выбора	#
+resourcePack.editor.selectionTool.projectThroughLiquid=Проецировать через жидкость	#
+resourcePack.editor.selectionTool.quickAction.clearSelection.tooltip=Отменить выбор выделения	#
+resourcePack.editor.selectionTool.quickAction.clearSelection=Отменить выбор	#
+resourcePack.editor.selectionTool.quickAction.deleteSelection.tooltip=Отменить выбор всех выделенных блоков	#
+resourcePack.editor.selectionTool.quickAction.deleteSelection=Удалить	#
+resourcePack.editor.selectionTool.quickAction.fillSelection.tooltip=Заполнить объем выбранных блоков определенным типом блока	#
+resourcePack.editor.selectionTool.quickAction.fillSelection=Заполнение	#
+resourcePack.editor.selectionTool.quickAction.title=Быстрые действия	#
+resourcePack.editor.selectionTool.selectionMode.adjacent=Рядом	#
+resourcePack.editor.selectionTool.selectionMode.fixedDistance=Фиксированное расстояние	#
+resourcePack.editor.selectionTool.selectionMode.mouseAndKeyboard=Свободный режим	#
+resourcePack.editor.selectionTool.selectionMode=Режим	#
+resourcePack.editor.selectionTool.settingsPane.title=Выделение	#
+resourcePack.editor.selectionTool.toolRail.description=Щелкните левой кнопкой мыши для создания выделенной области. Нажмите CTRL + D, чтобы отменить выделение	#
+resourcePack.editor.selectionTool.toolRail.title=Выбор	#
+resourcePack.editor.selectionTool.transformPane.origin.tooltip=Исходное местоположение выделения в мировых координатах.	#
+resourcePack.editor.selectionTool.transformPane.origin=Начало координат	#
+resourcePack.editor.selectionTool.transformPane.size=Размер	#
+resourcePack.editor.selectionTool.transformPane.title=Превратить	#
+
+
 resourcePack.editor.server.description=Серверные ресурсы редактора	#
 resourcePack.editor.server.name=Ресурсы редактора	#
 
-resourcePack.editor.global.keyBinding.toggleMode=Вкл./выкл.	#
+
+resourcePack.editor.toolRail.Terrain.title=Местность	#
+resourcePack.editor.toolRail.Terrain.Mode.title=Режим терраформирования	#
+resourcePack.editor.toolRail.Terrain.Smooth.mode.title=Плавный режим	#
+resourcePack.editor.toolRail.Terrain.Smooth.tooltip=Сглаживание рельефа зависит от настройки	#
+resourcePack.editor.toolRail.Terrain.SmoothStrength=Сила сглаживания	#
+resourcePack.editor.toolRail.Terrain.description=Инструмент для терраформирования сглаживает или делает рельеф более шероховатым	#
+
+
+resourcePack.editor.help.learnMore=Подробнее	#
+
+resourcePack.editor.statusBar.connectedPlayers=Подключившиеся игроки: %s	#
+
+
+resourcePack.editor.summonTool.summonSubPane.EntityPickerTitle=Тип сущности	#
+
+
+resourcePack.editor.timeOfDay.12hrClock=12-часовой формат	#
+resourcePack.editor.timeOfDay.24hrClock=24-часовой формат	#
+resourcePack.editor.timeOfDay.clockType=Тип часов	#
+resourcePack.editor.timeOfDay.currentTime=Текущее время	#
+resourcePack.editor.timeOfDay.customTime=Пользовательское время	#
+resourcePack.editor.timeOfDay.daylightCycle=Смена дня и ночи	#
+resourcePack.editor.timeOfDay.dropDown.day=День	#
+resourcePack.editor.timeOfDay.dropDown.midnight=Полночь	#
+resourcePack.editor.timeOfDay.dropDown.night=Ночь	#
+resourcePack.editor.timeOfDay.dropDown.none=Отсутствует	#
+resourcePack.editor.timeOfDay.dropDown.noon=Полдень	#
+resourcePack.editor.timeOfDay.dropDown.sunrise=Восход	#
+resourcePack.editor.timeOfDay.dropDown.sunset=Закат	#
+resourcePack.editor.timeOfDay.dropDown.title=Заготовки	#
+resourcePack.editor.timeOfDay.menu.title=Настройки времени суток	#
+resourcePack.editor.timeOfDay.minecraftClock=Часы Minecraft	#
+resourcePack.editor.timeOfDay.title=Настройки времени	#
+
 
 resourcePack.editor.toolMode.keyBinding.console=Открыть консоль	#
 resourcePack.editor.toolMode.keyBinding.devConsole=Открыть консоль разработчика	#
@@ -22,509 +626,94 @@ resourcePack.editor.toolMode.keyBinding.hotbar7=Выбрать панель бы
 resourcePack.editor.toolMode.keyBinding.hotbar8=Выбрать панель быстрого доступа 8	#
 resourcePack.editor.toolMode.keyBinding.hotbar9=Выбрать панель быстрого доступа 9	#
 
-resourcePack.editor.viewport.keyBinding.moveUp=Движение вверх	#
-resourcePack.editor.viewport.keyBinding.moveDown=Движение вниз	#
-resourcePack.editor.viewport.keyBinding.moveLeft=Движение влево	#
-resourcePack.editor.viewport.keyBinding.moveRight=Движение вправо	#
-resourcePack.editor.viewport.keyBinding.moveForward=Движение вперед	#
-resourcePack.editor.viewport.keyBinding.moveBack=Движение назад	#
-
-resourcePack.editor.locate.title=Обнаружить	#
-resourcePack.editor.locate.locatetype.title=Поиск по типу	#
-resourcePack.editor.locate.locatetype.biome=Биом	#
-resourcePack.editor.locate.locatetype.structure=Строение	#
-resourcePack.editor.locate.biome.title=Биом	#
-resourcePack.editor.locate.biome.find=Найти биом	#
-resourcePack.editor.locate.structure.title=Строение	#
-resourcePack.editor.locate.structure.message=Поиск по строению в настоящее время не поддерживается.	#
-resourcePack.editor.locate.results.title=Результаты	#
-resourcePack.editor.locate.results.foundat.title=Найдено в:	#
-resourcePack.editor.locate.results.foundat=Найдено в:	#
-resourcePack.editor.locate.results.notfound.title=Результатов нет	#
-resourcePack.editor.locate.results.notfound=Ничего не найдено.	#
-resourcePack.editor.locate.keyBinding.toggleTool=Включить/выключить инструмент «Обнаружение биомов»	#
-resourcePack.editor.locate.results.goto=Перейти к	#
-
-resourcePack.editor.statusBar.connectedPlayers=Подключившиеся игроки: %s	#
-
-resourcePack.editor.brushShape.common.settings.uniform=Юниформ	#
-resourcePack.editor.brushShape.common.settings.radius=Радиус	#
-resourcePack.editor.brushShape.common.settings.length=Длина	#
-resourcePack.editor.brushShape.common.settings.axis=Ось растяжения	#
-resourcePack.editor.brushShape.common.settings.xAxis=Ось X	#
-resourcePack.editor.brushShape.common.settings.yAxis=Ось Y	#
-resourcePack.editor.brushShape.common.settings.zAxis=Ось Z	#
-resourcePack.editor.brushShape.common.settings.xAxisNeg=Ось X	#
-resourcePack.editor.brushShape.common.settings.yAxisNeg=Ось Y	#
-resourcePack.editor.brushShape.common.settings.zAxisNeg=Ось Z	#
-
-resourcePack.editor.brushShape.cylinder.name=Цилиндр	#
-resourcePack.editor.brushShape.cylinder.settings.width=Радиус ширины	#
-resourcePack.editor.brushShape.cylinder.settings.depth=Радиус глубины	#
-
-resourcePack.editor.brushShape.cone.name=Конус	#
-resourcePack.editor.brushShape.cone.settings.length=Длина растяжения	#
-resourcePack.editor.brushShape.cone.settings.width=Радиус ширины	#
-resourcePack.editor.brushShape.cone.settings.depth=Радиус глубины	#
-
-resourcePack.editor.brushShape.cuboid.name=Кубоид	#
-resourcePack.editor.brushShape.cuboid.settings.x_length=Длина X	#
-resourcePack.editor.brushShape.cuboid.settings.y_length=Длина Y	#
-resourcePack.editor.brushShape.cuboid.settings.z_length=Длина Z	#
-
-resourcePack.editor.brushShape.singleBlock.name=Одиночный блок	#
-
-resourcePack.editor.brushShape.pyramid.name=Пирамида	#
-resourcePack.editor.brushShape.pyramid.settings.width=Ширина	#
-resourcePack.editor.brushShape.pyramid.settings.depth=Интенсивность	#
-resourcePack.editor.brushShape.pyramid.settings.length=Длина	#
-
-resourcePack.editor.brushShape.ellipsoid.name=Эллипсоид	#
-resourcePack.editor.brushShape.ellipsoid.settings.x_radius=Радиус X	#
-resourcePack.editor.brushShape.ellipsoid.settings.y_radius=Радиус Y	#
-resourcePack.editor.brushShape.ellipsoid.settings.z_radius=Радиус Z	#
-
-resourcePack.editor.toolRail.floodFillSelectionTool.title=Инструмент выбора сплошной заливки.	#
-resourcePack.editor.toolRail.floodFillSelectionTool.description=Выбирает область, которую вы просматриваете в настоящее время, используя алгоритм сплошной заливки.	#
-resourcePack.editor.playerPositionExtension.dimension=Измерение	#
-resourcePack.editor.playerPositionExtension.menu.player=Игрок	#
-resourcePack.editor.playerPositionExtension.menu.showPlayerSettings=Показать настройки игрока	#
-resourcePack.editor.playerPositionExtension.nether=Нижний мир	#
-resourcePack.editor.playerPositionExtension.overworld=Верхний мир	#
-resourcePack.editor.playerPositionExtension.pane=Настройки игрока	#
-resourcePack.editor.playerPositionExtension.theEnd=Край	#
-resourcePack.editor.playerPositionExtension.worldSettings=Настройки мира	#
-resourcePack.editor.paste.toolRail.title=Вставить предварительную версию	#
-resourcePack.editor.paste.toolRail.description=Щелкните левой кнопкой мыши, чтобы выбрать блок, а затем вставить предмет из буфера обмена	#
-resourcePack.editor.paste.pane.title=Вставить	#
-resourcePack.editor.paste.pane.submitButton=Подтвердить вставку	#
-resourcePack.editor.paste.pane.transform.title=Превратить	#
-resourcePack.editor.paste.pane.transform.origin.title=Смещение	#
-resourcePack.editor.paste.pane.transform.rotation.title=Повернуть	#
-resourcePack.editor.paste.pane.transform.rotation.none=0°	#
-resourcePack.editor.paste.pane.transform.rotation.90=90°	#
-resourcePack.editor.paste.pane.transform.rotation.180=180°	#
-resourcePack.editor.paste.pane.transform.rotation.270=270	#
-resourcePack.editor.paste.pane.transform.mirrorX=Отражение оси координат X	#
-resourcePack.editor.paste.pane.transform.mirrorZ=Отражение оси координат Z	#
-
-resourcePack.editor.core.keyBinding.showLogPanel=Показать панель журнала	#
-resourcePack.editor.core.keyBinding.showGameMenu=Показать игровое меню	#
-
-resourcePack.editor.delete.keyBinding=Удалить содержимое области выделения	#
-
-resourcePack.editor.navigation.keyBinding.add=Добавить точку для навигации	#
-resourcePack.editor.navigation.keyBinding.previous=Перейти к предыдущей точке навигации	#
-resourcePack.editor.navigation.keyBinding.next=Перейти к следующей точке навигации	#
-
-resourcePack.editor.transaction.keyBinding.undo=Отменить	#
-resourcePack.editor.transaction.keyBinding.redo=Повторить действие	#
-
-resourcePack.editor.goToMark.title=Панель навигации	#
-resourcePack.editor.goToMark.actionBar.tooltip.title=Панель навигации	#
-resourcePack.editor.goToMark.actionBar.tooltip.description=Вспомогательная панель для навигации игрока	#
-resourcePack.editor.goToMark.pane.showMap=Показать карту	#
-resourcePack.editor.goToMark.pane.mapSize=Размер карты	#
-resourcePack.editor.goToMark.pane.refreshMap=Обновить карту	#
-resourcePack.editor.goToMark.pane.location=Местоположение игрока	#
-resourcePack.editor.goToMark.pane.teleport=Перенестись к местоположению	#
-resourcePack.editor.goToMark.pane.setSpawn=Установить как текущую точку появления	#
-resourcePack.editor.goToMark.pane.goToSpawn=Перейти к точке появления	#
-resourcePack.editor.goToMark.pane.locationPane.title=Сохраненные местоположения	#
-resourcePack.editor.goToMark.pane.locationPane.markColor=Цвет метки местоположения	#
-resourcePack.editor.goToMark.pane.locationPane.teleport=Перенестись к сохраненному местоположению %1$s	#
-resourcePack.editor.goToMark.pane.locationPane.delete=Удалить сохраненное местоположение	#
-resourcePack.editor.goToMark.pane.locationPane.inputName=Новое название	#
-resourcePack.editor.goToMark.pane.locationPane.store=Сохранить текущее местоположение как...	#
-resourcePack.editor.goToMark.pane.locationPane.dropdownLabel=Сохраненное местоположение	#
-
-resourcePack.editor.grapple.keyBinding.flyToCursor=Переместиться к курсору	#
-resourcePack.editor.grapple.keyBinding.flyToSelection=Переместиться к области выделения	#
-
-resourcePack.editor.selectionTool.modeSelection.title=Режим выбора	#
-resourcePack.editor.selectionTool.modeSelection.marquee.title=Режим выделяющей рамки	#
-resourcePack.editor.selectionTool.modeSelection.marquee.tooltip=Выберите блоки в мире, используя прямоугольное выделение	#
-resourcePack.editor.selectionTool.modeSelection.freehand.title=Режим свободной кисти	#
-resourcePack.editor.selectionTool.modeSelection.freehand.tooltip=Выберите блоки в мире, используя форму свободной кисти	#
-
-resourcePack.editor.selectionTool.deselect=Отменить выбор	#
-resourcePack.editor.selectionTool.fillPane.title=Выбор заполнения	#
-resourcePack.editor.selectionTool.fillPane.fillAction=Заполнить выделение	#
-resourcePack.editor.selectionTool.toolRail.title=Выбор	#
-resourcePack.editor.selectionTool.toolRail.description=Щелкните левой кнопкой мыши для создания выделенной области. Нажмите CTRL + D, чтобы отменить выделение	#
-resourcePack.editor.selectionTool.selectionMode=Режим	#
-resourcePack.editor.selectionTool.selectionMode.mouseAndKeyboard=Свободный режим	#
-resourcePack.editor.selectionTool.selectionMode.fixedDistance=Фиксированное расстояние	#
-resourcePack.editor.selectionTool.selectionMode.adjacent=Рядом	#
-resourcePack.editor.selectionTool.settingsPane.title=Выделение	#
-resourcePack.editor.selectionTool.transformPane.title=Превратить	#
-resourcePack.editor.selectionTool.transformPane.origin=Начало координат	#
-resourcePack.editor.selectionTool.transformPane.origin.tooltip=Исходное местоположение выделенного объема в мировых координатах.	#
-resourcePack.editor.selectionTool.transformPane.size=Размер	#
-resourcePack.editor.selectionTool.quickAction.title=Быстрые действия	#
-resourcePack.editor.selectionTool.quickAction.clearSelection=Отменить выбор	#
-resourcePack.editor.selectionTool.quickAction.clearSelection.tooltip=Отменить выбор выделенных блоков	#
-resourcePack.editor.selectionTool.quickAction.fillSelection=Заполнение	#
-resourcePack.editor.selectionTool.quickAction.fillSelection.tooltip=Заполнить объем выбранных блоков определенным типом блока	#
-resourcePack.editor.selectionTool.projectThroughLiquid=Проецировать через жидкость	#
-resourcePack.editor.selectionTool.keyBinding.moveCursorForward=Переместить курсор вперед	#
-resourcePack.editor.selectionTool.keyBinding.moveCursorBack=Переместить курсор назад	#
-resourcePack.editor.selectionTool.keyBinding.moveCursorLeft=Переместить курсор влево	#
-resourcePack.editor.selectionTool.keyBinding.moveCursorRight=Переместить курсор вправо	#
-resourcePack.editor.selectionTool.keyBinding.moveCursorUp=Переместить курсор вверх	#
-resourcePack.editor.selectionTool.keyBinding.moveCursorDown=Переместить курсор вниз	#
-resourcePack.editor.selectionTool.keyBinding.moveSelectionForward=Переместить область выделения вперед	#
-resourcePack.editor.selectionTool.keyBinding.moveSelectionBack=Переместить область выделения назад	#
-resourcePack.editor.selectionTool.keyBinding.moveSelectionLeft=Переместить область выделения влево	#
-resourcePack.editor.selectionTool.keyBinding.moveSelectionRight=Переместить область выделения вправо	#
-resourcePack.editor.selectionTool.keyBinding.moveSelectionUp=Переместить область выделения вверх	#
-resourcePack.editor.selectionTool.keyBinding.moveSelectionDown=Переместить область выделения вниз	#
-resourcePack.editor.selectionTool.keyBinding.moveAllSelectionForward=Переместить всю область выделения вперед	#
-resourcePack.editor.selectionTool.keyBinding.moveAllSelectionBack=Переместить всю область выделения назад	#
-resourcePack.editor.selectionTool.keyBinding.moveAllSelectionLeft=Переместить всю область выделения влево	#
-resourcePack.editor.selectionTool.keyBinding.moveAllSelectionRight=Переместить всю область выделения вправо	#
-resourcePack.editor.selectionTool.keyBinding.moveAllSelectionUp=Переместить всю область выделения вверх	#
-resourcePack.editor.selectionTool.keyBinding.moveAllSelectionDown=Переместить всю область выделения вниз	#
-resourcePack.editor.selectionTool.keyBinding.growForward=Увеличить область выделения вперед	#
-resourcePack.editor.selectionTool.keyBinding.growBack=Увеличить область выделения назад	#
-resourcePack.editor.selectionTool.keyBinding.growLeft=Увеличить область выделения влево	#
-resourcePack.editor.selectionTool.keyBinding.growRight=Увеличить область выделения вправо	#
-resourcePack.editor.selectionTool.keyBinding.growUp=Увеличить область выделения вверх	#
-resourcePack.editor.selectionTool.keyBinding.growDown=Увеличить область выделения вниз	#
-resourcePack.editor.selectionTool.keyBinding.shrinkForward=Уменьшить область выделения спереди	#
-resourcePack.editor.selectionTool.keyBinding.shrinkBack=Уменьшить область выделения сзади	#
-resourcePack.editor.selectionTool.keyBinding.shrinkLeft=Уменьшить область выделения слева	#
-resourcePack.editor.selectionTool.keyBinding.shrinkRight=Уменьшить область выделения справа	#
-resourcePack.editor.selectionTool.keyBinding.shrinkUp=Уменьшить область выделения сверху	#
-resourcePack.editor.selectionTool.keyBinding.shrinkDown=Уменьшить область выделения снизу	#
-resourcePack.editor.selectionTool.keyBinding.toggleTool=Включить/выключить инструмент «Выделение»	#
-resourcePack.editor.selectionTool.keyBinding.fill=Заполнить содержимое выделения	#
-resourcePack.editor.selectionTool.keyBinding.deselect=Снять выделение	#
-
-resourcePack.editor.actionBar.redo=Повторить	#
-resourcePack.editor.actionBar.redo.tooltipTitle=Повторить действие	#
-resourcePack.editor.actionBar.redo.tooltipDescription=Повторить операцию	#
-resourcePack.editor.actionBar.undo=Отменить	#
-resourcePack.editor.actionBar.undo.tooltipTitle=Отменить	#
-resourcePack.editor.actionBar.undo.tooltipDescription=Отменить операцию	#
-
-resourcePack.editor.menuBar.file=Файл	#
-resourcePack.editor.menuBar.file.export=Экспорт	#
-resourcePack.editor.menuBar.file.export.world=Играбельный мир	#
-resourcePack.editor.menuBar.file.export.project=Редактор проекта	#
-resourcePack.editor.menuBar.file.pauseScreen=Меню игры	#
-resourcePack.editor.menuBar.file.settings=Настройки интерфейса	#
-resourcePack.editor.menuBar.file.cursor=Настройки указателя	#
-resourcePack.editor.menuBar.file.cursor.projectThroughLiquid=Проецировать через жидкость	#
-resourcePack.editor.menuBar.edit=Изменить	#
-resourcePack.editor.menuBar.edit.undo=Отменить	#
-resourcePack.editor.menuBar.edit.redo=Повторить действие	#
-resourcePack.editor.menuBar.edit.deselect=Отменить выбор	#
-resourcePack.editor.menuBar.edit.cut=Вырезать	#
-resourcePack.editor.menuBar.edit.copy=Копировать	#
-resourcePack.editor.menuBar.edit.quickPaste=Быстрая вставка	#
-resourcePack.editor.menuBar.edit.quickFill=Быстрое заполнение	#
-resourcePack.editor.menuBar.edit.delete=Удалить	#
-resourcePack.editor.menuBar.extensions=Продление	#
-resourcePack.editor.menuBar.view=Просмотр	#
-resourcePack.editor.menuBar.view.logging=Панель журнала	#
-resourcePack.editor.menuBar.view.navigationLogging=Запись навигации	#
-resourcePack.editor.menuBar.view.blockPalette=Палитра блоков	#
-resourcePack.editor.menuBar.worldOptions=Параметры мира	#
-resourcePack.editor.menuBar.worldOptions.pause=Пауза	#
-resourcePack.editor.menuBar.worldOptions.pause.entities=Сущности	#
-resourcePack.editor.menuBar.worldOptions.changeDimension=Изменить измерение	#
-resourcePack.editor.menuBar.worldOptions.changeDimension.overworld=Верхний мир	#
-resourcePack.editor.menuBar.worldOptions.changeDimension.nether=Нижний мир	#
-resourcePack.editor.menuBar.worldOptions.changeDimension.end=Закончить	#
-resourcePack.editor.menuBar.experimental=Экспериментальный	#
-resourcePack.editor.menuBar.locate=Обнаружить	#
-resourcePack.editor.menuBar.parentMenu.weather=Погода	#
-resourcePack.editor.menuBar.parentMenu.weather.clear=Очистить	#
-resourcePack.editor.menuBar.parentMenu.weather.rain=Дождь	#
-resourcePack.editor.menuBar.parentMenu.weather.thunder=Гроза	#
-resourcePack.editor.menuBar.help=Справка	#
-resourcePack.editor.menuBar.help.quickStart=Быстрая игра	#
-resourcePack.editor.menuBar.help.documentation=Документация	#
-resourcePack.editor.menuBar.help.feedback=Обратная связь	#
-
-commands.editor.project.description=Управление текущим загруженным проектом	#
-commands.editor.project.unknownSubcommand=Неизвестная подкоманда	#
-commands.editor.project.export=экспорт проекта	#
-commands.editor.project.exportComplete=Экспорт завершен, файлы загружены в %s	#
-commands.editor.project.beginExport=Экспорт...	#
-commands.editor.project.exportCopyFailed=Не удалось скопировать данные уровня %s	#
-
-## resourcePack.editor.playtestResult. is a prefix that maps directly to an enum value in the editor
-## Ensure that the spelling and case is identical to the enumeration in C++/TypeScript for
-## enum `Editor::Playtest::SessionResult`
-
-resourcePack.editor.playtestResult.OK=Успешно	#
-resourcePack.editor.playtestResult.InvalidSessionHandle=Недопустимое название сессии	#
-resourcePack.editor.playtestResult.SessionInfoNotFound=Информация о сессии не найдена	#
-resourcePack.editor.playtestResult.TooManyPlayers=Вы не можете тестировать мир, пока в нем находятся другие игроки	#
-resourcePack.editor.playtestResult.WorldExportFailed=Сбой экспорта мира	#
-resourcePack.editor.playtestResult.WorldExportBusy=Загруженность экспорта мира	#
-resourcePack.editor.playtestResult.UnsupportedScenario=Вы должны запустить редактор проекта для тестирования мира	#
-resourcePack.editor.playtestResult.EditorSystemFailure=Ошибка в работе системы редактора	#
-resourcePack.editor.playtestResult.InvalidLevelId=Номер уровня недействителен	#
-resourcePack.editor.playtestResult.PlayerNotFound=Игрок не найден	#
-resourcePack.editor.playtestResult.ResponseTimeout=Время ожидания ответа	#
-resourcePack.editor.playtestResult.UnspecifiedError=Неизвестная ошибка	#
-
-
-resourcePack.editor.playtest.Menu.Title=Протестировать мир	#
-resourcePack.editor.playtest.Title.Tooltip=Протестируйте созданный вами мир в игре. Изменения мира сохранены не будут. Доступно только во время запуска одиночного проекта.	#
-resourcePack.editor.playtest.Dialog.Title=Настройки тестирования	#
-resourcePack.editor.playtest.Dialog.GameMode=Режим игры	#
-resourcePack.editor.playtest.Dialog.Difficulty=Уровень сложности	#
-resourcePack.editor.playtest.Dialog.DaylightCycle=Смена дня и ночи	#
-resourcePack.editor.playtest.Dialog.Weather=Погода	#
-resourcePack.editor.playtest.Dialog.WeatherCycle=Смена погоды	#
-resourcePack.editor.playtest.Dialog.ShowCoordinates=Показать координаты	#
-resourcePack.editor.playtest.Dialog.OverrideSpawn=Начать игру в текущей точке	#
-resourcePack.editor.playtest.Dialog.TimeOfDay=Время суток	#
-resourcePack.editor.playtest.Dialog.TestButton=Протестировать мир	#
-
-resourcePack.editor.toolRail.line.title=Вся реплика	#
-resourcePack.editor.toolRail.line.tooltip=Линейный инструмент создает линию из блоков	#
-resourcePack.editor.toolRail.line.pane.width.title=Ширина	#
-resourcePack.editor.toolRail.line.pane.selectionMode=Выбор	#
-resourcePack.editor.toolRail.line.pane.selectionMode.freeForm=Свободный режим	#
-resourcePack.editor.toolRail.line.pane.selectionMode.fixedDistance=Фиксированное расстояние	#
-resourcePack.editor.toolRail.line.pane.selectionMode.adjacent=Прилегающая поверхность	#
-resourcePack.editor.toolRail.line.pane.height.title=Высота	#
-resourcePack.editor.toolRail.line.pane.algorithm.title=Алгоритм	#
-resourcePack.editor.toolRail.line.pane.algorithm.Direct=Направить	#
-resourcePack.editor.toolRail.line.pane.algorithm.Staggered=Ступенчатые заборы	#
-resourcePack.editor.toolRail.line.pane.surfaceContour=Контур поверхности	#
-resourcePack.editor.toolRail.line.pane.fillAction=Заполнить выделение	#
-resourcePack.editor.toolRail.line.keyBinding.selectAll=Выбрать всё	#
-resourcePack.editor.toolRail.line.keyBinding.deselect=Отменить выбор	#
-resourcePack.editor.toolRail.line.keyBinding.deselectAll=Отменить выбор всего	#
-resourcePack.editor.toolRail.line.keyBinding.fillAndClear=Заполнить содержимое и снять выделение	#
-resourcePack.editor.toolRail.line.keyBinding.fill=Заполнить содержимое	#
-resourcePack.editor.toolRail.line.keyBinding.deleteAndClear=Удалить содержимое и снять выделение	#
-resourcePack.editor.toolRail.line.keyBinding.delete=Удалить содержимое	#
-resourcePack.editor.toolRail.line.keyBinding.moveForward=Переместить область выделения вперед	#
-resourcePack.editor.toolRail.line.keyBinding.moveBack=Переместить область выделения назад	#
-resourcePack.editor.toolRail.line.keyBinding.moveLeft=Переместить область выделения влево	#
-resourcePack.editor.toolRail.line.keyBinding.moveRight=Переместить область выделения вправо	#
-resourcePack.editor.toolRail.line.keyBinding.moveUp=Переместить область выделения вверх	#
-resourcePack.editor.toolRail.line.keyBinding.moveDown=Переместить область выделения вниз	#
-
-resourcePack.editor.timeOfDay.menu.title=Настройки времени суток	#
-resourcePack.editor.timeOfDay.dropDown.title=Заготовки	#
-resourcePack.editor.timeOfDay.dropDown.none=Отсутствует	#
-resourcePack.editor.timeOfDay.dropDown.sunrise=Восход	#
-resourcePack.editor.timeOfDay.dropDown.day=День	#
-resourcePack.editor.timeOfDay.dropDown.noon=Полдень	#
-resourcePack.editor.timeOfDay.dropDown.sunset=Закат	#
-resourcePack.editor.timeOfDay.dropDown.night=Ночь	#
-resourcePack.editor.timeOfDay.dropDown.midnight=Полночь	#
-resourcePack.editor.timeOfDay.title=Настройки времени	#
-resourcePack.editor.timeOfDay.clockType=Тип часов	#
-resourcePack.editor.timeOfDay.24hrClock=24-часовой формат	#
-resourcePack.editor.timeOfDay.12hrClock=12-часовой формат	#
-resourcePack.editor.timeOfDay.minecraftClock=Часы Minecraft	#
-resourcePack.editor.timeOfDay.daylightCycle=Смена дня и ночи	#
-resourcePack.editor.timeOfDay.currentTime=Текущее время	#
-resourcePack.editor.timeOfDay.customTime=Пользовательское время	#
 
 resourcePack.editor.toolRail.blockPalette.title=Палитра блоков (CTRL+P)	#
 resourcePack.editor.toolRail.blockPalette.tooltip=Создайте палитру любимых или часто используемых блоков	#
-resourcePack.editor.blockPalette.addSearchItem=Использовать найденный блок	#
-resourcePack.editor.blockPalette.title=Палитра блоков	#
-resourcePack.editor.blockPalette.paletteDropdown.title=Палитра	#
-resourcePack.editor.blockPalette.blockPicker=Поиск	#
+resourcePack.editor.toolRail.flattenBrush.title=Плоская кисть	#
+resourcePack.editor.toolRail.flattenBrush.tooltip=Разравнивает область в вертикальной плоскости до высоты выбранного блока	#
+resourcePack.editor.toolRail.flattenBrush.settings.heightThreshold=Порог высоты	#
+resourcePack.editor.toolRail.flattenBrush.settings.radius=Радиус	#
+resourcePack.editor.toolRail.floodFillSelectionTool.description=Выбирает область, которую вы просматриваете в настоящее время, используя алгоритм сплошной заливки.	#
+resourcePack.editor.toolRail.floodFillSelectionTool.title=Инструмент выбора сплошной заливки.	#
+resourcePack.editor.toolRail.line.keyBinding.delete=Удалить содержимое	#
+resourcePack.editor.toolRail.line.keyBinding.deleteAndClear=Удалить содержимое и снять выделение	#
+resourcePack.editor.toolRail.line.keyBinding.deselect=Отменить выбор	#
+resourcePack.editor.toolRail.line.keyBinding.deselectAll=Отменить выбор всего	#
+resourcePack.editor.toolRail.line.keyBinding.fill=Заполнить содержимое	#
+resourcePack.editor.toolRail.line.keyBinding.fillAndClear=Заполнить содержимое и снять выделение	#
+resourcePack.editor.toolRail.line.keyBinding.moveBack=Переместить область выделения назад	#
+resourcePack.editor.toolRail.line.keyBinding.moveDown=Переместить область выделения вниз	#
+resourcePack.editor.toolRail.line.keyBinding.moveForward=Переместить область выделения вперед	#
+resourcePack.editor.toolRail.line.keyBinding.moveLeft=Переместить область выделения влево	#
+resourcePack.editor.toolRail.line.keyBinding.moveRight=Переместить область выделения вправо	#
+resourcePack.editor.toolRail.line.keyBinding.moveUp=Переместить область выделения вверх	#
+resourcePack.editor.toolRail.line.keyBinding.selectAll=Выбрать всё	#
+resourcePack.editor.toolRail.line.pane.algorithm.Direct=Направить	#
+resourcePack.editor.toolRail.line.pane.algorithm.Staggered=Частокол (заборы)	#
+resourcePack.editor.toolRail.line.pane.algorithm.title=Алгоритм	#
+resourcePack.editor.toolRail.line.pane.fillAction=Заполнить выделение	#
+resourcePack.editor.toolRail.line.pane.height.title=Высота	#
+resourcePack.editor.toolRail.line.pane.selectionMode.adjacent=Прилегающая поверхность	#
+resourcePack.editor.toolRail.line.pane.selectionMode.fixedDistance=Фиксированное расстояние	#
+resourcePack.editor.toolRail.line.pane.selectionMode.freeForm=Свободный режим	#
+resourcePack.editor.toolRail.line.pane.selectionMode=Выбор	#
+resourcePack.editor.toolRail.line.pane.surfaceContour=Контур поверхности	#
+resourcePack.editor.toolRail.line.pane.width.title=Ширина	#
+resourcePack.editor.toolRail.line.title=Вся реплика	#
+resourcePack.editor.toolRail.line.tooltip=Линейный инструмент создает линию из блоков	#
+resourcePack.editor.toolRail.rulerTool.title=Инструмент «Линейка»	#
+resourcePack.editor.toolRail.rulerTool.tooltip=Измерить расстояние	#
+resourcePack.editor.toolRail.rulerTool.info.title=Измерение	#
 
-resourcePack.editor.toolRail.summonTool.pane.title=Инструмент «Призыв»	#
-resourcePack.editor.toolRail.summonTool.pane.type=Тип сущности	#
-resourcePack.editor.toolRail.summonTool.pane.select=Выбрать режим	#
-resourcePack.editor.toolRail.summonTool.tool.title=Инструмент «Призыв»	#
-resourcePack.editor.toolRail.summonTool.tool.tip=Нажмите для призыва сущностей	#
-resourcePack.editor.toolRail.summonTool.tool.summonSubPane=Создание сущности	#
-resourcePack.editor.toolRail.summonTool.tool.selectSubPane=Выбор сущности	#
-resourcePack.editor.toolRail.summonTool.tool.selectSubPane.rotation=Вращение	#
-resourcePack.editor.toolRail.summonTool.tool.infoText=Щелкните по сущности, чтобы выделить ее, или по карте, чтобы призвать новую сущность	#
-resourcePack.editor.summonTool.summonSubPane.EntityPickerTitle=Тип сущности	#
-resourcePack.editor.toolRail.summonTool.keyBinding.toggle=Включить/выключить инструмент «Призыв»	#
-resourcePack.editor.toolRail.summonTool.keyBinding.delete=Удалить сущность	#
+
+resourcePack.editor.toolRail.smartFillTool.title=Умный инструмент для заполнения	#
+resourcePack.editor.toolRail.smartFillTool.tooltip=Нажмите, чтобы заполнить связанные блоки	#
+resourcePack.editor.toolRail.smartFillTool.modes.fillVolume=Объем заполнения	#
+resourcePack.editor.toolRail.smartFillTool.areaLimit.title=Ограничение области	#
+resourcePack.editor.toolRail.smartFillTool.areaLimit.tooltip=Максимальная площадь заполнения	#
+
+
 resourcePack.editor.toolRail.summonTool.keyBinding.clear=Отменить выбор	#
-resourcePack.editor.toolRail.summonTool.keyBinding.moveForward=Переместить область выделения вперед	#
+resourcePack.editor.toolRail.summonTool.keyBinding.delete=Удалить сущность	#
 resourcePack.editor.toolRail.summonTool.keyBinding.moveBack=Переместить область выделения назад	#
+resourcePack.editor.toolRail.summonTool.keyBinding.moveDown=Переместить область выделения вниз	#
+resourcePack.editor.toolRail.summonTool.keyBinding.moveForward=Переместить область выделения вперед	#
 resourcePack.editor.toolRail.summonTool.keyBinding.moveLeft=Переместить область выделения влево	#
 resourcePack.editor.toolRail.summonTool.keyBinding.moveRight=Переместить область выделения вправо	#
 resourcePack.editor.toolRail.summonTool.keyBinding.moveUp=Переместить область выделения вверх	#
-resourcePack.editor.toolRail.summonTool.keyBinding.moveDown=Переместить область выделения вниз	#
+resourcePack.editor.toolRail.summonTool.keyBinding.toggle=Включить/выключить инструмент «Призыв»	#
+resourcePack.editor.toolRail.summonTool.pane.select=Выбрать режим	#
+resourcePack.editor.toolRail.summonTool.pane.title=Инструмент «Призыв»	#
+resourcePack.editor.toolRail.summonTool.pane.type=Тип сущности	#
+resourcePack.editor.toolRail.summonTool.tool.infoText=Щелкните по сущности, чтобы выделить ее, или по карте, чтобы призвать новую сущность	#
+resourcePack.editor.toolRail.summonTool.tool.selectSubPane.rotation=Вращение	#
+resourcePack.editor.toolRail.summonTool.tool.selectSubPane=Выбор сущности	#
+resourcePack.editor.toolRail.summonTool.tool.summonSubPane=Создание сущности	#
+resourcePack.editor.toolRail.summonTool.tool.tip=Нажмите для призыва сущностей	#
+resourcePack.editor.toolRail.summonTool.tool.title=Инструмент «Призыв»	#
 
-resourcePack.editor.pastepreview.tool.title=Вставить предварительную версию	#
-resourcePack.editor.pastepreview.tool.tip=Используйте мышь, чтобы настроить положение предварительного просмотра из буфера обмена, а затем вставьте его в мир	#
-resourcePack.editor.pastepreview.inputContext.title=Вставить предварительную версию	#
-resourcePack.editor.pastepreview.pane.root.title=Вставить предварительную версию	#
-resourcePack.editor.pastepreview.pane.root.size=Размер	#
-resourcePack.editor.pastepreview.pane.placement.title=Настройки размещения	#
-resourcePack.editor.pastepreview.pane.placement.origin=Начало координат	#
-resourcePack.editor.pastepreview.pane.placement.offset=Смещение	#
-resourcePack.editor.pastepreview.pane.placement.rotation=Поворот (ось Y)	#
-resourcePack.editor.pastepreview.pane.placement.mirrorX=Отражение оси координат X	#
-resourcePack.editor.pastepreview.pane.placement.mirrorZ=Отражение оси координат Z	#
-resourcePack.editor.pastepreview.pane.placement.pastebutton=Вставить	#
-resourcePack.editor.pastepreview.pane.controls.title=Управление курсора	#
-resourcePack.editor.pastepreview.pane.controls.cursor=Управление	#
-resourcePack.editor.pastepreview.pane.controls.cursor.keyboard=Только клавиши	#
-resourcePack.editor.pastepreview.pane.controls.cursor.mouseandkeys=Мышка и клавиши	#
-resourcePack.editor.pastepreview.pane.controls.cursor.fixed=Фиксированное расстояние	#
-resourcePack.editor.pastepreview.pane.controls.cursor.target.title=Мишень	#
-resourcePack.editor.pastepreview.pane.controls.cursor.target.block=Заблокировать	#
-resourcePack.editor.pastepreview.pane.controls.cursor.target.face=Рядом	#
-resourcePack.editor.pastepreview.keyBinding.pastepreview=Вставить предварительную версию	#
-resourcePack.editor.pastepreview.keyBinding.copy=Копировать область выделения	#
-resourcePack.editor.pastepreview.keyBinding.cut=Вырезать область выделения	#
-resourcePack.editor.pastepreview.keyBinding.quickPaste=Быстрая вставка	#
-resourcePack.editor.pastepreview.keyBinding.paste=Вставить	#
-resourcePack.editor.pastepreview.keyBinding.clearPreview=Очистить область предварительного просмотра	#
-resourcePack.editor.pastepreview.keyBinding.moveForward=Переместить область предварительного просмотра вперед	#
-resourcePack.editor.pastepreview.keyBinding.moveBack=Переместить область предварительного просмотра назад	#
-resourcePack.editor.pastepreview.keyBinding.moveLeft=Переместить область предварительного просмотра влево	#
-resourcePack.editor.pastepreview.keyBinding.moveRight=Переместить область предварительного просмотра вправо	#
-resourcePack.editor.pastepreview.keyBinding.moveUp=Переместить область предварительного просмотра вверх	#
-resourcePack.editor.pastepreview.keyBinding.moveDown=Переместить область предварительного просмотра вниз	#
-resourcePack.editor.pastepreview.keyBinding.moveOffsetForward=Переместить область смещения вперед	#
-resourcePack.editor.pastepreview.keyBinding.moveOffsetBack=Переместить область смещения назад	#
-resourcePack.editor.pastepreview.keyBinding.moveOffsetLeft=Переместить область смещения влево	#
-resourcePack.editor.pastepreview.keyBinding.moveOffsetRight=Переместить область смещения вправо	#
-resourcePack.editor.pastepreview.keyBinding.moveOffsetUp=Переместить область смещения вверх	#
-resourcePack.editor.pastepreview.keyBinding.moveOffsetDown=Переместить область смещения вниз	#
-resourcePack.editor.pastepreview.keyBinding.moveOriginForward=Переместить точку начала координат вперед	#
-resourcePack.editor.pastepreview.keyBinding.moveOriginBack=Переместить точку начала координат назад	#
-resourcePack.editor.pastepreview.keyBinding.moveOriginLeft=Переместить точку начала координат влево	#
-resourcePack.editor.pastepreview.keyBinding.moveOriginRight=Переместить точку начала координат вправо	#
-resourcePack.editor.pastepreview.keyBinding.moveOriginUp=Переместить точку начала координат вверх	#
-resourcePack.editor.pastepreview.keyBinding.moveOriginDown=Переместить точку начала координат вниз	#
-resourcePack.editor.pastepreview.keyBinding.pasteAtCursor=Вставить в точке, на которую указывает курсор	#
-resourcePack.editor.pastepreview.keyBinding.toggleBlockTarget=Включить/выключить режим блокировки цели	#
-resourcePack.editor.pastepreview.keyBinding.toggleAdjacentTarget=Включить/выключить режим соседней цели	#
-resourcePack.editor.pastepreview.keyBinding.rotateClockWise=Повернуть область предварительного просмотра по часовой стрелке	#
-resourcePack.editor.pastepreview.keyBinding.rotateCounterClockWise=Повернуть область предварительного просмотра против часовой стрелки	#
-resourcePack.editor.pastepreview.keyBinding.toggleMirrorX=Включить/выключить отражение оси координат X	#
-resourcePack.editor.pastepreview.keyBinding.toggleMirrorZ=Включить/выключить отражение оси координат Z	#
-resourcePack.editor.pastepreview.keyBinding.toggleMouseTracking=Переключить отслеживание мыши	#
-resourcePack.editor.pastepreview.keyBinding.toggleFixedDistance=Включить фиксированное расстояние	#
 
-resourcePack.editor.ClipboardPreviewControl.rootPane.title=Информация о буфере обмена	#
-resourcePack.editor.ClipboardPreviewControl.structureSize.title=Размер буфера обмена	#
-resourcePack.editor.ClipboardPreviewControl.placement.title=Настройки	#
-resourcePack.editor.ClipboardPreviewControl.origin.title=Начало координат	#
-resourcePack.editor.ClipboardPreviewControl.origin.tooltip=Отправная точка: используется как привязка для размещения, а также как место, вокруг которого вращается и отражается буфер обмена	#
-resourcePack.editor.ClipboardPreviewControl.offset.title=Смещение	#
-resourcePack.editor.ClipboardPreviewControl.offset.tooltip=Дополнительное смещение от точки размещения к началу буфера обмена	#
-resourcePack.editor.ClipboardPreviewControl.rotation.title=Вращение	#
-resourcePack.editor.ClipboardPreviewControl.rotation.tooltip=Поворот вокруг оси Y в точке начала координат	#
-resourcePack.editor.ClipboardPreviewControl.rotation.none=Нет	#
-resourcePack.editor.ClipboardPreviewControl.rotation.90=90°	#
-resourcePack.editor.ClipboardPreviewControl.rotation.180=180°	#
-resourcePack.editor.ClipboardPreviewControl.rotation.270=270°	#
-resourcePack.editor.ClipboardPreviewControl.mirror.axis.x=Отражение (ось X)	#
-resourcePack.editor.ClipboardPreviewControl.mirror.axis.x.tooltip=Зеркальное отображение элемента буфера обмена вокруг оси X в начальной точке	#
-resourcePack.editor.ClipboardPreviewControl.mirror.axis.z=Отражение (ось Z)	#
-resourcePack.editor.ClipboardPreviewControl.mirror.axis.z.tooltip=Зеркальное отображение элемента буфера обмена вокруг оси Z в начальной точке	#
-resourcePack.editor.ClipboardPreviewControl.keyBinding.nudgeOffsetUp=Подтолкнуть область смещения вверх	#
-resourcePack.editor.ClipboardPreviewControl.keyBinding.nudgeOffsetDown=Подтолкнуть область смещения вниз	#
-resourcePack.editor.ClipboardPreviewControl.keyBinding.nudgeOffsetLeft=Подтолкнуть область смещения влево	#
-resourcePack.editor.ClipboardPreviewControl.keyBinding.nudgeOffsetRight=Подтолкнуть область смещения вправо	#
-resourcePack.editor.ClipboardPreviewControl.keyBinding.nudgeOffsetForward=Подтолкнуть область смещения вперед	#
-resourcePack.editor.ClipboardPreviewControl.keyBinding.nudgeOffsetBack=Подтолкнуть область смещения назад	#
-resourcePack.editor.ClipboardPreviewControl.keybinding.moveOriginForward=Переместить точку начала координат вперед	#
-resourcePack.editor.ClipboardPreviewControl.keybinding.moveOriginBack=Переместить точку начала координат назад	#
-resourcePack.editor.ClipboardPreviewControl.keybinding.moveOriginLeft=Переместить точку начала координат влево	#
-resourcePack.editor.ClipboardPreviewControl.keybinding.moveOriginRight=Переместить точку начала координат вправо	#
-resourcePack.editor.ClipboardPreviewControl.keybinding.moveOriginUp=Переместить точку начала координат вверх	#
-resourcePack.editor.ClipboardPreviewControl.keybinding.moveOriginDown=Переместить точку начала координат вниз	#
-resourcePack.editor.ClipboardPreviewControl.keybinding.rotateClockWise=Повернуть область предварительного просмотра по часовой стрелке	#
-resourcePack.editor.ClipboardPreviewControl.keybinding.rotateCounterClockWise=Повернуть область предварительного просмотра против часовой стрелки	#
-resourcePack.editor.ClipboardPreviewControl.keybinding.toggleMirrorX=Включить/выключить отражение оси координат X	#
-resourcePack.editor.ClipboardPreviewControl.keybinding.toggleMirrorZ=Включить/выключить отражение оси координат Z	#
+resourcePack.editor.transaction.keyBinding.redo=Повторить действие	#
+resourcePack.editor.transaction.keyBinding.undo=Отменить	#
 
-resourcePack.editor.deferredLightingSettings.menu.title=Настройки отложенного освещения	#
-resourcePack.editor.datatransferaccessors.atmospheric_scattering=Атмосферное рассеивание	#
-resourcePack.editor.datatransferaccessors.color_grading=Цветокоррекция	#
-resourcePack.editor.datatransferaccessors.lighting_group=Глобальное освещение	#
-resourcePack.editor.datatransferaccessors.pbr_fallbacks=Резервн. PBR	#
-resourcePack.editor.datatransferaccessors.point_lights=Точечные источники света	#
-resourcePack.editor.datatransferaccessors.water=Вода	#
 
+resourcePack.editor.viewport.keyBinding.moveBack=Движение назад	#
+resourcePack.editor.viewport.keyBinding.moveDown=Движение вниз	#
+resourcePack.editor.viewport.keyBinding.moveForward=Движение вперед	#
+resourcePack.editor.viewport.keyBinding.moveLeft=Движение влево	#
+resourcePack.editor.viewport.keyBinding.moveRight=Движение вправо	#
+resourcePack.editor.viewport.keyBinding.moveUp=Движение вверх	#
+
+
+resourcePack.editor.viewSettings.compass.tip=Показать компас направлений	#
+resourcePack.editor.viewSettings.compass.title=Показать компас	#
+resourcePack.editor.viewSettings.chunk.tip=Отображение контуров границ фрагмента на карте	#
+resourcePack.editor.viewSettings.chunk.title=Отобразить границы фрагментов	#
+resourcePack.editor.viewSettings.invisible.tip=Отображает невидимые блоки (например, пустоты, барьеры и т. д.)	#
+resourcePack.editor.viewSettings.invisible.title=Отобразить невидимые блоки	#
+resourcePack.editor.viewSettings.flySpeed.tip=Увеличить скорость полета, чтобы быстрее передвигаться по миру	#
+resourcePack.editor.viewSettings.flySpeed.title=Коэффициент скорости полета	#
 resourcePack.editor.viewSettings.menu=Просмотр настроек	#
 resourcePack.editor.viewSettings.title=Просмотреть настройки	#
-resourcePack.editor.viewSettings.invisible.title=Отобразить невидимые блоки	#
-resourcePack.editor.viewSettings.invisible.tip=Отображает невидимые блоки (например, пустоты, барьеры и т. д.)	#
-resourcePack.editor.viewSettings.chunk.title=Отобразить границы фрагментов	#
-resourcePack.editor.viewSettings.chunk.tip=Отображение контуров границ фрагмента на карте	#
 
-resourcePack.editor.brushPaint.title=Кисть	#
-resourcePack.editor.brushPaint.tooltip=Используйте кисти, чтобы раскрасить блоки в мире	#
-resourcePack.editor.brushPaint.inputContext.title=Кисть	#
-resourcePack.editor.brushPaint.inputContext.oneshot=Покрасьте один раз	#
-resourcePack.editor.brushPaint.inputContext.activateBrushPaint=Включить кисть	#
-
-resourcePack.editor.CursorModeControl.rootPane.title=Настройки указателя	#
-resourcePack.editor.CursorModeControl.mouseControlMode.title=Способ ввода	#
-resourcePack.editor.CursorModeControl.mouseControlMode.tooltip=Выберите способ ввода для курсора блоков мира	#
-resourcePack.editor.CursorModeControl.mouseControlMode.keyboard=Только клавиатура	#
-resourcePack.editor.CursorModeControl.mouseControlMode.keyboardAndMouse=Мышка и клавиши	#
-resourcePack.editor.CursorModeControl.mouseControlMode.fixed=Фиксированное расстояние	#
-resourcePack.editor.CursorModeControl.cursorTargetMode.title=Цель	#
-resourcePack.editor.CursorModeControl.cursorTargetMode.tooltip=Выберите режим цели курсора	#
-resourcePack.editor.CursorModeControl.cursorTargetMode.block=Заблокировать	#
-resourcePack.editor.CursorModeControl.cursorTargetMode.block.tooltip=Блок под курсором мыши	#
-resourcePack.editor.CursorModeControl.cursorTargetMode.face=Рядом	#
-resourcePack.editor.CursorModeControl.cursorTargetMode.face.tooltip=Блок рядом с лицевой частью блока под курсором	#
-resourcePack.editor.CursorModeControl.projectThroughWater.title=Проецировать через воду	#
-resourcePack.editor.CursorModeControl.projectThroughWater.tooltip=Лучи от мыши будут проецироваться сквозь воду, что позволит выбирать подводные элементы	#
-resourcePack.editor.CursorModeControl.fixedDistance.slider.title=Фиксированное расстояние до курсора	#
-resourcePack.editor.CursorModeControl.fixedDistance.slider.tooltip=Отрегулируйте фиксированное расстояние от игрока, на котором находится курсор блока	#
-resourcePack.editor.CursorModeControl.keybinding.moveCursorForward=Подтолкнуть вперед	#
-resourcePack.editor.CursorModeControl.keybinding.moveCursorBack=Переместить курсор назад	#
-resourcePack.editor.CursorModeControl.keybinding.moveCursorUp=Переместить курсор вверх	#
-resourcePack.editor.CursorModeControl.keybinding.moveCursorDown=Переместить курсор вниз	#
-resourcePack.editor.CursorModeControl.keybinding.moveCursorLeft=Переместить курсор влево	#
-resourcePack.editor.CursorModeControl.keybinding.moveCursorRight=Переместить курсор вправо	#
-resourcePack.editor.CursorModeControl.keybinding.toggleMouseTracking=Переключить отслеживание мыши	#
-resourcePack.editor.CursorModeControl.keybinding.toggleBlockTargetMode=Переключить режим блок/смежный	#
-resourcePack.editor.CursorModeControl.keybinding.toggleFixedDistance=Переключить режим фиксированного расстояния	#
-
-resourcePack.editor.BrushPaintControl.rootPane.title=Настройки кисти	#
-resourcePack.editor.BrushPaintControl.brush.title=Кисть	#
-resourcePack.editor.BrushPaintControl.brushSettings.title=Настройки кисти	#
-resourcePack.editor.BrushPaintControl.fillConstraints.title=Ограничения на заполнение	#
-resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.title=Фильтр кисти блока	#
-resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.mask=Маска	#
-resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.mask.tooltip=Блоки, соответствующие списку, не будут выбраны и останутся неизменными	#
-resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.replace=Заменить	#
-resourcePack.editor.BrushPaintControl.fillConstraints.replace.title=Заменить список	#
-resourcePack.editor.BrushPaintControl.fillConstraints.replace.tooltip=Блоки, соответствующие списку, будут обработаны	#
-resourcePack.editor.BrushPaintControl.fillConstraints.mask.title=Список масок	#
-resourcePack.editor.BrushPaintControl.offset.title=Смещение	#
-resourcePack.editor.BrushPaintControl.offset.tooltip=Смещение от точки курсора	#
-resourcePack.editor.BrushPaintControl.keybinding.replaceMask=Режим маски — Заменить	#
-resourcePack.editor.BrushPaintControl.keybinding.maskMask=Режим маски — Маска	#
-resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetUp=Подтолкнуть область смещения вверх	#
-resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetDown=Подтолкнуть область смещения вниз	#
-resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetLeft=Подтолкнуть область смещения влево	#
-resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetRight=Подтолкнуть область смещения вправо	#
-resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetForward=Подтолкнуть область смещения вперед	#
-resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetBack=Подтолкнуть область смещения назад	#
-
-resourcePack.editor.copypaste.keyBinding.copy=Копировать выбранное в буфер обмена	#
-resourcePack.editor.copypaste.keyBinding.cut=Вырезать/переместить выбранное в буфер обмена	#
-resourcePack.editor.copypaste.keyBinding.paste=Вставить буфер обмена в мир	#
-resourcePack.editor.copypaste.actionbar.copy.title=Копировать	#
-resourcePack.editor.copypaste.actionbar.copy.tooltip=Копировать выбранное в буфер обмена	#
-resourcePack.editor.copypaste.actionbar.copy.tooltipDescription=Скопировать выбранные блоки в буфер обмена, оставив их нетронутыми	#
-resourcePack.editor.copypaste.actionbar.cut.title=Вырезать	#
-resourcePack.editor.copypaste.actionbar.cut.tooltip=Вырезать/переместить выбранное в буфер обмена	#
-resourcePack.editor.copypaste.actionbar.cut.tooltipDescription=Скопировать выбранное в буфер обмена и удалить содержимое	#
-resourcePack.editor.copypaste.menu.copy.title=Копировать область выделения	#
-resourcePack.editor.copypaste.menu.cut.title=Вырезать область выделения	#
-
-
+resourcePack.editor.hotbar.defaultDisplayName=По умолчанию	#

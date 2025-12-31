@@ -3,12 +3,616 @@
 ## Note, trailing spaces will NOT be trimmed. If you want room between the end of the string and the start of a
 ## comment on the same line, use TABs.
 
+commands.editor.project.beginExport=Eksporterer …	#
+commands.editor.project.description=Manipuler det innlastede prosjektet	#
+commands.editor.project.export=eksport av prosjekt	#
+commands.editor.project.exportComplete=Eksport fullført, filer skrevet til %s	#
+commands.editor.project.exportCopyFailed=Kan ikke kopiere nivådata %s	#
+commands.editor.project.unknownSubcommand=Ukjent underkommando	#
+
+resourcePack.editor.actionBar.redo.tooltipDescription=Gjør om en handling	#
+resourcePack.editor.actionBar.redo.tooltipTitle=Gjør om	#
+resourcePack.editor.actionBar.redo=Gjør om	#
+resourcePack.editor.actionBar.undo.tooltipDescription=Angre en handling	#
+resourcePack.editor.actionBar.undo.tooltipTitle=Angre	#
+resourcePack.editor.actionBar.undo=Angre	#
+
+resourcePack.editor.agfx.settings.error.title=Det har oppstått én eller flere feil …	#
+resourcePack.editor.agfx.pane.title=Innstillingsredigering	#
+resourcePack.editor.agfx.pane.settings_selector=Velg innstillinger	#
+resourcePack.editor.agfx.pane.settings.title=Innstillinger	#
+resourcePack.editor.agfx.pane.settings.revert_changes=Tilbakestill endringer	#
+resourcePack.editor.agfx.pane.settings.export_to_clipboard=Eksporter til utklippstavlen	#
+
+
+resourcePack.editor.blockPalette.addSearchItem=Bruk funnet blokk	#
+resourcePack.editor.blockPalette.blockPicker=Søk	#
+resourcePack.editor.blockPalette.paletteDropdown.title=Palett	#
+resourcePack.editor.blockPalette.title=Blokkpalett	#
+
+
+resourcePack.editor.brushPaint.inputContext.activateBrushPaint=Aktiver penselmaling	#
+resourcePack.editor.brushPaint.inputContext.oneshot=Mal én gang	#
+resourcePack.editor.brushPaint.inputContext.title=Penselmaling	#
+resourcePack.editor.brushPaint.title=Penselmaling	#
+resourcePack.editor.brushPaint.tooltip=Bruk pensler til å male blokker i verdenen	#
+
+
+resourcePack.editor.BrushPaintControl.brush.title=Pensel	#
+resourcePack.editor.BrushPaintControl.brushSettings.title=Penselinnstillinger	#
+resourcePack.editor.BrushPaintControl.fillConstraints.mask.title=Maskeliste	#
+resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.disabled.tooltip=Deaktiver blokkfiltre	#
+resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.disabled=Deaktivert	#
+resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.mask.tooltip=Blokker som samsvarer med listen, blir ignorert og forblir upåvirket	#
+resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.mask=Maske	#
+resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.replace=Erstatt	#
+resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.title=Penselblokkfilter	#
+resourcePack.editor.BrushPaintControl.fillConstraints.replace.title=Erstatningsliste	#
+resourcePack.editor.BrushPaintControl.fillConstraints.replace.tooltip=Blokker som samsvarer med listen, påvirkes	#
+resourcePack.editor.BrushPaintControl.fillConstraints.title=Fyll begrensninger	#
+resourcePack.editor.BrushPaintControl.keybinding.maskMask=Maskemodus – masker	#
+resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetBack=Dytt forskyvningen bakover	#
+resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetDown=Dytt forskyvningen ned	#
+resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetForward=Dytt forskyvningen fremover	#
+resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetLeft=Dytt forskyvningen til venstre	#
+resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetRight=Dytt forskyvningen til høyre	#
+resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetUp=Dytt forskyvningen opp	#
+resourcePack.editor.BrushPaintControl.keybinding.replaceMask=Maskemodus – erstatt	#
+resourcePack.editor.BrushPaintControl.offset.title=Forskyvning	#
+resourcePack.editor.BrushPaintControl.offset.tooltip=Forskyvningen fra markørens plassering	#
+resourcePack.editor.BrushPaintControl.rootPane.title=Penselinnstillinger	#
+
+
+resourcePack.editor.brushShape.common.settings.axis=Ekstruder akse	#
+resourcePack.editor.brushShape.common.settings.height=Høyde	#
+resourcePack.editor.brushShape.common.settings.length=Lengde	#
+resourcePack.editor.brushShape.common.settings.radius=Radius	#
+resourcePack.editor.brushShape.common.settings.uniform=Uniform	#
+resourcePack.editor.brushShape.common.settings.xAxis=X-akse	#
+resourcePack.editor.brushShape.common.settings.xAxisNeg=–X-akse	#
+resourcePack.editor.brushShape.common.settings.yAxis=Y-akse	#
+resourcePack.editor.brushShape.common.settings.yAxisNeg=–Y-akse	#
+resourcePack.editor.brushShape.common.settings.zAxis=Z-akse	#
+resourcePack.editor.brushShape.common.settings.zAxisNeg=–Z-akse	#
+resourcePack.editor.brushShape.cone.name=Kjegle	#
+resourcePack.editor.brushShape.cone.settings.depth=Dybderadius	#
+resourcePack.editor.brushShape.cone.settings.width=Bredderadius	#
+resourcePack.editor.brushShape.cuboid.name=Kuboid	#
+resourcePack.editor.brushShape.cuboid.settings.depth=Dybde	#
+resourcePack.editor.brushShape.cuboid.settings.height=Høyde	#
+resourcePack.editor.brushShape.cuboid.settings.width=Bredde	#
+resourcePack.editor.brushShape.cylinder.name=Sylinder	#
+resourcePack.editor.brushShape.cylinder.settings.depth_radius=Dybderadius	#
+resourcePack.editor.brushShape.cylinder.settings.width_radius=Bredderadius	#
+resourcePack.editor.brushShape.ellipsoid.name=Ellipsoide	#
+resourcePack.editor.brushShape.ellipsoid.settings.depth_radius=Dybderadius	#
+resourcePack.editor.brushShape.ellipsoid.settings.height_radius=Høyderadius	#
+resourcePack.editor.brushShape.ellipsoid.settings.width_radius=Bredderadius	#
+resourcePack.editor.brushShape.pyramid.name=Pyramide	#
+resourcePack.editor.brushShape.pyramid.settings.depth=Dybde	#
+resourcePack.editor.brushShape.pyramid.settings.height=Høyde	#
+resourcePack.editor.brushShape.pyramid.settings.width=Bredde	#
+resourcePack.editor.brushShape.singleBlock.name=Enkeltblokk	#
+
+
 resourcePack.editor.client.description=Ressurser for redigeringsklient	#
 resourcePack.editor.client.name=Redigeringsressurser	#
+
+
+resourcePack.editor.ClipboardPreviewControl.keybinding.moveOriginBack=Flytt opprinnelse bakover	#
+resourcePack.editor.ClipboardPreviewControl.keybinding.moveOriginDown=Flytt opprinnelse nedover	#
+resourcePack.editor.ClipboardPreviewControl.keybinding.moveOriginForward=Flytt opprinnelse fremover	#
+resourcePack.editor.ClipboardPreviewControl.keybinding.moveOriginLeft=Flytt opprinnelse til venstre	#
+resourcePack.editor.ClipboardPreviewControl.keybinding.moveOriginRight=Flytt opprinnelse til høyre	#
+resourcePack.editor.ClipboardPreviewControl.keybinding.moveOriginUp=Flytt opprinnelse oppover	#
+resourcePack.editor.ClipboardPreviewControl.keyBinding.nudgeOffsetBack=Dytt forskyvningen bakover	#
+resourcePack.editor.ClipboardPreviewControl.keyBinding.nudgeOffsetDown=Dytt forskyvningen ned	#
+resourcePack.editor.ClipboardPreviewControl.keyBinding.nudgeOffsetForward=Dytt forskyvningen fremover	#
+resourcePack.editor.ClipboardPreviewControl.keyBinding.nudgeOffsetLeft=Dytt forskyvningen til venstre	#
+resourcePack.editor.ClipboardPreviewControl.keyBinding.nudgeOffsetRight=Dytt forskyvningen til høyre	#
+resourcePack.editor.ClipboardPreviewControl.keyBinding.nudgeOffsetUp=Dytt forskyvningen opp	#
+resourcePack.editor.ClipboardPreviewControl.keybinding.rotateClockWise=Roter forhåndsvisning med klokken	#
+resourcePack.editor.ClipboardPreviewControl.keybinding.rotateCounterClockWise=Roter forhåndsvisning mot klokken	#
+resourcePack.editor.ClipboardPreviewControl.keybinding.toggleMirrorX=Vis/skjul speil X	#
+resourcePack.editor.ClipboardPreviewControl.keybinding.toggleMirrorZ=Vis/skjul speil Z	#
+resourcePack.editor.ClipboardPreviewControl.mirror.axis.x.tooltip=Speil utklippstavle-elementet rundt X-aksen ved opprinnelsespunktet	#
+resourcePack.editor.ClipboardPreviewControl.mirror.axis.x=Speil (X-akse)	#
+resourcePack.editor.ClipboardPreviewControl.mirror.axis.z.tooltip=Speil utklippstavle-elementet rundt Z-aksen ved opprinnelsespunktet	#
+resourcePack.editor.ClipboardPreviewControl.mirror.axis.z=Speil (Z-akse)	#
+resourcePack.editor.ClipboardPreviewControl.offset.title=Forskyvning	#
+resourcePack.editor.ClipboardPreviewControl.offset.tooltip=Ytterligere forskyvning fra plasseringspunktet til utklippstavle-elementets opprinnelse	#
+resourcePack.editor.ClipboardPreviewControl.origin.title=Opprinnelse	#
+resourcePack.editor.ClipboardPreviewControl.origin.tooltip=Opprinnelsespunktet inne i utklippstavle-elementet. Dette brukes som et antrekkplasseringsanker samt punktet utklippstavlen roteres og speiles rundt.	#
+resourcePack.editor.ClipboardPreviewControl.placement.title=Alternativer	#
+resourcePack.editor.ClipboardPreviewControl.rootPane.title=Informasjon om utklippstavlen	#
+resourcePack.editor.ClipboardPreviewControl.rotation.180=180Â°	#
+resourcePack.editor.ClipboardPreviewControl.rotation.270=270Â°	#
+resourcePack.editor.ClipboardPreviewControl.rotation.90=90Â°	#
+resourcePack.editor.ClipboardPreviewControl.rotation.none=Ingen	#
+resourcePack.editor.ClipboardPreviewControl.rotation.title=Rotasjon	#
+resourcePack.editor.ClipboardPreviewControl.rotation.tooltip=Mengden rotasjon rundt Y-aksen ved opprinnelsespunktet	#
+resourcePack.editor.ClipboardPreviewControl.structureSize.title=Utklippstavlens størrelse	#
+
+
+resourcePack.editor.copypaste.actionbar.copy.title=Kopier	#
+resourcePack.editor.copypaste.actionbar.copy.tooltip=Kopier utvalg til utklippstavlen	#
+resourcePack.editor.copypaste.actionbar.copy.tooltipDescription=Kopier innholdet i det gjeldende utvalget til utklippstavlen, og hold innholdet i utvalget intakt	#
+resourcePack.editor.copypaste.actionbar.cut.title=Klipp ut	#
+resourcePack.editor.copypaste.actionbar.cut.tooltip=Klipp ut /flytt utvalg til utklippstavlen	#
+resourcePack.editor.copypaste.actionbar.cut.tooltipDescription=Kopier innholdet i det gjeldende utvalget til utklippstavlen, og fjern innholdet i utvalget i prosessen	#
+resourcePack.editor.copypaste.keyBinding.copy=Kopier utvalg til utklippstavlen	#
+resourcePack.editor.copypaste.keyBinding.cut=Klipp/flytt utvalg til utklippstavlen	#
+resourcePack.editor.copypaste.keyBinding.paste=Lim utklippstavlen på verdenen	#
+resourcePack.editor.copypaste.menu.copy.title=Kopier utvalg	#
+resourcePack.editor.copypaste.menu.cut.title=Klipp ut utvalg	#
+
+
+resourcePack.editor.core.keyBinding.showGameMenu=Vis spillmeny	#
+resourcePack.editor.core.keyBinding.showLogPanel=Vis loggpanel	#
+
+
+resourcePack.editor.CursorModeControl.cursorTargetMode.block.tooltip=Blokken under musepekeren	#
+resourcePack.editor.CursorModeControl.cursorTargetMode.block=Blokk	#
+resourcePack.editor.CursorModeControl.cursorTargetMode.face.tooltip=Blokken som er rett ved siden av overflaten til blokken under markøren	#
+resourcePack.editor.CursorModeControl.cursorTargetMode.face=Nærliggende	#
+resourcePack.editor.CursorModeControl.cursorTargetMode.title=Mål	#
+resourcePack.editor.CursorModeControl.cursorTargetMode.tooltip=Velg markørmålmodus	#
+resourcePack.editor.CursorModeControl.fixedDistance.slider.title=Fast markøravstand	#
+resourcePack.editor.CursorModeControl.fixedDistance.slider.tooltip=Juster den faste avstanden fra spilleren der blokkmarkøren skal plasseres	#
+resourcePack.editor.CursorModeControl.keybinding.moveCursorBack=Flytt markøren bakover	#
+resourcePack.editor.CursorModeControl.keybinding.moveCursorDown=Flytt markøren nedover	#
+resourcePack.editor.CursorModeControl.keybinding.moveCursorForward=Dytt fremover	#
+resourcePack.editor.CursorModeControl.keybinding.moveCursorLeft=Flytt markøren til venstre	#
+resourcePack.editor.CursorModeControl.keybinding.moveCursorRight=Flytt markøren til høyre	#
+resourcePack.editor.CursorModeControl.keybinding.moveCursorUp=Flytt markøren oppover	#
+resourcePack.editor.CursorModeControl.keybinding.toggleBlockTargetMode=Veksle mellom blokkmodus og tilstøtende modus	#
+resourcePack.editor.CursorModeControl.keybinding.toggleFixedDistance=Aktiver/deaktiver avstandsmodus	#
+resourcePack.editor.CursorModeControl.keybinding.toggleMouseTracking=Aktiver/deaktiver musesporing	#
+resourcePack.editor.CursorModeControl.mouseControlMode.fixed=Fast avstand	#
+resourcePack.editor.CursorModeControl.mouseControlMode.keyboard=Kun tastatur	#
+resourcePack.editor.CursorModeControl.mouseControlMode.keyboardAndMouse=Mus og taster	#
+resourcePack.editor.CursorModeControl.mouseControlMode.title=Inndatametode	#
+resourcePack.editor.CursorModeControl.mouseControlMode.tooltip=Velg inndatametode for verdensblokkmarkøren	#
+resourcePack.editor.CursorModeControl.projectThroughWater.title=Projiser gjennom vann	#
+resourcePack.editor.CursorModeControl.projectThroughWater.tooltip=Musens stråler projiseres gjennom vann, noe som gjør det mulig å velge elementer under vann	#
+resourcePack.editor.CursorModeControl.rootPane.title=Markørinnstillinger	#
+
+
+resourcePack.editor.datatransferaccessors.atmospheric_scattering=Atmosfærisk spredning	#
+resourcePack.editor.datatransferaccessors.color_grading=Fargegradering	#
+resourcePack.editor.datatransferaccessors.lighting_group=Globalt lys	#
+resourcePack.editor.datatransferaccessors.pbr_fallbacks=PBR-alternativer	#
+resourcePack.editor.datatransferaccessors.point_lights=Punktlys	#
+resourcePack.editor.datatransferaccessors.water=Vann	#
+
+
+resourcePack.editor.deferredLightingSettings.menu.title=Utsatte lysinnstillinger	#
+
+
+resourcePack.editor.delete.keyBinding=Slett innhold i utvalg	#
+
+
+resourcePack.editor.exportProject.exportType=Eksporter type	#
+resourcePack.editor.exportProject.exportType.playableWorld=Verden som kan spilles	#
+resourcePack.editor.exportProject.exportNotes=Eksporter notater	#
+resourcePack.editor.exportProject.exportNotes.warning=Du eksporterer en v%1-verden. Eksporterte spillbare verdener kan ikke brukes på versjoner av Minecraft med et tidligere versjonsnummer enn v%1. Bruk https://chunker.app/ for å konvertere til tidligere versjonsnummer (det kan være at noen funksjoner ikke er tilgjengelige hvis de ikke støttes i tidligere versjoner)	#
+resourcePack.editor.exportProject.generalSettings=Generelle innstillinger	#
+resourcePack.editor.exportProject.generalSettings.worldName=Verdenens navn	#
+resourcePack.editor.exportProject.generalSettings.gameMode=Spillmodus	#
+resourcePack.editor.exportProject.generalSettings.difficulty=Vanskelighetsgrad	#
+resourcePack.editor.exportProject.generalSettings.hardcore=Ekstra vanskelig	#
+resourcePack.editor.exportProject.advancedSettings=Avanserte innstillinger	#
+resourcePack.editor.exportProject.advancedSettings.startingMap=Startkart	#
+resourcePack.editor.exportProject.advancedSettings.bonusChest=Bonuskiste	#
+resourcePack.editor.exportProject.advancedSettings.showCoordinates=Vis koordinater	#
+resourcePack.editor.exportProject.advancedSettings.showDaysPlayed=Vis spilte dager	#
+resourcePack.editor.exportProject.advancedSettings.recipeUnlocking=Oppskrift-opplåsing	#
+resourcePack.editor.exportProject.advancedSettings.fireSpreads=Spredning av ild	#
+resourcePack.editor.exportProject.advancedSettings.tntExplodes=TNT eksploderer	#
+resourcePack.editor.exportProject.advancedSettings.resawnBlocksExplode=Genererte blokker eksploderer	#
+resourcePack.editor.exportProject.advancedSettings.mobLoot=Vesenbytte	#
+resourcePack.editor.exportProject.advancedSettings.naturalRegeneration=Naturlig regenerasjon	#
+resourcePack.editor.exportProject.advancedSettings.tileDrops=Blokker slipper	#
+resourcePack.editor.exportProject.advancedSettings.immediateRespawn=Øyeblikkelig gjenoppstandelse	#
+resourcePack.editor.exportProject.advancedSettings.respawnRadius=Gjenoppståelsesradius	#
+resourcePack.editor.exportProject.advancedSettings.simulationDistance=Simuleringsavstand	#
+resourcePack.editor.exportProject.advancedSettings.bedsWork=Senger fungerer	#
+resourcePack.editor.exportProject.advancedSettings.requiredSleepingPlayers=Nødvendige sovende spillere (%1 %)	#
+resourcePack.editor.exportProject.multiplayerSettings=Flerspillerinnstillinger	#
+resourcePack.editor.exportProject.multiplayerSettings.multiplayerGame=Flerspillerspill	#
+resourcePack.editor.exportProject.multiplayerSettings.playerAccess=Spillertilgang	#
+resourcePack.editor.exportProject.multiplayerSettings.playerPermissions=Spillertillatelser	#
+resourcePack.editor.exportProject.multiplayerSettings.visibleToLAN=Synlig for LAN-spillere	#
+resourcePack.editor.exportProject.multiplayerSettings.friendlyFire=Vådeskudd	#
+resourcePack.editor.exportProject.cheatsSettings=Jukseinnstillinger	#
+resourcePack.editor.exportProject.cheatsSettings.cheats=Juksing	#
+resourcePack.editor.exportProject.cheatsSettings.daylightCycle=Dagslyssyklus	#
+resourcePack.editor.exportProject.cheatsSettings.keepInventory=Behold inventar	#
+resourcePack.editor.exportProject.cheatsSettings.mobSpawning=Vesenyngling	#
+resourcePack.editor.exportProject.cheatsSettings.mobGriefing=Destruktive vesener	#
+resourcePack.editor.exportProject.cheatsSettings.entitiesDropLoot=Objekter slipper bytte	#
+resourcePack.editor.exportProject.cheatsSettings.weatherCycle=Værsyklus	#
+resourcePack.editor.exportProject.cheatsSettings.commandBlocks=Kommandoblokker	#
+resourcePack.editor.exportProject.cheatsSettings.educationFeatures=Utdanningsinnhold	#
+resourcePack.editor.exportProject.cheatsSettings.randomTickSpeed=Tilfeldig intervallhastighet	#
+resourcePack.editor.exportProject.export=Eksporter	#
+resourcePack.editor.exportProject.resetToDefault=Tilbakestill til standard	#
+resourcePack.editor.exportProject.gameMode.survival=Overlevelse	#
+resourcePack.editor.exportProject.gameMode.creative=Kreativ	#
+resourcePack.editor.exportProject.gameMode.adventure=Eventyr	#
+resourcePack.editor.exportProject.difficulty.peaceful=Fredelig	#
+resourcePack.editor.exportProject.difficulty.easy=Lett	#
+resourcePack.editor.exportProject.difficulty.normal=Normal	#
+resourcePack.editor.exportProject.difficulty.hard=Vanskelig	#
+
+
+resourcePack.editor.toolRail.ExtrudeTool.title=Ekstruderingsverktøy	#
+resourcePack.editor.toolRail.ExtrudeTool.tooltip=Ekstruderingsverktøy for å ekspandere og redusere blokker	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.ContiguousSelectionBlockListSubPane.title=Blokkliste for sammenhengende utvalg	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.TrailingBlocksSettingsSubPane.title=Innstillinger for etterfølgende blokker	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.SampleLayerCount.title=Antall prøvelag	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.ContiguousSelectionSettings.title=Innstillinger for sammenhengende utvalg	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.ContiguousSelectionType.title=Sammenhengende utvalgstype	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.ContiguousSelectionType.SameBlocks=Samme blokker	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.ContiguousSelectionType.SameBlocksAndStates=Samme blokker og tilstander	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.ContiguousSelectionType.SolidBlocks=Solide blokker	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.ContiguousSelectionType.AllBlocks=Alle blokker	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.ContiguousSelectionType.CustomBlockList=Liste over spesiallagde blokker	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.ToleranceLevel.title=Toleransenivå	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.HasAdjacentBlocks.title=Har tilstøtende blokker	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.ExtruderSettings.title=Ekstruderingsinnstillinger	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.Radius.title=Radius	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.title=Valgmodus	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.ContiguousSelection=Sammenhengende utvalg	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.MarqueeSelection=Markeringsutvalg	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.ContiguousSettings.title=Innstillinger for sammenhengende utvalg	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.TrailingBlocks.title=Etterfølgende blokker	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.TrailingBlocksSettings.title=Innstillinger for etterfølgende blokker	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.QuickExtrudeSettings.title=Innstillinger for hurtigekstrudering	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.QuickExtrudeMode.title=Hurtigekstruderingsmodus	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.QuickExtrudeMode.decrease.title=Nedgang	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.QuickExtrudeMode.decrease.tooltip=Reduser ekstrudering	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.QuickExtrudeMode.expand.title=Utvid	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.QuickExtrudeMode.expand.tooltip=Ekspander ekstrudering	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.LayerCount.title=Antall lag	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.ExtrusionType.title=Ekstruderingstype	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.ExtrusionType.Extrude=Ekstruder	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.ExtrusionType.QuickExtrude=Hurtigekstruder	#
+resourcePack.editor.toolRail.ExtrudeTool.keyBinding.deselect=Opphev merking	#
+resourcePack.editor.toolRail.ExtrudeTool.keyBinding.toggleTool=Aktiver/deaktiver ekstruderverktøy	#
+
+
+resourcePack.editor.toolRail.FarmGenerator.tool.title=Gårdsgenerator	#
+resourcePack.editor.toolRail.FarmGenerator.tool.tooltip=Lag en egendefinert gård raskt	#
+resourcePack.editor.toolRail.FarmGenerator.pane.title=Gårdsgenerator	#
+resourcePack.editor.toolRail.FarmGenerator.pane.length=Lengde	#
+resourcePack.editor.toolRail.FarmGenerator.pane.width=Bredde	#
+resourcePack.editor.toolRail.FarmGenerator.pane.fence=Gjerde	#
+resourcePack.editor.toolRail.FarmGenerator.pane.irrigation=Legg til vanningsanlegg	#
+resourcePack.editor.toolRail.FarmGenerator.pane.irrigation.tooltip=Legger til vannblokker på gården for å vanne avlinger.	#
+resourcePack.editor.toolRail.FarmGenerator.pane.crops.title=Avlinger	#
+resourcePack.editor.toolRail.FarmGenerator.pane.crops.wheat=Hvete	#
+resourcePack.editor.toolRail.FarmGenerator.pane.crops.potato=Potet	#
+resourcePack.editor.toolRail.FarmGenerator.pane.crops.beets=Rødbete	#
+resourcePack.editor.toolRail.FarmGenerator.pane.crops.pumpkin=Gresskar	#
+resourcePack.editor.toolRail.FarmGenerator.pane.crops.carrot=Gulrot	#
+resourcePack.editor.toolRail.FarmGenerator.pane.animals.title=Dyr	#
+resourcePack.editor.toolRail.FarmGenerator.pane.animals.cow=Ku	#
+resourcePack.editor.toolRail.FarmGenerator.pane.animals.sheep=Sau	#
+resourcePack.editor.toolRail.FarmGenerator.pane.animals.pig=Gris	#
+resourcePack.editor.toolRail.FarmGenerator.keyBinding.toggleTool=Aktiver/deaktiver gårdsgeneratorverktøy	#
+resourcePack.editor.toolRail.FarmGenerator.keyBinding.place=Plasser en gård ved markøren	#
+
+
+resourcePack.editor.global.keyBinding.toggleMode=Veksle modus	#
+
+
+resourcePack.editor.goToMark.actionBar.tooltip.description=Brukspanel for spillernavigasjon	#
+resourcePack.editor.goToMark.actionBar.tooltip.title=Navigasjonspanel	#
+resourcePack.editor.goToMark.pane.goToSpawn=Dra til startpunktet	#
+resourcePack.editor.goToMark.pane.location=Spillerposisjon	#
+resourcePack.editor.goToMark.pane.locationPane.delete=Slett lagret posisjon	#
+resourcePack.editor.goToMark.pane.locationPane.dropdownLabel=Lagret posisjon	#
+resourcePack.editor.goToMark.pane.locationPane.inputName=Nytt navn	#
+resourcePack.editor.goToMark.pane.locationPane.markColor=Farge på stedsmarkør	#
+resourcePack.editor.goToMark.pane.locationPane.store=Lagre nåværende posisjon som ...	#
+resourcePack.editor.goToMark.pane.locationPane.teleport=Teleporter til den lagrede posisjonen %1$s	#
+resourcePack.editor.goToMark.pane.locationPane.title=Lagrede posisjoner	#
+resourcePack.editor.goToMark.pane.mapSize=Kartstørrelse	#
+resourcePack.editor.goToMark.pane.refreshMap=Oppdater kart	#
+resourcePack.editor.goToMark.pane.setSpawn=Angi startpunktet som gjeldende	#
+resourcePack.editor.goToMark.pane.showMap=Vis kart	#
+resourcePack.editor.goToMark.pane.teleport=Teleporter til lokasjonen	#
+resourcePack.editor.goToMark.title=Navigasjonspanel	#
+
+
+resourcePack.editor.grapple.keyBinding.flyToCursor=Fly til markøren	#
+resourcePack.editor.grapple.keyBinding.flyToSelection=Fly til utvalg	#
+
+
+resourcePack.editor.locate.biome.find=Stedfest biomet	#
+resourcePack.editor.locate.biome.title=Biom	#
+resourcePack.editor.locate.keyBinding.toggleTool=Aktiver/deaktiver finn biom-verktøy	#
+resourcePack.editor.locate.locatetype.biome=Biom	#
+resourcePack.editor.locate.locatetype.structure=Byggverk	#
+resourcePack.editor.locate.locatetype.title=Finn type	#
+resourcePack.editor.locate.results.foundat.title=Fant på	#
+resourcePack.editor.locate.results.foundat=Fant på	#
+resourcePack.editor.locate.results.goto=Gå til	#
+resourcePack.editor.locate.results.notfound.title=Ingen resultater	#
+resourcePack.editor.locate.results.notfound=Finner ingen resultater	#
+resourcePack.editor.locate.results.title=Resultater	#
+resourcePack.editor.locate.structure.message=Struktursøking støttes ikke for øyeblikket	#
+resourcePack.editor.locate.structure.title=Byggverk	#
+resourcePack.editor.locate.title=Finn	#
+
+
+resourcePack.editor.menuBar.edit.copy=Kopier	#
+resourcePack.editor.menuBar.edit.cut=Klipp ut	#
+resourcePack.editor.menuBar.edit.delete=Slett	#
+resourcePack.editor.menuBar.edit.deselect=Opphev merking	#
+resourcePack.editor.menuBar.edit.quickFill=Hurtigfyll	#
+resourcePack.editor.menuBar.edit.quickPaste=Hurtiginnliming	#
+resourcePack.editor.menuBar.edit.redo=Gjør om	#
+resourcePack.editor.menuBar.edit.undo=Angre	#
+resourcePack.editor.menuBar.edit=Rediger	#
+resourcePack.editor.menuBar.experimental=Eksperimentell	#
+resourcePack.editor.menuBar.extensions=Forlengelser	#
+resourcePack.editor.menuBar.file.cursor.projectThroughLiquid=Projiser gjennom væske	#
+resourcePack.editor.menuBar.file.cursor=Markørinnstillinger	#
+resourcePack.editor.menuBar.file.export.project=Redigeringsprosjekt	#
+resourcePack.editor.menuBar.file.export.world=Verden som kan spilles	#
+resourcePack.editor.menuBar.file.export=Eksporter	#
+resourcePack.editor.menuBar.file.pauseScreen=Spillmeny	#
+resourcePack.editor.menuBar.file.settings=Innstillinger for brukergrensesnitt	#
+resourcePack.editor.menuBar.file=Fil	#
+resourcePack.editor.menuBar.help.documentation=Dokumentasjon	#
+resourcePack.editor.menuBar.help.feedback=Tilbakemelding	#
+resourcePack.editor.menuBar.help.quickStart=Hurtigstart	#
+resourcePack.editor.menuBar.help=Hjelp	#
+resourcePack.editor.menuBar.locate=Finn	#
+resourcePack.editor.menuBar.parentMenu.weather.clear=Klart	#
+resourcePack.editor.menuBar.parentMenu.weather.rain=Regn	#
+resourcePack.editor.menuBar.parentMenu.weather.thunder=Torden	#
+resourcePack.editor.menuBar.parentMenu.weather=Vær	#
+resourcePack.editor.menuBar.view.blockPalette=Blokkpalett	#
+resourcePack.editor.menuBar.view.logging=Loggpanel	#
+resourcePack.editor.menuBar.view.navigationLogging=Navigasjonsloggføring	#
+resourcePack.editor.menuBar.view=Vis	#
+resourcePack.editor.menuBar.worldOptions.changeDimension.end=Slutt	#
+resourcePack.editor.menuBar.worldOptions.changeDimension.nether=Underverden	#
+resourcePack.editor.menuBar.worldOptions.changeDimension.overworld=Oververden	#
+resourcePack.editor.menuBar.worldOptions.changeDimension=Endre dimensjon	#
+resourcePack.editor.menuBar.worldOptions.pause.entities=Enheter	#
+resourcePack.editor.menuBar.worldOptions.pause=Pause	#
+resourcePack.editor.menuBar.worldOptions=Verdensalternativer	#
+
+
+resourcePack.editor.navigation.keyBinding.add=Legg til navigasjonsposisjon	#
+resourcePack.editor.navigation.keyBinding.next=Gå til neste navigasjonsposisjon	#
+resourcePack.editor.navigation.keyBinding.previous=Gå til forrige navigasjonsposisjon	#
+
+
+resourcePack.editor.paste.pane.submitButton=Bekreft lim inn	#
+resourcePack.editor.paste.pane.title=Lim inn	#
+resourcePack.editor.paste.pane.transform.mirrorX=Speil X	#
+resourcePack.editor.paste.pane.transform.mirrorZ=Speil Z	#
+resourcePack.editor.paste.pane.transform.origin.title=Forskyvning	#
+resourcePack.editor.paste.pane.transform.rotation.180=180Â°	#
+resourcePack.editor.paste.pane.transform.rotation.270=270Â°	#
+resourcePack.editor.paste.pane.transform.rotation.90=90Â°	#
+resourcePack.editor.paste.pane.transform.rotation.none=0Â°	#
+resourcePack.editor.paste.pane.transform.rotation.title=Roter	#
+resourcePack.editor.paste.pane.transform.title=Forvandle	#
+resourcePack.editor.paste.toolRail.description=Bruk venstre museknapp for å velge en blokk og deretter lime inn et utklippselement nøyaktig	#
+resourcePack.editor.paste.toolRail.title=Forhåndsvisning av innliming	#
+
+
+resourcePack.editor.pastepreview.inputContext.title=Forhåndsvisning av innliming	#
+resourcePack.editor.pastepreview.keyBinding.clearPreview=Tøm forhåndsvisning	#
+resourcePack.editor.pastepreview.keyBinding.copy=Kopier utvalg	#
+resourcePack.editor.pastepreview.keyBinding.cut=Klipp utvalg	#
+resourcePack.editor.pastepreview.keyBinding.moveBack=Flytt forhåndsvisning bakover	#
+resourcePack.editor.pastepreview.keyBinding.moveDown=Flytt forhåndsvisning nedover	#
+resourcePack.editor.pastepreview.keyBinding.moveForward=Flytt forhåndsvisning fremover	#
+resourcePack.editor.pastepreview.keyBinding.moveLeft=Flytt forhåndsvisning til venstre	#
+resourcePack.editor.pastepreview.keyBinding.moveOffsetBack=Flytt forskyvning bakover	#
+resourcePack.editor.pastepreview.keyBinding.moveOffsetDown=Flytt forskyvning nedover	#
+resourcePack.editor.pastepreview.keyBinding.moveOffsetForward=Flytt forskyvning fremover	#
+resourcePack.editor.pastepreview.keyBinding.moveOffsetLeft=Flytt forskyvning til venstre	#
+resourcePack.editor.pastepreview.keyBinding.moveOffsetRight=Flytt forskyvning til høyre	#
+resourcePack.editor.pastepreview.keyBinding.moveOffsetUp=Flytt forskyvning oppover	#
+resourcePack.editor.pastepreview.keyBinding.moveOriginBack=Flytt opprinnelse bakover	#
+resourcePack.editor.pastepreview.keyBinding.moveOriginDown=Flytt opprinnelse nedover	#
+resourcePack.editor.pastepreview.keyBinding.moveOriginForward=Flytt opprinnelse fremover	#
+resourcePack.editor.pastepreview.keyBinding.moveOriginLeft=Flytt opprinnelse til venstre	#
+resourcePack.editor.pastepreview.keyBinding.moveOriginRight=Flytt opprinnelse til høyre	#
+resourcePack.editor.pastepreview.keyBinding.moveOriginUp=Flytt opprinnelse oppover	#
+resourcePack.editor.pastepreview.keyBinding.moveRight=Flytt forhåndsvisning til høyre	#
+resourcePack.editor.pastepreview.keyBinding.moveUp=Flytt forhåndsvisning oppover	#
+resourcePack.editor.pastepreview.keyBinding.paste=Lim inn	#
+resourcePack.editor.pastepreview.keyBinding.pasteAtCursor=Lim inn ved markøren	#
+resourcePack.editor.pastepreview.keyBinding.pastepreview=Forhåndsvisning av innliming	#
+resourcePack.editor.pastepreview.keyBinding.quickPaste=Hurtiginnliming	#
+resourcePack.editor.pastepreview.keyBinding.rotateClockWise=Roter forhåndsvisning med klokken	#
+resourcePack.editor.pastepreview.keyBinding.rotateCounterClockWise=Roter forhåndsvisning mot klokken	#
+resourcePack.editor.pastepreview.keyBinding.toggleAdjacentTarget=Aktiver/deaktiver nærliggende målmodus	#
+resourcePack.editor.pastepreview.keyBinding.toggleBlockTarget=Aktiver/deaktiver blokkmålmodus	#
+resourcePack.editor.pastepreview.keyBinding.toggleFixedDistance=Aktiver fast avstand	#
+resourcePack.editor.pastepreview.keyBinding.toggleMirrorX=Vis/skjul speil X	#
+resourcePack.editor.pastepreview.keyBinding.toggleMirrorZ=Vis/skjul speil Z	#
+resourcePack.editor.pastepreview.keyBinding.toggleMouseTracking=Aktiver/deaktiver musesporing	#
+resourcePack.editor.pastepreview.pane.controls.cursor.fixed=Fast avstand	#
+resourcePack.editor.pastepreview.pane.controls.cursor.keyboard=Kun taster	#
+resourcePack.editor.pastepreview.pane.controls.cursor.mouseandkeys=Mus og taster	#
+resourcePack.editor.pastepreview.pane.controls.cursor.target.block=Blokker	#
+resourcePack.editor.pastepreview.pane.controls.cursor.target.face=Nærliggende	#
+resourcePack.editor.pastepreview.pane.controls.cursor.target.title=Blink	#
+resourcePack.editor.pastepreview.pane.controls.cursor=Kontroll	#
+resourcePack.editor.pastepreview.pane.controls.title=Markørkontroller	#
+resourcePack.editor.pastepreview.pane.placement.mirrorX=Speil X	#
+resourcePack.editor.pastepreview.pane.placement.mirrorZ=Speil Z	#
+resourcePack.editor.pastepreview.pane.placement.offset=Forskyvning	#
+resourcePack.editor.pastepreview.pane.placement.origin=Opprinnelse	#
+resourcePack.editor.pastepreview.pane.placement.pastebutton=Lim inn	#
+resourcePack.editor.pastepreview.pane.placement.rotation=Rotasjon (rundt Y)	#
+resourcePack.editor.pastepreview.pane.placement.title=Plasseringsinnstillinger	#
+resourcePack.editor.pastepreview.pane.root.size=Størrelse	#
+resourcePack.editor.pastepreview.pane.root.title=Forhåndsvisning av innliming	#
+resourcePack.editor.pastepreview.tool.tip=Bruk musen til å justere posisjonen til utklippstavleforhåndsvisningen, og klikk for å lime inn i verdenen	#
+resourcePack.editor.pastepreview.tool.title=Forhåndsvisning av innliming	#
+
+
+resourcePack.editor.playerPositionExtension.dimension=Dimensjon	#
+resourcePack.editor.playerPositionExtension.menu.player=Spiller	#
+resourcePack.editor.playerPositionExtension.menu.showPlayerSettings=Vis spillerinnstillinger	#
+resourcePack.editor.playerPositionExtension.nether=Underverden	#
+resourcePack.editor.playerPositionExtension.overworld=Oververden	#
+resourcePack.editor.playerPositionExtension.pane=Spillerinnstillinger	#
+resourcePack.editor.playerPositionExtension.theEnd=Slutten	#
+resourcePack.editor.playerPositionExtension.worldSettings=Verdensinnstillinger	#
+
+
+resourcePack.editor.playtest.AdvancedSettings.title=Avanserte innstillinger	#
+resourcePack.editor.playtest.Dialog.DaylightCycle=Dagslyssyklus	#
+resourcePack.editor.playtest.Dialog.Difficulty=Vanskelighetsgrad	#
+resourcePack.editor.playtest.Dialog.GameMode=Spillmodus	#
+resourcePack.editor.playtest.Dialog.OverrideSpawn=Start på den nåværende posisjonen	#
+resourcePack.editor.playtest.Dialog.ShowCoordinates=Vis koordinater	#
+resourcePack.editor.playtest.Dialog.TestButton=Test verden	#
+resourcePack.editor.playtest.Dialog.TimeOfDay=Tid på dagen	#
+resourcePack.editor.playtest.Dialog.Title=Testinnstillinger	#
+resourcePack.editor.playtest.Dialog.Weather=Vær	#
+resourcePack.editor.playtest.Dialog.WeatherCycle=Værsyklus	#
+resourcePack.editor.playtest.Menu.Title=Testverden	#
+resourcePack.editor.playtest.Title.Tooltip=Prøvespill redigeringsprosjektet ditt som en spillbar Minecraft-verden. Ingen endringer lagres i prosjektet ditt. Kun tilgjengelig når du er vert for et enkeltspillerprosjekt.	#
+
+
+resourcePack.editor.playtestResult.EditorSystemFailure=Redigeringssystemfeil	#
+resourcePack.editor.playtestResult.InvalidLevelId=Ugyldig nivå-ID	#
+resourcePack.editor.playtestResult.InvalidSessionHandle=Ugyldig øktnavn	#
+resourcePack.editor.playtestResult.OK=Vellykket	#
+resourcePack.editor.playtestResult.PlayerNotFound=Finner ikke spilleren	#
+resourcePack.editor.playtestResult.ResponseTimeout=Responstid	#
+resourcePack.editor.playtestResult.SessionInfoNotFound=Finner ikke informasjon om økten	#
+resourcePack.editor.playtestResult.TooManyPlayers=Du kan ikke teste en verden når du er vert for andre spillere	#
+resourcePack.editor.playtestResult.UnspecifiedError=Uspesifisert feil	#
+resourcePack.editor.playtestResult.UnsupportedScenario=Du må være vert for redigeringsprosjektet for å teste verdenen	#
+resourcePack.editor.playtestResult.WorldExportBusy=Eksport av verden er opptatt	#
+resourcePack.editor.playtestResult.WorldExportFailed=Eksport av verden mislyktes	#
+
+
+resourcePack.editor.toolRail.RepeaterTool.title=Gjentagelsesverktøy	#
+resourcePack.editor.toolRail.RepeaterTool.tooltip=Verktøy for å gjenta et utvalgt volum	#
+resourcePack.editor.toolRail.RepeaterTool.pane.Spacing=Mellomrom	#
+resourcePack.editor.toolRail.RepeaterTool.pane.Repetitions=Gjentakelser	#
+resourcePack.editor.toolRail.RepeaterTool.pane.Preview=Forhåndsvisning	#
+resourcePack.editor.toolRail.RepeaterTool.pane.Clear=Tøm	#
+resourcePack.editor.toolRail.RepeaterTool.pane.Apply=Bruk	#
+resourcePack.editor.toolRail.RepeaterTool.statusMessage.noSelection=Bruk valgverktøyet for å velge et volum som skal gjentas	#
+
+
+resourcePack.editor.selectionTool.deselect=Opphev merking	#
+resourcePack.editor.selectionTool.fillPane.fillAction=Fyll utvalg	#
+resourcePack.editor.selectionTool.fillPane.title=Fyll utvalg	#
+resourcePack.editor.selectionTool.keyBinding.deselect=Opphev utvalg	#
+resourcePack.editor.selectionTool.keyBinding.fill=Fyll innhold i utvalg	#
+resourcePack.editor.selectionTool.keyBinding.growBack=Utvid utvalget bakover	#
+resourcePack.editor.selectionTool.keyBinding.growDown=Utvid utvalget nedover	#
+resourcePack.editor.selectionTool.keyBinding.growForward=Utvid utvalg fremover	#
+resourcePack.editor.selectionTool.keyBinding.growLeft=Utvid utvalget til venstre	#
+resourcePack.editor.selectionTool.keyBinding.growRight=Utvid utvalg til høyre	#
+resourcePack.editor.selectionTool.keyBinding.growUp=Utvid utvalget oppover	#
+resourcePack.editor.selectionTool.keyBinding.moveAllSelectionBack=Flytt alle utvalg bakover	#
+resourcePack.editor.selectionTool.keyBinding.moveAllSelectionDown=Flytt alle utvalg nedover	#
+resourcePack.editor.selectionTool.keyBinding.moveAllSelectionForward=Flytt alle utvalg fremover	#
+resourcePack.editor.selectionTool.keyBinding.moveAllSelectionLeft=Flytt alle utvalg til venstre	#
+resourcePack.editor.selectionTool.keyBinding.moveAllSelectionRight=Flytt alle utvalg til høyre	#
+resourcePack.editor.selectionTool.keyBinding.moveAllSelectionUp=Flytt alle utvalg oppover	#
+resourcePack.editor.selectionTool.keyBinding.moveCursorBack=Flytt markøren bakover	#
+resourcePack.editor.selectionTool.keyBinding.moveCursorDown=Flytt markøren nedover	#
+resourcePack.editor.selectionTool.keyBinding.moveCursorForward=Flytt markøren fremover	#
+resourcePack.editor.selectionTool.keyBinding.moveCursorLeft=Flytt markøren til venstre	#
+resourcePack.editor.selectionTool.keyBinding.moveCursorRight=Flytt markøren til høyre	#
+resourcePack.editor.selectionTool.keyBinding.moveCursorUp=Flytt markøren oppover	#
+resourcePack.editor.selectionTool.keyBinding.moveSelectionBack=Flytt utvalg bakover	#
+resourcePack.editor.selectionTool.keyBinding.moveSelectionDown=Flytt utvalg nedover	#
+resourcePack.editor.selectionTool.keyBinding.moveSelectionForward=Flytt utvalg fremover	#
+resourcePack.editor.selectionTool.keyBinding.moveSelectionLeft=Flytt utvalg til venstre	#
+resourcePack.editor.selectionTool.keyBinding.moveSelectionRight=Flytt utvalg til høyre	#
+resourcePack.editor.selectionTool.keyBinding.moveSelectionUp=Flytt utvalg oppover	#
+resourcePack.editor.selectionTool.keyBinding.shrinkBack=Reduser utvalget bakover	#
+resourcePack.editor.selectionTool.keyBinding.shrinkDown=Reduser utvalget nedover	#
+resourcePack.editor.selectionTool.keyBinding.shrinkForward=Reduser utvalg fremover	#
+resourcePack.editor.selectionTool.keyBinding.shrinkLeft=Reduser utvalg til venstre	#
+resourcePack.editor.selectionTool.keyBinding.shrinkRight=Reduser utvalgtet til høyre	#
+resourcePack.editor.selectionTool.keyBinding.shrinkUp=Reduser utvalget oppover	#
+resourcePack.editor.selectionTool.keyBinding.toggleTool=Aktiver/deaktiver valgverktøy	#
+resourcePack.editor.selectionTool.marquee.title=Markeringsutvalg	#
+resourcePack.editor.selectionTool.modeSelection.freehand.title=Frihåndspenselmodus	#
+resourcePack.editor.selectionTool.modeSelection.freehand.tooltip=Velg blokker i verdenen ved å bruke en frihåndspenselform	#
+resourcePack.editor.selectionTool.modeSelection.marquee.title=Markeringsmodus	#
+resourcePack.editor.selectionTool.modeSelection.marquee.tooltip=Velg blokker i verdenen ved å bruke et rektangulært volum	#
+resourcePack.editor.selectionTool.modeSelection.title=Valgmodus	#
+resourcePack.editor.selectionTool.projectThroughLiquid=Projiser gjennom væske	#
+resourcePack.editor.selectionTool.quickAction.clearSelection.tooltip=Velg bort gjeldende utvalg	#
+resourcePack.editor.selectionTool.quickAction.clearSelection=Opphev merking	#
+resourcePack.editor.selectionTool.quickAction.deleteSelection.tooltip=Fjern alle blokkene inne i det gjeldende utvalgte volumet	#
+resourcePack.editor.selectionTool.quickAction.deleteSelection=Slett	#
+resourcePack.editor.selectionTool.quickAction.fillSelection.tooltip=Fyll det gjeldende utvalgte volumet med den gjeldende valgte blokktypen	#
+resourcePack.editor.selectionTool.quickAction.fillSelection=Fyll ut	#
+resourcePack.editor.selectionTool.quickAction.title=Hurtighandlinger	#
+resourcePack.editor.selectionTool.selectionMode.adjacent=Nærliggende	#
+resourcePack.editor.selectionTool.selectionMode.fixedDistance=Fast avstand	#
+resourcePack.editor.selectionTool.selectionMode.mouseAndKeyboard=Frihånd	#
+resourcePack.editor.selectionTool.selectionMode=Modus	#
+resourcePack.editor.selectionTool.settingsPane.title=Utvalg	#
+resourcePack.editor.selectionTool.toolRail.description=Klikk med venstre museknapp for å opprette et utvalg. Bruk CTRL+D å fjerne merkingen	#
+resourcePack.editor.selectionTool.toolRail.title=Utvalg	#
+resourcePack.editor.selectionTool.transformPane.origin.tooltip=Plasseringen til utgangspunktet av utvalgets i verdenskoordinater	#
+resourcePack.editor.selectionTool.transformPane.origin=Opprinnelse	#
+resourcePack.editor.selectionTool.transformPane.size=Størrelse	#
+resourcePack.editor.selectionTool.transformPane.title=Forvandle	#
+
+
 resourcePack.editor.server.description=Ressurser for redigeringsserver	#
 resourcePack.editor.server.name=Redigeringsressurser	#
 
-resourcePack.editor.global.keyBinding.toggleMode=Veksle modus	#
+
+resourcePack.editor.toolRail.Terrain.title=Terreng	#
+resourcePack.editor.toolRail.Terrain.Mode.title=Terrengmodus	#
+resourcePack.editor.toolRail.Terrain.Smooth.mode.title=Jevn modus	#
+resourcePack.editor.toolRail.Terrain.Smooth.tooltip=Jevn ut terreng basert på utjevningsstyrke	#
+resourcePack.editor.toolRail.Terrain.SmoothStrength=Utjevningsstyrke	#
+resourcePack.editor.toolRail.Terrain.description=Terrengverktøy jevner ut eller rugler til terreng	#
+
+
+resourcePack.editor.help.learnMore=Finn ut mer	#
+
+resourcePack.editor.statusBar.connectedPlayers=Tilkoblede spillere %s	#
+
+
+resourcePack.editor.summonTool.summonSubPane.EntityPickerTitle=Enhetstype	#
+
+
+resourcePack.editor.timeOfDay.12hrClock=12-timersklokke	#
+resourcePack.editor.timeOfDay.24hrClock=24-timersklokke	#
+resourcePack.editor.timeOfDay.clockType=Klokketype	#
+resourcePack.editor.timeOfDay.currentTime=Nåværende tid	#
+resourcePack.editor.timeOfDay.customTime=Tilpasset tid	#
+resourcePack.editor.timeOfDay.daylightCycle=Dagslyssyklus	#
+resourcePack.editor.timeOfDay.dropDown.day=Dag	#
+resourcePack.editor.timeOfDay.dropDown.midnight=Midnatt	#
+resourcePack.editor.timeOfDay.dropDown.night=Natt	#
+resourcePack.editor.timeOfDay.dropDown.none=Ingen	#
+resourcePack.editor.timeOfDay.dropDown.noon=Midt på dagen	#
+resourcePack.editor.timeOfDay.dropDown.sunrise=Soloppgang	#
+resourcePack.editor.timeOfDay.dropDown.sunset=Solnedgang	#
+resourcePack.editor.timeOfDay.dropDown.title=Forhåndsinnstillinger	#
+resourcePack.editor.timeOfDay.menu.title=Klokkeslettinnstillinger	#
+resourcePack.editor.timeOfDay.minecraftClock=Minecraft-klokke	#
+resourcePack.editor.timeOfDay.title=Tidsinnstillinger	#
+
 
 resourcePack.editor.toolMode.keyBinding.console=Åpne konsoll	#
 resourcePack.editor.toolMode.keyBinding.devConsole=Åpne utviklingskonsoll	#
@@ -22,509 +626,94 @@ resourcePack.editor.toolMode.keyBinding.hotbar7=Velg utvalgslinje sju	#
 resourcePack.editor.toolMode.keyBinding.hotbar8=Velg utvalgslinje åtte	#
 resourcePack.editor.toolMode.keyBinding.hotbar9=Velg utvalgslinje ni	#
 
-resourcePack.editor.viewport.keyBinding.moveUp=Flytt opp	#
-resourcePack.editor.viewport.keyBinding.moveDown=Flytt ned	#
-resourcePack.editor.viewport.keyBinding.moveLeft=Mot venstre	#
-resourcePack.editor.viewport.keyBinding.moveRight=Mot høyre	#
-resourcePack.editor.viewport.keyBinding.moveForward=Gå fremover	#
-resourcePack.editor.viewport.keyBinding.moveBack=Gå bakover	#
-
-resourcePack.editor.locate.title=Finn	#
-resourcePack.editor.locate.locatetype.title=Finn type	#
-resourcePack.editor.locate.locatetype.biome=Biom	#
-resourcePack.editor.locate.locatetype.structure=Byggverk	#
-resourcePack.editor.locate.biome.title=Biom	#
-resourcePack.editor.locate.biome.find=Stedfest biomet	#
-resourcePack.editor.locate.structure.title=Byggverk	#
-resourcePack.editor.locate.structure.message=Struktursøking støttes ikke for øyeblikket	#
-resourcePack.editor.locate.results.title=Resultater	#
-resourcePack.editor.locate.results.foundat.title=Fant på	#
-resourcePack.editor.locate.results.foundat=Fant på	#
-resourcePack.editor.locate.results.notfound.title=Ingen resultater	#
-resourcePack.editor.locate.results.notfound=Finner ingen resultater	#
-resourcePack.editor.locate.keyBinding.toggleTool=Aktiver/deaktiver finn biom-verktøy	#
-resourcePack.editor.locate.results.goto=Gå til	#
-
-resourcePack.editor.statusBar.connectedPlayers=Tilkoblede spillere %s	#
-
-resourcePack.editor.brushShape.common.settings.uniform=Uniform	#
-resourcePack.editor.brushShape.common.settings.radius=Radius	#
-resourcePack.editor.brushShape.common.settings.length=Lengde	#
-resourcePack.editor.brushShape.common.settings.axis=Ekstruder akse	#
-resourcePack.editor.brushShape.common.settings.xAxis=X-akse	#
-resourcePack.editor.brushShape.common.settings.yAxis=Y-akse	#
-resourcePack.editor.brushShape.common.settings.zAxis=Z-akse	#
-resourcePack.editor.brushShape.common.settings.xAxisNeg=–X-akse	#
-resourcePack.editor.brushShape.common.settings.yAxisNeg=–Y-akse	#
-resourcePack.editor.brushShape.common.settings.zAxisNeg=–Z-akse	#
-
-resourcePack.editor.brushShape.cylinder.name=Sylinder	#
-resourcePack.editor.brushShape.cylinder.settings.width=Bredderadius	#
-resourcePack.editor.brushShape.cylinder.settings.depth=Dybderadius	#
-
-resourcePack.editor.brushShape.cone.name=Kjegle	#
-resourcePack.editor.brushShape.cone.settings.length=Ekstrusjonslengde	#
-resourcePack.editor.brushShape.cone.settings.width=Bredderadius	#
-resourcePack.editor.brushShape.cone.settings.depth=Dybderadius	#
-
-resourcePack.editor.brushShape.cuboid.name=Kuboid	#
-resourcePack.editor.brushShape.cuboid.settings.x_length=X-lengde	#
-resourcePack.editor.brushShape.cuboid.settings.y_length=Y-lengde	#
-resourcePack.editor.brushShape.cuboid.settings.z_length=Z-lengde	#
-
-resourcePack.editor.brushShape.singleBlock.name=Enkeltblokk	#
-
-resourcePack.editor.brushShape.pyramid.name=Pyramide	#
-resourcePack.editor.brushShape.pyramid.settings.width=Bredde	#
-resourcePack.editor.brushShape.pyramid.settings.depth=Dybde	#
-resourcePack.editor.brushShape.pyramid.settings.length=Lengde	#
-
-resourcePack.editor.brushShape.ellipsoid.name=Ellipsoide	#
-resourcePack.editor.brushShape.ellipsoid.settings.x_radius=X-radius	#
-resourcePack.editor.brushShape.ellipsoid.settings.y_radius=Y-radius	#
-resourcePack.editor.brushShape.ellipsoid.settings.z_radius=Z-radius	#
-
-resourcePack.editor.toolRail.floodFillSelectionTool.title=Markeringsverktøy for flomfyll.	#
-resourcePack.editor.toolRail.floodFillSelectionTool.description=Velger området som du for øyeblikket ser på, ved hjelp av flomfyllingsalgoritme.	#
-resourcePack.editor.playerPositionExtension.dimension=Dimensjon	#
-resourcePack.editor.playerPositionExtension.menu.player=Spiller	#
-resourcePack.editor.playerPositionExtension.menu.showPlayerSettings=Vis spillerinnstillinger	#
-resourcePack.editor.playerPositionExtension.nether=Underverden	#
-resourcePack.editor.playerPositionExtension.overworld=Oververden	#
-resourcePack.editor.playerPositionExtension.pane=Spillerinnstillinger	#
-resourcePack.editor.playerPositionExtension.theEnd=Slutten	#
-resourcePack.editor.playerPositionExtension.worldSettings=Verdensinnstillinger	#
-resourcePack.editor.paste.toolRail.title=Forhåndsvisning av innliming	#
-resourcePack.editor.paste.toolRail.description=Bruk venstre museknapp for å velge en blokk og deretter lime inn et utklippselement nøyaktig	#
-resourcePack.editor.paste.pane.title=Lim inn	#
-resourcePack.editor.paste.pane.submitButton=Bekreft lim inn	#
-resourcePack.editor.paste.pane.transform.title=Forvandle	#
-resourcePack.editor.paste.pane.transform.origin.title=Forskyvning	#
-resourcePack.editor.paste.pane.transform.rotation.title=Roter	#
-resourcePack.editor.paste.pane.transform.rotation.none=0°	#
-resourcePack.editor.paste.pane.transform.rotation.90=90°	#
-resourcePack.editor.paste.pane.transform.rotation.180=180°	#
-resourcePack.editor.paste.pane.transform.rotation.270=270	#
-resourcePack.editor.paste.pane.transform.mirrorX=Speil X	#
-resourcePack.editor.paste.pane.transform.mirrorZ=Speil Z	#
-
-resourcePack.editor.core.keyBinding.showLogPanel=Vis loggpanel	#
-resourcePack.editor.core.keyBinding.showGameMenu=Vis spillmeny	#
-
-resourcePack.editor.delete.keyBinding=Slett innhold i utvalg	#
-
-resourcePack.editor.navigation.keyBinding.add=Legg til navigasjonsposisjon	#
-resourcePack.editor.navigation.keyBinding.previous=Gå til forrige navigasjonsposisjon	#
-resourcePack.editor.navigation.keyBinding.next=Gå til neste navigasjonsposisjon	#
-
-resourcePack.editor.transaction.keyBinding.undo=Angre	#
-resourcePack.editor.transaction.keyBinding.redo=Gjør om	#
-
-resourcePack.editor.goToMark.title=Navigasjonspanel	#
-resourcePack.editor.goToMark.actionBar.tooltip.title=Navigasjonspanel	#
-resourcePack.editor.goToMark.actionBar.tooltip.description=Brukspanel for spillernavigasjon	#
-resourcePack.editor.goToMark.pane.showMap=Vis kart	#
-resourcePack.editor.goToMark.pane.mapSize=Kartstørrelse	#
-resourcePack.editor.goToMark.pane.refreshMap=Oppdater kart	#
-resourcePack.editor.goToMark.pane.location=Spillerposisjon	#
-resourcePack.editor.goToMark.pane.teleport=Teleporter til lokasjonen	#
-resourcePack.editor.goToMark.pane.setSpawn=Angi startpunktet som gjeldende	#
-resourcePack.editor.goToMark.pane.goToSpawn=Dra til startpunktet	#
-resourcePack.editor.goToMark.pane.locationPane.title=Lagrede posisjoner	#
-resourcePack.editor.goToMark.pane.locationPane.markColor=Farge på stedsmarkør	#
-resourcePack.editor.goToMark.pane.locationPane.teleport=Teleporter til den lagrede posisjonen %1$s	#
-resourcePack.editor.goToMark.pane.locationPane.delete=Slett lagret posisjon	#
-resourcePack.editor.goToMark.pane.locationPane.inputName=Nytt navn	#
-resourcePack.editor.goToMark.pane.locationPane.store=Lagre nåværende posisjon som ...	#
-resourcePack.editor.goToMark.pane.locationPane.dropdownLabel=Lagret posisjon	#
-
-resourcePack.editor.grapple.keyBinding.flyToCursor=Fly til markøren	#
-resourcePack.editor.grapple.keyBinding.flyToSelection=Fly til utvalg	#
-
-resourcePack.editor.selectionTool.modeSelection.title=Valgmodus	#
-resourcePack.editor.selectionTool.modeSelection.marquee.title=Markeringsmodus	#
-resourcePack.editor.selectionTool.modeSelection.marquee.tooltip=Velg blokker i verdenen ved å bruke et rektangulært volum	#
-resourcePack.editor.selectionTool.modeSelection.freehand.title=Frihåndspenselmodus	#
-resourcePack.editor.selectionTool.modeSelection.freehand.tooltip=Velg blokker i verdenen ved å bruke en frihåndspenselform	#
-
-resourcePack.editor.selectionTool.deselect=Opphev merking	#
-resourcePack.editor.selectionTool.fillPane.title=Fyll utvalg	#
-resourcePack.editor.selectionTool.fillPane.fillAction=Fyll utvalg	#
-resourcePack.editor.selectionTool.toolRail.title=Utvalg	#
-resourcePack.editor.selectionTool.toolRail.description=Klikk med venstre museknapp for å opprette et utvalg. Bruk CTRL + D å fjerne merkingen	#
-resourcePack.editor.selectionTool.selectionMode=Modus	#
-resourcePack.editor.selectionTool.selectionMode.mouseAndKeyboard=Frihånd	#
-resourcePack.editor.selectionTool.selectionMode.fixedDistance=Fast avstand	#
-resourcePack.editor.selectionTool.selectionMode.adjacent=Nærliggende	#
-resourcePack.editor.selectionTool.settingsPane.title=Utvalg	#
-resourcePack.editor.selectionTool.transformPane.title=Forvandle	#
-resourcePack.editor.selectionTool.transformPane.origin=Opprinnelse	#
-resourcePack.editor.selectionTool.transformPane.origin.tooltip=Plasseringen til utgangspunktet av utvalgets volum i verdenskoordinater.	#
-resourcePack.editor.selectionTool.transformPane.size=Størrelse	#
-resourcePack.editor.selectionTool.quickAction.title=Hurtighandlinger	#
-resourcePack.editor.selectionTool.quickAction.clearSelection=Opphev merking	#
-resourcePack.editor.selectionTool.quickAction.clearSelection.tooltip=Velg bort gjeldende utvalgt volum	#
-resourcePack.editor.selectionTool.quickAction.fillSelection=Fyll ut	#
-resourcePack.editor.selectionTool.quickAction.fillSelection.tooltip=Fyll det gjeldende utvalgte volumet med den gjeldende valgte blokktypen	#
-resourcePack.editor.selectionTool.projectThroughLiquid=Projiser gjennom væske	#
-resourcePack.editor.selectionTool.keyBinding.moveCursorForward=Flytt markøren fremover	#
-resourcePack.editor.selectionTool.keyBinding.moveCursorBack=Flytt markøren bakover	#
-resourcePack.editor.selectionTool.keyBinding.moveCursorLeft=Flytt markøren til venstre	#
-resourcePack.editor.selectionTool.keyBinding.moveCursorRight=Flytt markøren til høyre	#
-resourcePack.editor.selectionTool.keyBinding.moveCursorUp=Flytt markøren oppover	#
-resourcePack.editor.selectionTool.keyBinding.moveCursorDown=Flytt markøren nedover	#
-resourcePack.editor.selectionTool.keyBinding.moveSelectionForward=Flytt utvalg fremover	#
-resourcePack.editor.selectionTool.keyBinding.moveSelectionBack=Flytt utvalg bakover	#
-resourcePack.editor.selectionTool.keyBinding.moveSelectionLeft=Flytt utvalg til venstre	#
-resourcePack.editor.selectionTool.keyBinding.moveSelectionRight=Flytt utvalg til høyre	#
-resourcePack.editor.selectionTool.keyBinding.moveSelectionUp=Flytt utvalg oppover	#
-resourcePack.editor.selectionTool.keyBinding.moveSelectionDown=Flytt utvalg nedover	#
-resourcePack.editor.selectionTool.keyBinding.moveAllSelectionForward=Flytt alle utvalg fremover	#
-resourcePack.editor.selectionTool.keyBinding.moveAllSelectionBack=Flytt alle utvalg bakover	#
-resourcePack.editor.selectionTool.keyBinding.moveAllSelectionLeft=Flytt alle utvalg til venstre	#
-resourcePack.editor.selectionTool.keyBinding.moveAllSelectionRight=Flytt alle utvalg til høyre	#
-resourcePack.editor.selectionTool.keyBinding.moveAllSelectionUp=Flytt alle utvalg oppover	#
-resourcePack.editor.selectionTool.keyBinding.moveAllSelectionDown=Flytt alle utvalg nedover	#
-resourcePack.editor.selectionTool.keyBinding.growForward=Utvid utvalg fremover	#
-resourcePack.editor.selectionTool.keyBinding.growBack=Utvid utvalget bakover	#
-resourcePack.editor.selectionTool.keyBinding.growLeft=Utvid utvalget til venstre	#
-resourcePack.editor.selectionTool.keyBinding.growRight=Utvid utvalg til høyre	#
-resourcePack.editor.selectionTool.keyBinding.growUp=Utvid utvalget oppover	#
-resourcePack.editor.selectionTool.keyBinding.growDown=Utvid utvalget nedover	#
-resourcePack.editor.selectionTool.keyBinding.shrinkForward=Reduser utvalg fremover	#
-resourcePack.editor.selectionTool.keyBinding.shrinkBack=Reduser utvalget bakover	#
-resourcePack.editor.selectionTool.keyBinding.shrinkLeft=Reduser utvalg til venstre	#
-resourcePack.editor.selectionTool.keyBinding.shrinkRight=Reduser utvalgtet til høyre	#
-resourcePack.editor.selectionTool.keyBinding.shrinkUp=Reduser utvalget oppover	#
-resourcePack.editor.selectionTool.keyBinding.shrinkDown=Reduser utvalget nedover	#
-resourcePack.editor.selectionTool.keyBinding.toggleTool=Aktiver/deaktiver valgverktøy	#
-resourcePack.editor.selectionTool.keyBinding.fill=Fyll innhold i utvalg	#
-resourcePack.editor.selectionTool.keyBinding.deselect=Opphev utvalg	#
-
-resourcePack.editor.actionBar.redo=Gjør om	#
-resourcePack.editor.actionBar.redo.tooltipTitle=Gjør om	#
-resourcePack.editor.actionBar.redo.tooltipDescription=Gjøre om en transaksjon	#
-resourcePack.editor.actionBar.undo=Angre	#
-resourcePack.editor.actionBar.undo.tooltipTitle=Angre	#
-resourcePack.editor.actionBar.undo.tooltipDescription=Angre en transaksjon	#
-
-resourcePack.editor.menuBar.file=Fil	#
-resourcePack.editor.menuBar.file.export=Eksporter	#
-resourcePack.editor.menuBar.file.export.world=Verden som kan spilles	#
-resourcePack.editor.menuBar.file.export.project=Redigeringsprosjekt	#
-resourcePack.editor.menuBar.file.pauseScreen=Spillmeny	#
-resourcePack.editor.menuBar.file.settings=Innstillinger for brukergrensesnitt	#
-resourcePack.editor.menuBar.file.cursor=Markørinnstillinger	#
-resourcePack.editor.menuBar.file.cursor.projectThroughLiquid=Projiser gjennom væske	#
-resourcePack.editor.menuBar.edit=Rediger	#
-resourcePack.editor.menuBar.edit.undo=Angre	#
-resourcePack.editor.menuBar.edit.redo=Gjør om	#
-resourcePack.editor.menuBar.edit.deselect=Opphev merking	#
-resourcePack.editor.menuBar.edit.cut=Klipp ut	#
-resourcePack.editor.menuBar.edit.copy=Kopier	#
-resourcePack.editor.menuBar.edit.quickPaste=Hurtiginnliming	#
-resourcePack.editor.menuBar.edit.quickFill=Hurtigfyll	#
-resourcePack.editor.menuBar.edit.delete=Slett	#
-resourcePack.editor.menuBar.extensions=Forlengelser	#
-resourcePack.editor.menuBar.view=Vis	#
-resourcePack.editor.menuBar.view.logging=Loggpanel	#
-resourcePack.editor.menuBar.view.navigationLogging=Navigasjonsloggføring	#
-resourcePack.editor.menuBar.view.blockPalette=Blokkpalett	#
-resourcePack.editor.menuBar.worldOptions=Verdensalternativer	#
-resourcePack.editor.menuBar.worldOptions.pause=Pause	#
-resourcePack.editor.menuBar.worldOptions.pause.entities=Enheter	#
-resourcePack.editor.menuBar.worldOptions.changeDimension=Endre dimensjon	#
-resourcePack.editor.menuBar.worldOptions.changeDimension.overworld=Oververden	#
-resourcePack.editor.menuBar.worldOptions.changeDimension.nether=Underverden	#
-resourcePack.editor.menuBar.worldOptions.changeDimension.end=Slutt	#
-resourcePack.editor.menuBar.experimental=Eksperimentell	#
-resourcePack.editor.menuBar.locate=Finn	#
-resourcePack.editor.menuBar.parentMenu.weather=Vær	#
-resourcePack.editor.menuBar.parentMenu.weather.clear=Klart	#
-resourcePack.editor.menuBar.parentMenu.weather.rain=Regn	#
-resourcePack.editor.menuBar.parentMenu.weather.thunder=Torden	#
-resourcePack.editor.menuBar.help=Hjelp	#
-resourcePack.editor.menuBar.help.quickStart=Hurtigstart	#
-resourcePack.editor.menuBar.help.documentation=Dokumentasjon	#
-resourcePack.editor.menuBar.help.feedback=Tilbakemelding	#
-
-commands.editor.project.description=Manipuler det innlastede prosjektet	#
-commands.editor.project.unknownSubcommand=Ukjent underkommando	#
-commands.editor.project.export=eksport av prosjekt	#
-commands.editor.project.exportComplete=Eksport fullført, filer skrevet til %s	#
-commands.editor.project.beginExport=Eksporterer …	#
-commands.editor.project.exportCopyFailed=Kan ikke kopiere nivådata %s	#
-
-## resourcePack.editor.playtestResult. is a prefix that maps directly to an enum value in the editor
-## Ensure that the spelling and case is identical to the enumeration in C++/TypeScript for
-## enum `Editor::Playtest::SessionResult`
-
-resourcePack.editor.playtestResult.OK=Vellykket	#
-resourcePack.editor.playtestResult.InvalidSessionHandle=Ugyldig øktnavn	#
-resourcePack.editor.playtestResult.SessionInfoNotFound=Finner ikke informasjon om økten	#
-resourcePack.editor.playtestResult.TooManyPlayers=Du kan ikke teste en verden når du er vert for andre spillere	#
-resourcePack.editor.playtestResult.WorldExportFailed=Eksport av verden mislyktes	#
-resourcePack.editor.playtestResult.WorldExportBusy=Eksport av verden er opptatt	#
-resourcePack.editor.playtestResult.UnsupportedScenario=Du må være vert for redigeringsprosjektet for å teste verdenen	#
-resourcePack.editor.playtestResult.EditorSystemFailure=Redigeringssystemfeil	#
-resourcePack.editor.playtestResult.InvalidLevelId=Ugyldig nivå-ID	#
-resourcePack.editor.playtestResult.PlayerNotFound=Finner ikke spilleren	#
-resourcePack.editor.playtestResult.ResponseTimeout=Responstid	#
-resourcePack.editor.playtestResult.UnspecifiedError=Uspesifisert feil	#
-
-
-resourcePack.editor.playtest.Menu.Title=Testverden	#
-resourcePack.editor.playtest.Title.Tooltip=Prøvespill redigeringsprosjektet ditt som en spillbar Minecraft-verden. Ingen endringer lagres i prosjektet ditt. Kun tilgjengelig når du er vert for et enkeltspillerprosjekt.	#
-resourcePack.editor.playtest.Dialog.Title=Testinnstillinger	#
-resourcePack.editor.playtest.Dialog.GameMode=Spillmodus	#
-resourcePack.editor.playtest.Dialog.Difficulty=Vanskelighetsgrad	#
-resourcePack.editor.playtest.Dialog.DaylightCycle=Dagslyssyklus	#
-resourcePack.editor.playtest.Dialog.Weather=Vær	#
-resourcePack.editor.playtest.Dialog.WeatherCycle=Værsyklus	#
-resourcePack.editor.playtest.Dialog.ShowCoordinates=Vis koordinater	#
-resourcePack.editor.playtest.Dialog.OverrideSpawn=Start på den nåværende posisjonen	#
-resourcePack.editor.playtest.Dialog.TimeOfDay=Tid på dagen	#
-resourcePack.editor.playtest.Dialog.TestButton=Test verden	#
-
-resourcePack.editor.toolRail.line.title=Replikk	#
-resourcePack.editor.toolRail.line.tooltip=Linjeverktøyet skaper linjer med blokker	#
-resourcePack.editor.toolRail.line.pane.width.title=Bredde	#
-resourcePack.editor.toolRail.line.pane.selectionMode=Utvalg	#
-resourcePack.editor.toolRail.line.pane.selectionMode.freeForm=Frihånd	#
-resourcePack.editor.toolRail.line.pane.selectionMode.fixedDistance=Fast avstand	#
-resourcePack.editor.toolRail.line.pane.selectionMode.adjacent=Nærliggende ansikt	#
-resourcePack.editor.toolRail.line.pane.height.title=Høyde	#
-resourcePack.editor.toolRail.line.pane.algorithm.title=Algoritme	#
-resourcePack.editor.toolRail.line.pane.algorithm.Direct=Diriger	#
-resourcePack.editor.toolRail.line.pane.algorithm.Staggered=Forskjøvede (gjerder)	#
-resourcePack.editor.toolRail.line.pane.surfaceContour=Overflatekontur	#
-resourcePack.editor.toolRail.line.pane.fillAction=Fyll utvalg	#
-resourcePack.editor.toolRail.line.keyBinding.selectAll=Marker alt	#
-resourcePack.editor.toolRail.line.keyBinding.deselect=Opphev merking	#
-resourcePack.editor.toolRail.line.keyBinding.deselectAll=Opphev merking av alle	#
-resourcePack.editor.toolRail.line.keyBinding.fillAndClear=Fyll innhold og opphev utvalg	#
-resourcePack.editor.toolRail.line.keyBinding.fill=Fyll innhold	#
-resourcePack.editor.toolRail.line.keyBinding.deleteAndClear=Slett innhold og opphev utvalg	#
-resourcePack.editor.toolRail.line.keyBinding.delete=Slett innhold	#
-resourcePack.editor.toolRail.line.keyBinding.moveForward=Flytt utvalgte fremover	#
-resourcePack.editor.toolRail.line.keyBinding.moveBack=Flytt utvalgte bakover	#
-resourcePack.editor.toolRail.line.keyBinding.moveLeft=Flytt utvalgte til venstre	#
-resourcePack.editor.toolRail.line.keyBinding.moveRight=Flytt utvalgte til høyre	#
-resourcePack.editor.toolRail.line.keyBinding.moveUp=Flytt utvalgte opp	#
-resourcePack.editor.toolRail.line.keyBinding.moveDown=Flytt utvalgte nedover	#
-
-resourcePack.editor.timeOfDay.menu.title=Klokkeslettinnstillinger	#
-resourcePack.editor.timeOfDay.dropDown.title=Forhåndsinnstillinger	#
-resourcePack.editor.timeOfDay.dropDown.none=Ingen	#
-resourcePack.editor.timeOfDay.dropDown.sunrise=Soloppgang	#
-resourcePack.editor.timeOfDay.dropDown.day=Dag	#
-resourcePack.editor.timeOfDay.dropDown.noon=Midt på dagen	#
-resourcePack.editor.timeOfDay.dropDown.sunset=Solnedgang	#
-resourcePack.editor.timeOfDay.dropDown.night=Natt	#
-resourcePack.editor.timeOfDay.dropDown.midnight=Midnatt	#
-resourcePack.editor.timeOfDay.title=Tidsinnstillinger	#
-resourcePack.editor.timeOfDay.clockType=Klokketype	#
-resourcePack.editor.timeOfDay.24hrClock=24-timersklokke	#
-resourcePack.editor.timeOfDay.12hrClock=12-timersklokke	#
-resourcePack.editor.timeOfDay.minecraftClock=Minecraft-klokke	#
-resourcePack.editor.timeOfDay.daylightCycle=Dagslyssyklus	#
-resourcePack.editor.timeOfDay.currentTime=Nåværende tid	#
-resourcePack.editor.timeOfDay.customTime=Tilpasset tid	#
 
 resourcePack.editor.toolRail.blockPalette.title=Blokkpalett (CTRL + P)	#
 resourcePack.editor.toolRail.blockPalette.tooltip=Lag en palett med favorittblokkene dine eller de mest brukte blokkene	#
-resourcePack.editor.blockPalette.addSearchItem=Bruk funnet blokk	#
-resourcePack.editor.blockPalette.title=Blokkpalett	#
-resourcePack.editor.blockPalette.paletteDropdown.title=Palett	#
-resourcePack.editor.blockPalette.blockPicker=Søk	#
+resourcePack.editor.toolRail.flattenBrush.title=Planeringspensel	#
+resourcePack.editor.toolRail.flattenBrush.tooltip=Flat ut et område til den valgte blokkens høyde	#
+resourcePack.editor.toolRail.flattenBrush.settings.heightThreshold=Høydegrense	#
+resourcePack.editor.toolRail.flattenBrush.settings.radius=Radius	#
+resourcePack.editor.toolRail.floodFillSelectionTool.description=Velger området som du for øyeblikket ser på, ved hjelp av flomfyllingsalgoritme.	#
+resourcePack.editor.toolRail.floodFillSelectionTool.title=Markeringsverktøy for flomfyll.	#
+resourcePack.editor.toolRail.line.keyBinding.delete=Slett innhold	#
+resourcePack.editor.toolRail.line.keyBinding.deleteAndClear=Slett innhold og opphev utvalg	#
+resourcePack.editor.toolRail.line.keyBinding.deselect=Opphev merking	#
+resourcePack.editor.toolRail.line.keyBinding.deselectAll=Opphev merking av alle	#
+resourcePack.editor.toolRail.line.keyBinding.fill=Fyll innhold	#
+resourcePack.editor.toolRail.line.keyBinding.fillAndClear=Fyll innhold og opphev utvalg	#
+resourcePack.editor.toolRail.line.keyBinding.moveBack=Flytt utvalgte bakover	#
+resourcePack.editor.toolRail.line.keyBinding.moveDown=Flytt utvalgte nedover	#
+resourcePack.editor.toolRail.line.keyBinding.moveForward=Flytt utvalgte fremover	#
+resourcePack.editor.toolRail.line.keyBinding.moveLeft=Flytt utvalgte til venstre	#
+resourcePack.editor.toolRail.line.keyBinding.moveRight=Flytt utvalgte til høyre	#
+resourcePack.editor.toolRail.line.keyBinding.moveUp=Flytt utvalgte opp	#
+resourcePack.editor.toolRail.line.keyBinding.selectAll=Marker alt	#
+resourcePack.editor.toolRail.line.pane.algorithm.Direct=Diriger	#
+resourcePack.editor.toolRail.line.pane.algorithm.Staggered=Sjanglet (gjerder)	#
+resourcePack.editor.toolRail.line.pane.algorithm.title=Algoritme	#
+resourcePack.editor.toolRail.line.pane.fillAction=Fyll utvalg	#
+resourcePack.editor.toolRail.line.pane.height.title=Høyde	#
+resourcePack.editor.toolRail.line.pane.selectionMode.adjacent=Nærliggende ansikt	#
+resourcePack.editor.toolRail.line.pane.selectionMode.fixedDistance=Fast avstand	#
+resourcePack.editor.toolRail.line.pane.selectionMode.freeForm=Frihånd	#
+resourcePack.editor.toolRail.line.pane.selectionMode=Utvalg	#
+resourcePack.editor.toolRail.line.pane.surfaceContour=Overflatekontur	#
+resourcePack.editor.toolRail.line.pane.width.title=Bredde	#
+resourcePack.editor.toolRail.line.title=Linje	#
+resourcePack.editor.toolRail.line.tooltip=Linjeverktøyet skaper linjer med blokker	#
+resourcePack.editor.toolRail.rulerTool.title=Linjal-verktøy	#
+resourcePack.editor.toolRail.rulerTool.tooltip=Mål avstand	#
+resourcePack.editor.toolRail.rulerTool.info.title=Måling	#
 
-resourcePack.editor.toolRail.summonTool.pane.title=Påkallingsverktøy	#
-resourcePack.editor.toolRail.summonTool.pane.type=Enhetstype	#
-resourcePack.editor.toolRail.summonTool.pane.select=Velg modus	#
-resourcePack.editor.toolRail.summonTool.tool.title=Påkallingsverktøy	#
-resourcePack.editor.toolRail.summonTool.tool.tip=Klikk for å påkalle enheter	#
-resourcePack.editor.toolRail.summonTool.tool.summonSubPane=Enhetstartpunkt	#
-resourcePack.editor.toolRail.summonTool.tool.selectSubPane=Velg enhet	#
-resourcePack.editor.toolRail.summonTool.tool.selectSubPane.rotation=Rotasjon	#
-resourcePack.editor.toolRail.summonTool.tool.infoText=Klikk på en enhet for å velge den, eller klikk på kartet for å tilkalle en ny	#
-resourcePack.editor.summonTool.summonSubPane.EntityPickerTitle=Enhetstype	#
-resourcePack.editor.toolRail.summonTool.keyBinding.toggle=Aktiver/deaktiver påkallingsverktøy	#
-resourcePack.editor.toolRail.summonTool.keyBinding.delete=Slett enhet	#
+
+resourcePack.editor.toolRail.smartFillTool.title=Smart fylleverktøy	#
+resourcePack.editor.toolRail.smartFillTool.tooltip=Klikk for å fylle et sammenkoblet sett med blokker	#
+resourcePack.editor.toolRail.smartFillTool.modes.fillVolume=Fyllvolum	#
+resourcePack.editor.toolRail.smartFillTool.areaLimit.title=Områdegrense	#
+resourcePack.editor.toolRail.smartFillTool.areaLimit.tooltip=Maksimalt område å fylle	#
+
+
 resourcePack.editor.toolRail.summonTool.keyBinding.clear=Opphev valg	#
-resourcePack.editor.toolRail.summonTool.keyBinding.moveForward=Flytt utvalgte fremover	#
+resourcePack.editor.toolRail.summonTool.keyBinding.delete=Slett enhet	#
 resourcePack.editor.toolRail.summonTool.keyBinding.moveBack=Flytt utvalgte bakover	#
+resourcePack.editor.toolRail.summonTool.keyBinding.moveDown=Flytt utvalgte nedover	#
+resourcePack.editor.toolRail.summonTool.keyBinding.moveForward=Flytt utvalgte fremover	#
 resourcePack.editor.toolRail.summonTool.keyBinding.moveLeft=Flytt utvalgte til venstre	#
 resourcePack.editor.toolRail.summonTool.keyBinding.moveRight=Flytt utvalgte til høyre	#
 resourcePack.editor.toolRail.summonTool.keyBinding.moveUp=Flytt utvalgte opp	#
-resourcePack.editor.toolRail.summonTool.keyBinding.moveDown=Flytt utvalgte nedover	#
+resourcePack.editor.toolRail.summonTool.keyBinding.toggle=Aktiver/deaktiver påkallingsverktøy	#
+resourcePack.editor.toolRail.summonTool.pane.select=Velg modus	#
+resourcePack.editor.toolRail.summonTool.pane.title=Påkallingsverktøy	#
+resourcePack.editor.toolRail.summonTool.pane.type=Enhetstype	#
+resourcePack.editor.toolRail.summonTool.tool.infoText=Klikk på en enhet for å velge den, eller klikk på kartet for å tilkalle en ny	#
+resourcePack.editor.toolRail.summonTool.tool.selectSubPane.rotation=Rotasjon	#
+resourcePack.editor.toolRail.summonTool.tool.selectSubPane=Velg enhet	#
+resourcePack.editor.toolRail.summonTool.tool.summonSubPane=Enhetstartpunkt	#
+resourcePack.editor.toolRail.summonTool.tool.tip=Klikk for å påkalle enheter	#
+resourcePack.editor.toolRail.summonTool.tool.title=Påkallingsverktøy	#
 
-resourcePack.editor.pastepreview.tool.title=Forhåndsvisning av innliming	#
-resourcePack.editor.pastepreview.tool.tip=Bruk musen til å justere posisjonen til utklippstavleforhåndsvisningen, og klikk for å lime inn i verdenen	#
-resourcePack.editor.pastepreview.inputContext.title=Forhåndsvisning av innliming	#
-resourcePack.editor.pastepreview.pane.root.title=Forhåndsvisning av innliming	#
-resourcePack.editor.pastepreview.pane.root.size=Størrelse	#
-resourcePack.editor.pastepreview.pane.placement.title=Plasseringsinnstillinger	#
-resourcePack.editor.pastepreview.pane.placement.origin=Opprinnelse	#
-resourcePack.editor.pastepreview.pane.placement.offset=Forskyvning	#
-resourcePack.editor.pastepreview.pane.placement.rotation=Rotasjon (rundt Y)	#
-resourcePack.editor.pastepreview.pane.placement.mirrorX=Speil X	#
-resourcePack.editor.pastepreview.pane.placement.mirrorZ=Speil Z	#
-resourcePack.editor.pastepreview.pane.placement.pastebutton=Lim inn	#
-resourcePack.editor.pastepreview.pane.controls.title=Markørkontroller	#
-resourcePack.editor.pastepreview.pane.controls.cursor=Kontroll	#
-resourcePack.editor.pastepreview.pane.controls.cursor.keyboard=Kun taster	#
-resourcePack.editor.pastepreview.pane.controls.cursor.mouseandkeys=Mus og taster	#
-resourcePack.editor.pastepreview.pane.controls.cursor.fixed=Fast avstand	#
-resourcePack.editor.pastepreview.pane.controls.cursor.target.title=Blink	#
-resourcePack.editor.pastepreview.pane.controls.cursor.target.block=Blokker	#
-resourcePack.editor.pastepreview.pane.controls.cursor.target.face=Nærliggende	#
-resourcePack.editor.pastepreview.keyBinding.pastepreview=Forhåndsvisning av innliming	#
-resourcePack.editor.pastepreview.keyBinding.copy=Kopier utvalg	#
-resourcePack.editor.pastepreview.keyBinding.cut=Klipp utvalg	#
-resourcePack.editor.pastepreview.keyBinding.quickPaste=Hurtiginnliming	#
-resourcePack.editor.pastepreview.keyBinding.paste=Lim inn	#
-resourcePack.editor.pastepreview.keyBinding.clearPreview=Tøm forhåndsvisning	#
-resourcePack.editor.pastepreview.keyBinding.moveForward=Flytt forhåndsvisning fremover	#
-resourcePack.editor.pastepreview.keyBinding.moveBack=Flytt forhåndsvisning bakover	#
-resourcePack.editor.pastepreview.keyBinding.moveLeft=Flytt forhåndsvisning til venstre	#
-resourcePack.editor.pastepreview.keyBinding.moveRight=Flytt forhåndsvisning til høyre	#
-resourcePack.editor.pastepreview.keyBinding.moveUp=Flytt forhåndsvisning oppover	#
-resourcePack.editor.pastepreview.keyBinding.moveDown=Flytt forhåndsvisning nedover	#
-resourcePack.editor.pastepreview.keyBinding.moveOffsetForward=Flytt forskyvning fremover	#
-resourcePack.editor.pastepreview.keyBinding.moveOffsetBack=Flytt forskyvning bakover	#
-resourcePack.editor.pastepreview.keyBinding.moveOffsetLeft=Flytt forskyvning til venstre	#
-resourcePack.editor.pastepreview.keyBinding.moveOffsetRight=Flytt forskyvning til høyre	#
-resourcePack.editor.pastepreview.keyBinding.moveOffsetUp=Flytt forskyvning oppover	#
-resourcePack.editor.pastepreview.keyBinding.moveOffsetDown=Flytt forskyvning nedover	#
-resourcePack.editor.pastepreview.keyBinding.moveOriginForward=Flytt opprinnelse fremover	#
-resourcePack.editor.pastepreview.keyBinding.moveOriginBack=Flytt opprinnelse bakover	#
-resourcePack.editor.pastepreview.keyBinding.moveOriginLeft=Flytt opprinnelse til venstre	#
-resourcePack.editor.pastepreview.keyBinding.moveOriginRight=Flytt opprinnelse til høyre	#
-resourcePack.editor.pastepreview.keyBinding.moveOriginUp=Flytt opprinnelse oppover	#
-resourcePack.editor.pastepreview.keyBinding.moveOriginDown=Flytt opprinnelse nedover	#
-resourcePack.editor.pastepreview.keyBinding.pasteAtCursor=Lim inn ved markøren	#
-resourcePack.editor.pastepreview.keyBinding.toggleBlockTarget=Aktiver/deaktiver blokkmålmodus	#
-resourcePack.editor.pastepreview.keyBinding.toggleAdjacentTarget=Aktiver/deaktiver nærliggende målmodus	#
-resourcePack.editor.pastepreview.keyBinding.rotateClockWise=Roter forhåndsvisning med klokken	#
-resourcePack.editor.pastepreview.keyBinding.rotateCounterClockWise=Roter forhåndsvisning mot klokken	#
-resourcePack.editor.pastepreview.keyBinding.toggleMirrorX=Vis/skjul speil X	#
-resourcePack.editor.pastepreview.keyBinding.toggleMirrorZ=Vis/skjul speil Z	#
-resourcePack.editor.pastepreview.keyBinding.toggleMouseTracking=Aktiver/deaktiver musesporing	#
-resourcePack.editor.pastepreview.keyBinding.toggleFixedDistance=Aktiver fast avstand	#
 
-resourcePack.editor.ClipboardPreviewControl.rootPane.title=Informasjon om utklippstavlen	#
-resourcePack.editor.ClipboardPreviewControl.structureSize.title=Utklippstavlens størrelse	#
-resourcePack.editor.ClipboardPreviewControl.placement.title=Alternativer	#
-resourcePack.editor.ClipboardPreviewControl.origin.title=Opprinnelse	#
-resourcePack.editor.ClipboardPreviewControl.origin.tooltip=Opprinnelsespunktet inne i utklippstavle-elementet. Dette brukes som et antrekkplasseringsanker samt punktet utklippstavlen roteres og speiles rundt.	#
-resourcePack.editor.ClipboardPreviewControl.offset.title=Forskyvning	#
-resourcePack.editor.ClipboardPreviewControl.offset.tooltip=Ytterligere forskyvning fra plasseringspunktet til utklippstavle-elementets opprinnelse	#
-resourcePack.editor.ClipboardPreviewControl.rotation.title=Rotasjon	#
-resourcePack.editor.ClipboardPreviewControl.rotation.tooltip=Mengden rotasjon rundt Y-aksen ved opprinnelsespunktet	#
-resourcePack.editor.ClipboardPreviewControl.rotation.none=Ingen	#
-resourcePack.editor.ClipboardPreviewControl.rotation.90=90°	#
-resourcePack.editor.ClipboardPreviewControl.rotation.180=180°	#
-resourcePack.editor.ClipboardPreviewControl.rotation.270=270	#
-resourcePack.editor.ClipboardPreviewControl.mirror.axis.x=Speil (X-akse)	#
-resourcePack.editor.ClipboardPreviewControl.mirror.axis.x.tooltip=Speil utklippstavle-elementet rundt X-aksen ved opprinnelsespunktet	#
-resourcePack.editor.ClipboardPreviewControl.mirror.axis.z=Speil (Z-akse)	#
-resourcePack.editor.ClipboardPreviewControl.mirror.axis.z.tooltip=Speil utklippstavle-elementet rundt Z-aksen ved opprinnelsespunktet	#
-resourcePack.editor.ClipboardPreviewControl.keyBinding.nudgeOffsetUp=Dytt forskyvningen opp	#
-resourcePack.editor.ClipboardPreviewControl.keyBinding.nudgeOffsetDown=Dytt forskyvningen ned	#
-resourcePack.editor.ClipboardPreviewControl.keyBinding.nudgeOffsetLeft=Dytt forskyvningen til venstre	#
-resourcePack.editor.ClipboardPreviewControl.keyBinding.nudgeOffsetRight=Dytt forskyvningen til høyre	#
-resourcePack.editor.ClipboardPreviewControl.keyBinding.nudgeOffsetForward=Dytt forskyvningen fremover	#
-resourcePack.editor.ClipboardPreviewControl.keyBinding.nudgeOffsetBack=Dytt forskyvningen bakover	#
-resourcePack.editor.ClipboardPreviewControl.keybinding.moveOriginForward=Flytt opprinnelse fremover	#
-resourcePack.editor.ClipboardPreviewControl.keybinding.moveOriginBack=Flytt opprinnelse bakover	#
-resourcePack.editor.ClipboardPreviewControl.keybinding.moveOriginLeft=Flytt opprinnelse til venstre	#
-resourcePack.editor.ClipboardPreviewControl.keybinding.moveOriginRight=Flytt opprinnelse til høyre	#
-resourcePack.editor.ClipboardPreviewControl.keybinding.moveOriginUp=Flytt opprinnelse oppover	#
-resourcePack.editor.ClipboardPreviewControl.keybinding.moveOriginDown=Flytt opprinnelse nedover	#
-resourcePack.editor.ClipboardPreviewControl.keybinding.rotateClockWise=Roter forhåndsvisning med klokken	#
-resourcePack.editor.ClipboardPreviewControl.keybinding.rotateCounterClockWise=Roter forhåndsvisning mot klokken	#
-resourcePack.editor.ClipboardPreviewControl.keybinding.toggleMirrorX=Vis/skjul speil X	#
-resourcePack.editor.ClipboardPreviewControl.keybinding.toggleMirrorZ=Vis/skjul speil Z	#
+resourcePack.editor.transaction.keyBinding.redo=Gjør om	#
+resourcePack.editor.transaction.keyBinding.undo=Angre	#
 
-resourcePack.editor.deferredLightingSettings.menu.title=Utsatte lysinnstillinger	#
-resourcePack.editor.datatransferaccessors.atmospheric_scattering=Atmosfærisk spredning	#
-resourcePack.editor.datatransferaccessors.color_grading=Fargegradering	#
-resourcePack.editor.datatransferaccessors.lighting_group=Globalt lys	#
-resourcePack.editor.datatransferaccessors.pbr_fallbacks=PBR-alternativer	#
-resourcePack.editor.datatransferaccessors.point_lights=Punktlys	#
-resourcePack.editor.datatransferaccessors.water=Vann	#
 
+resourcePack.editor.viewport.keyBinding.moveBack=Gå bakover	#
+resourcePack.editor.viewport.keyBinding.moveDown=Flytt ned	#
+resourcePack.editor.viewport.keyBinding.moveForward=Gå fremover	#
+resourcePack.editor.viewport.keyBinding.moveLeft=Mot venstre	#
+resourcePack.editor.viewport.keyBinding.moveRight=Mot høyre	#
+resourcePack.editor.viewport.keyBinding.moveUp=Flytt opp	#
+
+
+resourcePack.editor.viewSettings.compass.tip=Vis retningkompasset	#
+resourcePack.editor.viewSettings.compass.title=Vis kompasset	#
+resourcePack.editor.viewSettings.chunk.tip=Vis omrisset av delgrensene på kartet	#
+resourcePack.editor.viewSettings.chunk.title=Vis delgrenser	#
+resourcePack.editor.viewSettings.invisible.tip=Vis usynlige blokker (f.eks. tomrom, barriere osv.)	#
+resourcePack.editor.viewSettings.invisible.title=Vis usynlige blokker	#
+resourcePack.editor.viewSettings.flySpeed.tip=Øk flyhastigheten for å manøvrere raskere omkring på kartet	#
+resourcePack.editor.viewSettings.flySpeed.title=Multiplikator for flyhastighet	#
 resourcePack.editor.viewSettings.menu=Visningsinnstillinger	#
 resourcePack.editor.viewSettings.title=Visningsinnstillinger	#
-resourcePack.editor.viewSettings.invisible.title=Vis usynlige blokker	#
-resourcePack.editor.viewSettings.invisible.tip=Vis usynlige blokker (f.eks. tomrom, barriere osv.)	#
-resourcePack.editor.viewSettings.chunk.title=Vis delgrenser	#
-resourcePack.editor.viewSettings.chunk.tip=Vis omrisset av delgrensene på kartet	#
 
-resourcePack.editor.brushPaint.title=Penselmaling	#
-resourcePack.editor.brushPaint.tooltip=Bruk pensler til å male blokker i verdenen	#
-resourcePack.editor.brushPaint.inputContext.title=Penselmaling	#
-resourcePack.editor.brushPaint.inputContext.oneshot=Mal én gang	#
-resourcePack.editor.brushPaint.inputContext.activateBrushPaint=Aktiver penselmaling	#
-
-resourcePack.editor.CursorModeControl.rootPane.title=Markørinnstillinger	#
-resourcePack.editor.CursorModeControl.mouseControlMode.title=Inndatametode	#
-resourcePack.editor.CursorModeControl.mouseControlMode.tooltip=Velg inndatametode for verdensblokkmarkøren	#
-resourcePack.editor.CursorModeControl.mouseControlMode.keyboard=Kun tastatur	#
-resourcePack.editor.CursorModeControl.mouseControlMode.keyboardAndMouse=Mus og taster	#
-resourcePack.editor.CursorModeControl.mouseControlMode.fixed=Fast avstand	#
-resourcePack.editor.CursorModeControl.cursorTargetMode.title=Mål	#
-resourcePack.editor.CursorModeControl.cursorTargetMode.tooltip=Velg markørmålmodus	#
-resourcePack.editor.CursorModeControl.cursorTargetMode.block=Blokk	#
-resourcePack.editor.CursorModeControl.cursorTargetMode.block.tooltip=Blokken under musepekeren	#
-resourcePack.editor.CursorModeControl.cursorTargetMode.face=Nærliggende	#
-resourcePack.editor.CursorModeControl.cursorTargetMode.face.tooltip=Blokken som er rett ved siden av overflaten til blokken under markøren	#
-resourcePack.editor.CursorModeControl.projectThroughWater.title=Projiser gjennom vann	#
-resourcePack.editor.CursorModeControl.projectThroughWater.tooltip=Musens stråler projiseres gjennom vann, noe som gjør det mulig å velge elementer under vann	#
-resourcePack.editor.CursorModeControl.fixedDistance.slider.title=Fast markøravstand	#
-resourcePack.editor.CursorModeControl.fixedDistance.slider.tooltip=Juster den faste avstanden fra spilleren der blokkmarkøren skal plasseres	#
-resourcePack.editor.CursorModeControl.keybinding.moveCursorForward=Dytt fremover	#
-resourcePack.editor.CursorModeControl.keybinding.moveCursorBack=Flytt markøren bakover	#
-resourcePack.editor.CursorModeControl.keybinding.moveCursorUp=Flytt markøren oppover	#
-resourcePack.editor.CursorModeControl.keybinding.moveCursorDown=Flytt markøren nedover	#
-resourcePack.editor.CursorModeControl.keybinding.moveCursorLeft=Flytt markøren til venstre	#
-resourcePack.editor.CursorModeControl.keybinding.moveCursorRight=Flytt markøren til høyre	#
-resourcePack.editor.CursorModeControl.keybinding.toggleMouseTracking=Aktiver/deaktiver musesporing	#
-resourcePack.editor.CursorModeControl.keybinding.toggleBlockTargetMode=Veksle mellom blokkmodus og tilstøtende modus	#
-resourcePack.editor.CursorModeControl.keybinding.toggleFixedDistance=Aktiver/deaktiver avstandsmodus	#
-
-resourcePack.editor.BrushPaintControl.rootPane.title=Penselinnstillinger	#
-resourcePack.editor.BrushPaintControl.brush.title=Pensel	#
-resourcePack.editor.BrushPaintControl.brushSettings.title=Penselinnstillinger	#
-resourcePack.editor.BrushPaintControl.fillConstraints.title=Fyll begrensninger	#
-resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.title=Penselblokkfilter	#
-resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.mask=Maske	#
-resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.mask.tooltip=Blokker som samsvarer med listen, blir ignorert og forblir upåvirket	#
-resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.replace=Erstatt	#
-resourcePack.editor.BrushPaintControl.fillConstraints.replace.title=Erstatningsliste	#
-resourcePack.editor.BrushPaintControl.fillConstraints.replace.tooltip=Blokker som samsvarer med listen, påvirkes	#
-resourcePack.editor.BrushPaintControl.fillConstraints.mask.title=Maskeliste	#
-resourcePack.editor.BrushPaintControl.offset.title=Forskyvning	#
-resourcePack.editor.BrushPaintControl.offset.tooltip=Forskyvningen fra markørens plassering	#
-resourcePack.editor.BrushPaintControl.keybinding.replaceMask=Maskemodus – erstatt	#
-resourcePack.editor.BrushPaintControl.keybinding.maskMask=Maskemodus – masker	#
-resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetUp=Dytt forskyvningen opp	#
-resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetDown=Dytt forskyvningen ned	#
-resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetLeft=Dytt forskyvningen til venstre	#
-resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetRight=Dytt forskyvningen til høyre	#
-resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetForward=Dytt forskyvningen fremover	#
-resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetBack=Dytt forskyvningen bakover	#
-
-resourcePack.editor.copypaste.keyBinding.copy=Kopier utvalg til utklippstavlen	#
-resourcePack.editor.copypaste.keyBinding.cut=Klipp/flytt utvalg til utklippstavlen	#
-resourcePack.editor.copypaste.keyBinding.paste=Lim utklippstavlen på verdenen	#
-resourcePack.editor.copypaste.actionbar.copy.title=Kopier	#
-resourcePack.editor.copypaste.actionbar.copy.tooltip=Kopier utvalg til utklippstavlen	#
-resourcePack.editor.copypaste.actionbar.copy.tooltipDescription=Kopier innholdet i det gjeldende utvalgte volumet til utklippstavlen, og hold innholdet i det utvalgte volumet intakt	#
-resourcePack.editor.copypaste.actionbar.cut.title=Klipp ut	#
-resourcePack.editor.copypaste.actionbar.cut.tooltip=Klipp ut /flytt utvalg til utklippstavlen	#
-resourcePack.editor.copypaste.actionbar.cut.tooltipDescription=Kopier innholdet i det gjeldende utvalgte volumet til utklippstavlen, og fjern innholdet i det utvalgte volumet i prosessen	#
-resourcePack.editor.copypaste.menu.copy.title=Kopier utvalg	#
-resourcePack.editor.copypaste.menu.cut.title=Klipp ut utvalg	#
-
-
+resourcePack.editor.hotbar.defaultDisplayName=Standard	#

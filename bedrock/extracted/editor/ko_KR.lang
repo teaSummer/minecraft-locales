@@ -3,12 +3,616 @@
 ## Note, trailing spaces will NOT be trimmed. If you want room between the end of the string and the start of a
 ## comment on the same line, use TABs.
 
+commands.editor.project.beginExport=내보내는 중...	#
+commands.editor.project.description=현재 불러온 프로젝트 조작	#
+commands.editor.project.export=프로젝트 내보내기	#
+commands.editor.project.exportComplete=%s에 기록된 파일 내보내기 완료	#
+commands.editor.project.exportCopyFailed=%s 레벨 데이터 복사 실패	#
+commands.editor.project.unknownSubcommand=알 수 없는 서브 명령	#
+
+resourcePack.editor.actionBar.redo.tooltipDescription=작업 다시 실행	#
+resourcePack.editor.actionBar.redo.tooltipTitle=다시 실행	#
+resourcePack.editor.actionBar.redo=다시 실행	#
+resourcePack.editor.actionBar.undo.tooltipDescription=작업 취소	#
+resourcePack.editor.actionBar.undo.tooltipTitle=실행 취소	#
+resourcePack.editor.actionBar.undo=실행 취소	#
+
+resourcePack.editor.agfx.settings.error.title=오류 발생...	#
+resourcePack.editor.agfx.pane.title=설정 편집기	#
+resourcePack.editor.agfx.pane.settings_selector=설정 선택	#
+resourcePack.editor.agfx.pane.settings.title=설정	#
+resourcePack.editor.agfx.pane.settings.revert_changes=변경 내용 되돌리기	#
+resourcePack.editor.agfx.pane.settings.export_to_clipboard=클립보드로 내보내기	#
+
+
+resourcePack.editor.blockPalette.addSearchItem=발견한 블록 사용	#
+resourcePack.editor.blockPalette.blockPicker=검색	#
+resourcePack.editor.blockPalette.paletteDropdown.title=팔레트	#
+resourcePack.editor.blockPalette.title=블록 팔레트	#
+
+
+resourcePack.editor.brushPaint.inputContext.activateBrushPaint=브러시로 칠하기를 활성화합니다.	#
+resourcePack.editor.brushPaint.inputContext.oneshot=한 번에 칠하기	#
+resourcePack.editor.brushPaint.inputContext.title=브러시로 칠하기	#
+resourcePack.editor.brushPaint.title=브러시로 칠하기	#
+resourcePack.editor.brushPaint.tooltip=브러시를 사용해 월드에서 블록을 칠합니다.	#
+
+
+resourcePack.editor.BrushPaintControl.brush.title=브러시	#
+resourcePack.editor.BrushPaintControl.brushSettings.title=브러시 설정	#
+resourcePack.editor.BrushPaintControl.fillConstraints.mask.title=마스크 목록	#
+resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.disabled.tooltip=블록 필터 비활성화	#
+resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.disabled=비활성화됨	#
+resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.mask.tooltip=목록과 일치하는 블록이 무시되며 영향을 받지 않습니다.	#
+resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.mask=마스크	#
+resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.replace=교체	#
+resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.title=브러시 블록 필터	#
+resourcePack.editor.BrushPaintControl.fillConstraints.replace.title=교체 목록	#
+resourcePack.editor.BrushPaintControl.fillConstraints.replace.tooltip=목록과 일치하는 블록에 대해 작업을 수행합니다.	#
+resourcePack.editor.BrushPaintControl.fillConstraints.title=채우기 제한	#
+resourcePack.editor.BrushPaintControl.keybinding.maskMask=마스크 모드 - 마스크	#
+resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetBack=오프셋 뒤로 밀기	#
+resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetDown=오프셋 아래로 밀기	#
+resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetForward=오프셋 앞으로 밀기	#
+resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetLeft=오프셋 왼쪽으로 밀기	#
+resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetRight=오프셋 오른쪽으로 밀기	#
+resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetUp=오프셋 위로 밀기	#
+resourcePack.editor.BrushPaintControl.keybinding.replaceMask=마스크 모드 - 교체	#
+resourcePack.editor.BrushPaintControl.offset.title=오프셋	#
+resourcePack.editor.BrushPaintControl.offset.tooltip=커서 위치로부터의 오프셋입니다.	#
+resourcePack.editor.BrushPaintControl.rootPane.title=브러시 설정	#
+
+
+resourcePack.editor.brushShape.common.settings.axis=축 밀어내기	#
+resourcePack.editor.brushShape.common.settings.height=높이	#
+resourcePack.editor.brushShape.common.settings.length=길이	#
+resourcePack.editor.brushShape.common.settings.radius=반경	#
+resourcePack.editor.brushShape.common.settings.uniform=유니폼	#
+resourcePack.editor.brushShape.common.settings.xAxis=X축	#
+resourcePack.editor.brushShape.common.settings.xAxisNeg=-X축	#
+resourcePack.editor.brushShape.common.settings.yAxis=Y축	#
+resourcePack.editor.brushShape.common.settings.yAxisNeg=-Y축	#
+resourcePack.editor.brushShape.common.settings.zAxis=Z축	#
+resourcePack.editor.brushShape.common.settings.zAxisNeg=-Z축	#
+resourcePack.editor.brushShape.cone.name=원뿔	#
+resourcePack.editor.brushShape.cone.settings.depth=깊이 반경	#
+resourcePack.editor.brushShape.cone.settings.width=폭 반경	#
+resourcePack.editor.brushShape.cuboid.name=직육면체	#
+resourcePack.editor.brushShape.cuboid.settings.depth=깊이	#
+resourcePack.editor.brushShape.cuboid.settings.height=높이	#
+resourcePack.editor.brushShape.cuboid.settings.width=폭	#
+resourcePack.editor.brushShape.cylinder.name=원기둥	#
+resourcePack.editor.brushShape.cylinder.settings.depth_radius=깊이 반경	#
+resourcePack.editor.brushShape.cylinder.settings.width_radius=폭 반경	#
+resourcePack.editor.brushShape.ellipsoid.name=타원형	#
+resourcePack.editor.brushShape.ellipsoid.settings.depth_radius=깊이 반경	#
+resourcePack.editor.brushShape.ellipsoid.settings.height_radius=높이 반경	#
+resourcePack.editor.brushShape.ellipsoid.settings.width_radius=폭 반경	#
+resourcePack.editor.brushShape.pyramid.name=피라미드	#
+resourcePack.editor.brushShape.pyramid.settings.depth=깊이	#
+resourcePack.editor.brushShape.pyramid.settings.height=높이	#
+resourcePack.editor.brushShape.pyramid.settings.width=폭	#
+resourcePack.editor.brushShape.singleBlock.name=단일 블록	#
+
+
 resourcePack.editor.client.description=편집기 클라이언트 리소스입니다	#
 resourcePack.editor.client.name=편집기 리소스	#
+
+
+resourcePack.editor.ClipboardPreviewControl.keybinding.moveOriginBack=오리진 뒤로 이동	#
+resourcePack.editor.ClipboardPreviewControl.keybinding.moveOriginDown=오리진 아래로 이동	#
+resourcePack.editor.ClipboardPreviewControl.keybinding.moveOriginForward=오리진 앞으로 이동	#
+resourcePack.editor.ClipboardPreviewControl.keybinding.moveOriginLeft=오리진 왼쪽으로 이동	#
+resourcePack.editor.ClipboardPreviewControl.keybinding.moveOriginRight=오리진 오른쪽으로 이동	#
+resourcePack.editor.ClipboardPreviewControl.keybinding.moveOriginUp=오리진 위로 이동	#
+resourcePack.editor.ClipboardPreviewControl.keyBinding.nudgeOffsetBack=오프셋 뒤로 밀기	#
+resourcePack.editor.ClipboardPreviewControl.keyBinding.nudgeOffsetDown=오프셋 아래로 밀기	#
+resourcePack.editor.ClipboardPreviewControl.keyBinding.nudgeOffsetForward=오프셋 앞으로 밀기	#
+resourcePack.editor.ClipboardPreviewControl.keyBinding.nudgeOffsetLeft=오프셋 왼쪽으로 밀기	#
+resourcePack.editor.ClipboardPreviewControl.keyBinding.nudgeOffsetRight=오프셋 오른쪽으로 밀기	#
+resourcePack.editor.ClipboardPreviewControl.keyBinding.nudgeOffsetUp=오프셋 위로 밀기	#
+resourcePack.editor.ClipboardPreviewControl.keybinding.rotateClockWise=미리 보기 시계 방향 회전	#
+resourcePack.editor.ClipboardPreviewControl.keybinding.rotateCounterClockWise=미리 보기 시계 반대 방향으로 회전	#
+resourcePack.editor.ClipboardPreviewControl.keybinding.toggleMirrorX=X 반전 토글	#
+resourcePack.editor.ClipboardPreviewControl.keybinding.toggleMirrorZ=Z 반전 토글	#
+resourcePack.editor.ClipboardPreviewControl.mirror.axis.x.tooltip=원점에서 X축 주위로 클립보드 항목을 미러링합니다.	#
+resourcePack.editor.ClipboardPreviewControl.mirror.axis.x=반전(X축)	#
+resourcePack.editor.ClipboardPreviewControl.mirror.axis.z.tooltip=원점에서 Z축 주위로 클립보드 항목을 미러링합니다.	#
+resourcePack.editor.ClipboardPreviewControl.mirror.axis.z=반전(Z축)	#
+resourcePack.editor.ClipboardPreviewControl.offset.title=오프셋	#
+resourcePack.editor.ClipboardPreviewControl.offset.tooltip=배치 점에서 클립보드 항목 원점까지의 추가 오프셋	#
+resourcePack.editor.ClipboardPreviewControl.origin.title=원점	#
+resourcePack.editor.ClipboardPreviewControl.origin.tooltip=클립보드 항목 내의 원점입니다.  이것은 배치 앵커로 사용되며 클립보드가 회전하고 미러링되는 지점으로 사용됩니다	#
+resourcePack.editor.ClipboardPreviewControl.placement.title=옵션	#
+resourcePack.editor.ClipboardPreviewControl.rootPane.title=클립보드 정보	#
+resourcePack.editor.ClipboardPreviewControl.rotation.180=180Â°	#
+resourcePack.editor.ClipboardPreviewControl.rotation.270=270Â°	#
+resourcePack.editor.ClipboardPreviewControl.rotation.90=90Â°	#
+resourcePack.editor.ClipboardPreviewControl.rotation.none=없음	#
+resourcePack.editor.ClipboardPreviewControl.rotation.title=회전	#
+resourcePack.editor.ClipboardPreviewControl.rotation.tooltip=원점에서 Y축을 중심으로 한 회전량입니다	#
+resourcePack.editor.ClipboardPreviewControl.structureSize.title=클립보드 크기	#
+
+
+resourcePack.editor.copypaste.actionbar.copy.title=복사	#
+resourcePack.editor.copypaste.actionbar.copy.tooltip=클립보드에 선택 항목 복사	#
+resourcePack.editor.copypaste.actionbar.copy.tooltipDescription=현재 선택 내용을 클립보드에 복사하며, 해당 내용은 그대로 유지됩니다.	#
+resourcePack.editor.copypaste.actionbar.cut.title=잘라내기	#
+resourcePack.editor.copypaste.actionbar.cut.tooltip=클립보드로 선택 항목 잘라내기/이동	#
+resourcePack.editor.copypaste.actionbar.cut.tooltipDescription=현재 선택 내용을 클립보드에 복사하며, 그 과정에서 해당 내용은 삭제됩니다.	#
+resourcePack.editor.copypaste.keyBinding.copy=클립보드에 선택 항목 복사	#
+resourcePack.editor.copypaste.keyBinding.cut=클립보드로 선택 항목 잘라내기/이동	#
+resourcePack.editor.copypaste.keyBinding.paste=클립보드를 월드에 붙여넣기	#
+resourcePack.editor.copypaste.menu.copy.title=선택 항목 복사	#
+resourcePack.editor.copypaste.menu.cut.title=선택 항목 자르기	#
+
+
+resourcePack.editor.core.keyBinding.showGameMenu=게임 메뉴 표시	#
+resourcePack.editor.core.keyBinding.showLogPanel=로그 패널 표시	#
+
+
+resourcePack.editor.CursorModeControl.cursorTargetMode.block.tooltip=마우스 커서 아래의 블록	#
+resourcePack.editor.CursorModeControl.cursorTargetMode.block=블록	#
+resourcePack.editor.CursorModeControl.cursorTargetMode.face.tooltip=커서 아래에 있는 블록 면에 붙어 있는 블록	#
+resourcePack.editor.CursorModeControl.cursorTargetMode.face=인접	#
+resourcePack.editor.CursorModeControl.cursorTargetMode.title=대상	#
+resourcePack.editor.CursorModeControl.cursorTargetMode.tooltip=커서 대상 모드를 선택합니다.	#
+resourcePack.editor.CursorModeControl.fixedDistance.slider.title=고정 커서 거리	#
+resourcePack.editor.CursorModeControl.fixedDistance.slider.tooltip=플레이어와 블록 커서 사이의 고정 거리를 조정합니다.	#
+resourcePack.editor.CursorModeControl.keybinding.moveCursorBack=커서 뒤로 이동	#
+resourcePack.editor.CursorModeControl.keybinding.moveCursorDown=커서 아래로 이동	#
+resourcePack.editor.CursorModeControl.keybinding.moveCursorForward=앞으로 밀기	#
+resourcePack.editor.CursorModeControl.keybinding.moveCursorLeft=커서 왼쪽으로 이동	#
+resourcePack.editor.CursorModeControl.keybinding.moveCursorRight=커서 오른쪽으로 이동	#
+resourcePack.editor.CursorModeControl.keybinding.moveCursorUp=커서 위로 이동	#
+resourcePack.editor.CursorModeControl.keybinding.toggleBlockTargetMode=블록/인접 모드 토글	#
+resourcePack.editor.CursorModeControl.keybinding.toggleFixedDistance=고정 거리 모드 토글	#
+resourcePack.editor.CursorModeControl.keybinding.toggleMouseTracking=마우스 추적 토글	#
+resourcePack.editor.CursorModeControl.mouseControlMode.fixed=고정 거리	#
+resourcePack.editor.CursorModeControl.mouseControlMode.keyboard=키보드 전용	#
+resourcePack.editor.CursorModeControl.mouseControlMode.keyboardAndMouse=마우스 및 키	#
+resourcePack.editor.CursorModeControl.mouseControlMode.title=입력 방법	#
+resourcePack.editor.CursorModeControl.mouseControlMode.tooltip=월드 블록 커서의 입력 방식을 선택합니다.	#
+resourcePack.editor.CursorModeControl.projectThroughWater.title=물속 비쳐 보이기	#
+resourcePack.editor.CursorModeControl.projectThroughWater.tooltip=마우스 레이캐스트를 사용하면 물속이 비쳐 보여 수중 요소를 선택할 수 있습니다.	#
+resourcePack.editor.CursorModeControl.rootPane.title=커서 설정	#
+
+
+resourcePack.editor.datatransferaccessors.atmospheric_scattering=대기 산란	#
+resourcePack.editor.datatransferaccessors.color_grading=컬러 그레이딩	#
+resourcePack.editor.datatransferaccessors.lighting_group=글로벌 조명	#
+resourcePack.editor.datatransferaccessors.pbr_fallbacks=PBR 대비책	#
+resourcePack.editor.datatransferaccessors.point_lights=포인트 조명	#
+resourcePack.editor.datatransferaccessors.water=물	#
+
+
+resourcePack.editor.deferredLightingSettings.menu.title=디퍼드 라이팅 설정	#
+
+
+resourcePack.editor.delete.keyBinding=선택 콘텐츠 삭제	#
+
+
+resourcePack.editor.exportProject.exportType=내보내기 유형	#
+resourcePack.editor.exportProject.exportType.playableWorld=플레이 가능 월드	#
+resourcePack.editor.exportProject.exportNotes=메모 내보내기	#
+resourcePack.editor.exportProject.exportNotes.warning=v%1 월드를 내보내고 있습니다. 내보낸 플레이 가능 월드는 v%1 이전 버전의 Minecraft에서 사용할 수 없습니다. 이전 버전으로 변환하려면 https://chunker.app/을 사용하세요(지원하지 않는 더 이전의 버전에서는 일부 기능을 사용하지 못할 수도 있습니다).	#
+resourcePack.editor.exportProject.generalSettings=일반 설정	#
+resourcePack.editor.exportProject.generalSettings.worldName=월드 이름	#
+resourcePack.editor.exportProject.generalSettings.gameMode=게임 모드	#
+resourcePack.editor.exportProject.generalSettings.difficulty=난이도	#
+resourcePack.editor.exportProject.generalSettings.hardcore=하드코어	#
+resourcePack.editor.exportProject.advancedSettings=고급 설정	#
+resourcePack.editor.exportProject.advancedSettings.startingMap=지도 시작	#
+resourcePack.editor.exportProject.advancedSettings.bonusChest=보너스 상자	#
+resourcePack.editor.exportProject.advancedSettings.showCoordinates=좌표 표시	#
+resourcePack.editor.exportProject.advancedSettings.showDaysPlayed=플레이 일수 표시	#
+resourcePack.editor.exportProject.advancedSettings.recipeUnlocking=제작법 잠금 해제	#
+resourcePack.editor.exportProject.advancedSettings.fireSpreads=불 확산	#
+resourcePack.editor.exportProject.advancedSettings.tntExplodes=TNT 폭발	#
+resourcePack.editor.exportProject.advancedSettings.resawnBlocksExplode=리스폰 블록 폭발	#
+resourcePack.editor.exportProject.advancedSettings.mobLoot=몹 전리품	#
+resourcePack.editor.exportProject.advancedSettings.naturalRegeneration=자연 재생	#
+resourcePack.editor.exportProject.advancedSettings.tileDrops=타일 드롭	#
+resourcePack.editor.exportProject.advancedSettings.immediateRespawn=즉시 리스폰	#
+resourcePack.editor.exportProject.advancedSettings.respawnRadius=리스폰 반경	#
+resourcePack.editor.exportProject.advancedSettings.simulationDistance=시뮬레이션 거리	#
+resourcePack.editor.exportProject.advancedSettings.bedsWork=침대 작동	#
+resourcePack.editor.exportProject.advancedSettings.requiredSleepingPlayers=잠자는 플레이어 필요(%1%)	#
+resourcePack.editor.exportProject.multiplayerSettings=멀티 플레이 설정	#
+resourcePack.editor.exportProject.multiplayerSettings.multiplayerGame=멀티 플레이 게임	#
+resourcePack.editor.exportProject.multiplayerSettings.playerAccess=플레이어 액세스	#
+resourcePack.editor.exportProject.multiplayerSettings.playerPermissions=플레이어 권한	#
+resourcePack.editor.exportProject.multiplayerSettings.visibleToLAN=LAN 플레이어 검색 가능	#
+resourcePack.editor.exportProject.multiplayerSettings.friendlyFire=아군 포격	#
+resourcePack.editor.exportProject.cheatsSettings=치트 설정	#
+resourcePack.editor.exportProject.cheatsSettings.cheats=치트	#
+resourcePack.editor.exportProject.cheatsSettings.daylightCycle=시간대 전환	#
+resourcePack.editor.exportProject.cheatsSettings.keepInventory=소지품 유지	#
+resourcePack.editor.exportProject.cheatsSettings.mobSpawning=몹 생성	#
+resourcePack.editor.exportProject.cheatsSettings.mobGriefing=몹에 의한 괴롭힘	#
+resourcePack.editor.exportProject.cheatsSettings.entitiesDropLoot=엔티티 드롭 전리품	#
+resourcePack.editor.exportProject.cheatsSettings.weatherCycle=날씨 전환	#
+resourcePack.editor.exportProject.cheatsSettings.commandBlocks=명령 블록	#
+resourcePack.editor.exportProject.cheatsSettings.educationFeatures=교육 기능	#
+resourcePack.editor.exportProject.cheatsSettings.randomTickSpeed=무작위 틱 속도	#
+resourcePack.editor.exportProject.export=내보내기	#
+resourcePack.editor.exportProject.resetToDefault=기본값으로 초기화	#
+resourcePack.editor.exportProject.gameMode.survival=서바이벌	#
+resourcePack.editor.exportProject.gameMode.creative=크리에이티브	#
+resourcePack.editor.exportProject.gameMode.adventure=모험	#
+resourcePack.editor.exportProject.difficulty.peaceful=평화로움	#
+resourcePack.editor.exportProject.difficulty.easy=쉬움	#
+resourcePack.editor.exportProject.difficulty.normal=보통	#
+resourcePack.editor.exportProject.difficulty.hard=어려움	#
+
+
+resourcePack.editor.toolRail.ExtrudeTool.title=압출 도구	#
+resourcePack.editor.toolRail.ExtrudeTool.tooltip=블록을 확장하고 수축하는 압출 도구입니다.	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.ContiguousSelectionBlockListSubPane.title=인접 선택 블록 목록	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.TrailingBlocksSettingsSubPane.title=잔상 효과 블록 설정	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.SampleLayerCount.title=샘플 레이어 개수	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.ContiguousSelectionSettings.title=인접 선택 설정	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.ContiguousSelectionType.title=인접 선택 유형	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.ContiguousSelectionType.SameBlocks=동일 블록	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.ContiguousSelectionType.SameBlocksAndStates=동일 블록 및 상태	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.ContiguousSelectionType.SolidBlocks=고체 블록	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.ContiguousSelectionType.AllBlocks=모든 블록	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.ContiguousSelectionType.CustomBlockList=커스텀 블록 목록	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.ToleranceLevel.title=공차 수준	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.HasAdjacentBlocks.title=인접 블록 있음	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.ExtruderSettings.title=압출 설정	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.Radius.title=반경	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.title=선택 모드	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.ContiguousSelection=인접 선택	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.MarqueeSelection=선택 윤곽 선택	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.ContiguousSettings.title=인접 선택 설정	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.TrailingBlocks.title=잔상 효과 블록	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.TrailingBlocksSettings.title=잔상 효과 블록 설정	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.QuickExtrudeSettings.title=간편 압출 설정	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.QuickExtrudeMode.title=간편 압출 모드	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.QuickExtrudeMode.decrease.title=수축	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.QuickExtrudeMode.decrease.tooltip=압출 수축	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.QuickExtrudeMode.expand.title=확장	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.QuickExtrudeMode.expand.tooltip=압출 확장	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.LayerCount.title=레이어 개수	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.ExtrusionType.title=압출 유형	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.ExtrusionType.Extrude=압출	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.ExtrusionType.QuickExtrude=간편 압출	#
+resourcePack.editor.toolRail.ExtrudeTool.keyBinding.deselect=선택 해제	#
+resourcePack.editor.toolRail.ExtrudeTool.keyBinding.toggleTool=압출 도구 전환	#
+
+
+resourcePack.editor.toolRail.FarmGenerator.tool.title=농장 생성기	#
+resourcePack.editor.toolRail.FarmGenerator.tool.tooltip=커스텀 농장을 빠르게 만드세요.	#
+resourcePack.editor.toolRail.FarmGenerator.pane.title=농장 생성기	#
+resourcePack.editor.toolRail.FarmGenerator.pane.length=길이	#
+resourcePack.editor.toolRail.FarmGenerator.pane.width=폭	#
+resourcePack.editor.toolRail.FarmGenerator.pane.fence=울타리	#
+resourcePack.editor.toolRail.FarmGenerator.pane.irrigation=관개 추가	#
+resourcePack.editor.toolRail.FarmGenerator.pane.irrigation.tooltip=작물에 물을 대기 위해 농장에 물 블록을 추가합니다.	#
+resourcePack.editor.toolRail.FarmGenerator.pane.crops.title=작물	#
+resourcePack.editor.toolRail.FarmGenerator.pane.crops.wheat=밀	#
+resourcePack.editor.toolRail.FarmGenerator.pane.crops.potato=감자	#
+resourcePack.editor.toolRail.FarmGenerator.pane.crops.beets=비트	#
+resourcePack.editor.toolRail.FarmGenerator.pane.crops.pumpkin=호박	#
+resourcePack.editor.toolRail.FarmGenerator.pane.crops.carrot=당근	#
+resourcePack.editor.toolRail.FarmGenerator.pane.animals.title=동물	#
+resourcePack.editor.toolRail.FarmGenerator.pane.animals.cow=소	#
+resourcePack.editor.toolRail.FarmGenerator.pane.animals.sheep=양	#
+resourcePack.editor.toolRail.FarmGenerator.pane.animals.pig=돼지	#
+resourcePack.editor.toolRail.FarmGenerator.keyBinding.toggleTool=농장 생성기 도구 토글하기	#
+resourcePack.editor.toolRail.FarmGenerator.keyBinding.place=커서에 농장 놓기	#
+
+
+resourcePack.editor.global.keyBinding.toggleMode=토글 모드	#
+
+
+resourcePack.editor.goToMark.actionBar.tooltip.description=플레이어 길찾기용 유틸리티 패널	#
+resourcePack.editor.goToMark.actionBar.tooltip.title=길찾기 패널	#
+resourcePack.editor.goToMark.pane.goToSpawn=생성 지점으로 이동	#
+resourcePack.editor.goToMark.pane.location=플레이어 위치	#
+resourcePack.editor.goToMark.pane.locationPane.delete=저장된 위치 삭제	#
+resourcePack.editor.goToMark.pane.locationPane.dropdownLabel=저장된 위치	#
+resourcePack.editor.goToMark.pane.locationPane.inputName=새 이름	#
+resourcePack.editor.goToMark.pane.locationPane.markColor=위치 표시 색상	#
+resourcePack.editor.goToMark.pane.locationPane.store=현재 위치 저장을 다음과 같이...	#
+resourcePack.editor.goToMark.pane.locationPane.teleport=저장된 위치(%1$s)로 순간이동	#
+resourcePack.editor.goToMark.pane.locationPane.title=저장된 위치	#
+resourcePack.editor.goToMark.pane.mapSize=지도 크기	#
+resourcePack.editor.goToMark.pane.refreshMap=지도 새로고침	#
+resourcePack.editor.goToMark.pane.setSpawn=생성 지점을 현재로 설정	#
+resourcePack.editor.goToMark.pane.showMap=지도 보기	#
+resourcePack.editor.goToMark.pane.teleport=위치로 순간이동	#
+resourcePack.editor.goToMark.title=길찾기 패널	#
+
+
+resourcePack.editor.grapple.keyBinding.flyToCursor=커서로 날아가기	#
+resourcePack.editor.grapple.keyBinding.flyToSelection=선택 항목으로 날아가기	#
+
+
+resourcePack.editor.locate.biome.find=바이옴 찾기	#
+resourcePack.editor.locate.biome.title=바이옴	#
+resourcePack.editor.locate.keyBinding.toggleTool=바이옴 도구 찾기 트리거	#
+resourcePack.editor.locate.locatetype.biome=바이옴	#
+resourcePack.editor.locate.locatetype.structure=구조물	#
+resourcePack.editor.locate.locatetype.title=유형 찾기	#
+resourcePack.editor.locate.results.foundat.title=발견 장소:	#
+resourcePack.editor.locate.results.foundat=발견 장소:	#
+resourcePack.editor.locate.results.goto=목적지로 이동	#
+resourcePack.editor.locate.results.notfound.title=결과 없음	#
+resourcePack.editor.locate.results.notfound=발견된 결과 없음	#
+resourcePack.editor.locate.results.title=결과	#
+resourcePack.editor.locate.structure.message=구조물 검색은 현재 지원되지 않습니다.	#
+resourcePack.editor.locate.structure.title=구조물	#
+resourcePack.editor.locate.title=위치 파악	#
+
+
+resourcePack.editor.menuBar.edit.copy=복사	#
+resourcePack.editor.menuBar.edit.cut=잘라내기	#
+resourcePack.editor.menuBar.edit.delete=삭제	#
+resourcePack.editor.menuBar.edit.deselect=선택 해제	#
+resourcePack.editor.menuBar.edit.quickFill=빠른 채우기	#
+resourcePack.editor.menuBar.edit.quickPaste=빠른 붙여넣기	#
+resourcePack.editor.menuBar.edit.redo=다시 실행	#
+resourcePack.editor.menuBar.edit.undo=실행 취소	#
+resourcePack.editor.menuBar.edit=편집	#
+resourcePack.editor.menuBar.experimental=실험	#
+resourcePack.editor.menuBar.extensions=연장	#
+resourcePack.editor.menuBar.file.cursor.projectThroughLiquid=액체를 통해 투사	#
+resourcePack.editor.menuBar.file.cursor=커서 설정	#
+resourcePack.editor.menuBar.file.export.project=편집기 프로젝트	#
+resourcePack.editor.menuBar.file.export.world=플레이 가능한 월드	#
+resourcePack.editor.menuBar.file.export=내보내기	#
+resourcePack.editor.menuBar.file.pauseScreen=게임 메뉴	#
+resourcePack.editor.menuBar.file.settings=UI 설정	#
+resourcePack.editor.menuBar.file=파일	#
+resourcePack.editor.menuBar.help.documentation=문서	#
+resourcePack.editor.menuBar.help.feedback=피드백	#
+resourcePack.editor.menuBar.help.quickStart=빠른 시작	#
+resourcePack.editor.menuBar.help=도움말	#
+resourcePack.editor.menuBar.locate=위치 파악	#
+resourcePack.editor.menuBar.parentMenu.weather.clear=지우기	#
+resourcePack.editor.menuBar.parentMenu.weather.rain=비	#
+resourcePack.editor.menuBar.parentMenu.weather.thunder=천둥	#
+resourcePack.editor.menuBar.parentMenu.weather=날씨	#
+resourcePack.editor.menuBar.view.blockPalette=블록 팔레트	#
+resourcePack.editor.menuBar.view.logging=로그 패널	#
+resourcePack.editor.menuBar.view.navigationLogging=길찾기 로깅	#
+resourcePack.editor.menuBar.view=보기	#
+resourcePack.editor.menuBar.worldOptions.changeDimension.end=끝	#
+resourcePack.editor.menuBar.worldOptions.changeDimension.nether=네더	#
+resourcePack.editor.menuBar.worldOptions.changeDimension.overworld=지상	#
+resourcePack.editor.menuBar.worldOptions.changeDimension=차원 변경	#
+resourcePack.editor.menuBar.worldOptions.pause.entities=엔터티	#
+resourcePack.editor.menuBar.worldOptions.pause=일시 중지	#
+resourcePack.editor.menuBar.worldOptions=월드 옵션	#
+
+
+resourcePack.editor.navigation.keyBinding.add=탐색 위치 추가	#
+resourcePack.editor.navigation.keyBinding.next=다음 탐색 위치로 이동	#
+resourcePack.editor.navigation.keyBinding.previous=이전 탐색 위치로 이동	#
+
+
+resourcePack.editor.paste.pane.submitButton=붙여넣기 확인	#
+resourcePack.editor.paste.pane.title=붙여넣기	#
+resourcePack.editor.paste.pane.transform.mirrorX=X 반전	#
+resourcePack.editor.paste.pane.transform.mirrorZ=Z 반전	#
+resourcePack.editor.paste.pane.transform.origin.title=오프셋	#
+resourcePack.editor.paste.pane.transform.rotation.180=180Â°	#
+resourcePack.editor.paste.pane.transform.rotation.270=270Â°	#
+resourcePack.editor.paste.pane.transform.rotation.90=90Â°	#
+resourcePack.editor.paste.pane.transform.rotation.none=0Â°	#
+resourcePack.editor.paste.pane.transform.rotation.title=회전	#
+resourcePack.editor.paste.pane.transform.title=변신	#
+resourcePack.editor.paste.toolRail.description=마우스 왼쪽 버튼을 클릭하여 블록을 선택한 다음 클립 보드 항목을 정확하게 붙여 넣습니다	#
+resourcePack.editor.paste.toolRail.title=프리뷰 붙여넣기	#
+
+
+resourcePack.editor.pastepreview.inputContext.title=프리뷰 붙여넣기	#
+resourcePack.editor.pastepreview.keyBinding.clearPreview=프리뷰 지우기	#
+resourcePack.editor.pastepreview.keyBinding.copy=선택 항목 복사	#
+resourcePack.editor.pastepreview.keyBinding.cut=선택 항목 자르기	#
+resourcePack.editor.pastepreview.keyBinding.moveBack=프리뷰 뒤로 이동	#
+resourcePack.editor.pastepreview.keyBinding.moveDown=프리뷰 아래로 이동	#
+resourcePack.editor.pastepreview.keyBinding.moveForward=프리뷰 앞으로 이동	#
+resourcePack.editor.pastepreview.keyBinding.moveLeft=프리뷰 왼쪽으로 이동	#
+resourcePack.editor.pastepreview.keyBinding.moveOffsetBack=오프셋 뒤로 이동	#
+resourcePack.editor.pastepreview.keyBinding.moveOffsetDown=오프셋 아래로 이동	#
+resourcePack.editor.pastepreview.keyBinding.moveOffsetForward=오프셋 앞으로 이동	#
+resourcePack.editor.pastepreview.keyBinding.moveOffsetLeft=오프셋 왼쪽으로 이동	#
+resourcePack.editor.pastepreview.keyBinding.moveOffsetRight=오프셋 오른쪽으로 이동	#
+resourcePack.editor.pastepreview.keyBinding.moveOffsetUp=오프셋 위로 이동	#
+resourcePack.editor.pastepreview.keyBinding.moveOriginBack=오리진 뒤로 이동	#
+resourcePack.editor.pastepreview.keyBinding.moveOriginDown=오리진 아래로 이동	#
+resourcePack.editor.pastepreview.keyBinding.moveOriginForward=오리진 앞으로 이동	#
+resourcePack.editor.pastepreview.keyBinding.moveOriginLeft=오리진 왼쪽으로 이동	#
+resourcePack.editor.pastepreview.keyBinding.moveOriginRight=오리진 오른쪽으로 이동	#
+resourcePack.editor.pastepreview.keyBinding.moveOriginUp=오리진 위로 이동	#
+resourcePack.editor.pastepreview.keyBinding.moveRight=프리뷰 오른쪽으로 이동	#
+resourcePack.editor.pastepreview.keyBinding.moveUp=프리뷰 위로 이동	#
+resourcePack.editor.pastepreview.keyBinding.paste=붙여넣기	#
+resourcePack.editor.pastepreview.keyBinding.pasteAtCursor=커서에 붙여넣기	#
+resourcePack.editor.pastepreview.keyBinding.pastepreview=프리뷰 붙여넣기	#
+resourcePack.editor.pastepreview.keyBinding.quickPaste=빠른 붙여넣기	#
+resourcePack.editor.pastepreview.keyBinding.rotateClockWise=미리 보기 시계 방향 회전	#
+resourcePack.editor.pastepreview.keyBinding.rotateCounterClockWise=미리 보기 시계 반대 방향으로 회전	#
+resourcePack.editor.pastepreview.keyBinding.toggleAdjacentTarget=인접 대상 모드 토글	#
+resourcePack.editor.pastepreview.keyBinding.toggleBlockTarget=블록 대상 모드 토글	#
+resourcePack.editor.pastepreview.keyBinding.toggleFixedDistance=고정 거리 활성화	#
+resourcePack.editor.pastepreview.keyBinding.toggleMirrorX=X 반전 토글	#
+resourcePack.editor.pastepreview.keyBinding.toggleMirrorZ=Z 반전 토글	#
+resourcePack.editor.pastepreview.keyBinding.toggleMouseTracking=마우스 추적 토글	#
+resourcePack.editor.pastepreview.pane.controls.cursor.fixed=고정 거리	#
+resourcePack.editor.pastepreview.pane.controls.cursor.keyboard=키만	#
+resourcePack.editor.pastepreview.pane.controls.cursor.mouseandkeys=마우스 및 키	#
+resourcePack.editor.pastepreview.pane.controls.cursor.target.block=블록	#
+resourcePack.editor.pastepreview.pane.controls.cursor.target.face=인접	#
+resourcePack.editor.pastepreview.pane.controls.cursor.target.title=과녁	#
+resourcePack.editor.pastepreview.pane.controls.cursor=컨트롤	#
+resourcePack.editor.pastepreview.pane.controls.title=커서 컨트롤	#
+resourcePack.editor.pastepreview.pane.placement.mirrorX=X 반전	#
+resourcePack.editor.pastepreview.pane.placement.mirrorZ=Z 반전	#
+resourcePack.editor.pastepreview.pane.placement.offset=범위	#
+resourcePack.editor.pastepreview.pane.placement.origin=원점	#
+resourcePack.editor.pastepreview.pane.placement.pastebutton=붙여넣기	#
+resourcePack.editor.pastepreview.pane.placement.rotation=회전 (Y축)	#
+resourcePack.editor.pastepreview.pane.placement.title=배치 설정	#
+resourcePack.editor.pastepreview.pane.root.size=크기	#
+resourcePack.editor.pastepreview.pane.root.title=프리뷰 붙여넣기	#
+resourcePack.editor.pastepreview.tool.tip=마우스를 사용하여 클립보드 미리 보기의 위치를 조정하고 클릭하여 월드에 붙여 넣으세요	#
+resourcePack.editor.pastepreview.tool.title=프리뷰 붙여넣기	#
+
+
+resourcePack.editor.playerPositionExtension.dimension=차원	#
+resourcePack.editor.playerPositionExtension.menu.player=플레이어	#
+resourcePack.editor.playerPositionExtension.menu.showPlayerSettings=플레이어 설정 보기	#
+resourcePack.editor.playerPositionExtension.nether=네더	#
+resourcePack.editor.playerPositionExtension.overworld=지상	#
+resourcePack.editor.playerPositionExtension.pane=플레이어 설정	#
+resourcePack.editor.playerPositionExtension.theEnd=끝	#
+resourcePack.editor.playerPositionExtension.worldSettings=월드 설정	#
+
+
+resourcePack.editor.playtest.AdvancedSettings.title=고급 설정	#
+resourcePack.editor.playtest.Dialog.DaylightCycle=시간대 전환	#
+resourcePack.editor.playtest.Dialog.Difficulty=난이도	#
+resourcePack.editor.playtest.Dialog.GameMode=게임 모드	#
+resourcePack.editor.playtest.Dialog.OverrideSpawn=현재 위치에서 생성	#
+resourcePack.editor.playtest.Dialog.ShowCoordinates=좌표 보기	#
+resourcePack.editor.playtest.Dialog.TestButton=테스트 월드	#
+resourcePack.editor.playtest.Dialog.TimeOfDay=시간	#
+resourcePack.editor.playtest.Dialog.Title=테스트 설정	#
+resourcePack.editor.playtest.Dialog.Weather=날씨	#
+resourcePack.editor.playtest.Dialog.WeatherCycle=날씨 주기	#
+resourcePack.editor.playtest.Menu.Title=테스트 월드	#
+resourcePack.editor.playtest.Title.Tooltip=편집기 프로젝트를 플레이 가능한 Minecraft 월드로 플레이 테스트합니다.  변경 사항은 프로젝트에 저장되지 않습니다.  싱글 플레이어 프로젝트를 호스팅할 때만 사용할 수 있습니다.	#
+
+
+resourcePack.editor.playtestResult.EditorSystemFailure=편집기 시스템 실패	#
+resourcePack.editor.playtestResult.InvalidLevelId=유효하지 않은 레벨 Id	#
+resourcePack.editor.playtestResult.InvalidSessionHandle=유효하지 않은 세션 핸들	#
+resourcePack.editor.playtestResult.OK=성공	#
+resourcePack.editor.playtestResult.PlayerNotFound=플레이어를 찾을 수 없음	#
+resourcePack.editor.playtestResult.ResponseTimeout=응답 시간 초과	#
+resourcePack.editor.playtestResult.SessionInfoNotFound=세션 정보를 찾을 수 없음	#
+resourcePack.editor.playtestResult.TooManyPlayers=다른 플레이어를 호스트하고 있을 때는 월드를 테스트할 수 없습니다	#
+resourcePack.editor.playtestResult.UnspecifiedError=지정되지 않은 오류	#
+resourcePack.editor.playtestResult.UnsupportedScenario=월드 테스트를 하려면 편집기 프로젝트를 호스팅하고 있어야 합니다	#
+resourcePack.editor.playtestResult.WorldExportBusy=월드 내보내기 바쁨	#
+resourcePack.editor.playtestResult.WorldExportFailed=월드 내보내기 실패	#
+
+
+resourcePack.editor.toolRail.RepeaterTool.title=반복 도구	#
+resourcePack.editor.toolRail.RepeaterTool.tooltip=선택 부분을 반복하는 도구	#
+resourcePack.editor.toolRail.RepeaterTool.pane.Spacing=간격	#
+resourcePack.editor.toolRail.RepeaterTool.pane.Repetitions=반복	#
+resourcePack.editor.toolRail.RepeaterTool.pane.Preview=미리 보기	#
+resourcePack.editor.toolRail.RepeaterTool.pane.Clear=지우기	#
+resourcePack.editor.toolRail.RepeaterTool.pane.Apply=적용	#
+resourcePack.editor.toolRail.RepeaterTool.statusMessage.noSelection=선택 도구를 사용하여 반복할 부분을 선택합니다.	#
+
+
+resourcePack.editor.selectionTool.deselect=선택 해제	#
+resourcePack.editor.selectionTool.fillPane.fillAction=채우기 선택	#
+resourcePack.editor.selectionTool.fillPane.title=채우기 선택	#
+resourcePack.editor.selectionTool.keyBinding.deselect=선택 취소하기	#
+resourcePack.editor.selectionTool.keyBinding.fill=선택 항목 내용물 채우기	#
+resourcePack.editor.selectionTool.keyBinding.growBack=선택 항목 다시 확대	#
+resourcePack.editor.selectionTool.keyBinding.growDown=선택 항목 아래로 확대	#
+resourcePack.editor.selectionTool.keyBinding.growForward=선택 항목 앞으로 확대	#
+resourcePack.editor.selectionTool.keyBinding.growLeft=선택 항목 왼쪽으로 확대	#
+resourcePack.editor.selectionTool.keyBinding.growRight=선택 항목 오른쪽으로 확대	#
+resourcePack.editor.selectionTool.keyBinding.growUp=선택 항목 위로 확대	#
+resourcePack.editor.selectionTool.keyBinding.moveAllSelectionBack=모든 선택 항목 뒤로 이동	#
+resourcePack.editor.selectionTool.keyBinding.moveAllSelectionDown=모든 선택 항목 아래로 이동	#
+resourcePack.editor.selectionTool.keyBinding.moveAllSelectionForward=모든 선택 항목 앞으로 이동	#
+resourcePack.editor.selectionTool.keyBinding.moveAllSelectionLeft=모든 선택 항목 왼쪽으로 이동	#
+resourcePack.editor.selectionTool.keyBinding.moveAllSelectionRight=모든 선택 항목 오른쪽으로 이동	#
+resourcePack.editor.selectionTool.keyBinding.moveAllSelectionUp=모든 선택 항목 위로 이동	#
+resourcePack.editor.selectionTool.keyBinding.moveCursorBack=커서 뒤로 이동	#
+resourcePack.editor.selectionTool.keyBinding.moveCursorDown=커서 아래로 이동	#
+resourcePack.editor.selectionTool.keyBinding.moveCursorForward=커서 앞으로 이동	#
+resourcePack.editor.selectionTool.keyBinding.moveCursorLeft=커서 왼쪽으로 이동	#
+resourcePack.editor.selectionTool.keyBinding.moveCursorRight=커서 오른쪽으로 이동	#
+resourcePack.editor.selectionTool.keyBinding.moveCursorUp=커서 위로 이동	#
+resourcePack.editor.selectionTool.keyBinding.moveSelectionBack=선택 항목 뒤로 이동	#
+resourcePack.editor.selectionTool.keyBinding.moveSelectionDown=선택 항목 아래로 이동	#
+resourcePack.editor.selectionTool.keyBinding.moveSelectionForward=선택 항목 앞으로 이동	#
+resourcePack.editor.selectionTool.keyBinding.moveSelectionLeft=선택 항목 왼쪽 이동	#
+resourcePack.editor.selectionTool.keyBinding.moveSelectionRight=선택 항목 오른쪽으로 이동	#
+resourcePack.editor.selectionTool.keyBinding.moveSelectionUp=선택 항목 위로 이동	#
+resourcePack.editor.selectionTool.keyBinding.shrinkBack=선택 항목 다시 축소	#
+resourcePack.editor.selectionTool.keyBinding.shrinkDown=선택 항목 아래로 축소	#
+resourcePack.editor.selectionTool.keyBinding.shrinkForward=선택 항목 앞으로 축소	#
+resourcePack.editor.selectionTool.keyBinding.shrinkLeft=선택 항목 왼쪽으로 축소	#
+resourcePack.editor.selectionTool.keyBinding.shrinkRight=선택 항목 오른쪽으로 축소	#
+resourcePack.editor.selectionTool.keyBinding.shrinkUp=선택 항목 위로 축소	#
+resourcePack.editor.selectionTool.keyBinding.toggleTool=선택 도구 트리거	#
+resourcePack.editor.selectionTool.marquee.title=선택 윤곽 선택	#
+resourcePack.editor.selectionTool.modeSelection.freehand.title=자유형 브러시 모드	#
+resourcePack.editor.selectionTool.modeSelection.freehand.tooltip=자유형 브러시 모양을 사용하여 월드에서 블록을 선택합니다.	#
+resourcePack.editor.selectionTool.modeSelection.marquee.title=마키 모드	#
+resourcePack.editor.selectionTool.modeSelection.marquee.tooltip=직사각형 볼륨을 사용하여 월드에서 블록을 선택합니다.	#
+resourcePack.editor.selectionTool.modeSelection.title=선택 모드	#
+resourcePack.editor.selectionTool.projectThroughLiquid=액체를 통해 투사	#
+resourcePack.editor.selectionTool.quickAction.clearSelection.tooltip=현재 선택한 부분을 선택 취소합니다.	#
+resourcePack.editor.selectionTool.quickAction.clearSelection=선택 해제	#
+resourcePack.editor.selectionTool.quickAction.deleteSelection.tooltip=현재 선택한 영역 안의 모든 블록을 제거합니다.	#
+resourcePack.editor.selectionTool.quickAction.deleteSelection=삭제	#
+resourcePack.editor.selectionTool.quickAction.fillSelection.tooltip=현재 선택 볼륨을 현재 선택된 블록 유형으로 채웁니다.	#
+resourcePack.editor.selectionTool.quickAction.fillSelection=채우기	#
+resourcePack.editor.selectionTool.quickAction.title=빠른 액션	#
+resourcePack.editor.selectionTool.selectionMode.adjacent=인접	#
+resourcePack.editor.selectionTool.selectionMode.fixedDistance=고정 거리	#
+resourcePack.editor.selectionTool.selectionMode.mouseAndKeyboard=자유형	#
+resourcePack.editor.selectionTool.selectionMode=모드	#
+resourcePack.editor.selectionTool.settingsPane.title=선택	#
+resourcePack.editor.selectionTool.toolRail.description=마우스 왼쪽 버튼을 클릭하여 선택 항목을 지정합니다. 선택을 취소하려면 CTRL+D를 누릅니다.	#
+resourcePack.editor.selectionTool.toolRail.title=선택	#
+resourcePack.editor.selectionTool.transformPane.origin.tooltip=월드 좌표 선택의 원점 위치입니다.	#
+resourcePack.editor.selectionTool.transformPane.origin=원점	#
+resourcePack.editor.selectionTool.transformPane.size=크기	#
+resourcePack.editor.selectionTool.transformPane.title=변신	#
+
+
 resourcePack.editor.server.description=편집기 서버 리소스입니다	#
 resourcePack.editor.server.name=편집기 리소스	#
 
-resourcePack.editor.global.keyBinding.toggleMode=토글 모드	#
+
+resourcePack.editor.toolRail.Terrain.title=지형	#
+resourcePack.editor.toolRail.Terrain.Mode.title=지형 모드	#
+resourcePack.editor.toolRail.Terrain.Smooth.mode.title=부드러움 모드	#
+resourcePack.editor.toolRail.Terrain.Smooth.tooltip=부드러움 강도에 따라 지형을 부드럽게 표시합니다.	#
+resourcePack.editor.toolRail.Terrain.SmoothStrength=부드러움 강도	#
+resourcePack.editor.toolRail.Terrain.description=지형 도구가 지형을 부드럽거나 거칠게 합니다.	#
+
+
+resourcePack.editor.help.learnMore=더 알아보기	#
+
+resourcePack.editor.statusBar.connectedPlayers=연결된 플레이어 %s	#
+
+
+resourcePack.editor.summonTool.summonSubPane.EntityPickerTitle=엔티티 유형	#
+
+
+resourcePack.editor.timeOfDay.12hrClock=12시간 시계	#
+resourcePack.editor.timeOfDay.24hrClock=24시간 시계	#
+resourcePack.editor.timeOfDay.clockType=시계 유형	#
+resourcePack.editor.timeOfDay.currentTime=현재 시간	#
+resourcePack.editor.timeOfDay.customTime=사용자 지정 시간	#
+resourcePack.editor.timeOfDay.daylightCycle=일광 주기	#
+resourcePack.editor.timeOfDay.dropDown.day=낮	#
+resourcePack.editor.timeOfDay.dropDown.midnight=자정	#
+resourcePack.editor.timeOfDay.dropDown.night=밤	#
+resourcePack.editor.timeOfDay.dropDown.none=없음	#
+resourcePack.editor.timeOfDay.dropDown.noon=정오	#
+resourcePack.editor.timeOfDay.dropDown.sunrise=일출	#
+resourcePack.editor.timeOfDay.dropDown.sunset=일몰	#
+resourcePack.editor.timeOfDay.dropDown.title=프리셋	#
+resourcePack.editor.timeOfDay.menu.title=하루 중 시간 설정	#
+resourcePack.editor.timeOfDay.minecraftClock=Minecraft 시계	#
+resourcePack.editor.timeOfDay.title=시간 설정	#
+
 
 resourcePack.editor.toolMode.keyBinding.console=콘솔 열기	#
 resourcePack.editor.toolMode.keyBinding.devConsole=개발자 콘솔 열기	#
@@ -22,509 +626,94 @@ resourcePack.editor.toolMode.keyBinding.hotbar7=핫바 7 선택	#
 resourcePack.editor.toolMode.keyBinding.hotbar8=핫바 8 선택	#
 resourcePack.editor.toolMode.keyBinding.hotbar9=핫바 9 선택	#
 
-resourcePack.editor.viewport.keyBinding.moveUp=위로 이동	#
-resourcePack.editor.viewport.keyBinding.moveDown=아래로 이동	#
-resourcePack.editor.viewport.keyBinding.moveLeft=왼쪽으로 이동	#
-resourcePack.editor.viewport.keyBinding.moveRight=오른쪽으로 이동	#
-resourcePack.editor.viewport.keyBinding.moveForward=앞으로 이동	#
-resourcePack.editor.viewport.keyBinding.moveBack=뒤로 이동	#
-
-resourcePack.editor.locate.title=위치 파악	#
-resourcePack.editor.locate.locatetype.title=유형 찾기	#
-resourcePack.editor.locate.locatetype.biome=바이옴	#
-resourcePack.editor.locate.locatetype.structure=구조물	#
-resourcePack.editor.locate.biome.title=바이옴	#
-resourcePack.editor.locate.biome.find=바이옴 찾기	#
-resourcePack.editor.locate.structure.title=구조물	#
-resourcePack.editor.locate.structure.message=구조물 검색은 현재 지원되지 않습니다.	#
-resourcePack.editor.locate.results.title=결과	#
-resourcePack.editor.locate.results.foundat.title=발견 장소:	#
-resourcePack.editor.locate.results.foundat=발견 장소:	#
-resourcePack.editor.locate.results.notfound.title=결과 없음	#
-resourcePack.editor.locate.results.notfound=발견된 결과 없음	#
-resourcePack.editor.locate.keyBinding.toggleTool=바이옴 도구 찾기 트리거	#
-resourcePack.editor.locate.results.goto=목적지로 이동	#
-
-resourcePack.editor.statusBar.connectedPlayers=연결된 플레이어 %s	#
-
-resourcePack.editor.brushShape.common.settings.uniform=유니폼	#
-resourcePack.editor.brushShape.common.settings.radius=반경	#
-resourcePack.editor.brushShape.common.settings.length=길이	#
-resourcePack.editor.brushShape.common.settings.axis=축 밀어내기	#
-resourcePack.editor.brushShape.common.settings.xAxis=X축	#
-resourcePack.editor.brushShape.common.settings.yAxis=Y축	#
-resourcePack.editor.brushShape.common.settings.zAxis=Z축	#
-resourcePack.editor.brushShape.common.settings.xAxisNeg=-X축	#
-resourcePack.editor.brushShape.common.settings.yAxisNeg=-Y축	#
-resourcePack.editor.brushShape.common.settings.zAxisNeg=-Z축	#
-
-resourcePack.editor.brushShape.cylinder.name=원기둥	#
-resourcePack.editor.brushShape.cylinder.settings.width=폭 반경	#
-resourcePack.editor.brushShape.cylinder.settings.depth=깊이 반경	#
-
-resourcePack.editor.brushShape.cone.name=원뿔	#
-resourcePack.editor.brushShape.cone.settings.length=밀어내기 길이	#
-resourcePack.editor.brushShape.cone.settings.width=폭 반경	#
-resourcePack.editor.brushShape.cone.settings.depth=깊이 반경	#
-
-resourcePack.editor.brushShape.cuboid.name=직육면체	#
-resourcePack.editor.brushShape.cuboid.settings.x_length=X 길이	#
-resourcePack.editor.brushShape.cuboid.settings.y_length=Y 길이	#
-resourcePack.editor.brushShape.cuboid.settings.z_length=Z 길이	#
-
-resourcePack.editor.brushShape.singleBlock.name=단일 블록	#
-
-resourcePack.editor.brushShape.pyramid.name=피라미드	#
-resourcePack.editor.brushShape.pyramid.settings.width=폭	#
-resourcePack.editor.brushShape.pyramid.settings.depth=깊이	#
-resourcePack.editor.brushShape.pyramid.settings.length=길이	#
-
-resourcePack.editor.brushShape.ellipsoid.name=타원형	#
-resourcePack.editor.brushShape.ellipsoid.settings.x_radius=X 반경	#
-resourcePack.editor.brushShape.ellipsoid.settings.y_radius=Y 반경	#
-resourcePack.editor.brushShape.ellipsoid.settings.z_radius=Z 반경	#
-
-resourcePack.editor.toolRail.floodFillSelectionTool.title=홍수 채우기 선택 도구.	#
-resourcePack.editor.toolRail.floodFillSelectionTool.description=홍수 채우기 알고리즘을 사용하여 현재 보고 있는 영역을 선택합니다.	#
-resourcePack.editor.playerPositionExtension.dimension=차원	#
-resourcePack.editor.playerPositionExtension.menu.player=플레이어	#
-resourcePack.editor.playerPositionExtension.menu.showPlayerSettings=플레이어 설정 보기	#
-resourcePack.editor.playerPositionExtension.nether=네더	#
-resourcePack.editor.playerPositionExtension.overworld=지상	#
-resourcePack.editor.playerPositionExtension.pane=플레이어 설정	#
-resourcePack.editor.playerPositionExtension.theEnd=끝	#
-resourcePack.editor.playerPositionExtension.worldSettings=월드 설정	#
-resourcePack.editor.paste.toolRail.title=프리뷰 붙여넣기	#
-resourcePack.editor.paste.toolRail.description=마우스 왼쪽 버튼을 클릭하여 블록을 선택한 다음 클립 보드 항목을 정확하게 붙여 넣습니다	#
-resourcePack.editor.paste.pane.title=붙여넣기	#
-resourcePack.editor.paste.pane.submitButton=붙여넣기 확인	#
-resourcePack.editor.paste.pane.transform.title=변신	#
-resourcePack.editor.paste.pane.transform.origin.title=오프셋	#
-resourcePack.editor.paste.pane.transform.rotation.title=회전	#
-resourcePack.editor.paste.pane.transform.rotation.none=0°	#
-resourcePack.editor.paste.pane.transform.rotation.90=90°	#
-resourcePack.editor.paste.pane.transform.rotation.180=180°	#
-resourcePack.editor.paste.pane.transform.rotation.270=270도	#
-resourcePack.editor.paste.pane.transform.mirrorX=X 반전	#
-resourcePack.editor.paste.pane.transform.mirrorZ=Z 반전	#
-
-resourcePack.editor.core.keyBinding.showLogPanel=로그 패널 표시	#
-resourcePack.editor.core.keyBinding.showGameMenu=게임 메뉴 표시	#
-
-resourcePack.editor.delete.keyBinding=선택 콘텐츠 삭제	#
-
-resourcePack.editor.navigation.keyBinding.add=탐색 위치 추가	#
-resourcePack.editor.navigation.keyBinding.previous=이전 탐색 위치로 이동	#
-resourcePack.editor.navigation.keyBinding.next=다음 탐색 위치로 이동	#
-
-resourcePack.editor.transaction.keyBinding.undo=실행 취소	#
-resourcePack.editor.transaction.keyBinding.redo=다시 실행	#
-
-resourcePack.editor.goToMark.title=길찾기 패널	#
-resourcePack.editor.goToMark.actionBar.tooltip.title=길찾기 패널	#
-resourcePack.editor.goToMark.actionBar.tooltip.description=플레이어 길찾기용 유틸리티 패널	#
-resourcePack.editor.goToMark.pane.showMap=지도 보기	#
-resourcePack.editor.goToMark.pane.mapSize=지도 크기	#
-resourcePack.editor.goToMark.pane.refreshMap=지도 새로고침	#
-resourcePack.editor.goToMark.pane.location=플레이어 위치	#
-resourcePack.editor.goToMark.pane.teleport=위치로 순간이동	#
-resourcePack.editor.goToMark.pane.setSpawn=생성 지점을 현재로 설정	#
-resourcePack.editor.goToMark.pane.goToSpawn=생성 지점으로 이동	#
-resourcePack.editor.goToMark.pane.locationPane.title=저장된 위치	#
-resourcePack.editor.goToMark.pane.locationPane.markColor=위치 표시 색상	#
-resourcePack.editor.goToMark.pane.locationPane.teleport=저장된 위치(%1$s)로 순간이동	#
-resourcePack.editor.goToMark.pane.locationPane.delete=저장된 위치 삭제	#
-resourcePack.editor.goToMark.pane.locationPane.inputName=새 이름	#
-resourcePack.editor.goToMark.pane.locationPane.store=현재 위치 저장을 다음과 같이...	#
-resourcePack.editor.goToMark.pane.locationPane.dropdownLabel=저장된 위치	#
-
-resourcePack.editor.grapple.keyBinding.flyToCursor=커서로 날아가기	#
-resourcePack.editor.grapple.keyBinding.flyToSelection=선택 항목으로 날아가기	#
-
-resourcePack.editor.selectionTool.modeSelection.title=선택 모드	#
-resourcePack.editor.selectionTool.modeSelection.marquee.title=마키 모드	#
-resourcePack.editor.selectionTool.modeSelection.marquee.tooltip=직사각형 볼륨을 사용하여 월드에서 블록을 선택합니다.	#
-resourcePack.editor.selectionTool.modeSelection.freehand.title=자유형 브러시 모드	#
-resourcePack.editor.selectionTool.modeSelection.freehand.tooltip=자유형 브러시 모양을 사용하여 월드에서 블록을 선택합니다.	#
-
-resourcePack.editor.selectionTool.deselect=선택 해제	#
-resourcePack.editor.selectionTool.fillPane.title=채우기 선택	#
-resourcePack.editor.selectionTool.fillPane.fillAction=채우기 선택	#
-resourcePack.editor.selectionTool.toolRail.title=선택	#
-resourcePack.editor.selectionTool.toolRail.description=마우스 왼쪽 버튼을 클릭하여 선택 항목을 만듭니다; 선택 취소 CTRL + D	#
-resourcePack.editor.selectionTool.selectionMode=모드	#
-resourcePack.editor.selectionTool.selectionMode.mouseAndKeyboard=자유형	#
-resourcePack.editor.selectionTool.selectionMode.fixedDistance=고정 거리	#
-resourcePack.editor.selectionTool.selectionMode.adjacent=인접	#
-resourcePack.editor.selectionTool.settingsPane.title=선택	#
-resourcePack.editor.selectionTool.transformPane.title=변신	#
-resourcePack.editor.selectionTool.transformPane.origin=원점	#
-resourcePack.editor.selectionTool.transformPane.origin.tooltip=월드 좌표 선택 볼륨의 원점 위치입니다.	#
-resourcePack.editor.selectionTool.transformPane.size=크기	#
-resourcePack.editor.selectionTool.quickAction.title=빠른 액션	#
-resourcePack.editor.selectionTool.quickAction.clearSelection=선택 해제	#
-resourcePack.editor.selectionTool.quickAction.clearSelection.tooltip=현재 선택 볼륨을 선택 취소합니다	#
-resourcePack.editor.selectionTool.quickAction.fillSelection=채우기	#
-resourcePack.editor.selectionTool.quickAction.fillSelection.tooltip=현재 선택 볼륨을 현재 선택된 블록 유형으로 채웁니다.	#
-resourcePack.editor.selectionTool.projectThroughLiquid=액체를 통해 투사	#
-resourcePack.editor.selectionTool.keyBinding.moveCursorForward=커서 앞으로 이동	#
-resourcePack.editor.selectionTool.keyBinding.moveCursorBack=커서 뒤로 이동	#
-resourcePack.editor.selectionTool.keyBinding.moveCursorLeft=커서 왼쪽으로 이동	#
-resourcePack.editor.selectionTool.keyBinding.moveCursorRight=커서 오른쪽으로 이동	#
-resourcePack.editor.selectionTool.keyBinding.moveCursorUp=커서 위로 이동	#
-resourcePack.editor.selectionTool.keyBinding.moveCursorDown=커서 아래로 이동	#
-resourcePack.editor.selectionTool.keyBinding.moveSelectionForward=선택 항목 앞으로 이동	#
-resourcePack.editor.selectionTool.keyBinding.moveSelectionBack=선택 항목 뒤로 이동	#
-resourcePack.editor.selectionTool.keyBinding.moveSelectionLeft=선택 항목 왼쪽 이동	#
-resourcePack.editor.selectionTool.keyBinding.moveSelectionRight=선택 항목 오른쪽으로 이동	#
-resourcePack.editor.selectionTool.keyBinding.moveSelectionUp=선택 항목 위로 이동	#
-resourcePack.editor.selectionTool.keyBinding.moveSelectionDown=선택 항목 아래로 이동	#
-resourcePack.editor.selectionTool.keyBinding.moveAllSelectionForward=모든 선택 항목 앞으로 이동	#
-resourcePack.editor.selectionTool.keyBinding.moveAllSelectionBack=모든 선택 항목 뒤로 이동	#
-resourcePack.editor.selectionTool.keyBinding.moveAllSelectionLeft=모든 선택 항목 왼쪽으로 이동	#
-resourcePack.editor.selectionTool.keyBinding.moveAllSelectionRight=모든 선택 항목 오른쪽으로 이동	#
-resourcePack.editor.selectionTool.keyBinding.moveAllSelectionUp=모든 선택 항목 위로 이동	#
-resourcePack.editor.selectionTool.keyBinding.moveAllSelectionDown=모든 선택 항목 아래로 이동	#
-resourcePack.editor.selectionTool.keyBinding.growForward=선택 항목 앞으로 확대	#
-resourcePack.editor.selectionTool.keyBinding.growBack=선택 항목 다시 확대	#
-resourcePack.editor.selectionTool.keyBinding.growLeft=선택 항목 왼쪽으로 확대	#
-resourcePack.editor.selectionTool.keyBinding.growRight=선택 항목 오른쪽으로 확대	#
-resourcePack.editor.selectionTool.keyBinding.growUp=선택 항목 위로 확대	#
-resourcePack.editor.selectionTool.keyBinding.growDown=선택 항목 아래로 확대	#
-resourcePack.editor.selectionTool.keyBinding.shrinkForward=선택 항목 앞으로 축소	#
-resourcePack.editor.selectionTool.keyBinding.shrinkBack=선택 항목 다시 축소	#
-resourcePack.editor.selectionTool.keyBinding.shrinkLeft=선택 항목 왼쪽으로 축소	#
-resourcePack.editor.selectionTool.keyBinding.shrinkRight=선택 항목 오른쪽으로 축소	#
-resourcePack.editor.selectionTool.keyBinding.shrinkUp=선택 항목 위로 축소	#
-resourcePack.editor.selectionTool.keyBinding.shrinkDown=선택 항목 아래로 축소	#
-resourcePack.editor.selectionTool.keyBinding.toggleTool=선택 도구 트리거	#
-resourcePack.editor.selectionTool.keyBinding.fill=선택 항목 내용물 채우기	#
-resourcePack.editor.selectionTool.keyBinding.deselect=선택 취소하기	#
-
-resourcePack.editor.actionBar.redo=다시 실행	#
-resourcePack.editor.actionBar.redo.tooltipTitle=다시 실행	#
-resourcePack.editor.actionBar.redo.tooltipDescription=거래 다시 실행	#
-resourcePack.editor.actionBar.undo=실행 취소	#
-resourcePack.editor.actionBar.undo.tooltipTitle=실행 취소	#
-resourcePack.editor.actionBar.undo.tooltipDescription=거래 실행 취소	#
-
-resourcePack.editor.menuBar.file=파일	#
-resourcePack.editor.menuBar.file.export=내보내기	#
-resourcePack.editor.menuBar.file.export.world=플레이 가능한 월드	#
-resourcePack.editor.menuBar.file.export.project=편집기 프로젝트	#
-resourcePack.editor.menuBar.file.pauseScreen=게임 메뉴	#
-resourcePack.editor.menuBar.file.settings=UI 설정	#
-resourcePack.editor.menuBar.file.cursor=커서 설정	#
-resourcePack.editor.menuBar.file.cursor.projectThroughLiquid=액체를 통해 투사	#
-resourcePack.editor.menuBar.edit=편집	#
-resourcePack.editor.menuBar.edit.undo=실행 취소	#
-resourcePack.editor.menuBar.edit.redo=다시 실행	#
-resourcePack.editor.menuBar.edit.deselect=선택 해제	#
-resourcePack.editor.menuBar.edit.cut=잘라내기	#
-resourcePack.editor.menuBar.edit.copy=복사	#
-resourcePack.editor.menuBar.edit.quickPaste=빠른 붙여넣기	#
-resourcePack.editor.menuBar.edit.quickFill=빠른 채우기	#
-resourcePack.editor.menuBar.edit.delete=삭제	#
-resourcePack.editor.menuBar.extensions=연장	#
-resourcePack.editor.menuBar.view=보기	#
-resourcePack.editor.menuBar.view.logging=로그 패널	#
-resourcePack.editor.menuBar.view.navigationLogging=길찾기 로깅	#
-resourcePack.editor.menuBar.view.blockPalette=블록 팔레트	#
-resourcePack.editor.menuBar.worldOptions=월드 옵션	#
-resourcePack.editor.menuBar.worldOptions.pause=일시 중지	#
-resourcePack.editor.menuBar.worldOptions.pause.entities=엔터티	#
-resourcePack.editor.menuBar.worldOptions.changeDimension=차원 변경	#
-resourcePack.editor.menuBar.worldOptions.changeDimension.overworld=지상	#
-resourcePack.editor.menuBar.worldOptions.changeDimension.nether=네더	#
-resourcePack.editor.menuBar.worldOptions.changeDimension.end=끝	#
-resourcePack.editor.menuBar.experimental=실험	#
-resourcePack.editor.menuBar.locate=위치 파악	#
-resourcePack.editor.menuBar.parentMenu.weather=날씨	#
-resourcePack.editor.menuBar.parentMenu.weather.clear=지우기	#
-resourcePack.editor.menuBar.parentMenu.weather.rain=비	#
-resourcePack.editor.menuBar.parentMenu.weather.thunder=천둥	#
-resourcePack.editor.menuBar.help=도움말	#
-resourcePack.editor.menuBar.help.quickStart=빠른 시작	#
-resourcePack.editor.menuBar.help.documentation=문서	#
-resourcePack.editor.menuBar.help.feedback=피드백	#
-
-commands.editor.project.description=현재 불러온 프로젝트 조작	#
-commands.editor.project.unknownSubcommand=알 수 없는 서브 명령	#
-commands.editor.project.export=프로젝트 내보내기	#
-commands.editor.project.exportComplete=%s에 기록된 파일 내보내기 완료	#
-commands.editor.project.beginExport=내보내는 중...	#
-commands.editor.project.exportCopyFailed=%s 레벨 데이터 복사 실패	#
-
-## resourcePack.editor.playtestResult. is a prefix that maps directly to an enum value in the editor
-## Ensure that the spelling and case is identical to the enumeration in C++/TypeScript for
-## enum `Editor::Playtest::SessionResult`
-
-resourcePack.editor.playtestResult.OK=성공	#
-resourcePack.editor.playtestResult.InvalidSessionHandle=유효하지 않은 세션 핸들	#
-resourcePack.editor.playtestResult.SessionInfoNotFound=세션 정보를 찾을 수 없음	#
-resourcePack.editor.playtestResult.TooManyPlayers=다른 플레이어를 호스트하고 있을 때는 월드를 테스트할 수 없습니다	#
-resourcePack.editor.playtestResult.WorldExportFailed=월드 내보내기 실패	#
-resourcePack.editor.playtestResult.WorldExportBusy=월드 내보내기 바쁨	#
-resourcePack.editor.playtestResult.UnsupportedScenario=월드 테스트를 하려면 편집기 프로젝트를 호스팅하고 있어야 합니다	#
-resourcePack.editor.playtestResult.EditorSystemFailure=편집기 시스템 실패	#
-resourcePack.editor.playtestResult.InvalidLevelId=유효하지 않은 레벨 Id	#
-resourcePack.editor.playtestResult.PlayerNotFound=플레이어를 찾을 수 없음	#
-resourcePack.editor.playtestResult.ResponseTimeout=응답 시간 초과	#
-resourcePack.editor.playtestResult.UnspecifiedError=지정되지 않은 오류	#
-
-
-resourcePack.editor.playtest.Menu.Title=테스트 월드	#
-resourcePack.editor.playtest.Title.Tooltip=편집기 프로젝트를 플레이 가능한 Minecraft 월드로 플레이 테스트합니다.  변경 사항은 프로젝트에 저장되지 않습니다.  싱글 플레이어 프로젝트를 호스팅할 때만 사용할 수 있습니다.	#
-resourcePack.editor.playtest.Dialog.Title=테스트 설정	#
-resourcePack.editor.playtest.Dialog.GameMode=게임 모드	#
-resourcePack.editor.playtest.Dialog.Difficulty=난이도	#
-resourcePack.editor.playtest.Dialog.DaylightCycle=시간대 전환	#
-resourcePack.editor.playtest.Dialog.Weather=날씨	#
-resourcePack.editor.playtest.Dialog.WeatherCycle=날씨 주기	#
-resourcePack.editor.playtest.Dialog.ShowCoordinates=좌표 보기	#
-resourcePack.editor.playtest.Dialog.OverrideSpawn=현재 위치에서 생성	#
-resourcePack.editor.playtest.Dialog.TimeOfDay=시간	#
-resourcePack.editor.playtest.Dialog.TestButton=테스트 월드	#
-
-resourcePack.editor.toolRail.line.title=대사 전체	#
-resourcePack.editor.toolRail.line.tooltip=선 도구는 블록 선을 만듭니다	#
-resourcePack.editor.toolRail.line.pane.width.title=폭	#
-resourcePack.editor.toolRail.line.pane.selectionMode=선택	#
-resourcePack.editor.toolRail.line.pane.selectionMode.freeForm=자유형	#
-resourcePack.editor.toolRail.line.pane.selectionMode.fixedDistance=고정 거리	#
-resourcePack.editor.toolRail.line.pane.selectionMode.adjacent=인접 면	#
-resourcePack.editor.toolRail.line.pane.height.title=높이	#
-resourcePack.editor.toolRail.line.pane.algorithm.title=알고리즘	#
-resourcePack.editor.toolRail.line.pane.algorithm.Direct=방향	#
-resourcePack.editor.toolRail.line.pane.algorithm.Staggered=지그재그(울타리)	#
-resourcePack.editor.toolRail.line.pane.surfaceContour=표면 윤곽	#
-resourcePack.editor.toolRail.line.pane.fillAction=채우기 선택	#
-resourcePack.editor.toolRail.line.keyBinding.selectAll=모두 선택	#
-resourcePack.editor.toolRail.line.keyBinding.deselect=선택 해제	#
-resourcePack.editor.toolRail.line.keyBinding.deselectAll=전체 선택 해제	#
-resourcePack.editor.toolRail.line.keyBinding.fillAndClear=내용물 채운 후 선택 해제	#
-resourcePack.editor.toolRail.line.keyBinding.fill=내용물 채우기	#
-resourcePack.editor.toolRail.line.keyBinding.deleteAndClear=내용물 삭제 및 선택 취소	#
-resourcePack.editor.toolRail.line.keyBinding.delete=내용물 삭제	#
-resourcePack.editor.toolRail.line.keyBinding.moveForward=선택 항목 앞으로 이동	#
-resourcePack.editor.toolRail.line.keyBinding.moveBack=선택 항목 뒤로 이동	#
-resourcePack.editor.toolRail.line.keyBinding.moveLeft=선택 항목 왼쪽으로 이동	#
-resourcePack.editor.toolRail.line.keyBinding.moveRight=선택 항목 오른쪽으로 이동	#
-resourcePack.editor.toolRail.line.keyBinding.moveUp=선택 항목 위로 이동	#
-resourcePack.editor.toolRail.line.keyBinding.moveDown=선택 항목 아래로 이동	#
-
-resourcePack.editor.timeOfDay.menu.title=하루 중 시간 설정	#
-resourcePack.editor.timeOfDay.dropDown.title=프리셋	#
-resourcePack.editor.timeOfDay.dropDown.none=없음	#
-resourcePack.editor.timeOfDay.dropDown.sunrise=일출	#
-resourcePack.editor.timeOfDay.dropDown.day=낮	#
-resourcePack.editor.timeOfDay.dropDown.noon=정오	#
-resourcePack.editor.timeOfDay.dropDown.sunset=일몰	#
-resourcePack.editor.timeOfDay.dropDown.night=밤	#
-resourcePack.editor.timeOfDay.dropDown.midnight=자정	#
-resourcePack.editor.timeOfDay.title=시간 설정	#
-resourcePack.editor.timeOfDay.clockType=시계 유형	#
-resourcePack.editor.timeOfDay.24hrClock=24시간 시계	#
-resourcePack.editor.timeOfDay.12hrClock=12시간 시계	#
-resourcePack.editor.timeOfDay.minecraftClock=Minecraft 시계	#
-resourcePack.editor.timeOfDay.daylightCycle=일광 주기	#
-resourcePack.editor.timeOfDay.currentTime=현재 시간	#
-resourcePack.editor.timeOfDay.customTime=사용자 지정 시간	#
 
 resourcePack.editor.toolRail.blockPalette.title=블록 팔레트(CTRL+P)	#
 resourcePack.editor.toolRail.blockPalette.tooltip=좋아하거나 가장 자주 사용하는 블록의 팔레트를 설정합니다	#
-resourcePack.editor.blockPalette.addSearchItem=발견한 블록 사용	#
-resourcePack.editor.blockPalette.title=블록 팔레트	#
-resourcePack.editor.blockPalette.paletteDropdown.title=팔레트	#
-resourcePack.editor.blockPalette.blockPicker=검색	#
+resourcePack.editor.toolRail.flattenBrush.title=붓 누르기	#
+resourcePack.editor.toolRail.flattenBrush.tooltip=특정 영역을 선택한 블록의 높이에 맞춰 수직 방향으로 평탄화합니다	#
+resourcePack.editor.toolRail.flattenBrush.settings.heightThreshold=높이 임계값	#
+resourcePack.editor.toolRail.flattenBrush.settings.radius=반경	#
+resourcePack.editor.toolRail.floodFillSelectionTool.description=홍수 채우기 알고리즘을 사용하여 현재 보고 있는 영역을 선택합니다.	#
+resourcePack.editor.toolRail.floodFillSelectionTool.title=홍수 채우기 선택 도구.	#
+resourcePack.editor.toolRail.line.keyBinding.delete=내용물 삭제	#
+resourcePack.editor.toolRail.line.keyBinding.deleteAndClear=내용물 삭제 및 선택 취소	#
+resourcePack.editor.toolRail.line.keyBinding.deselect=선택 해제	#
+resourcePack.editor.toolRail.line.keyBinding.deselectAll=전체 선택 해제	#
+resourcePack.editor.toolRail.line.keyBinding.fill=내용물 채우기	#
+resourcePack.editor.toolRail.line.keyBinding.fillAndClear=내용물 채운 후 선택 해제	#
+resourcePack.editor.toolRail.line.keyBinding.moveBack=선택 항목 뒤로 이동	#
+resourcePack.editor.toolRail.line.keyBinding.moveDown=선택 항목 아래로 이동	#
+resourcePack.editor.toolRail.line.keyBinding.moveForward=선택 항목 앞으로 이동	#
+resourcePack.editor.toolRail.line.keyBinding.moveLeft=선택 항목 왼쪽으로 이동	#
+resourcePack.editor.toolRail.line.keyBinding.moveRight=선택 항목 오른쪽으로 이동	#
+resourcePack.editor.toolRail.line.keyBinding.moveUp=선택 항목 위로 이동	#
+resourcePack.editor.toolRail.line.keyBinding.selectAll=모두 선택	#
+resourcePack.editor.toolRail.line.pane.algorithm.Direct=방향	#
+resourcePack.editor.toolRail.line.pane.algorithm.Staggered=계단식 배열(울타리)	#
+resourcePack.editor.toolRail.line.pane.algorithm.title=알고리즘	#
+resourcePack.editor.toolRail.line.pane.fillAction=채우기 선택	#
+resourcePack.editor.toolRail.line.pane.height.title=높이	#
+resourcePack.editor.toolRail.line.pane.selectionMode.adjacent=인접 면	#
+resourcePack.editor.toolRail.line.pane.selectionMode.fixedDistance=고정 거리	#
+resourcePack.editor.toolRail.line.pane.selectionMode.freeForm=자유형	#
+resourcePack.editor.toolRail.line.pane.selectionMode=선택	#
+resourcePack.editor.toolRail.line.pane.surfaceContour=표면 윤곽	#
+resourcePack.editor.toolRail.line.pane.width.title=폭	#
+resourcePack.editor.toolRail.line.title=대사 전체	#
+resourcePack.editor.toolRail.line.tooltip=선 도구는 블록 선을 만듭니다	#
+resourcePack.editor.toolRail.rulerTool.title=자 도구	#
+resourcePack.editor.toolRail.rulerTool.tooltip=거리 재기	#
+resourcePack.editor.toolRail.rulerTool.info.title=측정값	#
 
-resourcePack.editor.toolRail.summonTool.pane.title=소환 도구	#
-resourcePack.editor.toolRail.summonTool.pane.type=엔티티 유형	#
-resourcePack.editor.toolRail.summonTool.pane.select=모드를 선택하세요	#
-resourcePack.editor.toolRail.summonTool.tool.title=소환 도구	#
-resourcePack.editor.toolRail.summonTool.tool.tip=클릭하여 엔티티들을 소환하세요	#
-resourcePack.editor.toolRail.summonTool.tool.summonSubPane=엔티티 생성	#
-resourcePack.editor.toolRail.summonTool.tool.selectSubPane=엔티티 선택	#
-resourcePack.editor.toolRail.summonTool.tool.selectSubPane.rotation=회전	#
-resourcePack.editor.toolRail.summonTool.tool.infoText=개체를 클릭하여 선택하거나 지도를 클릭하여 새로 소환하세요	#
-resourcePack.editor.summonTool.summonSubPane.EntityPickerTitle=엔티티 유형	#
-resourcePack.editor.toolRail.summonTool.keyBinding.toggle=소환 도구 트리거	#
-resourcePack.editor.toolRail.summonTool.keyBinding.delete=개체 삭제	#
+
+resourcePack.editor.toolRail.smartFillTool.title=스마트 채우기 도구	#
+resourcePack.editor.toolRail.smartFillTool.tooltip=클릭하여 연결된 블록 세트를 채우세요.	#
+resourcePack.editor.toolRail.smartFillTool.modes.fillVolume=채우기 볼륨	#
+resourcePack.editor.toolRail.smartFillTool.areaLimit.title=영역 제한	#
+resourcePack.editor.toolRail.smartFillTool.areaLimit.tooltip=채울 수 있는 최대 영역	#
+
+
 resourcePack.editor.toolRail.summonTool.keyBinding.clear=선택 해제	#
-resourcePack.editor.toolRail.summonTool.keyBinding.moveForward=선택 항목 앞으로 이동	#
+resourcePack.editor.toolRail.summonTool.keyBinding.delete=개체 삭제	#
 resourcePack.editor.toolRail.summonTool.keyBinding.moveBack=선택 항목 뒤로 이동	#
+resourcePack.editor.toolRail.summonTool.keyBinding.moveDown=선택 항목 아래로 이동	#
+resourcePack.editor.toolRail.summonTool.keyBinding.moveForward=선택 항목 앞으로 이동	#
 resourcePack.editor.toolRail.summonTool.keyBinding.moveLeft=선택 항목 왼쪽으로 이동	#
 resourcePack.editor.toolRail.summonTool.keyBinding.moveRight=선택 항목 오른쪽으로 이동	#
 resourcePack.editor.toolRail.summonTool.keyBinding.moveUp=선택 항목 위로 이동	#
-resourcePack.editor.toolRail.summonTool.keyBinding.moveDown=선택 항목 아래로 이동	#
+resourcePack.editor.toolRail.summonTool.keyBinding.toggle=소환 도구 트리거	#
+resourcePack.editor.toolRail.summonTool.pane.select=모드를 선택하세요	#
+resourcePack.editor.toolRail.summonTool.pane.title=소환 도구	#
+resourcePack.editor.toolRail.summonTool.pane.type=엔티티 유형	#
+resourcePack.editor.toolRail.summonTool.tool.infoText=개체를 클릭하여 선택하거나 지도를 클릭하여 새로 소환하세요	#
+resourcePack.editor.toolRail.summonTool.tool.selectSubPane.rotation=회전	#
+resourcePack.editor.toolRail.summonTool.tool.selectSubPane=엔티티 선택	#
+resourcePack.editor.toolRail.summonTool.tool.summonSubPane=엔티티 생성	#
+resourcePack.editor.toolRail.summonTool.tool.tip=클릭하여 엔티티들을 소환하세요	#
+resourcePack.editor.toolRail.summonTool.tool.title=소환 도구	#
 
-resourcePack.editor.pastepreview.tool.title=프리뷰 붙여넣기	#
-resourcePack.editor.pastepreview.tool.tip=마우스를 사용하여 클립보드 미리 보기의 위치를 조정하고 클릭하여 월드에 붙여 넣으세요	#
-resourcePack.editor.pastepreview.inputContext.title=프리뷰 붙여넣기	#
-resourcePack.editor.pastepreview.pane.root.title=프리뷰 붙여넣기	#
-resourcePack.editor.pastepreview.pane.root.size=크기	#
-resourcePack.editor.pastepreview.pane.placement.title=배치 설정	#
-resourcePack.editor.pastepreview.pane.placement.origin=원점	#
-resourcePack.editor.pastepreview.pane.placement.offset=범위	#
-resourcePack.editor.pastepreview.pane.placement.rotation=회전 (Y축)	#
-resourcePack.editor.pastepreview.pane.placement.mirrorX=X 반전	#
-resourcePack.editor.pastepreview.pane.placement.mirrorZ=Z 반전	#
-resourcePack.editor.pastepreview.pane.placement.pastebutton=붙여넣기	#
-resourcePack.editor.pastepreview.pane.controls.title=커서 컨트롤	#
-resourcePack.editor.pastepreview.pane.controls.cursor=Control	#
-resourcePack.editor.pastepreview.pane.controls.cursor.keyboard=키만	#
-resourcePack.editor.pastepreview.pane.controls.cursor.mouseandkeys=마우스 및 키	#
-resourcePack.editor.pastepreview.pane.controls.cursor.fixed=고정 거리	#
-resourcePack.editor.pastepreview.pane.controls.cursor.target.title=과녁	#
-resourcePack.editor.pastepreview.pane.controls.cursor.target.block=블록	#
-resourcePack.editor.pastepreview.pane.controls.cursor.target.face=인접	#
-resourcePack.editor.pastepreview.keyBinding.pastepreview=프리뷰 붙여넣기	#
-resourcePack.editor.pastepreview.keyBinding.copy=선택 항목 복사	#
-resourcePack.editor.pastepreview.keyBinding.cut=선택 항목 자르기	#
-resourcePack.editor.pastepreview.keyBinding.quickPaste=빠른 붙여넣기	#
-resourcePack.editor.pastepreview.keyBinding.paste=붙여넣기	#
-resourcePack.editor.pastepreview.keyBinding.clearPreview=프리뷰 지우기	#
-resourcePack.editor.pastepreview.keyBinding.moveForward=프리뷰 앞으로 이동	#
-resourcePack.editor.pastepreview.keyBinding.moveBack=프리뷰 뒤로 이동	#
-resourcePack.editor.pastepreview.keyBinding.moveLeft=프리뷰 왼쪽으로 이동	#
-resourcePack.editor.pastepreview.keyBinding.moveRight=프리뷰 오른쪽으로 이동	#
-resourcePack.editor.pastepreview.keyBinding.moveUp=프리뷰 위로 이동	#
-resourcePack.editor.pastepreview.keyBinding.moveDown=프리뷰 아래로 이동	#
-resourcePack.editor.pastepreview.keyBinding.moveOffsetForward=오프셋 앞으로 이동	#
-resourcePack.editor.pastepreview.keyBinding.moveOffsetBack=오프셋 뒤로 이동	#
-resourcePack.editor.pastepreview.keyBinding.moveOffsetLeft=오프셋 왼쪽으로 이동	#
-resourcePack.editor.pastepreview.keyBinding.moveOffsetRight=오프셋 오른쪽으로 이동	#
-resourcePack.editor.pastepreview.keyBinding.moveOffsetUp=오프셋 위로 이동	#
-resourcePack.editor.pastepreview.keyBinding.moveOffsetDown=오프셋 아래로 이동	#
-resourcePack.editor.pastepreview.keyBinding.moveOriginForward=오리진 앞으로 이동	#
-resourcePack.editor.pastepreview.keyBinding.moveOriginBack=오리진 뒤로 이동	#
-resourcePack.editor.pastepreview.keyBinding.moveOriginLeft=오리진 왼쪽으로 이동	#
-resourcePack.editor.pastepreview.keyBinding.moveOriginRight=오리진 오른쪽으로 이동	#
-resourcePack.editor.pastepreview.keyBinding.moveOriginUp=오리진 위로 이동	#
-resourcePack.editor.pastepreview.keyBinding.moveOriginDown=오리진 아래로 이동	#
-resourcePack.editor.pastepreview.keyBinding.pasteAtCursor=커서에 붙여넣기	#
-resourcePack.editor.pastepreview.keyBinding.toggleBlockTarget=블록 대상 모드 토글	#
-resourcePack.editor.pastepreview.keyBinding.toggleAdjacentTarget=인접 대상 모드 토글	#
-resourcePack.editor.pastepreview.keyBinding.rotateClockWise=미리 보기 시계 방향 회전	#
-resourcePack.editor.pastepreview.keyBinding.rotateCounterClockWise=미리 보기 시계 반대 방향으로 회전	#
-resourcePack.editor.pastepreview.keyBinding.toggleMirrorX=X 반전 토글	#
-resourcePack.editor.pastepreview.keyBinding.toggleMirrorZ=Z 반전 토글	#
-resourcePack.editor.pastepreview.keyBinding.toggleMouseTracking=마우스 추적 토글	#
-resourcePack.editor.pastepreview.keyBinding.toggleFixedDistance=고정 거리 활성화	#
 
-resourcePack.editor.ClipboardPreviewControl.rootPane.title=클립보드 정보	#
-resourcePack.editor.ClipboardPreviewControl.structureSize.title=클립보드 크기	#
-resourcePack.editor.ClipboardPreviewControl.placement.title=옵션	#
-resourcePack.editor.ClipboardPreviewControl.origin.title=원점	#
-resourcePack.editor.ClipboardPreviewControl.origin.tooltip=클립보드 항목 내의 원점입니다.  이것은 배치 앵커로 사용되며 클립보드가 회전하고 미러링되는 지점으로 사용됩니다	#
-resourcePack.editor.ClipboardPreviewControl.offset.title=오프셋	#
-resourcePack.editor.ClipboardPreviewControl.offset.tooltip=배치 점에서 클립보드 항목 원점까지의 추가 오프셋	#
-resourcePack.editor.ClipboardPreviewControl.rotation.title=회전	#
-resourcePack.editor.ClipboardPreviewControl.rotation.tooltip=원점에서 Y축을 중심으로 한 회전량입니다	#
-resourcePack.editor.ClipboardPreviewControl.rotation.none=없음	#
-resourcePack.editor.ClipboardPreviewControl.rotation.90=90°	#
-resourcePack.editor.ClipboardPreviewControl.rotation.180=180°	#
-resourcePack.editor.ClipboardPreviewControl.rotation.270=270°	#
-resourcePack.editor.ClipboardPreviewControl.mirror.axis.x=반전(X축)	#
-resourcePack.editor.ClipboardPreviewControl.mirror.axis.x.tooltip=원점에서 X축 주위로 클립보드 항목을 미러링합니다.	#
-resourcePack.editor.ClipboardPreviewControl.mirror.axis.z=반전(Z축)	#
-resourcePack.editor.ClipboardPreviewControl.mirror.axis.z.tooltip=원점에서 Z축 주위로 클립보드 항목을 미러링합니다.	#
-resourcePack.editor.ClipboardPreviewControl.keyBinding.nudgeOffsetUp=오프셋 위로 밀기	#
-resourcePack.editor.ClipboardPreviewControl.keyBinding.nudgeOffsetDown=오프셋 아래로 밀기	#
-resourcePack.editor.ClipboardPreviewControl.keyBinding.nudgeOffsetLeft=오프셋 왼쪽으로 밀기	#
-resourcePack.editor.ClipboardPreviewControl.keyBinding.nudgeOffsetRight=오프셋 오른쪽으로 밀기	#
-resourcePack.editor.ClipboardPreviewControl.keyBinding.nudgeOffsetForward=오프셋 앞으로 밀기	#
-resourcePack.editor.ClipboardPreviewControl.keyBinding.nudgeOffsetBack=오프셋 뒤로 밀기	#
-resourcePack.editor.ClipboardPreviewControl.keybinding.moveOriginForward=오리진 앞으로 이동	#
-resourcePack.editor.ClipboardPreviewControl.keybinding.moveOriginBack=오리진 뒤로 이동	#
-resourcePack.editor.ClipboardPreviewControl.keybinding.moveOriginLeft=오리진 왼쪽으로 이동	#
-resourcePack.editor.ClipboardPreviewControl.keybinding.moveOriginRight=오리진 오른쪽으로 이동	#
-resourcePack.editor.ClipboardPreviewControl.keybinding.moveOriginUp=오리진 위로 이동	#
-resourcePack.editor.ClipboardPreviewControl.keybinding.moveOriginDown=오리진 아래로 이동	#
-resourcePack.editor.ClipboardPreviewControl.keybinding.rotateClockWise=미리 보기 시계 방향 회전	#
-resourcePack.editor.ClipboardPreviewControl.keybinding.rotateCounterClockWise=미리 보기 시계 반대 방향으로 회전	#
-resourcePack.editor.ClipboardPreviewControl.keybinding.toggleMirrorX=X 반전 토글	#
-resourcePack.editor.ClipboardPreviewControl.keybinding.toggleMirrorZ=Z 반전 토글	#
+resourcePack.editor.transaction.keyBinding.redo=다시 실행	#
+resourcePack.editor.transaction.keyBinding.undo=실행 취소	#
 
-resourcePack.editor.deferredLightingSettings.menu.title=디퍼드 라이팅 설정	#
-resourcePack.editor.datatransferaccessors.atmospheric_scattering=대기 산란	#
-resourcePack.editor.datatransferaccessors.color_grading=컬러 그레이딩	#
-resourcePack.editor.datatransferaccessors.lighting_group=글로벌 조명	#
-resourcePack.editor.datatransferaccessors.pbr_fallbacks=PBR 대비책	#
-resourcePack.editor.datatransferaccessors.point_lights=포인트 조명	#
-resourcePack.editor.datatransferaccessors.water=물	#
 
+resourcePack.editor.viewport.keyBinding.moveBack=뒤로 이동	#
+resourcePack.editor.viewport.keyBinding.moveDown=아래로 이동	#
+resourcePack.editor.viewport.keyBinding.moveForward=앞으로 이동	#
+resourcePack.editor.viewport.keyBinding.moveLeft=왼쪽으로 이동	#
+resourcePack.editor.viewport.keyBinding.moveRight=오른쪽으로 이동	#
+resourcePack.editor.viewport.keyBinding.moveUp=위로 이동	#
+
+
+resourcePack.editor.viewSettings.compass.tip=방향 나침반 표시	#
+resourcePack.editor.viewSettings.compass.title=나침반 표시	#
+resourcePack.editor.viewSettings.chunk.tip=지도에서 청크 경계의 윤곽을 표시합니다.	#
+resourcePack.editor.viewSettings.chunk.title=청크 경계 표시	#
+resourcePack.editor.viewSettings.invisible.tip=투명 블록(예: 공허, 방벽 등)을 표시합니다.	#
+resourcePack.editor.viewSettings.invisible.title=투명 블록 표시	#
+resourcePack.editor.viewSettings.flySpeed.tip=지도를 더 빠르게 움직이려면 비행 속도를 높이세요.	#
+resourcePack.editor.viewSettings.flySpeed.title=비행 속도 배수	#
 resourcePack.editor.viewSettings.menu=설정 보기	#
 resourcePack.editor.viewSettings.title=설정 보기	#
-resourcePack.editor.viewSettings.invisible.title=투명 블록 표시	#
-resourcePack.editor.viewSettings.invisible.tip=투명 블록(예: 공허, 방벽 등)을 표시합니다.	#
-resourcePack.editor.viewSettings.chunk.title=청크 경계 표시	#
-resourcePack.editor.viewSettings.chunk.tip=지도에서 청크 경계의 윤곽을 표시합니다.	#
 
-resourcePack.editor.brushPaint.title=브러시로 칠하기	#
-resourcePack.editor.brushPaint.tooltip=브러시를 사용해 월드에서 블록을 칠합니다.	#
-resourcePack.editor.brushPaint.inputContext.title=브러시로 칠하기	#
-resourcePack.editor.brushPaint.inputContext.oneshot=한 번에 칠하기	#
-resourcePack.editor.brushPaint.inputContext.activateBrushPaint=브러시로 칠하기를 활성화합니다.	#
-
-resourcePack.editor.CursorModeControl.rootPane.title=커서 설정	#
-resourcePack.editor.CursorModeControl.mouseControlMode.title=입력 방법	#
-resourcePack.editor.CursorModeControl.mouseControlMode.tooltip=월드 블록 커서의 입력 방식을 선택합니다.	#
-resourcePack.editor.CursorModeControl.mouseControlMode.keyboard=키보드 전용	#
-resourcePack.editor.CursorModeControl.mouseControlMode.keyboardAndMouse=마우스 및 키	#
-resourcePack.editor.CursorModeControl.mouseControlMode.fixed=고정 거리	#
-resourcePack.editor.CursorModeControl.cursorTargetMode.title=대상	#
-resourcePack.editor.CursorModeControl.cursorTargetMode.tooltip=커서 대상 모드를 선택합니다.	#
-resourcePack.editor.CursorModeControl.cursorTargetMode.block=블록	#
-resourcePack.editor.CursorModeControl.cursorTargetMode.block.tooltip=마우스 커서 아래의 블록	#
-resourcePack.editor.CursorModeControl.cursorTargetMode.face=인접	#
-resourcePack.editor.CursorModeControl.cursorTargetMode.face.tooltip=커서 아래에 있는 블록 면에 붙어 있는 블록	#
-resourcePack.editor.CursorModeControl.projectThroughWater.title=물속 비쳐 보이기	#
-resourcePack.editor.CursorModeControl.projectThroughWater.tooltip=마우스 레이캐스트를 사용하면 물속이 비쳐 보여 수중 요소를 선택할 수 있습니다.	#
-resourcePack.editor.CursorModeControl.fixedDistance.slider.title=고정 커서 거리	#
-resourcePack.editor.CursorModeControl.fixedDistance.slider.tooltip=플레이어와 블록 커서 사이의 고정 거리를 조정합니다.	#
-resourcePack.editor.CursorModeControl.keybinding.moveCursorForward=앞으로 밀기	#
-resourcePack.editor.CursorModeControl.keybinding.moveCursorBack=커서 뒤로 이동	#
-resourcePack.editor.CursorModeControl.keybinding.moveCursorUp=커서 위로 이동	#
-resourcePack.editor.CursorModeControl.keybinding.moveCursorDown=커서 아래로 이동	#
-resourcePack.editor.CursorModeControl.keybinding.moveCursorLeft=커서 왼쪽으로 이동	#
-resourcePack.editor.CursorModeControl.keybinding.moveCursorRight=커서 오른쪽으로 이동	#
-resourcePack.editor.CursorModeControl.keybinding.toggleMouseTracking=마우스 추적 토글	#
-resourcePack.editor.CursorModeControl.keybinding.toggleBlockTargetMode=블록/인접 모드 토글	#
-resourcePack.editor.CursorModeControl.keybinding.toggleFixedDistance=고정 거리 모드 토글	#
-
-resourcePack.editor.BrushPaintControl.rootPane.title=브러시 설정	#
-resourcePack.editor.BrushPaintControl.brush.title=브러시	#
-resourcePack.editor.BrushPaintControl.brushSettings.title=브러시 설정	#
-resourcePack.editor.BrushPaintControl.fillConstraints.title=채우기 제한	#
-resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.title=브러시 블록 필터	#
-resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.mask=마스크	#
-resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.mask.tooltip=목록과 일치하는 블록이 무시되며 영향을 받지 않습니다.	#
-resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.replace=교체	#
-resourcePack.editor.BrushPaintControl.fillConstraints.replace.title=교체 목록	#
-resourcePack.editor.BrushPaintControl.fillConstraints.replace.tooltip=목록과 일치하는 블록에 대해 작업을 수행합니다.	#
-resourcePack.editor.BrushPaintControl.fillConstraints.mask.title=마스크 목록	#
-resourcePack.editor.BrushPaintControl.offset.title=오프셋	#
-resourcePack.editor.BrushPaintControl.offset.tooltip=커서 위치로부터의 오프셋입니다.	#
-resourcePack.editor.BrushPaintControl.keybinding.replaceMask=마스크 모드 - 교체	#
-resourcePack.editor.BrushPaintControl.keybinding.maskMask=마스크 모드 - 마스크	#
-resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetUp=오프셋 위로 밀기	#
-resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetDown=오프셋 아래로 밀기	#
-resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetLeft=오프셋 왼쪽으로 밀기	#
-resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetRight=오프셋 오른쪽으로 밀기	#
-resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetForward=오프셋 앞으로 밀기	#
-resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetBack=오프셋 뒤로 밀기	#
-
-resourcePack.editor.copypaste.keyBinding.copy=클립보드에 선택 항목 복사	#
-resourcePack.editor.copypaste.keyBinding.cut=클립보드로 선택 항목 잘라내기/이동	#
-resourcePack.editor.copypaste.keyBinding.paste=클립보드를 월드에 붙여넣기	#
-resourcePack.editor.copypaste.actionbar.copy.title=복사	#
-resourcePack.editor.copypaste.actionbar.copy.tooltip=클립보드에 선택 항목 복사	#
-resourcePack.editor.copypaste.actionbar.copy.tooltipDescription=현재 선택 볼륨의 내용을 클립보드에 복사하고 선택 볼륨의 내용은 그대로 둡니다	#
-resourcePack.editor.copypaste.actionbar.cut.title=잘라내기	#
-resourcePack.editor.copypaste.actionbar.cut.tooltip=클립보드로 선택 항목 잘라내기/이동	#
-resourcePack.editor.copypaste.actionbar.cut.tooltipDescription=현재 선택 볼륨의 내용을 클립보드에 복사하고 처리 중인 선택 볼륨의 내용은 삭제	#
-resourcePack.editor.copypaste.menu.copy.title=선택 항목 복사	#
-resourcePack.editor.copypaste.menu.cut.title=선택 항목 자르기	#
-
-
+resourcePack.editor.hotbar.defaultDisplayName=기본	#

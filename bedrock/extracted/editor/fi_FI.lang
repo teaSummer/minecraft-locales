@@ -3,12 +3,616 @@
 ## Note, trailing spaces will NOT be trimmed. If you want room between the end of the string and the start of a
 ## comment on the same line, use TABs.
 
+commands.editor.project.beginExport=Viedään...	#
+commands.editor.project.description=Hallitse tällä hetkellä ladattua projektia	#
+commands.editor.project.export=projektin vienti	#
+commands.editor.project.exportComplete=Vienti valmis, tiedostot kirjoitettu kohteeseen %s	#
+commands.editor.project.exportCopyFailed=Tasotietojen kopiointi epäonnistui %s	#
+commands.editor.project.unknownSubcommand=Tuntematon alikomento	#
+
+resourcePack.editor.actionBar.redo.tooltipDescription=Tee toiminto uudelleen	#
+resourcePack.editor.actionBar.redo.tooltipTitle=Tee uudelleen	#
+resourcePack.editor.actionBar.redo=Tee uudelleen	#
+resourcePack.editor.actionBar.undo.tooltipDescription=Kumoa toiminto	#
+resourcePack.editor.actionBar.undo.tooltipTitle=Kumoa	#
+resourcePack.editor.actionBar.undo=Kumoa	#
+
+resourcePack.editor.agfx.settings.error.title=Tapahtui virhe(itä)...	#
+resourcePack.editor.agfx.pane.title=Asetuseditori	#
+resourcePack.editor.agfx.pane.settings_selector=Valitse asetukset	#
+resourcePack.editor.agfx.pane.settings.title=Asetukset	#
+resourcePack.editor.agfx.pane.settings.revert_changes=Palauta muutokset	#
+resourcePack.editor.agfx.pane.settings.export_to_clipboard=Vie leikepöydälle	#
+
+
+resourcePack.editor.blockPalette.addSearchItem=Käytä löytynyttä kuutiota	#
+resourcePack.editor.blockPalette.blockPicker=Haku	#
+resourcePack.editor.blockPalette.paletteDropdown.title=Paletti	#
+resourcePack.editor.blockPalette.title=Kuutiopaletti	#
+
+
+resourcePack.editor.brushPaint.inputContext.activateBrushPaint=Aktivoi siveltimen maali	#
+resourcePack.editor.brushPaint.inputContext.oneshot=Maalaa kerran	#
+resourcePack.editor.brushPaint.inputContext.title=Siveltimen maali	#
+resourcePack.editor.brushPaint.title=Siveltimen maali	#
+resourcePack.editor.brushPaint.tooltip=Käytä siveltimiä maalataksesi kuutioita maailmassa	#
+
+
+resourcePack.editor.BrushPaintControl.brush.title=Sivellin	#
+resourcePack.editor.BrushPaintControl.brushSettings.title=Siveltimen asetukset	#
+resourcePack.editor.BrushPaintControl.fillConstraints.mask.title=Maskiluettelo	#
+resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.disabled.tooltip=Poista kuutiosuodattimet käytöstä	#
+resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.disabled=Poissa käytöstä	#
+resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.mask.tooltip=Luetteloa vastaavat kuutiot jätetään huomioimatta eikä niihin vaikuteta	#
+resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.mask=Naamio	#
+resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.replace=Korvaa	#
+resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.title=Siveltimen kuutiosuodatin	#
+resourcePack.editor.BrushPaintControl.fillConstraints.replace.title=Korvaa luettelo	#
+resourcePack.editor.BrushPaintControl.fillConstraints.replace.tooltip=Luetteloa vastaavia kuutioita käytetään	#
+resourcePack.editor.BrushPaintControl.fillConstraints.title=Täytön rajoitukset	#
+resourcePack.editor.BrushPaintControl.keybinding.maskMask=Maskitila - Maski	#
+resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetBack=Työnnä siirtymää taaksepäin	#
+resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetDown=Työnnä siirtymää alas	#
+resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetForward=Työnnä siirtymää eteenpäin	#
+resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetLeft=Työnnä siirtymää vasemmalle	#
+resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetRight=Työnnä siirtymää oikealle	#
+resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetUp=Työnnä siirtymää ylös	#
+resourcePack.editor.BrushPaintControl.keybinding.replaceMask=Maskitila - Korvaa	#
+resourcePack.editor.BrushPaintControl.offset.title=Siirtymä	#
+resourcePack.editor.BrushPaintControl.offset.tooltip=Siirtymä osoittimen sijainnista	#
+resourcePack.editor.BrushPaintControl.rootPane.title=Siveltimen asetukset	#
+
+
+resourcePack.editor.brushShape.common.settings.axis=Ulkoneman akseli	#
+resourcePack.editor.brushShape.common.settings.height=Korkeus	#
+resourcePack.editor.brushShape.common.settings.length=Pituus	#
+resourcePack.editor.brushShape.common.settings.radius=Säde	#
+resourcePack.editor.brushShape.common.settings.uniform=Uniform	#
+resourcePack.editor.brushShape.common.settings.xAxis=X-akseli	#
+resourcePack.editor.brushShape.common.settings.xAxisNeg=-X-akseli	#
+resourcePack.editor.brushShape.common.settings.yAxis=Y-akseli	#
+resourcePack.editor.brushShape.common.settings.yAxisNeg=-Y-akseli	#
+resourcePack.editor.brushShape.common.settings.zAxis=Z-akseli	#
+resourcePack.editor.brushShape.common.settings.zAxisNeg=-Z-akseli	#
+resourcePack.editor.brushShape.cone.name=Kartio	#
+resourcePack.editor.brushShape.cone.settings.depth=Syvyyden säde	#
+resourcePack.editor.brushShape.cone.settings.width=Leveyden säde	#
+resourcePack.editor.brushShape.cuboid.name=Särmiö	#
+resourcePack.editor.brushShape.cuboid.settings.depth=Syvyys	#
+resourcePack.editor.brushShape.cuboid.settings.height=Korkeus	#
+resourcePack.editor.brushShape.cuboid.settings.width=Leveys	#
+resourcePack.editor.brushShape.cylinder.name=Lieriö	#
+resourcePack.editor.brushShape.cylinder.settings.depth_radius=Syvyyden säde	#
+resourcePack.editor.brushShape.cylinder.settings.width_radius=Leveyden säde	#
+resourcePack.editor.brushShape.ellipsoid.name=Soikea	#
+resourcePack.editor.brushShape.ellipsoid.settings.depth_radius=Syvyyden säde	#
+resourcePack.editor.brushShape.ellipsoid.settings.height_radius=Korkeuden säde	#
+resourcePack.editor.brushShape.ellipsoid.settings.width_radius=Leveyden säde	#
+resourcePack.editor.brushShape.pyramid.name=Pyramidi	#
+resourcePack.editor.brushShape.pyramid.settings.depth=Syvyys	#
+resourcePack.editor.brushShape.pyramid.settings.height=Korkeus	#
+resourcePack.editor.brushShape.pyramid.settings.width=Leveys	#
+resourcePack.editor.brushShape.singleBlock.name=Yksittäinen kuutio	#
+
+
 resourcePack.editor.client.description=Editoriohjelman resurssit	#
 resourcePack.editor.client.name=Editorin resurssit	#
+
+
+resourcePack.editor.ClipboardPreviewControl.keybinding.moveOriginBack=Siirrä alkupistettä taaksepäin	#
+resourcePack.editor.ClipboardPreviewControl.keybinding.moveOriginDown=Siirrä alkupistettä alaspäin	#
+resourcePack.editor.ClipboardPreviewControl.keybinding.moveOriginForward=Siirrä alkupistettä eteenpäin	#
+resourcePack.editor.ClipboardPreviewControl.keybinding.moveOriginLeft=Siirrä alkupistettä vasemmalle	#
+resourcePack.editor.ClipboardPreviewControl.keybinding.moveOriginRight=Siirrä alkupistettä oikealle	#
+resourcePack.editor.ClipboardPreviewControl.keybinding.moveOriginUp=Siirrä alkupistettä ylöspäin	#
+resourcePack.editor.ClipboardPreviewControl.keyBinding.nudgeOffsetBack=Työnnä siirtymää taaksepäin	#
+resourcePack.editor.ClipboardPreviewControl.keyBinding.nudgeOffsetDown=Työnnä siirtymää alas	#
+resourcePack.editor.ClipboardPreviewControl.keyBinding.nudgeOffsetForward=Työnnä siirtymää eteenpäin	#
+resourcePack.editor.ClipboardPreviewControl.keyBinding.nudgeOffsetLeft=Työnnä siirtymää vasemmalle	#
+resourcePack.editor.ClipboardPreviewControl.keyBinding.nudgeOffsetRight=Työnnä siirtymää oikealle	#
+resourcePack.editor.ClipboardPreviewControl.keyBinding.nudgeOffsetUp=Työnnä siirtymää ylös	#
+resourcePack.editor.ClipboardPreviewControl.keybinding.rotateClockWise=Kierrä esikatselua myötäpäivään	#
+resourcePack.editor.ClipboardPreviewControl.keybinding.rotateCounterClockWise=Kierrä esikatselua vastapäivään	#
+resourcePack.editor.ClipboardPreviewControl.keybinding.toggleMirrorX=Kytke peilattu X-akseli	#
+resourcePack.editor.ClipboardPreviewControl.keybinding.toggleMirrorZ=Kytke peilattu Z-akseli	#
+resourcePack.editor.ClipboardPreviewControl.mirror.axis.x.tooltip=Peilaa leikepöydän esine X-akselin ympäri alkupisteessä	#
+resourcePack.editor.ClipboardPreviewControl.mirror.axis.x=Peilaa (X-akseli)	#
+resourcePack.editor.ClipboardPreviewControl.mirror.axis.z.tooltip=Peilaa leikepöydän esine Z-akselin ympäri alkupisteessä	#
+resourcePack.editor.ClipboardPreviewControl.mirror.axis.z=Peilaa (Z-akseli)	#
+resourcePack.editor.ClipboardPreviewControl.offset.title=Siirtymä	#
+resourcePack.editor.ClipboardPreviewControl.offset.tooltip=Lisäsiirtymä sijoittelupisteestä leikepöydän esineen alkupisteeseen	#
+resourcePack.editor.ClipboardPreviewControl.origin.title=Alkupiste	#
+resourcePack.editor.ClipboardPreviewControl.origin.tooltip=Leikepöydän esineen alkupiste. Tätä käytetään sekä sijoitteluankkurina että pisteenä, jonka ympärillä leikepöytää kierretään ja peilataan	#
+resourcePack.editor.ClipboardPreviewControl.placement.title=Asetukset	#
+resourcePack.editor.ClipboardPreviewControl.rootPane.title=Leikepöydän tiedot	#
+resourcePack.editor.ClipboardPreviewControl.rotation.180=180Â°	#
+resourcePack.editor.ClipboardPreviewControl.rotation.270=270Â°	#
+resourcePack.editor.ClipboardPreviewControl.rotation.90=90Â°	#
+resourcePack.editor.ClipboardPreviewControl.rotation.none=Ei mitään	#
+resourcePack.editor.ClipboardPreviewControl.rotation.title=Kierto	#
+resourcePack.editor.ClipboardPreviewControl.rotation.tooltip=Kierron määrä Y-akselin ympäri alkupisteessä	#
+resourcePack.editor.ClipboardPreviewControl.structureSize.title=Leikepöydän koko	#
+
+
+resourcePack.editor.copypaste.actionbar.copy.title=Kopioi	#
+resourcePack.editor.copypaste.actionbar.copy.tooltip=Kopioi valinta leikepöydälle	#
+resourcePack.editor.copypaste.actionbar.copy.tooltipDescription=Kopioi nykyisen valinnan sisältö leikepöydälle ja jätä valinnan sisältö ennalleen	#
+resourcePack.editor.copypaste.actionbar.cut.title=Leikkaa	#
+resourcePack.editor.copypaste.actionbar.cut.tooltip=Leikkaa/siirrä valinta leikepöydälle	#
+resourcePack.editor.copypaste.actionbar.cut.tooltipDescription=Kopioi nykyisen valinnan sisältö leikepöydälle ja poista samalla valinnan sisältö	#
+resourcePack.editor.copypaste.keyBinding.copy=Kopioi valinta leikepöydälle	#
+resourcePack.editor.copypaste.keyBinding.cut=Leikkaa/siirrä valinta leikepöydälle	#
+resourcePack.editor.copypaste.keyBinding.paste=Liitä leikepöytä maailmaan	#
+resourcePack.editor.copypaste.menu.copy.title=Kopioi valinta	#
+resourcePack.editor.copypaste.menu.cut.title=Leikkaa valinta	#
+
+
+resourcePack.editor.core.keyBinding.showGameMenu=Näytä pelivalikko	#
+resourcePack.editor.core.keyBinding.showLogPanel=Näytä lokipaneeli	#
+
+
+resourcePack.editor.CursorModeControl.cursorTargetMode.block.tooltip=Kuutio hiiren osoittimen alla	#
+resourcePack.editor.CursorModeControl.cursorTargetMode.block=Estä	#
+resourcePack.editor.CursorModeControl.cursorTargetMode.face.tooltip=Kuutio suoraan osoittimen alla olevan kuution sivun vieressä	#
+resourcePack.editor.CursorModeControl.cursorTargetMode.face=Viereinen	#
+resourcePack.editor.CursorModeControl.cursorTargetMode.title=Kohde	#
+resourcePack.editor.CursorModeControl.cursorTargetMode.tooltip=Valitse osoittimen kohdetila	#
+resourcePack.editor.CursorModeControl.fixedDistance.slider.title=Kiinteä osoittimen etäisyys	#
+resourcePack.editor.CursorModeControl.fixedDistance.slider.tooltip=Säädä kiinteää etäisyyttä pelaajasta, jonka kohdalle kuutio-osoitin asetetaan	#
+resourcePack.editor.CursorModeControl.keybinding.moveCursorBack=Siirrä osoitinta taaksepäin	#
+resourcePack.editor.CursorModeControl.keybinding.moveCursorDown=Siirrä osoitinta alaspäin	#
+resourcePack.editor.CursorModeControl.keybinding.moveCursorForward=Työnnä eteenpäin	#
+resourcePack.editor.CursorModeControl.keybinding.moveCursorLeft=Siirrä osoitinta vasemmalle	#
+resourcePack.editor.CursorModeControl.keybinding.moveCursorRight=Siirrä osoitinta oikealle	#
+resourcePack.editor.CursorModeControl.keybinding.moveCursorUp=Siirrä osoitinta ylöspäin	#
+resourcePack.editor.CursorModeControl.keybinding.toggleBlockTargetMode=Vaihda kuutio-/vierekkäinen tila	#
+resourcePack.editor.CursorModeControl.keybinding.toggleFixedDistance=Vaihda kiinteä etäisyys -tila	#
+resourcePack.editor.CursorModeControl.keybinding.toggleMouseTracking=Vaihda hiirenseuranta	#
+resourcePack.editor.CursorModeControl.mouseControlMode.fixed=Kiinteä etäisyys	#
+resourcePack.editor.CursorModeControl.mouseControlMode.keyboard=Vain näppäimistö	#
+resourcePack.editor.CursorModeControl.mouseControlMode.keyboardAndMouse=Hiiri ja näppäimistö	#
+resourcePack.editor.CursorModeControl.mouseControlMode.title=Syötteiden tapa	#
+resourcePack.editor.CursorModeControl.mouseControlMode.tooltip=Valitse syötteiden tapa maailman kuutio-osoittimelle	#
+resourcePack.editor.CursorModeControl.projectThroughWater.title=Heijasta veden läpi	#
+resourcePack.editor.CursorModeControl.projectThroughWater.tooltip=Hiiren säteensuuntaus heijastuu veden läpi, mikä mahdollistaa vedenalaisten elementtien valinnan	#
+resourcePack.editor.CursorModeControl.rootPane.title=Osoittimen asetukset	#
+
+
+resourcePack.editor.datatransferaccessors.atmospheric_scattering=Ympäristön hajonta	#
+resourcePack.editor.datatransferaccessors.color_grading=Värimäärittely	#
+resourcePack.editor.datatransferaccessors.lighting_group=Yleinen valaistus	#
+resourcePack.editor.datatransferaccessors.pbr_fallbacks=PBR vararatkaisut	#
+resourcePack.editor.datatransferaccessors.point_lights=Merkkivalot	#
+resourcePack.editor.datatransferaccessors.water=Vesi	#
+
+
+resourcePack.editor.deferredLightingSettings.menu.title=Viivästetyn valaistuksen asetukset	#
+
+
+resourcePack.editor.delete.keyBinding=Poista valinnan sisältö	#
+
+
+resourcePack.editor.exportProject.exportType=Vie tyyppi	#
+resourcePack.editor.exportProject.exportType.playableWorld=Pelattava maailma	#
+resourcePack.editor.exportProject.exportNotes=Vie muistiinpanot	#
+resourcePack.editor.exportProject.exportNotes.warning=Olet viemässä v%1-maailmaa. Vietyjä pelattavia maailmoja ei voi käyttää Minecraftin versioissa, joiden versionumero on pienempi kuin v%1. Jos haluat käyttää aiempia versionumeroita, käy sivustolla https://chunker.app/ (jotkin toiminnot eivät välttämättä ole käytettävissä, jos aiemmat versiot eivät tue niitä)	#
+resourcePack.editor.exportProject.generalSettings=Yleiset asetukset	#
+resourcePack.editor.exportProject.generalSettings.worldName=Maailman nimi	#
+resourcePack.editor.exportProject.generalSettings.gameMode=Pelimuoto	#
+resourcePack.editor.exportProject.generalSettings.difficulty=Vaikeustaso	#
+resourcePack.editor.exportProject.generalSettings.hardcore=Kovanaama	#
+resourcePack.editor.exportProject.advancedSettings=Edistyneet asetukset	#
+resourcePack.editor.exportProject.advancedSettings.startingMap=Aloituskartta	#
+resourcePack.editor.exportProject.advancedSettings.bonusChest=Bonusarkku	#
+resourcePack.editor.exportProject.advancedSettings.showCoordinates=Näytä koordinaatit	#
+resourcePack.editor.exportProject.advancedSettings.showDaysPlayed=Näytä pelattujen päivien määrä	#
+resourcePack.editor.exportProject.advancedSettings.recipeUnlocking=Reseptien avaaminen	#
+resourcePack.editor.exportProject.advancedSettings.fireSpreads=Tuli leviää	#
+resourcePack.editor.exportProject.advancedSettings.tntExplodes=TNT räjähtää	#
+resourcePack.editor.exportProject.advancedSettings.resawnBlocksExplode=Maailmaantulokuutiot räjähtävät	#
+resourcePack.editor.exportProject.advancedSettings.mobLoot=Olioiden saalis	#
+resourcePack.editor.exportProject.advancedSettings.naturalRegeneration=Luonnollinen parantuminen	#
+resourcePack.editor.exportProject.advancedSettings.tileDrops=Kuutiopudotukset	#
+resourcePack.editor.exportProject.advancedSettings.immediateRespawn=Välitön uudelleensyntyminen	#
+resourcePack.editor.exportProject.advancedSettings.respawnRadius=Maailmaanpaluusäde	#
+resourcePack.editor.exportProject.advancedSettings.simulationDistance=Simulointietäisyys	#
+resourcePack.editor.exportProject.advancedSettings.bedsWork=Sängyt toimivat	#
+resourcePack.editor.exportProject.advancedSettings.requiredSleepingPlayers=Vaaditut nukkuvat pelaajat (%1%)	#
+resourcePack.editor.exportProject.multiplayerSettings=Moninpeliasetukset	#
+resourcePack.editor.exportProject.multiplayerSettings.multiplayerGame=Moninpeli	#
+resourcePack.editor.exportProject.multiplayerSettings.playerAccess=Pelaajien pääsy	#
+resourcePack.editor.exportProject.multiplayerSettings.playerPermissions=Pelaajaluvat	#
+resourcePack.editor.exportProject.multiplayerSettings.visibleToLAN=Näkyy LAN-pelaajille	#
+resourcePack.editor.exportProject.multiplayerSettings.friendlyFire=Oma tuli	#
+resourcePack.editor.exportProject.cheatsSettings=Huijausasetukset	#
+resourcePack.editor.exportProject.cheatsSettings.cheats=Huijauskoodit	#
+resourcePack.editor.exportProject.cheatsSettings.daylightCycle=Vuorokausirytmi	#
+resourcePack.editor.exportProject.cheatsSettings.keepInventory=Säilytä tavaraluettelo	#
+resourcePack.editor.exportProject.cheatsSettings.mobSpawning=Olioiden syntyminen	#
+resourcePack.editor.exportProject.cheatsSettings.mobGriefing=Olioiden häiriköinti	#
+resourcePack.editor.exportProject.cheatsSettings.entitiesDropLoot=Kohteet pudottavat saaliita	#
+resourcePack.editor.exportProject.cheatsSettings.weatherCycle=Säänvaihtelut	#
+resourcePack.editor.exportProject.cheatsSettings.commandBlocks=Komentokuutiot	#
+resourcePack.editor.exportProject.cheatsSettings.educationFeatures=Oppimisominaisuudet	#
+resourcePack.editor.exportProject.cheatsSettings.randomTickSpeed=Satunnainen tikitysnopeus	#
+resourcePack.editor.exportProject.export=Vie	#
+resourcePack.editor.exportProject.resetToDefault=Palauta oletus	#
+resourcePack.editor.exportProject.gameMode.survival=Selviytyjä	#
+resourcePack.editor.exportProject.gameMode.creative=Nikkaroija	#
+resourcePack.editor.exportProject.gameMode.adventure=Seikkailu	#
+resourcePack.editor.exportProject.difficulty.peaceful=Rauhallinen	#
+resourcePack.editor.exportProject.difficulty.easy=Helppo	#
+resourcePack.editor.exportProject.difficulty.normal=Normaali	#
+resourcePack.editor.exportProject.difficulty.hard=Vaikea	#
+
+
+resourcePack.editor.toolRail.ExtrudeTool.title=Pursotustyökalu	#
+resourcePack.editor.toolRail.ExtrudeTool.tooltip=Pursotustyökalu, jolla laajennetaan ja lasketaan kuutioita	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.ContiguousSelectionBlockListSubPane.title=Kuutioluettelon vierekkäinen valinta	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.TrailingBlocksSettingsSubPane.title=Seuraavien kuutioiden asetukset	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.SampleLayerCount.title=Esimerkkikerrosmäärä	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.ContiguousSelectionSettings.title=Vierekkäisen valinnan asetukset	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.ContiguousSelectionType.title=Vierekkäisen valinnan tyyppi	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.ContiguousSelectionType.SameBlocks=Samat kuutiot	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.ContiguousSelectionType.SameBlocksAndStates=Samat kuutiot ja tilat	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.ContiguousSelectionType.SolidBlocks=Kiinteät kuutiot	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.ContiguousSelectionType.AllBlocks=Kaikki kuutiot	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.ContiguousSelectionType.CustomBlockList=Mukautettu kuutioluettelo	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.ToleranceLevel.title=Toleranssitaso	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.HasAdjacentBlocks.title=Sisältää vierekkäisiä kuutioita	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.ExtruderSettings.title=Pursotuksen asetukset	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.Radius.title=Säde	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.title=Valintatila	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.ContiguousSelection=Vierekkäinen valinta	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.MarqueeSelection=Kehysvalinta	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.ContiguousSettings.title=Vierekkäisen valinnan asetukset	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.TrailingBlocks.title=Seuraavat kuutiot	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.TrailingBlocksSettings.title=Seuraavien kuutioiden asetukset	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.QuickExtrudeSettings.title=Pikapursotuksen asetukset	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.QuickExtrudeMode.title=Pikapursotustila	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.QuickExtrudeMode.decrease.title=Laske	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.QuickExtrudeMode.decrease.tooltip=Laske pursotusta	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.QuickExtrudeMode.expand.title=Laajenna	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.QuickExtrudeMode.expand.tooltip=Laajenna pursotusta	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.LayerCount.title=Kerrosmäärä	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.ExtrusionType.title=Pursotuksen tyyppi	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.ExtrusionType.Extrude=Pursotus	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.ExtrusionType.QuickExtrude=Pikapursotus	#
+resourcePack.editor.toolRail.ExtrudeTool.keyBinding.deselect=Peru valinta	#
+resourcePack.editor.toolRail.ExtrudeTool.keyBinding.toggleTool=Kytke pursotustyökalu	#
+
+
+resourcePack.editor.toolRail.FarmGenerator.tool.title=Maatilageneraattori	#
+resourcePack.editor.toolRail.FarmGenerator.tool.tooltip=Luo nopeasti mukautettu maatila	#
+resourcePack.editor.toolRail.FarmGenerator.pane.title=Maatilageneraattori	#
+resourcePack.editor.toolRail.FarmGenerator.pane.length=Pituus	#
+resourcePack.editor.toolRail.FarmGenerator.pane.width=Leveys	#
+resourcePack.editor.toolRail.FarmGenerator.pane.fence=Aita	#
+resourcePack.editor.toolRail.FarmGenerator.pane.irrigation=Lisää kastelu	#
+resourcePack.editor.toolRail.FarmGenerator.pane.irrigation.tooltip=Lisää maatilalle vesikuutioita viljelykasvien kasteluun.	#
+resourcePack.editor.toolRail.FarmGenerator.pane.crops.title=Viljaa	#
+resourcePack.editor.toolRail.FarmGenerator.pane.crops.wheat=Vehnä	#
+resourcePack.editor.toolRail.FarmGenerator.pane.crops.potato=Peruna	#
+resourcePack.editor.toolRail.FarmGenerator.pane.crops.beets=Punajuuri	#
+resourcePack.editor.toolRail.FarmGenerator.pane.crops.pumpkin=Kurpitsa	#
+resourcePack.editor.toolRail.FarmGenerator.pane.crops.carrot=Porkkana	#
+resourcePack.editor.toolRail.FarmGenerator.pane.animals.title=Eläimiä	#
+resourcePack.editor.toolRail.FarmGenerator.pane.animals.cow=Lehmä	#
+resourcePack.editor.toolRail.FarmGenerator.pane.animals.sheep=Lammas	#
+resourcePack.editor.toolRail.FarmGenerator.pane.animals.pig=Sika	#
+resourcePack.editor.toolRail.FarmGenerator.keyBinding.toggleTool=Kytke maatilageneraattorityökalu	#
+resourcePack.editor.toolRail.FarmGenerator.keyBinding.place=Aseta maatila osoittimen kohdalle	#
+
+
+resourcePack.editor.global.keyBinding.toggleMode=Vaihda tilaa	#
+
+
+resourcePack.editor.goToMark.actionBar.tooltip.description=Pelaajan navigointipaneeli	#
+resourcePack.editor.goToMark.actionBar.tooltip.title=Selauspaneeli	#
+resourcePack.editor.goToMark.pane.goToSpawn=Siirry maailmaantulopisteeseen	#
+resourcePack.editor.goToMark.pane.location=Pelaajan sijainti	#
+resourcePack.editor.goToMark.pane.locationPane.delete=Poista tallennettu sijainti	#
+resourcePack.editor.goToMark.pane.locationPane.dropdownLabel=Tallennettu sijainti	#
+resourcePack.editor.goToMark.pane.locationPane.inputName=Uusi nimi	#
+resourcePack.editor.goToMark.pane.locationPane.markColor=Sijainnin merkkiväri	#
+resourcePack.editor.goToMark.pane.locationPane.store=Tallenna nykyisen sijainnin nimeksi...	#
+resourcePack.editor.goToMark.pane.locationPane.teleport=Teleporttaa tallennettuun sijaintiin %1$s	#
+resourcePack.editor.goToMark.pane.locationPane.title=Tallennetut sijainnit	#
+resourcePack.editor.goToMark.pane.mapSize=Kartan koko	#
+resourcePack.editor.goToMark.pane.refreshMap=Päivitä kartta	#
+resourcePack.editor.goToMark.pane.setSpawn=Aseta maailmaantulopiste nykyiseksi	#
+resourcePack.editor.goToMark.pane.showMap=Näytä kartta	#
+resourcePack.editor.goToMark.pane.teleport=Teleporttaa sijaintiin	#
+resourcePack.editor.goToMark.title=Selauspaneeli	#
+
+
+resourcePack.editor.grapple.keyBinding.flyToCursor=Lennä osoittimen kohtaan	#
+resourcePack.editor.grapple.keyBinding.flyToSelection=Lennä valinnan kohtaan	#
+
+
+resourcePack.editor.locate.biome.find=Etsi biomi	#
+resourcePack.editor.locate.biome.title=Biomi	#
+resourcePack.editor.locate.keyBinding.toggleTool=Kytke Paikanna biomi -työkalu	#
+resourcePack.editor.locate.locatetype.biome=Biomi	#
+resourcePack.editor.locate.locatetype.structure=Rakennelma	#
+resourcePack.editor.locate.locatetype.title=Paikanna tyyppi	#
+resourcePack.editor.locate.results.foundat.title=Löytyi paikasta	#
+resourcePack.editor.locate.results.foundat=Löytyi paikasta	#
+resourcePack.editor.locate.results.goto=Siirry	#
+resourcePack.editor.locate.results.notfound.title=Ei tuloksia	#
+resourcePack.editor.locate.results.notfound=Ei tuloksia	#
+resourcePack.editor.locate.results.title=Tulokset	#
+resourcePack.editor.locate.structure.message=Rakennelmahakua ei tällä hetkellä tueta	#
+resourcePack.editor.locate.structure.title=Rakennelma	#
+resourcePack.editor.locate.title=Paikanna	#
+
+
+resourcePack.editor.menuBar.edit.copy=Kopioi	#
+resourcePack.editor.menuBar.edit.cut=Leikkaa	#
+resourcePack.editor.menuBar.edit.delete=Poista	#
+resourcePack.editor.menuBar.edit.deselect=Peru valinta	#
+resourcePack.editor.menuBar.edit.quickFill=Pikatäyttö	#
+resourcePack.editor.menuBar.edit.quickPaste=Pikaliittäminen	#
+resourcePack.editor.menuBar.edit.redo=Tee uudelleen	#
+resourcePack.editor.menuBar.edit.undo=Kumoa	#
+resourcePack.editor.menuBar.edit=Muokkaa	#
+resourcePack.editor.menuBar.experimental=Kokeellinen	#
+resourcePack.editor.menuBar.extensions=Laajennukset	#
+resourcePack.editor.menuBar.file.cursor.projectThroughLiquid=Heijasta nesteen läpi	#
+resourcePack.editor.menuBar.file.cursor=Osoittimen asetukset	#
+resourcePack.editor.menuBar.file.export.project=Editoriprojekti	#
+resourcePack.editor.menuBar.file.export.world=Pelattava maailma	#
+resourcePack.editor.menuBar.file.export=Vie	#
+resourcePack.editor.menuBar.file.pauseScreen=Pelivalikko	#
+resourcePack.editor.menuBar.file.settings=Käyttöliittymän asetukset	#
+resourcePack.editor.menuBar.file=Tiedosto	#
+resourcePack.editor.menuBar.help.documentation=Dokumentaatio	#
+resourcePack.editor.menuBar.help.feedback=Palaute	#
+resourcePack.editor.menuBar.help.quickStart=Pika-aloitus	#
+resourcePack.editor.menuBar.help=Ohje	#
+resourcePack.editor.menuBar.locate=Paikanna	#
+resourcePack.editor.menuBar.parentMenu.weather.clear=Tyhjennä	#
+resourcePack.editor.menuBar.parentMenu.weather.rain=Sadetta	#
+resourcePack.editor.menuBar.parentMenu.weather.thunder=Ukkonen	#
+resourcePack.editor.menuBar.parentMenu.weather=Sää	#
+resourcePack.editor.menuBar.view.blockPalette=Kuutiopaletti	#
+resourcePack.editor.menuBar.view.logging=Rekisteripaneeli	#
+resourcePack.editor.menuBar.view.navigationLogging=Navigoinnin kirjaaminen	#
+resourcePack.editor.menuBar.view=Näytä	#
+resourcePack.editor.menuBar.worldOptions.changeDimension.end=Äär	#
+resourcePack.editor.menuBar.worldOptions.changeDimension.nether=Horna	#
+resourcePack.editor.menuBar.worldOptions.changeDimension.overworld=Ylämaailma	#
+resourcePack.editor.menuBar.worldOptions.changeDimension=Vaihda ulottuvuutta	#
+resourcePack.editor.menuBar.worldOptions.pause.entities=Entiteetit	#
+resourcePack.editor.menuBar.worldOptions.pause=Pysäytä	#
+resourcePack.editor.menuBar.worldOptions=Maailmavalinnat	#
+
+
+resourcePack.editor.navigation.keyBinding.add=Lisää siirtymissijainti	#
+resourcePack.editor.navigation.keyBinding.next=Siirry seuraavaan siirtymissijaintiin	#
+resourcePack.editor.navigation.keyBinding.previous=Siirry edelliseen siirtymissijaintiin	#
+
+
+resourcePack.editor.paste.pane.submitButton=Vahvista liittäminen	#
+resourcePack.editor.paste.pane.title=Liitä	#
+resourcePack.editor.paste.pane.transform.mirrorX=Peilaa X	#
+resourcePack.editor.paste.pane.transform.mirrorZ=Peilaa Z	#
+resourcePack.editor.paste.pane.transform.origin.title=Siirtymä	#
+resourcePack.editor.paste.pane.transform.rotation.180=180Â°	#
+resourcePack.editor.paste.pane.transform.rotation.270=270Â°	#
+resourcePack.editor.paste.pane.transform.rotation.90=90Â°	#
+resourcePack.editor.paste.pane.transform.rotation.none=0Â°	#
+resourcePack.editor.paste.pane.transform.rotation.title=Käännä	#
+resourcePack.editor.paste.pane.transform.title=Muuta	#
+resourcePack.editor.paste.toolRail.description=Valitse kuutio napsauttamalla hiiren vasemmalla painikkeella ja liitä sitten leikepöydän esine	#
+resourcePack.editor.paste.toolRail.title=Liitä esikatselu	#
+
+
+resourcePack.editor.pastepreview.inputContext.title=Liitä esikatselu	#
+resourcePack.editor.pastepreview.keyBinding.clearPreview=Tyhjennä esikatselu	#
+resourcePack.editor.pastepreview.keyBinding.copy=Kopioi valinta	#
+resourcePack.editor.pastepreview.keyBinding.cut=Leikkaa valinta	#
+resourcePack.editor.pastepreview.keyBinding.moveBack=Siirrä esikatselua taaksepäin	#
+resourcePack.editor.pastepreview.keyBinding.moveDown=Siirrä esikatselua alaspäin	#
+resourcePack.editor.pastepreview.keyBinding.moveForward=Siirrä esikatselua eteenpäin	#
+resourcePack.editor.pastepreview.keyBinding.moveLeft=Siirrä esikatselua vasemmalle	#
+resourcePack.editor.pastepreview.keyBinding.moveOffsetBack=Siirrä porrastusta taaksepäin	#
+resourcePack.editor.pastepreview.keyBinding.moveOffsetDown=Siirrä porrastusta alaspäin	#
+resourcePack.editor.pastepreview.keyBinding.moveOffsetForward=Siirrä porrastusta eteenpäin	#
+resourcePack.editor.pastepreview.keyBinding.moveOffsetLeft=Siirrä porrastusta vasemmalle	#
+resourcePack.editor.pastepreview.keyBinding.moveOffsetRight=Siirrä porrastusta oikealle	#
+resourcePack.editor.pastepreview.keyBinding.moveOffsetUp=Siirrä porrastusta ylöspäin	#
+resourcePack.editor.pastepreview.keyBinding.moveOriginBack=Siirrä alkupistettä taaksepäin	#
+resourcePack.editor.pastepreview.keyBinding.moveOriginDown=Siirrä alkupistettä alaspäin	#
+resourcePack.editor.pastepreview.keyBinding.moveOriginForward=Siirrä alkupistettä eteenpäin	#
+resourcePack.editor.pastepreview.keyBinding.moveOriginLeft=Siirrä alkupistettä vasemmalle	#
+resourcePack.editor.pastepreview.keyBinding.moveOriginRight=Siirrä alkupistettä oikealle	#
+resourcePack.editor.pastepreview.keyBinding.moveOriginUp=Siirrä alkupistettä ylöspäin	#
+resourcePack.editor.pastepreview.keyBinding.moveRight=Siirrä esikatselua oikealle	#
+resourcePack.editor.pastepreview.keyBinding.moveUp=Siirrä esikatselua ylöspäin	#
+resourcePack.editor.pastepreview.keyBinding.paste=Liitä	#
+resourcePack.editor.pastepreview.keyBinding.pasteAtCursor=Liitä osoittimen kohtaan	#
+resourcePack.editor.pastepreview.keyBinding.pastepreview=Liitä esikatselu	#
+resourcePack.editor.pastepreview.keyBinding.quickPaste=Pikaliittäminen	#
+resourcePack.editor.pastepreview.keyBinding.rotateClockWise=Kierrä esikatselua myötäpäivään	#
+resourcePack.editor.pastepreview.keyBinding.rotateCounterClockWise=Kierrä esikatselua vastapäivään	#
+resourcePack.editor.pastepreview.keyBinding.toggleAdjacentTarget=Vaihda viereistä kohdetilaa	#
+resourcePack.editor.pastepreview.keyBinding.toggleBlockTarget=Vaihda kuution kohdetilaa	#
+resourcePack.editor.pastepreview.keyBinding.toggleFixedDistance=Ota kiinteä etäisyys käyttöön	#
+resourcePack.editor.pastepreview.keyBinding.toggleMirrorX=Kytke peilattu X-akseli	#
+resourcePack.editor.pastepreview.keyBinding.toggleMirrorZ=Kytke peilattu Z-akseli	#
+resourcePack.editor.pastepreview.keyBinding.toggleMouseTracking=Vaihda hiirenseuranta	#
+resourcePack.editor.pastepreview.pane.controls.cursor.fixed=Kiinteä etäisyys	#
+resourcePack.editor.pastepreview.pane.controls.cursor.keyboard=Vain näppäimistö	#
+resourcePack.editor.pastepreview.pane.controls.cursor.mouseandkeys=Hiiri ja näppäimistö	#
+resourcePack.editor.pastepreview.pane.controls.cursor.target.block=Torju	#
+resourcePack.editor.pastepreview.pane.controls.cursor.target.face=Viereinen	#
+resourcePack.editor.pastepreview.pane.controls.cursor.target.title=Kohde	#
+resourcePack.editor.pastepreview.pane.controls.cursor=Ctrl	#
+resourcePack.editor.pastepreview.pane.controls.title=Osoittimen hallinta	#
+resourcePack.editor.pastepreview.pane.placement.mirrorX=Peilaa X	#
+resourcePack.editor.pastepreview.pane.placement.mirrorZ=Peilaa Z	#
+resourcePack.editor.pastepreview.pane.placement.offset=Siirtymä	#
+resourcePack.editor.pastepreview.pane.placement.origin=Alkuperä	#
+resourcePack.editor.pastepreview.pane.placement.pastebutton=Liitä	#
+resourcePack.editor.pastepreview.pane.placement.rotation=Kierto (Y:n ympäri)	#
+resourcePack.editor.pastepreview.pane.placement.title=Sijoitteluasetukset	#
+resourcePack.editor.pastepreview.pane.root.size=Koko	#
+resourcePack.editor.pastepreview.pane.root.title=Liitä esikatselu	#
+resourcePack.editor.pastepreview.tool.tip=Säädä leikepöydän esikatselun sijaintia hiirellä ja liitä maailmaan napsauttamalla	#
+resourcePack.editor.pastepreview.tool.title=Liitä esikatselu	#
+
+
+resourcePack.editor.playerPositionExtension.dimension=Ulottuvuus	#
+resourcePack.editor.playerPositionExtension.menu.player=Pelaaja	#
+resourcePack.editor.playerPositionExtension.menu.showPlayerSettings=Näytä pelaajan asetukset	#
+resourcePack.editor.playerPositionExtension.nether=Horna	#
+resourcePack.editor.playerPositionExtension.overworld=Ylämaailma	#
+resourcePack.editor.playerPositionExtension.pane=Pelaajan asetukset	#
+resourcePack.editor.playerPositionExtension.theEnd=Ääri	#
+resourcePack.editor.playerPositionExtension.worldSettings=Maailman asetukset	#
+
+
+resourcePack.editor.playtest.AdvancedSettings.title=Edistyneet asetukset	#
+resourcePack.editor.playtest.Dialog.DaylightCycle=Vuorokausirytmi	#
+resourcePack.editor.playtest.Dialog.Difficulty=Vaikeustaso	#
+resourcePack.editor.playtest.Dialog.GameMode=Pelimuoto	#
+resourcePack.editor.playtest.Dialog.OverrideSpawn=Synny nykyiseen sijaintiin	#
+resourcePack.editor.playtest.Dialog.ShowCoordinates=Näytä koordinaatit	#
+resourcePack.editor.playtest.Dialog.TestButton=Testimaailma	#
+resourcePack.editor.playtest.Dialog.TimeOfDay=Vuorokaudenaika	#
+resourcePack.editor.playtest.Dialog.Title=Testiasetukset	#
+resourcePack.editor.playtest.Dialog.Weather=Sää	#
+resourcePack.editor.playtest.Dialog.WeatherCycle=Säänvaihtelut	#
+resourcePack.editor.playtest.Menu.Title=Testimaailma	#
+resourcePack.editor.playtest.Title.Tooltip=Pelitestaa editoriprojektiasi pelattavana Minecraft-maailmana. Muutoksia ei tallenneta projektiin. Saatavilla vain yhden pelaajan projektia isännöidessä.	#
+
+
+resourcePack.editor.playtestResult.EditorSystemFailure=Editorin järjestelmähäiriö	#
+resourcePack.editor.playtestResult.InvalidLevelId=Virheellinen tason ID	#
+resourcePack.editor.playtestResult.InvalidSessionHandle=Virheellinen istunnon nimi	#
+resourcePack.editor.playtestResult.OK=Onnistui	#
+resourcePack.editor.playtestResult.PlayerNotFound=Pelaajaa ei löydy	#
+resourcePack.editor.playtestResult.ResponseTimeout=Vastauksen aikakatkaisu	#
+resourcePack.editor.playtestResult.SessionInfoNotFound=Istunnon tietoja ei löydy	#
+resourcePack.editor.playtestResult.TooManyPlayers=Et voi testata maailmaa, kun isännöit muita pelaajia	#
+resourcePack.editor.playtestResult.UnspecifiedError=Määrittelemätön virhe	#
+resourcePack.editor.playtestResult.UnsupportedScenario=Sinun on isännöitävä editorin projektia testataksesi maailmaa	#
+resourcePack.editor.playtestResult.WorldExportBusy=Maailman vienti varattu	#
+resourcePack.editor.playtestResult.WorldExportFailed=Maailman vienti epäonnistui	#
+
+
+resourcePack.editor.toolRail.RepeaterTool.title=Toistintyökalu	#
+resourcePack.editor.toolRail.RepeaterTool.tooltip=Työkalu valinta-alueen toistamiseen	#
+resourcePack.editor.toolRail.RepeaterTool.pane.Spacing=Väli	#
+resourcePack.editor.toolRail.RepeaterTool.pane.Repetitions=Toistumiset	#
+resourcePack.editor.toolRail.RepeaterTool.pane.Preview=Esikatselu	#
+resourcePack.editor.toolRail.RepeaterTool.pane.Clear=Tyhjennä	#
+resourcePack.editor.toolRail.RepeaterTool.pane.Apply=Käytä	#
+resourcePack.editor.toolRail.RepeaterTool.statusMessage.noSelection=Valitse toistettava valinta valintatyökalulla	#
+
+
+resourcePack.editor.selectionTool.deselect=Peru valinta	#
+resourcePack.editor.selectionTool.fillPane.fillAction=Täytön valinta	#
+resourcePack.editor.selectionTool.fillPane.title=Täytön valinta	#
+resourcePack.editor.selectionTool.keyBinding.deselect=Peru valinta	#
+resourcePack.editor.selectionTool.keyBinding.fill=Täytä valinnan sisältö	#
+resourcePack.editor.selectionTool.keyBinding.growBack=Kasvata valintaa taaksepäin	#
+resourcePack.editor.selectionTool.keyBinding.growDown=Kasvata valintaa alaspäin	#
+resourcePack.editor.selectionTool.keyBinding.growForward=Kasvata valintaa eteenpäin	#
+resourcePack.editor.selectionTool.keyBinding.growLeft=Kasvata valintaa vasemmalle	#
+resourcePack.editor.selectionTool.keyBinding.growRight=Kasvata valintaa oikealle	#
+resourcePack.editor.selectionTool.keyBinding.growUp=Kasvata valintaa ylöspäin	#
+resourcePack.editor.selectionTool.keyBinding.moveAllSelectionBack=Siirrä kaikki valinnat taaksepäin	#
+resourcePack.editor.selectionTool.keyBinding.moveAllSelectionDown=Siirrä kaikki valinnat alaspäin	#
+resourcePack.editor.selectionTool.keyBinding.moveAllSelectionForward=Siirrä kaikki valinnat eteenpäin	#
+resourcePack.editor.selectionTool.keyBinding.moveAllSelectionLeft=Siirrä kaikki valinnat vasemmalle	#
+resourcePack.editor.selectionTool.keyBinding.moveAllSelectionRight=Siirrä kaikki valinnat oikealle	#
+resourcePack.editor.selectionTool.keyBinding.moveAllSelectionUp=Siirrä kaikki valinnat ylös	#
+resourcePack.editor.selectionTool.keyBinding.moveCursorBack=Siirrä osoitinta taaksepäin	#
+resourcePack.editor.selectionTool.keyBinding.moveCursorDown=Siirrä osoitinta alaspäin	#
+resourcePack.editor.selectionTool.keyBinding.moveCursorForward=Siirrä kohdistinta eteenpäin	#
+resourcePack.editor.selectionTool.keyBinding.moveCursorLeft=Siirrä osoitinta vasemmalle	#
+resourcePack.editor.selectionTool.keyBinding.moveCursorRight=Siirrä osoitinta oikealle	#
+resourcePack.editor.selectionTool.keyBinding.moveCursorUp=Siirrä osoitinta ylöspäin	#
+resourcePack.editor.selectionTool.keyBinding.moveSelectionBack=Siirrä valintaa taaksepäin	#
+resourcePack.editor.selectionTool.keyBinding.moveSelectionDown=Siirrä valintaa alaspäin	#
+resourcePack.editor.selectionTool.keyBinding.moveSelectionForward=Siirrä valintaa eteenpäin	#
+resourcePack.editor.selectionTool.keyBinding.moveSelectionLeft=Siirrä valintaa vasemmalle	#
+resourcePack.editor.selectionTool.keyBinding.moveSelectionRight=Siirrä valintaa oikealle	#
+resourcePack.editor.selectionTool.keyBinding.moveSelectionUp=Siirrä valintaa ylöspäin	#
+resourcePack.editor.selectionTool.keyBinding.shrinkBack=Pienennä valintaa taaksepäin	#
+resourcePack.editor.selectionTool.keyBinding.shrinkDown=Pienennä valintaa alaspäin	#
+resourcePack.editor.selectionTool.keyBinding.shrinkForward=Pienennä valintaa eteenpäin	#
+resourcePack.editor.selectionTool.keyBinding.shrinkLeft=Pienennä valintaa vasemmalle	#
+resourcePack.editor.selectionTool.keyBinding.shrinkRight=Pienennä valintaa oikealle	#
+resourcePack.editor.selectionTool.keyBinding.shrinkUp=Pienennä valintaa ylöspäin	#
+resourcePack.editor.selectionTool.keyBinding.toggleTool=Vaihda valintatyökalua	#
+resourcePack.editor.selectionTool.marquee.title=Kehysvalinta	#
+resourcePack.editor.selectionTool.modeSelection.freehand.title=Käsivarainen sivellintila	#
+resourcePack.editor.selectionTool.modeSelection.freehand.tooltip=Valitse maailman kuutiot käsivaraisen siveltimen muodolla	#
+resourcePack.editor.selectionTool.modeSelection.marquee.title=Aluevalitsintila	#
+resourcePack.editor.selectionTool.modeSelection.marquee.tooltip=Valitse maailman kuutiot suorakulmaisella määreellä	#
+resourcePack.editor.selectionTool.modeSelection.title=Valintatila	#
+resourcePack.editor.selectionTool.projectThroughLiquid=Heijasta nesteen läpi	#
+resourcePack.editor.selectionTool.quickAction.clearSelection.tooltip=Poista nykyinen valinta	#
+resourcePack.editor.selectionTool.quickAction.clearSelection=Peru valinta	#
+resourcePack.editor.selectionTool.quickAction.deleteSelection.tooltip=Poista kaikki nykyisen valinta-alueen kuutiot	#
+resourcePack.editor.selectionTool.quickAction.deleteSelection=Poista	#
+resourcePack.editor.selectionTool.quickAction.fillSelection.tooltip=Täytä nykyinen valinta-alue valittuna olevalla kuutiotyypillä	#
+resourcePack.editor.selectionTool.quickAction.fillSelection=Täyttö	#
+resourcePack.editor.selectionTool.quickAction.title=Pikatoiminnot	#
+resourcePack.editor.selectionTool.selectionMode.adjacent=Viereinen	#
+resourcePack.editor.selectionTool.selectionMode.fixedDistance=Kiinteä etäisyys	#
+resourcePack.editor.selectionTool.selectionMode.mouseAndKeyboard=Vapaamuotoinen	#
+resourcePack.editor.selectionTool.selectionMode=Tila	#
+resourcePack.editor.selectionTool.settingsPane.title=Valinta	#
+resourcePack.editor.selectionTool.toolRail.description=Valitse napsauttamalla hiiren vasemmalla painikkeella; CTRL+D poistaa valinnan	#
+resourcePack.editor.selectionTool.toolRail.title=Valinta	#
+resourcePack.editor.selectionTool.transformPane.origin.tooltip=Valinnan alkupiste maailman koordinaateissa	#
+resourcePack.editor.selectionTool.transformPane.origin=Alkuperä	#
+resourcePack.editor.selectionTool.transformPane.size=Koko	#
+resourcePack.editor.selectionTool.transformPane.title=Muuta	#
+
+
 resourcePack.editor.server.description=Editoripalvelimen resurssit	#
 resourcePack.editor.server.name=Editorin resurssit	#
 
-resourcePack.editor.global.keyBinding.toggleMode=Vaihda tilaa	#
+
+resourcePack.editor.toolRail.Terrain.title=Maasto	#
+resourcePack.editor.toolRail.Terrain.Mode.title=Maastotila	#
+resourcePack.editor.toolRail.Terrain.Smooth.mode.title=Tasoitustila	#
+resourcePack.editor.toolRail.Terrain.Smooth.tooltip=Tasoita maastoa tasoitusvoiman perusteella	#
+resourcePack.editor.toolRail.Terrain.SmoothStrength=Tasoitusvoima	#
+resourcePack.editor.toolRail.Terrain.description=Maastotyökalu tasoittaa tai epätasoittaa maastoa	#
+
+
+resourcePack.editor.help.learnMore=Lisätietoja	#
+
+resourcePack.editor.statusBar.connectedPlayers=Yhdistetyt pelaajat %s	#
+
+
+resourcePack.editor.summonTool.summonSubPane.EntityPickerTitle=Olentotyyppi	#
+
+
+resourcePack.editor.timeOfDay.12hrClock=12 tunnin kello	#
+resourcePack.editor.timeOfDay.24hrClock=24 tunnin kello	#
+resourcePack.editor.timeOfDay.clockType=Kellotyyppi	#
+resourcePack.editor.timeOfDay.currentTime=Nykyinen aika	#
+resourcePack.editor.timeOfDay.customTime=Mukautettu aika	#
+resourcePack.editor.timeOfDay.daylightCycle=Vuorokausirytmi	#
+resourcePack.editor.timeOfDay.dropDown.day=Päivä	#
+resourcePack.editor.timeOfDay.dropDown.midnight=Keskiyö	#
+resourcePack.editor.timeOfDay.dropDown.night=Yö	#
+resourcePack.editor.timeOfDay.dropDown.none=Ei mitään	#
+resourcePack.editor.timeOfDay.dropDown.noon=Keskipäivä	#
+resourcePack.editor.timeOfDay.dropDown.sunrise=Auringonnousu	#
+resourcePack.editor.timeOfDay.dropDown.sunset=Auringonlasku	#
+resourcePack.editor.timeOfDay.dropDown.title=Esiasetukset	#
+resourcePack.editor.timeOfDay.menu.title=Vuorokaudenajan asetukset	#
+resourcePack.editor.timeOfDay.minecraftClock=Minecraft-kello	#
+resourcePack.editor.timeOfDay.title=Aika-asetukset	#
+
 
 resourcePack.editor.toolMode.keyBinding.console=Avaa konsoli	#
 resourcePack.editor.toolMode.keyBinding.devConsole=Avaa kehittäjäkonsoli	#
@@ -22,509 +626,94 @@ resourcePack.editor.toolMode.keyBinding.hotbar7=Valitse pikavalintarivi 7	#
 resourcePack.editor.toolMode.keyBinding.hotbar8=Valitse pikavalintarivi 8	#
 resourcePack.editor.toolMode.keyBinding.hotbar9=Valitse pikavalintarivi 9	#
 
-resourcePack.editor.viewport.keyBinding.moveUp=Siirry ylös	#
-resourcePack.editor.viewport.keyBinding.moveDown=Siirry alas	#
-resourcePack.editor.viewport.keyBinding.moveLeft=Siirry vasemmalle	#
-resourcePack.editor.viewport.keyBinding.moveRight=Siirry oikealle	#
-resourcePack.editor.viewport.keyBinding.moveForward=Siirry eteenpäin	#
-resourcePack.editor.viewport.keyBinding.moveBack=Siirry taaksepäin	#
-
-resourcePack.editor.locate.title=Paikanna	#
-resourcePack.editor.locate.locatetype.title=Paikanna tyyppi	#
-resourcePack.editor.locate.locatetype.biome=Biomi	#
-resourcePack.editor.locate.locatetype.structure=Rakennelma	#
-resourcePack.editor.locate.biome.title=Biomi	#
-resourcePack.editor.locate.biome.find=Etsi biomi	#
-resourcePack.editor.locate.structure.title=Rakennelma	#
-resourcePack.editor.locate.structure.message=Rakennelmahakua ei tällä hetkellä tueta	#
-resourcePack.editor.locate.results.title=Tulokset	#
-resourcePack.editor.locate.results.foundat.title=Löytyi paikasta	#
-resourcePack.editor.locate.results.foundat=Löytyi paikasta	#
-resourcePack.editor.locate.results.notfound.title=Ei tuloksia	#
-resourcePack.editor.locate.results.notfound=Ei tuloksia	#
-resourcePack.editor.locate.keyBinding.toggleTool=Kytke Paikanna biomi -työkalu	#
-resourcePack.editor.locate.results.goto=Siirry	#
-
-resourcePack.editor.statusBar.connectedPlayers=Yhdistetyt pelaajat %s	#
-
-resourcePack.editor.brushShape.common.settings.uniform=Uniform	#
-resourcePack.editor.brushShape.common.settings.radius=Säde	#
-resourcePack.editor.brushShape.common.settings.length=Pituus	#
-resourcePack.editor.brushShape.common.settings.axis=Ulkoneman akseli	#
-resourcePack.editor.brushShape.common.settings.xAxis=X-akseli	#
-resourcePack.editor.brushShape.common.settings.yAxis=Y-akseli	#
-resourcePack.editor.brushShape.common.settings.zAxis=Z-akseli	#
-resourcePack.editor.brushShape.common.settings.xAxisNeg=-X-akseli	#
-resourcePack.editor.brushShape.common.settings.yAxisNeg=-Y-akseli	#
-resourcePack.editor.brushShape.common.settings.zAxisNeg=-Z-akseli	#
-
-resourcePack.editor.brushShape.cylinder.name=Lieriö	#
-resourcePack.editor.brushShape.cylinder.settings.width=Leveyden säde	#
-resourcePack.editor.brushShape.cylinder.settings.depth=Syvyyden säde	#
-
-resourcePack.editor.brushShape.cone.name=Kartio	#
-resourcePack.editor.brushShape.cone.settings.length=Ulkoneman pituus	#
-resourcePack.editor.brushShape.cone.settings.width=Leveyden säde	#
-resourcePack.editor.brushShape.cone.settings.depth=Syvyyden säde	#
-
-resourcePack.editor.brushShape.cuboid.name=Särmiö	#
-resourcePack.editor.brushShape.cuboid.settings.x_length=X-pituus	#
-resourcePack.editor.brushShape.cuboid.settings.y_length=Y-pituus	#
-resourcePack.editor.brushShape.cuboid.settings.z_length=Z-pituus	#
-
-resourcePack.editor.brushShape.singleBlock.name=Yksittäinen kuutio	#
-
-resourcePack.editor.brushShape.pyramid.name=Pyramidi	#
-resourcePack.editor.brushShape.pyramid.settings.width=Leveys	#
-resourcePack.editor.brushShape.pyramid.settings.depth=Syvyys	#
-resourcePack.editor.brushShape.pyramid.settings.length=Pituus	#
-
-resourcePack.editor.brushShape.ellipsoid.name=Soikea	#
-resourcePack.editor.brushShape.ellipsoid.settings.x_radius=X-säde	#
-resourcePack.editor.brushShape.ellipsoid.settings.y_radius=Y-säde	#
-resourcePack.editor.brushShape.ellipsoid.settings.z_radius=Z-säde	#
-
-resourcePack.editor.toolRail.floodFillSelectionTool.title=Tulvatäytön valintatyökalu.	#
-resourcePack.editor.toolRail.floodFillSelectionTool.description=Valitsee alueen, jota katselet, käyttämällä tulvatäyttöalgoritmia.	#
-resourcePack.editor.playerPositionExtension.dimension=Ulottuvuus	#
-resourcePack.editor.playerPositionExtension.menu.player=Pelaaja	#
-resourcePack.editor.playerPositionExtension.menu.showPlayerSettings=Näytä pelaajan asetukset	#
-resourcePack.editor.playerPositionExtension.nether=Horna	#
-resourcePack.editor.playerPositionExtension.overworld=Ylämaailma	#
-resourcePack.editor.playerPositionExtension.pane=Pelaajan asetukset	#
-resourcePack.editor.playerPositionExtension.theEnd=Ääri	#
-resourcePack.editor.playerPositionExtension.worldSettings=Maailman asetukset	#
-resourcePack.editor.paste.toolRail.title=Liitä esikatselu	#
-resourcePack.editor.paste.toolRail.description=Valitse kuutio napsauttamalla hiiren vasemmalla painikkeella ja liitä sitten leikepöydän esine	#
-resourcePack.editor.paste.pane.title=Liitä	#
-resourcePack.editor.paste.pane.submitButton=Vahvista liittäminen	#
-resourcePack.editor.paste.pane.transform.title=Muuta	#
-resourcePack.editor.paste.pane.transform.origin.title=Siirtymä	#
-resourcePack.editor.paste.pane.transform.rotation.title=Käännä	#
-resourcePack.editor.paste.pane.transform.rotation.none=0°	#
-resourcePack.editor.paste.pane.transform.rotation.90=90 °	#
-resourcePack.editor.paste.pane.transform.rotation.180=180 °	#
-resourcePack.editor.paste.pane.transform.rotation.270=270	#
-resourcePack.editor.paste.pane.transform.mirrorX=Peilaa X	#
-resourcePack.editor.paste.pane.transform.mirrorZ=Peilaa Z	#
-
-resourcePack.editor.core.keyBinding.showLogPanel=Näytä lokipaneeli	#
-resourcePack.editor.core.keyBinding.showGameMenu=Näytä pelivalikko	#
-
-resourcePack.editor.delete.keyBinding=Poista valinnan sisältö	#
-
-resourcePack.editor.navigation.keyBinding.add=Lisää siirtymissijainti	#
-resourcePack.editor.navigation.keyBinding.previous=Siirry edelliseen siirtymissijaintiin	#
-resourcePack.editor.navigation.keyBinding.next=Siirry seuraavaan siirtymissijaintiin	#
-
-resourcePack.editor.transaction.keyBinding.undo=Kumoa	#
-resourcePack.editor.transaction.keyBinding.redo=Tee uudelleen	#
-
-resourcePack.editor.goToMark.title=Selauspaneeli	#
-resourcePack.editor.goToMark.actionBar.tooltip.title=Selauspaneeli	#
-resourcePack.editor.goToMark.actionBar.tooltip.description=Pelaajan navigointipaneeli	#
-resourcePack.editor.goToMark.pane.showMap=Näytä kartta	#
-resourcePack.editor.goToMark.pane.mapSize=Kartan koko	#
-resourcePack.editor.goToMark.pane.refreshMap=Päivitä kartta	#
-resourcePack.editor.goToMark.pane.location=Pelaajan sijainti	#
-resourcePack.editor.goToMark.pane.teleport=Teleporttaa sijaintiin	#
-resourcePack.editor.goToMark.pane.setSpawn=Aseta maailmaantulopiste nykyiseksi	#
-resourcePack.editor.goToMark.pane.goToSpawn=Siirry maailmaantulopisteeseen	#
-resourcePack.editor.goToMark.pane.locationPane.title=Tallennetut sijainnit	#
-resourcePack.editor.goToMark.pane.locationPane.markColor=Sijainnin merkkiväri	#
-resourcePack.editor.goToMark.pane.locationPane.teleport=Teleporttaa tallennettuun sijaintiin %1$s	#
-resourcePack.editor.goToMark.pane.locationPane.delete=Poista tallennettu sijainti	#
-resourcePack.editor.goToMark.pane.locationPane.inputName=Uusi nimi	#
-resourcePack.editor.goToMark.pane.locationPane.store=Tallenna nykyisen sijainnin nimeksi...	#
-resourcePack.editor.goToMark.pane.locationPane.dropdownLabel=Tallennettu sijainti	#
-
-resourcePack.editor.grapple.keyBinding.flyToCursor=Lennä osoittimen kohtaan	#
-resourcePack.editor.grapple.keyBinding.flyToSelection=Lennä valinnan kohtaan	#
-
-resourcePack.editor.selectionTool.modeSelection.title=Valintatila	#
-resourcePack.editor.selectionTool.modeSelection.marquee.title=Aluevalitsintila	#
-resourcePack.editor.selectionTool.modeSelection.marquee.tooltip=Valitse maailman kuutiot suorakulmaisella määreellä	#
-resourcePack.editor.selectionTool.modeSelection.freehand.title=Käsivarainen sivellintila	#
-resourcePack.editor.selectionTool.modeSelection.freehand.tooltip=Valitse maailman kuutiot käsivaraisen siveltimen muodolla	#
-
-resourcePack.editor.selectionTool.deselect=Peru valinta	#
-resourcePack.editor.selectionTool.fillPane.title=Täytön valinta	#
-resourcePack.editor.selectionTool.fillPane.fillAction=Täytön valinta	#
-resourcePack.editor.selectionTool.toolRail.title=Valinta	#
-resourcePack.editor.selectionTool.toolRail.description=Valitse napsauttamalla hiiren vasemmalla painikkeella; CTRL + D poistaa valinnan	#
-resourcePack.editor.selectionTool.selectionMode=Tila	#
-resourcePack.editor.selectionTool.selectionMode.mouseAndKeyboard=Vapaamuotoinen	#
-resourcePack.editor.selectionTool.selectionMode.fixedDistance=Kiinteä etäisyys	#
-resourcePack.editor.selectionTool.selectionMode.adjacent=Viereinen	#
-resourcePack.editor.selectionTool.settingsPane.title=Valinta	#
-resourcePack.editor.selectionTool.transformPane.title=Muuta	#
-resourcePack.editor.selectionTool.transformPane.origin=Alkuperä	#
-resourcePack.editor.selectionTool.transformPane.origin.tooltip=Valinta-alueen alkupiste maailman koordinaateissa.	#
-resourcePack.editor.selectionTool.transformPane.size=Koko	#
-resourcePack.editor.selectionTool.quickAction.title=Pikatoiminnot	#
-resourcePack.editor.selectionTool.quickAction.clearSelection=Peru valinta	#
-resourcePack.editor.selectionTool.quickAction.clearSelection.tooltip=Poista nykyinen valinta-alue	#
-resourcePack.editor.selectionTool.quickAction.fillSelection=Täyttö	#
-resourcePack.editor.selectionTool.quickAction.fillSelection.tooltip=Täytä nykyinen valinta-alue valittuna olevalla kuutiotyypillä	#
-resourcePack.editor.selectionTool.projectThroughLiquid=Heijasta nesteen läpi	#
-resourcePack.editor.selectionTool.keyBinding.moveCursorForward=Siirrä kohdistinta eteenpäin	#
-resourcePack.editor.selectionTool.keyBinding.moveCursorBack=Siirrä osoitinta taaksepäin	#
-resourcePack.editor.selectionTool.keyBinding.moveCursorLeft=Siirrä kohdistinta vasemmalle	#
-resourcePack.editor.selectionTool.keyBinding.moveCursorRight=Siirrä osoitinta oikealle	#
-resourcePack.editor.selectionTool.keyBinding.moveCursorUp=Siirrä osoitinta ylöspäin	#
-resourcePack.editor.selectionTool.keyBinding.moveCursorDown=Siirrä osoitinta alaspäin	#
-resourcePack.editor.selectionTool.keyBinding.moveSelectionForward=Siirrä valintaa eteenpäin	#
-resourcePack.editor.selectionTool.keyBinding.moveSelectionBack=Siirrä valintaa taaksepäin	#
-resourcePack.editor.selectionTool.keyBinding.moveSelectionLeft=Siirrä valintaa vasemmalle	#
-resourcePack.editor.selectionTool.keyBinding.moveSelectionRight=Siirrä valintaa oikealle	#
-resourcePack.editor.selectionTool.keyBinding.moveSelectionUp=Siirrä valintaa ylöspäin	#
-resourcePack.editor.selectionTool.keyBinding.moveSelectionDown=Siirrä valintaa alaspäin	#
-resourcePack.editor.selectionTool.keyBinding.moveAllSelectionForward=Siirrä kaikki valinnat eteenpäin	#
-resourcePack.editor.selectionTool.keyBinding.moveAllSelectionBack=Siirrä kaikki valinta taaksepäin	#
-resourcePack.editor.selectionTool.keyBinding.moveAllSelectionLeft=Siirrä kaikki valinta vasemmalle	#
-resourcePack.editor.selectionTool.keyBinding.moveAllSelectionRight=Siirrä kaikki valinnat oikealle	#
-resourcePack.editor.selectionTool.keyBinding.moveAllSelectionUp=Siirrä kaikki valinnat ylös	#
-resourcePack.editor.selectionTool.keyBinding.moveAllSelectionDown=Siirrä kaikki valinta alaspäin	#
-resourcePack.editor.selectionTool.keyBinding.growForward=Kasvata valintaa eteenpäin	#
-resourcePack.editor.selectionTool.keyBinding.growBack=Kasvata valintaa taaksepäin	#
-resourcePack.editor.selectionTool.keyBinding.growLeft=Kasvata valintaa vasemmalle	#
-resourcePack.editor.selectionTool.keyBinding.growRight=Kasvata valintaa oikealle	#
-resourcePack.editor.selectionTool.keyBinding.growUp=Kasvata valintaa ylöspäin	#
-resourcePack.editor.selectionTool.keyBinding.growDown=Kasvata valintaa alaspäin	#
-resourcePack.editor.selectionTool.keyBinding.shrinkForward=Pienennä valintaa eteenpäin	#
-resourcePack.editor.selectionTool.keyBinding.shrinkBack=Pienennä valintaa taaksepäin	#
-resourcePack.editor.selectionTool.keyBinding.shrinkLeft=Pienennä valintaa vasemmalle	#
-resourcePack.editor.selectionTool.keyBinding.shrinkRight=Pienennä valintaa oikealle	#
-resourcePack.editor.selectionTool.keyBinding.shrinkUp=Pienennä valintaa ylöspäin	#
-resourcePack.editor.selectionTool.keyBinding.shrinkDown=Pienennä valintaa alaspäin	#
-resourcePack.editor.selectionTool.keyBinding.toggleTool=Vaihda valintatyökalua	#
-resourcePack.editor.selectionTool.keyBinding.fill=Täytä valinnan sisältö	#
-resourcePack.editor.selectionTool.keyBinding.deselect=Peru valinta	#
-
-resourcePack.editor.actionBar.redo=Tee uudelleen	#
-resourcePack.editor.actionBar.redo.tooltipTitle=Tee uudelleen	#
-resourcePack.editor.actionBar.redo.tooltipDescription=Suorita tapahtuma uudelleen	#
-resourcePack.editor.actionBar.undo=Kumoa	#
-resourcePack.editor.actionBar.undo.tooltipTitle=Kumoa	#
-resourcePack.editor.actionBar.undo.tooltipDescription=Kumoa tapahtuma	#
-
-resourcePack.editor.menuBar.file=Tiedosto	#
-resourcePack.editor.menuBar.file.export=Vie	#
-resourcePack.editor.menuBar.file.export.world=Pelattava maailma	#
-resourcePack.editor.menuBar.file.export.project=Editoriprojekti	#
-resourcePack.editor.menuBar.file.pauseScreen=Pelivalikko	#
-resourcePack.editor.menuBar.file.settings=Käyttöliittymän asetukset	#
-resourcePack.editor.menuBar.file.cursor=Osoittimen asetukset	#
-resourcePack.editor.menuBar.file.cursor.projectThroughLiquid=Heijasta nesteen läpi	#
-resourcePack.editor.menuBar.edit=Muokkaa	#
-resourcePack.editor.menuBar.edit.undo=Kumoa	#
-resourcePack.editor.menuBar.edit.redo=Tee uudelleen	#
-resourcePack.editor.menuBar.edit.deselect=Peru valinta	#
-resourcePack.editor.menuBar.edit.cut=Leikkaa	#
-resourcePack.editor.menuBar.edit.copy=Kopioi	#
-resourcePack.editor.menuBar.edit.quickPaste=Pikaliittäminen	#
-resourcePack.editor.menuBar.edit.quickFill=Pikatäyttö	#
-resourcePack.editor.menuBar.edit.delete=Poista	#
-resourcePack.editor.menuBar.extensions=Jatkoajat	#
-resourcePack.editor.menuBar.view=Näytä	#
-resourcePack.editor.menuBar.view.logging=Rekisteripaneeli	#
-resourcePack.editor.menuBar.view.navigationLogging=Navigoinnin kirjaaminen	#
-resourcePack.editor.menuBar.view.blockPalette=Kuutiopaletti	#
-resourcePack.editor.menuBar.worldOptions=Maailmavalinnat	#
-resourcePack.editor.menuBar.worldOptions.pause=Pysäytä	#
-resourcePack.editor.menuBar.worldOptions.pause.entities=Entiteetit	#
-resourcePack.editor.menuBar.worldOptions.changeDimension=Vaihda ulottuvuutta	#
-resourcePack.editor.menuBar.worldOptions.changeDimension.overworld=Ylämaailma	#
-resourcePack.editor.menuBar.worldOptions.changeDimension.nether=Horna	#
-resourcePack.editor.menuBar.worldOptions.changeDimension.end=End	#
-resourcePack.editor.menuBar.experimental=Kokeellinen	#
-resourcePack.editor.menuBar.locate=Paikanna	#
-resourcePack.editor.menuBar.parentMenu.weather=Sää	#
-resourcePack.editor.menuBar.parentMenu.weather.clear=Tyhjennä	#
-resourcePack.editor.menuBar.parentMenu.weather.rain=Sadetta	#
-resourcePack.editor.menuBar.parentMenu.weather.thunder=Ukkonen	#
-resourcePack.editor.menuBar.help=Ohje	#
-resourcePack.editor.menuBar.help.quickStart=Pika-aloitus	#
-resourcePack.editor.menuBar.help.documentation=Dokumentaatio	#
-resourcePack.editor.menuBar.help.feedback=Palaute	#
-
-commands.editor.project.description=Hallitse tällä hetkellä ladattua projektia	#
-commands.editor.project.unknownSubcommand=Tuntematon alikomento	#
-commands.editor.project.export=projektin vienti	#
-commands.editor.project.exportComplete=Vienti valmis, tiedostot kirjoitettu kohteeseen %s	#
-commands.editor.project.beginExport=Viedään...	#
-commands.editor.project.exportCopyFailed=Tasotietojen kopiointi epäonnistui %s	#
-
-## resourcePack.editor.playtestResult. is a prefix that maps directly to an enum value in the editor
-## Ensure that the spelling and case is identical to the enumeration in C++/TypeScript for
-## enum `Editor::Playtest::SessionResult`
-
-resourcePack.editor.playtestResult.OK=Onnistui	#
-resourcePack.editor.playtestResult.InvalidSessionHandle=Virheellinen istunnon nimi	#
-resourcePack.editor.playtestResult.SessionInfoNotFound=Istunnon tietoja ei löydy	#
-resourcePack.editor.playtestResult.TooManyPlayers=Et voi testata maailmaa, kun isännöit muita pelaajia	#
-resourcePack.editor.playtestResult.WorldExportFailed=Maailman vienti epäonnistui	#
-resourcePack.editor.playtestResult.WorldExportBusy=Maailman vienti varattu	#
-resourcePack.editor.playtestResult.UnsupportedScenario=Sinun on isännöitävä editorin projektia testataksesi maailmaa	#
-resourcePack.editor.playtestResult.EditorSystemFailure=Editorin järjestelmähäiriö	#
-resourcePack.editor.playtestResult.InvalidLevelId=Virheellinen tason ID	#
-resourcePack.editor.playtestResult.PlayerNotFound=Pelaajaa ei löydy	#
-resourcePack.editor.playtestResult.ResponseTimeout=Vastauksen aikakatkaisu	#
-resourcePack.editor.playtestResult.UnspecifiedError=Määrittelemätön virhe	#
-
-
-resourcePack.editor.playtest.Menu.Title=Testimaailma	#
-resourcePack.editor.playtest.Title.Tooltip=Pelitestaa editoriprojektiasi pelattavana Minecraft-maailmana. Muutoksia ei tallenneta projektiin. Saatavilla vain yhden pelaajan projektia isännöidessä.	#
-resourcePack.editor.playtest.Dialog.Title=Testiasetukset	#
-resourcePack.editor.playtest.Dialog.GameMode=Pelimuoto	#
-resourcePack.editor.playtest.Dialog.Difficulty=Vaikeustaso	#
-resourcePack.editor.playtest.Dialog.DaylightCycle=Vuorokausirytmi	#
-resourcePack.editor.playtest.Dialog.Weather=Sää	#
-resourcePack.editor.playtest.Dialog.WeatherCycle=Säänvaihtelut	#
-resourcePack.editor.playtest.Dialog.ShowCoordinates=Näytä koordinaatit	#
-resourcePack.editor.playtest.Dialog.OverrideSpawn=Synny nykyiseen sijaintiin	#
-resourcePack.editor.playtest.Dialog.TimeOfDay=Vuorokaudenaika	#
-resourcePack.editor.playtest.Dialog.TestButton=Testimaailma	#
-
-resourcePack.editor.toolRail.line.title=Rivi	#
-resourcePack.editor.toolRail.line.tooltip=Viivatyökalu luo kuutiorivin	#
-resourcePack.editor.toolRail.line.pane.width.title=Leveys	#
-resourcePack.editor.toolRail.line.pane.selectionMode=Valinta	#
-resourcePack.editor.toolRail.line.pane.selectionMode.freeForm=Vapaamuotoinen	#
-resourcePack.editor.toolRail.line.pane.selectionMode.fixedDistance=Kiinteä etäisyys	#
-resourcePack.editor.toolRail.line.pane.selectionMode.adjacent=Viereinen pinta	#
-resourcePack.editor.toolRail.line.pane.height.title=Korkeus	#
-resourcePack.editor.toolRail.line.pane.algorithm.title=Algoritmi	#
-resourcePack.editor.toolRail.line.pane.algorithm.Direct=Ohjaa	#
-resourcePack.editor.toolRail.line.pane.algorithm.Staggered=Porrastettu(Aidat)	#
-resourcePack.editor.toolRail.line.pane.surfaceContour=Pinnan hahmottelu	#
-resourcePack.editor.toolRail.line.pane.fillAction=Täytön valinta	#
-resourcePack.editor.toolRail.line.keyBinding.selectAll=Valitse kaikki	#
-resourcePack.editor.toolRail.line.keyBinding.deselect=Peru valinta	#
-resourcePack.editor.toolRail.line.keyBinding.deselectAll=Poista kaikki valinnat	#
-resourcePack.editor.toolRail.line.keyBinding.fillAndClear=Täytä sisältö ja peru valinta	#
-resourcePack.editor.toolRail.line.keyBinding.fill=Täytä sisältö	#
-resourcePack.editor.toolRail.line.keyBinding.deleteAndClear=Poista sisältö ja peru valinta	#
-resourcePack.editor.toolRail.line.keyBinding.delete=Poista sisältö	#
-resourcePack.editor.toolRail.line.keyBinding.moveForward=Siirrä valitut eteenpäin	#
-resourcePack.editor.toolRail.line.keyBinding.moveBack=Siirrä valitut taaksepäin	#
-resourcePack.editor.toolRail.line.keyBinding.moveLeft=Siirrä valitut vasemmalle	#
-resourcePack.editor.toolRail.line.keyBinding.moveRight=Siirrä valitut oikealle	#
-resourcePack.editor.toolRail.line.keyBinding.moveUp=Siirrä valitut ylöspäin	#
-resourcePack.editor.toolRail.line.keyBinding.moveDown=Siirrä valitut alaspäin	#
-
-resourcePack.editor.timeOfDay.menu.title=Vuorokaudenajan asetukset	#
-resourcePack.editor.timeOfDay.dropDown.title=Esiasetukset	#
-resourcePack.editor.timeOfDay.dropDown.none=Ei mitään	#
-resourcePack.editor.timeOfDay.dropDown.sunrise=Auringonnousu	#
-resourcePack.editor.timeOfDay.dropDown.day=Päivä	#
-resourcePack.editor.timeOfDay.dropDown.noon=Keskipäivä	#
-resourcePack.editor.timeOfDay.dropDown.sunset=Auringonlasku	#
-resourcePack.editor.timeOfDay.dropDown.night=Yö	#
-resourcePack.editor.timeOfDay.dropDown.midnight=Keskiyö	#
-resourcePack.editor.timeOfDay.title=Aika-asetukset	#
-resourcePack.editor.timeOfDay.clockType=Kellotyyppi	#
-resourcePack.editor.timeOfDay.24hrClock=24 tunnin kello	#
-resourcePack.editor.timeOfDay.12hrClock=12 tunnin kello	#
-resourcePack.editor.timeOfDay.minecraftClock=Minecraft-kello	#
-resourcePack.editor.timeOfDay.daylightCycle=Vuorokausirytmi	#
-resourcePack.editor.timeOfDay.currentTime=Nykyinen aika	#
-resourcePack.editor.timeOfDay.customTime=Mukautettu aika	#
 
 resourcePack.editor.toolRail.blockPalette.title=Kuutiopaletti (CTRL+P)	#
 resourcePack.editor.toolRail.blockPalette.tooltip=Aseta suosikkikuutioittesi tai useimmin käytettyjen kuutioiden paletti	#
-resourcePack.editor.blockPalette.addSearchItem=Käytä löytynyttä kuutiota	#
-resourcePack.editor.blockPalette.title=Kuutiopaletti	#
-resourcePack.editor.blockPalette.paletteDropdown.title=Paletti	#
-resourcePack.editor.blockPalette.blockPicker=Haku	#
+resourcePack.editor.toolRail.flattenBrush.title=Litistä sivellin	#
+resourcePack.editor.toolRail.flattenBrush.tooltip=Litistä alue pystysuunnassa valitun kuution korkeudelle	#
+resourcePack.editor.toolRail.flattenBrush.settings.heightThreshold=Korkeusraja	#
+resourcePack.editor.toolRail.flattenBrush.settings.radius=Säde	#
+resourcePack.editor.toolRail.floodFillSelectionTool.description=Valitsee alueen, jota katselet, käyttämällä tulvatäyttöalgoritmia.	#
+resourcePack.editor.toolRail.floodFillSelectionTool.title=Tulvatäytön valintatyökalu.	#
+resourcePack.editor.toolRail.line.keyBinding.delete=Poista sisältö	#
+resourcePack.editor.toolRail.line.keyBinding.deleteAndClear=Poista sisältö ja peru valinta	#
+resourcePack.editor.toolRail.line.keyBinding.deselect=Peru valinta	#
+resourcePack.editor.toolRail.line.keyBinding.deselectAll=Poista kaikki valinnat	#
+resourcePack.editor.toolRail.line.keyBinding.fill=Täytä sisältö	#
+resourcePack.editor.toolRail.line.keyBinding.fillAndClear=Täytä sisältö ja peru valinta	#
+resourcePack.editor.toolRail.line.keyBinding.moveBack=Siirrä valitut taaksepäin	#
+resourcePack.editor.toolRail.line.keyBinding.moveDown=Siirrä valitut alaspäin	#
+resourcePack.editor.toolRail.line.keyBinding.moveForward=Siirrä valitut eteenpäin	#
+resourcePack.editor.toolRail.line.keyBinding.moveLeft=Siirrä valitut vasemmalle	#
+resourcePack.editor.toolRail.line.keyBinding.moveRight=Siirrä valitut oikealle	#
+resourcePack.editor.toolRail.line.keyBinding.moveUp=Siirrä valitut ylöspäin	#
+resourcePack.editor.toolRail.line.keyBinding.selectAll=Valitse kaikki	#
+resourcePack.editor.toolRail.line.pane.algorithm.Direct=Ohjaa	#
+resourcePack.editor.toolRail.line.pane.algorithm.Staggered=Porrastetut (aidat)	#
+resourcePack.editor.toolRail.line.pane.algorithm.title=Algoritmi	#
+resourcePack.editor.toolRail.line.pane.fillAction=Täytön valinta	#
+resourcePack.editor.toolRail.line.pane.height.title=Korkeus	#
+resourcePack.editor.toolRail.line.pane.selectionMode.adjacent=Viereinen pinta	#
+resourcePack.editor.toolRail.line.pane.selectionMode.fixedDistance=Kiinteä etäisyys	#
+resourcePack.editor.toolRail.line.pane.selectionMode.freeForm=Vapaamuotoinen	#
+resourcePack.editor.toolRail.line.pane.selectionMode=Valinta	#
+resourcePack.editor.toolRail.line.pane.surfaceContour=Pinnan hahmottelu	#
+resourcePack.editor.toolRail.line.pane.width.title=Leveys	#
+resourcePack.editor.toolRail.line.title=Rivi	#
+resourcePack.editor.toolRail.line.tooltip=Viivatyökalu luo kuutiorivin	#
+resourcePack.editor.toolRail.rulerTool.title=Viivaintyökalu	#
+resourcePack.editor.toolRail.rulerTool.tooltip=Mittaa etäisyys	#
+resourcePack.editor.toolRail.rulerTool.info.title=Mittaus	#
 
-resourcePack.editor.toolRail.summonTool.pane.title=Kutsutyökalu	#
-resourcePack.editor.toolRail.summonTool.pane.type=Olentotyyppi	#
-resourcePack.editor.toolRail.summonTool.pane.select=Valitse tila	#
-resourcePack.editor.toolRail.summonTool.tool.title=Kutsutyökalu	#
-resourcePack.editor.toolRail.summonTool.tool.tip=Kutsu olentoja napsauttamalla	#
-resourcePack.editor.toolRail.summonTool.tool.summonSubPane=Olennon luonti	#
-resourcePack.editor.toolRail.summonTool.tool.selectSubPane=Olennon valinta	#
-resourcePack.editor.toolRail.summonTool.tool.selectSubPane.rotation=Kierto	#
-resourcePack.editor.toolRail.summonTool.tool.infoText=Valitse entiteetti napsauttamalla sitä tai luo uusi napsauttamalla karttaa	#
-resourcePack.editor.summonTool.summonSubPane.EntityPickerTitle=Olentotyyppi	#
-resourcePack.editor.toolRail.summonTool.keyBinding.toggle=Vaihda luontityökalua	#
-resourcePack.editor.toolRail.summonTool.keyBinding.delete=Poista entiteetti	#
+
+resourcePack.editor.toolRail.smartFillTool.title=Älykäs täyttötyökalu	#
+resourcePack.editor.toolRail.smartFillTool.tooltip=Täytä yhdistetty joukko kuutioita napsauttamalla	#
+resourcePack.editor.toolRail.smartFillTool.modes.fillVolume=Täyttötilavuus	#
+resourcePack.editor.toolRail.smartFillTool.areaLimit.title=Alueraja	#
+resourcePack.editor.toolRail.smartFillTool.areaLimit.tooltip=Täytettävä enimmäisalue	#
+
+
 resourcePack.editor.toolRail.summonTool.keyBinding.clear=Tyhjennä valinnat	#
-resourcePack.editor.toolRail.summonTool.keyBinding.moveForward=Siirrä valitut eteenpäin	#
+resourcePack.editor.toolRail.summonTool.keyBinding.delete=Poista entiteetti	#
 resourcePack.editor.toolRail.summonTool.keyBinding.moveBack=Siirrä valitut taaksepäin	#
+resourcePack.editor.toolRail.summonTool.keyBinding.moveDown=Siirrä valitut alaspäin	#
+resourcePack.editor.toolRail.summonTool.keyBinding.moveForward=Siirrä valitut eteenpäin	#
 resourcePack.editor.toolRail.summonTool.keyBinding.moveLeft=Siirrä valitut vasemmalle	#
 resourcePack.editor.toolRail.summonTool.keyBinding.moveRight=Siirrä valitut oikealle	#
 resourcePack.editor.toolRail.summonTool.keyBinding.moveUp=Siirrä valitut ylöspäin	#
-resourcePack.editor.toolRail.summonTool.keyBinding.moveDown=Siirrä valitut alaspäin	#
+resourcePack.editor.toolRail.summonTool.keyBinding.toggle=Vaihda luontityökalua	#
+resourcePack.editor.toolRail.summonTool.pane.select=Valitse tila	#
+resourcePack.editor.toolRail.summonTool.pane.title=Kutsutyökalu	#
+resourcePack.editor.toolRail.summonTool.pane.type=Olentotyyppi	#
+resourcePack.editor.toolRail.summonTool.tool.infoText=Valitse entiteetti napsauttamalla sitä tai luo uusi napsauttamalla karttaa	#
+resourcePack.editor.toolRail.summonTool.tool.selectSubPane.rotation=Kierto	#
+resourcePack.editor.toolRail.summonTool.tool.selectSubPane=Olennon valinta	#
+resourcePack.editor.toolRail.summonTool.tool.summonSubPane=Olennon luonti	#
+resourcePack.editor.toolRail.summonTool.tool.tip=Kutsu olentoja napsauttamalla	#
+resourcePack.editor.toolRail.summonTool.tool.title=Kutsutyökalu	#
 
-resourcePack.editor.pastepreview.tool.title=Liitä esikatselu	#
-resourcePack.editor.pastepreview.tool.tip=Säädä leikepöydän esikatselun sijaintia hiirellä ja liitä maailmaan napsauttamalla	#
-resourcePack.editor.pastepreview.inputContext.title=Liitä esikatselu	#
-resourcePack.editor.pastepreview.pane.root.title=Liitä esikatselu	#
-resourcePack.editor.pastepreview.pane.root.size=Koko	#
-resourcePack.editor.pastepreview.pane.placement.title=Sijoitteluasetukset	#
-resourcePack.editor.pastepreview.pane.placement.origin=Alkuperä	#
-resourcePack.editor.pastepreview.pane.placement.offset=Siirtymä	#
-resourcePack.editor.pastepreview.pane.placement.rotation=Kierto (Y:n ympäri)	#
-resourcePack.editor.pastepreview.pane.placement.mirrorX=Peilaa X	#
-resourcePack.editor.pastepreview.pane.placement.mirrorZ=Peilaa Z	#
-resourcePack.editor.pastepreview.pane.placement.pastebutton=Liitä	#
-resourcePack.editor.pastepreview.pane.controls.title=Osoittimen hallinta	#
-resourcePack.editor.pastepreview.pane.controls.cursor=Ctrl	#
-resourcePack.editor.pastepreview.pane.controls.cursor.keyboard=Vain näppäimistö	#
-resourcePack.editor.pastepreview.pane.controls.cursor.mouseandkeys=Hiiri ja näppäimistö	#
-resourcePack.editor.pastepreview.pane.controls.cursor.fixed=Kiinteä etäisyys	#
-resourcePack.editor.pastepreview.pane.controls.cursor.target.title=Kohde	#
-resourcePack.editor.pastepreview.pane.controls.cursor.target.block=Torju	#
-resourcePack.editor.pastepreview.pane.controls.cursor.target.face=Viereinen	#
-resourcePack.editor.pastepreview.keyBinding.pastepreview=Liitä esikatselu	#
-resourcePack.editor.pastepreview.keyBinding.copy=Kopioi valinta	#
-resourcePack.editor.pastepreview.keyBinding.cut=Leikkaa valinta	#
-resourcePack.editor.pastepreview.keyBinding.quickPaste=Pikaliittäminen	#
-resourcePack.editor.pastepreview.keyBinding.paste=Liitä	#
-resourcePack.editor.pastepreview.keyBinding.clearPreview=Tyhjennä esikatselu	#
-resourcePack.editor.pastepreview.keyBinding.moveForward=Siirrä esikatselua eteenpäin	#
-resourcePack.editor.pastepreview.keyBinding.moveBack=Siirrä esikatselua taaksepäin	#
-resourcePack.editor.pastepreview.keyBinding.moveLeft=Siirrä esikatselua vasemmalle	#
-resourcePack.editor.pastepreview.keyBinding.moveRight=Siirrä esikatselua oikealle	#
-resourcePack.editor.pastepreview.keyBinding.moveUp=Siirrä esikatselua ylöspäin	#
-resourcePack.editor.pastepreview.keyBinding.moveDown=Siirrä esikatselua alaspäin	#
-resourcePack.editor.pastepreview.keyBinding.moveOffsetForward=Siirrä porrastusta eteenpäin	#
-resourcePack.editor.pastepreview.keyBinding.moveOffsetBack=Siirrä porrastusta taaksepäin	#
-resourcePack.editor.pastepreview.keyBinding.moveOffsetLeft=Siirrä porrastusta vasemmalle	#
-resourcePack.editor.pastepreview.keyBinding.moveOffsetRight=Siirrä porrastusta oikealle	#
-resourcePack.editor.pastepreview.keyBinding.moveOffsetUp=Siirrä porrastusta ylöspäin	#
-resourcePack.editor.pastepreview.keyBinding.moveOffsetDown=Siirrä porrastusta alaspäin	#
-resourcePack.editor.pastepreview.keyBinding.moveOriginForward=Siirrä alkupistettä eteenpäin	#
-resourcePack.editor.pastepreview.keyBinding.moveOriginBack=Siirrä alkupistettä taaksepäin	#
-resourcePack.editor.pastepreview.keyBinding.moveOriginLeft=Siirrä alkupistettä vasemmalle	#
-resourcePack.editor.pastepreview.keyBinding.moveOriginRight=Siirrä alkupistettä oikealle	#
-resourcePack.editor.pastepreview.keyBinding.moveOriginUp=Siirrä alkupistettä ylöspäin	#
-resourcePack.editor.pastepreview.keyBinding.moveOriginDown=Siirrä alkupistettä alaspäin	#
-resourcePack.editor.pastepreview.keyBinding.pasteAtCursor=Liitä osoittimen kohtaan	#
-resourcePack.editor.pastepreview.keyBinding.toggleBlockTarget=Vaihda kuution kohdetilaa	#
-resourcePack.editor.pastepreview.keyBinding.toggleAdjacentTarget=Vaihda viereistä kohdetilaa	#
-resourcePack.editor.pastepreview.keyBinding.rotateClockWise=Kierrä esikatselua myötäpäivään	#
-resourcePack.editor.pastepreview.keyBinding.rotateCounterClockWise=Kierrä esikatselua vastapäivään	#
-resourcePack.editor.pastepreview.keyBinding.toggleMirrorX=Kytke peilattu X-akseli	#
-resourcePack.editor.pastepreview.keyBinding.toggleMirrorZ=Kytke peilattu Z-akseli	#
-resourcePack.editor.pastepreview.keyBinding.toggleMouseTracking=Vaihda hiirenseuranta	#
-resourcePack.editor.pastepreview.keyBinding.toggleFixedDistance=Ota kiinteä etäisyys käyttöön	#
 
-resourcePack.editor.ClipboardPreviewControl.rootPane.title=Leikepöydän tiedot	#
-resourcePack.editor.ClipboardPreviewControl.structureSize.title=Leikepöydän koko	#
-resourcePack.editor.ClipboardPreviewControl.placement.title=Asetukset	#
-resourcePack.editor.ClipboardPreviewControl.origin.title=Alkupiste	#
-resourcePack.editor.ClipboardPreviewControl.origin.tooltip=Leikepöydän esineen alkupiste. Tätä käytetään sekä sijoitteluankkurina että pisteenä, jonka ympärillä leikepöytää kierretään ja peilataan	#
-resourcePack.editor.ClipboardPreviewControl.offset.title=Siirtymä	#
-resourcePack.editor.ClipboardPreviewControl.offset.tooltip=Lisäsiirtymä sijoittelupisteestä leikepöydän esineen alkupisteeseen	#
-resourcePack.editor.ClipboardPreviewControl.rotation.title=Kierto	#
-resourcePack.editor.ClipboardPreviewControl.rotation.tooltip=Kierron määrä Y-akselin ympäri alkupisteessä	#
-resourcePack.editor.ClipboardPreviewControl.rotation.none=Ei mitään	#
-resourcePack.editor.ClipboardPreviewControl.rotation.90=90 °	#
-resourcePack.editor.ClipboardPreviewControl.rotation.180=180 °	#
-resourcePack.editor.ClipboardPreviewControl.rotation.270=270 °	#
-resourcePack.editor.ClipboardPreviewControl.mirror.axis.x=Peilaa (X-akseli)	#
-resourcePack.editor.ClipboardPreviewControl.mirror.axis.x.tooltip=Peilaa leikepöydän esine X-akselin ympäri alkupisteessä	#
-resourcePack.editor.ClipboardPreviewControl.mirror.axis.z=Peilaa (Z-akseli)	#
-resourcePack.editor.ClipboardPreviewControl.mirror.axis.z.tooltip=Peilaa leikepöydän esine Z-akselin ympäri alkupisteessä	#
-resourcePack.editor.ClipboardPreviewControl.keyBinding.nudgeOffsetUp=Työnnä siirtymää ylös	#
-resourcePack.editor.ClipboardPreviewControl.keyBinding.nudgeOffsetDown=Työnnä siirtymää alas	#
-resourcePack.editor.ClipboardPreviewControl.keyBinding.nudgeOffsetLeft=Työnnä siirtymää vasemmalle	#
-resourcePack.editor.ClipboardPreviewControl.keyBinding.nudgeOffsetRight=Työnnä siirtymää oikealle	#
-resourcePack.editor.ClipboardPreviewControl.keyBinding.nudgeOffsetForward=Työnnä siirtymää eteenpäin	#
-resourcePack.editor.ClipboardPreviewControl.keyBinding.nudgeOffsetBack=Työnnä siirtymää taaksepäin	#
-resourcePack.editor.ClipboardPreviewControl.keybinding.moveOriginForward=Siirrä alkupistettä eteenpäin	#
-resourcePack.editor.ClipboardPreviewControl.keybinding.moveOriginBack=Siirrä alkupistettä taaksepäin	#
-resourcePack.editor.ClipboardPreviewControl.keybinding.moveOriginLeft=Siirrä alkupistettä vasemmalle	#
-resourcePack.editor.ClipboardPreviewControl.keybinding.moveOriginRight=Siirrä alkupistettä oikealle	#
-resourcePack.editor.ClipboardPreviewControl.keybinding.moveOriginUp=Siirrä alkupistettä ylöspäin	#
-resourcePack.editor.ClipboardPreviewControl.keybinding.moveOriginDown=Siirrä alkupistettä alaspäin	#
-resourcePack.editor.ClipboardPreviewControl.keybinding.rotateClockWise=Kierrä esikatselua myötäpäivään	#
-resourcePack.editor.ClipboardPreviewControl.keybinding.rotateCounterClockWise=Kierrä esikatselua vastapäivään	#
-resourcePack.editor.ClipboardPreviewControl.keybinding.toggleMirrorX=Kytke peilattu X-akseli	#
-resourcePack.editor.ClipboardPreviewControl.keybinding.toggleMirrorZ=Kytke peilattu Z-akseli	#
+resourcePack.editor.transaction.keyBinding.redo=Tee uudelleen	#
+resourcePack.editor.transaction.keyBinding.undo=Kumoa	#
 
-resourcePack.editor.deferredLightingSettings.menu.title=Viivästetyn valaistuksen asetukset	#
-resourcePack.editor.datatransferaccessors.atmospheric_scattering=Ympäristön hajonta	#
-resourcePack.editor.datatransferaccessors.color_grading=Värimäärittely	#
-resourcePack.editor.datatransferaccessors.lighting_group=Yleinen valaistus	#
-resourcePack.editor.datatransferaccessors.pbr_fallbacks=PBR vararatkaisut	#
-resourcePack.editor.datatransferaccessors.point_lights=Merkkivalot	#
-resourcePack.editor.datatransferaccessors.water=Vesi	#
 
+resourcePack.editor.viewport.keyBinding.moveBack=Siirry taaksepäin	#
+resourcePack.editor.viewport.keyBinding.moveDown=Siirry alas	#
+resourcePack.editor.viewport.keyBinding.moveForward=Siirry eteenpäin	#
+resourcePack.editor.viewport.keyBinding.moveLeft=Siirry vasemmalle	#
+resourcePack.editor.viewport.keyBinding.moveRight=Siirry oikealle	#
+resourcePack.editor.viewport.keyBinding.moveUp=Siirry ylös	#
+
+
+resourcePack.editor.viewSettings.compass.tip=Näytä suuntakompassi	#
+resourcePack.editor.viewSettings.compass.title=Näytä kompassi	#
+resourcePack.editor.viewSettings.chunk.tip=Näytä lohkorajojen ääriviivat kartalla	#
+resourcePack.editor.viewSettings.chunk.title=Näytä lohkorajat	#
+resourcePack.editor.viewSettings.invisible.tip=Näytä näkymättömät kuutiot (esim. tyhjyys, esteet jne.)	#
+resourcePack.editor.viewSettings.invisible.title=Näytä näkymättömät kuutiot	#
+resourcePack.editor.viewSettings.flySpeed.tip=Lisää lentonopeutta liikkuaksesi kartalla nopeammin	#
+resourcePack.editor.viewSettings.flySpeed.title=Lentonopeuskerroin	#
 resourcePack.editor.viewSettings.menu=Näkymäasetukset	#
 resourcePack.editor.viewSettings.title=Näkymäasetukset	#
-resourcePack.editor.viewSettings.invisible.title=Näytä näkymättömät kuutiot	#
-resourcePack.editor.viewSettings.invisible.tip=Näytä näkymättömät kuutiot (esim. tyhjyys, esteet jne.)	#
-resourcePack.editor.viewSettings.chunk.title=Näytä lohkorajat	#
-resourcePack.editor.viewSettings.chunk.tip=Näytä lohkorajojen ääriviivat kartalla	#
 
-resourcePack.editor.brushPaint.title=Siveltimen maali	#
-resourcePack.editor.brushPaint.tooltip=Käytä siveltimiä maalataksesi kuutioita maailmassa	#
-resourcePack.editor.brushPaint.inputContext.title=Siveltimen maali	#
-resourcePack.editor.brushPaint.inputContext.oneshot=Maalaa kerran	#
-resourcePack.editor.brushPaint.inputContext.activateBrushPaint=Aktivoi siveltimen maali	#
-
-resourcePack.editor.CursorModeControl.rootPane.title=Osoittimen asetukset	#
-resourcePack.editor.CursorModeControl.mouseControlMode.title=Syötteiden tapa	#
-resourcePack.editor.CursorModeControl.mouseControlMode.tooltip=Valitse syötteiden tapa maailman kuutio-osoittimelle	#
-resourcePack.editor.CursorModeControl.mouseControlMode.keyboard=Vain näppäimistö	#
-resourcePack.editor.CursorModeControl.mouseControlMode.keyboardAndMouse=Hiiri ja näppäimistö	#
-resourcePack.editor.CursorModeControl.mouseControlMode.fixed=Kiinteä etäisyys	#
-resourcePack.editor.CursorModeControl.cursorTargetMode.title=Kohde	#
-resourcePack.editor.CursorModeControl.cursorTargetMode.tooltip=Valitse osoittimen kohdetila	#
-resourcePack.editor.CursorModeControl.cursorTargetMode.block=Estä	#
-resourcePack.editor.CursorModeControl.cursorTargetMode.block.tooltip=Kuutio hiiren osoittimen alla	#
-resourcePack.editor.CursorModeControl.cursorTargetMode.face=Viereinen	#
-resourcePack.editor.CursorModeControl.cursorTargetMode.face.tooltip=Kuutio suoraan osoittimen alla olevan kuution sivun vieressä	#
-resourcePack.editor.CursorModeControl.projectThroughWater.title=Heijasta veden läpi	#
-resourcePack.editor.CursorModeControl.projectThroughWater.tooltip=Hiiren säteensuuntaus heijastuu veden läpi, mikä mahdollistaa vedenalaisten elementtien valinnan	#
-resourcePack.editor.CursorModeControl.fixedDistance.slider.title=Kiinteä osoittimen etäisyys	#
-resourcePack.editor.CursorModeControl.fixedDistance.slider.tooltip=Säädä kiinteää etäisyyttä pelaajasta, jonka kohdalle kuutio-osoitin asetetaan	#
-resourcePack.editor.CursorModeControl.keybinding.moveCursorForward=Työnnä eteenpäin	#
-resourcePack.editor.CursorModeControl.keybinding.moveCursorBack=Siirrä osoitinta taaksepäin	#
-resourcePack.editor.CursorModeControl.keybinding.moveCursorUp=Siirrä osoitinta ylöspäin	#
-resourcePack.editor.CursorModeControl.keybinding.moveCursorDown=Siirrä osoitinta alaspäin	#
-resourcePack.editor.CursorModeControl.keybinding.moveCursorLeft=Siirrä kohdistinta vasemmalle	#
-resourcePack.editor.CursorModeControl.keybinding.moveCursorRight=Siirrä osoitinta oikealle	#
-resourcePack.editor.CursorModeControl.keybinding.toggleMouseTracking=Vaihda hiirenseuranta	#
-resourcePack.editor.CursorModeControl.keybinding.toggleBlockTargetMode=Vaihda kuutio-/vierekkäinen tila	#
-resourcePack.editor.CursorModeControl.keybinding.toggleFixedDistance=Vaihda kiinteä etäisyys -tila	#
-
-resourcePack.editor.BrushPaintControl.rootPane.title=Siveltimen asetukset	#
-resourcePack.editor.BrushPaintControl.brush.title=Sivellin	#
-resourcePack.editor.BrushPaintControl.brushSettings.title=Siveltimen asetukset	#
-resourcePack.editor.BrushPaintControl.fillConstraints.title=Täytön rajoitukset	#
-resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.title=Siveltimen kuutiosuodatin	#
-resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.mask=Naamio	#
-resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.mask.tooltip=Luetteloa vastaavat kuutiot jätetään huomioimatta eikä niihin vaikuteta	#
-resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.replace=Korvaa	#
-resourcePack.editor.BrushPaintControl.fillConstraints.replace.title=Korvaa luettelo	#
-resourcePack.editor.BrushPaintControl.fillConstraints.replace.tooltip=Luetteloa vastaavia kuutioita käytetään	#
-resourcePack.editor.BrushPaintControl.fillConstraints.mask.title=Maskiluettelo	#
-resourcePack.editor.BrushPaintControl.offset.title=Siirtymä	#
-resourcePack.editor.BrushPaintControl.offset.tooltip=Siirtymä osoittimen sijainnista	#
-resourcePack.editor.BrushPaintControl.keybinding.replaceMask=Maskitila - Korvaa	#
-resourcePack.editor.BrushPaintControl.keybinding.maskMask=Maskitila - Maski	#
-resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetUp=Työnnä siirtymää ylös	#
-resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetDown=Työnnä siirtymää alas	#
-resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetLeft=Työnnä siirtymää vasemmalle	#
-resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetRight=Työnnä siirtymää oikealle	#
-resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetForward=Työnnä siirtymää eteenpäin	#
-resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetBack=Työnnä siirtymää taaksepäin	#
-
-resourcePack.editor.copypaste.keyBinding.copy=Kopioi valinta leikepöydälle	#
-resourcePack.editor.copypaste.keyBinding.cut=Leikkaa/siirrä valinta leikepöydälle	#
-resourcePack.editor.copypaste.keyBinding.paste=Liitä leikepöytä maailmaan	#
-resourcePack.editor.copypaste.actionbar.copy.title=Kopioi	#
-resourcePack.editor.copypaste.actionbar.copy.tooltip=Kopioi valinta leikepöydälle	#
-resourcePack.editor.copypaste.actionbar.copy.tooltipDescription=Kopioi nykyisen valinta-alueen sisältö leikepöydälle ja jätä valinta-alueen sisältö ennalleen	#
-resourcePack.editor.copypaste.actionbar.cut.title=Leikkaa	#
-resourcePack.editor.copypaste.actionbar.cut.tooltip=Leikkaa/siirrä valinta leikepöydälle	#
-resourcePack.editor.copypaste.actionbar.cut.tooltipDescription=Kopioi nykyisen valinta-alueen sisältö leikepöydälle ja poista samalla valinta-alueen sisältö	#
-resourcePack.editor.copypaste.menu.copy.title=Kopioi valinta	#
-resourcePack.editor.copypaste.menu.cut.title=Leikkaa valinta	#
-
-
+resourcePack.editor.hotbar.defaultDisplayName=Oletus	#

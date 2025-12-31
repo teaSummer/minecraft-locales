@@ -3,12 +3,616 @@
 ## Note, trailing spaces will NOT be trimmed. If you want room between the end of the string and the start of a
 ## comment on the same line, use TABs.
 
+commands.editor.project.beginExport=Exportálás...	#
+commands.editor.project.description=A jelenleg betöltött projekt kezelése	#
+commands.editor.project.export=projekt exportálása	#
+commands.editor.project.exportComplete=Az exportálás kész, a fájlok mentve ide: %s	#
+commands.editor.project.exportCopyFailed=A szintadatok másolása nem sikerült %s	#
+commands.editor.project.unknownSubcommand=Ismeretlen alparancs	#
+
+resourcePack.editor.actionBar.redo.tooltipDescription=Tranzakció megismétlése	#
+resourcePack.editor.actionBar.redo.tooltipTitle=Újra	#
+resourcePack.editor.actionBar.redo=Újra	#
+resourcePack.editor.actionBar.undo.tooltipDescription=Tranzakció visszavonása	#
+resourcePack.editor.actionBar.undo.tooltipTitle=Visszavonás	#
+resourcePack.editor.actionBar.undo=Visszavonás	#
+
+resourcePack.editor.agfx.settings.error.title=Hiba történt…	#
+resourcePack.editor.agfx.pane.title=Beállításszerkesztő	#
+resourcePack.editor.agfx.pane.settings_selector=Beállítások kiválasztása	#
+resourcePack.editor.agfx.pane.settings.title=Beállítások	#
+resourcePack.editor.agfx.pane.settings.revert_changes=Változtatások visszaállítása	#
+resourcePack.editor.agfx.pane.settings.export_to_clipboard=Exportálás a vágólapra	#
+
+
+resourcePack.editor.blockPalette.addSearchItem=Talált blokk használata	#
+resourcePack.editor.blockPalette.blockPicker=Keresés	#
+resourcePack.editor.blockPalette.paletteDropdown.title=Paletta	#
+resourcePack.editor.blockPalette.title=Blokkpaletta	#
+
+
+resourcePack.editor.brushPaint.inputContext.activateBrushPaint=Ecsetes festés aktiválása	#
+resourcePack.editor.brushPaint.inputContext.oneshot=Festés egyszer	#
+resourcePack.editor.brushPaint.inputContext.title=Ecsetes festés	#
+resourcePack.editor.brushPaint.title=Ecsetes festés	#
+resourcePack.editor.brushPaint.tooltip=Lehetővé teszi a blokkok ecsettel való lefestését a világban	#
+
+
+resourcePack.editor.BrushPaintControl.brush.title=Ecset	#
+resourcePack.editor.BrushPaintControl.brushSettings.title=Ecset beállításai	#
+resourcePack.editor.BrushPaintControl.fillConstraints.mask.title=Maszklista	#
+resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.disabled.tooltip=Blokkszűrők kikapcsolása	#
+resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.disabled=Kikapcsolva	#
+resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.mask.tooltip=A listának megfelelő blokkokat a játék figyelmen kívül hagyja, így azok változatlanok maradnak	#
+resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.mask=Maszk	#
+resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.replace=Csere	#
+resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.title=Ecsetblokkszűrő	#
+resourcePack.editor.BrushPaintControl.fillConstraints.replace.title=Cserelista	#
+resourcePack.editor.BrushPaintControl.fillConstraints.replace.tooltip=A játék a listának megfelelő blokkokon hajtja végre a műveletet	#
+resourcePack.editor.BrushPaintControl.fillConstraints.title=Kitöltési kényszerek	#
+resourcePack.editor.BrushPaintControl.keybinding.maskMask=Maszk mód – Maszk	#
+resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetBack=Eltolás lökése hátra	#
+resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetDown=Eltolás lökése le	#
+resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetForward=Eltolás lökése előre	#
+resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetLeft=Eltolás lökése balra	#
+resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetRight=Eltolás lökése jobbra	#
+resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetUp=Eltolás lökése fel	#
+resourcePack.editor.BrushPaintControl.keybinding.replaceMask=Maszk mód – Csere	#
+resourcePack.editor.BrushPaintControl.offset.title=Eltolás	#
+resourcePack.editor.BrushPaintControl.offset.tooltip=A kurzor helyzetétől számított eltolás	#
+resourcePack.editor.BrushPaintControl.rootPane.title=Ecset beállításai	#
+
+
+resourcePack.editor.brushShape.common.settings.axis=Tengely kitolása	#
+resourcePack.editor.brushShape.common.settings.height=Height	#
+resourcePack.editor.brushShape.common.settings.length=Hossz	#
+resourcePack.editor.brushShape.common.settings.radius=Sugár	#
+resourcePack.editor.brushShape.common.settings.uniform=Egységes	#
+resourcePack.editor.brushShape.common.settings.xAxis=X tengely	#
+resourcePack.editor.brushShape.common.settings.xAxisNeg=–X tengely	#
+resourcePack.editor.brushShape.common.settings.yAxis=Y tengely	#
+resourcePack.editor.brushShape.common.settings.yAxisNeg=–Y tengely	#
+resourcePack.editor.brushShape.common.settings.zAxis=Z tengely	#
+resourcePack.editor.brushShape.common.settings.zAxisNeg=–Z tengely	#
+resourcePack.editor.brushShape.cone.name=Tölcsér	#
+resourcePack.editor.brushShape.cone.settings.depth=Mélység sugara	#
+resourcePack.editor.brushShape.cone.settings.width=Szélesség sugara	#
+resourcePack.editor.brushShape.cuboid.name=Téglatest	#
+resourcePack.editor.brushShape.cuboid.settings.depth=Depth	#
+resourcePack.editor.brushShape.cuboid.settings.height=Height	#
+resourcePack.editor.brushShape.cuboid.settings.width=Width	#
+resourcePack.editor.brushShape.cylinder.name=Henger	#
+resourcePack.editor.brushShape.cylinder.settings.depth_radius=Depth Radius	#
+resourcePack.editor.brushShape.cylinder.settings.width_radius=Width Radius	#
+resourcePack.editor.brushShape.ellipsoid.name=Ellipszoid	#
+resourcePack.editor.brushShape.ellipsoid.settings.depth_radius=Depth Radius	#
+resourcePack.editor.brushShape.ellipsoid.settings.height_radius=Height Radius	#
+resourcePack.editor.brushShape.ellipsoid.settings.width_radius=Width Radius	#
+resourcePack.editor.brushShape.pyramid.name=Piramis	#
+resourcePack.editor.brushShape.pyramid.settings.depth=Mélység	#
+resourcePack.editor.brushShape.pyramid.settings.height=Magasság	#
+resourcePack.editor.brushShape.pyramid.settings.width=Szélesség	#
+resourcePack.editor.brushShape.singleBlock.name=Egyetlen blokk	#
+
+
 resourcePack.editor.client.description=Szerkesztői klienserőforrások	#
 resourcePack.editor.client.name=Szerkesztői erőforrások	#
+
+
+resourcePack.editor.ClipboardPreviewControl.keybinding.moveOriginBack=Origó mozgatása hátra	#
+resourcePack.editor.ClipboardPreviewControl.keybinding.moveOriginDown=Origó mozgatása lefelé	#
+resourcePack.editor.ClipboardPreviewControl.keybinding.moveOriginForward=Origó mozgatása előre	#
+resourcePack.editor.ClipboardPreviewControl.keybinding.moveOriginLeft=Origó mozgatása balra	#
+resourcePack.editor.ClipboardPreviewControl.keybinding.moveOriginRight=Origó mozgatása jobbra	#
+resourcePack.editor.ClipboardPreviewControl.keybinding.moveOriginUp=Origó mozgatása felfelé	#
+resourcePack.editor.ClipboardPreviewControl.keyBinding.nudgeOffsetBack=Eltolás lökése hátra	#
+resourcePack.editor.ClipboardPreviewControl.keyBinding.nudgeOffsetDown=Eltolás lökése lefelé	#
+resourcePack.editor.ClipboardPreviewControl.keyBinding.nudgeOffsetForward=Eltolás lökése előre	#
+resourcePack.editor.ClipboardPreviewControl.keyBinding.nudgeOffsetLeft=Eltolás lökése balra	#
+resourcePack.editor.ClipboardPreviewControl.keyBinding.nudgeOffsetRight=Eltolás lökése jobbra	#
+resourcePack.editor.ClipboardPreviewControl.keyBinding.nudgeOffsetUp=Eltolás lökése felfelé	#
+resourcePack.editor.ClipboardPreviewControl.keybinding.rotateClockWise=Előnézet forgatása az óramutató járásával megegyező irányba	#
+resourcePack.editor.ClipboardPreviewControl.keybinding.rotateCounterClockWise=Előnézet forgatása az óramutató járásával ellentétes irányba	#
+resourcePack.editor.ClipboardPreviewControl.keybinding.toggleMirrorX=X-tükrözés bekapcsolása	#
+resourcePack.editor.ClipboardPreviewControl.keybinding.toggleMirrorZ=Z-tükrözés bekapcsolása	#
+resourcePack.editor.ClipboardPreviewControl.mirror.axis.x.tooltip=Vágólaptárgy tükrözése az X tengely mentén a kezdőpontnál	#
+resourcePack.editor.ClipboardPreviewControl.mirror.axis.x=Tükrözés (X tengely)	#
+resourcePack.editor.ClipboardPreviewControl.mirror.axis.z.tooltip=Vágólaptárgy tükrözése a Z tengely mentén a kezdőpontnál	#
+resourcePack.editor.ClipboardPreviewControl.mirror.axis.z=Tükrözés (Z tengely)	#
+resourcePack.editor.ClipboardPreviewControl.offset.title=Eltolás	#
+resourcePack.editor.ClipboardPreviewControl.offset.tooltip=További eltolás az elhelyezési pont és a vágólaptárgy kezdőpontja között	#
+resourcePack.editor.ClipboardPreviewControl.origin.title=Kezdőpont	#
+resourcePack.editor.ClipboardPreviewControl.origin.tooltip=A vágólaptárgyon belül található kezdőpont. Ez szolgál elhelyezési horgonyként, illetve ezen pont körül forgathatod és tükrözheted a vágólapot.	#
+resourcePack.editor.ClipboardPreviewControl.placement.title=Beállítások	#
+resourcePack.editor.ClipboardPreviewControl.rootPane.title=Vágólap adatai	#
+resourcePack.editor.ClipboardPreviewControl.rotation.180=180Â°	#
+resourcePack.editor.ClipboardPreviewControl.rotation.270=270Â°	#
+resourcePack.editor.ClipboardPreviewControl.rotation.90=90Â°	#
+resourcePack.editor.ClipboardPreviewControl.rotation.none=Nincs	#
+resourcePack.editor.ClipboardPreviewControl.rotation.title=Elforgatás	#
+resourcePack.editor.ClipboardPreviewControl.rotation.tooltip=Az Y tengely körüli elforgatás mértéke a kezdőpontnál	#
+resourcePack.editor.ClipboardPreviewControl.structureSize.title=Vágólap mérete	#
+
+
+resourcePack.editor.copypaste.actionbar.copy.title=Másolás	#
+resourcePack.editor.copypaste.actionbar.copy.tooltip=Kiválasztás másolása a vágólapra	#
+resourcePack.editor.copypaste.actionbar.copy.tooltipDescription=Az aktuális kiválasztásos kötet tartalmának másolása a vágólapra, a kiválasztásos kötet tartalmának megőrzésével	#
+resourcePack.editor.copypaste.actionbar.cut.title=Kivágás	#
+resourcePack.editor.copypaste.actionbar.cut.tooltip=Kiválasztás kivágása/áthelyezése a vágólapra	#
+resourcePack.editor.copypaste.actionbar.cut.tooltipDescription=Az aktuális kiválasztásos kötet tartalmának másolása a vágólapra, a kiválasztásos kötet tartalmának eltávolításával	#
+resourcePack.editor.copypaste.keyBinding.copy=Kiválasztás másolása a vágólapra	#
+resourcePack.editor.copypaste.keyBinding.cut=Kiválasztás kivágása/áthelyezése a vágólapra	#
+resourcePack.editor.copypaste.keyBinding.paste=Vágólap beillesztése a világba	#
+resourcePack.editor.copypaste.menu.copy.title=Kiválasztás másolása	#
+resourcePack.editor.copypaste.menu.cut.title=Kiválasztás kivágása	#
+
+
+resourcePack.editor.core.keyBinding.showGameMenu=Játékmenü megjelenítése	#
+resourcePack.editor.core.keyBinding.showLogPanel=Naplópanel megjelenítése	#
+
+
+resourcePack.editor.CursorModeControl.cursorTargetMode.block.tooltip=Az egérmutató alatti blokk	#
+resourcePack.editor.CursorModeControl.cursorTargetMode.block=Letiltás	#
+resourcePack.editor.CursorModeControl.cursorTargetMode.face.tooltip=Közvetlenül a kurzor alatti blokk lapjával szomszédos blokk	#
+resourcePack.editor.CursorModeControl.cursorTargetMode.face=Szomszédos	#
+resourcePack.editor.CursorModeControl.cursorTargetMode.title=Célpont	#
+resourcePack.editor.CursorModeControl.cursorTargetMode.tooltip=Válaszd ki a kurzor célzási módját	#
+resourcePack.editor.CursorModeControl.fixedDistance.slider.title=Rögzített kurzortávolság	#
+resourcePack.editor.CursorModeControl.fixedDistance.slider.tooltip=Módosítja a blokk-kurzor játékostól számított rögzített távolságát	#
+resourcePack.editor.CursorModeControl.keybinding.moveCursorBack=Kurzor mozgatása hátra	#
+resourcePack.editor.CursorModeControl.keybinding.moveCursorDown=Kurzor mozgatása le	#
+resourcePack.editor.CursorModeControl.keybinding.moveCursorForward=Előrelökés	#
+resourcePack.editor.CursorModeControl.keybinding.moveCursorLeft=Kurzor mozgatása balra	#
+resourcePack.editor.CursorModeControl.keybinding.moveCursorRight=Kurzor mozgatása jobbra	#
+resourcePack.editor.CursorModeControl.keybinding.moveCursorUp=Kurzor mozgatása fel	#
+resourcePack.editor.CursorModeControl.keybinding.toggleBlockTargetMode=Blokkmód/szomszédos mód váltása	#
+resourcePack.editor.CursorModeControl.keybinding.toggleFixedDistance=Rögzített távolsági mód be- vagy kikapcsolása	#
+resourcePack.editor.CursorModeControl.keybinding.toggleMouseTracking=Egérkövetés be- vagy kikapcsolása	#
+resourcePack.editor.CursorModeControl.mouseControlMode.fixed=Rögzített távolság	#
+resourcePack.editor.CursorModeControl.mouseControlMode.keyboard=Csak billentyűzet	#
+resourcePack.editor.CursorModeControl.mouseControlMode.keyboardAndMouse=Egér és billentyűk	#
+resourcePack.editor.CursorModeControl.mouseControlMode.title=Beviteli mód	#
+resourcePack.editor.CursorModeControl.mouseControlMode.tooltip=Válaszd ki a világ blokk-kurzorának beviteli módját	#
+resourcePack.editor.CursorModeControl.projectThroughWater.title=Vetítés vízen keresztül	#
+resourcePack.editor.CursorModeControl.projectThroughWater.tooltip=A játék kivetíti a kurzort a vízen keresztül, lehetővé téve a víz alatti elemek kijelölését	#
+resourcePack.editor.CursorModeControl.rootPane.title=Kurzorbeállítások	#
+
+
+resourcePack.editor.datatransferaccessors.atmospheric_scattering=Légköri fénytörés	#
+resourcePack.editor.datatransferaccessors.color_grading=Színkorrekció	#
+resourcePack.editor.datatransferaccessors.lighting_group=Globális világítás	#
+resourcePack.editor.datatransferaccessors.pbr_fallbacks=PBR tartalék-erőforrások	#
+resourcePack.editor.datatransferaccessors.point_lights=Pontfények	#
+resourcePack.editor.datatransferaccessors.water=Víz	#
+
+
+resourcePack.editor.deferredLightingSettings.menu.title=Késleltetett világítás beállításai	#
+
+
+resourcePack.editor.delete.keyBinding=Kijelölés tartalmának törlése	#
+
+
+resourcePack.editor.exportProject.exportType=Export Type	#
+resourcePack.editor.exportProject.exportType.playableWorld=Playable World	#
+resourcePack.editor.exportProject.exportNotes=Export Notes	#
+resourcePack.editor.exportProject.exportNotes.warning=You are exporting a v%1 world. Exported Playable worlds cannot be used on versions of Minecraft with a version number prior to v%1. To convert to previous version numbers, use https://chunker.app/ (some functionality may not be available if unsupported in earlier versions)	#
+resourcePack.editor.exportProject.generalSettings=General Settings	#
+resourcePack.editor.exportProject.generalSettings.worldName=World Name	#
+resourcePack.editor.exportProject.generalSettings.gameMode=Game Mode	#
+resourcePack.editor.exportProject.generalSettings.difficulty=Difficulty	#
+resourcePack.editor.exportProject.generalSettings.hardcore=Hardcore	#
+resourcePack.editor.exportProject.advancedSettings=Advanced Settings	#
+resourcePack.editor.exportProject.advancedSettings.startingMap=Starting Map	#
+resourcePack.editor.exportProject.advancedSettings.bonusChest=Bonus Chest	#
+resourcePack.editor.exportProject.advancedSettings.showCoordinates=Show Coordinates	#
+resourcePack.editor.exportProject.advancedSettings.showDaysPlayed=Show Days Played	#
+resourcePack.editor.exportProject.advancedSettings.recipeUnlocking=Recipe Unlocking	#
+resourcePack.editor.exportProject.advancedSettings.fireSpreads=Fire Spreads	#
+resourcePack.editor.exportProject.advancedSettings.tntExplodes=TNT Explodes	#
+resourcePack.editor.exportProject.advancedSettings.resawnBlocksExplode=Respawn Blocks Explode	#
+resourcePack.editor.exportProject.advancedSettings.mobLoot=Mob Loot	#
+resourcePack.editor.exportProject.advancedSettings.naturalRegeneration=Natural Regeneration	#
+resourcePack.editor.exportProject.advancedSettings.tileDrops=Tile Drops	#
+resourcePack.editor.exportProject.advancedSettings.immediateRespawn=Immediate Respawn	#
+resourcePack.editor.exportProject.advancedSettings.respawnRadius=Respawn Radius	#
+resourcePack.editor.exportProject.advancedSettings.simulationDistance=Simulation Distance	#
+resourcePack.editor.exportProject.advancedSettings.bedsWork=Beds Work	#
+resourcePack.editor.exportProject.advancedSettings.requiredSleepingPlayers=Required Sleeping Players (%1%)	#
+resourcePack.editor.exportProject.multiplayerSettings=Multiplayer Settings	#
+resourcePack.editor.exportProject.multiplayerSettings.multiplayerGame=Multiplayer Game	#
+resourcePack.editor.exportProject.multiplayerSettings.playerAccess=Player Access	#
+resourcePack.editor.exportProject.multiplayerSettings.playerPermissions=Player Permissions	#
+resourcePack.editor.exportProject.multiplayerSettings.visibleToLAN=Visible to LAN PLayers	#
+resourcePack.editor.exportProject.multiplayerSettings.friendlyFire=Friendly Fire	#
+resourcePack.editor.exportProject.cheatsSettings=Cheats Settings	#
+resourcePack.editor.exportProject.cheatsSettings.cheats=Cheats	#
+resourcePack.editor.exportProject.cheatsSettings.daylightCycle=Daylight Cycle	#
+resourcePack.editor.exportProject.cheatsSettings.keepInventory=Keep Inventory	#
+resourcePack.editor.exportProject.cheatsSettings.mobSpawning=Mob Spawning	#
+resourcePack.editor.exportProject.cheatsSettings.mobGriefing=Mob Griefing	#
+resourcePack.editor.exportProject.cheatsSettings.entitiesDropLoot=Entities Drop Loot	#
+resourcePack.editor.exportProject.cheatsSettings.weatherCycle=Weather Cycle	#
+resourcePack.editor.exportProject.cheatsSettings.commandBlocks=Command Blocks	#
+resourcePack.editor.exportProject.cheatsSettings.educationFeatures=Education Features	#
+resourcePack.editor.exportProject.cheatsSettings.randomTickSpeed=Random Tick Speed	#
+resourcePack.editor.exportProject.export=Export	#
+resourcePack.editor.exportProject.resetToDefault=Reset To Default	#
+resourcePack.editor.exportProject.gameMode.survival=Survival	#
+resourcePack.editor.exportProject.gameMode.creative=Creative	#
+resourcePack.editor.exportProject.gameMode.adventure=Adventure	#
+resourcePack.editor.exportProject.difficulty.peaceful=Peaceful	#
+resourcePack.editor.exportProject.difficulty.easy=Easy	#
+resourcePack.editor.exportProject.difficulty.normal=Normal	#
+resourcePack.editor.exportProject.difficulty.hard=Hard	#
+
+
+resourcePack.editor.toolRail.ExtrudeTool.title=Extrude Tool	#
+resourcePack.editor.toolRail.ExtrudeTool.tooltip=Extrusion tool for expanding and decreasing blocks	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.ContiguousSelectionBlockListSubPane.title=Contiguous Selection Block List	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.TrailingBlocksSettingsSubPane.title=Trailing Blocks Settings	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.SampleLayerCount.title=Sample Layer Count	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.ContiguousSelectionSettings.title=Contiguous Selection Settings	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.ContiguousSelectionType.title=Contiguous Selection Type	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.ContiguousSelectionType.SameBlocks=Same Blocks	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.ContiguousSelectionType.SameBlocksAndStates=Same Blocks and States	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.ContiguousSelectionType.SolidBlocks=Solid Blocks	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.ContiguousSelectionType.AllBlocks=All Blocks	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.ContiguousSelectionType.CustomBlockList=Custom Block List	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.ToleranceLevel.title=Tolerance Level	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.HasAdjacentBlocks.title=Has Adjacent Blocks	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.ExtruderSettings.title=Extruder Settings	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.Radius.title=Radius	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.title=Selection Mode	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.ContiguousSelection=Contiguous Selection	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.MarqueeSelection=Marquee Selection	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.ContiguousSettings.title=Contiguous Selection Settings	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.TrailingBlocks.title=Trailing Blocks	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.TrailingBlocksSettings.title=Trailing Blocks Settings	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.QuickExtrudeSettings.title=Quick Extrude Settings	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.QuickExtrudeMode.title=Quick Extrusion Mode	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.QuickExtrudeMode.decrease.title=Decrease	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.QuickExtrudeMode.decrease.tooltip=Decrease Extrusion	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.QuickExtrudeMode.expand.title=Expand	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.QuickExtrudeMode.expand.tooltip=Expand Extrusion	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.LayerCount.title=Layer Count	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.ExtrusionType.title=Extrusion Type	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.ExtrusionType.Extrude=Extrude	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.ExtrusionType.QuickExtrude=Quick Extrude	#
+resourcePack.editor.toolRail.ExtrudeTool.keyBinding.deselect=Deselect	#
+resourcePack.editor.toolRail.ExtrudeTool.keyBinding.toggleTool=Toggle Extrude Tool	#
+
+
+resourcePack.editor.toolRail.FarmGenerator.tool.title=Farm Generator	#
+resourcePack.editor.toolRail.FarmGenerator.tool.tooltip=Quickly create a custom farm	#
+resourcePack.editor.toolRail.FarmGenerator.pane.title=Farm Generator	#
+resourcePack.editor.toolRail.FarmGenerator.pane.length=Length	#
+resourcePack.editor.toolRail.FarmGenerator.pane.width=Width	#
+resourcePack.editor.toolRail.FarmGenerator.pane.fence=Fence	#
+resourcePack.editor.toolRail.FarmGenerator.pane.irrigation=Add Irrigation	#
+resourcePack.editor.toolRail.FarmGenerator.pane.irrigation.tooltip=Adds water blocks in the farm to irrigate crops.	#
+resourcePack.editor.toolRail.FarmGenerator.pane.crops.title=Crops	#
+resourcePack.editor.toolRail.FarmGenerator.pane.crops.wheat=Wheat	#
+resourcePack.editor.toolRail.FarmGenerator.pane.crops.potato=Potato	#
+resourcePack.editor.toolRail.FarmGenerator.pane.crops.beets=Beetroot	#
+resourcePack.editor.toolRail.FarmGenerator.pane.crops.pumpkin=Pumpkin	#
+resourcePack.editor.toolRail.FarmGenerator.pane.crops.carrot=Carrot	#
+resourcePack.editor.toolRail.FarmGenerator.pane.animals.title=Animals	#
+resourcePack.editor.toolRail.FarmGenerator.pane.animals.cow=Cow	#
+resourcePack.editor.toolRail.FarmGenerator.pane.animals.sheep=Sheep	#
+resourcePack.editor.toolRail.FarmGenerator.pane.animals.pig=Pig	#
+resourcePack.editor.toolRail.FarmGenerator.keyBinding.toggleTool=Toggle Farm Generator Tool	#
+resourcePack.editor.toolRail.FarmGenerator.keyBinding.place=Place Farm At Cursor	#
+
+
+resourcePack.editor.global.keyBinding.toggleMode=Módváltás	#
+
+
+resourcePack.editor.goToMark.actionBar.tooltip.description=Eszközpanel a játékos navigációjához	#
+resourcePack.editor.goToMark.actionBar.tooltip.title=Navigációs panel	#
+resourcePack.editor.goToMark.pane.goToSpawn=Ugrás a teremtődési ponthoz	#
+resourcePack.editor.goToMark.pane.location=Játékos pozíciója	#
+resourcePack.editor.goToMark.pane.locationPane.delete=Mentett hely törlése	#
+resourcePack.editor.goToMark.pane.locationPane.dropdownLabel=Mentett hely	#
+resourcePack.editor.goToMark.pane.locationPane.inputName=Új név	#
+resourcePack.editor.goToMark.pane.locationPane.markColor=Hely jelölőszíne	#
+resourcePack.editor.goToMark.pane.locationPane.store=Aktuális hely mentése új néven...	#
+resourcePack.editor.goToMark.pane.locationPane.teleport=Teleportálás mentett helyre %1$s	#
+resourcePack.editor.goToMark.pane.locationPane.title=Mentett helyek	#
+resourcePack.editor.goToMark.pane.mapSize=Pályaméret	#
+resourcePack.editor.goToMark.pane.refreshMap=Térkép frissítése	#
+resourcePack.editor.goToMark.pane.setSpawn=Teremtődési pont beállítása aktuálisként	#
+resourcePack.editor.goToMark.pane.showMap=Térkép megjelenítése	#
+resourcePack.editor.goToMark.pane.teleport=Teleportálás adott helyre	#
+resourcePack.editor.goToMark.title=Navigációs panel	#
+
+
+resourcePack.editor.grapple.keyBinding.flyToCursor=Repülés a kurzorhoz	#
+resourcePack.editor.grapple.keyBinding.flyToSelection=Repülés a kijelöléshez	#
+
+
+resourcePack.editor.locate.biome.find=Biom keresése	#
+resourcePack.editor.locate.biome.title=Biom	#
+resourcePack.editor.locate.keyBinding.toggleTool=Biomészlelő eszköz ki-/bekapcsolása	#
+resourcePack.editor.locate.locatetype.biome=Biom	#
+resourcePack.editor.locate.locatetype.structure=Szerkezet	#
+resourcePack.editor.locate.locatetype.title=Típus megkeresése	#
+resourcePack.editor.locate.results.foundat.title=Találat a következő helyen:	#
+resourcePack.editor.locate.results.foundat=Találat a következő helyen:	#
+resourcePack.editor.locate.results.goto=Ugrás:	#
+resourcePack.editor.locate.results.notfound.title=Nincs találat	#
+resourcePack.editor.locate.results.notfound=Nincs találat	#
+resourcePack.editor.locate.results.title=Eredmények	#
+resourcePack.editor.locate.structure.message=A szerkezet keresése jelenleg nem támogatott	#
+resourcePack.editor.locate.structure.title=Szerkezet	#
+resourcePack.editor.locate.title=Lokalizálás	#
+
+
+resourcePack.editor.menuBar.edit.copy=Másolás	#
+resourcePack.editor.menuBar.edit.cut=Kivágás	#
+resourcePack.editor.menuBar.edit.delete=Törlés	#
+resourcePack.editor.menuBar.edit.deselect=Kijelölés törlése	#
+resourcePack.editor.menuBar.edit.quickFill=Gyorskitöltés	#
+resourcePack.editor.menuBar.edit.quickPaste=Gyorsbeillesztés	#
+resourcePack.editor.menuBar.edit.redo=Újra	#
+resourcePack.editor.menuBar.edit.undo=Visszavonás	#
+resourcePack.editor.menuBar.edit=Szerkesztés	#
+resourcePack.editor.menuBar.experimental=Kísérleti	#
+resourcePack.editor.menuBar.extensions=Bővítmények	#
+resourcePack.editor.menuBar.file.cursor.projectThroughLiquid=Vetítés folyadékon keresztül	#
+resourcePack.editor.menuBar.file.cursor=Kurzorbeállítások	#
+resourcePack.editor.menuBar.file.export.project=Projekt szerkesztő módban	#
+resourcePack.editor.menuBar.file.export.world=Játszható világ	#
+resourcePack.editor.menuBar.file.export=Exportálás	#
+resourcePack.editor.menuBar.file.pauseScreen=Játékmenü	#
+resourcePack.editor.menuBar.file.settings=Felhasználói felület beállításai	#
+resourcePack.editor.menuBar.file=Fájl	#
+resourcePack.editor.menuBar.help.documentation=Dokumentáció	#
+resourcePack.editor.menuBar.help.feedback=Visszajelzés	#
+resourcePack.editor.menuBar.help.quickStart=Gyorsindítás	#
+resourcePack.editor.menuBar.help=Súgó	#
+resourcePack.editor.menuBar.locate=Lokalizálás	#
+resourcePack.editor.menuBar.parentMenu.weather.clear=Tiszta	#
+resourcePack.editor.menuBar.parentMenu.weather.rain=Esős	#
+resourcePack.editor.menuBar.parentMenu.weather.thunder=Mennydörgés	#
+resourcePack.editor.menuBar.parentMenu.weather=Időjárás	#
+resourcePack.editor.menuBar.view.blockPalette=Blokkpaletta	#
+resourcePack.editor.menuBar.view.logging=Naplópanel	#
+resourcePack.editor.menuBar.view.navigationLogging=Navigáció naplózása	#
+resourcePack.editor.menuBar.view=Megtekintés	#
+resourcePack.editor.menuBar.worldOptions.changeDimension.end=Végpont	#
+resourcePack.editor.menuBar.worldOptions.changeDimension.nether=Alvilág	#
+resourcePack.editor.menuBar.worldOptions.changeDimension.overworld=Felvilág	#
+resourcePack.editor.menuBar.worldOptions.changeDimension=Dimenzió váltása	#
+resourcePack.editor.menuBar.worldOptions.pause.entities=Entitások	#
+resourcePack.editor.menuBar.worldOptions.pause=Szünet	#
+resourcePack.editor.menuBar.worldOptions=Világ beállításai	#
+
+
+resourcePack.editor.navigation.keyBinding.add=Navigációs pozíció hozzáadása	#
+resourcePack.editor.navigation.keyBinding.next=Ugrás a következő navigációs pozícióhoz	#
+resourcePack.editor.navigation.keyBinding.previous=Ugrás az előző navigációs pozícióhoz	#
+
+
+resourcePack.editor.paste.pane.submitButton=Beillesztés megerősítése	#
+resourcePack.editor.paste.pane.title=Beillesztés	#
+resourcePack.editor.paste.pane.transform.mirrorX=X tükrözése	#
+resourcePack.editor.paste.pane.transform.mirrorZ=Z tükrözése	#
+resourcePack.editor.paste.pane.transform.origin.title=Eltolás	#
+resourcePack.editor.paste.pane.transform.rotation.180=180Â°	#
+resourcePack.editor.paste.pane.transform.rotation.270=270Â°	#
+resourcePack.editor.paste.pane.transform.rotation.90=90Â°	#
+resourcePack.editor.paste.pane.transform.rotation.none=0Â°	#
+resourcePack.editor.paste.pane.transform.rotation.title=Forgatás	#
+resourcePack.editor.paste.pane.transform.title=Átalakítás	#
+resourcePack.editor.paste.toolRail.description=Kattints a bal egérgombbal egy blokk kijelöléséhez, majd illessz be pontosan egy vágólapon lévő elemet	#
+resourcePack.editor.paste.toolRail.title=Beillesztés előnézete	#
+
+
+resourcePack.editor.pastepreview.inputContext.title=Beillesztés előnézete	#
+resourcePack.editor.pastepreview.keyBinding.clearPreview=Előnézet törlése	#
+resourcePack.editor.pastepreview.keyBinding.copy=Kijelölés másolása	#
+resourcePack.editor.pastepreview.keyBinding.cut=Kijelölés kivágása	#
+resourcePack.editor.pastepreview.keyBinding.moveBack=Előnézet mozgatása hátra	#
+resourcePack.editor.pastepreview.keyBinding.moveDown=Előnézet mozgatása le	#
+resourcePack.editor.pastepreview.keyBinding.moveForward=Előnézet mozgatása előre	#
+resourcePack.editor.pastepreview.keyBinding.moveLeft=Előnézet mozgatása balra	#
+resourcePack.editor.pastepreview.keyBinding.moveOffsetBack=Eltolás mozgatása hátra	#
+resourcePack.editor.pastepreview.keyBinding.moveOffsetDown=Eltolás mozgatása le	#
+resourcePack.editor.pastepreview.keyBinding.moveOffsetForward=Eltolás mozgatása előre	#
+resourcePack.editor.pastepreview.keyBinding.moveOffsetLeft=Eltolás mozgatása balra	#
+resourcePack.editor.pastepreview.keyBinding.moveOffsetRight=Eltolás mozgatása jobbra	#
+resourcePack.editor.pastepreview.keyBinding.moveOffsetUp=Eltolás mozgatása fel	#
+resourcePack.editor.pastepreview.keyBinding.moveOriginBack=Origó mozgatása hátra	#
+resourcePack.editor.pastepreview.keyBinding.moveOriginDown=Origó mozgatása le	#
+resourcePack.editor.pastepreview.keyBinding.moveOriginForward=Origó mozgatása előre	#
+resourcePack.editor.pastepreview.keyBinding.moveOriginLeft=Origó mozgatása balra	#
+resourcePack.editor.pastepreview.keyBinding.moveOriginRight=Origó mozgatása jobbra	#
+resourcePack.editor.pastepreview.keyBinding.moveOriginUp=Origó mozgatása fel	#
+resourcePack.editor.pastepreview.keyBinding.moveRight=Előnézet mozgatása jobbra	#
+resourcePack.editor.pastepreview.keyBinding.moveUp=Előnézet mozgatása fel	#
+resourcePack.editor.pastepreview.keyBinding.paste=Beillesztés	#
+resourcePack.editor.pastepreview.keyBinding.pasteAtCursor=Beillesztés a kurzornál	#
+resourcePack.editor.pastepreview.keyBinding.pastepreview=Beillesztés előnézete	#
+resourcePack.editor.pastepreview.keyBinding.quickPaste=Gyorsbeillesztés	#
+resourcePack.editor.pastepreview.keyBinding.rotateClockWise=Előnézet forgatása az óramutató járásával megegyező irányba	#
+resourcePack.editor.pastepreview.keyBinding.rotateCounterClockWise=Előnézet forgatása az óramutató járásával ellentétes irányba	#
+resourcePack.editor.pastepreview.keyBinding.toggleAdjacentTarget=Szomszédos célmód bekapcsolása	#
+resourcePack.editor.pastepreview.keyBinding.toggleBlockTarget=Blokk célmód bekapcsolása	#
+resourcePack.editor.pastepreview.keyBinding.toggleFixedDistance=Rögzített távolság engedélyezése	#
+resourcePack.editor.pastepreview.keyBinding.toggleMirrorX=X-tükrözés bekapcsolása	#
+resourcePack.editor.pastepreview.keyBinding.toggleMirrorZ=Z-tükrözés bekapcsolása	#
+resourcePack.editor.pastepreview.keyBinding.toggleMouseTracking=Egérkövetés be- vagy kikapcsolása	#
+resourcePack.editor.pastepreview.pane.controls.cursor.fixed=Rögzített távolság	#
+resourcePack.editor.pastepreview.pane.controls.cursor.keyboard=Csak billentyűk	#
+resourcePack.editor.pastepreview.pane.controls.cursor.mouseandkeys=Egér és billentyűk	#
+resourcePack.editor.pastepreview.pane.controls.cursor.target.block=Letiltás	#
+resourcePack.editor.pastepreview.pane.controls.cursor.target.face=Szomszédos	#
+resourcePack.editor.pastepreview.pane.controls.cursor.target.title=Célpont	#
+resourcePack.editor.pastepreview.pane.controls.cursor=Control	#
+resourcePack.editor.pastepreview.pane.controls.title=Kurzorvezérlők	#
+resourcePack.editor.pastepreview.pane.placement.mirrorX=X tükrözése	#
+resourcePack.editor.pastepreview.pane.placement.mirrorZ=Z tükrözése	#
+resourcePack.editor.pastepreview.pane.placement.offset=Eltolás	#
+resourcePack.editor.pastepreview.pane.placement.origin=Kezdőpont	#
+resourcePack.editor.pastepreview.pane.placement.pastebutton=Beillesztés	#
+resourcePack.editor.pastepreview.pane.placement.rotation=Forgatás (Y körül)	#
+resourcePack.editor.pastepreview.pane.placement.title=Elhelyezési beállítások	#
+resourcePack.editor.pastepreview.pane.root.size=Méret	#
+resourcePack.editor.pastepreview.pane.root.title=Beillesztés előnézete	#
+resourcePack.editor.pastepreview.tool.tip=Az egérrel állítsd be a vágólap előnézetének helyzetét, és kattints a világba való beillesztéshez	#
+resourcePack.editor.pastepreview.tool.title=Beillesztés előnézete	#
+
+
+resourcePack.editor.playerPositionExtension.dimension=Kiterjedés	#
+resourcePack.editor.playerPositionExtension.menu.player=Játékos	#
+resourcePack.editor.playerPositionExtension.menu.showPlayerSettings=Játékos beállításainak megjelenítése	#
+resourcePack.editor.playerPositionExtension.nether=Alvilág	#
+resourcePack.editor.playerPositionExtension.overworld=Felvilág	#
+resourcePack.editor.playerPositionExtension.pane=Játékosbeállítások	#
+resourcePack.editor.playerPositionExtension.theEnd=A Vég	#
+resourcePack.editor.playerPositionExtension.worldSettings=Világ beállításai	#
+
+
+resourcePack.editor.playtest.AdvancedSettings.title=Speciális beállítások	#
+resourcePack.editor.playtest.Dialog.DaylightCycle=Nappalok/éjszakák váltakozása	#
+resourcePack.editor.playtest.Dialog.Difficulty=Nehézség	#
+resourcePack.editor.playtest.Dialog.GameMode=Játékmód	#
+resourcePack.editor.playtest.Dialog.OverrideSpawn=Megjelenés a jelenlegi helyen	#
+resourcePack.editor.playtest.Dialog.ShowCoordinates=Koordináták megjelenítése	#
+resourcePack.editor.playtest.Dialog.TestButton=Világ tesztelése	#
+resourcePack.editor.playtest.Dialog.TimeOfDay=Napszak	#
+resourcePack.editor.playtest.Dialog.Title=Beállítások tesztelése	#
+resourcePack.editor.playtest.Dialog.Weather=Időjárás	#
+resourcePack.editor.playtest.Dialog.WeatherCycle=Időjárásciklus	#
+resourcePack.editor.playtest.Menu.Title=Világ tesztelése	#
+resourcePack.editor.playtest.Title.Tooltip=Tesztelheted a Szerkesztőbeli projektedet játszható Minecraft-világaként.  A projekted módosításai nem lesznek mentve.  Csak egyjátékos projektek futtatásakor érhető el.	#
+
+
+resourcePack.editor.playtestResult.EditorSystemFailure=Szerkesztő rendszerhibája	#
+resourcePack.editor.playtestResult.InvalidLevelId=Érvénytelen szintazonosító	#
+resourcePack.editor.playtestResult.InvalidSessionHandle=Érvénytelen játékmenet-azonosító	#
+resourcePack.editor.playtestResult.OK=Sikeres	#
+resourcePack.editor.playtestResult.PlayerNotFound=A játékos nem található	#
+resourcePack.editor.playtestResult.ResponseTimeout=Válasz időtúllépése	#
+resourcePack.editor.playtestResult.SessionInfoNotFound=A játékmenet adatai nem találhatók	#
+resourcePack.editor.playtestResult.TooManyPlayers=Nem tudsz tesztelni egy világot, ha más játékosoknak te vagy a házigazdája	#
+resourcePack.editor.playtestResult.UnspecifiedError=Ismeretlen hiba	#
+resourcePack.editor.playtestResult.UnsupportedScenario=A világ teszteléséhez a szerkesztőprojekt házigazdájának kell lenned	#
+resourcePack.editor.playtestResult.WorldExportBusy=A világ exportálása folyamatban	#
+resourcePack.editor.playtestResult.WorldExportFailed=A világ exportálása sikertelen	#
+
+
+resourcePack.editor.toolRail.RepeaterTool.title=Repeater Tool	#
+resourcePack.editor.toolRail.RepeaterTool.tooltip=Tool for repeating a selection volume	#
+resourcePack.editor.toolRail.RepeaterTool.pane.Spacing=Spacing	#
+resourcePack.editor.toolRail.RepeaterTool.pane.Repetitions=Repetitions	#
+resourcePack.editor.toolRail.RepeaterTool.pane.Preview=Preview	#
+resourcePack.editor.toolRail.RepeaterTool.pane.Clear=Clear	#
+resourcePack.editor.toolRail.RepeaterTool.pane.Apply=Apply	#
+resourcePack.editor.toolRail.RepeaterTool.statusMessage.noSelection=Use Selection tool to select a volume to repeat	#
+
+
+resourcePack.editor.selectionTool.deselect=Kijelölés törlése	#
+resourcePack.editor.selectionTool.fillPane.fillAction=Kijelölt terület kitöltése	#
+resourcePack.editor.selectionTool.fillPane.title=Kijelölt terület kitöltése	#
+resourcePack.editor.selectionTool.keyBinding.deselect=Kijelölt elemek kijelölésének megszüntetése	#
+resourcePack.editor.selectionTool.keyBinding.fill=Kijelölt terület tartalmának kitöltése	#
+resourcePack.editor.selectionTool.keyBinding.growBack=Kijelölés növelése hátrafelé	#
+resourcePack.editor.selectionTool.keyBinding.growDown=Kijelölés növelése lefelé	#
+resourcePack.editor.selectionTool.keyBinding.growForward=Kijelölés növelése előre	#
+resourcePack.editor.selectionTool.keyBinding.growLeft=Kijelölés növelése balra	#
+resourcePack.editor.selectionTool.keyBinding.growRight=Kijelölés növelése jobbra	#
+resourcePack.editor.selectionTool.keyBinding.growUp=Kijelölés növelése felfelé	#
+resourcePack.editor.selectionTool.keyBinding.moveAllSelectionBack=Összes kijelölt elem mozgatása hátra	#
+resourcePack.editor.selectionTool.keyBinding.moveAllSelectionDown=Összes kijelölt elem mozgatása le	#
+resourcePack.editor.selectionTool.keyBinding.moveAllSelectionForward=Összes kijelölt elem mozgatása előre	#
+resourcePack.editor.selectionTool.keyBinding.moveAllSelectionLeft=Összes kijelölt elem mozgatása balra	#
+resourcePack.editor.selectionTool.keyBinding.moveAllSelectionRight=Összes kijelölt elem mozgatása jobbra	#
+resourcePack.editor.selectionTool.keyBinding.moveAllSelectionUp=Összes kijelölt elem mozgatása felfelé	#
+resourcePack.editor.selectionTool.keyBinding.moveCursorBack=Kurzor mozgatása hátra	#
+resourcePack.editor.selectionTool.keyBinding.moveCursorDown=Kurzor mozgatása le	#
+resourcePack.editor.selectionTool.keyBinding.moveCursorForward=Kurzor mozgatása előre	#
+resourcePack.editor.selectionTool.keyBinding.moveCursorLeft=Kurzor mozgatása balra	#
+resourcePack.editor.selectionTool.keyBinding.moveCursorRight=Kurzor mozgatása jobbra	#
+resourcePack.editor.selectionTool.keyBinding.moveCursorUp=Kurzor mozgatása fel	#
+resourcePack.editor.selectionTool.keyBinding.moveSelectionBack=Kijelölés mozgatása hátra	#
+resourcePack.editor.selectionTool.keyBinding.moveSelectionDown=Kijelölés mozgatása le	#
+resourcePack.editor.selectionTool.keyBinding.moveSelectionForward=Kijelölés mozgatása előre	#
+resourcePack.editor.selectionTool.keyBinding.moveSelectionLeft=Kijelölés mozgatása balra	#
+resourcePack.editor.selectionTool.keyBinding.moveSelectionRight=Kijelölés jobbra mozgatása	#
+resourcePack.editor.selectionTool.keyBinding.moveSelectionUp=Kijelölés mozgatása fel	#
+resourcePack.editor.selectionTool.keyBinding.shrinkBack=Kijelölés csökkentése hátrafelé	#
+resourcePack.editor.selectionTool.keyBinding.shrinkDown=Kijelölés csökkentése lefelé	#
+resourcePack.editor.selectionTool.keyBinding.shrinkForward=Kijelölés csökkentése előre	#
+resourcePack.editor.selectionTool.keyBinding.shrinkLeft=Kijelölés csökkentése balra	#
+resourcePack.editor.selectionTool.keyBinding.shrinkRight=Kijelölés csökkentése jobbra	#
+resourcePack.editor.selectionTool.keyBinding.shrinkUp=Kijelölés csökkentése felfelé	#
+resourcePack.editor.selectionTool.keyBinding.toggleTool=Kijelölő eszköz ki-/bekapcsolása	#
+resourcePack.editor.selectionTool.marquee.title=Túlnyúló kiválasztás	#
+resourcePack.editor.selectionTool.modeSelection.freehand.title=Szabadkézi ecset mód	#
+resourcePack.editor.selectionTool.modeSelection.freehand.tooltip=Szabadkézi ecset alakban jelöl ki blokkokat a világban	#
+resourcePack.editor.selectionTool.modeSelection.marquee.title=Fényújság mód	#
+resourcePack.editor.selectionTool.modeSelection.marquee.tooltip=Téglatest alakban jelöl ki blokkokat a világban	#
+resourcePack.editor.selectionTool.modeSelection.title=Kijelölési mód	#
+resourcePack.editor.selectionTool.projectThroughLiquid=Vetítés folyadékon keresztül	#
+resourcePack.editor.selectionTool.quickAction.clearSelection.tooltip=Aktuális kiválasztásos kötet kiválasztásának visszavonása	#
+resourcePack.editor.selectionTool.quickAction.clearSelection=Kiválasztás törlése	#
+resourcePack.editor.selectionTool.quickAction.deleteSelection.tooltip=Eltávolítja az összes blokkot az aktuális kiválasztásos köteten belül	#
+resourcePack.editor.selectionTool.quickAction.deleteSelection=Törlés	#
+resourcePack.editor.selectionTool.quickAction.fillSelection.tooltip=Aktuális kiválasztásos kötet kitöltése a jelenleg kiválasztott blokktípussal	#
+resourcePack.editor.selectionTool.quickAction.fillSelection=Kitöltés	#
+resourcePack.editor.selectionTool.quickAction.title=Gyorsműveletek	#
+resourcePack.editor.selectionTool.selectionMode.adjacent=Szomszédos	#
+resourcePack.editor.selectionTool.selectionMode.fixedDistance=Rögzített távolság	#
+resourcePack.editor.selectionTool.selectionMode.mouseAndKeyboard=Szabadkézi rajz	#
+resourcePack.editor.selectionTool.selectionMode=Mód	#
+resourcePack.editor.selectionTool.settingsPane.title=Kijelölés	#
+resourcePack.editor.selectionTool.toolRail.description=Kattints a bal egérgombbal a kijelöléshez; CTRL + D a kijelölés törléséhez	#
+resourcePack.editor.selectionTool.toolRail.title=Kijelölés	#
+resourcePack.editor.selectionTool.transformPane.origin.tooltip=A kijelölési térfogat származási helye a világkoordinátákban.	#
+resourcePack.editor.selectionTool.transformPane.origin=Kezdőpont	#
+resourcePack.editor.selectionTool.transformPane.size=Méret	#
+resourcePack.editor.selectionTool.transformPane.title=Átalakítás	#
+
+
 resourcePack.editor.server.description=Szerkesztői szervererőforrások	#
 resourcePack.editor.server.name=Szerkesztői erőforrások	#
 
-resourcePack.editor.global.keyBinding.toggleMode=Módváltás	#
+
+resourcePack.editor.toolRail.Terrain.title=Terrain	#
+resourcePack.editor.toolRail.Terrain.Mode.title=Terrain Mode	#
+resourcePack.editor.toolRail.Terrain.Smooth.mode.title=Smooth Mode	#
+resourcePack.editor.toolRail.Terrain.Smooth.tooltip=Smooth over terrain based on smoothing strength	#
+resourcePack.editor.toolRail.Terrain.SmoothStrength=Smooth Strength	#
+resourcePack.editor.toolRail.Terrain.description=Terrain tool smooths or roughens terrain	#
+
+
+resourcePack.editor.help.learnMore=További részletek	#
+
+resourcePack.editor.statusBar.connectedPlayers=Csatlakozott játékosok %s	#
+
+
+resourcePack.editor.summonTool.summonSubPane.EntityPickerTitle=Entitás típusa	#
+
+
+resourcePack.editor.timeOfDay.12hrClock=12 órás óra	#
+resourcePack.editor.timeOfDay.24hrClock=24 órás óra	#
+resourcePack.editor.timeOfDay.clockType=Óra típusa	#
+resourcePack.editor.timeOfDay.currentTime=Jelenlegi idő	#
+resourcePack.editor.timeOfDay.customTime=Egyéni idő	#
+resourcePack.editor.timeOfDay.daylightCycle=Nappalok/éjszakák váltakozása	#
+resourcePack.editor.timeOfDay.dropDown.day=Nappal	#
+resourcePack.editor.timeOfDay.dropDown.midnight=Éjfél	#
+resourcePack.editor.timeOfDay.dropDown.night=Éjszaka	#
+resourcePack.editor.timeOfDay.dropDown.none=Nincs	#
+resourcePack.editor.timeOfDay.dropDown.noon=Dél	#
+resourcePack.editor.timeOfDay.dropDown.sunrise=Napkelte	#
+resourcePack.editor.timeOfDay.dropDown.sunset=Napnyugta	#
+resourcePack.editor.timeOfDay.dropDown.title=Minták	#
+resourcePack.editor.timeOfDay.menu.title=Napszak beállításai	#
+resourcePack.editor.timeOfDay.minecraftClock=Minecraft-óra	#
+resourcePack.editor.timeOfDay.title=Idő beállításai	#
+
 
 resourcePack.editor.toolMode.keyBinding.console=Konzol megnyitása	#
 resourcePack.editor.toolMode.keyBinding.devConsole=Fejlesztői konzol megnyitása	#
@@ -22,509 +626,94 @@ resourcePack.editor.toolMode.keyBinding.hotbar7=7. eszköztár kiválasztása	#
 resourcePack.editor.toolMode.keyBinding.hotbar8=8. eszköztár kiválasztása	#
 resourcePack.editor.toolMode.keyBinding.hotbar9=9. eszköztár kiválasztása	#
 
-resourcePack.editor.viewport.keyBinding.moveUp=Feljebb	#
-resourcePack.editor.viewport.keyBinding.moveDown=Lejjebb	#
-resourcePack.editor.viewport.keyBinding.moveLeft=Mozgás balra	#
-resourcePack.editor.viewport.keyBinding.moveRight=Mozgás jobbra	#
-resourcePack.editor.viewport.keyBinding.moveForward=Mozgás előre	#
-resourcePack.editor.viewport.keyBinding.moveBack=Mozgás visszafelé	#
-
-resourcePack.editor.locate.title=Lokalizálás	#
-resourcePack.editor.locate.locatetype.title=Típus megkeresése	#
-resourcePack.editor.locate.locatetype.biome=Biom	#
-resourcePack.editor.locate.locatetype.structure=Szerkezet	#
-resourcePack.editor.locate.biome.title=Biom	#
-resourcePack.editor.locate.biome.find=Biom keresése	#
-resourcePack.editor.locate.structure.title=Szerkezet	#
-resourcePack.editor.locate.structure.message=A szerkezet keresése jelenleg nem támogatott	#
-resourcePack.editor.locate.results.title=Eredmények	#
-resourcePack.editor.locate.results.foundat.title=Találat a következő helyen:	#
-resourcePack.editor.locate.results.foundat=Találat a következő helyen:	#
-resourcePack.editor.locate.results.notfound.title=Nincs találat	#
-resourcePack.editor.locate.results.notfound=Nincs találat	#
-resourcePack.editor.locate.keyBinding.toggleTool=Biomészlelő eszköz ki-/bekapcsolása	#
-resourcePack.editor.locate.results.goto=Ugrás:	#
-
-resourcePack.editor.statusBar.connectedPlayers=Csatlakozott játékosok %s	#
-
-resourcePack.editor.brushShape.common.settings.uniform=Egységes	#
-resourcePack.editor.brushShape.common.settings.radius=Sugár	#
-resourcePack.editor.brushShape.common.settings.length=Hossz	#
-resourcePack.editor.brushShape.common.settings.axis=Tengely kitolása	#
-resourcePack.editor.brushShape.common.settings.xAxis=X tengely	#
-resourcePack.editor.brushShape.common.settings.yAxis=Y tengely	#
-resourcePack.editor.brushShape.common.settings.zAxis=Z tengely	#
-resourcePack.editor.brushShape.common.settings.xAxisNeg=–X tengely	#
-resourcePack.editor.brushShape.common.settings.yAxisNeg=–Y tengely	#
-resourcePack.editor.brushShape.common.settings.zAxisNeg=–Z tengely	#
-
-resourcePack.editor.brushShape.cylinder.name=Henger	#
-resourcePack.editor.brushShape.cylinder.settings.width=Szélesség sugara	#
-resourcePack.editor.brushShape.cylinder.settings.depth=Mélység sugara	#
-
-resourcePack.editor.brushShape.cone.name=Tölcsér	#
-resourcePack.editor.brushShape.cone.settings.length=Kitolási hossz	#
-resourcePack.editor.brushShape.cone.settings.width=Szélesség sugara	#
-resourcePack.editor.brushShape.cone.settings.depth=Mélység sugara	#
-
-resourcePack.editor.brushShape.cuboid.name=Téglatest	#
-resourcePack.editor.brushShape.cuboid.settings.x_length=X hossza	#
-resourcePack.editor.brushShape.cuboid.settings.y_length=Y hossza	#
-resourcePack.editor.brushShape.cuboid.settings.z_length=Z hossza	#
-
-resourcePack.editor.brushShape.singleBlock.name=Egyetlen blokk	#
-
-resourcePack.editor.brushShape.pyramid.name=Piramis	#
-resourcePack.editor.brushShape.pyramid.settings.width=Szélesség	#
-resourcePack.editor.brushShape.pyramid.settings.depth=Mélység	#
-resourcePack.editor.brushShape.pyramid.settings.length=Hossz	#
-
-resourcePack.editor.brushShape.ellipsoid.name=Ellipszoid	#
-resourcePack.editor.brushShape.ellipsoid.settings.x_radius=X sugár	#
-resourcePack.editor.brushShape.ellipsoid.settings.y_radius=Y sugár	#
-resourcePack.editor.brushShape.ellipsoid.settings.z_radius=Z sugár	#
-
-resourcePack.editor.toolRail.floodFillSelectionTool.title=Területfeltöltés-kiválasztó eszköz.	#
-resourcePack.editor.toolRail.floodFillSelectionTool.description=Kiválasztja az aktuálisan megtekintett területet a területkitöltési algoritmus használatával.	#
-resourcePack.editor.playerPositionExtension.dimension=Kiterjedés	#
-resourcePack.editor.playerPositionExtension.menu.player=Játékos	#
-resourcePack.editor.playerPositionExtension.menu.showPlayerSettings=Játékos beállításainak megjelenítése	#
-resourcePack.editor.playerPositionExtension.nether=Alvilág	#
-resourcePack.editor.playerPositionExtension.overworld=Felvilág	#
-resourcePack.editor.playerPositionExtension.pane=Játékosbeállítások	#
-resourcePack.editor.playerPositionExtension.theEnd=A Vég	#
-resourcePack.editor.playerPositionExtension.worldSettings=Világ beállításai	#
-resourcePack.editor.paste.toolRail.title=Beillesztés előnézete	#
-resourcePack.editor.paste.toolRail.description=Kattints a bal egérgombbal egy blokk kijelöléséhez, majd illessz be pontosan egy vágólapon lévő elemet	#
-resourcePack.editor.paste.pane.title=Beillesztés	#
-resourcePack.editor.paste.pane.submitButton=Beillesztés megerősítése	#
-resourcePack.editor.paste.pane.transform.title=Átalakítás	#
-resourcePack.editor.paste.pane.transform.origin.title=Eltolás	#
-resourcePack.editor.paste.pane.transform.rotation.title=Forgatás	#
-resourcePack.editor.paste.pane.transform.rotation.none=0°	#
-resourcePack.editor.paste.pane.transform.rotation.90=90°	#
-resourcePack.editor.paste.pane.transform.rotation.180=180°	#
-resourcePack.editor.paste.pane.transform.rotation.270=270	#
-resourcePack.editor.paste.pane.transform.mirrorX=X tükrözése	#
-resourcePack.editor.paste.pane.transform.mirrorZ=Z tükrözése	#
-
-resourcePack.editor.core.keyBinding.showLogPanel=Naplópanel megjelenítése	#
-resourcePack.editor.core.keyBinding.showGameMenu=Játékmenü megjelenítése	#
-
-resourcePack.editor.delete.keyBinding=Kijelölés tartalmának törlése	#
-
-resourcePack.editor.navigation.keyBinding.add=Navigációs pozíció hozzáadása	#
-resourcePack.editor.navigation.keyBinding.previous=Ugrás az előző navigációs pozícióhoz	#
-resourcePack.editor.navigation.keyBinding.next=Ugrás a következő navigációs pozícióhoz	#
-
-resourcePack.editor.transaction.keyBinding.undo=Visszavonás	#
-resourcePack.editor.transaction.keyBinding.redo=Újra	#
-
-resourcePack.editor.goToMark.title=Navigációs panel	#
-resourcePack.editor.goToMark.actionBar.tooltip.title=Navigációs panel	#
-resourcePack.editor.goToMark.actionBar.tooltip.description=Eszközpanel a játékos navigációjához	#
-resourcePack.editor.goToMark.pane.showMap=Térkép megjelenítése	#
-resourcePack.editor.goToMark.pane.mapSize=Pályaméret	#
-resourcePack.editor.goToMark.pane.refreshMap=Térkép frissítése	#
-resourcePack.editor.goToMark.pane.location=Játékos pozíciója	#
-resourcePack.editor.goToMark.pane.teleport=Teleportálás adott helyre	#
-resourcePack.editor.goToMark.pane.setSpawn=Teremtődési pont beállítása aktuálisként	#
-resourcePack.editor.goToMark.pane.goToSpawn=Ugrás a teremtődési ponthoz	#
-resourcePack.editor.goToMark.pane.locationPane.title=Mentett helyek	#
-resourcePack.editor.goToMark.pane.locationPane.markColor=Hely jelölőszíne	#
-resourcePack.editor.goToMark.pane.locationPane.teleport=Teleportálás mentett helyre %1$s	#
-resourcePack.editor.goToMark.pane.locationPane.delete=Mentett hely törlése	#
-resourcePack.editor.goToMark.pane.locationPane.inputName=Új név	#
-resourcePack.editor.goToMark.pane.locationPane.store=Aktuális hely mentése új néven...	#
-resourcePack.editor.goToMark.pane.locationPane.dropdownLabel=Mentett hely	#
-
-resourcePack.editor.grapple.keyBinding.flyToCursor=Repülés a kurzorhoz	#
-resourcePack.editor.grapple.keyBinding.flyToSelection=Repülés a kijelöléshez	#
-
-resourcePack.editor.selectionTool.modeSelection.title=Kijelölési mód	#
-resourcePack.editor.selectionTool.modeSelection.marquee.title=Fényújság mód	#
-resourcePack.editor.selectionTool.modeSelection.marquee.tooltip=Téglatest alakban jelöl ki blokkokat a világban	#
-resourcePack.editor.selectionTool.modeSelection.freehand.title=Szabadkézi ecset mód	#
-resourcePack.editor.selectionTool.modeSelection.freehand.tooltip=Szabadkézi ecset alakban jelöl ki blokkokat a világban	#
-
-resourcePack.editor.selectionTool.deselect=Kijelölés törlése	#
-resourcePack.editor.selectionTool.fillPane.title=Kijelölt terület kitöltése	#
-resourcePack.editor.selectionTool.fillPane.fillAction=Kijelölt terület kitöltése	#
-resourcePack.editor.selectionTool.toolRail.title=Kijelölés	#
-resourcePack.editor.selectionTool.toolRail.description=Kattints a bal egérgombbal a kijelöléshez; CTRL + D a kijelölés törléséhez	#
-resourcePack.editor.selectionTool.selectionMode=Mód	#
-resourcePack.editor.selectionTool.selectionMode.mouseAndKeyboard=Szabadkézi rajz	#
-resourcePack.editor.selectionTool.selectionMode.fixedDistance=Rögzített távolság	#
-resourcePack.editor.selectionTool.selectionMode.adjacent=Szomszédos	#
-resourcePack.editor.selectionTool.settingsPane.title=Kijelölés	#
-resourcePack.editor.selectionTool.transformPane.title=Átalakítás	#
-resourcePack.editor.selectionTool.transformPane.origin=Kezdőpont	#
-resourcePack.editor.selectionTool.transformPane.origin.tooltip=A kijelölési térfogat származási helye a világkoordinátákban.	#
-resourcePack.editor.selectionTool.transformPane.size=Méret	#
-resourcePack.editor.selectionTool.quickAction.title=Gyorsműveletek	#
-resourcePack.editor.selectionTool.quickAction.clearSelection=Kiválasztás törlése	#
-resourcePack.editor.selectionTool.quickAction.clearSelection.tooltip=Aktuális kiválasztásos kötet kiválasztásának visszavonása	#
-resourcePack.editor.selectionTool.quickAction.fillSelection=Kitöltés	#
-resourcePack.editor.selectionTool.quickAction.fillSelection.tooltip=Aktuális kiválasztásos kötet kitöltése a jelenleg kiválasztott blokktípussal	#
-resourcePack.editor.selectionTool.projectThroughLiquid=Vetítés folyadékon keresztül	#
-resourcePack.editor.selectionTool.keyBinding.moveCursorForward=Kurzor mozgatása előre	#
-resourcePack.editor.selectionTool.keyBinding.moveCursorBack=Kurzor mozgatása hátra	#
-resourcePack.editor.selectionTool.keyBinding.moveCursorLeft=Kurzor mozgatása balra	#
-resourcePack.editor.selectionTool.keyBinding.moveCursorRight=Kurzor mozgatása jobbra	#
-resourcePack.editor.selectionTool.keyBinding.moveCursorUp=Kurzor mozgatása fel	#
-resourcePack.editor.selectionTool.keyBinding.moveCursorDown=Kurzor mozgatása le	#
-resourcePack.editor.selectionTool.keyBinding.moveSelectionForward=Kijelölés mozgatása előre	#
-resourcePack.editor.selectionTool.keyBinding.moveSelectionBack=Kijelölés mozgatása hátra	#
-resourcePack.editor.selectionTool.keyBinding.moveSelectionLeft=Kijelölés mozgatása balra	#
-resourcePack.editor.selectionTool.keyBinding.moveSelectionRight=Kijelölés jobbra mozgatása	#
-resourcePack.editor.selectionTool.keyBinding.moveSelectionUp=Kijelölés mozgatása fel	#
-resourcePack.editor.selectionTool.keyBinding.moveSelectionDown=Kijelölés mozgatása le	#
-resourcePack.editor.selectionTool.keyBinding.moveAllSelectionForward=Összes kijelölt elem mozgatása előre	#
-resourcePack.editor.selectionTool.keyBinding.moveAllSelectionBack=Összes kijelölt elem mozgatása hátra	#
-resourcePack.editor.selectionTool.keyBinding.moveAllSelectionLeft=Összes kijelölt elem mozgatása balra	#
-resourcePack.editor.selectionTool.keyBinding.moveAllSelectionRight=Összes kijelölt elem mozgatása jobbra	#
-resourcePack.editor.selectionTool.keyBinding.moveAllSelectionUp=Összes kijelölt elem mozgatása felfelé	#
-resourcePack.editor.selectionTool.keyBinding.moveAllSelectionDown=Összes kijelölt elem mozgatása le	#
-resourcePack.editor.selectionTool.keyBinding.growForward=Kijelölés növelése előre	#
-resourcePack.editor.selectionTool.keyBinding.growBack=Kijelölés növelése hátrafelé	#
-resourcePack.editor.selectionTool.keyBinding.growLeft=Kijelölés növelése balra	#
-resourcePack.editor.selectionTool.keyBinding.growRight=Kijelölés növelése jobbra	#
-resourcePack.editor.selectionTool.keyBinding.growUp=Kijelölés növelése felfelé	#
-resourcePack.editor.selectionTool.keyBinding.growDown=Kijelölés növelése lefelé	#
-resourcePack.editor.selectionTool.keyBinding.shrinkForward=Kijelölés csökkentése előre	#
-resourcePack.editor.selectionTool.keyBinding.shrinkBack=Kijelölés csökkentése hátrafelé	#
-resourcePack.editor.selectionTool.keyBinding.shrinkLeft=Kijelölés csökkentése balra	#
-resourcePack.editor.selectionTool.keyBinding.shrinkRight=Kijelölés csökkentése jobbra	#
-resourcePack.editor.selectionTool.keyBinding.shrinkUp=Kijelölés csökkentése felfelé	#
-resourcePack.editor.selectionTool.keyBinding.shrinkDown=Kijelölés csökkentése lefelé	#
-resourcePack.editor.selectionTool.keyBinding.toggleTool=Kijelölő eszköz ki-/bekapcsolása	#
-resourcePack.editor.selectionTool.keyBinding.fill=Kijelölt terület tartalmának kitöltése	#
-resourcePack.editor.selectionTool.keyBinding.deselect=Kijelölt elemek kijelölésének megszüntetése	#
-
-resourcePack.editor.actionBar.redo=Újra	#
-resourcePack.editor.actionBar.redo.tooltipTitle=Újra	#
-resourcePack.editor.actionBar.redo.tooltipDescription=Tranzakció megismétlése	#
-resourcePack.editor.actionBar.undo=Visszavonás	#
-resourcePack.editor.actionBar.undo.tooltipTitle=Visszavonás	#
-resourcePack.editor.actionBar.undo.tooltipDescription=Tranzakció visszavonása	#
-
-resourcePack.editor.menuBar.file=Fájl	#
-resourcePack.editor.menuBar.file.export=Exportálás	#
-resourcePack.editor.menuBar.file.export.world=Játszható világ	#
-resourcePack.editor.menuBar.file.export.project=Projekt szerkesztő módban	#
-resourcePack.editor.menuBar.file.pauseScreen=Játékmenü	#
-resourcePack.editor.menuBar.file.settings=Felhasználói felület beállításai	#
-resourcePack.editor.menuBar.file.cursor=Kurzorbeállítások	#
-resourcePack.editor.menuBar.file.cursor.projectThroughLiquid=Vetítés folyadékon keresztül	#
-resourcePack.editor.menuBar.edit=Szerkesztés	#
-resourcePack.editor.menuBar.edit.undo=Visszavonás	#
-resourcePack.editor.menuBar.edit.redo=Újra	#
-resourcePack.editor.menuBar.edit.deselect=Kijelölés törlése	#
-resourcePack.editor.menuBar.edit.cut=Kivágás	#
-resourcePack.editor.menuBar.edit.copy=Másolás	#
-resourcePack.editor.menuBar.edit.quickPaste=Gyorsbeillesztés	#
-resourcePack.editor.menuBar.edit.quickFill=Gyorskitöltés	#
-resourcePack.editor.menuBar.edit.delete=Törlés	#
-resourcePack.editor.menuBar.extensions=Bővítmények	#
-resourcePack.editor.menuBar.view=Megtekintés	#
-resourcePack.editor.menuBar.view.logging=Naplópanel	#
-resourcePack.editor.menuBar.view.navigationLogging=Navigáció naplózása	#
-resourcePack.editor.menuBar.view.blockPalette=Blokkpaletta	#
-resourcePack.editor.menuBar.worldOptions=Világ beállításai	#
-resourcePack.editor.menuBar.worldOptions.pause=Szünet	#
-resourcePack.editor.menuBar.worldOptions.pause.entities=Entitások	#
-resourcePack.editor.menuBar.worldOptions.changeDimension=Dimenzió váltása	#
-resourcePack.editor.menuBar.worldOptions.changeDimension.overworld=Felvilág	#
-resourcePack.editor.menuBar.worldOptions.changeDimension.nether=Alvilág	#
-resourcePack.editor.menuBar.worldOptions.changeDimension.end=Végpont	#
-resourcePack.editor.menuBar.experimental=Kísérleti	#
-resourcePack.editor.menuBar.locate=Lokalizálás	#
-resourcePack.editor.menuBar.parentMenu.weather=Időjárás	#
-resourcePack.editor.menuBar.parentMenu.weather.clear=Tiszta	#
-resourcePack.editor.menuBar.parentMenu.weather.rain=Esős	#
-resourcePack.editor.menuBar.parentMenu.weather.thunder=Mennydörgés	#
-resourcePack.editor.menuBar.help=Súgó	#
-resourcePack.editor.menuBar.help.quickStart=Gyorsindítás	#
-resourcePack.editor.menuBar.help.documentation=Dokumentáció	#
-resourcePack.editor.menuBar.help.feedback=Visszajelzés	#
-
-commands.editor.project.description=A jelenleg betöltött projekt kezelése	#
-commands.editor.project.unknownSubcommand=Ismeretlen alparancs	#
-commands.editor.project.export=projekt exportálása	#
-commands.editor.project.exportComplete=Az exportálás kész, a fájlok mentve ide: %s	#
-commands.editor.project.beginExport=Exportálás...	#
-commands.editor.project.exportCopyFailed=A szintadatok másolása nem sikerült %s	#
-
-## resourcePack.editor.playtestResult. is a prefix that maps directly to an enum value in the editor
-## Ensure that the spelling and case is identical to the enumeration in C++/TypeScript for
-## enum `Editor::Playtest::SessionResult`
-
-resourcePack.editor.playtestResult.OK=Sikeres	#
-resourcePack.editor.playtestResult.InvalidSessionHandle=Érvénytelen játékmenet-azonosító	#
-resourcePack.editor.playtestResult.SessionInfoNotFound=A játékmenet adatai nem találhatók	#
-resourcePack.editor.playtestResult.TooManyPlayers=Nem tudsz tesztelni egy világot, ha más játékosoknak te vagy a házigazdája	#
-resourcePack.editor.playtestResult.WorldExportFailed=A világ exportálása sikertelen	#
-resourcePack.editor.playtestResult.WorldExportBusy=A világ exportálása folyamatban	#
-resourcePack.editor.playtestResult.UnsupportedScenario=A világ teszteléséhez a szerkesztőprojekt házigazdájának kell lenned	#
-resourcePack.editor.playtestResult.EditorSystemFailure=Szerkesztő rendszerhibája	#
-resourcePack.editor.playtestResult.InvalidLevelId=Érvénytelen szintazonosító	#
-resourcePack.editor.playtestResult.PlayerNotFound=A játékos nem található	#
-resourcePack.editor.playtestResult.ResponseTimeout=Válasz időtúllépése	#
-resourcePack.editor.playtestResult.UnspecifiedError=Ismeretlen hiba	#
-
-
-resourcePack.editor.playtest.Menu.Title=Világ tesztelése	#
-resourcePack.editor.playtest.Title.Tooltip=Tesztelheted a Szerkesztőbeli projektedet játszható Minecraft-világaként.  A projekted módosításai nem lesznek mentve.  Csak egyjátékos projektek futtatásakor érhető el.	#
-resourcePack.editor.playtest.Dialog.Title=Beállítások tesztelése	#
-resourcePack.editor.playtest.Dialog.GameMode=Játékmód	#
-resourcePack.editor.playtest.Dialog.Difficulty=Nehézség	#
-resourcePack.editor.playtest.Dialog.DaylightCycle=Nappalok/éjszakák váltakozása	#
-resourcePack.editor.playtest.Dialog.Weather=Időjárás	#
-resourcePack.editor.playtest.Dialog.WeatherCycle=Időjárásciklus	#
-resourcePack.editor.playtest.Dialog.ShowCoordinates=Koordináták megjelenítése	#
-resourcePack.editor.playtest.Dialog.OverrideSpawn=Megjelenés a jelenlegi helyen	#
-resourcePack.editor.playtest.Dialog.TimeOfDay=Napszak	#
-resourcePack.editor.playtest.Dialog.TestButton=Világ tesztelése	#
-
-resourcePack.editor.toolRail.line.title=Vonal	#
-resourcePack.editor.toolRail.line.tooltip=A Vonal szerszám blokkokból hoz létre vonalakat	#
-resourcePack.editor.toolRail.line.pane.width.title=Szélesség	#
-resourcePack.editor.toolRail.line.pane.selectionMode=Kijelölés	#
-resourcePack.editor.toolRail.line.pane.selectionMode.freeForm=Szabadkézi rajz	#
-resourcePack.editor.toolRail.line.pane.selectionMode.fixedDistance=Rögzített távolság	#
-resourcePack.editor.toolRail.line.pane.selectionMode.adjacent=Szomszédos lap	#
-resourcePack.editor.toolRail.line.pane.height.title=Magasság	#
-resourcePack.editor.toolRail.line.pane.algorithm.title=Algoritmus	#
-resourcePack.editor.toolRail.line.pane.algorithm.Direct=Irányítás	#
-resourcePack.editor.toolRail.line.pane.algorithm.Staggered=Lépcsőzetes (kerítések)	#
-resourcePack.editor.toolRail.line.pane.surfaceContour=Felület kontúrja	#
-resourcePack.editor.toolRail.line.pane.fillAction=Kijelölt terület kitöltése	#
-resourcePack.editor.toolRail.line.keyBinding.selectAll=Összes kijelölése	#
-resourcePack.editor.toolRail.line.keyBinding.deselect=Kijelölés törlése	#
-resourcePack.editor.toolRail.line.keyBinding.deselectAll=Összes kijelölés törlése	#
-resourcePack.editor.toolRail.line.keyBinding.fillAndClear=Tartalmak kitöltése és a kijelölés megszüntetése	#
-resourcePack.editor.toolRail.line.keyBinding.fill=Tartalmak kiltöltése	#
-resourcePack.editor.toolRail.line.keyBinding.deleteAndClear=Tartalmak törlése és kijelölésének megszüntetése	#
-resourcePack.editor.toolRail.line.keyBinding.delete=Tartalmak törlése	#
-resourcePack.editor.toolRail.line.keyBinding.moveForward=Kijelölt elemek mozgatása előre	#
-resourcePack.editor.toolRail.line.keyBinding.moveBack=Kijelölt elemek mozgatása hátra	#
-resourcePack.editor.toolRail.line.keyBinding.moveLeft=Kijelölt elemek mozgatása balra	#
-resourcePack.editor.toolRail.line.keyBinding.moveRight=Kijelölt elemek mozgatása jobbra	#
-resourcePack.editor.toolRail.line.keyBinding.moveUp=Kijelölt elemek mozgatása felfelé	#
-resourcePack.editor.toolRail.line.keyBinding.moveDown=Kijelölt elemek mozgatása le	#
-
-resourcePack.editor.timeOfDay.menu.title=Napszak beállításai	#
-resourcePack.editor.timeOfDay.dropDown.title=Minták	#
-resourcePack.editor.timeOfDay.dropDown.none=Nincs	#
-resourcePack.editor.timeOfDay.dropDown.sunrise=Napkelte	#
-resourcePack.editor.timeOfDay.dropDown.day=Nappal	#
-resourcePack.editor.timeOfDay.dropDown.noon=Dél	#
-resourcePack.editor.timeOfDay.dropDown.sunset=Napnyugta	#
-resourcePack.editor.timeOfDay.dropDown.night=Éjszaka	#
-resourcePack.editor.timeOfDay.dropDown.midnight=Éjfél	#
-resourcePack.editor.timeOfDay.title=Idő beállításai	#
-resourcePack.editor.timeOfDay.clockType=Óra típusa	#
-resourcePack.editor.timeOfDay.24hrClock=24 órás óra	#
-resourcePack.editor.timeOfDay.12hrClock=12 órás óra	#
-resourcePack.editor.timeOfDay.minecraftClock=Minecraft-óra	#
-resourcePack.editor.timeOfDay.daylightCycle=Nappalok/éjszakák váltakozása	#
-resourcePack.editor.timeOfDay.currentTime=Jelenlegi idő	#
-resourcePack.editor.timeOfDay.customTime=Egyéni idő	#
 
 resourcePack.editor.toolRail.blockPalette.title=Blokkpaletta (CTRL+P)	#
 resourcePack.editor.toolRail.blockPalette.tooltip=Állíts be egy palettát a kedvenc vagy leggyakrabban használt blokkjaidhoz	#
-resourcePack.editor.blockPalette.addSearchItem=Talált blokk használata	#
-resourcePack.editor.blockPalette.title=Blokkpaletta	#
-resourcePack.editor.blockPalette.paletteDropdown.title=Paletta	#
-resourcePack.editor.blockPalette.blockPicker=Keresés	#
+resourcePack.editor.toolRail.flattenBrush.title=Simítás ecsetje	#
+resourcePack.editor.toolRail.flattenBrush.tooltip=Függőlegesen a kijelölt blokk magasságához igazítja az adott területet	#
+resourcePack.editor.toolRail.flattenBrush.settings.heightThreshold=Magasságküszöb	#
+resourcePack.editor.toolRail.flattenBrush.settings.radius=Sugár	#
+resourcePack.editor.toolRail.floodFillSelectionTool.description=Kiválasztja az aktuálisan megtekintett területet a területkitöltési algoritmus használatával.	#
+resourcePack.editor.toolRail.floodFillSelectionTool.title=Területfeltöltés-kiválasztó eszköz.	#
+resourcePack.editor.toolRail.line.keyBinding.delete=Tartalmak törlése	#
+resourcePack.editor.toolRail.line.keyBinding.deleteAndClear=Tartalmak törlése és kijelölésének megszüntetése	#
+resourcePack.editor.toolRail.line.keyBinding.deselect=Kijelölés törlése	#
+resourcePack.editor.toolRail.line.keyBinding.deselectAll=Összes kijelölés törlése	#
+resourcePack.editor.toolRail.line.keyBinding.fill=Tartalmak kiltöltése	#
+resourcePack.editor.toolRail.line.keyBinding.fillAndClear=Tartalmak kitöltése és a kijelölés megszüntetése	#
+resourcePack.editor.toolRail.line.keyBinding.moveBack=Kijelölt elemek mozgatása hátra	#
+resourcePack.editor.toolRail.line.keyBinding.moveDown=Kijelölt elemek mozgatása le	#
+resourcePack.editor.toolRail.line.keyBinding.moveForward=Kijelölt elemek mozgatása előre	#
+resourcePack.editor.toolRail.line.keyBinding.moveLeft=Kijelölt elemek mozgatása balra	#
+resourcePack.editor.toolRail.line.keyBinding.moveRight=Kijelölt elemek mozgatása jobbra	#
+resourcePack.editor.toolRail.line.keyBinding.moveUp=Kijelölt elemek mozgatása felfelé	#
+resourcePack.editor.toolRail.line.keyBinding.selectAll=Összes kijelölése	#
+resourcePack.editor.toolRail.line.pane.algorithm.Direct=Irányítás	#
+resourcePack.editor.toolRail.line.pane.algorithm.Staggered=Lépcsőzetes (kerítések)	#
+resourcePack.editor.toolRail.line.pane.algorithm.title=Algoritmus	#
+resourcePack.editor.toolRail.line.pane.fillAction=Kijelölt terület kitöltése	#
+resourcePack.editor.toolRail.line.pane.height.title=Magasság	#
+resourcePack.editor.toolRail.line.pane.selectionMode.adjacent=Szomszédos lap	#
+resourcePack.editor.toolRail.line.pane.selectionMode.fixedDistance=Rögzített távolság	#
+resourcePack.editor.toolRail.line.pane.selectionMode.freeForm=Szabadkézi rajz	#
+resourcePack.editor.toolRail.line.pane.selectionMode=Kijelölés	#
+resourcePack.editor.toolRail.line.pane.surfaceContour=Felület kontúrja	#
+resourcePack.editor.toolRail.line.pane.width.title=Szélesség	#
+resourcePack.editor.toolRail.line.title=Vonal	#
+resourcePack.editor.toolRail.line.tooltip=A Vonal szerszám blokkokból hoz létre vonalakat	#
+resourcePack.editor.toolRail.rulerTool.title=Vonalzó eszköz	#
+resourcePack.editor.toolRail.rulerTool.tooltip=Távolság mérése	#
+resourcePack.editor.toolRail.rulerTool.info.title=Mérés	#
 
-resourcePack.editor.toolRail.summonTool.pane.title=Idéző eszköz	#
-resourcePack.editor.toolRail.summonTool.pane.type=Entitás típusa	#
-resourcePack.editor.toolRail.summonTool.pane.select=Kiválasztás mód	#
-resourcePack.editor.toolRail.summonTool.tool.title=Idéző eszköz	#
-resourcePack.editor.toolRail.summonTool.tool.tip=Kattints entitások idézéséhez	#
-resourcePack.editor.toolRail.summonTool.tool.summonSubPane=Entitás idézése	#
-resourcePack.editor.toolRail.summonTool.tool.selectSubPane=Entitás kiválasztása	#
-resourcePack.editor.toolRail.summonTool.tool.selectSubPane.rotation=Forgatás	#
-resourcePack.editor.toolRail.summonTool.tool.infoText=Kattints egy entitásra annak kiválasztásához, vagy kattints a térképre egy új entitás megidézéséhez	#
-resourcePack.editor.summonTool.summonSubPane.EntityPickerTitle=Entitás típusa	#
-resourcePack.editor.toolRail.summonTool.keyBinding.toggle=Idéző eszköz be-/kikapcsolása	#
-resourcePack.editor.toolRail.summonTool.keyBinding.delete=Entitás törlése	#
+
+resourcePack.editor.toolRail.smartFillTool.title=Smart Fill Tool	#
+resourcePack.editor.toolRail.smartFillTool.tooltip=Click to fill a connected set of blocks	#
+resourcePack.editor.toolRail.smartFillTool.modes.fillVolume=Fill Volume	#
+resourcePack.editor.toolRail.smartFillTool.areaLimit.title=Area Limit	#
+resourcePack.editor.toolRail.smartFillTool.areaLimit.tooltip=Maximum area to fill	#
+
+
 resourcePack.editor.toolRail.summonTool.keyBinding.clear=Kijelölés törlése	#
-resourcePack.editor.toolRail.summonTool.keyBinding.moveForward=Kijelölt elemek mozgatása előre	#
+resourcePack.editor.toolRail.summonTool.keyBinding.delete=Entitás törlése	#
 resourcePack.editor.toolRail.summonTool.keyBinding.moveBack=Kijelölt elemek mozgatása hátra	#
+resourcePack.editor.toolRail.summonTool.keyBinding.moveDown=Kijelölt elemek mozgatása lefelé	#
+resourcePack.editor.toolRail.summonTool.keyBinding.moveForward=Kijelölt elemek mozgatása előre	#
 resourcePack.editor.toolRail.summonTool.keyBinding.moveLeft=Kijelölt elemek mozgatása balra	#
 resourcePack.editor.toolRail.summonTool.keyBinding.moveRight=Kijelölt elemek mozgatása jobbra	#
 resourcePack.editor.toolRail.summonTool.keyBinding.moveUp=Kijelölt elemek mozgatása felfelé	#
-resourcePack.editor.toolRail.summonTool.keyBinding.moveDown=Kijelölt elemek mozgatása lefelé	#
+resourcePack.editor.toolRail.summonTool.keyBinding.toggle=Idéző eszköz be-/kikapcsolása	#
+resourcePack.editor.toolRail.summonTool.pane.select=Kiválasztás mód	#
+resourcePack.editor.toolRail.summonTool.pane.title=Idéző eszköz	#
+resourcePack.editor.toolRail.summonTool.pane.type=Entitás típusa	#
+resourcePack.editor.toolRail.summonTool.tool.infoText=Kattints egy entitásra annak kiválasztásához, vagy kattints a térképre egy új entitás megidézéséhez	#
+resourcePack.editor.toolRail.summonTool.tool.selectSubPane.rotation=Forgatás	#
+resourcePack.editor.toolRail.summonTool.tool.selectSubPane=Entitás kiválasztása	#
+resourcePack.editor.toolRail.summonTool.tool.summonSubPane=Entitás idézése	#
+resourcePack.editor.toolRail.summonTool.tool.tip=Kattints entitások idézéséhez	#
+resourcePack.editor.toolRail.summonTool.tool.title=Idéző eszköz	#
 
-resourcePack.editor.pastepreview.tool.title=Beillesztés előnézete	#
-resourcePack.editor.pastepreview.tool.tip=Az egérrel állítsd be a vágólap előnézetének helyzetét, és kattints a világba való beillesztéshez	#
-resourcePack.editor.pastepreview.inputContext.title=Beillesztés előnézete	#
-resourcePack.editor.pastepreview.pane.root.title=Beillesztés előnézete	#
-resourcePack.editor.pastepreview.pane.root.size=Méret	#
-resourcePack.editor.pastepreview.pane.placement.title=Elhelyezési beállítások	#
-resourcePack.editor.pastepreview.pane.placement.origin=Kezdőpont	#
-resourcePack.editor.pastepreview.pane.placement.offset=Eltolás	#
-resourcePack.editor.pastepreview.pane.placement.rotation=Forgatás (Y körül)	#
-resourcePack.editor.pastepreview.pane.placement.mirrorX=X tükrözése	#
-resourcePack.editor.pastepreview.pane.placement.mirrorZ=Z tükrözése	#
-resourcePack.editor.pastepreview.pane.placement.pastebutton=Beillesztés	#
-resourcePack.editor.pastepreview.pane.controls.title=Kurzorvezérlők	#
-resourcePack.editor.pastepreview.pane.controls.cursor=Control	#
-resourcePack.editor.pastepreview.pane.controls.cursor.keyboard=Csak billentyűk	#
-resourcePack.editor.pastepreview.pane.controls.cursor.mouseandkeys=Egér és billentyűk	#
-resourcePack.editor.pastepreview.pane.controls.cursor.fixed=Rögzített távolság	#
-resourcePack.editor.pastepreview.pane.controls.cursor.target.title=Célpont	#
-resourcePack.editor.pastepreview.pane.controls.cursor.target.block=Letiltás	#
-resourcePack.editor.pastepreview.pane.controls.cursor.target.face=Szomszédos	#
-resourcePack.editor.pastepreview.keyBinding.pastepreview=Beillesztés előnézete	#
-resourcePack.editor.pastepreview.keyBinding.copy=Kijelölés másolása	#
-resourcePack.editor.pastepreview.keyBinding.cut=Kijelölés kivágása	#
-resourcePack.editor.pastepreview.keyBinding.quickPaste=Gyorsbeillesztés	#
-resourcePack.editor.pastepreview.keyBinding.paste=Beillesztés	#
-resourcePack.editor.pastepreview.keyBinding.clearPreview=Előnézet törlése	#
-resourcePack.editor.pastepreview.keyBinding.moveForward=Előnézet mozgatása előre	#
-resourcePack.editor.pastepreview.keyBinding.moveBack=Előnézet mozgatása hátra	#
-resourcePack.editor.pastepreview.keyBinding.moveLeft=Előnézet mozgatása balra	#
-resourcePack.editor.pastepreview.keyBinding.moveRight=Előnézet mozgatása jobbra	#
-resourcePack.editor.pastepreview.keyBinding.moveUp=Előnézet mozgatása fel	#
-resourcePack.editor.pastepreview.keyBinding.moveDown=Előnézet mozgatása le	#
-resourcePack.editor.pastepreview.keyBinding.moveOffsetForward=Eltolás mozgatása előre	#
-resourcePack.editor.pastepreview.keyBinding.moveOffsetBack=Eltolás mozgatása hátra	#
-resourcePack.editor.pastepreview.keyBinding.moveOffsetLeft=Eltolás mozgatása balra	#
-resourcePack.editor.pastepreview.keyBinding.moveOffsetRight=Eltolás mozgatása jobbra	#
-resourcePack.editor.pastepreview.keyBinding.moveOffsetUp=Eltolás mozgatása fel	#
-resourcePack.editor.pastepreview.keyBinding.moveOffsetDown=Eltolás mozgatása le	#
-resourcePack.editor.pastepreview.keyBinding.moveOriginForward=Origó mozgatása előre	#
-resourcePack.editor.pastepreview.keyBinding.moveOriginBack=Origó mozgatása hátra	#
-resourcePack.editor.pastepreview.keyBinding.moveOriginLeft=Origó mozgatása balra	#
-resourcePack.editor.pastepreview.keyBinding.moveOriginRight=Origó mozgatása jobbra	#
-resourcePack.editor.pastepreview.keyBinding.moveOriginUp=Origó mozgatása fel	#
-resourcePack.editor.pastepreview.keyBinding.moveOriginDown=Origó mozgatása le	#
-resourcePack.editor.pastepreview.keyBinding.pasteAtCursor=Beillesztés a kurzornál	#
-resourcePack.editor.pastepreview.keyBinding.toggleBlockTarget=Blokk célmód bekapcsolása	#
-resourcePack.editor.pastepreview.keyBinding.toggleAdjacentTarget=Szomszédos célmód bekapcsolása	#
-resourcePack.editor.pastepreview.keyBinding.rotateClockWise=Előnézet forgatása az óramutató járásával megegyező irányba	#
-resourcePack.editor.pastepreview.keyBinding.rotateCounterClockWise=Előnézet forgatása az óramutató járásával ellentétes irányba	#
-resourcePack.editor.pastepreview.keyBinding.toggleMirrorX=X-tükrözés bekapcsolása	#
-resourcePack.editor.pastepreview.keyBinding.toggleMirrorZ=Z-tükrözés bekapcsolása	#
-resourcePack.editor.pastepreview.keyBinding.toggleMouseTracking=Egérkövetés be- vagy kikapcsolása	#
-resourcePack.editor.pastepreview.keyBinding.toggleFixedDistance=Rögzített távolság engedélyezése	#
 
-resourcePack.editor.ClipboardPreviewControl.rootPane.title=Vágólap adatai	#
-resourcePack.editor.ClipboardPreviewControl.structureSize.title=Vágólap mérete	#
-resourcePack.editor.ClipboardPreviewControl.placement.title=Beállítások	#
-resourcePack.editor.ClipboardPreviewControl.origin.title=Kezdőpont	#
-resourcePack.editor.ClipboardPreviewControl.origin.tooltip=A vágólaptárgyon belül található kezdőpont. Ez szolgál elhelyezési horgonyként, illetve ezen pont körül forgathatod és tükrözheted a vágólapot.	#
-resourcePack.editor.ClipboardPreviewControl.offset.title=Eltolás	#
-resourcePack.editor.ClipboardPreviewControl.offset.tooltip=További eltolás az elhelyezési pont és a vágólaptárgy kezdőpontja között	#
-resourcePack.editor.ClipboardPreviewControl.rotation.title=Elforgatás	#
-resourcePack.editor.ClipboardPreviewControl.rotation.tooltip=Az Y tengely körüli elforgatás mértéke a kezdőpontnál	#
-resourcePack.editor.ClipboardPreviewControl.rotation.none=Nincs	#
-resourcePack.editor.ClipboardPreviewControl.rotation.90=90°	#
-resourcePack.editor.ClipboardPreviewControl.rotation.180=180°	#
-resourcePack.editor.ClipboardPreviewControl.rotation.270=270°	#
-resourcePack.editor.ClipboardPreviewControl.mirror.axis.x=Tükrözés (X tengely)	#
-resourcePack.editor.ClipboardPreviewControl.mirror.axis.x.tooltip=Vágólaptárgy tükrözése az X tengely mentén a kezdőpontnál	#
-resourcePack.editor.ClipboardPreviewControl.mirror.axis.z=Tükrözés (Z tengely)	#
-resourcePack.editor.ClipboardPreviewControl.mirror.axis.z.tooltip=Vágólaptárgy tükrözése a Z tengely mentén a kezdőpontnál	#
-resourcePack.editor.ClipboardPreviewControl.keyBinding.nudgeOffsetUp=Eltolás lökése felfelé	#
-resourcePack.editor.ClipboardPreviewControl.keyBinding.nudgeOffsetDown=Eltolás lökése lefelé	#
-resourcePack.editor.ClipboardPreviewControl.keyBinding.nudgeOffsetLeft=Eltolás lökése balra	#
-resourcePack.editor.ClipboardPreviewControl.keyBinding.nudgeOffsetRight=Eltolás lökése jobbra	#
-resourcePack.editor.ClipboardPreviewControl.keyBinding.nudgeOffsetForward=Eltolás lökése előre	#
-resourcePack.editor.ClipboardPreviewControl.keyBinding.nudgeOffsetBack=Eltolás lökése hátra	#
-resourcePack.editor.ClipboardPreviewControl.keybinding.moveOriginForward=Origó mozgatása előre	#
-resourcePack.editor.ClipboardPreviewControl.keybinding.moveOriginBack=Origó mozgatása hátra	#
-resourcePack.editor.ClipboardPreviewControl.keybinding.moveOriginLeft=Origó mozgatása balra	#
-resourcePack.editor.ClipboardPreviewControl.keybinding.moveOriginRight=Origó mozgatása jobbra	#
-resourcePack.editor.ClipboardPreviewControl.keybinding.moveOriginUp=Origó mozgatása felfelé	#
-resourcePack.editor.ClipboardPreviewControl.keybinding.moveOriginDown=Origó mozgatása lefelé	#
-resourcePack.editor.ClipboardPreviewControl.keybinding.rotateClockWise=Előnézet forgatása az óramutató járásával megegyező irányba	#
-resourcePack.editor.ClipboardPreviewControl.keybinding.rotateCounterClockWise=Előnézet forgatása az óramutató járásával ellentétes irányba	#
-resourcePack.editor.ClipboardPreviewControl.keybinding.toggleMirrorX=X-tükrözés bekapcsolása	#
-resourcePack.editor.ClipboardPreviewControl.keybinding.toggleMirrorZ=Z-tükrözés bekapcsolása	#
+resourcePack.editor.transaction.keyBinding.redo=Újra	#
+resourcePack.editor.transaction.keyBinding.undo=Visszavonás	#
 
-resourcePack.editor.deferredLightingSettings.menu.title=Késleltetett világítás beállításai	#
-resourcePack.editor.datatransferaccessors.atmospheric_scattering=Légköri fénytörés	#
-resourcePack.editor.datatransferaccessors.color_grading=Színkorrekció	#
-resourcePack.editor.datatransferaccessors.lighting_group=Globális világítás	#
-resourcePack.editor.datatransferaccessors.pbr_fallbacks=PBR tartalék-erőforrások	#
-resourcePack.editor.datatransferaccessors.point_lights=Pontfények	#
-resourcePack.editor.datatransferaccessors.water=Víz	#
 
+resourcePack.editor.viewport.keyBinding.moveBack=Mozgás visszafelé	#
+resourcePack.editor.viewport.keyBinding.moveDown=Lejjebb	#
+resourcePack.editor.viewport.keyBinding.moveForward=Mozgás előre	#
+resourcePack.editor.viewport.keyBinding.moveLeft=Mozgás balra	#
+resourcePack.editor.viewport.keyBinding.moveRight=Mozgás jobbra	#
+resourcePack.editor.viewport.keyBinding.moveUp=Feljebb	#
+
+
+resourcePack.editor.viewSettings.compass.tip=Show the directional compass	#
+resourcePack.editor.viewSettings.compass.title=Show Compass	#
+resourcePack.editor.viewSettings.chunk.tip=Térképdarabhatárok körvonalának megjelenítése a térképen	#
+resourcePack.editor.viewSettings.chunk.title=Térképdarabhatárok megjelenítése	#
+resourcePack.editor.viewSettings.invisible.tip=Láthatatlan blokkok megjelenítése (pl. üresség, akadályok stb.)	#
+resourcePack.editor.viewSettings.invisible.title=Láthatatlan blokkok megjelenítése	#
+resourcePack.editor.viewSettings.flySpeed.tip=Increase Fly Speed to maneuver the map faster	#
+resourcePack.editor.viewSettings.flySpeed.title=Fly Speed Multiplier	#
 resourcePack.editor.viewSettings.menu=Beállítások megtekintése	#
 resourcePack.editor.viewSettings.title=Beállítások megtekintése	#
-resourcePack.editor.viewSettings.invisible.title=Láthatatlan blokkok megjelenítése	#
-resourcePack.editor.viewSettings.invisible.tip=Láthatatlan blokkok megjelenítése (pl. üresség, akadályok stb.)	#
-resourcePack.editor.viewSettings.chunk.title=Térképdarabhatárok megjelenítése	#
-resourcePack.editor.viewSettings.chunk.tip=Térképdarabhatárok körvonalának megjelenítése a térképen	#
 
-resourcePack.editor.brushPaint.title=Ecsetes festés	#
-resourcePack.editor.brushPaint.tooltip=Lehetővé teszi a blokkok ecsettel való lefestését a világban	#
-resourcePack.editor.brushPaint.inputContext.title=Ecsetes festés	#
-resourcePack.editor.brushPaint.inputContext.oneshot=Festés egyszer	#
-resourcePack.editor.brushPaint.inputContext.activateBrushPaint=Ecsetes festés aktiválása	#
-
-resourcePack.editor.CursorModeControl.rootPane.title=Kurzorbeállítások	#
-resourcePack.editor.CursorModeControl.mouseControlMode.title=Beviteli mód	#
-resourcePack.editor.CursorModeControl.mouseControlMode.tooltip=Válaszd ki a világ blokk-kurzorának beviteli módját	#
-resourcePack.editor.CursorModeControl.mouseControlMode.keyboard=Csak billentyűzet	#
-resourcePack.editor.CursorModeControl.mouseControlMode.keyboardAndMouse=Egér és billentyűk	#
-resourcePack.editor.CursorModeControl.mouseControlMode.fixed=Rögzített távolság	#
-resourcePack.editor.CursorModeControl.cursorTargetMode.title=Célpont	#
-resourcePack.editor.CursorModeControl.cursorTargetMode.tooltip=Válaszd ki a kurzor célzási módját	#
-resourcePack.editor.CursorModeControl.cursorTargetMode.block=Letiltás	#
-resourcePack.editor.CursorModeControl.cursorTargetMode.block.tooltip=Az egérmutató alatti blokk	#
-resourcePack.editor.CursorModeControl.cursorTargetMode.face=Szomszédos	#
-resourcePack.editor.CursorModeControl.cursorTargetMode.face.tooltip=Közvetlenül a kurzor alatti blokk lapjával szomszédos blokk	#
-resourcePack.editor.CursorModeControl.projectThroughWater.title=Vetítés vízen keresztül	#
-resourcePack.editor.CursorModeControl.projectThroughWater.tooltip=A játék kivetíti a kurzort a vízen keresztül, lehetővé téve a víz alatti elemek kijelölését	#
-resourcePack.editor.CursorModeControl.fixedDistance.slider.title=Rögzített kurzortávolság	#
-resourcePack.editor.CursorModeControl.fixedDistance.slider.tooltip=Módosítja a blokk-kurzor játékostól számított rögzített távolságát	#
-resourcePack.editor.CursorModeControl.keybinding.moveCursorForward=Előrelökés	#
-resourcePack.editor.CursorModeControl.keybinding.moveCursorBack=Kurzor mozgatása hátra	#
-resourcePack.editor.CursorModeControl.keybinding.moveCursorUp=Kurzor mozgatása fel	#
-resourcePack.editor.CursorModeControl.keybinding.moveCursorDown=Kurzor mozgatása le	#
-resourcePack.editor.CursorModeControl.keybinding.moveCursorLeft=Kurzor mozgatása balra	#
-resourcePack.editor.CursorModeControl.keybinding.moveCursorRight=Kurzor mozgatása jobbra	#
-resourcePack.editor.CursorModeControl.keybinding.toggleMouseTracking=Egérkövetés be- vagy kikapcsolása	#
-resourcePack.editor.CursorModeControl.keybinding.toggleBlockTargetMode=Blokkmód/szomszédos mód váltása	#
-resourcePack.editor.CursorModeControl.keybinding.toggleFixedDistance=Rögzített távolsági mód be- vagy kikapcsolása	#
-
-resourcePack.editor.BrushPaintControl.rootPane.title=Ecset beállításai	#
-resourcePack.editor.BrushPaintControl.brush.title=Ecset	#
-resourcePack.editor.BrushPaintControl.brushSettings.title=Ecset beállításai	#
-resourcePack.editor.BrushPaintControl.fillConstraints.title=Kitöltési kényszerek	#
-resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.title=Ecsetblokkszűrő	#
-resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.mask=Maszk	#
-resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.mask.tooltip=A listának megfelelő blokkokat a játék figyelmen kívül hagyja, így azok változatlanok maradnak	#
-resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.replace=Csere	#
-resourcePack.editor.BrushPaintControl.fillConstraints.replace.title=Cserelista	#
-resourcePack.editor.BrushPaintControl.fillConstraints.replace.tooltip=A játék a listának megfelelő blokkokon hajtja végre a műveletet	#
-resourcePack.editor.BrushPaintControl.fillConstraints.mask.title=Maszklista	#
-resourcePack.editor.BrushPaintControl.offset.title=Eltolás	#
-resourcePack.editor.BrushPaintControl.offset.tooltip=A kurzor helyzetétől számított eltolás	#
-resourcePack.editor.BrushPaintControl.keybinding.replaceMask=Maszk mód – Csere	#
-resourcePack.editor.BrushPaintControl.keybinding.maskMask=Maszk mód – Maszk	#
-resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetUp=Eltolás lökése fel	#
-resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetDown=Eltolás lökése le	#
-resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetLeft=Eltolás lökése balra	#
-resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetRight=Eltolás lökése jobbra	#
-resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetForward=Eltolás lökése előre	#
-resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetBack=Eltolás lökése hátra	#
-
-resourcePack.editor.copypaste.keyBinding.copy=Kiválasztás másolása a vágólapra	#
-resourcePack.editor.copypaste.keyBinding.cut=Kiválasztás kivágása/áthelyezése a vágólapra	#
-resourcePack.editor.copypaste.keyBinding.paste=Vágólap beillesztése a világba	#
-resourcePack.editor.copypaste.actionbar.copy.title=Másolás	#
-resourcePack.editor.copypaste.actionbar.copy.tooltip=Kiválasztás másolása a vágólapra	#
-resourcePack.editor.copypaste.actionbar.copy.tooltipDescription=Az aktuális kiválasztásos kötet tartalmának másolása a vágólapra, a kiválasztásos kötet tartalmának megőrzésével	#
-resourcePack.editor.copypaste.actionbar.cut.title=Kivágás	#
-resourcePack.editor.copypaste.actionbar.cut.tooltip=Kiválasztás kivágása/áthelyezése a vágólapra	#
-resourcePack.editor.copypaste.actionbar.cut.tooltipDescription=Az aktuális kiválasztásos kötet tartalmának másolása a vágólapra, a kiválasztásos kötet tartalmának eltávolításával	#
-resourcePack.editor.copypaste.menu.copy.title=Kiválasztás másolása	#
-resourcePack.editor.copypaste.menu.cut.title=Kiválasztás kivágása	#
-
-
+resourcePack.editor.hotbar.defaultDisplayName=Alapértelmezett	#
