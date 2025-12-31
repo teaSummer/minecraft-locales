@@ -140,9 +140,7 @@ multiplayer.downloadingTerrain=Downloading terrain
 multiplayer.stopSleeping=Leave Bed
 
 chat.link.confirm=Are you sure you want to open the following website?
-chat.link.confirmTrusted=Do you want to open this link or copy it to your clipboard?
 chat.link.warning=Never open links from people that you don't trust!
-chat.link.open=Open in browser
 chat.copy=Copy to Clipboard
 
 menu.playdemo=Play Demo World
@@ -301,7 +299,7 @@ book.finalizeButton=Sign and Close
 book.finalizeWarning=Note! When you sign the book, it will no longer be editable.
 
 tile.stone.name=Stone
-
+tile.hayBlock.name=Hay Block
 tile.grass.name=Grass Block
 tile.dirt.name=Dirt
 tile.stonebrick.name=Cobblestone
@@ -401,9 +399,26 @@ tile.oreRedstone.name=Redstone Ore
 tile.notGate.name=Redstone Torch
 tile.button.name=Button
 tile.snow.name=Snow
+tile.woolCarpet.black.name=Black Carpet
+tile.woolCarpet.red.name=Red Carpet
+tile.woolCarpet.green.name=Green Carpet
+tile.woolCarpet.brown.name=Brown Carpet
+tile.woolCarpet.blue.name=Blue Carpet
+tile.woolCarpet.purple.name=Purple Carpet
+tile.woolCarpet.cyan.name=Cyan Carpet
+tile.woolCarpet.silver.name=Light Gray Carpet
+tile.woolCarpet.gray.name=Gray Carpet
+tile.woolCarpet.pink.name=Pink Carpet
+tile.woolCarpet.lime.name=Lime Carpet
+tile.woolCarpet.yellow.name=Yellow Carpet
+tile.woolCarpet.lightBlue.name=Light Blue Carpet
+tile.woolCarpet.magenta.name=Magenta Carpet
+tile.woolCarpet.orange.name=Orange Carpet
+tile.woolCarpet.white.name=Carpet
 tile.ice.name=Ice
 tile.cactus.name=Cactus
 tile.clay.name=Clay
+tile.clayHardened.name=Hardened Clay
 tile.reeds.name=Sugar cane
 tile.jukebox.name=Jukebox
 tile.fence.name=Fence
@@ -499,6 +514,8 @@ tile.quartzBlock.chiseled.name=Chiseled Quartz Block
 tile.quartzBlock.lines.name=Pillar Quartz Block
 tile.stairsQuartz.name=Quartz Stairs
 
+item.nameTag.name=Name Tag
+item.leash.name=Lead
 item.shovelIron.name=Iron Shovel
 item.pickaxeIron.name=Iron Pickaxe
 item.hatchetIron.name=Iron Axe
@@ -704,6 +721,10 @@ item.fireworksCharge.type.4=Burst
 item.fireworksCharge.type=Unknown Shape
 item.netherbrick.name=Nether Brick
 item.netherquartz.name=Nether Quartz
+item.horsesaddle.name=Horse Saddle
+item.horsearmormetal.name=Iron Horse Armor
+item.horsearmorgold.name=Gold Horse Armor
+item.horsearmordiamond.name=Diamond Horse Armor
 
 container.inventory=Inventory
 container.hopper=Item Hopper
@@ -766,6 +787,12 @@ entity.Wolf.name=Wolf
 entity.Ozelot.name=Ocelot
 entity.Cat.name=Cat
 entity.Bat.name=Bat
+entity.EntityHorse.name=Horse
+entity.horse.name=Horse
+entity.donkey.name=Donkey
+entity.mule.name=Mule
+entity.skeletonhorse.name=Skeleton Horse
+entity.zombiehorse.name=Zombie Horse
 
 entity.PrimedTnt.name=Block of TNT
 entity.FallingSand.name=Falling Block
@@ -1114,8 +1141,6 @@ commands.save.disabled=Turned off world auto-saving
 commands.save.start=Saving...
 commands.save.success=Saved the world
 commands.save.failed=Saving failed: %s
-commands.save.flushStart=Flushing all saves...
-commands.save.flushEnd=Flushing completed
 commands.stop.start=Stopping the server
 commands.tp.success=Teleported %s to %s
 commands.tp.success.coordinates=Teleported %s to %.2f,%.2f,%.2f
@@ -1248,7 +1273,9 @@ advMode.notEnabled=Command blocks are not enabled on this server
 advMode.notAllowed=Must be an opped player in creative mode
 
 mco.title=Minecraft Realms
-mco.selectServer.select=Join World
+mount.onboard=Press %1$s to dismount
+
+mco.selectServer.select=Join Server
 mco.selectServer.configure=Configure
 mco.selectServer.create=Create World
 mco.selectServer.moreinfo=More Info
@@ -1257,10 +1284,7 @@ mco.configure.world.edit.title=Edit World
 
 mco.configure.world.title=Configure World
 mco.configure.world.name=Name
-mco.configure.world.seed=World Seed (Optional)
 mco.configure.world.description=Description
-mco.configure.world.owner=Owner
-mco.configure.world.status=Status
 mco.configure.world.location=Location
 mco.configure.world.invited=Invited
 mco.configure.world.buttons.edit=Edit
@@ -1272,12 +1296,8 @@ mco.configure.world.buttons.close=Close World
 mco.configure.world.buttons.invite=Invite
 mco.configure.world.buttons.uninvite=Uninvite
 mco.configure.world.buttons.subscription=Subscription
-mco.configure.world.buttons.save=Save
-mco.configure.world.buttons.settings=Settings...
 mco.configure.world.invite.profile.name=Name
 mco.configure.world.uninvite.question=Are you sure that you want to uninvite
-
-mco.configure.world.settings.title=Settings
 
 mco.configure.world.subscription.title=Subscription Info
 mco.configure.world.subscription.daysleft=Days Left
@@ -1290,7 +1310,7 @@ mco.create.world.wait=Creating the world...
 
 mco.reset.world.title=Reset World
 mco.reset.world.warning=This will permanently delete your world!
-mco.reset.world.seed=World Seed (Optional)
+mco.reset.world.seed=Seed (Optional)
 mco.reset.world.resetting.screen.title=Resetting World...
 
 mco.configure.world.close.question.line1=Your world will become unavailable.
@@ -1301,14 +1321,3 @@ mco.connect.authorizing=Logging in...
 mco.connect.failed=Failed to connect to the online server
 
 mco.create.world=Create
-
-mco.gameMode=Game Mode
-mco.gameMode.survival=Survival
-mco.gameMode.survival.line1=Search for resources, crafting, gain
-mco.gameMode.survival.line2=levels, health and hunger
-mco.gameMode.creative=Creative
-mco.gameMode.creative.line1=Unlimited resources, free flying and
-mco.gameMode.creative.line2=destroy blocks instantly
-mco.gameMode.adventure=Adventure
-mco.gameMode.adventure.line1=Same as survival mode, but blocks can't
-mco.gameMode.adventure.line2=be added or removed
