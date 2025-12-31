@@ -3483,6 +3483,7 @@ livingroom.hint.tap_touchpad_for_immersive=点击触控板可切换视角	#
 livingroom.hint.tap_view_for_immersive=按 F5 键可切换视角	#
 livingroom.hint.tap_view_for_immersive_gamepad=按向上方向键可切换视角	#
 livingroom.hint.tap_view_for_immersive_oculustouch=按 Y 可切换视角	#
+livingroom.hint.tap_view_for_immersive_windowsmr=按左摇杆可切换视角	#
 
 map.toolTip.displayMarkers=显示标记	#
 map.toolTip.scaling=缩放比例：1:%s	#
@@ -3583,6 +3584,7 @@ offer.category.resourcepack=纹理包	#
 offer.category.mashup=混搭包	#
 offer.category.worldtemplate=世界	#
 offer.category.editorschoice=编辑的选择	#
+offer.category.allByCreator=创作者：%s	#
 
 options.advancedButton=高级视频设置…	#
 options.showAdvancedVideoSettings=显示高级视频设置	#
@@ -3693,6 +3695,14 @@ options.dev_importPacksAsZip=将包导入为 Zip 压缩包	#
 options.dev_folders_portSettingsFolder=导出设置文件夹	#
 options.dev_mem_check=内存检查限制	#
 options.dev_mem_check.seconds=秒	#
+options.dev_useOverrideDate=使用替代日期	#
+options.dev_overrideDateYear=年	#
+options.dev_overrideDateMonth=月	#
+options.dev_overrideDateDay=日	#
+options.dev_overrideDayLength=替代日长度，以分钟为单位（分钟：10）	#
+options.dev_updateOverrideDate=更新替代日期	#
+options.dev_clearStoreCache=清除商店缓存	#
+options.dev_clearAllCache=清除所有缓存	#
 options.difficulty=难度	#
 options.difficulty.easy=简单	#
 options.difficulty.hard=困难	#
@@ -3754,6 +3764,7 @@ options.hidden=隐藏	#
 options.hidehud=隐藏 HUD	#
 options.hidehand=隐藏手	#
 options.classic_box_selection=轮廓选择	#
+options.vr_classic_box_selection=轮廓选择	#
 options.hidegamepadcursor=隐藏游戏手柄游标	#
 options.hidegui=隐藏GUI	#
 options.hidetooltips=隐藏控制器提示	#
@@ -3930,6 +3941,8 @@ options.goBack=返回	#
 
 patchNotes.continue=继续	#
 patchNotes.unlock=解锁	#
+patchNotes.error.notFound.title=已从互联网断开连接	#
+patchNotes.error.notFound.msg=槽糕！出错了。是否检查您的互联网连接？	#
 
 pauseScreen.back=回到游戏	#
 pauseScreen.currentWorld=当前世界	#
@@ -4195,6 +4208,8 @@ record.nowPlaying=正在播放：%s	#
 resourcePack.available.title=可用的资源包	#
 resourcePack.available.title.behaviorPacks=可用的行为包	#
 resourcePack.available.title.packs=可用包	#
+resourcePack.message.noneFound.packs=这台设备上没有可用的包。	#
+resourcePack.message.allInUse.packs=您的包当前正在使用中。	#
 resourcePack.cached.title=缓存包	#
 resourcePack.folderInfo=（请把资源包文件放在这里）	#
 resourcePack.openFolder=打开资源包文件夹	#
@@ -4353,6 +4368,16 @@ resourcePack.skin.description=皮肤、皮肤、皮肤！！！	#
 resourcePack.invalid.description=无法成功解析资源包。点击显示错误。	#
 resourcePack.loading.description=资源包仍在加载。	#
 
+review.item.post.rating.title=评级 %s	#
+review.item.post.rating.dropdown.label=选择星级	#
+review.item.post.rating.footer=您可以更改自己的评级。	#
+review.item.post.rating.submit.button=为此包评级	#
+review.item.post.rating.1star=啊！关于您对自己的包非常不满意，我们深感抱歉。请通过 https://aka.ms/marketplacefeedback 向我们发送一些反馈	#
+review.item.post.rating.2star=噢！不太好。请通过 https://aka.ms/marketplacefeedback 向我们发送一些反馈	#
+review.item.post.rating.3star=虽然一直有需要完善的地方，但我们很高兴您仍能畅享其中。	#
+review.item.post.rating.4star=哦呵！我们很高兴您能欢度美好时光！	#
+review.item.post.rating.5star=我们很高兴您能欢度美好时光！	#
+
 screenshot.failure=无法保存截图：%s	#
 screenshot.success=已将截图保存为%s	#
 
@@ -4455,6 +4480,9 @@ selectTemplate.deleteTemplateDone=完成	#
 selectTemplate.deleteMessage=您即将永久性删除 %s。您确定吗？	#
 selectTemplate.delete.confirm=是否删除世界模板？	#
 selectTemplate.delete=删除	#
+selectTemplate.myTemplates=来自模板的新世界	#
+selectTemplate.download=下载	#
+selectTemplate.noTemplates=这台设备上没有任何世界模板。	#
 
 sign.edit=修改告示牌信息	#
 
@@ -4489,7 +4517,7 @@ skins.picker.custom.button=选择新皮肤	#
 skins.picker.default=默认	#
 skins.picker.recent=最近	#
 skins.picker.single.player=仅限单人玩家的皮肤包	#
-skins.store.upsell.buy.button=解锁所有 %s 皮肤	#
+skins.store.upsell.buy.button=使用 %s:minecoin: 解除锁定所有 %s 皮肤	#
 skins.store.upsell.equip.button=装备此皮肤	#
 skins.store.upsell.info=你需要解锁此包才能装备你所选的皮肤。	#
 skins.store.equipped=您已配备 %s 皮肤。	#
@@ -4607,7 +4635,7 @@ store.popup.download.back=返回	#
 store.popup.wifiWarn.title=警告	#
 store.popup.wifiWarn.msg=你没有连接到 WiFi，仍然下载吗？	#
 store.popup.download.noInternet.title=出错了	#
-store.popup.download.noInternet.msg=出错了。无法连接至商店。请检查您的网络连接？	#
+store.popup.download.noInternet.msg=抱歉，无法开始下载 %s。请检查您的网络连接？	#
 store.popup.download.noSpace.title.KB=空间不足 - %s MB	#
 store.popup.download.noSpace.title.MB=空间不足 - %s MB	#
 store.popup.download.noSpace.msg=您的设备上没有足够的空间，无法下载 %s 。	#
@@ -4646,13 +4674,37 @@ store.content.requireXbl.notSignedIn=登录 Xbox Live 以解锁。	#
 
 store.mashup.continue=继续	#
 store.mashup.createWorld=创建此世界！	#
-store.mashup.equipSkin=装备此皮肤！	#
+store.mashup.equipSkin=装备	#
+store.mashup.equipThisSkin=装备 %s 皮肤！	#
 store.mashup.mashupPack=混搭包	#
 store.mashup.skinPack=皮肤包	#
 store.mashup.texturePack=纹理包	#
-store.mashup.unlockAll=解锁所有 %s 个皮肤、材质包和世界！	#
+store.mashup.ratings=评级	#
+store.mashup.unlockAll=使用 %s:minecoin: 解除锁定所有 %s 皮肤、材质包和世界	#
+store.mashup.unlockMashup=使用 %s:minecoin: 解除锁定混搭包	#
 store.mashup.world=世界	#
 store.mashup.missingContent=无法完成操作。本地缺少内容。	#
+store.mashup.title.resourcePack=游览！	#
+store.mashup.title.skinPack=%s 皮肤：%s	#
+store.mashup.title.worldView=新世界之旅！	#
+store.mashup.title.ratings=社区评级	#
+store.mashup.mashupContentsFull=%s 皮肤、材质包和世界	#
+store.mashup.mashupContentsSkinAndTexturePack=%s 皮肤和材质包	#
+store.mashup.mashupContentsSkinAndWorld=%s 皮肤和世界	#
+store.mashup.mashupContentsTexturePackAndWorld=材质包和世界	#
+store.mashup.mashupContentsSkinPack=%s 皮肤	#
+store.mashup.purchase.generalContent=购买 %s:minecoin: 的内容	#
+
+store.ratings.ratingsCount=%s 评级	#
+store.ratings.ratingOutOfFive=%s（共 5 星）	#
+store.ratings.rateContent=为此包评级	#
+store.ratings.rateContentGeneral=为此内容评级	#
+store.ratings.yourRating=您的评级：	#
+store.ratings.stars=%s 星	#
+
+store.ratings.signIn.title=为商店中的物品评级	#
+store.ratings.signIn.description1=告诉创作者和社区您关于此物品的体验！	#
+store.ratings.signIn.description2=您需要先使用 Xbox Live 登录，然后才能为某个物品评级。	#
 
 store.purchase.success=你刚刚购买了：%s	#
 store.purchase.signIn=用大量精彩内容扩充你的游戏。	#
@@ -4683,13 +4735,13 @@ store.resource.try=来试试吧！	#
 store.resource.create=管理资源包	#
 store.resource.screenshots=截图	#
 store.resourcePack.activateTexturePack=激活此纹理包！	#
-store.resourcePack.unlock=用 %s 解锁这个材质包	#
+store.resourcePack.unlock=使用 %s:minecoin: 解除锁定这款材质包	#
 store.3pserverItem.fetchingCancel=取消	#
 store.3pserverItem.fetchingItem=%s 有一些有趣的内容要与您共享。	#
 store.3pserverItem.fetchingItemTitle=稍等片刻	#
 store.3pserverItem.unlock=解除 %s 的锁定	#
 store.3pserverItem.alreadyPurchased=已拥有	#
-store.world.unlock=解锁这个世界 - %s	#
+store.world.unlock=使用 %s:minecoin: 解除锁定这一世界	#
 store.restore.description=正在恢复您的购买！	#
 store.restore.failed=抱歉，无法恢复您的购买。请检查您的网络连接？	#
 store.connection.failed.title=出错了	#
@@ -4710,6 +4762,8 @@ store.xbl.conversionFailedMessage=请稍后再试。	#
 
 store.showalloffers.list.title=%s 商店	#
 store.showalloffers.list.back=返回	#
+
+store.suggestedOffers.defaultTitle=有趣的玩法	#
 
 store.minecoin.notavailable=此版本的《我的世界》尚未推出硬币购买。	#
 

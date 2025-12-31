@@ -3483,6 +3483,7 @@ livingroom.hint.tap_touchpad_for_immersive=Tryck på styrplattan för att växla
 livingroom.hint.tap_view_for_immersive=Tryck på F5-tangenten för att växla perspektiv	#
 livingroom.hint.tap_view_for_immersive_gamepad=Tryck uppåt på styrknappen för att växla perspektiv	#
 livingroom.hint.tap_view_for_immersive_oculustouch=Tryck på Y för att växla perspektiv	#
+livingroom.hint.tap_view_for_immersive_windowsmr=Tryck på styrspaken för att växla perspektiv	#
 
 map.toolTip.displayMarkers=Visa markörer	#
 map.toolTip.scaling=Skala 1:%s	#
@@ -3583,6 +3584,7 @@ offer.category.resourcepack=Texturpaket	#
 offer.category.mashup=Mixpaket	#
 offer.category.worldtemplate=Världar	#
 offer.category.editorschoice=Redaktörens val	#
+offer.category.allByCreator=Allt av %s	#
 
 options.advancedButton=Avancerade bildinställningar ...	#
 options.showAdvancedVideoSettings=Visa avancerade bildinställningar ...	#
@@ -3693,6 +3695,14 @@ options.dev_importPacksAsZip=Importera paket som zip-filer	#
 options.dev_folders_portSettingsFolder=Exportera inställningsmapp	#
 options.dev_mem_check=Gräns för minneskontroll	#
 options.dev_mem_check.seconds=Sekunder	#
+options.dev_useOverrideDate=Använd fast datum	#
+options.dev_overrideDateYear=År	#
+options.dev_overrideDateMonth=Månad	#
+options.dev_overrideDateDay=Dag	#
+options.dev_overrideDayLength=Bestäm dagens längd i minuter (minsta: 10)	#
+options.dev_updateOverrideDate=Uppdatera fast datum	#
+options.dev_clearStoreCache=Rensa Store-cache	#
+options.dev_clearAllCache=Rensa all cache	#
 options.difficulty=Svårighetsgrad	#
 options.difficulty.easy=Lätt	#
 options.difficulty.hard=Svårt	#
@@ -3754,6 +3764,7 @@ options.hidden=Dolt	#
 options.hidehud=Dölj gränssnitt	#
 options.hidehand=Dölj hand	#
 options.classic_box_selection=Markera val	#
+options.vr_classic_box_selection=Markera val	#
 options.hidegamepadcursor=Dölj handkontrollens markör	#
 options.hidegui=Dölj gränssnitt	#
 options.hidetooltips=Dölj handkontrollstips	#
@@ -3930,6 +3941,8 @@ options.goBack=Gå tillbaka	#
 
 patchNotes.continue=Fortsätt	#
 patchNotes.unlock=Lås upp	#
+patchNotes.error.notFound.title=Nedkopplad från internet	#
+patchNotes.error.notFound.msg=Oj, någonting gick fel. Har du kollat din internetanslutning?	#
 
 pauseScreen.back=Tillbaka till spelet	#
 pauseScreen.currentWorld=Aktuell värld	#
@@ -4195,6 +4208,8 @@ record.nowPlaying=Spelar: %s	#
 resourcePack.available.title=Tillgängliga resurspaket	#
 resourcePack.available.title.behaviorPacks=Tillgängliga beteendepaket	#
 resourcePack.available.title.packs=Tillgängliga paket	#
+resourcePack.message.noneFound.packs=Det finns inga tillgängliga paket på den här enheten.	#
+resourcePack.message.allInUse.packs=Dina paket används just nu.	#
 resourcePack.cached.title=Cachelagrade paket	#
 resourcePack.folderInfo=(Placera resurspaketsfiler här)	#
 resourcePack.openFolder=Öppna resurspaketskatalogen	#
@@ -4353,6 +4368,16 @@ resourcePack.skin.description=Utseendet är allt!	#
 resourcePack.invalid.description=Kunde inte läsa paketet. Klicka för att visa felen.	#
 resourcePack.loading.description=Paketet håller på att laddas.	#
 
+review.item.post.rating.title=Betygsätt %s	#
+review.item.post.rating.dropdown.label=Välj ett betyg	#
+review.item.post.rating.footer=Du kan ändra ditt betyg.	#
+review.item.post.rating.submit.button=Betygsätt paketet	#
+review.item.post.rating.1star=Åh nej, vad trist att du inte gillar paketet! Du får gärna skicka din feedback till https://aka.ms/marketplacefeedback.	#
+review.item.post.rating.2star=Oj, det var inte bra. Du får gärna skicka din feedback till https://aka.ms/marketplacefeedback.	#
+review.item.post.rating.3star=Det finns alltid utrymme för förbättring. Kul att du ändå har roligt!	#
+review.item.post.rating.4star=Toppen! Vad skönt att du gillar det!	#
+review.item.post.rating.5star=Vad kul att du älskar det!	#
+
 screenshot.failure=Kunde inte spara skärmbild: %s	#
 screenshot.success=Skärmbilden sparades som %s	#
 
@@ -4455,6 +4480,9 @@ selectTemplate.deleteTemplateDone=Färdig	#
 selectTemplate.deleteMessage=Du är på väg att radera %s för alltid. Är du säker?	#
 selectTemplate.delete.confirm=Radera världsmallen?	#
 selectTemplate.delete=Radera	#
+selectTemplate.myTemplates=Ny värld från mall	#
+selectTemplate.download=Ladda ned	#
+selectTemplate.noTemplates=Det finns inga världsmallar på den här enheten.	#
 
 sign.edit=Redigera skyltens meddelande	#
 
@@ -4489,7 +4517,7 @@ skins.picker.custom.button=Välj nytt utseende	#
 skins.picker.default=Standard	#
 skins.picker.recent=Senaste	#
 skins.picker.single.player=Enspelarexklusivt utseendepaket	#
-skins.store.upsell.buy.button=Lås upp alla %s-utseenden	#
+skins.store.upsell.buy.button=Lås upp alla %s-utseenden för %s:minecoin:	#
 skins.store.upsell.equip.button=Använd det här utseendet	#
 skins.store.upsell.info=Du måste låsa upp det här paketet för att använda det valda utseendet.	#
 skins.store.equipped=Du har aktiverat utseendet %s.	#
@@ -4607,7 +4635,7 @@ store.popup.download.back=Gå tillbaka	#
 store.popup.wifiWarn.title=Varning	#
 store.popup.wifiWarn.msg=Du är inte ansluten till något trådlöst nätverk; vill du ladda ned ändå?	#
 store.popup.download.noInternet.title=Någonting gick fel	#
-store.popup.download.noInternet.msg=Någonting gick fel. Det gick inte att ansluta till Store. Har du kollat din internetanslutning?	#
+store.popup.download.noInternet.msg=Tyvärr, det gick inte att ladda ned %s. Har du kollat din internetanslutning?	#
 store.popup.download.noSpace.title.KB=För lite utrymme - %s KB	#
 store.popup.download.noSpace.title.MB=För lite utrymme - %s MB	#
 store.popup.download.noSpace.msg=Du har för lite ledigt utrymme på enheten för att ladda ned %s.	#
@@ -4646,13 +4674,37 @@ store.content.requireXbl.notSignedIn=Logga in på Xbox Live för att låsa upp.	
 
 store.mashup.continue=Fortsätt	#
 store.mashup.createWorld=Skapa den här världen!	#
-store.mashup.equipSkin=Använd det här utseendet!	#
+store.mashup.equipSkin=Använd	#
+store.mashup.equipThisSkin=Använd %s-utseendet!	#
 store.mashup.mashupPack=Mixpaket	#
 store.mashup.skinPack=Utseendepaket	#
 store.mashup.texturePack=Texturpaket	#
-store.mashup.unlockAll=Lås upp en värld, texturpaket och alla utseenden från %s!	#
+store.mashup.ratings=Betyg	#
+store.mashup.unlockAll=Lås upp värld, texturpaket och alla %s utseenden för %s:minecoin:	#
+store.mashup.unlockMashup=Lås upp mixpaket för %s:minecoin:	#
 store.mashup.world=Värld	#
 store.mashup.missingContent=Åtgärden kunde inte slutföras. Det lokala innehållet saknas.	#
+store.mashup.title.resourcePack=Ta en rundtur!	#
+store.mashup.title.skinPack=%s-utseenden: %s	#
+store.mashup.title.worldView=En resa i en ny värld!	#
+store.mashup.title.ratings=Communityns betyg	#
+store.mashup.mashupContentsFull=Värld, texturpaket och %s utseenden	#
+store.mashup.mashupContentsSkinAndTexturePack=Texturpaket och %s utseenden	#
+store.mashup.mashupContentsSkinAndWorld=Värld och %s utseenden	#
+store.mashup.mashupContentsTexturePackAndWorld=Texturpaket och värld	#
+store.mashup.mashupContentsSkinPack=%s utseenden	#
+store.mashup.purchase.generalContent=Köp innehållet för %s:minecoin:	#
+
+store.ratings.ratingsCount=%s betyg	#
+store.ratings.ratingOutOfFive=%s av 5 stjärnor	#
+store.ratings.rateContent=Betygsätt paketet	#
+store.ratings.rateContentGeneral=Betygsätt innehållet	#
+store.ratings.yourRating=Ditt betyg:	#
+store.ratings.stars=%s stjärnor	#
+
+store.ratings.signIn.title=Betygsätt produkter i Store	#
+store.ratings.signIn.description1=Berätta för skaparen och communityn om din upplevelse med produkten!	#
+store.ratings.signIn.description2=Du måste logga in på Xbox Live innan du kan betygsätta produkter.	#
 
 store.purchase.success=Du har köpt: %s	#
 store.purchase.signIn=Expandera ditt spel med en hel uppsjö av utmärkt innehåll.	#
@@ -4683,13 +4735,13 @@ store.resource.try=Prova!	#
 store.resource.create=Hantera dina resurspaket	#
 store.resource.screenshots=Skärmbilder	#
 store.resourcePack.activateTexturePack=Aktivera det här texturpaketet!	#
-store.resourcePack.unlock=Lås upp det här texturpaketet för %s	#
+store.resourcePack.unlock=Lås upp det här texturpaketet för %s:minecoin:	#
 store.3pserverItem.fetchingCancel=Avbryt	#
 store.3pserverItem.fetchingItem=%s har någonting kul att dela med dig.	#
 store.3pserverItem.fetchingItemTitle=Vänta lite	#
 store.3pserverItem.unlock=Lås upp för %s	#
 store.3pserverItem.alreadyPurchased=Ägt	#
-store.world.unlock=Lås upp den här världen för %s	#
+store.world.unlock=Lås upp den här världen för %s:minecoin:	#
 store.restore.description=Vi återställer dina köp!	#
 store.restore.failed=Tyvärr, det gick inte att återställa dina köp. Har du kollat din internetanslutning?	#
 store.connection.failed.title=Någonting gick fel	#
@@ -4710,6 +4762,8 @@ store.xbl.conversionFailedMessage=Försök igen senare.	#
 
 store.showalloffers.list.title=%s-butik 	#
 store.showalloffers.list.back=Gå tillbaka	#
+
+store.suggestedOffers.defaultTitle=Roliga sätt att spela på	#
 
 store.minecoin.notavailable=Köp med mynt är inte tillgängliga i den här versionen av Minecraft.	#
 

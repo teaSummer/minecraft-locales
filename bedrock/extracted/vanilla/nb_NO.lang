@@ -3483,6 +3483,7 @@ livingroom.hint.tap_touchpad_for_immersive=Trykk på styreflaten for å endre pe
 livingroom.hint.tap_view_for_immersive=Trykk på F5 for å endre perspektivet	#
 livingroom.hint.tap_view_for_immersive_gamepad=Trykk opp på D-pad for å endre perspektivet	#
 livingroom.hint.tap_view_for_immersive_oculustouch=Trykk på Y for å endre perspektivet	#
+livingroom.hint.tap_view_for_immersive_windowsmr=Trykk på den venstre styrespaken for å endre perspektiv	#
 
 map.toolTip.displayMarkers=Vis markører	#
 map.toolTip.scaling=Skalaen er 1:%s	#
@@ -3583,6 +3584,7 @@ offer.category.resourcepack=Teksturpakker	#
 offer.category.mashup=Mash-Up-pakker	#
 offer.category.worldtemplate=Verdener	#
 offer.category.editorschoice=Redaktørens anbefalinger	#
+offer.category.allByCreator=Alt fra %s	#
 
 options.advancedButton=Avanserte videoinnstillinger…	#
 options.showAdvancedVideoSettings=Vis avanserte videoinnstillinger	#
@@ -3693,6 +3695,14 @@ options.dev_importPacksAsZip=Importer pakker som ZIP-filer	#
 options.dev_folders_portSettingsFolder=Eksporter innstillingsmappen	#
 options.dev_mem_check=Minnesjekkgrense	#
 options.dev_mem_check.seconds=Sekunder	#
+options.dev_useOverrideDate=Bruk overstyringsdato	#
+options.dev_overrideDateYear=År	#
+options.dev_overrideDateMonth=Måned	#
+options.dev_overrideDateDay=Dag	#
+options.dev_overrideDayLength=Overstyring av dagslengde i minutter (min: 10)	#
+options.dev_updateOverrideDate=Oppdater overstyringsdatoen	#
+options.dev_clearStoreCache=Tøm butikkmellomlageret	#
+options.dev_clearAllCache=Tøm alle mellomlagre	#
 options.difficulty=Vanskelighetsgrad	#
 options.difficulty.easy=Lett	#
 options.difficulty.hard=Vanskelig	#
@@ -3754,6 +3764,7 @@ options.hidden=Skjult	#
 options.hidehud=Skjul HUD	#
 options.hidehand=Skjul hånd	#
 options.classic_box_selection=Valg av omriss	#
+options.vr_classic_box_selection=Valg av omriss	#
 options.hidegamepadcursor=Skjul kontrollermarkør	#
 options.hidegui=Skjul det grafiske brukergrensesnittet	#
 options.hidetooltips=Skjul kontrollertips	#
@@ -3930,6 +3941,8 @@ options.goBack=Gå tilbake	#
 
 patchNotes.continue=Fortsett	#
 patchNotes.unlock=Lås opp	#
+patchNotes.error.notFound.title=Koblet fra internett	#
+patchNotes.error.notFound.msg=Uff da! Det oppsto en feil. Kanskje du bør sjekke internettforbindelsen?	#
 
 pauseScreen.back=Tilbake til spillet	#
 pauseScreen.currentWorld=Nåværende verden	#
@@ -4195,6 +4208,8 @@ record.nowPlaying=Spilles nå: %s	#
 resourcePack.available.title=Tilgjengelige ressurspakker	#
 resourcePack.available.title.behaviorPacks=Tilgjengelige atferdspakker	#
 resourcePack.available.title.packs=Tilgjengelige pakker	#
+resourcePack.message.noneFound.packs=Det finnes ingen tilgjengelige pakker på denne enheten.	#
+resourcePack.message.allInUse.packs=Pakkene dine er i bruk.	#
 resourcePack.cached.title=Hurtigbufrede pakker	#
 resourcePack.folderInfo=(Plasser ressurspakkefilene her)	#
 resourcePack.openFolder=Åpne ressurspakkemappen	#
@@ -4353,6 +4368,16 @@ resourcePack.skin.description=Skall, skall, skall!	#
 resourcePack.invalid.description=Kunne ikke analysere pakken. Klikk for å se feilene.	#
 resourcePack.loading.description=Pakken lastes fremdeles inn.	#
 
+review.item.post.rating.title=Vurder %s	#
+review.item.post.rating.dropdown.label=Velg antall stjerner	#
+review.item.post.rating.footer=Det er mulig å endre vurderingen.	#
+review.item.post.rating.submit.button=Vurder denne pakken	#
+review.item.post.rating.1star=Å nei! Så dumt at du ikke likte pakken. Send oss gjerne en tilbakemelding på https://aka.ms/marketplacefeedback	#
+review.item.post.rating.2star=Å! Det er ikke bra. Send oss gjerne en tilbakemelding på https://aka.ms/marketplacefeedback	#
+review.item.post.rating.3star=Det finnes alltid rom for forbedringer, men det er godt å høre at du likevel har det gøy.	#
+review.item.post.rating.4star=Jippi! Vi er glad du har det morsomt!	#
+review.item.post.rating.5star=Vi er glad du har det så morsomt!	#
+
 screenshot.failure=Kunne ikke lagre skjermbilde: %s	#
 screenshot.success=Lagret skjermbilde som %s	#
 
@@ -4455,6 +4480,9 @@ selectTemplate.deleteTemplateDone=Ferdig	#
 selectTemplate.deleteMessage=Du er i ferd med å slette %s for godt. Er du sikker?	#
 selectTemplate.delete.confirm=Slette verdensmal?	#
 selectTemplate.delete=Slett	#
+selectTemplate.myTemplates=Ny verden fra mal	#
+selectTemplate.download=Last ned	#
+selectTemplate.noTemplates=Det finnes ingen verdensmaler på denne enheten.	#
 
 sign.edit=Rediger melding på skilt	#
 
@@ -4489,7 +4517,7 @@ skins.picker.custom.button=Velg nytt skall	#
 skins.picker.default=Standard	#
 skins.picker.recent=Sist brukte	#
 skins.picker.single.player=Skallpakke for bare én spiller	#
-skins.store.upsell.buy.button=Lås opp alle %s skallene	#
+skins.store.upsell.buy.button=Lås opp alle %s-skall for %s:minecoin:	#
 skins.store.upsell.equip.button=Bruk dette skallet	#
 skins.store.upsell.info=Du må låse opp denne pakken for å bruke det valgte skallet.	#
 skins.store.equipped=Du har tatt på deg skallet %s.	#
@@ -4607,7 +4635,7 @@ store.popup.download.back=Gå tilbake	#
 store.popup.wifiWarn.title=Advarsel	#
 store.popup.wifiWarn.msg=Du er ikke tilkoblet via Wi-Fi. Laste ned likevel?	#
 store.popup.download.noInternet.title=Noe gikk galt	#
-store.popup.download.noInternet.msg=Noe gikk galt. Vi kan ikke opprette en tilkobling til butikken. Kan du sjekke Internett-tilkoblingen?	#
+store.popup.download.noInternet.msg=Beklager, men vi kunne ikke laste ned %s. Kan du kontrollere Internett-tilkoblingen din?	#
 store.popup.download.noSpace.title.KB=Ikke nok plass – %s kB	#
 store.popup.download.noSpace.title.MB=Ikke nok plass – %s MB	#
 store.popup.download.noSpace.msg=Det er ikke nok ledig plass på enheten din til å laste ned %s.	#
@@ -4646,13 +4674,37 @@ store.content.requireXbl.notSignedIn=Logg på Xbox Live for å låse opp.	#
 
 store.mashup.continue=Fortsett	#
 store.mashup.createWorld=Lag denne verdenen!	#
-store.mashup.equipSkin=Bruk dette skallet!	#
+store.mashup.equipSkin=Bruk	#
+store.mashup.equipThisSkin=Bruk %s-skallet!	#
 store.mashup.mashupPack=Mash-Up-pakke	#
 store.mashup.skinPack=Skallpakke	#
 store.mashup.texturePack=Teksturpakke	#
-store.mashup.unlockAll=Lås opp %s skall, teksturpakke og verden!	#
+store.mashup.ratings=Vurderinger	#
+store.mashup.unlockAll=Lås opp %s-skall, teksturpakke og verden for %s:minecoin:	#
+store.mashup.unlockMashup=Lås opp mash-up-pakke for %s:minecoin:	#
 store.mashup.world=Verden	#
 store.mashup.missingContent=Kan ikke fullføre handlingen. Mangler lokalt innhold.	#
+store.mashup.title.resourcePack=Ta en rundtur!	#
+store.mashup.title.skinPack=%s-skall: %s	#
+store.mashup.title.worldView=Reis i en ny verden!	#
+store.mashup.title.ratings=Vurderinger fra nettsamfunnet	#
+store.mashup.mashupContentsFull=%s-skall, teksturpakke og verden	#
+store.mashup.mashupContentsSkinAndTexturePack=%s-skall og en teksturpakke	#
+store.mashup.mashupContentsSkinAndWorld=%s-skall og en verden	#
+store.mashup.mashupContentsTexturePackAndWorld=Teksturpakke og en verden	#
+store.mashup.mashupContentsSkinPack=%s-skall	#
+store.mashup.purchase.generalContent=Kjøp innhold for %s:minecoin:	#
+
+store.ratings.ratingsCount=%s vurderinger	#
+store.ratings.ratingOutOfFive=%s av 5 stjerner	#
+store.ratings.rateContent=Vurder denne pakken	#
+store.ratings.rateContentGeneral=Vurder dette innholdet	#
+store.ratings.yourRating=Din vurdering:	#
+store.ratings.stars=%s stjerner	#
+
+store.ratings.signIn.title=Vurder varer i butikken	#
+store.ratings.signIn.description1=Fortell skaperen og nettsamfunnet om erfaringene dine med denne varen!	#
+store.ratings.signIn.description2=Før du kan vurdere varer, må du logge på med Xbox Live.	#
 
 store.purchase.success=Du kjøpte nettopp: %s	#
 store.purchase.signIn=Utvid spillet ditt med masse fantastisk innhold.	#
@@ -4683,13 +4735,13 @@ store.resource.try=Prøv det!	#
 store.resource.create=Administrer ressurspakkene dine	#
 store.resource.screenshots=Skjermbilder	#
 store.resourcePack.activateTexturePack=Aktiver denne teksturpakken!	#
-store.resourcePack.unlock=Lås opp denne teksturpakken for %s	#
+store.resourcePack.unlock=Lås opp denne teksturpakken for %s:minecoin:	#
 store.3pserverItem.fetchingCancel=Avbryt	#
 store.3pserverItem.fetchingItem=%s har noe morsomt å dele med deg.	#
 store.3pserverItem.fetchingItemTitle=Et øyeblikk	#
 store.3pserverItem.unlock=Lås opp for %s	#
 store.3pserverItem.alreadyPurchased=Eid	#
-store.world.unlock=Lås opp denne verdenen for %s	#
+store.world.unlock=Lås opp denne verdenen for %s:minecoin:	#
 store.restore.description=Vi gjenoppretter kjøpene dine!	#
 store.restore.failed=Beklager, men vi kunne ikke gjenopprette kjøpene dine. Kan du kontrollere Internett-tilkoblingen din?	#
 store.connection.failed.title=Noe gikk galt	#
@@ -4710,6 +4762,8 @@ store.xbl.conversionFailedMessage=Prøv på nytt senere.	#
 
 store.showalloffers.list.title=%s-butikk 	#
 store.showalloffers.list.back=Gå tilbake	#
+
+store.suggestedOffers.defaultTitle=Morsomme måter å spille på	#
 
 store.minecoin.notavailable=Mynter kan ikke kjøpes i denne versjonen av Minecraft.	#
 

@@ -3483,6 +3483,7 @@ livingroom.hint.tap_touchpad_for_immersive=Toca el panel táctil para cambiar la
 livingroom.hint.tap_view_for_immersive=Presiona la tecla F5 para cambiar la perspectiva	#
 livingroom.hint.tap_view_for_immersive_gamepad=Presiona el pad direccional hacia arriba para cambiar la cámara	#
 livingroom.hint.tap_view_for_immersive_oculustouch=Presiona Y para cambiar la cámara	#
+livingroom.hint.tap_view_for_immersive_windowsmr=Presiona la palanca izquierda para cambiar la cámara	#
 
 map.toolTip.displayMarkers=Mostrar marcadores	#
 map.toolTip.scaling=Escala de 1:%s	#
@@ -3583,6 +3584,7 @@ offer.category.resourcepack=Packs de texturas	#
 offer.category.mashup=Packs de popurrí	#
 offer.category.worldtemplate=Mundos	#
 offer.category.editorschoice=Selección del editor	#
+offer.category.allByCreator=Todo por %s	#
 
 options.advancedButton=Ajustes de vídeo avanzados...	#
 options.showAdvancedVideoSettings=Mostrar ajustes de video avanzados	#
@@ -3693,6 +3695,14 @@ options.dev_importPacksAsZip=Importar packs como archivo Zip	#
 options.dev_folders_portSettingsFolder=Exportar la carpeta de configuración	#
 options.dev_mem_check=Límite de revisión de memoria	#
 options.dev_mem_check.seconds=segundo(s)	#
+options.dev_useOverrideDate=Usar la fecha de modificación	#
+options.dev_overrideDateYear=Año	#
+options.dev_overrideDateMonth=Mes	#
+options.dev_overrideDateDay=Día	#
+options.dev_overrideDayLength=Modificar la duración del día en minutos (Min: 10)	#
+options.dev_updateOverrideDate=Actualizar la fecha de modificación	#
+options.dev_clearStoreCache=Limpiar la memoria caché de la tienda	#
+options.dev_clearAllCache=Limpiar toda la memoria caché	#
 options.difficulty=Dificultad	#
 options.difficulty.easy=Fácil	#
 options.difficulty.hard=Difícil	#
@@ -3754,6 +3764,7 @@ options.hidden=Oculto	#
 options.hidehud=Ocultar HUD	#
 options.hidehand=Ocultar mano	#
 options.classic_box_selection=Selección de contorno	#
+options.vr_classic_box_selection=Selección de contorno	#
 options.hidegamepadcursor=Ocultar cursor del Gamepad	#
 options.hidegui=Ocultar interfaz de juego	#
 options.hidetooltips=Ocultar descripciones emergentes de controles	#
@@ -3930,6 +3941,8 @@ options.goBack=Atrás	#
 
 patchNotes.continue=Continuar	#
 patchNotes.unlock=Desbloquear	#
+patchNotes.error.notFound.title=Desconexión de internet	#
+patchNotes.error.notFound.msg=Algo salió mal. Revisa tu conexión a internet.	#
 
 pauseScreen.back=Volver al juego	#
 pauseScreen.currentWorld=Mundo actual	#
@@ -4195,6 +4208,8 @@ record.nowPlaying=Estás escuchando: %s	#
 resourcePack.available.title=Packs de recursos disponibles	#
 resourcePack.available.title.behaviorPacks=Packs de comportamientos disponibles	#
 resourcePack.available.title.packs=Packs disponibles	#
+resourcePack.message.noneFound.packs=No hay packs disponibles en este dispositivo.	#
+resourcePack.message.allInUse.packs=Tus packs se están utilizando.	#
 resourcePack.cached.title=Packs en caché	#
 resourcePack.folderInfo=(Ubica los archivos de packs de recursos aquí)	#
 resourcePack.openFolder=Abrir la carpeta del pack de recursos	#
@@ -4353,6 +4368,16 @@ resourcePack.skin.description=¡Aspectos, aspectos, muchos aspectos!	#
 resourcePack.invalid.description=No se pudo analizar el pack. Haz clic para ver los errores.	#
 resourcePack.loading.description=El pack aún se está cargando.	#
 
+review.item.post.rating.title=Califica el %s	#
+review.item.post.rating.dropdown.label=Elige una calificación de estrellas	#
+review.item.post.rating.footer=Podrás cambiar tu calificación si lo deseas.	#
+review.item.post.rating.submit.button=Califica este pack	#
+review.item.post.rating.1star=¡Es una lástima que no te haya gustado tu pack! Envíanos tus comentarios en https://aka.ms/marketplacefeedback	#
+review.item.post.rating.2star=Es una lástima. Envíanos tus comentarios en https://aka.ms/marketplacefeedback	#
+review.item.post.rating.3star=Aunque siempre podemos mejorar, nos da gusto que todavía te estés divirtiendo.	#
+review.item.post.rating.4star=¡Qué bien! ¡Nos da gusto que te estés divirtiendo!	#
+review.item.post.rating.5star=¡Nos da gusto que la estés pasando muy bien!	#
+
 screenshot.failure=No se pudo guardar la captura de pantalla: %s	#
 screenshot.success=Captura guardada como %s	#
 
@@ -4455,6 +4480,9 @@ selectTemplate.deleteTemplateDone=Listo	#
 selectTemplate.deleteMessage=Estás a punto de eliminar %s para siempre. ¿Estás seguro?	#
 selectTemplate.delete.confirm=¿Quieres eliminar la plantilla de mundo?	#
 selectTemplate.delete=Eliminar	#
+selectTemplate.myTemplates=Crear nuevo mundo con una plantilla	#
+selectTemplate.download=Descargar	#
+selectTemplate.noTemplates=No hay plantillas de mundos en este dispositivo.	#
 
 sign.edit=Editar mensaje del letrero	#
 
@@ -4489,7 +4517,7 @@ skins.picker.custom.button=Aspecto nuevo	#
 skins.picker.default=Por defecto	#
 skins.picker.recent=Reciente	#
 skins.picker.single.player=Pack de aspecto exclusivo para partidas de un solo jugador	#
-skins.store.upsell.buy.button=Desbloquear todos los %s aspectos	#
+skins.store.upsell.buy.button=Desbloquear todos los aspectos de %s por %s:minecoin:	#
 skins.store.upsell.equip.button=Equipar este aspecto	#
 skins.store.upsell.info=Debes desbloquear este pack para equipar el aspecto que elegiste.	#
 skins.store.equipped=Equipaste el aspecto de %s.	#
@@ -4607,7 +4635,7 @@ store.popup.download.back=Atrás	#
 store.popup.wifiWarn.title=Cuidado	#
 store.popup.wifiWarn.msg=No estás conectado al WiFi, ¿quieres realizar la descarga igual?	#
 store.popup.download.noInternet.title=Ocurrió un error	#
-store.popup.download.noInternet.msg=Algo salió mal. No podemos conectar con la tienda. Revisa tu conexión a Internet.	#
+store.popup.download.noInternet.msg=No pudimos iniciar la descarga de %s. Revisa tu conexión a Internet.	#
 store.popup.download.noSpace.title.KB=No hay espacio suficiente: %s KB	#
 store.popup.download.noSpace.title.MB=No hay espacio suficiente: %s MB	#
 store.popup.download.noSpace.msg=No hay espacio suficiente en el dispositivo para descargar %s.	#
@@ -4646,13 +4674,37 @@ store.content.requireXbl.notSignedIn=Inicia sesión en Xbox Live para desbloquea
 
 store.mashup.continue=Continuar	#
 store.mashup.createWorld=¡Crea este mundo!	#
-store.mashup.equipSkin=¡Equipa este aspecto!	#
+store.mashup.equipSkin=Equipar	#
+store.mashup.equipThisSkin=¡Equipa el aspecto de %s!	#
 store.mashup.mashupPack=Pack de popurrí	#
 store.mashup.skinPack=Pack de aspectos	#
 store.mashup.texturePack=Pack de texturas	#
-store.mashup.unlockAll=¡Desbloquea %s aspectos, packs de textura y mundos!	#
+store.mashup.ratings=Calificaciones	#
+store.mashup.unlockAll=Desbloquear todos los aspectos, el pack de textura y el mundo de %s por %s:minecoin:	#
+store.mashup.unlockMashup=Desbloquear el pack de popurrí por %s:minecoin:	#
 store.mashup.world=Mundo	#
 store.mashup.missingContent=No se pudo realizar la acción. Falta contenido en la ubicación local.	#
+store.mashup.title.resourcePack=¡Haz un tour!	#
+store.mashup.title.skinPack=Aspectos de %s: %s	#
+store.mashup.title.worldView=¡Explora un nuevo mundo!	#
+store.mashup.title.ratings=Calificaciones de la comunidad	#
+store.mashup.mashupContentsFull=Aspectos, pack de textura y mundo de %s	#
+store.mashup.mashupContentsSkinAndTexturePack=Aspectos y pack de textura de %s	#
+store.mashup.mashupContentsSkinAndWorld=Aspectos y mundo de %s	#
+store.mashup.mashupContentsTexturePackAndWorld=Pack de textura y mundo	#
+store.mashup.mashupContentsSkinPack=Aspectos de %s	#
+store.mashup.purchase.generalContent=Comprar el contenido por %s:minecoin:	#
+
+store.ratings.ratingsCount=Calificaciones de %s	#
+store.ratings.ratingOutOfFive=%s de 5 estrellas	#
+store.ratings.rateContent=Califica este pack	#
+store.ratings.rateContentGeneral=Califica este contenido	#
+store.ratings.yourRating=Tu calificación:	#
+store.ratings.stars=%s estrellas	#
+
+store.ratings.signIn.title=Calificar elementos en la Tienda	#
+store.ratings.signIn.description1=¡Comparte tu experiencia sobre este elemento con su creador y con la comunidad!	#
+store.ratings.signIn.description2=Antes de calificar un elemento, deberás iniciar la sesión en Xbox Live.	#
 
 store.purchase.success=Acabaste de comprar: %s.	#
 store.purchase.signIn=Expande tu juego con cientos de contenidos geniales.	#
@@ -4683,13 +4735,13 @@ store.resource.try=¡Pruébalo!	#
 store.resource.create=Administrar los packs de recursos	#
 store.resource.screenshots=Capturas de pantalla	#
 store.resourcePack.activateTexturePack=¡Activa este pack de texturas!	#
-store.resourcePack.unlock=Desbloquear este pack de textura para %s	#
+store.resourcePack.unlock=Desbloquear este pack de textura por %s:minecoin:	#
 store.3pserverItem.fetchingCancel=Cancelar	#
 store.3pserverItem.fetchingItem=%s tiene algo divertido para compartir contigo.	#
 store.3pserverItem.fetchingItemTitle=Espera un momento	#
 store.3pserverItem.unlock=Desbloquear por %s	#
 store.3pserverItem.alreadyPurchased=Obtenido	#
-store.world.unlock=Desbloquear este mundo para %s	#
+store.world.unlock=Desbloquear este mundo por %s:minecoin:	#
 store.restore.description=¡Estamos restaurando tus compras!	#
 store.restore.failed=Ocurrió un error al restaurar tus compras. Revisa tu conexión a Internet.	#
 store.connection.failed.title=Ocurrió un error	#
@@ -4710,6 +4762,8 @@ store.xbl.conversionFailedMessage=Vuelve a intentarlo más tarde.	#
 
 store.showalloffers.list.title=Tienda de %s 	#
 store.showalloffers.list.back=Atrás	#
+
+store.suggestedOffers.defaultTitle=Opciones divertidas para jugar	#
 
 store.minecoin.notavailable=La compra con monedas no está disponible en esta versión de Minecraft.	#
 

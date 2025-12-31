@@ -3483,6 +3483,7 @@ livingroom.hint.tap_touchpad_for_immersive=Докоснете тъчпада з�
 livingroom.hint.tap_view_for_immersive=Натиснете клавиша F5 за превключване на перспективата	#
 livingroom.hint.tap_view_for_immersive_gamepad=Натиснете D-Pad Up за превключване на перспективата	#
 livingroom.hint.tap_view_for_immersive_oculustouch=Натиснете Y за превключване на перспективата	#
+livingroom.hint.tap_view_for_immersive_windowsmr=Натиснете левия стиков бутон за палец за превключване на перспективата	#
 
 map.toolTip.displayMarkers=Показване на маркери	#
 map.toolTip.scaling=Мащаб 1:%s	#
@@ -3583,6 +3584,7 @@ offer.category.resourcepack=Пакети текстури	#
 offer.category.mashup=Пакети с гости от други игри	#
 offer.category.worldtemplate=Светове	#
 offer.category.editorschoice=Избрано от редактора	#
+offer.category.allByCreator=Всичко по %s	#
 
 options.advancedButton=Разширени настройки за видео...	#
 options.showAdvancedVideoSettings=Показване на разширени настройки за видео	#
@@ -3693,6 +3695,14 @@ options.dev_importPacksAsZip=Импортиране на пакети като Z
 options.dev_folders_portSettingsFolder=Експортиране на папката с настройките	#
 options.dev_mem_check=Лимит за проверка на паметта	#
 options.dev_mem_check.seconds=Секунди	#
+options.dev_useOverrideDate=Използвайте дата за замяна	#
+options.dev_overrideDateYear=Година	#
+options.dev_overrideDateMonth=Месец	#
+options.dev_overrideDateDay=Ден	#
+options.dev_overrideDayLength=Замяна на продължителността на деня в минути (мин: 10)	#
+options.dev_updateOverrideDate=Актуализиране на датата за замяна	#
+options.dev_clearStoreCache=Изчистване на кеша на магазина	#
+options.dev_clearAllCache=Изчистваме на целия кеш	#
 options.difficulty=Сложност	#
 options.difficulty.easy=Лесна	#
 options.difficulty.hard=Сложна	#
@@ -3754,6 +3764,7 @@ options.hidden=Скрит	#
 options.hidehud=Скриване на HUD	#
 options.hidehand=Скриване на ръка	#
 options.classic_box_selection=Очертаване на избора	#
+options.vr_classic_box_selection=Очертаване на избора	#
 options.hidegamepadcursor=Скриване на курсора на геймпада	#
 options.hidegui=Скриване на GUI	#
 options.hidetooltips=Скриване на поясненията за контролера	#
@@ -3930,6 +3941,8 @@ options.goBack=Назад	#
 
 patchNotes.continue=Напред	#
 patchNotes.unlock=Отключи	#
+patchNotes.error.notFound.title=Връзката с интернет е прекъсната	#
+patchNotes.error.notFound.msg=Опа! Възникна грешка. Може би трябва да проверите връзката си с интернет?	#
 
 pauseScreen.back=Назад към играта	#
 pauseScreen.currentWorld=Текущ свят	#
@@ -4195,6 +4208,8 @@ record.nowPlaying=В момента се изпълнява: %s	#
 resourcePack.available.title=Налични пакети с ресурси	#
 resourcePack.available.title.behaviorPacks=Налични пакети с поведения	#
 resourcePack.available.title.packs=Налични пакети	#
+resourcePack.message.noneFound.packs=Няма налични пакети на това устройство.	#
+resourcePack.message.allInUse.packs=Вашите пакети вече се използват.	#
 resourcePack.cached.title=Кеширани пакети	#
 resourcePack.folderInfo=(Тук поставете файлове на пакети с ресурси)	#
 resourcePack.openFolder=Отваряне на папката с пакети с ресурси	#
@@ -4353,6 +4368,16 @@ resourcePack.skin.description=Скинове, скинчета и скинчен
 resourcePack.invalid.description=Неуспешно анализиране на пакета. Щракнете за показване на грешките.	#
 resourcePack.loading.description=Пакетът все още се зарежда.	#
 
+review.item.post.rating.title=Оценка %s	#
+review.item.post.rating.dropdown.label=Оценете със звезди	#
+review.item.post.rating.footer=Ще можете да промените оценката си.	#
+review.item.post.rating.submit.button=Оценете този пакет	#
+review.item.post.rating.1star=О, не! Съжаляваме, че този пакет въобще не ви е харесал! Изпратете ни обратна връзка на адрес https://aka.ms/marketplacefeedback	#
+review.item.post.rating.2star=О, това не е добре. Изпратете ни обратна връзка на адрес https://aka.ms/marketplacefeedback	#
+review.item.post.rating.3star=Винаги има място за подобрение, но се радваме, че още се забавлявате.	#
+review.item.post.rating.4star=Страхотно! Радваме се, че си прекарвате добре!	#
+review.item.post.rating.5star=Радваме се, че си прекарвате страхотно!	#
+
 screenshot.failure=Неуспешно записване на екранна снимка: %s	#
 screenshot.success=Екранната снимка е записана като %s	#
 
@@ -4455,6 +4480,9 @@ selectTemplate.deleteTemplateDone=Готово	#
 selectTemplate.deleteMessage=Напът сте да изтриете %s завинаги. Сигурни ли сте?	#
 selectTemplate.delete.confirm=Изтриване на шаблон на свят?	#
 selectTemplate.delete=Изтриване	#
+selectTemplate.myTemplates=Нов свят от шаблон	#
+selectTemplate.download=Изтегляне	#
+selectTemplate.noTemplates=Няма шаблони на светове на това устройство.	#
 
 sign.edit=Редактиране на съобщението на табелата	#
 
@@ -4489,7 +4517,7 @@ skins.picker.custom.button=Избор на нов скин	#
 skins.picker.default=По подразбиране	#
 skins.picker.recent=Скорошни	#
 skins.picker.single.player=Пакет скинове само за един играч	#
-skins.store.upsell.buy.button=Отключи всички скинове в %s	#
+skins.store.upsell.buy.button=Отключване на всички скинове %s срещу %s:minecoin:	#
 skins.store.upsell.equip.button=Използвай този скин	#
 skins.store.upsell.info=Трябва да отключите този пакет, за да използвате избрания скин.	#
 skins.store.equipped=Вие се облякохте със скина %s.	#
@@ -4607,7 +4635,7 @@ store.popup.download.back=Назад	#
 store.popup.wifiWarn.title=Предупреждение	#
 store.popup.wifiWarn.msg=Не сте свързани към Wi-Fi, изтегляне въпреки това?	#
 store.popup.download.noInternet.title=Възникна грешка	#
-store.popup.download.noInternet.msg=Възникна грешка. Не можем да се свържем към магазина. Може би трябва да проверите връзката си с интернет?	#
+store.popup.download.noInternet.msg=За съжаление, не успяхме да изтеглим %s. Може би трябва да проверите връзката си с интернет.	#
 store.popup.download.noSpace.title.KB=Няма достатъчно място – %s КБ	#
 store.popup.download.noSpace.title.MB=Няма достатъчно място – %s МБ	#
 store.popup.download.noSpace.msg=Нямате достатъчно свободно място на устройството за изтегляне на %s.	#
@@ -4646,13 +4674,37 @@ store.content.requireXbl.notSignedIn=Влезте в Xbox Live за отключ
 
 store.mashup.continue=Напред	#
 store.mashup.createWorld=Създайте този свят!	#
-store.mashup.equipSkin=Използвайте този скин!	#
+store.mashup.equipSkin=Обличане	#
+store.mashup.equipThisSkin=Облечете скина %s!	#
 store.mashup.mashupPack=Пакет с гости от други игри	#
 store.mashup.skinPack=Пакет скинове	#
 store.mashup.texturePack=Пакет текстури	#
-store.mashup.unlockAll=Отключете всичките %s скина, пакета текстури и света!	#
+store.mashup.ratings=Оценки	#
+store.mashup.unlockAll=Отключване на всички скинове, пакет текстури и свят %s срещу %s:minecoin:	#
+store.mashup.unlockMashup=Отключване на пакет с гости от други игри срещу %s:minecoin:	#
 store.mashup.world=Свят	#
 store.mashup.missingContent=Неуспешно завършване на действието. Съдържанието липсва на локално ниво.	#
+store.mashup.title.resourcePack=Разгледайте!	#
+store.mashup.title.skinPack=Скинове %s: %s	#
+store.mashup.title.worldView=Приключенствайте в нов свят!	#
+store.mashup.title.ratings=Оценки от общността	#
+store.mashup.mashupContentsFull=Скинове, пакет текстури и свят %s	#
+store.mashup.mashupContentsSkinAndTexturePack=Скинове и пакет текстури %s	#
+store.mashup.mashupContentsSkinAndWorld=Скинове и свят %s	#
+store.mashup.mashupContentsTexturePackAndWorld=Пакет текстури и свят	#
+store.mashup.mashupContentsSkinPack=Скинове %s	#
+store.mashup.purchase.generalContent=Закупуване на съдържание срещу %s:minecoin:	#
+
+store.ratings.ratingsCount=%s оценки	#
+store.ratings.ratingOutOfFive=%s от 5 звезди	#
+store.ratings.rateContent=Оценете този пакет	#
+store.ratings.rateContentGeneral=Оценете това съдържание	#
+store.ratings.yourRating=Вашата оценка:	#
+store.ratings.stars=%s звезди	#
+
+store.ratings.signIn.title=Оценяване на елементите в магазина	#
+store.ratings.signIn.description1=Разкажете на създателя и на общността за опита ви с този елемент!	#
+store.ratings.signIn.description2=Преди да ви разрешим да оцените даден елемент, трябва влезете с Xbox Live.	#
 
 store.purchase.success=Току-що закупихте: %s	#
 store.purchase.signIn=Разширете вашата игра с купища страхотно съдържание.	#
@@ -4683,13 +4735,13 @@ store.resource.try=Изпробвайте сега!	#
 store.resource.create=Управление на пакетите с ресурси	#
 store.resource.screenshots=Екранни снимки	#
 store.resourcePack.activateTexturePack=Активирайте този пакет текстури!	#
-store.resourcePack.unlock=Отключете този пакет текстури за %s	#
+store.resourcePack.unlock=Отключване на този пакет текстури срещу %s:minecoin:	#
 store.3pserverItem.fetchingCancel=Отказ	#
 store.3pserverItem.fetchingItem=%s иска да сподели нещо забавно с вас.	#
 store.3pserverItem.fetchingItemTitle=Изчакайте момент	#
 store.3pserverItem.unlock=Отключете за %s	#
 store.3pserverItem.alreadyPurchased=Собствени	#
-store.world.unlock=Отключете този свят за %s	#
+store.world.unlock=Отключване на този свят срещу %s:minecoin:	#
 store.restore.description=Възстановяваме покупките ви!	#
 store.restore.failed=За съжаление, не успяхме да възстановим покупките ви. Може би трябва да проверите връзката си с интернет.	#
 store.connection.failed.title=Възникна грешка	#
@@ -4710,6 +4762,8 @@ store.xbl.conversionFailedMessage=Опитайте отново по-късно.
 
 store.showalloffers.list.title=Магазин %s	#
 store.showalloffers.list.back=Назад	#
+
+store.suggestedOffers.defaultTitle=Забавни начини за игра	#
 
 store.minecoin.notavailable=Закупуването на монети не е достъпно на тази версия на Minecraft.	#
 

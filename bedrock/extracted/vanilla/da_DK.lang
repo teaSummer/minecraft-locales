@@ -3483,6 +3483,7 @@ livingroom.hint.tap_touchpad_for_immersive=Tryk på din touchpad for at skifte s
 livingroom.hint.tap_view_for_immersive=Tryk på F5 for at skifte perspektiv	#
 livingroom.hint.tap_view_for_immersive_gamepad=Tryk på op på D-blokken for at aktivere/deaktivere immersiv tilstand	#
 livingroom.hint.tap_view_for_immersive_oculustouch=Tryk på tasten Y for at skifte synsvinkel	#
+livingroom.hint.tap_view_for_immersive_windowsmr=Tryk på venstre pind for at skifte synsvinkel	#
 
 map.toolTip.displayMarkers=Vis markører	#
 map.toolTip.scaling=Skalering: 1:%s	#
@@ -3583,6 +3584,7 @@ offer.category.resourcepack=Teksturpakker	#
 offer.category.mashup=Mashup-pakker	#
 offer.category.worldtemplate=Verdner	#
 offer.category.editorschoice=Redaktørens valg	#
+offer.category.allByCreator=Alt fra %s	#
 
 options.advancedButton=Avancerede videoindstillinger ...	#
 options.showAdvancedVideoSettings=Vis avancerede videoindstillinger	#
@@ -3693,6 +3695,14 @@ options.dev_importPacksAsZip=Importer pakker som zip	#
 options.dev_folders_portSettingsFolder=Eksportér mappen Indstillinger	#
 options.dev_mem_check=Grænse for hukommelsestjek	#
 options.dev_mem_check.seconds=Sekunder	#
+options.dev_useOverrideDate=Brug Tilsidesæt dato	#
+options.dev_overrideDateYear=År	#
+options.dev_overrideDateMonth=Måned	#
+options.dev_overrideDateDay=Dag	#
+options.dev_overrideDayLength=Tilsidesæt Dagslængde i minutter (min. 10)	#
+options.dev_updateOverrideDate=Opdater Tilsidesæt dato	#
+options.dev_clearStoreCache=Ryd butikscache	#
+options.dev_clearAllCache=Ryd al cache	#
 options.difficulty=Sværhedsgrad	#
 options.difficulty.easy=Let	#
 options.difficulty.hard=Svær	#
@@ -3754,6 +3764,7 @@ options.hidden=Skjult	#
 options.hidehud=Skjul HUD	#
 options.hidehand=Skjul hånd	#
 options.classic_box_selection=Konturvalg	#
+options.vr_classic_box_selection=Markér valg	#
 options.hidegamepadcursor=Skjul gamepadmarkøren	#
 options.hidegui=Skjul GUI	#
 options.hidetooltips=Skjul controllertips	#
@@ -3930,6 +3941,8 @@ options.goBack=Gå tilbage	#
 
 patchNotes.continue=Fortsæt	#
 patchNotes.unlock=Lås op	#
+patchNotes.error.notFound.title=Internetforbindelsen er afbrudt	#
+patchNotes.error.notFound.msg=Der er noget galt. Måske skulle du tjekke din internetforbindelse.	#
 
 pauseScreen.back=Tilbage til spillet	#
 pauseScreen.currentWorld=Aktuel verden	#
@@ -4195,6 +4208,8 @@ record.nowPlaying=Nu afspilles: %s	#
 resourcePack.available.title=Tilgængelige ressourcepakker	#
 resourcePack.available.title.behaviorPacks=Tilgængelige adfærdspakker	#
 resourcePack.available.title.packs=Tilgængelige pakker	#
+resourcePack.message.noneFound.packs=Der er ikke nogen pakker på enheden.	#
+resourcePack.message.allInUse.packs=Dine pakker er i brug i øjeblikket.	#
 resourcePack.cached.title=Cachede pakker	#
 resourcePack.folderInfo=(Placer ressourcepakkefilerne her)	#
 resourcePack.openFolder=Åbn mappen med ressourcepakker	#
@@ -4353,6 +4368,16 @@ resourcePack.skin.description=Skin, skin, skin!!!	#
 resourcePack.invalid.description=Pakken kunne ikke parses. Klik for at se fejlene.	#
 resourcePack.loading.description=Pakken indlæses stadig.	#
 
+review.item.post.rating.title=Bedøm %s	#
+review.item.post.rating.dropdown.label=Giv et antal stjerner	#
+review.item.post.rating.footer=Du kan ændre din bedømmelse.	#
+review.item.post.rating.submit.button=Bedøm pakken	#
+review.item.post.rating.1star=Øv! Det havde vi ikke regnet med! Du må meget gerne sende os feedback på https://aka.ms/marketplacefeedback	#
+review.item.post.rating.2star=Det var ikke lige det, vi havde håbet på. Du må meget gerne sende os feedback på https://aka.ms/marketplacefeedback	#
+review.item.post.rating.3star=Der er altid plads til forbedring, men vi er glade for, at du stadig har det sjovt.	#
+review.item.post.rating.4star=Jubii! Når du er glad, er vi også glade!	#
+review.item.post.rating.5star=Det varmer os helt ind i sjælen!	#
+
 screenshot.failure=Skærmbilledet kunne ikke gemmes: %s	#
 screenshot.success=Skærmbilledet er gemt som %s	#
 
@@ -4455,6 +4480,9 @@ selectTemplate.deleteTemplateDone=OK	#
 selectTemplate.deleteMessage=Du er ved at slette %s for evigt. Er du sikker?	#
 selectTemplate.delete.confirm=Vil du slette verdensskabelonen?	#
 selectTemplate.delete=Slet	#
+selectTemplate.myTemplates=Ny verden fra skabelon	#
+selectTemplate.download=Download	#
+selectTemplate.noTemplates=Der er ingen verdensskabeloner på enheden.	#
 
 sign.edit=Rediger besked på skilt	#
 
@@ -4489,7 +4517,7 @@ skins.picker.custom.button=Vælg nyt skin	#
 skins.picker.default=Standard	#
 skins.picker.recent=Seneste	#
 skins.picker.single.player=Skin-pakke til singleplayerspil	#
-skins.store.upsell.buy.button=Lås op for alle %s skins	#
+skins.store.upsell.buy.button=Lås alle %s skins op for %s:minecoin:	#
 skins.store.upsell.equip.button=Udrust dette skin	#
 skins.store.upsell.info=Du skal låse denne pakke op, inden du kan udruste det skin, du har valgt.	#
 skins.store.equipped=Du anvender nu skinnet %s.	#
@@ -4607,7 +4635,7 @@ store.popup.download.back=Gå tilbage	#
 store.popup.wifiWarn.title=Advarsel	#
 store.popup.wifiWarn.msg=Du har ikke forbindelse til wi-fi. Vil du downloade alligevel?	#
 store.popup.download.noInternet.title=Der gik noget galt	#
-store.popup.download.noInternet.msg=Vi kunne ikke oprette forbindelse til butikken. Måske skulle du tjekke din internetforbindelse?	#
+store.popup.download.noInternet.msg=Vi kunne ikke downloade %s. Måske skulle du tjekke din internetforbindelse?	#
 store.popup.download.noSpace.title.KB=Ikke nok plads - %s kB	#
 store.popup.download.noSpace.title.MB=Ikke nok plads - %s MB	#
 store.popup.download.noSpace.msg=Du har ikke tilstrækkelig plads på din enhed til at downloade %s.	#
@@ -4646,13 +4674,37 @@ store.content.requireXbl.notSignedIn=Log på Xbox Live for at låse op.	#
 
 store.mashup.continue=Fortsæt	#
 store.mashup.createWorld=Opret denne verden!	#
-store.mashup.equipSkin=Udrust dette skin!	#
+store.mashup.equipSkin=Anvend	#
+store.mashup.equipThisSkin=Anvend skinnet %s!	#
 store.mashup.mashupPack=Mashup-pakke	#
 store.mashup.skinPack=Skinpakke	#
 store.mashup.texturePack=Teksturpakke	#
-store.mashup.unlockAll=Lås op for teksturpakken, verdenen og alle %s skins!	#
+store.mashup.ratings=Bedømmelser	#
+store.mashup.unlockAll=Lås op for alle %s skins, teksturpakke og verden for %s:minecoin:	#
+store.mashup.unlockMashup=Lås mashup-pakken op for %s:minecoin:	#
 store.mashup.world=Verden	#
 store.mashup.missingContent=Handlingen kunne ikke gennemføres. Der mangler indhold lokalt.	#
+store.mashup.title.resourcePack=Snup en rundvisning!	#
+store.mashup.title.skinPack=%s skins: %s	#
+store.mashup.title.worldView=Rejs ud i en ny verden!	#
+store.mashup.title.ratings=Bedømmelser fra vores community	#
+store.mashup.mashupContentsFull=%s skins, teksturpakke og verden	#
+store.mashup.mashupContentsSkinAndTexturePack=%s skins og en teksturpakke	#
+store.mashup.mashupContentsSkinAndWorld=%s skins og en verden	#
+store.mashup.mashupContentsTexturePackAndWorld=Teksturpakke og en verden	#
+store.mashup.mashupContentsSkinPack=%s skins	#
+store.mashup.purchase.generalContent=Køb indhold for %s:minecoin:	#
+
+store.ratings.ratingsCount=%s bedømmelser	#
+store.ratings.ratingOutOfFive=%s ud af 5 stjerner	#
+store.ratings.rateContent=Bedøm pakken	#
+store.ratings.rateContentGeneral=Bedøm indholdet	#
+store.ratings.yourRating=Din bedømmelse:	#
+store.ratings.stars=%s stjerner	#
+
+store.ratings.signIn.title=Bedøm varer i butikken	#
+store.ratings.signIn.description1=Fortæl udvikleren og vores community om dine erfaringer!	#
+store.ratings.signIn.description2=Du skal logge på Xbox Live, inden du kan give din bedømmelse.	#
 
 store.purchase.success=Du har lige købt: %s	#
 store.purchase.signIn=Udvid dit spil med en masse fantastisk indhold.	#
@@ -4683,13 +4735,13 @@ store.resource.try=Prøv engang!	#
 store.resource.create=Administrer dine ressourcepakker	#
 store.resource.screenshots=Skærmbilleder	#
 store.resourcePack.activateTexturePack=Aktivér teksturpakken	#
-store.resourcePack.unlock=Lås denne teksturpakke op for %s	#
+store.resourcePack.unlock=Lås teksturpakken op for %s:minecoin:	#
 store.3pserverItem.fetchingCancel=Annuller	#
 store.3pserverItem.fetchingItem=%s har noget sjovt at dele med dig.	#
 store.3pserverItem.fetchingItemTitle=Et øjeblik	#
 store.3pserverItem.unlock=Lås op for %s	#
 store.3pserverItem.alreadyPurchased=Allerede købt	#
-store.world.unlock=Lås denne verden op for %s	#
+store.world.unlock=Lås denne verden op for %s:minecoin:	#
 store.restore.description=Vi gendanner dine køb!	#
 store.restore.failed=Vi kunne ikke gendanne dine køb. Måske skulle du tjekke din internetforbindelse?	#
 store.connection.failed.title=Der gik noget galt	#
@@ -4710,6 +4762,8 @@ store.xbl.conversionFailedMessage=Prøv igen senere.	#
 
 store.showalloffers.list.title=%s-butik 	#
 store.showalloffers.list.back=Gå tilbage	#
+
+store.suggestedOffers.defaultTitle=Sjove spilidéer	#
 
 store.minecoin.notavailable=Køb med mønter understøttes ikke i denne version af Minecraft.	#
 

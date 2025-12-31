@@ -3483,6 +3483,7 @@ livingroom.hint.tap_touchpad_for_immersive=視点を切り替えるにはタッ�
 livingroom.hint.tap_view_for_immersive=視点を切り替えるには F5 キーを押します	#
 livingroom.hint.tap_view_for_immersive_gamepad=視点を切り替えるには方向パッドの上を押します	#
 livingroom.hint.tap_view_for_immersive_oculustouch=視点を切り替えるには Y を押します	#
+livingroom.hint.tap_view_for_immersive_windowsmr=視点を切り替えるには左スティックを押します	#
 
 map.toolTip.displayMarkers=マーカーを表示	#
 map.toolTip.scaling=ズーム 1:%s	#
@@ -3583,6 +3584,7 @@ offer.category.resourcepack=テクスチャ パック	#
 offer.category.mashup=マッシュアップ パック	#
 offer.category.worldtemplate=世界	#
 offer.category.editorschoice=エディターの選択	#
+offer.category.allByCreator=すべて %s 作	#
 
 options.advancedButton=高度なビデオ設定...	#
 options.showAdvancedVideoSettings=高度なビデオ設定を表示	#
@@ -3693,6 +3695,14 @@ options.dev_importPacksAsZip=パックを zip 形式でインポート	#
 options.dev_folders_portSettingsFolder=Settings フォルダーをエクスポート	#
 options.dev_mem_check=メモリ チェック制限	#
 options.dev_mem_check.seconds=秒	#
+options.dev_useOverrideDate=日付を上書きする	#
+options.dev_overrideDateYear=年	#
+options.dev_overrideDateMonth=月	#
+options.dev_overrideDateDay=日	#
+options.dev_overrideDayLength=1 日の長さを変更する (単位: 分、最小 10 分)	#
+options.dev_updateOverrideDate=上書きした日付を更新する	#
+options.dev_clearStoreCache=保存されたキャッシュをクリア	#
+options.dev_clearAllCache=すべてのキャッシュをクリア	#
 options.difficulty=難易度	#
 options.difficulty.easy=イージー	#
 options.difficulty.hard=ハード	#
@@ -3754,6 +3764,7 @@ options.hidden=非表示	#
 options.hidehud=HUD の非表示	#
 options.hidehand=手の非表示	#
 options.classic_box_selection=選択範囲をハイライト	#
+options.vr_classic_box_selection=選択範囲をハイライト	#
 options.hidegamepadcursor=ゲームパッドのカーソルを非表示	#
 options.hidegui=GUI を隠す	#
 options.hidetooltips=コントローラーのヒントの非表示	#
@@ -3930,6 +3941,8 @@ options.goBack=戻る	#
 
 patchNotes.continue=続ける	#
 patchNotes.unlock=アンロック	#
+patchNotes.error.notFound.title=インターネット接続なし	#
+patchNotes.error.notFound.msg=問題が発生しました。インターネット接続を確認してください。	#
 
 pauseScreen.back=ゲームに戻る	#
 pauseScreen.currentWorld=現在の世界	#
@@ -4195,6 +4208,8 @@ record.nowPlaying=プレイ中: %s	#
 resourcePack.available.title=利用可能なリソース パック	#
 resourcePack.available.title.behaviorPacks=利用可能なビヘイビアー パック	#
 resourcePack.available.title.packs=利用可能なパック	#
+resourcePack.message.noneFound.packs=このデバイスで利用可能なパックはありません。	#
+resourcePack.message.allInUse.packs=パックが使用されています。	#
 resourcePack.cached.title=キャッシュされたパック	#
 resourcePack.folderInfo=(リソース パック ファイルをここへ)	#
 resourcePack.openFolder=リソース パック フォルダーを開く	#
@@ -4353,6 +4368,16 @@ resourcePack.skin.description=スキン、スキン、スキン!!!	#
 resourcePack.invalid.description=パックを解析できませんでした。クリックしてエラーを表示してください。	#
 resourcePack.loading.description=パックはまだロード中です。	#
 
+review.item.post.rating.title=評価: %s	#
+review.item.post.rating.dropdown.label=評価の星の数を選択してください	#
+review.item.post.rating.footer=評価は後で変更できます。	#
+review.item.post.rating.submit.button=このパックを評価	#
+review.item.post.rating.1star=パックをお楽しみいただけなかったようで、残念です。 https://aka.ms/marketplacefeedback にフィードバックをお寄せください	#
+review.item.post.rating.2star=評価していただき、ありがとうございます。https://aka.ms/marketplacefeedback にフィードバックをお寄せください	#
+review.item.post.rating.3star=Minecraft をお楽しみいただき、ありがとうございます。チームは現在もゲームの品質向上に取り組んでおります。	#
+review.item.post.rating.4star=高く評価していただき、まことにありがとうございます。	#
+review.item.post.rating.5star=最高評価をつけていただき、大変ありがとうございます!	#
+
 screenshot.failure=スクリーンショットを保存できませんでした: %s	#
 screenshot.success=スクリーンショットをファイル名 %s として保存しました	#
 
@@ -4455,6 +4480,9 @@ selectTemplate.deleteTemplateDone=完了しました	#
 selectTemplate.deleteMessage=%s を完全に削除しようとしています。本当によろしいですか?	#
 selectTemplate.delete.confirm=世界テンプレートを削除しますか?	#
 selectTemplate.delete=削除する	#
+selectTemplate.myTemplates=テンプレートからの新しい世界	#
+selectTemplate.download=ダウンロード	#
+selectTemplate.noTemplates=このデバイスには世界のテンプレートがありません。	#
 
 sign.edit=看板のメッセージを編集	#
 
@@ -4489,7 +4517,7 @@ skins.picker.custom.button=新たなスキンを選択	#
 skins.picker.default=デフォルト	#
 skins.picker.recent=最近のもの	#
 skins.picker.single.player=シングル プレイヤーのみで利用可能なスキン パック	#
-skins.store.upsell.buy.button=%s 個のスキンを全て購入	#
+skins.store.upsell.buy.button=%s:minecoin: で %s スキンをすべて購入	#
 skins.store.upsell.equip.button=このスキンを装備	#
 skins.store.upsell.info=選択中のスキンを装備するには、このパックのアンロックが必要です。	#
 skins.store.equipped=%s スキンを装備しました。	#
@@ -4607,7 +4635,7 @@ store.popup.download.back=戻る	#
 store.popup.wifiWarn.title=警告	#
 store.popup.wifiWarn.msg=Wi-Fi に接続していません。それでもダウンロードしますか?	#
 store.popup.download.noInternet.title=問題が発生しました	#
-store.popup.download.noInternet.msg=問題が発生し、ストアに接続できませんでした。インターネット接続を確認してください。	#
+store.popup.download.noInternet.msg=%s をダウンロードできませんでした。インターネット接続をご確認ください	#
 store.popup.download.noSpace.title.KB=空き容量が足りません - %s KB	#
 store.popup.download.noSpace.title.MB=空き容量が足りません - %s MB	#
 store.popup.download.noSpace.msg=お使いのデバイスには %s のダウンロードに必要となる十分な空き容量がありません。	#
@@ -4646,13 +4674,37 @@ store.content.requireXbl.notSignedIn=ロックを解除するには、Xbox Live 
 
 store.mashup.continue=続ける	#
 store.mashup.createWorld=この世界を作成しよう!	#
-store.mashup.equipSkin=このスキンを装備しよう!	#
+store.mashup.equipSkin=装備中	#
+store.mashup.equipThisSkin=%s スキンを装備しています!	#
 store.mashup.mashupPack=マッシュアップ パック	#
 store.mashup.skinPack=スキン パック	#
 store.mashup.texturePack=テクスチャ パック	#
-store.mashup.unlockAll=全 %s 種のスキン、テクスチャ パック、世界をアンロック!	#
+store.mashup.ratings=評価	#
+store.mashup.unlockAll=%s:minecoin: で %s スキン、テクスチャ パック、世界をすべて購入	#
+store.mashup.unlockMashup=%s:minecoin: でマッシュアップ パックを購入	#
 store.mashup.world=世界	#
 store.mashup.missingContent=アクションを完了できません。ローカルでコンテンツが失われています。	#
+store.mashup.title.resourcePack=見て回りましょう!	#
+store.mashup.title.skinPack=%s スキン: %s	#
+store.mashup.title.worldView=新しい世界を旅しましょう!	#
+store.mashup.title.ratings=コミュニティの評価	#
+store.mashup.mashupContentsFull=%s スキン、テクスチャ パック、世界	#
+store.mashup.mashupContentsSkinAndTexturePack=%s スキンとテクスチャ パック	#
+store.mashup.mashupContentsSkinAndWorld=%s スキンと世界	#
+store.mashup.mashupContentsTexturePackAndWorld=テクスチャ パックと世界	#
+store.mashup.mashupContentsSkinPack=%s スキン	#
+store.mashup.purchase.generalContent=%s:minecoin: でコンテンツを購入	#
+
+store.ratings.ratingsCount=%s 評価	#
+store.ratings.ratingOutOfFive=星 5 つ中 %s	#
+store.ratings.rateContent=このパックを評価	#
+store.ratings.rateContentGeneral=このコンテンツを評価	#
+store.ratings.yourRating=あなたの評価:	#
+store.ratings.stars=星 %s つ	#
+
+store.ratings.signIn.title=ストアでアイテムを評価	#
+store.ratings.signIn.description1=このアイテムに関するご感想を、製作者とコミュニティにご報告ください!	#
+store.ratings.signIn.description2=アイテムを評価するには、Xbox Live にログインする必要があります。	#
 
 store.purchase.success=%s を購入しました	#
 store.purchase.signIn=豊富なコンテンツでプレイの幅を広げましょう。	#
@@ -4683,13 +4735,13 @@ store.resource.try=試してみよう!	#
 store.resource.create=リソース パックを管理	#
 store.resource.screenshots=スクリーンショット	#
 store.resourcePack.activateTexturePack=このテクスチャ パックを有効にしよう!	#
-store.resourcePack.unlock=このテクスチャ パックを購入 - %s	#
+store.resourcePack.unlock=%s:minecoin: でこのテクスチャ パックを購入	#
 store.3pserverItem.fetchingCancel=キャンセル	#
 store.3pserverItem.fetchingItem=面白いものを %s と共有できます	#
 store.3pserverItem.fetchingItemTitle=少々お待ちください	#
 store.3pserverItem.unlock=%s で購入	#
 store.3pserverItem.alreadyPurchased=購入済み	#
-store.world.unlock=%s でこの世界を購入	#
+store.world.unlock=%s:minecoin: でこの世界を購入	#
 store.restore.description=購入を復元しています!	#
 store.restore.failed=購入を復元できませんでした。インターネット接続をご確認ください	#
 store.connection.failed.title=問題が発生しました	#
@@ -4710,6 +4762,8 @@ store.xbl.conversionFailedMessage=後でもう一度やり直してください	
 
 store.showalloffers.list.title=%s ストア	#
 store.showalloffers.list.back=戻る	#
+
+store.suggestedOffers.defaultTitle=一味違う楽しみ方	#
 
 store.minecoin.notavailable=このバージョンの Minecraft ではコインを購入できません。	#
 

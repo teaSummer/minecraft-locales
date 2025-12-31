@@ -3483,6 +3483,7 @@ livingroom.hint.tap_touchpad_for_immersive=시야를 전환하려면 터치패�
 livingroom.hint.tap_view_for_immersive=시야를 전환하려면 F5 키를 누르세요.	#
 livingroom.hint.tap_view_for_immersive_gamepad=시야를 전환하려면 방향 패드 위쪽 버튼을 누르세요.	#
 livingroom.hint.tap_view_for_immersive_oculustouch=시야를 전환하려면 Y를 누르세요.	#
+livingroom.hint.tap_view_for_immersive_windowsmr=시야를 전환하려면 왼쪽 스틱을 누르세요.	#
 
 map.toolTip.displayMarkers=마커 표시	#
 map.toolTip.scaling=1:%s 비율	#
@@ -3583,6 +3584,7 @@ offer.category.resourcepack=텍스처 팩	#
 offer.category.mashup=매시업 팩	#
 offer.category.worldtemplate=월드	#
 offer.category.editorschoice=에디터 추천	#
+offer.category.allByCreator=모두 %s 적용	#
 
 options.advancedButton=고급 비디오 설정...	#
 options.showAdvancedVideoSettings=고급 비디오 설정 표시	#
@@ -3693,6 +3695,14 @@ options.dev_importPacksAsZip=Zip 파일로 팩 가져오기	#
 options.dev_folders_portSettingsFolder=설정 폴더 내보내기	#
 options.dev_mem_check=메모리 검사 제한	#
 options.dev_mem_check.seconds=초	#
+options.dev_useOverrideDate=재정의 날짜 사용	#
+options.dev_overrideDateYear=년	#
+options.dev_overrideDateMonth=월	#
+options.dev_overrideDateDay=낮	#
+options.dev_overrideDayLength=낮 길이를 분 단위로 재정의합니다(최소: 10)	#
+options.dev_updateOverrideDate=재정의 날짜 업데이트	#
+options.dev_clearStoreCache=상점 캐시 삭제	#
+options.dev_clearAllCache=모든 캐시 삭제	#
 options.difficulty=난이도	#
 options.difficulty.easy=쉬움	#
 options.difficulty.hard=어려움	#
@@ -3754,6 +3764,7 @@ options.hidden=숨김	#
 options.hidehud=HUD 숨기기	#
 options.hidehand=손 숨기기	#
 options.classic_box_selection=외곽선 선택	#
+options.vr_classic_box_selection=외곽선 선택	#
 options.hidegamepadcursor=게임 패드 커서 숨김	#
 options.hidegui=GUI 숨기기	#
 options.hidetooltips=컨트롤러 툴팁 숨기기	#
@@ -3930,6 +3941,8 @@ options.goBack=돌아가기	#
 
 patchNotes.continue=계속하기	#
 patchNotes.unlock=잠금 해제	#
+patchNotes.error.notFound.title=인터넷에 연결되지 않았습니다.	#
+patchNotes.error.notFound.msg=죄송합니다. 문제가 발생했습니다. 인터넷 연결 상태를 확인해보셨나요?	#
 
 pauseScreen.back=게임으로 돌아가기	#
 pauseScreen.currentWorld=현재 월드	#
@@ -4195,6 +4208,8 @@ record.nowPlaying=지금 재생 중: %s	#
 resourcePack.available.title=사용 가능한 리소스 팩	#
 resourcePack.available.title.behaviorPacks=사용 가능한 행동 팩	#
 resourcePack.available.title.packs=사용 가능한 텍스처 팩	#
+resourcePack.message.noneFound.packs=이 장치에서 사용할 수 있는 팩이 없습니다.	#
+resourcePack.message.allInUse.packs=현재 팩을 사용 중입니다.	#
 resourcePack.cached.title=캐시된 팩	#
 resourcePack.folderInfo=(리소스 팩 파일을 여기에 놓으세요)	#
 resourcePack.openFolder=리소스 팩 폴더 열기	#
@@ -4353,6 +4368,16 @@ resourcePack.skin.description=스킨, 스킨, 스킨!!!	#
 resourcePack.invalid.description=팩을 성공적으로 해석할 수 없습니다. 오류를 표시하려면 클릭하십시오.	#
 resourcePack.loading.description=팩이 아직 로드 중입니다.	#
 
+review.item.post.rating.title=%s 평가	#
+review.item.post.rating.dropdown.label=별 평점을 선택하세요.	#
+review.item.post.rating.footer=평점은 나중에 변경할 수 있습니다.	#
+review.item.post.rating.submit.button=이 팩 평가하기	#
+review.item.post.rating.1star=팩이 전혀 만족스럽지 않으셨다니 유감입니다! https://aka.ms/marketplacefeedback으로 피드백을 보내주세요.	#
+review.item.post.rating.2star=이런, 별로 좋지 않으셨나봐요. https://aka.ms/marketplacefeedback으로 피드백을 보내주세요.	#
+review.item.post.rating.3star=미흡한 부분에도 불구하고 즐겁게 이용해주셔서 감사합니다.	#
+review.item.post.rating.4star=야호! 즐거운 플레이에 도움이 된다니 다행입니다!	#
+review.item.post.rating.5star=즐겁게 이용하고 계신다니 반가운 소식이네요!	#
+
 screenshot.failure=스크린샷을 저장하지 못했습니다: %s	#
 screenshot.success=%s로 스크린샷을 저장했습니다	#
 
@@ -4455,6 +4480,9 @@ selectTemplate.deleteTemplateDone=완료	#
 selectTemplate.deleteMessage=%s을(를) 영구 삭제합니다. 계속할까요?	#
 selectTemplate.delete.confirm=월드 템플릿을 삭제할까요?	#
 selectTemplate.delete=삭제	#
+selectTemplate.myTemplates=새 월드 (템플릿)	#
+selectTemplate.download=다운로드	#
+selectTemplate.noTemplates=이 장치에는 월드 템플릿이 없습니다.	#
 
 sign.edit=사인 메시지 변경	#
 
@@ -4489,7 +4517,7 @@ skins.picker.custom.button=새 스킨 선택	#
 skins.picker.default=기본	#
 skins.picker.recent=최근	#
 skins.picker.single.player=싱글 플레이어 전용 스킨 팩	#
-skins.store.upsell.buy.button=%s 스킨 모두 잠금 해제	#
+skins.store.upsell.buy.button=모든 %s 스킨 잠금 해제: %s:minecoin:	#
 skins.store.upsell.equip.button=이 스킨 적용	#
 skins.store.upsell.info=선택한 스킨을 적용하려면 이 팩을 잠금 해제해야 합니다.	#
 skins.store.equipped=%s 스킨을 장착했습니다.	#
@@ -4607,7 +4635,7 @@ store.popup.download.back=돌아가기	#
 store.popup.wifiWarn.title=경고	#
 store.popup.wifiWarn.msg=WiFi에 연결되어 있지 않습니다. 그래도 다운로드하시겠습니까?	#
 store.popup.download.noInternet.title=오류 발생	#
-store.popup.download.noInternet.msg=죄송합니다. 스토어에 연결할 수 없습니다. 인터넷 상태를 확인해주세요.	#
+store.popup.download.noInternet.msg=죄송합니다. %s 다운로드를 시작할 수 없습니다. 인터넷 연결 상태를 확인하세요.	#
 store.popup.download.noSpace.title.KB=저장 공간 부족 - %sKB	#
 store.popup.download.noSpace.title.MB=저장 공간 부족 - %sMB	#
 store.popup.download.noSpace.msg=%s 다운로드에 필요한 장치 공간이 부족합니다.	#
@@ -4646,13 +4674,37 @@ store.content.requireXbl.notSignedIn=잠금을 해제하려면 Xbox Live에 로�
 
 store.mashup.continue=계속하기	#
 store.mashup.createWorld=이 월드를 생성하세요!	#
-store.mashup.equipSkin=이 스킨을 적용하세요!	#
+store.mashup.equipSkin=적용	#
+store.mashup.equipThisSkin=%s 스킨을 적용하세요!	#
 store.mashup.mashupPack=매시업 팩	#
 store.mashup.skinPack=스킨 팩	#
 store.mashup.texturePack=텍스처 팩	#
-store.mashup.unlockAll=%s개의 스킨, 텍스처 팩과 월드를 모두 잠금 해제하세요!	#
+store.mashup.ratings=평점	#
+store.mashup.unlockAll=스킨 %s개, 텍스처 팩과 월드 모두 잠금 해제: %s:minecoin:	#
+store.mashup.unlockMashup=매시업 팩 잠금 해제: %s:minecoin:	#
 store.mashup.world=월드	#
 store.mashup.missingContent=작업을 완료할 수 없습니다. 로컬 콘텐츠가 없습니다.	#
+store.mashup.title.resourcePack=둘러보기!	#
+store.mashup.title.skinPack=%s 스킨: %s	#
+store.mashup.title.worldView=새로운 월드로 떠나는 여행!	#
+store.mashup.title.ratings=커뮤니티 평점	#
+store.mashup.mashupContentsFull=스킨 %s개, 텍스처 팩, 월드	#
+store.mashup.mashupContentsSkinAndTexturePack=스킨 %s개, 텍스처 팩	#
+store.mashup.mashupContentsSkinAndWorld=스킨 %s개와 월드	#
+store.mashup.mashupContentsTexturePackAndWorld=텍스처 팩과 월드	#
+store.mashup.mashupContentsSkinPack=스킨 %s개	#
+store.mashup.purchase.generalContent=콘텐츠 구입: %s:minecoin:	#
+
+store.ratings.ratingsCount=%s 평점	#
+store.ratings.ratingOutOfFive=별 %s개 (5개 만점)	#
+store.ratings.rateContent=이 팩 평가하기	#
+store.ratings.rateContentGeneral=이 콘텐츠 평가하기	#
+store.ratings.yourRating=내 평가:	#
+store.ratings.stars=별 %s개	#
+
+store.ratings.signIn.title=상점 아이템 평가하기	#
+store.ratings.signIn.description1=아이템을 직접 사용한 경험을 제작자, 커뮤니티와 공유하세요!	#
+store.ratings.signIn.description2=아이템을 평가하려면 먼저 Xbox Live에 로그인해야 합니다.	#
 
 store.purchase.success=구매 완료: %s	#
 store.purchase.signIn=무궁무진한 멋진 콘텐츠로 다양하게 게임을 즐겨보세요.	#
@@ -4683,13 +4735,13 @@ store.resource.try=사용해 보기!	#
 store.resource.create=리소스 팩 관리하기	#
 store.resource.screenshots=스크린샷	#
 store.resourcePack.activateTexturePack=이 텍스처 팩을 활성화하세요!	#
-store.resourcePack.unlock=텍스처 팩 잠금 해제: %s	#
+store.resourcePack.unlock=텍스처 팩 잠금 해제: %s:minecoin:	#
 store.3pserverItem.fetchingCancel=취소	#
 store.3pserverItem.fetchingItem=%s님이 웃긴 내용을 공유하고 싶어합니다.	#
 store.3pserverItem.fetchingItemTitle=잠시 기다려주세요.	#
 store.3pserverItem.unlock=%s에 잠금 해제	#
 store.3pserverItem.alreadyPurchased=소장	#
-store.world.unlock=월드 잠금 해제: %s	#
+store.world.unlock=월드 잠금 해제: %s:minecoin:	#
 store.restore.description=구매 사항을 복원 중입니다!	#
 store.restore.failed=구매 사항을 복원할 수 없습니다. 인터넷 연결 상태를 확인하십시오.	#
 store.connection.failed.title=오류가 발생했습니다.	#
@@ -4710,6 +4762,8 @@ store.xbl.conversionFailedMessage=나중에 다시 시도해주세요.	#
 
 store.showalloffers.list.title=%s 스토어 	#
 store.showalloffers.list.back=돌아가기	#
+
+store.suggestedOffers.defaultTitle=즐거운 플레이 방법	#
 
 store.minecoin.notavailable=이 버전의 Minecraft에서는 아직 코인 구매가 지원되지 않습니다.	#
 

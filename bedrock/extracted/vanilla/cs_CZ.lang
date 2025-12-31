@@ -3483,6 +3483,7 @@ livingroom.hint.tap_touchpad_for_immersive=Pro přepnutí perspektivy klepněte 
 livingroom.hint.tap_view_for_immersive=Perspektivu přepnete stisknutím klávesy F5	#
 livingroom.hint.tap_view_for_immersive_gamepad=Perspektivu přepnete posunutím směrového ovladače nahoru	#
 livingroom.hint.tap_view_for_immersive_oculustouch=Perspektivu přepnete stisknutím Y	#
+livingroom.hint.tap_view_for_immersive_windowsmr=Stisknutím levého palcového ovladače změníte pohled	#
 
 map.toolTip.displayMarkers=Zobrazovací značky	#
 map.toolTip.scaling=Změna měřítka na 1:%s	#
@@ -3583,6 +3584,7 @@ offer.category.resourcepack=Textury	#
 offer.category.mashup=Mash-up sady	#
 offer.category.worldtemplate=Světy	#
 offer.category.editorschoice=Doporučeno redaktorem	#
+offer.category.allByCreator=Vše od %s	#
 
 options.advancedButton=Rozšířená nastavení videa...	#
 options.showAdvancedVideoSettings=Zobrazit rozšířená nastavení videa	#
@@ -3693,6 +3695,14 @@ options.dev_importPacksAsZip=Importovat balíčky ve formátu Zip	#
 options.dev_folders_portSettingsFolder=Exportovat složku s nastaveními	#
 options.dev_mem_check=Limit kontroly paměti	#
 options.dev_mem_check.seconds=sekund(y)	#
+options.dev_useOverrideDate=Použít datum přepsání	#
+options.dev_overrideDateYear=Rok	#
+options.dev_overrideDateMonth=Měsíc	#
+options.dev_overrideDateDay=Den	#
+options.dev_overrideDayLength=Přepsat délku dne v minutách (min. 10)	#
+options.dev_updateOverrideDate=Aktualizovat datum přepsání	#
+options.dev_clearStoreCache=Vymazat mezipaměť obchodu Store	#
+options.dev_clearAllCache=Vymazat veškerou mezipaměť	#
 options.difficulty=Obtížnost	#
 options.difficulty.easy=Snadná	#
 options.difficulty.hard=Těžká	#
@@ -3754,6 +3764,7 @@ options.hidden=Skryté	#
 options.hidehud=Skrýt HUD	#
 options.hidehand=Skrýt ruku	#
 options.classic_box_selection=Označit výběr	#
+options.vr_classic_box_selection=Označit výběr	#
 options.hidegamepadcursor=Skrýt kurzor gamepadu	#
 options.hidegui=Skrýt grafické rozhraní	#
 options.hidetooltips=Skrýt tipy pro ovladač	#
@@ -3930,6 +3941,8 @@ options.goBack=Jít zpět	#
 
 patchNotes.continue=Pokračovat	#
 patchNotes.unlock=Odemknout	#
+patchNotes.error.notFound.title=Odpojeno od internetu	#
+patchNotes.error.notFound.msg=Jejda! Něco se pokazilo. Co takhle zkontrolovat připojení k internetu?	#
 
 pauseScreen.back=Zpět ke hře	#
 pauseScreen.currentWorld=Aktuální svět	#
@@ -4195,6 +4208,8 @@ record.nowPlaying=Nyní hraje: %s	#
 resourcePack.available.title=Dostupné balíčky zdrojů	#
 resourcePack.available.title.behaviorPacks=Dostupné balíčky chování	#
 resourcePack.available.title.packs=Dostupné balíčky	#
+resourcePack.message.noneFound.packs=Na tomto zařízení nejsou žádné dostupné sady.	#
+resourcePack.message.allInUse.packs=Vaše sady se momentálně používají.	#
 resourcePack.cached.title=Balíčky uložené v mezipaměti	#
 resourcePack.folderInfo=(Sem umístěte soubory balíčku zdrojů)	#
 resourcePack.openFolder=Otevřít složku balíčku zdrojů	#
@@ -4353,6 +4368,16 @@ resourcePack.skin.description=Skin, skin, skin!!!	#
 resourcePack.invalid.description=Balíček nelze úspěšně analyzovat. Kliknutím sem zobrazíte chyby.	#
 resourcePack.loading.description=Balíček se stále načítá.	#
 
+review.item.post.rating.title=Hodnotit %s	#
+review.item.post.rating.dropdown.label=Vyberte hodnocení v podobě počtu hvězdiček	#
+review.item.post.rating.footer=Své hodnocení budete moci změnit.	#
+review.item.post.rating.submit.button=Hodnotit tuto sadu	#
+review.item.post.rating.1star=Ale ne! Mrzí nás, že se vám sada vůbec nelíbila! Sdělte nám zpětnou vazbu na adrese https://aka.ms/marketplacefeedback.	#
+review.item.post.rating.2star=Ajaj! To není v pořádku. Sdělte nám zpětnou vazbu na adrese https://aka.ms/marketplacefeedback.	#
+review.item.post.rating.3star=Všechno se dá vylepšit, ale těší nás, že si stále užíváte zábavy.	#
+review.item.post.rating.4star=No tedy! Těší nás, že vás to baví!	#
+review.item.post.rating.5star=Těší nás, že vás to tak baví!	#
+
 screenshot.failure=Snímek obrazovky nelze uložit: %s	#
 screenshot.success=Snímek obrazovky byl uložen jako %s	#
 
@@ -4455,6 +4480,9 @@ selectTemplate.deleteTemplateDone=Hotovo	#
 selectTemplate.deleteMessage=Chystáte se navždy odstranit šablonu %s. Jste si jisti?	#
 selectTemplate.delete.confirm=Odstranit šablonu světa?	#
 selectTemplate.delete=Odstranit	#
+selectTemplate.myTemplates=Nový svět ze šablony	#
+selectTemplate.download=Stáhnout	#
+selectTemplate.noTemplates=Na tomto zařízení nejsou žádné šablony světů.	#
 
 sign.edit=Upravit text cedule	#
 
@@ -4489,7 +4517,7 @@ skins.picker.custom.button=Zvolit nový skin	#
 skins.picker.default=Výchozí	#
 skins.picker.recent=Nejnovější	#
 skins.picker.single.player=Sada skinů pouze pro hru jednoho hráče	#
-skins.store.upsell.buy.button=Odemknout všechny skiny (%s)	#
+skins.store.upsell.buy.button=Odemknout všechny skiny (%s) za %s:minecoin:	#
 skins.store.upsell.equip.button=Použít tento skin	#
 skins.store.upsell.info=Chcete-li použít vybraný skin, musíte odemknout tuto sadu.	#
 skins.store.equipped=Použili jste skin %s.	#
@@ -4607,7 +4635,7 @@ store.popup.download.back=Jít zpět	#
 store.popup.wifiWarn.title=Upozornění	#
 store.popup.wifiWarn.msg=Nejste připojeni k síti WiFi. Přesto stáhnout?	#
 store.popup.download.noInternet.title=Něco se nepovedlo	#
-store.popup.download.noInternet.msg=Něco se nepovedlo. Nemůžeme se připojit k obchodu Store. Můžete si zkontrolovat připojení k internetu?	#
+store.popup.download.noInternet.msg=Je nám líto, nepodařilo se nám stáhnout %s. Můžete si zkontrolovat připojení k internetu?	#
 store.popup.download.noSpace.title.KB=Nedostatek volného místa – %s kB	#
 store.popup.download.noSpace.title.MB=Nedostatek volného místa – %s MB	#
 store.popup.download.noSpace.msg=Nemáte dostatek volného místa v zařízení ke stažení %s.	#
@@ -4646,13 +4674,37 @@ store.content.requireXbl.notSignedIn=K odemčení se přihlaste k účtu Xbox Li
 
 store.mashup.continue=Pokračovat	#
 store.mashup.createWorld=Vytvořit tento svět!	#
-store.mashup.equipSkin=Použít tento skin!	#
+store.mashup.equipSkin=Vzít na sebe	#
+store.mashup.equipThisSkin=Vzít na sebe skin %s!	#
 store.mashup.mashupPack=Balíček Mash-up	#
 store.mashup.skinPack=Sada skinů	#
 store.mashup.texturePack=Textury	#
-store.mashup.unlockAll=Odemkněte všech %s skinů, textury a svět!	#
+store.mashup.ratings=Hodnocení	#
+store.mashup.unlockAll=Odemknout všechny skiny (%s), textury a svět za %s:minecoin:	#
+store.mashup.unlockMashup=Odemknout mash-up sadu za %s:minecoin:	#
 store.mashup.world=Svět	#
 store.mashup.missingContent=Akci nelze dokončit. Chybí místní obsah.	#
+store.mashup.title.resourcePack=Absolvujte prohlídku!	#
+store.mashup.title.skinPack=Skiny (%s): %s	#
+store.mashup.title.worldView=Cesta do nového světa!	#
+store.mashup.title.ratings=Hodnocení komunity	#
+store.mashup.mashupContentsFull=Skiny (%s), textury a svět	#
+store.mashup.mashupContentsSkinAndTexturePack=Skiny (%s) a textury	#
+store.mashup.mashupContentsSkinAndWorld=Skiny (%s) a svět	#
+store.mashup.mashupContentsTexturePackAndWorld=Textury a svět	#
+store.mashup.mashupContentsSkinPack=Skiny (%s)	#
+store.mashup.purchase.generalContent=Zakoupit obsah za %s:minecoin:	#
+
+store.ratings.ratingsCount=%s hodnocení	#
+store.ratings.ratingOutOfFive=%s z 5 hvězdiček	#
+store.ratings.rateContent=Hodnotit tuto sadu	#
+store.ratings.rateContentGeneral=Hodnotit tento obsah	#
+store.ratings.yourRating=Vaše hodnocení:	#
+store.ratings.stars=Počet hvězdiček: %s	#
+
+store.ratings.signIn.title=Hodnotit položky v obchodě Store	#
+store.ratings.signIn.description1=Sdělte tvůrci a komunitě, jaké máte s touto položkou zkušenosti!	#
+store.ratings.signIn.description2=Než budete moci položku ohodnotit, musíte se přihlásit ke službě Xbox Live.	#
 
 store.purchase.success=Právě zakoupeno: %s	#
 store.purchase.signIn=Rozšiřte si hru spoustou nového obsahu.	#
@@ -4683,13 +4735,13 @@ store.resource.try=Vyzkoušejte to!	#
 store.resource.create=Spravovat vaše balíčky zdrojů	#
 store.resource.screenshots=Snímky obrazovky	#
 store.resourcePack.activateTexturePack=Aktivovat tyto textury!	#
-store.resourcePack.unlock=Odemknout tyto textury za %s	#
+store.resourcePack.unlock=Odemknout tyto textury za %s:minecoin:	#
 store.3pserverItem.fetchingCancel=Zrušit	#
 store.3pserverItem.fetchingItem=%s se s vámi chce podělit o něco zábavného.	#
 store.3pserverItem.fetchingItemTitle=Chviličku strpení	#
 store.3pserverItem.unlock=Odemknout pro %s	#
 store.3pserverItem.alreadyPurchased=Vlastněno	#
-store.world.unlock=Odemknout tento svět za %s	#
+store.world.unlock=Odemknout tento svět za %s:minecoin:	#
 store.restore.description=Obnovujeme vaše nákupy!	#
 store.restore.failed=Je nám líto, nepodařilo se nám obnovit vaše nákupy. Můžete si zkontrolovat připojení k internetu?	#
 store.connection.failed.title=Něco se nepovedlo	#
@@ -4710,6 +4762,8 @@ store.xbl.conversionFailedMessage=Zkuste to znovu později.	#
 
 store.showalloffers.list.title=Obchod %s	#
 store.showalloffers.list.back=Jít zpět	#
+
+store.suggestedOffers.defaultTitle=Zábavné způsoby hry	#
 
 store.minecoin.notavailable=V této verzi Minecraftu zatím nelze nakupovat za mince.	#
 

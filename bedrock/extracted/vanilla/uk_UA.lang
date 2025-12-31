@@ -3483,6 +3483,7 @@ livingroom.hint.tap_touchpad_for_immersive=Торкніться тачпаду, 
 livingroom.hint.tap_view_for_immersive=Натисніть клавішу F5, щоб переключити перспективу	#
 livingroom.hint.tap_view_for_immersive_gamepad=Натисніть на хрестовині кнопку вгору, щоб переключити перспективу	#
 livingroom.hint.tap_view_for_immersive_oculustouch=Натисніть Y, щоб переключити перспективу	#
+livingroom.hint.tap_view_for_immersive_windowsmr=Натисніть лівий аналоговий стік, щоб переключити перспективу	#
 
 map.toolTip.displayMarkers=Показати маркери	#
 map.toolTip.scaling=Масштаб 1:%s	#
@@ -3583,6 +3584,7 @@ offer.category.resourcepack=Пакети текстур	#
 offer.category.mashup=Збірні пакети	#
 offer.category.worldtemplate=Світи	#
 offer.category.editorschoice=Вибір редакції	#
+offer.category.allByCreator=Усе від %s	#
 
 options.advancedButton=Розширені параметри відео…	#
 options.showAdvancedVideoSettings=Показувати розширені параметри відео	#
@@ -3693,6 +3695,14 @@ options.dev_importPacksAsZip=Імпортувати пакети як ZIP-арх
 options.dev_folders_portSettingsFolder=Експортувати папку параметрів	#
 options.dev_mem_check=Обмеження перевірки пам’яті	#
 options.dev_mem_check.seconds=Секунди	#
+options.dev_useOverrideDate=Використати дату заміни	#
+options.dev_overrideDateYear=Рік	#
+options.dev_overrideDateMonth=Місяць	#
+options.dev_overrideDateDay=День	#
+options.dev_overrideDayLength=Замінити довжину дня у хвилинах (мін.: 10)	#
+options.dev_updateOverrideDate=Оновити дату заміни	#
+options.dev_clearStoreCache=Очистити кеш Магазину	#
+options.dev_clearAllCache=Очистити весь кеш	#
 options.difficulty=Складність	#
 options.difficulty.easy=Легко	#
 options.difficulty.hard=Важко	#
@@ -3754,6 +3764,7 @@ options.hidden=Прихований	#
 options.hidehud=Приховати HUD	#
 options.hidehand=Приховати руку	#
 options.classic_box_selection=Контурний вибір	#
+options.vr_classic_box_selection=Контурний вибір	#
 options.hidegamepadcursor=Приховати курсор геймпада	#
 options.hidegui=Приховати інтерфейс	#
 options.hidetooltips=Приховати підказки контролера	#
@@ -3930,6 +3941,8 @@ options.goBack=Повернутися	#
 
 patchNotes.continue=Продовжити	#
 patchNotes.unlock=Розблокувати	#
+patchNotes.error.notFound.title=Відключено від Інтернету	#
+patchNotes.error.notFound.msg=Ой! Щось пішло не так. Перевірте підключення до Інтернету.	#
 
 pauseScreen.back=Повернутися до гри	#
 pauseScreen.currentWorld=Поточний світ	#
@@ -4195,6 +4208,8 @@ record.nowPlaying=Зараз грає: %s	#
 resourcePack.available.title=Доступні пакети ресурсів	#
 resourcePack.available.title.behaviorPacks=Доступні пакети поведінки	#
 resourcePack.available.title.packs=Доступні пакети	#
+resourcePack.message.noneFound.packs=На цьому пристрої немає доступних пакетів.	#
+resourcePack.message.allInUse.packs=Ваші пакети зараз використовуються.	#
 resourcePack.cached.title=Кешовані пакети	#
 resourcePack.folderInfo=(Розмістіть файли пакета ресурсів тут)	#
 resourcePack.openFolder=Відкрити папку пакета ресурсів	#
@@ -4353,6 +4368,16 @@ resourcePack.skin.description=Скін, скін, скін!!!	#
 resourcePack.invalid.description=Не вдалося розпізнати пакет. Клацніть, щоб показати помилки.	#
 resourcePack.loading.description=Пакет ще завантажується.	#
 
+review.item.post.rating.title=Оцінка для %s	#
+review.item.post.rating.dropdown.label=Поставте оцінку	#
+review.item.post.rating.footer=Ви зможете змінити свою оцінку пізніше.	#
+review.item.post.rating.submit.button=Оцінити цей пакет	#
+review.item.post.rating.1star=О, ні! Нам дуже прикро, що ваш пакет зовсім не припав вам до смаку! Надішліть нам відгук тут: https://aka.ms/marketplacefeedback	#
+review.item.post.rating.2star=Ой! Це не добре. Надішліть нам відгук тут: https://aka.ms/marketplacefeedback	#
+review.item.post.rating.3star=Завжди можна щось покращити, але ми раді, що вам усе одно подобається.	#
+review.item.post.rating.4star=Ура! Ми раді, що ви гарно проводите час!	#
+review.item.post.rating.5star=Ми раді, що ви чудово проводите час!	#
+
 screenshot.failure=Не вдалося зберегти знімок: %s	#
 screenshot.success=Знімок збережено як %s	#
 
@@ -4455,6 +4480,9 @@ selectTemplate.deleteTemplateDone=Готово	#
 selectTemplate.deleteMessage=Ви ось-ось видалите %s назавжди. Ви справді хочете цього?	#
 selectTemplate.delete.confirm=Видалити шаблон світу?	#
 selectTemplate.delete=Видалити	#
+selectTemplate.myTemplates=Новий світ із шаблону	#
+selectTemplate.download=Завантажити	#
+selectTemplate.noTemplates=На цьому пристрої немає шаблонів світу.	#
 
 sign.edit=Змінити повідомлення для підпису	#
 
@@ -4489,7 +4517,7 @@ skins.picker.custom.button=Вибрати новий скін	#
 skins.picker.default=Стандартний	#
 skins.picker.recent=Останній	#
 skins.picker.single.player=Пакет скінів лише для одного гравця	#
-skins.store.upsell.buy.button=Розблокувати всі %s скінів	#
+skins.store.upsell.buy.button=Розблокувати всі скіни (%s) за %s:minecoin:	#
 skins.store.upsell.equip.button=Вдягнути цей скін	#
 skins.store.upsell.info=Щоб вдягнути вибраний скін, вам потрібно розблокувати цей пакет.	#
 skins.store.equipped=Ви застосували скін %s.	#
@@ -4607,7 +4635,7 @@ store.popup.download.back=Повернутися	#
 store.popup.wifiWarn.title=Увага!	#
 store.popup.wifiWarn.msg=Ви не підключені до Wi-Fi. Все одно завантажити?	#
 store.popup.download.noInternet.title=Щось пішло не так	#
-store.popup.download.noInternet.msg=Щось пішло не так. Не вдається підключитися до магазину. Перевірте підключення до Інтернету.	#
+store.popup.download.noInternet.msg=На жаль, не вдалося завантажити %s. Перевірте підключення до Інтернету.	#
 store.popup.download.noSpace.title.KB=Бракує місця – %s КБ	#
 store.popup.download.noSpace.title.MB=Бракує місця – %s МБ	#
 store.popup.download.noSpace.msg=Не вдається завантажити %s через брак місця на вашому пристрої.	#
@@ -4646,13 +4674,37 @@ store.content.requireXbl.notSignedIn=Увійдіть в Xbox Live, щоб ро�
 
 store.mashup.continue=Продовжити	#
 store.mashup.createWorld=Створити цей світ!	#
-store.mashup.equipSkin=Вдягнути цей скін!	#
+store.mashup.equipSkin=Вдягнути	#
+store.mashup.equipThisSkin=Вдягніть скін %s!	#
 store.mashup.mashupPack=Збірний пакет	#
 store.mashup.skinPack=Пакет скінів	#
 store.mashup.texturePack=Пакет текстур	#
-store.mashup.unlockAll=Розблокувати всі %s скінів, пакет текстур і світ!	#
+store.mashup.ratings=Оцінки	#
+store.mashup.unlockAll=Розблокувати всі скіни %s, пакет текстур і світ за %s:minecoin:	#
+store.mashup.unlockMashup=Розблокувати збірний пакет за %s:minecoin:	#
 store.mashup.world=Світ	#
 store.mashup.missingContent=Не вдається виконати дію. Локального вмісту немає.	#
+store.mashup.title.resourcePack=Візьміть екскурсію!	#
+store.mashup.title.skinPack=%s – скіни: %s	#
+store.mashup.title.worldView=Мандрівка в новий світ!	#
+store.mashup.title.ratings=Оцінки спільноти	#
+store.mashup.mashupContentsFull=%s – скіни, пакет текстур і світ	#
+store.mashup.mashupContentsSkinAndTexturePack=%s – скіни та пакет текстур	#
+store.mashup.mashupContentsSkinAndWorld=%s – скіни та світ	#
+store.mashup.mashupContentsTexturePackAndWorld=Пакет текстур і світ	#
+store.mashup.mashupContentsSkinPack=%s – скіни	#
+store.mashup.purchase.generalContent=Придбати вміст за %s:minecoin:	#
+
+store.ratings.ratingsCount=Оцінок: %s	#
+store.ratings.ratingOutOfFive=%s із 5 зірочок	#
+store.ratings.rateContent=Оцінити цей пакет	#
+store.ratings.rateContentGeneral=Оцінити цей вміст	#
+store.ratings.yourRating=Ви поставили	#
+store.ratings.stars=Зірочок: %s	#
+
+store.ratings.signIn.title=Оцінка в Магазині	#
+store.ratings.signIn.description1=Поділіться з творцем і спільнотою своїми враженнями!	#
+store.ratings.signIn.description2=Щоб оцінити, вам потрібно ввійти під обліковим записом Xbox Live.	#
 
 store.purchase.success=Ви щойно придбали: %s	#
 store.purchase.signIn=Урізноманітнить свою гру цілою купою чудового контенту.	#
@@ -4683,13 +4735,13 @@ store.resource.try=Спробуйте!	#
 store.resource.create=Керувати пакетами ресурсів	#
 store.resource.screenshots=Знімки екрана	#
 store.resourcePack.activateTexturePack=Активувати цей пакет текстур!	#
-store.resourcePack.unlock=Розблокувати цей пакет текстур за %s	#
+store.resourcePack.unlock=Розблокувати цей пакет текстур за %s:minecoin:	#
 store.3pserverItem.fetchingCancel=Скасувати	#
 store.3pserverItem.fetchingItem=%s хоче показати вам щось цікаве.	#
 store.3pserverItem.fetchingItemTitle=Зачекайте	#
 store.3pserverItem.unlock=Розблокуйте за %s	#
 store.3pserverItem.alreadyPurchased=Отримано	#
-store.world.unlock=Розблокувати цей світ за %s	#
+store.world.unlock=Розблокувати цей світ за %s:minecoin:	#
 store.restore.description=Ми відновлюємо ваші покупки!	#
 store.restore.failed=На жаль, не вдалося відновити ваші покупки. Перевірте підключення до Інтернету.	#
 store.connection.failed.title=Щось пішло не так	#
@@ -4710,6 +4762,8 @@ store.xbl.conversionFailedMessage=Спробуйте ще раз згодом.	#
 
 store.showalloffers.list.title=Магазин %s 	#
 store.showalloffers.list.back=Повернутися	#
+
+store.suggestedOffers.defaultTitle=Цікаві способи гри	#
 
 store.minecoin.notavailable=Придбання за монети недоступне в цій версії Minecraft.	#
 
