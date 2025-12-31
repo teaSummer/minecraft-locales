@@ -1,0 +1,66 @@
+name: Update locales
+
+permissions:
+  contents: write
+
+on:
+  schedule:
+    - cron: 0 */2 * * *
+  workflow_dispatch:
+    inputs:
+      export_languages:
+        description: 'Comma-separated languages to export (en-US), blank for all'
+        type: string
+        required: false
+
+jobs:
+  minecraft:
+    name: Minecraft
+    runs-on: windows-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Set up .NET
+        uses: actions/setup-dotnet@v5
+        with:
+          dotnet-version: 9.0.x
+
+      - name: Set up Python and uv
+        uses: astral-sh/setup-uv@v7
+        with:
+          python-version: 3.11
+
+      - name: Install dependencies
+        env:
+          DOTNET_CLI_WORKLOAD_UPDATE_NOTIFY_DISABLE: true
+        run: |
+          uv sync --locked
+          git submodule update --init
+          cd tools/XvdTool.Streaming
+          dotnet publish XvdTool.Streaming/XvdTool.Streaming.csproj -c Release -o ./x64 -r win-x64 --no-self-contained -nowarn:ca1416,ca2022,cs0168
+
+      - name: Update language files
+        id: update
+        env:
+          CIK_DATA: ${{ secrets.CIK_DATA }}
+          EXPORT_LANGUAGES: ${{ inputs.export_languages }}
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          uv run scripts/java/update.py
+          if (%JAVA_EDITION%==/) {
+            git checkout -- versions.json
+          } else {
+            git add .
+            git commit -m "Update Minecraft: Java Edition %JAVA_EDITION% locales"
+          }
+          uv run scripts/bedrock/extract.py
+          if (%BEDROCK_EDITION%==/) {
+            git checkout -- versions.json
+          } else {
+            uv run scripts/bedrock/merge.py
+            git add .
+            git commit -m "Update Minecraft: Bedrock Edition %BEDROCK_EDITION% locales"
+          }
+          git push || true
