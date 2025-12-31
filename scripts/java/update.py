@@ -80,7 +80,7 @@ def get_file(url: str, file_name: str, file_path: Path, sha1: str) -> None:
 
 
 def process_version(
-    target_version: str, versions: list[dict], target_dir: Path, existing_data: dict
+    target_version: str, versions: list[dict], target_dir: Path
 ) -> tuple | None:
     """Process a specific version of Minecraft: Java Edition language files.
 
@@ -169,7 +169,7 @@ def process_version(
                 )
             )
 
-    if len(hash_dict) > 1 or asset_index == existing_data.get("java", {}).get("asset_index"):
+    if len(hash_dict) > 1:
         process_langs()
         return (asset_index, hash_dict)
     asset_response = None
@@ -272,7 +272,7 @@ def main(target_version: str | None = None, metadata: dict | None = None) -> boo
             version_manifest = metadata or get_version_manifest()
             version = version or version_manifest["latest"]["snapshot"]
             version_data = process_version(
-                version, version_manifest["versions"], output_dir, existing_data
+                version, version_manifest["versions"], output_dir
             )
             break
         except Exception as e:
