@@ -1,6 +1,6 @@
 classroomSettings.uriResource.header.title=Resource Link
-classroomSettings.uriResource.header.description=Add a link to an assessment tool, website, or other resource
-classroomSettings.uriResource.name.placeHolder=Enter the name for your button
+classroomSettings.uriResource.header.description=Create a new button on the Pause menu that links to an assessment tool, website, or other resource for your world.
+classroomSettings.uriResource.name.placeHolder=OPEN LINK (Default)	## Text before (Default) should match pause.externalLink
 classroomSettings.uriResource.name.title=Resource Button Name
 classroomSettings.uriResource.uri.placeHolder=Enter the URL for your resource
 classroomSettings.uriResource.uri.title=Resource Button URL
@@ -96,18 +96,19 @@ library.item.sharepopup.body=Share a link to this world.
 library.item.sharepopup.copy=COPY
 library.item.sharepopup.copyButton=Copy Link
 library.item.sharepopup.addResourceButton=Add a Resource
-library.item.sharepopup.secondayText=Would you like to add an assessment tool, Flipgrid topic, or website to the world before you share?
-library.item.sharepopup.addResource.labelOne=Copy the URL for your quiz, Flipgrid topic, or website and paste it below.
+library.item.sharepopup.secondaryText=Would you like to add an assessment tool, Flipgrid Topic, or website to the world before you share?
+library.item.sharepopup.addResource.labelOne=Copy the URL for your quiz, Flipgrid Topic, or website and paste it below.
 library.item.sharepopup.addResource.labelTwo=This will create a new button on the Pause menu so players can access the resource at any time from within the world.
 library.item.sharepopup.addResource.learnMoreLinkText=Learn more
-library.item.sharepopup.addResource.urlLabel=Resource Button URL
-library.item.sharepopup.addResource.urlHintText=Enter the URL here
-library.item.sharepopup.addResource.buttonNameLabel=Resource Button name
-library.item.sharepopup.addResource.buttonNameHintText=Give your button a name
+library.item.sharepopup.addResource.urlLabel=Resource Button URL:
+library.item.sharepopup.addResource.urlHintText=Required to enable button
+library.item.sharepopup.addResource.buttonNameLabel=Resource Button Name:
+library.item.sharepopup.addResource.buttonNameHintText=OPEN LINK (Default)	## Text before (Default) should match pause.externalLink
 library.item.sharepopup.addResource.doneButton=Done
 library.item.sharepopup.addResource.cancelButton=Cancel
 library.item.sharepopup.addResource.deleteButton=Delete
-library.item.sharepopup.editResourceLabel=Here's a preview of the button we'll add to the Pause screen for anyone who opens the world.
+library.item.sharepopup.addResource.invalidSchema=Please enter a URL beginning with "http" or "https" to continue.
+library.item.sharepopup.editResourceLabel=Here's a preview of the button we'll add to the Pause menu for anyone who opens the world.
 library.item.sharepopup.editResource.button.accessibility=Edit Resource URL
 library.item.share.toast.title=Link copied to your clipboard.
 
@@ -274,6 +275,13 @@ library.category.description.commonCoreMath=These engaging activities were creat
 
 library.notification.label.resourceUri=This world was shared with a link to an additional resource. Look for the "%1" button on the Pause screen after you create the world.
 
+resourceUri.launch.success=Opened the Resource Link.
+resourceUri.launch.failure=Unable to open the Resource Link. This doesn't look like a supported URL.
+
+resourceUri.tooltip.infotext=This editable link can be used to connect Minecraft worlds to online resources.
+resourceUri.tooltip.infotext.disabled=You can enable this button by adding a URL to the Resource Link field in Settings > Classroom.
+resourceUri.tooltip.label=RESOURCE LINK
+
 signin.acceptTerms=Accept Terms
 signin.welcome.header.line1=Welcome to
 signin.welcome.header.line2=Minecraft: Education Edition!
@@ -289,10 +297,10 @@ joincode.invalid.button.tryagain=Try Again
 joincode.invalid.button.enterip=Enter IP Address
 joincode.invalid.abuse.body=You have entered %1 incorrect join codes. Please try joining the world using IP Address instead
 
-joincode.popup.title = Share a Link
-joincode.popup.body = Share a link to invite other players to join your world. Please note: this link will only work while you are hosting.
-joincode.share.body = %1 has invited you to join their world in Microsoft: Education Edition. Follow this link to start building together! (%2, hosted by %1)
-joincode.share.subject = Multiplayer invitation for Minecraft: Education Edition
+joincode.item.sharepopup.title.simple=Share a Link
+joincode.popup.body=Share a link to invite other players to join your world. Please note, this link will only work while you are hosting.
+joincode.share.body=%1 has invited you to join their world in Microsoft: Education Edition. Follow this link to start building together! (%2, hosted by %1)
+joincode.share.subject=Multiplayer invitation for Minecraft: Education Edition
 
 pause.externalLink=OPEN LINK
 
