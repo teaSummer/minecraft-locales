@@ -1,5 +1,12 @@
-﻿commands.codebuilder.description=Sets Code Builder state for a player.
-commands.codebuilder.invalidurl=The URL was invalid or points to an unsupported website.
+classroomSettings.uriResource.header.title=Resource Link
+classroomSettings.uriResource.header.description=Add a link to an assessment tool, website, or other resource
+classroomSettings.uriResource.name.placeHolder=Enter the name for your button
+classroomSettings.uriResource.name.title=Resource Button Name
+classroomSettings.uriResource.uri.placeHolder=Enter the URL for your resource
+classroomSettings.uriResource.uri.title=Resource Button URL
+
+commands.codebuilder.description=Sets Code Builder state for a player.
+commands.codebuilder.invalidRuntimeAction=This is not a valid runtime action.
 commands.resourceuri.description=Sets the resource URI in pause menu.
 commands.resourceuri.named=Resource URI set to '%s' with button name '%s'
 commands.resourceuri.default=Resource URI set to "%s"
@@ -18,7 +25,6 @@ createWorldScreen.immutableworld=Immutable World
 createWorldScreen.perfectweather=Perfect Weather
 createWorldScreen.playerdamage=Player Damage
 createWorldScreen.pvpdamage=Player VS Player Damage
-createWorldScreen.showbordereffect=Show Border Effect
 
 library.connection.failed.body=We're unable to connect to the Library. This can happen if your computer is offline or if access to the Library catalog is blocked.
 library.connection.failed.help=Get Help
@@ -49,6 +55,7 @@ library.item.difficulty.advanced=Advanced
 library.item.tags=Tags:
 library.item.tagsAll=ALL TAGS:
 library.item.tagsAll.tts=Show more tags
+library.item.button.signin=SIGN IN TO UNLOCK
 library.item.button.create=CREATE WORLD
 library.item.button.share=SHARE LINK
 library.item.button.shareEducator=ASSIGN OR SHARE
@@ -110,6 +117,9 @@ library.item.share.toast.classrooms=Opened Google Classrooms in your web browser
 library.item.teams.msgTxt=Check out this world, %1, in Minecraft: Education Edition.
 library.item.sharepopup.shareButton=Share to Teams 
 
+library.category.title.demo=Minecraft: Education Edition Demo Lessons
+library.category.description.demo=Welcome to the Minecraft: Education Edition Demo Lessons! We invite you to explore these lessons and learn how Minecraft builds STEM skills, unleashes creativity, and engages students in collaboration and problem-solving.
+
 library.category.label.biomes=BIOMES & WORLDS
 library.category.title.biomes=Biomes & Worlds
 library.category.description.biomes=Use this collection of worlds and biomes to help get started creating lessons in Minecraft: Education Edition.
@@ -123,14 +133,14 @@ library.category.title.biomes.featured=Featured Worlds
 
 library.category.label.buildChallenges=MONTHLY BUILD CHALLENGES
 library.category.title.buildChallenges=Monthly Build Challenges
-library.category.description.buildChallenges=Engage your students' creativity and strengthen 21st Century Skills with these easy-to-implement activities for your classroom.
+library.category.description.buildChallenges=Engage your students' creativity and strengthen 21st Century Skills with these easy-to-implement activities for your classroom, camp, or club.
 
 library.category.label.howToPlay=HOW TO PLAY
-library.category.description.howToPlay=These worlds and activities have been created as an introductory experience for learning how to use Minecraft: Education Edition in your classroom.
+library.category.description.howToPlay=These worlds and activities have been created as an introductory experience for learning how to use Minecraft: Education Edition in your classroom, camp, or club.
 
 library.category.label.howToPlay.startHere=START HERE
 library.category.title.howToPlay.startHere=Start Here
-library.category.description.howToPlay.startHere=Each of these tutorial worlds is designed to help you learn different skills in support of using Minecraft: Education Edition in your classroom.
+library.category.description.howToPlay.startHere=Each of these tutorial worlds is designed to help you learn different skills in support of using Minecraft: Education Edition in your classroom, camp, or club.
 
 library.category.label.howToPlay.additional=ADDITIONAL TUTORIALS
 library.category.title.howToPlay.additional=Additional Tutorials
@@ -142,6 +152,10 @@ library.category.description.SEL=These worlds and activities support Social and 
 library.category.label.digitalCitizen=DIGITAL CITIZENSHIP
 library.category.title.digitalCitizen=Digital Citizenship
 library.category.description.digitalCitizen=These worlds and activities focus on Digital Citizenship, supporting students as they navigate media literacy, privacy, and participation in online communities.
+
+library.category.label.equity_and_inclusion=EQUITY AND INCLUSION	#this has already been localized
+library.category.title.equity_and_inclusion=Equity and Inclusion	#this has already been localized
+library.category.description.equity_and_inclusion=These worlds and activities focus on equity and inclusion. Concepts include social justice, identity, and tolerance.	#change in capitalization only, has otherwise been localized
 
 library.category.label.lessons=LESSONS
 library.category.title.lessons=Lessons
@@ -196,15 +210,11 @@ library.category.title.computerScience=Computer Science
 
 library.category.label.computerScience.hourOfCode=HOUR OF CODE
 library.category.title.computerScience.hourOfCode=Hour of Code
-library.category.description.computerScience.hourOfCode=This lesson is a one-hour introduction to computer science designed to demystify AI, introduce coding in Minecraft, and broaden participation in the field of computer science.
+library.category.description.computerScience.hourOfCode=The Hour of Code began in 2013 as a one-hour introduction to computer science, designed to show that everyone can learn the basics of coding. These lessons offer a fun, introductory experience to coding in Minecraft, and are a fit for learners of all ages.
 
-library.category.label.computerScience.STEM=STEM
-library.category.title.computerScience.STEM=STEM
-library.category.description.computerScience.STEM=Use these standards-aligned lessons and worlds in math, science, and engineering to incorporate computer science throughout your school day.
-
-library.category.label.computerScience.agency=AGENCY
-library.category.title.computerScience.agency=Agency
-library.category.description.computerScience.agency=Build your own city with these computer science lessons based on CSTA standards. Learn basic CS concepts including loops, algorithms, conditionals, debugging, iteration, and more.
+library.category.label.computerScience.computingWithMinecraft=COMPUTING WITH MINECRAFT
+library.category.title.computerScience.computingWithMinecraft=Computing with Minecraft
+library.category.description.computerScience.computingWithMinecraft=Build your own city with these computer science lessons based on CSTA standards. Learn basic CS concepts including loops, algorithms, conditionals, debugging, iteration, and more.
 
 library.category.label.computerScience.codingWithMinecraft=CODING WITH MINECRAFT
 library.category.title.computerScience.codingWithMinecraft=Coding with Minecraft
@@ -220,6 +230,11 @@ library.category.description.computerScience.codingFun2=Visit the Moon, Mercury,
 
 library.category.label.computerScience.codingFun3=CODING FUNDAMENTALS: 3
 library.category.title.computerScience.codingFun3=Coding FUNdamentals: 3
+library.category.description.computerScience.codingFun3=Travel through time, from the pre-historic era to the far-away future! See dinosaurs, Roman aqueducts, and the Wild West while you learn how to use variables, events, conditionals, and functions.
+
+library.category.label.computerScience.ai=ARTIFICIAL INTELLIGENCE
+library.category.title.computerScience.ai=Artificial Intelligence
+library.category.description.computerScience.ai=Created in collaboration with Microsoft AI for Earth, this course will introduce students to the power of Artificial intelligence or AI in a range of exciting real-world scenarios. Students will help people in remote areas, preserve wildlife and ecosystems, and research climate change. Easy, self-guided tutorials allow students to experience the conceptual development of AI in a series of steps, including the collection of data, dataset creation, AI deployment and analyzing results.
 
 library.category.label.computerScience.blockBased=BLOCK-BASED CODING
 library.category.title.computerScience.blockBased=Block-Based Coding
@@ -227,13 +242,17 @@ library.category.title.computerScience.blockBased=Block-Based Coding
 library.category.label.computerScience.python=PYTHON
 library.category.title.computerScience.python=Python
 
-library.category.label.computerScience.python101=PYTHON 101
-library.category.title.computerScience.python101=Python 101
+library.category.label.computerScience.python.python101=PYTHON 101
+library.category.title.computerScience.python.python101=Python 101
 library.category.description.computerScience.python101=Start coding Python in Minecraft! Learn the basics of Python, including syntax, data types, variables, conditionals, 'for' loops, conditional loops, lists, and functions.
 
-library.category.label.computerScience.codingTutorials=CODING TUTORIALS
-library.category.title.computerScience.codingTutorials=Coding Tutorials
-library.category.description.computerScience.codingTutorials=If you want to zero in on a specific coding concept, this is the place to start! Learn how to use loops, sequencing, conditionals, variables, and functions. In these lessons you can choose to code in Blocks, Python, or JavaScript.
+library.category.label.computerScience.python.python_islands=PYTHON ISLANDS
+library.category.title.computerScience.python.python_islands=Python Islands
+library.category.description.computerScience.python.python_islands=Welcome to the Kingdom of the Floating Islands! This mystical kingdom floats high above the world below. In this collection of lessons, students will learn the basics of Python through a series of themed tasks in each world. Complete these tasks to help the kingdom to develop and thrive!
+
+library.category.label.computerScience.languageAgnostic=LANGUAGE-AGNOSTIC
+library.category.title.computerScience.languageAgnostic=Language-Agnostic
+library.category.description.computerScience.languageAgnostic=If you want to zero in on a specific coding concept, this is the place to start! Learn how to use loops, sequencing, conditionals, variables, and functions. In these lessons you can choose to code in Blocks, Python, or JavaScript.
 
 library.category.label.computerScience.featuredLessons=FEATURED LESSONS
 library.category.title.computerScience.featuredLessons=Featured Lessons
@@ -256,10 +275,13 @@ library.category.description.commonCoreMath=These engaging activities were creat
 library.notification.label.resourceUri=This world was shared with a link to an additional resource. Look for the "%1" button on the Pause screen after you create the world.
 
 signin.acceptTerms=Accept Terms
-signin.leftPanel.header=PLAY MINECRAFT: EDUCATION EDITION
-signin.leftPanel.body=Sign in with your school account to access the full version of Minecraft: Education Edition.
-signin.rightPanel.header=TRY A DEMO LESSON
-signin.rightPanel.body=Explore coding in Minecraft: Education Edition with this demo lesson, available for all users.
+signin.welcome.header.line1=Welcome to
+signin.welcome.header.line2=Minecraft: Education Edition!
+signin.welcome.body=Sign in with your school or organizational account to continue.
+signin.welcome.footer=If you don't have an account, try a demo lesson.
+signin.demo.header=TRY A DEMO LESSON
+signin.demo.body=Start your journey in Minecraft: Education Edition with a free demo lesson, available to all students.
+signin.progress.title=Downloading Resources
 
 joincode.invalid.title=Incorrect Join Code 
 joincode.invalid.body=You have entered %1 incorrect join codes. Please check with the host to make sure you have the correct code or try to join by IP Address. 
@@ -271,6 +293,8 @@ joincode.popup.title = Share a Link
 joincode.popup.body = Share a link to invite other players to join your world. Please note: this link will only work while you are hosting.
 joincode.share.body = %1 has invited you to join their world in Microsoft: Education Edition. Follow this link to start building together! (%2, hosted by %1)
 joincode.share.subject = Multiplayer invitation for Minecraft: Education Edition
+
+pause.externalLink=OPEN LINK
 
 ## TAG LOCALIZATION SECTION ##
 tag.ages_0_3=0-3	#
@@ -393,6 +417,8 @@ tag.space=Space	# refers to outer space
 tag.esports=eSports	#
 tag.toybox=Toybox	#
 tag.featured_coding=Featured Coding	#
+tag.equity_and_inclusion=Equity and Inclusion	#
+tag.python_islands=Python Islands #
 ## END TAG LOCALIZATION SECTION ##
 
 worlds.storage.permission.needed=We don't have permission to change this setting.
