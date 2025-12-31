@@ -67,11 +67,14 @@ achievement.theEnd=النهاية؟
 achievement.theEnd.desc=أكتشف عالم النهاية
 achievement.theEnd2=النهاية.
 achievement.theEnd2.desc=أهزم تنين النهاية
-achievement.unknown=???
 addServer.add=إنتهيت
 addServer.enterIp=عنوان الخادم
 addServer.enterName=اسم الخادم
 addServer.hideAddress=إخفاء العنوان
+addServer.resourcePack=حزم موارد الخادم
+addServer.resourcePack.disabled=غير مفعل
+addServer.resourcePack.enabled=مفعل
+addServer.resourcePack.prompt=فوري
 addServer.title=تعديل بيانات الخادم
 advMode.allPlayers=استخدام "@a" لاستهداف جميع اللاعبين
 advMode.command=وحدة التحكم بالأوامر
@@ -82,12 +85,6 @@ advMode.previousOutput=المخرج السابق
 advMode.randomPlayer=استخدم "@r" بهدف لاعب عشوائي
 advMode.setCommand=الأمر set في وحدة التحكم لكتلة
 advMode.setCommand.success=قيادة المجموعة: %s
-attribute.modifier.plus.0=+%s %s
-attribute.modifier.plus.1=+%s%% %s
-attribute.modifier.plus.2=+%s%% %s
-attribute.modifier.take.0=-%s %s
-attribute.modifier.take.1=-%s%% %s
-attribute.modifier.take.2=-%s%% %s
 attribute.name.generic.attackDamage=أضرار الهجوم
 attribute.name.generic.followRange=مسافة لحاق الوحش
 attribute.name.generic.knockbackResistance=تدق مرة أخرى المقاومة
@@ -111,15 +108,12 @@ chat.link.warning=لا تفتح روابط من أشخاص لا تثق بهم!
 chat.stream.emote=(%s) * %s %s
 chat.stream.text=(%s) <%s> %s
 chat.type.achievement=طبيعي
-chat.type.admin=[%s: %s]
-chat.type.announcement=[%s] %s
-chat.type.emote=* %s %s
-chat.type.text=<%s> %s
 commands.achievement.give.success.all=تم اعطاء كل الانجازات لـ %s
 commands.achievement.give.success.one=بنجاح معطى %s احصائيات %s
 commands.achievement.statTooLow=اللاعب %s ليس لديه احصائيات %s
 commands.achievement.unknownAchievement=إنجاز غير معروف أو إحصائية %s
 commands.achievement.usage=/achievement give <الإسم> [اللاعب]
+commands.ban.failed=لا يمكن حظر اللاعب %s
 commands.ban.success=حظر اللاعب %s
 commands.ban.usage=/ban <name> [reason ...]
 commands.banip.invalid=لقد قمت بإدخال عنوان IP غير صالح أو لاعب غير متصل
@@ -135,15 +129,14 @@ commands.clear.usage=/بجلاء <لاعب> [مادة] [حقائق]
 commands.debug.notStarted=لا يمكن إيقاف التنميط عندما كنا لم تكن قد بدأت بعد!
 commands.debug.start=التصحيح بدأ التنميط
 commands.debug.stop=إيقاف التصحيح التنميط بعد %s ثانية (القراد %s)
-commands.debug.usage=/debug <start|stop>
 commands.defaultgamemode.success=أن طور اللعبة الافتراضي للعالم حالياً هو  %s
 commands.defaultgamemode.usage=/defaultgamemode <mode>
+commands.deop.failed=لا يمكن الوصول إلى إلغاء المشغل %s
 commands.deop.success=إلغاء حق الإشراف ل %s
 commands.deop.usage=/deop <player>
 commands.difficulty.success=تعيين صعوبة اللعبة إلى %s
 commands.difficulty.usage=/difficulty < صعوبة جديدة >
 commands.downfall.success=تبديل وجود المطر والثلج
-commands.downfall.usage=/toggledownfall
 commands.effect.failure.notActive=لايمكن أخذ %1$s من %2$s لأنه لا يملك التأثير
 commands.effect.failure.notActive.all=لا تستطيع أن تتخذ أي آثار من %s كما أنهم لا يملكون أي
 commands.effect.notFound=لا يوجد تأثير عصابة مع الحساب %s
@@ -187,32 +180,27 @@ commands.kick.success=طرد %s من اللعبة
 commands.kick.success.reason=طرد %s من اللعبة: '%s'
 commands.kick.usage=/kick <player> [السبب]
 commands.kill.success=أوتش! تبدو كما لو أنها تضر
-commands.kill.usage=/kill
 commands.me.usage=/me <action ...>
 commands.message.display.incoming=%s يهمس لك: %s
 commands.message.display.outgoing=أنت الهمس إلى %s: %s
 commands.message.sameTarget=لا يمكنك إرسال رسالة خاصة إلى نفسك!
 commands.message.usage=/tell <اعب> <رسالة خاصة ...>
+commands.op.failed=لا يمكن الوصول إلى المشغل %s
 commands.op.success=إعطاء حق الإشراف ل %s
 commands.op.usage=/op <player>
 commands.players.list=هناك %s/%s لاعب على الإنترنت:
-commands.players.usage=/list
 commands.playsound.playerTooFar=اللاعب %s بعيد عن المنطقة ليتمكن من سماع الصوت
 commands.playsound.success=تم تشغيل الصوت '%s' إلى %s
 commands.playsound.usage=/playsound <الصوت> <اللاعب> [x] [y] [z] [الصوت] [الحدة] [اقل صوت ممكن]
 commands.publish.failed=غير قادر على استضافة لعبة محلية
 commands.publish.started=اللعبة المحلية استضافتها على المنفذ %s
-commands.publish.usage=/publish
 commands.save-off.alreadyOff=يتم إيقاف تشغيل الحفظ فعلا.
-commands.save-off.usage=/save-off
 commands.save-on.alreadyOn=إنقاذ مشغلة بالفعل.
-commands.save-on.usage=/save-on
 commands.save.disabled=إلغاء حفظ العالم التلقائي
 commands.save.enabled=تشغيل حفظ العالم التلقائي
 commands.save.failed=إنقاذ فاشلة: %s
 commands.save.start=جاري الحفظ...
 commands.save.success=تم حفظ العالم
-commands.save.usage=/save-all
 commands.say.usage=/say <message ...>
 commands.scoreboard.objectiveNotFound=لم يتم العثور على هدف بهذا الاسم '%s'
 commands.scoreboard.objectiveReadOnly=الهدف '%s' هو للقراءة فقط و لايمكن اعداده
@@ -231,20 +219,17 @@ commands.scoreboard.objectives.setdisplay.invalidSlot=لا يوجد فتحة ع�
 commands.scoreboard.objectives.setdisplay.successCleared=فتحة عرض الهدف مسحت '%s'
 commands.scoreboard.objectives.setdisplay.successSet=تعيين هدف العرض في خانة '%s' to '%s'
 commands.scoreboard.objectives.setdisplay.usage=/displayset objectives scoreboard <فتحة> [هدف]
-commands.scoreboard.objectives.usage=/scoreboard objectives <list|add|remove|setdisplay>
 commands.scoreboard.players.add.usage=/add players scoreboard <اعب> <هدف> <العد اللفظي>
 commands.scoreboard.players.list.count=عرض تعقب اللاعبين على لوحة النقاط
 commands.scoreboard.players.list.empty=لا يوجد لاعبين تعقب على لوحة النتائج
 commands.scoreboard.players.list.player.count=عرض &d الهدف المتعقب (s)إلى &s:
 commands.scoreboard.players.list.player.empty=اللاعب %s ليس لها عشرات سجلت
-commands.scoreboard.players.list.player.entry=- %2$s: %1$s (%3$s)
 commands.scoreboard.players.list.usage=/list players scoreboard [اسم]
 commands.scoreboard.players.remove.usage=/remove players scoreboard <اعب> <هدف> <العد اللفظي>
 commands.scoreboard.players.reset.success=إعادة تعيين كافة العشرات من لاعب %s
 commands.scoreboard.players.reset.usage=/reset players scoreboard <اعب>
 commands.scoreboard.players.set.success=تعيين نقاط من٪ s للاعب٪ s إلى٪ D
 commands.scoreboard.players.set.usage=/scoreboard players set لاعب> <هدف> <علامة>
-commands.scoreboard.players.usage=/scoreboard players <set|add|remove|reset|list>
 commands.scoreboard.teamNotFound=لم يتم العثور على فريق بهذا الاسم %s
 commands.scoreboard.teams.add.alreadyExists=يوجد بالفعل فريقا باسم '%s'
 commands.scoreboard.teams.add.displayTooLong=اسم العرض '%s' طويل جداً لفريق، فإنه يمكن في أكثر من %s حرفاً
@@ -253,7 +238,6 @@ commands.scoreboard.teams.add.tooLong=اسم '%s' طويل جداً لفريق،
 commands.scoreboard.teams.add.usage=/add teams scoreboard <اسم> [عرض اسم ...]
 commands.scoreboard.teams.empty.alreadyEmpty=فريق %s هو بالفعل فارغة، لا يمكن إزالة اللاعبين غير موجود
 commands.scoreboard.teams.empty.success=إزالة كافة اعب %s (ق) من فريق%s
-commands.scoreboard.teams.empty.usage=/scoreboard teams empty
 commands.scoreboard.teams.join.failure=لا يمكن إضافة٪ اعب %s (ق) لفريق%s: %s
 commands.scoreboard.teams.join.success=أضف %s لاعبـ(ين) الى فريق %s: %s
 commands.scoreboard.teams.join.usage=/ فرق وحة النتائج انضمام <فريق> [لاعب]
@@ -266,17 +250,13 @@ commands.scoreboard.teams.list.empty=لا يوجد فرق مسجلة على لو
 commands.scoreboard.teams.list.entry=-% 1$ s: '% 2$ s' قد % 3$ د اللاعبين
 commands.scoreboard.teams.list.player.count=إظهار %s اللاعب(ين) في الفرق %s:
 commands.scoreboard.teams.list.player.empty=فريق %s قد لا اللاعبين
-commands.scoreboard.teams.list.player.entry=- %2$s: %1$s (%3$s)
 commands.scoreboard.teams.list.usage=/ لوحة النتائج فرق قائمة [اسم]
 commands.scoreboard.teams.option.noValue=القيم الصالحة للخيار s% هي s%
 commands.scoreboard.teams.option.success=تعيين خيار %s لفريق %s الى %s
 commands.scoreboard.teams.option.usage=/scoreboard teams option <الفريق> <friendlyfire|color|seeFriendlyInvisibles> <القيمة>
 commands.scoreboard.teams.remove.success=فريق إزالة %s
 commands.scoreboard.teams.remove.usage=/ فرق إزالة لوحة النتائج <اسم>
-commands.scoreboard.teams.usage=/scoreboard teams <list|add|remove|empty|join|leave|option>
-commands.scoreboard.usage=/scoreboard <objectives|players|teams>
 commands.seed.success=البذور: %s
-commands.seed.usage=/seed
 commands.setblock.failed=غير قادر على إضافة البلوك
 commands.setblock.noChange=خطأ في وضع البلوك
 commands.setblock.notFound=لا يوجد بلوك أو غرض بهذا الأسم %s
@@ -300,7 +280,6 @@ commands.spreadplayers.success.players=بنجاح نشر %s اللاعبين ح�
 commands.spreadplayers.success.teams=بنجاح نشر فرق %s حول %s %s
 commands.spreadplayers.usage=/spreadplayers <x><z><spreadDistance><maxRange>< ريسبيكتيمس true|false > < لاعب >...
 commands.stop.start=إيقاف الخادم
-commands.stop.usage=/stop
 commands.summon.failed=خطأ في استدعاء الكائن
 commands.summon.outOfWorld=غير قادر على انشاء كائن خارج العالم
 commands.summon.success=تم صنع الغرض بنجاح
@@ -325,6 +304,7 @@ commands.tp.notSameDimension=غير قادر على النقل الفضائي ل
 commands.tp.success=انتقل %s إلى %s
 commands.tp.success.coordinates=Teleported %s إلى %s,%s,%s
 commands.tp.usage=/tp [لاعب الهدف[ لاعب الوجهة أو /tp [هدف لاعب] <x> <y> <z>
+commands.unban.failed=لا يمكن رفع الحظر عن اللاعب %s
 commands.unban.success=إلغاء حظر اللاعب %s
 commands.unban.usage=/pardon <name>
 commands.unbanip.invalid=لقد قمت بإدخال عنوان IP غير صالح
@@ -334,12 +314,14 @@ commands.weather.clear=تغيير لمسح الطقس
 commands.weather.rain=تغيير لطقس ممطر
 commands.weather.thunder=تغيير للمطر والرعد
 commands.weather.usage=/weather <clear|rain|thunder> [اختر ثواني]
+commands.whitelist.add.failed=لا يمكن إضافة %s إلى القائمة البيضاء للمستخدمين
 commands.whitelist.add.success=اضيف %s إلى قائمة السماح
 commands.whitelist.add.usage=/whitelist add <لاعب>
 commands.whitelist.disabled=إلغاء قائمة السماح
 commands.whitelist.enabled=تشغيل قائمة السماح
 commands.whitelist.list=هناك %s (من %s ظاهرين) لاعب في قائمة السماح:
 commands.whitelist.reloaded=تحديث قائمة السماح
+commands.whitelist.remove.failed=لا يمكن حذف %s من القائمة البيضاء للمستخدمين
 commands.whitelist.remove.success=ازيل %s من قائمة السماح
 commands.whitelist.remove.usage=/whitelist remove <player>
 commands.whitelist.usage=/whitelist <on|off|list|add|remove|reload>
@@ -373,7 +355,6 @@ controls.title=التحكم
 createWorld.customize.flat.addLayer=إضافة طبقة
 createWorld.customize.flat.editLayer=تحرير طبقة
 createWorld.customize.flat.height=الارتفاع
-createWorld.customize.flat.layer=%s
 createWorld.customize.flat.layer.bottom=أسفل-%s
 createWorld.customize.flat.layer.top=الأعلى—%s
 createWorld.customize.flat.removeLayer=إزالة طبقة
@@ -860,117 +841,6 @@ lanServer.title=Lan عالم
 language.code=ar_ALL
 language.name=العربية
 language.region=العالم العربي
-mco.backup.button.download=تنزيل اخر النسخ
-mco.backup.button.restore=استعادة
-mco.backup.changes.tooltip=التغييرات
-mco.backup.restoring=استعادة الريلمز
-mco.backup.title=النسخ الاحتياطية
-mco.buy.realms.buy=أريد واحدة!
-mco.buy.realms.title=شراء عالم دنيا
-mco.client.outdated.msg=نسختك قديمة ، الرجاء تحديثها لتتمكن من استخدام الهاشم
-mco.client.outdated.title=النسخة قديمة!
-mco.configure.world.buttons.backup=النسخ الأحتياطية
-mco.configure.world.buttons.close=إغلاق المجال
-mco.configure.world.buttons.delete=حذف
-mco.configure.world.buttons.deop=ديوب
-mco.configure.world.buttons.done=تم
-mco.configure.world.buttons.edit=تعديل
-mco.configure.world.buttons.invite=دعوة
-mco.configure.world.buttons.modifyMiniGame=تعديل لعبة البسيطة
-mco.configure.world.buttons.op=المرجع
-mco.configure.world.buttons.open=افتتاح المجال
-mco.configure.world.buttons.reset=إعادة تعيين مجال
-mco.configure.world.buttons.startMiniGame=التحول إلى لعبة البسيطة
-mco.configure.world.buttons.subscription=الاشتراك
-mco.configure.world.buttons.uninvite=إلغاء الدعوة
-mco.configure.world.close.question.line1=المجال الخاص بك وسوف تصبح غير متوفرة.
-mco.configure.world.close.question.line2=هل أنت متأكد من أنك تريد أن تفعل هذا؟
-mco.configure.world.description=الوصف
-mco.configure.world.edit.title=التعديل على العالم
-mco.configure.world.invite.profile.name=الاسم
-mco.configure.world.invited=دعوة
-mco.configure.world.invites.normal.tooltip=المستخدم العادي
-mco.configure.world.invites.ops.tooltip=عامل
-mco.configure.world.leave.question.line1=إذا كنت اترك هذا المجال لن نرى ذلك إلا إذا دعيت مرة أخرى
-mco.configure.world.leave.question.line2=هل أنت متأكد من أنك تريد القيام بهذا؟
-mco.configure.world.location=الموقع
-mco.configure.world.name=الاسم
-mco.configure.world.reset.question.line1=سوف يتم اعادة انتاج عالمك ، وعالمك الحالي سوف يحذف
-mco.configure.world.reset.question.line2=هل انت متأكد من فعل ذلك ؟
-mco.configure.world.restore.download.question.line1=سيتم توجيهك إلى المتصفح الافتراضي الخاص بك لتحميل خريطة العالم الذي تعيشون
-mco.configure.world.restore.download.question.line2=هل تريد الاستمرار؟
-mco.configure.world.restore.question.line1=سوف يتم استعادة المجال الخاص بك حتى الآن '٪ ق' (٪ ق)
-mco.configure.world.restore.question.line2=هل انت متأكد من فعل ذلك ؟
-mco.configure.world.status=الحالة
-mco.configure.world.subscription.daysleft=أيام متبقية
-mco.configure.world.subscription.extend=تمديد الاشتراك
-mco.configure.world.subscription.extendHere=تمديد الاشتراك هنا:
-mco.configure.world.subscription.less_than_a_day=أقل من يوم
-mco.configure.world.subscription.recurring.daysleft=تجدد تلقائيا في
-mco.configure.world.subscription.start=تاريخ البدء
-mco.configure.world.subscription.title=معلومات الاشتراك
-mco.configure.world.title=تكوين عالم
-mco.configure.world.uninvite.question=هل أنت متأكد من أنك تريد أن إلغاء الدعوة
-mco.connect.authorizing=جارى تسجيل الدخول...
-mco.connect.connecting=جاري الاتصال بالخادم...
-mco.connect.failed=فشل الاتصال بالخادم
-mco.create.world=إنشاء
-mco.create.world.location.title=المواقع
-mco.create.world.location.warning=قد لا تحصل على تحديد دقيق للموقع
-mco.create.world.seed=بذرة (اختياري)
-mco.create.world.wait=إنشاء العالم
-mco.invites.button.accept=قبول
-mco.invites.button.reject=رفض
-mco.invites.nopending=لا ريثما دعوات!
-mco.invites.pending=دعوات جديدة!
-mco.invites.title=دعوات معلقة
-mco.minigame.world.changeButton=اختر لعبة أخرى البسيطة
-mco.minigame.world.info1=وهذا يحل محل مؤقتا عالمك مع لعبة صغيرة!
-mco.minigame.world.info2=يمكنك العودة في وقت لاحق الى العالم الذي تعيشون الأصلي دون أن تفقد أي شيء.
-mco.minigame.world.modify.end=إنهاء لعبة صغيرة واستعادة عالم السر?
-mco.minigame.world.modify.new=اختر لعبة صغيرة أخر?
-mco.minigame.world.modify.title=تعديل لعبة البسيطة
-mco.minigame.world.noSelection=يرجى التأكد مجموعة
-mco.minigame.world.restore=تنتهي اللعبة البسيطة ...
-mco.minigame.world.restore.question.line1=فإن لعبة صغيرة تنتهي وسوف يتم استعادة عالم الخاص بك.
-mco.minigame.world.restore.question.line2=هل أنت متأكد أنك تريد أن تفعل هذا؟
-mco.minigame.world.selected=اختيار لعبة صغيرة:
-mco.minigame.world.startButton=تحول
-mco.minigame.world.starting.screen.title=تبدأ اللعبة البسيطة ...
-mco.minigame.world.stopButton=تنتهي اللعبة البسيطة
-mco.minigame.world.title=التبديل إلى عالم اللعبة البسيطة
-mco.more.info.question.line1=سيتم توجيهك إلى المتصفح الافتراضي الخاص بك لرؤية الصفحة.
-mco.more.info.question.line2=هل تريد المتابعة ؟
-mco.reset.world.resetting.screen.title=إعادة تعيين مجال...
-mco.reset.world.seed=seed (اعدادات)
-mco.reset.world.title=إعادة تعيين مجال
-mco.reset.world.warning=سيؤدي هذا إلى حذف المجال الخاص بك بشكل دائم!
-mco.selectServer.buy=شراء عالم دنيا
-mco.selectServer.closed=سيرفر مغلق
-mco.selectServer.configure=تكوين
-mco.selectServer.create=انشاء عالم خاص
-mco.selectServer.expired=سيرفر منتهي
-mco.selectServer.expires.day=وتنتهي في يوم واحد
-mco.selectServer.expires.days=ينتهي في %s ايام
-mco.selectServer.expires.soon=تنتهي قريبا
-mco.selectServer.leave=ترك المجال
-mco.selectServer.locked=سيرفر مقفل
-mco.selectServer.minigame=مصغرة لعبة:
-mco.selectServer.open=سيرفر مفتوح
-mco.selectServer.play=العب
-mco.selectServer.uninitialized=انقر لإنشاء عالم!
-mco.selectServer.whatisrealms=ما هي العوالم؟
-mco.template.button.select=اختر
-mco.template.default.name=اختر القالب (اختياري)
-mco.template.name=قالب
-mco.template.title=قوالب الريلمز
-mco.template.title.minigame=عالم ألعاب صغيرة
-mco.terms.buttons.agree=موافق
-mco.terms.buttons.disagree=لا أوافق
-mco.terms.sentence.1=أوافق على العوالم Minecraft
-mco.terms.sentence.2=شروط الخدمة
-mco.terms.title=شروط العوالم
-mco.title=Minecraft Realms
 mcoServer.title=عالم ماين كرافت الجماعي
 menu.convertingLevel=تحويل العالم
 menu.disconnect=قطع الاتصال
@@ -979,7 +849,6 @@ menu.generatingLevel=توليد العالم
 menu.generatingTerrain=جاري بناء الأرض
 menu.loadingLevel=تحميل العالم
 menu.multiplayer=اللعب الجماعي
-menu.online=Minecraft Realms
 menu.options=...خيارات
 menu.playdemo=العب العالم التجريبي
 menu.quit=خروج من اللعبة
@@ -1000,6 +869,7 @@ multiplayer.info1=اللعب الجماعي في ماين كرافت غير مك
 multiplayer.info2=تتم بعض الاختبارات الاولية التي يشوبها المشاكل.
 multiplayer.ipinfo=قم بإدخال الأي بي للسيرفر الذي تريد الاتصال به
 multiplayer.player.joined=وانضم %s إلى اللعبة
+multiplayer.player.joined.renamed=%s (المعروف سابقاً باسم %s) قد انضم للعبة
 multiplayer.player.left=%s بترك اللعبة
 multiplayer.stopSleeping=مغادرة السرير
 multiplayer.texturePrompt.line1=يوصي هذا الخادم باستخدام حزمة جرافيك مخصصة.
@@ -1017,7 +887,6 @@ options.ao.max=الحد الأقصى
 options.ao.min=الحد الأدنى
 options.ao.off=إيقاف
 options.aoDesc0=تمكين انسداد المحيطة فو على كتل.
-options.aoDesc1=
 options.chat.color=الألوان
 options.chat.height.focused=الارتفاع المركز 
 
@@ -1092,7 +961,6 @@ options.qualityButton=إعدادات جودة الفيديو...
 options.qualityVideoTitle=إعدادات جودة الفيديو
 options.renderClouds=السحاب
 options.renderCloudsDesc0=اظهار الغيوم.
-options.renderCloudsDesc1=
 options.renderDistance=مسافة عرض العالم
 options.renderDistance.far=بعيد
 options.renderDistance.normal=عادية
@@ -1105,7 +973,6 @@ options.saturation=التشبع
 options.sensitivity=الحساسية
 options.sensitivity.max=سرعة عالية!!!
 options.sensitivity.min=*تثاؤب*
-options.serverTextures=جرافيك الخادم
 options.showCape=إظهار الرأس
 options.snooper=السماح المتلصص
 options.snooper.desc=أننا نريد لجمع معلومات حول الجهاز الخاص بك للمساعدة في تحسين Minecraft من خلال معرفة ما يمكن أن نؤيد وأين أكبر المشاكل. كل من هذه المعلومات مجهول تماما ويمكن عرضها فيما يلي. ونعد بأننا لن نفعل أي شيء سيء مع هذه البيانات، ولكن إذا كنت ترغب في إلغاء الاشتراك ثم لا تتردد في تبديل تشغيله!
@@ -1149,7 +1016,6 @@ options.video=إعدادات الفيديو...
 options.videoTitle=إعدادات الفيديو
 options.viewBobbing=تمايل الرؤية
 options.viewBobbingDesc0=اهتزاز مجال الرؤية اثناء التحرك.
-options.viewBobbingDesc1=
 options.visible=ظاهر
 options.vsync=استخدام VSync
 potion.absorption=امتصاص
@@ -1188,7 +1054,6 @@ potion.nightVision=الرؤية الليلية
 potion.nightVision.postfix=عقار الرؤية الليلية
 potion.poison=سم
 potion.poison.postfix=جرعة السم
-potion.potency.0=
 potion.potency.1=II
 potion.potency.2=III
 potion.potency.3=IV
@@ -1361,6 +1226,7 @@ stat.used=مرات الاستخدام
 stat.walkOneCm=مسافة المشي
 stats.tooltip.type.achievement=انجاز
 stats.tooltip.type.statistic=إحصاء
+stream.confirm_start=هل أنت متأكد من أنك تريد أن تبدأ بالبث?
 stream.unavailable.account_not_bound=قبل أن يمكنك بث Minecraft عبر نشل، سوف تحتاج إلى ربط حسابك نشل على mojang.com. هل تريد القيام بذلك الآن؟
 stream.unavailable.account_not_bound.okay=ربط الحسابات
 stream.unavailable.account_not_migrated=يلزم  ترحيل حساب ماين كرافت الخاص بك إلى حساب موجانغ قبل أن تستطيع بث ماين كرافت عبر تويتش, هل تريد القيام بذلك الآن؟
@@ -1708,10 +1574,6 @@ tile.woolCarpet.yellow.name=السجاد الأصفر
 tile.workbench.name=طاولة النجارة
 title.oldgl1=تم اكتشاف بطاقة الرسومات القديمة؛ وهذا قد تمنعك من
 title.oldgl2=اللعب في المستقبل إلى حد بعيد برنامج OpenGL 2.0 سيكون المطلوب.
-translation.test.args=%s %s
-translation.test.complex=Prefix, %s%2$s again %s and %1$s lastly %s and also %1$s again!
-translation.test.escape=%%s %%%s %%%%s %%%%%s
 translation.test.invalid=مرحبا %
-translation.test.invalid2=hi %s
 translation.test.none=مرحبا بالعالم!
 translation.test.world=العالم
