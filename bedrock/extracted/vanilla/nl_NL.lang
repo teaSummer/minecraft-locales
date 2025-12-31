@@ -60,6 +60,8 @@ accessibility.state.unchecked=: uitgeschakeld	#
 accessibility.state.selected=: geselecteerd	#
 accessibility.state.unselected=: niet geselecteerd	#
 
+accessibility.index = %s van %s  # Dit is een nummering; hoeveel objecten van een totaalaantal objecten beschikbaar is voor interactie. Bijvoorbeeld 1 van 3	#
+
 accessibility.slider.tts.percentValue=%s procent	#
 
 accessibility.play.editWorld=Wereld bewerken	#
@@ -2267,6 +2269,7 @@ entity.area_effect_cloud.name=Effectenwolk	#
 entity.armor_stand.name=Harnashouder	#
 entity.arrow.name=Pijl	#
 entity.bat.name=Vleermuis	#
+entity.bee.name=Bij	#
 entity.blaze.name=Blaze	#
 entity.boat.name=Boot	#
 entity.cat.name=Kat	#
@@ -2589,6 +2592,7 @@ gui.pickLoc.successMessage=Lokalisatie gekopieerd	#
 gui.pickLoc.failedMessage=Fout: gekozen bestand is niet languages.json	#
 gui.pickIcon.successMessage=Wereldpictogram gekopieerd	#
 gui.pickIcon.failedMessage=Fout: ongeldige bestandsindeling	#
+gui.previous=Vorige	#
 gui.copyWorld=Wereld kopiëren	#
 gui.copyWorld.failedMessage=Kan geen kopie van je wereld maken.	#
 gui.goBack=Teruggaan	#
@@ -2598,6 +2602,7 @@ gui.minecraftWorld=Minecraft-wereld	#
 gui.minecraftBundle=Minecraft-bundel	#
 gui.login=Aanmelden	#
 gui.logout=Afmelden	#
+gui.next=Volgende	#
 gui.no=Nee	#
 gui.none=Geen	#
 gui.ok=OK	#
@@ -3496,6 +3501,7 @@ invite.realm.add_member=Realm-leden toevoegen	#
 invite.notification.title=Speluitnodiging	#
 invite.notification.description=%s heeft je uitgenodigd om Minecraft te spelen	#
 invite.confirmation.description=%s heeft je uitgenodigd om Minecraft te spelen	#
+invite.pageCounter=%d/%d	#
 
 inventory.binSlot=Item vernietigen	#
 
@@ -4405,7 +4411,7 @@ item.minecartFurnace.name=Mijnkarretje met oven	#
 item.hopper_minecart.name=Mijnkarretje met trechter	#
 item.tnt_minecart.name=Mijnkarretje met TNT	#
 item.spawn_egg.entity.agent.name=Spawn Agent	#
-item.spawn_egg.entity.minecraft:bee.name=Spawn bij	#
+item.spawn_egg.entity.bee.name=Spawn bij	#
 item.spawn_egg.entity.cat.name=Spawn kat	#
 item.spawn_egg.entity.chicken.name=Spawn kip	#
 item.spawn_egg.entity.cow.name=Spawn koe	#
@@ -5063,6 +5069,7 @@ npcscreen.help.url.a=Klik op deze knop om een URL aan het NPC-dialoogvenster toe
 npcscreen.help.url.b=De koppeling wordt in de standaardbrowser van de speler geopend.	#
 npcscreen.learnmore=Meer informatie	#
 npcscreen.name=Naam	#
+npcscreen.npc=NPC	#
 npcscreen.requiresop=OP vereist	#
 
 offer.category.skinpack=Skinpakketten	#
@@ -5271,6 +5278,7 @@ options.dev_connection_3g=4G - 1,5 Mbps, 200 ms latentie, 2% pakketverlies	#
 options.dev_connection_slow=Langzaam - 400 Kbps, 300 ms latentie, 3% pakketverlies	#
 options.dev_connection_veryslow=Zeer langzaam - 200 Kbps, 400 ms latentie, 4% pakketverlies	#
 options.dev_deleteAllPersonas=Alle persona's verwijderen	#
+options.dev_deleteLegacyPersona=Verouderd personavak verwijderen	#
 options.dev_identity_environment=Nieuwe identiteit en online infrastructuuromgeving (opnieuw opstarten vereist)	#
 options.dev_identity_environment.dev=Ontwikkeling	#
 options.dev_identity_environment.test=Test	#
@@ -5685,6 +5693,7 @@ hudScreen.tooltip.pick=Kiezen	#
 hudScreen.tooltip.placeBook=Boek plaatsen	#
 hudScreen.tooltip.readBook=Boek lezen	#
 hudScreen.tooltip.removeBook=Boek verwijderen	#
+hudScreen.tooltip.shear=Scheren	#
 
 playscreen.fileSize.MB=MB	#
 playscreen.fileSize.GB=GB	#
@@ -5699,7 +5708,7 @@ playscreen.lastPlayed.weeksAgo=%1 weken geleden	#
 playscreen.lastPlayed.yesterday=Gisteren	#
 playscreen.new=Nieuw	#
 playscreen.remoteWorld=Verre wereld op:	#
-playscreen.realmsTrialWorld=Gratis proefversie van 30 dagen	#
+playscreen.realmsTrialWorld=Probeer Realms Plus 30 dagen gratis	#
 playscreen.realmsCreateFirstWorld=Je eerste realm maken	#
 playscreen.checkingRealmsCompatibility=Compatibiliteit met Realms wordt gecontroleerd...	#
 playscreen.fetchingRealms=Realms ophalen...	#
@@ -5720,7 +5729,7 @@ playscreen.noLegacyWorldsFound.body=Geen werelden van andere Minecraft-versies g
 playscreen.failedToAutoSyncLegacyWorlds=Kan oude werelden niet ophalen. Maak meer opslagruimte vrij om je oude werelden te beheren.	#
 playscreen.lockedSkin=De skin die je draagt, is van een contentpakket dat niet is toegestaan in platformoverschrijdende multiplayerspellen. Als je doorgaat, wordt platformoverschrijdende multiplayer voor deze wereld uitgeschakeld.	#
 playscreen.multiplayerLockedSkin=De skin die je draagt, is van een contentpakket dat niet is toegestaan in multiplayerspellen. Als je doorgaat, wordt multiplayer voor deze wereld uitgeschakeld.	#
-playscreen.worldsStorage=Wereldopslag: %s/%s	#
+playscreen.worldsStorage=Opslag: %s/%s	#
 playscreen.delete.legacy.content=Weet je zeker dat je de geselecteerde oude werelden wilt verwijderen? Deze werelden worden permanent verwijderd! (Dat is erg lang!)	#
 playscreen.delete.legacy.title=%s permanent verwijderen?	#
 playscreen.delete.legacy.confirm=Verwijderen	#
@@ -6435,7 +6444,7 @@ store.realmsPlus.faq=Veelgestelde vragen	#
 store.realmsPlus.buyFor=KOPEN VOOR %s	#
 store.realmsPlus.buyNow=NU KOPEN	#
 store.realmsPlus.errorNoOffer=FOUT: GEEN AANBIEDING GEVONDEN	#
-store.realmsPlus.manageSubscrpition=ABONNEMENT BEHEREN	#
+store.realmsPlus.manageSubscription=ABONNEMENT BEHEREN	#
 store.realmsPlus.viewAllPacksTitle=VEEL WAAR VOOR JE GELD: PAKKETTEN TER WAARDE VAN RUIM §g$ 150 (USD)!§r	#
 
 store.realmsPlus.nowActive=Realms Plus is nu actief voor dit apparaat. Je hebt nu gratis toegang tot meer dan 50 contentpakketten in de Marketplace. Je kunt met maximaal 10 spelers tegelijkertijd spelen op je Realms en zij hebben ook toegang tot alle abonnementscontent op je Realm – helemaal gratis!	#
@@ -6985,6 +6994,7 @@ tile.chest.name=Kist	#
 tile.ender_chest.name=Enderkist	#
 tile.jigsaw.name=Puzzelblok	#
 tile.honey_block.name=Honingblok	#
+tile.honeycomb_block.name=Honingraatblok	#
 tile.trapped_chest.name=Valkist	#
 tile.shulkerBoxWhite.name=Witte Sjoelkerdoos	#
 tile.shulkerBoxOrange.name=Oranje Sjoelkerdoos	#
@@ -7777,6 +7787,9 @@ trial.tabbed_upsell.addon.description=Wil je dat wolven zich als konijntjes gedr
 trial.tabbed_upsell.seeds.title=SEEDS	#
 trial.tabbed_upsell.seeds.description=Ontgrendel de volledige Minecraft-ervaring en krijg toegang tot seeds! Met seeds kun je nieuwe biomen ontdekken, overleven op de ijsvlakten, extreme heuvels beklimmen of door de woestijnen trekken. Start met unieke sjablonen of verken willekeurige nieuwe werelden. Koop Minecraft vandaag nog en krijg toegang tot seeds, de Creative-modus en multiplayer!	#
 
+trial.tabbed_upsell.navleft=Navigatietabblad links	#
+trial.tabbed_upsell.navRight=Navigatietabblad rechts	#
+
 ## Trial Collection content:
 trial.starter.collection.title=Minecraft Starter Collection	#
 trial.master.collection.title=Minecraft Master Collection	#
@@ -7809,6 +7822,16 @@ trial.collection.11.description=Pas je personage aan met deze verzameling skins!
 trial.collection.12.title=Skinpakket Schurken	#
 trial.collection.12.description=Verkleed je als Cake Maniac, Frankencrafter of nog erger!	#
 trial.includes=Inclusief	#
+
+## Trial Game content:
+trial.survival.mode.title=SURVIVAL	#
+trial.creative.mode.title=CREATIVE	#
+trial.survival.mode.1.intro_description=De originele Minecraft-ervaring: verzamel middelen om gereedschappen te vervaardigen en constructies te bouwen, vind en verbouw voedsel om je honger te stillen, neem het op tegen gevaarlijke mobs en verken een enorme wereld.	#
+trial.survival.mode.2.intro_description=Begin met wat hout en aarde te verzamelen voor een tijdelijk huis om de eerste nacht te overleven! Daarna is het helemaal aan jou.	#
+trial.creative.mode.1.intro_description=In de Creative-modus kun je alles bouwen wat je je maar kunt bedenken. Je loopt geen schade op, kunt door de lucht vliegen en hebt rechtstreeks toegang tot elk blok in het spel! In deze modus kun je je volledig richten op vervaardigen en heb je alles wat je nodig hebt om iets fantastisch te bouwen!	#
+trial.creative.mode.2.intro_description=Je hebt ook toegang tot Inspiratie-eiland, een tutorialwereld en introductie tot de Creative-modus, waarin je in een mum van tijd leert hoe je een meesterbouwer wordt! Je vind nog meer zulke geweldige werelden in de Minecraft Marketplace.	#
+trial.tour.marketplace=RONDLEIDING DOOR DE MARKETPLACE	#
+trial.world.title=Welke proefwereld?	#
 
 ## Edu Tutorial strings
 tutorial.edu.menuTitle=Speluitleg	#
@@ -8331,3 +8354,17 @@ dr.notification.persona_delete=Het personage is verwijderd	#
 dr.notification.item_selection_failed=Kan voorwerp niet selecteren	#
 dr.notification.character_failed=Kan personage %s niet laden	#
 dr.modal.persona_delete_confirm=Het huidige personage wordt verwijderd	#
+
+dr.default.alex.bottom=Broek van Alex	#
+dr.default.alex.hair=Haar van Alex	#
+dr.default.alex.mouth=Mond van Alex	#
+dr.default.alex.shoes=Schoenen van Alex	#
+dr.default.alex.skin=Alex	#
+dr.default.alex.top=Shirt van Alex	#
+dr.default.eyes=Standaardblik	#
+dr.default.steve.bottom=Broek van Steve	#
+dr.default.steve.hair=Haar van Steve	#
+dr.default.steve.mouth=Mond van Steve	#
+dr.default.steve.shoes=Schoenen van Steve	#
+dr.default.steve.skin=Steve	#
+dr.default.steve.top=Shirt van Steve	#

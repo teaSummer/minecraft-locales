@@ -60,6 +60,8 @@ accessibility.state.unchecked=：取消选中	#
 accessibility.state.selected=：已选择	#
 accessibility.state.unselected=：未选择	#
 
+accessibility.index =第 %s 个，共 %s 个 # 这是编号，表示在所有可互动的物件总数量中的第几个。 例如：第 1 个，共 3 个	#
+
 accessibility.slider.tts.percentValue=%s%	#
 
 accessibility.play.editWorld=编辑世界	#
@@ -2267,6 +2269,7 @@ entity.area_effect_cloud.name=区域效果云雾	#
 entity.armor_stand.name=盔甲架	#
 entity.arrow.name=箭	#
 entity.bat.name=蝙蝠	#
+entity.bee.name=蜜蜂	#
 entity.blaze.name=烈焰人	#
 entity.boat.name=船	#
 entity.cat.name=猫	#
@@ -2589,6 +2592,7 @@ gui.pickLoc.successMessage=已复制的本地化	#
 gui.pickLoc.failedMessage=错误：所选择的文件并非 languages.json	#
 gui.pickIcon.successMessage=已复制的世界图标	#
 gui.pickIcon.failedMessage=错误：无效的文件格式	#
+gui.previous=上一个	#
 gui.copyWorld=复制世界	#
 gui.copyWorld.failedMessage=无法创建您的世界的副本。	#
 gui.goBack=返回	#
@@ -2598,6 +2602,7 @@ gui.minecraftWorld=我的世界 的世界	#
 gui.minecraftBundle=我的世界捆绑包	#
 gui.login=登录	#
 gui.logout=登出	#
+gui.next=下一个	#
 gui.no=否	#
 gui.none=无	#
 gui.ok=确定	#
@@ -3496,6 +3501,7 @@ invite.realm.add_member=添加领域成员	#
 invite.notification.title=游戏邀请	#
 invite.notification.description=%s 邀请您玩《我的世界》	#
 invite.confirmation.description=%s 邀请您玩《我的世界》	#
+invite.pageCounter=%d/%d	#
 
 inventory.binSlot=摧毁物品	#
 
@@ -4405,7 +4411,7 @@ item.minecartFurnace.name=动力矿车	#
 item.hopper_minecart.name=漏斗矿车	#
 item.tnt_minecart.name=TNT矿车	#
 item.spawn_egg.entity.agent.name=生成 Agent	#
-item.spawn_egg.entity.minecraft:bee.name=生成蜜蜂	#
+item.spawn_egg.entity.bee.name=生成蜜蜂	#
 item.spawn_egg.entity.cat.name=生成猫	#
 item.spawn_egg.entity.chicken.name=生成鸡	#
 item.spawn_egg.entity.cow.name=生成牛	#
@@ -5063,6 +5069,7 @@ npcscreen.help.url.a=单击此按钮在 NPC 对话框中添加 URL 超链接。	
 npcscreen.help.url.b=链接会在玩家的默认浏览器中打开。	#
 npcscreen.learnmore=了解更多	#
 npcscreen.name=名称	#
+npcscreen.npc=NPC	#
 npcscreen.requiresop=所需的操作	#
 
 offer.category.skinpack=皮肤包	#
@@ -5271,6 +5278,7 @@ options.dev_connection_3g=3G - 1.5MB 每秒，200 毫秒延迟，2% 的包丢失
 options.dev_connection_slow=慢 - 400KB 每秒，300 毫秒延迟，3% 的包丢失	#
 options.dev_connection_veryslow=非常慢 - 200KB 每秒，400 毫秒延迟，4% 的包丢失	#
 options.dev_deleteAllPersonas=删除所有角色	#
+options.dev_deleteLegacyPersona=删除历史个性化槽位	#
 options.dev_identity_environment=新的身份和在线基础设施环境（需要重新启动）	#
 options.dev_identity_environment.dev=开发	#
 options.dev_identity_environment.test=测试	#
@@ -5685,6 +5693,7 @@ hudScreen.tooltip.pick=采摘	#
 hudScreen.tooltip.placeBook=放置书	#
 hudScreen.tooltip.readBook=读书	#
 hudScreen.tooltip.removeBook=移除书	#
+hudScreen.tooltip.shear=修剪	#
 
 playscreen.fileSize.MB=MB	#
 playscreen.fileSize.GB=GB	#
@@ -5699,7 +5708,7 @@ playscreen.lastPlayed.weeksAgo=%1周前	#
 playscreen.lastPlayed.yesterday=昨天	#
 playscreen.new=新	#
 playscreen.remoteWorld=远程世界:	#
-playscreen.realmsTrialWorld=30 天免费试玩	#
+playscreen.realmsTrialWorld=免费试用 Realms Plus 30 天	#
 playscreen.realmsCreateFirstWorld=创建您的第一个领域	#
 playscreen.checkingRealmsCompatibility=正在检查领域兼容性……	#
 playscreen.fetchingRealms=正在提取领域……	#
@@ -5720,7 +5729,7 @@ playscreen.noLegacyWorldsFound.body=未发现来自其他版本的 我的世界 
 playscreen.failedToAutoSyncLegacyWorlds=无法获取旧的世界。清理出额外的存储空间，以便管理旧的世界。	#
 playscreen.lockedSkin=您配备的皮肤来自跨平台多人游戏中禁用的内容包。如果继续，该世界的跨平台多人游戏将关闭。	#
 playscreen.multiplayerLockedSkin=您配备的皮肤来自多人游戏中禁用的内容包。如果继续，该世界的多人游戏将关闭。	#
-playscreen.worldsStorage=世界存储空间：%s/%s	#
+playscreen.worldsStorage=存储空间：%s/%s	#
 playscreen.delete.legacy.content=您确定要删除所选择的旧的世界吗？这个世界将永远失去！（很长时间！）	#
 playscreen.delete.legacy.title=是否永久性删除 %s？	#
 playscreen.delete.legacy.confirm=删除	#
@@ -6435,7 +6444,7 @@ store.realmsPlus.faq=常见问题解答	#
 store.realmsPlus.buyFor=为%s购买	#
 store.realmsPlus.buyNow=立即购买	#
 store.realmsPlus.errorNoOffer=错误：未发现优惠	#
-store.realmsPlus.manageSubscrpition=管理订阅	#
+store.realmsPlus.manageSubscription=管理订阅	#
 store.realmsPlus.viewAllPacksTitle=超值 - 包价值超过 §g$150 美元！§r	#
 
 store.realmsPlus.nowActive=该设备上的 Realms Plus 现已激活。现在您无需花费额外的费用，即可访问来自市场的 50 多个内容包。至多 10 名玩家可以同时在您的 Realms 上玩，并且他们可以访问您的 Realm 内的所有订阅内容——免费地！	#
@@ -6985,6 +6994,7 @@ tile.chest.name=箱子	#
 tile.ender_chest.name=末影箱	#
 tile.jigsaw.name=线锯方块	#
 tile.honey_block.name=蜂蜜方块	#
+tile.honeycomb_block.name=蜂房方块	#
 tile.trapped_chest.name=陷阱箱	#
 tile.shulkerBoxWhite.name=白色潜匿之贝箱子	#
 tile.shulkerBoxOrange.name=橙色潜匿之贝箱子	#
@@ -7777,6 +7787,9 @@ trial.tabbed_upsell.addon.description=想让狼表现得像兔子一样吗？把
 trial.tabbed_upsell.seeds.title=种子	#
 trial.tabbed_upsell.seeds.description=解锁完整的《我的世界》游戏体验，获得访问种子的权限！种子会帮助您发现新的生物群系——在冰原上生存，攀登险峻的山峰，或者徒步穿越沙漠。立即以独特的模板开始游戏或探索随机的新世界！立即购买《我的世界》，获得访问种子、创造模式、多人游戏以及更多内容的权限！	#
 
+trial.tabbed_upsell.navleft=导航标签左	#
+trial.tabbed_upsell.navRight=导航标签右	#
+
 ## Trial Collection content:
 trial.starter.collection.title=《我的世界》新手系列	#
 trial.master.collection.title=《我的世界》大师系列	#
@@ -7809,6 +7822,16 @@ trial.collection.11.description=快用这个皮肤包装扮您的角色吧！	#
 trial.collection.12.title=反派皮肤包	#
 trial.collection.12.description=快来穿成蛋糕疯子、科学怪人或更糟糕的造型吧！	#
 trial.includes=包含	#
+
+## Trial Game content:
+trial.survival.mode.title=生存	#
+trial.creative.mode.title=创造	#
+trial.survival.mode.1.intro_description=《我的世界》原始体验：收集资源来制作工具和建造结构、寻找和种植食物来填饱肚子、和危险的生物战斗，并探索广阔的世界。	#
+trial.survival.mode.2.intro_description=首先要收集一些木头和泥土来建造临时房屋，以帮助您度过第一个夜晚！之后就全看您自己了。	#
+trial.creative.mode.1.intro_description=在创造模式中建造您想象得到的任何事物！不会受到伤害、在天空中翱翔、享受可立即取得游戏中所有方块的快感！这个模式让你可以专注于建造，并给予您用来建造美丽事物的全部所需。	#
+trial.creative.mode.2.intro_description=您也可以拜访灵感岛——一个世界教程和创造模式介绍，将会指导您如何立刻成为建造大师！您可以在《我的世界》市场中找到更多像这样子有趣的世界。	#
+trial.tour.marketplace=游览市场	#
+trial.world.title=哪个试用版世界？	#
 
 ## Edu Tutorial strings
 tutorial.edu.menuTitle=玩法学习	#
@@ -8331,3 +8354,17 @@ dr.notification.persona_delete=该角色已被删除	#
 dr.notification.item_selection_failed=无法选择项目	#
 dr.notification.character_failed=无法加载角色%s	#
 dr.modal.persona_delete_confirm=当前角色将被删除	#
+
+dr.default.alex.bottom=艾莉克斯的裤子	#
+dr.default.alex.hair=艾莉克斯的头发	#
+dr.default.alex.mouth=艾莉克斯的嘴	#
+dr.default.alex.shoes=艾莉克斯的鞋子	#
+dr.default.alex.skin=艾莉克斯	#
+dr.default.alex.top=艾莉克斯的衬衫	#
+dr.default.eyes=标准注视	#
+dr.default.steve.bottom=史蒂夫的裤子	#
+dr.default.steve.hair=史蒂夫的头发	#
+dr.default.steve.mouth=史蒂夫的嘴	#
+dr.default.steve.shoes=史蒂夫的鞋子	#
+dr.default.steve.skin=史蒂夫	#
+dr.default.steve.top=史蒂夫的衬衫	#

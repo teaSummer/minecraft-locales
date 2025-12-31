@@ -60,6 +60,8 @@ accessibility.state.unchecked=: tidak dicentang	#
 accessibility.state.selected=: dipilih	#
 accessibility.state.unselected=: batal dipilih	#
 
+accessibility.index = %s dari %s # Ini penomoran yang terdiri dari jumlah total objek yang tersedia untuk interaksi. Contoh: 1 dari 3	#
+
 accessibility.slider.tts.percentValue=%s persen	#
 
 accessibility.play.editWorld=Edit Dunia	#
@@ -2267,6 +2269,7 @@ entity.area_effect_cloud.name=Awan Efek Area	#
 entity.armor_stand.name=Dudukan Baju Zirah	#
 entity.arrow.name=Panah	#
 entity.bat.name=Kelelawar	#
+entity.bee.name=Lebah	#
 entity.blaze.name=Kobaran Api	#
 entity.boat.name=Perahu	#
 entity.cat.name=Kucing	#
@@ -2589,6 +2592,7 @@ gui.pickLoc.successMessage=Salinan pelokalan	#
 gui.pickLoc.failedMessage=Kesalahan: File yang dipilih bukan languages.json	#
 gui.pickIcon.successMessage=Salinan ikon dunia	#
 gui.pickIcon.failedMessage=Kesalahan: Format file tidak valid	#
+gui.previous=Sebelumnya	#
 gui.copyWorld=Salin Dunia	#
 gui.copyWorld.failedMessage=Gagal membuat salinan dunia.	#
 gui.goBack=Kembali	#
@@ -2598,6 +2602,7 @@ gui.minecraftWorld=Dunia Minecraft	#
 gui.minecraftBundle=Bundel Minecraft	#
 gui.login=Masuk	#
 gui.logout=Keluar	#
+gui.next=Berikutnya	#
 gui.no=Tidak	#
 gui.none=Tidak Ada	#
 gui.ok=OK	#
@@ -3496,6 +3501,7 @@ invite.realm.add_member=Tambahkan Anggota Realm	#
 invite.notification.title=Undangan Permainan	#
 invite.notification.description=%s telah mengundangmu untuk bermain Minecraft	#
 invite.confirmation.description=%s telah mengundangmu untuk bermain Minecraft	#
+invite.pageCounter=%d/%d	#
 
 inventory.binSlot=Hancurkan Item	#
 
@@ -4405,7 +4411,7 @@ item.minecartFurnace.name=Kereta Tambang dengan Tungku	#
 item.hopper_minecart.name=Kereta Tambang dengan Penampung	#
 item.tnt_minecart.name=Kereta Tambang dengan Dinamit	#
 item.spawn_egg.entity.agent.name=Agent Kemunculan	#
-item.spawn_egg.entity.minecraft:bee.name=Munculkan Lebah	#
+item.spawn_egg.entity.bee.name=Munculkan Lebah	#
 item.spawn_egg.entity.cat.name=Munculkan Kucing	#
 item.spawn_egg.entity.chicken.name=Munculkan Ayam	#
 item.spawn_egg.entity.cow.name=Munculkan Sapi	#
@@ -5063,6 +5069,7 @@ npcscreen.help.url.a=Klik tombol ini untuk menambahkan hyperlink URL ke kotak di
 npcscreen.help.url.b=Link akan terbuka di browser default pemain.	#
 npcscreen.learnmore=Selengkapnya	#
 npcscreen.name=Nama	#
+npcscreen.npc=NPC	#
 npcscreen.requiresop=Harus Ada OP	#
 
 offer.category.skinpack=Paket Skin	#
@@ -5271,6 +5278,7 @@ options.dev_connection_3g=3G - 1,5Mbps, 200ms latensi, 2% packet loss	#
 options.dev_connection_slow=Lambat - 400Kbps, 300ms latensi, 3% packet loss	#
 options.dev_connection_veryslow=Sangat lambat - 200Kbps, 400ms latensi, 4% packet loss	#
 options.dev_deleteAllPersonas=Hapus Semua Persona	#
+options.dev_deleteLegacyPersona=Hapus Slot Persona Lama	#
 options.dev_identity_environment=Identitas dan Lingkungan Infrastruktur Online Baru (perlu mulai ulang)	#
 options.dev_identity_environment.dev=Pengembangan	#
 options.dev_identity_environment.test=Tes	#
@@ -5685,6 +5693,7 @@ hudScreen.tooltip.pick=Ambil	#
 hudScreen.tooltip.placeBook=Letakkan Buku	#
 hudScreen.tooltip.readBook=Baca Buku	#
 hudScreen.tooltip.removeBook=Buang Buku	#
+hudScreen.tooltip.shear=Gunting	#
 
 playscreen.fileSize.MB=MB	#
 playscreen.fileSize.GB=GB	#
@@ -5699,7 +5708,7 @@ playscreen.lastPlayed.weeksAgo=%1 minggu lalu	#
 playscreen.lastPlayed.yesterday=Kemarin	#
 playscreen.new=Baru	#
 playscreen.remoteWorld=Dunia jarak jauh di:	#
-playscreen.realmsTrialWorld=Uji coba gratis 30 hari	#
+playscreen.realmsTrialWorld=Coba Realm Plus gratis selama 30 hari	#
 playscreen.realmsCreateFirstWorld=Buat realm pertamamu	#
 playscreen.checkingRealmsCompatibility=Memeriksa kompatibilitas Realm...	#
 playscreen.fetchingRealms=Mengambil Realm...	#
@@ -5720,7 +5729,7 @@ playscreen.noLegacyWorldsFound.body=Dunia dari Minecraft versi lain tidak terdet
 playscreen.failedToAutoSyncLegacyWorlds=Tidak bisa mengambil Dunia Lama. Kosongkan sebagian ruang penyimpanan tambahan untuk mengelola Dunia Lama.	#
 playscreen.lockedSkin=Skin yang kamu pakai berasal dari paket konten yang tidak dibolehkan dalam permainan multipemain lintas-platform. Jika dilanjutkan akan menonaktifkan multipemain lintas-platform untuk dunia ini.	#
 playscreen.multiplayerLockedSkin=Skin yang kamu pakai berasal dari paket konten yang tidak dibolehkan dalam multipemain. Melanjutkan akan menonaktifkan multipemain untuk dunia ini.	#
-playscreen.worldsStorage=Penyimpanan Dunia: %s/%s	#
+playscreen.worldsStorage=Penyimpanan: %s/%s	#
 playscreen.delete.legacy.content=Kamu yakin ingin menghapus dunia lama yang dipilih? Dunia ini akan hilang selamanya! (Itu waktu yang lama!)	#
 playscreen.delete.legacy.title=Hapus %s secara permanen?	#
 playscreen.delete.legacy.confirm=Hapus	#
@@ -6435,7 +6444,7 @@ store.realmsPlus.faq=Pertanyaan Umum	#
 store.realmsPlus.buyFor=BELI SEHARGA %s	#
 store.realmsPlus.buyNow=BELI SEKARANG	#
 store.realmsPlus.errorNoOffer=KESALAHAN - PENAWARAN TIDAK DITEMUKAN	#
-store.realmsPlus.manageSubscrpition=KELOLA LANGGANAN	#
+store.realmsPlus.manageSubscription=KELOLA LANGGANAN	#
 store.realmsPlus.viewAllPacksTitle=SUPER HEMAT - PAKET SENILAI LEBIH DARI §g$150 (USD)!§r	#
 
 store.realmsPlus.nowActive=Realms Plus sudah aktif untuk perangkat ini. Sekarang kamu bisa mengakses 50+ paket konten dari marketplace tanpa biaya tambahan. Hingga 10 pemain bisa bermain bersamaan di Realms kamu dan mengakses semua konten pelanggan di Realm kamu - gratis!	#
@@ -6985,6 +6994,7 @@ tile.chest.name=Peti	#
 tile.ender_chest.name=Peti Ender	#
 tile.jigsaw.name=Blok Jigsaw	#
 tile.honey_block.name=Blok Madu	#
+tile.honeycomb_block.name=Blok Sarang Madu	#
 tile.trapped_chest.name=Peti Perangkap	#
 tile.shulkerBoxWhite.name=Kotak Shulker Putih	#
 tile.shulkerBoxOrange.name=Kotak Shulker Oranye	#
@@ -7777,6 +7787,9 @@ trial.tabbed_upsell.addon.description=Ingin membuat serigala bertingkah seperti 
 trial.tabbed_upsell.seeds.title=BENIH	#
 trial.tabbed_upsell.seeds.description=Buka pengalaman Minecraft lengkap dan dapatkan akses ke Benih! Benih membantumu menemukan bioma baru - bertahan hidup di dataran es, memanjat bukit ekstrem, atau melintasi padang pasir. Mulai dengan template unik atau jelajahi dunia baru yang acak! Akses Benih, Mode Kreatif, Multipemain, dan banyak lagi dengan membeli Minecraft hari ini!	#
 
+trial.tabbed_upsell.navleft=Tab Navigasi Kiri	#
+trial.tabbed_upsell.navRight=Tab Navigasi Kanan	#
+
 ## Trial Collection content:
 trial.starter.collection.title=Koleksi Pemula Minecraft	#
 trial.master.collection.title=Koleksi Master Minecraft	#
@@ -7809,6 +7822,16 @@ trial.collection.11.description=Sesuaikan karaktermu dengan pilihan skin ini!	#
 trial.collection.12.title=Paket Skin Penjahat	#
 trial.collection.12.description=Berpakaian sebagai Cake Maniac, Frankencrafter, atau lebih buruk lagi!	#
 trial.includes=Termasuk	#
+
+## Trial Game content:
+trial.survival.mode.title=BERTAHAN HIDUP	#
+trial.creative.mode.title=KREATIF	#
+trial.survival.mode.1.intro_description=Pengalaman Minecraft asli: kumpulkan sumber daya untuk membuat alat dan membangun struktur, temukan dan tanam makanan untuk mengelola rasa laparmu, melawan mob berbahaya, dan jelajahi dunia yang luas.	#
+trial.survival.mode.2.intro_description=Mulai dengan mengumpulkan beberapa kayu dan tanah untuk rumah sederhana untuk membantumu bertahan hidup di malam pertama! Dari sana semua terserah kamu.	#
+trial.creative.mode.1.intro_description=Bangun apa pun yang kamu bayangkan di Mode Kreatif. Jangan rusak, terbang ke langit, dan nikmati akses cepat ke setiap blok dalam game! Mode ini memungkinkanmu fokus pada pembuatan dan memberimu segala sesuatu yang kamu perlukan untuk membangun sesuatu yang indah!	#
+trial.creative.mode.2.intro_description=Kamu juga akan memiliki akses ke Pulau Inspirasi, dunia tutorial dan pengantar ke mode Kreatif yang akan mengajarkanmu cara untuk menjadi pembangun master dalam sekejap! Kamu bisa menemukan dunia lebih hebat seperti ini di Marketplace Minecraft.	#
+trial.tour.marketplace=TUR MARKETPLACE	#
+trial.world.title=Dunia Uji Coba yang mana?	#
 
 ## Edu Tutorial strings
 tutorial.edu.menuTitle=Belajar Bermain	#
@@ -8331,3 +8354,17 @@ dr.notification.persona_delete=Karakter telah dihapus	#
 dr.notification.item_selection_failed=Gagal memilih item	#
 dr.notification.character_failed=Gagal memuat karakter %s	#
 dr.modal.persona_delete_confirm=Karakter yang sedang digunakan akan dihapus	#
+
+dr.default.alex.bottom=Celana Alex	#
+dr.default.alex.hair=Rambut Alex	#
+dr.default.alex.mouth=Mulut Alex	#
+dr.default.alex.shoes=Sepatu Alex	#
+dr.default.alex.skin=Alex	#
+dr.default.alex.top=Kemeja Alex	#
+dr.default.eyes=Tatapan Standar	#
+dr.default.steve.bottom=Celana Steve	#
+dr.default.steve.hair=Rambut Steve	#
+dr.default.steve.mouth=Mulut Steve	#
+dr.default.steve.shoes=Sepatu Steve	#
+dr.default.steve.skin=Steve	#
+dr.default.steve.top=Kemeja Steve	#

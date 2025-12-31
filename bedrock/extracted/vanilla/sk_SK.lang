@@ -60,6 +60,8 @@ accessibility.state.unchecked=: nezačiarknuté	#
 accessibility.state.selected=: vybraté	#
 accessibility.state.unselected=: nevybraté	#
 
+accessibility.index = %s z %s  # Toto číslovanie vyjadruje, ktoré číslo z celkového počtu cieľov je dostupné na interakciu. Príklad: 1 z 3	#
+
 accessibility.slider.tts.percentValue=%s percent	#
 
 accessibility.play.editWorld=Upraviť svet	#
@@ -2267,6 +2269,7 @@ entity.area_effect_cloud.name=Mrak s účinkom na oblasť	#
 entity.armor_stand.name=Stojan na brnenie	#
 entity.arrow.name=Šíp	#
 entity.bat.name=Netopier	#
+entity.bee.name=Včela	#
 entity.blaze.name=Žiarivec	#
 entity.boat.name=Čln	#
 entity.cat.name=Mačka	#
@@ -2589,6 +2592,7 @@ gui.pickLoc.successMessage=Lokalizácia skopírovaná	#
 gui.pickLoc.failedMessage=Chyba: Nevybrali ste súbor languages.json	#
 gui.pickIcon.successMessage=Ikona sveta skopírovaná	#
 gui.pickIcon.failedMessage=Chyba: Neplatný formát súboru	#
+gui.previous=Späť	#
 gui.copyWorld=Kopírovať svet	#
 gui.copyWorld.failedMessage=Nepodarilo sa vytvoriť kópiu sveta.	#
 gui.goBack=Naspäť	#
@@ -2598,6 +2602,7 @@ gui.minecraftWorld=Svet hry Minecraft	#
 gui.minecraftBundle=Balík hry Minecraft	#
 gui.login=Prihlásenie	#
 gui.logout=Odhlásenie	#
+gui.next=Ďalej	#
 gui.no=Nie	#
 gui.none=Žiadne	#
 gui.ok=OK	#
@@ -3496,6 +3501,7 @@ invite.realm.add_member=Pridať členov ríše	#
 invite.notification.title=Pozvanie do hry	#
 invite.notification.description=%s vás pozýva zahrať si Minecraft	#
 invite.confirmation.description=%s vás pozýva zahrať si Minecraft	#
+invite.pageCounter=%d/%d	#
 
 inventory.binSlot=Zničiť predmet	#
 
@@ -4405,7 +4411,7 @@ item.minecartFurnace.name=Banský vozík s pecou	#
 item.hopper_minecart.name=Banský vozík s násypníkom	#
 item.tnt_minecart.name=Banský vozík s TNT	#
 item.spawn_egg.entity.agent.name=Narodenie agenta	#
-item.spawn_egg.entity.minecraft:bee.name=Narodenie včely	#
+item.spawn_egg.entity.bee.name=Narodenie včely	#
 item.spawn_egg.entity.cat.name=Narodenie mačky	#
 item.spawn_egg.entity.chicken.name=Narodenie sliepky	#
 item.spawn_egg.entity.cow.name=Narodenie kravy	#
@@ -5063,6 +5069,7 @@ npcscreen.help.url.a=Kliknutím na toto tlačidlo pridajte hypertextové prepoje
 npcscreen.help.url.b=Prepojenie sa otvorí v predvolenom prehliadači hráča.	#
 npcscreen.learnmore=Ďalšie informácie	#
 npcscreen.name=Meno	#
+npcscreen.npc=NPC	#
 npcscreen.requiresop=Požaduje sa operátor	#
 
 offer.category.skinpack=Balíčky vzhľadov	#
@@ -5271,6 +5278,7 @@ options.dev_connection_3g=3G – 1,5 Mb/s, časové oneskorenie 200 ms, strata p
 options.dev_connection_slow=Pomalé – 400 kb/s, časové oneskorenie 300 ms, strata paketov 3 %	#
 options.dev_connection_veryslow=Veľmi pomalé – 200 kb/s, časové oneskorenie 400 ms, strata paketov 4 %	#
 options.dev_deleteAllPersonas=Odstrániť všetky osoby	#
+options.dev_deleteLegacyPersona=Odstrániť starší slot Persona	#
 options.dev_identity_environment=Nové prostredie identity a infraštruktúry online (vyžaduje reštartovanie)	#
 options.dev_identity_environment.dev=Vývoj	#
 options.dev_identity_environment.test=Test	#
@@ -5685,6 +5693,7 @@ hudScreen.tooltip.pick=Zdvihnúť	#
 hudScreen.tooltip.placeBook=Umiestniť knihu	#
 hudScreen.tooltip.readBook=Čítať knihu	#
 hudScreen.tooltip.removeBook=Odstrániť knihu	#
+hudScreen.tooltip.shear=Strihať	#
 
 playscreen.fileSize.MB=MB	#
 playscreen.fileSize.GB=GB	#
@@ -5699,7 +5708,7 @@ playscreen.lastPlayed.weeksAgo=Pred %1 týždňami	#
 playscreen.lastPlayed.yesterday=Včera	#
 playscreen.new=Nové	#
 playscreen.remoteWorld=Vzdialený svet na pozícii:	#
-playscreen.realmsTrialWorld=30-dňová bezplatná skúšobná verzia	#
+playscreen.realmsTrialWorld=Vyskúšajte Realms Plus zadarmo na 30 dní	#
 playscreen.realmsCreateFirstWorld=Vytvorenie prvej ríše	#
 playscreen.checkingRealmsCompatibility=Kontroluje sa kompatibilita služby Realms...	#
 playscreen.fetchingRealms=Načítava sa služba Realms...	#
@@ -5720,7 +5729,7 @@ playscreen.noLegacyWorldsFound.body=Nezistili sa žiadne svety z iných verzií 
 playscreen.failedToAutoSyncLegacyWorlds=Nepodarilo sa načítať staré svety. Uvoľnite ďalší ukladací priestor na správu starých svetov.	#
 playscreen.lockedSkin=Oblečený vzhľad pochádza z balíka obsahu, ktorý v hrách pre viacerých hráčov z rôznych platforiem nie je povolený. Ak budete pokračovať, pre tento svet sa vypne hra pre viacerých hráčov z rôznych platforiem.	#
 playscreen.multiplayerLockedSkin=Oblečený vzhľad pochádza z balíka obsahu, ktorý nie je povolený v hrách pre viacerých hráčov. Ak budete pokračovať, pre tento svet sa vypne hra pre viacerých hráčov.	#
-playscreen.worldsStorage=Ukladací priestor svetov: %s/%s	#
+playscreen.worldsStorage=Ukladací priestor: %s/%s	#
 playscreen.delete.legacy.content=Naozaj chcete odstrániť vybratý starý svet? Tento svet sa stratí navždy. (Nadlho!)	#
 playscreen.delete.legacy.title=Odstrániť %s natrvalo?	#
 playscreen.delete.legacy.confirm=Odstrániť	#
@@ -6435,7 +6444,7 @@ store.realmsPlus.faq=Najčastejšie otázky	#
 store.realmsPlus.buyFor=KÚPIŤ ZA %s	#
 store.realmsPlus.buyNow=KÚPIŤ TERAZ	#
 store.realmsPlus.errorNoOffer=CHYBA – PONUKA SA NENAŠLA	#
-store.realmsPlus.manageSubscrpition=SPRAVOVAŤ PREDPLATNÉ	#
+store.realmsPlus.manageSubscription=SPRAVOVAŤ PREDPLATNÉ	#
 store.realmsPlus.viewAllPacksTitle=SKVELÁ HODNOTA – BALÍKY V HODNOTE VIAC AKO 150 §g$ (USD)!§r	#
 
 store.realmsPlus.nowActive=Predplatné Realms Plus je aktívne pre toto zariadenie. Bez ďalších výdavkov máte prístup k viac ako 50 balíkom obsahu z Trhoviska. Naraz môže hrať v službe Realms až 10 hráčov a všetci zadarmo získajú prístup k celému obsahu pre predplatiteľov na vašom serveri Realm.	#
@@ -6985,6 +6994,7 @@ tile.chest.name=Truhlica	#
 tile.ender_chest.name=Truhlica z konca sveta	#
 tile.jigsaw.name=Skladací blok	#
 tile.honey_block.name=Medový blok	#
+tile.honeycomb_block.name=Blok včelieho plástu	#
 tile.trapped_chest.name=Truhlica s pascou	#
 tile.shulkerBoxWhite.name=Biela škatuľa shulkera	#
 tile.shulkerBoxOrange.name=Oranžová škatuľa shulkera	#
@@ -7777,6 +7787,9 @@ trial.tabbed_upsell.addon.description=Chcete, aby sa vlci správali ako zajačik
 trial.tabbed_upsell.seeds.title=POČIATOČNÉ HODNOTY	#
 trial.tabbed_upsell.seeds.description=Odomknite plnú hru Minecraft a získajte prístup k počiatočným hodnotám. Počiatočné hodnoty pomáhajú objavovať nové biómy – prežite na ľadových pláňach, vystúpte na extrémne kopce alebo putujte cez púšte. Začnite s unikátnymi šablónami alebo preskúmajte náhodné nové svety. Kúpte si Minecraft už dnes, aby ste mali prístup k počiatočným hodnotám, tvorivému režimu, hre pre viacerých hráčov a ďalším funkciám.	#
 
+trial.tabbed_upsell.navleft=Prejsť na kartu vľavo	#
+trial.tabbed_upsell.navRight=Prejsť na kartu vpravo	#
+
 ## Trial Collection content:
 trial.starter.collection.title=Úvodná kolekcia pre Minecraft	#
 trial.master.collection.title=Majstrovská kolekcia pre Minecraft	#
@@ -7809,6 +7822,16 @@ trial.collection.11.description=Prispôsobte svoju postavu pomocou niektorého z
 trial.collection.12.title=Balíček vzhľadov Darebáci	#
 trial.collection.12.description=Oblečte sa ako Cake Maniac, Frankencrafter alebo ešte horšie.	#
 trial.includes=Obsah	#
+
+## Trial Game content:
+trial.survival.mode.title=PREŽITIE	#
+trial.creative.mode.title=TVORIVÝ REŽIM	#
+trial.survival.mode.1.intro_description=Pôvodný zážitok z Minecraftu: zhromažďujte zdroje na výrobu nástrojov a budovanie stavieb, hľadajte jedlo na farme, aby ste zahnali hlad, bojujte proti nebezpečným tvorom a skúmajte obrovský svet.	#
+trial.survival.mode.2.intro_description=Začnite nazbieraním dreva a hliny na dočasný domov, ktorý vám pomôže prežiť prvú noc. Potom už bude všetko na vás.	#
+trial.creative.mode.1.intro_description=V tvorivom režime stavajte všetko, čo si dokážete predstaviť. Nič vás nezraní, môžete lietať po oblohe a užívať si okamžitý prístup ku každému bloku v hre. Tento režim vám umožní sústrediť sa na výrobu predmetov a poskytne vám všetko, čo potrebujete na vybudovanie niečoho krásneho.	#
+trial.creative.mode.2.intro_description=Budete mať prístup aj k Ostrovu inšpirácie, ku svetu kurzov a predstaveniu tvorivého režimu, ktorý vás naučí, ako sa rýchlo stať majstrom staviteľom. Na Trhovisku Minecraft môžete nájsť aj ďalšie skvelé svety ako tento.	#
+trial.tour.marketplace=PREHLIADKA TRHOVISKA	#
+trial.world.title=Ktorý skúšobný svet?	#
 
 ## Edu Tutorial strings
 tutorial.edu.menuTitle=Naučte sa hrať	#
@@ -8331,3 +8354,17 @@ dr.notification.persona_delete=Postava bola odstránená	#
 dr.notification.item_selection_failed=Nepodarilo sa vybrať položku	#
 dr.notification.character_failed=Nepodarilo sa načítať postavu %s	#
 dr.modal.persona_delete_confirm=Aktuálna postava bude odstránená	#
+
+dr.default.alex.bottom=Alexine nohavice	#
+dr.default.alex.hair=Alexine vlasy	#
+dr.default.alex.mouth=Alexine ústa	#
+dr.default.alex.shoes=Alexine topánky	#
+dr.default.alex.skin=Alex	#
+dr.default.alex.top=Alexina košeľa	#
+dr.default.eyes=Bežný pohľad	#
+dr.default.steve.bottom=Steveove nohavice	#
+dr.default.steve.hair=Steveove vlasy	#
+dr.default.steve.mouth=Steveove ústa	#
+dr.default.steve.shoes=Steveove topánky	#
+dr.default.steve.skin=Steve	#
+dr.default.steve.top=Steveova košeľa	#

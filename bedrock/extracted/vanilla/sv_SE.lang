@@ -60,6 +60,8 @@ accessibility.state.unchecked=: avmarkerad	#
 accessibility.state.selected=: markerat	#
 accessibility.state.unselected=: avmarkerat	#
 
+accessibility.index = %s av %s  # Det här är antal; vilket av det totala antalet objekt som kan interageras med. Exempel: 1 av 3	#
+
 accessibility.slider.tts.percentValue=%s procent	#
 
 accessibility.play.editWorld=Redigera värld	#
@@ -2267,6 +2269,7 @@ entity.area_effect_cloud.name=Områdeseffektmoln	#
 entity.armor_stand.name=Rustningsställ	#
 entity.arrow.name=Pil	#
 entity.bat.name=Fladdermus	#
+entity.bee.name=Bi	#
 entity.blaze.name=Flamgestalt	#
 entity.boat.name=Båt	#
 entity.cat.name=Katt	#
@@ -2589,6 +2592,7 @@ gui.pickLoc.successMessage=Kopierade lokaliseringen	#
 gui.pickLoc.failedMessage=Fel: Den valda filen var inte languages.json	#
 gui.pickIcon.successMessage=Kopierade världsikonen	#
 gui.pickIcon.failedMessage=Fel: Ogiltigt filformat	#
+gui.previous=Föregående	#
 gui.copyWorld=Kopiera värld	#
 gui.copyWorld.failedMessage=Kunde inte skapa en kopia av din värld.	#
 gui.goBack=Gå tillbaka	#
@@ -2598,6 +2602,7 @@ gui.minecraftWorld=Minecraft-värld	#
 gui.minecraftBundle=Minecraft-samling	#
 gui.login=Logga in	#
 gui.logout=Logga ut	#
+gui.next=Nästa	#
 gui.no=Nej	#
 gui.none=Ingen	#
 gui.ok=OK	#
@@ -3496,6 +3501,7 @@ invite.realm.add_member=Lägg till Realm-medlemmar	#
 invite.notification.title=Spelinbjudan	#
 invite.notification.description=%s har bjudit in dig till Minecraft	#
 invite.confirmation.description=%s har bjudit in dig till Minecraft	#
+invite.pageCounter=%d/%d	#
 
 inventory.binSlot=Förstör föremål	#
 
@@ -4405,7 +4411,7 @@ item.minecartFurnace.name=Gruvvagn med smältugn	#
 item.hopper_minecart.name=Gruvvagn med tratt	#
 item.tnt_minecart.name=Gruvvagn med dynamit	#
 item.spawn_egg.entity.agent.name=Spawna agent	#
-item.spawn_egg.entity.minecraft:bee.name=Spawna bi	#
+item.spawn_egg.entity.bee.name=Spawna bi	#
 item.spawn_egg.entity.cat.name=Spawna katt	#
 item.spawn_egg.entity.chicken.name=Spawna höna	#
 item.spawn_egg.entity.cow.name=Spawna ko	#
@@ -5063,6 +5069,7 @@ npcscreen.help.url.a=Använd den här knappen för att lägga till en hyperlänk
 npcscreen.help.url.b=Länkar öppnas i spelarens standardwebbläsare.	#
 npcscreen.learnmore=Läs mer	#
 npcscreen.name=Namn	#
+npcscreen.npc=NPC	#
 npcscreen.requiresop=OP krävs	#
 
 offer.category.skinpack=Utseendepaket	#
@@ -5271,6 +5278,7 @@ options.dev_connection_3g=3G – 1,5 Mbps, 200 ms latens, 2 % paketförlust	#
 options.dev_connection_slow=Långsam – 400 Kbps, 300 ms latens, 3 % paketförlust	#
 options.dev_connection_veryslow=Väldigt långsam – 200 Kbps, 400 ms latens, 4 % paketförlust	#
 options.dev_deleteAllPersonas=Ta bort alla karaktärer	#
+options.dev_deleteLegacyPersona=Radera gammal karaktärsplats	#
 options.dev_identity_environment=Ny identitet och miljö för och onlineinfrastruktur (kräver omstart)	#
 options.dev_identity_environment.dev=Utveckling	#
 options.dev_identity_environment.test=Test	#
@@ -5685,6 +5693,7 @@ hudScreen.tooltip.pick=Plocka	#
 hudScreen.tooltip.placeBook=Placera bok	#
 hudScreen.tooltip.readBook=Läs bok	#
 hudScreen.tooltip.removeBook=Ta bort bok	#
+hudScreen.tooltip.shear=Klipp	#
 
 playscreen.fileSize.MB=MB	#
 playscreen.fileSize.GB=GB	#
@@ -5699,7 +5708,7 @@ playscreen.lastPlayed.weeksAgo=%1 veckor sedan	#
 playscreen.lastPlayed.yesterday=I går	#
 playscreen.new=Ny	#
 playscreen.remoteWorld=Fjärrvärld på:	#
-playscreen.realmsTrialWorld=Kostnadsfritt 30-dagarsdemo	#
+playscreen.realmsTrialWorld=Prova Realms Plus gratis i 30 dagar	#
 playscreen.realmsCreateFirstWorld=Skapa din första värld	#
 playscreen.checkingRealmsCompatibility=Kontrollerar Realms kompatibilitet ...	#
 playscreen.fetchingRealms=Hämtar Realms ...	#
@@ -5720,7 +5729,7 @@ playscreen.noLegacyWorldsFound.body=Hittade inga världar från andra versioner 
 playscreen.failedToAutoSyncLegacyWorlds=Kunde inte hämta gamla världar. Frigör mer lagringsutrymme för att hantera gamla världar.	#
 playscreen.lockedSkin=Ditt utseende kommer från ett innehållspaket som inte får användas i flerspelarläge med andra plattformar. Om du fortsätter stängs flerspelarläge med andra plattformar av för den här världen.	#
 playscreen.multiplayerLockedSkin=Ditt utseende kommer från ett innehållspaket som inte får användas i flerspelarläge. Om du fortsätter stängs flerspelarläge av för den här världen.	#
-playscreen.worldsStorage=Världslagring: %s/%s	#
+playscreen.worldsStorage=Lagring: %s/%s	#
 playscreen.delete.legacy.content=Vill du radera den valda världen? Världen kommer att försvinna för alltid! (Det är väldigt länge!)	#
 playscreen.delete.legacy.title=Vill du radera %s permanent?	#
 playscreen.delete.legacy.confirm=Radera	#
@@ -6435,7 +6444,7 @@ store.realmsPlus.faq=Vanliga frågor	#
 store.realmsPlus.buyFor=KÖP FÖR %s	#
 store.realmsPlus.buyNow=KÖP NU	#
 store.realmsPlus.errorNoOffer=HITTADE INGET ERBJUDANDE	#
-store.realmsPlus.manageSubscrpition=ADMINISTRERA ABONNEMANG	#
+store.realmsPlus.manageSubscription=ADMINISTRERA ABONNEMANG	#
 store.realmsPlus.viewAllPacksTitle=PRISVÄRT! PAKET VÄRDA ÖVER §g150 USD!§r	#
 
 store.realmsPlus.nowActive=Realms Plus har aktiverats på enheten. Nu har du tillgång till över 50 innehållspaket från marknaden utan extra kostnad. Upp till 10 spelare kan spela i dina Realms åt gången, och de får tillgång till allt abonnemangsinnehåll i ditt Realm – helt gratis!	#
@@ -6985,6 +6994,7 @@ tile.chest.name=Kista	#
 tile.ender_chest.name=Enderkista	#
 tile.jigsaw.name=Pusselblock	#
 tile.honey_block.name=Honungsblock	#
+tile.honeycomb_block.name=Honungskaksblock	#
 tile.trapped_chest.name=Kistfälla	#
 tile.shulkerBoxWhite.name=Vit shulkerlåda	#
 tile.shulkerBoxOrange.name=Orange shulkerlåda	#
@@ -7777,6 +7787,9 @@ trial.tabbed_upsell.addon.description=Vill du att vargar ska bete sig som kanine
 trial.tabbed_upsell.seeds.title=FRÖN	#
 trial.tabbed_upsell.seeds.description=Lås upp den kompletta Minecraft-upplevelsen och få tillgång till frön! Frön låter dig upptäcka nya ekosystem – överlev på isslätter, klättra upp för extrema kullar eller vandra genom öknar. Börja spela med unika världsmallar eller utforska slumpade världar! Få frön, kreativt läge, flerspelarstöd och massa annat genom att köpa Minecraft i dag!	#
 
+trial.tabbed_upsell.navleft=Gå en flik åt vänster	#
+trial.tabbed_upsell.navRight=Gå en flik åt höger	#
+
 ## Trial Collection content:
 trial.starter.collection.title=Minecraft-startsamling	#
 trial.master.collection.title=Minecraft-mästarsamling	#
@@ -7809,6 +7822,16 @@ trial.collection.11.description=Anpassa din karaktär med något av dessa utseen
 trial.collection.12.title=Skurk-utseendepaket	#
 trial.collection.12.description=Klä ut dig till Cake Maniac, Frankencrafter eller någonting ännu värre!	#
 trial.includes=Innehåller	#
+
+## Trial Game content:
+trial.survival.mode.title=ÖVERLEVNAD	#
+trial.creative.mode.title=KREATIVT	#
+trial.survival.mode.1.intro_description=Den ursprungliga Minecraft-upplevelsen där man samlar resurser för att bygga verktyg och strukturer, hittar och producerar mat för att hålla sig mätt, slåss mot farliga varelser och utforskar en vidsträckt värld.	#
+trial.survival.mode.2.intro_description=Börja genom att samla trä och jord till ett provisoriskt skydd för den första natten! Vad du gör efter det är helt upp till dig.	#
+trial.creative.mode.1.intro_description=Bygg vad du än kan tänka dig i kreativt läge. Du tar ingen skada, kan flyga fritt och har tillgång till alla block i hela spelet! Läget är fokuserat på byggande och ger dig allt du behöver för att besanna dina drömmar!	#
+trial.creative.mode.2.intro_description=Du har även tillgång till Inspirationsön, som är en handledningsvärld och introduktion till kreativt läge där du får lära dig hur man bygger som ett proffs! Det finns fler världar i stil med den på Minecraft-marknaden.	#
+trial.tour.marketplace=SE DIG OMKRING PÅ MARKNADEN	#
+trial.world.title=Vilken demovärld?	#
 
 ## Edu Tutorial strings
 tutorial.edu.menuTitle=Lär dig hur man spelar	#
@@ -8331,3 +8354,17 @@ dr.notification.persona_delete=Karaktären har raderats	#
 dr.notification.item_selection_failed=Kunde inte välja föremålet	#
 dr.notification.character_failed=Kunde inte ladda karaktären %s	#
 dr.modal.persona_delete_confirm=Den nuvarande karaktären kommer att raderas	#
+
+dr.default.alex.bottom=Alex byxor	#
+dr.default.alex.hair=Alex hår	#
+dr.default.alex.mouth=Alex mun	#
+dr.default.alex.shoes=Alex skor	#
+dr.default.alex.skin=Alex	#
+dr.default.alex.top=Alex tröja	#
+dr.default.eyes=Vanliga ögon	#
+dr.default.steve.bottom=Steves byxor	#
+dr.default.steve.hair=Steves hår	#
+dr.default.steve.mouth=Steves mun	#
+dr.default.steve.shoes=Steves skor	#
+dr.default.steve.skin=Steve	#
+dr.default.steve.top=Steves tröja	#

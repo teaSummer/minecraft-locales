@@ -60,6 +60,8 @@ accessibility.state.unchecked=: nie zaznaczono	#
 accessibility.state.selected=: zaznaczony	#
 accessibility.state.unselected=: niezaznaczony	#
 
+accessibility.index = %s z %s  # Tutaj widać, ile spośród całkowitej liczby obiektów jest dostępnych podczas interakcji. Przykład: 1 z 3	#
+
 accessibility.slider.tts.percentValue=%s procent	#
 
 accessibility.play.editWorld=Edytuj świat	#
@@ -2267,6 +2269,7 @@ entity.area_effect_cloud.name=Chmura efektu obszarowego	#
 entity.armor_stand.name=Stojak na zbroję	#
 entity.arrow.name=Strzała	#
 entity.bat.name=Nietoperz	#
+entity.bee.name=Pszczoła	#
 entity.blaze.name=Płomyk	#
 entity.boat.name=Łódka	#
 entity.cat.name=Kot	#
@@ -2589,6 +2592,7 @@ gui.pickLoc.successMessage=Skopiowano lokalizację	#
 gui.pickLoc.failedMessage=Błąd: wybrany plik nie jest plikiem languages.json	#
 gui.pickIcon.successMessage=Skopiowano ikonę świata	#
 gui.pickIcon.failedMessage=Błąd: nieprawidłowy format pliku	#
+gui.previous=Wstecz	#
 gui.copyWorld=Skopiuj świat	#
 gui.copyWorld.failedMessage=Nie udało się utworzyć kopii Twojego świata.	#
 gui.goBack=Wróć	#
@@ -2598,6 +2602,7 @@ gui.minecraftWorld=Świat Minecrafta	#
 gui.minecraftBundle=Pakiet Minecrafta	#
 gui.login=Zaloguj się	#
 gui.logout=Wyloguj się	#
+gui.next=Dalej	#
 gui.no=Nie	#
 gui.none=Brak	#
 gui.ok=OK	#
@@ -3496,6 +3501,7 @@ invite.realm.add_member=Dodaj członków do świata Realms	#
 invite.notification.title=Zaproszenie do gry	#
 invite.notification.description=%s zaprasza Cię do gry w Minecrafta	#
 invite.confirmation.description=%s zaprasza Cię do gry w Minecrafta	#
+invite.pageCounter=%d/%d	#
 
 inventory.binSlot=Zniszcz przedmiot	#
 
@@ -4405,7 +4411,7 @@ item.minecartFurnace.name=Wagonik z piecem	#
 item.hopper_minecart.name=Wagonik z lejkiem	#
 item.tnt_minecart.name=Wagonik z TNT	#
 item.spawn_egg.entity.agent.name=Zespawnuj Agenta	#
-item.spawn_egg.entity.minecraft:bee.name=Zespawnuj pszczołę	#
+item.spawn_egg.entity.bee.name=Zespawnuj pszczołę	#
 item.spawn_egg.entity.cat.name=Zespawnuj kota	#
 item.spawn_egg.entity.chicken.name=Zespawnuj kurę	#
 item.spawn_egg.entity.cow.name=Zespawnuj krowę	#
@@ -5063,6 +5069,7 @@ npcscreen.help.url.a=Kliknij ten przycisk, aby dodać hiperlink do okna tekstowe
 npcscreen.help.url.b=Link otwiera się w domyślnej wyszukiwarce gracza.	#
 npcscreen.learnmore=Więcej info	#
 npcscreen.name=Nazwa	#
+npcscreen.npc=BN	#
 npcscreen.requiresop=Wymagany operator	#
 
 offer.category.skinpack=Zestawy skórek	#
@@ -5271,6 +5278,7 @@ options.dev_connection_3g=3G – 1,5 Mbps, 200 ms opóźnienia, 2% utraty pakiet
 options.dev_connection_slow=Wolne – 400 Kbps, 300 ms opóźnienia, 3% utraty pakietów	#
 options.dev_connection_veryslow=Bardzo wolne – 200 Kbps, 400 ms opóźnienia, 4% utraty pakietów	#
 options.dev_deleteAllPersonas=Usuń wszystkie wizerunki	#
+options.dev_deleteLegacyPersona=Usuń miejsce poprzedniej roli	#
 options.dev_identity_environment=Nowa tożsamość i środowisko infrastruktury internetowej (wymaga ponownego uruchomienia)	#
 options.dev_identity_environment.dev=Rozwój	#
 options.dev_identity_environment.test=Test	#
@@ -5685,6 +5693,7 @@ hudScreen.tooltip.pick=Zbierz	#
 hudScreen.tooltip.placeBook=Umieść książkę	#
 hudScreen.tooltip.readBook=Czytaj książkę	#
 hudScreen.tooltip.removeBook=Usuń książkę	#
+hudScreen.tooltip.shear=Ostrzyż	#
 
 playscreen.fileSize.MB=MB	#
 playscreen.fileSize.GB=GB	#
@@ -5699,7 +5708,7 @@ playscreen.lastPlayed.weeksAgo=%1 tygodni/e temu	#
 playscreen.lastPlayed.yesterday=Wczoraj	#
 playscreen.new=Nowy	#
 playscreen.remoteWorld=Oddalony świat:	#
-playscreen.realmsTrialWorld=Darmowa, 30-dniowa wersja próbna	#
+playscreen.realmsTrialWorld=Wypróbuj usługę Realms Plus za darmo przez 30 dni	#
 playscreen.realmsCreateFirstWorld=Stwórz swoje pierwsze królestwo	#
 playscreen.checkingRealmsCompatibility=Sprawdzanie zgodności Realms...	#
 playscreen.fetchingRealms=Pobieranie Realms...	#
@@ -5720,7 +5729,7 @@ playscreen.noLegacyWorldsFound.body=Nie wykryto światów z innych wersji Minecr
 playscreen.failedToAutoSyncLegacyWorlds=Nie można pobrać starych światów. Jeśli chcesz nimi zarządzać, zwolnij dodatkowe miejsce.	#
 playscreen.lockedSkin=Skórka przez Ciebie założona pochodzi z zestawu, którego nie można używać w grach wieloosobowych rozgrywanych na różnych platformach. Kontynuując, wyłączysz w tym świecie tryb wieloosobowy pozwalający na grę na różnych urządzeniach.	#
 playscreen.multiplayerLockedSkin=Skórka przez Ciebie założona pochodzi z zestawu, którego nie można używać w grach wieloosobowych. Kontynuując, wyłączysz w tym świecie tryb wieloosobowy.	#
-playscreen.worldsStorage=Miejsce na światy: %s/%s	#
+playscreen.worldsStorage=Miejsca: %s/%s	#
 playscreen.delete.legacy.content=Na pewno chcesz usunąć wybrany stary świat? Stracisz ten świat na zawsze! (A to bardzo długo!)	#
 playscreen.delete.legacy.title=Usunąć na zawsze: %s?	#
 playscreen.delete.legacy.confirm=Usuń	#
@@ -6435,7 +6444,7 @@ store.realmsPlus.faq=FAQ	#
 store.realmsPlus.buyFor=KUP ZA %s	#
 store.realmsPlus.buyNow=KUP TERAZ	#
 store.realmsPlus.errorNoOffer=BŁĄD: NIE ZNALEZIONO OFERTY	#
-store.realmsPlus.manageSubscrpition=ZARZĄDZAJ SUBSKRYPCJĄ	#
+store.realmsPlus.manageSubscription=ZARZĄDZAJ SUBSKRYPCJĄ	#
 store.realmsPlus.viewAllPacksTitle=WSPANIAŁA OKAZJA ― ZESTAWY WARTE PONAD §g$150 (USD)!§r	#
 
 store.realmsPlus.nowActive=Subskrypcja usługi Realms została aktywowana na tym urządzeniu. Dzięki temu zyskujesz dostęp do ponad 50 zestawów zawartości do pobrania z rynku ― bez dodatkowych opłat. Usługa umożliwia jednoczesną rozgrywkę nawet 10 graczom, a każdy z nich również otrzyma bezpłatny dostęp do otrzymanej w ramach subskrypcji zawartości wykorzystywanej w twoim świecie Realms.	#
@@ -6985,6 +6994,7 @@ tile.chest.name=Skrzynia	#
 tile.ender_chest.name=Skrzynia Kresu	#
 tile.jigsaw.name=Puzzelblok	#
 tile.honey_block.name=Blok miodu	#
+tile.honeycomb_block.name=Blok plastra miodu	#
 tile.trapped_chest.name=Skrzynia-pułapka	#
 tile.shulkerBoxWhite.name=Biała shulkerowa skrzynia	#
 tile.shulkerBoxOrange.name=Pomarańczowa shulkerowa skrzynia	#
@@ -7777,6 +7787,9 @@ trial.tabbed_upsell.addon.description=Chcesz, aby wilki zachowywały się jak kr
 trial.tabbed_upsell.seeds.title=NASIONA	#
 trial.tabbed_upsell.seeds.description=Odblokuj pełną zawartość Minecraft i zdobądź dostęp do nasion! Nasiona pozwalają odkrywać nowe biomy – przetrwaj na lodowych równinach, wspinaj się na górskie szczyty lub przemierzaj pustynie. Rozpocznij wraz z unikalnymi modelami lub eksploruj nowe losowe światy. Kup Minecrafta już dziś i zdobądź dostęp do nasion, trybu kreatywnego, trybu wieloosobowego i nie tylko!	#
 
+trial.tabbed_upsell.navleft=Lewa karta nawigacji	#
+trial.tabbed_upsell.navRight=Prawa karta nawigacji	#
+
 ## Trial Collection content:
 trial.starter.collection.title=Kolekcja startowa do Minecrafta	#
 trial.master.collection.title=Mistrzowska kolekcja do Minecrafta	#
@@ -7809,6 +7822,16 @@ trial.collection.11.description=Podrasuj swoją postać dzięki tej kolekcji sk�
 trial.collection.12.title=Zestaw skórek złoczyńców	#
 trial.collection.12.description=Przebierz się i wyglądaj jak Cake Maniac, Frankencrafter czy – o zgrozo – ktoś jeszcze gorszy!	#
 trial.includes=Zestaw zawiera:	#
+
+## Trial Game content:
+trial.survival.mode.title=PRZETRWANIE	#
+trial.creative.mode.title=KREATYWNY	#
+trial.survival.mode.1.intro_description=Oryginalna gra Minecraft: zbieraj zasoby, aby wytwarzać narzędzia i wznosić struktury, szukaj pożywienia i uprawiaj rolę, by zaspokajać głód, stawiaj czoła niebezpiecznym mobom i odkrywaj rozległy świat.	#
+trial.survival.mode.2.intro_description=Zacznij od zebrania drewna i ziemi, aby skonstruować prowizoryczny dom, który pozwoli ci przetrwać pierwszą noc! Od tego momentu wszystko zależy od ciebie.	#
+trial.creative.mode.1.intro_description=W trybie kreatywnym możesz zbudować wszystko, co tylko sobie wymarzysz. Nie doznawaj obrażeń, szybuj wśród chmur i ciesz się natychmiastowym dostępem do wszystkich istniejących w grze bloków. Tryb ten pozwala skupić się na konstruowaniu i udostępnia wszelkie zasoby niezbędne do zbudowania czegoś spektakularnego!	#
+trial.creative.mode.2.intro_description=Zyskasz też dostęp do Wyspy inspiracji – świata treningowego, który wprowadzi cię do trybu kreatywnego i w okamgnieniu nauczy, jak zostać mistrzem budowania! Więcej wspaniałych światów znajdziesz na rynku Minecrafta.	#
+trial.tour.marketplace=ODKRYJ RYNEK	#
+trial.world.title=Który świat w wersji próbnej?	#
 
 ## Edu Tutorial strings
 tutorial.edu.menuTitle=Naucz się grać	#
@@ -8331,3 +8354,17 @@ dr.notification.persona_delete=Postać została usunięta	#
 dr.notification.item_selection_failed=Nie udało się wybrać przedmiotu	#
 dr.notification.character_failed=Nie udało się wczytać postaci %s	#
 dr.modal.persona_delete_confirm=Aktualna postać zostanie usunięta	#
+
+dr.default.alex.bottom=Spodnie Alex	#
+dr.default.alex.hair=Włosy Alex	#
+dr.default.alex.mouth=Usta Alex	#
+dr.default.alex.shoes=Buty Alex	#
+dr.default.alex.skin=Alex	#
+dr.default.alex.top=Koszula Alex	#
+dr.default.eyes=Normalne oczy	#
+dr.default.steve.bottom=Spodnie Steve'a	#
+dr.default.steve.hair=Włosy Steve'a	#
+dr.default.steve.mouth=Usta Steve'a	#
+dr.default.steve.shoes=Buty Steve'a	#
+dr.default.steve.skin=Steve	#
+dr.default.steve.top=Koszula Steve'a	#

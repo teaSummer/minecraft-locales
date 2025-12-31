@@ -60,6 +60,8 @@ accessibility.state.unchecked=: 체크 해제	#
 accessibility.state.selected=: 선택됨	#
 accessibility.state.unselected=: 선택되지 않음	#
 
+accessibility.index = %s / %s  # 전체 목표 수 중 상호 작용에서 사용할 수 있는 목표의 수입니다. 예시: 1 / 3	#
+
 accessibility.slider.tts.percentValue=%s%	#
 
 accessibility.play.editWorld=월드 편집	#
@@ -2267,6 +2269,7 @@ entity.area_effect_cloud.name=광역 효과 연기	#
 entity.armor_stand.name=갑옷 거치대	#
 entity.arrow.name=화살	#
 entity.bat.name=박쥐	#
+entity.bee.name=벌	#
 entity.blaze.name=블레이즈	#
 entity.boat.name=보트	#
 entity.cat.name=고양이	#
@@ -2589,6 +2592,7 @@ gui.pickLoc.successMessage=복사한 언어	#
 gui.pickLoc.failedMessage=오류: languages.json이 아닌 파일 선택	#
 gui.pickIcon.successMessage=복사한 월드 아이콘	#
 gui.pickIcon.failedMessage=오류: 유효하지 않은 파일 형식	#
+gui.previous=이전	#
 gui.copyWorld=월드 복사	#
 gui.copyWorld.failedMessage=월드 복사 파일을 생성할 수 없습니다.	#
 gui.goBack=돌아가기	#
@@ -2598,6 +2602,7 @@ gui.minecraftWorld=Minecraft 월드	#
 gui.minecraftBundle=Minecraft 번들	#
 gui.login=로그인	#
 gui.logout=로그아웃	#
+gui.next=다음	#
 gui.no=아니요	#
 gui.none=없음	#
 gui.ok=확인	#
@@ -3496,6 +3501,7 @@ invite.realm.add_member=Realm 멤버 추가	#
 invite.notification.title=게임 초대하기	#
 invite.notification.description=%s 님이 Minecraft 플레이에 초대했습니다.	#
 invite.confirmation.description=%s 님이 Minecraft 플레이에 초대했습니다.	#
+invite.pageCounter=%d/%d	#
 
 inventory.binSlot=아이템 파괴	#
 
@@ -4405,7 +4411,7 @@ item.minecartFurnace.name=화로 광물 수레	#
 item.hopper_minecart.name=호퍼 광물 수레	#
 item.tnt_minecart.name=TNT 광물 수레	#
 item.spawn_egg.entity.agent.name=Agent 생성	#
-item.spawn_egg.entity.minecraft:bee.name=벌 생성	#
+item.spawn_egg.entity.bee.name=벌 생성	#
 item.spawn_egg.entity.cat.name=고양이 생성	#
 item.spawn_egg.entity.chicken.name=닭 생성	#
 item.spawn_egg.entity.cow.name=소 생성	#
@@ -5063,6 +5069,7 @@ npcscreen.help.url.a=NPC 대화 상자에 URL 하이퍼링크를 추가하려면
 npcscreen.help.url.b=플레이어의 기본 사용 브라우저에서 링크가 열립니다.	#
 npcscreen.learnmore=자세한 정보	#
 npcscreen.name=이름	#
+npcscreen.npc=NPC	#
 npcscreen.requiresop=운영자 필요	#
 
 offer.category.skinpack=스킨 팩	#
@@ -5271,6 +5278,7 @@ options.dev_connection_3g=3G - 1.5Mbps, 지연 속도 200ms, 패킷 손실 2%	#
 options.dev_connection_slow=느림 - 400Kbps, 지연 속도 300ms, 패킷 손실 3%	#
 options.dev_connection_veryslow=매우 느림 - 200Kbps, 지연 속도 400ms, 패킷 손실 4%	#
 options.dev_deleteAllPersonas=모든 페르소나 삭제	#
+options.dev_deleteLegacyPersona=유산 페르소나 슬롯을 삭제하다	#
 options.dev_identity_environment=새 ID 및 온라인 인프라 환경(다시 시작 필요)	#
 options.dev_identity_environment.dev=개발팀	#
 options.dev_identity_environment.test=테스트	#
@@ -5685,6 +5693,7 @@ hudScreen.tooltip.pick=채집	#
 hudScreen.tooltip.placeBook=책 놓기	#
 hudScreen.tooltip.readBook=책 읽기	#
 hudScreen.tooltip.removeBook=책 제거	#
+hudScreen.tooltip.shear=털 깎기	#
 
 playscreen.fileSize.MB=MB	#
 playscreen.fileSize.GB=GB	#
@@ -5699,7 +5708,7 @@ playscreen.lastPlayed.weeksAgo=%1주 전	#
 playscreen.lastPlayed.yesterday=어제	#
 playscreen.new=신규	#
 playscreen.remoteWorld=원격 월드:	#
-playscreen.realmsTrialWorld=30일 무료 체험	#
+playscreen.realmsTrialWorld=30일 무료 Realms Plus를 체험해보세요	#
 playscreen.realmsCreateFirstWorld=첫 영역을 만들어 보세요.	#
 playscreen.checkingRealmsCompatibility=Realms 호환성 검사 중...	#
 playscreen.fetchingRealms=Realms 가져오는 중...	#
@@ -5720,7 +5729,7 @@ playscreen.noLegacyWorldsFound.body=발견된 다른 버전의 Minecraft에서 �
 playscreen.failedToAutoSyncLegacyWorlds=기존 월드를 가져올 수 없습니다. 기존 월드를 관리하려면 추가 저장 공간을 비우세요.	#
 playscreen.lockedSkin=장착하신 스킨은 크로스 플랫폼 멀티 플레이에서 사용할 수 없는 콘텐츠 팩 스킨입니다. 계속 진행하면 이 월드에서 크로스 플랫폼 멀티 플레이가 비활성화됩니다.	#
 playscreen.multiplayerLockedSkin=장착하신 스킨은 크로스 플랫폼 멀티 플레이에서 사용할 수 없는 콘텐츠 팩 스킨입니다. 계속 진행하면 이 월드에서 크로스 플랫폼 멀티 플레이가 비활성화됩니다.	#
-playscreen.worldsStorage=월드 저장 공간: %s/%s	#
+playscreen.worldsStorage=저장 공간: %s/%s	#
 playscreen.delete.legacy.content=정말 선택된 기존 월드를 삭제하시겠습니까? 이 월드가 완전히 사라집니다!	#
 playscreen.delete.legacy.title=%s을(를) 영구 삭제할까요?	#
 playscreen.delete.legacy.confirm=삭제	#
@@ -6435,7 +6444,7 @@ store.realmsPlus.faq=질문과 답변	#
 store.realmsPlus.buyFor=%s에 구매	#
 store.realmsPlus.buyNow=지금 구매	#
 store.realmsPlus.errorNoOffer=오류. 할인 발견되지 않음	#
-store.realmsPlus.manageSubscrpition=구독 관리	#
+store.realmsPlus.manageSubscription=구독 관리	#
 store.realmsPlus.viewAllPacksTitle=최고의 가치 - §g$150(USD)§r 이상의 가치를 가진 팩!	#
 
 store.realmsPlus.nowActive=이제 이 장치에 Realms Plus가 활성화되었습니다. 이제 마켓플레이스에서 추가 비용없이 50개 이상의 콘텐츠 팩에 접속할 수 있습니다. 여러분의 Realm에 최대 10명의 플레이어가 동시에 플레이할 수 있고 Realm에서 모든 구독자 콘텐츠에 무료로 접속할 수 있습니다!	#
@@ -6985,6 +6994,7 @@ tile.chest.name=상자	#
 tile.ender_chest.name=엔더 상자	#
 tile.jigsaw.name=직소 블록	#
 tile.honey_block.name=꿀 블록	#
+tile.honeycomb_block.name=벌집 블록	#
 tile.trapped_chest.name=함정 상자	#
 tile.shulkerBoxWhite.name=흰색 셜커 상자	#
 tile.shulkerBoxOrange.name=주황색 셜커 상자	#
@@ -7777,6 +7787,9 @@ trial.tabbed_upsell.addon.description=늑대들이 토끼처럼 행동하게 하
 trial.tabbed_upsell.seeds.title=씨앗	#
 trial.tabbed_upsell.seeds.description=정식 버전 Minecraft를 잠금 해제하고 시드에 액세스하세요! 시드를 사용하면 새로운 바이옴을 발견할 수 있습니다. 얼음 평야에서 살아남고 극한 언덕을 오르거나 모래 사막을 여행하세요. 독특한 월드 템플릿으로 시작하거나 무작위 새 월드를 탐험하세요! 오늘 Minecraft를 구매해서 시드, 크리에이티브 모드 및 멀티 플레이 등을 경험해보세요!	#
 
+trial.tabbed_upsell.navleft=왼쪽 탭 탐색	#
+trial.tabbed_upsell.navRight=오른쪽 탭 탐색	#
+
 ## Trial Collection content:
 trial.starter.collection.title=Minecraft 스타터 컬렉션	#
 trial.master.collection.title=Minecraft 마스터 컬렉션	#
@@ -7809,6 +7822,16 @@ trial.collection.11.description=엄선된 스킨으로 여러분의 캐릭터를
 trial.collection.12.title=Villains Skin Pack	#
 trial.collection.12.description=Cake Maniac, Frankencrafter처럼 더 악당답게 꾸며보십시오!	#
 trial.includes=포함 내역:	#
+
+## Trial Game content:
+trial.survival.mode.title=서바이벌	#
+trial.creative.mode.title=크리에이티브	#
+trial.survival.mode.1.intro_description=원조 Minecraft 경험: 자원을 수집하여 도구를 만들고, 구조물을 세우고, 식량을 찾아 농사를 지어서 굶주림을 관리하고, 위험한 몹들과 싸우고, 광대한 월드를 탐험하세요.	#
+trial.survival.mode.2.intro_description=첫날밤에 생존할 수 있도록 원목과 흙을 모아 임시 집을 지어서 시작하세요. 그 이후는 여러분에게 달렸습니다.	#
+trial.creative.mode.1.intro_description=크리에이티브 모드에서 상상할 수 있는 모든 것을 만들어 보세요. 아무런 피해도 받지 않고, 하늘을 날고, 게임 내 모든 블록을 즉시 이용하세요! 이 모드를 사용하면 제작에 초점을 맞추어 아름다운 것들을 만드는 데 필요한 모든 것을 제공합니다!	#
+trial.creative.mode.2.intro_description=튜토리얼 월드인 인스피레이션 섬에 방문하여 순식간에 마스터 빌더가 되는 방법을 배울 수 있는 크리에이티브 모드를 시작할 수도 있습니다! Minecraft 마켓플레이스에서는 이처럼 멋진 월드를 더 많이 찾을 수 있습니다.	#
+trial.tour.marketplace=마켓플레이스 둘러보기	#
+trial.world.title=어떤 체험판 월드를 사용하나요?	#
 
 ## Edu Tutorial strings
 tutorial.edu.menuTitle=플레이 방법 배우기	#
@@ -8331,3 +8354,17 @@ dr.notification.persona_delete=캐릭터가 삭제되었습니다	#
 dr.notification.item_selection_failed=아이템 선택에 실패했습니다	#
 dr.notification.character_failed=%s 캐릭터를 불러오는데 실패했습니다	#
 dr.modal.persona_delete_confirm=현재 캐릭터가 삭제됩니다	#
+
+dr.default.alex.bottom=알렉스의 바지	#
+dr.default.alex.hair=알렉스의 머리	#
+dr.default.alex.mouth=알렉스의 입	#
+dr.default.alex.shoes=알렉스의 신발	#
+dr.default.alex.skin=알렉스	#
+dr.default.alex.top=알렉스의 셔츠	#
+dr.default.eyes=보통 시선	#
+dr.default.steve.bottom=스티브의 바지	#
+dr.default.steve.hair=스티브의 머리	#
+dr.default.steve.mouth=스티브의 입	#
+dr.default.steve.shoes=스티브의 신발	#
+dr.default.steve.skin=스티브	#
+dr.default.steve.top=스티브의 셔츠	#
