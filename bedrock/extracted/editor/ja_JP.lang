@@ -125,9 +125,9 @@ resourcePack.editor.ClipboardPreviewControl.origin.title=原点	#
 resourcePack.editor.ClipboardPreviewControl.origin.tooltip=クリップボードアイテム内の原点。配置する際の中心、またはクリップボードを回転およびミラーするポイントとして用いられる	#
 resourcePack.editor.ClipboardPreviewControl.placement.title=オプション	#
 resourcePack.editor.ClipboardPreviewControl.rootPane.title=クリップボード情報	#
-resourcePack.editor.ClipboardPreviewControl.rotation.180=180°	#
-resourcePack.editor.ClipboardPreviewControl.rotation.270=270°	#
-resourcePack.editor.ClipboardPreviewControl.rotation.90=90°	#
+resourcePack.editor.ClipboardPreviewControl.rotation.180=180Â°	#
+resourcePack.editor.ClipboardPreviewControl.rotation.270=270Â°	#
+resourcePack.editor.ClipboardPreviewControl.rotation.90=90Â°	#
 resourcePack.editor.ClipboardPreviewControl.rotation.none=なし	#
 resourcePack.editor.ClipboardPreviewControl.rotation.title=回転	#
 resourcePack.editor.ClipboardPreviewControl.rotation.tooltip=原点で Y 軸を中心として回転する量	#
@@ -184,6 +184,7 @@ resourcePack.editor.datatransferaccessors.lighting_group=グローバル ライ�
 resourcePack.editor.datatransferaccessors.pbr_fallbacks=PBR フォールバック	#
 resourcePack.editor.datatransferaccessors.point_lights=ポイント ライト	#
 resourcePack.editor.datatransferaccessors.water=水	#
+resourcePack.editor.datatransferaccessors.shadows=シャドウ	#
 
 
 resourcePack.editor.deferredLightingSettings.menu.title=遅延シェーディングの設定	#
@@ -217,7 +218,8 @@ resourcePack.editor.exportProject.advancedSettings.immediateRespawn=即時リス
 resourcePack.editor.exportProject.advancedSettings.respawnRadius=リスポーン範囲	#
 resourcePack.editor.exportProject.advancedSettings.simulationDistance=演算距離	#
 resourcePack.editor.exportProject.advancedSettings.bedsWork=ベッド ワーク	#
-resourcePack.editor.exportProject.advancedSettings.requiredSleepingPlayers=必要な睡眠中のプレイヤー (%1%)	#
+resourcePack.editor.exportProject.advancedSettings.requiredSleepingPlayers=必要なスリープ状態のプレイヤー (%1$s)	#
+resourcePack.editor.exportProject.advancedSettings.requiredSleepingPlayers.onePlayerMessage=プレイヤー1人のみ	#
 resourcePack.editor.exportProject.multiplayerSettings=マルチプレイ設定	#
 resourcePack.editor.exportProject.multiplayerSettings.multiplayerGame=マルチプレイ ゲーム	#
 resourcePack.editor.exportProject.multiplayerSettings.playerAccess=プレイヤー アクセス	#
@@ -580,10 +582,15 @@ resourcePack.editor.server.name=エディタ リソース	#
 
 
 resourcePack.editor.toolRail.Terrain.title=地形	#
+resourcePack.editor.toolRail.Terrain.keybinding.toggleTool=地形ツールの切り替え	#
+resourcePack.editor.toolRail.Terrain.keyBinding.switch=地形モードの切り替え	#
 resourcePack.editor.toolRail.Terrain.Mode.title=地形モード	#
 resourcePack.editor.toolRail.Terrain.Smooth.mode.title=スムーズ モード	#
 resourcePack.editor.toolRail.Terrain.Smooth.tooltip=スムージング強度に基づいて地形をスムーズにする	#
 resourcePack.editor.toolRail.Terrain.SmoothStrength=スムーズ強度	#
+resourcePack.editor.toolRail.Terrain.Roughen.mode.title=凸凹モード	#
+resourcePack.editor.toolRail.Terrain.Roughen.tooltip=粗面化強度に基づいて地形を粗くします	#
+resourcePack.editor.toolRail.Terrain.RoughenStrength=粗面化強度	#
 resourcePack.editor.toolRail.Terrain.description=地形を滑らかにしたり粗くしたりする地形ツール	#
 
 
@@ -704,6 +711,8 @@ resourcePack.editor.viewport.keyBinding.moveLeft=左に移動	#
 resourcePack.editor.viewport.keyBinding.moveRight=右に移動	#
 resourcePack.editor.viewport.keyBinding.moveUp=上に移動	#
 
+resourcePack.editor.viewport.keyBinding.incrementFlySpeed=飛行速度を増加	#
+resourcePack.editor.viewport.keyBinding.decrementFlySpeed=飛行速度を減少	#
 
 resourcePack.editor.viewSettings.compass.tip=方向コンパスを表示する	#
 resourcePack.editor.viewSettings.compass.title=コンパスを表示	#
@@ -717,3 +726,7 @@ resourcePack.editor.viewSettings.menu=ビュー設定	#
 resourcePack.editor.viewSettings.title=ビュー設定	#
 
 resourcePack.editor.hotbar.defaultDisplayName=デフォルト	#
+
+resourcePack.editor.reloadScripts.response.tooMany=サーバーに接続しているプレイヤーが多すぎます。スクリプトの再読み込みは、 1 人のプレイヤーが接続されているホストでのみサポートされます。	#
+resourcePack.editor.reloadScripts.response.genericError=スクリプトの再読み込み中にエラーが発生しました。	#
+resourcePack.editor.reloadScripts.response.noAdminRights=スクリプトを再読み込みする権限がありません。	#

@@ -125,9 +125,9 @@ resourcePack.editor.ClipboardPreviewControl.origin.title=Ursprung	#
 resourcePack.editor.ClipboardPreviewControl.origin.tooltip=Der Ursprungspunkt innerhalb des Objekts der Zwischenablage. Dieser wird sowohl als Platzierungsanker als auch als Punkt verwendet, um den die Zwischenablage gedreht und gespiegelt wird	#
 resourcePack.editor.ClipboardPreviewControl.placement.title=Optionen	#
 resourcePack.editor.ClipboardPreviewControl.rootPane.title=Zwischenablagen-Info	#
-resourcePack.editor.ClipboardPreviewControl.rotation.180=180°	#
-resourcePack.editor.ClipboardPreviewControl.rotation.270=270°	#
-resourcePack.editor.ClipboardPreviewControl.rotation.90=90°	#
+resourcePack.editor.ClipboardPreviewControl.rotation.180=180Â°	#
+resourcePack.editor.ClipboardPreviewControl.rotation.270=270Â°	#
+resourcePack.editor.ClipboardPreviewControl.rotation.90=90Â°	#
 resourcePack.editor.ClipboardPreviewControl.rotation.none=Keine	#
 resourcePack.editor.ClipboardPreviewControl.rotation.title=Rotation	#
 resourcePack.editor.ClipboardPreviewControl.rotation.tooltip=Der Grad der Drehung um die Y-Achse am Ursprungspunkt	#
@@ -184,6 +184,7 @@ resourcePack.editor.datatransferaccessors.lighting_group=Globale Beleuchtung	#
 resourcePack.editor.datatransferaccessors.pbr_fallbacks=PBR-Fallbacks	#
 resourcePack.editor.datatransferaccessors.point_lights=Punkt-Lichter	#
 resourcePack.editor.datatransferaccessors.water=Wasser	#
+resourcePack.editor.datatransferaccessors.shadows=Schatten	#
 
 
 resourcePack.editor.deferredLightingSettings.menu.title=Einstellungen für Deferred Lighting	#
@@ -217,7 +218,8 @@ resourcePack.editor.exportProject.advancedSettings.immediateRespawn=Sofortiges W
 resourcePack.editor.exportProject.advancedSettings.respawnRadius=Wiederbeleben-Radius	#
 resourcePack.editor.exportProject.advancedSettings.simulationDistance=Simulationsdistanz	#
 resourcePack.editor.exportProject.advancedSettings.bedsWork=Betten funktionieren	#
-resourcePack.editor.exportProject.advancedSettings.requiredSleepingPlayers=Erforderliche schlafende Spieler (%1%)	#
+resourcePack.editor.exportProject.advancedSettings.requiredSleepingPlayers=Erforderliche schlafende Spieler (%1$s)	#
+resourcePack.editor.exportProject.advancedSettings.requiredSleepingPlayers.onePlayerMessage=Nur 1 Spieler	#
 resourcePack.editor.exportProject.multiplayerSettings=Mehrspielereinstellungen	#
 resourcePack.editor.exportProject.multiplayerSettings.multiplayerGame=Mehrspieler-Spiel	#
 resourcePack.editor.exportProject.multiplayerSettings.playerAccess=Spielerzugang	#
@@ -580,10 +582,15 @@ resourcePack.editor.server.name=Editor-Ressourcen	#
 
 
 resourcePack.editor.toolRail.Terrain.title=Gelände	#
+resourcePack.editor.toolRail.Terrain.keybinding.toggleTool=Geländewerkzeug umschalten	#
+resourcePack.editor.toolRail.Terrain.keyBinding.switch=Geländemodus umschalten	#
 resourcePack.editor.toolRail.Terrain.Mode.title=Geländemodus	#
 resourcePack.editor.toolRail.Terrain.Smooth.mode.title=Glättungsmodus	#
 resourcePack.editor.toolRail.Terrain.Smooth.tooltip=Glättet das Gelände basierend auf der Glättungsstärke	#
 resourcePack.editor.toolRail.Terrain.SmoothStrength=Glättungsstärke	#
+resourcePack.editor.toolRail.Terrain.Roughen.mode.title=Vergröberungs-Modus	#
+resourcePack.editor.toolRail.Terrain.Roughen.tooltip=Gelände je nach Eingabe gröber darstellen	#
+resourcePack.editor.toolRail.Terrain.RoughenStrength=Stärke der vergröberten Darstellung	#
 resourcePack.editor.toolRail.Terrain.description=Geländewerkzeug glättet oder raut Gelände auf	#
 
 
@@ -704,6 +711,8 @@ resourcePack.editor.viewport.keyBinding.moveLeft=Nach links bewegen	#
 resourcePack.editor.viewport.keyBinding.moveRight=Nach rechts bewegen	#
 resourcePack.editor.viewport.keyBinding.moveUp=Nach oben bewegen	#
 
+resourcePack.editor.viewport.keyBinding.incrementFlySpeed=Fluggeschwindigkeit erhöhen	#
+resourcePack.editor.viewport.keyBinding.decrementFlySpeed=Fluggeschwindigkeit verringern	#
 
 resourcePack.editor.viewSettings.compass.tip=Richtungskompass anzeigen	#
 resourcePack.editor.viewSettings.compass.title=Kompass anzeigen	#
@@ -717,3 +726,7 @@ resourcePack.editor.viewSettings.menu=Einstellungen anzeigen	#
 resourcePack.editor.viewSettings.title=Einstellungen anzeigen	#
 
 resourcePack.editor.hotbar.defaultDisplayName=Standard	#
+
+resourcePack.editor.reloadScripts.response.tooMany=Zu viele Spieler sind mit dem Server verbunden. Das erneute Laden von Skripten wird nur bei Hosts unterstützt, mit denen ein einzelner Spieler verbunden ist.	#
+resourcePack.editor.reloadScripts.response.genericError=Beim Versuch, einige Skripte neu zu laden, ist ein Fehler aufgetreten.	#
+resourcePack.editor.reloadScripts.response.noAdminRights=Du verfügst nicht über die erforderlichen Berechtigungen, um Skripte neu zu laden.	#

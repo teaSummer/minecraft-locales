@@ -125,9 +125,9 @@ resourcePack.editor.ClipboardPreviewControl.origin.title=Начална точк
 resourcePack.editor.ClipboardPreviewControl.origin.tooltip=Началната точка в елемента от клипборда. Тя се използва като котва за поставяне и като точка, около която клипбордът се завърта и отразява.	#
 resourcePack.editor.ClipboardPreviewControl.placement.title=Опции	#
 resourcePack.editor.ClipboardPreviewControl.rootPane.title=Информация за клипборда	#
-resourcePack.editor.ClipboardPreviewControl.rotation.180=180°	#
-resourcePack.editor.ClipboardPreviewControl.rotation.270=270°	#
-resourcePack.editor.ClipboardPreviewControl.rotation.90=90°	#
+resourcePack.editor.ClipboardPreviewControl.rotation.180=180Â°	#
+resourcePack.editor.ClipboardPreviewControl.rotation.270=270Â°	#
+resourcePack.editor.ClipboardPreviewControl.rotation.90=90Â°	#
 resourcePack.editor.ClipboardPreviewControl.rotation.none=Няма	#
 resourcePack.editor.ClipboardPreviewControl.rotation.title=Завъртане	#
 resourcePack.editor.ClipboardPreviewControl.rotation.tooltip=Степента на завъртане около оста Y в началната точка	#
@@ -184,6 +184,7 @@ resourcePack.editor.datatransferaccessors.lighting_group=Глобално осв
 resourcePack.editor.datatransferaccessors.pbr_fallbacks=PBR резерви	#
 resourcePack.editor.datatransferaccessors.point_lights=Точкови светлини	#
 resourcePack.editor.datatransferaccessors.water=Вода	#
+resourcePack.editor.datatransferaccessors.shadows=Сенки	#
 
 
 resourcePack.editor.deferredLightingSettings.menu.title=Настройки за отложено осветление	#
@@ -217,7 +218,8 @@ resourcePack.editor.exportProject.advancedSettings.immediateRespawn=Незаба
 resourcePack.editor.exportProject.advancedSettings.respawnRadius=Радиус на повторно появяване	#
 resourcePack.editor.exportProject.advancedSettings.simulationDistance=Разстояние за симулация	#
 resourcePack.editor.exportProject.advancedSettings.bedsWork=Леглата работят	#
-resourcePack.editor.exportProject.advancedSettings.requiredSleepingPlayers=Необходими спящи играчи (%1%)	#
+resourcePack.editor.exportProject.advancedSettings.requiredSleepingPlayers=Необходими спящи играчи (%1$s)	#
+resourcePack.editor.exportProject.advancedSettings.requiredSleepingPlayers.onePlayerMessage=Само един играч	#
 resourcePack.editor.exportProject.multiplayerSettings=Настройки за групова игра	#
 resourcePack.editor.exportProject.multiplayerSettings.multiplayerGame=Групова игра	#
 resourcePack.editor.exportProject.multiplayerSettings.playerAccess=Достъп на играчи	#
@@ -580,10 +582,15 @@ resourcePack.editor.server.name=Ресурси на редактора	#
 
 
 resourcePack.editor.toolRail.Terrain.title=Терен	#
+resourcePack.editor.toolRail.Terrain.keybinding.toggleTool=Превключване на инструмента за терен	#
+resourcePack.editor.toolRail.Terrain.keyBinding.switch=Превключване на режим на терена	#
 resourcePack.editor.toolRail.Terrain.Mode.title=Режим на терена	#
 resourcePack.editor.toolRail.Terrain.Smooth.mode.title=Гладък режим	#
 resourcePack.editor.toolRail.Terrain.Smooth.tooltip=Изглажане на терена според силата на изглаждането	#
 resourcePack.editor.toolRail.Terrain.SmoothStrength=Сила на изглаждане	#
+resourcePack.editor.toolRail.Terrain.Roughen.mode.title=Режим на насичане	#
+resourcePack.editor.toolRail.Terrain.Roughen.tooltip=Насичане на терена според силата на насичането	#
+resourcePack.editor.toolRail.Terrain.RoughenStrength=Сила на насичане	#
 resourcePack.editor.toolRail.Terrain.description=Инструментът за терен изглажда или загрубява терена	#
 
 
@@ -704,6 +711,8 @@ resourcePack.editor.viewport.keyBinding.moveLeft=Движение наляво	#
 resourcePack.editor.viewport.keyBinding.moveRight=Движение надясно	#
 resourcePack.editor.viewport.keyBinding.moveUp=Преместване нагоре	#
 
+resourcePack.editor.viewport.keyBinding.incrementFlySpeed=Увеличаване на скоростта на летене	#
+resourcePack.editor.viewport.keyBinding.decrementFlySpeed=Намаляване на скоростта на летене	#
 
 resourcePack.editor.viewSettings.compass.tip=Показване на компаса за посока	#
 resourcePack.editor.viewSettings.compass.title=Показване на компаса	#
@@ -717,3 +726,7 @@ resourcePack.editor.viewSettings.menu=Преглед на настройките
 resourcePack.editor.viewSettings.title=Преглед на настройките	#
 
 resourcePack.editor.hotbar.defaultDisplayName=По подразбиране	#
+
+resourcePack.editor.reloadScripts.response.tooMany=Твърде много играчи са свързани към сървъра. Презареждането на скриптове се поддържа само при хостове с един свързан играч.	#
+resourcePack.editor.reloadScripts.response.genericError=Възникна грешка при опитa за презареждане на скриптове.	#
+resourcePack.editor.reloadScripts.response.noAdminRights=Нямате разрешение да презареждате скриптове.	#

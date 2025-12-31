@@ -125,9 +125,9 @@ resourcePack.editor.ClipboardPreviewControl.origin.title=Origine	#
 resourcePack.editor.ClipboardPreviewControl.origin.tooltip=Punto di origine all'interno dell'elemento appunti.  Viene utilizzato sia come ancoraggio di posizionamento che come fulcro attorno al quale gli appunti vengono ruotati e specchiati.	#
 resourcePack.editor.ClipboardPreviewControl.placement.title=Opzioni	#
 resourcePack.editor.ClipboardPreviewControl.rootPane.title=Informazioni appunti	#
-resourcePack.editor.ClipboardPreviewControl.rotation.180=180°	#
-resourcePack.editor.ClipboardPreviewControl.rotation.270=270°	#
-resourcePack.editor.ClipboardPreviewControl.rotation.90=90°	#
+resourcePack.editor.ClipboardPreviewControl.rotation.180=180Â°	#
+resourcePack.editor.ClipboardPreviewControl.rotation.270=270Â°	#
+resourcePack.editor.ClipboardPreviewControl.rotation.90=90Â°	#
 resourcePack.editor.ClipboardPreviewControl.rotation.none=Nessuno	#
 resourcePack.editor.ClipboardPreviewControl.rotation.title=Rotazione	#
 resourcePack.editor.ClipboardPreviewControl.rotation.tooltip=La quantità di rotazione intorno all'asse Y al punto di origine	#
@@ -184,6 +184,7 @@ resourcePack.editor.datatransferaccessors.lighting_group=Illuminazione globale	#
 resourcePack.editor.datatransferaccessors.pbr_fallbacks=Backup PBR	#
 resourcePack.editor.datatransferaccessors.point_lights=Luci a punti	#
 resourcePack.editor.datatransferaccessors.water=Acqua	#
+resourcePack.editor.datatransferaccessors.shadows=Ombre	#
 
 
 resourcePack.editor.deferredLightingSettings.menu.title=Impostazioni illuminazione differita	#
@@ -217,7 +218,8 @@ resourcePack.editor.exportProject.advancedSettings.immediateRespawn=Rigenerazion
 resourcePack.editor.exportProject.advancedSettings.respawnRadius=Raggio rigenerazione	#
 resourcePack.editor.exportProject.advancedSettings.simulationDistance=Distanza simulazione	#
 resourcePack.editor.exportProject.advancedSettings.bedsWork=Lavoro di letti	#
-resourcePack.editor.exportProject.advancedSettings.requiredSleepingPlayers=Giocatori che dormono richiesti (%1%)	#
+resourcePack.editor.exportProject.advancedSettings.requiredSleepingPlayers=Giocatori che dormono richiesti (%1$s)	#
+resourcePack.editor.exportProject.advancedSettings.requiredSleepingPlayers.onePlayerMessage=Solo 1 giocatore	#
 resourcePack.editor.exportProject.multiplayerSettings=Impostazioni Multigiocatore	#
 resourcePack.editor.exportProject.multiplayerSettings.multiplayerGame=Partita multigiocatore	#
 resourcePack.editor.exportProject.multiplayerSettings.playerAccess=Accesso giocatori	#
@@ -580,10 +582,15 @@ resourcePack.editor.server.name=Risorse dell'editor	#
 
 
 resourcePack.editor.toolRail.Terrain.title=Terreno	#
+resourcePack.editor.toolRail.Terrain.keybinding.toggleTool=Attiva/disattiva strumento Terreno	#
+resourcePack.editor.toolRail.Terrain.keyBinding.switch=Cambia modalità Terreno	#
 resourcePack.editor.toolRail.Terrain.Mode.title=Modalità Terreno	#
 resourcePack.editor.toolRail.Terrain.Smooth.mode.title=Modalità Levigato	#
 resourcePack.editor.toolRail.Terrain.Smooth.tooltip=Leviga il terreno in base al livello di levigatura	#
 resourcePack.editor.toolRail.Terrain.SmoothStrength=Livello di levigatura	#
+resourcePack.editor.toolRail.Terrain.Roughen.mode.title=Modalità Irregolare	#
+resourcePack.editor.toolRail.Terrain.Roughen.tooltip=Inasprisce il terreno in base al livello di irregolarità	#
+resourcePack.editor.toolRail.Terrain.RoughenStrength=Livello di irregolarità	#
 resourcePack.editor.toolRail.Terrain.description=Lo strumento Terreno leviga o irruvidisce il terreno	#
 
 
@@ -704,6 +711,8 @@ resourcePack.editor.viewport.keyBinding.moveLeft=Sposta a sinistra	#
 resourcePack.editor.viewport.keyBinding.moveRight=Sposta a destra	#
 resourcePack.editor.viewport.keyBinding.moveUp=Muovi in alto	#
 
+resourcePack.editor.viewport.keyBinding.incrementFlySpeed=Aumenta velocità di volo	#
+resourcePack.editor.viewport.keyBinding.decrementFlySpeed=Riduci velocità di volo	#
 
 resourcePack.editor.viewSettings.compass.tip=Mostra la bussola	#
 resourcePack.editor.viewSettings.compass.title=Mostra bussola	#
@@ -717,3 +726,7 @@ resourcePack.editor.viewSettings.menu=Impostazioni di visualizzazione	#
 resourcePack.editor.viewSettings.title=Impostazioni di visualizzazione	#
 
 resourcePack.editor.hotbar.defaultDisplayName=Normale	#
+
+resourcePack.editor.reloadScripts.response.tooMany=Troppi giocatori connessi al server. Il ricaricamento degli script è supportato solo per gli host con un singolo giocatore connesso.	#
+resourcePack.editor.reloadScripts.response.genericError=Si è verificato un errore nel tentativo di ricaricare gli script.	#
+resourcePack.editor.reloadScripts.response.noAdminRights=Non disponi di autorizzazione per ricaricare gli script.	#

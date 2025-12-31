@@ -125,9 +125,9 @@ resourcePack.editor.ClipboardPreviewControl.origin.title=Pôvod	#
 resourcePack.editor.ClipboardPreviewControl.origin.tooltip=Východiskový bod v položke schránky. Používa sa ako umiestňovacia kotva aj ako bod, okolo ktorého sa schránka otáča a zrkadlí	#
 resourcePack.editor.ClipboardPreviewControl.placement.title=Možnosti	#
 resourcePack.editor.ClipboardPreviewControl.rootPane.title=Informácie o schránke	#
-resourcePack.editor.ClipboardPreviewControl.rotation.180=180°	#
-resourcePack.editor.ClipboardPreviewControl.rotation.270=270°	#
-resourcePack.editor.ClipboardPreviewControl.rotation.90=90°	#
+resourcePack.editor.ClipboardPreviewControl.rotation.180=180Â°	#
+resourcePack.editor.ClipboardPreviewControl.rotation.270=270Â°	#
+resourcePack.editor.ClipboardPreviewControl.rotation.90=90Â°	#
 resourcePack.editor.ClipboardPreviewControl.rotation.none=Žiadne	#
 resourcePack.editor.ClipboardPreviewControl.rotation.title=Rotácia	#
 resourcePack.editor.ClipboardPreviewControl.rotation.tooltip=Miera rotácie okolo osi Y vo východiskovom bode	#
@@ -184,6 +184,7 @@ resourcePack.editor.datatransferaccessors.lighting_group=Globálne osvetlenie	#
 resourcePack.editor.datatransferaccessors.pbr_fallbacks=Rezervy PBR	#
 resourcePack.editor.datatransferaccessors.point_lights=Bodové svetlá	#
 resourcePack.editor.datatransferaccessors.water=Voda	#
+resourcePack.editor.datatransferaccessors.shadows=Tiene	#
 
 
 resourcePack.editor.deferredLightingSettings.menu.title=Nastavenia prechodného osvetlenia	#
@@ -217,7 +218,8 @@ resourcePack.editor.exportProject.advancedSettings.immediateRespawn=Okamžité z
 resourcePack.editor.exportProject.advancedSettings.respawnRadius=Polomer znovuzrodenia	#
 resourcePack.editor.exportProject.advancedSettings.simulationDistance=Vzdialenosť simulácie	#
 resourcePack.editor.exportProject.advancedSettings.bedsWork=Postele fungujú	#
-resourcePack.editor.exportProject.advancedSettings.requiredSleepingPlayers=Požadovaní spiaci hráči (%1%)	#
+resourcePack.editor.exportProject.advancedSettings.requiredSleepingPlayers=Požadovaní spiaci hráči (%1$s)	#
+resourcePack.editor.exportProject.advancedSettings.requiredSleepingPlayers.onePlayerMessage=Iba 1 hráč	#
 resourcePack.editor.exportProject.multiplayerSettings=Nastavenia hry pre viacerých hráčov	#
 resourcePack.editor.exportProject.multiplayerSettings.multiplayerGame=Hra pre viacerých hráčov	#
 resourcePack.editor.exportProject.multiplayerSettings.playerAccess=Prístup hráča	#
@@ -580,10 +582,15 @@ resourcePack.editor.server.name=Zdroje editora	#
 
 
 resourcePack.editor.toolRail.Terrain.title=Terén	#
+resourcePack.editor.toolRail.Terrain.keybinding.toggleTool=Prepnúť nástroj terénu	#
+resourcePack.editor.toolRail.Terrain.keyBinding.switch=Prepnúť režim terénu	#
 resourcePack.editor.toolRail.Terrain.Mode.title=Režim terénu	#
 resourcePack.editor.toolRail.Terrain.Smooth.mode.title=Režim vyhladzovania	#
 resourcePack.editor.toolRail.Terrain.Smooth.tooltip=Vyhladenie terénu na základe sily vyhladzovania	#
 resourcePack.editor.toolRail.Terrain.SmoothStrength=Sila vyhladzovania	#
+resourcePack.editor.toolRail.Terrain.Roughen.mode.title=Režim zdrsnenia	#
+resourcePack.editor.toolRail.Terrain.Roughen.tooltip=Zdrsnenie terénu na základe sily zdrsnenia	#
+resourcePack.editor.toolRail.Terrain.RoughenStrength=Sila zdrsnenia	#
 resourcePack.editor.toolRail.Terrain.description=Terénny nástroj vyhladzuje alebo zdrsňuje terén	#
 
 
@@ -704,6 +711,8 @@ resourcePack.editor.viewport.keyBinding.moveLeft=Pohyb doľava	#
 resourcePack.editor.viewport.keyBinding.moveRight=Pohyb doprava	#
 resourcePack.editor.viewport.keyBinding.moveUp=Pohyb nahor	#
 
+resourcePack.editor.viewport.keyBinding.incrementFlySpeed=Zvýšte rýchlosť letu	#
+resourcePack.editor.viewport.keyBinding.decrementFlySpeed=Znížte rýchlosť letu	#
 
 resourcePack.editor.viewSettings.compass.tip=Zobrazte smerový kompas	#
 resourcePack.editor.viewSettings.compass.title=Zobraziť kompas	#
@@ -717,3 +726,7 @@ resourcePack.editor.viewSettings.menu=Nastavenia zobrazenia	#
 resourcePack.editor.viewSettings.title=Nastavenia zobrazenia	#
 
 resourcePack.editor.hotbar.defaultDisplayName=Predvolené	#
+
+resourcePack.editor.reloadScripts.response.tooMany=K serveru je pripojených príliš veľa hráčov. Opätovné načítanie skriptov je podporované len na hostiteľoch s jedným pripojeným hráčom.	#
+resourcePack.editor.reloadScripts.response.genericError=Pri pokuse o opätovné načítanie skriptov došlo k chybe.	#
+resourcePack.editor.reloadScripts.response.noAdminRights=Nemáte povolenie na opätovné načítanie skriptov.	#

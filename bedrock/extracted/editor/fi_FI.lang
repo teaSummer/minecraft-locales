@@ -125,9 +125,9 @@ resourcePack.editor.ClipboardPreviewControl.origin.title=Alkupiste	#
 resourcePack.editor.ClipboardPreviewControl.origin.tooltip=Leikepöydän esineen alkupiste. Tätä käytetään sekä sijoitteluankkurina että pisteenä, jonka ympärillä leikepöytää kierretään ja peilataan	#
 resourcePack.editor.ClipboardPreviewControl.placement.title=Asetukset	#
 resourcePack.editor.ClipboardPreviewControl.rootPane.title=Leikepöydän tiedot	#
-resourcePack.editor.ClipboardPreviewControl.rotation.180=180°	#
-resourcePack.editor.ClipboardPreviewControl.rotation.270=270°	#
-resourcePack.editor.ClipboardPreviewControl.rotation.90=90°	#
+resourcePack.editor.ClipboardPreviewControl.rotation.180=180Â°	#
+resourcePack.editor.ClipboardPreviewControl.rotation.270=270Â°	#
+resourcePack.editor.ClipboardPreviewControl.rotation.90=90Â°	#
 resourcePack.editor.ClipboardPreviewControl.rotation.none=Ei mitään	#
 resourcePack.editor.ClipboardPreviewControl.rotation.title=Kierto	#
 resourcePack.editor.ClipboardPreviewControl.rotation.tooltip=Kierron määrä Y-akselin ympäri alkupisteessä	#
@@ -184,6 +184,7 @@ resourcePack.editor.datatransferaccessors.lighting_group=Yleinen valaistus	#
 resourcePack.editor.datatransferaccessors.pbr_fallbacks=PBR vararatkaisut	#
 resourcePack.editor.datatransferaccessors.point_lights=Merkkivalot	#
 resourcePack.editor.datatransferaccessors.water=Vesi	#
+resourcePack.editor.datatransferaccessors.shadows=Varjot	#
 
 
 resourcePack.editor.deferredLightingSettings.menu.title=Viivästetyn valaistuksen asetukset	#
@@ -217,7 +218,8 @@ resourcePack.editor.exportProject.advancedSettings.immediateRespawn=Välitön uu
 resourcePack.editor.exportProject.advancedSettings.respawnRadius=Maailmaanpaluusäde	#
 resourcePack.editor.exportProject.advancedSettings.simulationDistance=Simulointietäisyys	#
 resourcePack.editor.exportProject.advancedSettings.bedsWork=Sängyt toimivat	#
-resourcePack.editor.exportProject.advancedSettings.requiredSleepingPlayers=Vaaditut nukkuvat pelaajat (%1%)	#
+resourcePack.editor.exportProject.advancedSettings.requiredSleepingPlayers=Vaaditut nukkuvat pelaajat (%1$s)	#
+resourcePack.editor.exportProject.advancedSettings.requiredSleepingPlayers.onePlayerMessage=Vain 1 pelaaja	#
 resourcePack.editor.exportProject.multiplayerSettings=Moninpeliasetukset	#
 resourcePack.editor.exportProject.multiplayerSettings.multiplayerGame=Moninpeli	#
 resourcePack.editor.exportProject.multiplayerSettings.playerAccess=Pelaajien pääsy	#
@@ -580,10 +582,15 @@ resourcePack.editor.server.name=Editorin resurssit	#
 
 
 resourcePack.editor.toolRail.Terrain.title=Maasto	#
+resourcePack.editor.toolRail.Terrain.keybinding.toggleTool=Vaihda maastotyökalua	#
+resourcePack.editor.toolRail.Terrain.keyBinding.switch=Vaihda maastotilaa	#
 resourcePack.editor.toolRail.Terrain.Mode.title=Maastotila	#
 resourcePack.editor.toolRail.Terrain.Smooth.mode.title=Tasoitustila	#
 resourcePack.editor.toolRail.Terrain.Smooth.tooltip=Tasoita maastoa tasoitusvoiman perusteella	#
 resourcePack.editor.toolRail.Terrain.SmoothStrength=Tasoitusvoima	#
+resourcePack.editor.toolRail.Terrain.Roughen.mode.title=Epätasoitustila	#
+resourcePack.editor.toolRail.Terrain.Roughen.tooltip=Epätasoita maastoa riippuen epätasoituksen voimasta	#
+resourcePack.editor.toolRail.Terrain.RoughenStrength=Epätasoitusvoima	#
 resourcePack.editor.toolRail.Terrain.description=Maastotyökalu tasoittaa tai epätasoittaa maastoa	#
 
 
@@ -704,6 +711,8 @@ resourcePack.editor.viewport.keyBinding.moveLeft=Siirry vasemmalle	#
 resourcePack.editor.viewport.keyBinding.moveRight=Siirry oikealle	#
 resourcePack.editor.viewport.keyBinding.moveUp=Siirry ylös	#
 
+resourcePack.editor.viewport.keyBinding.incrementFlySpeed=Lisää lentonopeutta	#
+resourcePack.editor.viewport.keyBinding.decrementFlySpeed=Vähennä lentonopeutta	#
 
 resourcePack.editor.viewSettings.compass.tip=Näytä suuntakompassi	#
 resourcePack.editor.viewSettings.compass.title=Näytä kompassi	#
@@ -717,3 +726,7 @@ resourcePack.editor.viewSettings.menu=Näkymäasetukset	#
 resourcePack.editor.viewSettings.title=Näkymäasetukset	#
 
 resourcePack.editor.hotbar.defaultDisplayName=Oletus	#
+
+resourcePack.editor.reloadScripts.response.tooMany=Palvelimeen on yhteydessä liian monta pelaajaa. Komentosarjojen uudelleenlatausta tuetaan vain isännillä, joihin on yhdistetty yksi pelaaja.	#
+resourcePack.editor.reloadScripts.response.genericError=Ilmeni virhe yritettäessä ladata komentosarjoja uudelleen.	#
+resourcePack.editor.reloadScripts.response.noAdminRights=Sinulla ei ole oikeuksia komentosarjojen uudelleenlataamiseen.	#

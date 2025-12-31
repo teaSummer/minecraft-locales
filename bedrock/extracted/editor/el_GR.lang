@@ -125,9 +125,9 @@ resourcePack.editor.ClipboardPreviewControl.origin.title=Προέλευση	#
 resourcePack.editor.ClipboardPreviewControl.origin.tooltip=Το σημείο προέλευσης του στοιχείου προχείρου. Αυτό χρησιμοποιείται ως άγκυρα τοποθέτησης και το σημείο γύρω από το οποίο περιστρέφεται και αντικατοπτρίζεται το πρόχειρο	#
 resourcePack.editor.ClipboardPreviewControl.placement.title=Επιλογές	#
 resourcePack.editor.ClipboardPreviewControl.rootPane.title=Πληροφορίες προχείρου	#
-resourcePack.editor.ClipboardPreviewControl.rotation.180=180°	#
-resourcePack.editor.ClipboardPreviewControl.rotation.270=270°	#
-resourcePack.editor.ClipboardPreviewControl.rotation.90=90°	#
+resourcePack.editor.ClipboardPreviewControl.rotation.180=180Â°	#
+resourcePack.editor.ClipboardPreviewControl.rotation.270=270Â°	#
+resourcePack.editor.ClipboardPreviewControl.rotation.90=90Â°	#
 resourcePack.editor.ClipboardPreviewControl.rotation.none=Κανένα	#
 resourcePack.editor.ClipboardPreviewControl.rotation.title=Περιστροφή	#
 resourcePack.editor.ClipboardPreviewControl.rotation.tooltip=Η ποσότητα περιστροφής γύρω από τον άξονα Y στο σημείο προέλευσης	#
@@ -184,6 +184,7 @@ resourcePack.editor.datatransferaccessors.lighting_group=Καθολικός φω
 resourcePack.editor.datatransferaccessors.pbr_fallbacks=Εναλλακτικές λύσεις PBR	#
 resourcePack.editor.datatransferaccessors.point_lights=Σημειακά φώτα	#
 resourcePack.editor.datatransferaccessors.water=Νερό	#
+resourcePack.editor.datatransferaccessors.shadows=Σκιές	#
 
 
 resourcePack.editor.deferredLightingSettings.menu.title=Αναβληθείσες ρυθμίσεις φωτισμού	#
@@ -217,7 +218,8 @@ resourcePack.editor.exportProject.advancedSettings.immediateRespawn=Άμεση �
 resourcePack.editor.exportProject.advancedSettings.respawnRadius=Ακτίνα επαναγένεσης	#
 resourcePack.editor.exportProject.advancedSettings.simulationDistance=Απόσταση προσομοίωσης	#
 resourcePack.editor.exportProject.advancedSettings.bedsWork=Κρεβάτια που λειτουργούν	#
-resourcePack.editor.exportProject.advancedSettings.requiredSleepingPlayers=Απαιτούμενοι κοιμισμένοι παίκτες (%1%)	#
+resourcePack.editor.exportProject.advancedSettings.requiredSleepingPlayers=Απαιτούμενοι παίκτες που κοιμούνται (%1$s)	#
+resourcePack.editor.exportProject.advancedSettings.requiredSleepingPlayers.onePlayerMessage=Μόνο 1 παίκτης	#
 resourcePack.editor.exportProject.multiplayerSettings=Ρυθμίσεις πολλών παικτών	#
 resourcePack.editor.exportProject.multiplayerSettings.multiplayerGame=Παιχνίδι πολλών παικτών	#
 resourcePack.editor.exportProject.multiplayerSettings.playerAccess=Πρόσβαση παίκτη	#
@@ -580,10 +582,15 @@ resourcePack.editor.server.name=Πόροι προγράμματος επεξερ
 
 
 resourcePack.editor.toolRail.Terrain.title=Έδαφος	#
+resourcePack.editor.toolRail.Terrain.keybinding.toggleTool=Εναλλαγή εργαλείου εδάφους	#
+resourcePack.editor.toolRail.Terrain.keyBinding.switch=Εναλλαγή λειτουργίας εδάφους	#
 resourcePack.editor.toolRail.Terrain.Mode.title=Λειτουργία εδάφους	#
 resourcePack.editor.toolRail.Terrain.Smooth.mode.title=Ομαλή λειτουργία	#
 resourcePack.editor.toolRail.Terrain.Smooth.tooltip=Ομαλή οδήγηση στο έδαφος με βάση τη δύναμη εξομάλυνσης	#
 resourcePack.editor.toolRail.Terrain.SmoothStrength=Δύναμη εξομάλυνσης	#
+resourcePack.editor.toolRail.Terrain.Roughen.mode.title=Άγρια λειτουργία	#
+resourcePack.editor.toolRail.Terrain.Roughen.tooltip=Άγριο έδαφος με βάση την άγρια δύναμη	#
+resourcePack.editor.toolRail.Terrain.RoughenStrength=Άγρια δύναμη	#
 resourcePack.editor.toolRail.Terrain.description=Το εργαλείο εδάφους εξομαλύνει ή τραχύνει το έδαφος	#
 
 
@@ -704,6 +711,8 @@ resourcePack.editor.viewport.keyBinding.moveLeft=Κίνηση αριστερά	#
 resourcePack.editor.viewport.keyBinding.moveRight=Κίνηση δεξιά	#
 resourcePack.editor.viewport.keyBinding.moveUp=Μετακίνηση προς τα Επάνω	#
 
+resourcePack.editor.viewport.keyBinding.incrementFlySpeed=Αύξηση Ταχύτητας Πτήσης	#
+resourcePack.editor.viewport.keyBinding.decrementFlySpeed=Μείωση Ταχύτητας Πτήσης	#
 
 resourcePack.editor.viewSettings.compass.tip=Εμφάνιση της πυξίδας κατεύθυνσης	#
 resourcePack.editor.viewSettings.compass.title=Εμφάνιση πυξίδας	#
@@ -717,3 +726,7 @@ resourcePack.editor.viewSettings.menu=Ρυθμίσεις προβολής	#
 resourcePack.editor.viewSettings.title=Ρυθμίσεις προβολής	#
 
 resourcePack.editor.hotbar.defaultDisplayName=Προεπιλογή	#
+
+resourcePack.editor.reloadScripts.response.tooMany=Πάρα πολλοί παίκτες είναι συνδεδεμένοι στον διακομιστή. Η επαναφόρτωση της δέσμης ενεργειών υποστηρίζεται μόνο από κύριους χρήστες με έναν μόνο παίκτη συνδεδεμένο.	#
+resourcePack.editor.reloadScripts.response.genericError=Παρουσιάστηκε σφάλμα κατά την απόπειρα επαναφόρτωσης δεσμών ενεργειών.	#
+resourcePack.editor.reloadScripts.response.noAdminRights=Δεν έχεις το δικαίωμα επαναφόρτωσης δεσμών ενεργειών.	#

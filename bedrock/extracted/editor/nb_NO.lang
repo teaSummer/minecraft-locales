@@ -125,9 +125,9 @@ resourcePack.editor.ClipboardPreviewControl.origin.title=Opprinnelse	#
 resourcePack.editor.ClipboardPreviewControl.origin.tooltip=Opprinnelsespunktet inne i utklippstavle-elementet. Dette brukes som et antrekkplasseringsanker samt punktet utklippstavlen roteres og speiles rundt.	#
 resourcePack.editor.ClipboardPreviewControl.placement.title=Alternativer	#
 resourcePack.editor.ClipboardPreviewControl.rootPane.title=Informasjon om utklippstavlen	#
-resourcePack.editor.ClipboardPreviewControl.rotation.180=180°	#
-resourcePack.editor.ClipboardPreviewControl.rotation.270=270°	#
-resourcePack.editor.ClipboardPreviewControl.rotation.90=90°	#
+resourcePack.editor.ClipboardPreviewControl.rotation.180=180Â°	#
+resourcePack.editor.ClipboardPreviewControl.rotation.270=270Â°	#
+resourcePack.editor.ClipboardPreviewControl.rotation.90=90Â°	#
 resourcePack.editor.ClipboardPreviewControl.rotation.none=Ingen	#
 resourcePack.editor.ClipboardPreviewControl.rotation.title=Rotasjon	#
 resourcePack.editor.ClipboardPreviewControl.rotation.tooltip=Mengden rotasjon rundt Y-aksen ved opprinnelsespunktet	#
@@ -184,6 +184,7 @@ resourcePack.editor.datatransferaccessors.lighting_group=Globalt lys	#
 resourcePack.editor.datatransferaccessors.pbr_fallbacks=PBR-alternativer	#
 resourcePack.editor.datatransferaccessors.point_lights=Punktlys	#
 resourcePack.editor.datatransferaccessors.water=Vann	#
+resourcePack.editor.datatransferaccessors.shadows=Skygger	#
 
 
 resourcePack.editor.deferredLightingSettings.menu.title=Utsatte lysinnstillinger	#
@@ -217,7 +218,8 @@ resourcePack.editor.exportProject.advancedSettings.immediateRespawn=Øyeblikkeli
 resourcePack.editor.exportProject.advancedSettings.respawnRadius=Gjenoppståelsesradius	#
 resourcePack.editor.exportProject.advancedSettings.simulationDistance=Simuleringsavstand	#
 resourcePack.editor.exportProject.advancedSettings.bedsWork=Senger fungerer	#
-resourcePack.editor.exportProject.advancedSettings.requiredSleepingPlayers=Nødvendige sovende spillere (%1 %)	#
+resourcePack.editor.exportProject.advancedSettings.requiredSleepingPlayers=Nødvendige sovende spillere (%1$s)	#
+resourcePack.editor.exportProject.advancedSettings.requiredSleepingPlayers.onePlayerMessage=Bare én spiller	#
 resourcePack.editor.exportProject.multiplayerSettings=Flerspillerinnstillinger	#
 resourcePack.editor.exportProject.multiplayerSettings.multiplayerGame=Flerspillerspill	#
 resourcePack.editor.exportProject.multiplayerSettings.playerAccess=Spillertilgang	#
@@ -580,10 +582,15 @@ resourcePack.editor.server.name=Redigeringsressurser	#
 
 
 resourcePack.editor.toolRail.Terrain.title=Terreng	#
+resourcePack.editor.toolRail.Terrain.keybinding.toggleTool=Aktiver/deaktiver terrengverktøy	#
+resourcePack.editor.toolRail.Terrain.keyBinding.switch=Bytt terrengmodus	#
 resourcePack.editor.toolRail.Terrain.Mode.title=Terrengmodus	#
 resourcePack.editor.toolRail.Terrain.Smooth.mode.title=Jevn modus	#
 resourcePack.editor.toolRail.Terrain.Smooth.tooltip=Jevn ut terreng basert på utjevningsstyrke	#
 resourcePack.editor.toolRail.Terrain.SmoothStrength=Utjevningsstyrke	#
+resourcePack.editor.toolRail.Terrain.Roughen.mode.title=Grovmodus	#
+resourcePack.editor.toolRail.Terrain.Roughen.tooltip=Gjør terrenget grovere basert på grovhetsstyrke	#
+resourcePack.editor.toolRail.Terrain.RoughenStrength=Grovhetsstyrke	#
 resourcePack.editor.toolRail.Terrain.description=Terrengverktøy jevner ut eller rugler til terreng	#
 
 
@@ -704,6 +711,8 @@ resourcePack.editor.viewport.keyBinding.moveLeft=Mot venstre	#
 resourcePack.editor.viewport.keyBinding.moveRight=Mot høyre	#
 resourcePack.editor.viewport.keyBinding.moveUp=Flytt opp	#
 
+resourcePack.editor.viewport.keyBinding.incrementFlySpeed=Øk flyhastighet	#
+resourcePack.editor.viewport.keyBinding.decrementFlySpeed=Reduser flyhastighet	#
 
 resourcePack.editor.viewSettings.compass.tip=Vis retningkompasset	#
 resourcePack.editor.viewSettings.compass.title=Vis kompasset	#
@@ -717,3 +726,7 @@ resourcePack.editor.viewSettings.menu=Visningsinnstillinger	#
 resourcePack.editor.viewSettings.title=Visningsinnstillinger	#
 
 resourcePack.editor.hotbar.defaultDisplayName=Standard	#
+
+resourcePack.editor.reloadScripts.response.tooMany=For mange spillere er koblet til serveren. Ny innlasting av skript støttes bare hos verter med én enkelt spiller tilkoblet.	#
+resourcePack.editor.reloadScripts.response.genericError=En feil oppstod under forsøket på å laste inn skript på nytt.	#
+resourcePack.editor.reloadScripts.response.noAdminRights=Du har ikke tillatelse til å laste inn skript på nytt.	#

@@ -125,9 +125,9 @@ resourcePack.editor.ClipboardPreviewControl.origin.title=원점	#
 resourcePack.editor.ClipboardPreviewControl.origin.tooltip=클립보드 항목 내의 원점입니다.  이것은 배치 앵커로 사용되며 클립보드가 회전하고 미러링되는 지점으로 사용됩니다	#
 resourcePack.editor.ClipboardPreviewControl.placement.title=옵션	#
 resourcePack.editor.ClipboardPreviewControl.rootPane.title=클립보드 정보	#
-resourcePack.editor.ClipboardPreviewControl.rotation.180=180°	#
-resourcePack.editor.ClipboardPreviewControl.rotation.270=270°	#
-resourcePack.editor.ClipboardPreviewControl.rotation.90=90°	#
+resourcePack.editor.ClipboardPreviewControl.rotation.180=180Â°	#
+resourcePack.editor.ClipboardPreviewControl.rotation.270=270Â°	#
+resourcePack.editor.ClipboardPreviewControl.rotation.90=90Â°	#
 resourcePack.editor.ClipboardPreviewControl.rotation.none=없음	#
 resourcePack.editor.ClipboardPreviewControl.rotation.title=회전	#
 resourcePack.editor.ClipboardPreviewControl.rotation.tooltip=원점에서 Y축을 중심으로 한 회전량입니다	#
@@ -184,6 +184,7 @@ resourcePack.editor.datatransferaccessors.lighting_group=글로벌 조명	#
 resourcePack.editor.datatransferaccessors.pbr_fallbacks=PBR 대비책	#
 resourcePack.editor.datatransferaccessors.point_lights=포인트 조명	#
 resourcePack.editor.datatransferaccessors.water=물	#
+resourcePack.editor.datatransferaccessors.shadows=그림자	#
 
 
 resourcePack.editor.deferredLightingSettings.menu.title=디퍼드 라이팅 설정	#
@@ -217,7 +218,8 @@ resourcePack.editor.exportProject.advancedSettings.immediateRespawn=즉시 리�
 resourcePack.editor.exportProject.advancedSettings.respawnRadius=리스폰 반경	#
 resourcePack.editor.exportProject.advancedSettings.simulationDistance=시뮬레이션 거리	#
 resourcePack.editor.exportProject.advancedSettings.bedsWork=침대 작동	#
-resourcePack.editor.exportProject.advancedSettings.requiredSleepingPlayers=잠자는 플레이어 필요(%1%)	#
+resourcePack.editor.exportProject.advancedSettings.requiredSleepingPlayers=잠자는 플레이어 필요(%1$s)	#
+resourcePack.editor.exportProject.advancedSettings.requiredSleepingPlayers.onePlayerMessage=플레이어 1명만	#
 resourcePack.editor.exportProject.multiplayerSettings=멀티 플레이 설정	#
 resourcePack.editor.exportProject.multiplayerSettings.multiplayerGame=멀티 플레이 게임	#
 resourcePack.editor.exportProject.multiplayerSettings.playerAccess=플레이어 액세스	#
@@ -580,10 +582,15 @@ resourcePack.editor.server.name=편집기 리소스	#
 
 
 resourcePack.editor.toolRail.Terrain.title=지형	#
+resourcePack.editor.toolRail.Terrain.keybinding.toggleTool=지형 도구 토글	#
+resourcePack.editor.toolRail.Terrain.keyBinding.switch=지형 모드 전환	#
 resourcePack.editor.toolRail.Terrain.Mode.title=지형 모드	#
 resourcePack.editor.toolRail.Terrain.Smooth.mode.title=부드러움 모드	#
 resourcePack.editor.toolRail.Terrain.Smooth.tooltip=부드러움 강도에 따라 지형을 부드럽게 표시합니다.	#
 resourcePack.editor.toolRail.Terrain.SmoothStrength=부드러움 강도	#
+resourcePack.editor.toolRail.Terrain.Roughen.mode.title=거침 모드	#
+resourcePack.editor.toolRail.Terrain.Roughen.tooltip=거침 강도에 따라 지형을 거칠게 표시합니다.	#
+resourcePack.editor.toolRail.Terrain.RoughenStrength=거침 강도	#
 resourcePack.editor.toolRail.Terrain.description=지형 도구가 지형을 부드럽거나 거칠게 합니다.	#
 
 
@@ -704,6 +711,8 @@ resourcePack.editor.viewport.keyBinding.moveLeft=왼쪽으로 이동	#
 resourcePack.editor.viewport.keyBinding.moveRight=오른쪽으로 이동	#
 resourcePack.editor.viewport.keyBinding.moveUp=위로 이동	#
 
+resourcePack.editor.viewport.keyBinding.incrementFlySpeed=비행 속도 증가	#
+resourcePack.editor.viewport.keyBinding.decrementFlySpeed=비행 속도 감소	#
 
 resourcePack.editor.viewSettings.compass.tip=방향 나침반 표시	#
 resourcePack.editor.viewSettings.compass.title=나침반 표시	#
@@ -717,3 +726,7 @@ resourcePack.editor.viewSettings.menu=설정 보기	#
 resourcePack.editor.viewSettings.title=설정 보기	#
 
 resourcePack.editor.hotbar.defaultDisplayName=기본	#
+
+resourcePack.editor.reloadScripts.response.tooMany=서버에 연결된 플레이어가 너무 많습니다. 스크립트 재로딩은 싱글 플레이어가 연결된 호스트에서만 지원됩니다.	#
+resourcePack.editor.reloadScripts.response.genericError=스크립트를 다시 로딩하는 동안 오류가 발생했습니다.	#
+resourcePack.editor.reloadScripts.response.noAdminRights=스크립트를 다시 로딩할 권한이 없습니다.	#

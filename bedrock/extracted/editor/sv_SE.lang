@@ -125,9 +125,9 @@ resourcePack.editor.ClipboardPreviewControl.origin.title=Ursprung	#
 resourcePack.editor.ClipboardPreviewControl.origin.tooltip=Ursprungsplatsen i urklipp-föremålet. Det används som ett placeringsankare och den punkt som urklippet redigeras ifrån	#
 resourcePack.editor.ClipboardPreviewControl.placement.title=Alternativ	#
 resourcePack.editor.ClipboardPreviewControl.rootPane.title=Information om urklipp	#
-resourcePack.editor.ClipboardPreviewControl.rotation.180=180°	#
-resourcePack.editor.ClipboardPreviewControl.rotation.270=270°	#
-resourcePack.editor.ClipboardPreviewControl.rotation.90=90°	#
+resourcePack.editor.ClipboardPreviewControl.rotation.180=180Â°	#
+resourcePack.editor.ClipboardPreviewControl.rotation.270=270Â°	#
+resourcePack.editor.ClipboardPreviewControl.rotation.90=90Â°	#
 resourcePack.editor.ClipboardPreviewControl.rotation.none=Ingen	#
 resourcePack.editor.ClipboardPreviewControl.rotation.title=Rotation	#
 resourcePack.editor.ClipboardPreviewControl.rotation.tooltip=Rotation runt Y-axeln vid ursprungspunkten	#
@@ -184,6 +184,7 @@ resourcePack.editor.datatransferaccessors.lighting_group=Global belysning	#
 resourcePack.editor.datatransferaccessors.pbr_fallbacks=Reservsystem för PBR	#
 resourcePack.editor.datatransferaccessors.point_lights=Punktljus	#
 resourcePack.editor.datatransferaccessors.water=Vatten	#
+resourcePack.editor.datatransferaccessors.shadows=Skuggor	#
 
 
 resourcePack.editor.deferredLightingSettings.menu.title=Inställningar för uppskjuten belysning	#
@@ -217,7 +218,8 @@ resourcePack.editor.exportProject.advancedSettings.immediateRespawn=Omedelbar re
 resourcePack.editor.exportProject.advancedSettings.respawnRadius=Respawnradie	#
 resourcePack.editor.exportProject.advancedSettings.simulationDistance=Simuleringsavstånd	#
 resourcePack.editor.exportProject.advancedSettings.bedsWork=Sängar fungerar	#
-resourcePack.editor.exportProject.advancedSettings.requiredSleepingPlayers=Sovande spelare som krävs (%1%)	#
+resourcePack.editor.exportProject.advancedSettings.requiredSleepingPlayers=Sovande spelare som krävs (%1$s)	#
+resourcePack.editor.exportProject.advancedSettings.requiredSleepingPlayers.onePlayerMessage=Endast 1 spelare	#
 resourcePack.editor.exportProject.multiplayerSettings=Flerspelarinställningar	#
 resourcePack.editor.exportProject.multiplayerSettings.multiplayerGame=Flerspelarsession	#
 resourcePack.editor.exportProject.multiplayerSettings.playerAccess=Spelaråtkomst	#
@@ -580,10 +582,15 @@ resourcePack.editor.server.name=Resurser för redigerare	#
 
 
 resourcePack.editor.toolRail.Terrain.title=Terräng	#
+resourcePack.editor.toolRail.Terrain.keybinding.toggleTool=Växla terrängverktyg	#
+resourcePack.editor.toolRail.Terrain.keyBinding.switch=Byt terrängläge	#
 resourcePack.editor.toolRail.Terrain.Mode.title=Terrängläge	#
 resourcePack.editor.toolRail.Terrain.Smooth.mode.title=Utjämningsläge	#
 resourcePack.editor.toolRail.Terrain.Smooth.tooltip=Utjämna terräng baserat på utjämningsstyrkan	#
 resourcePack.editor.toolRail.Terrain.SmoothStrength=Utjämningsstyrka	#
+resourcePack.editor.toolRail.Terrain.Roughen.mode.title=Upprivningsläge	#
+resourcePack.editor.toolRail.Terrain.Roughen.tooltip=Riv upp terrängen baserat på upprivningsstyrkan	#
+resourcePack.editor.toolRail.Terrain.RoughenStrength=Upprivningsstyrka	#
 resourcePack.editor.toolRail.Terrain.description=Terrängverktyget gör terrängen jämnare eller grövre	#
 
 
@@ -704,6 +711,8 @@ resourcePack.editor.viewport.keyBinding.moveLeft=Styr åt vänster	#
 resourcePack.editor.viewport.keyBinding.moveRight=Styr åt höger	#
 resourcePack.editor.viewport.keyBinding.moveUp=Flytta uppåt	#
 
+resourcePack.editor.viewport.keyBinding.incrementFlySpeed=Öka flyghastigheten	#
+resourcePack.editor.viewport.keyBinding.decrementFlySpeed=Minska flyghastigheten	#
 
 resourcePack.editor.viewSettings.compass.tip=Visa riktningskompassen	#
 resourcePack.editor.viewSettings.compass.title=Visa kompass	#
@@ -717,3 +726,7 @@ resourcePack.editor.viewSettings.menu=Visningsinställningar	#
 resourcePack.editor.viewSettings.title=Visningsinställningar	#
 
 resourcePack.editor.hotbar.defaultDisplayName=Standard	#
+
+resourcePack.editor.reloadScripts.response.tooMany=För många spelare är anslutna till servern. Inläsning av skript stöds endast med en enda spelare ansluten.	#
+resourcePack.editor.reloadScripts.response.genericError=Ett fel uppstod vid försök att läsa in skript.	#
+resourcePack.editor.reloadScripts.response.noAdminRights=Du har inte tillstånd att läsa in skript.	#
