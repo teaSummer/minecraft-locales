@@ -28,7 +28,7 @@ accessibility.importing.complete=Importowanie ukończone	#
 accessibility.signin.xbl=Logowanie do Xbox Live	#
 accessibility.chat.howtoopen=Naciśnij %s, aby otworzyć czat	#
 accessibility.key.mouseButton=Przycisk myszy: %s	#
-accessibility.key.gamepad=Kontroler: %s	#
+accessibility.key.gamepad=Kontroler %s	#
 accessibility.list.or.two=%s lub %	#
 accessibility.list.or.three_or_more.first=%s	#
 accessibility.list.or.three_or_more.inner=, %s	#
@@ -47,6 +47,8 @@ accessibility.button.close=zamknij	#
 accessibility.button.back=wstecz	#
 accessibility.button.exit=Zakończ	#
 
+accessibility.dropdown.listItem=Element listy	#
+
 accessibility.sectionName=Sekcja %s:	#
 
 accessibility.state.on=: wł.	#
@@ -54,6 +56,9 @@ accessibility.state.off=: wył.	#
 
 accessibility.state.checked=: zaznaczono	#
 accessibility.state.unchecked=: nie zaznaczono	#
+
+accessibility.state.selected=: zaznaczony	#
+accessibility.state.unselected=: niezaznaczony	#
 
 accessibility.slider.tts.percentValue=%s procent	#
 
@@ -63,12 +68,38 @@ accessibility.play.editServer=Edytuj serwer	#
 accessibility.play.importWorld=Importuj świat	#
 accessibility.play.leaveRealm=Opuść świat Realms	#
 accessibility.play.realmFeed=Aktualności świata Realms	#
+accessibility.play.tabLeft=Naciśnij %s – zakładka lewa	#
+accessibility.play.tabRight=Naciśnij %s – zakładka prawa	#
+
+accessibility.pause.permissions=Uprawnienia	#
+
+accessibility.screenName.achievements=Ekran osiągnięć	#
+accessibility.screenName.chat=Ekran czatu	#
+accessibility.screenName.createNew=Stwórz nowy ekran	#
+accessibility.screenName.createWorld=Stwórz ekran ustawień świata	#
+accessibility.screenName.editWorldSettings=Edytuj ekran ustawień świata	#
+accessibility.screenName.error=Ekran błędu	#
+accessibility.screenName.howToPlay=Ekran obsługi gry	#
+accessibility.screenName.modalDialog=Wyskakujący tekst	#
+accessibility.screenName.patchNotes=Ekran informacji o aktualizacji	#
+accessibility.screenName.pauase=Ekran pauzy	#
+accessibility.screenName.play=Ekran gry	#
+accessibility.screenName.realmSettings=Ekran ustawień Realms	#
+accessibility.screenName.settings=Ekran ustawień gry	#
+accessibility.screenName.skinPicker=Ekran wyboru skórki	#
+accessibility.screenName.start=Menu główne	#
+accessibility.screenName.vrAlignment=Ekran osiowania VR	#
 
 accessibility.settings.reset=zresetuj	#
 accessibility.settings.chooseSeed=Wybierz ziarno	#
 
 accessibility.start.feedback=Prześlij opinię	#
+accessibility.start.new=Nowy	#
 accessibility.start.skinPicker=Wybierz skórkę	#
+
+accessibility.store.tag=Znacznik	#
+
+accessibility.textbox.editing=Edycja	#
 
 accessibility.toast=Powiadomienie		### This is the name of the popup that appears when a player gets a notification for a game invite or achievement unlocked
 
@@ -83,24 +114,28 @@ accessibility.popup.left_button_text=Wyłącz	#
 accessibility.popup.right_button_text=Nie, dziękuję	#
 
 accessibility.controllerLayoutScreen.buttonRemapped=%s – przypisane do: %s	#
+accessibility.controllerLayoutScreen.buttonBoundTo=Przycisk %s: %s	#
 accessibility.controllerLayoutScreen.buttonRemapping=Wybierz wejście do przypisania dla: %s	#
 
-accessibility.gamepad.faceButton.down=przycisk A	#
-accessibility.gamepad.faceButton.right=przycisk B	#
-accessibility.gamepad.faceButton.left=przycisk X	#
-accessibility.gamepad.faceButton.up=przycisk Y	#
-accessibility.gamepad.button.systemLeft=przycisk podglądu	#
-accessibility.gamepad.button.systemRight=przycisk Menu	#
-accessibility.gamepad.dpad.down=Pad kierunkowy: w dół	#
-accessibility.gamepad.dpad.up=Pad kierunkowy: w górę	#
-accessibility.gamepad.dpad.left=Pad kierunkowy: w lewo	#
-accessibility.gamepad.dpad.right=Pad kierunkowy: w prawo	#
-accessibility.gamepad.stick.left=lewy drążek	#
-accessibility.gamepad.stick.right=prawy drążek	#
-accessibility.gamepad.trigger.right=prawy spust	#
-accessibility.gamepad.trigger.left=lewy spust	#
-accessibility.gamepad.bumper.right=prawy bumper	#
-accessibility.gamepad.bumper.left=lewy bumper	#
+accessibility.gamepad.faceButton.down=Przycisk A	#
+accessibility.gamepad.faceButton.right=Przycisk B	#
+accessibility.gamepad.faceButton.left=Przycisk X	#
+accessibility.gamepad.faceButton.up=Przycisk Y	#
+accessibility.gamepad.button.systemLeft=Przycisk Podglądu	#
+accessibility.gamepad.button.systemRight=Przycisk Menu	#
+accessibility.gamepad.dpad.down=Pad kierunkowy w dół	#
+accessibility.gamepad.dpad.up=Pad kierunkowy w górę	#
+accessibility.gamepad.dpad.left=Pad kierunkowy w lewo	#
+accessibility.gamepad.dpad.right=Pad kierunkowy w prawo	#
+accessibility.gamepad.stick.left=Lewy drążek	#
+accessibility.gamepad.stick.right=Prawy drążek	#
+accessibility.gamepad.trigger.right=Prawy spust	#
+accessibility.gamepad.trigger.left=Lewy spust	#
+accessibility.gamepad.bumper.right=Prawy bumper	#
+accessibility.gamepad.bumper.left=Lewy bumper	#
+
+accessibility.keyboard.leftBracket=Klawisz: otwierający nawias kwadratowy			### left square bracket means '[' on the english keyboard
+accessibility.keyboard.rightBracket=Klawisz: zamykający nawias kwadratowy		### right square bracket means ']' on the english keyboard
 
 ## End of audible phrases section
 
@@ -2153,8 +2188,8 @@ comment.commentplaceholder=Wpisz komentarz...	#
 
 furnaceScreen.fuel=Paliwo	#
 furnaceScreen.header=Piec	#
-furnaceScreen.input=Przed wypaleniem	#
-furnaceScreen.result=Po wypaleniu	#
+furnaceScreen.input=Przed obróbką	#
+furnaceScreen.result=Po obróbce	#
 
 gameMode.adventure=Tryb przygodowy	#
 gameMode.changed=Twój tryb gry został zaktualizowany do: %s	#
@@ -4933,6 +4968,7 @@ options.resetSettings.popUp=Czy na pewno chcesz zresetować ustawienia?	#
 options.maxFramerate=Maks. liczba kl./s (eksperymentalne)	#
 options.maxFramerateFormat=%s kl./s	#
 options.particleRenderDistance=Odległość renderowania cząstek	#
+options.perf_turtle=Żółw wydajności	#
 options.msaa=Wygładzanie	#
 options.texelAA=Wygładzanie teksel	#
 options.renderDistance.far=Duża	#
@@ -5413,6 +5449,7 @@ progressScreen.dialog.button.wait=Czekaj	#
 
 raid.name=Najazd	#
 raid.progress=Pozostałe moby:	#
+raid.expiry=Koniec najazdu	#
 
 recipeBook.setting.full=Pełna	#
 recipeBook.setting.discover=Odkryj	#

@@ -28,7 +28,7 @@ accessibility.importing.complete=Importation terminée	#
 accessibility.signin.xbl=Connexion à Xbox Live	#
 accessibility.chat.howtoopen=Appuyez sur %s pour ouvrir le chat	#
 accessibility.key.mouseButton=Bouton %s de la souris	#
-accessibility.key.gamepad=GamePad %s	#
+accessibility.key.gamepad=Manette %s	#
 accessibility.list.or.two=%s ou %	#
 accessibility.list.or.three_or_more.first=%s	#
 accessibility.list.or.three_or_more.inner=, %s	#
@@ -47,6 +47,8 @@ accessibility.button.close=fermer	#
 accessibility.button.back=retour	#
 accessibility.button.exit=Quitter	#
 
+accessibility.dropdown.listItem=Objet de la liste	#
+
 accessibility.sectionName=Section %s : 	#
 
 accessibility.state.on=: activé	#
@@ -54,6 +56,9 @@ accessibility.state.off=: désactivé	#
 
 accessibility.state.checked=: cochée	#
 accessibility.state.unchecked=: décochée	#
+
+accessibility.state.selected=: sélectionné	#
+accessibility.state.unselected=: non sélectionné	#
 
 accessibility.slider.tts.percentValue=%s pour cent	#
 
@@ -63,12 +68,38 @@ accessibility.play.editServer=Modifier le serveur	#
 accessibility.play.importWorld=Importer le monde	#
 accessibility.play.leaveRealm=Quitter le Realm	#
 accessibility.play.realmFeed=Fil de nouvelles du Realm	#
+accessibility.play.tabLeft=Appuyez sur %s pour tabuler vers la gauche	#
+accessibility.play.tabRight=Appuyez sur %s pour tabuler vers la droite	#
+
+accessibility.pause.permissions=Permissions	#
+
+accessibility.screenName.achievements=Écran des succès	#
+accessibility.screenName.chat=Écran du chat	#
+accessibility.screenName.createNew=Créer un nouvel écran	#
+accessibility.screenName.createWorld=Créer un écran Paramètres de monde	#
+accessibility.screenName.editWorldSettings=Modifier l'écran Paramètres de monde	#
+accessibility.screenName.error=Écran d'erreur	#
+accessibility.screenName.howToPlay=Écran Guide pratique	#
+accessibility.screenName.modalDialog=Fenêtre de dialogue	#
+accessibility.screenName.patchNotes=Écran Notes de version	#
+accessibility.screenName.pauase=Écran Pause	#
+accessibility.screenName.play=Écran Jouer	#
+accessibility.screenName.realmSettings=Écran Paramètres de Realm	#
+accessibility.screenName.settings=Écran Paramètres de jeu	#
+accessibility.screenName.skinPicker=Écran Choix de skin	#
+accessibility.screenName.start=Menu principal	#
+accessibility.screenName.vrAlignment=Écran d'alignement RV	#
 
 accessibility.settings.reset=réinitialiser	#
 accessibility.settings.chooseSeed=Choisir un seed	#
 
 accessibility.start.feedback=Envoyer des commentaires	#
+accessibility.start.new=Nouveau	#
 accessibility.start.skinPicker=Choisir une skin	#
+
+accessibility.store.tag=Tag	#
+
+accessibility.textbox.editing=Modification	#
 
 accessibility.toast=Notification		### This is the name of the popup that appears when a player gets a notification for a game invite or achievement unlocked
 
@@ -83,24 +114,28 @@ accessibility.popup.left_button_text=Désactiver	#
 accessibility.popup.right_button_text=Non merci	#
 
 accessibility.controllerLayoutScreen.buttonRemapped=%s est maintenant lié à %s	#
+accessibility.controllerLayoutScreen.buttonBoundTo=Bouton %s : %s	#
 accessibility.controllerLayoutScreen.buttonRemapping=Sélectionnez l'entrée à lier à %s	#
 
-accessibility.gamepad.faceButton.down=bouton A	#
-accessibility.gamepad.faceButton.right=bouton B	#
-accessibility.gamepad.faceButton.left=bouton X	#
-accessibility.gamepad.faceButton.up=bouton Y	#
-accessibility.gamepad.button.systemLeft=affichage du bouton	#
-accessibility.gamepad.button.systemRight=menu du bouton	#
-accessibility.gamepad.dpad.down=croix vers le bas	#
-accessibility.gamepad.dpad.up=croix vers le haut	#
-accessibility.gamepad.dpad.left=croix vers la gauche	#
-accessibility.gamepad.dpad.right=croix vers la droite	#
-accessibility.gamepad.stick.left=levier gauche	#
-accessibility.gamepad.stick.right=levier droit	#
-accessibility.gamepad.trigger.right=déclencheur droit	#
-accessibility.gamepad.trigger.left=déclencheur gauche	#
-accessibility.gamepad.bumper.right=gâchette droite	#
-accessibility.gamepad.bumper.left=gâchette gauche	#
+accessibility.gamepad.faceButton.down=Bouton A	#
+accessibility.gamepad.faceButton.right=Bouton B	#
+accessibility.gamepad.faceButton.left=Bouton X	#
+accessibility.gamepad.faceButton.up=Bouton Y	#
+accessibility.gamepad.button.systemLeft=Bouton Vue	#
+accessibility.gamepad.button.systemRight=Bouton Menu	#
+accessibility.gamepad.dpad.down=Croix vers le bas	#
+accessibility.gamepad.dpad.up=Croix vers le haut	#
+accessibility.gamepad.dpad.left=Croix vers la gauche	#
+accessibility.gamepad.dpad.right=Croix vers la droite	#
+accessibility.gamepad.stick.left=Levier gauche	#
+accessibility.gamepad.stick.right=Levier droit	#
+accessibility.gamepad.trigger.right=Déclencheur de droite	#
+accessibility.gamepad.trigger.left=Déclencheur de gauche	#
+accessibility.gamepad.bumper.right=Gâchette de droite	#
+accessibility.gamepad.bumper.left=Gâchette de gauche	#
+
+accessibility.keyboard.leftBracket=Touche crochet ouvrant			### left square bracket means '[' on the english keyboard
+accessibility.keyboard.rightBracket=Touche crochet fermant		### right square bracket means ']' on the english keyboard
 
 ## End of audible phrases section
 
@@ -2977,7 +3012,7 @@ howtoplay.resourceAndBehaviorPacks.text.2=Dans le menu des paramètres, choisiss
 howtoplay.scaffolding=Échafaudage	#
 howtoplay.scaffolding.title=Guide pratique : l'échafaudage	#
 howtoplay.scaffolding.header.1=Monter jusqu'au ciel	#
-howtoplay.scaffolding.text.1.keyboard=L'échafaudage peut vous aider à créer d'immenses structures en toute sécurité! Vous pouvez marcher à l'intérieur d'un échafaudage et vous y tenir. Si vous avez une colonne d'échafaudages, vous pouvez y grimper en vous y tenant debout et en appuyant sur :_input_key.jump:. Pour redescendre, vous pouvez appuyer sur :_input_key.sneak:.	#
+howtoplay.scaffolding.text.1.keyboard=L'échafaudage peut vous aider à créer d'immenses structures en toute sécurité! Vous pouvez marcher à l'intérieur d'un échafaudage et vous y tenir. Si vous avez une colonne d'échafaudages, vous pouvez y grimper en vous y tenant debout et en appuyant sur :_input_key.jump:. Vous pouvez appuyer sur :_input_key.sneak: pour redescendre.	#
 howtoplay.scaffolding.text.1.gamepad=L'échafaudage peut vous aider à créer d'immenses structures en toute sécurité! Vous pouvez marcher à l'intérieur d'un échafaudage et vous y tenir. Si vous avez une colonne d'échafaudages, vous pouvez y grimper en vous y tenant debout et en appuyant sur le bouton :_input_key.jump:. Pour redescendre, vous pouvez appuyer sur le bouton :_input_key.sneak: en le maintenant enfoncé.	#
 howtoplay.scaffolding.text.1.touch=L'échafaudage peut vous aider à créer d'immenses structures en toute sécurité! Vous pouvez marcher à l'intérieur d'un échafaudage et vous y tenir. Si vous avez une colonne d'échafaudages, vous pouvez y grimper en vous y tenant debout et en appuyant sur le bouton :touch_jump:. Pour redescendre, vous pouvez appuyer sur le bouton :touch_fly_down:.	#
 howtoplay.scaffolding.text.1.rift_controller=L'échafaudage peut vous aider à créer d'immenses structures en toute sécurité! Vous pouvez marcher à l'intérieur d'un échafaudage et vous y tenir. Si vous avez une colonne d'échafaudages, vous pouvez y grimper en vous y tenant debout et en appuyant sur le bouton :rift_A:. Pour redescendre, vous pouvez appuyer sur le bouton :rift_X: en le maintenant enfoncé.	#
@@ -4933,6 +4968,7 @@ options.resetSettings.popUp=Souhaitez-vous vraiment réinitialiser les paramètr
 options.maxFramerate=FPS max (expérimental)	#
 options.maxFramerateFormat=%s images/s	#
 options.particleRenderDistance=Distance d'affichage des particules	#
+options.perf_turtle=Tortue de performance	#
 options.msaa=Anticrénelage	#
 options.texelAA=Anticrénelage des éléments de textures	#
 options.renderDistance.far=Loin	#
@@ -5166,7 +5202,7 @@ hudScreen.tooltip.dismount=Descendre	#
 hudScreen.tooltip.collect=Collecter	#
 hudScreen.tooltip.peel=Pelez l'écorce	#
 hudScreen.tooltip.scaffoldingDescend=Descendre (Maint.)	#
-hudScreen.tooltip.pick=Choisir	#
+hudScreen.tooltip.pick=Cueillir	#
 
 playscreen.fileSize.MB=Mo	#
 playscreen.fileSize.GB=Go	#
@@ -5413,6 +5449,7 @@ progressScreen.dialog.button.wait=Attendre	#
 
 raid.name=Raid	#
 raid.progress=Créatures restantes :	#
+raid.expiry=Un raid a pris fin	#
 
 recipeBook.setting.full=Au maximum	#
 recipeBook.setting.discover=Découvrir	#

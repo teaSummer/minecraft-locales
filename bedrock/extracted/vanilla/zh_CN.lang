@@ -28,7 +28,7 @@ accessibility.importing.complete=导入完成	#
 accessibility.signin.xbl=正在登录至 Xbox Live	#
 accessibility.chat.howtoopen=按 %s 打开聊天	#
 accessibility.key.mouseButton=鼠标按钮 %s	#
-accessibility.key.gamepad=游戏手柄 %s	#
+accessibility.key.gamepad=控制器 %s	#
 accessibility.list.or.two=%s 或 %	#
 accessibility.list.or.three_or_more.first=%s	#
 accessibility.list.or.three_or_more.inner=，%s	#
@@ -47,6 +47,8 @@ accessibility.button.close=关闭	#
 accessibility.button.back=返回	#
 accessibility.button.exit=退出	#
 
+accessibility.dropdown.listItem=List item	#
+
 accessibility.sectionName=第 %s 部分：	#
 
 accessibility.state.on=：打开	#
@@ -54,6 +56,9 @@ accessibility.state.off=：关闭	#
 
 accessibility.state.checked=：选中	#
 accessibility.state.unchecked=：取消选中	#
+
+accessibility.state.selected=: selected	#
+accessibility.state.unselected=: unselected	#
 
 accessibility.slider.tts.percentValue=%s%	#
 
@@ -63,12 +68,38 @@ accessibility.play.editServer=编辑服务器	#
 accessibility.play.importWorld=导入世界	#
 accessibility.play.leaveRealm=离开 Realm	#
 accessibility.play.realmFeed=Realm 内容	#
+accessibility.play.tabLeft=Press the %s to tab left	#
+accessibility.play.tabRight=Press the %s to tab right	#
+
+accessibility.pause.permissions=Permissions	#
+
+accessibility.screenName.achievements=Achievements Screen	#
+accessibility.screenName.chat=Chat Screen	#
+accessibility.screenName.createNew=Create New Screen	#
+accessibility.screenName.createWorld=Create World Settings Screen	#
+accessibility.screenName.editWorldSettings=Edit World Settings Screen	#
+accessibility.screenName.error=Error Screen	#
+accessibility.screenName.howToPlay=How To Play Screen	#
+accessibility.screenName.modalDialog=Popup dialog	#
+accessibility.screenName.patchNotes=Patch Notes Screen	#
+accessibility.screenName.pauase=Pause Screen	#
+accessibility.screenName.play=Play Screen	#
+accessibility.screenName.realmSettings=Realm Settings Screen	#
+accessibility.screenName.settings=Game Settings Screen	#
+accessibility.screenName.skinPicker=Choose Skin Screen	#
+accessibility.screenName.start=Main Menu	#
+accessibility.screenName.vrAlignment=VR Alignment Screen	#
 
 accessibility.settings.reset=重置	#
 accessibility.settings.chooseSeed=选择种子	#
 
 accessibility.start.feedback=提交反馈	#
+accessibility.start.new=New	#
 accessibility.start.skinPicker=选择皮肤	#
+
+accessibility.store.tag=Tag	#
+
+accessibility.textbox.editing=Editing	#
 
 accessibility.toast=通知		### This is the name of the popup that appears when a player gets a notification for a game invite or achievement unlocked
 
@@ -83,24 +114,28 @@ accessibility.popup.left_button_text=关闭	#
 accessibility.popup.right_button_text=不用了，谢谢	#
 
 accessibility.controllerLayoutScreen.buttonRemapped=%s 已被绑定至 %s	#
+accessibility.controllerLayoutScreen.buttonBoundTo=%s button: %s	#
 accessibility.controllerLayoutScreen.buttonRemapping=为 %s 选择要绑定的输入	#
 
-accessibility.gamepad.faceButton.down=A 按钮	#
-accessibility.gamepad.faceButton.right=B 按钮	#
-accessibility.gamepad.faceButton.left=X 按钮	#
-accessibility.gamepad.faceButton.up=Y 按钮	#
-accessibility.gamepad.button.systemLeft=查看按钮	#
-accessibility.gamepad.button.systemRight=菜单按钮	#
-accessibility.gamepad.dpad.down=十字键上键	#
-accessibility.gamepad.dpad.up=十字键下键	#
-accessibility.gamepad.dpad.left=十字键左键	#
-accessibility.gamepad.dpad.right=十字键右键	#
+accessibility.gamepad.faceButton.down=A 键	#
+accessibility.gamepad.faceButton.right=B 键	#
+accessibility.gamepad.faceButton.left=X 键	#
+accessibility.gamepad.faceButton.up=Y 键	#
+accessibility.gamepad.button.systemLeft=查看键	#
+accessibility.gamepad.button.systemRight=菜单键	#
+accessibility.gamepad.dpad.down=方向键下	#
+accessibility.gamepad.dpad.up=方向键上	#
+accessibility.gamepad.dpad.left=方向键左	#
+accessibility.gamepad.dpad.right=方向键右	#
 accessibility.gamepad.stick.left=左摇杆	#
 accessibility.gamepad.stick.right=右摇杆	#
-accessibility.gamepad.trigger.right=右扳机键	#
-accessibility.gamepad.trigger.left=左扳机键	#
-accessibility.gamepad.bumper.right=右 Bumper 键	#
-accessibility.gamepad.bumper.left=左 Bumper 键	#
+accessibility.gamepad.trigger.right=右扳机	#
+accessibility.gamepad.trigger.left=左扳机	#
+accessibility.gamepad.bumper.right=右杆	#
+accessibility.gamepad.bumper.left=左杆	#
+
+accessibility.keyboard.leftBracket=左方框键			### left square bracket means '[' on the english keyboard
+accessibility.keyboard.rightBracket=右方框键		### right square bracket means ']' on the english keyboard
 
 ## End of audible phrases section
 
@@ -1104,7 +1139,7 @@ container.minecart=矿车	#
 container.repair=物品修复和命名	#
 container.repair.cost=经验值花费：%1$d	#
 container.repair.expensive=过于昂贵！	#
-container.repairAndDisenchant=修复与驱魔	#
+container.repairAndDisenchant=修复与祛魔	#
 container.stonecutter=切石机	#
 container.stonecutter_block=切石机	#
 container.shulkerbox=潜匿之贝箱子	#
@@ -4933,6 +4968,7 @@ options.resetSettings.popUp=是否确实要重置设置？	#
 options.maxFramerate=最大帧率（实验）	#
 options.maxFramerateFormat=%s FPS	#
 options.particleRenderDistance=粒子能见度	#
+options.perf_turtle=Performance Turtle	#
 options.msaa=抗锯齿	#
 options.texelAA=纹素抗锯齿	#
 options.renderDistance.far=高	#
@@ -5166,7 +5202,7 @@ hudScreen.tooltip.dismount=下马	#
 hudScreen.tooltip.collect=收集	#
 hudScreen.tooltip.peel=剥树皮	#
 hudScreen.tooltip.scaffoldingDescend=按住以下降	#
-hudScreen.tooltip.pick=挑选	#
+hudScreen.tooltip.pick=采摘	#
 
 playscreen.fileSize.MB=MB	#
 playscreen.fileSize.GB=GB	#
@@ -5413,6 +5449,7 @@ progressScreen.dialog.button.wait=等待	#
 
 raid.name=劫掠	#
 raid.progress=剩余生物：	#
+raid.expiry=A raid has expired	#
 
 recipeBook.setting.full=满	#
 recipeBook.setting.discover=发现	#

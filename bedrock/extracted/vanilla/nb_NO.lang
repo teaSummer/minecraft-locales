@@ -47,6 +47,8 @@ accessibility.button.close=lukk	#
 accessibility.button.back=tilbake	#
 accessibility.button.exit=Avslutt	#
 
+accessibility.dropdown.listItem=Listeelement	#
+
 accessibility.sectionName=Del %s: 	#
 
 accessibility.state.on=: på	#
@@ -54,6 +56,9 @@ accessibility.state.off=: av	#
 
 accessibility.state.checked=: merket av	#
 accessibility.state.unchecked=: ikke avmerket	#
+
+accessibility.state.selected=: valgt	#
+accessibility.state.unselected=: ikke valgt	#
 
 accessibility.slider.tts.percentValue=%s prosent	#
 
@@ -63,12 +68,38 @@ accessibility.play.editServer=Rediger server	#
 accessibility.play.importWorld=Importer verden	#
 accessibility.play.leaveRealm=Forlat realm	#
 accessibility.play.realmFeed=Realm-feed	#
+accessibility.play.tabLeft=Trykk på %s for å gå mot venstre	#
+accessibility.play.tabRight=Trykk på %s for å gå mot høyre	#
+
+accessibility.pause.permissions=Tillatelser	#
+
+accessibility.screenName.achievements=Prestasjoner	#
+accessibility.screenName.chat=Chat	#
+accessibility.screenName.createNew=Lag ny	#
+accessibility.screenName.createWorld=Innstillinger for laging av verden	#
+accessibility.screenName.editWorldSettings=Rediger verdensinnstillinger	#
+accessibility.screenName.error=Feil	#
+accessibility.screenName.howToPlay=Slik spiller du	#
+accessibility.screenName.modalDialog=Sprettoppvindu	#
+accessibility.screenName.patchNotes=Oppdateringsmerknader	#
+accessibility.screenName.pauase=Pause	#
+accessibility.screenName.play=Spill	#
+accessibility.screenName.realmSettings=Innstillinger for realmen	#
+accessibility.screenName.settings=Spillinnstillinger	#
+accessibility.screenName.skinPicker=Velg skall	#
+accessibility.screenName.start=Hovedmeny	#
+accessibility.screenName.vrAlignment=VR-justering	#
 
 accessibility.settings.reset=tilbakestill	#
 accessibility.settings.chooseSeed=Velg seed	#
 
 accessibility.start.feedback=Send tilbakemelding	#
+accessibility.start.new=Ny(tt)	#
 accessibility.start.skinPicker=Velg skall	#
+
+accessibility.store.tag=Tagg	#
+
+accessibility.textbox.editing=Redigering	#
 
 accessibility.toast=Varsel		### This is the name of the popup that appears when a player gets a notification for a game invite or achievement unlocked
 
@@ -83,6 +114,7 @@ accessibility.popup.left_button_text=Deaktiver	#
 accessibility.popup.right_button_text=Nei takk	#
 
 accessibility.controllerLayoutScreen.buttonRemapped=%s er nå knyttet til %s	#
+accessibility.controllerLayoutScreen.buttonBoundTo=%s-knapp: %s	#
 accessibility.controllerLayoutScreen.buttonRemapping=Velg inndata til å binde for %s	#
 
 accessibility.gamepad.faceButton.down=knapp A	#
@@ -101,6 +133,9 @@ accessibility.gamepad.trigger.right=trigger til høyre	#
 accessibility.gamepad.trigger.left=trigger til venstre	#
 accessibility.gamepad.bumper.right=bumper til høyre	#
 accessibility.gamepad.bumper.left=bumper til venstre	#
+
+accessibility.keyboard.leftBracket=Left square bracket key			### left square bracket means '[' on the english keyboard
+accessibility.keyboard.rightBracket=Right square bracket key		### right square bracket means ']' on the english keyboard
 
 ## End of audible phrases section
 
@@ -2935,7 +2970,7 @@ howtoplay.pets.text.4=Papegøyer er passive vesener som også lever i jungelen. 
 howtoplay.raids=Plyndringstokter	#
 howtoplay.raids.title=Slik spiller du: plyndringstokter	#
 howtoplay.raids.text.1=Mens du utforsker verden, kan du støte på en plyndrerleir eller en patrulje. Plyndrere er alltid på utkikk etter landsbyer å plyndre, og hvis man tar bannerne deres, får man deres oppmerksomhet – de kan velge å angripe en nærliggende landsby.  	#
-howtoplay.raids.text.2=Pass på å forsvare landsbyen din. Angrepet stopper hvis du bekjemper alle plyndrerne.	#
+howtoplay.raids.text.2=Husk å forsvare landsbyen din. Angrepet stopper hvis du kverker alle plyndrerne.	#
 howtoplay.raids.header.1=Jeg trenger en helt	#
 howtoplay.raids.text.3=Landsbyboerne blir mest sannsynlig svært takknemlige for at du redder dem fra plyndrere. Husk å vende tilbake til dem, du kan få et godt tilbud. 	#
 
@@ -4933,6 +4968,7 @@ options.resetSettings.popUp=Er du sikker på at du vil tilbakestille innstilling
 options.maxFramerate=Maksimal bildefrekvens (eksperimentell)	#
 options.maxFramerateFormat=%s fps	#
 options.particleRenderDistance=Gjengivelsesavstand for partikler	#
+options.perf_turtle=Topptrimmet skilpadde	#
 options.msaa=Anti-Aliasing	#
 options.texelAA=Texel Anti-Aliasing	#
 options.renderDistance.far=Fjern	#
@@ -5166,7 +5202,7 @@ hudScreen.tooltip.dismount=Stig av	#
 hudScreen.tooltip.collect=Plukk opp	#
 hudScreen.tooltip.peel=Skrell av bark	#
 hudScreen.tooltip.scaffoldingDescend=Hold for å klatre ned	#
-hudScreen.tooltip.pick=Velg	#
+hudScreen.tooltip.pick=Plukk	#
 
 playscreen.fileSize.MB=MB	#
 playscreen.fileSize.GB=GB	#
@@ -5413,6 +5449,7 @@ progressScreen.dialog.button.wait=Vent	#
 
 raid.name=Plyndringstokt	#
 raid.progress=Vesener igjen:	#
+raid.expiry=Et plyndringstokt har utløpt	#
 
 recipeBook.setting.full=Full	#
 recipeBook.setting.discover=Oppdag	#

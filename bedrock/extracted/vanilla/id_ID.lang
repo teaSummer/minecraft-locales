@@ -28,7 +28,7 @@ accessibility.importing.complete=Impor selesai	#
 accessibility.signin.xbl=Masuk ke X box live	#
 accessibility.chat.howtoopen=Tekan %s untuk membuka obrolan	#
 accessibility.key.mouseButton=Tombol Mouse %s	#
-accessibility.key.gamepad=Gamepad %s	#
+accessibility.key.gamepad=Pengontrol %s	#
 accessibility.list.or.two=%s atau %	#
 accessibility.list.or.three_or_more.first=%s	#
 accessibility.list.or.three_or_more.inner=, %s	#
@@ -47,6 +47,8 @@ accessibility.button.close=tutup	#
 accessibility.button.back=kembali	#
 accessibility.button.exit=Keluar	#
 
+accessibility.dropdown.listItem=Item daftar	#
+
 accessibility.sectionName=Bagian %s: 	#
 
 accessibility.state.on=: aktif	#
@@ -54,6 +56,9 @@ accessibility.state.off=: nonaktif	#
 
 accessibility.state.checked=: dicentang	#
 accessibility.state.unchecked=: tidak dicentang	#
+
+accessibility.state.selected=: dipilih	#
+accessibility.state.unselected=: batal dipilih	#
 
 accessibility.slider.tts.percentValue=%s persen	#
 
@@ -63,12 +68,38 @@ accessibility.play.editServer=Edit Server	#
 accessibility.play.importWorld=Impor Dunia	#
 accessibility.play.leaveRealm=Tinggalkan Realm	#
 accessibility.play.realmFeed=Umpan Realm	#
+accessibility.play.tabLeft=Tekan tombol kurung siku kiri untuk berpindah tab ke kiri			#
+accessibility.play.tabRight=Tekan tombol kurung siku kanan untuk berpindah tab ke kanan			#
+
+accessibility.pause.permissions=Izin	#
+
+accessibility.screenName.achievements=Layar Prestasi	#
+accessibility.screenName.chat=Layar Obrolan	#
+accessibility.screenName.createNew=Layar Buat Baru	#
+accessibility.screenName.createWorld=Layar Pengaturan Buat Dunia	#
+accessibility.screenName.editWorldSettings=Layar Pengaturan Edit Dunia	#
+accessibility.screenName.error=Layar Kesalahan	#
+accessibility.screenName.howToPlay=Layar Cara Main	#
+accessibility.screenName.modalDialog=Dialog pop-up	#
+accessibility.screenName.patchNotes=Layar Catatan Patch	#
+accessibility.screenName.pauase=Layar Jeda	#
+accessibility.screenName.play=Layar Main	#
+accessibility.screenName.realmSettings=Layar Pengaturan Realm	#
+accessibility.screenName.settings=Layar Pengaturan Permainan	#
+accessibility.screenName.skinPicker=Layar Pilih Skin	#
+accessibility.screenName.start=Menu Utama	#
+accessibility.screenName.vrAlignment=Layar Penyelarasan VR	#
 
 accessibility.settings.reset=atur ulang	#
 accessibility.settings.chooseSeed=Pilih Benih	#
 
 accessibility.start.feedback=Kirim Umpan Balik	#
+accessibility.start.new=Baru	#
 accessibility.start.skinPicker=Pilih Skin	#
+
+accessibility.store.tag=Tag	#
+
+accessibility.textbox.editing=Mengedit	#
 
 accessibility.toast=Pemberitahuan		### This is the name of the popup that appears when a player gets a notification for a game invite or achievement unlocked
 
@@ -83,24 +114,28 @@ accessibility.popup.left_button_text=Nonaktifkan	#
 accessibility.popup.right_button_text=Tidak, Terima Kasih	#
 
 accessibility.controllerLayoutScreen.buttonRemapped=%s kini terikat ke %s	#
+accessibility.controllerLayoutScreen.buttonBoundTo=Tombol %s: %s	#
 accessibility.controllerLayoutScreen.buttonRemapping=Pilih input yang akan diikatkan untuk %s	#
 
-accessibility.gamepad.faceButton.down=tombol A	#
-accessibility.gamepad.faceButton.right=tombol B	#
-accessibility.gamepad.faceButton.left=tombol X	#
-accessibility.gamepad.faceButton.up=tombol Y	#
-accessibility.gamepad.button.systemLeft=tombol tampilan	#
-accessibility.gamepad.button.systemRight=tombol menu	#
-accessibility.gamepad.dpad.down=D Pad Bawah	#
-accessibility.gamepad.dpad.up=D Pad atas	#
-accessibility.gamepad.dpad.left=D Pad kiri	#
-accessibility.gamepad.dpad.right=D Pad kanan	#
-accessibility.gamepad.stick.left=stik kiri	#
-accessibility.gamepad.stick.right=stik kanan	#
-accessibility.gamepad.trigger.right=pemicu kanan	#
-accessibility.gamepad.trigger.left=pemicu kiri	#
-accessibility.gamepad.bumper.right=bumper kanan	#
-accessibility.gamepad.bumper.left=bumper kiri	#
+accessibility.gamepad.faceButton.down=Tombol A	#
+accessibility.gamepad.faceButton.right=Tombol B	#
+accessibility.gamepad.faceButton.left=Tombol X	#
+accessibility.gamepad.faceButton.up=Tombol Y	#
+accessibility.gamepad.button.systemLeft=Tombol Tampilan	#
+accessibility.gamepad.button.systemRight=Tombol Menu	#
+accessibility.gamepad.dpad.down=D-Pad Bawah	#
+accessibility.gamepad.dpad.up=D-Pad Atas	#
+accessibility.gamepad.dpad.left=D-Pad Kiri	#
+accessibility.gamepad.dpad.right=D-Pad Kanan	#
+accessibility.gamepad.stick.left=Stik Kiri	#
+accessibility.gamepad.stick.right=Stik Kanan	#
+accessibility.gamepad.trigger.right=Pemicu Kanan	#
+accessibility.gamepad.trigger.left=Pemicu Kiri	#
+accessibility.gamepad.bumper.right=Bumper Kanan	#
+accessibility.gamepad.bumper.left=Bumper Kiri	#
+
+accessibility.keyboard.leftBracket=Tombol kurung siku kiri			### left square bracket means '[' on the english keyboard
+accessibility.keyboard.rightBracket=Tombol kurung siku kanan		### right square bracket means ']' on the english keyboard
 
 ## End of audible phrases section
 
@@ -1104,7 +1139,7 @@ container.minecart=Kereta Tambang	#
 container.repair=Perbaiki & Namai	#
 container.repair.cost=Biaya XP: %1$d	#
 container.repair.expensive=Terlalu Mahal!	#
-container.repairAndDisenchant=Perbaiki & Sadarkan	#
+container.repairAndDisenchant=Perbaiki & Lepaskan dari Sihir	#
 container.stonecutter=Pemahat Batu	#
 container.stonecutter_block=Pemahat Batu	#
 container.shulkerbox=Kotak Shulker	#
@@ -2935,7 +2970,7 @@ howtoplay.pets.text.4=Burung beo adalah mob pasif yang juga tinggal di dalam Rim
 howtoplay.raids=Penyerbuan	#
 howtoplay.raids.title=Cara Main: Penyerbuan	#
 howtoplay.raids.text.1=Saat menjelajahi dunia, kamu mungkin menemukan perkemahan atau patroli Penjarah. Para Penjarah selalu mencari desa untuk diserbu. Merebut Banner mereka akan menarik perhatian mereka, dan mungkin mereka akan memilih untuk menyerang desa terdekat.  	#
-howtoplay.raids.text.2=Pastikan kamu mempertahankan desamu. Serangan akan berhenti jika kamu mengalahkan semua Penyerbu.	#
+howtoplay.raids.text.2=Pastikan kamu mempertahankan desamu. Serangan akan berhenti jika kamu mengalahkan semua penyerbu.	#
 howtoplay.raids.header.1=Saya Butuh Pahlawan	#
 howtoplay.raids.text.3=Orang desa pasti akan berterima kasih karena kamu telah menyelamatkan mereka dari penyerbu. Pastikan untuk melihat mereka lagi, mungkin kamu akan mendapatkan imbalan menarik.  	#
 
@@ -3388,7 +3423,7 @@ item.banner.half_vertical_right.red=Per Pale Merah Terbalik	#
 item.banner.half_vertical_right.silver=Per Pale Abu-Abu Muda Terbalik	#
 item.banner.half_vertical_right.white=Per Pale Putih Terbalik	#
 item.banner.half_vertical_right.yellow=Per Pale Kuning Terbalik	#
-item.banner.illager_captain.name=Banner Orang Desa	#
+item.banner.illager_captain.name=Banner Penjahat Yang Diasingkan	#
 item.banner.lightBlue.name=Banner Biru Muda	#
 item.banner.lime.name=Banner Limau	#
 item.banner.magenta.name=Banner Magenta	#
@@ -4933,6 +4968,7 @@ options.resetSettings.popUp=Kamu yakin ingin mengatur ulang pengaturan?	#
 options.maxFramerate=Kecepatan Bingkai Maksimum (Eksperimental)	#
 options.maxFramerateFormat=%s FPS	#
 options.particleRenderDistance=Jarak Render Partikel	#
+options.perf_turtle=Penyu Performa	#
 options.msaa=Anti-Alias	#
 options.texelAA=Anti-Alias Texel	#
 options.renderDistance.far=Jauh	#
@@ -5413,6 +5449,7 @@ progressScreen.dialog.button.wait=Tunggu	#
 
 raid.name=Serbuan	#
 raid.progress=Mob tersisa:	#
+raid.expiry=Serbuan sudah berakhir	#
 
 recipeBook.setting.full=Penuh	#
 recipeBook.setting.discover=Temukan	#

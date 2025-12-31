@@ -28,7 +28,7 @@ accessibility.importing.complete=Az importálás befejeződött	#
 accessibility.signin.xbl=Bejelentkezés az Xbox Live rendszerébe	#
 accessibility.chat.howtoopen=A csevegés megnyitásához nyomd meg a(z) %s gombot	#
 accessibility.key.mouseButton=%s egérgomb	#
-accessibility.key.gamepad=Gamepad %s	#
+accessibility.key.gamepad=Kontroller %s	#
 accessibility.list.or.two=%s vagy %	#
 accessibility.list.or.three_or_more.first=%s	#
 accessibility.list.or.three_or_more.inner=, %s	#
@@ -47,6 +47,8 @@ accessibility.button.close=bezárás	#
 accessibility.button.back=vissza	#
 accessibility.button.exit=Kilépés	#
 
+accessibility.dropdown.listItem=Listaelem	#
+
 accessibility.sectionName=%s szekció: 	#
 
 accessibility.state.on=: be	#
@@ -54,6 +56,9 @@ accessibility.state.off=: ki	#
 
 accessibility.state.checked=: bejelölve	#
 accessibility.state.unchecked=: jelölés eltávolítva	#
+
+accessibility.state.selected=: kiválasztott	#
+accessibility.state.unselected=: nincs kiválasztva	#
 
 accessibility.slider.tts.percentValue=%s százalék	#
 
@@ -63,12 +68,38 @@ accessibility.play.editServer=Kiszolgáló szerkesztése	#
 accessibility.play.importWorld=Világ importálása	#
 accessibility.play.leaveRealm=Realm elhagyása	#
 accessibility.play.realmFeed=Realm hírcsatorna	#
+accessibility.play.tabLeft=Nyomd meg a(z) %s gombot a balra lapozáshoz	#
+accessibility.play.tabRight=Nyomd meg a(z) %s gombot a jobbra lapozáshoz	#
+
+accessibility.pause.permissions=Engedélyek	#
+
+accessibility.screenName.achievements=Mérföldkövek képernyő	#
+accessibility.screenName.chat=Csevegőképernyő	#
+accessibility.screenName.createNew=Új képernyő létrehozása	#
+accessibility.screenName.createWorld=Világbeállítások képernyő létrehozása	#
+accessibility.screenName.editWorldSettings=Világbeállítások képernyő szerkesztése	#
+accessibility.screenName.error=Hibaképernyő	#
+accessibility.screenName.howToPlay=Útmutató-képernyő	#
+accessibility.screenName.modalDialog=Előugró ablak	#
+accessibility.screenName.patchNotes=Javítócsomag megjegyzések képernyő	#
+accessibility.screenName.pauase=Szünetképernyő	#
+accessibility.screenName.play=Játékképernyő	#
+accessibility.screenName.realmSettings=Realm-beállítások képernyő	#
+accessibility.screenName.settings=Játékbeállítások képernyő	#
+accessibility.screenName.skinPicker=Felületválasztó képernyő	#
+accessibility.screenName.start=Főmenü	#
+accessibility.screenName.vrAlignment=VR igazító képernyő	#
 
 accessibility.settings.reset=visszaállítás	#
 accessibility.settings.chooseSeed=Mag kiválasztása	#
 
 accessibility.start.feedback=Visszajelzés beküldése	#
+accessibility.start.new=Új	#
 accessibility.start.skinPicker=Felület kiválasztása	#
+
+accessibility.store.tag=Címke	#
+
+accessibility.textbox.editing=Szerkesztés	#
 
 accessibility.toast=Értesítés		### This is the name of the popup that appears when a player gets a notification for a game invite or achievement unlocked
 
@@ -83,24 +114,28 @@ accessibility.popup.left_button_text=Kikapcsolás	#
 accessibility.popup.right_button_text=Nem, köszönöm	#
 
 accessibility.controllerLayoutScreen.buttonRemapped=a(z) %s mostantól a(z) %s gombra van kiosztva	#
+accessibility.controllerLayoutScreen.buttonBoundTo=%s gomb: %s	#
 accessibility.controllerLayoutScreen.buttonRemapping=Válaszd ki a(z) %s gombhoz rendelt funkciót	#
 
 accessibility.gamepad.faceButton.down=A gomb	#
 accessibility.gamepad.faceButton.right=B gomb	#
 accessibility.gamepad.faceButton.left=X gomb	#
 accessibility.gamepad.faceButton.up=Y gomb	#
-accessibility.gamepad.button.systemLeft=megtekintés gomb	#
-accessibility.gamepad.button.systemRight=menü gomb	#
+accessibility.gamepad.button.systemLeft=Megtekintés gomb	#
+accessibility.gamepad.button.systemRight=Menü gomb	#
 accessibility.gamepad.dpad.down=I-választó le	#
 accessibility.gamepad.dpad.up=I-választó fel	#
 accessibility.gamepad.dpad.left=I-választó balra	#
 accessibility.gamepad.dpad.right=I-választó jobbra	#
-accessibility.gamepad.stick.left=bal kar	#
-accessibility.gamepad.stick.right=jobb kar	#
-accessibility.gamepad.trigger.right=jobb ravasz	#
-accessibility.gamepad.trigger.left=bal ravasz	#
-accessibility.gamepad.bumper.right=jobb ütköző	#
-accessibility.gamepad.bumper.left=bal ütköző	#
+accessibility.gamepad.stick.left=Bal kar	#
+accessibility.gamepad.stick.right=Jobb kar	#
+accessibility.gamepad.trigger.right=Jobb ravasz	#
+accessibility.gamepad.trigger.left=Bal ravasz	#
+accessibility.gamepad.bumper.right=Jobb ütköző	#
+accessibility.gamepad.bumper.left=Bal ütköző	#
+
+accessibility.keyboard.leftBracket=Bal szögletes zárójel gomb			### left square bracket means '[' on the english keyboard
+accessibility.keyboard.rightBracket=Jobb szögletes zárójel gomb		### right square bracket means ']' on the english keyboard
 
 ## End of audible phrases section
 
@@ -4933,6 +4968,7 @@ options.resetSettings.popUp=Biztosan alaphelyzetbe állítod a beállításokat?
 options.maxFramerate=Max. képkockasebesség (kísérleti)	#
 options.maxFramerateFormat=%s FPS	#
 options.particleRenderDistance=Részecskék megjelenítési távolsága	#
+options.perf_turtle=Teljesítményteknős	#
 options.msaa=Vonalsimítás	#
 options.texelAA=Texel vonalsimítás	#
 options.renderDistance.far=Távoli	#
@@ -5166,7 +5202,7 @@ hudScreen.tooltip.dismount=Leszállás	#
 hudScreen.tooltip.collect=Begyűjtés	#
 hudScreen.tooltip.peel=Kéreghántoló	#
 hudScreen.tooltip.scaffoldingDescend=(hosszan) ereszkedj	#
-hudScreen.tooltip.pick=Csákány	#
+hudScreen.tooltip.pick=Leszed	#
 
 playscreen.fileSize.MB=MB	#
 playscreen.fileSize.GB=GB	#
@@ -5413,6 +5449,7 @@ progressScreen.dialog.button.wait=Várakozás	#
 
 raid.name=Rajtaütés	#
 raid.progress=Megmaradt mobok:	#
+raid.expiry=A rajtaütés lejárt	#
 
 recipeBook.setting.full=Tele	#
 recipeBook.setting.discover=Felfedezés	#

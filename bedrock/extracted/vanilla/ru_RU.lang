@@ -28,7 +28,7 @@ accessibility.importing.complete=Импорт завершен	#
 accessibility.signin.xbl=Вход в Xbox Live	#
 accessibility.chat.howtoopen=Нажмите %s, чтобы открыть чат	#
 accessibility.key.mouseButton=Кнопка мыши: %s	#
-accessibility.key.gamepad=На геймпаде: %s	#
+accessibility.key.gamepad=Геймпад %s	#
 accessibility.list.or.two=%s или %	#
 accessibility.list.or.three_or_more.first=%s	#
 accessibility.list.or.three_or_more.inner=, %s	#
@@ -47,6 +47,8 @@ accessibility.button.close=закрыть	#
 accessibility.button.back=назад	#
 accessibility.button.exit=Выйти	#
 
+accessibility.dropdown.listItem=Элемент списка	#
+
 accessibility.sectionName=Раздел %s: 	#
 
 accessibility.state.on=: вкл.	#
@@ -54,6 +56,9 @@ accessibility.state.off=: выкл.	#
 
 accessibility.state.checked=: выбрано	#
 accessibility.state.unchecked=: не выбрано	#
+
+accessibility.state.selected=: выбрано	#
+accessibility.state.unselected=: не выбрано	#
 
 accessibility.slider.tts.percentValue=%s %	#
 
@@ -63,12 +68,38 @@ accessibility.play.editServer=Изменить сервер	#
 accessibility.play.importWorld=Импортировать мир	#
 accessibility.play.leaveRealm=Выйти из реалма	#
 accessibility.play.realmFeed=Лента Realm	#
+accessibility.play.tabLeft=Нажмите %s для отступа влево	#
+accessibility.play.tabRight=Нажмите %s для отступа вправо	#
+
+accessibility.pause.permissions=Разрешения	#
+
+accessibility.screenName.achievements=Экран достижений	#
+accessibility.screenName.chat=Экран чата	#
+accessibility.screenName.createNew=Экран создания мира	#
+accessibility.screenName.createWorld=Экран параметров создаваемого мира	#
+accessibility.screenName.editWorldSettings=Экран изменения параметров мира	#
+accessibility.screenName.error=Экран ошибки	#
+accessibility.screenName.howToPlay=Экран обучения	#
+accessibility.screenName.modalDialog=Всплывающее диалоговое окно	#
+accessibility.screenName.patchNotes=Экран с описанием исправления	#
+accessibility.screenName.pauase=Экран паузы	#
+accessibility.screenName.play=Экран игры	#
+accessibility.screenName.realmSettings=Экран параметров Realm	#
+accessibility.screenName.settings=Экран настроек игры	#
+accessibility.screenName.skinPicker=Экран выбора скина	#
+accessibility.screenName.start=Главное меню	#
+accessibility.screenName.vrAlignment=Экран настройки VR-очков	#
 
 accessibility.settings.reset=сбросить	#
 accessibility.settings.chooseSeed=Выбрать ключ	#
 
 accessibility.start.feedback=Отправить отзыв	#
+accessibility.start.new=Создать	#
 accessibility.start.skinPicker=Выбрать скин	#
+
+accessibility.store.tag=Тег	#
+
+accessibility.textbox.editing=Изменение	#
 
 accessibility.toast=Сообщение		### This is the name of the popup that appears when a player gets a notification for a game invite or achievement unlocked
 
@@ -83,24 +114,28 @@ accessibility.popup.left_button_text=Выключить	#
 accessibility.popup.right_button_text=Нет, спасибо	#
 
 accessibility.controllerLayoutScreen.buttonRemapped=%s теперь привязано к %s	#
+accessibility.controllerLayoutScreen.buttonBoundTo=Кнопка %s: %s	#
 accessibility.controllerLayoutScreen.buttonRemapping=Выберите кнопку для привязки к %s	#
 
-accessibility.gamepad.faceButton.down=кнопка A	#
-accessibility.gamepad.faceButton.right=кнопка B	#
-accessibility.gamepad.faceButton.left=кнопка X	#
-accessibility.gamepad.faceButton.up=кнопка Y	#
-accessibility.gamepad.button.systemLeft=кнопка VIEW	#
-accessibility.gamepad.button.systemRight=кнопка MENU	#
+accessibility.gamepad.faceButton.down=Кнопка A	#
+accessibility.gamepad.faceButton.right=Кнопка B	#
+accessibility.gamepad.faceButton.left=Кнопка X	#
+accessibility.gamepad.faceButton.up=Кнопка Y	#
+accessibility.gamepad.button.systemLeft=Кнопка VIEW	#
+accessibility.gamepad.button.systemRight=Кнопка MENU	#
 accessibility.gamepad.dpad.down=Вниз на крестовине	#
 accessibility.gamepad.dpad.up=Вверх на крестовине	#
 accessibility.gamepad.dpad.left=Влево на крестовине	#
 accessibility.gamepad.dpad.right=Вправо на крестовине	#
-accessibility.gamepad.stick.left=левый мини-джойстик	#
-accessibility.gamepad.stick.right=правый мини-джойстик	#
-accessibility.gamepad.trigger.right=правый курок	#
-accessibility.gamepad.trigger.left=левый курок	#
-accessibility.gamepad.bumper.right=правый бампер	#
-accessibility.gamepad.bumper.left=левый бампер	#
+accessibility.gamepad.stick.left=Левый мини-джойстик	#
+accessibility.gamepad.stick.right=Правый мини-джойстик	#
+accessibility.gamepad.trigger.right=Правый курок	#
+accessibility.gamepad.trigger.left=Левый курок	#
+accessibility.gamepad.bumper.right=Правый бампер	#
+accessibility.gamepad.bumper.left=Левый бампер	#
+
+accessibility.keyboard.leftBracket=Клавиша с открывающей квадратной скобкой			### left square bracket means '[' on the english keyboard
+accessibility.keyboard.rightBracket=Клавиша с закрывающей квадратной скобкой		### right square bracket means ']' on the english keyboard
 
 ## End of audible phrases section
 
@@ -2935,7 +2970,7 @@ howtoplay.pets.text.4=Попугаи – это неагрессивные мо�
 howtoplay.raids=Налеты	#
 howtoplay.raids.title=Обучение: налеты	#
 howtoplay.raids.text.1=Исследуя мир, вы можете наткнуться на лагерь или патруль мародеров. Мародеры всегда ищут деревни для налета. Если захватить знамена мародеров, они могут атаковать ближайшую деревню.	#
-howtoplay.raids.text.2=Защищайте свою деревню. Если вы справитесь со всеми налетчиками, нападение прекратится.	#
+howtoplay.raids.text.2=Обязательно защищайте свою деревню. Атака остановится, если перебить всех налетчиков.	#
 howtoplay.raids.header.1=Ищу героя	#
 howtoplay.raids.text.3=Селяне, скорее всего, будут очень признательны вам за спасение от налетчиков. Не забудьте вернуться к ним и заключить выгодную сделку.  	#
 
@@ -4933,6 +4968,7 @@ options.resetSettings.popUp=Вы действительно хотите сбр�
 options.maxFramerate=Макс. частота кадров (экспериментальный)	#
 options.maxFramerateFormat=%s FPS	#
 options.particleRenderDistance=Дистанция визуализации частиц	#
+options.perf_turtle=Черепаха производительности	#
 options.msaa=Сглаживание	#
 options.texelAA=Сглаживание текселов	#
 options.renderDistance.far=Далеко	#
@@ -5166,7 +5202,7 @@ hudScreen.tooltip.dismount=Слезть	#
 hudScreen.tooltip.collect=Собрать	#
 hudScreen.tooltip.peel=Ошкуривание	#
 hudScreen.tooltip.scaffoldingDescend=Спуститься	#
-hudScreen.tooltip.pick=Выбрать	#
+hudScreen.tooltip.pick=Собрать	#
 
 playscreen.fileSize.MB=МБ	#
 playscreen.fileSize.GB=ГБ	#
@@ -5413,6 +5449,7 @@ progressScreen.dialog.button.wait=Ждать	#
 
 raid.name=Налет	#
 raid.progress=Осталось мобов:	#
+raid.expiry=Срок действия налета завершился	#
 
 recipeBook.setting.full=Заполнено	#
 recipeBook.setting.discover=Исследовать	#

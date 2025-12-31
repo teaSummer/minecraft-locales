@@ -28,7 +28,7 @@ accessibility.importing.complete=İçeri aktarma tamamlandı	#
 accessibility.signin.xbl=X box live oturumu açılıyor	#
 accessibility.chat.howtoopen=Sohbeti açmak için %s düğmesine basın	#
 accessibility.key.mouseButton=Fare Düğmesi %s	#
-accessibility.key.gamepad=Oyun Yüzeyi %s	#
+accessibility.key.gamepad=Kumanda %s	#
 accessibility.list.or.two=%s veya %	#
 accessibility.list.or.three_or_more.first=%s	#
 accessibility.list.or.three_or_more.inner=, %s	#
@@ -47,6 +47,8 @@ accessibility.button.close=kapat	#
 accessibility.button.back=geri	#
 accessibility.button.exit=Çıkış	#
 
+accessibility.dropdown.listItem=Liste öğesi	#
+
 accessibility.sectionName=Bölüm %s: 	#
 
 accessibility.state.on=: açık	#
@@ -54,6 +56,9 @@ accessibility.state.off=: kapalı	#
 
 accessibility.state.checked=: işaretlendi	#
 accessibility.state.unchecked=: işaretlenmedi	#
+
+accessibility.state.selected=: seçildi	#
+accessibility.state.unselected=: seçimi kaldırıldı	#
 
 accessibility.slider.tts.percentValue=Yüzde %s	#
 
@@ -63,12 +68,38 @@ accessibility.play.editServer=Sunucuyu Düzenle	#
 accessibility.play.importWorld=Dünyayı İçeri Aktar	#
 accessibility.play.leaveRealm=Bölgeden Ayrıl	#
 accessibility.play.realmFeed=Bölge Akışı	#
+accessibility.play.tabLeft=Sola bir sekme ilerletmek için %s düğmesine basın	#
+accessibility.play.tabRight=Sağa bir sekme ilerletmek için %s düğmesine basın	#
+
+accessibility.pause.permissions=İzinler	#
+
+accessibility.screenName.achievements=Başarılar Ekranı	#
+accessibility.screenName.chat=Sohbet Ekranı	#
+accessibility.screenName.createNew=Yeni Ekran Oluştur	#
+accessibility.screenName.createWorld=Dünya Oluşturma Ayarları Ekranı	#
+accessibility.screenName.editWorldSettings=Dünya Düzenleme Ayarları Ekranı	#
+accessibility.screenName.error=Hata Ekranı	#
+accessibility.screenName.howToPlay=Nasıl Oynanır Ekranı	#
+accessibility.screenName.modalDialog=Açılır iletişim kutusu	#
+accessibility.screenName.patchNotes=Yama Notları Ekranı	#
+accessibility.screenName.pauase=Duraklat Ekranı	#
+accessibility.screenName.play=Oyna Ekranı	#
+accessibility.screenName.realmSettings=Bölge Ayarları Ekranı	#
+accessibility.screenName.settings=Oyun Ayarları Ekranı	#
+accessibility.screenName.skinPicker=Dış Görünüş Seç Ekranı	#
+accessibility.screenName.start=Ana Menü	#
+accessibility.screenName.vrAlignment=VR Hizalama Ekranı	#
 
 accessibility.settings.reset=sıfırla	#
 accessibility.settings.chooseSeed=Tohum Seç	#
 
 accessibility.start.feedback=Geri Bildirim Gönder	#
+accessibility.start.new=Yeni	#
 accessibility.start.skinPicker=Dış Görünüş Seç	#
+
+accessibility.store.tag=Etiket	#
+
+accessibility.textbox.editing=Düzenleme	#
 
 accessibility.toast=Bildirim		### This is the name of the popup that appears when a player gets a notification for a game invite or achievement unlocked
 
@@ -83,24 +114,28 @@ accessibility.popup.left_button_text=Kapat	#
 accessibility.popup.right_button_text=Hayır, Teşekkürler	#
 
 accessibility.controllerLayoutScreen.buttonRemapped=%s şimdi %s ile bağlı	#
+accessibility.controllerLayoutScreen.buttonBoundTo=%s düğmesi: %s	#
 accessibility.controllerLayoutScreen.buttonRemapping=%s için bağlanacak giriş seçin	#
 
-accessibility.gamepad.faceButton.down=A düğmesi	#
-accessibility.gamepad.faceButton.right=B düğmesi	#
-accessibility.gamepad.faceButton.left=X düğmesi	#
-accessibility.gamepad.faceButton.up=Y düğmesi	#
-accessibility.gamepad.button.systemLeft=görüntüle düğmesi	#
-accessibility.gamepad.button.systemRight=menü düğmesi	#
+accessibility.gamepad.faceButton.down=A Düğmesi	#
+accessibility.gamepad.faceButton.right=B Düğmesi	#
+accessibility.gamepad.faceButton.left=X Düğmesi	#
+accessibility.gamepad.faceButton.up=Y Düğmesi	#
+accessibility.gamepad.button.systemLeft=Görüntüle Düğmesi	#
+accessibility.gamepad.button.systemRight=Menü Düğmesi	#
 accessibility.gamepad.dpad.down=Aşağı Yön Tuşu	#
 accessibility.gamepad.dpad.up=Yukarı Yön Tuşu	#
 accessibility.gamepad.dpad.left=Sol Yön Tuşu	#
 accessibility.gamepad.dpad.right=Sağ Yön Tuşu	#
-accessibility.gamepad.stick.left=sol çubuk	#
-accessibility.gamepad.stick.right=sağ çubuk	#
-accessibility.gamepad.trigger.right=sağ tetik	#
-accessibility.gamepad.trigger.left=sol tetik	#
-accessibility.gamepad.bumper.right=sağ yassı düğme	#
-accessibility.gamepad.bumper.left=sol yassı düğme	#
+accessibility.gamepad.stick.left=Sol Çubuk	#
+accessibility.gamepad.stick.right=Sağ Çubuk	#
+accessibility.gamepad.trigger.right=Sağ Tetik	#
+accessibility.gamepad.trigger.left=Sol Tetik	#
+accessibility.gamepad.bumper.right=Sağ Yassı Düğme	#
+accessibility.gamepad.bumper.left=Sol Yassı Düğme	#
+
+accessibility.keyboard.leftBracket=Sol köşeli ayraç tuşu			### left square bracket means '[' on the english keyboard
+accessibility.keyboard.rightBracket=Sağ köşeli ayraç tuşu		### right square bracket means ']' on the english keyboard
 
 ## End of audible phrases section
 
@@ -1079,7 +1114,7 @@ connect_gamepad.pressButtonToContinue=Lütfen devam etmek için kumandanızdaki 
 gamepad_disconnect=Kumanda bağlantısı kesildi	#
 gamepad_disconnect.reconnectController=Kumandanızın bağlantısı kesildi. Devam etmek için kumandanızı yeniden bağlayın.	#
 
-container.beacon=Fener	#
+container.beacon=İşaret Işığı	#
 container.brewing=Simya Standı	#
 container.chest=Sandık	#
 container.chestDouble=Büyük Sandık	#
@@ -2935,7 +2970,7 @@ howtoplay.pets.text.4=Papağanlar, Büyük Orman'da yaşayan pasif yaratıklard�
 howtoplay.raids=Baskınlar	#
 howtoplay.raids.title=Nasıl Oynanır: Baskınlar	#
 howtoplay.raids.text.1=Dünyayı keşfederken bir yağmacı kampı ya da karakolu ile karşılaşabilirsiniz. Yağmacılar her zaman baskın yapacak köyler ararlar. Flamalarını almak dikkatlerini çeker ve yakındaki bir köye saldırmayı seçebilirler.  	#
-howtoplay.raids.text.2=Köyünüzü savunduğunuzdan emin olun. Tüm Yağmacıları yenerseniz saldırı duracaktır.	#
+howtoplay.raids.text.2=Köyünüzü savunduğunuzdan emin olun. Tüm yağmacıları yenerseniz saldırı duracaktır.	#
 howtoplay.raids.header.1=Kahramanım Olur musun?	#
 howtoplay.raids.text.3=Köylüler en çok onları yağmacılardan kurtarırsanız minnettar olacaktır. Tekrar bakmayı unutmayın, iyi bir ödül alabilirsiniz.  	#
 
@@ -4933,6 +4968,7 @@ options.resetSettings.popUp=Ayarları gerçekten sıfırlamak istiyor musunuz?	#
 options.maxFramerate=Maksimum Kare Sayısı (Deney Amaçlı)	#
 options.maxFramerateFormat=%s FPS	#
 options.particleRenderDistance=Cisim Gitme Mesafesi	#
+options.perf_turtle=Performans Kaplumbağa	#
 options.msaa=Kenar Yumuşatma	#
 options.texelAA=Görüntü Doku Hücresi Kenar Yumuşatma	#
 options.renderDistance.far=Uzak	#
@@ -5153,7 +5189,7 @@ hudScreen.tooltip.empty=Boş	#
 hudScreen.tooltip.hang=As	#
 hudScreen.tooltip.ignite=Yak	#
 hudScreen.tooltip.place=Yerleştir	#
-hudScreen.tooltip.mine=Maden çıkar	#
+hudScreen.tooltip.mine=Kaz	#
 hudScreen.tooltip.attach=Ekle	#
 hudScreen.tooltip.till=Toprağı Sür	#
 hudScreen.tooltip.dig=Yol Kaz	#
@@ -5166,7 +5202,7 @@ hudScreen.tooltip.dismount=İn	#
 hudScreen.tooltip.collect=Topla	#
 hudScreen.tooltip.peel=Kabuk Soy	#
 hudScreen.tooltip.scaffoldingDescend=İnmek için Tut	#
-hudScreen.tooltip.pick=Seç	#
+hudScreen.tooltip.pick=Ürünü Topla	#
 
 playscreen.fileSize.MB=MB	#
 playscreen.fileSize.GB=GB	#
@@ -5413,6 +5449,7 @@ progressScreen.dialog.button.wait=Bekle	#
 
 raid.name=Baskın	#
 raid.progress=Kalan yaratık:	#
+raid.expiry=Bir baskının süresi doldu	#
 
 recipeBook.setting.full=Tam	#
 recipeBook.setting.discover=Keşfet	#
@@ -6256,7 +6293,7 @@ tile.anvil.name=Örs	#
 tile.anvil.slightlyDamaged.name=Hafif Hasarlı Örs	#
 tile.anvil.veryDamaged.name=Ağır Hasarlı Örs	#
 tile.barrier.name=Bariyer	#
-tile.beacon.name=Fener	#
+tile.beacon.name=İşaret Işığı	#
 tile.beacon.primary=Ana Güç	#
 tile.beacon.secondary=İkincil Güç	#
 tile.beacon.primary.pocket=Ana	#

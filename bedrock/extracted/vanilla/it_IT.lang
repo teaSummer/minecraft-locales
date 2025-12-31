@@ -28,7 +28,7 @@ accessibility.importing.complete=Importazione completata	#
 accessibility.signin.xbl=Accesso a Xbox Live in corso	#
 accessibility.chat.howtoopen=Premi %s per aprire la chat	#
 accessibility.key.mouseButton=Pulsante %s del mouse	#
-accessibility.key.gamepad=Gamepad %s	#
+accessibility.key.gamepad=Controller %s	#
 accessibility.list.or.two=%s o %	#
 accessibility.list.or.three_or_more.first=%s	#
 accessibility.list.or.three_or_more.inner=, %s	#
@@ -47,6 +47,8 @@ accessibility.button.close=chiudi	#
 accessibility.button.back=indietro	#
 accessibility.button.exit=Esci	#
 
+accessibility.dropdown.listItem=Elenca oggetto	#
+
 accessibility.sectionName=Sezione %s: 	#
 
 accessibility.state.on=: attivo	#
@@ -54,6 +56,9 @@ accessibility.state.off=: disattivo	#
 
 accessibility.state.checked=: spuntato	#
 accessibility.state.unchecked=: non spuntato	#
+
+accessibility.state.selected=: selezionato	#
+accessibility.state.unselected=: non selezionato	#
 
 accessibility.slider.tts.percentValue=%s per cento	#
 
@@ -63,12 +68,38 @@ accessibility.play.editServer=Modifica server	#
 accessibility.play.importWorld=Importa mondo	#
 accessibility.play.leaveRealm=Esci dal reame	#
 accessibility.play.realmFeed=Feed del reame	#
+accessibility.play.tabLeft=Premi il %s per tab sinistro	#
+accessibility.play.tabRight=Premi il %s per tab destro	#
+
+accessibility.pause.permissions=Permessi	#
+
+accessibility.screenName.achievements=Schermata obiettivi	#
+accessibility.screenName.chat=Schermata chat	#
+accessibility.screenName.createNew=Crea nuova schermata	#
+accessibility.screenName.createWorld=Crea schermata impostazioni mondo	#
+accessibility.screenName.editWorldSettings=Modifica schermata impostazioni mondo	#
+accessibility.screenName.error=Schermata di errore	#
+accessibility.screenName.howToPlay=Schermata Come giocare	#
+accessibility.screenName.modalDialog=Finestra di dialogo	#
+accessibility.screenName.patchNotes=Schermata note patch	#
+accessibility.screenName.pauase=Schermata di pausa	#
+accessibility.screenName.play=Schermata di gioco	#
+accessibility.screenName.realmSettings=Schermata impostazioni reame	#
+accessibility.screenName.settings=Schermata impostazioni di gioco	#
+accessibility.screenName.skinPicker=Schermata scelta skin	#
+accessibility.screenName.start=Menu principale	#
+accessibility.screenName.vrAlignment=Schermata allineamento VR	#
 
 accessibility.settings.reset=ripristina	#
 accessibility.settings.chooseSeed=Scegli seme	#
 
 accessibility.start.feedback=Invia un feedback	#
+accessibility.start.new=Nuovo	#
 accessibility.start.skinPicker=Scegli skin	#
+
+accessibility.store.tag=Tag	#
+
+accessibility.textbox.editing=Modifica	#
 
 accessibility.toast=Notifica		### This is the name of the popup that appears when a player gets a notification for a game invite or achievement unlocked
 
@@ -83,24 +114,28 @@ accessibility.popup.left_button_text=Disattiva	#
 accessibility.popup.right_button_text=No, grazie	#
 
 accessibility.controllerLayoutScreen.buttonRemapped=%s è ora assegnato a %s	#
+accessibility.controllerLayoutScreen.buttonBoundTo=Pulsante %s: %s	#
 accessibility.controllerLayoutScreen.buttonRemapping=Seleziona un input da assegnare a %s	#
 
-accessibility.gamepad.faceButton.down=pulsante A	#
-accessibility.gamepad.faceButton.right=pulsante B	#
-accessibility.gamepad.faceButton.left=pulsante X	#
-accessibility.gamepad.faceButton.up=pulsante Y	#
-accessibility.gamepad.button.systemLeft=pulsante visualizza	#
-accessibility.gamepad.button.systemRight=pulsante menu	#
-accessibility.gamepad.dpad.down=pulsante direzionale Giù	#
-accessibility.gamepad.dpad.up=pulsante direzionale Su	#
-accessibility.gamepad.dpad.left=pulsante direzionale Sinistra	#
-accessibility.gamepad.dpad.right=pulsante direzionale Destra	#
-accessibility.gamepad.stick.left=stick sinistro	#
-accessibility.gamepad.stick.right=stick destro	#
-accessibility.gamepad.trigger.right=grilletto destro	#
-accessibility.gamepad.trigger.left=grilletto sinistro	#
-accessibility.gamepad.bumper.right=pulsante dorsale destro	#
-accessibility.gamepad.bumper.left=pulsante dorsale sinistro	#
+accessibility.gamepad.faceButton.down=Pulsante A	#
+accessibility.gamepad.faceButton.right=Pulsante B	#
+accessibility.gamepad.faceButton.left=Pulsante X	#
+accessibility.gamepad.faceButton.up=Pulsante Y	#
+accessibility.gamepad.button.systemLeft=Pulsante Visualizza	#
+accessibility.gamepad.button.systemRight=Pulsante Menu	#
+accessibility.gamepad.dpad.down=Pulsante direzionale Giù	#
+accessibility.gamepad.dpad.up=Pulsante direzionale Su	#
+accessibility.gamepad.dpad.left=Pulsante direzionale Sinistra	#
+accessibility.gamepad.dpad.right=Pulsante direzionale Destra	#
+accessibility.gamepad.stick.left=Stick sinistro	#
+accessibility.gamepad.stick.right=Stick destro	#
+accessibility.gamepad.trigger.right=Grilletto destro	#
+accessibility.gamepad.trigger.left=Grilletto sinistro	#
+accessibility.gamepad.bumper.right=Pulsante dorsale destro	#
+accessibility.gamepad.bumper.left=Pulsante dorsale sinistro	#
+
+accessibility.keyboard.leftBracket=Tasto parentesi quadra aperta			### left square bracket means '[' on the english keyboard
+accessibility.keyboard.rightBracket=Tasto parentesi quadra chiusa		### right square bracket means ']' on the english keyboard
 
 ## End of audible phrases section
 
@@ -2935,7 +2970,7 @@ howtoplay.pets.text.4=I pappagalli sono delle creature passive che vivono nella 
 howtoplay.raids=Incursioni	#
 howtoplay.raids.title=Come giocare: Incursioni	#
 howtoplay.raids.text.1=Mentre esplori il mondo, potresti imbatterti in un accampamento o in una pattuglia di saccheggiatori. I saccheggiatori sono sempre alla ricerca di villaggi da depredare. Forse, rubando i loro stendardi, attireresti la loro attenzione e potrebbero decidere di attaccare un villaggio vicino.	#
-howtoplay.raids.text.2=Assicurati di difendere il tuo villaggio. L'attacco si fermerà se sconfiggi tutti i razziatori.	#
+howtoplay.raids.text.2=Assicurati di difendere il tuo villaggio, l'attacco si fermerà se sconfiggi tutti i saccheggiatori.	#
 howtoplay.raids.header.1=Mi serve un eroe	#
 howtoplay.raids.text.3=Gli abitanti probabilmente ti saranno molto grati per averli salvati dai razziatori. Assicurati di parlare con loro, potresti fare un ottimo affare.	#
 
@@ -4933,6 +4968,7 @@ options.resetSettings.popUp=Vuoi davvero ripristinare le impostazioni?	#
 options.maxFramerate=FPS massimi (sperimentale)	#
 options.maxFramerateFormat=%s FPS	#
 options.particleRenderDistance=Distanza renderizzazione particelle	#
+options.perf_turtle=Tartaruga prestazione	#
 options.msaa=Antialiasing	#
 options.texelAA=Antialiasing texel	#
 options.renderDistance.far=Lontana	#
@@ -5413,6 +5449,7 @@ progressScreen.dialog.button.wait=Attendi	#
 
 raid.name=Incursione	#
 raid.progress=Creature rimaste:	#
+raid.expiry=È scaduta un'incursione	#
 
 recipeBook.setting.full=Limite massimo	#
 recipeBook.setting.discover=Scopri	#

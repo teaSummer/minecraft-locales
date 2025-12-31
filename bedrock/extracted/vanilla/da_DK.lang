@@ -28,7 +28,7 @@ accessibility.importing.complete=Import er fuldført	#
 accessibility.signin.xbl=Logger på Xbox Live	#
 accessibility.chat.howtoopen=Tryk på %s for at åbne chatten	#
 accessibility.key.mouseButton=Museknap %s	#
-accessibility.key.gamepad=Gamepad %s	#
+accessibility.key.gamepad=Controller %s	#
 accessibility.list.or.two=%s eller %	#
 accessibility.list.or.three_or_more.first=%s	#
 accessibility.list.or.three_or_more.inner=, %s	#
@@ -47,6 +47,8 @@ accessibility.button.close=luk	#
 accessibility.button.back=tilbage	#
 accessibility.button.exit=Luk	#
 
+accessibility.dropdown.listItem=Vis genstand	#
+
 accessibility.sectionName=Sektion %s: 	#
 
 accessibility.state.on=: til	#
@@ -54,6 +56,9 @@ accessibility.state.off=: fra	#
 
 accessibility.state.checked=: markeret	#
 accessibility.state.unchecked=: ikke markeret	#
+
+accessibility.state.selected=: valgt	#
+accessibility.state.unselected=: fravalgt	#
 
 accessibility.slider.tts.percentValue=%s procent	#
 
@@ -63,12 +68,38 @@ accessibility.play.editServer=Rediger server	#
 accessibility.play.importWorld=Importér verden	#
 accessibility.play.leaveRealm=Forlad realm	#
 accessibility.play.realmFeed=Realm-feed	#
+accessibility.play.tabLeft=Press the %s to tab left	#
+accessibility.play.tabRight=Press the %s to tab right	#
+
+accessibility.pause.permissions=Tilladelser	#
+
+accessibility.screenName.achievements=Gennemførelsesskærm	#
+accessibility.screenName.chat=Chatskærm	#
+accessibility.screenName.createNew=Opret ny skærm	#
+accessibility.screenName.createWorld=Opret skærm med verdensindstillinger	#
+accessibility.screenName.editWorldSettings=Rediger skærm med verdensindstillinger	#
+accessibility.screenName.error=Fejlskærm	#
+accessibility.screenName.howToPlay=Sådan spiller du skærm	#
+accessibility.screenName.modalDialog=Popop-dialogboks	#
+accessibility.screenName.patchNotes=Skærm med rettelsesnoter	#
+accessibility.screenName.pauase=Pauseskærm	#
+accessibility.screenName.play=Spilskærm	#
+accessibility.screenName.realmSettings=Skærm med realm-indstillinger	#
+accessibility.screenName.settings=Skærm med spilindstillinger	#
+accessibility.screenName.skinPicker=Vælg skærm med skins	#
+accessibility.screenName.start=Hovedmenu	#
+accessibility.screenName.vrAlignment=Skærm til VR-justering	#
 
 accessibility.settings.reset=nulstil	#
 accessibility.settings.chooseSeed=Vælg frø	#
 
 accessibility.start.feedback=Send feedback	#
+accessibility.start.new=Nyhed	#
 accessibility.start.skinPicker=Vælg skin	#
+
+accessibility.store.tag=Tag	#
+
+accessibility.textbox.editing=Redigering	#
 
 accessibility.toast=Meddelelse		### This is the name of the popup that appears when a player gets a notification for a game invite or achievement unlocked
 
@@ -83,24 +114,28 @@ accessibility.popup.left_button_text=Slå fra	#
 accessibility.popup.right_button_text=Nej tak	#
 
 accessibility.controllerLayoutScreen.buttonRemapped=%s er nu bundet til %s	#
+accessibility.controllerLayoutScreen.buttonBoundTo=%s knap: %s	#
 accessibility.controllerLayoutScreen.buttonRemapping=Vælg input, der skal bindes til %s	#
 
-accessibility.gamepad.faceButton.down=knap A	#
-accessibility.gamepad.faceButton.right=knap B	#
-accessibility.gamepad.faceButton.left=knap X	#
-accessibility.gamepad.faceButton.up=knap Y	#
-accessibility.gamepad.button.systemLeft=knapvisning	#
-accessibility.gamepad.button.systemRight=knapmenu	#
-accessibility.gamepad.dpad.down=D-blok ned	#
-accessibility.gamepad.dpad.up=D-blok up	#
-accessibility.gamepad.dpad.left=D-blok venstre	#
-accessibility.gamepad.dpad.right=D-blok højre	#
-accessibility.gamepad.stick.left=venstre pind	#
-accessibility.gamepad.stick.right=højre pind	#
-accessibility.gamepad.trigger.right=højre udløser	#
-accessibility.gamepad.trigger.left=venstre udløser	#
-accessibility.gamepad.bumper.right=højre kantknap	#
-accessibility.gamepad.bumper.left=venstre kantknap	#
+accessibility.gamepad.faceButton.down=A-knap	#
+accessibility.gamepad.faceButton.right=B-knap	#
+accessibility.gamepad.faceButton.left=X-knap	#
+accessibility.gamepad.faceButton.up=Y-knap	#
+accessibility.gamepad.button.systemLeft=Se-knap	#
+accessibility.gamepad.button.systemRight=Menu-knap	#
+accessibility.gamepad.dpad.down=D-pad ned	#
+accessibility.gamepad.dpad.up=D-pad op	#
+accessibility.gamepad.dpad.left=D-pad venstre	#
+accessibility.gamepad.dpad.right=D-pad højre	#
+accessibility.gamepad.stick.left=Venstre styrepind	#
+accessibility.gamepad.stick.right=Højre styrepind	#
+accessibility.gamepad.trigger.right=Højre udløser (RT)	#
+accessibility.gamepad.trigger.left=Venstre udløser (LT)	#
+accessibility.gamepad.bumper.right=Højre kantknap (RB)	#
+accessibility.gamepad.bumper.left=Venstre kantknap (LB)	#
+
+accessibility.keyboard.leftBracket=Kantet venstreparentes			### left square bracket means '[' on the english keyboard
+accessibility.keyboard.rightBracket=Kantet højreparentes		### right square bracket means ']' on the english keyboard
 
 ## End of audible phrases section
 
@@ -1104,8 +1139,8 @@ container.minecart=Minevogn	#
 container.repair=Reparer og navngiv	#
 container.repair.cost=XP-pris: %1$d	#
 container.repair.expensive=For dyr!	#
-container.repairAndDisenchant=Reparer og fjern fortryllelse	#
-container.stonecutter=Stenhugger	#
+container.repairAndDisenchant=Reparer &amp; fjern fortryllelse	#
+container.stonecutter=Stenskærer	#
 container.stonecutter_block=Stenskærer	#
 container.shulkerbox=Shulkerboks	#
 container.shulkerboxContains=og %d mere...	#
@@ -2935,7 +2970,7 @@ howtoplay.pets.text.4=Papegøjer er neutrale væsner, der bor i junglen. De imit
 howtoplay.raids=Plyndringstogter	#
 howtoplay.raids.title=Sådan spiller du : Plyndringstogter	#
 howtoplay.raids.text.1=Mens du udforsker verden, kan du støde på en røverlejr eller en patrulje. Røvere er altid på udkig efter landsbyboere at plyndre, og hvis man tager deres bannere, får man deres opmærksomhed – de kan vælge at angribe en nærliggende landsby.  	#
-howtoplay.raids.text.2=Sørg for at forsvare din landsby. Angrebet stopper, når du besejrer alle røverne.	#
+howtoplay.raids.text.2=Sørg for at forsvare din landsby. Angrebet stopper, når du har besejret alle røverne.	#
 howtoplay.raids.header.1=Jeg har brug for en helt	#
 howtoplay.raids.text.3=Landsbyboere vil sandsynligvis være meget taknemmelige for, at du har reddet dem fra røverne. Sørg for at vende tilbage til dem – måske venter der et godt tilbud.  	#
 
@@ -2982,7 +3017,7 @@ howtoplay.scaffolding.text.1.gamepad=Stilladser hjælper dig med at bygge gigant
 howtoplay.scaffolding.text.1.touch=Stilladser hjælper dig med at bygge gigantiske strukturer uden faldulykker! Du kan både gå inde i et stillads og stå oven på det. Hvis du står i en søjle af stilladser, kan du gå opad ved at trykke på knappen :touch_jump:. Du kommer ned igen ved at trykke på knappen :touch_fly_down:.	#
 howtoplay.scaffolding.text.1.rift_controller=Stilladser hjælper dig med at bygge gigantiske strukturer uden faldulykker! Du kan både gå inde i et stillads og stå oven på det. Hvis du står i en søjle af stilladser, kan du gå opad ved at trykke på knappen :rift_A:. Du kommer ned igen ved at trykke på knappen :rift_X:.	#
 howtoplay.scaffolding.text.1.windowsmr_controller=Stilladser hjælper dig med at bygge gigantiske strukturer uden faldulykker! Du kan både gå inde i et stillads og stå oven på det. Hvis du står i en søjle af stilladser, kan du gå opad ved at trykke på knappen :windowsmr_right_touchpad:. Du kommer ned igen ved at holde knappen :windowsmr_right_stick: nede.	#
-howtoplay.scaffolding.header.2=Understøt din støtte	#
+howtoplay.scaffolding.header.2=Understøt dit byggeri	#
 howtoplay.scaffolding.text.2=Stilladser har brug for afstivning. Du kan kun placere et vist antal stilladser vandret uden at understøtte dem med en anden blok. Hvis du forsøger at placere for mange stilladsblokke uden afstivning, falder den ned. Stilladser kan placeres som normale blokke, men de kan også placeres på deres eget fundament, hvis du vil bygge et højt tårn i en fart.	#
 howtoplay.scaffolding.header.3=Nedtagning	#
 howtoplay.scaffolding.text.3=Når en stilladsblok ødelægges, falder samtlige stilladsblokke oven på den ned og går i stykker. Hvis du vil tage et stillads ned i en fart, kan du altså nøjes med at ødelægge de understøttende blokke.	#
@@ -4933,6 +4968,7 @@ options.resetSettings.popUp=Vil du nulstille indstillingerne?	#
 options.maxFramerate=Maks. billedhastighed (eksperimentel)	#
 options.maxFramerateFormat=%s FPS	#
 options.particleRenderDistance=Gengivelsesafstand for partikler	#
+options.perf_turtle=Stærk skildpadde	#
 options.msaa=Kantudjævning	#
 options.texelAA=Texel-kantudjævning	#
 options.renderDistance.far=Lang	#
@@ -5166,7 +5202,7 @@ hudScreen.tooltip.dismount=Sid af	#
 hudScreen.tooltip.collect=Indsaml	#
 hudScreen.tooltip.peel=Skræl bark	#
 hudScreen.tooltip.scaffoldingDescend=Hold for at gå nedad	#
-hudScreen.tooltip.pick=Vælg	#
+hudScreen.tooltip.pick=Pluk	#
 
 playscreen.fileSize.MB=MB	#
 playscreen.fileSize.GB=GB	#
@@ -5413,6 +5449,7 @@ progressScreen.dialog.button.wait=Vent	#
 
 raid.name=Plyndringstogt	#
 raid.progress=Væsner tilbage:	#
+raid.expiry=Et plyndringstogt er udløbet	#
 
 recipeBook.setting.full=Fuld	#
 recipeBook.setting.discover=Find	#
@@ -6663,7 +6700,7 @@ tile.stonebrick.default.name=Stenmursten	#
 tile.stonebrick.mossy.name=Mosbegroede mursten	#
 tile.stonebrick.name=Stenmursten	#
 tile.stonebrick.smooth.name=Glatte stenmursten	#
-tile.stonecutter.name=Stenhugger	#
+tile.stonecutter.name=Stenskærer	#
 tile.stonecutter_block.name=Stenskærer	#
 tile.mossy_cobblestone.name=Mosbegroet brosten	#
 tile.double_stone_slab.brick.name=Murstensflise	#
