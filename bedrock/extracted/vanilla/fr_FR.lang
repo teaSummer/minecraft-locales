@@ -5,6 +5,105 @@
 accessibility.disableTTS=Conversion vocale désactivée	#
 accessibility.enableTTS=Conversion vocale activée	#
 
+## Translator note:
+## This section of phrases will be given audibly to the user using text to speech
+
+accessibility.chat.tts.says=%s dit %s	#
+accessibility.chat.tts.hideChat=Masquer le tchat	#
+accessibility.chat.tts.keyboard=Clavier	#
+accessibility.chat.tts.muteChatToggle=Activer Tous muets	#
+accessibility.chat.tts.sendChatMessage=Envoyer	#
+accessibility.chat.tts.textboxTitle=Tchat	#
+
+accessibility.loading.done=Terminé	#
+accessibility.saving.done=Terminé	#
+accessibility.downloading.start=Téléchargement commencé	#
+accessibility.downloading.Progress=Téléchargement : %s %	#
+accessibility.downloading.canceled=Téléchargement annulé	#
+accessibility.downloading.complete=Téléchargement terminé	#
+accessibility.importing.start=Importation commencée	#
+accessibility.importing.Progress=Importation : %s %	#
+accessibility.importing.canceled=Importation annulée	#
+accessibility.importing.complete=Importation terminée	#
+accessibility.signin.xbl=Connexion à Xbox Live	#
+accessibility.chat.howtoopen=Appuyez sur %s pour ouvrir le tchat	#
+accessibility.key.mouseButton=Bouton de souris : %s	#
+accessibility.key.gamepad=Manette de jeu : %s	#
+accessibility.list.or.two=%s ou %	#
+accessibility.list.or.three_or_more.first=%s	#
+accessibility.list.or.three_or_more.inner=, %s	#
+accessibility.list.or.three_or_more.last=ou %s	#
+
+accessibility.button.tts.title=Bouton	#
+accessibility.checkbox.tts.title=Case à cocher	#
+accessibility.checkbox.tts.status=statut : %s			### Status will be checked or unchecked
+accessibility.dropdown.tts.title=Menu déroulant	#
+accessibility.slider.tts.title=Diaporama	#
+accessibility.tab.tts.title=Onglet	#
+accessibility.textbox.tts.title=Zone de texte	#
+accessibility.toggle.tts.title=Activer/désactiver	#
+
+accessibility.button.close=fermer	#
+accessibility.button.back=retour	#
+accessibility.button.exit=Quitter	#
+
+accessibility.sectionName=Section %s : 	#
+
+accessibility.state.on=: activé	#
+accessibility.state.off=: désactivé	#
+
+accessibility.state.checked=: coché	#
+accessibility.state.unchecked=: décoché	#
+
+accessibility.slider.tts.percentValue=%s %	#
+
+accessibility.play.editWorld=Modifier le monde	#
+accessibility.play.editRealm=Modifier le Realm	#
+accessibility.play.editServer=Modifier le serveur	#
+accessibility.play.importWorld=Importer le monde	#
+accessibility.play.leaveRealm=Quitter le Realm	#
+accessibility.play.realmFeed=Flux de Realms	#
+
+accessibility.settings.reset=réinitialiser	#
+accessibility.settings.chooseSeed=Choisir une graine	#
+
+accessibility.start.feedback=Envoyer un commentaire	#
+accessibility.start.skinPicker=Choisir une skin	#
+
+accessibility.toast=Notification		### This is the name of the popup that appears when a player gets a notification for a game invite or achievement unlocked
+
+accessibility.worldTemplates.help=Aide	#
+
+accessibility.popup.title=Désactiver le lecteur d'écran ?	#
+accessibility.popup.message.line1=Bienvenue dans Minecraft !	#
+accessibility.popup.message.default=Sur votre appareil, Minecraft active par défaut la prise en charge du lecteur d'écran pour ceux qui le trouvent utile.	#
+accessibility.popup.message.platform=Nous avons détecté qu'un lecteur d'écran est actif avec votre système. Nous avons donc activé pour vous le lecteur d'écran Minecraft.	#
+accessibility.popup.message.line3=Voulez-vous le désactiver ?	#
+accessibility.popup.left_button_text=Désactiver	#
+accessibility.popup.right_button_text=Non merci	#
+
+accessibility.controllerLayoutScreen.buttonRemapped=%s est maintenant lié(e) à %s	#
+accessibility.controllerLayoutScreen.buttonRemapping=Sélectionner une commande à lier à %s	#
+
+accessibility.gamepad.faceButton.down=touche A	#
+accessibility.gamepad.faceButton.right=touche B	#
+accessibility.gamepad.faceButton.left=touche X	#
+accessibility.gamepad.faceButton.up=touche Y	#
+accessibility.gamepad.button.systemLeft=touche Affichage	#
+accessibility.gamepad.button.systemRight=touche Menu	#
+accessibility.gamepad.dpad.down=BMD bas	#
+accessibility.gamepad.dpad.up=BMD haut	#
+accessibility.gamepad.dpad.left=BMD gauche	#
+accessibility.gamepad.dpad.right=BMD droit	#
+accessibility.gamepad.stick.left=stick gauche	#
+accessibility.gamepad.stick.right=stick droit	#
+accessibility.gamepad.trigger.right=gâchette droite	#
+accessibility.gamepad.trigger.left=gâchette gauche	#
+accessibility.gamepad.bumper.right=gâchette haute droite	#
+accessibility.gamepad.bumper.left=gâchette haute gauche	#
+
+## End of audible phrases section
+
 achievement.alternativeFuel=Combustible alternatif	#
 achievement.alternativeFuel.desc=Alimenter un four avec un bloc de varech	#
 achievement.acquireIron=L'âge du fer	#
@@ -236,7 +335,7 @@ chat.link.confirmTrusted=Voulez-vous ouvrir ce lien ou le copier dans votre pres
 chat.link.open=Ouvrir dans le navigateur	#
 chat.link.warning=N'ouvrez jamais de lien venant d'une personne en qui vous n'avez pas confiance !	#
 chat.mentions.autocomplete.allPlayers=mentionner tous les joueurs	#
-chat.mute=Couper micro	#
+chat.mute=Rendre muet	#
 chat.realmsFilterDisabled=Le filtre de tchat du Realm est désactivé.	#
 chat.settings=Paramètres du tchat	#
 chat.settings.chatColor=Couleur de tchat	#
@@ -637,6 +736,21 @@ commands.mixer.status.initializing=L'interactivité est en cours d'initialisatio
 commands.mixer.status.pending=L'interactivité est en attente.	#
 commands.mixer.status.disabled=L'interactivité est désactivée.	#
 commands.mixer.activatedbutton=%1$s a activé %2$s.	#
+
+commands.mobevent.description=Contrôle les événements que les créatures peuvent exécuter.	#
+commands.mobevent.eventsEnabledSetToTrue=Les événements de créatures sont désormais activés. Les événements individuels réglés sur Faux ne seront pas exécutés.	#
+commands.mobevent.eventsEnabledSetToFalse=Les événements de créatures sont désormais désactivés. Les événements individuels ne seront pas exécutés.	#
+commands.mobevent.eventsEnabledIsTrue=Les événements de créatures sont activés. Les événements individuels réglés sur Faux ne seront pas exécutés.	#
+commands.mobevent.eventsEnabledIsFalse=Les événements de créatures sont désactivés. Les événements individuels ne seront pas exécutés.	#
+
+## for the following new loc strings, the first parameter is a localized event name, and the second is the literal event that must be entered into the command.
+commands.mobevent.eventSetToTrue=Événement de créature %s (id : %s) défini sur Vrai.	#
+commands.mobevent.eventSetToTrueButEventsDisabled=Événement de créatures %s (id : %s) défini sur Vrai, mais les événements de créatures sont désactivés.	#
+commands.mobevent.eventSetToFalse=Événement de créatures %s (id : %s) défini sur Faux.	#
+commands.mobevent.eventIsTrue=L'événement de créatures %s (id : %s) est défini sur Vrai.	#
+commands.mobevent.eventIsTrueButEventsDisabled=L'événement de créatures %s (id : %s) est défini sur Vrai, mais les événements de créatures sont désactivés.	#
+commands.mobevent.eventIsFalse=L'événement de créatures %s (id : %s) est défini sur Faux.	#
+
 commands.op.description=Donne le statut d'opérateur à un joueur.	#
 commands.op.failed=Impossible de promouvoir %s au poste d'opérateur (déjà opérateur ou plus)	#
 commands.op.success=%s promu opérateur	#
@@ -930,6 +1044,10 @@ commands.whitelist.list=Il y a %1$d joueur(s) (sur %2$d détecté(s)) dans la li
 commands.whitelist.reloaded=Liste blanche rechargée depuis le fichier.	#
 commands.whitelist.remove.failed=Impossible de retirer %1$s de la liste blanche	#
 commands.whitelist.remove.success=%1$s a été retiré(e) de la liste blanche	#
+commands.world_age.description=Modifie ou recherche l'âge du monde (temps depuis la création).	#
+commands.world_age.added=Ajouté à l'âge du monde : %1$d	#
+commands.world_age.query=L'âge du monde est : %d	#
+commands.world_age.set=Définir l'âge du monde sur : %1$d	#
 commands.worldborder.center.success=Le centre de la bordure du monde a été défini en %1$s, %2$s	#
 commands.worldborder.damage.amount.success=La quantité de dégâts causés par la bordure du monde a été définie à %1$s par bloc (auparavant %2$s par bloc)	#
 commands.worldborder.damage.buffer.success=Le tampon de dégâts de la bordure du monde a été défini à %1$s blocs (auparavant %2$s blocs)	#
@@ -986,10 +1104,12 @@ container.minecart=Wagonnet	#
 container.repair=Réparer et renommer	#
 container.repair.cost=Coût en EXP : %1$d	#
 container.repair.expensive=Trop cher !	#
+container.repairAndDisenchant=Réparer et désenchanter	#
 container.stonecutter=Tailleur de pierre	#
 container.stonecutter_block=Tailleur de pierre	#
 container.shulkerbox=Boîte de Shulker	#
 container.shulkerboxContains=et %d de plus...	#
+container.barrel=Tonneau	#
 
 controller.buttonTip.addItem=Ajouter objet	#
 controller.buttonTip.addItemStack=Ajouter une pile d'objets	#
@@ -1350,8 +1470,12 @@ realmsCreateScreen.createFailed.title=Une erreur s'est produite	#
 realmsCreateScreen.createFailed.content=Votre achat a abouti, mais nous n'avons pas pu créer votre Realm pour l'instant. Nous le créerons dès que possible. Reconnectez-vous plus tard sur cet appareil.	#
 realmsCreateScreen.createFailed.profanity=Le nom de Realm %s n'est pas autorisé.	#
 realmsCreateScreen.createFailed.generic=Le nom du Club n'a pas pu être vérifié. Veuillez réessayer plus tard.	#
-realmsCreateScreen.maxRealms.title=Maximum de Realms atteint	#
-realmsCreateScreen.maxRealms.content=Vous avez atteint le maximum de Realms actifs. Vous ne pouvez pas en créer d'autre pour l'instant.	#
+realmsCreateScreen.maxRealms.title=Nombre d'abonnements maximum	#
+realmsCreateScreen.maxRealms.content=Vous avez atteint le maximum d'abonnements actifs sur cette plateforme et vous ne pouvez pas en créer d'autres pour l'instant.	#
+realmsCreateScreen.offerNotFound.title=Produit non trouvé	#
+realmsCreateScreen.offerNotFound.content=Veuillez réessayer ultérieurement.	#
+realmsCreateScreen.offerNotAvailable.title=Produit non disponible à l'achat	#
+realmsCreateScreen.offerNotAvailable.content=Veuillez réessayer ultérieurement.	#
 realmsCreateScreen.extendRealms.title=Abonnement Realms au maximum	#
 realmsCreateScreen.extendRealms.content=Vous avez prolongé votre abonnement Realms le plus longtemps possible. Vous ne pouvez pas ajouter ce délai supplémentaire pour l'instant. Réessayez plus tard.	#
 realmsCreateScreen.usersTwo=2 joueurs	#
@@ -1781,6 +1905,9 @@ storageSpaceWarningScreen.frontend=Vous n'avez presque plus d'espace libre ! L'a
 storageSpaceWarningScreen.lowduringgameplay=Votre appareil n'a presque plus d'espace libre pour sauvegarder les mondes et paramètres de Minecraft. Pourquoi ne pas faire le tri pour libérer de l'espace ?	#
 storageSpaceWarningScreen.fullduringgameplay=Vous n'avez presque plus d'espace libre et Minecraft ne peut plus enregistrer votre progression ! Vous serez redirigé vers le menu principal pour libérer de l'espace de stockage.	#
 
+effect.badOmen=Mauvais présage	#
+effect.villageHero=Héros du village	#
+
 enchantment.arrowDamage=Puissance	#
 enchantment.arrowFire=Flamme	#
 enchantment.arrowInfinite=Infinité	#
@@ -1868,7 +1995,7 @@ entity.ghast.name=Ghast	#
 entity.guardian.name=Gardien	#
 entity.horse.name=Cheval	#
 entity.husk.name=Incarnation	#
-entity.illager_beast.name=Bête illageoise	#
+entity.ravager.name=Ravageur	#
 entity.iron_golem.name=Golem de fer	#
 entity.item.name=Objet	#
 entity.leash_knot.name=Nœud de laisse	#
@@ -1945,6 +2072,8 @@ entity.zombie.name=Zombie	#
 entity.zombie_horse.name=Cheval zombie	#
 entity.zombie_pigman.name=Cochon zombie	#
 entity.zombie_villager.name=Villageois zombie	#
+
+exports.share.file=Partager %s	#
 
 addExternalServerScreen.addServer=Ajouter un serveur	#
 addExternalServerScreen.nameTextBoxLabel=Nom du serveur	#
@@ -2129,6 +2258,13 @@ gui.submit=Envoyer	#
 gui.playOffline=Jouer hors ligne	#
 gui.signIn=Se connecter	#
 gui.genericNetworkError=Une erreur est survenue. Vérifiez votre connexion Internet.	#
+
+updateScreen.update=Mise à jour	#
+updateScreen.title=Version obsolète	#
+updateScreen.body=Procédez à la mise à jour vers la version la plus récente pour accéder à toutes les nouvelles fonctionnalités, pour jouer en ligne avec vos amis ou découvrir les nouveautés du magasin.	#
+updateScreen.commerceNotSupported.title=Impossible d'accéder au magasin	#
+updateScreen.commerceNotSupported.body=Cette version de Minecraft n'a plus accès au magasin Minecraft. Procédez à la mise à jour vers la version la plus récente pour accéder de nouveau au magasin.	#
+updateScreen.patchVersion=Notes de version pour la version %s :	#
 
 hostOption.codeBuilder=Code Builder	#
 hostOption.setWorldSpawn=Définir le point d'apparition	#
@@ -2762,11 +2898,13 @@ howtoplay.navigation.header.1=Outils de navigation	#
 howtoplay.navigation.text.3=La boussole indiquera la direction de votre premier point d'apparition dans le monde. Plutôt pratique pour retrouver votre point de départ.	#
 howtoplay.navigation.text.4=La carte vous permet de voir la zone que vous avez explorée. Placez-la dans l'emplacement de main secondaire pour l'utiliser comme mini-carte. Vous pouvez augmenter sa taille en lui ajoutant plus de papier sur les bords dans votre établi.	#
 howtoplay.navigation.text.5=La carte de localisation vous indiquera votre position et la direction à laquelle vous faites face par rapport à l'origine de votre carte de localisation. Vous verrez aussi la position des autres joueurs dans le même monde.	#
+howtoplay.navigation.text.6=Une table de cartographie peut vous aider à créer, agrandir, copier et même nommer des cartes.	#
+howtoplay.navigation.text.7=Placez du papier dans le premier emplacement pour fabriquer une carte. Si vous ajoutez une boussole dans le deuxième emplacement, vous pouvez créer une carte de localisation. Ajoutez du papier ou une carte vierge pour agrandir ou copier votre carte.	#
 howtoplay.navigation.header.2=Techniques de navigation	#
-howtoplay.navigation.text.6=Cherchez des points de repère à mesure que vous explorez. Plus vous jouerez dans le monde, plus il vous sera facile de savoir où vous êtes. Astuce : jalonnez votre parcours de torches pour retrouver votre chemin.	#
-howtoplay.navigation.text.7=Observer le soleil vous permet aussi de déterminer la direction à laquelle vous faites face. Remarque : le soleil se lève à l'est et se couche à l'ouest !	#
+howtoplay.navigation.text.8=Cherchez des points de repère à mesure que vous explorez. Plus vous jouerez dans le monde, plus il vous sera facile de savoir où vous êtes. Astuce : jalonnez votre parcours de torches pour retrouver votre chemin.	#
+howtoplay.navigation.text.9=Observer le soleil vous permet aussi de déterminer la direction à laquelle vous faites face. Remarque : le soleil se lève à l'est et se couche à l'ouest !	#
 howtoplay.navigation.header.3=Cartes d'exploration	#
-howtoplay.navigation.text.8=Il y a de nombreux endroits à visiter. Trouvez un village et cherchez un cartographe. Il vous échangera des cartes d'exploration qui vous mèneront dans des endroits lointains et très étranges.	#
+howtoplay.navigation.text.10=Il y a de nombreux endroits à visiter. Trouvez un village et cherchez un cartographe. Il vous échangera des cartes d'exploration qui vous mèneront dans des endroits lointains et très étranges.	#
 
 howtoplay.netherPortals=Portail du Nether	#
 howtoplay.netherPortals.title=Comment jouer : portail du Nether	#
@@ -2793,6 +2931,13 @@ howtoplay.pets.header.3=Ocelots	#
 howtoplay.pets.text.3=Les ocelots sont des créatures neutres qui chassent dans la jungle. Ils attaquent les poulets et éloignent les creepers. Ils tenteront de vous échapper ; il peut donc être difficile de les dompter. Ils aiment le poisson, vous pouvez donc leur donner de la morue crue ou du saumon pour les dompter.	#
 howtoplay.pets.header.4=Perroquets	#
 howtoplay.pets.text.4=Les perroquets sont des créatures passives qui vivent également dans la jungle. Ils imitent toutes les autres créatures des environs. Ils adorent les graines ; donnez-en leur pour les apprivoiser. Les perroquets peuvent également se poser sur votre épaule et vous pouvez en avoir plusieurs.	#
+
+howtoplay.raids=Raids	#
+howtoplay.raids.title=Comment jouer : raids	#
+howtoplay.raids.text.1=En explorant le monde, vous pourrez rencontrer un camp ou une patrouille de pillards. Ils sont toujours à la recherche de villages à attaquer. Prendre leurs bannières attirera leur attention et ils pourront décider d'attaquer un village proche.	#
+howtoplay.raids.text.2=Assurez-vous de défendre votre village, car l'attaque cessera si vous éliminez tous les pillards lors du raid.	#
+howtoplay.raids.header.1=J'ai besoin d'un héros	#
+howtoplay.raids.text.3=Les villageois seront très certainement contents d'avoir été sauvés des pillards. N'oubliez pas de retourner les voir, ils pourraient proposer des offres intéressantes.	#
 
 howtoplay.ranching=Élevage	#
 howtoplay.ranching.title=Comment jouer : élevage	#
@@ -2838,7 +2983,7 @@ howtoplay.scaffolding.text.1.touch=L'échafaudage vous permet de créer d'imposa
 howtoplay.scaffolding.text.1.rift_controller=L'échafaudage vous permet de créer d'imposantes structures en toute sécurité ! Vous pouvez vous déplacer et vous tenir sur un échafaudage. Si vous avez un échafaudage en colonne, vous pouvez monter en vous tenant debout dedans et en appuyant sur le bouton :rift_A:. Pour descendre, appuyez et maintenez le bouton :rift_X:.	#
 howtoplay.scaffolding.text.1.windowsmr_controller=L'échafaudage vous permet de créer d'imposantes structures en toute sécurité ! Vous pouvez vous déplacer et vous tenir sur un échafaudage. Si vous avez un échafaudage en colonne, vous pouvez monter en vous tenant debout dedans et en appuyant sur le bouton :windowsmr_right_touchpad:. Pour descendre, appuyez et maintenez le bouton :windowsmr_right_stick:.	#
 howtoplay.scaffolding.header.2=Soutenir vos constructions	#
-howtoplay.scaffolding.text.2=L'échafaudage a besoin d'être maintenu. Vous ne pouvez placer que 4 blocs d'échafaudage à l'horizontale sans toucher un bloc différent. Lorsque vous essaierez de placer un 5e bloc sans soutien, il tombera. L'échafaudage peut être placé comme un bloc normal, mais il peut aussi être placé sur ses propres fondations pour s'élever rapidement comme une tour.	#
+howtoplay.scaffolding.text.2=L'échafaudage a besoin d'être maintenu. Vous ne pouvez placer qu'un certain nombre de blocs d'échafaudage à l'horizontale sans toucher un bloc différent. Lorsque vous essaierez de placer trop de blocs sans soutien, il tombera. L'échafaudage peut être placé comme un bloc normal, mais il peut aussi être placé sur ses propres fondations pour s'élever rapidement comme une tour.	#
 howtoplay.scaffolding.header.3=Démolition	#
 howtoplay.scaffolding.text.3=Lorsqu'un échafaudage est cassé, il casse aussi tous les blocs d'échafaudage censés le soutenir. Vous pouvez ainsi rapidement « ranger » votre échafaudage en cassant les blocs de soutien !	#
 
@@ -2891,10 +3036,11 @@ howtoplay.tools.text.12=Les cisailles sont très utiles pour récolter des objet
 
 howtoplay.trading=Commerce avec les villageois	#
 howtoplay.trading.title=Comment jouer : commerce avec les villageois	#
-howtoplay.trading.text.1=Vous pouvez commercer dans les villages. Chaque villageois a sa profession : fermier, boucher, forgeron, cartographe, bibliothécaire ou prêtre. Cela indique le type d'objets qu'ils échangent.	#
+howtoplay.trading.text.1=Vous pouvez commercer dans les villages. Chaque villageois a sa profession : fermier, boucher, forgeron, cartographe, bibliothécaire ou prêtre. Auprès de certaines professions, vous pourrez échanger des objets quand ce n'est pas possible avec d'autres. Explorez et échangez avec de nombreux villageois pour découvrir toutes les possibilités.	#
 howtoplay.trading.header.1=Marchandises pour émeraudes	#
-howtoplay.trading.text.2=Dans le menu de commerce, vous trouverez la liste de tout ce qu'un villageois peut vous offrir. Un villageois peut modifier ou ajouter des objets à échanger quand un joueur vient commercer avec lui. La fonction de commerce peut être temporairement désactivée si elle est utilisée trop fréquemment.	#
-howtoplay.trading.text.3=Le commerce implique généralement l'achat ou la vente d'objets contre des émeraudes.	#
+howtoplay.trading.text.2=En interagissant avec les villageois, vous découvrirez s'il est possible d'échanger avec eux. Les villageois peuvent modifier les prix chaque fois que vous voulez échanger avec eux. Si vous échangez trop souvent ou si un villageois n'a plus de stock, il peut désactiver l'échange. En général, les échanges impliquent l'achat ou la vente d'objets contre des émeraudes.	#
+howtoplay.trading.text.3=À mesure que vous échangez avec les villageois, ils s'amélioreront dans leur profession et vous proposeront des objets de plus grande valeur.	#
+howtoplay.trading.text.4=Prenez soin des villageois. Ils ont besoin de se reposer, de travailler et de manger pour prospérer.	#
 
 howtoplay.transportation=Moyens de transport	#
 howtoplay.transportation.title=Comment jouer : moyens de transport	#
@@ -3242,6 +3388,7 @@ item.banner.half_vertical_right.red=Parti, au second de gueules	#
 item.banner.half_vertical_right.silver=Parti, au second d'argent grisé	#
 item.banner.half_vertical_right.white=Parti, au second d'argent	#
 item.banner.half_vertical_right.yellow=Parti, au second d'or	#
+item.banner.illager_captain.name=Bannière Illageoise	#
 item.banner.lightBlue.name=Bannière bleu clair	#
 item.banner.lime.name=Bannière vert clair	#
 item.banner.magenta.name=Bannière magenta	#
@@ -3878,7 +4025,7 @@ item.spawn_egg.entity.mooshroom.name=Œuf de mooshroom	#
 item.spawn_egg.entity.squid.name=Œuf de pieuvre	#
 item.spawn_egg.entity.rabbit.name=Œuf de lapin	#
 item.spawn_egg.entity.bat.name=Œuf de chauve-souris	#
-item.spawn_egg.entity.illager_beast.name=Œuf de bête illageoise	#
+item.spawn_egg.entity.ravager.name=Œuf de ravageur	#
 item.spawn_egg.entity.iron_golem.name=Œuf de golem de fer	#
 item.spawn_egg.entity.snow_golem.name=Œuf de golem de neige	#
 item.spawn_egg.entity.ocelot.name=Œuf d'ocelot	#
@@ -4354,6 +4501,7 @@ map.toolTip.displayMarkers=Afficher les marqueurs	#
 map.toolTip.scaling=Échelle 1:%s	#
 map.toolTip.level=Niveau %s/%s	#
 map.toolTip.unkown=Carte inconnue	#
+map.toolTip.locked=Verrouillé	#
 map.position.agent=Position de l'Agent : %s, %s, %s	#
 map.position=Position : %s, %s, %s	#
 
@@ -4404,6 +4552,7 @@ menu.makingBackup=Élaboration d'une sauvegarde...	#
 menu.saving=Sauvegarde...	#
 
 merchant.deprecated=Échangez autre chose pour débloquer !	#
+
 
 mount.onboard=Appuyez sur %1$s pour descendre	#
 
@@ -4624,6 +4773,10 @@ options.dev_overrideDateMinute=Minute	#
 options.dev_overrideDayLength=Durée de remplacement du jour en minutes (min : 1)	#
 options.dev_overrideTimeScale=Vitesse d'écoulement du temps (min : 1, par défaut : 1)	#
 options.dev_updateOverrideDate=Mettre à jour le remplacement de la date	#
+options.dev_overrideVersionMajor=Majeur	#
+options.dev_overrideVersionMinor=Mineur	#
+options.dev_overrideVersionPatch=Correctif	#
+options.dev_updateVersionOverride=Mettre à jour le remplacement de la version du client	#
 options.dev_resetOverrideDate=Réinitialiser le remplacement de la date	#
 options.dev_clearStoreCache=Vider le cache du magasin	#
 options.dev_clearAllCache=Vider tout le cache	#
@@ -4651,6 +4804,7 @@ options.difficulty.normal=Normale	#
 options.difficulty.peaceful=Paisible	#
 options.dpadscale=Taille BMD	#
 options.enableChatTextToSpeech=Activer la conversion vocale pour le chat	#
+options.enableUITextToSpeech=Activer l'interface du lecteur d'écran	#
 options.entityShadows=Ombres d'entités	#
 options.editSettings=Modifier paramètres	#
 options.fancyskies=Ciel magnifique	#
@@ -4822,6 +4976,8 @@ options.snooper.view=Paramètres du détecteur...	#
 options.sound=Volume du son	#
 options.sounds=Audio	#
 options.sounds.title=Paramètres audio	#
+options.accessibility=Accessibilité	#
+options.accessibility.title=Paramètres d'accessibilité	#
 options.splitscreen=Écran partagé	#
 options.splitscreen.horizontal=Écran partagé horizontal	#
 options.splitscreen.vertical=Écran partagé vertical	#
@@ -5244,6 +5400,7 @@ progressScreen.dialog.message.resourcePackRequired=Ce monde comporte des packs d
 progressScreen.dialog.message.scriptConfirm=Vous devez exécuter des scripts sur votre appareil pour rejoindre ce monde. Voulez-vous rejoindre ce monde ?	#
 progressScreen.dialog.message.storageProviderError=Échec de synchronisation des données du monde. Voulez-vous réessayer ?	#
 progressScreen.dialog.message.storageProviderUnusableError=Le monde n'est pas entièrement synchronisé ou a été corrompu. Essayez de jouer dans ce monde sur une console, où il fonctionne encore, puis réessayez de le déplacer.	#
+progressScreen.dialog.message.worldCorrupted=Ce monde a été corrompu. Veuillez signaler ceci sur la page bugs.mojang.com	#
 progressScreen.dialog.message.storageProviderLongWait=La synchronisation de ce monde dure longtemps. Voulez-vous continuer à attendre ?	#
 progressScreen.dialog.button.enter=Entrer dans le monde	#
 progressScreen.dialog.button.joinAndDownload=Télécharger et rejoindre - %1	#
@@ -5254,6 +5411,8 @@ progressScreen.dialog.button.leave=Quitter	#
 progressScreen.dialog.button.retry=Réessayer	#
 progressScreen.dialog.button.wait=Attendre	#
 
+raid.name=Raid	#
+raid.progress=Créatures restantes :	#
 
 recipeBook.setting.full=Au maximum	#
 recipeBook.setting.discover=Découvrir	#
@@ -5363,6 +5522,7 @@ storageManager.sortDateOldest=Date d'utilisation - Plus ancien en premier	#
 storageManager.version=Version 	#
 storageManager.multiselectDelete=Supprimer	#
 storageManager.multiselectShare=Partager	#
+storageManager.multiselect=Sélection multiple	#
 storageManager.miscellaneous=Divers	#
 
 storageManager.groupType=Type	#
@@ -5384,8 +5544,8 @@ resourcepack.Candy=Pack de textures Bonbons	#
 resourcepack.FestiveMashup2016=Mash-up festif 2016	#
 resourcepack.ChineseMythology=Mash-up Mythologie chinoise	#
 
-resourcePack.vanilla.name=Minecraft	#
-resourcePack.vanilla.description=Les ressources classiques de Minecraft.	#
+resourcePack.vanilla.name=Pack de textures Minecraft	#
+resourcePack.vanilla.description=Les graphismes Minecraft par défaut, améliorés avec de toutes nouvelles textures !	#
 
 resourcePack.city.name=Ville	#
 resourcePack.city.description=Idéal pour construire des infrastructures.	#
@@ -5443,6 +5603,11 @@ review.item.post.rating.4star=Wouhou ! Nous sommes heureux de savoir que vous vo
 review.item.post.rating.5star=Nous sommes ravis que vous vous amusiez !	#
 review.item.post.rating.submit.toast.line1=Merci d'avoir évalué ce pack !	#
 review.item.post.rating.submit.toast.line2=Il nous faut un peu de temps avant d'afficher votre évaluation.	#
+
+roaming.status_brief.limited_usage=Utilisation limitée	#
+roaming.status_brief.no_restrictions=Utilisable multiplateforme	#
+roaming.status_hover.limited_usage=Uniquement disponible sur des plateformes spécifiques.	#
+roaming.status_hover.no_restrictions=Disponible sur toutes les plateformes Bedrock !	#
 
 screenshot.failure=Impossible d'enregistrer la capture d'écran : %s	#
 screenshot.success=Capture d'écran enregistrée sous le nom de %s	#
@@ -6235,8 +6400,6 @@ tile.wool.white.name=Laine blanche	#
 tile.wool.yellow.name=Laine jaune	#
 tile.cobblestone_wall.mossy.name=Muret moussu	#
 tile.cobblestone_wall.normal.name=Muret de pierres 	#
-tile.cobblestone_wall.cobblestone.name=Muret de pierres	#
-tile.cobblestone_wall.mossy_cobblestone.name=Muret de pierres moussues	#
 tile.cobblestone_wall.granite.name=Muret de granite	#
 tile.cobblestone_wall.diorite.name=Muret de diorite	#
 tile.cobblestone_wall.andesite.name=Muret d'andésite	#
@@ -6516,12 +6679,10 @@ tile.stone_slab.name=Dalle de pierre	#
 tile.stone_slab.brick.name=Dalle en briques	#
 tile.stone_slab.cobble.name=Dalle de pierre taillée	#
 tile.stone_slab.stone.name=Dalle de pierre lisse	#
-tile.stone_slab.smoothStone.name=Dalle de pierre lisse	#
 tile.stone_slab.nether_brick.name=Dalle en briques du Nether	#
 tile.stone_slab.quartz.name=Dalle de quartz	#
 tile.stone_slab.sand.name=Dalle de grès	#
 tile.stone_slab.smoothStoneBrick.name=Dalle en briques de pierre	#
-tile.stone_slab.stone.name=Dalle de pierre	#
 tile.stone_slab.wood.name=Dalle de bois	#
 tile.double_stone_slab2.red_sandstone.name=Dalle en grès rouge	#
 tile.stone_slab2.red_sandstone.name=Dalle en grès rouge	#
@@ -7190,6 +7351,19 @@ tips.edu.5=Pour que vos amis puissent se connecter à votre monde, mettez votre 
 tips.edu.6=N'oubliez pas : pour pouvoir utiliser les commandes slash, vous devez activer les codes de triche dans votre monde.	#
 tips.edu.7=Votre création est terminée ? Faites visiter votre monde en mode Aventure pour protéger votre œuvre.	#
 tips.edu.8=Pour utiliser Code Builder, appuyez sur la touche C de votre clavier ou appuyez sur l'icône Agent en haut de votre écran !	#
+tips.edu.9=Utilisez la bibliothèque pour trouver de nouveaux mondes dans lesquels construire.	#
+tips.edu.10=Vous cherchez un biome en particulier ? Consultez la bibliothèque.	#
+tips.edu.11=PNJ veut dire Personnage non joueur.	#
+tips.edu.12=En mode Survie, les joueurs doivent trouver leurs propres ressources.	#
+tips.edu.13=En mode Créatif, les joueurs peuvent librement choisir de construire avec n'importe quel type de blocs Minecraft.	#
+tips.edu.14=Votre robot assistant de programmation s'appelle l'Agent.	#
+tips.edu.15=Dans Minecraft, la redstone peut être utilisée pour créer des circuits et des machines simples.	#
+tips.edu.16=Vous pouvez copier-coller un texte depuis l'éditeur sur une ardoise, une affiche ou un tableau.	#
+tips.edu.17=Vous pouvez activer et désactiver les indices de clavier et de souris dans le menu Paramètres, sous l'option Commandes.	#
+tips.edu.18=Vous pouvez activer et désactiver le Saut auto dans le menu Paramètres, sous l'option Commandes.	#
+tips.edu.19=En mode Créatif, appuyez deux fois rapidement sur le bouton saut pour voler.	#
+tips.edu.20=Choisissez un mode de jeu par défaut lorsque vous créez un monde afin de préciser le type de gameplay que vous souhaitez.	#
+tips.edu.21=Utilisez la commande ''/setworldspawn'' pour que les nouveaux joueurs commencent à jouer là où vous êtes.	#
 
 tips.game.1=Utilisez l'herbe marine pour attirer et élever des tortues de mer.	#
 tips.game.2=Protégez les bébés tortues des créatures hostiles !	#
@@ -7252,6 +7426,8 @@ tips.game.56=Lorsque vous creusez à la verticale, placez une torche à vos pied
 splitscreen.joinPrompt=Rejoindre en tant que joueur %s	#
 splitscreen.unavailable.toastHeader=L'écran partagé n'est pas disponible	#
 splitscreen.unavailable.toastMessage=Impossible d'ajouter un deuxième joueur pour l'instant.	#
+splitscreen.joyconError.toastHeader=Impossible de connecter les manettes Joy-Con !	#
+splitscreen.joyconError.toastMessage=Trop de manettes sont connectées en mode Réseau local pour rejoindre cette partie.	#
 
 usermanagement.changeUser=Changer d'utilisateur	#
 
@@ -7262,6 +7438,9 @@ hbui.mainMenu.HelpModal.howToPlayButton=Comment jouer	#
 hbui.mainMenu.HelpModal.faqButton=FAQ	#
 hbui.mainMenu.HelpModal.patchNotesButton=Notes de version	#
 hbui.mainMenu.HelpModal.closeButton=Fermer	#
+hbui.mainMenu.UpdateModal.title=Nouvelle mise à jour disponible	#
+hbui.mainMenu.UpdateModal.contents=Une nouvelle version du jeu est disponible, voulez-vous procéder à la mise à jour pour obtenir toutes les nouvelles fonctionnalités ?	#
+hbui.mainMenu.UpdateModal.UpdateButton=Mise à jour	#
 hbui.mainMenu.LoginModal.signInAs=Se connecter en tant que	#
 hbui.mainMenu.LoginModal.manageAccountButton=Gérer le compte	#
 hbui.mainMenu.LoginModal.signOutButton=Se déconnecter	#
@@ -7280,3 +7459,28 @@ hbui.mainMenu.viewAllHeader=Tout voir	#
 hbui.mainMenu.heroVignette=Joués en dernier	#
 hbui.mainMenu.heroResumeButton=Reprendre	#
 hbui.mainMenu.heroPlayButton=Reprendre dans le monde	#
+
+trade.doesNotWant=Le marchand n'en veut pas.	#
+trade.excalamation=!	#
+trade.expProgress=Expérience : %d/%d	#
+trade.expMax=Expérience : MAX	#
+trade.levelPrefix=Niveau : %d	#
+trade.levelPrefixAndName=Niveau %d à %s	#
+trade.levelPrefixAndName.max=Niveau max : %s	#
+trade.level.1=Novice	#
+trade.level.2=Apprenti	#
+trade.level.3=Compagnon	#
+trade.level.4=Expert	#
+trade.level.5=Maître	#
+trade.mysteriousText=dab	#
+trade.notEnough=Insuffisant : %s	#
+trade.question=?	#
+trade.trade=Commercer	#
+
+map.rename=Renommer la carte	#
+map.basicMap=Carte de base	#
+map.locatorMap=Carte qui affiche les joueurs	#
+map.extendAndClear=Dézoomer et vider	#
+map.clone=Copier la carte	#
+map.name=Nom de la carte	#
+map.lock=Verrouiller la carte	#

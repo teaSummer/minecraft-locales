@@ -28,7 +28,7 @@ accessibility.importing.complete=Import complete
 accessibility.signin.xbl=Signing into X box live
 accessibility.chat.howtoopen=Press %s to open chat
 accessibility.key.mouseButton=Mouse Button %s
-accessibility.key.gamepad=Gamepad %s
+accessibility.key.gamepad=Controller %s
 accessibility.list.or.two=%s or %
 accessibility.list.or.three_or_more.first=%s
 accessibility.list.or.three_or_more.inner=, %s
@@ -47,6 +47,8 @@ accessibility.button.close=close
 accessibility.button.back=back
 accessibility.button.exit=Exit
 
+accessibility.dropdown.listItem=List item
+
 accessibility.sectionName=Section %s: 
 
 accessibility.state.on=: on
@@ -54,6 +56,9 @@ accessibility.state.off=: off
 
 accessibility.state.checked=: checked
 accessibility.state.unchecked=: unchecked
+
+accessibility.state.selected=: selected
+accessibility.state.unselected=: unselected
 
 accessibility.slider.tts.percentValue=%s percent
 
@@ -63,12 +68,38 @@ accessibility.play.editServer=Edit Server
 accessibility.play.importWorld=Import World
 accessibility.play.leaveRealm=Leave Realm
 accessibility.play.realmFeed=Realm Feed
+accessibility.play.tabLeft=Press the %s to tab left
+accessibility.play.tabRight=Press the %s to tab right
+
+accessibility.pause.permissions=Permissions
+
+accessibility.screenName.achievements=Achievements Screen
+accessibility.screenName.chat=Chat Screen
+accessibility.screenName.createNew=Create New Screen
+accessibility.screenName.createWorld=Create World Settings Screen
+accessibility.screenName.editWorldSettings=Edit World Settings Screen
+accessibility.screenName.error=Error Screen
+accessibility.screenName.howToPlay=How To Play Screen
+accessibility.screenName.modalDialog=Popup dialog
+accessibility.screenName.patchNotes=Patch Notes Screen
+accessibility.screenName.pauase=Pause Screen
+accessibility.screenName.play=Play Screen
+accessibility.screenName.realmSettings=Realm Settings Screen
+accessibility.screenName.settings=Game Settings Screen
+accessibility.screenName.skinPicker=Choose Skin Screen
+accessibility.screenName.start=Main Menu
+accessibility.screenName.vrAlignment=VR Alignment Screen 
 
 accessibility.settings.reset=reset
 accessibility.settings.chooseSeed=Choose Seed
 
 accessibility.start.feedback=Submit Feedback
+accessibility.start.new=New
 accessibility.start.skinPicker=Choose Skin
+
+accessibility.store.tag=Tag
+
+accessibility.textbox.editing=Editing
 
 accessibility.toast=Notification	## This is the name of the popup that appears when a player gets a notification for a game invite or achievement unlocked
 
@@ -86,22 +117,28 @@ accessibility.controllerLayoutScreen.buttonRemapped=%s is now bound to %s
 accessibility.controllerLayoutScreen.buttonBoundTo=%s button: %s
 accessibility.controllerLayoutScreen.buttonRemapping=Select input to bind for %s
 
-accessibility.gamepad.faceButton.down=button A
-accessibility.gamepad.faceButton.right=button B
-accessibility.gamepad.faceButton.left=button X
-accessibility.gamepad.faceButton.up=button Y
-accessibility.gamepad.button.systemLeft=button view
-accessibility.gamepad.button.systemRight=button menu
-accessibility.gamepad.dpad.down=D Pad Down
-accessibility.gamepad.dpad.up=D Pad up
-accessibility.gamepad.dpad.left=D Pad left
-accessibility.gamepad.dpad.right=D Pad right
-accessibility.gamepad.stick.left=left stick
-accessibility.gamepad.stick.right=right stick
-accessibility.gamepad.trigger.right=trigger right
-accessibility.gamepad.trigger.left=trigger left
-accessibility.gamepad.bumper.right=bumper right
-accessibility.gamepad.bumper.left=bumper left
+accessibility.gamepad.faceButton.down=A Button
+accessibility.gamepad.faceButton.right=B Button
+accessibility.gamepad.faceButton.left=X Button
+accessibility.gamepad.faceButton.up=Y Button
+accessibility.gamepad.button.systemLeft=View Button
+accessibility.gamepad.button.systemRight=Menu Button
+accessibility.gamepad.dpad.down=D-Pad Down
+accessibility.gamepad.dpad.up=D-Pad Up
+accessibility.gamepad.dpad.left=D-Pad Left
+accessibility.gamepad.dpad.right=D-Pad Right
+accessibility.gamepad.stick.left=Left Stick
+accessibility.gamepad.stick.right=Right Stick
+accessibility.gamepad.trigger.right=Right Trigger
+accessibility.gamepad.trigger.left=Left Trigger
+accessibility.gamepad.bumper.right=Right Bumper
+accessibility.gamepad.bumper.left=Left Bumper
+
+accessibility.keyboard.leftBracket=Left square bracket key		## left square bracket means '[' on the english keyboard
+accessibility.keyboard.rightBracket=Right square bracket key	## right square bracket means ']' on the english keyboard
+
+accessibility.keyboard.leftBracket=Left square bracket key		## left square bracket means '[' on the english keyboard
+accessibility.keyboard.rightBracket=Right square bracket key	## right square bracket means ']' on the english keyboard
 
 ## End of audible phrases section
 
@@ -2936,7 +2973,7 @@ howtoplay.pets.text.4=Parrots are a passive mob that also live in the Jungle. Th
 howtoplay.raids=Raids
 howtoplay.raids.title=How to Play : Raids
 howtoplay.raids.text.1=While exploring the world you may encounter a Pillager encampment or patrol. Pillagers are always looking for villages to raid taking their Banners will get their attention, and they may choose to attack a nearby village.  
-howtoplay.raids.text.2=Be sure to defend your village, the attack will stop if you defeat all the Raiders.
+howtoplay.raids.text.2=Be sure to defend your village, the attack will stop if you defeat all the raiders.
 howtoplay.raids.header.1=I Need A Hero
 howtoplay.raids.text.3=Villagers will most likely be very grateful that you have saved them from the raiders. Be sure to check back with them, you might get a good deal.  
 
@@ -5415,6 +5452,7 @@ progressScreen.dialog.button.wait=Wait
 
 raid.name=Raid
 raid.progress=Mobs remaining:
+raid.expiry=A raid has expired
 
 recipeBook.setting.full=Full
 recipeBook.setting.discover=Discover

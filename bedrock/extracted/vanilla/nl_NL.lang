@@ -5,6 +5,105 @@
 accessibility.disableTTS=Tekst-naar-spraak uitgeschakeld	#
 accessibility.enableTTS=Tekst-naar-spraak ingeschakeld	#
 
+## Translator note:
+## This section of phrases will be given audibly to the user using text to speech
+
+accessibility.chat.tts.says=%s zegt %s	#
+accessibility.chat.tts.hideChat=Chat verbergen	#
+accessibility.chat.tts.keyboard=Toetsenbord	#
+accessibility.chat.tts.muteChatToggle=Alles dempen	#
+accessibility.chat.tts.sendChatMessage=Verzenden	#
+accessibility.chat.tts.textboxTitle=Chat	#
+
+accessibility.loading.done=Klaar	#
+accessibility.saving.done=Klaar	#
+accessibility.downloading.start=Download gestart	#
+accessibility.downloading.Progress=Download op %s procent	#
+accessibility.downloading.canceled=Download geannuleerd	#
+accessibility.downloading.complete=Download voltooid	#
+accessibility.importing.start=Importeren gestart	#
+accessibility.importing.Progress=Importeren op %s procent	#
+accessibility.importing.canceled=Importeren geannuleerd	#
+accessibility.importing.complete=Importeren voltooid	#
+accessibility.signin.xbl=Aanmelden bij Xbox Live	#
+accessibility.chat.howtoopen=Druk op %s om de chat te openen	#
+accessibility.key.mouseButton=Muisknop %s	#
+accessibility.key.gamepad=Gamepad %s	#
+accessibility.list.or.two=%s of %	#
+accessibility.list.or.three_or_more.first=%s	#
+accessibility.list.or.three_or_more.inner=, %s	#
+accessibility.list.or.three_or_more.last= of %s	#
+
+accessibility.button.tts.title=Knop	#
+accessibility.checkbox.tts.title=Selectievakje	#
+accessibility.checkbox.tts.status=status %s			### Status will be checked or unchecked
+accessibility.dropdown.tts.title=Vervolgkeuze	#
+accessibility.slider.tts.title=Schuifregelaar	#
+accessibility.tab.tts.title=Tabblad	#
+accessibility.textbox.tts.title=Tekstvak	#
+accessibility.toggle.tts.title=Wisselknop	#
+
+accessibility.button.close=sluiten	#
+accessibility.button.back=terug	#
+accessibility.button.exit=Afsluiten	#
+
+accessibility.sectionName=Sectie %s: 	#
+
+accessibility.state.on=: aan	#
+accessibility.state.off=: uit	#
+
+accessibility.state.checked=: ingeschakeld	#
+accessibility.state.unchecked=: uitgeschakeld	#
+
+accessibility.slider.tts.percentValue=%s procent	#
+
+accessibility.play.editWorld=Wereld bewerken	#
+accessibility.play.editRealm=Realm bewerken	#
+accessibility.play.editServer=Server bewerken	#
+accessibility.play.importWorld=Wereld importeren	#
+accessibility.play.leaveRealm=Realm verlaten	#
+accessibility.play.realmFeed=Realm-feed	#
+
+accessibility.settings.reset=opnieuw instellen	#
+accessibility.settings.chooseSeed=Seed kiezen	#
+
+accessibility.start.feedback=Feedback indienen	#
+accessibility.start.skinPicker=Skin kiezen	#
+
+accessibility.toast=Melding		### This is the name of the popup that appears when a player gets a notification for a game invite or achievement unlocked
+
+accessibility.worldTemplates.help=Help	#
+
+accessibility.popup.title=Schermlezer uitschakelen?	#
+accessibility.popup.message.line1=Welkom bij Minecraft!	#
+accessibility.popup.message.default=Op jouw apparaat is schermlezerondersteuning in Minecraft standaard ingeschakeld voor diegenen die dat handig vinden.	#
+accessibility.popup.message.platform=We hebben gedetecteerd dat er een schermlezer op jouw systeem is ingeschakeld en we hebben daarom de schermlezer in Minecraft ook voor je ingeschakeld.	#
+accessibility.popup.message.line3=Wil je deze uitschakelen?	#
+accessibility.popup.left_button_text=Uitschakelen	#
+accessibility.popup.right_button_text=Nee, bedankt	#
+
+accessibility.controllerLayoutScreen.buttonRemapped=%s is nu ingesteld op %s	#
+accessibility.controllerLayoutScreen.buttonRemapping=Selecteer de in te stellen invoer voor %s	#
+
+accessibility.gamepad.faceButton.down=A-knop	#
+accessibility.gamepad.faceButton.right=B-knop	#
+accessibility.gamepad.faceButton.left=X-knop	#
+accessibility.gamepad.faceButton.up=Y-knop	#
+accessibility.gamepad.button.systemLeft=weergaveknop	#
+accessibility.gamepad.button.systemRight=menuknop	#
+accessibility.gamepad.dpad.down=Navigatiepad omlaag	#
+accessibility.gamepad.dpad.up=Navigatiepad omhoog	#
+accessibility.gamepad.dpad.left=Navigatiepad links	#
+accessibility.gamepad.dpad.right=Navigatiepad rechts	#
+accessibility.gamepad.stick.left=linkerstick	#
+accessibility.gamepad.stick.right=rechterstick	#
+accessibility.gamepad.trigger.right=rechter-trigger	#
+accessibility.gamepad.trigger.left=linker-trigger	#
+accessibility.gamepad.bumper.right=rechter-bumper	#
+accessibility.gamepad.bumper.left=linker-bumper	#
+
+## End of audible phrases section
+
 achievement.alternativeFuel=Alternatieve brandstof	#
 achievement.alternativeFuel.desc=Laat een oven branden met een blok kelp	#
 achievement.acquireIron=IJzerwaren verkrijgen	#
@@ -637,6 +736,21 @@ commands.mixer.status.initializing=Interactiviteit wordt gestart.	#
 commands.mixer.status.pending=Interactiviteit in behandeling.	#
 commands.mixer.status.disabled=Interactiviteit uitgeschakeld.	#
 commands.mixer.activatedbutton=%1$s heeft %2$s geactiveerd.	#
+
+commands.mobevent.description=Bepaalt welke mobgebeurtenissen mogen plaatsvinden.	#
+commands.mobevent.eventsEnabledSetToTrue=Mobgebeurtenissen zijn nu ingeschakeld. Afzonderlijke gebeurtenissen die zijn ingesteld op onwaar, vinden niet plaats.	#
+commands.mobevent.eventsEnabledSetToFalse=Mobgebeurtenissen zijn nu uitgeschakeld. Afzonderlijke gebeurtenissen vinden niet plaats.	#
+commands.mobevent.eventsEnabledIsTrue=Mobgebeurtenissen zijn ingeschakeld. Afzonderlijke gebeurtenissen die zijn ingesteld op onwaar, vinden niet plaats.	#
+commands.mobevent.eventsEnabledIsFalse=Mobgebeurtenissen zijn uitgeschakeld. Afzonderlijke gebeurtenissen vinden niet plaats.	#
+
+## for the following new loc strings, the first parameter is a localized event name, and the second is the literal event that must be entered into the command.
+commands.mobevent.eventSetToTrue=Mobgebeurtenis %s (id: %s) ingesteld op waar.	#
+commands.mobevent.eventSetToTrueButEventsDisabled=Mobgebeurtenis %s (id: %s) ingesteld op waar, maar mobgebeurtenissen zijn uitgeschakeld.	#
+commands.mobevent.eventSetToFalse=Mobgebeurtenis %s (id: %s) ingesteld op onwaar.	#
+commands.mobevent.eventIsTrue=Mobgebeurtenis %s (id: %s) is ingesteld op waar.	#
+commands.mobevent.eventIsTrueButEventsDisabled=Mobgebeurtenis %s (id: %s) is ingesteld op waar, maar mobgebeurtenissen zijn uitgeschakeld.	#
+commands.mobevent.eventIsFalse=Mobgebeurtenis %s (id: %s) is ingesteld op onwaar.	#
+
 commands.op.description=Kent de operatorstatus aan een speler toe.	#
 commands.op.failed=Kan geen OP-rechten toekennen (is al OP of hoger): %s	#
 commands.op.success=OP-rechten toegekend: %s	#
@@ -930,6 +1044,10 @@ commands.whitelist.list=Er zijn %1$d (van de %2$d zichtbare) spelers van de goed
 commands.whitelist.reloaded=Goedgekeurde lijst is opnieuw geladen uit bestand.	#
 commands.whitelist.remove.failed=Kan %1$s niet verwijderen van de goedgekeurde lijst	#
 commands.whitelist.remove.success=%1$s is verwijderd van de goedgekeurde lijst	#
+commands.world_age.description=Verandert de leeftijd van de wereld of vraagt deze op (tijd sinds aanmaakdatum).	#
+commands.world_age.added=%1$d toegevoegd aan leeftijd van de wereld	#
+commands.world_age.query=Leeftijd van de wereld is %d	#
+commands.world_age.set=De leeftijd van de wereld instellen op %1$d	#
 commands.worldborder.center.success=Midden van wereldkader instellen op %1$s,%2$s	#
 commands.worldborder.damage.amount.success=Hoeveelheid schade aan wereldkader instellen op %1$s per blok (van %2$s per blok)	#
 commands.worldborder.damage.buffer.success=Schadebuffer voor wereldkader instellen op %1$s blokken (van %2$s blokken)	#
@@ -986,10 +1104,12 @@ container.minecart=Mijnkarretje	#
 container.repair=Repareren en benoemen	#
 container.repair.cost=XP-kosten: %1$d	#
 container.repair.expensive=Te duur!	#
-container.stonecutter=Steenhouwer	#
-container.stonecutter_block=Steenhouwer	#
+container.repairAndDisenchant=Repareren en betovering verbreken	#
+container.stonecutter=Steenzaag	#
+container.stonecutter_block=Steenzaag	#
 container.shulkerbox=Sjoelkerdoos	#
 container.shulkerboxContains=en %d meer...	#
+container.barrel=Vat	#
 
 controller.buttonTip.addItem=Item toevoegen	#
 controller.buttonTip.addItemStack=Itemstapel toevoegen	#
@@ -1350,8 +1470,12 @@ realmsCreateScreen.createFailed.title=Er is iets fout gegaan	#
 realmsCreateScreen.createFailed.content=Je aankoop is gelukt, maar kunnen je realm nu nog niet maken. Je realm wordt zo snel mogelijk gemaakt. Controleer dit later opnieuw op dit apparaat.	#
 realmsCreateScreen.createFailed.profanity=De Realm-naam %s is niet toegestaan.	#
 realmsCreateScreen.createFailed.generic=Clubnaam kan niet worden geverifieerd. Probeer het later opnieuw.	#
-realmsCreateScreen.maxRealms.title=Maximum aantal realms bereikt	#
-realmsCreateScreen.maxRealms.content=Je hebt het maximum aantal actieve realms en kunt er nu geen nieuwe maken.	#
+realmsCreateScreen.maxRealms.title=Maximumaantal abonnementen	#
+realmsCreateScreen.maxRealms.content=Je hebt het maximumaantal actieve abonnementen op dit platform en kunt nu geen nieuwe maken.	#
+realmsCreateScreen.offerNotFound.title=Product niet gevonden	#
+realmsCreateScreen.offerNotFound.content=Probeer het later nog eens	#
+realmsCreateScreen.offerNotAvailable.title=Product niet beschikbaar	#
+realmsCreateScreen.offerNotAvailable.content=Probeer het later nog eens	#
 realmsCreateScreen.extendRealms.title=Realms-abonnement vol	#
 realmsCreateScreen.extendRealms.content=Je hebt je Realms-abonnement maximaal verlengd. Je kunt deze extra tijd nu niet toevoegen. Probeer het later opnieuw.	#
 realmsCreateScreen.usersTwo=2 spelers	#
@@ -1781,6 +1905,9 @@ storageSpaceWarningScreen.frontend=Je hebt bijna geen opslagruimte meer! Minecra
 storageSpaceWarningScreen.lowduringgameplay=Je apparaat heeft bijna geen opslagruimte meer die Minecraft nodig heeft om werelden en instellingen op dit apparaat op te slaan. Probeer wat oude bestanden te verwijderen die je niet meer nodig hebt om nieuwe dingen te kunnen blijven opslaan.	#
 storageSpaceWarningScreen.fullduringgameplay=Je hebt bijna geen opslagruimte meer en Minecraft kan je voortgang niet opslaan! Je wordt teruggebracht naar het Minecraft-hoofdmenu om extra opslagruimte vrij te maken.	#
 
+effect.badOmen=Slecht voorteken	#
+effect.villageHero=Dorpsheld	#
+
 enchantment.arrowDamage=Kracht	#
 enchantment.arrowFire=Vlam	#
 enchantment.arrowInfinite=Oneindigheid	#
@@ -1868,7 +1995,7 @@ entity.ghast.name=Ghast	#
 entity.guardian.name=Bewaarder	#
 entity.horse.name=Paard	#
 entity.husk.name=Husk	#
-entity.illager_beast.name=Verschoppelingsbeest	#
+entity.ravager.name=Verwoester	#
 entity.iron_golem.name=IJzergolem	#
 entity.item.name=Item	#
 entity.leash_knot.name=Leidtouwknoop	#
@@ -1945,6 +2072,8 @@ entity.zombie.name=Zombie	#
 entity.zombie_horse.name=Zombiepaard	#
 entity.zombie_pigman.name=Zombievarkensman	#
 entity.zombie_villager.name=Zombiedorpsbewoner	#
+
+exports.share.file=%s delen	#
 
 addExternalServerScreen.addServer=Server toevoegen	#
 addExternalServerScreen.nameTextBoxLabel=Servernaam	#
@@ -2129,6 +2258,13 @@ gui.submit=Indienen	#
 gui.playOffline=Offline spelen	#
 gui.signIn=Aanmelden	#
 gui.genericNetworkError=Er is iets misgegaan. Controleer je internetverbinding.	#
+
+updateScreen.update=Bijwerken	#
+updateScreen.title=Verouderde versie	#
+updateScreen.body=Werk bij naar de nieuwste versie voor alle nieuwe functies, om online met je vrienden te spelen en te kijken wat er nieuw is in de winkel.	#
+updateScreen.commerceNotSupported.title=Kan Marketplace niet openen	#
+updateScreen.commerceNotSupported.body=Met deze versie van Minecraft kan de Minecraft Marketplace niet meer worden geopend. Werk bij naar de nieuwste versie om weer toegang te krijgen tot de Marketplace.	#
+updateScreen.patchVersion=Patchopmerkingen versie %s:	#
 
 hostOption.codeBuilder=Code Builder	#
 hostOption.setWorldSpawn=Wereldspawnpunt instellen	#
@@ -2710,7 +2846,7 @@ howtoplay.loom.text.1=Het weefgetouw is een snelle en efficiënte manier om patr
 howtoplay.loom.header.1=Weven	#
 howtoplay.loom.text.2=Als je een vlag in het eerste vakje van het weefgetouw plaatst en een kleur verf in het tweede vakje, kun je patronen aan deze vlag toevoegen. Wanneer je een patroon hebt geselecteerd, sleep je deze van het uitvoervak aan de rechterkant naar je inventaris.	#
 howtoplay.loom.text.3=Een vlag kan meerdere lagen bevatten, waardoor je veel verschillende mogelijkheden kunt verkennen. Je kunt maximaal 6 patronen op een vlag toepassen voor een uniek ontwerp.	#
-howtoplay.loom.header.2=Weefgetouwpatronen	#
+howtoplay.loom.header.2=Weefgetouwpatronen 	#
 howtoplay.loom.text.4=Als je een weefgetouwpatroon in het derde vakje van het weefgetouw toevoegt, kun je speciale patronen vervaardigen, zoals het gezicht van een Creeper of een bloem. Je verliest deze weefgetouwpatronen niet wanneer je ze op je vlaggen toepast.	#
 
 howtoplay.mounts=Rijdieren	#
@@ -2762,11 +2898,13 @@ howtoplay.navigation.header.1=Navigatiehulpmiddelen	#
 howtoplay.navigation.text.3=Een kompas wijst je in de richting van waar je het eerst ter wereld kwam, een eenvoudige manier om erachter te komen waar je bent begonnen.	#
 howtoplay.navigation.text.4=Een kaart toont je het gebied dat je hebt ontdekt. Neem een kaart in je andere hand om het als minikaart te gebruiken. Je kunt het formaat van de kaart vergroten door op een werkbank papier aan de rand toe te voegen.	#
 howtoplay.navigation.text.5=Een zoekerkaart laat zien waar je bent en naar welke richting je opkijkt in verhouding tot waar je de kaart hebt gevonden. De kaart laat ook de locatie zien van andere spelers in dezelfde wereld.	#
+howtoplay.navigation.text.6=Met een kaartenwerkbank kun je kaarten maken, uitbreiden, kopiëren en zelfs een naam geven.	#
+howtoplay.navigation.text.7=Plaats papier in het eerste vak om een kaart te vervaardigen. Als je in het tweede vak een kompas toevoegt, kun je een zoekerkaart vervaardigen. Als je papier of een lege kaart toevoegt, kun je je kaart uitbreiden of kopiëren.  	#
 howtoplay.navigation.header.2=Navigatietechnieken	#
-howtoplay.navigation.text.6=Zoek tijdens het verkennen naar zoveel mogelijk herkenningspunten. Hoe meer je in een wereld speelt, hoe beter je zult onthouden waar je bent. Een andere goede truc is om onderweg fakkels te plaatsen zodat je je weg terug kunt vinden.	#
-howtoplay.navigation.text.7=Aan de hand van de zon kun je ook bepalen welke richting je opkijkt. Denk eraan: de zon komt op in het oosten en gaat onder in het westen!	#
+howtoplay.navigation.text.8=Zoek tijdens het verkennen naar zoveel mogelijk herkenningspunten. Hoe meer je in een wereld speelt, hoe beter je zult onthouden waar je bent. Een andere goede truc is om onderweg fakkels te plaatsen zodat je je weg terug kunt vinden.	#
+howtoplay.navigation.text.9=Aan de hand van de zon kun je ook bepalen welke richting je opkijkt. Denk eraan: de zon komt op in het oosten en gaat onder in het westen!	#
 howtoplay.navigation.header.3=Verkenningskaarten	#
-howtoplay.navigation.text.8=Er zijn verschillende plaatsen om te ontdekken. Vind een dorp en een kaartenmaker. Hij verhandelt verkenningskaarten die naar vreemde afgelegen plekken leiden.	#
+howtoplay.navigation.text.10=Er zijn verschillende plaatsen om te ontdekken. Vind een dorp en een kaartenmaker. Hij verhandelt verkenningskaarten die naar vreemde afgelegen plekken leiden.	#
 
 howtoplay.netherPortals=Nether-portaal	#
 howtoplay.netherPortals.title=Speluitleg: Nether-portaal	#
@@ -2793,6 +2931,13 @@ howtoplay.pets.header.3=Ocelots	#
 howtoplay.pets.text.3=Ocelots zijn neutrale mobs die in jungles jagen. Ze vallen kippen aan en houden Creepers op afstand. Ze rennen weg wanneer je er bij in de buurt komt, dus temmen kan lastig zijn. Ze houden van vis, dus geef ze rauwe kabeljauw of zalm om ze te temmen.	#
 howtoplay.pets.header.4=Papegaaien	#
 howtoplay.pets.text.4=Een papegaai is een passieve mob die je ook aantreft in de jungle. Papegaaien imiteren andere mobs in het gebied. Ze eten het liefste zaden. Geef een papegaai wat zaadjes om hem te temmen. Papegaaien komen ook op je schouder zitten... Dat kunnen er inderdaad meerdere zijn.	#
+
+howtoplay.raids=Plunderingen	#
+howtoplay.raids.title=Speluitleg: Plunderingen	#
+howtoplay.raids.text.1=Terwijl je de wereld verkent, kun je kampen of patrouilles van plunderaars tegenkomen. Plunderaars zijn altijd op zoek naar dorpen om te plunderen. Als je hun vlag afpakt, heb je hun aandacht te pakken en kunnen ze ervoor kiezen om een nabij dorp aan te vallen.  	#
+howtoplay.raids.text.2=Zorg ervoor dat je het dorp verdedigt! De aanval is voorbij als je alle plunderaars verslaat.	#
+howtoplay.raids.header.1=Ik heb een held nodig	#
+howtoplay.raids.text.3=Dorpsbewoners zijn er vast blij mee dat je hen hebt gered van de plunderaars. Vergeet niet een kijkje bij ze te nemen, want misschien hebben ze wel een goede aanbieding.  	#
 
 howtoplay.ranching=Ranch houden	#
 howtoplay.ranching.title=Speluitleg: Ranch houden	#
@@ -2838,7 +2983,7 @@ howtoplay.scaffolding.text.1.touch=Met steigers kun je op een veilige manier eno
 howtoplay.scaffolding.text.1.rift_controller=Met steigers kun je op een veilige manier enorme gebouwen maken! Je kunt in een steiger lopen en erop staan. Als je een kolom van steigers hebt, kun je omhoog gaan door in de steiger te staan en op de knop :rift_A: te drukken. Als je omlaag wilt, kun je de knop :rift_X: ingedrukt houden.	#
 howtoplay.scaffolding.text.1.windowsmr_controller=Met steigers kun je op een veilige manier enorme gebouwen maken! Je kunt in een steiger lopen en erop staan. Als je een kolom van steigers hebt, kun je omhoog gaan door in de steiger te staan en op de knop :windowsmr_right_touchpad: te drukken. Als je omlaag wilt, kun je de knop :windowsmr_right_stick: ingedrukt houden.	#
 howtoplay.scaffolding.header.2=Ondersteun je gebouw	#
-howtoplay.scaffolding.text.2=Steigers hebben ondersteuning nodig. Je kunt slechts 4 steigers horizontaal plaatsen zonder een ander blok aan te raken. Als je probeert een vijfde steigerblok te plaatsen, valt deze omlaag. Steigers kunnen net als normale blokken worden geplaatst, maar je kunt ze ook op hun eigen fundering plaatsen om snel een grote toren te maken.	#
+howtoplay.scaffolding.text.2=Steigers hebben ondersteuning nodig. Je kunt slechts een beperkt aantal steigers horizontaal plaatsen zonder een ander blok aan te raken. Als je probeert teveel steigerblokken te plaatsen, vallen deze omlaag. Steigers kunnen net als normale blokken worden geplaatst, maar je kunt ze ook op hun eigen fundering plaatsen om snel een grote toren te maken.	#
 howtoplay.scaffolding.header.3=Breek het af	#
 howtoplay.scaffolding.text.3=Wanneer een steiger stuk gaat, worden ook alle steigerblokken vernietigd die hierop leunen. Hiermee kun je snel je steiger opruimen door simpelweg de ondersteunende blokken te vernietigen!	#
 
@@ -2891,10 +3036,11 @@ howtoplay.tools.text.12=Scharen zijn heel handig voor het verzamelen van voorwer
 
 howtoplay.trading=Handelen met dorpsbewoners	#
 howtoplay.trading.title=Speluitleg: Handelen met dorpsbewoners	#
-howtoplay.trading.text.1=In dorpen kun je handelen. Elke dorpsbewoner heeft een vak: boer, slager, smid, kaartenmaker, bibliothecaris of priester. Dit bepaalt welke voorwerpen ze verhandelen.	#
+howtoplay.trading.text.1=In dorpen kun je handelen. Elke dorpsbewoner heeft een vak: boer, slager, smid, kaartenmaker, bibliothecaris of priester. Elk beroep heeft exclusieve voorwerpen te koop. Verken en handel met zoveel mogelijk dorpsbewoners om alle beroepen te vinden. 	#
 howtoplay.trading.header.1=Goederen voor smaragden	#
-howtoplay.trading.text.2=Bekijk het handelmenu voor een lijst van alle voorwerpen die dorpsbewoners aanbieden. Als je met een dorpsbewoner hebt gehandeld, kunnen diens handelswaren veranderen. Maar als je te vaak handelt, kan dit een tijdje niet meer mogelijk zijn.	#
-howtoplay.trading.text.3=Handelen draait doorgaans om het kopen of verkopen van voorwerpen met en voor smaragden.	#
+howtoplay.trading.text.2=Je komt erachter wat een dorpsbewoner aanbiedt door ermee te praten. Als je met een dorpsbewoner hebt gehandeld, kan de prijs van diens handelswaren veranderen. De handelswaren van een dorpsbewoner kunnen opraken, waardoor je tijdelijk niet meer kunt handelen. Handelen is het kopen of verkopen van voorwerpen voor smaragden. 	#
+howtoplay.trading.text.3=Naarmate je met dorpsbewoners handelt, worden ze beter in hun beroep en bieden ze steeds betere en waardevolle handelswaren. 	#
+howtoplay.trading.text.4=Zorg goed voor je dorpsbewoners. Ook zij moeten rusten, werken en eten om te gedijen.	#
 
 howtoplay.transportation=Vervoer	#
 howtoplay.transportation.title=Speluitleg: Vervoer	#
@@ -3242,6 +3388,7 @@ item.banner.half_vertical_right.red=Rood per paal omgekeerd	#
 item.banner.half_vertical_right.silver=Lichtgrijs per paal omgekeerd	#
 item.banner.half_vertical_right.white=Wit per paal omgekeerd	#
 item.banner.half_vertical_right.yellow=Geel per paal omgekeerd	#
+item.banner.illager_captain.name=Verschoppelingenvlag	#
 item.banner.lightBlue.name=Lichtblauwe banier	#
 item.banner.lime.name=Limoengroene banier	#
 item.banner.magenta.name=Magenta banier	#
@@ -3878,7 +4025,7 @@ item.spawn_egg.entity.mooshroom.name=Spawn Mooshroom	#
 item.spawn_egg.entity.squid.name=Spawn pijlinktvis	#
 item.spawn_egg.entity.rabbit.name=Spawn konijn	#
 item.spawn_egg.entity.bat.name=Spawn vleermuis	#
-item.spawn_egg.entity.illager_beast.name=Spawn verschoppelingsbeest	#
+item.spawn_egg.entity.ravager.name=Spawn Verwoester	#
 item.spawn_egg.entity.iron_golem.name=Spawn ijzergolem	#
 item.spawn_egg.entity.snow_golem.name=Spawn sneeuwgolem	#
 item.spawn_egg.entity.ocelot.name=Spawn ocelot	#
@@ -4354,6 +4501,7 @@ map.toolTip.displayMarkers=Markeringen weergeven	#
 map.toolTip.scaling=Schaal aanpassen op 1:%s	#
 map.toolTip.level=Niveau %s/%s	#
 map.toolTip.unkown=Onbekende kaart	#
+map.toolTip.locked=Vergrendeld	#
 map.position.agent=Positie Agent: %s, %s, %s	#
 map.position=Positie: %s, %s, %s	#
 
@@ -4404,6 +4552,7 @@ menu.makingBackup=Back-up maken...	#
 menu.saving=Opslaan...	#
 
 merchant.deprecated=Verhandel iets anders om te ontgrendelen!	#
+
 
 mount.onboard=Druk op %1$s om af te stappen	#
 
@@ -4624,6 +4773,10 @@ options.dev_overrideDateMinute=Minuut	#
 options.dev_overrideDayLength=Overschrijdingsdaglengte in minuten (min. 1)	#
 options.dev_overrideTimeScale=Schaalsnelheid waarmee tijd verstrijkt (min.: 1, standaard: 1)	#
 options.dev_updateOverrideDate=Overschrijvingsgegevens bijwerken	#
+options.dev_overrideVersionMajor=Primair	#
+options.dev_overrideVersionMinor=Secundair	#
+options.dev_overrideVersionPatch=Patch	#
+options.dev_updateVersionOverride=Clientversie-update overschrijven	#
 options.dev_resetOverrideDate=Overschrijvingsdatum resetten	#
 options.dev_clearStoreCache=Winkelcache wissen	#
 options.dev_clearAllCache=Alle cache wissen	#
@@ -4651,6 +4804,7 @@ options.difficulty.normal=Normaal	#
 options.difficulty.peaceful=Vreedzaam	#
 options.dpadscale=Grootte navigatiepad	#
 options.enableChatTextToSpeech=Tekst-naar-spraak inschakelen voor chat	#
+options.enableUITextToSpeech=UI-schermlezer inschakelen	#
 options.entityShadows=Schaduwen entiteit	#
 options.editSettings=Instellingen bewerken	#
 options.fancyskies=Prachtige luchten	#
@@ -4822,6 +4976,8 @@ options.snooper.view=Snuffelinstellingen...	#
 options.sound=Geluidsvolume	#
 options.sounds=Geluid	#
 options.sounds.title=Geluidsinstellingen	#
+options.accessibility=Toegankelijkheid	#
+options.accessibility.title=Toegankelijkheidsinstellingen	#
 options.splitscreen=Gesplitst scherm	#
 options.splitscreen.horizontal=Horizontaal gesplitst scherm	#
 options.splitscreen.vertical=Verticaal gesplitst scherm	#
@@ -5244,6 +5400,7 @@ progressScreen.dialog.message.resourcePackRequired=Op deze wereld zijn Hulpbronp
 progressScreen.dialog.message.scriptConfirm=De wereld die je probeert te openen, vereist dat je apparaat scripts uitvoert. Wil je je bij deze wereld aansluiten?	#
 progressScreen.dialog.message.storageProviderError=Kan je wereldgegevens niet synchroniseren. Wil je het opnieuw proberen?	#
 progressScreen.dialog.message.storageProviderUnusableError=De wereld is niet volledig gesynchroniseerd of is beschadigd. Probeer de wereld uit op een console waar deze mogelijk nog goed is en migreer deze opnieuw.	#
+progressScreen.dialog.message.worldCorrupted=De wereld is beschadigd. Je kunt dit rapporteren op bugs.mojang.com	#
 progressScreen.dialog.message.storageProviderLongWait=Het synchroniseren van deze wereld duurt erg lang. Wil je blijven wachten?	#
 progressScreen.dialog.button.enter=Wereld openen	#
 progressScreen.dialog.button.joinAndDownload=Aansluiten en downloaden - %1	#
@@ -5254,6 +5411,8 @@ progressScreen.dialog.button.leave=Verlaten	#
 progressScreen.dialog.button.retry=Opnieuw	#
 progressScreen.dialog.button.wait=Wachten	#
 
+raid.name=Plundering	#
+raid.progress=Resterende mobs:	#
 
 recipeBook.setting.full=Volledig	#
 recipeBook.setting.discover=Ontdekken	#
@@ -5363,6 +5522,7 @@ storageManager.sortDateOldest=Datum gebruikt - Oudste eerst	#
 storageManager.version=Versie 	#
 storageManager.multiselectDelete=Verwijderen	#
 storageManager.multiselectShare=Delen	#
+storageManager.multiselect=Meervoudige selectie	#
 storageManager.miscellaneous=Diversen	#
 
 storageManager.groupType=Type	#
@@ -5384,8 +5544,8 @@ resourcepack.Candy=Candy-texturepakket	#
 resourcepack.FestiveMashup2016=Feestelijke mash-up 2016	#
 resourcepack.ChineseMythology=Mashup-pakket Chinese mythologie	#
 
-resourcePack.vanilla.name=Minecraft	#
-resourcePack.vanilla.description=De klassieke Minecraft-hulpbronnen.	#
+resourcePack.vanilla.name=Minecraft-texturepakket	#
+resourcePack.vanilla.description=De standaardweergave van Minecraft, nu bijgewerkt met stijlvolle nieuwe textures!	#
 
 resourcePack.city.name=Stad	#
 resourcePack.city.description=Ideaal voor de constructie van bouwwerken.	#
@@ -5443,6 +5603,11 @@ review.item.post.rating.4star=Woehoe! Wat fijn dat je er blij mee bent!	#
 review.item.post.rating.5star=We zijn blij dat je het naar je zin hebt!	#
 review.item.post.rating.submit.toast.line1=Bedankt dat je dit pakket hebt beoordeeld!	#
 review.item.post.rating.submit.toast.line2=Het kan even duren voordat je beoordeling is verwerkt.	#
+
+roaming.status_brief.limited_usage=Beperkt te gebruiken	#
+roaming.status_brief.no_restrictions=Platformoverschrijdend te gebruiken	#
+roaming.status_hover.limited_usage=Alleen beschikbaar op bepaalde platformen.	#
+roaming.status_hover.no_restrictions=Beschikbaar op alle Bedrock-platformen!	#
 
 screenshot.failure=Kan schermopname niet opslaan: %s	#
 screenshot.success=Schermopname opgeslagen als %s	#
@@ -6235,8 +6400,6 @@ tile.wool.white.name=Witte wol	#
 tile.wool.yellow.name=Gele wol	#
 tile.cobblestone_wall.mossy.name=Bemoste keimuur	#
 tile.cobblestone_wall.normal.name=Keimuur 	#
-tile.cobblestone_wall.cobblestone.name=Keimuur	#
-tile.cobblestone_wall.mossy_cobblestone.name=Bemoste keimuur	#
 tile.cobblestone_wall.granite.name=Granieten muur	#
 tile.cobblestone_wall.diorite.name=Diorieten muur	#
 tile.cobblestone_wall.andesite.name=Andesieten muur	#
@@ -6500,8 +6663,8 @@ tile.stonebrick.default.name=Stenen bakstenen	#
 tile.stonebrick.mossy.name=Bemoste stenen bakstenen	#
 tile.stonebrick.name=Stenen bakstenen	#
 tile.stonebrick.smooth.name=Gladde stenen bakstenen	#
-tile.stonecutter.name=Steenhouwer	#
-tile.stonecutter_block.name=Steenhouwer	#
+tile.stonecutter.name=Steenzaag	#
+tile.stonecutter_block.name=Steenzaag	#
 tile.mossy_cobblestone.name=Bemoste keisteen	#
 tile.double_stone_slab.brick.name=Baksteenplaat	#
 tile.double_stone_slab.cobble.name=Keienplaat	#
@@ -6516,12 +6679,10 @@ tile.stone_slab.name=Steenplaat	#
 tile.stone_slab.brick.name=Baksteenplaat	#
 tile.stone_slab.cobble.name=Keienplaat	#
 tile.stone_slab.stone.name=Gladde steenplaat	#
-tile.stone_slab.smoothStone.name=Gladde steenplaat	#
 tile.stone_slab.nether_brick.name=Nether-baksteenplaat	#
 tile.stone_slab.quartz.name=Kwartsplaat	#
 tile.stone_slab.sand.name=Zandsteenplaat	#
 tile.stone_slab.smoothStoneBrick.name=Stenen baksteenplaat	#
-tile.stone_slab.stone.name=Steenplaat	#
 tile.stone_slab.wood.name=Houten plaat	#
 tile.double_stone_slab2.red_sandstone.name=Rode zandsteenplaat	#
 tile.stone_slab2.red_sandstone.name=Rode zandsteenplaat	#
@@ -7190,6 +7351,19 @@ tips.edu.5=Om vrienden zich bij je wereld te laten aansluiten, pauzeer je je spe
 tips.edu.6=Denk eraan om cheats voor je wereld in te schakelen om slash-opdrachten te gebruiken.	#
 tips.edu.7=Klaar met je creatie? Laat anderen je wereld verkennen in de Avontuurmodus om je werk te beschermen.	#
 tips.edu.8=Druk op je toetsenbord op de C en tik op het Agent-pictogram bovenaan het scherm om Code Builder te gebruiken!	#
+tips.edu.9=Gebruik de Bibliotheek om nieuwe spelwerelden te vinden om in te bouwen.	#
+tips.edu.10=Op zoek naar een specifieke bioom? Neem een kijkje in de Bibliotheek.	#
+tips.edu.11=NPC staat voor Non-Player Character.	#
+tips.edu.12=In de Survival-modus moeten spelers hun eigen hulpmiddelen vinden.	#
+tips.edu.13=In de Creative-modus kunnen spelers vrij kiezen uit alle Minecraft-blokken.	#
+tips.edu.14=Je robothulpje die je helpt met het schrijven van code, heet de Agent.	#
+tips.edu.15=Redstone kan in Minecraft worden gebruikt om schakelingen en eenvoudige machines te maken.	#
+tips.edu.16=Je kunt vanuit een teksteditor kopiëren en plakken naar een schrijflei, poster of schrijfbord.	#
+tips.edu.17=Je kunt toetsenbord- en muishints in- en uitschakelen vanuit het menu Instellingen onder Bediening.	#
+tips.edu.18=Je kunt automatisch springen in- en uitschakelen vanuit het menu Instellingen onder Bediening.	#
+tips.edu.19=In de Creative-modus kun je twee keer snel op springen drukken om te vliegen.	#
+tips.edu.20=Kies een standaardspeltype tijdens het maken van een wereld om aan te geven wat voor soort spel je wilt.	#
+tips.edu.21=Gebruik de opdracht ''/setworldspawn'' om nieuwe spelers te laten beginnen waar jij staat.	#
 
 tips.game.1=Gebruik zeegras om zeeschildpadden te lokken en te fokken.	#
 tips.game.2=Bescherm babyschildpadden tegen vijandige mobs!	#
@@ -7252,6 +7426,8 @@ tips.game.56=Wanneer je recht omhoog graaft, kun je een fakkel bij je voeten pla
 splitscreen.joinPrompt=Aansluiten als speler %s	#
 splitscreen.unavailable.toastHeader=Gesplitst scherm is niet beschikbaar	#
 splitscreen.unavailable.toastMessage=Er kan momenteel geen tweede speler deelnemen.	#
+splitscreen.joyconError.toastHeader=Kan Joy-Con niet verbinden!	#
+splitscreen.joyconError.toastMessage=Er zijn teveel controllers verbonden in de lokale netwerkmodus om je bij dit spel aan te sluiten.	#
 
 usermanagement.changeUser=Gebruiker wijzigen	#
 
@@ -7262,6 +7438,9 @@ hbui.mainMenu.HelpModal.howToPlayButton=Speluitleg	#
 hbui.mainMenu.HelpModal.faqButton=Veelgestelde vragen	#
 hbui.mainMenu.HelpModal.patchNotesButton=Patch-notities	#
 hbui.mainMenu.HelpModal.closeButton=Sluiten	#
+hbui.mainMenu.UpdateModal.title=Nieuwe update beschikbaar	#
+hbui.mainMenu.UpdateModal.contents=Er is een nieuwe versie van het spel beschikbaar. Wil je bijwerken om alle nieuwe functies te krijgen?	#
+hbui.mainMenu.UpdateModal.UpdateButton=Bijwerken	#
 hbui.mainMenu.LoginModal.signInAs=Aangemeld als	#
 hbui.mainMenu.LoginModal.manageAccountButton=Account beheren	#
 hbui.mainMenu.LoginModal.signOutButton=Afmelden	#
@@ -7280,3 +7459,28 @@ hbui.mainMenu.viewAllHeader=Alles bekijken	#
 hbui.mainMenu.heroVignette=Laatst gespeeld	#
 hbui.mainMenu.heroResumeButton=Hervatten	#
 hbui.mainMenu.heroPlayButton=Wereld hervatten	#
+
+trade.doesNotWant=De handelaar wilt dit niet	#
+trade.excalamation=!	#
+trade.expProgress=Ervaring: %d/%d	#
+trade.expMax=Ervaring: MAX	#
+trade.levelPrefix=Niveau %d	#
+trade.levelPrefixAndName=Niveau %d - %s	#
+trade.levelPrefixAndName.max=Max. niveau - %s	#
+trade.level.1=Beginner	#
+trade.level.2=Leerling	#
+trade.level.3=Gezel	#
+trade.level.4=Deskundige	#
+trade.level.5=Meester	#
+trade.mysteriousText=dab	#
+trade.notEnough=Niet genoeg %s	#
+trade.question=?	#
+trade.trade=Handelen	#
+
+map.rename=Kaart hernoemen	#
+map.basicMap=Standaardkaart	#
+map.locatorMap=Kaart waarop spelers te zien zijn	#
+map.extendAndClear=Uitzoomen en wissen	#
+map.clone=Kaart kopiëren	#
+map.name=Kaartnaam	#
+map.lock=Kaart vergrendelen	#
