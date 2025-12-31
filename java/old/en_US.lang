@@ -90,6 +90,7 @@ createWorld.customize.flat.removeLayer=Remove Layer
 createWorld.customize.flat.layer.top=Top - %d
 createWorld.customize.flat.layer=%d
 createWorld.customize.flat.layer.bottom=Bottom - %d
+createWorld.customize.flat.air=Air
 
 createWorld.customize.custom.page0=Basic Settings
 createWorld.customize.custom.page1=Ore Settings
@@ -303,6 +304,7 @@ soundCategory.neutral=Friendly Creatures
 soundCategory.player=Players
 soundCategory.block=Blocks
 soundCategory.ambient=Ambient/Environment
+soundCategory.voice=Voice/Speech
 
 record.nowPlaying=Now playing: %s
 
@@ -1623,9 +1625,10 @@ commands.xp.success=Given %d experience to %s
 commands.xp.success.levels=Given %d levels to %s
 commands.xp.success.negative.levels=Taken %d levels from %s
 commands.xp.usage=/xp <amount> [player] OR /xp <amount>L [player]
-commands.playsound.usage=/playsound <sound> <player> [x] [y] [z] [volume] [pitch] [minimumVolume]
+commands.playsound.usage=/playsound <sound> <source> <player> [x] [y] [z] [volume] [pitch] [minimumVolume]
 commands.playsound.success=Played sound '%s' to %s
 commands.playsound.playerTooFar=Player %s is too far away to hear the sound
+commands.playsound.unknownSoundSource=SoundSource %s is unknown
 commands.give.usage=/give <player> <item> [amount] [data] [dataTag]
 commands.give.item.notFound=There is no such item with name %d
 commands.give.block.notFound=There is no such block with name %d
