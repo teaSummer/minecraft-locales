@@ -94,6 +94,7 @@ action.interact.tame=Addomestica	#
 action.interact.wolfcollar=Tingi	#
 action.interact.opencontainer=Apri	#
 action.interact.createMap=Crea mappa	#
+action.interact.takepicture=Scatta immagine	#
 
 addServer.add=Fatto	#
 addServer.enterIp=Indirizzo del server	#
@@ -190,6 +191,8 @@ commands.banip.usage=/ban-ip <address|name> [reason ...]	#
 commands.banlist.ips=Ci sono in totale %d indirizzi IP inibiti:	#
 commands.banlist.players=Ci sono in totale %d giocatori banditi:	#
 commands.banlist.usage=/banlist [ips|players]	#
+commands.blockdata.placeFailed=Qui non puoi piazzare blocchi	#
+commands.blockdata.destroyFailed=Qui non puoi scavare	#
 commands.blockdata.failed=I dati NBT non sono cambiati: %s	#
 commands.blockdata.notValid=Il blocco destinatario non può contenere dati NBT	#
 commands.blockdata.outOfWorld=Impossibile cambiare il blocco al di fuori del mondo	#
@@ -615,7 +618,7 @@ controllerLayoutScreen.save=Salva	#
 controllerLayoutScreen.saveAndExit=Salva ed esci	#
 controllerLayoutScreen.trigger=Grilletto	#
 controllerLayoutScreen.unassigned=Non assegnato	#
-
+controllerLayoutScreen.toggleLivingroom=Attiva/disattiva modalità immersiva	#
 controls.reset=Ripristina	#
 controls.resetAll=Ripristina i comandi	#
 controls.title=Controlli	#
@@ -992,12 +995,24 @@ gui.logout=Esci	#
 gui.no=No	#
 gui.none=Nessuno	#
 gui.ok=OK	#
+gui.pickWorld=Cerca un mondo di Minecraft	#
 gui.select=Seleziona	#
 gui.stats=Statistiche	#
 gui.tab=Scheda	#
 gui.toMenu=Torna al menu principale	#
 gui.up=Su	#
 gui.yes=Sì	#
+
+level.export.started=Esportazione livello avviata...	#
+level.import.started=Importazione livello avviata...	#
+level.export.success=Esportazione livello completata	#
+level.import.success=Importazione livello completata	#
+level.export.failed=Impossibile esportare il livello	#
+level.import.failed=Impossibile importare il livello	#
+invite.clear=Annulla selezione	#
+invite.send=Invia %d inviti	#
+invite.title=Invita amici	#
+invite.error.message=Alcuni inviti potrebbero non essere stati inviati.	#
 
 inventory.binSlot=Distruggi l'oggetto	#
 
@@ -1659,6 +1674,7 @@ item.bucket.name=Secchio	#
 item.bucketLava.name=Secchio di lava	#
 item.bucketWater.name=Secchio d'acqua	#
 item.cake.name=Torta	#
+item.camera.name=Visuale	#
 item.canBreak=Può distruggere:	#
 item.canPlace=Può essere piazzato su:	#
 item.carrotGolden.name=Carota d'oro	#
@@ -1844,6 +1860,7 @@ item.pickaxeStone.name=Piccozza di pietra	#
 item.pickaxeWood.name=Piccozza di legno	#
 item.porkchopCooked.name=Costoletta di maiale cotta	#
 item.porkchopRaw.name=Costoletta di maiale cruda	#
+item.portfolio.name=Portfolio	#
 item.potato.name=Patata	#
 item.potatoBaked.name=Patata al forno	#
 item.potatoPoisonous.name=Patata velenosa	#
@@ -1975,6 +1992,9 @@ lanServer.start=Avvia il mondo LAN	#
 lanServer.title=Mondo LAN	#
 lanServer.restart=Il server è stato riavviato!	#
 
+livingroom.hint.tap_touchpad_for_immersive=Premi il touchpad per la modalità immersiva	#
+livingroom.hint.tap_view_for_immersive=Premi il pulsante Visualizza per la modalità immersiva	#
+
 map.toolTip.displayMarkers=Visualizza segnali	#
 map.toolTip.scaling=Modifica scala 1:%s	#
 map.toolTip.level=Livello %s/%s	#
@@ -2084,6 +2104,7 @@ options.gamma=Luminosità	#
 options.gamma.max=Brillante	#
 options.gamma.min=Cupa	#
 options.graphics=Grafica eccezionale	#
+options.transparentleaves=Foglie eccezionali	#
 options.graphics.fancy=Sofisticata	#
 options.graphics.fast=Semplificata	#
 options.group.audio=Suoni	#
@@ -2134,6 +2155,9 @@ options.qualityVideoTitle=Impostazioni di qualità grafica	#
 options.reducedDebugInfo=Dati tecnici ridotti	#
 options.renderClouds=Nuvole	#
 options.renderDistance=Distanza di resa	#
+options.particleRenderDistance=Distanza renderizzazione particelle	#
+options.msaa=Antialiasing	#
+options.texelAA=Antialiasing texel	#
 options.renderDistance.far=Lontana	#
 options.renderDistance.normal=Normale	#
 options.renderDistance.short=Corta	#
@@ -2197,6 +2221,27 @@ options.viewBobbing=Visuale oscillante	#
 options.visible=Visibile	#
 options.vsync=Sincronia verticale	#
 options.worldsizelimit=Limita dimensione mondo	#
+
+options.group.vr=VR	#
+options.vrSensitivity=Sensibilità VR	#
+options.vrRenderDistance=Distanza renderizzazione VR	#
+options.vrAutojump=Salto automatico VR	#
+options.vrGamma=Luminosità VR	#
+options.vrResetPlayerAlignment=Ripristina allineamento VR	#
+options.vrHMDdisplacement=Usa la posizione del visore per muoverti	#
+options.vrHeadSteering=Svolta con la testa	#
+options.StutterTurn=Svolta VR	#
+options.StutterTurnSound=Suono svolta VR	#
+options.StutterConstantAngleOrTime=Svolta VR basata sul tempo	#
+options.3DRendering=Renderizzazione 3D	#
+options.vrHudAtTop=Interfaccia in alto	#
+options.vrLinearJump=Salto lineare	#
+options.vrLinearMotion=Movimento lineare	#
+options.stickyMining=Agganciamento estrazione	#
+options.vrMovingBackwardsHardStop=Arresto immediato all'indietro	#
+options.comfortControls=Comandi VR	#
+options.ShowComfortSelectScreen=Mostra schermata selezione comandi	#
+options.vrHudDrifts=Deriva interfaccia	#
 
 pauseScreen.back=Riprendi la partita	#
 pauseScreen.header=Menu di gioco	#
@@ -2310,6 +2355,12 @@ progressScreen.message.exporting=Esportazione mondo	#
 progressScreen.message.importing=Importazione mondo	#
 progressScreen.message.locating=Individuazione server	#
 progressScreen.message.waitingForRealms=In attesa dell'app Minecraft Realms	#
+progressSCreen.riftControls.title=Schema comandi	#
+progressScreen.riftControls.classicButton=Comandi classici	#
+progressScreen.riftControls.VRButton=Comandi VR sperimentali	#
+progressScreen.riftControls.classicDiscription=Comandi classici di Minecraft. Svolta e salto normali. Questa impostazione potrebbe non essere adatta ad alcuni giocatori. I comandi possono essere modificati anche durante il gioco dal menu delle opzioni.	#
+progressScreen.riftControls.enhancedVRDiscription=Comandi VR sperimentali. Questi comandi sono un progetto in corso d'opera e sono da considerarsi sperimentali. La svolta, il salto, la nuotata e il cursore sono stati adattati alla VR. I comandi possono essere modificati anche durante il gioco dal menu delle opzioni.	#
+progressScreen.riftControls.showScreenMessage=Salva impostazione	#
 
 recipeBook.setting.full=Pieno	#
 recipeBook.setting.discover=Scopri	#
@@ -2723,6 +2774,8 @@ stream.userinfo.unmod=Degrada da moderatore	#
 tile.acaciaFence.name=Staccionata d'acacia	#
 tile.acaciaFenceGate.name=Cancelletto d'acacia	#
 tile.activatorRail.name=Binario attivatore	#
+tile.allow.name=Consenti blocco	#
+tile.deny.name=Impedisci blocco	#
 tile.anvil.intact.name=Incudine	#
 tile.anvil.name=Incudine	#
 tile.anvil.slightlyDamaged.name=Incudine leggermente danneggiata	#
@@ -3106,6 +3159,7 @@ worldError.IO=non può essere aperto.	#
 worldError.notFound=non può essere trovato.	#
 worldError.notSupported=ha un formato non supportato.	#
 worldError.unknown=presenta un problema sconosciuto.	#
+worldError.writeCorrupted=è danneggiato e non può essere salvato.	#
 
 trial.pauseScreen.remainingTime=Tempo di prova rimasto: %02d:%02d	#
 trial.pauseScreen.buyGame=Acquista Minecraft	#
@@ -3126,12 +3180,38 @@ trial.upsell.expiredDescription.line3=-Gioca con gli amici	#
 trial.upsell.expiredDescription.line4=-Crea centinaia di oggetti	#
 trial.upsell.expiredDescription.line5=-Scopri strutture e reami misteriosi	#
 
+## VR control Scheme Strings
+vr.controls.title=Comandi VR	#
+
+vr.controls.title.classic=Comandi classici	#
+vr.controls.title.experimental=Comandi VR (sperimentali)	#
+vr.controls.classicDescription=Svolta e salto normali che garantiscono un livello di comfort elevato per la maggior parte degli utenti.	#
+vr.controls.experimentalDescription=La svolta avviene per stadi, mentre il salto e il cursore sono stati adattati alla VR, garantendo un livello di comfort medio per la maggior parte degli utenti.	#
+vr.controls.sharedDescription=I comandi possono essere modificati anche durante il gioco dal menu delle opzioni.	#
+vr.moreOptions=Altre opzioni...	#
+vr.moreInformation=Altre informazioni...	#
+vr.detailedInformation=Svariate funzionalità di gioco sono state modificate per garantire un'esperienza VR più confortevole. La svolta VR, per esempio, suddivide in stadi il cambio di direzione per ridurre il disorientamento.	#
+vr.detailedInformationLink=Per ulteriori informazioni sui comandi VR e uno sguardo dietro le quinte, visita minecraft.net/vr	#
+
 ## Xbox Live Strings
 xbox.signin.error=Accedi a Xbox Live con il tuo account per giocare con gli amici, ottenere punti e sbloccare obiettivi.	#
 xbox.connection.error=Nessuna connessione a Xbox Live.	#
+xbox.signin=Accedi	#
 
 xbox.disconectionscreen.notSignedIn=Accedi a Xbox Live con il tuo account per giocare con gli amici.	#
 xbox.disconectionscreen.multiplayerNotAllowed=Questo account non è autorizzato a partecipare alle partite multigiocatore su Xbox Live.	#
 xbox.disconectionscreen.accessDenied=In questo gioco puoi unirti solo agli amici.	#
 
+authserver.notavailable=Si è verificato un problema. Impossibile verificare se il server a cui stai tentando di accedere è incluso tra quelli affidabili. Riprovare più tardi.	#
+authserver.authfailed=Brutte notizie! Il server non ha superato la nostra verifica. Un soggetto terzo non autorizzato potrebbe simulare di essere un server affidabile.	#
+
+
 platform.model.unknown=UNKNOWN	#
+
+vr.pausescreen.recenterDevice=Centra dispositivo	#
+vr.warning.controllerRequired=Controller di gioco richiesto	#
+vr.warning.controllerRecommended=Per la VR si consiglia l'utilizzo di un controller	#
+vr.alignscreen.pressButtonX=Premi il pulsante X sul controller per continuare	#
+vr.alignscreen.pressAnyButton=Mantieni la testa in posizione neutrale e premi un pulsante	#
+vr.alignscreen.info=Avviso: questo è un progetto in corso d'opera. La VR può causare disagio ad alcuni utenti. Concediti una pausa quando necessario e attiva la modalità Soggiorno con il touchpad per ridurre l'intensità dell'esperienza visiva.	#
+vr.alignscreen.info_viewbutton=Avviso: questo è un progetto in corso d'opera. La VR può causare disagio ad alcuni utenti. Concediti una pausa quando necessario e attiva la modalità Soggiorno con il pulsante Visualizza per ridurre l'intensità dell'esperienza visiva.	#

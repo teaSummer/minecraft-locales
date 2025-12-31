@@ -94,6 +94,7 @@ action.interact.tame=Domar	#
 action.interact.wolfcollar=Pintar	#
 action.interact.opencontainer=Abrir	#
 action.interact.createMap=Criar mapa	#
+action.interact.takepicture=Fotografar	#
 
 addServer.add=Concluído	#
 addServer.enterIp=Endereço do Servidor	#
@@ -190,6 +191,8 @@ commands.banip.usage=/ban-ip <address|name> [reason ...]	#
 commands.banlist.ips=Existem %d endereços de IP banidos no total:	#
 commands.banlist.players=Existem %d jogadores(as) banidos(as) no total:	#
 commands.banlist.usage=/banlist [ips|players]	#
+commands.blockdata.placeFailed=Você não pode colocar blocos aqui	#
+commands.blockdata.destroyFailed=Você não pode cavar aqui	#
 commands.blockdata.failed=A tag de dados não mudou: %s	#
 commands.blockdata.notValid=O bloco de destino não armazena dados	#
 commands.blockdata.outOfWorld=Impossível alterar blocos fora do mundo	#
@@ -615,7 +618,7 @@ controllerLayoutScreen.save=Salvar	#
 controllerLayoutScreen.saveAndExit=Salvar e sair	#
 controllerLayoutScreen.trigger=Gatilho	#
 controllerLayoutScreen.unassigned=Não atribuído	#
-
+controllerLayoutScreen.toggleLivingroom=Alternar Modo Imersivo	#
 controls.reset=Redefinir	#
 controls.resetAll=Redefinir Teclas	#
 controls.title=Controles	#
@@ -992,12 +995,24 @@ gui.logout=Sair	#
 gui.no=Não	#
 gui.none=Nenhum	#
 gui.ok=OK	#
+gui.pickWorld=Procurar um mundo de Minecraft	#
 gui.select=Selecionar	#
 gui.stats=Estatísticas	#
 gui.tab=Guia	#
 gui.toMenu=Voltar à tela principal	#
 gui.up=Cima	#
 gui.yes=Sim	#
+
+level.export.started=Exportação de nível iniciada...	#
+level.import.started=Importação de nível iniciada...	#
+level.export.success=Exportação de nível concluída com sucesso	#
+level.import.success=Importação de nível concluída com sucesso	#
+level.export.failed=Falha ao exportar nível	#
+level.import.failed=Falha ao importar nível	#
+invite.clear=Limpar seleção	#
+invite.send=Enviar %d convites	#
+invite.title=Convidar Amigos	#
+invite.error.message=Alguns convites podem não ter sido enviados	#
 
 inventory.binSlot=Destruir Item	#
 
@@ -1659,6 +1674,7 @@ item.bucket.name=Balde	#
 item.bucketLava.name=Balde de Lava	#
 item.bucketWater.name=Balde de Água	#
 item.cake.name=Bolo	#
+item.camera.name=Câmera	#
 item.canBreak=Pode quebrar:	#
 item.canPlace=Pode ser colocado em:	#
 item.carrotGolden.name=Cenoura Dourada	#
@@ -1844,6 +1860,7 @@ item.pickaxeStone.name=Picareta de Pedra	#
 item.pickaxeWood.name=Picareta de Madeira	#
 item.porkchopCooked.name=Carne de Porco Assada	#
 item.porkchopRaw.name=Carne de Porco Crua	#
+item.portfolio.name=Portfólio	#
 item.potato.name=Batata	#
 item.potatoBaked.name=Batata Assada	#
 item.potatoPoisonous.name=Batata Venenosa	#
@@ -1975,6 +1992,9 @@ lanServer.start=Iniciar Mundo LAN	#
 lanServer.title=Mundo LAN	#
 lanServer.restart=Este servidor foi reiniciado!	#
 
+livingroom.hint.tap_touchpad_for_immersive=Toque no touchpad para o Modo Imersivo	#
+livingroom.hint.tap_view_for_immersive=Toque no botão Ver para o Modo Imersivo	#
+
 map.toolTip.displayMarkers=Exibir marcadores	#
 map.toolTip.scaling=Na escala de 1:%s	#
 map.toolTip.level=Nível %s/%s	#
@@ -2084,6 +2104,7 @@ options.gamma=Brilho	#
 options.gamma.max=Claro	#
 options.gamma.min=Sombrio	#
 options.graphics=Gráficos Caprichados	#
+options.transparentleaves=Folhas melhores	#
 options.graphics.fancy=Bonitos	#
 options.graphics.fast=Rápidos	#
 options.group.audio=Som	#
@@ -2134,6 +2155,9 @@ options.qualityVideoTitle=Configurações de Qualidade de Vídeo	#
 options.reducedDebugInfo=Informações de Debug Reduzido	#
 options.renderClouds=Nuvens	#
 options.renderDistance=Distância de Renderização	#
+options.particleRenderDistance=Distância de Renderização de partículas	#
+options.msaa=Anti-Aliasing	#
+options.texelAA=Anti-Aliasing Texel	#
 options.renderDistance.far=Longa	#
 options.renderDistance.normal=Normal	#
 options.renderDistance.short=Curta	#
@@ -2197,6 +2221,27 @@ options.viewBobbing=Movimentos na Visão	#
 options.visible=Visível	#
 options.vsync=Usar VSync	#
 options.worldsizelimit=Limitar Tamanho do Mundo	#
+
+options.group.vr=VR	#
+options.vrSensitivity=Sensibilidade VR	#
+options.vrRenderDistance=Distância de Renderização VR	#
+options.vrAutojump=Auto-Salto VR	#
+options.vrGamma=Brilho VR	#
+options.vrResetPlayerAlignment=Redefinir Alinhamento VR	#
+options.vrHMDdisplacement=Usar deslocamento do HMD para mover	#
+options.vrHeadSteering=Guiar com a cabeça	#
+options.StutterTurn=Direcionamento VR	#
+options.StutterTurnSound=Som de direcionamento VR	#
+options.StutterConstantAngleOrTime=Tempo de virada VR	#
+options.3DRendering=Renderização 3D	#
+options.vrHudAtTop=HUD no topo	#
+options.vrLinearJump=Salto linear	#
+options.vrLinearMotion=Movimento linear	#
+options.stickyMining=Mineração "grudenta"	#
+options.vrMovingBackwardsHardStop=Parar ao andar para trás	#
+options.comfortControls=Controles VR	#
+options.ShowComfortSelectScreen=Mostrar tela de seleção de controles	#
+options.vrHudDrifts=Oscilação do HUD	#
 
 pauseScreen.back=Voltar ao Jogo	#
 pauseScreen.header=Menu do Jogo	#
@@ -2310,6 +2355,12 @@ progressScreen.message.exporting=Exportando mundo	#
 progressScreen.message.importing=Importando mundo	#
 progressScreen.message.locating=Localizando servidor	#
 progressScreen.message.waitingForRealms=Aguardando o aplicativo Realms do Minecraft	#
+progressSCreen.riftControls.title=Esquema de controle	#
+progressScreen.riftControls.classicButton=Controles clássicos	#
+progressScreen.riftControls.VRButton=Controles VR (em desenv.)	#
+progressScreen.riftControls.classicDiscription=Controles clássicos do Minecraft. Salta e vira normalmente. Pode não ser ideal para alguns jogadores. Controles também podem ser alterados no menu de opções dentro do jogo.	#
+progressScreen.riftControls.enhancedVRDiscription=Controles VR em desenvolvimento, devem ser considerados experimentais. Virar, saltar, nadar e cursor ajustados para VR. Os controles podem ser alterados dentro do jogo no menu de opções.	#
+progressScreen.riftControls.showScreenMessage=Lembrar desta escolha	#
 
 recipeBook.setting.full=Completo	#
 recipeBook.setting.discover=Descobrir	#
@@ -2723,6 +2774,8 @@ stream.userinfo.unmod=Rebaixar de Moderador(a)	#
 tile.acaciaFence.name=Cerca de Acácia	#
 tile.acaciaFenceGate.name=Portão de Acácia	#
 tile.activatorRail.name=Trilho Ativador	#
+tile.allow.name=Permitir bloqueio	#
+tile.deny.name=Negar bloqueio	#
 tile.anvil.intact.name=Bigorna	#
 tile.anvil.name=Bigorna	#
 tile.anvil.slightlyDamaged.name=Bigorna Ligeiramente Danificada	#
@@ -3106,6 +3159,7 @@ worldError.IO=não pode ser aberto.	#
 worldError.notFound=não pode ser encontrado.	#
 worldError.notSupported=tem um formato incompatível.	#
 worldError.unknown=tem um problema desconhecido.	#
+worldError.writeCorrupted=está corrompido e não pode ser salvo.	#
 
 trial.pauseScreen.remainingTime=Tempo restante da avaliação: %02d:%02d	#
 trial.pauseScreen.buyGame=Comprar Minecraft	#
@@ -3126,12 +3180,38 @@ trial.upsell.expiredDescription.line3=-Jogue com seus amigos	#
 trial.upsell.expiredDescription.line4=-Confeccione centenas de itens	#
 trial.upsell.expiredDescription.line5=-Descubra estruturas e reinos misteriosos	#
 
+## VR control Scheme Strings
+vr.controls.title=Controles VR	#
+
+vr.controls.title.classic=Controles clássicos	#
+vr.controls.title.experimental=Controles VR (em desenv.)	#
+vr.controls.classicDescription=Vira e salta normalmente, resultando em um nível de conforto intenso para a maioria das pessoas.	#
+vr.controls.experimentalDescription=A virada é feita por segmentos e saltos e o cursor foram ajustados para VR, resultando em um nível de conforto moderado para a maioria das pessoas.	#
+vr.controls.sharedDescription=Os controles podem ser alterados dentro do jogo no menu de opções.	#
+vr.moreOptions=Mais opções...	#
+vr.moreInformation=Mais informações...	#
+vr.detailedInformation=Vários recursos do jogo foram ajustados para uma experiência VR mais confortável. Por exemplo, a virada no VR é segmentada para reduzir desorientação.	#
+vr.detailedInformationLink=Para mais informações sobre os controles VR e maiores detalhes sobre seu funcionamento, acesse minecraft.net/vr	#
+
 ## Xbox Live Strings
 xbox.signin.error=Faça logon com sua conta do Xbox Live para jogar com amigos, ganhar gamerscore e conquistas.	#
 xbox.connection.error=Sem conexão ao Xbox Live.	#
+xbox.signin=Entrar	#
 
 xbox.disconectionscreen.notSignedIn=Entre com sua conta do Xbox Live para jogar com amigos.	#
 xbox.disconectionscreen.multiplayerNotAllowed=Esta conta não dá permissão para participar do multijogador no Xbox Live.	#
 xbox.disconectionscreen.accessDenied=Você precisa ser amigo de alguém neste jogo para poder participar.	#
 
+authserver.notavailable=Algo deu errado. Não foi possível verificar a confiabilidade do servidor ao qual você está tentando se conectar. Recomendamos que tente novamente mais tarde.	#
+authserver.authfailed=Isso não é bom. Este servidor não passou em nossa verificação. Alguém em quem não confiamos pode estar fingindo ser um servidor confiável.	#
+
+
 platform.model.unknown=DESCONHECIDO	#
+
+vr.pausescreen.recenterDevice=Recentralizar dispositivo	#
+vr.warning.controllerRequired=Controle de jogo necessário	#
+vr.warning.controllerRecommended=É recomendado usar um controle para VR	#
+vr.alignscreen.pressButtonX=Pressione o botão X no seu controle para continuar	#
+vr.alignscreen.pressAnyButton=Alinhe sua cabeça em posição neutra e aperte qualquer botão	#
+vr.alignscreen.info=Aviso: Este é um recurso em desenvolvimento. VR pode causar desconforto a algumas pessoas. Lembre-se de fazer pausas sempre que precisar e usar o modo Sala tocando o touchpad para uma vista menos intensa.	#
+vr.alignscreen.info_viewbutton=Aviso: Este é um recurso em desenvolvimento. VR pode causar desconforto a algumas pessoas. Lembre-se de fazer pausas sempre que precisar e usar o modo Sala tocando o touchpad para uma vista menos intensa.	#

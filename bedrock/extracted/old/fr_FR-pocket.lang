@@ -94,6 +94,7 @@ action.interact.tame=Apprivoiser	#
 action.interact.wolfcollar=Teindre	#
 action.interact.opencontainer=Ouvrir	#
 action.interact.createMap=Créez une carte	#
+action.interact.takepicture=Prendre un cliché	#
 
 addServer.add=Valider	#
 addServer.enterIp=Adresse du serveur	#
@@ -190,6 +191,8 @@ commands.banip.usage=/ban-ip <address|name> [reason ...]	#
 commands.banlist.ips=Il y a un total de %d adresse(s) IP bannie(s) :	#
 commands.banlist.players=Il y a un total de %d joueur(s) banni(s) :	#
 commands.banlist.usage=/banlist [ips|players]	#
+commands.blockdata.placeFailed=Vous ne pouvez pas placer des blocs ici	#
+commands.blockdata.destroyFailed=Vous ne pouvez pas creuser ici	#
 commands.blockdata.failed=Les données n'ont pas changé : %s	#
 commands.blockdata.notValid=Le bloc ciblé n'est pas un bloc supportant des données supplémentaires	#
 commands.blockdata.outOfWorld=Impossible de changer un bloc en dehors du monde	#
@@ -615,7 +618,7 @@ controllerLayoutScreen.save=Sauvegarder	#
 controllerLayoutScreen.saveAndExit=Sauvegarder et quitter	#
 controllerLayoutScreen.trigger=Gâchette	#
 controllerLayoutScreen.unassigned=Non assigné	#
-
+controllerLayoutScreen.toggleLivingroom=Mode Immersif oui/non	#
 controls.reset=Réinit.	#
 controls.resetAll=Réinitialiser les touches	#
 controls.title=Contrôles	#
@@ -992,12 +995,24 @@ gui.logout=Déconnexion	#
 gui.no=Non	#
 gui.none=Aucun	#
 gui.ok=O.K.	#
+gui.pickWorld=Rechercher un monde Minecraft	#
 gui.select=Sélectionner	#
 gui.stats=Statistiques	#
 gui.tab=Tab	#
 gui.toMenu=Retour au menu principal	#
 gui.up=Haut	#
 gui.yes=Oui	#
+
+level.export.started=Exportation du niveau démarrée...	#
+level.import.started=Importation du niveau démarrée...	#
+level.export.success=L'exportation du niveau a abouti	#
+level.import.success=L'importation du niveau a abouti	#
+level.export.failed=Échec de l'exportation du niveau	#
+level.import.failed=Échec de l'importation du niveau	#
+invite.clear=Effacer la sélection	#
+invite.send=Envoyer %d invitations	#
+invite.title=Inviter des amis	#
+invite.error.message=Il est possible que certaines de vos invitations n'aient pas été envoyées.	#
 
 inventory.binSlot=Poubelle	#
 
@@ -1659,6 +1674,7 @@ item.bucket.name=Seau	#
 item.bucketLava.name=Seau de lave	#
 item.bucketWater.name=Seau d'eau	#
 item.cake.name=Gâteau	#
+item.camera.name=Appareil photo	#
 item.canBreak=Peut détruire :	#
 item.canPlace=Peut se placer sur :	#
 item.carrotGolden.name=Carotte dorée	#
@@ -1844,6 +1860,7 @@ item.pickaxeStone.name=Pioche en pierre	#
 item.pickaxeWood.name=Pioche en bois	#
 item.porkchopCooked.name=Côtelette de porc cuite	#
 item.porkchopRaw.name=Côtelette de porc crue	#
+item.portfolio.name=Portefeuille	#
 item.potato.name=Pomme de terre	#
 item.potatoBaked.name=Pomme de terre cuite	#
 item.potatoPoisonous.name=Pomme de terre empoisonnée	#
@@ -1975,6 +1992,9 @@ lanServer.start=Ouvrir au réseau local	#
 lanServer.title=Monde en réseau local	#
 lanServer.restart=Ce serveur a redémarré !	#
 
+livingroom.hint.tap_touchpad_for_immersive=Touchez l'écran tactile pour passer en mode Immersif	#
+livingroom.hint.tap_view_for_immersive=Touchez le bouton de vue pour passer en mode Immersif	#
+
 map.toolTip.displayMarkers=Afficher les marqueurs	#
 map.toolTip.scaling=Échelle 1:%s	#
 map.toolTip.level=Niveau %s/%s	#
@@ -2084,6 +2104,7 @@ options.gamma=Luminosité 	#
 options.gamma.max=Vive	#
 options.gamma.min=Sombre	#
 options.graphics=Graphismes élaborés	#
+options.transparentleaves=Feuilles élaborées	#
 options.graphics.fancy=Détaillés	#
 options.graphics.fast=Rapides	#
 options.group.audio=Son	#
@@ -2134,6 +2155,9 @@ options.qualityVideoTitle=Options de qualité graphique	#
 options.reducedDebugInfo=Infos de débogage réduites 	#
 options.renderClouds=Nuages 	#
 options.renderDistance=Dist. d'affichage 	#
+options.particleRenderDistance=Distance d'affichage des particules	#
+options.msaa=Anticrénelage	#
+options.texelAA=Anticrénelage des éléments de textures	#
 options.renderDistance.far=Lointaine	#
 options.renderDistance.normal=Normale	#
 options.renderDistance.short=Courte	#
@@ -2197,6 +2221,27 @@ options.viewBobbing=Mouvement de tête 	#
 options.visible=Visible	#
 options.vsync=Synchro verticale 	#
 options.worldsizelimit=Limite de la taille du monde	#
+
+options.group.vr=RV	#
+options.vrSensitivity=Sensibilité RV	#
+options.vrRenderDistance=Distance d'affichage RV	#
+options.vrAutojump=Saut auto RV	#
+options.vrGamma=Luminosité RV	#
+options.vrResetPlayerAlignment=Réinitialiser l'alignement RV	#
+options.vrHMDdisplacement=Déplacement avec mouvements casque	#
+options.vrHeadSteering=Pilotage tête	#
+options.StutterTurn=Rotation RV	#
+options.StutterTurnSound=Son de rotation RV	#
+options.StutterConstantAngleOrTime=Rotation RV par temps	#
+options.3DRendering=Affichage 3D	#
+options.vrHudAtTop=Interface en haut	#
+options.vrLinearJump=Saut linéaire	#
+options.vrLinearMotion=Mouvement linéaire	#
+options.stickyMining=Ancrage de l'extraction	#
+options.vrMovingBackwardsHardStop=Arrêt immédiat en arrière	#
+options.comfortControls=Commandes RV	#
+options.ShowComfortSelectScreen=Afficher l'écran de choix des commandes	#
+options.vrHudDrifts=Interface souple	#
 
 pauseScreen.back=Reprendre la partie	#
 pauseScreen.header=Menu du jeu	#
@@ -2310,6 +2355,12 @@ progressScreen.message.exporting=Exportation du monde	#
 progressScreen.message.importing=Importation du monde	#
 progressScreen.message.locating=Recherche du serveur	#
 progressScreen.message.waitingForRealms=En attente de minecraftApp Realms	#
+progressSCreen.riftControls.title=Type de commandes	#
+progressScreen.riftControls.classicButton=Commandes classiques	#
+progressScreen.riftControls.VRButton=Commandes RV expérimentales	#
+progressScreen.riftControls.classicDiscription=Les commandes Minecraft classiques, notamment pour tourner et sauter. Ce réglage peut ne pas être idéal pour certains joueurs. Vous pouvez aussi modifier les commandes dans le jeu grâce au menu Options.	#
+progressScreen.riftControls.enhancedVRDiscription=Commandes RV expérimentales. Ces commandes sont encore en cours de développement. La rotation, les sauts, la nage et le curseur se gèrent en RV. Vous pouvez aussi modifier les commandes dans le jeu grâce au menu Options.	#
+progressScreen.riftControls.showScreenMessage=Conserver ce choix	#
 
 recipeBook.setting.full=Plein	#
 recipeBook.setting.discover=Découvrir	#
@@ -2723,6 +2774,8 @@ stream.userinfo.unmod=Rétrograder	#
 tile.acaciaFence.name=Barrière en bois d'acacia	#
 tile.acaciaFenceGate.name=Portillon en bois d'acacia	#
 tile.activatorRail.name=Rails déclencheurs	#
+tile.allow.name=Autoriser le bloc	#
+tile.deny.name=Refuser le bloc	#
 tile.anvil.intact.name=Enclume	#
 tile.anvil.name=Enclume	#
 tile.anvil.slightlyDamaged.name=Enclume légèrement endommagée	#
@@ -3106,6 +3159,7 @@ worldError.IO=ne peut être ouvert.	#
 worldError.notFound=est introuvable.	#
 worldError.notSupported=présente un format incompatible.	#
 worldError.unknown=présente un problème inconnu.	#
+worldError.writeCorrupted=est corrompu et ne peut être sauvegardé.	#
 
 trial.pauseScreen.remainingTime=Temps d'essai restant: %02d:%02d	#
 trial.pauseScreen.buyGame=Acheter Minecraft	#
@@ -3126,12 +3180,38 @@ trial.upsell.expiredDescription.line3=- jouer entre amis	#
 trial.upsell.expiredDescription.line4=- fabriquer des centaines d'objets	#
 trial.upsell.expiredDescription.line5=- découvrir de mystérieux édifices et royaumes	#
 
+## VR control Scheme Strings
+vr.controls.title=Commandes RV	#
+
+vr.controls.title.classic=Commandes classiques	#
+vr.controls.title.experimental=Commandes RV (expérimentales)	#
+vr.controls.classicDescription=Rotation et saut normaux, pour un niveau de confort généralement ressenti comme intense.	#
+vr.controls.experimentalDescription=La rotation s'effectue par segments. Le saut et le curseur se gèrent en RV, pour un niveau de confort généralement ressenti comme modéré.	#
+vr.controls.sharedDescription=Vous pouvez aussi modifier les commandes dans le jeu grâce au menu Options.	#
+vr.moreOptions=Plus d'options...	#
+vr.moreInformation=Plus d'infos...	#
+vr.detailedInformation=Plusieurs fonctionnalités ont été réglées pour améliorer le confort de jeu en RV. Par exemple, la rotation RV segmente les mouvements de rotation pour réduire la désorientation.	#
+vr.detailedInformationLink=Pour plus d'informations sur les commandes RV et découvrir l'envers du décor, rendez-vous sur minecraft.net/vr	#
+
 ## Xbox Live Strings
 xbox.signin.error=Vous devez être connecté à Xbox Live pour jouer et accéder au score du joueur ainsi qu'aux succès.	#
 xbox.connection.error=Pas de connexion à Xbox Live.	#
+xbox.signin=Se connecter	#
 
 xbox.disconectionscreen.notSignedIn=Connectez-vous avec votre compte Xbox Live pour jouer entre amis.	#
 xbox.disconectionscreen.multiplayerNotAllowed=Ce compte n'est pas autorisé à rejoindre une partie multijoueur sur Xbox Live.	#
 xbox.disconectionscreen.accessDenied=Vous devez être amis avec un joueur de cette partie pour la rejoindre.	#
 
+authserver.notavailable=Un problème s'est produit. Nous ne sommes pas en mesure de vérifier que le serveur auquel vous tentez de vous connecter est fiable. Nous vous conseillons de réessayer plus tard.	#
+authserver.authfailed=Gros souci : ce serveur a échoué à notre test de vérification. Quelqu'un à qui nous ne faisons pas confiance se fait peut-être passer pour un serveur de confiance.	#
+
+
 platform.model.unknown=INCONNU	#
+
+vr.pausescreen.recenterDevice=Recentrer le périphérique	#
+vr.warning.controllerRequired=Manette de jeu nécessaire	#
+vr.warning.controllerRecommended=Une manette de jeu est recommandée pour la RV	#
+vr.alignscreen.pressButtonX=Appuyez sur la touche X de votre manette pour continuer	#
+vr.alignscreen.pressAnyButton=Alignez votre tête en position neutre et appuyez sur une touche	#
+vr.alignscreen.info=Remarque : cette fonction est au stade expérimental. La RV peut entraîner une gêne chez certaines personnes. Pensez à faire une pause dès que vous en ressentez le besoin et à utiliser le mode Salon en touchant l'écran tactile pour rendre la vue moins intense.	#
+vr.alignscreen.info_viewbutton=Remarque : cette fonction est au stade expérimental. La RV peut entraîner une gêne chez certaines personnes. Pensez à faire une pause dès que vous en ressentez le besoin et à utiliser le mode Salon en touchant la touche de vue pour rendre la vue moins intense.	#

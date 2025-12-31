@@ -94,6 +94,7 @@ action.interact.tame=驯化	#
 action.interact.wolfcollar=染色	#
 action.interact.opencontainer=打开	#
 action.interact.createMap=创建地图	#
+action.interact.takepicture=拍照	#
 
 addServer.add=完成	#
 addServer.enterIp=服务器地址	#
@@ -190,6 +191,8 @@ commands.banip.usage=/ban-ip <address|name> [reason ...]	#
 commands.banlist.ips=总共有 %d 个被封禁的IP地址：	#
 commands.banlist.players=总共有 %d 个被封禁的玩家	#
 commands.banlist.usage=//banlist [ips|players]	#
+commands.blockdata.placeFailed=此处不能放置方块	#
+commands.blockdata.destroyFailed=此处不能挖掘	#
 commands.blockdata.failed=数据标签未更改：%s	#
 commands.blockdata.notValid=目标模块不是数据持有模块	#
 commands.blockdata.outOfWorld=无法更改世界外的方块	#
@@ -615,7 +618,7 @@ controllerLayoutScreen.save=保存	#
 controllerLayoutScreen.saveAndExit=保存&退出	#
 controllerLayoutScreen.trigger=触发键	#
 controllerLayoutScreen.unassigned=未指派	#
-
+controllerLayoutScreen.toggleLivingroom=切换全屏模式	#
 controls.reset=重置	#
 controls.resetAll=重置按键	#
 controls.title=控制	#
@@ -992,12 +995,24 @@ gui.logout=登出	#
 gui.no=否	#
 gui.none=无	#
 gui.ok=确定	#
+gui.pickWorld=浏览 我的世界 中的世界	#
 gui.select=选择	#
 gui.stats=统计信息	#
 gui.tab=标签	#
 gui.toMenu=回到标题画面	#
 gui.up=向上	#
 gui.yes=是	#
+
+level.export.started=等级导出已开始...	#
+level.import.started=等级导入已开始...	#
+level.export.success=等级导出成功完成	#
+level.import.success=等级导入成功完成	#
+level.export.failed=等级导出失败	#
+level.import.failed=等级导入失败	#
+invite.clear=清除选择	#
+invite.send=发送 %d 份邀请函	#
+invite.title=邀请好友	#
+invite.error.message=你的部分邀请函可能发送失败。	#
 
 inventory.binSlot=摧毁物品	#
 
@@ -1659,6 +1674,7 @@ item.bucket.name=桶	#
 item.bucketLava.name=岩浆桶	#
 item.bucketWater.name=水桶	#
 item.cake.name=蛋糕	#
+item.camera.name=Camera	#
 item.canBreak=会损坏：	#
 item.canPlace=可以放在：	#
 item.carrotGolden.name=金萝卜	#
@@ -1844,6 +1860,7 @@ item.pickaxeStone.name=石镐	#
 item.pickaxeWood.name=木镐	#
 item.porkchopCooked.name=熟猪排	#
 item.porkchopRaw.name=生猪排	#
+item.portfolio.name=个人资料	#
 item.potato.name=马铃薯	#
 item.potatoBaked.name=烤马铃薯	#
 item.potatoPoisonous.name=毒马铃薯	#
@@ -1975,6 +1992,9 @@ lanServer.start=创造一个局域网世界	#
 lanServer.title=局域网世界	#
 lanServer.restart=该服务器已重启！	#
 
+livingroom.hint.tap_touchpad_for_immersive=轻按触控板进入全屏模式	#
+livingroom.hint.tap_view_for_immersive=轻按“查看”按钮进入全屏模式	#
+
 map.toolTip.displayMarkers=显示标记	#
 map.toolTip.scaling=缩放比例：1:%s	#
 map.toolTip.level=等级%s/%s	#
@@ -2084,6 +2104,7 @@ options.gamma=亮度	#
 options.gamma.max=明亮	#
 options.gamma.min=昏暗	#
 options.graphics=精美图像	#
+options.transparentleaves=花俏的树叶	#
 options.graphics.fancy=花俏的	#
 options.graphics.fast=流畅	#
 options.group.audio=声音	#
@@ -2134,6 +2155,9 @@ options.qualityVideoTitle=视频质量设置	#
 options.reducedDebugInfo=简化调试信息	#
 options.renderClouds=云	#
 options.renderDistance=能见度	#
+options.particleRenderDistance=粒子能见度	#
+options.msaa=抗锯齿	#
+options.texelAA=纹素抗锯齿	#
 options.renderDistance.far=高	#
 options.renderDistance.normal=普通	#
 options.renderDistance.short=低	#
@@ -2197,6 +2221,27 @@ options.viewBobbing=视角摇晃	#
 options.visible=显示	#
 options.vsync=使用垂直同步	#
 options.worldsizelimit=有限的世界大小	#
+
+options.group.vr=VR	#
+options.vrSensitivity=VR 灵敏度	#
+options.vrRenderDistance=VR 能见度	#
+options.vrAutojump=VR 自动跳跃	#
+options.vrGamma=VR 亮度	#
+options.vrResetPlayerAlignment=重置 VR 校准	#
+options.vrHMDdisplacement=使用 HMD 位移进行移动	#
+options.vrHeadSteering=头部转向	#
+options.StutterTurn=VR 转弯	#
+options.StutterTurnSound=VR 转弯声音	#
+options.StutterConstantAngleOrTime=VR 按时转弯	#
+options.3DRendering=3D 渲染	#
+options.vrHudAtTop=HUD 置顶	#
+options.vrLinearJump=线性跳跃	#
+options.vrLinearMotion=线性动作	#
+options.stickyMining=粘性开采	#
+options.vrMovingBackwardsHardStop=Hard Stop in Reverse	#
+options.comfortControls=VR 控制	#
+options.ShowComfortSelectScreen=显示控制选择屏幕	#
+options.vrHudDrifts=HUD 漂移	#
 
 pauseScreen.back=回到游戏	#
 pauseScreen.header=游戏菜单	#
@@ -2310,6 +2355,12 @@ progressScreen.message.exporting=正在导出世界	#
 progressScreen.message.importing=正在导入世界	#
 progressScreen.message.locating=定位服务器	#
 progressScreen.message.waitingForRealms=正在等待minecraftApp 领域	#
+progressSCreen.riftControls.title=控制方案	#
+progressScreen.riftControls.classicButton=经典控制	#
+progressScreen.riftControls.VRButton=进展 VR 控制	#
+progressScreen.riftControls.classicDiscription=我的世界 经典控制方法。普通转弯和跳跃。这种设置可能对某些玩家不够理想。控制项也可在游戏中通过选项菜单更改。	#
+progressScreen.riftControls.enhancedVRDiscription=进展 VR 控制方法。这些控制项正处于开发进展中，应视为试验性质。转弯、跳跃、游泳和光标均经过 VR 调整。控制项也可在游戏中通过选项菜单更改。	#
+progressScreen.riftControls.showScreenMessage=记住该选择	#
 
 recipeBook.setting.full=满	#
 recipeBook.setting.discover=发现	#
@@ -2723,6 +2774,8 @@ stream.userinfo.unmod=取消管理员资格	#
 tile.acaciaFence.name=金合欢栅栏	#
 tile.acaciaFenceGate.name=金合欢栅栏门	#
 tile.activatorRail.name=激活铁轨	#
+tile.allow.name=Allow Block	#
+tile.deny.name=Deny Block	#
 tile.anvil.intact.name=铁砧	#
 tile.anvil.name=铁砧	#
 tile.anvil.slightlyDamaged.name=轻微损坏的铁砧	#
@@ -3106,6 +3159,7 @@ worldError.IO=无法打开。	#
 worldError.notFound=无法找到。	#
 worldError.notSupported=出现了不支持的格式。	#
 worldError.unknown=出现了未知问题。	#
+worldError.writeCorrupted=已毁坏，无法保存。	#
 
 trial.pauseScreen.remainingTime=剩余的使用时间：%02d:%02d	#
 trial.pauseScreen.buyGame=购买《我的世界》	#
@@ -3126,12 +3180,38 @@ trial.upsell.expiredDescription.line3=—与好友一起畅玩	#
 trial.upsell.expiredDescription.line4=—加工百种物品	#
 trial.upsell.expiredDescription.line5=—发现神秘建筑和境界	#
 
+## VR control Scheme Strings
+vr.controls.title=VR 控制	#
+
+vr.controls.title.classic=经典控制	#
+vr.controls.title.experimental=VR 控制（进展）	#
+vr.controls.classicDescription=普通转弯和跳跃会对大多数人形成舒适级别的激烈程度。	#
+vr.controls.experimentalDescription=转弯按片断发生，跳跃和光标已经过 VR 调整，可为大多数人带来中等舒适的激烈程度。	#
+vr.controls.sharedDescription=控制项也可在游戏中通过选项菜单更改。	#
+vr.moreOptions=更多选项...	#
+vr.moreInformation=更多信息...	#
+vr.detailedInformation=数项游戏功能已加以调整，提供更加舒适的 VR 体验。例如：VR 转弯是一项将转弯动作分成数段，以减少迷失方向的功能。	#
+vr.detailedInformationLink=如需更多有关 VR 控制和幕后外观的信息，请前往 minecraft.net/vr	#
+
 ## Xbox Live Strings
 xbox.signin.error=请登录至 Xbox Live 账户，与好友畅玩，获取游戏分数和成就。	#
 xbox.connection.error=没有连接至 Xbox Live。	#
+xbox.signin=登录	#
 
 xbox.disconectionscreen.notSignedIn=请登录至 Xbox Live 账户，与好友畅玩。	#
 xbox.disconectionscreen.multiplayerNotAllowed=此帐户没有权限加入 Xbox Live 的多人游戏。	#
 xbox.disconectionscreen.accessDenied=您在此游戏内必须是其他人的好友才可加入。	#
 
+authserver.notavailable=出错了。我们无法验证你尝试连接的服务器是我们信任的服务器。我们建议你稍后再试。	#
+authserver.authfailed=太糟糕了。该服务器未能通过我们的验证测试。我们不信任者可能正假装成受信任服务器。	#
+
+
 platform.model.unknown=未知	#
+
+vr.pausescreen.recenterDevice=重定位设备	#
+vr.warning.controllerRequired=需要游戏控制器	#
+vr.warning.controllerRecommended=建议为 VR 使用游戏控制器	#
+vr.alignscreen.pressButtonX=请在控制器上按 'X' 按钮继续	#
+vr.alignscreen.pressAnyButton=将你的头对准中间位置，然后按任意按钮	#
+vr.alignscreen.info=注意：这是进展中的试验。VR 可能对某些人造成不适。切记根据需要经常休息，或轻按触控板使用起居室模式，降低激烈视感冲击。	#
+vr.alignscreen.info_viewbutton=注意：这是进展中的试验。VR 可能对某地 造成不适。切记根据需要经常休息，或轻按“查看”按钮使用起居室模式，降低激烈视感冲击。	#
