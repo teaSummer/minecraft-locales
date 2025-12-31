@@ -1,3 +1,4 @@
+hbui.Sample.hello=Dobrý den, %1$s!	#
 hbui.Accordion.closeInputLegend=Zavřít	#
 hbui.Accordion.openInputLegend=Otevřít	#
 hbui.BackButton.back=Zpět	#
@@ -13,7 +14,7 @@ hbui.BaseSlider.currentValue=aktuální hodnota je	#
 hbui.BaseSlider.elementType=posuvník	#
 hbui.BaseSlider.maxValueIs=maximální hodnota je	#
 hbui.BaseSlider.minValueIs=minimální hodnota je	#
-hbui.BaseSwitch.elementType=Přepínač	#
+hbui.BaseSwitch.elementType=Přepnout	#
 hbui.BaseSwitch.narrationDisabled=Zakázat	#
 hbui.BaseSwitch.off=Vypnuto	#
 hbui.BaseSwitch.on=Zapnuto	#
@@ -26,7 +27,7 @@ hbui.BaseTextField.removedNarration=Odebráno	#
 hbui.BaseTextField.replacedNarration=Nahrazeno	#
 hbui.BaseTextField.select=Vybrat	#
 hbui.BaseTextField.selected=Vybráno	#
-hbui.DropdownItem.elementType=Předmět	#
+hbui.DropdownItem.elementType=Položka	#
 hbui.DropdownItem.narrationComponentType=Možnost	#
 hbui.DropdownItem.select=Vybrat	#
 hbui.DropdownItem.selected=Vybráno	#
@@ -1109,6 +1110,11 @@ hbui.DebugDrawer.closeDrawerShortcutInputLegend=Zavřít	#
 hbui.DebugDrawer.title=Ladit	#
 hbui.EditRealmWorld.play=Hrát   	#### String for button to start playing on the Realm world
 hbui.EditRealmWorld.title=Upravit svět    	#### Title for the screen where users edit/change their realm world settings
+hbui.EditWorld.addonStackingWarningModal.cancelButton=Zrušit    	#### {MaxLength="60"}
+hbui.EditWorld.addonStackingWarningModal.confirmButton=Rozumím!    	#### {MaxLength="60"}
+hbui.EditWorld.addonStackingWarningModal.description=Kombinování více doplňků může vést k nepředvídatelným zážitkům. Doba načítání světa se může změnit a doplňky se mohou chovat nečekaně.    	#### {MaxLength="300"}
+hbui.EditWorld.addonStackingWarningModal.doNotShow=Tuto obrazovku znovu nezobrazovat    	#### {MaxLength="60"}
+hbui.EditWorld.addonStackingWarningModal.title=Používání doplňků    	#### {MaxLength="60"}
 hbui.EditWorld.clearingPlayerDataModal.description=Neukončujte hru. Při jejím ukončení může dojít k poškození exportu...	#
 hbui.EditWorld.clearingPlayerDataModal.title=Mazání dat hráčů	#
 hbui.EditWorld.clearPlayerDataErrorModal.description=Zkuste to znovu později.	#
@@ -1414,7 +1420,7 @@ hbui.InboxSettingsRoute.showMessages=Povolit upozornění na notifikační odzna
 hbui.InboxSettingsRoute.title=Nastavení schránky	#
 hbui.JoinRealmsServer.buttonEnumeration=%1$s z %2$s	#
 hbui.JoinRealmsServer.helpButtonLabel=Nápověda	#
-hbui.JoinRealmsServer.inputDescription=Zadejte odkaz s pozvánkou, kterou jste obdrželi, abyste se mohli připojit k Říši.	#
+hbui.JoinRealmsServer.inputDescription=Zadejte odkaz s pozvánkou, kterou jste obdrželi, abyste se mohli připojit k Realmu.	#
 hbui.JoinRealmsServer.inputLabel=Odkaz s pozvánkou	#
 hbui.JoinRealmsServer.inputPlaceholder=Příklad: realms.gg/lCb-aaSCYBk	#
 hbui.JoinRealmsServer.joinButtonLabel=Připojit se	#
@@ -1470,6 +1476,11 @@ hbui.JoinServerWarningModal.cancel=Zrušit	#
 hbui.JoinServerWarningModal.continue=Pokračovat	#
 hbui.JoinServerWarningModal.text=Jste hostitelem, pokud opustíte tento svět, relace hry pro více hráčů také skončí.	#
 hbui.JoinServerWarningModal.title=Ukončit relaci hry pro více hráčů?	#
+hbui.JoinWorldBlockedModal.cancel=Jít zpět	#
+hbui.JoinWorldBlockedModal.confirmation=Uložit a připojit se k příteli	#
+hbui.JoinWorldBlockedModal.message_p1=Připojit se k příteli znamená opuštění aktuálního světa.	#
+hbui.JoinWorldBlockedModal.message_p2=Nebojte se, až se vrátíte, všechno tady stále bude.	#
+hbui.JoinWorldBlockedModal.title=Opustit aktuální svět?	#
 hbui.ManageShowcaseErrorModal.close=Zavřít	#
 hbui.ManageShowcaseErrorModal.text=Došlo k problému při ukládání změn ve vaší výstavní galerii.	#
 hbui.ManageShowcaseErrorModal.title=Něco se nepovedlo	#
@@ -1513,6 +1524,8 @@ hbui.NoInternetModal.button=Zavřít 	#### Close as in closing a modal. {MaxLeng
 hbui.NoInternetModal.text=Jste offline. Připojte se k internetu, abyste měli přístup k online funkcím.		####  Player is not connected to the internet, he is offline. {MaxLength="340"}
 hbui.NoInternetModal.title=Bez internetu		####  Player is not connected to the internet. {MaxLength="40"}
 hbui.Notifications.achievementsDisabled=Nemůžete získávat herní úspěchy.	#
+hbui.Notifications.addonStacking=Kombinace více doplňků.    	#### {MaxLength="80"}
+hbui.Notifications.addonStackingLink=Propojit    	#### This is a text button to open a dialog to provide more information {MaxLength="20"}
 hbui.Notifications.changeSkinLink=Změnit skin	#
 hbui.Notifications.experimentsWarning.informationMessage=Experimenty představují potenciální nové funkce. Buďte proto opatrní, protože hrozí nevratné škody.	#
 hbui.Notifications.freeSpace=Uvolnit místo	#
@@ -1720,6 +1733,7 @@ hbui.PlayerPermissionsRoute.Details.ability.teleport=Teleportovat	#
 hbui.PlayerPermissionsRoute.Details.kickButton=Vyhodit hráče %1$s ze světa     	####Text for the button that appears in the Player Permissions Screen - %1$s is the player name {maxLength=40}
 hbui.PlayerPermissionsRoute.Details.kickButton.inputLegend=Vybrat	#
 hbui.PlayerPermissionsRoute.Details.notification.kickCommandFailedFlag=Tohoto hráče se nepodařilo odebrat.   	####Text for snackbar that appears when trying to kick another player fails {maxLength=60}
+hbui.PlayerPermissionsRoute.Details.notification.kickCommandSuccess=Hráč úspěšně odebrán 	####Text for snackbar that appears when a player has been kicked from a world {MaxLength=60}
 hbui.PlayerPermissionsRoute.Details.notification.selectedPlayerPermissionsChangedFlag=Oprávnění hráče byla aktualizována jiným operátorem.   	####Text for snackbar that appears when another player has updated the selected player's permissions {maxLength=60}
 hbui.PlayerPermissionsRoute.Details.optionEnumeration=%1$s z %2$s	#
 hbui.PlayerPermissionsRoute.Details.playerIdInvalidFlag=Pro tohoto hráče se nepodařilo načíst oprávnění   	####Text for empty state that appears when you are trying to load the permissions for an invalid ID {maxLength=60}
@@ -1731,7 +1745,7 @@ hbui.PlayerPermissionsRoute.Details.roleDropdown.title=Úroveň oprávnění	#
 hbui.PlayerPermissionsRoute.Details.SettingsLockedBanner.link=Přejít do nastavení hry	#
 hbui.PlayerPermissionsRoute.Details.SettingsLockedBanner.text=Abyste mohli měnit oprávnění, musíte odemknout možnosti šablony světa.	#
 hbui.PlayerPermissionsRoute.EnableCheatsModal.cheatsDisabledButton=Pokračovat s vypnutými cheaty	#
-hbui.PlayerPermissionsRoute.EnableCheatsModal.description=Určité příkazy, jako je teleportování, jsou dostupné pouze s povolenými cheaty. Povolte je nyní nebo v nabídce nastavení hry.	#
+hbui.PlayerPermissionsRoute.EnableCheatsModal.description=Určité příkazy, jako je teleportování, jsou dostupné pouze s povolenými cheaty. Povolte je nyní nebo v nabídce nastavení hry.   	####Text that appears in modal when trying to change a permission from a user but the cheats are not on {MaxLength=300}
 hbui.PlayerPermissionsRoute.EnableCheatsModal.enableCheatsButton=Povolit cheaty	#
 hbui.PlayerPermissionsRoute.EnableCheatsModal.inputLegend=Vybrat	#
 hbui.PlayerPermissionsRoute.EnableCheatsModal.title=Cheaty jsou vypnuté	#
@@ -1913,7 +1927,7 @@ hbui.PlayScreen.RealmsBannedMessage.Banned.bodySecondParagraph=Chcete-li získat
 hbui.PlayScreen.RealmsBannedMessage.Banned.helpButton=Další informace	#
 hbui.PlayScreen.RealmsBannedMessage.Banned.title=Byl vám zakázán přístup do služby Realms.		#### {StrContains="Realms"}
 hbui.PlayScreen.RealmsBannedMessage.role=Obrazovka	#
-hbui.PlayScreen.RealmsBannedMessage.Suspended.bodyFirstParagraph=Byl vám dočasně vykázáni ze služby Minecraft Realms. To znamená, že nemůžete hrát, ani se připojit k Realms.		#### {StrContains="Minecraft"} {StrContains="Realms"}
+hbui.PlayScreen.RealmsBannedMessage.Suspended.bodyFirstParagraph=Byli jste dočasně vykázáni ze služby Minecraft Realms. To znamená, že nemůžete hrát, ani se připojit k Realms.	#### {StrContains="Minecraft"} {StrContains="Realms"}
 hbui.PlayScreen.RealmsBannedMessage.Suspended.bodySecondParagraph=Chcete-li získat další informace nebo si vyžádat přezkoumání případu, použijte tlačítko níže.	#
 hbui.PlayScreen.RealmsBannedMessage.Suspended.helpButton=Nápověda	#
 hbui.PlayScreen.RealmsBannedMessage.Suspended.title=Byli jste vykázáni ze služby Realms.		#### {StrContains="Realms"}
@@ -2485,9 +2499,8 @@ hbui.RealmsStories.feed.fullImage=%1$s Celý obrázek příběhu	#
 hbui.RealmsStories.feed.fullImageClose=Zavřít	#
 hbui.RealmsStories.feed.fullImageRole=Obrazovka	#
 hbui.RealmsStories.feed.gamerTag=Značka hráče. %1$s z %2$s	#
-hbui.RealmsStories.feed.guestAccountNotificationBanner.line1=Členové Říše mají přístup k dalším funkcím služby Příběhy Realms.	#
-hbui.RealmsStories.feed.guestAccountNotificationBanner.line2=Abyste se mohli zúčastnit, požádejte vlastníka Říše o pozvánku.	#
-hbui.RealmsStories.feed.inRealm=Playing on Realm    	#### Indication that the player/user is currently playing on the Realm(Product name for hosted server). {MaxLength=100}{StrContains="Realm"}
+hbui.RealmsStories.feed.guestAccountNotificationBanner=Hráči na rozdělené obrazovce nemohou lajkovat, komentovat, ani přidávat nové Příběhy 	#### {MaxLength="120"}
+hbui.RealmsStories.feed.inRealm=Hraní ve službě Realm    	#### Indication that the player/user is currently playing on the Realm(Product name for hosted server). {MaxLength=100}{StrContains="Realm"}
 hbui.RealmsStories.feed.newHoursLogged=%1$s zaznamenaných nových hodin	#
 hbui.RealmsStories.feed.newMinutesLogged=%1$s zaznamenaných nových minut	#
 hbui.RealmsStories.feed.offline=Offline	#
@@ -2629,7 +2642,7 @@ hbui.RealmsStories.members.enumeration=%1$s z %2$s	#
 hbui.RealmsStories.members.filter.title=Filtrovat členy Realmu	#
 hbui.RealmsStories.members.fromAtoZ=Od A do Z	#
 hbui.RealmsStories.members.fromZtoA=Od Z do A	#
-hbui.RealmsStories.members.inRealmMembers=Members playing on Realm		#### a option choice to filter members list by those who are currently playing in the Realm(Product name for host server). {MaxLength=60}{StrContains="Realm"}
+hbui.RealmsStories.members.inRealmMembers=Členové hrající ve službě Realm	#### a option choice to filter members list by those who are currently playing in the Realm(Product name for host server). {MaxLength=60}{StrContains="Realm"}
 hbui.RealmsStories.members.leastRecentlyPlayed=Nejméně nedávno hrané	#
 hbui.RealmsStories.members.manage=Spravovat členy	#
 hbui.RealmsStories.members.member=Člen	#
@@ -2781,6 +2794,8 @@ hbui.RealmsStories.settings.realmWideSettings.header=2. Nastavení pro celou Ř�
 hbui.RealmsStories.settings.realmWideSettings.member.header=Nastavení pro celý Realm	#
 hbui.RealmsStories.settings.realmWideSettings.playerTimeline.description=Povolte všem zobrazení časové osy.	#
 hbui.RealmsStories.settings.realmWideSettings.playerTimeline.title=Časová osa	#
+hbui.RealmsStories.settings.realmWideSettings.playerTimelineRequirement.description=Vyžadovat, aby se všichni přihlásili do Časové osy, než budou moci začít hrát v Realmu. 	#### {StrContains="Realm"} {MaxLength="100"} Description text for the feature a Realm owner can enable that requires members of this Realm to opt into the Timeline feature before they are allowed to play on the Realm
+hbui.RealmsStories.settings.realmWideSettings.playerTimelineRequirement.title=Nutné přihlášení do Časové osy	#### {MaxLength="30"}Title for the feature a Realm owner can enable that requires members of this Realm to opt into the Timeline feature before they are allowed to play on the Realm
 hbui.RealmsStories.settings.realmWideSettings.realmEvents.description=Povolte Minecraftu zveřejňovat příběhy o herních úspěších. Toto nastavení začne platit, jakmile zavřete a znovu otevřete Realm. (Jděte do Úpravy > Nastavit Realmy > Předplatné > Zavřít Realm. Pak znovu otevřete Realm)	#
 hbui.RealmsStories.settings.realmWideSettings.realmEvents.title=Události Realmu	#
 hbui.RealmsStories.settings.realmWideSettings.storyCoordinates.description=Zobrazit souřadnice pro konkrétní události Realmu, pokud je u daného světa povolena funkce „Zobrazit souřadnice“ při spuštění události.	#
@@ -3026,25 +3041,17 @@ hbui.ShowcaseDetailsRoute.title=Podrobnosti o snímku obrazovky hráče %1$s	#
 hbui.SideStoryPostContainer.hint=Příběh od %1$s	#
 hbui.SideStoryPostContainer.name=Příspěvek s příběhem	#
 hbui.SideStoryPostContainer.role=Textový blok	#
-hbui.SignInAchievementsRoute.altSignInHeader=Získávejte herní úspěchy	#
-hbui.SignInAchievementsRoute.altSignInPrompt=Přihlaste se nebo se zaregistrujte zdarma a začněte získávat herní úspěchy	#
 hbui.SignInAchievementsRoute.laterButton=Možná později	#
 hbui.SignInAchievementsRoute.signInButton=Přihlásit se	#
-hbui.SignInAchievementsRoute.signInHeader=Přihlaste se a zaznamenávejte herní úspěchy	#
+hbui.SignInAchievementsRoute.signInHeader=Získávejte herní úspěchy 	####Short Header for modal, player can earn achievements{MaxLength=55}
 hbui.SignInAchievementsRoute.signInList1=Sledujte svůj postup a milníky v Minecraftu	#
 hbui.SignInAchievementsRoute.signInList2=Odemkněte exkluzivní předměty v Tvůrci postav	#
 hbui.SignInAchievementsRoute.signInList3=Pochlubte se úspěchy, kterých jste dosáhli, svým přátelům	#
-hbui.SignInAchievementsRoute.signInPrompt=Bouchnuli jste do stromu? Přežili jste první noc? Přihlaste se a začněte získávat herní úspěchy!	#
-hbui.SignInAddFriendRoute.altSignInHeader=Najít přátele na jiných platformách	#
-hbui.SignInAddFriendRoute.altSignInPrompt=Přihlaste se nebo se zdarma zaregistrujte a spojte se s přáteli na jiných platformách	#
+hbui.SignInAchievementsRoute.signInPrompt=Přihlaste se nebo se zaregistrujte zdarma a začněte získávat herní úspěchy 	####Body of modal, informing player that signing in will allow them to earn achievements{MaxLength=200}
 hbui.SignInAddFriendRoute.laterButton=Možná později	#
 hbui.SignInAddFriendRoute.signInButton=Přihlásit se nyní	#
-hbui.SignInAddFriendRoute.signInHeader=Najít přátele z jiných platforem	#
-hbui.SignInAddFriendRoute.signInList1=Přidejte přátele a pozvěte je do svých světů	#
-hbui.SignInAddFriendRoute.signInList1NXPS=Přidejte si přátele z různých platforem a pozvěte je do svých světů	#
-hbui.SignInAddFriendRoute.signInList2=Sledujte seznam svých přátel na více konzolích	#
-hbui.SignInAddFriendRoute.signInList3=Přijměte pozvánky do Říší od svých přátel	#
-hbui.SignInAddFriendRoute.signInPrompt=Jste připraveni připojit se ke svým přátelům v Minecraftu prostřednictvím různých platforem (cross-platform)? Přihlaste se a začněte hrát společně!	#
+hbui.SignInAddFriendRoute.signInHeader=Najděte přátele na jiných platformách  	####Header for modal, allow for searching for friends via search bar{MaxLength=55}
+hbui.SignInAddFriendRoute.signInPrompt=Přihlaste se nebo se zdarma zaregistrujte a spojte se s přáteli na jiných platformách   	####Body of modal, player will be able to play multiplayer with other cross platform friends{MaxLength=200}
 hbui.SignInDressingRoomRoute.laterButton=Možná později	#
 hbui.SignInDressingRoomRoute.signInButton=Přihlásit se	#
 hbui.SignInDressingRoomRoute.signInHeader=Stylová postava!	#
@@ -3054,26 +3061,15 @@ hbui.SignInMarketplaceRoute.signInButton=Přihlásit se	#
 hbui.SignInMarketplaceRoute.signInHeader=Vítejte na tržišti!	#
 hbui.SignInMarketplaceRoute.signInList1=Získejte přístup k vašemu zakoupenému obsahu na tržišti a postavám napříč platformami.	#
 hbui.SignInMarketplaceRoute.signInPrompt=Přihlaste se, abyste si uložili své nákupy do svého účtu tak, aby zůstaly navždy s vámi.	#
-hbui.SignInPlayOnServerRoute.altSignInHeader=Hrát na vybraných serverech	#
-hbui.SignInPlayOnServerRoute.altSignInPrompt=Přihlaste se nebo se zaregistrujte zdarma na vybrané servery	#
 hbui.SignInPlayOnServerRoute.laterButton=Možná později	#
 hbui.SignInPlayOnServerRoute.signInButton=Přihlásit se	#
-hbui.SignInPlayOnServerRoute.signInHeader=Přihlaste se a hrajte na vybraných serverech	#
-hbui.SignInPlayOnServerRoute.signInList1=Připojte se k tisícům hráčů v trvalých online světech	#
-hbui.SignInPlayOnServerRoute.signInList2=Každý server obsahuje jedinečné minihry a výzvy	#
-hbui.SignInPlayOnServerRoute.signInList3=Mějte přístup k serverům na všech platformách pomocí jediného účtu	#
-hbui.SignInPlayOnServerRoute.signInPrompt=Máte chuť zapojit se do různých online multiplayerových miniher? Přihlaste se a získejte přístup k vybraným serverům!	#
-hbui.SignInSavePurchasesRoute.altSignInHeader=Uložit vaše nákupy	#
-hbui.SignInSavePurchasesRoute.altSignInPrompt=Přihlaste se nebo se zaregistrujte zdarma, abyste si uložili nákupy na tržišti	#
+hbui.SignInPlayOnServerRoute.signInHeader=Hrajte na vybraných serverech  	####Header for modal, allow player to play on big, custom featured servers made by other players{MaxLength=55}
+hbui.SignInPlayOnServerRoute.signInPrompt=Přihlaste se nebo se zaregistrujte zdarma a hrajte na vybraných serverech 	####Body of modal, signing in allows player to play on such servers{MaxLength=200}
 hbui.SignInSavePurchasesRoute.createAccountPrompt=Nemáte účet Microsoft? Vytvořte si ho teď zdarma!	#
 hbui.SignInSavePurchasesRoute.laterButton=Možná později	#
 hbui.SignInSavePurchasesRoute.signInButton=Přihlásit se	#
-hbui.SignInSavePurchasesRoute.signInHeader=Přihlaste se, abyste mohli ukládat nákupy	#
-hbui.SignInSavePurchasesRoute.signInList1=Získejte přístup k zakoupenému obsahu z tržiště z libovolné platformy	#
-hbui.SignInSavePurchasesRoute.signInList2=Použijte své upravené postavy na různých platformách	#
-hbui.SignInSavePurchasesRoute.signInList3=Uložte si zakoupené položky, abyste o ně nepřišli, kdyby se s vaším systémem něco stalo	#
-hbui.SignInSavePurchasesRoute.signInPrompt=Už jste si někdy stáhli obsah nebo použili mince na tržišti? Přihlaste se a sdílejte své nákupy na různých platformách.	#
-hbui.SignInToPlatformNetwork.link=Přihlaste se kliknutím sem 	#### Link that is shown next to playstationDisconnectedThirdPartyWithSubscription or nintendoDisconnectedThirdPartyWithSubscription that allows the player to log into the platform network.
+hbui.SignInSavePurchasesRoute.signInHeader=Uložte si své nákupy  	####Modal header, save marketplace skin and map entitlements{MaxLength=55}
+hbui.SignInSavePurchasesRoute.signInPrompt=Přihlaste se nebo se zaregistrujte zdarma a uložíte si své nákupy z Tržiště Marketplace   	####Modal body, signing in allows player to save their entilements{MaxLength=200}
 hbui.SignInWorldsFriendsServersRoute.createAccountPrompt=Nemáte účet Microsoft? Vytvořte si ho teď zdarma!	#
 hbui.SignInWorldsFriendsServersRoute.laterButton=Možná později	#
 hbui.SignInWorldsFriendsServersRoute.signInButton=Přihlásit se	#
@@ -3124,6 +3120,7 @@ hbui.StartFromTemplateRoute.NoContentMessage.message=Prozkoumejte tisíce jedine
 hbui.StartFromTemplateRoute.NoContentMessage.title=Nevlastníte žádný obsah... zatím!	#
 hbui.StartFromTemplateRoute.NoFilteredTemplatesMessage.message=Zkontrolujte pravopis nebo změňte svůj vyhledávaný výraz.	#
 hbui.StartFromTemplateRoute.NoFilteredTemplatesMessage.title=Nebyly nalezeny žádné výsledky	#
+hbui.StartFromTemplateRoute.notification.downloadComplete=Šablona stažena  	####Text for snackbar that appears when the download of a template is completed {MaxLength=40}
 hbui.StartFromTemplateRoute.OwnedByMe.description=Zde najdete všechny šablony, které jste si zakoupili na Tržišti.	#
 hbui.StartFromTemplateRoute.OwnedByMe.downloadUnavailableModal.goBack=Jít zpět	#
 hbui.StartFromTemplateRoute.OwnedByMe.downloadUnavailableModal.message=Šablonu nyní nelze stáhnout. Zkontrolujte připojeni k internetu a zkuste to znovu.	#
@@ -3344,7 +3341,7 @@ hbui.WorldTag.experimental=Experimentální	#
 hbui.WorldTag.hardcore=Extrémně těžká	#
 hbui.WorldTag.lan=LAN	#
 hbui.WorldTag.survival=Hra o přežití	#
-hbui.WorldTag.unknown=Neznámý	#
+hbui.WorldTag.unknown=Neznámý   	####Placeholder if the other tags don't fit, the unknown world tag{MaxLength=21}
 hbui.BackButton.back=Zpět	#
 hbui.BackButton.narrationComponentType=Tlačítko	#
 hbui.BackButton.narrationGoBack=Jít zpět	#
@@ -3486,6 +3483,45 @@ hbui.Toggle.select=Vybrat	#
 hbui.TreeView.collapse=Sbalit	#
 hbui.TreeView.expand=Rozšiřování	#
 hbui.TreeView.open=Otevřít	#
+hbui.Accordion.closeInputLegend=Zavřít	#
+hbui.Accordion.openInputLegend=Otevřít	#
+hbui.BackButton.back=Zpět	#
+hbui.BackButton.narration.backButton=Tlačítko Zpět	#
+hbui.BaseDropdown.close=Zavřít	#
+hbui.BaseDropdown.enumeration=%1$s z %2$s	#
+hbui.BaseDropdown.open=Otevřít	#
+hbui.BaseDropdown.selected=Vybráno	#
+hbui.BaseDropdown.stateCollapsed=Sbaleno	#
+hbui.BaseDropdown.stateExpanded=Rozbaleno	#
+hbui.BaseDropdown.toggleElementType=Možnost	#
+hbui.BaseSlider.currentValue=aktuální hodnota je	#
+hbui.BaseSlider.elementType=posuvník	#
+hbui.BaseSlider.maxValueIs=maximální hodnota je	#
+hbui.BaseSlider.minValueIs=minimální hodnota je	#
+hbui.BaseSwitch.elementType=Přepínač	#
+hbui.BaseSwitch.narrationDisabled=Zakázat	#
+hbui.BaseSwitch.off=Vypnuto	#
+hbui.BaseSwitch.on=Zapnuto	#
+hbui.BaseSwitch.toggle=Přepnout	#
+hbui.BaseTextField.addedNarration=Přidáno	#
+hbui.BaseTextField.deselect=Zrušit výběr	#
+hbui.BaseTextField.hint=V současné době používáte textový vstup. Zadejte %1$s	#
+hbui.BaseTextField.invalidNarration=Neplatný	#
+hbui.BaseTextField.removedNarration=Odebráno	#
+hbui.BaseTextField.replacedNarration=Nahrazeno	#
+hbui.BaseTextField.select=Vybrat	#
+hbui.BaseTextField.selected=Vybráno	#
+hbui.DropdownItem.elementType=Předmět	#
+hbui.DropdownItem.narrationComponentType=Možnost	#
+hbui.DropdownItem.select=Vybrat	#
+hbui.DropdownItem.selected=Vybráno	#
+hbui.DropdownItem.unselected=Nevybráno	#
+hbui.ScrollView.loadingState=Načítání	#
+hbui.ScrollView.narrationScrollViewComponentType=Obsah	#
+hbui.TitleBar.Buttons.Back.inputLegend=Zpět	#
+hbui.TitleBar.Buttons.Back.narration=Tlačítko Zpět	#
+hbui.TitleBar.Buttons.Close.inputLegend=Zavřít	#
+hbui.TitleBar.Buttons.Close.narration=Tlačítko Zavřít	#
 hbui.Editor.title=Mapování vstupů	#
 hbui.EditorActionBar.leftTray=Vlevo	#
 hbui.EditorActionBar.rightTray=Vpravo	#
@@ -3795,6 +3831,7 @@ hbui.EditorPaletteItem.title=Položka palety	#
 hbui.EditorPaletteItem.type=Jednoduchý blok	#
 hbui.EditorPaletteItem.weight=Hmotnost	#
 hbui.EditorRemotePane.narration=Panel	#
+hbui.EditorRemotePane.overlayModal=Modální překrytí 	####Represents a modal panel overlaid on another panel. {MaxLength=100}
 hbui.EditorRoute.brushToolDescription=Maluje vlastní tahy štětcem.	#
 hbui.EditorRoute.brushToolTooltip=Nástroj Štětec	#
 hbui.EditorRoute.stampToolDescription=Zkopíruje jednu oblast světa do jiné oblasti.	#
@@ -3907,7 +3944,7 @@ hbui.EditorWelcomePanel.welcomeTabLinkDocs=Dokumentace	#
 hbui.EditorWelcomePanel.welcomeTabLinkFeedback=Nahlašujte problémy a poskytněte zpětnou vazbu	#
 hbui.EditorWelcomePanel.welcomeTabText1=Vítejte v beta verzi Minecraft Editoru, nástroje, který je navržený tak, aby vám hravě pomohl s návrhy dechberoucích světů v Bedrocku.	#
 hbui.EditorWelcomePanel.welcomeTabText2=Tyto odkazy vám mohou být v průběhu užitečné:	#
-hbui.EditorWelcomePanel.welcomeTabText4=Chcete-li obnovit Rychlý start, najdete ji v nabídce „Pomoc“.	#
+hbui.EditorWelcomePanel.welcomeTabText4=Chcete-li obnovit Rychlý start, najdete jej v nabídce „Pomoc“.	#
 hbui.EditorWelcomePanel.welcomeTabTitle=Vítejte v beta verzi Minecraft Editoru!	#
 hbui.EditorWelcomePanel.welcomeTabTooltip=Úvod	#
 hbui.EditorWelcomePanel.windowTitle=Rychlý úvod	#
@@ -3916,43 +3953,3 @@ hbui.EditorWindowPanel.collapseButton=Tlačítko Sbalit panel	#
 hbui.EditorWindowPanel.dragHandle=Táhlo pro přetažení	#
 hbui.EditorWindowPanel.elementType=Panel	#
 hbui.EditorWindowPanel.expandButton=Tlačítko Rozbalit panel	#
-hbui.Accordion.closeInputLegend=Zavřít	#
-hbui.Accordion.openInputLegend=Otevřít	#
-hbui.BackButton.back=Zpět	#
-hbui.BackButton.narration.backButton=Tlačítko Zpět	#
-hbui.BaseDropdown.close=Zavřít	#
-hbui.BaseDropdown.enumeration=%1$s z %2$s	#
-hbui.BaseDropdown.open=Otevřít	#
-hbui.BaseDropdown.selected=Vybráno	#
-hbui.BaseDropdown.stateCollapsed=Sbaleno	#
-hbui.BaseDropdown.stateExpanded=Rozbaleno	#
-hbui.BaseDropdown.toggleElementType=Možnost	#
-hbui.BaseSlider.currentValue=aktuální hodnota je	#
-hbui.BaseSlider.elementType=posuvník	#
-hbui.BaseSlider.maxValueIs=maximální hodnota je	#
-hbui.BaseSlider.minValueIs=minimální hodnota je	#
-hbui.BaseSwitch.elementType=Přepnout	#
-hbui.BaseSwitch.narrationDisabled=Zakázat	#
-hbui.BaseSwitch.off=Vypnuto	#
-hbui.BaseSwitch.on=Zapnuto	#
-hbui.BaseSwitch.toggle=Přepnout	#
-hbui.BaseTextField.addedNarration=Přidáno	#
-hbui.BaseTextField.deselect=Zrušit výběr	#
-hbui.BaseTextField.hint=V současné době používáte textový vstup. Zadejte %1$s	#
-hbui.BaseTextField.invalidNarration=Neplatný	#
-hbui.BaseTextField.removedNarration=Odebráno	#
-hbui.BaseTextField.replacedNarration=Nahrazeno	#
-hbui.BaseTextField.select=Vybrat	#
-hbui.BaseTextField.selected=Vybráno	#
-hbui.DropdownItem.elementType=Položka	#
-hbui.DropdownItem.narrationComponentType=Možnost	#
-hbui.DropdownItem.select=Vybrat	#
-hbui.DropdownItem.selected=Vybráno	#
-hbui.DropdownItem.unselected=Nevybráno	#
-hbui.ScrollView.loadingState=Načítání	#
-hbui.ScrollView.narrationScrollViewComponentType=Obsah	#
-hbui.TitleBar.Buttons.Back.inputLegend=Zpět	#
-hbui.TitleBar.Buttons.Back.narration=Tlačítko Zpět	#
-hbui.TitleBar.Buttons.Close.inputLegend=Zavřít	#
-hbui.TitleBar.Buttons.Close.narration=Tlačítko Zavřít	#
-hbui.Sample.hello=Dobrý den, %1$s!	#

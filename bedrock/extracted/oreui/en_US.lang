@@ -1634,6 +1634,7 @@ hbui.PlayerListItem.accept=Accept
 hbui.PlayerListItem.addButtonInputLegend=Add friend
 hbui.PlayerListItem.addButtonText=Add
 hbui.PlayerListItem.added=Added
+hbui.PlayerListItem.away=Away
 hbui.PlayerListItem.buttonSiblings=Button %1$s of %2$s
 hbui.PlayerListItem.delete=Delete
 hbui.PlayerListItem.friends=Friends
@@ -2162,10 +2163,12 @@ hbui.ProfileRoute.followersItemLabel=Followers
 hbui.ProfileRoute.followersNarration=Followers %1$s
 hbui.ProfileRoute.friendsInputLegend=View friends
 hbui.ProfileRoute.friendsItemLabel=Friends
+hbui.ProfileRoute.friendsItemLabelWithName=%1$s's friends	### Label stating <gamertags>'s friends {MaxLength=35}
 hbui.ProfileRoute.friendsNarration=Friends %1$s
+hbui.ProfileRoute.friendsNarrationWithName=%1$s's friends . %2$s	### This narration is about how many friends that are connected to the profile. The %1$s is referring to a user game tag and %2$s to the number of friends. An example is: UserGameTag's friends . 19 {MaxLength=100}
 hbui.ProfileRoute.gamerscoreNarration=Gamerscore %1$s of %2$s
 hbui.ProfileRoute.headerOther=%1$s's Profile
-hbui.ProfileRoute.headerSelf=Profile
+hbui.ProfileRoute.headerSelf=Your Profile	### Title of the page referring to the logged in users profile {MaxLength=55}
 hbui.ProfileRoute.learnMoreButton=Learn more
 hbui.ProfileRoute.linkedAccountHeader=Linked account
 hbui.ProfileRoute.listItemFractionValue=%1$s/%2$s
@@ -2822,39 +2825,57 @@ hbui.RenderDistanceWarningRoute.confirmInputLegend=Confirm
 hbui.RenderDistanceWarningRoute.title=Performance optimization
 hbui.RenderDistanceWarningRoute.useCurrentSettingsButton=Use current settings
 hbui.RenderDistanceWarningRoute.useRecommendedSettingsButton=Use recommended settings
+hbui.ReportPlayerRoute.areaPanel.description=Please let us know where the incident took place. This will help us in researching your case. ### Description of a dropdown that allows players to select the area in which they saw the issue {MaxLength="100"}
+hbui.ReportPlayerRoute.areaPanel.title=Where did you observe the bad behavior? ### Title of a dropdown that allows players to select the area in which they saw the issue {MaxLength="50"}
 hbui.ReportPlayerRoute.attestation=This information is accurate and complete to the best of my knowledge.
 hbui.ReportPlayerRoute.bullying=Harassment or bullying
+hbui.ReportPlayerRoute.buttonLegend=Select ### Select this button {MaxLength="16"}
 hbui.ReportPlayerRoute.cancel=Cancel
 hbui.ReportPlayerRoute.chatSelectionDescription=Select messages to report
 hbui.ReportPlayerRoute.chatSelectionLimitReached=Maximum amount of messages selected
+hbui.ReportPlayerRoute.chatSelectionPanel.description=Select messages to report ### Description of a panel that allows players to select the specific chat messages in a report {MaxLength="50"}
+hbui.ReportPlayerRoute.chatSelectionPanel.limitReached=Maximum amount of messages selected ### Error message that shows up if players have selected the maximum messages {MaxLength="50"}
+hbui.ReportPlayerRoute.chatSelectionPanel.title=Report Chat Messages ### Title of a panel that allows players to select the specific chat messages in a report {MaxLength="50"}
 hbui.ReportPlayerRoute.cheating=Cheating
 hbui.ReportPlayerRoute.childSexualExploitationOrAbuse=Child sexual exploitation or abuse
+hbui.ReportPlayerRoute.commentPanel.description=You're about to report this person. Please add a comment describing what happened. ### Description of a text field for players to write a report comment {MaxLength="100"}
+hbui.ReportPlayerRoute.commentPanel.placeholder=Tell us more ### Placeholder for the report comment text field {MaxLength="32"}
+hbui.ReportPlayerRoute.commentPanel.title=Comment (optional) ### Title of a text field for players to write a report comment {MaxLength="32"}
 hbui.ReportPlayerRoute.confirmSelection=Confirm Selection
 hbui.ReportPlayerRoute.drugsOrAlcohol=Drugs or alcohol
+hbui.ReportPlayerRoute.error.buttonText=Go Back ### Go back from a route error {MaxLength="16"}
+hbui.ReportPlayerRoute.error.text=An internal error occurred ### todo {MaxLength="50"}
+hbui.ReportPlayerRoute.error.title=Internal Error ### TItle for generic route error window {MaxLength="32"}
 hbui.ReportPlayerRoute.friendWarningText=Are you sure you want to report your friend %1$s? Filing false reports is against our Community Standards.
 hbui.ReportPlayerRoute.galleryScreenshot=Gallery Screenshot
 hbui.ReportPlayerRoute.hateSpeech=Hate speech
+hbui.ReportPlayerRoute.hideContent=Hide Content ### Toggle to hide the screenshot or content that is being reported {MaxLength="32"}
 hbui.ReportPlayerRoute.imminentHarm=Threat of Harm to Others
 hbui.ReportPlayerRoute.impersonation=Impersonation
 hbui.ReportPlayerRoute.nameOrGamertag=Player Name or Gamertag
 hbui.ReportPlayerRoute.next=Continue
 hbui.ReportPlayerRoute.nonConsensualIntimateImagery=Non-Consensual intimate imagery
+hbui.ReportPlayerRoute.reasonPanel.description=If someone is in immediate danger, call local emergency services. Don't wait. ### Description for a dropdown where players will select the reason they are filing a report {MaxLength="100"}
+hbui.ReportPlayerRoute.reasonPanel.title=Why are you reporting %1$s? ### Title for a dropdown where players will select the reason they are filing a report {MaxLength="100"}
 hbui.ReportPlayerRoute.report=Report
 hbui.ReportPlayerRoute.reportConfirmation=Thank you for helping us keep Minecraft safe. We’ll review your report as soon as possible and take appropriate action if needed.
+hbui.ReportPlayerRoute.reportConfirmation.title=Report Complete ### Confirmation window title for report {MaxLength="100"}
 hbui.ReportPlayerRoute.reportLimitWarningText1=Looks like you've been busy reporting other players. Thank you for helping us make Minecraft a safe and welcoming place!
 hbui.ReportPlayerRoute.reportLimitWarningText2=Keep in mind, filing false reports is against our community standards.
+hbui.ReportPlayerRoute.reportPanel.narration.disabledHint=Form must be completed to submit report ### Error message when trying to submit report when form is not complete {MaxLength="100"}
+hbui.ReportPlayerRoute.reportPanel.narration.enumeration=%1$s of %2$s ### Enumeration for buttons in panel {MaxLength="32"}
 hbui.ReportPlayerRoute.selfHarmOrSuicide=Self harm or suicide
 hbui.ReportPlayerRoute.sexuallyInappropriate=Sexually inappropriate
+hbui.ReportPlayerRoute.sidePanel.text=Reporting %1$s ### Content of the side panel for reporting {MaxLength="32"}
 hbui.ReportPlayerRoute.terrorismOrViolentExtremism=Terrorism or violent extremism
-hbui.ReportPlayerRoute.title=Report %s
-hbui.ReportPlayerRoute.unknownGamertag=Unknown
+hbui.ReportPlayerRoute.title=Report Bad Behavior ### Title for report route {MaxLength="32"}
 hbui.ReportPlayerRoute.unsportingBehavior=Unsporting behavior
 hbui.ReportPlayerRoute.wantToReportThem=I want to report them
 hbui.ReportPlayerRoute.warningReportAnyway=Report anyway
-hbui.ReportPlayerRoute.warningTitle=Report %s?
+hbui.ReportPlayerRoute.warningTitle=Report %1$s? ### Title for warning modal for reporting a friend {MaxLength="32"}
 hbui.ReportPlayerRoute.whereReport=Where did you observe the bad behavior?
 hbui.ReportPlayerRoute.whereReportDescription=Please let us know where the incident took place. This will help us in researching your case.
-hbui.ReportPlayerRoute.whyReport=Why are you reporting %s?
+hbui.ReportPlayerRoute.whyReport=Why are you reporting %1$s? ###Placeholder for dropdown that allows players to select the area in which they saw the issue {MaxLength="50"}
 hbui.ReportPlayerRoute.xbox.report.area.chat=Chat message
 hbui.ReportPlayerRoute.xbox.report.area.gameplay=Gameplay
 hbui.ReportPlayerRoute.xbox.report.area.ingame=In-game creations
