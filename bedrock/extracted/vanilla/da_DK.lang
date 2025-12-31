@@ -2205,6 +2205,7 @@ edu.worlds_screen.search_placeholder=Søg	#
 edu.worlds_screen.play=SPIL	#
 edu.worlds_screen.host=VÆRT	#
 edu.worlds_screen.settings=INDSTILLINGER	#
+edu.worlds_screen.courses_title=Mine kurser	#
 
 edu.templates.title=Mine skabeloner	#
 edu.templates.local_header=MINE SKABELONER: %1	#
@@ -6476,9 +6477,15 @@ store.realmsPlus.buyNow.viewPrivacyPolicy=ERKLÆRING OM BESKYTTELSE AF PERSONLIG
 
 store.realmsPlus.buyNow.title=Start dit abonnement på Realms Plus	#
 store.realmsPlus.startTrial.title=Start din GRATIS 30-dages prøveperiode nu!	#
-store.realmsPlus.startTrial.description=Du får adgang til dit realm og over 50 pakker fra markedspladsen med det samme. Op til 10 spillere kan spille samtidig, og de får alle adgang til alt abonnementsindholdet i dit realm – gratis! Din første måned er gratis, hvorefter du opkræves %s/måned. Abonnementet kan opsiges, når du vil.	#
-store.realmsPlus.noTrial.description=Du får adgang til dit realm og over 50 pakker fra markedspladsen med det samme. Op til 10 spillere kan spille samtidig, og de får alle adgang til alt abonnementsindholdet i dit realm – gratis! Du får abonnementet i 30 dage for %s.	#
+store.realmsPlus.startTrial.description=Du får adgang til dit realm og over 50 pakker fra markedspladsen med det samme. Op til 10 spillere kan spille samtidig, og de får adgang til verdenerne i dit realm gratis! Din første måned er gratis, hvorefter du opkræves %s/måned. Abonnementet kan opsiges, når du vil.	#
+store.realmsPlus.noTrial.description=Du får adgang til dit realm og over 50 pakker fra markedspladsen med det samme. Op til 10 spillere kan spille samtidig, og de får adgang til verdenerne i dit realm gratis! Du får abonnementet i 30 dage for %s:minecoin:.	#
+store.realmsPlus.noTrial.description.iap=Du får adgang til dit realm og over 50 pakker fra markedspladsen med det samme. Op til 10 spillere kan spille samtidig, og de får adgang til verdenerne i dit realm gratis! Du får abonnementet i 30 dage for %s.	#
 store.realmsPlus.realmName.placeholder=%ss Realm		#The string passed in here is the gamertag of the player to indicate the name of the player's world.	#
+
+store.realmsPlus.recurring.offerTrial=Du får adgang til dit realm og over 50 pakker fra markedspladsen med det samme. Op til 10 spillere kan spille samtidig, og de får adgang til verdenerne i dit realm gratis! Din første måned er gratis, hvorefter prisen er %s/måned. Abonnementet kan opsiges, når du vil.	#
+store.realmsPlus.recurring.withoutTrial=Du får adgang til dit realm og over 50 pakker fra markedspladsen med det samme. Op til 10 spillere kan spille samtidig, og de får adgang til verdenerne i dit realm gratis! Prisen er %s/måned, og abonnementet kan opsiges, når du vil.	#
+store.realmsPlus.consumable.offerTrial=Du får adgang til dit realm og over 50 pakker fra markedspladsen med det samme. Op til 10 spillere kan spille samtidig, og de får adgang til verdenerne i dit realm gratis! Dine første 30 dage er gratis, hvorefter du kan forlænge med yderligere 30 dage for %s.	#
+store.realmsPlus.consumable.withoutTrial=Du får adgang til dit realm og over 50 pakker fra markedspladsen med det samme. Op til 10 spillere kan spille samtidig, og de får adgang til verdenerne i dit realm gratis! Abonnementet løber i 30 dage og koster %s.	#
 
 store.realmsPlus.landing.header=Abonnement omfatter:	#
 
@@ -6498,8 +6505,8 @@ store.realmsPlus.faq.question2=Kan jeg bruge mine Realms Plus-pakker offline?	#
 store.realmsPlus.faq.answer2=Du behøver ikke være online for at kunne bruge Realms Plus. Abonnementspakkerne kan både spilles online i dit personlige realm og på en lokal enhed. Du skal bare gå online mindst en gang hver 30. dag for at validere, at dit abonnement er aktivt.	#
 store.realmsPlus.faq.question3=Skal mine venner have Realms Plus for at kunne spille i mit realm?	#
 store.realmsPlus.faq.answer3=Dine venner skal ikke abonnere på Realms Plus for at spille i dit realm. Du kan invitere alle venner, der har adgang til Realms, ind i dit realm gratis.	#
-store.realmsPlus.faq.question4=Kan jeg hoste mine verdener, teksturpakker, skins og mashups fra Realms Plus i mit realm?	#
-store.realmsPlus.faq.answer4=Ja! Du kan uploade alle verdener, teksturpakker, skins og mashups fra Realms Plus og alle dine køb fra Minecraft-markedspladsen til dit realm og invitere dine venner til at spille med gratis.	#
+store.realmsPlus.faq.question4=Kan jeg hoste mine verdener, teksturpakker og mashups fra Realms Plus i mit realm?	#
+store.realmsPlus.faq.answer4=Ja! Du kan uploade alle verdener, teksturpakker og mashups fra Realms Plus og alle dine køb fra Minecraft-markedspladsen til dit realm og invitere dine venner til at spille med gratis.	#
 store.realmsPlus.faq.question5=Hvor meget koster et abonnement på Realms Plus?	#
 store.realmsPlus.faq.answer5=%s pr. måned. Det er samme pris, som før Realms på magisk vis forvandlede sig til Realms Plus!	#
 store.realmsPlus.faq.question6=Hvor tit kommer der nye pakker i Realms Plus?	#
@@ -6527,7 +6534,8 @@ store.realmsPlus.content.mashupDescription=Prøv lidt af det hele i mashups!	#
 
 store.realmsPlus.content.popularPacks=Populære pakker i Realms Plus:	#
 store.realmsPlus.content.viewAllPacks=VIS ALLE PAKKER	#
-store.realmsPlus.content.contentDescription=Stik sugerøret direkte i kilden til forrygende Minecraft-indhold! Med Realms Plus får du øjeblikkelig adgang til over 50 mashups, verdener, skinpakker og episke eventyr fra markedspladsen – og der kommer nye til hver eneste måned. Dit indhold gemmes på din personlige server og kan benyttes på alle platforme med Realms og Minecraft-markedsplads! Op til 10 spillere kan spille samtidig, og de får alle adgang til alt abonnementsindholdet i dit realm – gratis!	#
+store.realmsPlus.content.contentDescription=Stik sugerøret direkte i kilden til forrygende Minecraft-indhold! Med Realms Plus får du øjeblikkelig adgang til over 50 mashups, verdener, skinpakker og episke eventyr fra markedspladsen – og der kommer nye til hver eneste måned. Dit indhold gemmes på din personlige server og kan benyttes på alle platforme med Realms og Minecraft-markedsplads! Op til 10 spillere kan spille samtidig, og de får adgang til verdenerne i dit realm gratis!	#
+
 
 store.realmsPlus.freeTrial=START 1 MÅNEDS GRATIS PRØVEPERIODE	#
 
