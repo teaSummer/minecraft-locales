@@ -185,6 +185,11 @@ authentication.clickToPurchaseMessage=Kérd meg az oktatódat, hogy vásárolja 
 authentication.clickToPurchaseStudent=http://aka.ms/meestore	#
 authentication.clickToPurchaseTeacher=Kattints ide licenc vásárlásához	#
 authentication.adalException=Jelenleg sikertelen a kapcsolódás a kért szolgáltatáshoz. Ellenőrizd interned elérésed vagy próbálkozz újra később!	#
+authentication.buyMinecraft=Lépj be az App Store-ba	#
+authentication.educationOnly=A Minecraft: Education Edition kizárólag iskolák számára érhető el. A játékhoz Office 365 Oktatási verzióhoz tartozó fiók szükséges.	#
+authentication.minecraftInstead=Nem vagy oktatási felhasználó, de szeretnél a Minecraft játékkal játszani?	#
+authentication.signInButton=Bejelentkezés iskolai fiókoddal	#
+
 
 eula.intro=A Minecraft: Education Edition használatához el kell fogadnod a végfelhasználói licencszerződést.	#
 eula.location=Ez itt olvasható:	#
@@ -1234,6 +1239,7 @@ realmsCreateScreen.incomplete.override.realm=Egy új Realmot próbálsz megújí
 realmsCreateScreen.prepare.store.title=Vásárlási előzmények szükségesek	#
 realmsCreateScreen.prepare.store.body=Mielőtt folytatnád, a vásárlási előzmények megtekintéséhez be kell jelentkezned az Áruházba.	#
 realmsCreateScreen.prepare.store.button=Bejelentkezés az Áruházba	#
+realmsCreateScreen.nsoinfotext=A Realmek használatához Nintendo Switch Online-előfizetésre lesz szükséged.	#
 
 realmsCreateScreen.title=Realm létrehozása	#
 realmsCreateScreen.nameHeader=Realm neve	#
@@ -1418,6 +1424,13 @@ xbl.savePurchase.title=Mented a vásárlásokat az Xbox Live-ba?	#
 xbl.savePurchase.saveButton=Mentés az Xbox Live-ba	#
 xbl.savePurchase.toast.title=Sikerült!	#
 xbl.savePurchase.toast.message=A vásárlások átkerültek az Xbox Live-ba	#
+xbl.savePurchase.inProgress.message=Vásárlások átvitele Xbox Live-fiókba…	#
+
+store.sign_in_warning.no_xbl_and_local_content=Fontos! Olyan csomagokat és/vagy Minecraft-érméket vásároltál, amelyek csak ezen az eszközön elérhetőek, és elvesznek, ha az eszköz meghibásodik, vagy a Minecraft eltávolításra kerül! Jelentkezz be egy Xbox Live-fiókkal (ennek létrehozása ingyenes), és vidd át csomag- és érmejogosultságaidat arra a fiókra, hogy később bármilyen eszközön hozzájuk férhess bejelentkezés után.	#
+store.sign_in_warning.no_xbl_and_no_local_content.line1=Fontos! Azok a csomagok, amelyek csak ezen az eszközön érhetőek el, elveszhetnek, ha az eszköz meghibásodik, elvész, vagy a Minecraft eltávolításra kerül!	#
+store.sign_in_warning.no_xbl_and_no_local_content.line2=Jelentkezz be egy Xbox Live-fiókkal (ennek létrehozása ingyenes), és vidd át csomagjogosultságaidat arra a fiókra, hogy biztonságba helyezd megvásárolt csomagjaidat és Minecraft-érméidet.	#
+store.sign_in_warning.no_xbl_and_no_local_content.line3=Így ezen felül bármilyen eszközön hozzájuk férsz majd, ahol a Minecraft játékkal játszol.	#
+store.sign_in_warning.no_xbl_and_no_local_content.line4=A partneráruházakon keresztül vásárolt tartalom mindvégig elérhető lesz, amíg eszközöd bejelentkezve marad fiókoddal a partneráruházba.	#
 
 xbl.skipSignIn.prompt.title=Ideiglenes fiók	#
 xbl.skipSignIn.prompt.description=Ha az ezen az eszközön végrehajtott vásárlásokat nem viszed át ebbe az Xbox Live-fiókba, nem ez lesz az elsődleges fiók ezen az eszközön. A Minecraft elindításakor nem fogsz automatikusan bejelentkezni.	#
@@ -1590,6 +1603,7 @@ disconnectionScreen.realmsWorldUnassigned=Rendeld hozzá a verziót a fejlesztő
 disconnectionScreen.realmsWorldUnassigned.title=A Realm hozzárendelése törlődött!	#
 disconnectionScreen.serverFull=Hűha, ez a kiszolgáló igencsak népszerű! Nézz vissza később, hátha addigra felszabadul egy hely.	#
 disconnectionScreen.serverFull.title=A kiszolgáló megtelt	#
+disconnectionScreen.serverIdConflict=Nem tudsz csatlakozni a világhoz. A fiók, amellyel jelenleg be vagy jelentkezve, már ezen a világon játszik egy másik eszközön.	#
 disconnectionScreen.sessionNotFound=Nem sikerült csatlakozni a világhoz. A világhoz nem lehet többé csatlakozni.	#
 disconnectionScreen.timeout=A kapcsolat időtúllépés miatt megszakadt.	#
 disconnectionScreen.nowifi=Ahhoz, hogy a barátaiddal játssz, Wi-Fi-n kell kapcsolódnod.	#
@@ -1899,6 +1913,7 @@ gui.up=Fel	#
 gui.warning.exitGameWarning=Kilépsz a Minecraftból?	#
 gui.worldTemplate=Minecraft-világsablon	#
 gui.yes=Igen	#
+gui.feedbackYes=Igen, felkeresem a Visszajelzés weboldalt	#
 gui.resourcepacks=Erőforráscsomagok...	#
 gui.submit=Küldés	#
 gui.playOffline=Offline játék	#
@@ -2129,7 +2144,7 @@ howtoplay.controls.text.7.windowsmr_controller=Ha tárgyat tartasz a kezedben, n
 howtoplay.controls.text.7.touch=Ha a kezedben tartasz egy tárgyat, érintsd meg a képernyőt a tárgy használatához, vagy nyomd meg hosszan a tárgyat az eszköztáradon a lerakásához.	#
 howtoplay.controls.header.3=Lopakodás	#
 howtoplay.controls.text.8.keyboard=A lopakodás nagyon hasznos tulajdonság a Minecraftban: megelőzi a blokkokról való leesést, és elrejti a nevedet. A lopakodáshoz tartsd lenyomva a(z) :_input_key.sneak: gombot.	#
-howtoplay.controls.text.8.gamepad=A lopakodás nagyon hasznos tulajdonság a Minecraftban: megelőzi a blokkokról való leesést, és elrejti a nevedet. A lopakodás ki- és bekapcsolásához nyomd le a :_gamepad_face_button_right: gombot, vagy kattints a :_gamepad_stick_right: gombbal.	#
+howtoplay.controls.text.8.gamepad=A lopakodás nagyon hasznos tulajdonság a Minecraftban: megelőzi a blokkokról való leesést, és elrejti a beceneved. A lopakodás ki- és bekapcsolásához nyomd le a(z) :_input_key.sneak: gombot, vagy kattints a :_gamepad_stick_right: karral.	#
 howtoplay.controls.text.8.touch=A lopakodás nagyon hasznos tulajdonság a Minecraftban: megelőzi a blokkokról való leesést, és elrejti a nevedet. A lopakodás ki- és bekapcsolásához érintsd meg a :touch_sneak:. gombot.	#
 howtoplay.controls.text.8.rift_controller=A lopakodás hihetetlenül hasznos a Minecraftban: segít, hogy ne ess le a blokkról haladás közben, és elrejti azonosítódat is. A lopakodás megkezdéséhez, illetve abbahagyásához nyomd meg a(z) :rift_X: gombot.	#
 howtoplay.controls.text.8.windowsmr_controller=A lopakodás hihetetlenül hasznos a Minecraftban: segít, hogy ne ess le a blokkról haladás közben, és elrejti azonosítódat is. A lopakodás megkezdéséhez, illetve abbahagyásához nyomd meg a(z) :windowsmr_right_stick: kart.	#
@@ -4179,6 +4194,13 @@ options.dev_updateOverrideDate=Felülírás dátumának frissítése	#
 options.dev_clearStoreCache=Áruház gyorsítótárának ürítése	#
 options.dev_clearAllCache=Minden gyorsítótár ürítése	#
 options.dev_xforgeRequestsRequireSignIn=Xforge Requests Wait for Sign In	#
+options.dev_connection_quality=Hálózati szimulátor (gyenge kapcsolatok szimulálása)	#
+options.dev_connection_off=Kikapcsolva – Memórián belüli kapcsolat engedélyezve helyi játékra	#
+options.dev_connection_nolimit=Teljes hálózati sebesség engedélyezve – Nincs korlátozás	#
+options.dev_connection_4g=4G – 15 Mbps, 100 ms késleltetés, 1% csomagvesztés	#
+options.dev_connection_3g=3G – 1,5 Mbps, 200 ms késleltetés, 2% csomagvesztés	#
+options.dev_connection_slow=Lassú – 400 Kbps, 300 ms késleltetés, 3% csomagvesztés	#
+options.dev_connection_veryslow=Nagyon lassú – 200 Kbps, 400 ms késleltetés, 4% csomagvesztés	#
 options.difficulty=Nehézség	#
 options.difficulty.easy=Könnyű	#
 options.difficulty.hard=Nehéz	#
@@ -4220,6 +4242,7 @@ options.worldLightBrightness=Világ világításának fényereje	#
 options.goToFeedbackWebsite=Ugrás a visszajelzések webhelyére	#
 options.graphics=Csicsás grafika	#
 options.transparentleaves=Csicsás levelek	#
+options.bubbleparticles=Csilli-villi buborékok	#
 options.smooth_lighting=Recézésmentes világítás	#
 options.graphics.fancy=Csicsás	#
 options.graphics.fast=Gyors	#
@@ -4453,6 +4476,8 @@ options.content.noRealms.message=Ez a világ egy olyan erőforráscsomagot vagy 
 options.activateExperimentalGameplay=Engedélyezed a kísérleti játékmenetet?	#
 options.activateExperimentalGameplay.message=Engedélyezi béta funkciók használatát. A kísérleti játékmenet tönkre teheti a világodat. Ha folytatod, a világodról másolat készül, a neve előtt [EX] megjelöléssel – a kísérleti jellemzők itt kerülnek bekapcsolásra.	#
 options.activateExperimentalGameplayCreate.message=Engedélyezi béta funkciók használatát. A kísérleti játékmenet instabil lehet.	#
+options.activateFancyBubbles=Engedélyezed a csilli-villi buborékoszlopokat?	#
+options.activateFancyBubblesCreate.message=Engedélyezi a csilli-villi buborékoszlopokat. A csilli-villi buborékok egyes eszközökön csökkenthetik a teljesítményt.	#
 options.continue=Folytatás	#
 options.edit=Szerkesztés	#
 options.enableEducation=Engedélyezed az Education Edition használatát?	#
@@ -4523,7 +4548,8 @@ playscreen.lastPlayed.weeksAgo=%1 hete	#
 playscreen.lastPlayed.yesterday=Tegnap	#
 playscreen.new=Új	#
 playscreen.remoteWorld=Távoli világ:	#
-playScreen.realmsTrialWorld=30 napos ingyenes próbaverzió	#
+playscreen.realmsTrialWorld=30 napos ingyenes próbaverzió	#
+playscreen.realmsCreateFirstWorld=Hozd létre első világodat	#
 playscreen.checkingRealmsCompatibility=Realm kompatibilitásának ellenőrzése...	#
 playscreen.fetchingRealms=Realmok betöltése...	#
 playscreen.confirmLeaveMessage=Biztosan kilépsz ebből a Realmból: %1$s?	#
@@ -4571,6 +4597,7 @@ permissions.level.operator=Operátor	#
 permissions.level.visitor=Látogató	#
 permissions.nocheats=A csalások ki vannak kapcsolva	#
 permissions.nocheats.message=A kezelői és teleportálási parancsok csak bekapcsolt csalásokkal használhatók. A csalások a Játékbeállítások szüneteltetési menüjében kapcsolhatók be.	#
+permissions.deopingother.message=Ha csökkented jogosultsági szintjüket, a továbbiakban nem rendelkeznek majd operátori jogosultsággal.	#
 permissions.deopingself=Megszünteted a kezelői jogosultságokat?	#
 permissions.deopingself.message=A jogosultsági szint csökkentésével nem lesz többé kezelői jogosultságod.	#
 permissions.title=Játékosengedélyek	#
@@ -4690,6 +4717,8 @@ progressScreen.title.connectingLocal=Világ elindítása	#
 progressScreen.title.connectingLAN=Csatlakozás a többszereplős játékhoz	#
 progressScreen.title.connectingExternal=Csatlakozás a külső kiszolgálóhoz	#
 progressScreen.title.connectingRealms=Csatlakozás a realmhoz	#
+progressScreen.title.copyingWorld=Világ másolása	#
+progressScreen.message.copyingWorld=Világ másolása… %d%%	#
 progressScreen.message.building=Terep létrehozása	#
 progressScreen.message.done=Kész!	#
 progressScreen.message.exporting=Exportálás folyamatban	#
@@ -4761,6 +4790,8 @@ resourcePack.selected.title.packs=Aktív csomagok	#
 resourcePack.error.ingame.packs=Az erőforráscsomagokat a világban való játszás közben nem lehet módosítani.	#
 resourcePack.error.ingame.behaviorPacks=A viselkedéscsomagokat a világban való játszás közben nem lehet módosítani.	#
 resourcePack.title=Erőforráscsomagok kiválasztása	#
+resourcePack.toast.atlasFallback.message=Kevés a memória. A textúrák csökkentett részletességgel jelennek meg.	#
+resourcePack.toast.atlasFallback.title=Tartalék erőforráscsomag	#
 resourcePack.copyGlobal=Átmásolás a globális csomagból	#
 resourcePack.description=Az erőforráscsomagokat a rendszer alulról felfelé alkalmazza. Ez azt jelenti, hogy azokat az elemeket, amelyek két csomagban is megtalálhatók, felülírja a későbbi csomag.	#
 resourcePack.description.default.level=Ezeket a Beállításokban módosíthatod.	#
@@ -5171,12 +5202,14 @@ store.incompatible=Inkompatibilis	#
 store.itemIsIncompatible=Ez az elem nem kompatibilis az eszközöddel.	#
 store.itemMayNotBeCompatible=Előfordulhat, hogy ez a tárgy nem kompatibilis az eszközöddel.	#
 store.owned=Már megvan	#
+store.owned.legacy=Már megvan (P)	#
 store.unlocked=Megvásárolva	#
 
-store.toast.downloadComplete=A letöltés befejeződött	#
-store.toast.downloadResumed=A letöltés folytatódik	#
-store.toast.downloadFailed=A letöltés nem sikerült	#
-store.toast.downloadPaused=Letöltés szüneteltetve	#
+store.toast.downloadStarted=Letöltés megkezdve: %s	#
+store.toast.downloadComplete=Letöltés befejezve: %s	#
+store.toast.downloadResumed=Letöltés folytatása: %s	#
+store.toast.downloadFailed=A letöltés sikertelen: %s	#
+store.toast.downloadPaused=Letöltés szüneteltetve: %s	#
 
 store.popup.goBack=Visszalépés	#
 store.popup.xblRequired.title=Jelent- kezz be ingyen	#
@@ -5219,10 +5252,23 @@ store.popup.purchaseFailed.msg=Sajnáljuk, hiba lépett fel a vásárlás során
 store.popup.purchaseFailedInsufficientFunds.title=Több Minecraft-érmére van szükséged	#
 store.popup.purchaseFailedInsufficientFunds.msg=Nincs elég Minecraft-érméd a tárgy megvásárlásához. Minecraft-érméket az alkalmazás-áruházból vásárolhatsz.	#
 store.popup.purchaseFailedInsufficientFunds.buyButton=Vásárolj Minecraft-érméket	#
+store.popup.purchasePriceMismatch.msg=Sajnáljuk, a vásárlás nem volt teljesíthető.  Kérjük, próbálkozz újra később.	#
 store.purchase.success=Megvásároltad: %s	#
 store.createdBy=Alkotó: %s	#
 store.seeMoreBy=%s további alkotásainak megtekintése	#
 store.fetchingItem=Csatlakozás az áruházhoz…	#
+ 
+store.timer.daysAbbreviated=%s n	#
+store.timer.hoursAbbreviated=%s ó	#
+store.timer.minutesAbbreviated=%s p	#
+store.timer.secondsAbbreviated=%s mp	#
+store.timer.left=%s van hátra	#
+
+store.timer.daysAbbreviated=%s n	#
+store.timer.hoursAbbreviated=%s ó	#
+store.timer.minutesAbbreviated=%s p	#
+store.timer.secondsAbbreviated=%s mp	#
+store.timer.left=%s van hátra	#
 
 store.startMenu.sale=Vásár!	#
 
@@ -5274,8 +5320,11 @@ store.ratings.signIn.description1=Mondd el az elemmel kapcsolatos véleményedet
 store.ratings.signIn.description2=Az elemek értékelése előtt be kell jelentkezned az Xbox Live rendszerbe.	#
 
 store.purchase.success=Megvásároltad: %s	#
+store.purchase.success.realMoney1=Feloldottad ezt: %s, ennyiért: %s 	#
+store.purchase.success.realMoney2=+%s:minecoin:	#
 store.purchase.signIn=Bővítsd a játékot rengeteg nagyszerű tartalommal.	#
 store.purchase.signInPart2=Az áruház használatához jelentkezz be az Xbox Live-ba!	#
+store.purchase.realmoney.disclaimer=*Vásárolj %s Minecraft-érmét %s összegért, és oldd fel ezt a csomagot %s érméért, egyenlegeden hagyva a maradék %s érmét.	#
 
 store.coins.currentCoins=%s Minecraft-érméd van	#
 store.coins.purchase.confirmation=Szeretnél több érmét szerezni, hogy hozzájuthass ehhez a csomaghoz?	#
@@ -5328,6 +5377,7 @@ store.updating=Frissítés...	#
 store.updating.title=Frissítés: %s	#
 store.fetchingItem=Csatlakozás az áruházhoz…	#
 store.importing.title=%s importálása	#
+store.importing=Importálás…	#
 store.showMore=Összes %d megjelenítése	#
 
 store.promo.today=Csak ma!	#
@@ -5362,10 +5412,18 @@ store.promo.date.oct=Okt. %s	#
 store.promo.date.nov=Nov. %s	#
 store.promo.date.dec=Dec. %s	#
 
+store.myAccount=Fiókom	#
 store.xbl.signin=Bejelentkezés	#
+store.xbl.signinOrSignUp=Jelentkezz be, vagy regisztrálj ingyenesen!	#
 store.xbl.disconnected=A kapcsolat megszakadt	#
 store.xbl.conversionFailedTitle=Hiba történt	#
 store.xbl.conversionFailedMessage=Próbáld újra később.	#
+
+store.sales.allByCreator=Most akciós!	#
+store.sales.mashupsOnSale=Akciósan kapható mixek!	#
+store.sales.skinsOnSale=Akciósan kapható felületek!	#
+store.sales.texturesOnSale=Akciósan kapható textúracsomagok!	#
+store.sales.worldsOnSale=Akciósan kapható világok!	#
 
 store.showalloffers.list.title=%s Áruház 	#
 store.showalloffers.list.back=Visszalépés	#
@@ -5375,8 +5433,6 @@ store.suggestedOffers.defaultTitle=Szórakoztató játéklehetőségek	#
 store.minecoin.notavailable=A Minecraft ezen verziójában nem lehet érmét vásárolni.	#
 
 store.itemDetail.back=Részletek	#
-store.timeRemaining=Fennmaradó idő: %s	#
-store.daysRemaining=Még %s nap van	#
 
 store.sales.allByCreator=Most akciós!	#
 store.sales.mashupsOnSale=Akciósan kapható mixek!	#
@@ -5415,7 +5471,7 @@ store.search.filter.title=Szűrők	#
 store.search.filter.worldTemplates=Világok	#
 store.search.filter.installedState=Telepítési állapot	#
 store.search.filter.installed=Telepítve	#
-store.search.filter.uninstalled=Nincs telepítve	#
+store.search.filter.notInstalled=Nincs telepítve	#
 store.search.filter.resetInstalledStateFilters=Telepített szűrők visszaállítása	#
 
 store.search.sort_menu.sortConstWord=Rendezés	#
@@ -5425,7 +5481,7 @@ store.search.sort_menu.OldestFirst=Legrégebbiek felül	#
 store.search.sort_menu.A_to_Z=ABC sorrend	#
 store.search.sort_menu.Z_to_A=Fordított ABC sorrend	#
 store.search.sort_menu.Installed=Telepítve	#
-store.search.sort_menu.Uninstalled=Nincs telepítve	#
+store.search.sort_menu.notInstalled=Nincs telepítve	#
 
 stream.confirm_start=Biztosan elindítod a közvetítést?	#
 stream.unavailable.account_not_bound=Mielőtt a Minecraftot a Twitch-csen keresztül közvetítenéd, össze kell kapcsolnod vele a Twitch-fiókodat a mojang.com oldalon. Megteszed ezt most?	#
@@ -6196,7 +6252,8 @@ trial.upsell.description.updated=Barkácsolj, építs, fedezz fel, és szórakoz
 trial.upsell.unlock=Teljes játék feloldása	#
 trial.upsell.startTrial=Próbaverzió indítása	#
 
-
+ratingPopUp.title=Tetszik a Minecraft?	#
+feedbackPopup.title=Lenne számunkra valamilyen visszajelzésed?	#
 
 ## NOTE: The following five lines are all related and shown together. When localizing, you may add line breaks to fit the paragraph,
 ## as opposed to trying to literally translate each line.

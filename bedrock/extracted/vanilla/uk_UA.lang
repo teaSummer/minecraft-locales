@@ -185,6 +185,11 @@ authentication.clickToPurchaseMessage=Попросіть свого виклад
 authentication.clickToPurchaseStudent=http://aka.ms/meestore	#
 authentication.clickToPurchaseTeacher=Клацніть тут, щоб придбати ліцензію	#
 authentication.adalException=Зараз не вдалося підключитися до потрібної вам служби. Перевірте своє з’єднання з мережею або спробуйте ще раз пізніше.	#
+authentication.buyMinecraft=Перейти в App Store	#
+authentication.educationOnly=Minecraft: Education Edition надається лише навчальним закладам. Щоб грати, вам потрібен обліковий запис Office 365 Education.	#
+authentication.minecraftInstead=Не маєте стосунку до навчального закладу, але все одно хочете грати в Minecraft?	#
+authentication.signInButton=Увійти під навчальним обліковим записом	#
+
 
 eula.intro=Щоб грати в Minecraft: Education Edition, ви повинні прийняти ліцензійну угоду.	#
 eula.location=Ознайомтеся з умовами ліцензійної угоди за адресою:	#
@@ -1234,6 +1239,7 @@ realmsCreateScreen.incomplete.override.realm=Ви намагаєтеся пон�
 realmsCreateScreen.prepare.store.title=Потрібен журнал покупок	#
 realmsCreateScreen.prepare.store.body=Перш ніж продовжити, ви маєте ввійти в обліковий запис магазину, щоб переглянути свій журнал покупок.	#
 realmsCreateScreen.prepare.store.button=Увійти в Магазин	#
+realmsCreateScreen.nsoinfotext=Щоб використовувати Realms, потрібна передплата на Nintendo Switch Online.	#
 
 realmsCreateScreen.title=Створення реалму	#
 realmsCreateScreen.nameHeader=Назва реалму	#
@@ -1418,6 +1424,13 @@ xbl.savePurchase.title=Зберегти покупки в Xbox Live?	#
 xbl.savePurchase.saveButton=Зберегти в Xbox Live	#
 xbl.savePurchase.toast.title=Вийшло!	#
 xbl.savePurchase.toast.message=Покупки перенесено до Xbox Live	#
+xbl.savePurchase.inProgress.message=Передавання пакетів до облікового запису Xbox Live…	#
+
+store.sign_in_warning.no_xbl_and_local_content=Увага! Ви придбали пакети та/або монети, які доступні лише на цьому пристрої та можуть бути втрачені через несправність чи втрату пристрою або видалення Minecraft! Увійдіть під обліковим записом Xbox Live (безкоштовним) і передайте йому права на пакети й монети, щоб захистити їх і мати доступ до них на будь-якому пристрої, на якому ви ввійдете під цим обліковим записом.	#
+store.sign_in_warning.no_xbl_and_no_local_content.line1=Увага! Придбані пакети, які доступні лише на цьому пристрої, можуть бути втрачені через несправність чи втрату пристрою або видалення Minecraft!	#
+store.sign_in_warning.no_xbl_and_no_local_content.line2=Увійдіть під обліковим записом Xbox Live (безкоштовним) і передайте йому права на пакети, щоб захистити свої придбані пакети й монети.	#
+store.sign_in_warning.no_xbl_and_no_local_content.line3=Крім того, ви матимете до них доступ на будь-якому пристрої, на якому граєте в Minecraft!	#
+store.sign_in_warning.no_xbl_and_no_local_content.line4=Вміст, придбаний через партнерський магазин, буде доступний, якщо на пристрої ввійти під обліковим записом партнерського магазину.	#
 
 xbl.skipSignIn.prompt.title=Тимчасовий обліковий запис	#
 xbl.skipSignIn.prompt.description=Цей обліковий запис Xbox Live не буде основним для цього пристрою, якщо ви не передасте покупки, зроблені для пристрою, до цього облікового запису. Вхід не буде відбуватись автоматично під час запуску Minecraft.	#
@@ -1590,6 +1603,7 @@ disconnectionScreen.realmsWorldUnassigned=Призначте версію в п�
 disconnectionScreen.realmsWorldUnassigned.title=Реалм не призначено!	#
 disconnectionScreen.serverFull=Ого, цей сервер такий популярний! Поверніться трохи згодом, може, якраз звільниться місце.	#
 disconnectionScreen.serverFull.title=Сервер заповнено	#
+disconnectionScreen.serverIdConflict=Не вдалося приєднатися до світу. З цим обліковим записом уже хтось грає на іншому пристрої.	#
 disconnectionScreen.sessionNotFound=Не вдається підключитися до світу. До цього світу більше не можна приєднатися.	#
 disconnectionScreen.timeout=Вичерпано час підключення.	#
 disconnectionScreen.nowifi=Щоб грати з друзями, вам потрібно підключитися через Wi-Fi.	#
@@ -1899,6 +1913,7 @@ gui.up=Угору	#
 gui.warning.exitGameWarning=Хочете вийти з Minecraft?	#
 gui.worldTemplate=Шаблон світу Minecraft	#
 gui.yes=Так	#
+gui.feedbackYes=Так, перейти на сайт відгуків	#
 gui.resourcepacks=Пакети ресурсів…	#
 gui.submit=Надіслати	#
 gui.playOffline=Грати офлайн	#
@@ -2129,7 +2144,7 @@ howtoplay.controls.text.7.windowsmr_controller=Якщо ви тримаєте п
 howtoplay.controls.text.7.touch=Якщо ви тримаєте предмет у руці, торкніться екрана, щоб скористатися цим предметом, або торкніться та утримуйте предмет на панелі швидкого доступу, щоб викинути його.	#
 howtoplay.controls.header.3=Прокрадання	#
 howtoplay.controls.text.8.keyboard=Прокрадання надзвичайно корисне в Minecraft, оскільки завдяки йому легше не впасти з блока, а також можна приховати свій нікнейм. Щоб крастися, утримуйте :_input_key.sneak:.	#
-howtoplay.controls.text.8.gamepad=Прокрадання надзвичайно корисне в Minecraft, оскільки завдяки йому легше не впасти з блока, а також можна приховати свій нікнейм. Щоб переключити прокрадання, натисніть :_gamepad_face_button_right: або :_gamepad_stick_right:.	#
+howtoplay.controls.text.8.gamepad=Прокрадання надзвичайно корисне в Minecraft, оскільки завдяки йому легше не впасти з блока, а також можна приховати свій нікнейм. Щоб переключити прокрадання, натисніть :_input_key.sneak: або :_gamepad_stick_right:.	#
 howtoplay.controls.text.8.touch=Прокрадання надзвичайно корисне в Minecraft, оскільки завдяки йому легше не впасти з блока, а також можна приховати свій нікнейм. Щоб переключити прокрадання, торкніться :touch_sneak:.	#
 howtoplay.controls.text.8.rift_controller=Прокрадання надзвичайно корисне в Minecraft, оскільки завдяки йому легше не впасти з блока, а також можна приховати свій нікнейм. Щоб переключити прокрадання, натисніть :rift_X:.	#
 howtoplay.controls.text.8.windowsmr_controller=Прокрадання надзвичайно корисне в Minecraft, оскільки завдяки йому легше не впасти з блока, а також можна приховати свій нікнейм. Щоб переключити прокрадання, натисніть :windowsmr_right_stick:.	#
@@ -4179,6 +4194,13 @@ options.dev_updateOverrideDate=Оновити дату заміни	#
 options.dev_clearStoreCache=Очистити кеш Магазину	#
 options.dev_clearAllCache=Очистити весь кеш	#
 options.dev_xforgeRequestsRequireSignIn=Xforge Requests Wait for Sign In	#
+options.dev_connection_quality=Модифікатор мережі (симулює погані з’єднання)	#
+options.dev_connection_off=Вимкнуто – підключення на основі пам’яті ввімкнуто для локальної гри	#
+options.dev_connection_nolimit=Увімкнуто повний стек мережі – без обмежень	#
+options.dev_connection_4g=4G – 15 Мбіт/с, затримка 100 мс, втрата пакетів 1%	#
+options.dev_connection_3g=3G – 1,5 Мбіт/с, затримка 200 мс, втрата пакетів 2%	#
+options.dev_connection_slow=Повільне – 400 Кбіт/с, затримка 300 мс, втрата пакетів 3%	#
+options.dev_connection_veryslow=Дуже повільне – 200 Кбіт/с, затримка 400 мс, втрата пакетів 4%	#
 options.difficulty=Складність	#
 options.difficulty.easy=Легко	#
 options.difficulty.hard=Важко	#
@@ -4220,6 +4242,7 @@ options.worldLightBrightness=Яскравість світла світу	#
 options.goToFeedbackWebsite=Перейти на веб-сайт відгуків	#
 options.graphics=Красива графіка	#
 options.transparentleaves=Красиве листя	#
+options.bubbleparticles=Строкаті бульбашки	#
 options.smooth_lighting=М’яке освітлення	#
 options.graphics.fancy=Красива	#
 options.graphics.fast=Швидка	#
@@ -4453,6 +4476,8 @@ options.content.noRealms.message=Цей світ використовує пак
 options.activateExperimentalGameplay=Увімкнути експериментальний режим?	#
 options.activateExperimentalGameplay.message=Таким чином активуються функції в бета-версії. Експериментальний режим може зламати світ. Якщо ви вирішите продовжити, ми зробимо копію світу з префіксом [EX] в імені, для якого буде ввімкнуто цю функцію.	#
 options.activateExperimentalGameplayCreate.message=Таким чином активуються функції в бета-версії. Гра може працювати нестабільно в експериментальному режимі.	#
+options.activateFancyBubbles=Активувати стовпи строкатих бульбашок?	#
+options.activateFancyBubblesCreate.message=Вмикає стовпи строкатих бульбашок. Стовпи строкатих бульбашок можуть знизити продуктивність на деяких пристроях.	#
 options.continue=Продовжити	#
 options.edit=Змінити	#
 options.enableEducation=Увімкнути Education Edition?	#
@@ -4487,7 +4512,7 @@ hudScreen.tooltip.dropItem=Викинути	#
 hudScreen.tooltip.eject=Витягти	#
 hudScreen.tooltip.potion=Випити	#
 hudScreen.tooltip.milk=Випити	#
-hudScreen.tooltip.draw=Малювати	#
+hudScreen.tooltip.draw=Цілитися	#
 hudScreen.tooltip.release=Відпустити	#
 hudScreen.tooltip.throw=Кинути	#
 hudScreen.tooltip.open=Відкрити	#
@@ -4523,7 +4548,8 @@ playscreen.lastPlayed.weeksAgo=%1 тижн. тому	#
 playscreen.lastPlayed.yesterday=Учора	#
 playscreen.new=Створити	#
 playscreen.remoteWorld=Віддалений світ у:	#
-playScreen.realmsTrialWorld=30-денне безкоштовне ознайомлення	#
+playscreen.realmsTrialWorld=30-денне безкоштовне ознайомлення	#
+playscreen.realmsCreateFirstWorld=Створіть свій перши реалм	#
 playscreen.checkingRealmsCompatibility=Перевірка сумісності з реалмами…	#
 playscreen.fetchingRealms=Отримання реалмів…	#
 playscreen.confirmLeaveMessage=Ви справді хочете покинути реалм %1$s?	#
@@ -4571,6 +4597,7 @@ permissions.level.operator=Оператор	#
 permissions.level.visitor=Відвідувач	#
 permissions.nocheats=Чіти вимкнуто	#
 permissions.nocheats.message=Команди оператора й телепортації доступні лише за ввімкнених чітів. Чіти можна ввімкнути в меню паузи під параметрами гри.	#
+permissions.deopingother.message=Вони більше не матимуть дозволів рівня оператора, якщо зменшать свій рівень дозволів.	#
 permissions.deopingself=Видалити дозволи оператора?	#
 permissions.deopingself.message=Ви більше не матимете дозволів рівня оператора, якщо зменшите свій рівень дозволів.	#
 permissions.title=Дозволи для гравців	#
@@ -4690,6 +4717,8 @@ progressScreen.title.connectingLocal=Запуск світу	#
 progressScreen.title.connectingLAN=Підключення до мультиплеєрної гри	#
 progressScreen.title.connectingExternal=Підключення зовнішнього сервера	#
 progressScreen.title.connectingRealms=Підключення до реалму	#
+progressScreen.title.copyingWorld=Копія світу	#
+progressScreen.message.copyingWorld=Копіювання світу… %d%%	#
 progressScreen.message.building=Створення місцевості	#
 progressScreen.message.done=Готово!	#
 progressScreen.message.exporting=Триває експорт	#
@@ -4761,6 +4790,8 @@ resourcePack.selected.title.packs=Активні пакети	#
 resourcePack.error.ingame.packs=Ви не можете змінити пакети ресурсів, поки граєте у світі.	#
 resourcePack.error.ingame.behaviorPacks=Ви не можете змінити пакети поведінки, поки граєте у світі.	#
 resourcePack.title=Вибрати пакети ресурсів	#
+resourcePack.toast.atlasFallback.message=Мало пам’яті. Текстури матимуть знижений рівень деталізації.	#
+resourcePack.toast.atlasFallback.title=Повернення до вихідного пакета ресурсів	#
 resourcePack.copyGlobal=Копіювати з глобального пакета	#
 resourcePack.description=Пакети ресурсів застосовуються знизу догори. Це означає, що вміст верхнього пакета перезаписуватиме вміст нижнього.	#
 resourcePack.description.default.level=Це можна змінити в параметрах.	#
@@ -5171,12 +5202,14 @@ store.incompatible=Несумісно	#
 store.itemIsIncompatible=Цей компонент несумісний із вашим пристроєм.	#
 store.itemMayNotBeCompatible=Цей компонент, імовірно, несумісний із вашим пристроєм.	#
 store.owned=Отримано	#
+store.owned.legacy=Власник (P)	#
 store.unlocked=Розблоковано	#
 
-store.toast.downloadComplete=Завантаження завершено	#
-store.toast.downloadResumed=Завантаження відновлено	#
-store.toast.downloadFailed=Помилка завантаження	#
-store.toast.downloadPaused=Завантаження призупинено	#
+store.toast.downloadStarted=Завантаження розпочато: %s	#
+store.toast.downloadComplete=Завантаження завершено: %s	#
+store.toast.downloadResumed=Завантаження відновлено: %s	#
+store.toast.downloadFailed=Помилка завантаження: %s	#
+store.toast.downloadPaused=Завантаження призупинено: %s	#
 
 store.popup.goBack=Повернутися	#
 store.popup.xblRequired.title=Безкоштовний вхід	#
@@ -5219,10 +5252,23 @@ store.popup.purchaseFailed.msg=На жаль, не вдалося виконат
 store.popup.purchaseFailedInsufficientFunds.title=Потрібно більше монет Minecoins	#
 store.popup.purchaseFailedInsufficientFunds.msg=У вас недостатньо монет Minecoins, щоб розблокувати цей предмет. Ви можете придбати монети Minecoins у своєму магазині програм.	#
 store.popup.purchaseFailedInsufficientFunds.buyButton=Отримати монети Minecoins	#
+store.popup.purchasePriceMismatch.msg=Не вдалося завершити покупку. Повторіть спробу пізніше.	#
 store.purchase.success=Ви щойно придбали: %s	#
 store.createdBy=Автор: %s	#
 store.seeMoreBy=Показати більше: %s	#
 store.fetchingItem=Підключення до магазину…	#
+ 
+store.timer.daysAbbreviated=%s дн.	#
+store.timer.hoursAbbreviated=%s год.	#
+store.timer.minutesAbbreviated=%s хв.	#
+store.timer.secondsAbbreviated=%s с	#
+store.timer.left=%s залишилося	#
+
+store.timer.daysAbbreviated=%s дн.	#
+store.timer.hoursAbbreviated=%s год.	#
+store.timer.minutesAbbreviated=%s хв.	#
+store.timer.secondsAbbreviated=%s с	#
+store.timer.left=%s залишилося	#
 
 store.startMenu.sale=Розпродаж!	#
 
@@ -5274,8 +5320,11 @@ store.ratings.signIn.description1=Поділіться з творцем і сп
 store.ratings.signIn.description2=Щоб оцінити, вам потрібно ввійти під обліковим записом Xbox Live.	#
 
 store.purchase.success=Ви щойно придбали: %s	#
+store.purchase.success.realMoney1=Ви щойно розблокували: %s за %s 	#
+store.purchase.success.realMoney2=+%s:minecoin:	#
 store.purchase.signIn=Урізноманітнить свою гру цілою купою чудового контенту.	#
 store.purchase.signInPart2=Увійдіть в Xbox Live, щоб скупитися в магазині!	#
+store.purchase.realmoney.disclaimer=* купує %s монет за %s і активує цей пакет за %s монет, залишок: %s.	#
 
 store.coins.currentCoins=У вас є %s монет Minecoins	#
 store.coins.purchase.confirmation=Отримати більше монет, щоб розблокувати пакет?	#
@@ -5328,6 +5377,7 @@ store.updating=Оновлення…	#
 store.updating.title=Оновлення: %s	#
 store.fetchingItem=Підключення до магазину…	#
 store.importing.title=Імпорт: %s	#
+store.importing=Імпорт…	#
 store.showMore=Переглянути всі %d	#
 
 store.promo.today=Тільки сьогодні!	#
@@ -5362,10 +5412,18 @@ store.promo.date.oct=%s жовтня	#
 store.promo.date.nov=%s листопада	#
 store.promo.date.dec=%s грудня	#
 
+store.myAccount=Мій обліковий запис	#
 store.xbl.signin=Вхід	#
+store.xbl.signinOrSignUp=Увійдіть або зареєструйтеся безкоштовно	#
 store.xbl.disconnected=Відключено	#
 store.xbl.conversionFailedTitle=Щось пішло не так	#
 store.xbl.conversionFailedMessage=Спробуйте ще раз згодом.	#
+
+store.sales.allByCreator=Розпродаж!	#
+store.sales.mashupsOnSale=Розпродаж збірних пакетів!	#
+store.sales.skinsOnSale=Розпродаж скінів!	#
+store.sales.texturesOnSale=Розпродаж пакетів текстур!	#
+store.sales.worldsOnSale=Розпродаж світів!	#
 
 store.showalloffers.list.title=Магазин %s 	#
 store.showalloffers.list.back=Повернутися	#
@@ -5375,8 +5433,6 @@ store.suggestedOffers.defaultTitle=Цікаві способи гри	#
 store.minecoin.notavailable=Придбання за монети недоступне в цій версії Minecraft.	#
 
 store.itemDetail.back=Докладно	#
-store.timeRemaining=Залишилося часу: %s	#
-store.daysRemaining=%s дн. залишилося	#
 
 store.sales.allByCreator=Розпродаж!	#
 store.sales.mashupsOnSale=Розпродаж збірних пакетів!	#
@@ -5415,7 +5471,7 @@ store.search.filter.title=Фільтри	#
 store.search.filter.worldTemplates=Світи	#
 store.search.filter.installedState=Стан "Інстальовано"	#
 store.search.filter.installed=Інстальовано	#
-store.search.filter.uninstalled=Видалено	#
+store.search.filter.notInstalled=Не інстальовано	#
 store.search.filter.resetInstalledStateFilters=Скинути інстальовані фільтри	#
 
 store.search.sort_menu.sortConstWord=Сортувати	#
@@ -5425,7 +5481,7 @@ store.search.sort_menu.OldestFirst=Спершу старі	#
 store.search.sort_menu.A_to_Z=A–Я	#
 store.search.sort_menu.Z_to_A=Я–А	#
 store.search.sort_menu.Installed=Інстальовано	#
-store.search.sort_menu.Uninstalled=Видалено	#
+store.search.sort_menu.notInstalled=Не інстальовано	#
 
 stream.confirm_start=Ви справді хочете почати трансляцію?	#
 stream.unavailable.account_not_bound=Щоб транслювати гру Minecraft через Twitch, потрібно пов’язати свій обліковий запис Twitch на сайті mojang.com. Хочете зробити це зараз?	#
@@ -6196,7 +6252,8 @@ trial.upsell.description.updated=Досліджуйте, крафтіть, бу�
 trial.upsell.unlock=Розблокувати повну версію гри	#
 trial.upsell.startTrial=Почати ознайомлення	#
 
-
+ratingPopUp.title=Чи подобається вам Minecraft?	#
+feedbackPopup.title=Хочете залишити відгук?	#
 
 ## NOTE: The following five lines are all related and shown together. When localizing, you may add line breaks to fit the paragraph,
 ## as opposed to trying to literally translate each line.

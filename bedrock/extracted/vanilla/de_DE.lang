@@ -6,7 +6,7 @@ accessibility.disableTTS=Text-zu-Sprache-Funktion deaktiviert.	#
 accessibility.enableTTS=Text-zu-Sprache-Funktion aktiviert.	#
 
 achievement.alternativeFuel=Alternativer Brennstoff	#
-achievement.alternativeFuel.desc=Einen Ofen mit einem Kelpblock befeuern	#
+achievement.alternativeFuel.desc=Befeuere einen Ofen mit einem Seetangblock.	#
 achievement.acquireIron=Schmiedekunst	#
 achievement.acquireIron.desc=Schmilz einen Eisenbarren	#
 achievement.bakeCake=Die Lüge	#
@@ -185,6 +185,11 @@ authentication.clickToPurchaseMessage=Bitte deinen Lehrer, hier eine Lizenz für
 authentication.clickToPurchaseStudent=http://aka.ms/meestore	#
 authentication.clickToPurchaseTeacher=Hier klicken, um eine Lizenz zu kaufen	#
 authentication.adalException=Wir können im Moment keine Verbindung mit dem Dienst aufbauen. Überprüfe deine Netzwerkverbindung oder versuche es später noch einmal.	#
+authentication.buyMinecraft=Zum App Store	#
+authentication.educationOnly=Minecraft: Education Edition ist nur für Schulen verfügbar. Du benötigst Office 365 Education, um es zu spielen.	#
+authentication.minecraftInstead=Du bist kein Education-Benutzer, möchtest aber trotzdem Minecraft spielen?	#
+authentication.signInButton=Mit deinem Schulkonto anmelden	#
+
 
 eula.intro=Um Minecraft: Education Edition zu benutzen, musst du die Endbenutzer-Lizenzvereinbarung akzeptieren.	#
 eula.location=Die Lizenzvereinbarung findest du unter:	#
@@ -1234,6 +1239,7 @@ realmsCreateScreen.incomplete.override.realm=Du versuchst, ein Realm zu erneuern
 realmsCreateScreen.prepare.store.title=Kaufverlauf erforderlich	#
 realmsCreateScreen.prepare.store.body=Du musst dich im Store anmelden, damit dein Kaufverlauf angezeigt werden kann. Erst danach geht es weiter.	#
 realmsCreateScreen.prepare.store.button=Im Store anmelden	#
+realmsCreateScreen.nsoinfotext=Um Realms nutzen zu können, benötigst du ein Abonnement für Nintendo Switch Online.	#
 
 realmsCreateScreen.title=Realm erstellen	#
 realmsCreateScreen.nameHeader=Realm-Name	#
@@ -1418,6 +1424,13 @@ xbl.savePurchase.title=Einkäufe bei Xbox Live speichern?	#
 xbl.savePurchase.saveButton=Bei Xbox Live speichern	#
 xbl.savePurchase.toast.title=Erfolg!	#
 xbl.savePurchase.toast.message=Käufe zu Xbox Live transferiert	#
+xbl.savePurchase.inProgress.message=Käufe werden auf Xbox Live-Konto übertragen...	#
+
+store.sign_in_warning.no_xbl_and_local_content=Wichtig! Du hast Pakete und/oder Münzen gekauft, die nur auf diesem Gerät verfügbar sind und durch eine Fehlfunktion, den Verlust des Gerätes oder die Deinstallation von Minecraft verloren gehen können. Melde dich mit einem Xbox Live-Konto (kostenlos) an, und übertrage deine Paketberechtigungen und Münzen auf dieses Konto, um sie zu schützen und nach der Anmeldung auf jedem Gerät nutzen zu können.	#
+store.sign_in_warning.no_xbl_and_no_local_content.line1=Wichtig! Gekaufte Pakete, die nur auf diesem Gerät verfügbar sind, können durch eine Fehlfunktion, den Verlust des Gerätes oder die Deinstallation von Minecraft verloren gehen.	#
+store.sign_in_warning.no_xbl_and_no_local_content.line2=Melde dich mit einem Xbox Live-Konto (kostenlos) an, und übertrage deine gekauften Pakete und Münzen auf dieses Konto, um sie zu schützen.	#
+store.sign_in_warning.no_xbl_and_no_local_content.line3=Sie stehen dir danach auf jedem Gerät mit Minecraft zur Verfügung.	#
+store.sign_in_warning.no_xbl_and_no_local_content.line4=Über einen Partner-Store erworbene Inhalte sind verfügbar, solange dein Gerät mit dem Partner-Store-Konto angemeldet ist.	#
 
 xbl.skipSignIn.prompt.title=Temporäres Konto	#
 xbl.skipSignIn.prompt.description=Solange du nicht die Käufe für dieses Gerät auf dieses Xbox Live-Konto überträgst, ist es nicht das primäre Konto für das Gerät. Du wirst beim Start von Minecraft nicht automatisch angemeldet.	#
@@ -1590,6 +1603,7 @@ disconnectionScreen.realmsWorldUnassigned=Version in Entwickleroptionen zuweisen
 disconnectionScreen.realmsWorldUnassigned.title=Realm ist nicht zugewiesen!	#
 disconnectionScreen.serverFull=Wow, dieser Server ist echt beliebt. Komm später wieder. Möglicherweise ist dann ein Platz frei.	#
 disconnectionScreen.serverFull.title=Server voll	#
+disconnectionScreen.serverIdConflict=Beitritt zur Welt nicht möglich. Das Konto, mit dem du angemeldet bist, spielt derzeit auf einem anderen Gerät in dieser Welt.	#
 disconnectionScreen.sessionNotFound=Es konnte keine Verbindung zur Welt aufgebaut werden. Dieser Welt kann nicht mehr beigetreten werden.	#
 disconnectionScreen.timeout=Zeitüberschreitung bei der Verbindung.	#
 disconnectionScreen.nowifi=Du musst eine WLAN-Verbindung haben, um mit deinen Freunden zu spielen.	#
@@ -1899,6 +1913,7 @@ gui.up=Hoch	#
 gui.warning.exitGameWarning=Möchtest du Minecraft verlassen?	#
 gui.worldTemplate=Minecraft Weltvorlage	#
 gui.yes=Ja	#
+gui.feedbackYes=Ja. Zur Feedback-Website wechseln.	#
 gui.resourcepacks=Ressourcenpakete ...	#
 gui.submit=Senden	#
 gui.playOffline=Offline spielen	#
@@ -2129,7 +2144,7 @@ howtoplay.controls.text.7.windowsmr_controller=Wenn du einen Gegenstand in der H
 howtoplay.controls.text.7.touch=Wenn du einen Gegenstand in der Hand hältst, kannst du ihn mit Antippen verwenden oder mit Antippen und Halten in der Schnellzugriffsleiste fallen lassen.	#
 howtoplay.controls.header.3=Schleichen	#
 howtoplay.controls.text.8.keyboard=Schleichen ist in Minecraft unglaublich nützlich. Es verhindert, dass du von einem Block fällst, und verbirgt dein Namensschild. Halte :_input_key.sneak: gedrückt, um zu schleichen.	#
-howtoplay.controls.text.8.gamepad=Das Schleichen ist in Minecraft extrem nützlich. Es verhindert, dass du von einem Block herunterfällst und blendet deinen Nametag aus. Schalte das Schleichen mit :_gamepad_face_button_right: um oder klicke auf :_gamepad_stick_right:, um zu schleichen.	#
+howtoplay.controls.text.8.gamepad=Das Schleichen ist in Minecraft extrem nützlich. Es verhindert, dass du von einem Block herunterfällst und blendet deinen Nametag aus. Schalte das Schleichen mit :_input_key.sneak: um oder klicke auf :_gamepad_stick_right:, um zu schleichen.	#
 howtoplay.controls.text.8.touch=Das Schleichen ist in Minecraft extrem nützlich. Es verhindert, dass du von einem Block herunterfällst und blendet deinen Nametag aus. Tippe auf :touch_sneak:, um zu schleichen.	#
 howtoplay.controls.text.8.rift_controller=Das Schleichen ist unglaublich nützlich in Minecraft. Es verhindert, dass du von einem Block fällst und verbirgt dein Namensschild. Schalte das Schleichen mit :rift_X: an oder aus.	#
 howtoplay.controls.text.8.windowsmr_controller=Das Schleichen ist unglaublich nützlich in Minecraft. Es verhindert, dass du von einem Block fällst und verbirgt dein Namensschild. Schalte das Schleichen mit :windowsmr_right_stick: an oder aus.	#
@@ -3557,7 +3572,7 @@ item.spawn_egg.entity.mule.name=Maultier spawnen	#
 item.spawn_egg.entity.skeleton_horse.name=Skelettpferd spawnen	#
 item.spawn_egg.entity.zombie_horse.name=Zombiepferd spawnen	#
 item.spawn_egg.entity.zombie.name=Zombie spawnen	#
-item.spawn_egg.entity.drowned.name=Ertrunkenen-Spawn	#
+item.spawn_egg.entity.drowned.name=Ertrunkenen spawnen	#
 item.spawn_egg.entity.creeper.name=Creeper spawnen	#
 item.spawn_egg.entity.skeleton.name=Skelett spawnen	#
 item.spawn_egg.entity.spider.name=Spinne spawnen	#
@@ -3581,7 +3596,7 @@ item.spawn_egg.entity.endermite.name=Endermilbe spawnen	#
 item.spawn_egg.entity.evocation_illager.name=Magier spawnen	#
 item.spawn_egg.entity.vex.name=Plagegeist spawnen	#
 item.spawn_egg.entity.turtle.name=Meeresschildkröten-Laich	#
-item.spawn_egg.entity.dolphin.name=Delfin-Spawn	#
+item.spawn_egg.entity.dolphin.name=Delfin spawnen	#
 item.spawn_egg.entity.unknown.name=Spawnen	#
 item.trident.name=Dreizack	#
 item.mushroom_stew.name=Pilzsuppe	#
@@ -4179,6 +4194,13 @@ options.dev_updateOverrideDate=Überschreibungsdatum aktualisieren	#
 options.dev_clearStoreCache=Store-Cache löschen	#
 options.dev_clearAllCache=Gesamten Cache löschen	#
 options.dev_xforgeRequestsRequireSignIn=Xforge Requests Wait for Sign In	#
+options.dev_connection_quality=Network-Conditioner (simuliert schlechte Verbindungen)	#
+options.dev_connection_off=Aus – In-Memory-Verbindung für lokales Spiel aktiviert	#
+options.dev_connection_nolimit=Vollständiger Netzwerkstack aktiviert – Keine Beschränkungen	#
+options.dev_connection_4g=4G – 15 MBit/s, 100 ms Latenz, 1 % Paketverlust	#
+options.dev_connection_3g=3G – 1,5 MBit/s, 200 ms Latenz, 2 % Paketverlust	#
+options.dev_connection_slow=Langsam – 400 KBit/s, 300 ms Latenz, 3 % Paketverlust	#
+options.dev_connection_veryslow=Sehr langsam – 200 KBit/s, 400 ms Latenz, 4 % Paketverlust	#
 options.difficulty=Schwierigkeitsgrad	#
 options.difficulty.easy=Einfach	#
 options.difficulty.hard=Schwer	#
@@ -4220,6 +4242,7 @@ options.worldLightBrightness=Welt-Helligkeit	#
 options.goToFeedbackWebsite=Zur Feedback-Website	#
 options.graphics=Schöne Grafik	#
 options.transparentleaves=Schöne Blätter	#
+options.bubbleparticles=Schicke Blasensäulen	#
 options.smooth_lighting=Weiche Beleuchtung	#
 options.graphics.fancy=Schön	#
 options.graphics.fast=Schnell	#
@@ -4453,6 +4476,8 @@ options.content.noRealms.message=Diese Welt nutzt ein Ressourcenpaket oder eine 
 options.activateExperimentalGameplay=Experimental Gameplay aktivieren?	#
 options.activateExperimentalGameplay.message=Aktiviert Beta-Funktionen. Experimental Gameplay kann deine Welt zerstören. Wenn du fortfährst, erstellen wir eine Kopie deiner Welt mit dem Präfix [EX], in der diese Funktionen aktiviert sind.	#
 options.activateExperimentalGameplayCreate.message=Aktiviert Beta-Funktionen. Experimental Gameplay läuft möglicherweise nicht stabil.	#
+options.activateFancyBubbles=Schicke Blasensäulen aktivieren?	#
+options.activateFancyBubblesCreate.message=Aktiviert schicke Blasensäulen. Schicke Blasensäulen können auf einigen Geräten die Leistung beeinträchtigen.	#
 options.continue=Weiter	#
 options.edit=Bearbeiten	#
 options.enableEducation=Education Edition aktivieren?	#
@@ -4523,7 +4548,8 @@ playscreen.lastPlayed.weeksAgo=Vor %1 Wochen	#
 playscreen.lastPlayed.yesterday=Gestern	#
 playscreen.new=Neu	#
 playscreen.remoteWorld=Remote-Welt auf:	#
-playScreen.realmsTrialWorld=Kostenlose 30-Tage-Testversion	#
+playscreen.realmsTrialWorld=Kostenlose 30-Tage-Testversion	#
+playscreen.realmsCreateFirstWorld=Erstelle deinen ersten Realm	#
 playscreen.checkingRealmsCompatibility=Realms-Kompatibilität wird überprüft ...	#
 playscreen.fetchingRealms=Realms werden abgerufen ...	#
 playscreen.confirmLeaveMessage=Möchtest du Realm %1$s wirklich verlassen?	#
@@ -4571,6 +4597,7 @@ permissions.level.operator=Operator	#
 permissions.level.visitor=Besucher	#
 permissions.nocheats=Cheats sind aus	#
 permissions.nocheats.message=Die Operator- und Teleport-Befehle sind nur mit AKTIVIERTEN Cheats verfügbar. Du kannst die Cheats über die Spieleinstellungen im Pause-Menü einschalten.	#
+permissions.deopingother.message=Wenn du ihre Berechtigungsstufe verringerst, haben sie keine Operator-Berechtigungen mehr.	#
 permissions.deopingself=Operator-Berechtigungen entfernen?	#
 permissions.deopingself.message=Wenn du deine Berechtigungsstufe verringerst, hast du keine Operator-Berechtigungen mehr.	#
 permissions.title=Spielerberechtigungen	#
@@ -4690,6 +4717,8 @@ progressScreen.title.connectingLocal=Welt starten	#
 progressScreen.title.connectingLAN=Verbindung zum Mehrspieler-Spiel wird hergestellt	#
 progressScreen.title.connectingExternal=Wird mit externem Server verbunden	#
 progressScreen.title.connectingRealms=Verbindung zu Realm wird hergestellt	#
+progressScreen.title.copyingWorld=Welt-Kopie	#
+progressScreen.message.copyingWorld=Welt wird kopiert... %d%%	#
 progressScreen.message.building=Gelände wird gebaut	#
 progressScreen.message.done=Fertig!	#
 progressScreen.message.exporting=Exportvorgang läuft	#
@@ -4761,6 +4790,8 @@ resourcePack.selected.title.packs=Aktive Pakete	#
 resourcePack.error.ingame.packs=Du kannst Ressourcenpakete nicht verändern, während du in einer Welt spielst.	#
 resourcePack.error.ingame.behaviorPacks=Du kannst Verhaltenspakete nicht verändern, während du in einer Welt spielst.	#
 resourcePack.title=Ressourcenpakete auswählen	#
+resourcePack.toast.atlasFallback.message=Wenig Speicher: Texturdetails werden reduziert.	#
+resourcePack.toast.atlasFallback.title=Ressourcenpaket-Fallback	#
 resourcePack.copyGlobal=Aus Global kopieren	#
 resourcePack.description=Ressourcenpakete werden von unten nach oben angewendet. Dies bedeutet, dass jeder Posten, der sich in zwei Paketen befindet, durch das übergeordnete Paket überschrieben wird.	#
 resourcePack.description.default.level=Du kannst dies in den Einstellungen ändern.	#
@@ -5171,12 +5202,14 @@ store.incompatible=Inkompatibel	#
 store.itemIsIncompatible=Dieser Gegenstand ist nicht mit deinem Gerät kompatibel.	#
 store.itemMayNotBeCompatible=Dieser Gegenstand ist nicht mit deinem Gerät kompatibel.	#
 store.owned=Freigeschaltet	#
+store.owned.legacy=Freigeschaltet (P)	#
 store.unlocked=Freigeschaltet	#
 
-store.toast.downloadComplete=Download abgeschlossen	#
-store.toast.downloadResumed=Download fortgesetzt	#
-store.toast.downloadFailed=Download fehlgeschlagen	#
-store.toast.downloadPaused=Download angehalten	#
+store.toast.downloadStarted=Download begonnen: %s	#
+store.toast.downloadComplete=Download abgeschlossen: %s	#
+store.toast.downloadResumed=Download fortgesetzt: %s	#
+store.toast.downloadFailed=Download fehlgeschlagen: %s	#
+store.toast.downloadPaused=Download angehalten: %s	#
 
 store.popup.goBack=Zurück	#
 store.popup.xblRequired.title=Kostenlos anmelden	#
@@ -5219,10 +5252,23 @@ store.popup.purchaseFailed.msg=Fehler beim Kauf. Gibt es vielleicht ein Problem 
 store.popup.purchaseFailedInsufficientFunds.title=Du benötigst weitere Münzen	#
 store.popup.purchaseFailedInsufficientFunds.msg=Du hast nicht genügend Münzen, um diesen Gegenstand freizuschalten. Im App-Store kannst du weitere Münzen kaufen.	#
 store.popup.purchaseFailedInsufficientFunds.buyButton=Münzen erhalten	#
+store.popup.purchasePriceMismatch.msg=Leider konnten wir deinen Kauf nicht abschließen. Bitte versuche es später noch einmal.	#
 store.purchase.success=Soeben gekauft: %s	#
 store.createdBy=Von %s	#
 store.seeMoreBy=Mehr von %s	#
 store.fetchingItem=Verbindung mit Store ...	#
+ 
+store.timer.daysAbbreviated=%s Tage	#
+store.timer.hoursAbbreviated=%s Std.	#
+store.timer.minutesAbbreviated=%s Min.	#
+store.timer.secondsAbbreviated=%sSek.	#
+store.timer.left=%s übrig	#
+
+store.timer.daysAbbreviated=%s Tage	#
+store.timer.hoursAbbreviated=%s Std.	#
+store.timer.minutesAbbreviated=%s Min.	#
+store.timer.secondsAbbreviated=%sSek.	#
+store.timer.left=%s übrig	#
 
 store.startMenu.sale=Angebot!	#
 
@@ -5274,8 +5320,11 @@ store.ratings.signIn.description1=Teile dem Ersteller und der Community deine Me
 store.ratings.signIn.description2=Vor dem Bewerten musst du dich mit Xbox Live anmelden.	#
 
 store.purchase.success=Soeben gekauft: %s	#
+store.purchase.success.realMoney1=Du hast soeben %s für %s freigeschaltet	#
+store.purchase.success.realMoney2=+%s:minecoin:	#
 store.purchase.signIn=Ergänze dein Spiel um jede Menge tolle Inhalte.	#
 store.purchase.signInPart2=Melde dich bei Xbox Live an, um den Store zu nutzen!	#
+store.purchase.realmoney.disclaimer=*Kauf von %s Münzen für %s und Verwenden dieses Paketes für %s Münzen (Rest: %s).	#
 
 store.coins.currentCoins=Du hast %s Münzen	#
 store.coins.purchase.confirmation=Weitere Münzen holen, um dieses Paket freizuschalten?	#
@@ -5328,6 +5377,7 @@ store.updating=Aktualisierung...	#
 store.updating.title=Aktualisierung: %s	#
 store.fetchingItem=Verbindung mit Store ...	#
 store.importing.title=Import von: %s	#
+store.importing=Import...	#
 store.showMore=Alle %d anzeigen	#
 
 store.promo.today=Nur heute!	#
@@ -5362,10 +5412,18 @@ store.promo.date.oct=Okt. %s	#
 store.promo.date.nov=Nov. %s	#
 store.promo.date.dec=Dez. %s	#
 
+store.myAccount=Mein Konto	#
 store.xbl.signin=Anmelden	#
+store.xbl.signinOrSignUp=Anmelden oder kostenlos registrieren	#
 store.xbl.disconnected=Getrennt	#
 store.xbl.conversionFailedTitle=Etwas ist schiefgelaufen.	#
 store.xbl.conversionFailedMessage=Bitte versuche es später noch einmal.	#
+
+store.sales.allByCreator=Im Angebot!	#
+store.sales.mashupsOnSale=Mash-ups im Angebot!	#
+store.sales.skinsOnSale=Skins im Angebot!	#
+store.sales.texturesOnSale=Texturpakete im Angebot!	#
+store.sales.worldsOnSale=Welten im Angebot!	#
 
 store.showalloffers.list.title=%s Store 	#
 store.showalloffers.list.back=Zurück	#
@@ -5375,8 +5433,6 @@ store.suggestedOffers.defaultTitle=Jede Menge Spielspaß	#
 store.minecoin.notavailable=In dieser Version von Minecraft können keine Münzen gekauft werden.	#
 
 store.itemDetail.back=Details	#
-store.timeRemaining=Verbleibende Zeit: %s	#
-store.daysRemaining=%s verbleibende Tage	#
 
 store.sales.allByCreator=Im Angebot!	#
 store.sales.mashupsOnSale=Mash-ups im Angebot!	#
@@ -5415,7 +5471,7 @@ store.search.filter.title=Filter	#
 store.search.filter.worldTemplates=Welten	#
 store.search.filter.installedState=Installationsstatus	#
 store.search.filter.installed=Installiert	#
-store.search.filter.uninstalled=Deinstalliert	#
+store.search.filter.notInstalled=Nicht installiert	#
 store.search.filter.resetInstalledStateFilters=Installationsfilter zurücksetzen	#
 
 store.search.sort_menu.sortConstWord=Sortierung	#
@@ -5425,7 +5481,7 @@ store.search.sort_menu.OldestFirst=Älteste zuerst	#
 store.search.sort_menu.A_to_Z=A bis Z	#
 store.search.sort_menu.Z_to_A=Z bis A	#
 store.search.sort_menu.Installed=Installiert	#
-store.search.sort_menu.Uninstalled=Deinstalliert	#
+store.search.sort_menu.notInstalled=Nicht installiert	#
 
 stream.confirm_start=Bist du sicher, dass du einen Stream starten möchtest?	#
 stream.unavailable.account_not_bound=Bevor du Minecraft über Twitch streamen kannst, musst du dein Twitch-Konto auf mojang.com verknüpfen. Möchtest du das jetzt tun?	#
@@ -6196,7 +6252,8 @@ trial.upsell.description.updated=Erkunde, erstelle, baue und hab Spaß! In diese
 trial.upsell.unlock=Vollversion freischalten	#
 trial.upsell.startTrial=Testversion starten	#
 
-
+ratingPopUp.title=Gefällt dir Minecraft?	#
+feedbackPopup.title=Hast du Feedback für uns?	#
 
 ## NOTE: The following five lines are all related and shown together. When localizing, you may add line breaks to fit the paragraph,
 ## as opposed to trying to literally translate each line.

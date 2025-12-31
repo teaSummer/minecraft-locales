@@ -185,6 +185,11 @@ authentication.clickToPurchaseMessage=担当の教育者に言って、以下か
 authentication.clickToPurchaseStudent=http://aka.ms/meestore	#
 authentication.clickToPurchaseTeacher=ライセンスを購入するにはここをクリック	#
 authentication.adalException=ご希望のサービスには現在接続できません。ネットワーク接続を確認するか、後でもう一度試してください。	#
+authentication.buyMinecraft=App Store に移動	#
+authentication.educationOnly=Minecraft: Education Edition は学校のアカウントのみでプレイ可能です。プレイするには Office 365 Education のアカウントが必要です。	#
+authentication.minecraftInstead=Education のユーザーではないけれど、 Minecraft をプレイしたいのですか?	#
+authentication.signInButton=自分の学校アカウントでログイン	#
+
 
 eula.intro=Minecraft: Education Edition を使用するには使用許諾契約への同意が必要です。	#
 eula.location=使用許諾契約はこちらです:	#
@@ -1234,6 +1239,7 @@ realmsCreateScreen.incomplete.override.realm=Realm を更新しようとして�
 realmsCreateScreen.prepare.store.title=購入履歴の要求	#
 realmsCreateScreen.prepare.store.body=購入履歴を閲覧するには、ストアにログインする必要があります。	#
 realmsCreateScreen.prepare.store.button=ストアにログイン	#
+realmsCreateScreen.nsoinfotext=Realms の利用には、Nintendo Switch Online への加入が必要です。	#
 
 realmsCreateScreen.title=Realm の作成	#
 realmsCreateScreen.nameHeader=Realm の名前	#
@@ -1418,6 +1424,13 @@ xbl.savePurchase.title=購入を Xbox Live に保存しますか? 	#
 xbl.savePurchase.saveButton=Xbox Live に保存する	#
 xbl.savePurchase.toast.title=完了しました!	#
 xbl.savePurchase.toast.message=Xbox Live への購入の転送	#
+xbl.savePurchase.inProgress.message=購入内容を Xbox Live アカウントに同期しています...	#
+
+store.sign_in_warning.no_xbl_and_local_content=重要なお知らせです! ご購入いただいたパックまたはコインは、現在ご利用のデバイスでのみ使用可能となっています。デバイスの不良、紛失または Minecraft をアンインストールすると購入されたものが失われてしまう場合があります! Xbox Live アカウント (無料) でサインインし、パックの利用資格とコインをアカウントに移動して保護してください。そうすることで他のデバイスでサインインする場合でも利用できるようになります。	#
+store.sign_in_warning.no_xbl_and_no_local_content.line1=重要なお知らせです! ご購入いただいたパックは現在ご利用のデバイスでのみ使用可能となっています。デバイスの不良、紛失または Minecraft をアンインストールすると失われてしまう場合があります!	#
+store.sign_in_warning.no_xbl_and_no_local_content.line2=Xbox Live アカウント (無料) でサインインし、パックの利用資格をアカウントに移動してパックとコインを保護してください。	#
+store.sign_in_warning.no_xbl_and_no_local_content.line3=移動することで、保護するだけでなく他のデバイスで Minecraft をプレイする際にも利用できるようになります!	#
+store.sign_in_warning.no_xbl_and_no_local_content.line4=パートナー ストアで購入したコンテンツはパートナー ストア アカウントにサインインしたデバイスで利用可能になります。	#
 
 xbl.skipSignIn.prompt.title=一時アカウント	#
 xbl.skipSignIn.prompt.description=この Xbox Live アカウントは、現在お使いのデバイスでの購入をアカウントに転送しない場合、このデバイスにおけるメインのアカウントにはなりません。このアカウントには、Minecraft の起動時に自動でサインインしません。	#
@@ -1590,6 +1603,7 @@ disconnectionScreen.realmsWorldUnassigned=開発者オプションでバージ�
 disconnectionScreen.realmsWorldUnassigned.title=Realm が未割り当てです!	#
 disconnectionScreen.serverFull=このサーバーは満員です! 時間をおいてからアクセスしてみてください。	#
 disconnectionScreen.serverFull.title=サーバーが満員です	#
+disconnectionScreen.serverIdConflict=世界に参加できません。サインインしているアカウントは、他のデバイスでこの世界を現在プレイしています。	#
 disconnectionScreen.sessionNotFound=ワールドに接続できません。このワールドにはもう参加できません。	#
 disconnectionScreen.timeout=接続がタイムアウトしました。	#
 disconnectionScreen.nowifi=フレンドとプレイするにはWi-Fiに接続する必要があります。	#
@@ -1899,6 +1913,7 @@ gui.up=上	#
 gui.warning.exitGameWarning=Minecraft を終了しますか?	#
 gui.worldTemplate=Minecraft の世界テンプレート	#
 gui.yes=はい	#
+gui.feedbackYes=はい。フィードバック Web サイトに移動します	#
 gui.resourcepacks=リソース パック...	#
 gui.submit=送信	#
 gui.playOffline=オフラインでプレイ	#
@@ -2129,7 +2144,7 @@ howtoplay.controls.text.7.windowsmr_controller=手に持っているアイテム
 howtoplay.controls.text.7.touch=アイテムを手に持っているときに画面をタッチすると、そのアイテムを使用します。ホットバーのアイテムを長押しすると、そのアイテムを落とします。	#
 howtoplay.controls.header.3=しのび足	#
 howtoplay.controls.text.8.keyboard=Minecraft では、しのび足がとても役立ちます。しのび足をしている間は、ブロックから落ちることがなく、ネームタグが表示されません。しのび足状態になるには、:_input_key.sneak: を押し続けます。	#
-howtoplay.controls.text.8.gamepad=Minecraft では、しのび足がとても役立ちます。しのび足をしている間は、ブロックから落ちることがなく、ネームタグが表示されません。しのび足状態のオン/オフは、:_gamepad_face_button_right: または :_gamepad_stick_right: を押して切り替えます。	#
+howtoplay.controls.text.8.gamepad=Minecraft では、しのび足がとても役立ちます。しのび足をしている間は、ブロックから落ちることがなく、ネームタグが表示されません。しのび足状態のオン/オフは、:_input_key.sneak: または :_gamepad_stick_right: を押して切り替えます。	#
 howtoplay.controls.text.8.touch=Minecraft では、しのび足がとても役立ちます。しのび足をしている間は、ブロックから落ちることがなく、ネームタグが表示されません。しのび足状態のオン/オフは、:touch_sneak: をタップして切り替えます。	#
 howtoplay.controls.text.8.rift_controller=Minecraft では、しのび足がとても役立ちます。しのび足をしている間は、ブロックから落ちることがなく、ネームタグが表示されません。しのび足状態のオン/オフは、:rift_X: を押して切り替えます。	#
 howtoplay.controls.text.8.windowsmr_controller=Minecraft では、しのび足がとても役立ちます。しのび足をしている間は、ブロックから落ちることがなく、ネームタグが表示されません。しのび足状態のオン/オフは、:windowsmr_right_stick: を押して切り替えます。	#
@@ -3581,7 +3596,7 @@ item.spawn_egg.entity.endermite.name=エンダーマイトを出現させる	#
 item.spawn_egg.entity.evocation_illager.name=エヴォーカーを出現させる	#
 item.spawn_egg.entity.vex.name=ヴェックスを出現させる	#
 item.spawn_egg.entity.turtle.name=ウミガメ スポーン	#
-item.spawn_egg.entity.dolphin.name=イルカのスポーン	#
+item.spawn_egg.entity.dolphin.name=イルカを出現させる	#
 item.spawn_egg.entity.unknown.name=スポーン	#
 item.trident.name=トライデント	#
 item.mushroom_stew.name=きのこシチュー	#
@@ -4179,6 +4194,13 @@ options.dev_updateOverrideDate=上書きした日付を更新する	#
 options.dev_clearStoreCache=保存されたキャッシュをクリア	#
 options.dev_clearAllCache=すべてのキャッシュをクリア	#
 options.dev_xforgeRequestsRequireSignIn=X-FORGE がサインインの待機を要求しています	#
+options.dev_connection_quality=ネットワーク コンディショナー (接続不良をシミュレーションします)	#
+options.dev_connection_off=オフ - インメモリー接続を有効にしてローカル環境でのプレイを可能にします	#
+options.dev_connection_nolimit=フル ネットワーク スタック有効 - 無制限	#
+options.dev_connection_4g=4G - 15Mbps、100ms のレイテンシ、1% のパケットロス	#
+options.dev_connection_3g=3G - 1.5Mbps、200ms のレイテンシ、2% のパケットロス	#
+options.dev_connection_slow=低速 - 400Kbps、300ms のレイテンシ、3% のパケットロス	#
+options.dev_connection_veryslow=超低速 - 200Kbps、400ms のレイテンシ、4% のパケットロス	#
 options.difficulty=難易度	#
 options.difficulty.easy=イージー	#
 options.difficulty.hard=ハード	#
@@ -4220,6 +4242,7 @@ options.worldLightBrightness=世界の光の明るさ	#
 options.goToFeedbackWebsite=フィードバック ウェブサイトに移動	#
 options.graphics=高画質	#
 options.transparentleaves=ファンシーな葉っぱ	#
+options.bubbleparticles=気泡の表現	#
 options.smooth_lighting=スムースライティング	#
 options.graphics.fancy=描画優先	#
 options.graphics.fast=処理優先	#
@@ -4453,6 +4476,8 @@ options.content.noRealms.message=この世界には、クロスプラットフ�
 options.activateExperimentalGameplay=実験的なゲームプレイを有効にしますか?	#
 options.activateExperimentalGameplay.message=ベータ版の機能を有効にします。試験的なゲームプレイを行うと、世界が破損する可能性があります。続行すると、この機能を有効にした世界のコピーが、名前の最初に [EX] を付けて作成されます。	#
 options.activateExperimentalGameplayCreate.message=ベータ版の機能を有効にします。試験的なゲームプレイは不安定な可能性があります。	#
+options.activateFancyBubbles=湧き上がる気泡の表現をオンにしますか?	#
+options.activateFancyBubblesCreate.message=湧き上がる気泡の表現をオンにします。この表現は、一部のデバイスのパフォーマンスを低下させる可能性があります。	#
 options.continue=続ける	#
 options.edit=編集する	#
 options.enableEducation=Education Edition を有効にしますか?	#
@@ -4523,7 +4548,8 @@ playscreen.lastPlayed.weeksAgo=%1 週間前	#
 playscreen.lastPlayed.yesterday=昨日	#
 playscreen.new=新規	#
 playscreen.remoteWorld=世界を遠隔操作:	#
-playScreen.realmsTrialWorld=30 日間の無料試用版	#
+playscreen.realmsTrialWorld=30 日間の無料試用版	#
+playscreen.realmsCreateFirstWorld=最初の世界を作成する	#
 playscreen.checkingRealmsCompatibility=Realms の互換性をチェック中...	#
 playscreen.fetchingRealms=Realms を取得中...	#
 playscreen.confirmLeaveMessage=本当に Realm %1$s を出てもよろしいですか?	#
@@ -4571,6 +4597,7 @@ permissions.level.operator=オペレーター	#
 permissions.level.visitor=ビジター	#
 permissions.nocheats=チートをオフ	#
 permissions.nocheats.message=オペレーター コマンドおよびテレポート コマンドは、チートがオンの場合にのみ使用できます。チートはポーズ メニューのゲーム設定でオンにすることができます	#
+permissions.deopingother.message=権限レベルが下げられたことにより、オペレーター レベルの権限を利用できなくなりました。	#
 permissions.deopingself=オペレーターの権限をはく奪しますか?	#
 permissions.deopingself.message=権限レベルが下げられたことにより、オペレーター レベルの権限を利用できなくなりました	#
 permissions.title=プレイヤーの権限	#
@@ -4690,6 +4717,8 @@ progressScreen.title.connectingLocal=世界を開始中	#
 progressScreen.title.connectingLAN=マルチプレイヤー ゲームに接続中	#
 progressScreen.title.connectingExternal=外部サーバーに接続中	#
 progressScreen.title.connectingRealms=Realms に接続中	#
+progressScreen.title.copyingWorld=世界をコピー中	#
+progressScreen.message.copyingWorld=世界をコピー中... %d%%	#
 progressScreen.message.building=地形を構築中	#
 progressScreen.message.done=完了!	#
 progressScreen.message.exporting=エクスポート中	#
@@ -4761,6 +4790,8 @@ resourcePack.selected.title.packs=使用中のパック	#
 resourcePack.error.ingame.packs=世界でプレイ中はリソース パックを変更できません。	#
 resourcePack.error.ingame.behaviorPacks=世界でプレイ中はビヘイビアー パックを変更できません。	#
 resourcePack.title=リソース パックの選択	#
+resourcePack.toast.atlasFallback.message=メモリが不足しています。テクスチャの品質レベルが下げられます。	#
+resourcePack.toast.atlasFallback.title=リソース パック フォールバック	#
 resourcePack.copyGlobal=グローバルからコピー	#
 resourcePack.description=リソース パックは下から上に適用されます。つまり 2 つのパックに入っているアセットは上にある方のパックが適用されます。	#
 resourcePack.description.default.level=これは設定で編集可能です。	#
@@ -5171,12 +5202,14 @@ store.incompatible=互換していない要素	#
 store.itemIsIncompatible=このアイテムは、お使いのデバイスに互換していません。	#
 store.itemMayNotBeCompatible=このアイテムは、お使いのデバイスに互換していない可能性があります。	#
 store.owned=購入済み	#
+store.owned.legacy=購入済み (P)	#
 store.unlocked=購入	#
 
-store.toast.downloadComplete=ダウンロード完了	#
-store.toast.downloadResumed=ダウンロード再開	#
-store.toast.downloadFailed=ダウンロード失敗	#
-store.toast.downloadPaused=ダウンロードをポーズ中	#
+store.toast.downloadStarted=ダウンロード開始: %s	#
+store.toast.downloadComplete=ダウンロード完了: %s	#
+store.toast.downloadResumed=ダウンロード再開: %s	#
+store.toast.downloadFailed=ダウンロード失敗: %s	#
+store.toast.downloadPaused=ダウンロードをポーズ中: %s	#
 
 store.popup.goBack=戻る	#
 store.popup.xblRequired.title=無料でサインイン	#
@@ -5219,10 +5252,23 @@ store.popup.purchaseFailed.msg=購入ができませんでした。インター�
 store.popup.purchaseFailedInsufficientFunds.title=Minecoin が足りません	#
 store.popup.purchaseFailedInsufficientFunds.msg=Minecoin が足りないため、このアイテムを購入できません。Minecoin はアプリ ストアから購入できます。	#
 store.popup.purchaseFailedInsufficientFunds.buyButton=Minecoin を入手	#
+store.popup.purchasePriceMismatch.msg=購入手続きを完了できませんでした。 後でもう一度やり直してください。	#
 store.purchase.success=%s を購入しました	#
 store.createdBy=作者: %s	#
 store.seeMoreBy=詳しくは %s をご覧ください	#
 store.fetchingItem=ストアに接続中...	#
+ 
+store.timer.daysAbbreviated=%s 日	#
+store.timer.hoursAbbreviated=%s 時間	#
+store.timer.minutesAbbreviated=%s 分	#
+store.timer.secondsAbbreviated=%s 秒	#
+store.timer.left=残り %s	#
+
+store.timer.daysAbbreviated=%s 日	#
+store.timer.hoursAbbreviated=%s 時間	#
+store.timer.minutesAbbreviated=%s 分	#
+store.timer.secondsAbbreviated=%s 秒	#
+store.timer.left=残り %s	#
 
 store.startMenu.sale=セール中!	#
 
@@ -5274,8 +5320,11 @@ store.ratings.signIn.description1=このアイテムに関するご感想を、�
 store.ratings.signIn.description2=アイテムを評価するには、Xbox Live にログインする必要があります。	#
 
 store.purchase.success=%s を購入しました	#
+store.purchase.success.realMoney1=%s を %s でアンロックしました 	#
+store.purchase.success.realMoney2=+%s:minecoin:	#
 store.purchase.signIn=豊富なコンテンツでプレイの幅を広げましょう。	#
 store.purchase.signInPart2=Xbox Live にサインインして、ストアを利用してみましょう!	#
+store.purchase.realmoney.disclaimer=*%s コインを %s で購入してこのパックを %s コインで購入すれば、%s コインが次の購入に利用できます。	#
 
 store.coins.currentCoins=所持している Minecoin: %s	#
 store.coins.purchase.confirmation=コインを入手してこのパックを購入しますか?	#
@@ -5328,6 +5377,7 @@ store.updating=アップデート中...	#
 store.updating.title=アップデート中: %s	#
 store.fetchingItem=ストアに接続中...	#
 store.importing.title=インポート中: %s	#
+store.importing=インポート中...	#
 store.showMore=すべての %d 個を表示	#
 
 store.promo.today=今日だけ!	#
@@ -5362,10 +5412,18 @@ store.promo.date.oct=10 月 %s	#
 store.promo.date.nov=11 月 %s	#
 store.promo.date.dec=12 月 %s	#
 
+store.myAccount=マイ アカウント	#
 store.xbl.signin=サインイン	#
+store.xbl.signinOrSignUp=無料でサインインまたはサインアップ	#
 store.xbl.disconnected=インターネット接続なし	#
 store.xbl.conversionFailedTitle=問題が発生しました	#
 store.xbl.conversionFailedMessage=後でもう一度やり直してください	#
+
+store.sales.allByCreator=発売中!	#
+store.sales.mashupsOnSale=マッシュアップ発売中!	#
+store.sales.skinsOnSale=スキン発売中!	#
+store.sales.texturesOnSale=テクスチャ パック発売中!	#
+store.sales.worldsOnSale=世界発売中!	#
 
 store.showalloffers.list.title=%s ストア	#
 store.showalloffers.list.back=戻る	#
@@ -5375,8 +5433,6 @@ store.suggestedOffers.defaultTitle=一味違う楽しみ方	#
 store.minecoin.notavailable=このバージョンの Minecraft ではコインを購入できません。	#
 
 store.itemDetail.back=詳細	#
-store.timeRemaining=残り時間: %s	#
-store.daysRemaining=あと %s 日	#
 
 store.sales.allByCreator=発売中!	#
 store.sales.mashupsOnSale=マッシュアップ発売中!	#
@@ -5393,9 +5449,9 @@ store.search.greyListedResults= -- この機器で動作するコンテンツの
 store.search.noConnectionErrorText=インターネット接続がありません。接続状態を確認し、もう一度お試しください。	#
 store.search.placeHolderText=検索語句をここに入力...	#
 store.search.pluralResults= 件の検索結果	#
-store.search.pluralPossibleResults= 検索結果候補	#
+store.search.pluralPossibleResults=件の検索結果候補	#
 store.search.singularResult= 件の検索結果	#
-store.search.singularPossibleResult= 検索結果候補	#
+store.search.singularPossibleResult=件の検索結果候補	#
 store.search.title=検索	#
 store.search.trendingRowTitle=トレンドの検索: %s	#
 
@@ -5415,7 +5471,7 @@ store.search.filter.title=フィルター	#
 store.search.filter.worldTemplates=世界	#
 store.search.filter.installedState=インストール状態	#
 store.search.filter.installed=インストール済み	#
-store.search.filter.uninstalled=アンインストール済み	#
+store.search.filter.notInstalled=インストールされていません	#
 store.search.filter.resetInstalledStateFilters=インストール状態フィルターをリセットする	#
 
 store.search.sort_menu.sortConstWord=並び替え	#
@@ -5425,7 +5481,7 @@ store.search.sort_menu.OldestFirst=古い順	#
 store.search.sort_menu.A_to_Z=A → Z	#
 store.search.sort_menu.Z_to_A=Z → A	#
 store.search.sort_menu.Installed=インストール済み	#
-store.search.sort_menu.Uninstalled=アンインストール済み	#
+store.search.sort_menu.notInstalled=インストールされていません	#
 
 stream.confirm_start=配信を開始してもよろしいでしょうか?	#
 stream.unavailable.account_not_bound=Minecraft を Twitch で配信するには、mojang.com で Twitch アカウントをリンクする必要があります。今すぐ設定しますか?	#
@@ -6196,7 +6252,8 @@ trial.upsell.description.updated=探検して、クラフトして、ビルド�
 trial.upsell.unlock=完全版を購入	#
 trial.upsell.startTrial=試用版を開始	#
 
-
+ratingPopUp.title=Minecraft をお楽しみいただけていますか	#
+feedbackPopup.title=フィードバックをお寄せいただけますか	#
 
 ## NOTE: The following five lines are all related and shown together. When localizing, you may add line breaks to fit the paragraph,
 ## as opposed to trying to literally translate each line.

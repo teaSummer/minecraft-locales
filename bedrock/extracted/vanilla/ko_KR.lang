@@ -185,6 +185,11 @@ authentication.clickToPurchaseMessage=교육 담당자에게 다음 사이트에
 authentication.clickToPurchaseStudent=http://aka.ms/meestore	#
 authentication.clickToPurchaseTeacher=여기를 클릭해 라이선스 구매	#
 authentication.adalException=지금은 필요한 서비스에 연결할 수 없습니다. 네트워크 연결을 확인하거나 나중에 다시 시도하세요.	#
+authentication.buyMinecraft=App Store로 이동	#
+authentication.educationOnly=Minecraft: Education Edition은 학교에서만 사용할 수 있습니다. 플레이하려면 Office 365 Education 계정이 필요합니다.	#
+authentication.minecraftInstead=교육 버전 사용자가 아니지만 Minecraft를 플레이하고 싶으세요?	#
+authentication.signInButton=학교 계정으로 로그인	#
+
 
 eula.intro=Minecraft: Education Edition을 사용하려면 최종 사용자 사용권 계약에 동의해야 합니다.	#
 eula.location=EULA:	#
@@ -1234,6 +1239,7 @@ realmsCreateScreen.incomplete.override.realm=realm 갱신 시도 중에 이전�
 realmsCreateScreen.prepare.store.title=구매 확인 필요	#
 realmsCreateScreen.prepare.store.body=계속 진행하려면 구매 내역을 확인해야 합니다. 스토어에 로그인해주세요.	#
 realmsCreateScreen.prepare.store.button=상점 로그인	#
+realmsCreateScreen.nsoinfotext=Realms를 이용하려면 Nintendo Switch Online을 구독해야 합니다.	#
 
 realmsCreateScreen.title=Realm 생성	#
 realmsCreateScreen.nameHeader=Realm 이름	#
@@ -1418,6 +1424,13 @@ xbl.savePurchase.title=구매 항목을 Xbox Live에 저장할까요?	#
 xbl.savePurchase.saveButton=Xbox Live에 저장	#
 xbl.savePurchase.toast.title=성공!	#
 xbl.savePurchase.toast.message=구매 항목을 Xbox Live로 저장했습니다.	#
+xbl.savePurchase.inProgress.message=구매 내역을 Xbox Live 계정으로 전송하는 중...	#
+
+store.sign_in_warning.no_xbl_and_local_content=중요! 이 기기에서만 사용할 수 있는 팩 및/또는 코인을 구입했으며 기기 오작동, 분실, Minecraft 삭제로 해당 콘텐츠가 손실될 수 있습니다! Xbox Live 계정(무료)에 로그인하여 팩 소유권 및 코인을 해당 계정에 옮겨서 보호하고 어느 기기에서 로그인하든 사용할 수 있도록 하세요.	#
+store.sign_in_warning.no_xbl_and_no_local_content.line1=중요! 이 기기에서만 사용할 수 있는 팩을 구입했으며 기기 오작동, 분실, Minecraft 삭제로 해당 콘텐츠가 손실될 수 있습니다!	#
+store.sign_in_warning.no_xbl_and_no_local_content.line2=Xbox Live 계정(무료)에 로그인하여 팩 소유권을 해당 계정에 옮겨서 구입한 팩과 코인을 보호하세요.	#
+store.sign_in_warning.no_xbl_and_no_local_content.line3=또한 Minecraft를 플레이하는 데 이용하는 어떤 기기에서든 해당 콘텐츠를 사용할 수 있게 됩니다!	#
+store.sign_in_warning.no_xbl_and_no_local_content.line4=파트너 상점을 통해 구입한 콘텐츠는 기기가 파트너 상점 계정에 로그인되어 있는 동안은 계속 사용할 수 있습니다.	#
 
 xbl.skipSignIn.prompt.title=임시 계정	#
 xbl.skipSignIn.prompt.description=이 Xbox Live 계정을 장치의 기본 계정으로 사용하려면 장치에서 구매한 항목을 계정에 연동해야 합니다. Minecraft를 시작할 때 자동 로그인이 실행되지 않습니다.	#
@@ -1590,6 +1603,7 @@ disconnectionScreen.realmsWorldUnassigned=개발 옵션에서 버전을 지정�
 disconnectionScreen.realmsWorldUnassigned.title=Realm이 지정 해제되었습니다!	#
 disconnectionScreen.serverFull=이용자가 많은 인기 서버입니다. 나중에 다시 들러 자리가 있는지 확인하세요.	#
 disconnectionScreen.serverFull.title=서버 이용자 제한 초과	#
+disconnectionScreen.serverIdConflict=월드에 참여할 수 없습니다. 로그인한 계정이 현재 다른 기기에서 이 월드를 플레이하고 있습니다.	#
 disconnectionScreen.sessionNotFound=월드에 연결할 수 없습니다. 더 이상 월드에 참여할 수 없습니다.	#
 disconnectionScreen.timeout=연결 시간이 초과되었습니다.	#
 disconnectionScreen.nowifi=친구들과 함께 플레이하려면 Wifi에 연결해야 합니다.	#
@@ -1899,6 +1913,7 @@ gui.up=위로	#
 gui.warning.exitGameWarning=Minecraft를 종료하시겠습니까?	#
 gui.worldTemplate=Minecraft 월드 템플릿	#
 gui.yes=예	#
+gui.feedbackYes=예, 피드백 웹사이트로 이동합니다.	#
 gui.resourcepacks=리소스 팩...	#
 gui.submit=보내기	#
 gui.playOffline=오프라인으로 플레이하기	#
@@ -2129,7 +2144,7 @@ howtoplay.controls.text.7.windowsmr_controller=아이템을 손에 들고 있는
 howtoplay.controls.text.7.touch=화면을 누르면 손에 든 아이템을 사용하고, 들고 있는 아이템을 계속 누르면 핫바로 내려놓을 수 있습니다.	#
 howtoplay.controls.header.3=웅크리기	#
 howtoplay.controls.text.8.keyboard=Minecraft에서 웅크리기는 떨어지지 않고 블록 가장자리를 움직이거나 이름 태그를 숨길 수 있어 특히 유용한 자세입니다. :_input_key.sneak: 키를 누르면 웅크릴 수 있습니다.	#
-howtoplay.controls.text.8.gamepad=Minecraft에서 웅크리기는 떨어지지 않고 블록 가장자리를 움직이거나 이름 태그를 숨길 수 있어 특히 유용한 자세입니다. :_gamepad_face_button_right: 버튼을 누르거나 :_gamepad_stick_right:을 클릭하면 웅크리거나 원래 자세로 돌아갈 수 있습니다.	#
+howtoplay.controls.text.8.gamepad=은신은 Minecraft에서 매우 유용합니다. 은신하면 블록에서 떨어지지 않게 되며, 이름표가 숨겨집니다. 은신 상태로 전환하려면 :_input_key.sneak: 키를 누르거나 :_gamepad_stick_right: 버튼을 클릭하세요.	#
 howtoplay.controls.text.8.touch=Minecraft에서 웅크리기는 떨어지지 않고 블록 가장자리를 움직이거나 이름 태그를 숨길 수 있어 특히 유용한 자세입니다. :touch_sneak: 키를 탭하면 웅크리거나 원래 자세로 돌아올 수 있습니다.	#
 howtoplay.controls.text.8.rift_controller=몰래 걷기는 Minecraft에서 매우 유용한 기술로, 블록에서 떨어지는 걸 막고 이름표를 숨길 수 있습니다. 몰래 걷기로 전환하시려면 :rift_X:을 누르세요.	#
 howtoplay.controls.text.8.windowsmr_controller=몰래 걷기는 Minecraft에서 매우 유용한 기술로, 블록에서 떨어지는 걸 막고 이름표를 숨길 수 있습니다. 몰래 걷기로 전환하시려면 :windowsmr_right_stick:을 누르세요.	#
@@ -4179,6 +4194,13 @@ options.dev_updateOverrideDate=재정의 날짜 업데이트	#
 options.dev_clearStoreCache=상점 캐시 삭제	#
 options.dev_clearAllCache=모든 캐시 삭제	#
 options.dev_xforgeRequestsRequireSignIn=Xforge가 로그인 대기를 요청합니다.	#
+options.dev_connection_quality=네트워크 상태 조절기(원활하지 않은 연결 시뮬레이션)	#
+options.dev_connection_off=꺼짐 - 로컬 플레이를 위한 메모리 내부 연결 활성화됨	#
+options.dev_connection_nolimit=전체 네트워크 스택 활성화됨 - 제한 없음	#
+options.dev_connection_4g=4G - 15Mbps, 지연 속도 100ms, 패킷 손실 1%	#
+options.dev_connection_3g=3G - 1.5Mbps, 지연 속도 200ms, 패킷 손실 2%	#
+options.dev_connection_slow=느림 - 400Kbps, 지연 속도 300ms, 패킷 손실 3%	#
+options.dev_connection_veryslow=매우 느림 - 200Kbps, 지연 속도 400ms, 패킷 손실 4%	#
 options.difficulty=난이도	#
 options.difficulty.easy=쉬움	#
 options.difficulty.hard=어려움	#
@@ -4220,6 +4242,7 @@ options.worldLightBrightness=월드 조명 밝기	#
 options.goToFeedbackWebsite=피드백 웹 사이트로 이동	#
 options.graphics=화려한 그래픽	#
 options.transparentleaves=장식용 잎	#
+options.bubbleparticles=화려한 거품	#
 options.smooth_lighting=부드러운 조명 효과	#
 options.graphics.fancy=장식용	#
 options.graphics.fast=빠르게	#
@@ -4453,6 +4476,8 @@ options.content.noRealms.message=이 월드는 크로스 플랫폼 멀티 플레
 options.activateExperimentalGameplay=실험적 게임 플레이를 활성화하시겠어요?	#
 options.activateExperimentalGameplay.message=베타 기능을 활성화합니다. 실험적 게임 플레이 때문에 월드가 고장날 수 있습니다. 계속하면 이 기능이 켜져 있는 [EX]로 시작하는 월드의 사본을 만듭니다.	#
 options.activateExperimentalGameplayCreate.message=베타 기능을 활성화합니다. 실험적 게임 플레이는 불안정할 수 있습니다.	#
+options.activateFancyBubbles=화려한 거품 열을 활성화하시겠어요?	#
+options.activateFancyBubblesCreate.message=화려한 거품 열을 활성화합니다. 일부 기기에서는 화려한 거품 열 때문에 성능이 저하될 수 있습니다.	#
 options.continue=계속하기	#
 options.edit=편집	#
 options.enableEducation=교육 에디션을 활성화할까요?	#
@@ -4523,7 +4548,8 @@ playscreen.lastPlayed.weeksAgo=%1주 전	#
 playscreen.lastPlayed.yesterday=어제	#
 playscreen.new=신규	#
 playscreen.remoteWorld=원격 월드:	#
-playScreen.realmsTrialWorld=30일 무료 체험	#
+playscreen.realmsTrialWorld=30일 무료 체험	#
+playscreen.realmsCreateFirstWorld=첫 영역을 만들어 보세요.	#
 playscreen.checkingRealmsCompatibility=Realms 호환성 검사 중...	#
 playscreen.fetchingRealms=Realms 가져오는 중...	#
 playscreen.confirmLeaveMessage=정말로 %1$s Realm에서 나가시겠습니까?	#
@@ -4571,6 +4597,7 @@ permissions.level.operator=연산자	#
 permissions.level.visitor=방문자	#
 permissions.nocheats=치트키 꺼짐	#
 permissions.nocheats.message=연산자 명령 및 순간이동 명령을 사용하려면 치트키 사용 설정이 켜짐 상태여야 합니다. 치트키는 게임 설정의 일시 중지 메뉴를 통해 활성화할 수 있습니다.	#
+permissions.deopingother.message=권한 수준이 하향 조정되어 더 이상 연산자 권한을 사용할 수 없습니다.	#
 permissions.deopingself=연산자 권한을 삭제할까요?	#
 permissions.deopingself.message=권한 수준이 하향 조정되어 더 이상 연산자 권한을 사용할 수 없습니다.	#
 permissions.title=플레이어 권한	#
@@ -4690,6 +4717,8 @@ progressScreen.title.connectingLocal=월드를 시작합니다...	#
 progressScreen.title.connectingLAN=멀티 플레이 게임에 연결합니다...	#
 progressScreen.title.connectingExternal=외부 서버에 연결합니다...	#
 progressScreen.title.connectingRealms=Realm에 연결합니다...	#
+progressScreen.title.copyingWorld=월드 복사	#
+progressScreen.message.copyingWorld=월드를 복사하는 중... %d%%	#
 progressScreen.message.building=지형 생성 중...	#
 progressScreen.message.done=완료!	#
 progressScreen.message.exporting=내보내기 진행 중	#
@@ -4761,6 +4790,8 @@ resourcePack.selected.title.packs=활성 팩	#
 resourcePack.error.ingame.packs=월드에서 플레이하는 중에는 리소스 팩을 변경할 수 없습니다.	#
 resourcePack.error.ingame.behaviorPacks=월드에서 플레이하는 중에는 행동 팩을 변경할 수 없습니다.	#
 resourcePack.title=리소스 팩 선택	#
+resourcePack.toast.atlasFallback.message=메모리가 부족합니다. 텍스처 세부 표현 수준이 하락합니다.	#
+resourcePack.toast.atlasFallback.title=리소스 팩 대비책	#
 resourcePack.copyGlobal=글로벌에서 복사	#
 resourcePack.description=리소스 팩은 아래에서 위로 적용됩니다. 따라서 두 팩에 에셋이 있다면 더 상위에 있는 팩의 에셋이 사용됩니다.	#
 resourcePack.description.default.level=설정에서 이를 수정할 수 있습니다.	#
@@ -5171,12 +5202,14 @@ store.incompatible=비호환 항목	#
 store.itemIsIncompatible=사용 중인 장치와 호환되지 않는 항목입니다.	#
 store.itemMayNotBeCompatible=이 아이템은 내 기기와 호환되지 않을 수 있습니다.	#
 store.owned=소장	#
+store.owned.legacy=소유(P)	#
 store.unlocked=잠금 해제됨	#
 
-store.toast.downloadComplete=다운로드 완료	#
-store.toast.downloadResumed=다운로드 재시작됨	#
-store.toast.downloadFailed=다운로드 실패함	#
-store.toast.downloadPaused=다운로드 일시 중지됨	#
+store.toast.downloadStarted=다운로드 시작됨: %s	#
+store.toast.downloadComplete=다운로드 완료: %s	#
+store.toast.downloadResumed=다운로드 다시 시작됨: %s	#
+store.toast.downloadFailed=다운로드 실패: %s	#
+store.toast.downloadPaused=다운로드 일시 중지됨: %s	#
 
 store.popup.goBack=돌아가기	#
 store.popup.xblRequired.title=무료로 로그인	#
@@ -5219,10 +5252,23 @@ store.popup.purchaseFailed.msg=구매를 완료할 수 없습니다. 인터넷 �
 store.popup.purchaseFailedInsufficientFunds.title=코인이 부족합니다	#
 store.popup.purchaseFailedInsufficientFunds.msg=아이템 잠금 해제에 필요한 코인이 부족합니다. 코인은 이용 중인 앱 스토어에서 구매할 수 있습니다.	#
 store.popup.purchaseFailedInsufficientFunds.buyButton=코인 구매하기	#
+store.popup.purchasePriceMismatch.msg=죄송합니다, 구매를 완료할 수 없습니다. 나중에 다시 시도해 주세요.	#
 store.purchase.success=구매 완료: %s	#
 store.createdBy=작성자: %s	#
 store.seeMoreBy=%s 콘텐츠 더 보기	#
 store.fetchingItem=상점 연결 중...	#
+ 
+store.timer.daysAbbreviated=%s일	#
+store.timer.hoursAbbreviated=%s시간	#
+store.timer.minutesAbbreviated=%s분	#
+store.timer.secondsAbbreviated=%s초	#
+store.timer.left=%s 남음	#
+
+store.timer.daysAbbreviated=%s일	#
+store.timer.hoursAbbreviated=%s시간	#
+store.timer.minutesAbbreviated=%s분	#
+store.timer.secondsAbbreviated=%s초	#
+store.timer.left=%s 남음	#
 
 store.startMenu.sale=세일!	#
 
@@ -5274,8 +5320,11 @@ store.ratings.signIn.description1=아이템을 직접 사용한 경험을 제작
 store.ratings.signIn.description2=아이템을 평가하려면 먼저 Xbox Live에 로그인해야 합니다.	#
 
 store.purchase.success=구매 완료: %s	#
+store.purchase.success.realMoney1=방금 %s용 %s의 잠금을 해제했습니다. 	#
+store.purchase.success.realMoney2=+%s:코인:	#
 store.purchase.signIn=무궁무진한 멋진 콘텐츠로 다양하게 게임을 즐겨보세요.	#
 store.purchase.signInPart2=Xbox Live에 로그인하고 상점을 이용하세요!	#
+store.purchase.realmoney.disclaimer=*%s용 코인 %s개를 구입하여 이 팩을 구매하는 데 %s개를 사용하고 %s개를 남깁니다.	#
 
 store.coins.currentCoins=소지한 코인: %s	#
 store.coins.purchase.confirmation=더 많은 코인을 얻어 이 팩을 잠금 해제하시겠어요?	#
@@ -5328,6 +5377,7 @@ store.updating=업데이트 중...	#
 store.updating.title=%s 업데이트 중	#
 store.fetchingItem=상점 연결 중...	#
 store.importing.title=가져오는 중: %s	#
+store.importing=가져오는 중...	#
 store.showMore=%d개 모두 보기	#
 
 store.promo.today=금일 한정 제공!	#
@@ -5362,10 +5412,18 @@ store.promo.date.oct=10월 %s	#
 store.promo.date.nov=11월 %s	#
 store.promo.date.dec=12월 %s	#
 
+store.myAccount=내 계정	#
 store.xbl.signin=로그인	#
+store.xbl.signinOrSignUp=로그인 또는 무료로 가입하기	#
 store.xbl.disconnected=연결 끊김	#
 store.xbl.conversionFailedTitle=오류가 발생했습니다.	#
 store.xbl.conversionFailedMessage=나중에 다시 시도해주세요.	#
+
+store.sales.allByCreator=지금 세일 중!	#
+store.sales.mashupsOnSale=지금 매시업 세일 중!	#
+store.sales.skinsOnSale=지금 스킨 세일 중!	#
+store.sales.texturesOnSale=지금 텍스처 팩 세일 중!	#
+store.sales.worldsOnSale=지금 월드 세일 중!	#
 
 store.showalloffers.list.title=%s 스토어 	#
 store.showalloffers.list.back=돌아가기	#
@@ -5375,8 +5433,6 @@ store.suggestedOffers.defaultTitle=즐거운 플레이 방법	#
 store.minecoin.notavailable=이 버전의 Minecraft에서는 아직 코인 구매가 지원되지 않습니다.	#
 
 store.itemDetail.back=세부정보	#
-store.timeRemaining=남은 시간: %s	#
-store.daysRemaining=%s일 남음	#
 
 store.sales.allByCreator=지금 세일 중!	#
 store.sales.mashupsOnSale=지금 매시업 세일 중!	#
@@ -5415,7 +5471,7 @@ store.search.filter.title=필터	#
 store.search.filter.worldTemplates=월드	#
 store.search.filter.installedState=설치 상태	#
 store.search.filter.installed=설치됨	#
-store.search.filter.uninstalled=제거됨	#
+store.search.filter.notInstalled=설치되지 않음	#
 store.search.filter.resetInstalledStateFilters=설치된 필터 재설정	#
 
 store.search.sort_menu.sortConstWord=분류	#
@@ -5425,7 +5481,7 @@ store.search.sort_menu.OldestFirst=오래된 콘텐츠부터 보기	#
 store.search.sort_menu.A_to_Z=A~Z	#
 store.search.sort_menu.Z_to_A=Z~A	#
 store.search.sort_menu.Installed=설치됨	#
-store.search.sort_menu.Uninstalled=제거됨	#
+store.search.sort_menu.notInstalled=설치되지 않음	#
 
 stream.confirm_start=방송을 시작하시겠습니까?	#
 stream.unavailable.account_not_bound=Minecraft에서 Twitch 방송을 하려면 mojang.com에서 Twitch 계정을 연결해야 합니다. 지금 설정하시겠습니까?	#
@@ -6196,7 +6252,8 @@ trial.upsell.description.updated=탐험, 제작, 건설을 즐기세요! 이 체
 trial.upsell.unlock=정식 버전 게임 구매	#
 trial.upsell.startTrial=체험판 시작	#
 
-
+ratingPopUp.title=Minecraft를 즐기고 계신가요?	#
+feedbackPopup.title=피드백이 있으신가요?	#
 
 ## NOTE: The following five lines are all related and shown together. When localizing, you may add line breaks to fit the paragraph,
 ## as opposed to trying to literally translate each line.
