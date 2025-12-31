@@ -30,7 +30,7 @@ hbui.DropdownItem.elementType=Oggetto	#
 hbui.DropdownItem.narrationComponentType=Opzione	#
 hbui.DropdownItem.select=Seleziona	#
 hbui.DropdownItem.selected=Selezionato	#
-hbui.DropdownItem.unselected=Non selezionata	#
+hbui.DropdownItem.unselected=Non selezionato	#
 hbui.ScrollView.loadingState=Caricamento in corso	#
 hbui.ScrollView.narrationScrollViewComponentType=Contenuto	#
 hbui.TitleBar.Buttons.Back.inputLegend=Indietro	#
@@ -319,12 +319,6 @@ hbui.CompareStatsRoute.header=Confronto statistiche	#
 hbui.CompareStatsRoute.playerItemsListRole=Elenco orizzontale	#
 hbui.CompareStatsRoute.playerItemsNarration=Confronta le statistiche di due giocatori	#
 hbui.ConnectionErrorRoute.backToMenu=Torna al menu	#
-hbui.ConnectionErrorRoute.codewordDetailsHelp=Per maggiori informazioni, cerca su help.Minecraft.net inserendo la parola chiave qui sopra.	#
-hbui.ConnectionErrorRoute.codewordHelp=Per maggiori informazioni, cerca “%1$s” su help.Minecraft.net.	#
-hbui.ConnectionErrorRoute.errorDetailsHelp=Per ricevere ulteriore assistenza, invia un ticket di supporto con uno screenshot di questi dettagli.	#
-hbui.ConnectionErrorRoute.header=Dettagli dell'errore	#
-hbui.ConnectionErrorRoute.learnMore=Ulteriori informazioni	#
-hbui.ConnectionErrorRoute.showDetails=Mostra dettagli	#
 hbui.ControllerSpecificButtonNarration.Gamepad.A.KEYBOARD=Premi A	#
 hbui.ControllerSpecificButtonNarration.Gamepad.A.PS=Premi A	#
 hbui.ControllerSpecificButtonNarration.Gamepad.A.QUEST=Premi A	#
@@ -1116,6 +1110,16 @@ hbui.CreateNewWorldSideMenu.multiplayerTabLabel=Multigiocatore	#
 hbui.CreateNewWorldSideMenu.narrationCreateButtonHint=Crea un mondo %1$s in difficoltà %2$s denominata “%3$s”. Scorri per selezionare altre opzioni.	#
 hbui.CreateNewWorldSideMenu.resourcePacksTabLabel=Pacchetti di risorse	#
 hbui.CreateNewWorldSideMenu.scriptingCodingTabLabel=Scripting e programmazione	#
+hbui.CreatePartyRoute.createPartyHeader=Crea gruppo 	#### Create Party page title. For the purposes of this feature, a Party is a group of players joining up to  play together.
+hbui.CreatePartyRoute.friendsTitle=Amici (%1$s) 	#### The header for a list of Player List Items containing the user's friends
+hbui.CreatePartyRoute.inviteOnly=Solo invito 	#### The title for a state where players can only join the party if invited
+hbui.CreatePartyRoute.inviteOnlyDescription=I giocatori devono essere invitati per unirsi al gruppo. 	#### Describes the invite only state
+hbui.CreatePartyRoute.maxPartyExplanation=Un gruppo può avere fino a 15 giocatori. 	#### Description explaining the maximum size of a party
+hbui.CreatePartyRoute.open=Apri 	#### The title for a state where anyone can join the party
+hbui.CreatePartyRoute.openDescription=I giocatori non devono essere invitati per unirsi al gruppo. 	#### Describes the Open state
+hbui.CreatePartyRoute.partyPrivacy=Privacy del gruppo 	#### Title for the toggle which controls the party privacy state
+hbui.CreatePartyRoute.partySettings=Impostazioni del gruppo 	#### title of the side bar which contains the party settings options
+hbui.CreatePartyRoute.recentlyPlayedWithTitle=Giocatori con cui hai giocato di recente 	#### The header for a list of Player List Items containing players the user has recently played with
 hbui.DebugDrawer.closeButtonNarrationHint=Usa la freccia giù per ulteriori azioni	#
 hbui.DebugDrawer.closeDrawerShortcutInputLegend=Chiudi	#
 hbui.DebugDrawer.title=Debug	#
@@ -1309,7 +1313,6 @@ hbui.GetMoreButton.buttonNarration=Pulsante	#
 hbui.GetMoreButton.inputLegend=Scopri	#
 hbui.GuidedCreateWorldRoute.title=Creazione del mondo guidata	#
 hbui.HeroItem.role=Blocco di testo	#
-hbui.InboxContentItem.narration.createdBy=Di %1$s	#
 hbui.InboxContentItem.view=Visualizza	#
 hbui.InboxListItem.accept=Accetta	#
 hbui.InboxListItem.delete=Elimina	#
@@ -1475,12 +1478,12 @@ hbui.JoinRealmsServerInvitationsButton.invitationsRole=Gruppo	#
 hbui.JoinRealmsServerInvitationsButton.narrationSuffix=Premi per visualizzare la tua posta in arrivo	#
 hbui.JoinRealmsServerInvitationsButton.noInvitesBody=Potresti avere degli inviti nella posta in arrivo!	#
 hbui.JoinRealmsServerInvitationsButton.noInvitesTitle=Non hai un link di invito?	#
-hbui.JoinRealmsServerTransient.caption=Puoi lasciare il suo Realm in qualsiasi momento. Il pulsante Unisciti è qui sotto.      	#### Realm here refers to a Realm server. Join is in the context of joining a Realm, meaning becoming a member of it. {MaxLength="100"}
+hbui.JoinRealmsServerTransient.caption=Puoi lasciare il suo Realm in qualsiasi momento. Il pulsante Unisciti è qui sotto.      	#### Realm here refers to a Realm server. Join is in the context of joining a Realm, meaning becoming a member of it. {StrContains="Realm"} {MaxLength="100"}
 hbui.JoinRealmsServerTransient.errorMessageTitle=Si è verificato un errore    	#### Something went wrong when trying to join a Realm, this is a generic header for it. {MaxLength="100"}
-hbui.JoinRealmsServerTransient.genericTitle=Unisciti a un Realm    	#### Becoming a member of a Realm. {MaxLength="100"}
+hbui.JoinRealmsServerTransient.genericTitle=Unisciti a un Realm    	#### Becoming a member of a Realm. {StrContains="Realm"} {MaxLength="100"}
 hbui.JoinRealmsServerTransient.joinButtonLabel=Unisciti	#
 hbui.JoinRealmsServerTransient.joinRealmModal=Ingresso nel Realm in corso…	#
-hbui.JoinRealmsServerTransient.ownerInformation=Stai per unirti al Realm di %1$s    	#### The player is about to become a member of another players Realm.{MaxLength="100"}
+hbui.JoinRealmsServerTransient.ownerInformation=Stai per unirti al Realm di %1$s    	#### The player is about to become a member of another players Realm. {StrContains="Realm"} {MaxLength="100"}
 hbui.JoinRealmsServerTransient.successSnackbar=Hai effettuato l'accesso a “%1$s”!	#
 hbui.JoinRealmsServerTransient.title=Unisciti a %1$s    	#### Join as in "Join Realm". Becoming a member of a Realm. {MaxLength="20"}
 hbui.JoinServerWarningModal.cancel=Annulla	#
@@ -1667,6 +1670,7 @@ hbui.PlayerBannedModalRoute.xbox.report.terrorismOrViolentExtremism=Riferimenti 
 hbui.PlayerBannedModalRoute.xbox.report.unsportingBehavior=Comportamento sleale	#
 hbui.PlayerCard.addedButton=Aggiunto	#
 hbui.PlayerCard.addFriendButton=Aggiungi amico	#
+hbui.PlayerCard.away=Assente		####Used to show player status {MaxLength=20}
 hbui.PlayerCard.blocked=Bloccato	#
 hbui.PlayerCard.buttonRole=pulsante	#
 hbui.PlayerCard.buttonSiblings=%1$s di %2$s	#
@@ -1687,6 +1691,9 @@ hbui.PlayerListItem.away=Assente	#
 hbui.PlayerListItem.buttonSiblings=Pulsante %1$s di %2$s	#
 hbui.PlayerListItem.delete=Elimina	#
 hbui.PlayerListItem.friends=Amici	#
+hbui.PlayerListItem.inviteButtonInputLegend=Invita amico 	#### The input legend text for a button used to invite someone to a party
+hbui.PlayerListItem.inviteButtonText=Invita 	#### The text that appears on a button for inviting a player to a party
+hbui.PlayerListItem.invited=Invitato 	#### The text that appears after a player has been invited to a party
 hbui.PlayerListItem.join=Unisciti	#
 hbui.PlayerListItem.narration.addedMutual=Tu e questo giocatore siete amici	#
 hbui.PlayerListItem.narration.addedNotMutual=Hai aggiunto questo giocatore	#
@@ -1703,6 +1710,7 @@ hbui.PlayerListItem.online=Online	#
 hbui.PlayerListItem.online.playstation=Online su PSN™		#### CertRequirement: [PSN™]
 hbui.PlayerListItem.online.switch=Online su Switch	#
 hbui.PlayerListItem.pending=In sospeso	#
+hbui.PlayerListItem.playingInSameWorld=Giocare in questo mondo		####Used as player status when players are in the same world {MaxLength=30}
 hbui.PlayerListItem.receivedRequest=Ti ha inviato una richiesta	#
 hbui.PlayerListItem.reject=Rifiuta	#
 hbui.PlayerListItem.select=Seleziona	#
@@ -2358,7 +2366,7 @@ hbui.RealmsPDPScreen.FAQ.PersonalServer.title=Che cos'è un server personale?	#
 hbui.RealmsPDPScreen.FAQ.Realms.description=I Realms sono dei piccoli server personali che ospitano il tuo mondo di Minecraft. A differenza delle normali sessioni multigiocatore, i Realms sono sempre online, per cui i tuoi amici possono giocare anche in tua assenza. E, a differenza dei grandi server pubblici di Minecraft, i Realms sono accessibili solo su invito, quindi decidi tu chi entra.  	#### {StrContains="Realms"}
 hbui.RealmsPDPScreen.FAQ.Realms.title=Cosa sono i Realms?  	#### {StrContains="Realms"}
 hbui.RealmsPDPScreen.hero.content.header=Ottieni contenuti aggiuntivi con Realms Plus    	#### {StrContains="Realms"}
-hbui.RealmsPDPScreen.hero.content.text=Gli abbonamenti a Realms Plus includono il Marketplace Pass: contenuti del marketplace gratuiti aggiornati mensilmente. Tra skin, oggetti per il Creatore del personaggio, mondi e altro ancora, c'è sempre qualcosa di nuovo da provare.  	#### {MaxLength="250"} {StrContains="Realms"}
+hbui.RealmsPDPScreen.hero.content.text=Gli abbonamenti a Realms Plus includono il Marketplace Pass: contenuti del marketplace gratuiti aggiornati mensilmente. Tra skin, oggetti per il Creatore del personaggio, mondi e altro ancora, c'è sempre qualcosa di nuovo da provare.  	#### {MaxLength="250"} {StrContains="Realms Plus"}
 hbui.RealmsPDPScreen.hero.content.title=Accesso a oltre 150 pacchetti del marketplace    	#### {MaxLength="56"}
 hbui.RealmsPDPScreen.hero.perks.header=Vantaggi aggiuntivi inclusi con Realms    	#### {StrContains="Realms"}
 hbui.RealmsPDPScreen.hero.perks.text=Condividi le tue avventure sul Feed storie, guarda crescere il tuo Realm con la scheda Membri e scopri quando i giocatori hanno visitato il tuo Realm dalla Cronologia.    	#### {MaxLength="250"} {StrContains="Realm"}
@@ -2376,16 +2384,16 @@ hbui.RealmsPDPScreen.splash.text=Gestisci il tuo server di Minecraft! Decidi le 
 hbui.RealmsPDPScreen.splash.title=Il tuo server personale, sempre online    	#### {MaxLength="50"}
 hbui.RealmsPDPScreen.splash.tryFree=Provalo gratis    	#### {MaxLength="20"}
 hbui.RealmsPDPScreen.title=Minecraft Realms 	#### {StrContains="Realms"}
-hbui.RealmsPlanPickerScreen.banners.coreSubscriptionsLimit=Hai raggiunto il limite di abbonamenti Realms Core su questa piattaforma	#### {MaxLength="72"}
-hbui.RealmsPlanPickerScreen.banners.plusSubscriptionsLimit=Hai raggiunto il limite di abbonamenti Realms Plus su questa piattaforma	#### {MaxLength="72"}
+hbui.RealmsPlanPickerScreen.banners.coreSubscriptionsLimit=Hai raggiunto il limite di abbonamenti Realms Core su questa piattaforma		#### {MaxLength="150"} {StrContains="Realms Core"}
+hbui.RealmsPlanPickerScreen.banners.plusSubscriptionsLimit=Hai raggiunto il limite di abbonamenti Realms Plus su questa piattaforma		#### {MaxLength="150"} {StrContains="Realms Plus"}
 hbui.RealmsPlanPickerScreen.buyButtonCore=Acquista Realms Core				#### {StrContains="Realms"}
 hbui.RealmsPlanPickerScreen.buyButtonCoreNarrationHint=Scorri in basso per saperne di più su Realms Core			#### {StrContains="Realms"}
 hbui.RealmsPlanPickerScreen.buyButtonPlus=Acquista Realms Plus				#### {StrContains="Realms"}
 hbui.RealmsPlanPickerScreen.buyButtonPlusNarrationHint=Naviga qui sotto per saperne di più su Realms Plus			#### {StrContains="Realms"}
 hbui.RealmsPlanPickerScreen.buyRealmsPlusButtonTrial=Prova gratuita	#
 hbui.RealmsPlanPickerScreen.currency=$	#
-hbui.RealmsPlanPickerScreen.emptyStates.maxedOutSubscriptions.body=Hai raggiunto il limite per gli abbonamenti Realms Core e Realms Plus su questa piattaforma.  	#### {MaxLength="95"}
-hbui.RealmsPlanPickerScreen.emptyStates.maxedOutSubscriptions.title=Abbonamenti Realms massimi sulla piattaforma 	#### {MaxLength="47"}
+hbui.RealmsPlanPickerScreen.emptyStates.maxedOutSubscriptions.body=Hai raggiunto il limite per gli abbonamenti Realms Core e Realms Plus su questa piattaforma.		#### {MaxLength="150"} {StrContains="Realms Core"} {StrContains="Realms Plus"}
+hbui.RealmsPlanPickerScreen.emptyStates.maxedOutSubscriptions.title=Abbonamenti Realms massimi sulla piattaforma		#### {MaxLength="150"} {StrContains="Realms"}
 hbui.RealmsPlanPickerScreen.error.body=Verifica di aver effettuato l'accesso a Minecraft e al negozio della piattaforma del tuo dispositivo con lo stesso account, quindi riprova.	#
 hbui.RealmsPlanPickerScreen.error.button=Riprova	#
 hbui.RealmsPlanPickerScreen.error.title=Impossibile accedere al negozio della piattaforma	#
@@ -2690,7 +2698,7 @@ hbui.RealmsStories.messages.timelineEmpty.body=Gioca sul Realm per generare dati
 hbui.RealmsStories.messages.timelineEmpty.title=Nessun dato disponibile	#
 hbui.RealmsStories.messages.timelineOff.body=Il proprietario del Realm ha disabilitato la Cronologia in questo Realm.	#
 hbui.RealmsStories.messages.timelineOff.title=La Cronologia è disabilitata	#
-hbui.RealmsStories.messages.timelineOptIn.body=Vedi quando gli altri membri stanno giocando per osservarne le creazioni. La Cronologia mostra le visite nel Realm. Più grande è il blocco colorato, maggiore è il tempo di gioco.		#### {StrContains="Realm"} {MaxLength="200"} This is an explanation of the Realms Timeline feature.
+hbui.RealmsStories.messages.timelineOptIn.body=Vedi quando gli altri membri stanno giocando per osservarne le creazioni. La Cronologia mostra le visite nel Realm. Più grande è il blocco colorato, maggiore è il tempo di gioco.		#### {StrContains="Realm"} {MaxLength="250"} This is an explanation of the Realms Timeline feature.
 hbui.RealmsStories.messages.timelineOptIn.button=Voglio partecipare	#
 hbui.RealmsStories.messages.timelineOptIn.maybeLaterButton=Magari più tardi		#### {MaxLength="20"}  Player is currently declining to opt into the timeline.
 hbui.RealmsStories.messages.timelineOptIn.members=Membri che hanno partecipato: %1$s/%2$s	#
@@ -2931,6 +2939,9 @@ hbui.ReportPlayerRoute.xbox.report.area.ingame=Creazioni interne al gioco	#
 hbui.ReportPlayerRoute.xbox.report.area.nameOrGamertag=Nome giocatore o Gamertag	#
 hbui.ReportPlayerRoute.xbox.report.area.other=Altro	#
 hbui.ReportPlayerRoute.xbox.report.area.skin=Skin del giocatore	#
+hbui.ScreenshotDeleteErrorModal.close=Chiudi		#### {MaxLength=40} Closes the modal that has appeared. This was previously ScreenshotGalleryRoute.deleteScreenshotsErrorModal.close
+hbui.ScreenshotDeleteErrorModal.text=Impossibile eliminare lo screenshot. Verifica la tua connessione a Internet e riprova. 	#### {MaxLength=1000} Indicates that an operation requested by the user to delete a screenshot in their gallery has failed. This was previously ScreenshotGalleryRoute.deleteScreenshotsErrorModal.text
+hbui.ScreenshotDeleteErrorModal.title=Impossibile eliminare lo screenshot		#### {MaxLength=40} Indicates that an operation requested by the user to delete a screenshot in their gallery has failed. This was previously ScreenshotGalleryRoute.deleteScreenshotsErrorModal.title
 hbui.ScreenshotDeleteModal.cancel=Annulla	#
 hbui.ScreenshotDeleteModal.delete=Elimina	#
 hbui.ScreenshotDeleteModal.text=Questa azione non può essere annullata. Vuoi davvero eliminare questo screenshot?	#
@@ -3031,9 +3042,6 @@ hbui.ScreenshotGalleryItem.showcased=Presentazione	#
 hbui.ScreenshotGalleryMenu.optionsEnumeration=%1$s di %2$s	#
 hbui.ScreenshotGalleryRoute.deleteScreenshots=Elimina screenshot	#
 hbui.ScreenshotGalleryRoute.deleteScreenshotsButton=Elimina screenshot	#
-hbui.ScreenshotGalleryRoute.deleteScreenshotsErrorModal.close=Chiudi	#
-hbui.ScreenshotGalleryRoute.deleteScreenshotsErrorModal.text=Impossibile eliminare lo screenshot. Verifica la tua connessione a Internet e riprova.	#
-hbui.ScreenshotGalleryRoute.deleteScreenshotsErrorModal.title=Impossibile eliminare lo screenshot	#
 hbui.ScreenshotGalleryRoute.deleteScreenshotsLink=Elimina screenshot	#
 hbui.ScreenshotGalleryRoute.deleteScreenshotsModal.cancelButton=Annulla	#
 hbui.ScreenshotGalleryRoute.deleteScreenshotsModal.deleteButton=Elimina	#
@@ -3085,32 +3093,28 @@ hbui.SideStoryPostContainer.role=Blocco di testo	#
 hbui.SignInAchievementsRoute.laterButton=Forse più tardi	#
 hbui.SignInAchievementsRoute.signInButton=Accedi ora	#
 hbui.SignInAchievementsRoute.signInHeader=Raggiungi obiettivi 	####Short Header for modal, player can earn achievements{MaxLength=55}
-hbui.SignInAchievementsRoute.signInList1=Monitora i tuoi progressi e i traguardi su Minecraft	#
-hbui.SignInAchievementsRoute.signInList2=Sblocca oggetti esclusivi per il Creatore del personaggio	#
-hbui.SignInAchievementsRoute.signInList3=Mostra gli obiettivi raggiunti ai tuoi amici	#
-hbui.SignInAchievementsRoute.signInPrompt=Effettua l'accesso o registrati gratuitamente per iniziare a raggiungere gli obiettivi 	####Body of modal, informing player that signing in will allow them to earn achievements{MaxLength=200}
+hbui.SignInAchievementsRoute.signInPrompt=Effettua l'accesso o registrati gratuitamente per iniziare a sbloccare gli obiettivi.    	####Prompt encouraging player to sign in, informing them that signing in will allow them to earn achievements{MaxLength=1000}
 hbui.SignInAddFriendRoute.laterButton=Forse più tardi	#
 hbui.SignInAddFriendRoute.signInButton=Accedi ora	#
 hbui.SignInAddFriendRoute.signInHeader=Trova amici su altre piattaforme  	####Header for modal, allow for searching for friends via search bar{MaxLength=55}
-hbui.SignInAddFriendRoute.signInPrompt=Effettua l'accesso o registrati gratuitamente per connetterti agli amici su altre piattaforme   	####Body of modal, player will be able to play multiplayer with other cross platform friends{MaxLength=200}
+hbui.SignInAddFriendRoute.signInPrompt=Effettua l'accesso o registrati gratuitamente per connetterti agli amici su altre piattaforme.  	####Prompt encouraging player to sign in, informing them that if signed in they can play multiplayer with friends on any device{MaxLength=1000}
 hbui.SignInDressingRoomRoute.laterButton=Forse più tardi	#
 hbui.SignInDressingRoomRoute.signInButton=Accedi subito	#
 hbui.SignInDressingRoomRoute.signInHeader=Bel personaggio!	#
-hbui.SignInDressingRoomRoute.signInPrompt=Effettua l'accesso per salvare il tuo personaggio su tutti i dispositivi e le piattaforme.	#
+hbui.SignInDressingRoomRoute.signInPrompt=Effettua l'accesso o registrati gratuitamente per salvare il tuo personaggio su tutti i dispositivi e le piattaforme.  	####Prompt encouraging player to sign in, informing them that if signed in their character's appearance that they recently changed in the dressing room can be made available on any device{MaxLength=1000}
 hbui.SignInMarketplaceRoute.laterButton=Forse più tardi	#
 hbui.SignInMarketplaceRoute.signInButton=Accedi subito	#
 hbui.SignInMarketplaceRoute.signInHeader=Benvenuto nel marketplace!	#
-hbui.SignInMarketplaceRoute.signInList1=Accedi ai contenuti e ai personaggi acquistati nel marketplace su più piattaforme.	#
-hbui.SignInMarketplaceRoute.signInPrompt=Accedi per salvare i tuoi acquisti nel tuo account in modo che siano sempre con te.	#
+hbui.SignInMarketplaceRoute.signInPrompt=Effettua l'accesso o registrati gratuitamente per salvare i tuoi acquisti nel tuo account in modo che siano sempre con te.  	####Prompt encouraging player to sign in, informing them that if signed in their Marketplace purchases can be saved to their account{MaxLength=1000}
 hbui.SignInPlayOnServerRoute.laterButton=Forse più tardi	#
 hbui.SignInPlayOnServerRoute.signInButton=Accedi ora	#
 hbui.SignInPlayOnServerRoute.signInHeader=Gioca sui server registrati  	####Header for modal, allow player to play on big, custom featured servers made by other players{MaxLength=55}
-hbui.SignInPlayOnServerRoute.signInPrompt=Effettua l'accesso o registrati gratuitamente per giocare sui server registrati 	####Body of modal, signing in allows player to play on such servers{MaxLength=200}
+hbui.SignInPlayOnServerRoute.signInPrompt=Effettua l'accesso o registrati gratuitamente per giocare sui server registrati.  	####Prompt for the player to sign in so they can play on servers{MaxLength=1000}
 hbui.SignInSavePurchasesRoute.createAccountPrompt=Non hai un account Microsoft? Creane subito uno gratuitamente!	#
 hbui.SignInSavePurchasesRoute.laterButton=Forse più tardi	#
 hbui.SignInSavePurchasesRoute.signInButton=Accedi ora	#
 hbui.SignInSavePurchasesRoute.signInHeader=Salva i tuoi acquisti  	####Modal header, save marketplace skin and map entitlements{MaxLength=55}
-hbui.SignInSavePurchasesRoute.signInPrompt=Effettua l'accesso o registrati gratuitamente per salvare i tuoi acquisti nel marketplace   	####Modal body, signing in allows player to save their entilements{MaxLength=200}
+hbui.SignInSavePurchasesRoute.signInPrompt=Effettua l'accesso o registrati gratuitamente per salvare i tuoi acquisti nel marketplace.  	####Prompt encouraging player to sign in, informing them that if signed in their Marketplace purchases can be saved to their account{MaxLength=1000}
 hbui.SignInWorldsFriendsServersRoute.createAccountPrompt=Non hai un account Microsoft? Creane subito uno gratuitamente!	#
 hbui.SignInWorldsFriendsServersRoute.laterButton=Forse più tardi	#
 hbui.SignInWorldsFriendsServersRoute.signInButton=Accedi subito	#
@@ -3383,45 +3387,6 @@ hbui.WorldTag.hardcore=Estrema	#
 hbui.WorldTag.lan=LAN	#
 hbui.WorldTag.survival=Sopravvivenza	#
 hbui.WorldTag.unknown=Sconosciuto 	#### Unknown type of Minecraft world. A known type would be eg survival or creative. {MaxLength=21}
-hbui.Accordion.closeInputLegend=Chiudi	#
-hbui.Accordion.openInputLegend=Apri	#
-hbui.BackButton.back=Indietro	#
-hbui.BackButton.narration.backButton=Pulsante Indietro	#
-hbui.BaseDropdown.close=Chiudi	#
-hbui.BaseDropdown.enumeration=%1$s di %2$s	#
-hbui.BaseDropdown.open=Apri	#
-hbui.BaseDropdown.selected=Selezionato	#
-hbui.BaseDropdown.stateCollapsed=Compresso	#
-hbui.BaseDropdown.stateExpanded=Espanso	#
-hbui.BaseDropdown.toggleElementType=Opzione	#
-hbui.BaseSlider.currentValue=il valore attuale è	#
-hbui.BaseSlider.elementType=cursore	#
-hbui.BaseSlider.maxValueIs=il valore massimo è	#
-hbui.BaseSlider.minValueIs=il valore minimo è	#
-hbui.BaseSwitch.elementType=Interruttore	#
-hbui.BaseSwitch.narrationDisabled=Disattiva	#
-hbui.BaseSwitch.off=No	#
-hbui.BaseSwitch.on=Sì	#
-hbui.BaseSwitch.toggle=Attiva/disattiva	#
-hbui.BaseTextField.addedNarration=Aggiunto	#
-hbui.BaseTextField.deselect=Deseleziona	#
-hbui.BaseTextField.hint=Stai attualmente utilizzando un campo di testo. Digita per inserire %1$s	#
-hbui.BaseTextField.invalidNarration=Non valido	#
-hbui.BaseTextField.removedNarration=Rimossa	#
-hbui.BaseTextField.replacedNarration=Sostituito con	#
-hbui.BaseTextField.select=Seleziona	#
-hbui.BaseTextField.selected=Selezionato	#
-hbui.DropdownItem.elementType=Oggetto	#
-hbui.DropdownItem.narrationComponentType=Opzione	#
-hbui.DropdownItem.select=Seleziona	#
-hbui.DropdownItem.selected=Selezionato	#
-hbui.DropdownItem.unselected=Non selezionato	#
-hbui.ScrollView.loadingState=Caricamento in corso	#
-hbui.ScrollView.narrationScrollViewComponentType=Contenuto	#
-hbui.TitleBar.Buttons.Back.inputLegend=Indietro	#
-hbui.TitleBar.Buttons.Back.narration=Pulsante Indietro	#
-hbui.TitleBar.Buttons.Close.inputLegend=Chiudi	#
-hbui.TitleBar.Buttons.Close.narration=Pulsante Chiudi	#
 hbui.Editor.title=Configurazione comandi	#
 hbui.EditorActionBar.leftTray=Sinistro	#
 hbui.EditorActionBar.rightTray=Destro	#
@@ -3747,25 +3712,45 @@ hbui.EditorStructurePanel.actionBarSortOptionBySource=Per origine	#
 hbui.EditorStructurePanel.actionBarSortOptionByTags=Per tag	#
 hbui.EditorStructurePanel.actionBarSortOptionZtoa=Z-A	#
 hbui.EditorStructurePanel.button=Pulsante	#
-hbui.EditorStructurePanel.contentElementsLabel=Elementi del contenuto	#
 hbui.EditorStructurePanel.count=%1$s di %2$s	#
 hbui.EditorStructurePanel.countLabel=Totale	#
+hbui.EditorStructurePanel.deleteButton=Pulsante Elimina 	####Narration description for a button that deletes selected structures. {MaxLength=100}
+hbui.EditorStructurePanel.deleteModal.button.cancel=Annulla 	####Structure delete modal button label that closes the modal with no operation {MaxLength=100}
+hbui.EditorStructurePanel.deleteModal.button.confirm=Elimina ora 	####Structure delete modal button label that confirms delete operation {MaxLength=100}
+hbui.EditorStructurePanel.deleteModal.button.ok=OK 	####Structure delete modal button label that closes the modal with no operation {MaxLength=100}
+hbui.EditorStructurePanel.deleteModal.messageMultiple=Vuoi davvero eliminare %1$s strutture? 	####Modal message that indicates how many structures will be deleted {MaxLength=300}
+hbui.EditorStructurePanel.deleteModal.messageSingle=Vuoi davvero eliminare “%1$s”? 	####Modal message that indicates that a specific structure with a name will be deleted {MaxLength=300}
+hbui.EditorStructurePanel.deleteModal.note=Nota: le strutture dai pacchetti importati non possono essere eliminate (rimuovi i pacchetti importati per rimuoverli dall'elenco delle strutture). 	####Modal note that explains imported/read only structures cant be deleted {MaxLength=300}
+hbui.EditorStructurePanel.deleteModal.title=Eliminare le strutture? 	####Label a modal that opens when deleting structures. {MaxLength=100}
+hbui.EditorStructurePanel.deleteModal.warning=Questa azione non può essere annullata. 	####Modal note that warns user that deleting structures cannot be reverted {MaxLength=300}
+hbui.EditorStructurePanel.details.contentLabel=Contenuto 	####Label for structure block contents. {MaxLength=100}
+hbui.EditorStructurePanel.details.copyId=Pulsante Copia ID negli appunti 	####Narration description for a button that copies minecraft id of the structure. {MaxLength=100}
+hbui.EditorStructurePanel.details.deleteLabel=Elimina 	####Label for a button that deletes the selected structure as a new one. {MaxLength=100}
+hbui.EditorStructurePanel.details.duplicateLabel=Duplica 	####Label for a button that duplicates selected the structure as a new one. {MaxLength=100}
+hbui.EditorStructurePanel.details.fileNameLabel=File/Nome univoco 	####Label for the structure file name. {MaxLength=100}
+hbui.EditorStructurePanel.details.includeInExports=Includi nelle esportazioni 	####A flag that determines if the editor structure instance should be included in export world/project. {MaxLength=100}
+hbui.EditorStructurePanel.details.itemMenu=Menu Elemento struttura 	####Narration text for a context menu that has structure operations. {MaxLength=100}
+hbui.EditorStructurePanel.details.minecraftIdLabel=ID Minecraft 	####Label for in game identifier for the structure. {MaxLength=100}
+hbui.EditorStructurePanel.details.nameLabel=Nome 	####Label for structure display name. {MaxLength=100}
+hbui.EditorStructurePanel.details.namespaceAndSourceLabel=Spazio dei nomi e origine 	####Label for an expandable button that displays structure details. {MaxLength=100}
+hbui.EditorStructurePanel.details.namespaceLabel=Spazio dei nomi 	####Label for the structure namespace. {MaxLength=100}
+hbui.EditorStructurePanel.details.originLabel=Origine 	####Label for structure origin input field. {MaxLength=100}
+hbui.EditorStructurePanel.details.replaceClipboardLabel=Copia negli appunti 	####Label for a button that replaces in level clipboard with the selected structure. {MaxLength=100}
+hbui.EditorStructurePanel.details.saveLabel=Salva 	####Label for a button that saves modified structure changes. {MaxLength=100}
+hbui.EditorStructurePanel.details.sizeLabel=Dimensioni 	####Label for structure size input field. {MaxLength=100}
+hbui.EditorStructurePanel.details.sourceLabel=Origine 	####Label for the source content the structure belongs to. {MaxLength=100}
+hbui.EditorStructurePanel.filterButton=Pulsante Filtra 	####Narration description for a button that filters structure lists. {MaxLength=100}
 hbui.EditorStructurePanel.filterIconTooltip=Filtro	#
 hbui.EditorStructurePanel.gridViewIconTooltip=Visualizzazione griglia	#
 hbui.EditorStructurePanel.importLabel=Importa	#
 hbui.EditorStructurePanel.listViewIconTooltip=Visualizzazione elenco	#
-hbui.EditorStructurePanel.nameLabel=Nome	#
-hbui.EditorStructurePanel.namespaceAndSourceSectionHeader=Spazio dei nomi e origine	#
 hbui.EditorStructurePanel.narration=Pannello struttura	#
 hbui.EditorStructurePanel.newFromClipboardLabel=Novità degli appunti	#
-hbui.EditorStructurePanel.originLabel=Origine	#
-hbui.EditorStructurePanel.replaceClipboardLabel=Copia negli appunti	#
-hbui.EditorStructurePanel.saveLabel=Salva	#
-hbui.EditorStructurePanel.sizeLabel=Dimensioni	#
 hbui.EditorStructurePanel.sortLabel=Ordina	#
 hbui.EditorStructurePanel.structureContentSectionHeader=Contenuto struttura	#
 hbui.EditorStructurePanel.structureItem=StructureItem	#
 hbui.EditorStructurePanel.tagsSectionHeader=Tag	#
+hbui.EditorStructurePanel.toggleButton=Pulsante Attiva/disattiva 	####Narration description for a button that toggles all structures to be selected or deselected. {MaxLength=100}
 hbui.EditorStructurePanel.totalBlocksLabel=Blocchi totali	#
 hbui.EditorStructurePanel.windowTitle=Strutture	#
 hbui.EditorSwitch.elementType=Interruttore	#
@@ -3854,6 +3839,45 @@ hbui.EditorWindowPanel.dragHandle=Punto di trascinamento	#
 hbui.EditorWindowPanel.elementType=Pannello	#
 hbui.EditorWindowPanel.expandButton=Pulsante Espandi pannello	#
 hbui.Sample.hello=Ciao %1$s!	#
+hbui.Accordion.closeInputLegend=Chiudi	#
+hbui.Accordion.openInputLegend=Apri	#
+hbui.BackButton.back=Indietro	#
+hbui.BackButton.narration.backButton=Pulsante Indietro	#
+hbui.BaseDropdown.close=Chiudi	#
+hbui.BaseDropdown.enumeration=%1$s di %2$s	#
+hbui.BaseDropdown.open=Apri	#
+hbui.BaseDropdown.selected=Selezionato	#
+hbui.BaseDropdown.stateCollapsed=Compresso	#
+hbui.BaseDropdown.stateExpanded=Espanso	#
+hbui.BaseDropdown.toggleElementType=Opzione	#
+hbui.BaseSlider.currentValue=il valore attuale è	#
+hbui.BaseSlider.elementType=cursore	#
+hbui.BaseSlider.maxValueIs=il valore massimo è	#
+hbui.BaseSlider.minValueIs=il valore minimo è	#
+hbui.BaseSwitch.elementType=Interruttore	#
+hbui.BaseSwitch.narrationDisabled=Disattiva	#
+hbui.BaseSwitch.off=No	#
+hbui.BaseSwitch.on=Sì	#
+hbui.BaseSwitch.toggle=Attiva/disattiva	#
+hbui.BaseTextField.addedNarration=Aggiunto	#
+hbui.BaseTextField.deselect=Deseleziona	#
+hbui.BaseTextField.hint=Stai attualmente utilizzando un campo di testo. Digita per inserire %1$s	#
+hbui.BaseTextField.invalidNarration=Non valido	#
+hbui.BaseTextField.removedNarration=Rimossa	#
+hbui.BaseTextField.replacedNarration=Sostituito con	#
+hbui.BaseTextField.select=Seleziona	#
+hbui.BaseTextField.selected=Selezionato	#
+hbui.DropdownItem.elementType=Oggetto	#
+hbui.DropdownItem.narrationComponentType=Opzione	#
+hbui.DropdownItem.select=Seleziona	#
+hbui.DropdownItem.selected=Selezionato	#
+hbui.DropdownItem.unselected=Non selezionata	#
+hbui.ScrollView.loadingState=Caricamento in corso	#
+hbui.ScrollView.narrationScrollViewComponentType=Contenuto	#
+hbui.TitleBar.Buttons.Back.inputLegend=Indietro	#
+hbui.TitleBar.Buttons.Back.narration=Pulsante Indietro	#
+hbui.TitleBar.Buttons.Close.inputLegend=Chiudi	#
+hbui.TitleBar.Buttons.Close.narration=Pulsante Chiudi	#
 hbui.BackButton.back=Indietro	#
 hbui.BackButton.narrationComponentType=Pulsante	#
 hbui.BackButton.narrationGoBack=Indietro	#

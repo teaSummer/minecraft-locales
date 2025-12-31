@@ -297,6 +297,7 @@ resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.QuickExtrudeMode.dec
 resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.QuickExtrudeMode.expand.title=Genişlet	#
 resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.QuickExtrudeMode.expand.tooltip=Ekstrüzyonu Genişlet	#
 resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.LayerCount.title=Katman Sayısı	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.preview_warning=Not: Ön izleme görselleştirmesi yalnızca ilk katmanı gösterir 	#### {MaxLength="500"}, used to inform the user that the preview visualization for this tool is limited to a single layer.  This string is on screen whenever this tool is active
 resourcePack.editor.toolRail.ExtrudeTool.pane.ExtrusionType.title=Ekstrüzyon Türü	#
 resourcePack.editor.toolRail.ExtrudeTool.pane.ExtrusionType.Extrude=Ekstrüzyon	#
 resourcePack.editor.toolRail.ExtrudeTool.pane.ExtrusionType.QuickExtrude=Hızlı Ekstrüzyon	#
@@ -524,6 +525,30 @@ resourcePack.editor.playtestResult.WorldExportBusy=Dünya Dışa Aktarımı Meş
 resourcePack.editor.playtestResult.WorldExportFailed=Dünya Dışa Aktarımı Başarısız Oldu	#
 
 
+resourcePack.editor.menuBar.file.realmsPublish=Realms'ta Yayınla   	####This string is intended to express that the option is for opening the pane to publish your editor world to Realms.{MaxLength=100}
+resourcePack.editor.realmsPublish.userNotLoggedIn=Realms'e Yayınlama için aktif bir Realms aboneliği gerekir. Realms'a abone olabilir veya süresi dolan abonelikleri standart Minecraft istemcisinden ya da hesabınıza giriş yaptıktan sonra minecraft.net web adresinden yenileyebilirsiniz.    	####This string is intended to express that the user is not logged in currently and the process they need to follow in order to be able to upload their editor world to their Realms subscription.{MaxLength=350}
+resourcePack.editor.realmsPublish.goToMinecraftWebsite=Minecraft.net adresine git  	####This string is intended to express that the link will take the user to Minecraft.net.{MaxLength=100}
+resourcePack.editor.realmsPublish.Refresh=Yenile  	####This string is intended to express that the button will refresh the pane to see if the user in now logged in.{MaxLength=100}
+resourcePack.editor.realmsPublish.Realm=Realm  	####This string is intended to express that the below dropdown contains all of the users Realms subscriptions.{MaxLength=100}
+resourcePack.editor.realmsPublish.RealmSlot=Realm yuvası 	####This string is intended to express that the dropdown contains all of the world slots in for the users selected realms subscription.{MaxLength=100}
+resourcePack.editor.realmsPublish.PublishNotesTitle=Realms'ta Yayınlama Notu   	####This string is intended to express that the below field will contain additional information for the user about the publish to realms feature, including any warnings or issues.{MaxLength=150}
+resourcePack.editor.realmsPublish.DownloadRealm=İndir    	####This string is intended to express that the button will download the currently selected World from the realm slot.{MaxLength=100}
+resourcePack.editor.realmsPublish.PublishRealm=Yayınla  	####This string is intended to express that the button will publish the current world to the currently selected realm slot.{MaxLength=100}
+resourcePack.editor.realmsPublish.Confirm=Onayla   	####This string is intended to express that the button will confirm  the request to publish the world to realms.{MaxLength=100}
+resourcePack.editor.realmsPublish.Cancel=İptal 	####This string is intended to express that the button will cancel the request to publish the world to realms.{MaxLength=100}
+resourcePack.editor.realmsPublish.Back=Geri 	####This string is intended to express that the button will take the user back to the previous pane.{MaxLength=100}
+resourcePack.editor.realmsPublish.PublishFailed=Realms'ta yayınlama başarısız oldu. Lütfen daha sonra tekrar deneyin.   	####This string is intended to express that publishing the world to Realms failed and to please try again later.{MaxLength=200}
+resourcePack.editor.realmsPublish.PublishSuccess=Realms'ta başarıyla yayınlandı    	####This string is intended to express that publishing the world to Realms succeeded.{MaxLength=200}
+resourcePack.editor.realmsPublish.PublishConfirmationOptOut=Bu Realm ve oturum için bir daha sorma  	####This string is intended to express that the checkbox will opt the user out of confirming their publish to realms decisions.{MaxLength=100}
+resourcePack.editor.realmsPublish.PublishingToRealms=Dünya Realms'ta yayınlanma aşamasında...  	####This string is intended to express that the world is currently in the process of being published to Realms.{MaxLength=100}
+resourcePack.editor.realmsPublish.UnableToPublishMissingRealm=Realms'ta yayınlanamadı. Seçili Realm yok    	####This string is intended to express that the user is unable to publish their world because a realm to upload to has not been selected.{MaxLength=250}
+resourcePack.editor.realmsPublish.UnableToPublishMissingRealmSlot=Realms'ta yayınlanamadı. Seçili Realm Yuvası yok   	####This string is intended to express that the user is unable to publish their world because a realm slot to upload to has not been selected.{MaxLength=250}
+resourcePack.editor.realmsPublish.PublishConfirmationWarning=Bu işlem sonrasında mevcut dünyanız seçili yuvadan kaldırılacak ve yerine mevcut Düzenleyici dünyanız getirilecektir (seçilen yuva aynı zamanda Realm'ınız için etkin yuva hâline gelecektir). Realm'ınızın üyeleri yeni gelen dünyanıza erişebilecektir. Yayınlamadan önce veri kaybını önlemek için geçerli dünyanızı kaydetmek isterseniz bu iletişim kutusunu iptal edin ve “Yayınla” seçimini yapmadan önce “İndir” seçimini yapın. Devam etmek ve mevcut dünyanızı değiştirmek için “Onayla”yı seçin.    	####This string is intended to warn the user that if they publish their world to Realms, the world currently in that Realms slot will be deleted and unrecoverable. It also informs the user that members of the Realm will be able to access this world.{MaxLength=1000}
+resourcePack.editor.realmsPublish.DownloadSuccess=Dünya, Realms'tan başarıyla indirildi    	####This string is intended to express that downloading a world from Realms succeeded.{MaxLength=200}
+resourcePack.editor.realmsPublish.DownloadFailed=Dünya, Realms'tan indirilemedi 	####This string is intended to express that downloading a world from Realms failed.{MaxLength=200}
+resourcePack.editor.realmsPublish.DownloadingFromRealms=Dünya, Realms'tan indiriliyor...    	####This string is intended to express that we're in the middle of downloading a world from Realms and waiting for that operation to complete.{MaxLength=200}
+
+
 resourcePack.editor.toolRail.RepeaterTool.title=Yineleyici Alet	#
 resourcePack.editor.toolRail.RepeaterTool.tooltip=Seçim birimini yinelemek için alet	#
 resourcePack.editor.toolRail.RepeaterTool.pane.Spacing=Aralık	#
@@ -532,6 +557,18 @@ resourcePack.editor.toolRail.RepeaterTool.pane.Preview=Ön İzleme	#
 resourcePack.editor.toolRail.RepeaterTool.pane.Clear=Temizle	#
 resourcePack.editor.toolRail.RepeaterTool.pane.Apply=Uygula	#
 resourcePack.editor.toolRail.RepeaterTool.statusMessage.noSelection=Tekrarlanacak birimi seçmek için Seçim aletini kullanın	#
+resourcePack.editor.toolRail.RepeaterTool.pane.Mode=Mod		####"Mode" describes a dropdown that contains the two different states the tool can be in. These are "Line" and "Grid" {MaxLength=20}
+resourcePack.editor.toolRail.RepeaterTool.mode.Line=Çizgi		####"Line" describes a straight, unbroken visual between two points {MaxLength=20}
+resourcePack.editor.toolRail.RepeaterTool.mode.Grid=Kafes		####"Grid" describes a visual consisting of parallel lines at regular intervals, broken up by perpendicular lines at regular intervals, like grid paper. {MaxLength=20}
+resourcePack.editor.toolRail.RepeaterTool.pane.RepeatType=Tekrarlama Türü		####"Repeat Type" describes a dropdown that contains the two types "Uniform" and "Separate" and represents how the repetitions along the three axes (plural of "axis") will be determined {MaxLength=40}
+resourcePack.editor.toolRail.RepeaterTool.repeat.Uniform=Tek Tip		####"Uniform" describes the repeat state of the Repeater Tool where it applies the same number of repetitions across all three axes (X, Y, and Z). "Uniform" was chosen as a short word that also means "consistent across multiple instances" {MaxLength=20}
+resourcePack.editor.toolRail.RepeaterTool.pane.RepeatAlongX=X Boyunca Tekrarla		####"Repeat Along" describes a checkbox and means to apply the number of Uniform Repetitions across a given axis. This one is the X axis. "X", "Y", and "Z" have a mathematical meaning and it may not be appropriate to translate unless the mathematical meaning is also translated. More info can be found at https://en.wikipedia.org/wiki/Coordinate_system {MaxLength=40}
+resourcePack.editor.toolRail.RepeaterTool.pane.RepeatAlongY=Y Boyunca Tekrarla		####See "Repeat Along X" but this is for the Y axis. {MaxLength=40}
+resourcePack.editor.toolRail.RepeaterTool.pane.RepeatAlongZ=Z Boyunca Tekrarla		####See "Repeat Along X" but this is for the Z axis. {MaxLength=40}
+resourcePack.editor.toolRail.RepeaterTool.repeat.Separate=Ayrı		####"Separate" describes the repeat state of the Repeater Tool where the number of repetitions along each axis is set using separate number input elements, rather than one single number input {MaxLength=20}
+resourcePack.editor.toolRail.RepeaterTool.pane.XCount=X Sayısı		####"X Count" describes a number input field and represents the number of repetitions along the X axis. "X", "Y", and "Z" have a mathematical meaning and it may not be appropriate to translate unless the mathematical meaning is also translated. More info can be found at https://en.wikipedia.org/wiki/Coordinate_system {MaxLength=20}
+resourcePack.editor.toolRail.RepeaterTool.pane.YCount=Y Sayısı		####See "X Count" but this is for the Y axis. {MaxLength=20}
+resourcePack.editor.toolRail.RepeaterTool.pane.ZCount=Z Sayısı		####See "X Count" but this is for the Z axis. {MaxLength=20}
 
 
 resourcePack.editor.selectionTool.deselect=Seçimi Kaldır	#

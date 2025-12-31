@@ -320,12 +320,6 @@ hbui.CompareStatsRoute.header=Statistikk-sammenligning	#
 hbui.CompareStatsRoute.playerItemsListRole=Horisontal liste	#
 hbui.CompareStatsRoute.playerItemsNarration=Sammenlign statistikken til to spillere	#
 hbui.ConnectionErrorRoute.backToMenu=Tilbake til menyen	#
-hbui.ConnectionErrorRoute.codewordDetailsHelp=Søk på kodeordet ovenfor på help.Minecraft.net for mer informasjon.	#
-hbui.ConnectionErrorRoute.codewordHelp=Søk på «%1$s» på help.Minecraft.net for mer informasjon.	#
-hbui.ConnectionErrorRoute.errorDetailsHelp=Send inn en støtteforespørsel med et skjermbilde av disse detaljene hvis du trenger mer hjelp.	#
-hbui.ConnectionErrorRoute.header=Feildetaljer	#
-hbui.ConnectionErrorRoute.learnMore=Finn ut mer	#
-hbui.ConnectionErrorRoute.showDetails=Vis detaljer	#
 hbui.ControllerSpecificButtonNarration.Gamepad.A.KEYBOARD=Trykk på A	#
 hbui.ControllerSpecificButtonNarration.Gamepad.A.PS=Trykk på A	#
 hbui.ControllerSpecificButtonNarration.Gamepad.A.QUEST=Trykk på A	#
@@ -1117,6 +1111,16 @@ hbui.CreateNewWorldSideMenu.multiplayerTabLabel=Flerspiller	#
 hbui.CreateNewWorldSideMenu.narrationCreateButtonHint=Lag en %1$s verden med vanskelighetsgrad %2$s og navnet %3$s. Naviger for å velge andre alternativer.	#
 hbui.CreateNewWorldSideMenu.resourcePacksTabLabel=Ressurspakker	#
 hbui.CreateNewWorldSideMenu.scriptingCodingTabLabel=Skripting og koding	#
+hbui.CreatePartyRoute.createPartyHeader=Opprett gruppe 	#### Create Party page title. For the purposes of this feature, a Party is a group of players joining up to  play together.
+hbui.CreatePartyRoute.friendsTitle=Venner (%1$s) 	#### The header for a list of Player List Items containing the user's friends
+hbui.CreatePartyRoute.inviteOnly=Bare inviterte 	#### The title for a state where players can only join the party if invited
+hbui.CreatePartyRoute.inviteOnlyDescription=Spillere må inviteres for å bli med i gruppen. 	#### Describes the invite only state
+hbui.CreatePartyRoute.maxPartyExplanation=En gruppe kan ha opptil 15 spillere. 	#### Description explaining the maximum size of a party
+hbui.CreatePartyRoute.open=Åpen 	#### The title for a state where anyone can join the party
+hbui.CreatePartyRoute.openDescription=Spillere trenger ikke å bli invitert for å bli med i gruppen. 	#### Describes the Open state
+hbui.CreatePartyRoute.partyPrivacy=Gruppepersonvern 	#### Title for the toggle which controls the party privacy state
+hbui.CreatePartyRoute.partySettings=Gruppeinnstillinger 	#### title of the side bar which contains the party settings options
+hbui.CreatePartyRoute.recentlyPlayedWithTitle=Nylig spilt med 	#### The header for a list of Player List Items containing players the user has recently played with
 hbui.DebugDrawer.closeButtonNarrationHint=Bruk pil ned for flere handlinger	#
 hbui.DebugDrawer.closeDrawerShortcutInputLegend=Lukk	#
 hbui.DebugDrawer.title=Feilsøking	#
@@ -1310,7 +1314,6 @@ hbui.GetMoreButton.buttonNarration=Knapp	#
 hbui.GetMoreButton.inputLegend=Oppdag	#
 hbui.GuidedCreateWorldRoute.title=Veiledet oppretting av verden	#
 hbui.HeroItem.role=Tekstblokk	#
-hbui.InboxContentItem.narration.createdBy=Av %1$s	#
 hbui.InboxContentItem.view=Vis	#
 hbui.InboxListItem.accept=Godta	#
 hbui.InboxListItem.delete=Slett	#
@@ -1476,12 +1479,12 @@ hbui.JoinRealmsServerInvitationsButton.invitationsRole=Gruppe	#
 hbui.JoinRealmsServerInvitationsButton.narrationSuffix=Trykk for å se innboksen	#
 hbui.JoinRealmsServerInvitationsButton.noInvitesBody=Det kan være invitasjoner i innboksen din!	#
 hbui.JoinRealmsServerInvitationsButton.noInvitesTitle=Har du ikke en invitasjonslenke?	#
-hbui.JoinRealmsServerTransient.caption=Du kan forlate realmen hens når som helst. Bli med-knapp nedenfor.      	#### Realm here refers to a Realm server. Join is in the context of joining a Realm, meaning becoming a member of it. {MaxLength="100"}
+hbui.JoinRealmsServerTransient.caption=Du kan forlate Realmen hens når som helst. Bli med-knapp nedenfor.      	#### Realm here refers to a Realm server. Join is in the context of joining a Realm, meaning becoming a member of it. {StrContains="Realm"} {MaxLength="100"}
 hbui.JoinRealmsServerTransient.errorMessageTitle=Noe gikk galt    	#### Something went wrong when trying to join a Realm, this is a generic header for it. {MaxLength="100"}
-hbui.JoinRealmsServerTransient.genericTitle=Bli med i en realm    	#### Becoming a member of a Realm. {MaxLength="100"}
+hbui.JoinRealmsServerTransient.genericTitle=Bli med i en Realm    	#### Becoming a member of a Realm. {StrContains="Realm"} {MaxLength="100"}
 hbui.JoinRealmsServerTransient.joinButtonLabel=Bli med	#
 hbui.JoinRealmsServerTransient.joinRealmModal=Blir med i realmen	#
-hbui.JoinRealmsServerTransient.ownerInformation=Du er i ferd med å bli med i %1$s sin realm    	#### The player is about to become a member of another players Realm.{MaxLength="100"}
+hbui.JoinRealmsServerTransient.ownerInformation=Du er i ferd med å bli med i %1$s sin Realm    	#### The player is about to become a member of another players Realm. {StrContains="Realm"} {MaxLength="100"}
 hbui.JoinRealmsServerTransient.successSnackbar=Du har blitt med i «%1$s»!	#
 hbui.JoinRealmsServerTransient.title=Bli med %1$s    	#### Join as in "Join Realm". Becoming a member of a Realm. {MaxLength="20"}
 hbui.JoinServerWarningModal.cancel=Avbryt	#
@@ -1668,6 +1671,7 @@ hbui.PlayerBannedModalRoute.xbox.report.terrorismOrViolentExtremism=Referanser t
 hbui.PlayerBannedModalRoute.xbox.report.unsportingBehavior=Usportslig oppførsel	#
 hbui.PlayerCard.addedButton=Lagt til	#
 hbui.PlayerCard.addFriendButton=Legg til venn	#
+hbui.PlayerCard.away=Borte		####Used to show player status {MaxLength=20}
 hbui.PlayerCard.blocked=Blokkert	#
 hbui.PlayerCard.buttonRole=knapp	#
 hbui.PlayerCard.buttonSiblings=%1$s av %2$s	#
@@ -1688,6 +1692,9 @@ hbui.PlayerListItem.away=Borte	#
 hbui.PlayerListItem.buttonSiblings=Knapp %1$s av %2$s	#
 hbui.PlayerListItem.delete=Slett	#
 hbui.PlayerListItem.friends=Venner	#
+hbui.PlayerListItem.inviteButtonInputLegend=Inviter venn 	#### The input legend text for a button used to invite someone to a party
+hbui.PlayerListItem.inviteButtonText=Inviter 	#### The text that appears on a button for inviting a player to a party
+hbui.PlayerListItem.invited=Invitert 	#### The text that appears after a player has been invited to a party
 hbui.PlayerListItem.join=Bli med	#
 hbui.PlayerListItem.narration.addedMutual=Du er venn med denne spilleren	#
 hbui.PlayerListItem.narration.addedNotMutual=Du har lagt til denne spilleren	#
@@ -1704,6 +1711,7 @@ hbui.PlayerListItem.online=Pålogget	#
 hbui.PlayerListItem.online.playstation=Online på PSN™		#### CertRequirement: [PSN™]
 hbui.PlayerListItem.online.switch=Online på Switch	#
 hbui.PlayerListItem.pending=Ventende	#
+hbui.PlayerListItem.playingInSameWorld=Spiller i denne verdenen		####Used as player status when players are in the same world {MaxLength=30}
 hbui.PlayerListItem.receivedRequest=Sendte deg en forespørsel	#
 hbui.PlayerListItem.reject=Avslå	#
 hbui.PlayerListItem.select=Velg	#
@@ -2359,7 +2367,7 @@ hbui.RealmsPDPScreen.FAQ.PersonalServer.title=Hva er en personlig server?	#
 hbui.RealmsPDPScreen.FAQ.Realms.description=Realms er små personlige servere som er vert for Minecraft-verdenen din. I motsetning til en vanlig flerspillerøkt er Realms alltid tilkoblet, så du trenger ikke være der for at vennene dine skal kunne spille. I motsetning til en stor offentlig Minecraft-server krever Realms invitasjoner, så du bestemmer hvem som kommer inn.  	#### {StrContains="Realms"}
 hbui.RealmsPDPScreen.FAQ.Realms.title=Hva er Realms?  	#### {StrContains="Realms"}
 hbui.RealmsPDPScreen.hero.content.header=Få mer innhold med Realms Plus    	#### {StrContains="Realms"}
-hbui.RealmsPDPScreen.hero.content.text=Realms Plus-abonnementer inkluderer Marketplace Pass: gratis markedsplassinnhold som oppdateres månedlig. Med skall, figurlager-elementer, verdener og mye mer er det alltid noe nytt å prøve.  	#### {MaxLength="250"} {StrContains="Realms"}
+hbui.RealmsPDPScreen.hero.content.text=Realms Plus-abonnementer inkluderer Marketplace Pass: gratis markedsplassinnhold som oppdateres månedlig. Med skall, figurlager-elementer, verdener og mye mer er det alltid noe nytt å prøve.  	#### {MaxLength="250"} {StrContains="Realms Plus"}
 hbui.RealmsPDPScreen.hero.content.title=Tilgang til over 150 markedsplasspakker    	#### {MaxLength="56"}
 hbui.RealmsPDPScreen.hero.perks.header=Flere fordeler inkludert med Realms    	#### {StrContains="Realms"}
 hbui.RealmsPDPScreen.hero.perks.text=Del eventyrene dine på historiefeeden, se Realmen din vokse med medlemmer-fanen, se når folk har spilt på Realmen med tidslinjen.    	#### {MaxLength="250"} {StrContains="Realm"}
@@ -2377,16 +2385,16 @@ hbui.RealmsPDPScreen.splash.text=Driv din egen Minecraft-server! Du angir reglen
 hbui.RealmsPDPScreen.splash.title=Din egen server, alltid på nett    	#### {MaxLength="50"}
 hbui.RealmsPDPScreen.splash.tryFree=Prøv gratis    	#### {MaxLength="20"}
 hbui.RealmsPDPScreen.title=Minecraft Realms 	#### {StrContains="Realms"}
-hbui.RealmsPlanPickerScreen.banners.coreSubscriptionsLimit=Du har nådd grensen for Realms Core-abonnementer på denne plattformen 	#### {MaxLength="72"}
-hbui.RealmsPlanPickerScreen.banners.plusSubscriptionsLimit=Du har nådd grensen for Realms Plus-abonnementer på denne plattformen 	#### {MaxLength="72"}
+hbui.RealmsPlanPickerScreen.banners.coreSubscriptionsLimit=Du har nådd grensen for Realms Core-abonnementer på denne plattformen		#### {MaxLength="150"} {StrContains="Realms Core"}
+hbui.RealmsPlanPickerScreen.banners.plusSubscriptionsLimit=Du har nådd grensen for Realms Plus-abonnementer på denne plattformen		#### {MaxLength="150"} {StrContains="Realms Plus"}
 hbui.RealmsPlanPickerScreen.buyButtonCore=Kjøp Realms Core				#### {StrContains="Realms"}
 hbui.RealmsPlanPickerScreen.buyButtonCoreNarrationHint=Naviger nedenfor for å finne ut mer om Realms Core			#### {StrContains="Realms"}
 hbui.RealmsPlanPickerScreen.buyButtonPlus=Kjøp Realms Plus				#### {StrContains="Realms"}
 hbui.RealmsPlanPickerScreen.buyButtonPlusNarrationHint=Naviger nedenfor for å finne ut mer om Realms Plus			#### {StrContains="Realms"}
 hbui.RealmsPlanPickerScreen.buyRealmsPlusButtonTrial=Gratis prøveversjon	#
 hbui.RealmsPlanPickerScreen.currency=$	#
-hbui.RealmsPlanPickerScreen.emptyStates.maxedOutSubscriptions.body=Du har nådd grensen for både Realms Core- og Realms Plus-abonnementer på denne plattformen.  	#### {MaxLength="95"}
-hbui.RealmsPlanPickerScreen.emptyStates.maxedOutSubscriptions.title=Maks Realms-abonnementer på plattformen nådd 	#### {MaxLength="47"}
+hbui.RealmsPlanPickerScreen.emptyStates.maxedOutSubscriptions.body=Du har nådd grensen for både Realms Core- og Realms Plus-abonnementer på denne plattformen.		#### {MaxLength="150"} {StrContains="Realms Core"} {StrContains="Realms Plus"}
+hbui.RealmsPlanPickerScreen.emptyStates.maxedOutSubscriptions.title=Maks Realms-abonnementer på plattformen nådd		#### {MaxLength="150"} {StrContains="Realms"}
 hbui.RealmsPlanPickerScreen.error.body=Bekreft at du er logget på både Minecraft og plattformbutikken til enheten din med den samme kontoen, og prøv på nytt.	#
 hbui.RealmsPlanPickerScreen.error.button=Prøv på nytt	#
 hbui.RealmsPlanPickerScreen.error.title=Kunne ikke få tilgang til plattformbutikken	#
@@ -2691,7 +2699,7 @@ hbui.RealmsStories.messages.timelineEmpty.body=Spill på realmen for å generere
 hbui.RealmsStories.messages.timelineEmpty.title=Ingen data tilgjengelig	#
 hbui.RealmsStories.messages.timelineOff.body=Realm-eieren har deaktivert tidslinjen på denne realmen.	#
 hbui.RealmsStories.messages.timelineOff.title=Tidslinjen er deaktivert	#
-hbui.RealmsStories.messages.timelineOptIn.body=Se når andre spiller, for å sjekke skaperverkene deres eller planlegge å spille sammen! Tidslinjen viser når spillerne var i Realmen. Jo større den fargede blokken er, desto lenger spilte de.		#### {StrContains="Realm"} {MaxLength="200"} This is an explanation of the Realms Timeline feature.
+hbui.RealmsStories.messages.timelineOptIn.body=Se når andre spiller, for å sjekke skaperverkene deres eller planlegge å spille sammen! Tidslinjen viser når spillerne var i Realmen. Jo større den fargede blokken er, desto lenger spilte de.		#### {StrContains="Realm"} {MaxLength="250"} This is an explanation of the Realms Timeline feature.
 hbui.RealmsStories.messages.timelineOptIn.button=Jeg vil bli med	#
 hbui.RealmsStories.messages.timelineOptIn.maybeLaterButton=Kanskje senere		#### {MaxLength="20"}  Player is currently declining to opt into the timeline.
 hbui.RealmsStories.messages.timelineOptIn.members=Medlemmer som har blitt med: %1$s/%2$s	#
@@ -2932,6 +2940,9 @@ hbui.ReportPlayerRoute.xbox.report.area.ingame=Kreasjoner i spillet	#
 hbui.ReportPlayerRoute.xbox.report.area.nameOrGamertag=Spillernavn eller gamertag	#
 hbui.ReportPlayerRoute.xbox.report.area.other=Annet	#
 hbui.ReportPlayerRoute.xbox.report.area.skin=Spillerskall	#
+hbui.ScreenshotDeleteErrorModal.close=Lukk		#### {MaxLength=40} Closes the modal that has appeared. This was previously ScreenshotGalleryRoute.deleteScreenshotsErrorModal.close
+hbui.ScreenshotDeleteErrorModal.text=Kunne ikke slette skjermbildet. Sjekk internettforbindelsen, og prøv på nytt. 	#### {MaxLength=1000} Indicates that an operation requested by the user to delete a screenshot in their gallery has failed. This was previously ScreenshotGalleryRoute.deleteScreenshotsErrorModal.text
+hbui.ScreenshotDeleteErrorModal.title=Kunne ikke slette skjermbildet		#### {MaxLength=40} Indicates that an operation requested by the user to delete a screenshot in their gallery has failed. This was previously ScreenshotGalleryRoute.deleteScreenshotsErrorModal.title
 hbui.ScreenshotDeleteModal.cancel=Avbryt	#
 hbui.ScreenshotDeleteModal.delete=Slett	#
 hbui.ScreenshotDeleteModal.text=Denne handlingen kan ikke angres. Er du sikker på at du vil slette dette skjermbildet?	#
@@ -3032,9 +3043,6 @@ hbui.ScreenshotGalleryItem.showcased=Vist frem	#
 hbui.ScreenshotGalleryMenu.optionsEnumeration=%1$s av %2$s	#
 hbui.ScreenshotGalleryRoute.deleteScreenshots=Slett skjermbilder	#
 hbui.ScreenshotGalleryRoute.deleteScreenshotsButton=Slett skjermbilder	#
-hbui.ScreenshotGalleryRoute.deleteScreenshotsErrorModal.close=Lukk	#
-hbui.ScreenshotGalleryRoute.deleteScreenshotsErrorModal.text=Kunne ikke slette skjermbildet. Sjekk internettforbindelsen, og prøv på nytt.	#
-hbui.ScreenshotGalleryRoute.deleteScreenshotsErrorModal.title=Kunne ikke slette skjermbildet	#
 hbui.ScreenshotGalleryRoute.deleteScreenshotsLink=Slett skjermbilder	#
 hbui.ScreenshotGalleryRoute.deleteScreenshotsModal.cancelButton=Avbryt	#
 hbui.ScreenshotGalleryRoute.deleteScreenshotsModal.deleteButton=Slett	#
@@ -3086,32 +3094,28 @@ hbui.SideStoryPostContainer.role=Tekstblokk	#
 hbui.SignInAchievementsRoute.laterButton=Kanskje senere	#
 hbui.SignInAchievementsRoute.signInButton=Logg på nå	#
 hbui.SignInAchievementsRoute.signInHeader=Oppnå prestasjoner 	####Short Header for modal, player can earn achievements{MaxLength=55}
-hbui.SignInAchievementsRoute.signInList1=Følg med på fremgangen og milepælene dine i Minecraft	#
-hbui.SignInAchievementsRoute.signInList2=Lås opp eksklusive figurlagerelementer	#
-hbui.SignInAchievementsRoute.signInList3=Vis vennene dine prestasjonene du har oppnådd	#
-hbui.SignInAchievementsRoute.signInPrompt=Logg deg på, eller registrer deg gratis for å begynne å oppnå prestasjoner 	####Body of modal, informing player that signing in will allow them to earn achievements{MaxLength=200}
+hbui.SignInAchievementsRoute.signInPrompt=Logg deg på eller registrer deg gratis for å begynne å oppnå prestasjoner.    	####Prompt encouraging player to sign in, informing them that signing in will allow them to earn achievements{MaxLength=1000}
 hbui.SignInAddFriendRoute.laterButton=Kanskje senere	#
 hbui.SignInAddFriendRoute.signInButton=Logg på nå	#
 hbui.SignInAddFriendRoute.signInHeader=Finn venner på andre plattformer  	####Header for modal, allow for searching for friends via search bar{MaxLength=55}
-hbui.SignInAddFriendRoute.signInPrompt=Logg deg på, eller registrer deg gratis for å koble til venner på andre plattformer   	####Body of modal, player will be able to play multiplayer with other cross platform friends{MaxLength=200}
+hbui.SignInAddFriendRoute.signInPrompt=Logg deg på eller registrer deg gratis for å koble til venner på andre plattformer.  	####Prompt encouraging player to sign in, informing them that if signed in they can play multiplayer with friends on any device{MaxLength=1000}
 hbui.SignInDressingRoomRoute.laterButton=Kanskje senere	#
 hbui.SignInDressingRoomRoute.signInButton=Logg på nå	#
 hbui.SignInDressingRoomRoute.signInHeader=Kul figur!	#
-hbui.SignInDressingRoomRoute.signInPrompt=Logg deg på for å lagre figuren på tvers av enheter og plattformer.	#
+hbui.SignInDressingRoomRoute.signInPrompt=Logg deg på eller registrer deg gratis for å lagre figurene dine på tvers av enheter og plattformer.  	####Prompt encouraging player to sign in, informing them that if signed in their character's appearance that they recently changed in the dressing room can be made available on any device{MaxLength=1000}
 hbui.SignInMarketplaceRoute.laterButton=Kanskje senere	#
 hbui.SignInMarketplaceRoute.signInButton=Logg på nå	#
 hbui.SignInMarketplaceRoute.signInHeader=Velkommen til markedsplassen!	#
-hbui.SignInMarketplaceRoute.signInList1=Få tilgang til markedsplass-innhold og figurer du har kjøpt, på forskjellige plattformer.	#
-hbui.SignInMarketplaceRoute.signInPrompt=Logg på for å lagre kjøpene dine til kontoen din, slik at de alltid er med deg.	#
+hbui.SignInMarketplaceRoute.signInPrompt=Logg deg på eller registrer deg gratis for å lagre kjøpene dine til kontoen din, slik at de alltid er med deg.  	####Prompt encouraging player to sign in, informing them that if signed in their Marketplace purchases can be saved to their account{MaxLength=1000}
 hbui.SignInPlayOnServerRoute.laterButton=Kanskje senere	#
 hbui.SignInPlayOnServerRoute.signInButton=Logg på nå	#
 hbui.SignInPlayOnServerRoute.signInHeader=Spill på utvalgte servere  	####Header for modal, allow player to play on big, custom featured servers made by other players{MaxLength=55}
-hbui.SignInPlayOnServerRoute.signInPrompt=Logg deg på, eller registrer deg gratis for å spille på utvalgte servere 	####Body of modal, signing in allows player to play on such servers{MaxLength=200}
+hbui.SignInPlayOnServerRoute.signInPrompt=Logg deg på eller registrer deg gratis for å spille på utvalgte servere.  	####Prompt for the player to sign in so they can play on servers{MaxLength=1000}
 hbui.SignInSavePurchasesRoute.createAccountPrompt=Har du ikke en Microsoft-konto? Lag en gratis nå!	#
 hbui.SignInSavePurchasesRoute.laterButton=Kanskje senere	#
 hbui.SignInSavePurchasesRoute.signInButton=Logg på nå	#
 hbui.SignInSavePurchasesRoute.signInHeader=Lagre kjøpene dine  	####Modal header, save marketplace skin and map entitlements{MaxLength=55}
-hbui.SignInSavePurchasesRoute.signInPrompt=Logg deg på, eller registrer deg gratis for å lagre markedsplass-kjøp   	####Modal body, signing in allows player to save their entilements{MaxLength=200}
+hbui.SignInSavePurchasesRoute.signInPrompt=Logg deg på eller registrer deg gratis for å lagre markedsplass-kjøp.  	####Prompt encouraging player to sign in, informing them that if signed in their Marketplace purchases can be saved to their account{MaxLength=1000}
 hbui.SignInWorldsFriendsServersRoute.createAccountPrompt=Har du ikke en Microsoft-konto? Lag en gratis nå!	#
 hbui.SignInWorldsFriendsServersRoute.laterButton=Kanskje senere	#
 hbui.SignInWorldsFriendsServersRoute.signInButton=Logg på nå	#
@@ -3709,25 +3713,45 @@ hbui.EditorStructurePanel.actionBarSortOptionBySource=Etter kilde	#
 hbui.EditorStructurePanel.actionBarSortOptionByTags=Etter etiketter	#
 hbui.EditorStructurePanel.actionBarSortOptionZtoa=Å–a	#
 hbui.EditorStructurePanel.button=Knapp	#
-hbui.EditorStructurePanel.contentElementsLabel=Innholdselementer	#
 hbui.EditorStructurePanel.count=%1$s av %2$s	#
 hbui.EditorStructurePanel.countLabel=Antall	#
+hbui.EditorStructurePanel.deleteButton=Sletteknapp 	####Narration description for a button that deletes selected structures. {MaxLength=100}
+hbui.EditorStructurePanel.deleteModal.button.cancel=Avbryt 	####Structure delete modal button label that closes the modal with no operation {MaxLength=100}
+hbui.EditorStructurePanel.deleteModal.button.confirm=Slett nå 	####Structure delete modal button label that confirms delete operation {MaxLength=100}
+hbui.EditorStructurePanel.deleteModal.button.ok=OK 	####Structure delete modal button label that closes the modal with no operation {MaxLength=100}
+hbui.EditorStructurePanel.deleteModal.messageMultiple=Er du sikker på at du vil slette %1$s byggverk? 	####Modal message that indicates how many structures will be deleted {MaxLength=300}
+hbui.EditorStructurePanel.deleteModal.messageSingle=Er du sikker på at du vil slette «%1$s»? 	####Modal message that indicates that a specific structure with a name will be deleted {MaxLength=300}
+hbui.EditorStructurePanel.deleteModal.note=Merk: byggverk fra importerte pakker kan ikke slettes (fjern importerte pakker for å fjerne dem fra listen over byggverk). 	####Modal note that explains imported/read only structures cant be deleted {MaxLength=300}
+hbui.EditorStructurePanel.deleteModal.title=Slette byggverk? 	####Label a modal that opens when deleting structures. {MaxLength=100}
+hbui.EditorStructurePanel.deleteModal.warning=Dette kan ikke angres. 	####Modal note that warns user that deleting structures cannot be reverted {MaxLength=300}
+hbui.EditorStructurePanel.details.contentLabel=Innhold 	####Label for structure block contents. {MaxLength=100}
+hbui.EditorStructurePanel.details.copyId=Kopier ID til utklippstavleknappen 	####Narration description for a button that copies minecraft id of the structure. {MaxLength=100}
+hbui.EditorStructurePanel.details.deleteLabel=Slett 	####Label for a button that deletes the selected structure as a new one. {MaxLength=100}
+hbui.EditorStructurePanel.details.duplicateLabel=Dupliser 	####Label for a button that duplicates selected the structure as a new one. {MaxLength=100}
+hbui.EditorStructurePanel.details.fileNameLabel=Fil / unikt navn 	####Label for the structure file name. {MaxLength=100}
+hbui.EditorStructurePanel.details.includeInExports=Inkluder i eksporter 	####A flag that determines if the editor structure instance should be included in export world/project. {MaxLength=100}
+hbui.EditorStructurePanel.details.itemMenu=Meny for byggverkselementer 	####Narration text for a context menu that has structure operations. {MaxLength=100}
+hbui.EditorStructurePanel.details.minecraftIdLabel=Minecraft-ID 	####Label for in game identifier for the structure. {MaxLength=100}
+hbui.EditorStructurePanel.details.nameLabel=Navn 	####Label for structure display name. {MaxLength=100}
+hbui.EditorStructurePanel.details.namespaceAndSourceLabel=Navneområde og kilde 	####Label for an expandable button that displays structure details. {MaxLength=100}
+hbui.EditorStructurePanel.details.namespaceLabel=Navneområde 	####Label for the structure namespace. {MaxLength=100}
+hbui.EditorStructurePanel.details.originLabel=Opprinnelse 	####Label for structure origin input field. {MaxLength=100}
+hbui.EditorStructurePanel.details.replaceClipboardLabel=Kopier til utklippstavlen 	####Label for a button that replaces in level clipboard with the selected structure. {MaxLength=100}
+hbui.EditorStructurePanel.details.saveLabel=Lagre 	####Label for a button that saves modified structure changes. {MaxLength=100}
+hbui.EditorStructurePanel.details.sizeLabel=Størrelse 	####Label for structure size input field. {MaxLength=100}
+hbui.EditorStructurePanel.details.sourceLabel=Kilde 	####Label for the source content the structure belongs to. {MaxLength=100}
+hbui.EditorStructurePanel.filterButton=Filterknapp 	####Narration description for a button that filters structure lists. {MaxLength=100}
 hbui.EditorStructurePanel.filterIconTooltip=Filtrer	#
 hbui.EditorStructurePanel.gridViewIconTooltip=Rutenettvisning	#
 hbui.EditorStructurePanel.importLabel=Importer	#
 hbui.EditorStructurePanel.listViewIconTooltip=Listevisning	#
-hbui.EditorStructurePanel.nameLabel=Navn	#
-hbui.EditorStructurePanel.namespaceAndSourceSectionHeader=Navneområde og kilde	#
 hbui.EditorStructurePanel.narration=Byggverkspanel	#
 hbui.EditorStructurePanel.newFromClipboardLabel=Ny fra utklippstavlen	#
-hbui.EditorStructurePanel.originLabel=Opprinnelse	#
-hbui.EditorStructurePanel.replaceClipboardLabel=Kopier til utklippstavlen	#
-hbui.EditorStructurePanel.saveLabel=Lagre	#
-hbui.EditorStructurePanel.sizeLabel=Størrelse	#
 hbui.EditorStructurePanel.sortLabel=Sorter	#
 hbui.EditorStructurePanel.structureContentSectionHeader=Byggverksinnhold	#
 hbui.EditorStructurePanel.structureItem=Byggverksgjenstand	#
 hbui.EditorStructurePanel.tagsSectionHeader=Merker	#
+hbui.EditorStructurePanel.toggleButton=Veksleknapp 	####Narration description for a button that toggles all structures to be selected or deselected. {MaxLength=100}
 hbui.EditorStructurePanel.totalBlocksLabel=Samlet antall blokkeringer	#
 hbui.EditorStructurePanel.windowTitle=Strukturer	#
 hbui.EditorSwitch.elementType=Bryter	#
@@ -3815,45 +3839,6 @@ hbui.EditorWindowPanel.collapseButton=Skjul panel-knapp	#
 hbui.EditorWindowPanel.dragHandle=Dra-håndtak	#
 hbui.EditorWindowPanel.elementType=Panel	#
 hbui.EditorWindowPanel.expandButton=Utvid panel-knapp	#
-hbui.Accordion.closeInputLegend=Lukk	#
-hbui.Accordion.openInputLegend=Åpne	#
-hbui.BackButton.back=Tilbake	#
-hbui.BackButton.narration.backButton=Tilbake-knapp	#
-hbui.BaseDropdown.close=Lukk	#
-hbui.BaseDropdown.enumeration=%1$s av %2$s	#
-hbui.BaseDropdown.open=Åpne	#
-hbui.BaseDropdown.selected=Valgt	#
-hbui.BaseDropdown.stateCollapsed=Skjult	#
-hbui.BaseDropdown.stateExpanded=Vist	#
-hbui.BaseDropdown.toggleElementType=Alternativ	#
-hbui.BaseSlider.currentValue=gjeldende verdi er	#
-hbui.BaseSlider.elementType=glidebryter	#
-hbui.BaseSlider.maxValueIs=største verdi er	#
-hbui.BaseSlider.minValueIs=minste verdi er	#
-hbui.BaseSwitch.elementType=Bryter	#
-hbui.BaseSwitch.narrationDisabled=Deaktiver	#
-hbui.BaseSwitch.off=Av	#
-hbui.BaseSwitch.on=På	#
-hbui.BaseSwitch.toggle=Aktiver/deaktiver	#
-hbui.BaseTextField.addedNarration=Lagt til	#
-hbui.BaseTextField.deselect=Velg bort	#
-hbui.BaseTextField.hint=Du kan nå skrive inn tekst. Skriv for å angi %1$s	#
-hbui.BaseTextField.invalidNarration=Ugyldige parametere	#
-hbui.BaseTextField.removedNarration=Fjernet	#
-hbui.BaseTextField.replacedNarration=Erstattet med	#
-hbui.BaseTextField.select=Velg	#
-hbui.BaseTextField.selected=Valgt	#
-hbui.DropdownItem.elementType=Gjenstand	#
-hbui.DropdownItem.narrationComponentType=Alternativ	#
-hbui.DropdownItem.select=Velg	#
-hbui.DropdownItem.selected=Valgt	#
-hbui.DropdownItem.unselected=Ikke valgt	#
-hbui.ScrollView.loadingState=Laster inn	#
-hbui.ScrollView.narrationScrollViewComponentType=Innhold	#
-hbui.TitleBar.Buttons.Back.inputLegend=Tilbake	#
-hbui.TitleBar.Buttons.Back.narration=Tilbake-knapp	#
-hbui.TitleBar.Buttons.Close.inputLegend=Lukk	#
-hbui.TitleBar.Buttons.Close.narration=Lukk-knapp	#
 hbui.BackButton.back=Tilbake	#
 hbui.BackButton.narrationComponentType=Knapp	#
 hbui.BackButton.narrationGoBack=Gå tilbake	#
@@ -3995,3 +3980,42 @@ hbui.Toggle.select=Velg	#
 hbui.TreeView.collapse=Minimer	#
 hbui.TreeView.expand=Utvid	#
 hbui.TreeView.open=Åpne	#
+hbui.Accordion.closeInputLegend=Lukk	#
+hbui.Accordion.openInputLegend=Åpne	#
+hbui.BackButton.back=Tilbake	#
+hbui.BackButton.narration.backButton=Tilbake-knapp	#
+hbui.BaseDropdown.close=Lukk	#
+hbui.BaseDropdown.enumeration=%1$s av %2$s	#
+hbui.BaseDropdown.open=Åpne	#
+hbui.BaseDropdown.selected=Valgt	#
+hbui.BaseDropdown.stateCollapsed=Skjult	#
+hbui.BaseDropdown.stateExpanded=Vist	#
+hbui.BaseDropdown.toggleElementType=Alternativ	#
+hbui.BaseSlider.currentValue=gjeldende verdi er	#
+hbui.BaseSlider.elementType=glidebryter	#
+hbui.BaseSlider.maxValueIs=største verdi er	#
+hbui.BaseSlider.minValueIs=minste verdi er	#
+hbui.BaseSwitch.elementType=Bryter	#
+hbui.BaseSwitch.narrationDisabled=Deaktiver	#
+hbui.BaseSwitch.off=Av	#
+hbui.BaseSwitch.on=På	#
+hbui.BaseSwitch.toggle=Aktiver/deaktiver	#
+hbui.BaseTextField.addedNarration=Lagt til	#
+hbui.BaseTextField.deselect=Velg bort	#
+hbui.BaseTextField.hint=Du kan nå skrive inn tekst. Skriv for å angi %1$s	#
+hbui.BaseTextField.invalidNarration=Ugyldige parametere	#
+hbui.BaseTextField.removedNarration=Fjernet	#
+hbui.BaseTextField.replacedNarration=Erstattet med	#
+hbui.BaseTextField.select=Velg	#
+hbui.BaseTextField.selected=Valgt	#
+hbui.DropdownItem.elementType=Gjenstand	#
+hbui.DropdownItem.narrationComponentType=Alternativ	#
+hbui.DropdownItem.select=Velg	#
+hbui.DropdownItem.selected=Valgt	#
+hbui.DropdownItem.unselected=Ikke valgt	#
+hbui.ScrollView.loadingState=Laster inn	#
+hbui.ScrollView.narrationScrollViewComponentType=Innhold	#
+hbui.TitleBar.Buttons.Back.inputLegend=Tilbake	#
+hbui.TitleBar.Buttons.Back.narration=Tilbake-knapp	#
+hbui.TitleBar.Buttons.Close.inputLegend=Lukk	#
+hbui.TitleBar.Buttons.Close.narration=Lukk-knapp	#

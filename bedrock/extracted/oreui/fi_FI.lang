@@ -1,5 +1,44 @@
 hbui.Accordion.closeInputLegend=Sulje	#
 hbui.Accordion.openInputLegend=Avaa	#
+hbui.BackButton.back=Takaisin	#
+hbui.BackButton.narration.backButton=Edellinen-painike	#
+hbui.BaseDropdown.close=Sulje	#
+hbui.BaseDropdown.enumeration=%1$s/%2$s	#
+hbui.BaseDropdown.open=Avaa	#
+hbui.BaseDropdown.selected=Valittu	#
+hbui.BaseDropdown.stateCollapsed=Tiivistetty	#
+hbui.BaseDropdown.stateExpanded=Laajennettu	#
+hbui.BaseDropdown.toggleElementType=Vaihtoehto	#
+hbui.BaseSlider.currentValue=nykyinen arvo on	#
+hbui.BaseSlider.elementType=liukusäädin	#
+hbui.BaseSlider.maxValueIs=enimmäisarvo on	#
+hbui.BaseSlider.minValueIs=vähimmäisarvo on	#
+hbui.BaseSwitch.elementType=Kytkin	#
+hbui.BaseSwitch.narrationDisabled=Poista käytöstä	#
+hbui.BaseSwitch.off=Pois	#
+hbui.BaseSwitch.on=Päällä	#
+hbui.BaseSwitch.toggle=Valitse	#
+hbui.BaseTextField.addedNarration=Lisätty	#
+hbui.BaseTextField.deselect=Poista valinta	#
+hbui.BaseTextField.hint=Olet tällä hetkellä tekstinsyötössä. Syötä %1$s näppäimistöllä	#
+hbui.BaseTextField.invalidNarration=Virheellinen	#
+hbui.BaseTextField.removedNarration=Poistettu	#
+hbui.BaseTextField.replacedNarration=Korvattu tällä:	#
+hbui.BaseTextField.select=Valitse	#
+hbui.BaseTextField.selected=Valittu	#
+hbui.DropdownItem.elementType=Esine	#
+hbui.DropdownItem.narrationComponentType=Vaihtoehto	#
+hbui.DropdownItem.select=Valitse	#
+hbui.DropdownItem.selected=Valittu	#
+hbui.DropdownItem.unselected=Ei valittu	#
+hbui.ScrollView.loadingState=Ladataan	#
+hbui.ScrollView.narrationScrollViewComponentType=Sisältö	#
+hbui.TitleBar.Buttons.Back.inputLegend=Takaisin	#
+hbui.TitleBar.Buttons.Back.narration=Edellinen-painike	#
+hbui.TitleBar.Buttons.Close.inputLegend=Sulje	#
+hbui.TitleBar.Buttons.Close.narration=Sulje-painike	#
+hbui.Accordion.closeInputLegend=Sulje	#
+hbui.Accordion.openInputLegend=Avaa	#
 hbui.BackButton.back=Edellinen	#
 hbui.BackButton.narration.backButton=Edellinen-painike	#
 hbui.BaseDropdown.close=Sulje	#
@@ -362,25 +401,45 @@ hbui.EditorStructurePanel.actionBarSortOptionBySource=Lähteen mukaan	#
 hbui.EditorStructurePanel.actionBarSortOptionByTags=Merkkien mukaan	#
 hbui.EditorStructurePanel.actionBarSortOptionZtoa=Ö–A	#
 hbui.EditorStructurePanel.button=Painike	#
-hbui.EditorStructurePanel.contentElementsLabel=Sisältöelementit	#
 hbui.EditorStructurePanel.count=%1$s/%2$s	#
 hbui.EditorStructurePanel.countLabel=Määrä	#
+hbui.EditorStructurePanel.deleteButton=Poistopainike 	####Narration description for a button that deletes selected structures. {MaxLength=100}
+hbui.EditorStructurePanel.deleteModal.button.cancel=Peruuta 	####Structure delete modal button label that closes the modal with no operation {MaxLength=100}
+hbui.EditorStructurePanel.deleteModal.button.confirm=Poista nyt 	####Structure delete modal button label that confirms delete operation {MaxLength=100}
+hbui.EditorStructurePanel.deleteModal.button.ok=OK 	####Structure delete modal button label that closes the modal with no operation {MaxLength=100}
+hbui.EditorStructurePanel.deleteModal.messageMultiple=Haluatko varmasti poistaa %1$s rakennelmaa? 	####Modal message that indicates how many structures will be deleted {MaxLength=300}
+hbui.EditorStructurePanel.deleteModal.messageSingle=Haluatko varmasti poistaa kohteen ”%1$s”? 	####Modal message that indicates that a specific structure with a name will be deleted {MaxLength=300}
+hbui.EditorStructurePanel.deleteModal.note=Huomautus: Tuotujen pakettien rakennelmia ei voi poistaa (poista tuodut paketit poistaaksesi ne rakennelmaluettelostasi). 	####Modal note that explains imported/read only structures cant be deleted {MaxLength=300}
+hbui.EditorStructurePanel.deleteModal.title=Poista rakennelmat? 	####Label a modal that opens when deleting structures. {MaxLength=100}
+hbui.EditorStructurePanel.deleteModal.warning=Tätä ei voi peruuttaa. 	####Modal note that warns user that deleting structures cannot be reverted {MaxLength=300}
+hbui.EditorStructurePanel.details.contentLabel=Sisältö 	####Label for structure block contents. {MaxLength=100}
+hbui.EditorStructurePanel.details.copyId=Kopioi tunnus leikepöydälle -painike 	####Narration description for a button that copies minecraft id of the structure. {MaxLength=100}
+hbui.EditorStructurePanel.details.deleteLabel=Poista 	####Label for a button that deletes the selected structure as a new one. {MaxLength=100}
+hbui.EditorStructurePanel.details.duplicateLabel=Monista 	####Label for a button that duplicates selected the structure as a new one. {MaxLength=100}
+hbui.EditorStructurePanel.details.fileNameLabel=Tiedosto/yksilöllinen nimi 	####Label for the structure file name. {MaxLength=100}
+hbui.EditorStructurePanel.details.includeInExports=Sisällytä vientiin 	####A flag that determines if the editor structure instance should be included in export world/project. {MaxLength=100}
+hbui.EditorStructurePanel.details.itemMenu=Rakennelmaesinevalikko 	####Narration text for a context menu that has structure operations. {MaxLength=100}
+hbui.EditorStructurePanel.details.minecraftIdLabel=Minecraft-tunnus 	####Label for in game identifier for the structure. {MaxLength=100}
+hbui.EditorStructurePanel.details.nameLabel=Nimi 	####Label for structure display name. {MaxLength=100}
+hbui.EditorStructurePanel.details.namespaceAndSourceLabel=Nimiavaruus ja lähde 	####Label for an expandable button that displays structure details. {MaxLength=100}
+hbui.EditorStructurePanel.details.namespaceLabel=Nimiavaruus 	####Label for the structure namespace. {MaxLength=100}
+hbui.EditorStructurePanel.details.originLabel=Alkupiste 	####Label for structure origin input field. {MaxLength=100}
+hbui.EditorStructurePanel.details.replaceClipboardLabel=Kopioi leikepöydälle 	####Label for a button that replaces in level clipboard with the selected structure. {MaxLength=100}
+hbui.EditorStructurePanel.details.saveLabel=Tallenna 	####Label for a button that saves modified structure changes. {MaxLength=100}
+hbui.EditorStructurePanel.details.sizeLabel=Koko 	####Label for structure size input field. {MaxLength=100}
+hbui.EditorStructurePanel.details.sourceLabel=Lähde 	####Label for the source content the structure belongs to. {MaxLength=100}
+hbui.EditorStructurePanel.filterButton=Suodatinpainike 	####Narration description for a button that filters structure lists. {MaxLength=100}
 hbui.EditorStructurePanel.filterIconTooltip=Suodatin	#
 hbui.EditorStructurePanel.gridViewIconTooltip=Ruudukkonäkymä	#
 hbui.EditorStructurePanel.importLabel=Tuo	#
 hbui.EditorStructurePanel.listViewIconTooltip=Luettelonäkymä	#
-hbui.EditorStructurePanel.nameLabel=Nimi	#
-hbui.EditorStructurePanel.namespaceAndSourceSectionHeader=Nimiavaruus ja lähde	#
 hbui.EditorStructurePanel.narration=Rakennelmapaneeli	#
 hbui.EditorStructurePanel.newFromClipboardLabel=Uusi leikepöydältä	#
-hbui.EditorStructurePanel.originLabel=Alkuperä	#
-hbui.EditorStructurePanel.replaceClipboardLabel=Kopioi leikepöydälle	#
-hbui.EditorStructurePanel.saveLabel=Tallenna	#
-hbui.EditorStructurePanel.sizeLabel=Koko	#
 hbui.EditorStructurePanel.sortLabel=Järjestä	#
 hbui.EditorStructurePanel.structureContentSectionHeader=Rakennesisältö	#
 hbui.EditorStructurePanel.structureItem=StructureItem	#
 hbui.EditorStructurePanel.tagsSectionHeader=Tunnisteet	#
+hbui.EditorStructurePanel.toggleButton=Vaihtopainike 	####Narration description for a button that toggles all structures to be selected or deselected. {MaxLength=100}
 hbui.EditorStructurePanel.totalBlocksLabel=Estot yhteensä	#
 hbui.EditorStructurePanel.windowTitle=Rakenteet	#
 hbui.EditorSwitch.elementType=Kytkin	#
@@ -468,8 +527,7 @@ hbui.EditorWindowPanel.collapseButton=Kutista paneeli -painike	#
 hbui.EditorWindowPanel.dragHandle=Vetokahva	#
 hbui.EditorWindowPanel.elementType=Paneeli	#
 hbui.EditorWindowPanel.expandButton=Laajenna paneeli -painike	#
-hbui.Sample.hello=Hei %1$s!	#
-hbui.BackButton.back=Edellinen	#
+hbui.BackButton.back=Takaisin	#
 hbui.BackButton.narrationComponentType=Painike	#
 hbui.BackButton.narrationGoBack=Takaisin	#
 hbui.Banner.closeButtonNarrationHint=Sulje tämä %1$s liikkumalla oikealle	#
@@ -500,7 +558,7 @@ hbui.EmptyStateMessage.narrationTextBlock=Tekstikuutio	#
 hbui.HeroMessage.buttonEnumeration=%1$s/%2$s	#
 hbui.Link.narrationComponentType=Painike	#
 hbui.Link.open=Avaa	#
-hbui.Modal.backInputLegend=Edellinen	#
+hbui.Modal.backInputLegend=Takaisin	#
 hbui.Modal.backNarration=Edellinen-painike	#
 hbui.Modal.closeInputLegend=Sulje	#
 hbui.Modal.closeNarration=Sulje-painike	#
@@ -610,45 +668,6 @@ hbui.Toggle.select=Valitse	#
 hbui.TreeView.collapse=Pienennä	#
 hbui.TreeView.expand=Laajenna	#
 hbui.TreeView.open=Avaa	#
-hbui.Accordion.closeInputLegend=Sulje	#
-hbui.Accordion.openInputLegend=Avaa	#
-hbui.BackButton.back=Edellinen	#
-hbui.BackButton.narration.backButton=Edellinen-painike	#
-hbui.BaseDropdown.close=Sulje	#
-hbui.BaseDropdown.enumeration=%1$s/%2$s	#
-hbui.BaseDropdown.open=Avaa	#
-hbui.BaseDropdown.selected=Valittu	#
-hbui.BaseDropdown.stateCollapsed=Tiivistetty	#
-hbui.BaseDropdown.stateExpanded=Laajennettu	#
-hbui.BaseDropdown.toggleElementType=Vaihtoehto	#
-hbui.BaseSlider.currentValue=nykyinen arvo on	#
-hbui.BaseSlider.elementType=liukusäädin	#
-hbui.BaseSlider.maxValueIs=enimmäisarvo on	#
-hbui.BaseSlider.minValueIs=vähimmäisarvo on	#
-hbui.BaseSwitch.elementType=Kytkin	#
-hbui.BaseSwitch.narrationDisabled=Poista käytöstä	#
-hbui.BaseSwitch.off=Pois	#
-hbui.BaseSwitch.on=Päällä	#
-hbui.BaseSwitch.toggle=Valitse	#
-hbui.BaseTextField.addedNarration=Lisätty	#
-hbui.BaseTextField.deselect=Poista valinta	#
-hbui.BaseTextField.hint=Olet tällä hetkellä tekstinsyötössä. Syötä %1$s näppäimistöllä	#
-hbui.BaseTextField.invalidNarration=Virheellinen	#
-hbui.BaseTextField.removedNarration=Poistettu	#
-hbui.BaseTextField.replacedNarration=Korvattu tällä:	#
-hbui.BaseTextField.select=Valitse	#
-hbui.BaseTextField.selected=Valittu	#
-hbui.DropdownItem.elementType=Esine	#
-hbui.DropdownItem.narrationComponentType=Vaihtoehto	#
-hbui.DropdownItem.select=Valitse	#
-hbui.DropdownItem.selected=Valittu	#
-hbui.DropdownItem.unselected=Ei valittu	#
-hbui.ScrollView.loadingState=Ladataan	#
-hbui.ScrollView.narrationScrollViewComponentType=Sisältö	#
-hbui.TitleBar.Buttons.Back.inputLegend=Edellinen	#
-hbui.TitleBar.Buttons.Back.narration=Edellinen-painike	#
-hbui.TitleBar.Buttons.Close.inputLegend=Sulje	#
-hbui.TitleBar.Buttons.Close.narration=Sulje-painike	#
 hbui.Accordion.closeInputLegend=Sulje	#
 hbui.Accordion.narrationComponentType=Haitarivalikko	#
 hbui.Accordion.narrationCountLabel=%1$s - (%2$s)	#
@@ -931,12 +950,6 @@ hbui.CompareStatsRoute.header=Tilastovertailu	#
 hbui.CompareStatsRoute.playerItemsListRole=Vaakasuuntainen luettelo	#
 hbui.CompareStatsRoute.playerItemsNarration=Vertaile kahden pelaajan tietoja	#
 hbui.ConnectionErrorRoute.backToMenu=Takaisin valikkoon	#
-hbui.ConnectionErrorRoute.codewordDetailsHelp=Saat lisätietoja etsimällä sivustolta help.Minecraft.net yllä olevalla koodisanalla.	#
-hbui.ConnectionErrorRoute.codewordHelp=Saat lisätietoja etsimällä sivustolta help.Minecraft.net ”%1$s”.	#
-hbui.ConnectionErrorRoute.errorDetailsHelp=Lähetä tukipyyntö nämä tiedot sisältävällä näyttökuvalla saadaksesi lisäapua.	#
-hbui.ConnectionErrorRoute.header=Virheen tiedot	#
-hbui.ConnectionErrorRoute.learnMore=Lisätietoja	#
-hbui.ConnectionErrorRoute.showDetails=Näytä tiedot	#
 hbui.ControllerSpecificButtonNarration.Gamepad.A.KEYBOARD=Paina A	#
 hbui.ControllerSpecificButtonNarration.Gamepad.A.PS=Paina A	#
 hbui.ControllerSpecificButtonNarration.Gamepad.A.QUEST=Paina A	#
@@ -1710,7 +1723,7 @@ hbui.CreateNewWorld.unlockSettingsModal.keepSettings=Säilytä alkuperäiset ase
 hbui.CreateNewWorld.unlockSettingsModal.message=Saatat rikkoa luojan tarkoittaman käyttökokemuksen, jos avaat kaikki maailman asetukset. Tämä muutos on pysyvä.	#
 hbui.CreateNewWorld.unlockSettingsModal.title=Avaa kaikki maailman asetukset	#
 hbui.CreateNewWorld.unlockSettingsModal.unlock=Avaa silti	#
-hbui.CreateNewWorld.upsellModal.back=Edellinen	#
+hbui.CreateNewWorld.upsellModal.back=Takaisin	#
 hbui.CreateNewWorld.upsellModal.bodyNintendo=Tarvitset Nintendo Switch Online -tilauksen pelataksesi mitä tahansa alustojen välistä moninpeliä.	#
 hbui.CreateNewWorld.upsellModal.bodyPlaystation=Online-ominaisuudet eivät ole käytettävissä.	#
 hbui.CreateNewWorld.upsellModal.bodyXbox=Tarvitset Xbox Game Pass Core -tilauksen pelataksesi mitä tahansa alustojen välistä moninpeliä.	#
@@ -1728,6 +1741,16 @@ hbui.CreateNewWorldSideMenu.multiplayerTabLabel=Moninpeli	#
 hbui.CreateNewWorldSideMenu.narrationCreateButtonHint=Luo %1$s-tyypin maailma, jonka vaikeustaso on %2$s ja nimi on ''%3$s''. Siirry valikossa tehdäksesi muita valintoja.	#
 hbui.CreateNewWorldSideMenu.resourcePacksTabLabel=Resurssipaketit	#
 hbui.CreateNewWorldSideMenu.scriptingCodingTabLabel=Komentosarjat ja koodaus	#
+hbui.CreatePartyRoute.createPartyHeader=Luo ryhmä 	#### Create Party page title. For the purposes of this feature, a Party is a group of players joining up to  play together.
+hbui.CreatePartyRoute.friendsTitle=Ystävät (%1$s) 	#### The header for a list of Player List Items containing the user's friends
+hbui.CreatePartyRoute.inviteOnly=Vain kutsusta 	#### The title for a state where players can only join the party if invited
+hbui.CreatePartyRoute.inviteOnlyDescription=Pelaajat on kutsuttava mukaan ryhmään. 	#### Describes the invite only state
+hbui.CreatePartyRoute.maxPartyExplanation=Ryhmässä voi olla enintään 15 pelaajaa. 	#### Description explaining the maximum size of a party
+hbui.CreatePartyRoute.open=Avoin 	#### The title for a state where anyone can join the party
+hbui.CreatePartyRoute.openDescription=Pelaajat voivat liittyä ryhmään kutsumatta. 	#### Describes the Open state
+hbui.CreatePartyRoute.partyPrivacy=Ryhmän yksityisyys 	#### Title for the toggle which controls the party privacy state
+hbui.CreatePartyRoute.partySettings=Ryhmäasetukset 	#### title of the side bar which contains the party settings options
+hbui.CreatePartyRoute.recentlyPlayedWithTitle=Viimeaikaiset pelikaverit 	#### The header for a list of Player List Items containing players the user has recently played with
 hbui.DebugDrawer.closeButtonNarrationHint=Käytä alanuolta nähdäksesi lisätoimintoja	#
 hbui.DebugDrawer.closeDrawerShortcutInputLegend=Sulje	#
 hbui.DebugDrawer.title=Vianetsintä	#
@@ -1861,7 +1884,7 @@ hbui.FriendsDrawer.AddFriendsOnlineSafety.helpButton=Lisätietoja	#
 hbui.FriendsDrawer.AddFriendsOnlineSafety.text=Et voi lisätä ystäviä tiliasetusten rajoituksista johtuen. Hallinnoi moninpeliasetuksiasi tiliasetusten kohdasta ”Tietosuoja ja  verkkoturvallisuus”.	#
 hbui.FriendsDrawer.AddFriendsOnlineSafety.textParental=Et voi lisätä ystäviä lapsilukon vuoksi. Tarkastele ja hallinnoi moninpeliasetuksiasi lapsilukon kohdassa Verkkoturvallisuus.	#
 hbui.FriendsDrawer.AddFriendsOnlineSafety.title=Tarvitset luvan!	#
-hbui.FriendsDrawer.backButton=Edellinen	#
+hbui.FriendsDrawer.backButton=Takaisin	#
 hbui.FriendsDrawer.bannerLogInMicrosoft=Kirjaudu tai rekisteröidy Microsoft-tilille	#
 hbui.FriendsDrawer.closeButtonNarrationHint=Siirry alaspäin saadaksesi lisää vaihtoehtoja	#
 hbui.FriendsDrawer.closeDrawerShortcutInputLegend=Läheiset ystävät	#
@@ -1921,7 +1944,6 @@ hbui.GetMoreButton.buttonNarration=Painike	#
 hbui.GetMoreButton.inputLegend=Tutki	#
 hbui.GuidedCreateWorldRoute.title=Ohjattu maailman luominen	#
 hbui.HeroItem.role=Tekstikuutio	#
-hbui.InboxContentItem.narration.createdBy=Tekijä: %1$s	#
 hbui.InboxContentItem.view=Näytä	#
 hbui.InboxListItem.accept=Hyväksy	#
 hbui.InboxListItem.delete=Poista	#
@@ -2087,12 +2109,12 @@ hbui.JoinRealmsServerInvitationsButton.invitationsRole=Ryhmä	#
 hbui.JoinRealmsServerInvitationsButton.narrationSuffix=Avaa postilaatikko painamalla	#
 hbui.JoinRealmsServerInvitationsButton.noInvitesBody=Postilaatikossasi saattaa olla kutsuja!	#
 hbui.JoinRealmsServerInvitationsButton.noInvitesTitle=Eikö sinulla ole kutsulinkkiä?	#
-hbui.JoinRealmsServerTransient.caption=Voit poistua hänen Realmistaan milloin tahansa. Liity-painike alla.      	#### Realm here refers to a Realm server. Join is in the context of joining a Realm, meaning becoming a member of it. {MaxLength="100"}
+hbui.JoinRealmsServerTransient.caption=Voit poistua hänen Realmistaan milloin tahansa. Liity-painike alla.      	#### Realm here refers to a Realm server. Join is in the context of joining a Realm, meaning becoming a member of it. {StrContains="Realm"} {MaxLength="100"}
 hbui.JoinRealmsServerTransient.errorMessageTitle=Jokin meni pieleen    	#### Something went wrong when trying to join a Realm, this is a generic header for it. {MaxLength="100"}
-hbui.JoinRealmsServerTransient.genericTitle=Liity Realmiin    	#### Becoming a member of a Realm. {MaxLength="100"}
+hbui.JoinRealmsServerTransient.genericTitle=Liity Realmiin    	#### Becoming a member of a Realm. {StrContains="Realm"} {MaxLength="100"}
 hbui.JoinRealmsServerTransient.joinButtonLabel=Liity	#
 hbui.JoinRealmsServerTransient.joinRealmModal=Liitytään Realmiin	#
-hbui.JoinRealmsServerTransient.ownerInformation=Olet liittymässä käyttäjän %1$s Realmiin    	#### The player is about to become a member of another players Realm.{MaxLength="100"}
+hbui.JoinRealmsServerTransient.ownerInformation=Olet liittymässä käyttäjän %1$s Realmiin    	#### The player is about to become a member of another players Realm. {StrContains="Realm"} {MaxLength="100"}
 hbui.JoinRealmsServerTransient.successSnackbar=Liityit tänne:  ”%1$s”!	#
 hbui.JoinRealmsServerTransient.title=Liity: %1$s    	#### Join as in "Join Realm". Becoming a member of a Realm. {MaxLength="20"}
 hbui.JoinServerWarningModal.cancel=Peruuta	#
@@ -2279,6 +2301,7 @@ hbui.PlayerBannedModalRoute.xbox.report.terrorismOrViolentExtremism=Viittaukset 
 hbui.PlayerBannedModalRoute.xbox.report.unsportingBehavior=Epäurheilijamainen käytös	#
 hbui.PlayerCard.addedButton=Lisätty	#
 hbui.PlayerCard.addFriendButton=Lisää kaveri	#
+hbui.PlayerCard.away=Poissa		####Used to show player status {MaxLength=20}
 hbui.PlayerCard.blocked=Estetty	#
 hbui.PlayerCard.buttonRole=painike	#
 hbui.PlayerCard.buttonSiblings=%1$s/%2$s	#
@@ -2299,6 +2322,9 @@ hbui.PlayerListItem.away=Poissa	#
 hbui.PlayerListItem.buttonSiblings=Painike %1$s/%2$s	#
 hbui.PlayerListItem.delete=Poista	#
 hbui.PlayerListItem.friends=Ystävät	#
+hbui.PlayerListItem.inviteButtonInputLegend=Kutsu ystävä 	#### The input legend text for a button used to invite someone to a party
+hbui.PlayerListItem.inviteButtonText=Kutsu 	#### The text that appears on a button for inviting a player to a party
+hbui.PlayerListItem.invited=Kutsuttu 	#### The text that appears after a player has been invited to a party
 hbui.PlayerListItem.join=Liity	#
 hbui.PlayerListItem.narration.addedMutual=Olet tämän pelaajan ystävä	#
 hbui.PlayerListItem.narration.addedNotMutual=Lisäsit tämän pelaajan	#
@@ -2315,6 +2341,7 @@ hbui.PlayerListItem.online=Online	#
 hbui.PlayerListItem.online.playstation=Online-tilassa PSN™-verkossa		#### CertRequirement: [PSN™]
 hbui.PlayerListItem.online.switch=Online-tilassa Switchillä	#
 hbui.PlayerListItem.pending=Odottaa	#
+hbui.PlayerListItem.playingInSameWorld=Pelaa tässä maailmassa		####Used as player status when players are in the same world {MaxLength=30}
 hbui.PlayerListItem.receivedRequest=Lähetti sinulle pyynnön	#
 hbui.PlayerListItem.reject=Hylkää	#
 hbui.PlayerListItem.select=Valitse	#
@@ -2442,7 +2469,7 @@ hbui.PlayScreen.designPreviewTitle=Tervetuloa suunnittelun esikatseluun!	#
 hbui.PlayScreen.errorOnLoadingText=Jokin meni pieleen. Yritä myöhemmin uudelleen.	#
 hbui.PlayScreen.errorOnLoadingTitle=%1$s ei latautunut	#
 hbui.PlayScreen.experimentalWorldLoadingModal.action=Lataa maailma	#
-hbui.PlayScreen.experimentalWorldLoadingModal.back=Edellinen	#
+hbui.PlayScreen.experimentalWorldLoadingModal.back=Takaisin	#
 hbui.PlayScreen.experimentalWorldLoadingModal.bodyFirstParagraph=Tämä maailma käyttää kehitysvaiheessa olevia ominaisuuksia. Se voi kaatua, rikkoutua tai lakata toimimasta milloin tahansa.	#
 hbui.PlayScreen.experimentalWorldLoadingModal.bodySecondParagraph=Ole varovainen! Voit menettää kaiken, mitä rakennat tässä maailmassa.	#
 hbui.PlayScreen.experimentalWorldLoadingModal.goBackButtonText=Palaa takaisin	#
@@ -2513,7 +2540,7 @@ hbui.PlayScreen.multiplayerBlocked.close=Sulje	#
 hbui.PlayScreen.multiplayerBlocked.title=Moninpeli on pois käytöstä	#
 hbui.PlayScreen.narration.title=Toista vaakasuuntainen välilehti	#
 hbui.PlayScreen.noInternetMessage.title=Olet offline-tilassa	#
-hbui.PlayScreen.nonMultiplayerSkinModal.back=Edellinen	#
+hbui.PlayScreen.nonMultiplayerSkinModal.back=Takaisin	#
 hbui.PlayScreen.nonMultiplayerSkinModal.body=Nykyinen olemuksesi on peräisin sisältöpaketista, jota ei sallita moninpelissä. Vaihda olemuksesi tai jatka tähän maailmaan ilman moninpeliä.	#
 hbui.PlayScreen.nonMultiplayerSkinModal.changeAction=Vaihda olemusta	#
 hbui.PlayScreen.nonMultiplayerSkinModal.continueAction=Jatka ilman moninpeliä	#
@@ -2525,7 +2552,7 @@ hbui.PlayScreen.noPremiumSubscriptionMessage.realmsXbox=Tarvitset Premium-tilauk
 hbui.PlayScreen.noPremiumSubscriptionMessage.serversNintendo=Tarvitset Nintendo Switch Online -jäsenyyden, jotta voit pelata palvelimilla.	#
 hbui.PlayScreen.noPremiumSubscriptionMessage.serversPlaystation=Online-ominaisuudet eivät ole käytettävissä.	#
 hbui.PlayScreen.noPremiumSubscriptionMessage.serversXbox=Tarvitset Premium-tilauksen, jotta voit pelata palvelimilla	#
-hbui.PlayScreen.onlinePlayWarning.back=Edellinen	#
+hbui.PlayScreen.onlinePlayWarning.back=Takaisin	#
 hbui.PlayScreen.onlinePlayWarning.external.body=Verkkopelaamisen aikana saatat altistua chattiviesteille tai muille käyttäjien luomille sisällöille, joita ei ole arvioitu ja jotka eivät välttämättä sovi kaikille ikäryhmille.	#
 hbui.PlayScreen.onlinePlayWarning.external.header=Verkkopelaamista ei ole arvioitu	#
 hbui.PlayScreen.onlinePlayWarning.multiplayerGeneric.body=Verkkopelaamisen aikana saatat altistua chattiviesteille tai muille käyttäjien luomille sisällöille, joita ei ole arvioitu ja jotka eivät välttämättä sovi kaikille ikäryhmille.	#
@@ -2970,7 +2997,7 @@ hbui.RealmsPDPScreen.FAQ.PersonalServer.title=Mikä on henkilökohtainen palveli
 hbui.RealmsPDPScreen.FAQ.Realms.description=Realmsit ovat pieniä henkilökohtaisia palvelimia Minecraft-maailmasi isännöintiin. Toisin kuin tavallisessa moninpelissä, Realmsit ovat aina verkossa, joten sinun ei tarvitse olla paikalla, jotta ystäväsi voivat pelata siellä. Toisin kuin suuri julkinen Minecraft-palvelin, Realmseihin pääsee vain kutsusta, joten sinä päätät, kuka pääsee sisään.  	#### {StrContains="Realms"}
 hbui.RealmsPDPScreen.FAQ.Realms.title=Mitä Realmsit ovat?  	#### {StrContains="Realms"}
 hbui.RealmsPDPScreen.hero.content.header=Hanki lisäsisältöä Realms Plussalla    	#### {StrContains="Realms"}
-hbui.RealmsPDPScreen.hero.content.text=Realms Plus -tilauksiin sisältyy Marketplace Pass: ilmaista kuukausittain päivitettävää kauppasisältöä. Olemuksilla, hahmonluontiesineillä, maailmoilla, tekstuureilla ja yhdistelmäpaketeilla voit aina kokeilla jotain uutta.  	#### {MaxLength="250"} {StrContains="Realms"}
+hbui.RealmsPDPScreen.hero.content.text=Realms Plus -tilauksiin sisältyy Marketplace Pass: ilmaista kuukausittain päivitettävää kauppasisältöä. Olemuksilla, hahmonluontiesineillä, maailmoilla, tekstuureilla ja yhdistelmäpaketeilla voit aina kokeilla jotain uutta.  	#### {MaxLength="250"} {StrContains="Realms Plus"}
 hbui.RealmsPDPScreen.hero.content.title=Käyttöoikeus yli 150 kauppapakettiin    	#### {MaxLength="56"}
 hbui.RealmsPDPScreen.hero.perks.header=Realmsin mukana tulevat lisäedut    	#### {StrContains="Realms"}
 hbui.RealmsPDPScreen.hero.perks.text=Jaa seikkailusi tarinasyötteessä, seuraa Realmisi kasvua Jäsenet-välilehdeltä, näe aikajanalta milloin ihmiset ovat pelanneet Realmia.    	#### {MaxLength="250"} {StrContains="Realm"}
@@ -2988,16 +3015,16 @@ hbui.RealmsPDPScreen.splash.text=Pidä omaa Minecraft-palvelinta! Päätä, kuka
 hbui.RealmsPDPScreen.splash.title=Oma palvelimesi, aina online-tilassa    	#### {MaxLength="50"}
 hbui.RealmsPDPScreen.splash.tryFree=Ilmainen kokeilu    	#### {MaxLength="20"}
 hbui.RealmsPDPScreen.title=Minecraft Realms 	#### {StrContains="Realms"}
-hbui.RealmsPlanPickerScreen.banners.coreSubscriptionsLimit=Olet saavuttanut Realms Core -tilauksien rajan tällä alustalla 	#### {MaxLength="72"}
-hbui.RealmsPlanPickerScreen.banners.plusSubscriptionsLimit=Olet saavuttanut Realms Plus -tilauksien rajan tällä alustalla 	#### {MaxLength="72"}
+hbui.RealmsPlanPickerScreen.banners.coreSubscriptionsLimit=Olet saavuttanut Realms Core -tilauksien rajan tällä alustalla		#### {MaxLength="150"} {StrContains="Realms Core"}
+hbui.RealmsPlanPickerScreen.banners.plusSubscriptionsLimit=Olet saavuttanut Realms Plus -tilauksien rajan tällä alustalla		#### {MaxLength="150"} {StrContains="Realms Plus"}
 hbui.RealmsPlanPickerScreen.buyButtonCore=Osta Realms-perustilaus				#### {StrContains="Realms"}
 hbui.RealmsPlanPickerScreen.buyButtonCoreNarrationHint=Siirry alle saadaksesi lisätietoja Realms Coresta			#### {StrContains="Realms"}
 hbui.RealmsPlanPickerScreen.buyButtonPlus=Osta Realms Plus				#### {StrContains="Realms"}
 hbui.RealmsPlanPickerScreen.buyButtonPlusNarrationHint=Siirry alle saadaksesi lisätietoja Realms Plussasta			#### {StrContains="Realms"}
 hbui.RealmsPlanPickerScreen.buyRealmsPlusButtonTrial=Ilmainen kokeilu	#
 hbui.RealmsPlanPickerScreen.currency=$	#
-hbui.RealmsPlanPickerScreen.emptyStates.maxedOutSubscriptions.body=Olet saavuttanut sekä Realms Core- että Realms Plus -tilauksien rajan tällä alustalla.  	#### {MaxLength="95"}
-hbui.RealmsPlanPickerScreen.emptyStates.maxedOutSubscriptions.title=Realms-tilaukset ovat täynnä tällä alustalla 	#### {MaxLength="47"}
+hbui.RealmsPlanPickerScreen.emptyStates.maxedOutSubscriptions.body=Olet saavuttanut sekä Realms Core- että Realms Plus -tilauksien rajan tällä alustalla.		#### {MaxLength="150"} {StrContains="Realms Core"} {StrContains="Realms Plus"}
+hbui.RealmsPlanPickerScreen.emptyStates.maxedOutSubscriptions.title=Realms-tilaukset ovat täynnä tällä alustalla		#### {MaxLength="150"} {StrContains="Realms"}
 hbui.RealmsPlanPickerScreen.error.body=Varmista, että olet kirjautunut sekä Minecraftiin että laitteesi omaan kauppaan samalla tilillä, ja yritä uudelleen.	#
 hbui.RealmsPlanPickerScreen.error.button=Yritä uudelleen	#
 hbui.RealmsPlanPickerScreen.error.title=Alustan kauppaan ei saatu yhteyttä	#
@@ -3097,7 +3124,7 @@ hbui.RealmsPurchaseSubscriptionRoute.termsAndConditionsTextBlock.name=Käyttöeh
 hbui.RealmsPurchaseSubscriptionRoute.termsAndConditionsTextBlock.role=tekstikuutio	#
 hbui.RealmsStories.back=Palaa takaisin	#
 hbui.RealmsStories.byline=kirjoittanut %1$s	#
-hbui.RealmsStories.CommentsScreen.back=Edellinen	#
+hbui.RealmsStories.CommentsScreen.back=Takaisin	#
 hbui.RealmsStories.CommentsScreen.enumeration=%1$s/%2$s	#
 hbui.RealmsStories.CommentsScreen.header=Kommentit	#
 hbui.RealmsStories.CommentsScreen.inputField=Syöttökenttä	#
@@ -3302,7 +3329,7 @@ hbui.RealmsStories.messages.timelineEmpty.body=Pelaa Realmissa luodaksesi aikaja
 hbui.RealmsStories.messages.timelineEmpty.title=Tietoja ei ole saatavilla	#
 hbui.RealmsStories.messages.timelineOff.body=Realmin omistaja on poistanut käytöstä aikajanan tässä Realmissa.	#
 hbui.RealmsStories.messages.timelineOff.title=Aikajana on pois käytöstä	#
-hbui.RealmsStories.messages.timelineOptIn.body=Katso muiden jäsenten luomuksia, kun he pelaavat tai harkitse liittyväsi heidän seuraansa! Aikajana näyttää, milloin pelaajat olivat Realmissa. Mitä suurempi värikuutio, sitä pidempään he pelasivat.		#### {StrContains="Realm"} {MaxLength="200"} This is an explanation of the Realms Timeline feature.
+hbui.RealmsStories.messages.timelineOptIn.body=Katso muiden jäsenten luomuksia, kun he pelaavat tai harkitse liittyväsi heidän seuraansa! Aikajana näyttää, milloin pelaajat olivat Realmissa. Mitä suurempi värikuutio, sitä pidempään he pelasivat.		#### {StrContains="Realm"} {MaxLength="250"} This is an explanation of the Realms Timeline feature.
 hbui.RealmsStories.messages.timelineOptIn.button=Haluan liittyä	#
 hbui.RealmsStories.messages.timelineOptIn.maybeLaterButton=Ehkä myöhemmin		#### {MaxLength="20"}  Player is currently declining to opt into the timeline.
 hbui.RealmsStories.messages.timelineOptIn.members=Osallistuneet jäsenet: %1$s/%2$s	#
@@ -3543,6 +3570,9 @@ hbui.ReportPlayerRoute.xbox.report.area.ingame=Pelin sisäiset luomukset	#
 hbui.ReportPlayerRoute.xbox.report.area.nameOrGamertag=Pelaajan nimi tai pelaajatunnus	#
 hbui.ReportPlayerRoute.xbox.report.area.other=Muu	#
 hbui.ReportPlayerRoute.xbox.report.area.skin=Pelaajan olemus	#
+hbui.ScreenshotDeleteErrorModal.close=Sulje		#### {MaxLength=40} Closes the modal that has appeared. This was previously ScreenshotGalleryRoute.deleteScreenshotsErrorModal.close
+hbui.ScreenshotDeleteErrorModal.text=Näyttökuvaa ei voitu poistaa. Tarkista internetyhteytesi ja yritä uudelleen. 	#### {MaxLength=1000} Indicates that an operation requested by the user to delete a screenshot in their gallery has failed. This was previously ScreenshotGalleryRoute.deleteScreenshotsErrorModal.text
+hbui.ScreenshotDeleteErrorModal.title=Näyttökuvan poistaminen epäonnistui		#### {MaxLength=40} Indicates that an operation requested by the user to delete a screenshot in their gallery has failed. This was previously ScreenshotGalleryRoute.deleteScreenshotsErrorModal.title
 hbui.ScreenshotDeleteModal.cancel=Peruuta	#
 hbui.ScreenshotDeleteModal.delete=Poista	#
 hbui.ScreenshotDeleteModal.text=Tätä toimintoa ei voi kumota. Haluatko varmasti poistaa tämän näyttökuvan?	#
@@ -3555,7 +3585,7 @@ hbui.ScreenshotDetailsRoute.title=Näyttökuvan tiedot	#
 hbui.ScreenshotDetailsSideMenu.deleteScreenshot=Poista kuvakaappaus	#
 hbui.ScreenshotDetailsSideMenu.deviceStorage=Siirry tallennusasetuksiin	#
 hbui.ScreenshotDetailsSideMenu.fullImage=Koko näyttö	#
-hbui.ScreenshotDetailsSideMenu.fullImageBack=Edellinen	#
+hbui.ScreenshotDetailsSideMenu.fullImageBack=Takaisin	#
 hbui.ScreenshotDetailsSideMenu.index=%1$s / %2$s	#
 hbui.ScreenshotDetailsSideMenu.manage=Hallitse	#
 hbui.ScreenshotDetailsSideMenu.narration.buttonRole=Painike	#
@@ -3643,9 +3673,6 @@ hbui.ScreenshotGalleryItem.showcased=Esitelty	#
 hbui.ScreenshotGalleryMenu.optionsEnumeration=%1$s/%2$s	#
 hbui.ScreenshotGalleryRoute.deleteScreenshots=Poista kuvakaappaukset	#
 hbui.ScreenshotGalleryRoute.deleteScreenshotsButton=Poista kuvakaappaukset	#
-hbui.ScreenshotGalleryRoute.deleteScreenshotsErrorModal.close=Sulje	#
-hbui.ScreenshotGalleryRoute.deleteScreenshotsErrorModal.text=Näyttökuvaa ei voitu poistaa. Tarkista internetyhteytesi ja yritä uudelleen.	#
-hbui.ScreenshotGalleryRoute.deleteScreenshotsErrorModal.title=Näyttökuvan poistaminen epäonnistui	#
 hbui.ScreenshotGalleryRoute.deleteScreenshotsLink=Poista kuvakaappaukset	#
 hbui.ScreenshotGalleryRoute.deleteScreenshotsModal.cancelButton=Peruuta	#
 hbui.ScreenshotGalleryRoute.deleteScreenshotsModal.deleteButton=Poista	#
@@ -3673,7 +3700,7 @@ hbui.ScreenshotShowcaseGrid.narration.gridTitle=Esittelygalleria	#
 hbui.ScreenshotShowcaseGrid.narration.showcasedScreenshotHint=Valitse näyttökuva näkyville esittelygalleriassasi.	#
 hbui.ScreenshotShowcaseRoute.header=Pelaajan %1$s esittelygalleria	#
 hbui.SeedTemplateCard.narrationSuffix=Ennalta määritetty siemen	#
-hbui.SeedTemplatesRoute.errorBackButtonInputLegend=Edellinen	#
+hbui.SeedTemplatesRoute.errorBackButtonInputLegend=Takaisin	#
 hbui.SeedTemplatesRoute.errorBackButtonText=Palaa takaisin	#
 hbui.SeedTemplatesRoute.errorMessageBody=Tapahtui tuntematon virhe, yritä uudelleen.	#
 hbui.SeedTemplatesRoute.errorMessageTitle=Siemenmalleja ei voitu ladata!	#
@@ -3697,32 +3724,28 @@ hbui.SideStoryPostContainer.role=Tekstikuutio	#
 hbui.SignInAchievementsRoute.laterButton=Ehkä myöhemmin	#
 hbui.SignInAchievementsRoute.signInButton=Kirjaudu nyt	#
 hbui.SignInAchievementsRoute.signInHeader=Ansaitse saavutuksia 	####Short Header for modal, player can earn achievements{MaxLength=55}
-hbui.SignInAchievementsRoute.signInList1=Seuraa edistymistäsi ja virstanpylväitäsi Minecraftissa	#
-hbui.SignInAchievementsRoute.signInList2=Avaa ainutlaatuisia hahmonluontiesineitä	#
-hbui.SignInAchievementsRoute.signInList3=Esittele saavutuksiasi ystävillesi	#
-hbui.SignInAchievementsRoute.signInPrompt=Kirjaudu tai rekisteröidy ilmaiseksi aloittaaksesi saavutusten ansaitsemisen 	####Body of modal, informing player that signing in will allow them to earn achievements{MaxLength=200}
+hbui.SignInAchievementsRoute.signInPrompt=Kirjaudu tai rekisteröidy ilmaiseksi aloittaaksesi saavutusten ansaitsemisen.    	####Prompt encouraging player to sign in, informing them that signing in will allow them to earn achievements{MaxLength=1000}
 hbui.SignInAddFriendRoute.laterButton=Ehkä myöhemmin	#
 hbui.SignInAddFriendRoute.signInButton=Kirjaudu nyt	#
 hbui.SignInAddFriendRoute.signInHeader=Etsi ystäviä muilta alustoilta  	####Header for modal, allow for searching for friends via search bar{MaxLength=55}
-hbui.SignInAddFriendRoute.signInPrompt=Kirjaudu tai rekisteröidy ilmaiseksi muodostaaksesi yhteyden ystäviin muilla alustoilla   	####Body of modal, player will be able to play multiplayer with other cross platform friends{MaxLength=200}
+hbui.SignInAddFriendRoute.signInPrompt=Kirjaudu tai rekisteröidy ilmaiseksi muodostaaksesi yhteyden ystäviin muilla alustoilla.  	####Prompt encouraging player to sign in, informing them that if signed in they can play multiplayer with friends on any device{MaxLength=1000}
 hbui.SignInDressingRoomRoute.laterButton=Ehkä myöhemmin	#
 hbui.SignInDressingRoomRoute.signInButton=Kirjaudu nyt	#
 hbui.SignInDressingRoomRoute.signInHeader=Päheä hahmo!	#
-hbui.SignInDressingRoomRoute.signInPrompt=Kirjaudu sisään tallentaaksesi hahmosi käytettäväksi eri laitteilla ja alustoilla.	#
+hbui.SignInDressingRoomRoute.signInPrompt=Kirjaudu tai rekisteröidy ilmaiseksi, jotta voit tallentaa hahmosi eri laitteille ja alustoille.  	####Prompt encouraging player to sign in, informing them that if signed in their character's appearance that they recently changed in the dressing room can be made available on any device{MaxLength=1000}
 hbui.SignInMarketplaceRoute.laterButton=Ehkä myöhemmin	#
 hbui.SignInMarketplaceRoute.signInButton=Kirjaudu nyt	#
 hbui.SignInMarketplaceRoute.signInHeader=Tervetuloa kauppaan!	#
-hbui.SignInMarketplaceRoute.signInList1=Käytä ostamaasi kaupan sisältöä ja hahmoja eri alustoilla.	#
-hbui.SignInMarketplaceRoute.signInPrompt=Kirjaudu sisään, niin voit tallentaa ostoksesi tilillesi, jotta ne ovat aina käytettävissäsi.	#
+hbui.SignInMarketplaceRoute.signInPrompt=Kirjaudu tai rekisteröidy ilmaiseksi, niin voit tallentaa ostoksesi tilillesi, jotta ne ovat aina käytettävissäsi.  	####Prompt encouraging player to sign in, informing them that if signed in their Marketplace purchases can be saved to their account{MaxLength=1000}
 hbui.SignInPlayOnServerRoute.laterButton=Ehkä myöhemmin	#
 hbui.SignInPlayOnServerRoute.signInButton=Kirjaudu nyt	#
 hbui.SignInPlayOnServerRoute.signInHeader=Pelaa esittelyssä olevilla palvelimilla  	####Header for modal, allow player to play on big, custom featured servers made by other players{MaxLength=55}
-hbui.SignInPlayOnServerRoute.signInPrompt=Kirjaudu tai rekisteröidy ilmaiseksi pelataksesi esittelyssä olevilla palvelimilla 	####Body of modal, signing in allows player to play on such servers{MaxLength=200}
+hbui.SignInPlayOnServerRoute.signInPrompt=Kirjaudu tai rekisteröidy ilmaiseksi pelataksesi esittelyssä olevilla palvelimilla.  	####Prompt for the player to sign in so they can play on servers{MaxLength=1000}
 hbui.SignInSavePurchasesRoute.createAccountPrompt=Eikö sinulla ole Microsoft-tiliä? Luo sellainen nyt – ilmaiseksi!	#
 hbui.SignInSavePurchasesRoute.laterButton=Ehkä myöhemmin	#
 hbui.SignInSavePurchasesRoute.signInButton=Kirjaudu nyt	#
 hbui.SignInSavePurchasesRoute.signInHeader=Tallenna ostoksesi  	####Modal header, save marketplace skin and map entitlements{MaxLength=55}
-hbui.SignInSavePurchasesRoute.signInPrompt=Kirjaudu tai rekisteröidy ilmaiseksi, jotta voit tallentaa kauppaostoksesi   	####Modal body, signing in allows player to save their entilements{MaxLength=200}
+hbui.SignInSavePurchasesRoute.signInPrompt=Kirjaudu tai rekisteröidy ilmaiseksi, jotta voit tallentaa kauppaostoksesi.  	####Prompt encouraging player to sign in, informing them that if signed in their Marketplace purchases can be saved to their account{MaxLength=1000}
 hbui.SignInWorldsFriendsServersRoute.createAccountPrompt=Eikö sinulla ole Microsoft-tiliä? Luo sellainen nyt – ilmaiseksi!	#
 hbui.SignInWorldsFriendsServersRoute.laterButton=Ehkä myöhemmin	#
 hbui.SignInWorldsFriendsServersRoute.signInButton=Kirjaudu nyt	#
@@ -3995,3 +4018,4 @@ hbui.WorldTag.hardcore=Hardcore	#
 hbui.WorldTag.lan=LAN	#
 hbui.WorldTag.survival=Selviytyjä	#
 hbui.WorldTag.unknown=Tuntematon 	#### Unknown type of Minecraft world. A known type would be eg survival or creative. {MaxLength=21}
+hbui.Sample.hello=Hei %1$s!	#

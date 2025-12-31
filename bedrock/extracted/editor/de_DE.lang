@@ -297,6 +297,7 @@ resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.QuickExtrudeMode.dec
 resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.QuickExtrudeMode.expand.title=Erweitern	#
 resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.QuickExtrudeMode.expand.tooltip=Extrusion erweitern	#
 resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.LayerCount.title=Schichtanzahl	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.preview_warning=Hinweis: In der Vorschau-Anzeige ist nur die erste Ebene zu sehen 	#### {MaxLength="500"}, used to inform the user that the preview visualization for this tool is limited to a single layer.  This string is on screen whenever this tool is active
 resourcePack.editor.toolRail.ExtrudeTool.pane.ExtrusionType.title=Extrusionstyp	#
 resourcePack.editor.toolRail.ExtrudeTool.pane.ExtrusionType.Extrude=Extrudieren	#
 resourcePack.editor.toolRail.ExtrudeTool.pane.ExtrusionType.QuickExtrude=Schnell extrudieren	#
@@ -524,6 +525,30 @@ resourcePack.editor.playtestResult.WorldExportBusy=Welt-Export ist beschäftigt	
 resourcePack.editor.playtestResult.WorldExportFailed=Welt-Export fehlgeschlagen	#
 
 
+resourcePack.editor.menuBar.file.realmsPublish=In Realms veröffentlichen   	####This string is intended to express that the option is for opening the pane to publish your editor world to Realms.{MaxLength=100}
+resourcePack.editor.realmsPublish.userNotLoggedIn=Zur Veröffentlichung in Realms wird ein aktives Realms-Abonnement benötigt. Du kannst Realms abonnieren oder abgelaufene Abonnements erneuern – vom Standard-Minecraft-Client oder auf der Minecraft.net-Website (nachdem du dich in deinem Konto angemeldet hast).    	####This string is intended to express that the user is not logged in currently and the process they need to follow in order to be able to upload their editor world to their Realms subscription.{MaxLength=350}
+resourcePack.editor.realmsPublish.goToMinecraftWebsite=Zu Minecraft.net  	####This string is intended to express that the link will take the user to Minecraft.net.{MaxLength=100}
+resourcePack.editor.realmsPublish.Refresh=Aktualisieren  	####This string is intended to express that the button will refresh the pane to see if the user in now logged in.{MaxLength=100}
+resourcePack.editor.realmsPublish.Realm=Realm  	####This string is intended to express that the below dropdown contains all of the users Realms subscriptions.{MaxLength=100}
+resourcePack.editor.realmsPublish.RealmSlot=Realm-Platz 	####This string is intended to express that the dropdown contains all of the world slots in for the users selected realms subscription.{MaxLength=100}
+resourcePack.editor.realmsPublish.PublishNotesTitle=In Realms-Note veröffentlichen   	####This string is intended to express that the below field will contain additional information for the user about the publish to realms feature, including any warnings or issues.{MaxLength=150}
+resourcePack.editor.realmsPublish.DownloadRealm=Herunterladen    	####This string is intended to express that the button will download the currently selected World from the realm slot.{MaxLength=100}
+resourcePack.editor.realmsPublish.PublishRealm=Veröffentlichen  	####This string is intended to express that the button will publish the current world to the currently selected realm slot.{MaxLength=100}
+resourcePack.editor.realmsPublish.Confirm=Bestätigen   	####This string is intended to express that the button will confirm  the request to publish the world to realms.{MaxLength=100}
+resourcePack.editor.realmsPublish.Cancel=Abbrechen 	####This string is intended to express that the button will cancel the request to publish the world to realms.{MaxLength=100}
+resourcePack.editor.realmsPublish.Back=Zurück 	####This string is intended to express that the button will take the user back to the previous pane.{MaxLength=100}
+resourcePack.editor.realmsPublish.PublishFailed=Fehler beim veröffentlichen in Realms. Bitte später erneut versuchen.   	####This string is intended to express that publishing the world to Realms failed and to please try again later.{MaxLength=200}
+resourcePack.editor.realmsPublish.PublishSuccess=Die Veröffentlichung in Realms war erfolgreich    	####This string is intended to express that publishing the world to Realms succeeded.{MaxLength=200}
+resourcePack.editor.realmsPublish.PublishConfirmationOptOut=Frag nicht noch einmal nach diesem Realm und dieser Sitzung  	####This string is intended to express that the checkbox will opt the user out of confirming their publish to realms decisions.{MaxLength=100}
+resourcePack.editor.realmsPublish.PublishingToRealms=Veröffentlichung der Welt in Realms ...  	####This string is intended to express that the world is currently in the process of being published to Realms.{MaxLength=100}
+resourcePack.editor.realmsPublish.UnableToPublishMissingRealm=Die Veröffentlichung auf Realms ist nicht möglich. Kein Realm ausgewählt    	####This string is intended to express that the user is unable to publish their world because a realm to upload to has not been selected.{MaxLength=250}
+resourcePack.editor.realmsPublish.UnableToPublishMissingRealmSlot=Die Veröffentlichung auf Realms ist nicht möglich. Kein Realm-Platz ausgewählt   	####This string is intended to express that the user is unable to publish their world because a realm slot to upload to has not been selected.{MaxLength=250}
+resourcePack.editor.realmsPublish.PublishConfirmationWarning=Hierdurch entfernst du die aktuelle Welt vom ausgewählten Platz, um sie durch deine aktuelle Editor-Welt zu ersetzen (der ausgewählte Platz wird auch zum aktiven Platz für deinen Realm). Die Mitglieder deines Realms haben Zugang zu deiner neu eingesetzten Welt. Wenn du deine aktuelle Welt vor der Veröffentlichung speichern möchtest, um Datenverlust zu vermeiden, brich jetzt den Vorgang ab und wähl vor dem Veröffentlichen per Klick die Download-Option. Wähl die Option „Bestätigen“, um fortzufahren und deine aktuelle Welt zu ersetzen.    	####This string is intended to warn the user that if they publish their world to Realms, the world currently in that Realms slot will be deleted and unrecoverable. It also informs the user that members of the Realm will be able to access this world.{MaxLength=1000}
+resourcePack.editor.realmsPublish.DownloadSuccess=Das Herunterladen der Welt von Realms war erfolgreich!    	####This string is intended to express that downloading a world from Realms succeeded.{MaxLength=200}
+resourcePack.editor.realmsPublish.DownloadFailed=Das Herunterladen der Welt von Realms ist fehlgeschlagen! 	####This string is intended to express that downloading a world from Realms failed.{MaxLength=200}
+resourcePack.editor.realmsPublish.DownloadingFromRealms=Welt von Realms wird heruntergeladen …    	####This string is intended to express that we're in the middle of downloading a world from Realms and waiting for that operation to complete.{MaxLength=200}
+
+
 resourcePack.editor.toolRail.RepeaterTool.title=Wiederholwerkzeug	#
 resourcePack.editor.toolRail.RepeaterTool.tooltip=Werkzeug zum Wiederholen eines Auswahlvolumens	#
 resourcePack.editor.toolRail.RepeaterTool.pane.Spacing=Abstand	#
@@ -532,6 +557,18 @@ resourcePack.editor.toolRail.RepeaterTool.pane.Preview=Vorschau	#
 resourcePack.editor.toolRail.RepeaterTool.pane.Clear=Entfernen	#
 resourcePack.editor.toolRail.RepeaterTool.pane.Apply=Anwenden	#
 resourcePack.editor.toolRail.RepeaterTool.statusMessage.noSelection=Auswahlwerkzeug verwenden, um ein Volumen für die Wiederholung auszuwählen	#
+resourcePack.editor.toolRail.RepeaterTool.pane.Mode=Modus		####"Mode" describes a dropdown that contains the two different states the tool can be in. These are "Line" and "Grid" {MaxLength=20}
+resourcePack.editor.toolRail.RepeaterTool.mode.Line=Linie		####"Line" describes a straight, unbroken visual between two points {MaxLength=20}
+resourcePack.editor.toolRail.RepeaterTool.mode.Grid=Gitternetz		####"Grid" describes a visual consisting of parallel lines at regular intervals, broken up by perpendicular lines at regular intervals, like grid paper. {MaxLength=20}
+resourcePack.editor.toolRail.RepeaterTool.pane.RepeatType=Wiederholungsart		####"Repeat Type" describes a dropdown that contains the two types "Uniform" and "Separate" and represents how the repetitions along the three axes (plural of "axis") will be determined {MaxLength=40}
+resourcePack.editor.toolRail.RepeaterTool.repeat.Uniform=Einheitlich		####"Uniform" describes the repeat state of the Repeater Tool where it applies the same number of repetitions across all three axes (X, Y, and Z). "Uniform" was chosen as a short word that also means "consistent across multiple instances" {MaxLength=20}
+resourcePack.editor.toolRail.RepeaterTool.pane.RepeatAlongX=Auf X-Achse wiederholen		####"Repeat Along" describes a checkbox and means to apply the number of Uniform Repetitions across a given axis. This one is the X axis. "X", "Y", and "Z" have a mathematical meaning and it may not be appropriate to translate unless the mathematical meaning is also translated. More info can be found at https://en.wikipedia.org/wiki/Coordinate_system {MaxLength=40}
+resourcePack.editor.toolRail.RepeaterTool.pane.RepeatAlongY=Auf Y-Achse wiederholen		####See "Repeat Along X" but this is for the Y axis. {MaxLength=40}
+resourcePack.editor.toolRail.RepeaterTool.pane.RepeatAlongZ=Auf Z-Achse wiederholen		####See "Repeat Along X" but this is for the Z axis. {MaxLength=40}
+resourcePack.editor.toolRail.RepeaterTool.repeat.Separate=Separat		####"Separate" describes the repeat state of the Repeater Tool where the number of repetitions along each axis is set using separate number input elements, rather than one single number input {MaxLength=20}
+resourcePack.editor.toolRail.RepeaterTool.pane.XCount=Anzahl auf X-Achse		####"X Count" describes a number input field and represents the number of repetitions along the X axis. "X", "Y", and "Z" have a mathematical meaning and it may not be appropriate to translate unless the mathematical meaning is also translated. More info can be found at https://en.wikipedia.org/wiki/Coordinate_system {MaxLength=20}
+resourcePack.editor.toolRail.RepeaterTool.pane.YCount=Anzahl auf Y-Achse		####See "X Count" but this is for the Y axis. {MaxLength=20}
+resourcePack.editor.toolRail.RepeaterTool.pane.ZCount=Anzahl auf Z-Achse		####See "X Count" but this is for the Z axis. {MaxLength=20}
 
 
 resourcePack.editor.selectionTool.deselect=Abwählen	#
