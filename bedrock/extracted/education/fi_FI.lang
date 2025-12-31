@@ -12,6 +12,7 @@ library.connection.failed.body=Emme saa luotua yhteyttä kirjastoon. Tämä voi 
 library.connection.failed.help=Hanki ohjeita	#
 library.connection.noWorldFound.title=Maailmaa ei löytynyt	#
 library.connection.noWorldFound.body=Näyttää siltä, ettei tässä luokassa ole maailmoja.	#
+library.tip.noAzureNotebook=Python-oppitunteja on saatavilla Windowsille ja MacOS:lle.	#
 library.findMoreWorlds=Etsi lisää maailmoja	#
 library.leaveFeedback=Anna palautetta	#
 library.title=Kirjasto	#
@@ -38,6 +39,7 @@ library.item.tagsAll=KAIKKI TUNNISTEET:	#
 library.item.tagsAll.tts=Näytä lisää tunnisteita	#
 library.item.button.create=LUO MAAILMA	#
 library.item.button.share=JAA LINKKI	#
+library.item.button.shareEducator=OSOITA TAI JAA	#
 library.item.button.plan=LUENTOSUUNNITELMA	#
 library.item.button.resources=RESURSSIT	#
 library.item.progress.body=Valmistellaan uuden maailman tuomista. Tämä voi kestää joitakin minuutteja.	#
@@ -63,11 +65,31 @@ library.welcome.1=Tervetuloa Minecraft: Education Editionin kirjastoon!	#
 library.welcome.2=Kirjasto on uusi ominaisuus, jonka olemme luoneet, jotta opettajat ja opiskelijat voisivat helposti löytää ja tuoda opetuksellista sisältöä suoraan peliin. Tästä julkaisusta löydät luettelon maailmoista, joita tuodaan ja käytetään eniten sekä linkin verkkosivustomme täydelliseen maailmakirjastoon.	#
 library.welcome.3=Pyrimme lisäämään tuen useammille sisältö- ja ominaisuustyypeille seuraavien kuukausien aikana. Kerrothan meille mielipiteesi napsauttamalla palautepainiketta.	#
 
-library.item.sharepopup.title=Jaa	#
+library.item.sharepopup.title.simple=Jaa linkki	#
+library.item.sharepopup.title.educator=Osoita tai jaa	#
+library.item.sharepopup.title.addResource=Lisää resurssi	#
+library.item.sharepopup.shareText.noResource.educator=Osoita tämä maailma tai jaa linkki.	#
+library.item.sharepopup.shareText.noResource.simple=Jaa linkki tähän maailmaan.	#
+library.item.sharepopup.shareText.resource.educator=Maailmasi on valmiina osoitettavaksi tai jaettavaksi!	#
+library.item.sharepopup.shareText.resource.simple=Maailmasi on valmiina jaettavaksi!	#
 library.item.sharepopup.shareLink=Jaa linkki	#
 library.item.sharepopup.body=Jaa linkki tähän maailmaan.	#
 library.item.sharepopup.copy=KOPIOI	#
 library.item.sharepopup.copyButton=Kopioi linkki	#
+library.item.sharepopup.addResourceButton=Lisää resurssi	#
+library.item.sharepopup.secondayText=Haluatko lisästä arviointityökalun, Flipgrid-aiheen tai verkkosivuston maailmaan, ennen kuin jaat sen?	#
+library.item.sharepopup.addResource.labelOne=Kopioi tietovisan, Flipgrid-aiheen tai verkkosivun URL-osoite ja liitä se alle.	#
+library.item.sharepopup.addResource.labelTwo=Tämä luo uuden painikkeen Tauko-valikkoon, jotta pelaajat voivat käyttää resurssia milloin tahansa maailman sisältä.	#
+library.item.sharepopup.addResource.learnMoreLinkText=Lisätietoja	#
+library.item.sharepopup.addResource.urlLabel=Resurssipainikkeen URL-osoite	#
+library.item.sharepopup.addResource.urlHintText=Kirjoita URL-osoite tähän	#
+library.item.sharepopup.addResource.buttonNameLabel=Resurssipainikkeen nimi	#
+library.item.sharepopup.addResource.buttonNameHintText=Anna painikkeelle nimi	#
+library.item.sharepopup.addResource.doneButton=Valmis	#
+library.item.sharepopup.addResource.cancelButton=Peruuta	#
+library.item.sharepopup.addResource.deleteButton=Poista	#
+library.item.sharepopup.editResourceLabel=Tässä on esikatselu painikkeesta, jonka lisäämme kaikille maailman avaaville näkyvään Tauko-valikkoon.	#
+library.item.sharepopup.editResource.button.accessibility=Muokkaa resurssin URL-osoitetta	#
 library.item.share.toast.title=Linkki kopioitu leikepöydällesi.	#
 
 library.item.share.toast.teams=Microsoft Teams avattu selaimessasi.	#
@@ -219,6 +241,8 @@ library.category.label.commonCore=COMMON CORE, LUOKKA %1	#
 library.category.title.commonCore=Common Core, luokka %1	#
 library.category.description.commonCoreMath=Nämä mukaansatempaavat aktiviteetit on kehitetty matematiikan opetuksen tueksi ja on sovitettu yhteen Common Coren matematiikkastandardien kanssa.	#
 
+library.notification.label.resourceUri=Tähän maailmaan on lisätty linkki lisäresurssiin. Etsi "%1"-painike Tauko-valikosta, kun olet luonut maailman.	#
+
 signin.acceptTerms=Hyväksy ehdot	#
 signin.leftPanel.header=PELAA MINECRAFT: EDUCATION EDITIONIA	#
 signin.leftPanel.body=Kirjaudu koulutililläsi, jotta voit käyttää Minecraft: Education Editionin täysversiota.	#
@@ -231,10 +255,10 @@ joincode.invalid.button.tryagain=Yritä uudelleen	#
 joincode.invalid.button.enterip=Anna IP-osoite	#
 joincode.invalid.abuse.body=Olet antanut %1 virheellistä liittymiskoodia. Yritä liittyä maailmaan IP-osoitteen avulla.	#
 
-joincode.popup.title = Share a Link	#
-joincode.popup.body = Share a link to invite other players to join your world. Please note: this link will only work while you are hosting.	#
+joincode.popup.title =Jaa linkki	#
+joincode.popup.body =Kutsu muita pelaajia liittymään maailmaasi jakamalla linkki. Huomaa: tämä linkki toimii vain, kun isännöit.	#
 joincode.share.body = %1 on kutsunut sinut mukaan maailmaansa Minecraft: Education Editionissa. Aloita rakentaminen hänen kanssaan avaamalla tämä linkki! (%2, %1 isännöi)	#
-joincode.share.subject = Multiplayer invitation for Minecraft: Education Edition	#
+joincode.share.subject =Moninpelikutsu Minecraft: Education Editioniin	#
 
 ## TAG LOCALIZATION SECTION ##
 tag.ages_0_3=0–3	#	#

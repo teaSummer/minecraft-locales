@@ -12,6 +12,7 @@ library.connection.failed.body=라이브러리에 연결할 수 없습니다. �
 library.connection.failed.help=도움 요청	#
 library.connection.noWorldFound.title=월드를 찾지 못했습니다	#
 library.connection.noWorldFound.body=이 카테고리에는 월드가 없는 것 같습니다.	#
+library.tip.noAzureNotebook=파이썬 레슨은 Windows 및 MacOS에서 사용할 수 있습니다.	#
 library.findMoreWorlds=더 많은 월드 찾기	#
 library.leaveFeedback=피드백 남기기	#
 library.title=라이브러리	#
@@ -38,6 +39,7 @@ library.item.tagsAll=모든 특성:	#
 library.item.tagsAll.tts=더 많은 특성 표시	#
 library.item.button.create=월드 만들기	#
 library.item.button.share=공유 링크	#
+library.item.button.shareEducator=할당 또는 공유	#
 library.item.button.plan=수업 계획	#
 library.item.button.resources=자원	#
 library.item.progress.body=새 월드 가져오기를 준비하고 있습니다. 몇 분 정도 걸릴 수 있습니다.	#
@@ -63,11 +65,31 @@ library.welcome.1=Minecraft: Education Edition 라이브러리를 소개합니�
 library.welcome.2=라이브러리는 교사와 학생들이 게임에서 직접 손쉽게 교육 콘텐츠를 찾고 불러올 수 있도록 만들어진 새로운 기능입니다. 이번 릴리스에서는 웹사이트의 전체 월드 라이브러리로 연결되는 링크와 함께 가장 인기 있는 일부 월드 목록을 불러와서 사용할 수 있습니다.	#
 library.welcome.3=앞으로 더 많은 종류의 콘텐츠와 기능을 추가로 지원하기 위해 노력하고 있습니다. 피드백 버튼을 클릭하여 여러분의 의견을 알려 주세요.	#
 
-library.item.sharepopup.title=공유	#
+library.item.sharepopup.title.simple=링크 공유	#
+library.item.sharepopup.title.educator=할당 또는 공유	#
+library.item.sharepopup.title.addResource=리소스 추가	#
+library.item.sharepopup.shareText.noResource.educator=월드를 할당하거나 링크를 공유합니다.	#
+library.item.sharepopup.shareText.noResource.simple=해당 월드에 대한 링크를 공유합니다.	#
+library.item.sharepopup.shareText.resource.educator=월드를 할당하거나 공유할 준비가 되었습니다!	#
+library.item.sharepopup.shareText.resource.simple=월드를 공유할 준비가 되었습니다!	#
 library.item.sharepopup.shareLink=링크 공유	#
 library.item.sharepopup.body=이 월드로 연결되는 링크를 공유하세요.	#
 library.item.sharepopup.copy=복사	#
 library.item.sharepopup.copyButton=링크 복사	#
+library.item.sharepopup.addResourceButton=리소스 추가	#
+library.item.sharepopup.secondayText=공유하기에 앞서 월드에 평가 도구, Flipgrid 토픽, 웹사이트를 추가하시겠습니까?	#
+library.item.sharepopup.addResource.labelOne=퀴즈, Flipgrid 주제 또는 웹 사이트에 대한 URL을 복사하여 아래에 붙여 넣습니다.	#
+library.item.sharepopup.addResource.labelTwo=일시 중지 메뉴에 새로운 버튼을 생성하여 플레이어가 이를 통해 월드 내에 있는 리소스를 아무 때나 사용할 수 있습니다.	#
+library.item.sharepopup.addResource.learnMoreLinkText=더 알아보기	#
+library.item.sharepopup.addResource.urlLabel=리소스 버튼 URL	#
+library.item.sharepopup.addResource.urlHintText=이곳에 URL을 입력하세요	#
+library.item.sharepopup.addResource.buttonNameLabel=리소스 단추 이름	#
+library.item.sharepopup.addResource.buttonNameHintText=버튼에 이름을 붙입니다	#
+library.item.sharepopup.addResource.doneButton=완료	#
+library.item.sharepopup.addResource.cancelButton=취소	#
+library.item.sharepopup.addResource.deleteButton=삭제	#
+library.item.sharepopup.editResourceLabel=다음은 월드를 여는 모든 사용자를 위해 일시 중지 화면에 추가할 단추의 미리 보기입니다.	#
+library.item.sharepopup.editResource.button.accessibility=리소스 URL 편집	#
 library.item.share.toast.title=링크가 클립보드에 복사되었습니다.	#
 
 library.item.share.toast.teams=웹 브라우저에서 Microsoft 팀을 열었습니다.	#
@@ -219,6 +241,8 @@ library.category.label.commonCore=필수 과목, %1학년	#
 library.category.title.commonCore=필수 과목, %1학년	#
 library.category.description.commonCoreMath=이 매력적인 활동은 수학 교육을 지원하기 위해 각 필수 과목 수학 표준에 맞춰 제작되었습니다.	#
 
+library.notification.label.resourceUri=이 월드는 추가 리소스에 대한 링크와 함께 공유되었습니다. 월드를 만든 후 일시 중지 화면에서 "%1" 버튼을 찾으세요.	#
+
 signin.acceptTerms=약관 동의	#
 signin.leftPanel.header=Minecraft: Education Edition 플레이	#
 signin.leftPanel.body=Minecraft: Education Edition 정식 버전을 플레이하려면 학교 계정으로 로그인하세요.	#
@@ -231,10 +255,10 @@ joincode.invalid.button.tryagain=다시 시도	#
 joincode.invalid.button.enterip=IP 주소 입력	#
 joincode.invalid.abuse.body=잘못된 참여 코드 %1을(를) 입력했습니다. 대신 IP 주소를 사용하여 월드에 참가하세요.	#
 
-joincode.popup.title = Share a Link	#
+joincode.popup.title =링크 공유	#
 joincode.popup.body = 다른 플레이어를 여러분의 월드로 초대하는 링크를 공유합니다. 참고: 이 링크는 호스팅하는 동안에만 유효합니다.	#
 joincode.share.body = %1이(가) Minecraft: Education Edition의 월드로 여러분을 초대했습니다. 함께 구축을 시작하려면 이 링크를 누르세요! (%2, %1이 호스트)	#
-joincode.share.subject = Multiplayer invitation for Minecraft: Education Edition	#
+joincode.share.subject =Minecraft: Education Edition 용 멀티 플레이어 초대장	#
 
 ## TAG LOCALIZATION SECTION ##
 tag.ages_0_3=0-3	#	#

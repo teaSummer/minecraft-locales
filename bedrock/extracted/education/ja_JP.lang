@@ -12,6 +12,7 @@ library.connection.failed.body=ライブラリーに接続できません。こ�
 library.connection.failed.help=ヘルプを表示	#
 library.connection.noWorldFound.title=世界が見つかりません	#
 library.connection.noWorldFound.body=このカテゴリーには世界が存在しないようです。	#
+library.tip.noAzureNotebook=Python のレッスンは、Windows と MacOS で利用できます。	#
 library.findMoreWorlds=さらに世界を見つける	#
 library.leaveFeedback=フィードバックを送信	#
 library.title=ライブラリ	#
@@ -38,6 +39,7 @@ library.item.tagsAll=すべてのタグ:	#
 library.item.tagsAll.tts=タグをもっと表示する	#
 library.item.button.create=世界を作成	#
 library.item.button.share=リンクを共有	#
+library.item.button.shareEducator=割り当てまたは共有	#
 library.item.button.plan=レッスンプラン	#
 library.item.button.resources=リソース	#
 library.item.progress.body=新しい世界のインポートを準備しています。これには数分かかる可能性があります。	#
@@ -63,11 +65,31 @@ library.welcome.1=Minecraft: Education Edition のライブラリへようこそ
 library.welcome.2=ライブラリは、教師や生徒が学習コンテンツをゲーム内でより簡単に直接検索およびインポートできるようにした新機能です。今回のリリースでは、インポートおよび使用が可能な最も人気の高い世界のリストを、公式 Web サイト上の完全な世界ライブラリへのリンク付きで提供します。	#
 library.welcome.3=今後数か月でより豊富なコンテンツや機能へのサポートを追加するために取り組んでおります。「フィードバック」ボタンをクリックして、ご意見やご感想をお寄せください。	#
 
-library.item.sharepopup.title=共有	#
+library.item.sharepopup.title.simple=リンクを共有	#
+library.item.sharepopup.title.educator=割り当てまたは共有	#
+library.item.sharepopup.title.addResource=リソースを追加	#
+library.item.sharepopup.shareText.noResource.educator=この世界を割り当てるか、リンクを共有します。	#
+library.item.sharepopup.shareText.noResource.simple=この世界へのリンクを共有します。	#
+library.item.sharepopup.shareText.resource.educator=世界を割り当てるか、共有する準備ができました!	#
+library.item.sharepopup.shareText.resource.simple=世界を共有する準備ができました!	#
 library.item.sharepopup.shareLink=リンクを共有	#
 library.item.sharepopup.body=この世界へのリンクを共有します。	#
 library.item.sharepopup.copy=コピー	#
 library.item.sharepopup.copyButton=リンクをコピー	#
+library.item.sharepopup.addResourceButton=リソースを追加	#
+library.item.sharepopup.secondayText=共有する前に評価ツール、フリップグリッドのトピック、または Web サイトを世界に追加しますか?	#
+library.item.sharepopup.addResource.labelOne=クイズ、Flipgrid のトピック、またはウェブサイトの URL をコピーして、下に貼り付けます。	#
+library.item.sharepopup.addResource.labelTwo=そうすると、一時停止メニューに新しいボタンが作成され、プレイヤーは世界内のリソースにいつでもアクセスできるようになります。	#
+library.item.sharepopup.addResource.learnMoreLinkText=もっと詳しく	#
+library.item.sharepopup.addResource.urlLabel=リソース ボタンの URL	#
+library.item.sharepopup.addResource.urlHintText=ここに URL を入力してください	#
+library.item.sharepopup.addResource.buttonNameLabel=リソース ボタン名	#
+library.item.sharepopup.addResource.buttonNameHintText=ボタンに名前を付ける	#
+library.item.sharepopup.addResource.doneButton=完了	#
+library.item.sharepopup.addResource.cancelButton=キャンセル	#
+library.item.sharepopup.addResource.deleteButton=削除	#
+library.item.sharepopup.editResourceLabel=これは、世界を開いた人の一時停止画面に追加するボタンのプレビューです。	#
+library.item.sharepopup.editResource.button.accessibility=リソース URL を編集	#
 library.item.share.toast.title=リンクがクリップボードにコピーされました。	#
 
 library.item.share.toast.teams=ウェブ ブラウザーで Microsoft Teams を開きました。	#
@@ -219,6 +241,8 @@ library.category.label.commonCore=コモンコア、グレード%1	#
 library.category.title.commonCore=コモンコア、グレード%1	#
 library.category.description.commonCoreMath=これらの魅力的なアクティビティは、数学の指導をサポートするために開発されたもので、共通コア数学の各標準に沿っています。	#
 
+library.notification.label.resourceUri=この世界は、追加のリソースへのリンクとともに共有されました。世界を作成してから、一時停止画面で「%1」ボタンを探してください。	#
+
 signin.acceptTerms=利用規約に同意	#
 signin.leftPanel.header=Minecraft: Education Edition をプレイ	#
 signin.leftPanel.body=Minecraft: Education Edition のフルバージョンにアクセスするには、学校のアカウントでサインインします。	#
@@ -231,10 +255,10 @@ joincode.invalid.button.tryagain=もう一度やり直す	#
 joincode.invalid.button.enterip=IP アドレスを入力	#
 joincode.invalid.abuse.body=入力された %1 件の参加コードに誤りがあります。代わりに IP アドレスを使用して世界に参加してください	#
 
-joincode.popup.title = Share a Link	#
-joincode.popup.body = Share a link to invite other players to join your world. Please note: this link will only work while you are hosting.	#
+joincode.popup.title =リンクを共有	#
+joincode.popup.body =リンクを共有して他のプレイヤーを招待したら、世界に参加させましょう。ご注意:このリンクは、あなたがホスティングしている間にのみ動作します。	#
 joincode.share.body = %1 から、Minecraft: Education Edition にある彼らの世界への招待状が届いています。このリンクをたどって、一緒にビルドを始めましょう! (%2、ホスト: %1 )	#
-joincode.share.subject = Multiplayer invitation for Minecraft: Education Edition	#
+joincode.share.subject =Minecraft: Education Edition マルチプレイヤーの招待	#
 
 ## TAG LOCALIZATION SECTION ##
 tag.ages_0_3=0-3	#	#

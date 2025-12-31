@@ -12,6 +12,7 @@ library.connection.failed.body=Не удается подключиться к �
 library.connection.failed.help=Справка	#
 library.connection.noWorldFound.title=Мир не найден	#
 library.connection.noWorldFound.body=Похоже, в этой категории нет ни одного мира.	#
+library.tip.noAzureNotebook=Уроки Python доступны для ОС Windows и MacOS.	#
 library.findMoreWorlds=Откройте больше миров	#
 library.leaveFeedback=Оставить отзыв	#
 library.title=Библиотека	#
@@ -38,6 +39,7 @@ library.item.tagsAll=ВСЕ ТЕГИ:	#
 library.item.tagsAll.tts=Еще теги	#
 library.item.button.create=СОЗДАТЬ МИР	#
 library.item.button.share=ОТПРАВИТЬ ССЫЛКУ	#
+library.item.button.shareEducator=НАЗНАЧИТЬ ИЛИ ПОДЕЛИТЬСЯ	#
 library.item.button.plan=ЗАПЛАНИРОВАТЬ УРОК	#
 library.item.button.resources=РЕСУРСЫ	#
 library.item.progress.body=Подготовка к импорту нового мира. Это может занять несколько минут.	#
@@ -63,11 +65,31 @@ library.welcome.1=Добро пожаловать в библиотеку Minecr
 library.welcome.2=Библиотека — это новая функция, с помощью которой учителя и студенты могут находить учебные материалы и импортировать их прямо в игру. В этом выпуске есть список самых популярных миров для импорта и использования, а также ссылка на полную библиотеку миров на нашем веб-сайте.	#
 library.welcome.3=Мы работаем, чтобы обеспечить поддержку новых типов контента и функциональных возможностей в ближайшие месяцы. Поделитесь своими мыслями, нажав кнопку обратной связи.	#
 
-library.item.sharepopup.title=Поделиться	#
+library.item.sharepopup.title.simple=Отправить ссылку	#
+library.item.sharepopup.title.educator=Назначить или поделиться	#
+library.item.sharepopup.title.addResource=Добавить ресурс	#
+library.item.sharepopup.shareText.noResource.educator=Назначьте этот мир или поделитесь ссылкой.	#
+library.item.sharepopup.shareText.noResource.simple=Поделитесь ссылкой на этот мир.	#
+library.item.sharepopup.shareText.resource.educator=Теперь этот мир можно назначить или поделиться им!	#
+library.item.sharepopup.shareText.resource.simple=Теперь этим миром можно поделиться!	#
 library.item.sharepopup.shareLink=Отправить ссылку	#
 library.item.sharepopup.body=Отправьте ссылку своим друзьям.	#
 library.item.sharepopup.copy=КОПИРОВАТЬ	#
 library.item.sharepopup.copyButton=Скопировать ссылку	#
+library.item.sharepopup.addResourceButton=Добавить ресурс	#
+library.item.sharepopup.secondayText=Хотите добавить к миру средство оценки, тему Flipgrid или веб-сайт, прежде чем поделиться им?	#
+library.item.sharepopup.addResource.labelOne=Скопируйте URL-адрес вашего опроса, темы Flipgrid тему или веб-сайта и вставьте его ниже.	#
+library.item.sharepopup.addResource.labelTwo=При этом в меню «Пауза» будет создана новая кнопка, с помощью которой игроки в любой момент смогут получить из мира доступ к ресурсу.	#
+library.item.sharepopup.addResource.learnMoreLinkText=Подробнее	#
+library.item.sharepopup.addResource.urlLabel=URL-адрес кнопки ресурса	#
+library.item.sharepopup.addResource.urlHintText=Укажите здесь URL-адрес	#
+library.item.sharepopup.addResource.buttonNameLabel=Имя кнопки ресурса	#
+library.item.sharepopup.addResource.buttonNameHintText=Присвойте кнопке название	#
+library.item.sharepopup.addResource.doneButton=Готово	#
+library.item.sharepopup.addResource.cancelButton=Отмена	#
+library.item.sharepopup.addResource.deleteButton=Удалить	#
+library.item.sharepopup.editResourceLabel=Это предварительный просмотр кнопки, которую мы добавим на экран паузы, где ее будут видеть все, кто открывает мир.	#
+library.item.sharepopup.editResource.button.accessibility=Изменить URL-адрес ресурса	#
 library.item.share.toast.title=Ссылка скопирована в буфер обмена.	#
 
 library.item.share.toast.teams=Выполнено открытие Microsoft Teams в веб-браузере.	#
@@ -219,6 +241,8 @@ library.category.label.commonCore=COMMON CORE, %1 класс	#
 library.category.title.commonCore=Common Core, %1 класс	#
 library.category.description.commonCoreMath=Эти увлекательные задания созданы для преподавателей математики и полностью соответствуют стандартам Common Core.	#
 
+library.notification.label.resourceUri=Этим миром поделились, добавив ссылку на дополнительный ресурс. Ищите кнопку "%1" на экране паузы после создания мира.	#
+
 signin.acceptTerms=Примите условия	#
 signin.leftPanel.header=ИГРАТЬ В MINECRAFT: EDUCATION EDITION	#
 signin.leftPanel.body=Войдите в свою учебную учетную запись, чтобы получить доступ к полной версии Minecraft: Education Edition.	#
@@ -231,10 +255,10 @@ joincode.invalid.button.tryagain=Попробуйте еще раз	#
 joincode.invalid.button.enterip=Введите IP-адрес	#
 joincode.invalid.abuse.body=Введено неверных кодов: %1. Присоединитесь к миру с помощью IP-адреса	#
 
-joincode.popup.title = Share a Link	#
-joincode.popup.body = Share a link to invite other players to join your world. Please note: this link will only work while you are hosting.	#
-joincode.share.body = %1 has invited you to join their world in Microsoft: Education Edition. Follow this link to start building together! (%2, hosted by %1)	#
-joincode.share.subject = Multiplayer invitation for Minecraft: Education Edition	#
+joincode.popup.title =Отправить ссылку	#
+joincode.popup.body =Отправьте ссылку, чтобы пригласить других игроков присоединиться к вашему миру. Пожалуйста, обратите внимание: эта ссылка будет работать только в то время, когда вы являетесь организатором.	#
+joincode.share.body =%1 пригласил(а) вас присоединиться к их миру в Minecraft: Education Edition. Перейдите по этой ссылке, чтобы начать строить вместе! (%2, организатор: %1)	#
+joincode.share.subject =Приглашение в многопользовательскую игру для Minecraft: Education Edition	#
 
 ## TAG LOCALIZATION SECTION ##
 tag.ages_0_3=0–3	#	#
