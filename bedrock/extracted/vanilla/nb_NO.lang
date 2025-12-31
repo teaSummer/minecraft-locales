@@ -927,15 +927,6 @@ commands.gamerule.type.nocheatsenabled=Spillregelen "%1$s" kan bare brukes hvis 
 commands.gamerule.nopermission=Det er bare servereiere som kan endre %1$s	#
 commands.gamerule.norule=Det finnes ingen spillregel med navnet %1$s	#
 commands.gamerule.success=Spillregelen %1$s har blitt endret til %2$s	#
-commands.gametips.description=Aktiver eller deaktiver spilltipsene på denne enheten	#
-commands.gametips.enabled=Spilltips er nå aktivert	#
-commands.gametips.disabled=Spilltips er nå deaktivert	#
-commands.gametips-off.description=Deaktiver spilltips på denne enheten	#
-commands.gametips-off.success=Spilltips er nå deaktivert	#
-commands.gametips-on.description=Aktiver spilltips på denne enheten	#
-commands.gametips-on.success=Spilltips er nå aktivert	#
-commands.gametips-reset.description=Tilbakestill spilltips på denne enheten	#
-commands.gametips-reset.success=Spilltips er tilbakestilt	#
 commands.generic.async.initiated=%1$s-kommandoen er startet (asynkront trinn %2$d)	#
 commands.generic.boolean.invalid=%1$s er ikke sann eller usann	#
 commands.generic.chunk.notFound=Fant ikke den spesifiserte delen	#
@@ -3087,12 +3078,10 @@ gameTip.breakBlock.mouse=Hold inne venstreklikk for å knuse blokker	#
 gameTip.breakBlock.touch=Trykk og hold inne for å knuse blokker	#
 gameTip.breakBlock.touch.classic=Trykk og hold inne for å knuse blokker	#
 gameTip.breakBlock.controller=Trykk og hold inne for å knuse blokker	#
-gameTip.breakBlock.touch.crosshair=Trykk og hold inne :tip_virtual_button_action_attack_or_destroy:[LINEBREAK]for å knuse blokker 	#### {StrContains='LINEBREAK'}
 
-gameTip.placeBlock.mouse=Høyreklikk for å plassere blokk	#
+gameTip.placeBlock.mouse=Klikk for å plassere en blokk	#
 gameTip.placeBlock.touch=Trykk for å plassere en blokk	#
 gameTip.placeBlock.controller=Klikk på bakken for å plassere en blokk	#
-gameTip.placeBlock.touch.crosshair=Trykk på :tip_virtual_button_action_build_or_use: for å plassere blokk	#
 
 gameTip.openInventorySurvival.mouse=Åpne inventaret[LINEBREAK]Trykk på :_input_key.inventory:		#### {StrContains='LINEBREAK'}
 gameTip.openInventorySurvival.touch=Åpne inventaret for å se lageoppskrifter	#
@@ -3218,8 +3207,6 @@ gui.editor.copyProject.failedMessage=Vi kan ikke lage en kopi av prosjektet ditt
 
 gui.edu.exitGameWarningCaption=Minecraft Education	### Use Minecraft 教育版 in zh_CN translation
 gui.edu.exitGameWarningMessage=Avslutte Minecraft Education?		### Use 离开 Minecraft 教育版? in zh_CN translation
-gui.edu.exitGameWarningCaptionPreview=Forhåndsversjonen av Minecraft Education	#
-gui.edu.exitGameWarningMessagePreview=Vil du avslutte forhåndsversjonen av Minecraft Education?	#
 
 updateScreen.update=Oppdater	#
 updateScreen.updateRequired=Oppdatering kreves	#
@@ -5756,8 +5743,6 @@ menu.editorMode=Redigeringsmodus	#
 menu.editor.play=Fortsett	#
 menu.character_cast.select_title=Velg startkarakteren din	#
 menu.character_cast.preview_title=Møt rollebesetningen!	#
-menu.realms=Realms		####{StrContains="Realms"}
-menu.realmsServer=Realms-server		####{StrContains="Realms"}{MaxLength='18'}
 
 merchant.deprecated=Kjøp/selg noe annet for å låse opp!	#
 
@@ -5933,8 +5918,7 @@ options.delete_account.confirm.button=Slett	#
 options.dev_game_tip=Tips for spillopplevelse	#
 options.dev_ad_show_debug_panel=Vis feilsøkingspanel for EDU-pålogging	#
 options.dev_ad_token_refresh_threshold=EDU påloggingstoken oppdateringsterskelssekunder	#
-options.dev_ad_edu_max_signin_token_refresh=Maks påloggingstoken-oppdatering for EDU (minutter)	#
-options.dev_ad_edu_max_graph_token_refresh=Maks graftoken-oppdatering for EDU (minutter)	#
+options.dev_ad_edu_max_token_refresh=Maks tokenoppdatering for EDU (minutter)	#
 options.dev_side_by_side_comparison_rate=Sammenligningsgrad side om side	#
 options.dev_playfab_token_refresh_threshold=Terskelminutter for Playfab-tokenoppdatering	#
 options.dev_assertions_debug_break=Deklarasjonsfeil i feilsøkingsprogrammet	#
@@ -6168,8 +6152,8 @@ options.fov.toggle=Synsfeltet kan endres under spilling	#
 options.licenses=Lisenser	#
 options.licensed_content=Lisensiert innhold	#
 options.networkSettings=Nettverksinnstillinger	#
-options.ecoMode=Eksperimentelle strømsparingsfunksjoner		#### {MaxLength='40'}
-options.enableEcoMode=Lavere bildefrekvens når kontrolleren er frakoblet		#### {MaxLength='55'}
+options.ecoMode=Økomodus		####Eco Mode refers to an ecological friendly mode {MaxLength='20'}
+options.enableEcoMode=Aktiver økomodus		####Eco Mode refers to an ecological friendly mode {MaxLength='30'}
 options.font_license=Skrifttypelisens	#
 options.font_license_body=%1	#
 options.livingRoomFOV=Stuesynsfelt	#
@@ -6259,7 +6243,6 @@ options.sneakOption.toggle=Trykk på knappen én gang for å snike	#
 options.sneakOption.hold=Hold inne knappen for å snike	#
 options.splitscreenInterfaceOpacity=HUD-synlighet på delt skjerm	#
 options.textBackgroundOpacity=Tetthet for tekstbakgrunn	#
-options.actionBarTextBackgroundOpacity=Tetthet for handlelinjebakgrunnen	#
 options.hidepaperdoll=Skjul papirdukke	#
 options.showautosaveicon=Vis ikonet for automatisk lagring	#
 options.hold=Hold	#
@@ -6509,9 +6492,6 @@ options.deferred.upscaling=Oppskalering	#
 options.terrainShadowsEnable=Skygge i terrenget	#
 options.superFancyWaterEnable=Superfornemt vann	#
 options.onlyTrustedSkinsAllowed=Tillat bare klarerte skall	#
-options.restartTutorial=Start opplæring på nytt	#
-options.tutorial=Opplæring	#
-options.tutorialHint=Tips for å komme i gang med det grunnleggende i Minecraft	#
 
 options.autoUpdateEnabled=Oppdater opplåste pakker automatisk	#
 options.autoUpdateMode=Oppdater opplåste pakker automatisk	#
@@ -7062,7 +7042,6 @@ progressScreen.title.connectingRealms=Kobler til realm	#
 progressScreen.title.copyingWorld=Verdenskopi	#
 progressScreen.title.deleteStorageAreaContent=Tømmer hurtigminnet	#
 progressScreen.title.loadingSplitScreenAppearances=Laster inn delt skjerm-utseendene	#
-progressScreen.title.modifiedWorldWarning=Modifisert verden	#
 progressScreen.message.appearanceLoaded=Lastet inn utseendet	#
 progressScreen.message.appearanceLoadWaitTimeMet=Utseendet tar lang tid å laste. Fortsetter med verdensgenerering ...	#
 progressScreen.message.deleteStorageAreaContent=Dette kan ta litt tid.	#
@@ -7111,7 +7090,6 @@ progressScreen.message.directoryDepthError=Denne verdenen kan ikke åpnes på gr
 progressScreen.message.forbiddenContent=Du eier ikke én eller flere av de brukte pakkene	#
 progressScreen.message.loadingSplitScreenAppearances=Laster inn delt skjerm-utseendet ...	#
 progressScreen.message.finishedLoadingSplitScreenAppearances=Ferdig med å laste inn delt skjerm-utseendet.	#
-progressScreen.message.modifiedWorldWarning=Denne verdenen vil kanskje ikke ligne eller oppføre seg på samme måte som ikke-modifiserte verdener, og du kan ikke oppnå prestasjoner.	#
 progressScreen.dialog.title.resourcePack=Laste ned ressurspakker?	#
 progressScreen.dialog.title.behaviorAndResourcePack=Laste ned verdenens atferds- og ressurspakker?	#
 progressScreen.dialog.title.onlyBehavior=Laste ned verdenens atferdspakker?	#
@@ -7774,7 +7752,7 @@ selectTemplate.delete.confirm=Slette verdensmal?	#
 selectTemplate.delete=Slett	#
 selectTemplate.myTemplates=Mine verdensmaler	#
 selectTemplate.realmsPlus=Utvalgte Realms Plus-maler	#
-selectTemplate.marketplacePass=Utvalgte Marketplace Pass-maler	#### {StrContains="Marketplace Pass"}
+selectTemplate.marketplacePass=Featured Marketplace Pass Templates			#### {StrContains="Marketplace Pass"}
 selectTemplate.importedTemplates=Importerte maler	#
 selectTemplate.download=Last ned	#
 selectTemplate.noTemplates=Det finnes ingen verdensmaler på denne enheten.	#
@@ -8145,7 +8123,7 @@ store.csb.upsell.rightBullet.3=Inkluderer			### Precedes the term Marketplace Pa
 
 store.csb.upsell.learnMore=Finn ut mer	#
 store.csb.upsell.price=%s per måned	#
-store.csb.upsell.firstPeriodFree=Gratis 30-dagers prøveabonnement!	#
+store.csb.upsell.firstPeriodFree=Gratis 30-dagers prøveabonnement!*	#
 
 store.csb.upsell.realmsPlus=§dREALMS PLUS	#
 
@@ -9836,6 +9814,10 @@ xbox.signinquestion=Logge på?	#
 xbox.notnow=Ikke nå	#
 xbox.signingin=Logger deg på med Microsoft-kontoen din …	#
 xbox.signingin.offline=Logger deg på	#
+xbox.firstsignin.line1=Velkommen til Minecraft! Bruk en Microsoft-konto til å koble deg til Minecraft-fellesskapet, der folk kan spille sammen uansett om de har PC, konsoll, mobil eller nettbrett. Og det beste av alt?	#
+xbox.firstsignin.line2=Det er GRATIS!	#
+xbox.firstsignin.line3=Har du ikke konto? Opprett en nå for å oppnå prestasjoner, bli med i realmer og koble deg til servere!	#
+xbox.firstsignin.line3.norealmsOrServers=Har du ikke konto? Opprett en nå for å låse opp prestasjoner og spille med venner på forskjellige plattformer!	#
 xbox.failedsignin.body=Vi kan ikke logge deg på Microsoft-kontoen din. Tilgang til Realms, profiler og markedsplassartikler vil være begrenset. Prøv på nytt senere.	#
 xbox.failedsignin.error=Feilkode:	#
 xbox.failedsignin.moreInfo=Mer informasjon	#
@@ -10257,12 +10239,6 @@ lategameTips.27=Dioritt, du enten elsker eller hater det.	#
 
 tips.realms.1=Ta et skjermbilde ved hjelp av spillmenyen.	#
 tips.realms.2=En realm er alltid online, så du og vennene dine kan spille her når som helst.	#
-tips.realms.3=Hold deg oppdatert på hva som skjer i realmen din ved å sjekke historiefeeden i Realms Stories.	#
-tips.realms.4=Del de store øyeblikkene dine med de andre spillerne i denne realmen ved å legge til en historie i historiefeeden.	#
-tips.realms.5=Sjekk tidslinjen i Realms-historier for å finne ut når andre spiller.	#
-tips.realms.6=Få tilgang til Realms-historier fra spillmenyen mens du spiller på realmen.	#
-tips.realms.7=Bli kjent med fellesskapet i realmen din via Medlemmer-fanen i Realms Stories.	#
-tips.realms.8=Bruk Realms-historier til å sosialisere, holde deg oppdatert på venners fremdrift og organisere spilletid.	#
 
 splitscreen.joinPrompt=Bli med som spiller %s	#
 splitscreen.unavailable.toastHeader=Delt skjerm er ikke tilgjengelig	#

@@ -927,15 +927,6 @@ commands.gamerule.type.nocheatsenabled=遊戲規則「%1$s」只有在密技於�
 commands.gamerule.nopermission=只有伺服器擁有人才可更改 '%1$s'	#
 commands.gamerule.norule=沒有名為「'%1$s'」的遊戲規則	#
 commands.gamerule.success=遊戲規則「%1$s」已更新為「%2$s」	#
-commands.gametips.description=在此裝置上啟用或停用遊戲提示	#
-commands.gametips.enabled=遊戲提示現已啟用	#
-commands.gametips.disabled=遊戲提示現已停用	#
-commands.gametips-off.description=在此裝置上停用遊戲提示	#
-commands.gametips-off.success=遊戲提示現已停用	#
-commands.gametips-on.description=在此裝置上啟用遊戲提示	#
-commands.gametips-on.success=遊戲提示現已啟用	#
-commands.gametips-reset.description=在此裝置上重設遊戲提示	#
-commands.gametips-reset.success=遊戲提示現已重設	#
 commands.generic.async.initiated=%1$s' 的指令已開始 (非同步步驟 %2$d)	#
 commands.generic.boolean.invalid=%1$s' 不是 true 或 false	#
 commands.generic.chunk.notFound=未找到指定區塊	#
@@ -3087,12 +3078,10 @@ gameTip.breakBlock.mouse=按住滑鼠左鍵以打破方塊	#
 gameTip.breakBlock.touch=輕觸並按住以打破方塊	#
 gameTip.breakBlock.touch.classic=輕觸並按住以打破方塊	#
 gameTip.breakBlock.controller=點選並按住以打破方塊	#
-gameTip.breakBlock.touch.crosshair=輕觸並按住:tip_virtual_button_action_attack_or_destroy:[LINEBREAK]以打破方塊 	#### {StrContains='LINEBREAK'}
 
-gameTip.placeBlock.mouse=按一下右鍵以放置方塊	#
+gameTip.placeBlock.mouse=按一下以放置方塊	#
 gameTip.placeBlock.touch=輕觸以放置方塊	#
 gameTip.placeBlock.controller=按一下地面以放置方塊	#
-gameTip.placeBlock.touch.crosshair=輕觸 :tip_virtual_button_action_build_or_use: 以放置方塊	#
 
 gameTip.openInventorySurvival.mouse=開啟您的物品欄[LINEBREAK]按:_input_key.inventory:		#### {StrContains='LINEBREAK'}
 gameTip.openInventorySurvival.touch=開啟物品欄以查看合成配方	#
@@ -3218,8 +3207,6 @@ gui.editor.copyProject.failedMessage=無法建立該專案的複本，可能是�
 
 gui.edu.exitGameWarningCaption=Minecraft Education	### Use Minecraft 教育版 in zh_CN translation
 gui.edu.exitGameWarningMessage=退出Minecraft Education？		### Use 离开 Minecraft 教育版? in zh_CN translation
-gui.edu.exitGameWarningCaptionPreview=Minecraft 教育預覽版	#
-gui.edu.exitGameWarningMessagePreview=是否要退出 Minecraft 教育預覽版？	#
 
 updateScreen.update=更新	#
 updateScreen.updateRequired=必須更新	#
@@ -5756,8 +5743,6 @@ menu.editorMode=編輯器模式	#
 menu.editor.play=繼續	#
 menu.character_cast.select_title=選擇您的起始角色	#
 menu.character_cast.preview_title=認識演員！	#
-menu.realms=Realms		####{StrContains="Realms"}
-menu.realmsServer=Realms 伺服器		####{StrContains="Realms"}{MaxLength='18'}
 
 merchant.deprecated=用其他物品交易來解鎖！	#
 
@@ -5933,8 +5918,7 @@ options.delete_account.confirm.button=刪除	#
 options.dev_game_tip=遊戲秘訣	#
 options.dev_ad_show_debug_panel=顯示「EDU 登入除錯面板」	#
 options.dev_ad_token_refresh_threshold=EDU 登入代幣重新整理閾值秒數	#
-options.dev_ad_edu_max_signin_token_refresh=EDU 最大登入代幣重新整理 (分鐘)	#
-options.dev_ad_edu_max_graph_token_refresh=EDU 最大圖形代幣重新整理 (分鐘)	#
+options.dev_ad_edu_max_token_refresh=EDU 最大代幣重新整理 (分鐘)	#
 options.dev_side_by_side_comparison_rate=角色比較評價	#
 options.dev_playfab_token_refresh_threshold=Playfab 代幣重新整理閾值分鐘數	#
 options.dev_assertions_debug_break=偵錯工具中的判斷提示分隔設定	#
@@ -6168,8 +6152,8 @@ options.fov.toggle=視野可透過遊戲控制調整	#
 options.licenses=授權	#
 options.licensed_content=授權內容	#
 options.networkSettings=網路設定	#
-options.ecoMode=實驗性節能功能		#### {MaxLength='40'}
-options.enableEcoMode=當控制器中斷連線時影格率較低		#### {MaxLength='55'}
+options.ecoMode=Eco 模式		####Eco Mode refers to an ecological friendly mode {MaxLength='20'}
+options.enableEcoMode=啟用 Eco 模式		####Eco Mode refers to an ecological friendly mode {MaxLength='30'}
 options.font_license=字體授權	#
 options.font_license_body=%1	#
 options.livingRoomFOV=客廳 FOV	#
@@ -6259,7 +6243,6 @@ options.sneakOption.toggle=點擊按鈕一次即可潛行	#
 options.sneakOption.hold=按住按鈕即可潛行	#
 options.splitscreenInterfaceOpacity=分割畫面 HUD 不透明度	#
 options.textBackgroundOpacity=文字背景不透明度	#
-options.actionBarTextBackgroundOpacity=動作列背景不透明度	#
 options.hidepaperdoll=隱藏紙娃娃	#
 options.showautosaveicon=顯示自動儲存圖示	#
 options.hold=保留	#
@@ -6509,9 +6492,6 @@ options.deferred.upscaling=升級	#
 options.terrainShadowsEnable=地形陰影	#
 options.superFancyWaterEnable=超級華麗水紋	#
 options.onlyTrustedSkinsAllowed=僅允許受信任的外觀	#
-options.restartTutorial=重新啟動教學	#
-options.tutorial=教學課程	#
-options.tutorialHint=瞭解 Minecraft 基礎知識的提示	#
 
 options.autoUpdateEnabled=自動更新已解鎖套件	#
 options.autoUpdateMode=自動更新已解鎖套件	#
@@ -7062,7 +7042,6 @@ progressScreen.title.connectingRealms=正在連線到 Realm	#
 progressScreen.title.copyingWorld=世界複製	#
 progressScreen.title.deleteStorageAreaContent=清除存儲空間快取	#
 progressScreen.title.loadingSplitScreenAppearances=正在載入分割畫面外觀	#
-progressScreen.title.modifiedWorldWarning=已修改的世界	#
 progressScreen.message.appearanceLoaded=已載入外觀	#
 progressScreen.message.appearanceLoadWaitTimeMet=載入外觀需要較長時間。繼續進行世界生成...	#
 progressScreen.message.deleteStorageAreaContent=這可能需要一些時間。	#
@@ -7111,7 +7090,6 @@ progressScreen.message.directoryDepthError=由於套件中的目錄問題，無�
 progressScreen.message.forbiddenContent=您沒有一個或多個適用的套件	#
 progressScreen.message.loadingSplitScreenAppearances=正在載入分割畫面外觀...	#
 progressScreen.message.finishedLoadingSplitScreenAppearances=分割畫面外觀載入完成。	#
-progressScreen.message.modifiedWorldWarning=這個世界的長相或行為可能與未修改的世界不同，而且你無法獲得成就。	#
 progressScreen.dialog.title.resourcePack=是否下載資源包？	#
 progressScreen.dialog.title.behaviorAndResourcePack=是否要下載世界行為模式和資源套件？	#
 progressScreen.dialog.title.onlyBehavior=是否要下載世界行為套件？	#
@@ -8145,7 +8123,7 @@ store.csb.upsell.rightBullet.3=包含			### Precedes the term Marketplace Pass i
 
 store.csb.upsell.learnMore=深入了解	#
 store.csb.upsell.price=%s/月	#
-store.csb.upsell.firstPeriodFree=免費 30 天試用！	#
+store.csb.upsell.firstPeriodFree=免費 30 天試用！*	#
 
 store.csb.upsell.realmsPlus=§dRealm Plus	#
 
@@ -9836,6 +9814,10 @@ xbox.signinquestion=登入？	#
 xbox.notnow=先不要	#
 xbox.signingin=正在使用您的 Microsoft 帳戶登入…	#
 xbox.signingin.offline=正在登入	#
+xbox.firstsignin.line1=歡迎來到《Minecraft》！使用 Microsoft 帳戶以開始與《Minecraft》社群連線，而且不論是使用 PC、遊戲主機、手機或平板電腦，都可以一起玩遊戲。最棒的是什麼？	#
+xbox.firstsignin.line2=免費！	#
+xbox.firstsignin.line3=沒有帳戶？馬上建立就可贏得成就，還能加入 Realm 和伺服器！	#
+xbox.firstsignin.line3.norealmsOrServers=沒有帳戶嗎？馬上建立就可贏得成就，並與跨平台的朋友一起玩遊戲！	#
 xbox.failedsignin.body=無法將您登入 Microsoft 帳戶。對 Realms、設定檔和市集物品的存取將受到限制。請稍後再試。	#
 xbox.failedsignin.error=錯誤代碼:	#
 xbox.failedsignin.moreInfo=更多資訊	#
@@ -10257,12 +10239,6 @@ lategameTips.27=閃長岩，讓人又愛又恨。	#
 
 tips.realms.1=使用遊戲選單擷取螢幕畫面。	#
 tips.realms.2=Realm 可隨時連線，所以你和好友隨時都可以在這裡玩遊戲。	#
-tips.realms.3=藉由查看 Realms Stories 中的故事動態來了解 Realm 的最新動向。	#
-tips.realms.4=藉由新增故事至故事動態來與這個 Realm 的其他玩家分享您的精彩時刻。	#
-tips.realms.5=查看 Realms 故事中的時間線，了解其他人何時在玩遊戲。	#
-tips.realms.6=在 Realm 上玩遊戲時，從遊戲功能表前往 Realms 故事。	#
-tips.realms.7=在 Realms 故事的成員標籤頁中了解你的 Realm 社群。	#
-tips.realms.8=使用 Realms 故事進行社交活動，了解好友的進度，並安排遊戲時間。	#
 
 splitscreen.joinPrompt=以玩家 %s 身分加入	#
 splitscreen.unavailable.toastHeader=分割畫面無法提供使用	#

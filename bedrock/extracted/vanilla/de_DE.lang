@@ -927,15 +927,6 @@ commands.gamerule.type.nocheatsenabled=Die Spielregel "%1$s" kann nur verwendet 
 commands.gamerule.nopermission=Nur Serverbesitzer können '%1$s' ändern	#
 commands.gamerule.norule=Keine Spielregel '%1$s' vorhanden	#
 commands.gamerule.success=Spielregel %1$s wurde auf %2$s aktualisiert	#
-commands.gametips.description=Aktiviert oder deaktiviert die Spieltipps auf diesem Gerät	#
-commands.gametips.enabled=Spieltipps sind jetzt aktiviert	#
-commands.gametips.disabled=Spieltipps sind jetzt deaktiviert	#
-commands.gametips-off.description=Spieltipps auf diesem Gerät deaktivieren	#
-commands.gametips-off.success=Spieltipps sind jetzt deaktiviert	#
-commands.gametips-on.description=Spieltipps auf diesem Gerät aktivieren	#
-commands.gametips-on.success=Spieltipps sind jetzt aktiviert	#
-commands.gametips-reset.description=Spieltipps auf diesem Gerät zurücksetzen	#
-commands.gametips-reset.success=Spieltipps wurden jetzt zurückgesetzt	#
 commands.generic.async.initiated=Befehl '%1$s' gestartet (async. Schritt %2$d)	#
 commands.generic.boolean.invalid='%1$s' ist nicht 'true' oder 'false'	#
 commands.generic.chunk.notFound=Angegebenen Chunk nicht gefunden	#
@@ -2532,8 +2523,8 @@ death.attack.fireball.item=%1$s wurde von" %2$s" mit %3$s flambiert	#
 death.attack.fireworks=%1$s hat sich mit einem Knall verabschiedet	#
 death.attack.flyIntoWall=%1$s wurde von kinetischer Energie getroffen	#
 death.attack.generic=%1$s starb	#
-death.attack.indirectMagic=%1$s wurde von "%2$s" mit Magie getötet	#
-death.attack.indirectMagic.item=%1$s wurde von "%2$s" mit %3$s getötet	#
+death.attack.indirectMagic=%1$s wurde von" %2$s" mit Magie getötet	#
+death.attack.indirectMagic.item=%1$s wurde von" %2$s" mit %3$s getötet	#
 death.attack.inFire=%1$s ging in Flammen auf	#
 death.attack.inFire.player=%1$s lief ins Feuer, während er mit %2$s kämpfte	#
 death.attack.inWall=%1$s wurde lebendig begraben	#
@@ -3087,12 +3078,10 @@ gameTip.breakBlock.mouse=Halte die linke Maustaste gedrückt, um Blöcke zu zers
 gameTip.breakBlock.touch=Tippe und halte, um Blöcke zu zerschlagen	#
 gameTip.breakBlock.touch.classic=Tippe und halte, um Blöcke zu zerschlagen	#
 gameTip.breakBlock.controller=Tippe und halte, um Blöcke zu zerschlagen	#
-gameTip.breakBlock.touch.crosshair=Tippe und halte :tip_virtual_button_action_attack_or_destroy:[LINEBREAK], um Blöcke zu zerschlagen 	#### {StrContains='LINEBREAK'}
 
-gameTip.placeBlock.mouse=Rechtsklick, um Block zu platzieren	#
+gameTip.placeBlock.mouse=Klicke, um den Block zu platzieren	#
 gameTip.placeBlock.touch=Tippe, um den Block zu platzieren	#
 gameTip.placeBlock.controller=Klicke auf den Boden, um den Block zu platzieren	#
-gameTip.placeBlock.touch.crosshair=Tippe auf :tip_virtual_button_action_build_or_use:, um Block zu platzieren	#
 
 gameTip.openInventorySurvival.mouse=Öffne dein Inventar[LINEBREAK]Drücke :_input_key.inventory:		#### {StrContains='LINEBREAK'}
 gameTip.openInventorySurvival.touch=Öffne das Inventar, um Handwerksrezepte zu sehen	#
@@ -3218,8 +3207,6 @@ gui.editor.copyProject.failedMessage=Es konnte keine Kopie dieser Welt erstellt 
 
 gui.edu.exitGameWarningCaption=Minecraft Education	### Use Minecraft 教育版 in zh_CN translation
 gui.edu.exitGameWarningMessage=Beenden Sie Minecraft Education?		### Use 离开 Minecraft 教育版? in zh_CN translation
-gui.edu.exitGameWarningCaptionPreview="Minecraft Education"-Vorschauversion	#
-gui.edu.exitGameWarningMessagePreview=Vorschauversion von Minecraft Education verlassen?	#
 
 updateScreen.update=Update	#
 updateScreen.updateRequired=Aktualisierung erforderlich	#
@@ -5756,8 +5743,6 @@ menu.editorMode=Editor-Modus	#
 menu.editor.play=Fortsetzen	#
 menu.character_cast.select_title=Wähle deinen Startcharakter	#
 menu.character_cast.preview_title=Lerne das Team kennen!	#
-menu.realms=Realms		####{StrContains="Realms"}
-menu.realmsServer=Realms-Server		####{StrContains="Realms"}{MaxLength='18'}
 
 merchant.deprecated=Handle etwas anderes, um ein neues Angebot freizuschalten!	#
 
@@ -5933,8 +5918,7 @@ options.delete_account.confirm.button=Löschen	#
 options.dev_game_tip=Gameplay-Tipps	#
 options.dev_ad_show_debug_panel=Debug-Fenster für EDU-Anmeldung anzeigen	#
 options.dev_ad_token_refresh_threshold=Aktualisierungsschwelle für EDU-Anmeldung-Token in Sekunden	#
-options.dev_ad_edu_max_signin_token_refresh=Aktualisierungsschwelle für EDU-Max.-Anmeldetoken (Minuten)	#
-options.dev_ad_edu_max_graph_token_refresh=Aktualisierungsschwelle für EDU-Max.-Graph-Token (Minuten)	#
+options.dev_ad_edu_max_token_refresh=Aktualisierungsschwelle für EDU-Max.-Token (Minuten)	#
 options.dev_side_by_side_comparison_rate=Vergleichsrate nebeneinander	#
 options.dev_playfab_token_refresh_threshold=Aktualisierungsschwelle für Playfab-Token in Minuten	#
 options.dev_assertions_debug_break=Debugger bei Assertions anhalten	#
@@ -6168,8 +6152,8 @@ options.fov.toggle=Das Blickfeld kann vom Spiel geändert werden	#
 options.licenses=Lizenzen	#
 options.licensed_content=Lizenzierte Inhalte	#
 options.networkSettings=Netzwerkeinstellungen	#
-options.ecoMode=Experimentelle Power-Saving Funktionen		#### {MaxLength='40'}
-options.enableEcoMode=Niedrigere Framerate, wenn der Controller getrennt ist		#### {MaxLength='55'}
+options.ecoMode=Öko-Modus		####Eco Mode refers to an ecological friendly mode {MaxLength='20'}
+options.enableEcoMode=Öko-Modus aktivieren		####Eco Mode refers to an ecological friendly mode {MaxLength='30'}
 options.font_license=Schriftartlizenz	#
 options.font_license_body=%1	#
 options.livingRoomFOV=Wohnzimmer-Sichtfeld	#
@@ -6259,7 +6243,6 @@ options.sneakOption.toggle=Einmal auf den Knopf tippen, um zu schleichen	#
 options.sneakOption.hold=Taste gedrückt halten, um zu schleichen	#
 options.splitscreenInterfaceOpacity=HUD-Deckkraft bei Bildschirmauft.	#
 options.textBackgroundOpacity=Texthintergrund-Deckkraft	#
-options.actionBarTextBackgroundOpacity=Deckkraft des Hintergrunds der Aktionsleiste	#
 options.hidepaperdoll=Puppe ausblenden	#
 options.showautosaveicon=Auto-Speichern-Symbol anzeigen	#
 options.hold=Gedrückt halten	#
@@ -6509,9 +6492,6 @@ options.deferred.upscaling=Hochskalierung	#
 options.terrainShadowsEnable=Geländeschatten	#
 options.superFancyWaterEnable=Superraffiniertes Wasser	#
 options.onlyTrustedSkinsAllowed=Nur vertrauenswürdige Skins erlauben	#
-options.restartTutorial=Tutorial neu starten	#
-options.tutorial=Tutorial	#
-options.tutorialHint=Tipps für den Einstieg mit den Grundlagen von Minecraft	#
 
 options.autoUpdateEnabled=Freigeschaltete Pakete automatisch aktualisieren	#
 options.autoUpdateMode=Freigeschaltete Pakete automatisch aktualisieren	#
@@ -7062,7 +7042,6 @@ progressScreen.title.connectingRealms=Verbindung zu Realm wird hergestellt	#
 progressScreen.title.copyingWorld=Welt-Kopie	#
 progressScreen.title.deleteStorageAreaContent=Löschen des Store-Cache	#
 progressScreen.title.loadingSplitScreenAppearances=Laden von Splitscreen-Ansichten	#
-progressScreen.title.modifiedWorldWarning=Modifizierte Welt	#
 progressScreen.message.appearanceLoaded=Aussehen geladen	#
 progressScreen.message.appearanceLoadWaitTimeMet=Das Laden des Erscheinungsbildes dauert sehr lange. Fahre mit der Welterzeugung fort ...	#
 progressScreen.message.deleteStorageAreaContent=Dies könnte einige Minuten dauern.	#
@@ -7111,7 +7090,6 @@ progressScreen.message.directoryDepthError=Diese Welt kann aufgrund eines Verzei
 progressScreen.message.forbiddenContent=Du besitzt eines oder mehrere der angewendeten Pakete nicht	#
 progressScreen.message.loadingSplitScreenAppearances=Laden von Splitscreen-Ansichten ...	#
 progressScreen.message.finishedLoadingSplitScreenAppearances=Laden der Splitscreen-Ansicht abgeschlossen.	#
-progressScreen.message.modifiedWorldWarning=Diese Welt könnte anders aussehen und sich anders verhalten als nicht-modifizierte Welten, und du kannst keine Erfolge verdienen.	#
 progressScreen.dialog.title.resourcePack=Ressourcenpakete herunterladen?	#
 progressScreen.dialog.title.behaviorAndResourcePack=Welt-Verhaltens und -Ressourcenpakete herunterladen?	#
 progressScreen.dialog.title.onlyBehavior=Welt-Verhaltenspakete herunterladen?	#
@@ -8145,7 +8123,7 @@ store.csb.upsell.rightBullet.3=Enthält			### Precedes the term Marketplace Pass
 
 store.csb.upsell.learnMore=Mehr erfahren	#
 store.csb.upsell.price=%s/Monat	#
-store.csb.upsell.firstPeriodFree=Kostenlose 30-tägige Testversion!	#
+store.csb.upsell.firstPeriodFree=Kostenlose 30-tägige Testversion!*	#
 
 store.csb.upsell.realmsPlus=§dREALMS PLUS	#
 
@@ -9836,6 +9814,10 @@ xbox.signinquestion=Anmelden?	#
 xbox.notnow=Nicht jetzt	#
 xbox.signingin=Du wirst bei deinem Microsoft-Konto angemeldet ...	#
 xbox.signingin.offline=Wird angemeldet	#
+xbox.firstsignin.line1=Willkommen bei Minecraft! Verwende ein Microsoft-Konto, um dich mit der Minecraft-Community zu verbinden. Dort können Spieler an PCs, Konsolen, Smartphones und Tablets gemeinsam spielen. Und weißt du, was das Beste ist?	#
+xbox.firstsignin.line2=Es ist KOSTENLOS!	#
+xbox.firstsignin.line3=Du hast kein Konto? Erstelle eines, um Erfolge zu verdienen sowie Realms und Servern beizutreten!	#
+xbox.firstsignin.line3.norealmsOrServers=Du hast kein Konto? Erstelle eines, um Erfolge zu verdienen sowie mit deinen Freunden plattformübergreifend zu spielen!	#
 xbox.failedsignin.body=Wir konnten dich nicht bei deinem Microsoft-Konto anmelden. Der Zugang zu deinen Realms, Profilen und Marketplace-Gegenstände ist eingeschränkt. Bitte versuche es später noch einmal.	#
 xbox.failedsignin.error=Fehler-Code:	#
 xbox.failedsignin.moreInfo=Weitere Informationen	#
@@ -10257,12 +10239,6 @@ lategameTips.27=Diorit, man liebt oder hasst es.	#
 
 tips.realms.1=Erstelle einen Screenshot über das Spielmenü.	#
 tips.realms.2=Ein Realm ist immer online, so ist es für dich und deine Freunde möglich hier zu spielen, wann immer ihr wollt.	#
-tips.realms.3=Bleib auf dem Laufenden, was in deinem Realm vor sich geht, indem du den Story-Feed in Realms Stories überprüfst.	#
-tips.realms.4=Teile deine großartigen Momente mit den anderen Spielern auf diesem Realm, indem du eine Geschichte zum Story-Feed hinzufügst.	#
-tips.realms.5=Sieh dir die Zeitleiste in Realms Stories an, um herauszufinden, wann andere spielen.	#
-tips.realms.6=Greife über das Spielmenü auf Realms Stories zu, während du auf dem Realm spielst.	#
-tips.realms.7=Lerne die Community deines Realms in der Registerkarte "Mitglieder" von Realms Stories kennen.	#
-tips.realms.8=Nutze Realms Stories, um Kontakte zu knüpfen, über den Fortschritt deiner Freunde auf dem Laufenden zu bleiben und die Spielzeit zu organisieren.	#
 
 splitscreen.joinPrompt=Als Spieler %s beitreten	#
 splitscreen.unavailable.toastHeader=Geteilter Bildschirm nicht verfügbar	#

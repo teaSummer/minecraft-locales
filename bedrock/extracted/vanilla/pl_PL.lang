@@ -927,15 +927,6 @@ commands.gamerule.type.nocheatsenabled=Reguły gry „%1$s” można używać ty
 commands.gamerule.nopermission=Tylko właściciele serwerów mogą zmieniać '%1$s'	#
 commands.gamerule.norule=Brak dostępnej reguły gry o nazwie '%1$s'	#
 commands.gamerule.success=Reguła gry %1$s została zaktualizowana do %2$s	#
-commands.gametips.description=Włącz lub wyłącz wskazówki dotyczące gry na tym urządzeniu	#
-commands.gametips.enabled=Wskazówki dotyczące gry są teraz włączone	#
-commands.gametips.disabled=Wskazówki dotyczące gry są teraz wyłączone	#
-commands.gametips-off.description=Wyłącz wskazówki dotyczące gry na tym urządzeniu	#
-commands.gametips-off.success=Wskazówki dotyczące gry są teraz wyłączone	#
-commands.gametips-on.description=Włącz wskazówki dotyczące gry na tym urządzeniu	#
-commands.gametips-on.success=Wskazówki dotyczące gry są teraz włączone	#
-commands.gametips-reset.description=Zresetuj wskazówki dotyczące gry na tym urządzeniu	#
-commands.gametips-reset.success=Wskazówki dotyczące gry zostały zresetowane	#
 commands.generic.async.initiated='%1$s' polecenie rozpoczęte (async step %2$d)	#
 commands.generic.boolean.invalid='%1$s' nie jest prawdą lub fałszem	#
 commands.generic.chunk.notFound=Nie znaleziono określonego chunka	#
@@ -3087,12 +3078,10 @@ gameTip.breakBlock.mouse=Przytrzymaj lewy przycisk myszy, aby rozbijać bloki	#
 gameTip.breakBlock.touch=Stuknij ekran i przytrzymaj go, aby rozbijać bloki	#
 gameTip.breakBlock.touch.classic=Stuknij ekran i przytrzymaj go, aby rozbijać bloki	#
 gameTip.breakBlock.controller=Stuknij ekran i przytrzymaj go, aby rozbijać bloki	#
-gameTip.breakBlock.touch.crosshair=Stuknij i przytrzymaj :tip_virtual_button_action_attack_or_destroy:[LINEBREAK], aby rozbijać bloki 	#### {StrContains='LINEBREAK'}
 
-gameTip.placeBlock.mouse=Kliknij prawym przyciskiem myszy, aby umieścić blok	#
+gameTip.placeBlock.mouse=Kliknij, aby umieścić blok	#
 gameTip.placeBlock.touch=Dotknij, aby umieścić blok	#
 gameTip.placeBlock.controller=Kliknij na ziemi, aby umieścić blok	#
-gameTip.placeBlock.touch.crosshair=Stuknij :tip_virtual_button_action_build_or_use:, aby umieścić blok	#
 
 gameTip.openInventorySurvival.mouse=Otwórz swój ekwipunek[LINEBREAK]Naciśnij :_input_key.inventory:		#### {StrContains='LINEBREAK'}
 gameTip.openInventorySurvival.touch=Otwórz ekwipunek, aby zobaczyć przepisy konstruowania	#
@@ -3218,8 +3207,6 @@ gui.editor.copyProject.failedMessage=Nie udało nam się stworzyć kopii tego ś
 
 gui.edu.exitGameWarningCaption=Minecraft Education	### Use Minecraft 教育版 in zh_CN translation
 gui.edu.exitGameWarningMessage=Wyjść z Minecraft Education?		### Use 离开 Minecraft 教育版? in zh_CN translation
-gui.edu.exitGameWarningCaptionPreview=Minecraft Education – wersja zapoznawcza	#
-gui.edu.exitGameWarningMessagePreview=Wyjść z wersji zapoznawczej Minecraft Education?	#
 
 updateScreen.update=Zaktualizuj	#
 updateScreen.updateRequired=Wymagana jest aktualizacja	#
@@ -5756,8 +5743,6 @@ menu.editorMode=Tryb edytora	#
 menu.editor.play=Wznów	#
 menu.character_cast.select_title=Wybierz swoją postać startową	#
 menu.character_cast.preview_title=Poznaj obsadę!	#
-menu.realms=Realms		####{StrContains="Realms"}
-menu.realmsServer=Serwer Realms		####{StrContains="Realms"}{MaxLength='18'}
 
 merchant.deprecated=Sprzedaj coś innego, żeby odblokować!	#
 
@@ -5933,8 +5918,7 @@ options.delete_account.confirm.button=Usuń	#
 options.dev_game_tip=Wskazówki dotyczące rozgrywki	#
 options.dev_ad_show_debug_panel=Pokaż znak EDU w panelu debugowania	#
 options.dev_ad_token_refresh_threshold=Próg sekundowy odświeżania znaku EDU w tokenie	#
-options.dev_ad_edu_max_signin_token_refresh=Maksymalne odświeżanie tokenu EDU (minuty)	#
-options.dev_ad_edu_max_graph_token_refresh=Maksymalne odświeżanie tokenu graficznego EDU (minuty)	#
+options.dev_ad_edu_max_token_refresh=Maksymalne odświeżanie tokenu EDU (minuty)	#
 options.dev_side_by_side_comparison_rate=Porównanie obok siebie	#
 options.dev_playfab_token_refresh_threshold=Próg minutowy odświeżania tokenów Playfab	#
 options.dev_assertions_debug_break=Instrukcja break asercji w debuggerze	#
@@ -6168,8 +6152,8 @@ options.fov.toggle=W czasie rozgrywki pole widzenia może się zmieniać	#
 options.licenses=Licencje	#
 options.licensed_content=Zawartość chroniona licencją	#
 options.networkSettings=Ustawienia sieciowe	#
-options.ecoMode=Eksperymentalne oszczędzanie energii		#### {MaxLength='40'}
-options.enableEcoMode=Niższy klatkaż, gdy kontroler jest odłączony		#### {MaxLength='55'}
+options.ecoMode=Tryb eko		####Eco Mode refers to an ecological friendly mode {MaxLength='20'}
+options.enableEcoMode=Włącz tryb eko		####Eco Mode refers to an ecological friendly mode {MaxLength='30'}
 options.font_license=Licencja czcionki	#
 options.font_license_body=%1	#
 options.livingRoomFOV=Pole widzenia salonu	#
@@ -6259,7 +6243,6 @@ options.sneakOption.toggle=Naciśnij przycisk raz, aby się skradać	#
 options.sneakOption.hold=Przytrzymaj przycisk, aby się skradać	#
 options.splitscreenInterfaceOpacity=Przezroczystość interfejsu HUD na ekranie dzielonym	#
 options.textBackgroundOpacity=Nieprzezroczystość tła tekstu	#
-options.actionBarTextBackgroundOpacity=Przezroczystość tła paska akcji	#
 options.hidepaperdoll=Ukryj kukłę postaci	#
 options.showautosaveicon=Pokaż ikonę autozapisu	#
 options.hold=Przytrzymaj	#
@@ -6509,9 +6492,6 @@ options.deferred.upscaling=Zwiększanie rozdzielczości	#
 options.terrainShadowsEnable=Cienie terenu	#
 options.superFancyWaterEnable=Superfantazyjna woda	#
 options.onlyTrustedSkinsAllowed=Zezwalaj tylko na zaufane skórki	#
-options.restartTutorial=Uruchom ponownie samouczek	#
-options.tutorial=Samouczek	#
-options.tutorialHint=Wskazówki dotyczące podstaw gry Minecraft	#
 
 options.autoUpdateEnabled=Automatyczna aktualizacja odblokowała zestawy	#
 options.autoUpdateMode=Automatyczna aktualizacja odblokowała zestawy	#
@@ -7062,7 +7042,6 @@ progressScreen.title.connectingRealms=Łączenie ze światem Realms	#
 progressScreen.title.copyingWorld=Kopia świata	#
 progressScreen.title.deleteStorageAreaContent=Czyszczenie pamięci podręcznej	#
 progressScreen.title.loadingSplitScreenAppearances=Ładowanie wyglądu podzielonego ekranu	#
-progressScreen.title.modifiedWorldWarning=Zmodyfikowany świat	#
 progressScreen.message.appearanceLoaded=Wygląd załadowany	#
 progressScreen.message.appearanceLoadWaitTimeMet=Wygląd ładuje się już od dłuższego czasu. Przystępuję do generowania świata…	#
 progressScreen.message.deleteStorageAreaContent=Może to potrwać kilka chwil.	#
@@ -7111,7 +7090,6 @@ progressScreen.message.directoryDepthError=Ten świat nie może zostać otwarty 
 progressScreen.message.forbiddenContent=Nie posiadasz przynajmniej jednego ze stosowanych zestawów	#
 progressScreen.message.loadingSplitScreenAppearances=Ładowanie wyglądu podzielonego ekranu…	#
 progressScreen.message.finishedLoadingSplitScreenAppearances=Zakończono ładowanie wyglądu podzielonego ekranu.	#
-progressScreen.message.modifiedWorldWarning=Ten świat może nie wyglądać lub zachowywać się w taki sam sposób co niezmodyfikowane światy. Co więcej, nie można zdobywać w nim osiągnięć.	#
 progressScreen.dialog.title.resourcePack=Pobrać paczki zasobów świata?	#
 progressScreen.dialog.title.behaviorAndResourcePack=Pobrać paczki zasobów i zachowania świata?	#
 progressScreen.dialog.title.onlyBehavior=Pobrać paczki zachowania świata?	#
@@ -8145,7 +8123,7 @@ store.csb.upsell.rightBullet.3=Zawiera			### Precedes the term Marketplace Pass 
 
 store.csb.upsell.learnMore=Dowiedz się więcej	#
 store.csb.upsell.price=%s co miesiąc	#
-store.csb.upsell.firstPeriodFree=Bezpłatny 30-dniowa wersja próbna!	#
+store.csb.upsell.firstPeriodFree=Bezpłatny 30-dniowy okres próbny!*	#
 
 store.csb.upsell.realmsPlus=§dREALMS PLUS	#
 
@@ -9836,6 +9814,10 @@ xbox.signinquestion=Chcesz się zalogować?	#
 xbox.notnow=Nie teraz	#
 xbox.signingin=Logowanie na konto Microsoft...	#
 xbox.signingin.offline=Logowanie	#
+xbox.firstsignin.line1=Witaj w grze Minecraft! Skorzystaj z konta Microsoft, aby połączyć się ze społecznością gry. Tutaj użytkownicy PC, konsol, telefonów i tabletów mogą grać razem. A wiesz, co jest najlepsze?	#
+xbox.firstsignin.line2=Jest za DARMO!	#
+xbox.firstsignin.line3=Nie masz konta? Załóż je, aby zdobywać osiągnięcia i dołączać do światów Realms oraz serwerów!	#
+xbox.firstsignin.line3.norealmsOrServers=Nie masz konta? Załóż je, aby zdobywać osiągnięcia i grać ze znajomymi z różnych platform!	#
 xbox.failedsignin.body=Nie możemy zalogować cię do twojego konta Microsoft. Dostęp do Realms, profili i twoich przedmiotów na rynku będzie ograniczony. Spróbuj ponownie później.	#
 xbox.failedsignin.error=Kod błędu:	#
 xbox.failedsignin.moreInfo=Więcej informacji	#
@@ -10257,12 +10239,6 @@ lategameTips.27=Dioryt – albo kochasz, albo nienawidzisz.	#
 
 tips.realms.1=Zrób zrzut ekranu za pomocą menu gry.	#
 tips.realms.2=Świat Realms jest zawsze online, więc możesz tu grać ze znajomymi, kiedy tylko chcesz.	#
-tips.realms.3=Bądź na bieżąco z tym, co dzieje się w twoim świecie Realms, sprawdzając kanał fabularnego w Realms Stories.	#
-tips.realms.4=Podziel się swoimi wspaniałymi chwilami z innymi graczami w tym świecie Realms, dodając historię do kanału fabularnego.	#
-tips.realms.5=Sprawdź oś czasu w Realms Stories, aby dowiedzieć się, kiedy grają inni.	#
-tips.realms.6=Uzyskaj dostęp do Realms Stories z menu gry podczas gry w tym świecie Realms.	#
-tips.realms.7=Poznaj społeczność swojego świata Realms na karcie Członkowie w Realms Stories.	#
-tips.realms.8=Korzystaj z Realms Stories, aby nawiązywać kontakty towarzyskie, śledzić postępy znajomych i organizować czas gry.	#
 
 splitscreen.joinPrompt=Dołącz jako gracz %s	#
 splitscreen.unavailable.toastHeader=Ekran dzielony jest niedostępny	#

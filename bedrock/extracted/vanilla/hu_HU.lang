@@ -927,15 +927,6 @@ commands.gamerule.type.nocheatsenabled=A(z) „%1$s” játékszabály csak akko
 commands.gamerule.nopermission=Csak a kiszolgáló tulajdonosa módosíthatja ezt: „%1$s”	#
 commands.gamerule.norule=Nem található a(z) „%1$s” játékszabály	#
 commands.gamerule.success=A(z) %1$s játékszabályt erre frissítetted: %2$s	#
-commands.gametips.description=A játéktippek engedélyezése vagy letiltása ezen az eszközön	#
-commands.gametips.enabled=A játéktippek mostantól engedélyezve vannak	#
-commands.gametips.disabled=A játéktippek mostantól le vannak tiltva	#
-commands.gametips-off.description=A játéktippek letiltása ezen az eszközön	#
-commands.gametips-off.success=A játéktippek mostantól le vannak tiltva	#
-commands.gametips-on.description=A játéktippek engedélyezése ezen az eszközön	#
-commands.gametips-on.success=A játéktippek mostantól engedélyezve vannak	#
-commands.gametips-reset.description=A játéktippek visszaállítása ezen az eszközön	#
-commands.gametips-reset.success=A játéktippek vissza lettek állítva	#
 commands.generic.async.initiated=Elindítottad a(z) „%1$s” parancsot (%2$d. aszinkron lépés)	#
 commands.generic.boolean.invalid=„%1$s” nem igaz vagy hamis	#
 commands.generic.chunk.notFound=A megadott darabka nem található	#
@@ -3087,12 +3078,10 @@ gameTip.breakBlock.mouse=A blokkok összetöréséhez kattints a bal egérgombba
 gameTip.breakBlock.touch=Koppints, és tartsd lenyomva a blokkok összetöréséhez	#
 gameTip.breakBlock.touch.classic=Koppints, és tartsd lenyomva a blokkok összetöréséhez	#
 gameTip.breakBlock.controller=Koppints, és tartsd lenyomva a blokkok összetöréséhez	#
-gameTip.breakBlock.touch.crosshair=Koppints, és tartsd lenyomva a :tip_virtual_button_action_attack_or_destroy:[LINEBREAK]gombot a blokkok összetöréséhez 	#### {StrContains='LINEBREAK'}
 
-gameTip.placeBlock.mouse=Kattints a jobb gombbal a blokk elhelyezéséhez	#
+gameTip.placeBlock.mouse=Kattints a blokk elhelyezéséhez	#
 gameTip.placeBlock.touch=Koppints a blokk elhelyezéséhez	#
 gameTip.placeBlock.controller=Kattints a talajra a blokk elhelyezéséhez	#
-gameTip.placeBlock.touch.crosshair=Koppints a :tip_virtual_button_action_build_or_use: gombra a blokk elhelyezéséhez	#
 
 gameTip.openInventorySurvival.mouse=Nyisd meg a leltáradat[LINEBREAK]Nyomd meg a(z) :_input_key.inventory: billentyűt		#### {StrContains='LINEBREAK'}
 gameTip.openInventorySurvival.touch=Nyisd meg a leltáradat a barkácsolási receptek megtekintéséhez	#
@@ -3218,8 +3207,6 @@ gui.editor.copyProject.failedMessage=Nem tudtunk másolatot készíteni erről a
 
 gui.edu.exitGameWarningCaption=Minecraft Education	### Use Minecraft 教育版 in zh_CN translation
 gui.edu.exitGameWarningMessage=Kilépés a Minecraft Education?		### Use 离开 Minecraft 教育版? in zh_CN translation
-gui.edu.exitGameWarningCaptionPreview=Minecraft Education előzetes verzió	#
-gui.edu.exitGameWarningMessagePreview=Kilépsz a Minecraft Education előzetes verziójából?	#
 
 updateScreen.update=Frissítés	#
 updateScreen.updateRequired=Frissítés szükséges	#
@@ -5756,8 +5743,6 @@ menu.editorMode=Szerkesztő mód	#
 menu.editor.play=Folytatás	#
 menu.character_cast.select_title=Válaszd ki a kezdő karakteredet	#
 menu.character_cast.preview_title=Ismerd meg a szereplőket!	#
-menu.realms=Realms		####{StrContains="Realms"}
-menu.realmsServer=Realms-kiszolgáló		####{StrContains="Realms"}{MaxLength='18'}
 
 merchant.deprecated=A feloldáshoz adj el valami mást!	#
 
@@ -5933,8 +5918,7 @@ options.delete_account.confirm.button=Törlés	#
 options.dev_game_tip=Játéktippek	#
 options.dev_ad_show_debug_panel=EDU bejelentkezés mutatása a hibakereső panelen	#
 options.dev_ad_token_refresh_threshold=OKTATÁSI bejelentkezési token frissítési küszöb másodpercben	#
-options.dev_ad_edu_max_signin_token_refresh=OKTATÁSI Bejelentkezési tokenek max. frissítése (perc)	#
-options.dev_ad_edu_max_graph_token_refresh=OKTATÁSI Grafikus tokenek max. frissítése (perc)	#
+options.dev_ad_edu_max_token_refresh=OKTATÁSI Max tokenfrissítés (perc)	#
 options.dev_side_by_side_comparison_rate=Egymás melletti összehasonlítási arány	#
 options.dev_playfab_token_refresh_threshold=Playfab tokenfrissítési küszöb percben	#
 options.dev_assertions_debug_break=Az állítás megszakításhoz vezetett a hibakeresőben	#
@@ -6168,8 +6152,8 @@ options.fov.toggle=A látótér játék közben módosulhat	#
 options.licenses=Licencek	#
 options.licensed_content=Licencelt tartalom	#
 options.networkSettings=Hálózati beállítások	#
-options.ecoMode=Kísérleti energiatakarékossági funkciók		#### {MaxLength='40'}
-options.enableEcoMode=Alacsonyabb képkockasebesség, ha nincs kontroller		#### {MaxLength='55'}
+options.ecoMode=Gazdaságos mód		####Eco Mode refers to an ecological friendly mode {MaxLength='20'}
+options.enableEcoMode=Gazdaságos mód engedélyezése		####Eco Mode refers to an ecological friendly mode {MaxLength='30'}
 options.font_license=Betűtípus licence	#
 options.font_license_body=%1	#
 options.livingRoomFOV=Nappali látótere	#
@@ -6259,7 +6243,6 @@ options.sneakOption.toggle=Lopakodás a gombra való egyszeri koppintással	#
 options.sneakOption.hold=Lopakodás a gomb nyomva tartásával	#
 options.splitscreenInterfaceOpacity=HUD áttetszősége osztott képernyőn	#
 options.textBackgroundOpacity=Szöveg hátterének átlátszósága	#
-options.actionBarTextBackgroundOpacity=Műveletsáv hátterének átlátszósága	#
 options.hidepaperdoll=Papírbaba elrejtése	#
 options.showautosaveicon=Automatikus mentés ikon megjelenítése	#
 options.hold=Tartás	#
@@ -6509,9 +6492,6 @@ options.deferred.upscaling=Felskálázás	#
 options.terrainShadowsEnable=Tereptárgyak árnyékai	#
 options.superFancyWaterEnable=Nagyon csicsás víz	#
 options.onlyTrustedSkinsAllowed=Csak megbízható felületek engedélyezése	#
-options.restartTutorial=Oktatás újraindítása	#
-options.tutorial=Oktatóanyag	#
-options.tutorialHint=Tippek a Minecraft alapjaihoz	#
 
 options.autoUpdateEnabled=Feloldott csomagok automatikus frissítése	#
 options.autoUpdateMode=Feloldott csomagok automatikus frissítése	#
@@ -7062,7 +7042,6 @@ progressScreen.title.connectingRealms=Csatlakozás a Realmhez	#
 progressScreen.title.copyingWorld=Világ másolása	#
 progressScreen.title.deleteStorageAreaContent=Tároló gyorsítótárának ürítése	#
 progressScreen.title.loadingSplitScreenAppearances=Osztott képernyős megjelenítés betöltése	#
-progressScreen.title.modifiedWorldWarning=Módosított világ	#
 progressScreen.message.appearanceLoaded=Megjelenítés betöltve	#
 progressScreen.message.appearanceLoadWaitTimeMet=A megjelenítés betöltése a vártnál több időt vesz igénybe. Folytatjuk a világ létrehozását...	#
 progressScreen.message.deleteStorageAreaContent=Ez eltarthat egy kis ideig.	#
@@ -7111,7 +7090,6 @@ progressScreen.message.directoryDepthError=Ezt a világot nem lehet megnyitni a 
 progressScreen.message.forbiddenContent=Az alkalmazott csomagok közül egy vagy több nincs a birtokodban	#
 progressScreen.message.loadingSplitScreenAppearances=Osztott képernyős megjelenítés betöltése...	#
 progressScreen.message.finishedLoadingSplitScreenAppearances=Az osztott képernyős megjelenítés betöltése kész.	#
-progressScreen.message.modifiedWorldWarning=Előfordulhat, hogy ez a világ nem olyan lesz vagy nem úgy működik majd, mint a nem módosított világok, és nem tudsz mérföldköveket elérni.	#
 progressScreen.dialog.title.resourcePack=Letöltöd az erőforráscsomagot?	#
 progressScreen.dialog.title.behaviorAndResourcePack=Letöltöd a világ viselkedés- és erőforráscsomagjait?	#
 progressScreen.dialog.title.onlyBehavior=Letöltöd a világ viselkedéscsomagjait?	#
@@ -8145,7 +8123,7 @@ store.csb.upsell.rightBullet.3=Tartalma:			### Precedes the term Marketplace Pas
 
 store.csb.upsell.learnMore=További részletek	#
 store.csb.upsell.price=%s/hó	#
-store.csb.upsell.firstPeriodFree=Ingyenes 30 napos próbaidőszak!	#
+store.csb.upsell.firstPeriodFree=Ingyenes 30 napos próbaidőszak!*	#
 
 store.csb.upsell.realmsPlus=§dREALMS PLUS	#
 
@@ -9836,6 +9814,10 @@ xbox.signinquestion=Bejelentkezel?	#
 xbox.notnow=Most nem	#
 xbox.signingin=Bejelentkezés Microsoft-fiókkal...	#
 xbox.signingin.offline=Bejelentkezés	#
+xbox.firstsignin.line1=Üdvözöl a Minecraft! Jelentkezz be a Microsoft-fiókoddal a Minecraft közösségéhez való csatlakozáshoz, ahol a számítógépet, konzolt, telefont és táblagépet használók együtt játszhatnak. És ami a legjobb:	#
+xbox.firstsignin.line2=INGYEN van!	#
+xbox.firstsignin.line3=Még nincs fiókod? Hozz létre egyet most a mérföldkövek eléréséhez, illetve a Realmekhez és kiszolgálókhoz való csatlakozáshoz!	#
+xbox.firstsignin.line3.norealmsOrServers=Még nincs fiókod? Hozz létre egyet most, hogy eredményeket szerezz és együtt játszhass más platformot használó barátaiddal!	#
 xbox.failedsignin.body=Nem tudtunk beléptetni a Microsoft-fiókodba. Így csak korlátozott mértékben férsz hozzá a Realmshez, a profilokhoz és a Piactéren vásárolt elemekhez. Próbálkozz újra később.	#
 xbox.failedsignin.error=Hibakód:	#
 xbox.failedsignin.moreInfo=További információk	#
@@ -10257,12 +10239,6 @@ lategameTips.27=Diorit; szereted vagy utálod.	#
 
 tips.realms.1=Készíts egy képernyőképet a Játék menü használatával.	#
 tips.realms.2=A Realm mindig online állapotú, így te és a barátaid akkor játszhattok, amikor csak szeretnétek.	#
-tips.realms.3=Kövesd nyomon a Történetek hírcsatornáját a Realms-történetekben, hogy mindig tudd, mi zajlik éppen a Realmedben.	#
-tips.realms.4=Oszd meg a legjobb pillanataidat a Realm többi játékosával a Történetek hírcsatornában.	#
-tips.realms.5=Nézd meg a Realm-történetek Idővonalát, hogy megtudd, mikor játszanak a többiek.	#
-tips.realms.6=A Realm-történeteket a játékmenüből érheted el, amikor a Realmben játszol.	#
-tips.realms.7=A Realm-történetek Tagok lapján megtudhatod, kik a Realm közösségének tagjai.	#
-tips.realms.8=A Realms-történetekkel lépést tarthatsz másokkal a barátaiddal, figyelemmel követheted az előrehaladásukat, és megszervezhetitek, mikor tudtok közösen játszani.	#
 
 splitscreen.joinPrompt=Csatlakozás a(z) %s. játékosként	#
 splitscreen.unavailable.toastHeader=Felosztott kép nem haszn.	#

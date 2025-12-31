@@ -927,15 +927,6 @@ commands.gamerule.type.nocheatsenabled=Правило на игра „%1$s“ �
 commands.gamerule.nopermission=Само собствениците на сървъра могат да променят „%1$s“	#
 commands.gamerule.norule=Няма налично правило за игра „%1$s“	#
 commands.gamerule.success=Правилото за игра „%1$s“ е актуализирано на %2$s	#
-commands.gametips.description=Включване или изключване на съветите за играта на това устройство	#
-commands.gametips.enabled=Съветите за играта вече са включени	#
-commands.gametips.disabled=Съветите за играта вече са изключени	#
-commands.gametips-off.description=Изключване на съветите за играта на това устройство	#
-commands.gametips-off.success=Съветите за играта вече са изключени	#
-commands.gametips-on.description=Включване на съветите за играта на това устройство	#
-commands.gametips-on.success=Съветите за играта вече са включени	#
-commands.gametips-reset.description=Нулиране на съветите за играта на това устройство	#
-commands.gametips-reset.success=Съветите за играта вече са нулирани	#
 commands.generic.async.initiated=Стартирана е команда „%1$s“ (асинхронна стъпка %2$d)	#
 commands.generic.boolean.invalid=„%1$s“ не е нито true, нито false	#
 commands.generic.chunk.notFound=Указаният отрязък не е намерен	#
@@ -3087,12 +3078,10 @@ gameTip.breakBlock.mouse=Задръжте левия бутон, за да чу�
 gameTip.breakBlock.touch=Докоснете и задръжте, за да чупите блокове.	#
 gameTip.breakBlock.touch.classic=Докоснете и задръжте, за да чупите блокове.	#
 gameTip.breakBlock.controller=Докоснете и задръжте, за да чупите блокове.	#
-gameTip.breakBlock.touch.crosshair=Докоснете и задръжте :tip_virtual_button_action_attack_or_destroy:,[LINEBREAK]за да чупите блокове. 	#### {StrContains='LINEBREAK'}
 
-gameTip.placeBlock.mouse=Щракнете с десния бутон, за да поставите блок	#
+gameTip.placeBlock.mouse=Щракнете, за да поставите блок	#
 gameTip.placeBlock.touch=Докоснете, за да поставите блок	#
 gameTip.placeBlock.controller=Щракнете върху земята, за да поставите блок	#
-gameTip.placeBlock.touch.crosshair=Докоснете :tip_virtual_button_action_build_or_use:, за да поставите блок	#
 
 gameTip.openInventorySurvival.mouse=Отворете инвентара си[LINEBREAK]Натиснете :_input_key.inventory:		#### {StrContains='LINEBREAK'}
 gameTip.openInventorySurvival.touch=Отворете инвентара, за да видите рецептите за изработване	#
@@ -3218,8 +3207,6 @@ gui.editor.copyProject.failedMessage=Не можахме да създадем �
 
 gui.edu.exitGameWarningCaption=Minecraft Education	### Use Minecraft 教育版 in zh_CN translation
 gui.edu.exitGameWarningMessage=Изход от Minecraft Education?		### Use 离开 Minecraft 教育版? in zh_CN translation
-gui.edu.exitGameWarningCaptionPreview=Предварителен преглед на Minecraft Education	#
-gui.edu.exitGameWarningMessagePreview=Напускане на предварителния преглед на Minecraft Education?	#
 
 updateScreen.update=Актуализиране	#
 updateScreen.updateRequired=Изисква се актуализация	#
@@ -5756,8 +5743,6 @@ menu.editorMode=Режим на редакция	#
 menu.editor.play=Възобновяване	#
 menu.character_cast.select_title=Изберете началния си персонаж	#
 menu.character_cast.preview_title=Запознайте се с актьорите!	#
-menu.realms=Realms		####{StrContains="Realms"}
-menu.realmsServer=Сървър за Realms		####{StrContains="Realms"}{MaxLength='18'}
 
 merchant.deprecated=Обменете нещо друго, за да отключите!	#
 
@@ -5933,8 +5918,7 @@ options.delete_account.confirm.button=Изтриване	#
 options.dev_game_tip=Съвети за игра	#
 options.dev_ad_show_debug_panel=Показване на знак EDU в панела за отстраняване на грешки	#
 options.dev_ad_token_refresh_threshold=Секунди за праг на обновяване на маркер за влизане на EDU	#
-options.dev_ad_edu_max_signin_token_refresh=Обновяване на маркер за вход EDU Max (минути)	#
-options.dev_ad_edu_max_graph_token_refresh=Обновяване на маркер за графика EDU Max (минути)	#
+options.dev_ad_edu_max_token_refresh=Обновяване на маркер EDU Max (минути)	#
 options.dev_side_by_side_comparison_rate=Степен на сравнение от двете страни	#
 options.dev_playfab_token_refresh_threshold=Минути за праг на обновяване на маркер на Playfab	#
 options.dev_assertions_debug_break=Твърденията се „чупят“ в дебъгера	#
@@ -6168,8 +6152,8 @@ options.fov.toggle=Полезрението може да бъде промен�
 options.licenses=Лицензи	#
 options.licensed_content=Лицензирано съдържание	#
 options.networkSettings=Мрежови настройки	#
-options.ecoMode=Пробни функции за пестене на енергия		#### {MaxLength='40'}
-options.enableEcoMode=По-ниска честота на кадрите при изключен контролер		#### {MaxLength='55'}
+options.ecoMode=Еко режим		####Eco Mode refers to an ecological friendly mode {MaxLength='20'}
+options.enableEcoMode=Активиране на еко режим		####Eco Mode refers to an ecological friendly mode {MaxLength='30'}
 options.font_license=Лиценз за шрифт	#
 options.font_license_body=%1	#
 options.livingRoomFOV=Обхват на изгледа за всекидневна	#
@@ -6259,7 +6243,6 @@ options.sneakOption.toggle=Докоснете бутона веднъж, за д
 options.sneakOption.hold=Задръжте бутона, за да се промъквате	#
 options.splitscreenInterfaceOpacity=Непрозрачност на HUD при разделен екран	#
 options.textBackgroundOpacity=Непрозрачност на фона на текста	#
-options.actionBarTextBackgroundOpacity=Плътност на фона на лентата за действия	#
 options.hidepaperdoll=Скриване на хартиена кукла	#
 options.showautosaveicon=Показване на икона за автоматично записване	#
 options.hold=Задържане	#
@@ -6509,9 +6492,6 @@ options.deferred.upscaling=Мащабиране	#
 options.terrainShadowsEnable=Сенки на терена	#
 options.superFancyWaterEnable=Изключително красива вода	#
 options.onlyTrustedSkinsAllowed=Позволявай само надеждни скинове	#
-options.restartTutorial=Рестартиране на въвеждащия урок	#
-options.tutorial=Урок	#
-options.tutorialHint=Подсказки в началото за основните неща в Minecraft	#
 
 options.autoUpdateEnabled=Автоматично актуализиране на отключени пакети	#
 options.autoUpdateMode=Автоматично актуализиране на отключени пакети	#
@@ -7062,7 +7042,6 @@ progressScreen.title.connectingRealms=Свързване към обител	#
 progressScreen.title.copyingWorld=Копие на свят	#
 progressScreen.title.deleteStorageAreaContent=Изчистване на кеша на съхранението	#
 progressScreen.title.loadingSplitScreenAppearances=Зареждане на изгледите на разделен екран	#
-progressScreen.title.modifiedWorldWarning=Модифициран свят	#
 progressScreen.message.appearanceLoaded=Изгледът е зареден	#
 progressScreen.message.appearanceLoadWaitTimeMet=Зареждането на изгледа отнема много време. Продължаваме със създаването на света...	#
 progressScreen.message.deleteStorageAreaContent=Това може да отнеме няколко минути.	#
@@ -7111,7 +7090,6 @@ progressScreen.message.directoryDepthError=Този свят не може да 
 progressScreen.message.forbiddenContent=Не притежавате един или повече от приложените пакети	#
 progressScreen.message.loadingSplitScreenAppearances=Зареждане на изгледите на разделен екран...	#
 progressScreen.message.finishedLoadingSplitScreenAppearances=Завършено е зареждането на изгледите на разделен екран.	#
-progressScreen.message.modifiedWorldWarning=Възможно е този свят да не изглежда или да не се държи по същия начин като световете, които не са модифицирани, и да не можете да печелите постижения.	#
 progressScreen.dialog.title.resourcePack=Изтегляне на пакетите с ресурси?	#
 progressScreen.dialog.title.behaviorAndResourcePack=Изтегляне на пакетите с ресурси и поведения на света?	#
 progressScreen.dialog.title.onlyBehavior=Изтегляне на пакетите с поведения на света?	#
@@ -8145,7 +8123,7 @@ store.csb.upsell.rightBullet.3=Включва			### Precedes the term Marketplac
 
 store.csb.upsell.learnMore=Научете повече	#
 store.csb.upsell.price=%s/месец	#
-store.csb.upsell.firstPeriodFree=Безплатна 30-дневна пробна версия!	#
+store.csb.upsell.firstPeriodFree=Безплатен 30-дневен пробен период!*	#
 
 store.csb.upsell.realmsPlus=§dREALMS PLUS	#
 
@@ -9836,6 +9814,10 @@ xbox.signinquestion=Влизане?	#
 xbox.notnow=Не сега	#
 xbox.signingin=Влизане с вашия акаунт в Microsoft...	#
 xbox.signingin.offline=Влизане	#
+xbox.firstsignin.line1=Добре дошли в Minecraft! Използвайте акаунт в Microsoft, за да започнете свързването с общността на Minecraft, където всички играчи на компютри, конзоли, телефони и таблети могат да играят заедно. А най-добрата част?	#
+xbox.firstsignin.line2=Напълно БЕЗПЛАТНА е!	#
+xbox.firstsignin.line3=Нямате акаунт? Създайте свой собствен сега, за да печелите постижения и да се присъединявате към обители и сървъри!	#
+xbox.firstsignin.line3.norealmsOrServers=Нямате акаунт? Създайте си сега, за да печелите постижения и да играете с вашите приятели на различни платформи!	#
 xbox.failedsignin.body=Неуспешно влизане във вашия акаунт в Microsoft. Достъпът до Realms, профили и вашите елементи на пазара ще бъде ограничен. Опитайте отново по-късно.	#
 xbox.failedsignin.error=Код на грешка:	#
 xbox.failedsignin.moreInfo=Повече информация	#
@@ -10257,12 +10239,6 @@ lategameTips.27=Диорит – или го обичате, или го мра�
 
 tips.realms.1=Направете снимка на екрана от менюто на играта.	#
 tips.realms.2=Един Realm винаги е онлайн, така че с приятелите си можете да играете тук, когато пожелаете.	#
-tips.realms.3=Бъдете в крак с това, което се случва във вашия Realm, като проверявате историите в Realms Stories.	#
-tips.realms.4=Споделете страхотните си моменти с другите играчи в този Realm, като добавите история в канала за истории.	#
-tips.realms.5=Проверявайте хронологията в Realms Stories, за да разберете кога играят другите.	#
-tips.realms.6=Отворете Realms Stories от менюто на играта, докато играете в Realm.	#
-tips.realms.7=Запознайте се с общността на вашия Realm в раздела „Членове“ в Realms Stories.	#
-tips.realms.8=Използвайте Realms Stories, за да общувате, да следите напредъка на приятелите си и да организирате време за игра.	#
 
 splitscreen.joinPrompt=Присъединяване като играч %s	#
 splitscreen.unavailable.toastHeader=Опцията за разделен екран е недостъпна	#

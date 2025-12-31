@@ -927,15 +927,6 @@ commands.gamerule.type.nocheatsenabled=해당 월드에서 치트를 사용할 �
 commands.gamerule.nopermission='%1$s' 변경은 서버 관리자만 가능합니다	#
 commands.gamerule.norule='%1$s'은(는) 존재하지 않는 규칙입니다	#
 commands.gamerule.success=게임 규칙 %1$s이(가) %2$s(으)로 업데이트되었습니다	#
-commands.gametips.description=Enable or disable the game tips on this device	#
-commands.gametips.enabled=Game tips are now enabled	#
-commands.gametips.disabled=Game tips are now disabled	#
-commands.gametips-off.description=Disable game tips on this device	#
-commands.gametips-off.success=Game tips are now disabled	#
-commands.gametips-on.description=Enable game tips on this device	#
-commands.gametips-on.success=Game tips are now enabled	#
-commands.gametips-reset.description=Reset game tips on this device	#
-commands.gametips-reset.success=Game tips are now reset	#
 commands.generic.async.initiated='%1$s' 명령 시작됨(비동기 %2$d 단계)	#
 commands.generic.boolean.invalid='%1$s' 설정이 True 또는 False가 아닙니다	#
 commands.generic.chunk.notFound=지정한 청크를 찾을 수 없습니다.	#
@@ -3087,12 +3078,10 @@ gameTip.breakBlock.mouse=왼쪽 버튼을 길게 눌러 블록을 부수세요	#
 gameTip.breakBlock.touch=길게 탭하여 블록 부수기	#
 gameTip.breakBlock.touch.classic=길게 탭하여 블록 부수기	#
 gameTip.breakBlock.controller=길게 탭하여 블록 부수기	#
-gameTip.breakBlock.touch.crosshair=Tap and hold :tip_virtual_button_action_attack_or_destroy:[LINEBREAK]to break blocks 	#### {StrContains='LINEBREAK'}
 
 gameTip.placeBlock.mouse=클릭하여 블록을 배치하세요	#
 gameTip.placeBlock.touch=탭하여 블록을 배치하세요	#
 gameTip.placeBlock.controller=땅을 클릭하여 블록 배치하기	#
-gameTip.placeBlock.touch.crosshair=Tap :tip_virtual_button_action_build_or_use: to place block	#
 
 gameTip.openInventorySurvival.mouse=소지품을 열려면[LINEBREAK]:_input_key.inventory:을(를) 누르세요		#### {StrContains='LINEBREAK'}
 gameTip.openInventorySurvival.touch=소지품을 열어 제작법을 확인하세요	#
@@ -3218,8 +3207,6 @@ gui.editor.copyProject.failedMessage=이 프로젝트의 사본을 생성할 수
 
 gui.edu.exitGameWarningCaption=Minecraft Education	### Use Minecraft 教育版 in zh_CN translation
 gui.edu.exitGameWarningMessage=Minecraft Education을 종료할까요?		### Use 离开 Minecraft 教育版? in zh_CN translation
-gui.edu.exitGameWarningCaptionPreview=Minecraft Education Preview	#
-gui.edu.exitGameWarningMessagePreview=Exit Minecraft Education Preview?	#
 
 updateScreen.update=업데이트	#
 updateScreen.updateRequired=필요 업데이트	#
@@ -5756,8 +5743,6 @@ menu.editorMode=편집기 모드	#
 menu.editor.play=계속하기	#
 menu.character_cast.select_title=시작 캐릭터 선택	#
 menu.character_cast.preview_title=캐스트를 만나보세요!	#
-menu.realms=Realms		####{StrContains="Realms"}
-menu.realmsServer=Realms 서버		####{StrContains="Realms"}{MaxLength='18'}
 
 merchant.deprecated=잠금을 해제하려면 다른 물건을 거래하세요!	#
 
@@ -5933,8 +5918,7 @@ options.delete_account.confirm.button=삭제	#
 options.dev_game_tip=게임 플레이 팁	#
 options.dev_ad_show_debug_panel=EDU 로그인 디버그 패널 표시	#
 options.dev_ad_token_refresh_threshold=EDU 로그인 토큰 새로 고침 임계값 초	#
-options.dev_ad_edu_max_signin_token_refresh=EDU Max Sign In Token Refresh (Minutes)	#
-options.dev_ad_edu_max_graph_token_refresh=EDU Max Graph Token Refresh (Minutes)	#
+options.dev_ad_edu_max_token_refresh=EDU 최대 토큰 새로 고침(분)	#
 options.dev_side_by_side_comparison_rate=일대일 비율	#
 options.dev_playfab_token_refresh_threshold=Playfab 토큰 새로 고침 임계값(분)	#
 options.dev_assertions_debug_break=어서션이 디버거에 침입	#
@@ -6168,8 +6152,8 @@ options.fov.toggle=게임 플레이에 따른 FOV 변경 허용	#
 options.licenses=라이선스	#
 options.licensed_content=라이선스 있는 콘텐츠	#
 options.networkSettings=네트워크 설정	#
-options.ecoMode=친환경 모드		#### {MaxLength='40'}
-options.enableEcoMode=친환경 모드 활성화		#### {MaxLength='55'}
+options.ecoMode=친환경 모드		####Eco Mode refers to an ecological friendly mode {MaxLength='20'}
+options.enableEcoMode=친환경 모드 활성화		####Eco Mode refers to an ecological friendly mode {MaxLength='30'}
 options.font_license=글꼴 라이센스	#
 options.font_license_body=%1	#
 options.livingRoomFOV=거실 시야	#
@@ -6259,7 +6243,6 @@ options.sneakOption.toggle=버튼을 한 번 탭하여 앉기	#
 options.sneakOption.hold=아래쪽 버튼을 길게 눌러 몰래 앉기	#
 options.splitscreenInterfaceOpacity=분할 화면 HUD 투명도	#
 options.textBackgroundOpacity=텍스트 배경 불투명도	#
-options.actionBarTextBackgroundOpacity=Action Bar Background Opacity	#
 options.hidepaperdoll=종이 인형 숨김	#
 options.showautosaveicon=자동 저장 아이콘 표시	#
 options.hold=대기	#
@@ -6509,9 +6492,6 @@ options.deferred.upscaling=업스케일링	#
 options.terrainShadowsEnable=지형 그림자	#
 options.superFancyWaterEnable=엄청 화려한 물 표현	#
 options.onlyTrustedSkinsAllowed=신뢰할 수 있는 스킨만 허용	#
-options.restartTutorial=Restart Tutorial	#
-options.tutorial=튜토리얼	#
-options.tutorialHint=Hints to get going with the basics of Minecraft	#
 
 options.autoUpdateEnabled=잠금 해제된 팩을 자동 업데이트	#
 options.autoUpdateMode=잠금 해제된 팩을 자동 업데이트	#
@@ -7062,7 +7042,6 @@ progressScreen.title.connectingRealms=Realm에 연결합니다...	#
 progressScreen.title.copyingWorld=월드 복사	#
 progressScreen.title.deleteStorageAreaContent=스토리지 캐시 삭제	#
 progressScreen.title.loadingSplitScreenAppearances=분할 화면 모양 불러오기	#
-progressScreen.title.modifiedWorldWarning=Modified World	#
 progressScreen.message.appearanceLoaded=모양 로드 완료	#
 progressScreen.message.appearanceLoadWaitTimeMet=모양을 로드하는 데 시간이 걸리고 있습니다. 월드 생성 진행 중...	#
 progressScreen.message.deleteStorageAreaContent=잠시 시간이 걸릴 수 있습니다.	#
@@ -7111,7 +7090,6 @@ progressScreen.message.directoryDepthError=이 월드는 팩에 문제가 있기
 progressScreen.message.forbiddenContent=적용된 팩 중 하나 이상을 보유하지 않았습니다.	#
 progressScreen.message.loadingSplitScreenAppearances=분할 화면 모양 로딩 중...	#
 progressScreen.message.finishedLoadingSplitScreenAppearances=분할 화면 모양 불러오기를 완료했습니다.	#
-progressScreen.message.modifiedWorldWarning=This world may not look or behave in the same way as non-modified worlds and you can't earn achievements.	#
 progressScreen.dialog.title.resourcePack=리소스 팩을 다운로드하시겠습니까?	#
 progressScreen.dialog.title.behaviorAndResourcePack=월드 행동 및 리소스 팩을 다운로드하시겠습니까?	#
 progressScreen.dialog.title.onlyBehavior=월드 행동 팩을 다운로드하시겠습니까?	#
@@ -7774,7 +7752,7 @@ selectTemplate.delete.confirm=월드 템플릿을 삭제할까요?	#
 selectTemplate.delete=삭제	#
 selectTemplate.myTemplates=내 월드 템플릿	#
 selectTemplate.realmsPlus=추천 Realms Plus 템플릿	#
-selectTemplate.marketplacePass=Marketplace Pass 추천 템플릿			#### {StrContains="Marketplace Pass"}
+selectTemplate.marketplacePass=Featured Marketplace Pass Templates			#### {StrContains="Marketplace Pass"}
 selectTemplate.importedTemplates=가져온 템플릿	#
 selectTemplate.download=다운로드	#
 selectTemplate.noTemplates=이 장치에는 월드 템플릿이 없습니다.	#
@@ -9836,6 +9814,10 @@ xbox.signinquestion=로그인할까요?	#
 xbox.notnow=나중에	#
 xbox.signingin=Microsoft 계정으로 로그인하는 중...	#
 xbox.signingin.offline=로그인	#
+xbox.firstsignin.line1=Minecraft에 어서 오세요! Microsoft 계정을 이용하여 PC, 콘솔, 휴대폰 및 태블릿을 이용하는 플레이어들이 다 함께 플레이할 수 있는 Minecraft 커뮤니티에서 어울려 보세요. 가장 좋은 점이 뭔지 아세요?	#
+xbox.firstsignin.line2=무료라는 점입니다.	#
+xbox.firstsignin.line3=계정이 없으신가요? 계정을 만들어 도전 과제를 얻고 Realm과 서버에 참여하세요!	#
+xbox.firstsignin.line3.norealmsOrServers=계정이 없으신가요? 도전 과제를 달성하고 플랫폼에 구분 없이 친구들과 함께 플레이하려면 지금 계정을 생성하세요!	#
 xbox.failedsignin.body=Microsoft 계정으로 로그인하지 못했습니다. Realms, 프로필, 마켓플레이스 아이템 이용이 제한됩니다. 나중에 다시 시도해 주세요.	#
 xbox.failedsignin.error=오류 코드:	#
 xbox.failedsignin.moreInfo=추가 정보	#
@@ -10257,12 +10239,6 @@ lategameTips.27=섬록암은 좋아하거나 싫어하거나 둘 중 하나입�
 
 tips.realms.1=게임 메뉴를 사용하여 스크린샷을 찍습니다.	#
 tips.realms.2=Realm은 언제나 온라인이니, 원할 때마다 언제든지 친구들과 함께 플레이하세요.	#
-tips.realms.3=Keep up to date with what's going on in your Realm by checking the Story Feed in Realms Stories.	#
-tips.realms.4=Share your great moments with the other players on this Realm by adding a story to the Story Feed.	#
-tips.realms.5=Check the Timeline in Realms Stories to find out when others are playing.	#
-tips.realms.6=Access Realms Stories from the game menu while playing on the Realm.	#
-tips.realms.7=Get to know your Realm's community on the Members tab in Realms Stories.	#
-tips.realms.8=Use Realms Stories to get social, keep up with your friends' progress, and organize playtime.	#
 
 splitscreen.joinPrompt=플레이어 %s(으)로 참가하기	#
 splitscreen.unavailable.toastHeader=분할 화면 이용 불가	#

@@ -927,15 +927,6 @@ commands.gamerule.type.nocheatsenabled=Pelisääntöä "%1$s" voi käyttää vai
 commands.gamerule.nopermission=Vain palvelimenomistajat voivat muuttaa sääntöä "%1$s"	#
 commands.gamerule.norule=Pelisääntöä nimellä "%1$s" ei ole käytettävissä	#
 commands.gamerule.success=Pelisääntö %1$s on päivitetty muotoon %2$s	#
-commands.gametips.description=Ota pelivinkit käyttöön tai poista ne käytöstä tällä laitteella	#
-commands.gametips.enabled=Pelivinkit ovat nyt käytössä	#
-commands.gametips.disabled=Pelivinkit ovat nyt poissa käytöstä	#
-commands.gametips-off.description=Poista pelivinkit käytöstä tällä laitteella	#
-commands.gametips-off.success=Pelivinkit ovat nyt poissa käytöstä	#
-commands.gametips-on.description=Ota pelivinkit käyttöön tällä laitteella	#
-commands.gametips-on.success=Pelivinkit ovat nyt käytössä	#
-commands.gametips-reset.description=Nollaa pelivinkit tällä laitteella	#
-commands.gametips-reset.success=Pelivinkit on nyt nollattu	#
 commands.generic.async.initiated=Komento "%1$s" aloitettu (asynkronoitu vaihe %2$d)	#
 commands.generic.boolean.invalid="%1$s" ei ole tosi tai epätosi	#
 commands.generic.chunk.notFound=Määritettyä lohkoa ei löydetty	#
@@ -3087,12 +3078,10 @@ gameTip.breakBlock.mouse=Riko kuutioita pitämällä hiiren vasenta painiketta p
 gameTip.breakBlock.touch=Riko kuutioita napauttamalla ja pitämällä painettuna	#
 gameTip.breakBlock.touch.classic=Riko kuutioita napauttamalla ja pitämällä painettuna	#
 gameTip.breakBlock.controller=Riko kuutioita napauttamalla ja pitämällä painettuna	#
-gameTip.breakBlock.touch.crosshair=Riko kuutioita napauttamalla :tip_virtual_button_action_attack_or_destroy:[LINEBREAK]ja pitämällä sitä painettuna 	#### {StrContains='LINEBREAK'}
 
-gameTip.placeBlock.mouse=Aseta kuutio napsauttamalla hiiren kakkospainikkeella	#
+gameTip.placeBlock.mouse=Aseta kuutio napsauttamalla	#
 gameTip.placeBlock.touch=Aseta kuutio napauttamalla	#
 gameTip.placeBlock.controller=Aseta kuutio napsauttamalla maaperää	#
-gameTip.placeBlock.touch.crosshair=Aseta kuutio napauttamalla :tip_virtual_button_action_build_or_use:	#
 
 gameTip.openInventorySurvival.mouse=Avaa tavaraluettelosi[LINEBREAK]Paina :_input_key.inventory:		#### {StrContains='LINEBREAK'}
 gameTip.openInventorySurvival.touch=Avaa tavaraluettelo nähdäksesi nikkarointireseptit	#
@@ -3218,8 +3207,6 @@ gui.editor.copyProject.failedMessage=Emme voineet luoda kopiota tästä maailmas
 
 gui.edu.exitGameWarningCaption=Minecraft Education	### Use Minecraft 教育版 in zh_CN translation
 gui.edu.exitGameWarningMessage=Poistu Minecraft Educationista?		### Use 离开 Minecraft 教育版? in zh_CN translation
-gui.edu.exitGameWarningCaptionPreview=Minecraft Education -esikatselu	#
-gui.edu.exitGameWarningMessagePreview=Poistutaanko Minecraft Education -esikatselusta?	#
 
 updateScreen.update=Päivitä	#
 updateScreen.updateRequired=Vaatii päivityksen	#
@@ -5756,8 +5743,6 @@ menu.editorMode=Editoritila	#
 menu.editor.play=Jatka	#
 menu.character_cast.select_title=Valitse aloitushahmosi	#
 menu.character_cast.preview_title=Tapaa hahmot!	#
-menu.realms=Realms		####{StrContains="Realms"}
-menu.realmsServer=Realms-palvelin		####{StrContains="Realms"}{MaxLength='18'}
 
 merchant.deprecated=Avaa vaihtamalla jotakin muuta!	#
 
@@ -5933,8 +5918,7 @@ options.delete_account.confirm.button=Poista	#
 options.dev_game_tip=Pelivinkit	#
 options.dev_ad_show_debug_panel=Näytä EDU-kirjautumisen vianmäärityspaneeli	#
 options.dev_ad_token_refresh_threshold=Kynnyssekunnit EDU:n kirjautumispoletin päivittymiseen	#
-options.dev_ad_edu_max_signin_token_refresh=EDU Max -kirjautumispolettien päivitys (minuuttia)	#
-options.dev_ad_edu_max_graph_token_refresh=EDU Max -grafiikkapolettien päivitys (minuuttia)	#
+options.dev_ad_edu_max_token_refresh=EDU Max -polettien päivitys (minuuttia)	#
 options.dev_side_by_side_comparison_rate=Rinnakkaisvertailutahti	#
 options.dev_playfab_token_refresh_threshold=Playfab-tunnisteen päivityskynnys minuutteina	#
 options.dev_assertions_debug_break=Väitekatko virheiden tarkastusohjelmassa	#
@@ -6168,8 +6152,8 @@ options.fov.toggle=Näkökenttää voidaan muokata pelissä	#
 options.licenses=Käyttöoikeudet	#
 options.licensed_content=Lisensoitu sisältö	#
 options.networkSettings=Verkkoasetukset	#
-options.ecoMode=Kokeelliset virransäästöominaisuudet		#### {MaxLength='40'}
-options.enableEcoMode=Alempi kuvataajuus, kun ohjaimen yhteys katkeaa		#### {MaxLength='55'}
+options.ecoMode=Eco-tila		####Eco Mode refers to an ecological friendly mode {MaxLength='20'}
+options.enableEcoMode=Ota Eco-tila käyttöön		####Eco Mode refers to an ecological friendly mode {MaxLength='30'}
 options.font_license=Kirjasimen käyttöoikeus	#
 options.font_license_body=%1	#
 options.livingRoomFOV=Olohuoneen näkökenttä	#
@@ -6259,7 +6243,6 @@ options.sneakOption.toggle=Hiivi napauttamalla painiketta kerran	#
 options.sneakOption.hold=Hiivi pitämällä painiketta painettuna	#
 options.splitscreenInterfaceOpacity=Jaetun ruudun heijastusnäytön läpikuultavuus	#
 options.textBackgroundOpacity=Tekstin taustan peittävyys	#
-options.actionBarTextBackgroundOpacity=Toimintopalkin taustan läpikuultavuus	#
 options.hidepaperdoll=Piilota paperinukke	#
 options.showautosaveicon=Näytä automaattisen tallennuksen kuvake	#
 options.hold=Pidä	#
@@ -6509,9 +6492,6 @@ options.deferred.upscaling=Resoluution parannus	#
 options.terrainShadowsEnable=Maaston varjot	#
 options.superFancyWaterEnable=Superhieno vesi	#
 options.onlyTrustedSkinsAllowed=Salli vain luotetut olemukset	#
-options.restartTutorial=Aloita tutoriaali alusta	#
-options.tutorial=Tutoriaali	#
-options.tutorialHint=Vihjeitä, joilla pääsee alkuun Minecraftin perusteissa	#
 
 options.autoUpdateEnabled=Päivitä avatut paketit automaattisesti	#
 options.autoUpdateMode=Päivitä avatut paketit automaattisesti	#
@@ -7062,7 +7042,6 @@ progressScreen.title.connectingRealms=Yhdistetään Realmiin	#
 progressScreen.title.copyingWorld=Maailmakopio	#
 progressScreen.title.deleteStorageAreaContent=Tyhjennetään tallennustilan välimuistia	#
 progressScreen.title.loadingSplitScreenAppearances=Ladataan jaetun näytön ulkonäköjä	#
-progressScreen.title.modifiedWorldWarning=Mukautettu maailma	#
 progressScreen.message.appearanceLoaded=Ulkonäkö ladattu	#
 progressScreen.message.appearanceLoadWaitTimeMet=Ulkonäön lataaminen kestää kauan. Maailman luonti käynnistyy...	#
 progressScreen.message.deleteStorageAreaContent=Tähän voi mennä hetki...	#
@@ -7111,7 +7090,6 @@ progressScreen.message.directoryDepthError=Tätä maailmaa ei voi avata paketin 
 progressScreen.message.forbiddenContent=Et omista vähintään yhtä käyttöön otetuista paketeista	#
 progressScreen.message.loadingSplitScreenAppearances=Ladataan jaetun näytön ulkonäköjä...	#
 progressScreen.message.finishedLoadingSplitScreenAppearances=Jaetun näytön ulkonäöt on ladattu.	#
-progressScreen.message.modifiedWorldWarning=Tämä maailma ei välttämättä näytä samalta tai toimi samalla tavalla kuin mukauttamattomat maailmat, etkä voi ansaita saavutuksia.	#
 progressScreen.dialog.title.resourcePack=Lataa resurssipaketit?	#
 progressScreen.dialog.title.behaviorAndResourcePack=Lataa maailman käyttäytymis- ja resurssipaketit?	#
 progressScreen.dialog.title.onlyBehavior=Lataa maailman käyttäytymispaketit?	#
@@ -8145,7 +8123,7 @@ store.csb.upsell.rightBullet.3=Mukana			### Precedes the term Marketplace Pass i
 
 store.csb.upsell.learnMore=Lisätietoja	#
 store.csb.upsell.price=%s/kuukausi	#
-store.csb.upsell.firstPeriodFree=Ilmainen 30 päivän kokeiluversio!	#
+store.csb.upsell.firstPeriodFree=Maksuton 30 päivän kokeilujakso!*	#
 
 store.csb.upsell.realmsPlus=§dREALMS PLUS	#
 
@@ -9836,6 +9814,10 @@ xbox.signinquestion=Kirjaudu sisään?	#
 xbox.notnow=Ei nyt	#
 xbox.signingin=Kirjaudutaan sisään Microsoft-tililläsi...	#
 xbox.signingin.offline=Kirjautuminen	#
+xbox.firstsignin.line1=Tervetuloa Minecraftiin! Microsoft-tilin avulla voit alkaa tutustua Minecraft-yhteisöön, jossa PC:t, konsolit, puhelimet ja tabletit voivat pelata yhdessä. Eikä siinä vielä kaikki!	#
+xbox.firstsignin.line2=Se on ILMAINEN!	#
+xbox.firstsignin.line3=Eikö sinulla vielä ole tiliä? Luo uusi tili, jotta voit ansaita saavutuksia sekä liittyä Realmeihin ja palvelimille!	#
+xbox.firstsignin.line3.norealmsOrServers=Eikö sinulla ole tiliä? Luo sellainen nyt, jotta pääset ansaitsemaan saavutuksia ja pelaamaan muilla alustoilla pelaavien ystäviesi kanssa!	#
 xbox.failedsignin.body=Emme saaneet sinua kirjattua Microsoft-tilillesi. Realmsin, profiilien ja kauppaesineidesi käyttöä rajoitetaan. Yritä myöhemmin uudelleen.	#
 xbox.failedsignin.error=Virhekoodi:	#
 xbox.failedsignin.moreInfo=Lisätietoja	#
@@ -10257,12 +10239,6 @@ lategameTips.27=Dioriitti jakaa ihmiset kahtia.	#
 
 tips.realms.1=Ota näyttökuva pelivalikon kautta.	#
 tips.realms.2=Realm on aina online-tilassa, joten sinä ja ystäväsi voitte pelata täällä milloin tahansa.	#
-tips.realms.3=Pysy ajan tasalla siitä, mitä Realmissasi tapahtuu, tarkistamalla Realms-tarinoiden Tarinasyöte.	#
-tips.realms.4=Jaa upeat hetkesi muiden tämän Realmin pelaajien kanssa lisäämällä tarina Tarinasyötteeseen.	#
-tips.realms.5=Tarkista Realms-tarinoiden aikajanalta, milloin muut pelaavat.	#
-tips.realms.6=Avaa Realms-tarinat pelivalikosta, kun pelaat Realmissa.	#
-tips.realms.7=Tutustu Realmisi yhteisöön Realms-tarinoiden Jäsenet-välilehdellä.	#
-tips.realms.8=Käytä Realms-tarinoita sosiaalisesti, pysy ajan tasalla ystäviesi edistymisestä ja järjestele peliaikaa.	#
 
 splitscreen.joinPrompt=Liity pelaajana %s	#
 splitscreen.unavailable.toastHeader=Jaettu ruutu ei ole käytettävissä	#
