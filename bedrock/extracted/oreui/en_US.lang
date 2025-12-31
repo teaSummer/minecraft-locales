@@ -280,12 +280,6 @@ hbui.CompareStatsRoute.header=Stat Comparison
 hbui.CompareStatsRoute.playerItemsListRole=Horizontal List
 hbui.CompareStatsRoute.playerItemsNarration=Compare stats of two players
 hbui.ConnectionErrorRoute.backToMenu=Back to menu
-hbui.ConnectionErrorRoute.codewordDetailsHelp=Search help.Minecraft.net with the codeword above for more information.
-hbui.ConnectionErrorRoute.codewordHelp=Search help.Minecraft.net for "%1$s" for more information.
-hbui.ConnectionErrorRoute.errorDetailsHelp=For further assistance, submit a support ticket with a screenshot of these details.
-hbui.ConnectionErrorRoute.header=Error details
-hbui.ConnectionErrorRoute.learnMore=Learn more
-hbui.ConnectionErrorRoute.showDetails=Show details
 hbui.ControllerSpecificButtonNarration.Gamepad.A.KEYBOARD=Press A
 hbui.ControllerSpecificButtonNarration.Gamepad.A.PS=Press A
 hbui.ControllerSpecificButtonNarration.Gamepad.A.QUEST=Press A
@@ -1077,6 +1071,16 @@ hbui.CreateNewWorldSideMenu.multiplayerTabLabel=Multiplayer
 hbui.CreateNewWorldSideMenu.narrationCreateButtonHint=Create a %1$s world on %2$s difficulty named "%3$s". Navigate to select other options.
 hbui.CreateNewWorldSideMenu.resourcePacksTabLabel=Resource packs
 hbui.CreateNewWorldSideMenu.scriptingCodingTabLabel=Scripting & coding
+hbui.CreatePartyRoute.createPartyHeader=Create party ### Create Party page title. For the purposes of this feature, a Party is a group of players joining up to  play together.
+hbui.CreatePartyRoute.friendsTitle=Friends (%1$s) ### The header for a list of Player List Items containing the user's friends
+hbui.CreatePartyRoute.inviteOnly=Invite only ### The title for a state where players can only join the party if invited
+hbui.CreatePartyRoute.inviteOnlyDescription=Players must be invited to join party. ### Describes the invite only state
+hbui.CreatePartyRoute.maxPartyExplanation=A party can have up to 15 players. ### Description explaining the maximum size of a party
+hbui.CreatePartyRoute.open=Open ### The title for a state where anyone can join the party
+hbui.CreatePartyRoute.openDescription=Players don't need to be invited to join party. ### Describes the Open state
+hbui.CreatePartyRoute.partyPrivacy=Party Privacy ### Title for the toggle which controls the party privacy state
+hbui.CreatePartyRoute.partySettings=Party Settings ### title of the side bar which contains the party settings options
+hbui.CreatePartyRoute.recentlyPlayedWithTitle=Recently Played With ### The header for a list of Player List Items containing players the user has recently played with
 hbui.DebugDrawer.closeButtonNarrationHint=Use arrow down for additional actions
 hbui.DebugDrawer.closeDrawerShortcutInputLegend=Close
 hbui.DebugDrawer.title=Debug
@@ -1270,7 +1274,6 @@ hbui.GetMoreButton.buttonNarration=Button
 hbui.GetMoreButton.inputLegend=Discover
 hbui.GuidedCreateWorldRoute.title=Guided World Creation
 hbui.HeroItem.role=TextBlock
-hbui.InboxContentItem.narration.createdBy=By %1$s
 hbui.InboxContentItem.view=View
 hbui.InboxListItem.accept=Accept
 hbui.InboxListItem.delete=Delete
@@ -1436,12 +1439,12 @@ hbui.JoinRealmsServerInvitationsButton.invitationsRole=Group
 hbui.JoinRealmsServerInvitationsButton.narrationSuffix=Press to view your inbox
 hbui.JoinRealmsServerInvitationsButton.noInvitesBody=You might have invitations in your inbox!
 hbui.JoinRealmsServerInvitationsButton.noInvitesTitle=Don't have an invite link?
-hbui.JoinRealmsServerTransient.caption=You can leave their Realm at any time. Join button below.      ### Realm here refers to a Realm server. Join is in the context of joining a Realm, meaning becoming a member of it. {MaxLength="100"}
+hbui.JoinRealmsServerTransient.caption=You can leave their Realm at any time. Join button below.      ### Realm here refers to a Realm server. Join is in the context of joining a Realm, meaning becoming a member of it. {StrContains="Realm"} {MaxLength="100"}
 hbui.JoinRealmsServerTransient.errorMessageTitle=Something went wrong    ### Something went wrong when trying to join a Realm, this is a generic header for it. {MaxLength="100"}
-hbui.JoinRealmsServerTransient.genericTitle=Join A Realm    ### Becoming a member of a Realm. {MaxLength="100"}
+hbui.JoinRealmsServerTransient.genericTitle=Join A Realm    ### Becoming a member of a Realm. {StrContains="Realm"} {MaxLength="100"}
 hbui.JoinRealmsServerTransient.joinButtonLabel=Join
 hbui.JoinRealmsServerTransient.joinRealmModal=Joining Realm
-hbui.JoinRealmsServerTransient.ownerInformation=You're about to join %1$s's Realm    ### The player is about to become a member of another players Realm.{MaxLength="100"}
+hbui.JoinRealmsServerTransient.ownerInformation=You're about to join %1$s's Realm    ### The player is about to become a member of another players Realm. {StrContains="Realm"} {MaxLength="100"}
 hbui.JoinRealmsServerTransient.successSnackbar=You joined "%1$s"!
 hbui.JoinRealmsServerTransient.title=Join %1$s    ### Join as in "Join Realm". Becoming a member of a Realm. {MaxLength="20"}
 hbui.JoinServerWarningModal.cancel=Cancel
@@ -1628,6 +1631,7 @@ hbui.PlayerBannedModalRoute.xbox.report.terrorismOrViolentExtremism=References t
 hbui.PlayerBannedModalRoute.xbox.report.unsportingBehavior=Unsporting behavior
 hbui.PlayerCard.addedButton=Added
 hbui.PlayerCard.addFriendButton=Add friend
+hbui.PlayerCard.away=Away	###Used to show player status {MaxLength=20}
 hbui.PlayerCard.blocked=Blocked
 hbui.PlayerCard.buttonRole=button
 hbui.PlayerCard.buttonSiblings=%1$s of %2$s
@@ -1648,6 +1652,9 @@ hbui.PlayerListItem.away=Away
 hbui.PlayerListItem.buttonSiblings=Button %1$s of %2$s
 hbui.PlayerListItem.delete=Delete
 hbui.PlayerListItem.friends=Friends
+hbui.PlayerListItem.inviteButtonInputLegend=Invite friend ### The input legend text for a button used to invite someone to a party
+hbui.PlayerListItem.inviteButtonText=Invite ### The text that appears on a button for inviting a player to a party
+hbui.PlayerListItem.invited=Invited ### The text that appears after a player has been invited to a party
 hbui.PlayerListItem.join=Join
 hbui.PlayerListItem.narration.addedMutual=You are friends with this player
 hbui.PlayerListItem.narration.addedNotMutual=You added this player
@@ -1664,6 +1671,7 @@ hbui.PlayerListItem.online=Online
 hbui.PlayerListItem.online.playstation=Online on PSN™	### CertRequirement: [PSN™]
 hbui.PlayerListItem.online.switch=Online on Switch
 hbui.PlayerListItem.pending=Pending
+hbui.PlayerListItem.playingInSameWorld=Playing in this world	###Used as player status when players are in the same world {MaxLength=30}
 hbui.PlayerListItem.receivedRequest=Sent you a request
 hbui.PlayerListItem.reject=Reject
 hbui.PlayerListItem.select=Select
@@ -2319,7 +2327,7 @@ hbui.RealmsPDPScreen.FAQ.PersonalServer.title=What is a personal server?
 hbui.RealmsPDPScreen.FAQ.Realms.description=Realms are small personal servers to host your Minecraft world. Unlike a regular multiplayer session, Realms are always online, so you don’t have to be there for your friends to play. Unlike a large public Minecraft server, Realms are by invite only, so you control who gets in.  ### {StrContains="Realms"}
 hbui.RealmsPDPScreen.FAQ.Realms.title=What are Realms?  ### {StrContains="Realms"}
 hbui.RealmsPDPScreen.hero.content.header=Get additional content with Realms Plus    ### {StrContains="Realms"}
-hbui.RealmsPDPScreen.hero.content.text=Realms Plus subscriptions include Marketplace Pass: free Marketplace content, updated monthly. With skins, Character Creator items, worlds, and more, there's always something new for you to try.  ### {MaxLength="250"} {StrContains="Realms"}
+hbui.RealmsPDPScreen.hero.content.text=Realms Plus subscriptions include Marketplace Pass: free Marketplace content, updated monthly. With skins, Character Creator items, worlds, and more, there's always something new for you to try.  ### {MaxLength="250"} {StrContains="Realms Plus"}
 hbui.RealmsPDPScreen.hero.content.title=Access to over 150 Marketplace packs    ### {MaxLength="56"}
 hbui.RealmsPDPScreen.hero.perks.header=Additional perks included with Realms    ### {StrContains="Realms"}
 hbui.RealmsPDPScreen.hero.perks.text=Share your adventures on the Story Feed, watch your Realm grow with the Members tab, know when people have been playing on the Realm with the Timeline.    ### {MaxLength="250"} {StrContains="Realm"}
@@ -2337,16 +2345,16 @@ hbui.RealmsPDPScreen.splash.text=Run your own Minecraft server! You set the rule
 hbui.RealmsPDPScreen.splash.title=Your own server, always online    ### {MaxLength="50"}
 hbui.RealmsPDPScreen.splash.tryFree=Try free    ### {MaxLength="20"}
 hbui.RealmsPDPScreen.title=Minecraft Realms ### {StrContains="Realms"}
-hbui.RealmsPlanPickerScreen.banners.coreSubscriptionsLimit=You have reached the limit of Realms Core subscriptions on this platform ### {MaxLength="72"}
-hbui.RealmsPlanPickerScreen.banners.plusSubscriptionsLimit=You have reached the limit of Realms Plus subscriptions on this platform ### {MaxLength="72"}
+hbui.RealmsPlanPickerScreen.banners.coreSubscriptionsLimit=You have reached the limit of Realms Core subscriptions on this platform	### {MaxLength="150"} {StrContains="Realms Core"}
+hbui.RealmsPlanPickerScreen.banners.plusSubscriptionsLimit=You have reached the limit of Realms Plus subscriptions on this platform	### {MaxLength="150"} {StrContains="Realms Plus"}
 hbui.RealmsPlanPickerScreen.buyButtonCore=Buy Realms Core			### {StrContains="Realms"}
 hbui.RealmsPlanPickerScreen.buyButtonCoreNarrationHint=Navigate below to learn more about Realms Core		### {StrContains="Realms"}
 hbui.RealmsPlanPickerScreen.buyButtonPlus=Buy Realms Plus			### {StrContains="Realms"}
 hbui.RealmsPlanPickerScreen.buyButtonPlusNarrationHint=Navigate below to learn more about Realms Plus		### {StrContains="Realms"}
 hbui.RealmsPlanPickerScreen.buyRealmsPlusButtonTrial=Free trial
 hbui.RealmsPlanPickerScreen.currency=$
-hbui.RealmsPlanPickerScreen.emptyStates.maxedOutSubscriptions.body=You have reached the limit for both Realms Core and Realms Plus subscriptions on this platform.  ### {MaxLength="95"}
-hbui.RealmsPlanPickerScreen.emptyStates.maxedOutSubscriptions.title=Realms subscriptions maxed out on this platform ### {MaxLength="47"}
+hbui.RealmsPlanPickerScreen.emptyStates.maxedOutSubscriptions.body=You have reached the limit for both Realms Core and Realms Plus subscriptions on this platform.	### {MaxLength="150"} {StrContains="Realms Core"} {StrContains="Realms Plus"}
+hbui.RealmsPlanPickerScreen.emptyStates.maxedOutSubscriptions.title=Realms subscriptions maxed out on this platform	### {MaxLength="150"} {StrContains="Realms"}
 hbui.RealmsPlanPickerScreen.error.body=Please verify that you are signed into both Minecraft and your device's platform store with the same account, and try again.
 hbui.RealmsPlanPickerScreen.error.button=Try again
 hbui.RealmsPlanPickerScreen.error.title=Couldn’t access platform store
@@ -2651,7 +2659,7 @@ hbui.RealmsStories.messages.timelineEmpty.body=Play on the Realm to generate Tim
 hbui.RealmsStories.messages.timelineEmpty.title=No data available
 hbui.RealmsStories.messages.timelineOff.body=The Realm owner has disabled the Timeline on this Realm.
 hbui.RealmsStories.messages.timelineOff.title=The Timeline is disabled
-hbui.RealmsStories.messages.timelineOptIn.body=See when other members are playing to check out their creations or plan to join them next time! The Timeline shows when players were on the Realm. The bigger the colored block, the longer they played.	### {StrContains="Realm"} {MaxLength="200"} This is an explanation of the Realms Timeline feature.
+hbui.RealmsStories.messages.timelineOptIn.body=See when other members are playing to check out their creations or plan to join them next time! The Timeline shows when players were on the Realm. The bigger the colored block, the longer they played.	### {StrContains="Realm"} {MaxLength="250"} This is an explanation of the Realms Timeline feature.
 hbui.RealmsStories.messages.timelineOptIn.button=I want to opt in
 hbui.RealmsStories.messages.timelineOptIn.maybeLaterButton=Maybe later	### {MaxLength="20"}  Player is currently declining to opt into the timeline.
 hbui.RealmsStories.messages.timelineOptIn.members=Members who have opted in: %1$s/%2$s
@@ -2892,6 +2900,9 @@ hbui.ReportPlayerRoute.xbox.report.area.ingame=In-game creations
 hbui.ReportPlayerRoute.xbox.report.area.nameOrGamertag=Player Name or Gamertag
 hbui.ReportPlayerRoute.xbox.report.area.other=Other
 hbui.ReportPlayerRoute.xbox.report.area.skin=Player skin
+hbui.ScreenshotDeleteErrorModal.close=Close	### {MaxLength=40} Closes the modal that has appeared. This was previously ScreenshotGalleryRoute.deleteScreenshotsErrorModal.close
+hbui.ScreenshotDeleteErrorModal.text=Unable to delete screenshot. Please check your internet connection and try again. ### {MaxLength=1000} Indicates that an operation requested by the user to delete a screenshot in their gallery has failed. This was previously ScreenshotGalleryRoute.deleteScreenshotsErrorModal.text
+hbui.ScreenshotDeleteErrorModal.title=Failed to delete screenshot	### {MaxLength=40} Indicates that an operation requested by the user to delete a screenshot in their gallery has failed. This was previously ScreenshotGalleryRoute.deleteScreenshotsErrorModal.title
 hbui.ScreenshotDeleteModal.cancel=Cancel
 hbui.ScreenshotDeleteModal.delete=Delete
 hbui.ScreenshotDeleteModal.text=This action cannot be undone. Are you sure you want to delete this screenshot?
@@ -2992,9 +3003,6 @@ hbui.ScreenshotGalleryItem.showcased=Showcased
 hbui.ScreenshotGalleryMenu.optionsEnumeration=%1$s of %2$s
 hbui.ScreenshotGalleryRoute.deleteScreenshots=Delete screenshots
 hbui.ScreenshotGalleryRoute.deleteScreenshotsButton=Delete screenshots
-hbui.ScreenshotGalleryRoute.deleteScreenshotsErrorModal.close=Close
-hbui.ScreenshotGalleryRoute.deleteScreenshotsErrorModal.text=Unable to delete screenshot. Please check your internet connection and try again.
-hbui.ScreenshotGalleryRoute.deleteScreenshotsErrorModal.title=Failed to delete screenshot
 hbui.ScreenshotGalleryRoute.deleteScreenshotsLink=Delete screenshots
 hbui.ScreenshotGalleryRoute.deleteScreenshotsModal.cancelButton=Cancel
 hbui.ScreenshotGalleryRoute.deleteScreenshotsModal.deleteButton=Delete
@@ -3046,32 +3054,28 @@ hbui.SideStoryPostContainer.role=Text block
 hbui.SignInAchievementsRoute.laterButton=Maybe later
 hbui.SignInAchievementsRoute.signInButton=Sign in now
 hbui.SignInAchievementsRoute.signInHeader=Earn achievements ###Short Header for modal, player can earn achievements{MaxLength=55}
-hbui.SignInAchievementsRoute.signInList1=Track your progress and milestones in Minecraft
-hbui.SignInAchievementsRoute.signInList2=Unlock exclusive character creator items
-hbui.SignInAchievementsRoute.signInList3=Show off the achievements you accomplish to your friends
-hbui.SignInAchievementsRoute.signInPrompt=Sign in or sign up for free to start earning achievements ###Body of modal, informing player that signing in will allow them to earn achievements{MaxLength=200}
+hbui.SignInAchievementsRoute.signInPrompt=Sign in or sign up for free to start earning achievements.    ###Prompt encouraging player to sign in, informing them that signing in will allow them to earn achievements{MaxLength=1000}
 hbui.SignInAddFriendRoute.laterButton=Maybe later
 hbui.SignInAddFriendRoute.signInButton=Sign in now
 hbui.SignInAddFriendRoute.signInHeader=Find friends on other platforms  ###Header for modal, allow for searching for friends via search bar{MaxLength=55}
-hbui.SignInAddFriendRoute.signInPrompt=Sign in or sign up for free to connect with friends on other platforms   ###Body of modal, player will be able to play multiplayer with other cross platform friends{MaxLength=200}
+hbui.SignInAddFriendRoute.signInPrompt=Sign in or sign up for free to connect with friends on other platforms.  ###Prompt encouraging player to sign in, informing them that if signed in they can play multiplayer with friends on any device{MaxLength=1000}
 hbui.SignInDressingRoomRoute.laterButton=Maybe later
 hbui.SignInDressingRoomRoute.signInButton=Sign in now
 hbui.SignInDressingRoomRoute.signInHeader=Cool character!
-hbui.SignInDressingRoomRoute.signInPrompt=Sign in to save your character across devices and platforms.
+hbui.SignInDressingRoomRoute.signInPrompt=Sign in or sign up for free to save your character across devices and platforms.  ###Prompt encouraging player to sign in, informing them that if signed in their character's appearance that they recently changed in the dressing room can be made available on any device{MaxLength=1000}
 hbui.SignInMarketplaceRoute.laterButton=Maybe later
 hbui.SignInMarketplaceRoute.signInButton=Sign in now
 hbui.SignInMarketplaceRoute.signInHeader=Welcome to the Marketplace!
-hbui.SignInMarketplaceRoute.signInList1=Access your purchased Marketplace content and character across platforms.
-hbui.SignInMarketplaceRoute.signInPrompt=Sign in to save your purchases to your account so they're always with you.
+hbui.SignInMarketplaceRoute.signInPrompt=Sign in or sign up for free to save your purchases to your account so they're always with you.  ###Prompt encouraging player to sign in, informing them that if signed in their Marketplace purchases can be saved to their account{MaxLength=1000}
 hbui.SignInPlayOnServerRoute.laterButton=Maybe later
 hbui.SignInPlayOnServerRoute.signInButton=Sign in now
 hbui.SignInPlayOnServerRoute.signInHeader=Play on featured servers  ###Header for modal, allow player to play on big, custom featured servers made by other players{MaxLength=55}
-hbui.SignInPlayOnServerRoute.signInPrompt=Sign in or sign up for free to play on featured servers ###Body of modal, signing in allows player to play on such servers{MaxLength=200}
+hbui.SignInPlayOnServerRoute.signInPrompt=Sign in or sign up for free to play on featured servers.  ###Prompt for the player to sign in so they can play on servers{MaxLength=1000}
 hbui.SignInSavePurchasesRoute.createAccountPrompt=Don't have a Microsoft account? Create one now - for free!
 hbui.SignInSavePurchasesRoute.laterButton=Maybe later
 hbui.SignInSavePurchasesRoute.signInButton=Sign in now
 hbui.SignInSavePurchasesRoute.signInHeader=Save your purchases  ###Modal header, save marketplace skin and map entitlements{MaxLength=55}
-hbui.SignInSavePurchasesRoute.signInPrompt=Sign in or sign up for free to save your Marketplace purchases   ###Modal body, signing in allows player to save their entilements{MaxLength=200}
+hbui.SignInSavePurchasesRoute.signInPrompt=Sign in or sign up for free to save your Marketplace purchases.  ###Prompt encouraging player to sign in, informing them that if signed in their Marketplace purchases can be saved to their account{MaxLength=1000}
 hbui.SignInWorldsFriendsServersRoute.createAccountPrompt=Don't have a Microsoft account? Create one now - for free!
 hbui.SignInWorldsFriendsServersRoute.laterButton=Maybe later
 hbui.SignInWorldsFriendsServersRoute.signInButton=Sign in now
@@ -3669,25 +3673,45 @@ hbui.EditorStructurePanel.actionBarSortOptionBySource=By Source
 hbui.EditorStructurePanel.actionBarSortOptionByTags=By Tags
 hbui.EditorStructurePanel.actionBarSortOptionZtoa=Z-a
 hbui.EditorStructurePanel.button=Button
-hbui.EditorStructurePanel.contentElementsLabel=Content Elements
 hbui.EditorStructurePanel.count=%1$s of %2$s
 hbui.EditorStructurePanel.countLabel=Count
+hbui.EditorStructurePanel.deleteButton=Delete Button ###Narration description for a button that deletes selected structures. {MaxLength=100}
+hbui.EditorStructurePanel.deleteModal.button.cancel=Cancel ###Structure delete modal button label that closes the modal with no operation {MaxLength=100}
+hbui.EditorStructurePanel.deleteModal.button.confirm=Delete Now ###Structure delete modal button label that confirms delete operation {MaxLength=100}
+hbui.EditorStructurePanel.deleteModal.button.ok=OK ###Structure delete modal button label that closes the modal with no operation {MaxLength=100}
+hbui.EditorStructurePanel.deleteModal.messageMultiple=Are you sure you want to delete %1$s structures? ###Modal message that indicates how many structures will be deleted {MaxLength=300}
+hbui.EditorStructurePanel.deleteModal.messageSingle=Are you sure you want to delete "%1$s"? ###Modal message that indicates that a specific structure with a name will be deleted {MaxLength=300}
+hbui.EditorStructurePanel.deleteModal.note=Note: Structures from imported packs can't be deleted (remove imported packs to remove them from your Structures list). ###Modal note that explains imported/read only structures cant be deleted {MaxLength=300}
+hbui.EditorStructurePanel.deleteModal.title=Delete Structures? ###Label a modal that opens when deleting structures. {MaxLength=100}
+hbui.EditorStructurePanel.deleteModal.warning=This can’t be undone. ###Modal note that warns user that deleting structures cannot be reverted {MaxLength=300}
+hbui.EditorStructurePanel.details.contentLabel=Content ###Label for structure block contents. {MaxLength=100}
+hbui.EditorStructurePanel.details.copyId=Copy ID to clipboard button ###Narration description for a button that copies minecraft id of the structure. {MaxLength=100}
+hbui.EditorStructurePanel.details.deleteLabel=Delete ###Label for a button that deletes the selected structure as a new one. {MaxLength=100}
+hbui.EditorStructurePanel.details.duplicateLabel=Duplicate ###Label for a button that duplicates selected the structure as a new one. {MaxLength=100}
+hbui.EditorStructurePanel.details.fileNameLabel=File/Unique Name ###Label for the structure file name. {MaxLength=100}
+hbui.EditorStructurePanel.details.includeInExports=Include In Exports ###A flag that determines if the editor structure instance should be included in export world/project. {MaxLength=100}
+hbui.EditorStructurePanel.details.itemMenu=Structure Item Menu ###Narration text for a context menu that has structure operations. {MaxLength=100}
+hbui.EditorStructurePanel.details.minecraftIdLabel=Minecraft ID ###Label for in game identifier for the structure. {MaxLength=100}
+hbui.EditorStructurePanel.details.nameLabel=Name ###Label for structure display name. {MaxLength=100}
+hbui.EditorStructurePanel.details.namespaceAndSourceLabel=Namespace & Source ###Label for an expandable button that displays structure details. {MaxLength=100}
+hbui.EditorStructurePanel.details.namespaceLabel=Namespace ###Label for the structure namespace. {MaxLength=100}
+hbui.EditorStructurePanel.details.originLabel=Origin ###Label for structure origin input field. {MaxLength=100}
+hbui.EditorStructurePanel.details.replaceClipboardLabel=Copy to Clipboard ###Label for a button that replaces in level clipboard with the selected structure. {MaxLength=100}
+hbui.EditorStructurePanel.details.saveLabel=Save ###Label for a button that saves modified structure changes. {MaxLength=100}
+hbui.EditorStructurePanel.details.sizeLabel=Size ###Label for structure size input field. {MaxLength=100}
+hbui.EditorStructurePanel.details.sourceLabel=Source ###Label for the source content the structure belongs to. {MaxLength=100}
+hbui.EditorStructurePanel.filterButton=Filter Button ###Narration description for a button that filters structure lists. {MaxLength=100}
 hbui.EditorStructurePanel.filterIconTooltip=Filter
 hbui.EditorStructurePanel.gridViewIconTooltip=Grid View
 hbui.EditorStructurePanel.importLabel=Import
 hbui.EditorStructurePanel.listViewIconTooltip=List View
-hbui.EditorStructurePanel.nameLabel=Name
-hbui.EditorStructurePanel.namespaceAndSourceSectionHeader=Namespace & Source
 hbui.EditorStructurePanel.narration=Structure Panel
 hbui.EditorStructurePanel.newFromClipboardLabel=New from Clipboard
-hbui.EditorStructurePanel.originLabel=Origin
-hbui.EditorStructurePanel.replaceClipboardLabel=Copy to Clipboard
-hbui.EditorStructurePanel.saveLabel=Save
-hbui.EditorStructurePanel.sizeLabel=Size
 hbui.EditorStructurePanel.sortLabel=Sort
 hbui.EditorStructurePanel.structureContentSectionHeader=Structure Content
 hbui.EditorStructurePanel.structureItem=StructureItem
 hbui.EditorStructurePanel.tagsSectionHeader=Tags
+hbui.EditorStructurePanel.toggleButton=Toggle Button ###Narration description for a button that toggles all structures to be selected or deselected. {MaxLength=100}
 hbui.EditorStructurePanel.totalBlocksLabel=Total Blocks
 hbui.EditorStructurePanel.windowTitle=Structures
 hbui.EditorSwitch.elementType=Switch
