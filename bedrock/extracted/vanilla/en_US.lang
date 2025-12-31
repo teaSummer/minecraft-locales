@@ -1337,7 +1337,7 @@ realmsSettingsScreen.membersSectionTitle=Members
 realmsSettingsScreen.subscriptionSectionTitle=Subscription
 realmsSettingsScreen.devOptionsSectionTitle=Dev Options
 realmsSettingsScreen.backupSection=Backups
-realmsSettingsScreen.backupInfo=You can replace the world on your realm with a backup found in this list.
+realmsSettingsScreen.backupInfo=You can restore the world on your Realm with a backup found in this list. Packs are not included in backups, and you may need to re-apply the desired pack after restoring.
 realmsSettingsScreen.backupReplaced=World has been replaced with the selected backup.
 realmsSettingsScreen.backupReplacedFailed=Replacing the world with the selected backup failed.
 
@@ -2086,6 +2086,14 @@ howtoplay.commands.title=How to Play : Commands
 howtoplay.commands.text.1=Commands can be executed from Chat. Type / before you type the command.
 howtoplay.commands.text.2=There are multitudes of commands that will allow you to do amazing things. There are many sources out there that will provide you with all of the info that you'll ever need.
 
+howtoplay.conduits=Conduits
+howtoplay.conduits.title=How to Play : Conduits
+howtoplay.conduits.text.1=An active Conduit gives you powers when you are underwater.
+howtoplay.conduits.text.2=A Conduit is crafted with Nautilus Shells and a Heart of the Sea. The Conduit draws power from Prismarine and Sea Lanterns.
+howtoplay.conduits.header.1=Construction
+howtoplay.conduits.text.3=Once activated, a Conduit will grant Conduit Power to anything nearby.
+howtoplay.conduits.text.4=The more power it draws in, the further its abilities reach.
+
 howtoplay.controls=Controls
 howtoplay.controls.title=How to Play : Controls
 howtoplay.controls.text.1=Minecraft is a game about placing blocks to build anything you can imagine. At night monsters come out, so make sure to build a shelter before that happens.
@@ -2124,6 +2132,11 @@ howtoplay.controls.text.8.gamepad=Sneaking is incredibly useful in Minecraft, sn
 howtoplay.controls.text.8.touch=Sneaking is incredibly useful in Minecraft, sneaking keeps you from falling off of a block and hides your nametag. To toggle sneak, tap :touch_sneak:.
 howtoplay.controls.text.8.rift_controller=Sneaking is incredibly useful in Minecraft, sneaking keeps you from falling off of a block and hides your nametag. To toggle sneak, press :rift_X:.
 howtoplay.controls.text.8.windowsmr_controller=Sneaking is incredibly useful in Minecraft, sneaking keeps you from falling off of a block and hides your nametag. To toggle sneak, press :windowsmr_right_stick:.
+howtoplay.controls.text.swim.keyboard=Sprinting while in water will make you swim. Use the mouse to control the direction that you are swimming.
+howtoplay.controls.text.swim.gamepad=Sprinting while in water will make you swim. Use the :_gamepad_stick_right: to control the direction that you are swimming.
+howtoplay.controls.text.swim.touch=Sprinting while in water will make you swim. Touch and drag along the screen to control the direction that you are swimming.
+howtoplay.controls.text.swim.rift_controller=Sprinting while in water will make you swim. Use the :rift_right_stick: to control the direction that you are swimming.
+howtoplay.controls.text.swim.windowsmr_controller=Sprinting while in water will make you swim. Use the :windowsmr_right_stick: to control the direction that you are swimming.
 
 howtoplay.crafting=Crafting
 howtoplay.crafting.title=How to Play : Crafting
@@ -2549,7 +2562,7 @@ howtoplay.tools.text.6.touch=The Hoe is required for tilling Dirt to plant crops
 howtoplay.tools.text.7=All of these tools can accept enchantments, either from the Enchanting Table or Anvil.
 howtoplay.tools.header.2=Other Tools
 howtoplay.tools.text.8=There are even more tools to aid you on your adventure:
-howtoplay.tools.text.9=A Bucket will allow you to collect liquids like Water, Milk, and Lava.
+howtoplay.tools.text.9=A Bucket will allow you to collect things like Water, Milk, Lava, and even Fish.
 howtoplay.tools.text.10=Flint & Steel allows you to light fires... be careful in densely wooded areas!
 howtoplay.tools.text.11=A Fishing Rod lets you catch fish and other loot from water blocks. It can also be used to pull other players and mobs. Fishing Rods can also be enchanted!
 howtoplay.tools.text.12=Shears are very handy for collecting items like Wool, Leaves, and Cobwebs.
@@ -2571,7 +2584,7 @@ howtoplay.transportation.text.3.gamepad=Press :_input_key.use: while looking at 
 howtoplay.transportation.text.3.touch=Tap the Ride button while near a Minecart to hop in and ride. Press :_input_key.forward: to roll forward. Tap :_input_key.jump: to get out. 
 howtoplay.transportation.header.2=Boats
 howtoplay.transportation.text.4=Boats let you travel across water, place one on a water block and you are ready to go.
-howtoplay.transportation.text.5.keyboard=Press :_input_key.use: while looking at a Boat to board it. Press :_input_key.left: or :_input_key.right: to turn left or right. Press them both to move forward. Press :_input_key.jump: or :_input_key.sneak: to get out.
+howtoplay.transportation.text.5.keyboard=Press :_input_key.use: while looking at a Boat to board it. Press :_input_key.left: or :_input_key.right: to turn left or right. Press :_input_key.forward: to move forward. Press :_input_key.jump: or :_input_key.sneak: to get out.
 howtoplay.transportation.text.5.gamepad=Press :_input_key.use: while looking at a Boat to board it. Push :_gamepad_stick_left: left or right to turn. Push :_gamepad_stick_left: forward to move forward. Press :_input_key.jump: or :_input_key.sneak: to get out.
 howtoplay.transportation.text.5.touch=Tap the board button while near a Boat to board it. Press :_input_key.left: or :_input_key.right: to turn left or right. Press them both to move forward. Tap the leave boat button to get out.
 
@@ -2583,11 +2596,14 @@ howtoplay.weapons.text.1=The Sword is the primary melee weapon in Minecraft. It 
 howtoplay.weapons.text.2.notTouch=Press :_input_key.attack: with a Sword in your hand to attack. 
 howtoplay.weapons.text.2.touch=Tap mobs to attack them.
 howtoplay.weapons.header.2=Bow
-howtoplay.weapons.text.3.notTouch=A Bow is the primary Ranged weapon in Minecraft. Press and hold :_input_key.use: to draw the bow back. Release :_input_key.use: to fire an arrow. The bow requires arrows to fire. 
-howtoplay.weapons.text.3.touch=A Bow is the primary Ranged weapon in Minecraft. Press and hold the Screen to draw the bow back. Release the press to fire an arrow. The bow requires arrows to fire.
+howtoplay.weapons.text.3.notTouch=The Bow is the primary ranged weapon in Minecraft. Press and hold :_input_key.use: to draw the bow back. Release :_input_key.use: to fire an arrow. The bow requires arrows to fire. 
+howtoplay.weapons.text.3.touch=The Bow is the primary ranged weapon in Minecraft. Press and hold the Screen to draw the bow back. Release the press to fire an arrow. The bow requires arrows to fire.
 howtoplay.weapons.text.4=Bows do more damage the further they are pulled back, make sure to pull it all the way back.
 howtoplay.weapons.header.3=Enchanted Weapons
-howtoplay.weapons.text.5=Both the Sword and the Bow have specific enchantments that you can get from the Enchanting Table or Anvil that will improve damage, durability and even light mobs on fire!
+howtoplay.weapons.text.5=The Sword, Bow, and Trident have specific enchantments that you can get from the Enchanting Table or Anvil that will improve damage, durability and even light mobs on fire!
+howtoplay.weapons.header.trident=Trident
+howtoplay.weapons.text.trident.notTouch=The Trident is a dual-purpose melee and ranged weapon. Press :_input_key.attack: to attack. Press and hold :_input_key.use: to draw the trident back. Release :_input_key.use: to throw the trident. The Trident is the best weapon underwater.
+howtoplay.weapons.text.trident.touch=The Trident is a dual-purpose melee and ranged weapon. Tap mobs to attack them. Press and hold the Screen to draw the trident back. Release the press to throw the trident. The Trident is the best weapon underwater.
 
 howtoplay.whatsNew=What's New
 
@@ -4191,7 +4207,7 @@ options.fullKeyboardGameplay=Full Keyboard Gameplay
 options.fullKeyboardLayout=Full Keyboard Layout
 options.fullscreen=Fullscreen
 options.gamepadcursorsensitivity=Controller Cursor Sensitivity
-options.gamertag=Gamertag: %s
+options.gamertag=Gamertag:
 options.gamma=Brightness
 options.gamma.max=Bright
 options.gamma.min=Moody
@@ -4418,6 +4434,11 @@ options.achievementsDisabled.onLoad=If you start playing with these settings, Xb
 options.achievementsDisabled.notSignedIn=Xbox Live achievements can be earned in this world, but you must sign in to Xbox Live to earn them.
 options.turnOffCrossPlatformMultiplayer=Turn Off Cross-Platform Multiplayer?
 options.turnOffCrossPlatformMultiplayer.message=The content that you are trying to use is not allowed in cross-platform multiplayer games.  If you continue you will not be able to play cross-platform multiplayer games.
+options.conflictingPacks=Conflicting Packs
+options.conflictingPacks.message.onStack=A pack already on the stack can't be applied with other packs. %s
+options.conflictingPacks.message.offStack=The pack you are trying to apply can't be applied with other packs. %s
+options.conflictingPacks.message.offStackWithBehavior=Continuing will remove all current packs and then add the pack you are trying to apply. This will remove all behavior packs from the world which can break the world and cause you to lose what you created.
+options.conflictingPacks.continue=Continuing will remove all current packs and then add the pack you are trying to apply.
 options.crossPlatformMultiplayerDisabled=Content active in this world cannot be used in cross-platform multiplayer.
 options.multiplayerDisabled=Content active in this world cannot be used in multiplayer.
 options.skinsCrossPlatformMultiplayerDisabled=The skin you're using cannot be used in cross-platform multiplayer.
@@ -4511,6 +4532,8 @@ playscreen.dontSeeLegacyWorlds=Don't see your worlds?
 playscreen.syncLegacyWorlds=Sync Old Worlds
 playscreen.fetchingLegacyWorlds=Fetching Old Worlds...
 playscreen.upgradeLegacyWorlds=Old Worlds
+playscreen.noLegacyWorldsFound.title=No Worlds Found
+playscreen.noLegacyWorldsFound.body=No worlds from other versions of Minecraft detected.
 playscreen.lockedSkin=The skin that you have equipped is from a content pack that is not allowed in cross-platform multiplayer. Continuing will disable cross-platform multiplayer for this world.
 playscreen.multiplayerLockedSkin=The skin that you have equipped is from a content pack that is not allowed in multiplayer. Continuing will disable multiplayer for this world.
 
@@ -5141,6 +5164,7 @@ store.unlocked=Unlocked
 store.toast.downloadComplete=Download Complete
 store.toast.downloadResumed=Download Resumed
 store.toast.downloadFailed=Download Failed
+store.toast.downloadPaused=Download Paused
 
 store.popup.goBack=Go Back
 store.popup.xblRequired.title=Sign in for Free
@@ -5187,6 +5211,8 @@ store.purchase.success=You just bought: %s
 store.createdBy=By %s
 store.seeMoreBy=See more by %s
 store.fetchingItem=Connecting to store...
+
+store.startMenu.sale=Sale!
 
 store.progress.fetchingProducts=Getting products
 store.progress.checkingDownload=Checking download
@@ -5265,6 +5291,7 @@ store.featured.realms.title=Try Realms Free
 store.featured.realms.desc=Experience the best way to play Minecraft with your friends.
 
 store.hyperlink.creator.notFound=Sorry, but the creator specified in the hyperlink was not found.
+store.hyperlink.ingame=Sorry, hyperlinks are not allowed while in a world.  Please exit world and try again.
 
 store.resource.try=Try it out!
 store.resource.create=Manage your Resource Packs
@@ -6226,6 +6253,7 @@ xbox.friendfinder.searchingForGamertag=Searching
 xbox.friendfinder.gamertagNotFound=Gamertag Not Found
 
 xbox.profile.addFriend=Add Friend
+xbox.profile.addFriend.success=Success! %s was added to your friend list.
 xbox.profile.block=Block
 xbox.profile.currentlyPlaying=Currently playing %s
 xbox.profile.favorite=Favorite
