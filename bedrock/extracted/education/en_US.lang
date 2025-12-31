@@ -38,6 +38,18 @@ createWorldScreen.perfectweather=Perfect Weather
 createWorldScreen.playerdamage=Player Damage
 createWorldScreen.pvpdamage=Player VS Player Damage
 
+edu.cloudError.generic.linkDescription=Learn more about cloud support
+edu.cloudError.generic.message=Something went wrong when uploading your world to the cloud.%1Error code %2
+edu.cloudError.generic.title=Upload failed
+edu.cloudError.largeWorld.message=The maximum file size supported for cloud upload is 250MB.
+edu.cloudError.largeWorld.title=World too big
+edu.cloudError.outOfStorage.linkDescription=How to back up your worlds
+edu.cloudError.outOfStorage.message=Your OneDrive folder doesn’t have enough room for this world. You can back up another way if you want it saved elsewhere.
+edu.cloudError.outOfStorage.title=Your upload didn’t make it to the cloud
+edu.cloudError.unauthorized.message=You don’t have access to cloud storage. Check your OneDrive settings.
+edu.cloudError.unauthorized.title=Cloud access problem
+edu.cloudError.uploadFailed.message=Please try again to upload to the cloud.
+
 item.spawn_egg.entity.npc.failed.edu=You need worldbuilder permissions to spawn an NPC
 
 library.connection.failed.body=We're unable to connect to the Library. This can happen if your computer is offline or if access to the Library catalog is blocked.
@@ -297,6 +309,22 @@ library.search.singleResult=1 search result for "%s" across the Library
 library.search.multipleResults=%1 search results for "%s" across the Library
 library.search.sortMethod.lexicographic.ascending=Sorted A to Z
 library.search.sortMethod.relevance=Sorted by Relevance
+
+menu.eduLocalStorage=Local Storage
+menu.eduCloudStorage=Cloud Storage
+menu.eduCloudStorage.caps=CLOUD STORAGE SETTINGS
+
+options.eduCloud.fileDate=OneDrive File Last Changed
+options.eduCloud.fileName=OneDrive File Name
+options.eduCloud.folder.body=View and download worlds stored in the "%s" OneDrive folder.	## Token in quotes will be "Minecraft Education" or "Minecraft Education Preview". Both are brand names and will not be localized.
+options.eduCloud.folder.header=Access OneDrive
+options.eduCloud.oneDrive=OneDrive
+options.eduCloud.toggle=Back up worlds to the cloud
+options.eduCloud.toggleOnWorld=Back up to the cloud
+
+progressScreen.title.eduCloudUpload=Uploading to the cloud
+progressScreen.message.eduUploadingCloudWorld=Uploading...
+progressScreen.message.eduFinishedCloudUpload=Complete!
 
 resourceUri.launch.success=Opened the Resource Link.
 resourceUri.launch.failure=Unable to open the Resource Link. This doesn't look like a supported URL.
