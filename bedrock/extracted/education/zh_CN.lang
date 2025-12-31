@@ -4,13 +4,14 @@ commands.takepicture.description=拍摄用户的照片或从用户的角度拍�
 commands.takepicture.cameranotfound=无法找到摄像机。	#
 commands.takepicture.cameranotspawned=无法生成摄像机。	#
 
-library.connection.failed.body=我们无法连接到库。这可能是由于您的计算机处于脱机状态或者其无法访问库目录。	#
+library.connection.failed.body=我们无法连接到库。这可能是由于您的计算机处于脱机状态，或是对库目录的访问受到阻止。	#
 library.connection.failed.help=获取帮助	#
 library.connection.noWorldFound.title=未找到世界	#
 library.connection.noWorldFound.body=似乎这个类别中没有世界。	#
 library.findMoreWorlds=发现更多的世界	#
 library.leaveFeedback=留下反馈	#
 library.title=库	#
+library.searchResults=“%1”的结果	#
 library.item.createdBy=作者：%s	#
 library.item.age=年龄：%1	#
 
@@ -29,6 +30,8 @@ library.item.difficulty.intermediate=中级	#
 library.item.difficulty.advanced=高级	#
 
 library.item.tags=标签：	#
+library.item.tagsAll=所有标签：	#
+library.item.tagsAll.tts=显示更多标签	#
 library.item.button.create=创建世界	#
 library.item.button.share=分享链接	#
 library.item.button.plan=课程计划	#
@@ -51,7 +54,7 @@ library.item.section.extensions=延伸	#
 
 library.category.label.biomes=生物群系和世界	#
 library.category.title.biomes=生物群系和世界	#
-library.category.description.biomes=使用这个世界和生物群系的集合，以帮助在《Minecraft 教育版》中开始创建课程。	#
+library.category.description.biomes=使用这个世界和生物群系的集合，以帮助在 Minecraft: Education Edition 中开始创建课程。	#
 
 library.category.label.biomes.biome=生物群系	#
 library.category.title.biomes.biome=生物群系	#
@@ -65,14 +68,22 @@ library.category.title.buildChallenges=每月建造挑战	#
 library.category.description.buildChallenges=通过这些易于实施的课堂活动，激发用户的创造力，加强 21 世纪技能。	#
 
 library.category.label.howToPlay=游戏指南	#
-library.category.description.howToPlay=这些世界和活动都是作为入门级探索而创建的，旨在帮助您探索如何在课堂上使用《Minecraft 教育版》。	#
+library.category.description.howToPlay=这些世界和活动都是作为入门级探索而创建的，旨在帮助您探索如何在课堂上使用 Minecraft: Education Edition。	#
 
 library.category.label.howToPlay.startHere=从这里开始	#
 library.category.title.howToPlay.startHere=从这里开始	#
-library.category.description.howToPlay.startHere=每个教程世界都旨在帮助您探索不同的技能，以支持在您的课堂中使用 《Minecraft 教育版》。	#
+library.category.description.howToPlay.startHere=每个教程世界都旨在帮助您探索不同的技能，以支持在您的课堂中使用 Minecraft: Education Edition。	#
 
 library.category.label.howToPlay.additional=附加教程	#
 library.category.title.howToPlay.additional=附加教程	#
+
+library.category.label.SEL=社会情感	#
+library.category.title.SEL=社会情感	#
+library.category.description.SEL=这些世界和活动能够帮助提升社会情感学习。其内容包含情绪健康、同理心和为自己的选择负责任。	#
+
+library.category.label.digitalCitizen=数字公民	#
+library.category.title.digitalCitizen=数字公民	#
+library.category.description.digitalCitizen=这些世界和活动侧重于培养数字公民，引导用户高素质地浏览媒体、保护隐私并积极参与网络社区。	#
 
 library.category.label.lessons=课程	#
 library.category.title.lessons=课程	#
@@ -120,7 +131,7 @@ library.category.title.history=历史与文化	#
 
 library.category.label.history.oregonTrail=俄勒冈小道	#
 library.category.title.history.oregonTrail=俄勒冈小道	#
-library.category.description.history.oregonTrail=通过与哈考特出版社合作，《Minecraft 教育版》为您带来了俄勒冈小道探索。使用这些贯穿了您整个课程的俄勒冈小道探索活动，开始一场伟大的冒险——在穿越了北美崎岖地形的俄勒冈小道上旅行。	#
+library.category.description.history.oregonTrail=通过与哈考特出版社合作，Minecraft: Education Edition 为您带来了俄勒冈小道探索。使用这些贯穿了您整个课程的俄勒冈小道探索活动，开始一场伟大的冒险——在穿越了北美崎岖地形的俄勒冈小道上旅行。	#
 
 library.category.label.computerScience=计算机科学	#
 library.category.title.computerScience=计算机科学	#
@@ -129,17 +140,46 @@ library.category.label.computerScience.hourOfCode=编程一小时	#
 library.category.title.computerScience.hourOfCode=编程一小时	#
 library.category.description.computerScience.hourOfCode=本课程是为期一小时的计算机科学介绍，旨在揭开 AI 的神秘面纱，在《Minecraft》中引入编码，以及扩大对计算机科学领域的参与。	#
 
-library.category.label.computerScience.codeSTEM=探索 STEM 的代码	#
-library.category.title.computerScience.codeSTEM=探索 STEM 的代码	#
-library.category.description.computerScience.codeSTEM=使用这些符合标准的数学、科学和工程学课程和世界，将计算机科学融入校园生活的方方面面。	#
+library.category.label.computerScience.STEM=STEM	#
+library.category.title.computerScience.STEM=STEM	#
+library.category.description.computerScience.STEM=使用这些符合标准的数学、科学和工程学课程和世界，将计算机科学融入校园生活的方方面面。	#
 
-library.category.label.computerScience.courseOne=编码课程 1	#
-library.category.title.computerScience.courseOne=编码课程 1	#
-library.category.description.computerScience.courseOne=使用这些基于 CSTA 标准的计算机科学课程建造您自己的城市。探索基本的计算机科学概念，包括循环、算法、条件、调试、迭代等等。	#
+library.category.label.computerScience.agency=代理机器人	#
+library.category.title.computerScience.agency=代理机器人	#
+library.category.description.computerScience.agency=使用这些基于 CSTA 标准的计算机科学课程建造您自己的城市。探索基本的计算机科学概念，包括循环、算法、条件、调试、迭代等等。	#
 
-library.category.label.computerScience.courseTwo=编码课程 2	#
-library.category.title.computerScience.courseTwo=编码课程 2	#
-library.category.description.computerScience.courseTwo=通过这些基于 CSTA 标准的计算机科学课程探索条件、函数、坐标、AI 等等。	#
+library.category.label.computerScience.codingWithMinecraft=使用 Minecraft 进行编程	#
+library.category.title.computerScience.codingWithMinecraft=使用 Minecraft 进行编程	#
+library.category.description.computerScience.codingWithMinecraft=通过这些基于 CSTA 标准的计算机科学课程探索条件、函数、坐标、AI 等等。	#
+
+library.category.label.computerScience.codingFun1=趣味编程基础：1	#
+library.category.title.computerScience.codingFun1=趣味编程基础：1	#
+library.category.description.computerScience.codingFun1=利用代码了解不同的动物、它们面临的挑战及帮助它们的方法！使用算法、序列和循环来解决有趣的编程谜题。	#
+
+library.category.label.computerScience.codingFun2=趣味编程基础：2	#
+library.category.title.computerScience.codingFun2=趣味编程基础：2	#
+library.category.description.computerScience.codingFun2=前往月球、水星、金星、火星、木星和海王星！了解如何调试代码并学习运用条件、运算符和循环，同时帮助代理机器人在整个太阳系中收集材料。	#
+
+library.category.label.computerScience.codingFun3=趣味编程基础：3	#
+library.category.title.computerScience.codingFun3=趣味编程基础：3	#
+
+library.category.label.computerScience.blockBased=基于方块的编码	#
+library.category.title.computerScience.blockBased=基于方块的编码	#
+
+library.category.label.computerScience.python=Python	#
+library.category.title.computerScience.python=Python	#
+
+library.category.label.computerScience.python101=Python 入门	#
+library.category.title.computerScience.python101=Python 入门	#
+library.category.description.computerScience.python101=开始在 Minecraft 中用 Python 编程吧！了解 Python 的基础知识，包含语法、数据类型、变量、条件、“for”循环、条件循环、列表和函数。	#
+
+library.category.label.computerScience.codingTutorials=编程教程	#
+library.category.title.computerScience.codingTutorials=编程教程	#
+library.category.description.computerScience.codingTutorials=如果您想专门学习特定的代码概念，这里为您提供了一个完美的起点！了解如何运用循环、序列、条件、变量和函数。在这些课程中，您可以选择在方块、Python 或 JavaScript 中编写代码。	#
+
+library.category.label.computerScience.featuredLessons=精选课程	#
+library.category.title.computerScience.featuredLessons=精选课程	#
+library.category.description.computerScience.featuredLessons=这里列举了一些最受大家欢迎的编程课程！	#
 
 library.category.label.math=数学	#
 library.category.title.math=数学	#
@@ -156,10 +196,12 @@ library.category.title.commonCore=共同核心，%1 级	#
 library.category.description.commonCoreMath=这些引人入胜的活动旨在为数学教育提供支持，并且符合每一项共同核心数学标准。	#
 
 signin.acceptTerms=接受条款	#
-signin.leftPanel.header=探索《Minecraft 教育版》	#
-signin.leftPanel.body=用您的学校账户登录以访问《Minecraft 教育版》的完整版本。	#
+signin.leftPanel.header=探索 Minecraft: Education Edition	#
+signin.leftPanel.body=用您的学校账户登录以访问 Minecraft: Education Edition 的完整版本。	#
 signin.rightPanel.header=尝试探索演示课程	#
-signin.rightPanel.body=在《Minecraft 教育版》中使用这个对所有用户可用的演示课程探索编程。	#
+signin.rightPanel.body=在 Minecraft: Education Edition 中使用这个对所有用户可用的演示课程探索编程。	#
+
+structure_block.export.default_name=我的建筑方块	#
 
 joincode.invalid.title=加入代码不正确	#
 joincode.invalid.body=您输入的 %1 个加入代码不正确。请与主机确认，以确保您拥有正确的代码，或者您也可以尝试通过 IP 地址加入。 	#
@@ -167,3 +209,126 @@ joincode.invalid.button.tryagain=再试一次	#
 joincode.invalid.button.enterip=输入 IP 地址	#
 
 joincode.invalid.abuse.body=您输入的 %1 个加入代码不正确。请尝试使用 IP 地址加入世界	#
+
+## TAG LOCALIZATION SECTION ##
+tag.ages_0_3=0-3	#	#
+tag.ages_4_5=4-5	#	#
+tag.ages_6_8=6-8	#	#
+tag.ages_9_12=9-12	#	#
+tag.ages_13_16=13-16	#	#
+tag.ages_16_18=16-18	#	#
+tag.ages_18_plus=18+	#	#
+tag.addition=加法	#	#
+tag.advanced=高级	#	#
+tag.adventure=冒险	#	#
+tag.all_ages=所有年龄段	#	#
+tag.animals=动物	#	#
+tag.aquatic=水生	#	#
+tag.architecture=建筑	#	#
+tag.art_and_design=艺术设计	#	#
+tag.beginner=初学者	#	#
+tag.biodiversity=生物多样性	#	#
+tag.biology=生物学	#	#
+tag.biome=生物群系	#	#
+tag.biomes_and_worlds=生物群系和世界	#	#
+tag.bridges=桥梁	#referring to the structure	#
+tag.build_challenge=建筑挑战	#	#
+tag.character=字符	#	#
+tag.chemistry=化学	#	#
+tag.citizenship=公民	#	#
+tag.city=城市	#	#
+tag.climate=气候	#	#
+tag.code_to_learn_stem=STEM	#abbreviation for Science Technology Engineering and Math	#
+tag.coding_course_1=代理机器人	#Leave this in English ... this is a pun based on the name "Agent" for our coding robot	#
+tag.coding_course_2=使用 Minecraft 进行编程	#	#
+tag.coding_in_minecraft=使用 Minecraft 进行编程	#	#
+tag.collaboration=多人协作	#	#
+tag.color=颜色	#	#
+tag.common_core_math_grade_3=普通数学基础三年级	#	#
+tag.common_core_math_grade_4=普通数学基础四年级	#	#
+tag.common_core_math_grade_5=普通数学基础五年级	#	#
+tag.communication=通信	#	#
+tag.computer_science=计算机科学	#	#
+tag.computing_in_minecraft=在 Minecraft 中计算	#	#
+tag.creative=创作	#	#
+tag.creative_writing=创意写作	#	#
+tag.creativity=创造力	#	#
+tag.critical_thinking=批判性思维	#	#
+tag.division=除法	#	#
+tag.earth_day=地球日	#	#
+tag.ecology=生态	#	#
+tag.economy=经济	#	#
+tag.energy=能源	#	#
+tag.environment=环境	#	#
+tag.featured=精选	#	#
+tag.fractions=分数	#	#
+tag.game_design=课程设计	#	#
+tag.geography=地理	#	#
+tag.geology=地质	#	#
+tag.history_and_culture=历史与文化	#	#
+tag.hour_of_code=编程一小时	#	#
+tag.how_to_play=游戏指南	#	#
+tag.intermediate=中级	#	#
+tag.kensukes_kingdom=岛王	#	#
+tag.language_arts=语言艺术学科	#	#
+tag.leadership=领导力	#	#
+tag.lesson=课程	#	#
+tag.literature=文学	#	#
+tag.math=数学	#	#
+tag.multiplayer=多人游戏	#	#
+tag.multiplication=乘法	#	#
+tag.museum=博物馆	#	#
+tag.music=音乐	#	#
+tag.mythology=神话	#	#
+tag.ocean=海洋	#	#
+tag.oregon_trail=俄勒冈小道	#	#
+tag.pattern=图案	#	#
+tag.personal_narrative=个人叙事	#	#
+tag.physics=物理	#	#
+tag.pixel_art=像素艺术	#	#
+tag.pop_culture=流行文化	#	#
+tag.probability=概率	#	#
+tag.project_based_learning=专题学习	#	#
+tag.robinson_crusoe=鲁宾逊漂流记	#	#
+tag.science=科学	#	#
+tag.seasonal=季节性	#	#
+tag.single_player=单人	#	#
+tag.social_emotional_learning=社会情感学习	#	#
+tag.special_education=特殊教育	#	#
+tag.spelling=拼写	#	#
+tag.story=故事	#	#
+tag.subtraction=减法	#	#
+tag.survival=生存	#	#
+tag.swiss_family_robinson=海角乐园	#	#
+tag.technology=技术	#	#
+tag.treasure_island=金银岛	#	#
+tag.tutorial=教程	#	#
+tag.we_are_the_rangers=We are the Rangers	#	#
+tag.world_languages=世界语言	#	#
+tag.wwf=世界自然基金会	#	#
+####### ----- new entries below this line ---- ######
+tag.digital_citizenship=数字公民	#see for example: https://www.iste.org/learn/digital-citizenship	#
+tag.python=Python	#coding language	#
+tag.javascript=Javascript	#coding language	#
+tag.blocks=方块	#	#
+tag.makecode=MakeCode	#This is the name of the coding IDE available at https://minecraft.makecode.com/	#
+tag.azure_notebooks=Azure Notebooks	#See for example: https://notebooks.azure.com/	#
+tag.loops=循环	#coding concept in which a block of code is repeated a designated number of times	#
+tag.conditionals=条件	#coding concept of an 'if' or 'if/then' expression	#
+tag.variables=变量	#coding concept of using a name to hold one or more values (e.g. the results of a calculation or query)	#
+tag.functions=功能	#coding concept referring to self-contained modules of code that accomplish a certain task	#
+tag.operators=运算符	#coding concepts like AND and OR and > which behave like functions	#
+tag.problem_solving=解决问题	#	#
+tag.artificial_intelligence=人工智能	#	#
+tag.coding=编程	#the process of creating and maintaining code for computer programs	#
+tag.coding_fundamentals_1=趣味编程基础：1	#	#
+tag.coding_fundamentals_2=趣味编程基础：2	#	#
+tag.coding_fundamentals_3=趣味编程基础：3	#	#
+tag.coding_tutorials=编程教程	#	#
+tag.python101=Python 入门	#Python coding language	#
+tag.bees=蜜蜂	#	#
+tag.space=空格	# refers to outer space	#
+tag.esports=电子竞技	#	#
+tag.toybox=玩具盒	#	#
+tag.featured_coding=精选编程	#	#
+## END TAG LOCALIZATION SECTION ##
