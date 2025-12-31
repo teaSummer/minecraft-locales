@@ -264,6 +264,7 @@ multiplayer.player.left=%s left the game
 
 chat.cannotSend=Cannot send chat message
 chat.type.text=<%s> %s
+chat.type.text.narrate=%s says %s
 chat.type.emote=* %s %s
 chat.type.announcement=[%s] %s
 chat.type.admin=[%s: %s]
@@ -496,6 +497,7 @@ key.hotbar.8=Hotbar Slot 8
 key.hotbar.9=Hotbar Slot 9
 key.saveToolbarActivator=Save Toolbar Activator
 key.loadToolbarActivator=Load Toolbar Activator
+key.advancements=Advancements
 
 key.categories.movement=Movement
 key.categories.misc=Miscellaneous
@@ -1249,6 +1251,7 @@ container.enchant.lapis.one=1 Lapis Lazuli
 container.enchant.lapis.many=%s Lapis Lazuli
 container.enchant.level.one=1 Enchantment Level
 container.enchant.level.many=%s Enchantment Levels
+container.enchant.level.requirement=Level requirement: %s
 container.enchant.clue=%s . . . ?
 container.repair=Repair & Name
 container.repair.cost=Enchantment Cost: %1$s
@@ -1652,7 +1655,7 @@ stat.loadWorld=Saves Loaded
 stat.joinMultiplayer=Multiplayer Joins
 stat.leaveGame=Games Quit
 
-stat.playOneMinute=Minutes Played
+stat.playOneMinute=Time Played
 stat.timeSinceDeath=Since Last Death
 stat.sneakTime=Sneak Time
 
@@ -1912,11 +1915,11 @@ commands.advancement.advancementNotFound=No advancement was found by the name '%
 commands.advancement.criterionNotFound=The advancement '%1$s' does not contain the criterion '%2$s'
 
 commands.reload.usage=/reload
-commands.reload.success=Successfully reloaded loot tables and advancements
+commands.reload.success=Successfully reloaded loot tables, advancements and functions
 
 commands.function.usage=/function <name>
 commands.function.unknown=Unknown function '%s'
-commands.function.success=Executed %2$s commands from function '%1$s'
+commands.function.success=Executed %2$s command(s) from function '%1$s'
 
 commands.advancement.grant.usage=/advancement grant <player> <only|until|from|through|everything>
 commands.advancement.grant.only.usage=/advancement grant <player> only <advancement> [criterion]
@@ -2187,7 +2190,7 @@ advMode.nearestPlayer=Use "@p" to target nearest player
 advMode.randomPlayer=Use "@r" to target random player
 advMode.allPlayers=Use "@a" to target all players
 advMode.allEntities=Use "@e" to target all entities
-advMode.self=Use "@s" to target yourself
+advMode.self=Use "@s" to target a player in /execute
 advMode.previousOutput=Previous Output
 advMode.mode.sequence=Chain
 advMode.mode.auto=Repeat
