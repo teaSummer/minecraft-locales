@@ -54,6 +54,18 @@ hbui.AchievementListItem.rewardLockedNarration=Reward locked
 hbui.AchievementListItem.rewardUnlockedNarration=Reward unlocked
 hbui.AchievementListItem.siblingNarration=Button %1$s of %2$s
 hbui.AchievementListItem.view=View details
+hbui.AchievementPermanentlyDisabledModal.cheats=Cheats are enabled	### Reason why the world has achievements disabled, world has cheats enabled {MaxLength="150"}
+hbui.AchievementPermanentlyDisabledModal.close=Close	### Button to dismiss the modal {MaxLength="40"}
+hbui.AchievementPermanentlyDisabledModal.creative=The world is created in creative mode	### Reason why the world has achievements disabled, world is in creative mode {MaxLength="150"}
+hbui.AchievementPermanentlyDisabledModal.description=The way this world has been set up means that you won’t be able to earn achievements while playing in it. Editing the world’s settings now can’t change this. You’ll need to visit a different world to earn achievements.	### Text shown in the modal when the world have the achievements permanently disabled {MaxLength="600"}
+hbui.AchievementPermanentlyDisabledModal.experiments=Beta features are turned on	### Reason why the world has achievements disabled, experiments are turned on in the world {MaxLength="150"}
+hbui.AchievementPermanentlyDisabledModal.flat=The world is created as a flatworld	### Reason why the world has achievements disabled, world is in flat mode {MaxLength="150"}
+hbui.AchievementPermanentlyDisabledModal.pack=A behaviour pack is activated	### Reason why the world has achievements disabled, the world has a behaviour pack enabled {MaxLength="150"}
+hbui.AchievementPermanentlyDisabledModal.permissions=The world creator has operator privileges	### Reason why the world has achievements disabled, player has operator permissions by default {MaxLength="150"}
+hbui.AchievementPermanentlyDisabledModal.reasonText=Achievements can't be earned in this world if:	### Text shown in the modal when the world have the achievements permanently disabled {MaxLength="150"}
+hbui.AchievementPermanentlyDisabledModal.template=The world is built from a template	### Reason why the world has achievements disabled, the world was created from a template {MaxLength="150"}
+hbui.AchievementPermanentlyDisabledModal.title=You can’t earn achievements	### Title of modal shown to let the player that in this world achievements are permanently disabled {MaxLength="40"}
+hbui.AchievementPermanentlyDisabledModal.trial=The world creator is using the trial version of Minecraft 	### Reason why the world has achievements disabled, player is using a trial version of the game {MaxLength="150"}
 hbui.AchievementReward.narration.rewardLocked=reward locked
 hbui.AchievementReward.narration.rewardUnlocked=reward unlocked
 hbui.AchievementReward.reward=Reward
@@ -1424,14 +1436,14 @@ hbui.JoinRealmsServerInvitationsButton.invitationsRole=Group
 hbui.JoinRealmsServerInvitationsButton.narrationSuffix=Press to view your inbox
 hbui.JoinRealmsServerInvitationsButton.noInvitesBody=You might have invitations in your inbox!
 hbui.JoinRealmsServerInvitationsButton.noInvitesTitle=Don't have an invite link?
-hbui.JoinRealmsServerTransient.buttonEnumeration=%1$s of %2$s
-hbui.JoinRealmsServerTransient.cancelButtonLabel=Cancel
-hbui.JoinRealmsServerTransient.caption=You can leave their realm at any time.
+hbui.JoinRealmsServerTransient.caption=You can leave their Realm at any time. Join button below.      ### Realm here refers to a Realm server. Join is in the context of joining a Realm, meaning becoming a member of it. {MaxLength="100"}
+hbui.JoinRealmsServerTransient.errorMessageTitle=Something went wrong    ### Something went wrong when trying to join a Realm, this is a generic header for it. {MaxLength="100"}
+hbui.JoinRealmsServerTransient.genericTitle=Join A Realm    ### Becoming a member of a Realm. {MaxLength="100"}
 hbui.JoinRealmsServerTransient.joinButtonLabel=Join
 hbui.JoinRealmsServerTransient.joinRealmModal=Joining Realm
-hbui.JoinRealmsServerTransient.ownerInformation=Would you like to join %1$s's realm?
+hbui.JoinRealmsServerTransient.ownerInformation=You're about to join %1$s's Realm    ### The player is about to become a member of another players Realm.{MaxLength="100"}
 hbui.JoinRealmsServerTransient.successSnackbar=You joined "%1$s"!
-hbui.JoinRealmsServerTransient.title=Join a Realm
+hbui.JoinRealmsServerTransient.title=Join %1$s    ### Join as in "Join Realm". Becoming a member of a Realm. {MaxLength="20"}
 hbui.JoinServerWarningModal.cancel=Cancel
 hbui.JoinServerWarningModal.continue=Continue
 hbui.JoinServerWarningModal.text=You are the host, if you leave this world the multiplayer session will also end.
@@ -1496,12 +1508,10 @@ hbui.Notifications.inTrialMode=Some settings are locked because you’re in a tr
 hbui.Notifications.multiplayerWarnings.checkInternetConnection=You're not connected to the internet. Go online so your friends can join your multiplayer worlds.
 hbui.Notifications.multiplayerWarnings.multiplayerPrivilegesBlocked=You cannot play online multiplayer because of how your Microsoft account is set up. Please ensure your online safety settings allow multiplayer. See instructions for changing these settings at aka.ms/MCMultiplayerHelp.
 hbui.Notifications.multiplayerWarnings.multiplayerPrivilegesBlockedOnConsole=You cannot play online multiplayer because of how your Microsoft account is set up. Please ensure your online safety settings allow multiplayer and Clubs, and that you have an active Xbox Game Pass subscription. See instructions for changing these settings at aka.ms/MCMultiplayerHelp.##disable_3rd_party_console_resource_pack_check
-hbui.Notifications.multiplayerWarnings.nintendoDisconnectedThirdPartyWithSubscription=Log in to Nintendo Switch Online to play with friends and access multiplayer features.	### Warning tha tis shown when in the Multiplayer tab in the CreateNewWorld/EditWorld screens when not logged into a Nintendo account. This text wraps to new lines in the banner. ### {StrContains="Nintendo Switch Online"}
 hbui.Notifications.multiplayerWarnings.nintendoLocalMultiplayerPrivilegesBlockedThirdParty=You cannot play local multiplayer because of a parental control restriction. View and manage your multiplayer settings with 'Communicating with others' in the parental controls.
 hbui.Notifications.multiplayerWarnings.nintendoMultiplayerPrivilegesBlockedThirdParty=You cannot play local multiplayer because of a parental control restriction. View and manage your multiplayer settings with 'Communicating with others' in the parental controls.
 hbui.Notifications.multiplayerWarnings.nonMultiplayerSkinEquipped=Your current skin is not allowed in multiplayer.
 hbui.Notifications.multiplayerWarnings.playstationCrossPlatformDisabled=Enable cross-platform play in the profile section of the settings menu to play with friends on other platforms.
-hbui.Notifications.multiplayerWarnings.playstationDisconnectedThirdPartyWithSubscription=Log in to the PlayStation™Network to play with friends and access multiplayer features.	### Warning that is shown in the Multiplayer tab in the CreateNewWorld/EditWorld screens when not logged into the Playstation network. This text wraps to new lines in the banner.  CertRequirement: [PlayStation™Network]
 hbui.Notifications.multiplayerWarnings.playstationMultiplayerPrivilegesBlockedThirdParty=You cannot play local multiplayer because of a parental control restriction. View and manage your multiplayer settings with 'Communicating with others' in the parental controls.
 hbui.Notifications.notEnoughStorage=You are almost out of storage space! Minecraft has restricted access to this feature until you clear up additional storage space.
 hbui.Notifications.readMoreLink=Read more
@@ -3333,7 +3343,7 @@ hbui.WorldTag.experimental=Experimental
 hbui.WorldTag.hardcore=Hardcore
 hbui.WorldTag.lan=LAN
 hbui.WorldTag.survival=Survival
-hbui.WorldTag.unknown=Unknown   ###Placeholder if the other tags don't fit, the unknown world tag{MaxLength=21}
+hbui.WorldTag.unknown=Unknown ### Unknown type of Minecraft world. A known type would be eg survival or creative. {MaxLength=21}
 hbui.Editor.title=Input Mapping
 hbui.EditorActionBar.leftTray=Left
 hbui.EditorActionBar.rightTray=Right
