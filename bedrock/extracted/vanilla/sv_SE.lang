@@ -129,6 +129,7 @@ action.interact.attachchest=Fäst kista	#
 action.interact.trade=Byteshandla	#
 action.interact.armorstand.pose=Posera	#
 action.interact.armorstand.equip=Använd	#
+action.interact.read=Läs	#
 
 advMode.allEntities=@e = alla enheter	#
 advMode.allPlayers=@a = alla spelare	#
@@ -185,9 +186,9 @@ authentication.clickToPurchaseMessage=Be din lärare att köpa en licens åt dig
 authentication.clickToPurchaseStudent=http://aka.ms/meestore	#
 authentication.clickToPurchaseTeacher=Klicka här för att köpa en licens	#
 authentication.adalException=Det går inte att ansluta till tjänsten du behöver just nu. Kontrollera nätverksanslutningen eller försök igen senare.	#
-authentication.buyMinecraft=Skaffa Minecraft	#
-authentication.educationOnly=Minecraft: Education Edition är bara tillgängligt för skolor, bibliotek och museum som redan har köpt ett abonnemang från Microsoft.	#
-authentication.minecraftInstead=Om det inte är du, spela Minecraft i stället:	#
+authentication.buyMinecraft=Gå till App Store	#
+authentication.educationOnly=Minecraft: Education Edition är endast tillgängligt för skolor. Du behöver ett Office 365 Education-konto för att spela.	#
+authentication.minecraftInstead=Är du inte student, men vill ändå spela Minecraft?	#
 authentication.signInButton=Logga in med ditt skolkonto	#
 
 
@@ -225,6 +226,7 @@ chat.link.open=Öppna i webbläsare	#
 chat.link.warning=Öppna aldrig länkar från folk du inte litar på!	#
 chat.mute=Slå av ljud	#
 chat.realmsFilterDisabled=Detta Realm använder inte chattfiltrering.	#
+chat.settings=Chattinställningar	#
 chat.stream.emote=(%s) * %s %s	#
 chat.stream.text=(%s) <%s> %s	#
 chat.title=Chatt	#
@@ -1086,6 +1088,7 @@ createWorldScreen.gameMode.creative=Kreativt	#
 createWorldScreen.gameMode.creative.desc=Obegränsade resurser. Ingen skada. Du kan flyga. Inga achievements, inte ens om du övergår till överlevnad senare.	#
 createWorldScreen.gameMode.survival=Överlevnad	#
 createWorldScreen.gameMode.survival.desc=Begränsade resurser och du behöver verktyg. Du kan ta skada. Se upp för monster.	#
+createWorldScreen.gameMode.serverDefault=Standard	#
 createWorldScreen.header.delete=Världens beständighet	#
 createWorldScreen.header.editLocal=Redigera din värld	#
 createWorldScreen.header.local=Skapa en värld	#
@@ -1240,6 +1243,7 @@ realmsCreateScreen.incomplete.override.realm=Du försöker att förnya ett Realm
 realmsCreateScreen.prepare.store.title=Köphistorik krävs	#
 realmsCreateScreen.prepare.store.body=Du måste logga in i Store så vi får granska din köphistorik innan vi kan fortsätta.	#
 realmsCreateScreen.prepare.store.button=Logga in i Store	#
+realmsCreateScreen.nsoinfotext=Du behöver ett abonnemang på Nintendo Switch Online för att använda Realms.	#
 
 realmsCreateScreen.title=Skapa ett Realm	#
 realmsCreateScreen.nameHeader=Realm-namn	#
@@ -1603,6 +1607,7 @@ disconnectionScreen.realmsWorldUnassigned=Tilldela en version under utvecklaralt
 disconnectionScreen.realmsWorldUnassigned.title=Otilldelat Realm!	#
 disconnectionScreen.serverFull=Jösses vilken populär server! Kom tillbaka senare för att se om det finns några lediga platser då.	#
 disconnectionScreen.serverFull.title=Full server	#
+disconnectionScreen.serverIdConflict=Kan inte ansluta till världen. Kontot du är inloggad med spelar i den här världen på en annan enhet just nu.	#
 disconnectionScreen.sessionNotFound=Kunde inte ansluta till världen. Världen är inte längre öppen för anslutningar.	#
 disconnectionScreen.timeout=Anslutningen tog för lång tid.	#
 disconnectionScreen.nowifi=Du måste vara ansluten till ett trådlöst nätverk för att spela med kompisar.	#
@@ -1719,6 +1724,7 @@ entity.moving_block.name=Flyttblock	#
 entity.ocelot.name=Ozelot	#
 entity.painting.name=Tavla	#
 entity.parrot.name=Papegoja	#
+entity.phantom.name=Fantom	#
 entity.pig.name=Gris	#
 entity.polar_bear.name=Isbjörn	#
 entity.rabbit.name=Kanin	#
@@ -1912,6 +1918,7 @@ gui.up=Upp	#
 gui.warning.exitGameWarning=Vill du avsluta Minecraft?	#
 gui.worldTemplate=Minecraft-världsmall	#
 gui.yes=Ja	#
+gui.feedbackYes=Ja, gå till feedbacksidan	#
 gui.resourcepacks=Resurspaket ...	#
 gui.submit=Skicka	#
 gui.playOffline=Spela offline	#
@@ -3595,6 +3602,7 @@ item.spawn_egg.entity.evocation_illager.name=Spawna uppväckare	#
 item.spawn_egg.entity.vex.name=Spawna vålnad	#
 item.spawn_egg.entity.turtle.name=Spawna havssköldpadda	#
 item.spawn_egg.entity.dolphin.name=Spawna delfin	#
+item.spawn_egg.entity.phantom.name=Spawna fantom	#
 item.spawn_egg.entity.unknown.name=Spawnplats	#
 item.trident.name=Treudd	#
 item.mushroom_stew.name=Svampstuvning	#
@@ -3687,6 +3695,7 @@ item.shulker_shell.name=Shulkerskal	#
 item.totem.name=Vandöendets totem	#
 item.turtle_helmet.name=Sköldpaddsskal	#
 item.turtle_shell_piece.name=Fjäll	#
+item.phantom_membrane.name=Fantommembran	#
 
 itemGroup.search=Sök föremål	#
 itemGroup.name.planks=Plankor	#
@@ -3802,6 +3811,8 @@ key.lookUpLeft=Titta uppåt till vänster	#
 key.lookUpRight=Titta uppåt till höger	#
 key.lookUpSlight=Titta lite uppåt	#
 key.lookUpSmooth=Titta uppåt (jämnt)	#
+key.menuTabLeft=Menyflik vänster	#
+key.menuTabRight=Menyflik höger	#
 key.mouseButton=Knapp %1$s	#
 key.pickItem=Välj block	#
 key.playerlist=Lista spelare	#
@@ -4115,6 +4126,7 @@ options.destroyvibration=Förstör block (vibrera)	#
 options.debug=Debug-inställningar	#
 options.debugTitle=Utvecklaralternativ	#
 options.dev_assertions_debug_break=Påståenden fungerar inte i debuggern	#
+options.dev_assertions_show_dialog=Påståenden visar en moduldialog	#
 options.dev_enableDebugUI=Aktivera debug-gränssnitt	#
 options.dev_createRealmWithoutPurchase=Skapa Realm utan köp	#
 options.dev_flushOrphanedRealmsPurchases=Rensa inaktiva Realms-köp	#
@@ -4546,7 +4558,8 @@ playscreen.lastPlayed.weeksAgo=%1 veckor sedan	#
 playscreen.lastPlayed.yesterday=I går	#
 playscreen.new=Ny	#
 playscreen.remoteWorld=Fjärrvärld på:	#
-playScreen.realmsTrialWorld=Kostnadsfritt 30-dagarsdemo	#
+playscreen.realmsTrialWorld=Kostnadsfritt 30-dagarsdemo	#
+playscreen.realmsCreateFirstWorld=Skapa din första värld	#
 playscreen.checkingRealmsCompatibility=Kontrollerar Realms kompatibilitet ...	#
 playscreen.fetchingRealms=Hämtar Realms ...	#
 playscreen.confirmLeaveMessage=Vill du lämna följande Realm: %1$s?	#
@@ -4639,6 +4652,8 @@ potion.levitation=Levitering	#
 potion.levitation.postfix=Leviteringsbrygd	#
 potion.moveSlowdown=Långsamhet	#
 potion.moveSlowdown.postfix=Långsamhetsbrygd	#
+potion.slowFalling=Långsamma fall	#
+potion.slowFalling.postfix=Brygd för långsamma fall	#
 potion.moveSpeed=Snabbhet	#
 potion.moveSpeed.postfix=Snabbhetsbrygd	#
 potion.nightVision=Mörkerseende	#
@@ -5250,15 +5265,16 @@ store.popup.purchaseFailed.msg=Tyvärr, ditt köp gick inte att slutföra. Har d
 store.popup.purchaseFailedInsufficientFunds.title=Du behöver fler mynt	#
 store.popup.purchaseFailedInsufficientFunds.msg=Du har inte tillräckligt med mynt för att låsa upp det här föremålet. Du kan köpa mynt i appbutiken.	#
 store.popup.purchaseFailedInsufficientFunds.buyButton=Skaffa mynt	#
+store.popup.purchasePriceMismatch.msg=Tyvärr, ditt köp gick inte att slutföra. Försök igen senare.	#
 store.purchase.success=Du har köpt: %s	#
 store.createdBy=Av %s	#
 store.seeMoreBy=Visa fler av %s	#
 store.fetchingItem=Ansluter till butiken ...	#
  
-store.timer.daysAbbreviated=%s d	#
-store.timer.hoursAbbreviated=%s h	#
-store.timer.minutesAbbreviated=%s m	#
-store.timer.secondsAbbreviated=%s s	#
+store.timer.daysAbbreviated=%s d		### This is to let player know how many days are left in a sale. It needs to be abbreviated with no more than 3 characters
+store.timer.hoursAbbreviated=%s h		### This is to let player know how many days are left in a sale. It needs to be abbreviated with no more than 3 characters
+store.timer.minutesAbbreviated=%s m		### This is to let player know how many days are left in a sale. It needs to be abbreviated with no more than 3 characters
+store.timer.secondsAbbreviated=%s s		### This is to let player know how many days are left in a sale. It needs to be abbreviated with no more than 3 characters
 store.timer.left=%s kvar	#
 
 store.startMenu.sale=Rea!	#
@@ -5410,6 +5426,12 @@ store.xbl.disconnected=Nedkopplad	#
 store.xbl.conversionFailedTitle=Någonting gick fel	#
 store.xbl.conversionFailedMessage=Försök igen senare.	#
 
+store.sales.allByCreator=På rea nu!	#
+store.sales.mashupsOnSale=Mixpaket på rea nu!	#
+store.sales.skinsOnSale=Utseenden på rea nu!	#
+store.sales.texturesOnSale=Texturpaket på rea nu!	#
+store.sales.worldsOnSale=Världar på rea nu!	#
+
 store.showalloffers.list.title=%s-butik 	#
 store.showalloffers.list.back=Gå tillbaka	#
 
@@ -5418,14 +5440,6 @@ store.suggestedOffers.defaultTitle=Roliga sätt att spela på	#
 store.minecoin.notavailable=Köp med mynt är inte tillgängliga i den här versionen av Minecraft.	#
 
 store.itemDetail.back=Detaljer	#
-store.timeRemaining=Tid kvar: %s	#
-store.daysRemaining=%s dagar kvar	#
-
-store.sales.allByCreator=På rea nu!	#
-store.sales.mashupsOnSale=Mixpaket på rea nu!	#
-store.sales.skinsOnSale=Utseenden på rea nu!	#
-store.sales.texturesOnSale=Texturpaket på rea nu!	#
-store.sales.worldsOnSale=Världar på rea nu!	#
 
 store.search.allResults=%d resultat	#
 store.search.dynamicPlaceHolderText=Prova att söka på %s!	#
@@ -6110,6 +6124,7 @@ tipped_arrow.effect.levitation=Leviteringspil	#
 tipped_arrow.effect.luck=Turpil	#
 tipped_arrow.effect.wither=Förmultningspil	#
 tipped_arrow.effect.turtleMaster=Sköldpaddsmästarens pil	#
+tipped_arrow.effect.slowFalling=Pil för långsamma fall	#
 
 structure_block.title=Strukturblock	#
 structure_block.structure_name=Strukturnamn	#
@@ -6239,7 +6254,8 @@ trial.upsell.description.updated=Tillverka, bygg, utforska och roa dig! Du är b
 trial.upsell.unlock=Lås upp hela spelet	#
 trial.upsell.startTrial=Starta demo	#
 
-
+ratingPopUp.title=Gillar du Minecraft?	#
+feedbackPopup.title=Har du något du vill dela med dig av till oss?	#
 
 ## NOTE: The following five lines are all related and shown together. When localizing, you may add line breaks to fit the paragraph,
 ## as opposed to trying to literally translate each line.
@@ -6251,6 +6267,28 @@ trial.upsell.expiredDescription.line5=-Upptäcka mystiska byggnader och riken	#
 trial.upsell.expiredNewDescription=Vill du fortsätta utforska, tillverka och bygga? Lås upp fullversionen för att spela hur länge som helst! Världen sparas så att du kan fortsätta där du slutade, men den går inte att modifiera förrän du har låst upp det fullständiga spelet.	#
 trial.upsell.expiredTitle=Tiden är slut!	#
 trial.upsell.expiredViewWorld=Visa värld	#
+
+## tabbedUpsell content
+trial.tabbed_upsell.title=Lås upp hela spelet	#
+trial.tabbed_upsell.button=Köp för %s	#
+trial.tabbed_upsell.minecraft.title=FULLVERSION AV MINECRAFT 	#
+trial.tabbed_upsell.minecraft.description=Utforska slumpgenererade världar utan slut och bygg allt från enkla hem till storslagna slott. Spela i kreativt läge med oändliga resurser eller utforska djupet i överlevnadsläget, där du måste tillverka vapen och rustningar för att besegra farliga varelser.	#
+trial.tabbed_upsell.xbl.title=XBOX LIVE	#
+trial.tabbed_upsell.xbl.description=Minecraft-communityn väntar på dig! Anslut till dina Xbox Live-kompisars världar, skaffa nya kompisar på servrar och synka dina marknadsköp mellan alla enheter du använder till Minecraft.	#
+trial.tabbed_upsell.achievements.title=ACHIEVEMENTS	#
+trial.tabbed_upsell.achievements.description=Achievements och gamerscore mäter dina framsteg i Minecraft och visar vad du uppnått för dina Xbox Live-kompisar. Skaffa fullversionen av spelet för att börja låsa upp dem!	#
+trial.tabbed_upsell.multiplayer.title=FLERA SPELARE	#
+trial.tabbed_upsell.multiplayer.description=Bjud in en kompis till kampen mot draken eller som hjälp i Nether. Spela med kompisar på konsol, PC eller mobil för att klara av nya utmaningar tillsammans.	#
+trial.tabbed_upsell.server.title=SERVRAR	#
+trial.tabbed_upsell.server.description=Servrar erbjuder några av de mest kreativa sätten att spela Minecraft på! Spela minispel med Minecraft-communityn och träffa nya kompisar.	#
+trial.tabbed_upsell.store.title=BUTIKEN	#
+trial.tabbed_upsell.store.description=Ett smidigt sätt att utforska säkert innehåll från communityn! Förnya dig med nya utseenden, förändra världen eller utforska otroliga kartor från en community där bara fantasin sätter gränserna.	#
+trial.tabbed_upsell.creative.title=KREATIVT LÄGE	#
+trial.tabbed_upsell.creative.description=Spela och skapa med hela förrådet för oändlig underhållning! Flyg runt i världen, bygg ditt drömhem av glaserad terrakotta, spräng berg med obegränsad dynamit och mycket mer därtill!	#
+trial.tabbed_upsell.addon.title=TILLÄGG	#
+trial.tabbed_upsell.addon.description=Vill du att vargar ska bete sig som kaniner? Ge din värld ett beteendepaket för att ändra på spelbeteenden. Vill du få alla träd att se ut som sockervadd? Byt ut dem med texturpaket.	#
+trial.tabbed_upsell.seeds.title=FRÖN	#
+trial.tabbed_upsell.seeds.description=Upptäck nya ekosystem i alla nya världar! Överlev på isslätter, ta dig upp för extrema kullar eller vandra genom sandiga öknar. Börja med unika världsmallar eller utforska nya och slumpgenererade världar.	#
 
 utility.zipFile=Zipfil	#
 verification.nolicense=Du tycks inte ha någon licens för Minecraft. Se till att du har laddat ned och installerat Minecraft från butiken.	#
@@ -6291,6 +6329,11 @@ xbox.firstsignin.line3=Har du ingen gamertag? Skapa en för att få achievements
 xbox.firstsignin.line3.norealmsOrServers=Har du ingen gamertag? Skapa en för att få achievements, spela online med kompisar och ansluta till Realms!	#
 xbox.failedsignin.line1=Vi försökte logga in dig på ditt Xbox Live-konto, men någonting gick fel.	#
 xbox.failedsignin.line2=Om du spelar utan att logga in kan du inte se din kompislista, få achievements, ansluta till Realms eller spela online på Xbox Live.	#
+xbox.dev_wrongSandboxSigninFailed.title=Någonting gick fel	#
+xbox.dev_wrongSandboxSigninFailed.line1=Kunde inte logga in i %s-sandlådan. Byt sandlåda och starta om Minecraft eller logga in med ett annat konto. Vid omstart är sandlådan %s. 	#
+xbox.dev_wrongSandboxSigninFailed.button.dev=Byt till utvecklarsandlåda	#
+xbox.dev_wrongSandboxSigninFailed.button.retail=Byt till konsumentsandlåda	#
+xbox.dev_wrongSandboxSigninFailed.button.clearXbl=Rensa kontoinloggningsdata	#
 xbox.achievementssignin.line1=Achievements och gamerscore mäter dina framsteg i Minecraft.	#
 xbox.achievementssignin.line2=Logga in på Xbox Live så kan du börja tjäna in dem!	#
 xbox.addfriendsignin.line1=Lägg till kompisar för att se vad de gör online och spela online med flera spelare utan att behöva krångla med IP-adresser och portar.	#

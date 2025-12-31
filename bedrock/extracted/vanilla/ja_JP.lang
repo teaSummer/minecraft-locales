@@ -129,6 +129,7 @@ action.interact.attachchest=チェストを着ける	#
 action.interact.trade=取引	#
 action.interact.armorstand.pose=ポーズ	#
 action.interact.armorstand.equip=装備	#
+action.interact.read=読む	#
 
 advMode.allEntities=@e = すべてのエンティティ	#
 advMode.allPlayers=@a = すべてのプレイヤー	#
@@ -185,9 +186,9 @@ authentication.clickToPurchaseMessage=担当の教育者に言って、以下か
 authentication.clickToPurchaseStudent=http://aka.ms/meestore	#
 authentication.clickToPurchaseTeacher=ライセンスを購入するにはここをクリック	#
 authentication.adalException=ご希望のサービスには現在接続できません。ネットワーク接続を確認するか、後でもう一度試してください。	#
-authentication.buyMinecraft=Minecraft を入手	#
-authentication.educationOnly=Minecraft: Education Edition は、Microsoft からサブスクリプションを購入済みの教育機関、図書館、および美術館にのみ利用可能です。	#
-authentication.minecraftInstead=あなたが以下でない場合、代わりに通常の Minecraft をプレイします:	#
+authentication.buyMinecraft=App Store に移動	#
+authentication.educationOnly=Minecraft: Education Edition は学校のアカウントのみでプレイ可能です。プレイするには Office 365 Education のアカウントが必要です。	#
+authentication.minecraftInstead=Education のユーザーではないけれど、 Minecraft をプレイしたいのですか?	#
 authentication.signInButton=自分の学校アカウントでログイン	#
 
 
@@ -225,6 +226,7 @@ chat.link.open=ブラウザで開く	#
 chat.link.warning=信頼していない人からのリンクは絶対に開かないで下さい!	#
 chat.mute=ミュート	#
 chat.realmsFilterDisabled=この Realms で、チャットのフィルタリング機能がオフになりました。	#
+chat.settings=チャット設定	#
 chat.stream.emote=(%s) * %s %s	#
 chat.stream.text=(%s) <%s> %s	#
 chat.title=チャット	#
@@ -1086,6 +1088,7 @@ createWorldScreen.gameMode.creative=クリエイティブ	#
 createWorldScreen.gameMode.creative.desc=無制限の資源。ダメージはなく、空を飛べます。後でサバイバルモードに切り替えても実績は獲得できません。	#
 createWorldScreen.gameMode.survival=サバイバル	#
 createWorldScreen.gameMode.survival.desc=資源が限られています。道具が必要です。怪我をするかもしれません。モンスターに気をつけましょう。	#
+createWorldScreen.gameMode.serverDefault=デフォルト	#
 createWorldScreen.header.delete=ワールドの永続性	#
 createWorldScreen.header.editLocal=世界を編集	#
 createWorldScreen.header.local=世界を作成	#
@@ -1240,6 +1243,7 @@ realmsCreateScreen.incomplete.override.realm=Realm を更新しようとして�
 realmsCreateScreen.prepare.store.title=購入履歴の要求	#
 realmsCreateScreen.prepare.store.body=購入履歴を閲覧するには、ストアにログインする必要があります。	#
 realmsCreateScreen.prepare.store.button=ストアにログイン	#
+realmsCreateScreen.nsoinfotext=Realms の利用には、Nintendo Switch Online への加入が必要です。	#
 
 realmsCreateScreen.title=Realm の作成	#
 realmsCreateScreen.nameHeader=Realm の名前	#
@@ -1603,6 +1607,7 @@ disconnectionScreen.realmsWorldUnassigned=開発者オプションでバージ�
 disconnectionScreen.realmsWorldUnassigned.title=Realm が未割り当てです!	#
 disconnectionScreen.serverFull=このサーバーは満員です! 時間をおいてからアクセスしてみてください。	#
 disconnectionScreen.serverFull.title=サーバーが満員です	#
+disconnectionScreen.serverIdConflict=世界に参加できません。サインインしているアカウントは、他のデバイスでこの世界を現在プレイしています。	#
 disconnectionScreen.sessionNotFound=ワールドに接続できません。このワールドにはもう参加できません。	#
 disconnectionScreen.timeout=接続がタイムアウトしました。	#
 disconnectionScreen.nowifi=フレンドとプレイするにはWi-Fiに接続する必要があります。	#
@@ -1719,6 +1724,7 @@ entity.moving_block.name=動いているブロック	#
 entity.ocelot.name=ヤマネコ	#
 entity.painting.name=絵	#
 entity.parrot.name=オウム	#
+entity.phantom.name=ファントム	#
 entity.pig.name=豚	#
 entity.polar_bear.name=ホッキョクグマ	#
 entity.rabbit.name=ウサギ	#
@@ -1912,6 +1918,7 @@ gui.up=上	#
 gui.warning.exitGameWarning=Minecraft を終了しますか?	#
 gui.worldTemplate=Minecraft の世界テンプレート	#
 gui.yes=はい	#
+gui.feedbackYes=はい。フィードバック Web サイトに移動します	#
 gui.resourcepacks=リソース パック...	#
 gui.submit=送信	#
 gui.playOffline=オフラインでプレイ	#
@@ -3593,8 +3600,9 @@ item.spawn_egg.entity.shulker.name=シュルカーを出現させる	#
 item.spawn_egg.entity.endermite.name=エンダーマイトを出現させる	#
 item.spawn_egg.entity.evocation_illager.name=エヴォーカーを出現させる	#
 item.spawn_egg.entity.vex.name=ヴェックスを出現させる	#
-item.spawn_egg.entity.turtle.name=ウミガメ スポーン	#
+item.spawn_egg.entity.turtle.name=ウミガメを出現させる	#
 item.spawn_egg.entity.dolphin.name=イルカを出現させる	#
+item.spawn_egg.entity.phantom.name=ファントムをスポーンさせる	#
 item.spawn_egg.entity.unknown.name=スポーン	#
 item.trident.name=トライデント	#
 item.mushroom_stew.name=きのこシチュー	#
@@ -3687,6 +3695,7 @@ item.shulker_shell.name=シュルカーの殻	#
 item.totem.name=不死のトーテム	#
 item.turtle_helmet.name=亀の甲羅	#
 item.turtle_shell_piece.name=甲羅のかけら	#
+item.phantom_membrane.name=ファントムの皮膜	#
 
 itemGroup.search=アイテム検索	#
 itemGroup.name.planks=木の板	#
@@ -3802,6 +3811,8 @@ key.lookUpLeft=左上を見る	#
 key.lookUpRight=右上を見る	#
 key.lookUpSlight=少し上を見る	#
 key.lookUpSmooth=スムースに上を見る	#
+key.menuTabLeft=メニュー タブ左	#
+key.menuTabRight=メニュー タブ右	#
 key.mouseButton=マウスボタン %1$s	#
 key.pickItem=ブロック選択	#
 key.playerlist=プレイヤーリスト	#
@@ -4114,7 +4125,8 @@ options.customizeTitle=カスタマイズ世界設定	#
 options.destroyvibration=ブロック破壊時のバイブレーション	#
 options.debug=デバッグ	#
 options.debugTitle=開発者オプション	#
-options.dev_assertions_debug_break=デバッガ―でのブレークの表明	#
+options.dev_assertions_debug_break=アサーションのデバッガーへの割り込み	#
+options.dev_assertions_show_dialog=アサーションによるモーダル ダイアログの表示	#
 options.dev_enableDebugUI=デバッグ UI を有効化	#
 options.dev_createRealmWithoutPurchase=購入せずに Realm を作成	#
 options.dev_flushOrphanedRealmsPurchases=放棄されている Realms の購入を消去	#
@@ -4546,7 +4558,8 @@ playscreen.lastPlayed.weeksAgo=%1 週間前	#
 playscreen.lastPlayed.yesterday=昨日	#
 playscreen.new=新規	#
 playscreen.remoteWorld=世界を遠隔操作:	#
-playScreen.realmsTrialWorld=30 日間の無料試用版	#
+playscreen.realmsTrialWorld=30 日間の無料試用版	#
+playscreen.realmsCreateFirstWorld=最初の世界を作成する	#
 playscreen.checkingRealmsCompatibility=Realms の互換性をチェック中...	#
 playscreen.fetchingRealms=Realms を取得中...	#
 playscreen.confirmLeaveMessage=本当に Realm %1$s を出てもよろしいですか?	#
@@ -4639,6 +4652,8 @@ potion.levitation=浮遊	#
 potion.levitation.postfix=浮遊のポーション	#
 potion.moveSlowdown=鈍化	#
 potion.moveSlowdown.postfix=鈍化のポーション	#
+potion.slowFalling=低速落下	#
+potion.slowFalling.postfix=低速落下のポーション	#
 potion.moveSpeed=スピード	#
 potion.moveSpeed.postfix=スピードのポーション	#
 potion.nightVision=暗視	#
@@ -5250,15 +5265,16 @@ store.popup.purchaseFailed.msg=購入ができませんでした。インター�
 store.popup.purchaseFailedInsufficientFunds.title=Minecoin が足りません	#
 store.popup.purchaseFailedInsufficientFunds.msg=Minecoin が足りないため、このアイテムを購入できません。Minecoin はアプリ ストアから購入できます。	#
 store.popup.purchaseFailedInsufficientFunds.buyButton=Minecoin を入手	#
+store.popup.purchasePriceMismatch.msg=購入手続きを完了できませんでした。 後でもう一度やり直してください。	#
 store.purchase.success=%s を購入しました	#
 store.createdBy=作者: %s	#
 store.seeMoreBy=詳しくは %s をご覧ください	#
 store.fetchingItem=ストアに接続中...	#
  
-store.timer.daysAbbreviated=%s 日	#
-store.timer.hoursAbbreviated=%s 時間	#
-store.timer.minutesAbbreviated=%s 分	#
-store.timer.secondsAbbreviated=%s 秒	#
+store.timer.daysAbbreviated=%s 日		### This is to let player know how many days are left in a sale. It needs to be abbreviated with no more than 3 characters
+store.timer.hoursAbbreviated=%s 時間		### This is to let player know how many days are left in a sale. It needs to be abbreviated with no more than 3 characters
+store.timer.minutesAbbreviated=%s 分		### This is to let player know how many days are left in a sale. It needs to be abbreviated with no more than 3 characters
+store.timer.secondsAbbreviated=%s 秒		### This is to let player know how many days are left in a sale. It needs to be abbreviated with no more than 3 characters
 store.timer.left=残り %s	#
 
 store.startMenu.sale=セール中!	#
@@ -5410,6 +5426,12 @@ store.xbl.disconnected=インターネット接続なし	#
 store.xbl.conversionFailedTitle=問題が発生しました	#
 store.xbl.conversionFailedMessage=後でもう一度やり直してください	#
 
+store.sales.allByCreator=発売中!	#
+store.sales.mashupsOnSale=マッシュアップ発売中!	#
+store.sales.skinsOnSale=スキン発売中!	#
+store.sales.texturesOnSale=テクスチャ パック発売中!	#
+store.sales.worldsOnSale=世界発売中!	#
+
 store.showalloffers.list.title=%s ストア	#
 store.showalloffers.list.back=戻る	#
 
@@ -5418,14 +5440,6 @@ store.suggestedOffers.defaultTitle=一味違う楽しみ方	#
 store.minecoin.notavailable=このバージョンの Minecraft ではコインを購入できません。	#
 
 store.itemDetail.back=詳細	#
-store.timeRemaining=残り時間: %s	#
-store.daysRemaining=あと %s 日	#
-
-store.sales.allByCreator=発売中!	#
-store.sales.mashupsOnSale=マッシュアップ発売中!	#
-store.sales.skinsOnSale=スキン発売中!	#
-store.sales.texturesOnSale=テクスチャ パック発売中!	#
-store.sales.worldsOnSale=世界発売中!	#
 
 store.search.allResults=検索結果: %d 件	#
 store.search.dynamicPlaceHolderText=%s を検索してみましょう!	#
@@ -6110,6 +6124,7 @@ tipped_arrow.effect.levitation=浮遊の矢	#
 tipped_arrow.effect.luck=幸運の矢	#
 tipped_arrow.effect.wither=衰弱の矢	#
 tipped_arrow.effect.turtleMaster=亀使いの矢	#
+tipped_arrow.effect.slowFalling=低速落下の矢	#
 
 structure_block.title=ストラクチャー ブロック	#
 structure_block.structure_name=構造体の名前	#
@@ -6239,7 +6254,8 @@ trial.upsell.description.updated=探検して、クラフトして、ビルド�
 trial.upsell.unlock=完全版を購入	#
 trial.upsell.startTrial=試用版を開始	#
 
-
+ratingPopUp.title=Minecraft をお楽しみいただけていますか	#
+feedbackPopup.title=フィードバックをお寄せいただけますか	#
 
 ## NOTE: The following five lines are all related and shown together. When localizing, you may add line breaks to fit the paragraph,
 ## as opposed to trying to literally translate each line.
@@ -6251,6 +6267,28 @@ trial.upsell.expiredDescription.line5=-不思議な建物や場所を発見し�
 trial.upsell.expiredNewDescription=探検、クラフト、ビルドを続けたいですか? 完全版を購入して好きなだけプレイしましょう! この世界は保存されて、終了時の状態から続きをプレイできますが、完全版を購入するまでは変更を加えられません。	#
 trial.upsell.expiredTitle=時間切れです!	#
 trial.upsell.expiredViewWorld=世界を見る	#
+
+## tabbedUpsell content
+trial.tabbed_upsell.title=完全版を購入	#
+trial.tabbed_upsell.button=%s で購入	#
+trial.tabbed_upsell.minecraft.title=Minecraft 完全版	#
+trial.tabbed_upsell.minecraft.description=ランダムにどこまでも生成されてゆく世界を探検して、簡素な小屋から豪華絢爛な城まで、さまざまなものを作りましょう。クリエイティブモードで無限の資源を使って自由に遊ぶのか、サバイバルモードで地中深くを掘り進め、武器や防具をクラフトして危険なモブと戦うのかは、あなた次第。	#
+trial.tabbed_upsell.xbl.title=Xbox Live	#
+trial.tabbed_upsell.xbl.description=Minecraft コミュニティーがあなたを待っています! Xbox Live のフレンドの世界に参加したり、サーバーで新しい友達を作ったり、マーケットプレイスでの購入内容をプレイするすべてのデバイスで同期できます。	#
+trial.tabbed_upsell.achievements.title=実績	#
+trial.tabbed_upsell.achievements.description=実績とゲーマースコアは、Minecraft の進行状況を示すものです。達成した内容は、Xbox Live のフレンドに公開されます。完全版を入手して、実績やゲーマースコアを獲得しましょう!	#
+trial.tabbed_upsell.multiplayer.title=マルチプレイヤー	#
+trial.tabbed_upsell.multiplayer.description=友達を招待して、龍との戦いに立ち向かったり、暗黒界の探索を手伝ったりしてもらいましょう。コンソール、PC、モバイルの友達と一緒にプレイして、共に新たな試練に挑みましょう。	#
+trial.tabbed_upsell.server.title=サーバー	#
+trial.tabbed_upsell.server.description=サーバーでは、創造力に満ちた Minecraft の楽しみ方がいくつも用意されています! Minecraft コミュニティーの皆と一緒にミニゲームをお楽しみください。新しい友達を作るチャンスです!	#
+trial.tabbed_upsell.store.title=ストア	#
+trial.tabbed_upsell.store.description=安心のコミュニティー製コンテンツを入手して楽しめます! 新しいスキンでイメージ チェンジしたり、世界を様変わりさせたり、無限の想像力をもつコミュニティーが製作した圧巻の新マップを探索したりしましょう。	#
+trial.tabbed_upsell.creative.title=クリエイティブ	#
+trial.tabbed_upsell.creative.description=世界を飛び回ったり、彩釉テラコッタで夢のマイホームを建てたり、無限の TNT 火薬で山を木っ端みじんにしたり...あらゆる持ち物を使って、無限に楽しめるクラフトを満喫しましょう!	#
+trial.tabbed_upsell.addon.title=アドオン	#
+trial.tabbed_upsell.addon.description=ウサギのようにふるまうオオカミが見たい? それなら、ゲーム内のふるまいを変えるビヘイビアー パックを世界に追加しましょう。木の見た目を綿菓子っぽくしたい? それなら、テクスチャ パックで簡単に変えることができますよ!	#
+trial.tabbed_upsell.seeds.title=シード	#
+trial.tabbed_upsell.seeds.description=新たな世界で、まだ見ぬバイオームを見つけましょう! 氷原で生き残り、山岳を登り、砂漠を放浪しましょう。ユニークな世界テンプレートで始めることも、世界をランダム生成して探索し始めることもできます。	#
 
 utility.zipFile=ZIP ファイル	#
 verification.nolicense=Minecraft のライセンスをお持ちでないようです。Minecraft をストアからダウンロードしてインストールしたかどうか確認してください	#
@@ -6291,6 +6329,11 @@ xbox.firstsignin.line3=まだゲーマータグを持っていないなら、作
 xbox.firstsignin.line3.norealmsOrServers=まだゲーマータグを持っていないなら、作成して実績を獲得し、フレンドとオンラインでプレイして Realms に参加しよう!	#
 xbox.failedsignin.line1=Xbox Live アカウントへのサインインを試みましたが、問題が発生しました。	#
 xbox.failedsignin.line2=サインインせずにプレイするとフレンドリストが表示されず、実績を獲得できず、Realms に参加できず、Xbox Live のオンラインでプレイできません。	#
+xbox.dev_wrongSandboxSigninFailed.title=問題が発生しました	#
+xbox.dev_wrongSandboxSigninFailed.line1=%s サンドボックスへのログインに失敗しました。サンドボックスを変更して Minecraft を再起動するか、別のアカウントを使用してサインインしてください。再起動時のサンドボックスは %s になります。	#
+xbox.dev_wrongSandboxSigninFailed.button.dev=開発サンド ボックスに変更	#
+xbox.dev_wrongSandboxSigninFailed.button.retail=RETAIL サンドボックスに変更	#
+xbox.dev_wrongSandboxSigninFailed.button.clearXbl=アカウントのサインイン データをクリア	#
 xbox.achievementssignin.line1=実績とゲーマースコアはあなたの Minecraft の進行状況を示します。	#
 xbox.achievementssignin.line2=Xbox Live にサインインして獲得しよう!	#
 xbox.addfriendsignin.line1=フレンドを追加すれば、IP アドレスやポートを気にすることなく、オンライン状況を確認して簡単にオンライン マルチプレイヤーを楽しめます。	#
