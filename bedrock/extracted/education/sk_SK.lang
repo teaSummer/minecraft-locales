@@ -1,5 +1,12 @@
-﻿commands.codebuilder.description=Nastaví pre hráča stav Zostavovač kódu.	#
-commands.codebuilder.invalidurl=Adresa URL bola neplatná alebo ukazuje na nepodporovanú webovú lokalitu.	#
+﻿classroomSettings.uriResource.header.title=Prepojenie na zdroj	#
+classroomSettings.uriResource.header.description=Pridajte prepojenie na hodnotiaci nástroj, webovú stránku alebo iný zdroj	#
+classroomSettings.uriResource.name.placeHolder=Zadajte názov tlačidla	#
+classroomSettings.uriResource.name.title=Názov tlačidla zdroja	#
+classroomSettings.uriResource.uri.placeHolder=Zadajte adresu URL zdroja	#
+classroomSettings.uriResource.uri.title=Adresa URL tlačidla zdroja	#
+
+commands.codebuilder.description=Nastaví pre hráča stav Zostavovač kódu.	#
+commands.codebuilder.invalidRuntimeAction=Toto nie je platná akcia v režime runtime.	#
 commands.resourceuri.description=Nastaví URI zdroja v ponuke Pozastaviť.	#
 commands.resourceuri.named=URI zdroja je nastavené na „%s“ s názvom tlačidla „%s“	#
 commands.resourceuri.default=URI zdroja je nastavené na „%s“	#
@@ -7,6 +14,17 @@ commands.resourceuri.clear=URI zdroja je vymazané.	#
 commands.takepicture.description=Zhotoví fotografiu hráča alebo fotografiu z pohľadu hráča.	#
 commands.takepicture.cameranotfound=Nepodarilo sa nájsť fotoaparát.	#
 commands.takepicture.cameranotspawned=Nepodarilo sa spustiť fotoaparát.	#
+
+createWorldScreen.allowdestructiveitems=Povoliť ničivé predmety	#
+createWorldScreen.allowmobs=Povoliť tvory	#
+createWorldScreen.classroomsettings.toggle=Zobraziť nastavenia triedy	#
+createWorldScreen.classroom.settings=Nastavenia triedy	#
+createWorldScreen.commands=Povoliť príkazy	#
+createWorldScreen.help=Získať pomoc s nastaveniami triedy	#
+createWorldScreen.immutableworld=Neupravovateľný svet	#
+createWorldScreen.perfectweather=Dokonalé počasie	#
+createWorldScreen.playerdamage=Poškodenie hráča	#
+createWorldScreen.pvpdamage=Poškodenie hráča spôsobené hráčom	#
 
 library.connection.failed.body=Nemôžeme sa pripojiť ku Knižnici. Môže sa to stať v prípade, že je počítač offline alebo je prístup ku katalógu Knižnice zablokovaný.	#
 library.connection.failed.help=Získať pomoc	#
@@ -37,6 +55,7 @@ library.item.difficulty.advanced=Pokročilý	#
 library.item.tags=Značky:	#
 library.item.tagsAll=VŠETKY ZNAČKY:	#
 library.item.tagsAll.tts=Zobraziť ďalšie značky	#
+library.item.button.signin=KVÔLI ODOMKNUTIU SA PRIHLÁSTE	#
 library.item.button.create=VYTVORIŤ SVET	#
 library.item.button.share=ZDIEĽAŤ PREPOJENIE	#
 library.item.button.shareEducator=PRIRADIŤ ALEBO ZDIEĽAŤ	#
@@ -98,6 +117,9 @@ library.item.share.toast.classrooms=Vo webovom prehliadači sa otvorila služba 
 library.item.teams.msgTxt=Pozrite si tento svet, %1, vo vydaní Minecraft: Education Edition.	#
 library.item.sharepopup.shareButton=Zdieľať do Teams	#
 
+library.category.title.demo=Ukážkové lekcie hry Minecraft: Education Edition	#
+library.category.description.demo=Vitajte v ukážkových lekciách hry Minecraft: Education Edition. Pozývame vás, aby ste tieto lekcie preskúmali a naučili sa, ako Minecraft buduje zručnosti v oblasti technických predmetov, rozpútava kreativitu a zapája študentov do spolupráce a riešenia problémov.	#
+
 library.category.label.biomes=BIÓMY A SVETY	#
 library.category.title.biomes=Biómy a svety	#
 library.category.description.biomes=Pomocou tejto kolekcie svetov a biómov začnite vytvárať lekcie v hre Minecraft: Education Edition.	#
@@ -111,14 +133,14 @@ library.category.title.biomes.featured=Odporúčané svety	#
 
 library.category.label.buildChallenges=MESAČNÉ STAVITEĽSKÉ VÝZVY	#
 library.category.title.buildChallenges=Mesačné staviteľské výzvy	#
-library.category.description.buildChallenges=Zapojte kreativitu študentov a posilnite zručnosti požadované v 21. storočí pomocou týchto ľahko realizovateľných činností pre triedu.	#
+library.category.description.buildChallenges=Zapojte kreativitu študentov a posilnite zručnosti požadované v 21. storočí pomocou týchto ľahko realizovateľných činností pre triedu, tábor alebo klub.	#
 
 library.category.label.howToPlay=POKYNY NA HRANIE	#
-library.category.description.howToPlay=Tieto svety a činnosti boli vytvorené na úvodné oboznámenie so spôsobom, ako používať Minecraft: Education Edition vo vašej triede.	#
+library.category.description.howToPlay=Tieto svety a činnosti boli vytvorené na úvodné oboznámenie so spôsobom, ako používať Minecraft: Education Edition v triede, tábore alebo klube.	#
 
 library.category.label.howToPlay.startHere=ZAČNITE TU	#
 library.category.title.howToPlay.startHere=Začnite tu	#
-library.category.description.howToPlay.startHere=Každý z týchto kurzov je navrhnutý tak, aby vám prostredníctvom svetov pomohol naučiť sa rôzne zručnosti na podporu používania hry Minecraft: Education Edition vo vašej triede.	#
+library.category.description.howToPlay.startHere=Každý z týchto kurzov je navrhnutý tak, aby vám prostredníctvom svetov pomohol naučiť sa rôzne zručnosti na podporu používania hry Minecraft: Education Edition v triede, tábore alebo klube.	#
 
 library.category.label.howToPlay.additional=ĎALŠIE KURZY	#
 library.category.title.howToPlay.additional=Ďalšie kurzy	#
@@ -130,6 +152,10 @@ library.category.description.SEL=Tieto svety a aktivity podporujú sociálne a e
 library.category.label.digitalCitizen=DIGITÁLNE OBČIANSTVO	#
 library.category.title.digitalCitizen=Digitálne občianstvo	#
 library.category.description.digitalCitizen=Tieto svety a aktivity sa zameriavajú na digitálne občianstvo. Podporujú študentov v oblastiach mediálnej gramotnosti, ochrany osobných údajov a účasti v online komunitách.	#
+
+library.category.label.equity_and_inclusion=ROVNOSŤ A ZAČLENENIE	#this has already been localized	#
+library.category.title.equity_and_inclusion=Rovnosť a začlenenie	#this has already been localized	#
+library.category.description.equity_and_inclusion=Tieto svety a činnosti sa zameriavajú na rovnosť a začlenenie. Koncepty zahŕňajú sociálnu spravodlivosť, identitu a toleranciu.	#change in capitalization only, has otherwise been localized	#
 
 library.category.label.lessons=LEKCIE	#
 library.category.title.lessons=Lekcie	#
@@ -184,15 +210,11 @@ library.category.title.computerScience=Počítačová veda	#
 
 library.category.label.computerScience.hourOfCode=HODINA KÓDOVANIA	#
 library.category.title.computerScience.hourOfCode=Hodina kódovania	#
-library.category.description.computerScience.hourOfCode=Táto lekcia predstavuje hodinový úvod do počítačovej vedy. Je navrhnutá tak, aby demystifikovala umelú inteligenciu, predstavila programovanie v Minecrafte a rozšírila záujem o počítačovú vedu.	#
+library.category.description.computerScience.hourOfCode=Hodina kódovania začala v roku 2013 ako hodinový úvod do počítačovej vedy, ktorého cieľom bolo ukázať, že základy kódovania sa môže naučiť naozaj každý. Tieto lekcie prinášajú začiatočníkom zábavný zážitok z kódovania v Minecrafte a sú vhodné pre záujemcov všetkých vekových kategórií.	#
 
-library.category.label.computerScience.STEM=Technické predmety	#
-library.category.title.computerScience.STEM=Technické predmety	#
-library.category.description.computerScience.STEM=Tieto lekcie zladené s normami a svety z oblasti matematiky, vedy a techniky použite na začlenenie počítačovej vedy do celého školského dňa.	#
-
-library.category.label.computerScience.agency=AGENTÚRA	#
-library.category.title.computerScience.agency=Agentúra	#
-library.category.description.computerScience.agency=Postavte si vlastné mesto pomocou týchto lekcií počítačovej vedy založených na normách CSTA. Naučte sa základné koncepcie počítačovej vedy vrátane slučiek, algoritmov, podmienok, ladenia, iterácie a pod.	#
+library.category.label.computerScience.computingWithMinecraft=VÝPOČTOVÁ TECHNIKA S MINECRAFTOM	#
+library.category.title.computerScience.computingWithMinecraft=Výpočtová technika s Minecraftom	#
+library.category.description.computerScience.computingWithMinecraft=Postavte si vlastné mesto pomocou týchto lekcií počítačovej vedy založených na normách CSTA. Naučte sa základné koncepcie počítačovej vedy vrátane slučiek, algoritmov, podmienok, ladenia, iterácie a pod.	#
 
 library.category.label.computerScience.codingWithMinecraft=PROGRAMOVANIE S MINECRAFTOM	#
 library.category.title.computerScience.codingWithMinecraft=Programovanie s Minecraftom	#
@@ -208,6 +230,11 @@ library.category.description.computerScience.codingFun2=Navštívte Mesiac, Merk
 
 library.category.label.computerScience.codingFun3=ZÁBAVNÉ PROGRAMOVANIE: 3	#
 library.category.title.computerScience.codingFun3=Zábavné programovanie: 3	#
+library.category.description.computerScience.codingFun3=Cestujte v čase, od praveku až do ďalekej budúcnosti. Kým sa učíte používať premenné, udalosti, podmienky a funkcie, pozrite si dinosaury, rímske akvadukty a divoký západ.	#
+
+library.category.label.computerScience.ai=UMELÁ INTELIGENCIA	#
+library.category.title.computerScience.ai=Umelá inteligencia	#
+library.category.description.computerScience.ai=Tento kurz bol vytvorený v spolupráci s iniciatívou Microsoft AI for Earth a študentom predstaví silu umelej inteligencie (AI) v rôznych zaujímavých scenároch zo skutočného sveta. Študenti budú pomáhať ľuďom vo vzdialených oblastiach, chrániť voľne žijúce živočíchy a ekosystémy a skúmať klimatické zmeny. Jednoduché, samostatne riadené kurzy umožňujú študentom zažiť koncepčný rozvoj AI v sérii krokov, a to vrátane zhromažďovania údajov, vytvárania množiny údajov, nasadenia AI a analýzy výsledkov.	#
 
 library.category.label.computerScience.blockBased=PROGRAMOVANIE POMOCOU BLOKOV	#
 library.category.title.computerScience.blockBased=Programovanie pomocou blokov	#
@@ -215,13 +242,17 @@ library.category.title.computerScience.blockBased=Programovanie pomocou blokov	#
 library.category.label.computerScience.python=PYTHON	#
 library.category.title.computerScience.python=Python	#
 
-library.category.label.computerScience.python101=PYTHON 101	#
-library.category.title.computerScience.python101=Python 101	#
+library.category.label.computerScience.python.python101=PYTHON 101	#
+library.category.title.computerScience.python.python101=Python 101	#
 library.category.description.computerScience.python101=Začnite programovať v Minecrafte pomocou jazyka Python. Naučte sa základy tohto jazyka vrátane syntaxe, typov údajov, premenných, podmienok, slučiek „pre“, podmienených slučiek, zoznamov a funkcií.	#
 
-library.category.label.computerScience.codingTutorials=KURZY PROGRAMOVANIA	#
-library.category.title.computerScience.codingTutorials=Kurzy programovania	#
-library.category.description.computerScience.codingTutorials=Ak sa chcete sústrediť na konkrétnu koncepciu programovania, začnite na tomto mieste. Naučte sa, ako používať slučky, sekvencovanie, podmienky, premenné a funkcie. V týchto lekciách si môžete vybrať programovanie v jazykoch Bloky, Python alebo JavaScript.	#
+library.category.label.computerScience.python.python_islands=OSTROVY PYTHON	#
+library.category.title.computerScience.python.python_islands=Ostrovy Python	#
+library.category.description.computerScience.python.python_islands=Vitajte v Kráľovstve vznášajúcich sa ostrovov – mystickom kráľovstve, ktoré sa vznáša vysoko nad svetom. V tejto zbierke lekcií sa študenti naučia základy jazyka Python prostredníctvom série tematických úloh v jednotlivých svetoch. Dokončením týchto úloh pomôžte kráľovstvu rozvíjať sa a prosperovať.	#
+
+library.category.label.computerScience.languageAgnostic=JAZYKOVÝ AGNOSTIK	#
+library.category.title.computerScience.languageAgnostic=Jazykový agnostik	#
+library.category.description.computerScience.languageAgnostic=Ak sa chcete sústrediť na konkrétnu koncepciu programovania, začnite na tomto mieste. Naučte sa, ako používať slučky, sekvencovanie, podmienky, premenné a funkcie. V týchto lekciách si môžete vybrať programovanie v jazykoch Bloky, Python alebo JavaScript.	#
 
 library.category.label.computerScience.featuredLessons=ODPORÚČANÉ LEKCIE	#
 library.category.title.computerScience.featuredLessons=Odporúčané lekcie	#
@@ -244,10 +275,13 @@ library.category.description.commonCoreMath=Tieto pútavé činnosti boli vytvor
 library.notification.label.resourceUri=Tento svet bol zdieľaný s prepojením na ďalší zdroj. Po vytvorení sveta nájdite na obrazovke Pozastaviť tlačidlo „%1“.	#
 
 signin.acceptTerms=Prijať podmienky	#
-signin.leftPanel.header=HRAŤ MINECRAFT: EDUCATION EDITION	#
-signin.leftPanel.body=Ak chcete mať prístup k plnej verzii aplikácie Minecraft: Education Edition, prihláste sa pomocou školského konta.	#
-signin.rightPanel.header=VYSKÚŠAŤ UKÁŽKOVÚ LEKCIU	#
-signin.rightPanel.body=Preskúmajte programovanie v hre Minecraft: Education Edition pomocou tejto ukážkovej lekcie, ktorá je k dispozícii pre všetkých používateľov.	#
+signin.welcome.header.line1=Víta vás	#
+signin.welcome.header.line2=Minecraft: Education Edition!	#
+signin.welcome.body=Ak chcete pokračovať, prihláste sa pomocou školského konta alebo konta organizácie.	#
+signin.welcome.footer=Ak nemáte konto, vyskúšajte ukážkovú lekciu.	#
+signin.demo.header=VYSKÚŠAŤ UKÁŽKOVÚ LEKCIU	#
+signin.demo.body=Začnite svoju cestu v hre Minecraft: Education Edition pomocou bezplatnej ukážkovej lekcie, ktorá je k dispozícii pre všetkých študentov.	#
+signin.progress.title=Preberajú sa zdroje	#
 
 joincode.invalid.title=Nesprávny kód pripojenia 	#
 joincode.invalid.body=%1-krát ste zadali nesprávny kód pripojenia. Overte u hostiteľa, či máte správny kód, alebo sa pokúste pripojiť pomocou adresy IP.	#
@@ -259,6 +293,8 @@ joincode.popup.title = Zdieľať prepojenie	#
 joincode.popup.body = Zdieľajte prepojenie a pozvite ostatných hráčov, aby sa pripojili k vášmu svetu. Poznámka: Toto prepojenie bude fungovať len v prípade, že budete hostiteľom.	#
 joincode.share.body = Osoba %1 vás pozvala, aby ste sa pripojili k jej svetu v hre Minecraft: Education Edition. Použite toto prepojenie, aby ste začali stavať spoločne. (%2, hostiteľ: %1)	#
 joincode.share.subject = Pozvánka pre viacerých hráčov do hry Minecraft: Education Edition	#
+
+pause.externalLink=OTVORIŤ PREPOJENIE	#
 
 ## TAG LOCALIZATION SECTION ##
 tag.ages_0_3=0 – 3	#	#
@@ -381,6 +417,8 @@ tag.space=Vesmír	# refers to outer space	#
 tag.esports=Elektronické športy	#	#
 tag.toybox=Toybox	#	#
 tag.featured_coding=Odporúčané programovanie	#	#
+tag.equity_and_inclusion=Rovnosť a začlenenie	#	#
+tag.python_islands=Ostrovy Python #	#
 ## END TAG LOCALIZATION SECTION ##
 
 worlds.storage.permission.needed=Nemáme povolenie na zmenu tohto nastavenia.	#

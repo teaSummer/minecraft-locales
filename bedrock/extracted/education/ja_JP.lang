@@ -1,5 +1,12 @@
-﻿commands.codebuilder.description=プレイヤーのコード ビルダーの状態を設定します。	#
-commands.codebuilder.invalidurl=URL が無効であるか、サポートされていない Web サイトを指定しています。	#
+﻿classroomSettings.uriResource.header.title=リソース リンク	#
+classroomSettings.uriResource.header.description=評価ツール、Web サイト、その他のリソースへのリンクを追加してください。	#
+classroomSettings.uriResource.name.placeHolder=ボタンの名前を入力してください	#
+classroomSettings.uriResource.name.title=リソース ボタン名	#
+classroomSettings.uriResource.uri.placeHolder=リソースの URL を入力してください	#
+classroomSettings.uriResource.uri.title=リソース ボタンの URL	#
+
+commands.codebuilder.description=プレイヤーのコード ビルダーの状態を設定します。	#
+commands.codebuilder.invalidRuntimeAction=これは有効なランタイム アクションではありません。	#
 commands.resourceuri.description=一時停止メニューのリソース URI を設定します。	#
 commands.resourceuri.named=リソース URI が「%s」に設定されました。ボタン名は「%s」です。	#
 commands.resourceuri.default=リソース URI が「%s」に設定されました。	#
@@ -7,6 +14,17 @@ commands.resourceuri.clear=リソース URI がクリアされました。	#
 commands.takepicture.description=プレーヤーの写真またはプレーヤーの視点からの写真を撮りましょう。	#
 commands.takepicture.cameranotfound=カメラが見つかりませんでした。	#
 commands.takepicture.cameranotspawned=カメラのスポーンに失敗しました。	#
+
+createWorldScreen.allowdestructiveitems=破壊可能なアイテムを許可	#
+createWorldScreen.allowmobs=モブを許可	#
+createWorldScreen.classroomsettings.toggle=教室の設定を表示	#
+createWorldScreen.classroom.settings=教室の設定	#
+createWorldScreen.commands=コマンドを許可	#
+createWorldScreen.help=教室の設定についてのヘルプを表示	#
+createWorldScreen.immutableworld=変更可能な世界	#
+createWorldScreen.perfectweather=常に晴天	#
+createWorldScreen.playerdamage=プレイヤーのダメージ	#
+createWorldScreen.pvpdamage=プレイヤー同士のダメージ	#
 
 library.connection.failed.body=ライブラリーに接続できません。これは、コンピュータがオフラインの場合、またはライブラリー カタログへのアクセスがブロックされている場合に発生する可能性があります。	#
 library.connection.failed.help=ヘルプを表示	#
@@ -37,6 +55,7 @@ library.item.difficulty.advanced=上級者	#
 library.item.tags=タグ：	#
 library.item.tagsAll=すべてのタグ:	#
 library.item.tagsAll.tts=タグをもっと表示する	#
+library.item.button.signin=ロックを解除するにはサインインしてください	#
 library.item.button.create=世界を作成	#
 library.item.button.share=リンクを共有	#
 library.item.button.shareEducator=割り当てまたは共有	#
@@ -98,6 +117,9 @@ library.item.share.toast.classrooms=ウェブ ブラウザーで Google Classroo
 library.item.teams.msgTxt=%1、Minecraft: Education Edition で、この世界をチェックしてください。	#
 library.item.sharepopup.shareButton=Teams に共有	#
 
+library.category.title.demo=Minecraft: Education Edition の体験版レッスン	#
+library.category.description.demo=Minecraft: Education Edition の体験版レッスンへようこそ! これらのレッスンでは、Minecraft が STEM スキルをどう構築し、創造性を解き放つのかを学び、また学生の共同作業と問題解決を促進します。	#
+
 library.category.label.biomes=バイオームと世界	#
 library.category.title.biomes=バイオームと世界	#
 library.category.description.biomes=この世界およびバイオームのコレクションを使用して、レッスンの作成をMinecraft: Education Edition内で開始してください。	#
@@ -111,14 +133,14 @@ library.category.title.biomes.featured=おすすめの世界	#
 
 library.category.label.buildChallenges=月間建築チャレンジ	#
 library.category.title.buildChallenges=月間建築チャレンジ	#
-library.category.description.buildChallenges=教室で簡単に実行できるこれらのアクティビティを使用して、生徒の創造性を引き出し、21世紀スキルを強化してください。	#
+library.category.description.buildChallenges=教室やキャンプ、クラブで簡単に実行できるこれらのアクティビティを使用して、生徒の創造性を引き出し、21 世紀スキルを強化してください。	#
 
 library.category.label.howToPlay=遊び方	#
-library.category.description.howToPlay=このような世界やアクティビティは、教室で Minecraft: Education Edition の使用方法を学ぶための導入的なエクスペリエンスとして開発されました。	#
+library.category.description.howToPlay=このような世界やアクティビティは、教室やキャンプ、クラブで Minecraft: Education Edition の使用方法を学ぶための導入的なエクスペリエンスとして開発されました。	#
 
 library.category.label.howToPlay.startHere=ここから始めよう	#
 library.category.title.howToPlay.startHere=ゲームを始める	#
-library.category.description.howToPlay.startHere=このようなチュートリアルの世界は、それぞれが教室で Minecraft: Education Edition の使用に役立つさまざまなスキルを習得できるように設計されています。	#
+library.category.description.howToPlay.startHere=このようなチュートリアルの世界は、それぞれが教室やキャンプ、クラブで Minecraft: Education Edition の使用に役立つさまざまなスキルを習得できるように設計されています。	#
 
 library.category.label.howToPlay.additional=追加チュートリアル	#
 library.category.title.howToPlay.additional=追加チュートリアル	#
@@ -130,6 +152,10 @@ library.category.description.SEL=これらの世界と活動は社会的、情�
 library.category.label.digitalCitizen=デジタル市民権	#
 library.category.title.digitalCitizen=デジタル市民権	#
 library.category.description.digitalCitizen=これらの世界と活動はデジタル市民権に焦点を当て、メディアリテラシー、プライバシー、オンライン コミュニティへの参加をナビゲートする学生を支援します。	#
+
+library.category.label.equity_and_inclusion=公正さと多様性の受け入れ	#this has already been localized	#
+library.category.title.equity_and_inclusion=公正さと多様性の受け入れ	#this has already been localized	#
+library.category.description.equity_and_inclusion=これらの世界とアクティビティーは、公正さと多様性の受け入れに焦点を当てています。社会正義、アイデンティティ、寛容といった概念が含まれます。	#change in capitalization only, has otherwise been localized	#
 
 library.category.label.lessons=レッスン	#
 library.category.title.lessons=レッスン	#
@@ -184,15 +210,11 @@ library.category.title.computerScience=コンピューター科学	#
 
 library.category.label.computerScience.hourOfCode=コーディングの時間	#
 library.category.title.computerScience.hourOfCode=コーディングの時間	#
-library.category.description.computerScience.hourOfCode=このレッスンは、Minecraftでコーディングを導入してAIの謎を解き、コンピューター科学の分野で知識を広げるために設計された、コンピューター科学用の1時間のチュートリアルです。	#
+library.category.description.computerScience.hourOfCode=Hour of Code は、誰もがコーディングの基礎を学べることを証明するために設計された、所要時間 1 時間のコンピューター サイエンスへの入門として 2013 年に始まりました。これらのレッスンは Minecraft を使用した、楽しくて入門的なコーディング体験を提供し、あらゆる年齢層の学習者に適しています。	#
 
-library.category.label.computerScience.STEM=STEM	#
-library.category.title.computerScience.STEM=STEM	#
-library.category.description.computerScience.STEM=数学、科学、エンジニアリングの標準ベースのレッスンおよび世界を使用し、学校の一日を通じてコンピュータ科学を扱います。	#
-
-library.category.label.computerScience.agency=AGENCY	#
-library.category.title.computerScience.agency=Agency	#
-library.category.description.computerScience.agency=CSTA標準ベースのコンピューター科学のレッスンを使用して、独自の都市を構築してください。ループ、アルゴリズム、条件、デバッグ、反復などを含む基本的なCSの概念を学びます。	#
+library.category.label.computerScience.computingWithMinecraft=Minecraft によるコンピューティング	#
+library.category.title.computerScience.computingWithMinecraft=Minecraft によるコンピューティング	#
+library.category.description.computerScience.computingWithMinecraft=CSTA標準ベースのコンピューター科学のレッスンを使用して、独自の都市を構築してください。ループ、アルゴリズム、条件、デバッグ、反復などを含む基本的なCSの概念を学びます。	#
 
 library.category.label.computerScience.codingWithMinecraft=Minecraft でのコーディング	#
 library.category.title.computerScience.codingWithMinecraft=Minecraft でのコーディング	#
@@ -208,6 +230,11 @@ library.category.description.computerScience.codingFun2=月、水星、金星、
 
 library.category.label.computerScience.codingFun3=楽しいコーディング基礎: 3	#
 library.category.title.computerScience.codingFun3=楽しいコーディング基礎: 3	#
+library.category.description.computerScience.codingFun3=先史時代から遠い未来まで、時間を越えて旅をしましょう! 恐竜、ローマの水道橋、西部の荒野を眺めながら変数、イベント、条件、関数の使い方を学習しましょう。	#
+
+library.category.label.computerScience.ai=人工知能	#
+library.category.title.computerScience.ai=人工知能	#
+library.category.description.computerScience.ai=Microsoft AI for Earth と共同で作成されたこのコースでは、さまざまな実世界のシナリオで人工知能や AI の力を紹介します。学生は遠隔地の人々を助け、野生動物や生態系を保護し、気候変動を研究します。簡単で自己ガイド型のチュートリアルでは、データの収集、データセットの作成、AI の実装、結果の分析など、一連の手順で AI の概念的な開発を体験できます。	#
 
 library.category.label.computerScience.blockBased=ブロック ベースのコーディング	#
 library.category.title.computerScience.blockBased=ブロック ベースのコーディング	#
@@ -215,13 +242,17 @@ library.category.title.computerScience.blockBased=ブロック ベースのコ�
 library.category.label.computerScience.python=Python	#
 library.category.title.computerScience.python=Python	#
 
-library.category.label.computerScience.python101=PYTHON 101	#
-library.category.title.computerScience.python101=Python 101	#
+library.category.label.computerScience.python.python101=PYTHON 101	#
+library.category.title.computerScience.python.python101=Python 101	#
 library.category.description.computerScience.python101=Minecraft で Python のコーディングを始めましょう！シンタックス、データ型、変数、条件式、for ループ、条件付きループ、リスト、関数など Python の基本について説明します。	#
 
-library.category.label.computerScience.codingTutorials=コーディングのチュートリアル	#
-library.category.title.computerScience.codingTutorials=コーディングのチュートリアル	#
-library.category.description.computerScience.codingTutorials=特定のコーディング コンセプトに集中したい場合は、ここから始めましょう！ループ、シーケンス、条件式、変数、関数の使用方法について学びましょう。これらのレッスンではブロック、Python、または JavaScript でのコーディングが選択可能です。	#
+library.category.label.computerScience.python.python_islands=パイソン諸島	#
+library.category.title.computerScience.python.python_islands=パイソン諸島	#
+library.category.description.computerScience.python.python_islands=空飛ぶ王国へようこそ! この神秘的な王国は下界のはるか上空に浮いています。このレッスンでは、受講者は、各世界の一連のテーマ タスクを通して Python の基本を学びます。王国を発展、繁栄させるためにこれらのタスクを完了させてください!	#
+
+library.category.label.computerScience.languageAgnostic=言語に依存しない	#
+library.category.title.computerScience.languageAgnostic=言語に依存しない	#
+library.category.description.computerScience.languageAgnostic=特定のコーディング コンセプトに集中したい場合は、ここから始めましょう！ループ、シーケンス、条件式、変数、関数の使用方法について学びましょう。これらのレッスンではブロック、Python、または JavaScript でのコーディングが選択可能です。	#
 
 library.category.label.computerScience.featuredLessons=レッスン内容	#
 library.category.title.computerScience.featuredLessons=レッスン内容	#
@@ -244,10 +275,13 @@ library.category.description.commonCoreMath=これらの魅力的なアクティ
 library.notification.label.resourceUri=この世界は、追加のリソースへのリンクとともに共有されました。世界を作成してから、一時停止画面で「%1」ボタンを探してください。	#
 
 signin.acceptTerms=利用規約に同意	#
-signin.leftPanel.header=Minecraft: Education Edition をプレイ	#
-signin.leftPanel.body=Minecraft: Education Edition のフルバージョンにアクセスするには、学校のアカウントでサインインします。	#
-signin.rightPanel.header=デモレッスンを試	#
-signin.rightPanel.body=Minecraft: Education Edition でコーディングの冒険を始めましょう、すべてのユーザーが利用できます。	#
+signin.welcome.header.line1=ようこそ	#
+signin.welcome.header.line2=Minecraft: Education Edition!	#
+signin.welcome.body=自分の学校もしくは組織のアカウントでログインして続ける。	#
+signin.welcome.footer=アカウントをお持ちでない場合は、体験版レッスンをお試しください。	#
+signin.demo.header=デモレッスンを試	#
+signin.demo.body=Minecraft: Education Edition の、すべての学生が利用可能な無料の体験版レッスンで旅を始めましょう。	#
+signin.progress.title=リソースのダウンロード	#
 
 joincode.invalid.title=参加コードが正しくありません	#
 joincode.invalid.body=入力された %1 件の参加コードに誤りがあります。コードが正確かどうかホストに問い合わせるか、IP アドレスでの参加をお試しください。	#
@@ -259,6 +293,8 @@ joincode.popup.title =リンクを共有	#
 joincode.popup.body =リンクを共有して他のプレイヤーを招待したら、世界に参加させましょう。ご注意:このリンクは、あなたがホスティングしている間にのみ動作します。	#
 joincode.share.body = %1 から、Minecraft: Education Edition にある彼らの世界への招待状が届いています。このリンクをたどって、一緒にビルドを始めましょう! (%2、ホスト: %1 )	#
 joincode.share.subject =Minecraft: Education Edition マルチプレイヤーの招待	#
+
+pause.externalLink=リンクを開く	#
 
 ## TAG LOCALIZATION SECTION ##
 tag.ages_0_3=0-3	#	#
@@ -381,6 +417,8 @@ tag.space=空間	# refers to outer space	#
 tag.esports=e スポーツ	#	#
 tag.toybox=おもちゃ箱	#	#
 tag.featured_coding=コーディング内容	#	#
+tag.equity_and_inclusion=公正さと多様性の受け入れ	#	#
+tag.python_islands=パイソン諸島 #	#
 ## END TAG LOCALIZATION SECTION ##
 
 worlds.storage.permission.needed=この設定を変更する権限がありません。	#
