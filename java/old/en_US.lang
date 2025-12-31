@@ -783,6 +783,7 @@ tile.cake.name=Cake
 tile.bed.name=Bed
 tile.bed.occupied=This bed is occupied
 tile.bed.noSleep=You can only sleep at night
+tile.bed.tooFarAway=You may not rest now, the bed is too far away
 tile.bed.notSafe=You may not rest now, there are monsters nearby
 tile.bed.notValid=Your home bed was missing or obstructed
 tile.lockedchest.name=Locked chest
@@ -2897,6 +2898,13 @@ subtitles.entity.ghast.ambient=Ghast cries
 subtitles.entity.ghast.death=Ghast dies
 subtitles.entity.ghast.hurt=Ghast hurts
 subtitles.entity.ghast.shoot=Ghast shoots
+subtitles.entity.elder_guardian.ambient.land=Elder Guardian flaps
+subtitles.entity.elder_guardian.ambient=Elder Guardian moans
+subtitles.entity.elder_guardian.attack=Elder Guardian shoots
+subtitles.entity.elder_guardian.curse=Elder Guardian curses
+subtitles.entity.elder_guardian.death=Elder Guardian dies
+subtitles.entity.elder_guardian.flop=Elder Guardian flops
+subtitles.entity.elder_guardian.hurt=Elder Guardian hurts
 subtitles.entity.guardian.ambient.land=Guardian flaps
 subtitles.entity.guardian.ambient=Guardian moans
 subtitles.entity.guardian.attack=Guardian shoots
@@ -3034,8 +3042,11 @@ subtitles.entity.zombie_pigman.ambient=Zombie Pigman grunts
 subtitles.entity.zombie_pigman.angry=Zombie Pigman angers
 subtitles.entity.zombie_pigman.death=Zombie Pigman dies
 subtitles.entity.zombie_pigman.hurt=Zombie Pigman hurts
+subtitles.entity.zombie_villager.ambient=Zombie Villager groans
 subtitles.entity.zombie_villager.converted=Zombie vociferates
 subtitles.entity.zombie_villager.cure=Zombie snuffles
+subtitles.entity.zombie_villager.death=Zombie Villager dies
+subtitles.entity.zombie_villager.hurt=Zombie Villager hurts
 subtitles.item.armor.equip=Gear equipped
 subtitles.item.armor.equip_chain=Chain armor jingles
 subtitles.item.armor.equip_diamond=Diamond armor clangs
@@ -3057,18 +3068,18 @@ subtitles.weather.rain=Rain falls
 debug.reload_chunks.help=F3 + A = Reload chunks
 debug.show_hitboxes.help=F3 + B = Show hitboxes
 debug.clear_chat.help=F3 + D = Clear chat
-debug.cycle_renderdistance.help=F3 + F = Cycle renderdistance (Shift to inverse)
+debug.cycle_renderdistance.help=F3 + F = Cycle render distance (Shift to invert)
 debug.chunk_boundaries.help=F3 + G = Show chunk boundaries
 debug.advanced_tooltips.help=F3 + H = Advanced tooltips
 debug.creative_spectator.help=F3 + N = Cycle creative <-> spectator
 debug.pause_focus.help=F3 + P = Pause on lost focus
 debug.help.help=F3 + Q = Show this list
-debug.reload_resourcepacks.help=F3 + T = Reload resourcepacks
+debug.reload_resourcepacks.help=F3 + T = Reload resource packs
 
 debug.reload_chunks.message=Reloading all chunks
 debug.show_hitboxes.on=Hitboxes: shown
 debug.show_hitboxes.off=Hitboxes: hidden
-debug.cycle_renderdistance.message=RenderDistance: %s
+debug.cycle_renderdistance.message=Render Distance: %s
 debug.chunk_boundaries.on=Chunk borders: shown
 debug.chunk_boundaries.off=Chunk borders: hidden
 debug.advanced_tooltips.on=Advanced tooltips: shown
@@ -3076,8 +3087,8 @@ debug.advanced_tooltips.off=Advanced tooltips: hidden
 debug.creative_spectator.error=Unable to switch gamemode, no permission
 debug.pause_focus.on=PauseOnLostFocus: enabled
 debug.pause_focus.off=PauseOnLostFocus: disabled
-debug.help.message=Keybindings:
-debug.reload_resourcepacks.message=Reloaded resourcepacks
+debug.help.message=Key bindings:
+debug.reload_resourcepacks.message=Reloaded resource packs
 
 resourcepack.downloading=Downloading Resource Pack
 resourcepack.requesting=Making Request...
