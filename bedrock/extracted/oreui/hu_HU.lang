@@ -263,6 +263,7 @@ hbui.EditorKeyboardSettings.tools=Modális eszközök	#
 hbui.EditorKeyboardSettings.viewport=Nézetablak	#
 hbui.EditorKeyboardSettings.viewportDescription=Bemeneti környezet a fókuszált nézetablakhoz	#
 hbui.EditorKeyboardSettings.viewportTooltip=Nézetablak bemeneti környezete	#
+hbui.EditorLink.elementType=Hivatkozás 	####Represent UI element type for a clickable link​. {MaxLength=100}
 hbui.EditorLink.warningModal.cancel=Mégse	#
 hbui.EditorLink.warningModal.content=Vigyázz! A Minecraft nem ellenőrizte, hogy a hivatkozás megnyitása biztonságos-e.	#
 hbui.EditorLink.warningModal.continue=Folytatás	#
@@ -652,8 +653,8 @@ hbui.Bedtime.messageAllPlayersSleeping=Az éjszaka átalvása	#
 hbui.Bedtime.messageWaitingForOthersPlural=Az éjszaka át lesz ugorva, ha még %1$s játékos aludni tér.	#
 hbui.Bedtime.messageWaitingForOthersSingular=Az éjszaka át lesz ugorva, ha még egy játékos aludni tér.	#
 hbui.Bedtime.openChatButton=Csevegés megnyitása	#
-hbui.Bedtime.sleepingNotPossibleNotWorldOwner=Az „Éjszaka átugrása alvással” beállítás KI van kapcsolva. A világ tulajdonosának BE kell kapcsolnia a beállítást a Világ szerkesztése menüben.	#
-hbui.Bedtime.sleepingNotPossibleWorldOwner=Az „Éjszaka átugrása alvással” beállítás KI van kapcsolva. Kapcsold BE a beállítást a Világ szerkesztése menü speciális beállításainál.	#
+hbui.Bedtime.sleepingNotPossibleNotWorldOwner=Az „Éjszaka átugrása alvással” beállítás ki van kapcsolva. A világ tulajdonosának be kell kapcsolnia a beállítást a Világ szerkesztése menüben.		####This string refers to name of a specific setting (Skip night by sleeping) in a specific screen (Edit world) of the game.{MaxLength=240}
+hbui.Bedtime.sleepingNotPossibleWorldOwner=Az „Éjszaka átugrása alvással” beállítás ki van kapcsolva. Kapcsold be a beállítást a Világ szerkesztése menü speciális beállításainál.		####This string refers to name of a specific setting (Skip night by sleeping) in specifc UI tab (advanced) a specific screen (Edit world) of the game.{MaxLength=290}
 hbui.ChooseRealmRoute.addNewBetaRealm=Bétaverziós Realm hozzáadása	#
 hbui.ChooseRealmRoute.addNewPreviewRealm=Előzetes verziójú Realm hozzáadása	#
 hbui.ChooseRealmRoute.adventure=Kaland	#
@@ -1115,12 +1116,12 @@ hbui.CreateNewWorld.behaviorPacks.packPriorityInfoMessage=Ha több csomag is hat
 hbui.CreateNewWorld.behaviorPacks.tryAgainButton=Próbáld újra	#
 hbui.CreateNewWorld.behaviorPacksRemoveModal.activateTitle=Frissíted a világot?	#
 hbui.CreateNewWorld.behaviorPacksRemoveModal.addPackLabel=Mindenképpen adja hozzá a csomagot	#
-hbui.CreateNewWorld.behaviorPacksRemoveModal.deactivateTitle=Ez veszélyes!	#
+hbui.CreateNewWorld.behaviorPacksRemoveModal.continueLabel=Csak folytatás	#
+hbui.CreateNewWorld.behaviorPacksRemoveModal.copyContinueLabel=Másolás és folytatás	#
+hbui.CreateNewWorld.behaviorPacksRemoveModal.deactivateTitle=Kapaszkodjatok!	#
 hbui.CreateNewWorld.behaviorPacksRemoveModal.dontAddPackLabel=Ne adja hozzá a csomagot	#
-hbui.CreateNewWorld.behaviorPacksRemoveModal.keepLabel=A csomag megtartása	#
 hbui.CreateNewWorld.behaviorPacksRemoveModal.messageActivate=Előfordulhat, hogy ez a világ nem olyan lesz vagy nem úgy működik majd, mint a nem módosított világok. A folytatás előtt érdemes menteni a világodból egy példányt.	#
-hbui.CreateNewWorld.behaviorPacksRemoveModal.messageDeactivate=Ha hozzáadsz vagy eltávolítasz egy csomagot, miután játszottál egy világgal, akkor előfordulhat, hogy a világ összeomlik, és elveszik, amit addig létrehoztál.	#
-hbui.CreateNewWorld.behaviorPacksRemoveModal.removeLabel=A csomag eltávolítása mindenképpen	#
+hbui.CreateNewWorld.behaviorPacksRemoveModal.messageDeactivate=A csomagok korábban játszott világokból történő eltávolítása végleges adatvesztéshez vezethet. Javasoljuk, hogy előbb készíts egy másolatot a világodról!	#
 hbui.CreateNewWorld.cheats.commandBlocksDescription=Használj parancsokat a blokkok programozásához	#
 hbui.CreateNewWorld.cheats.commandBlocksTitle=Parancsblokkok	#
 hbui.CreateNewWorld.cheats.daylightCycleAlwaysDayDescription=A játékon belüli idő délre van állítva, és nem változik	#
@@ -1139,7 +1140,7 @@ hbui.CreateNewWorld.cheats.entitiesDropLootTitle=Az entitások zsákmányt dobna
 hbui.CreateNewWorld.cheats.inventoryDescription=A leltárban lévő összes tárgy megtartása halál esetén	#
 hbui.CreateNewWorld.cheats.inventoryTitle=Leltár megtartása	#
 hbui.CreateNewWorld.cheats.mobGriefingDescription=A mobok mozoghatnak és blokkokat pusztíthatnak el a világodban	#
-hbui.CreateNewWorld.cheats.mobGriefingTitle=Keserítő mobok	#
+hbui.CreateNewWorld.cheats.mobGriefingTitle=Szabotáló mobok	#
 hbui.CreateNewWorld.cheats.mobSpawningDescription=A mobok természetes módon teremtődnek	#
 hbui.CreateNewWorld.cheats.mobSpawningTitle=Mobok teremtése	#
 hbui.CreateNewWorld.cheats.narration.tickSpeedInvalidValue=A megadott érték üres vagy kisebb mint 0. A véletlen óraciklus-sebesség visszaáll az alapértelmezett értékre: 1.	#
@@ -1497,6 +1498,8 @@ hbui.CreateNewWorldSideMenu.scriptingCodingTabLabel=Szkriptelés és kódolás	#
 hbui.DebugDrawer.closeButtonNarrationHint=Használd a lefelé mutató nyilat a további műveletekhez	#
 hbui.DebugDrawer.closeDrawerShortcutInputLegend=Bezárás	#
 hbui.DebugDrawer.title=Hibakeresés	#
+hbui.EditRealmWorld.play=Játék   	#### String for button to start playing on the Realm world
+hbui.EditRealmWorld.title=Világ szerkesztése    	#### Title for the screen where users edit/change their realm world settings
 hbui.EditWorld.clearingPlayerDataModal.description=Ne lépj ki a játékból. A kilépés hibához vezethet a folyamatban...	#
 hbui.EditWorld.clearingPlayerDataModal.title=Játékosadatok törlése	#
 hbui.EditWorld.clearPlayerDataErrorModal.description=Próbáld újra később.	#
@@ -1572,16 +1575,7 @@ hbui.ErrorModal.title=Hiba lépett fel.	#
 hbui.ExportWorld.error.incorrectWorldID.title=Nem létező világot nem lehet exportálni	#
 hbui.ExportWorld.error.needToRemoveVRHeadset.title=Válaszd le a VR-eszközt, és próbálkozz újra	#
 hbui.ExportWorld.error.unknownError.title=Hiba történt. Kérjük, próbálkozz újra később.	#
-hbui.FirstTimeSignInRoute.altSignInButton=Bejelentkezés most	#
-hbui.FirstTimeSignInRoute.altSignInList1=Az előrehaladás és a vásárlások mentése	#
-hbui.FirstTimeSignInRoute.altSignInList2=A fiókod védelme kéttényezős hitelesítéssel	#
-hbui.FirstTimeSignInRoute.altSignInList3=A mérföldkövek, a Realms, a kiszolgálók és a Piactér elérése 	#### {StrContains="Realms"}
-hbui.FirstTimeSignInRoute.altSignInList3PS=A Realms, a kiszolgálók és a Piactér elérése 	#### {StrContains="Realms"}
-hbui.FirstTimeSignInRoute.altSignInPrompt=Jelentkezz be, vagy regisztrálj ingyenesen, hogy feloldd többek között a következő funkciókat:	#
-hbui.FirstTimeSignInRoute.altSignInPromptMobile=Jelentkezz be, vagy regisztrálj ingyenesen, hogy elmenthesd az előrehaladásodat, elérhess mérföldköveket, hozzáférhess kiszolgálókhoz, valamint számos további funkciót is elérhess	#
 hbui.FirstTimeSignInRoute.createAccountPrompt=Nincs Microsoft-fiókod? Hozz létre egyet most – ingyen!	#
-hbui.FirstTimeSignInRoute.incentivizedSignInButton=Bejelentkezés és köpeny megszerzése	#
-hbui.FirstTimeSignInRoute.incentivizedSignInPrompt=Jelentkezz be a Microsoft-fiókoddal, és válassz egy köpenyt, amely örökre a tiéd marad! Sőt, ezenkívül még rengeteg online funkcióhoz is hozzáférhetsz, úgy mint:	#
 hbui.FirstTimeSignInRoute.laterButton=Talán később	#
 hbui.FirstTimeSignInRoute.notNowButton=Most nem	#
 hbui.FirstTimeSignInRoute.signInButton=Bejelentkezés	#
@@ -1657,11 +1651,6 @@ hbui.FriendsDrawer.notLoggedInMessage.text=Szükséged van egy fiókra, hogy onl
 hbui.FriendsDrawer.notLoggedInMessage.title=Nem vagy bejelentkezve	#
 hbui.FriendsDrawer.numberOfFriends=%1$s online barátod van	#
 hbui.FriendsDrawer.openDrawerShortcutInputLegend=Barátok	#
-hbui.FriendsDrawer.OwnProfileModal.myProfile=Saját profil	#
-hbui.FriendsDrawer.OwnProfileModal.showAway=Megjelenítés tétlen állapotúként	#
-hbui.FriendsDrawer.OwnProfileModal.showBusy=Megjelenítés elfoglalt állapotúként	#
-hbui.FriendsDrawer.OwnProfileModal.showOffline=Megjelenítés offline állapotúként	#
-hbui.FriendsDrawer.OwnProfileModal.title=Játékosbeállítások	#
 hbui.FriendsDrawer.title=Barátok	#
 hbui.FriendsDrawer.titleWithAmount=Barátok (%1$s)	#
 hbui.FriendsDrawer.you=You	#
@@ -1687,6 +1676,9 @@ hbui.general.multiplayerPermissionBanner.link=További részletek	#
 hbui.general.multiplayerPermissionBanner.text=Nem hozhatsz létre többjátékos világokat.	#
 hbui.general.multiplayerPermissionBanner.textExternal=Nem hozhatsz létre többjátékos világokat	#
 hbui.general.multiplayerPermissionBanner.textParental=Szülői felügyeleti korlátozás miatt nem hozhatsz létre többjátékos világokat.	#
+hbui.GenericErrorMessageModal.closeButton=Bezárás		#### Close button shown in a modal {MaxLength="40"}
+hbui.GenericErrorMessageModal.text=Próbáld újra később.		#### Please re try logging in to the platform network. {MaxLength="70"}
+hbui.GenericErrorMessageModal.title=Hiba történt		#### Something went wrong while logging into the platform network. {MaxLength="40"}
 hbui.GetMoreButton.buttonNarration=Gomb	#
 hbui.GetMoreButton.inputLegend=Felfedezés	#
 hbui.GuidedCreateWorldRoute.title=Irányított világalkotás	#
@@ -1905,6 +1897,12 @@ hbui.MultiplayerPrivilegeBlockedModal.descriptionOnline=A fiókbeállításokná
 hbui.MultiplayerPrivilegeBlockedModal.descriptionParental=Szülői felügyeleti korlátozás miatt nem játszhatsz a Realms szolgáltatással. A többjátékos mód beállításait a Szülői felügyelet beállításainak „Online biztonság” részében tekintheted meg és módosíthatod. 	#### {StrContains="Realms"}
 hbui.MultiplayerPrivilegeBlockedModal.learnMore=További részletek	#
 hbui.MultiplayerPrivilegeBlockedModal.title=Engedély szükséges!	#
+hbui.MultiplayerTab.PlayerAccessPanel.manageMembersButton=Tagok kezelése    	#### String for button that takes a realm owner to the settings page for managing the members of their Realm
+hbui.MultiplayerTab.PlayerAccessPanel.manageMembersLegend=Tagok kezelése    	#### String for button that takes a realm owner to the settings page for managing the members of their Realm
+hbui.MultiplayerTab.PlayerAccessPanel.title=Játékos-hozzáférés   	#### Heading for settings section that displays settings for what type of player can join/access the Realm
+hbui.NoInternetModal.button=Bezárás 	#### Close as in closing a modal. {MaxLength="50"}
+hbui.NoInternetModal.text=Offline állapotban vagy. Az online funkciók eléréséhez ellenőrizd az internetkapcsolatot.		####  Player is not connected to the internet, he is offline. {MaxLength="340"}
+hbui.NoInternetModal.title=Nincs internet		####  Player is not connected to the internet. {MaxLength="40"}
 hbui.Notifications.achievementsDisabled=Nem érhetsz el mérföldköveket.	#
 hbui.Notifications.changeSkinLink=Felület cseréje	#
 hbui.Notifications.experimentsWarning.informationMessage=A kísérleti funkciók új elemeket hoznak a játékba. Viszont óvatosan kezeld őket, mert hibát okozhatnak.	#
@@ -1916,12 +1914,12 @@ hbui.Notifications.inTrialMode=Egyes beállítások zárolva vannak, mert próba
 hbui.Notifications.multiplayerWarnings.checkInternetConnection=Nem csatlakozol az internethez. Kapcsolj online módba, hogy barátaid csatlakozhassanak a többjátékosos világaidhoz.	#
 hbui.Notifications.multiplayerWarnings.multiplayerPrivilegesBlocked=A Microsoft-fiókod beállítása miatt nem játszhatsz online többrésztvevős játékokat. Ügyelj rá, hogy az online biztonsági beállításaid lehetővé tegyék a többrésztvevős játékot. A beállítások módosítására vonatkozó utasításokért lásd: aka.ms/MCMultiplayerHelp.	#
 hbui.Notifications.multiplayerWarnings.multiplayerPrivilegesBlockedOnConsole=A Microsoft-fiókod beállítása miatt nem játszhatsz online többrésztvevős játékokat. Ügyelj rá, hogy az online biztonsági beállításaid lehetővé tegyék a többrésztvevős játékot és a klubokat, és hogy legyen aktív Xbox Game Pass-előfizetésed. A beállítások módosítására vonatkozó utasításokért lásd: aka.ms/MCMultiplayerHelp.	###disable_3rd_party_console_resource_pack_check
-hbui.Notifications.multiplayerWarnings.nintendoDisconnectedThirdPartyWithSubscription=Nem csatlakoztál a Nintendo Switch Online szolgáltatásokhoz, ezért Nintendo-barátaid nem tudnak csatlakozni többjátékos világodhoz. Ha a barátaiddal szeretnél játszani, jelentkezz be a Nintendo Switch Online rendszerébe.	#
+hbui.Notifications.multiplayerWarnings.nintendoDisconnectedThirdPartyWithSubscription=Jelentkezz be a Nintendo Switch Online szolgáltatásba, hogy a barátaiddal játszhass és hozzáférj a többjátékos funkciókhoz.		#### Warning tha tis shown when in the Multiplayer tab in the CreateNewWorld/EditWorld screens when not logged into a Nintendo account. This text wraps to new lines in the banner. ### {StrContains="Nintendo Switch Online"}
 hbui.Notifications.multiplayerWarnings.nintendoLocalMultiplayerPrivilegesBlockedThirdParty=Szülői felügyeleti korlátozás miatt nem játszhatsz helyi többjátékos módban. A többjátékos mód beállításait a szülői felügyelet beállításainak „Kommunikálás másokkal” részében tekintheted meg és módosíthatod.	#
 hbui.Notifications.multiplayerWarnings.nintendoMultiplayerPrivilegesBlockedThirdParty=Szülői felügyeleti korlátozás miatt nem játszhatsz helyi többjátékos módban. A többjátékos mód beállításait a szülői felügyelet beállításainak „Kommunikálás másokkal” részében tekintheted meg és módosíthatod.	#
 hbui.Notifications.multiplayerWarnings.nonMultiplayerSkinEquipped=A jelenlegi felületed nem engedélyezett többjátékos módban.	#
 hbui.Notifications.multiplayerWarnings.playstationCrossPlatformDisabled=Engedélyezd a keresztplatformos játékot a Beállítások menü Profil szakaszában, hogy együtt játszhass más platformokon játszó barátaiddal.	#
-hbui.Notifications.multiplayerWarnings.playstationDisconnectedThirdPartyWithSubscription=Nem csatlakoztál a PlayStation™Network szolgáltatáshoz. Így a PlayStation™Network rendszerében elérhető barátaid nem tudnak csatlakozni többjátékos világodhoz. Jelentkezz be a PlayStation™Network rendszerébe, hogy játszhass a barátaiddal. 	#### CertRequirement: [PlayStation™Network]
+hbui.Notifications.multiplayerWarnings.playstationDisconnectedThirdPartyWithSubscription=Jelentkezz be a PlayStation™Network szolgáltatásba, hogy a barátaiddal játszhass és hozzáférj a többjátékos funkciókhoz.		#### Warning that is shown in the Multiplayer tab in the CreateNewWorld/EditWorld screens when not logged into the Playstation network. This text wraps to new lines in the banner.  CertRequirement: [PlayStation™Network]
 hbui.Notifications.multiplayerWarnings.playstationMultiplayerPrivilegesBlockedThirdParty=Szülői felügyeleti korlátozás miatt nem játszhatsz helyi többjátékos módban. A többjátékos mód beállításait a szülői felügyelet beállításainak „Kommunikálás másokkal” részében tekintheted meg és módosíthatod.	#
 hbui.Notifications.notEnoughStorage=Majdnem elfogyott a tárhelyed! A Minecraft korlátozta a funkcióhoz való hozzáférést mindaddig, amíg fel nem szabadítasz további tárhelyet.	#
 hbui.Notifications.readMoreLink=Részletek	#
@@ -2087,6 +2085,7 @@ hbui.PlayerOptionsModal.optionsEnumeration= %1$s/%2$s	#
 hbui.PlayerOptionsModal.optionsTitle=Fiókbeállítások	#
 hbui.PlayerOptionsModal.privacyAndSafety=Adatvédelem és online biztonság	#
 hbui.PlayerOptionsModal.removeFriend=Barát eltávolítása	#
+hbui.PlayerOptionsModal.removeFromFavorites=Eltávolítás a kedvencek közül		####Button text for removing a profile from favorite list {MaxLength=35}
 hbui.PlayerOptionsModal.report=Bejelentés	#
 hbui.PlayerOptionsModal.setFeaturedScreenshot=Kiemelt képernyőkép beállítása	#
 hbui.PlayerOptionsModal.shareMyProfile=Profil megosztása	#
@@ -2109,9 +2108,12 @@ hbui.PlayerPermissionsRoute.Details.ability.mine=Bányássz	#
 hbui.PlayerPermissionsRoute.Details.ability.openContainers=Tárolók kinyitása	#
 hbui.PlayerPermissionsRoute.Details.ability.operatorCommands=Operátori parancsok	#
 hbui.PlayerPermissionsRoute.Details.ability.teleport=Teleportálás	#
-hbui.PlayerPermissionsRoute.Details.kickButton=%1$s kirúgása	#
+hbui.PlayerPermissionsRoute.Details.kickButton=%1$s eltávolítása a világból     	####Text for the button that appears in the Player Permissions Screen - %1$s is the player name {maxLength=40}
 hbui.PlayerPermissionsRoute.Details.kickButton.inputLegend=Kiválasztás	#
+hbui.PlayerPermissionsRoute.Details.notification.kickCommandFailedFlag=Nem sikerült eltávolítani a játékost.   	####Text for snackbar that appears when trying to kick another player fails {maxLength=60}
+hbui.PlayerPermissionsRoute.Details.notification.selectedPlayerPermissionsChangedFlag=Egy másik operátor frissítette a játékosengedélyeket.   	####Text for snackbar that appears when another player has updated the selected player's permissions {maxLength=60}
 hbui.PlayerPermissionsRoute.Details.optionEnumeration=%1$s/%2$s	#
+hbui.PlayerPermissionsRoute.Details.playerIdInvalidFlag=Nem sikerült betölteni a játékos engedélyeit   	####Text for empty state that appears when you are trying to load the permissions for an invalid ID {maxLength=60}
 hbui.PlayerPermissionsRoute.Details.roleDropdown.description.custom=Testreszabott engedélyek ehhez a játékoshoz	#
 hbui.PlayerPermissionsRoute.Details.roleDropdown.description.member=A tagok építhetnek és bányászhatnak, megtámadhatják a többi játékost és a mobokat, illetve kölcsönhatásba léphetnek tárgyakkal és a különböző entitásokkal.	#
 hbui.PlayerPermissionsRoute.Details.roleDropdown.description.operator=Az operátorok a tagok számára elérhető lehetőségeken felül teleportálhatnak és parancsokat is használhatnak	#
@@ -2127,8 +2129,14 @@ hbui.PlayerPermissionsRoute.EnableCheatsModal.title=Csalások letiltva	#
 hbui.PlayerPermissionsRoute.KickPlayerModal.backButton=Visszalépés	#
 hbui.PlayerPermissionsRoute.KickPlayerModal.description=Biztosan ki akarod rúgni %1$s játékost a világból? Később nem tud újra csatlakozni a ehhez a játékhoz.	#
 hbui.PlayerPermissionsRoute.KickPlayerModal.inputLegend=Kiválasztás	#
-hbui.PlayerPermissionsRoute.KickPlayerModal.kickButton=%1$s kirúgása	#
+hbui.PlayerPermissionsRoute.KickPlayerModal.kickButton=%1$s eltávolítása a világból     	####Button that appears in modal when trying to kick player from a world in the new PP screen - %1$s is the player name {maxLengtah=40}
 hbui.PlayerPermissionsRoute.KickPlayerModal.title=Kirúgod a játékost?	#
+hbui.PlayerPermissionsRoute.OperatorRevokedErrorModal.closeButton=Bezárás    	####Close button for modal that appears when operator permissions have been revoked for the current player {MaxLength=40}
+hbui.PlayerPermissionsRoute.OperatorRevokedErrorModal.description=Az operátori engedélyeid vissza lehettek vonva, és a továbbiakban nem szerkesztheted más játékosok engedélyeit.    	####Description for modal that appears when operator permissions have been revoked for the current player {MaxLength=600}
+hbui.PlayerPermissionsRoute.OperatorRevokedErrorModal.title=Operátori engedélyek visszavonva  	####Title for modal that appears when operator permissions have been revoked for the current player {MaxLength=40}
+hbui.PlayerPermissionsRoute.PlayerLeftErrorModal.closeButton=Bezárás    	####Close button for modal that appears when the selected player has left the world {MaxLength=40}
+hbui.PlayerPermissionsRoute.PlayerLeftErrorModal.description=%1$s kilépett a világból, és az engedélyei nem módosíthatók.    	####Description for modal that appears when the selected player has left the world {MaxLength=600}
+hbui.PlayerPermissionsRoute.PlayerLeftErrorModal.title=A játékos kilépett  	####Title for modal that appears when the selected player has left the world {MaxLength=40}
 hbui.PlayerPermissionsRoute.RemoveOperatorLevelModal.backButton=Visszalépés	#
 hbui.PlayerPermissionsRoute.RemoveOperatorLevelModal.description=A játékos jogosultsági szintjének csökkentésével elveszíti a kezelői parancsokhoz való hozzáférését. A tulajdonosok bármikor visszaállíthatják a jogosultságokat.	#
 hbui.PlayerPermissionsRoute.RemoveOperatorLevelModal.inputLegend=Kiválasztás	#
@@ -2144,7 +2152,7 @@ hbui.PlayerPermissionsRoute.SideMenu.role.custom=Egyéni	#
 hbui.PlayerPermissionsRoute.SideMenu.role.member=Tag	#
 hbui.PlayerPermissionsRoute.SideMenu.role.operator=Operátor	#
 hbui.PlayerPermissionsRoute.SideMenu.role.visitor=Látogató	#
-hbui.PlayerPermissionsRoute.title=Játékosengedélyek	#
+hbui.PlayerPermissionsRoute.title=Játékosengedélyek neki: %1$s	#### %s is a string that represents the name of the world and should not be localized. This is the title of the screen Player Permissions OreUI version. Please take into consideration that the max length is not very accurate because it depends on a user interaction {MaxLength=30}
 hbui.PlayersOnlineInWorld.full=Teljes	#
 hbui.PlayerTag.hint=Nyomd meg a gombot a játékosprofil megnyitásához	#
 hbui.PlayerTag.role=Gomb	#
@@ -2161,6 +2169,8 @@ hbui.PlayScreen.allWorlds.emptyStateStartFromTemplateButton=Kezdés sablon alapj
 hbui.PlayScreen.allWorlds.emptyStateText=Hozz létre egy új világot az alapoktól, vagy hozz létre egyet sablonból.	#
 hbui.PlayScreen.allWorlds.emptyStateText.trialMode=Új világ létrehozása az alapoktól.	#
 hbui.PlayScreen.allWorlds.emptyStateTitle=Itt nincsenek világok... még!	#
+hbui.PlayScreen.AllWorldsTab.ButtonHeader.createFromContent=Létrehozás...		#### Button text that leads to a page where players can create a world from some form of content, ex. Create from Template or Create from Add-On {MaxLength=30}
+hbui.PlayScreen.AllWorldsTab.ButtonHeader.createFromContentNarration=Fedezz fel partneralkotók által létrehozott tartalmakat. Használj meglévő sablonokat és bővítményeket, vagy vásárolj egyet a Piactéren. 		#### Narration only, longer description for a button that says "Create from..." implying a player would create a world from some existing content {MaxLength=1000}
 hbui.PlayScreen.AllWorldsTab.ButtonHeader.createFromTemplate=Létrehozás sablonból	#
 hbui.PlayScreen.AllWorldsTab.ButtonHeader.createFromTemplateNarration=Fedezz fel partneralkotók által létrehozott világokat. Használj meglévő sablont, vagy vásárolj egyet a Piactéren.	#
 hbui.PlayScreen.AllWorldsTab.ButtonHeader.createNewWorld=Új világ létrehozása	#
@@ -2206,8 +2216,10 @@ hbui.PlayScreen.genericError.servers.title=A kiszolgálók nem tölthetők be	#
 hbui.PlayScreen.guestAccountMessage.bannerLogIn=Bejelentkezés	#
 hbui.PlayScreen.guestAccountMessage.bannerLogInMicrosoft=Jelentkezz be, vagy regisztrálj a Microsoftnál	#
 hbui.PlayScreen.guestAccountMessage.buttonLogInMicrosoft=Jelentkezz be egy Microsoft-fiókba	#
-hbui.PlayScreen.GuestAccountMessage.nintendo.text=Jelentkezz be a Nintendo-fiókodba, hogy megnézhesd, mi van itt.	#
-hbui.PlayScreen.GuestAccountMessage.playstation.text=Jelentkezz be a PlayStation™Network szolgáltatásba, hogy megnézhesd, mi van itt.		#### CertRequirement: [PlayStation™Network]
+hbui.PlayScreen.GuestAccountMessage.nintendo.button=Jelentkezz be egy Nintendo Account-fiókba 	#### Button that is shown in an empty state when the PlayScreen when the player is not logged into a NintendoAccount. {StrContains="Nintendo Account"} {MaxLength="50"}
+hbui.PlayScreen.GuestAccountMessage.nintendo.text=Jelentkezz be a Nintendo Account-fiókodba, hogy megnézhesd, mi van itt. 	####  Text that is shown in an empty state when the PlayScreen when the player is not logged into a NintendoAccount. {StrContains="Nintendo Account"} {MaxLength="150"}
+hbui.PlayScreen.GuestAccountMessage.playstation.button=Lépj be a PlayStation™Network szolgáltatásba		#### Button that is shown in an empty state when the PlayScreen when the player is not logged into the Playstation network. CertRequirement: [PlayStation™Network] {MaxLength="50"}
+hbui.PlayScreen.GuestAccountMessage.playstation.text=Jelentkezz be a PlayStation™Network szolgáltatásba, hogy megnézhesd, mi van itt.		#### Text that is shown in an empty state when the PlayScreen when the player is not logged into the Playstation network. CertRequirement: [PlayStation™Network] {MaxLength="150"}
 hbui.PlayScreen.guestAccountMessage.realmsNoMicrosoftAccount=A Realmsen való játékhoz Microsoft-fiók szükséges. 	#### {StrContains="Realms"}
 hbui.PlayScreen.guestAccountMessage.realmsNoPlatformAccountNintendo=A Realmsen való játékhoz Nintendo-fiók szükséges 	#### {StrContains="Realms"}
 hbui.PlayScreen.guestAccountMessage.realmsNoPlatformAccountPlaystation=A Realmsen való játékhoz PlayStation™Network-fiók szükséges 	#### CertRequirement: [PlayStation™Network] {StrContains="Realms"}
@@ -2217,7 +2229,6 @@ hbui.PlayScreen.guestAccountMessage.serversNoMicrosoftAccount=A kiszolgálókon 
 hbui.PlayScreen.guestAccountMessage.serversNoPlatformAccountNintendo=A kiszolgálókon való játékhoz Nintendo-fiók szükséges	#
 hbui.PlayScreen.guestAccountMessage.serversNoPlatformAccountPlaystation=A kiszolgálókon való játékhoz PlayStation™Network-fiók szükséges 	#### CertRequirement: [PlayStation™Network]
 hbui.PlayScreen.guestAccountMessage.serversPlaystationGuest=A kiszolgálókon való játékhoz Microsoft-fiók szükséges.	#
-hbui.PlayScreen.GuestAccountMessage.title=Nem vagy bejelentkezve	#
 hbui.PlayScreen.importWorldErrorModal.close=Bezárás	#
 hbui.PlayScreen.importWorldErrorModal.unknownError.body=Probléma merült fel a világ importálása során.	#
 hbui.PlayScreen.importWorldErrorModal.unknownError.title=Hiba történt	#
@@ -2285,6 +2296,7 @@ hbui.PlayScreen.outOfStorageModal.close=Bezárás	#
 hbui.PlayScreen.outOfStorageModal.closeInputLegend=Bezárás	#
 hbui.PlayScreen.outOfStorageModal.title=Elfogyott a tárhely	#
 hbui.PlayScreen.PlatformMultiplayerDisabledMessage.text=Ezen és más közösségi szolgáltatásokhoz való hozzáféréshez engedélyezd a többjátékos játékot a fiókodban.	#
+hbui.PlayScreen.PlatformMultiplayerDisabledMessage.textForPlayStation=A PlayStation™Network-fiókodban le vannak tiltva a kommunikációs funkciók. A kommunikációs funkciók eléréséhez engedélyezd azokat a PlayStation™Network-fiókodban.		#### This is a communication requirement for PS. CertRequirement: [PlayStation™Network] {MaxLength=25}
 hbui.PlayScreen.PlatformMultiplayerDisabledMessage.title=Itt úgysem jössz át	#
 hbui.PlayScreen.realms=Realms 	#### {StrContains="Realms"}
 hbui.PlayScreen.RealmsBannedMessage.Banned.bodyFirstParagraph=Ki lettél tiltva a Minecraft Realms szolgáltatásaiból. Ez azt jelenti, hogy nem játszhatsz Realmeken, és nem csatlakozhatsz hozzájuk.		#### {StrContains="Minecraft"} {StrContains="Realms"}
@@ -2866,6 +2878,7 @@ hbui.RealmsStories.feed.fullImageRole=Képernyő	#
 hbui.RealmsStories.feed.gamerTag=Játékbeli becenév. %1$s / %2$s	#
 hbui.RealmsStories.feed.guestAccountNotificationBanner.line1=A Realm tagjai több Realm-történettel kapcsolatos funkcióhoz férhetnek hozzá.	#
 hbui.RealmsStories.feed.guestAccountNotificationBanner.line2=A részvételhez kérj meghívást a Realm tulajdonosától.	#
+hbui.RealmsStories.feed.inRealm=Játék a Realmen    	#### Indication that the player/user is currently playing on the Realm(Product name for hosted server). {MaxLength=100}{StrContains="Realm"}
 hbui.RealmsStories.feed.newHoursLogged=%1$s új naplózott óra	#
 hbui.RealmsStories.feed.newMinutesLogged=%1$s új naplózott perc	#
 hbui.RealmsStories.feed.offline=Offline	#
@@ -3004,9 +3017,10 @@ hbui.RealmsStories.likePost=Bejegyzés kedvelése	#
 hbui.RealmsStories.members=Tagok	#
 hbui.RealmsStories.members.allMembers=Minden tag	#
 hbui.RealmsStories.members.enumeration=%1$s/%2$s	#
-hbui.RealmsStories.members.filter.title=Szűrőbeállítások	#
+hbui.RealmsStories.members.filter.title=Realm-tagok szűrése	#
 hbui.RealmsStories.members.fromAtoZ=Betűrend (A-Z)	#
 hbui.RealmsStories.members.fromZtoA=Fordított betűrend (Z-A)	#
+hbui.RealmsStories.members.inRealmMembers=A Realmen játszó tagok		#### a option choice to filter members list by those who are currently playing in the Realm(Product name for host server). {MaxLength=60}{StrContains="Realm"}
 hbui.RealmsStories.members.leastRecentlyPlayed=Legrégebben játszott	#
 hbui.RealmsStories.members.manage=Tagok kezelése	#
 hbui.RealmsStories.members.member=Tag	#
@@ -3025,7 +3039,7 @@ hbui.RealmsStories.members.searchResult.hint.oneResult=Egy találat	#
 hbui.RealmsStories.members.searchResult.name=Keresési eredmény	#
 hbui.RealmsStories.members.searchResult.role=Képernyő	#
 hbui.RealmsStories.members.section=Szakasz	#
-hbui.RealmsStories.members.sort.title=Rendezési beállítások	#
+hbui.RealmsStories.members.sort.title=Realm-tagok rendezése	#
 hbui.RealmsStories.members.visitor=Látogató	#
 hbui.RealmsStories.members.warning=Ez a Realm túl népszerű az összes tag felsorolásához	#
 hbui.RealmsStories.members.warning.optedOut=Ez a Realm túl népszerű az összes leiratkozott tag felsorolásához	#
@@ -3450,6 +3464,7 @@ hbui.SignInSavePurchasesRoute.signInList1=Bármilyen platformról hozzáférhets
 hbui.SignInSavePurchasesRoute.signInList2=Több platformon is használhatod a testre szabott karaktereidet	#
 hbui.SignInSavePurchasesRoute.signInList3=Mentheted a vásárlásokat, így akkor sem veszíted el őket, ha rendszerproblémába ütközöl	#
 hbui.SignInSavePurchasesRoute.signInPrompt=Korábban már letöltöttél tartalmakat, vagy használtál Minecoinokat a Piactéren? Jelentkezz be most, hogy a többi platformon is elérhetővé tedd a vásárlásaidat.	#
+hbui.SignInToPlatformNetwork.link=Kattints ide a bejelentkezéshez 	#### Link that is shown next to playstationDisconnectedThirdPartyWithSubscription or nintendoDisconnectedThirdPartyWithSubscription that allows the player to log into the platform network.
 hbui.SignInWorldsFriendsServersRoute.createAccountPrompt=Nincs Microsoft-fiókod? Hozz létre egyet most – ingyen!	#
 hbui.SignInWorldsFriendsServersRoute.laterButton=Talán később	#
 hbui.SignInWorldsFriendsServersRoute.signInButton=Bejelentkezés most	#
@@ -3474,6 +3489,8 @@ hbui.StartFromTemplateRoute.feedbackPanel.button=Visszajelzés küldése	#
 hbui.StartFromTemplateRoute.feedbackPanel.description=Örülnénk, ha megosztanád velünk, hogy mit gondolsz az új dizájnról! Fontos tudni, hogy még nem készült el teljesen, és néhány funkció hiányozhat.	#
 hbui.StartFromTemplateRoute.feedbackPanel.inputLegend=Kiválasztás	#
 hbui.StartFromTemplateRoute.feedbackPanel.title=Üdvözlünk a dizájnelőzetesben!	#
+hbui.StartFromTemplateRoute.getMoreButton.AddOn.body=Több száz további sablont és bővítményt találsz a Piactéren		#### Subtext on a button that leads to a store page with more content than what is shown on the current screen {MaxLength=210}
+hbui.StartFromTemplateRoute.getMoreButton.AddOn.title=Fedezz fel új sablonokat és bővítményeket		#### Main button text that leads to a store page with more content than what is shown on the current screen {MaxLength=50}
 hbui.StartFromTemplateRoute.getMoreButton.body=Több száz további sablont találsz a Piactéren	#
 hbui.StartFromTemplateRoute.getMoreButton.title=Fedezd fel az új sablonokat	#
 hbui.StartFromTemplateRoute.ImportModal.title=Tartalom importálása	#
@@ -3481,6 +3498,8 @@ hbui.StartFromTemplateRoute.InitializationModal.message=Csatlakozás…	#
 hbui.StartFromTemplateRoute.InitializationModal.title=Letöltés indítása	#
 hbui.StartFromTemplateRoute.InstallModal.message=A telepítés elindult	#
 hbui.StartFromTemplateRoute.InstallModal.title=Tartalom telepítése (2/2)	#
+hbui.StartFromTemplateRoute.MarketplacePass.AddOn.description=Lépj szintet a Marketplace Pass előfizetői számára elérhető világsablonokkal és bővítményekkel. 	#### Subtext under the title for a screen displaying content from the Marketplace Pass that players can use to create a world {MaxLength=230}{StrContains="Marketplace Pass"}
+hbui.StartFromTemplateRoute.MarketplacePass.AddOn.title=Marketplace Pass		#### Main title for a screen displaying content from the Marketplace Pass that players can use to create a world {MaxLength=50}{StrContains="Marketplace Pass"}
 hbui.StartFromTemplateRoute.MarketplacePass.description=Lépj szintet a Marketplace Pass előfizetői számára elérhető világsablonokkal. 	#### {StrContains="Marketplace Pass"}
 hbui.StartFromTemplateRoute.MarketplacePass.imageNarration=Marketplace Pass	#
 hbui.StartFromTemplateRoute.MarketplacePass.imageRole=Kép	#
@@ -3551,6 +3570,7 @@ hbui.StartFromTemplateRoute.TemplateOperationsErrorModal.title.GenericError=Hiba
 hbui.StartFromTemplateRoute.TemplateOperationsErrorModal.title.InsufficientStorage=A tárhely megtelt	#
 hbui.StartFromTemplateRoute.TemplateOperationsErrorModal.title.MalformedZip=Nem sikerült importálni	#
 hbui.StartFromTemplateRoute.title=Létrehozás sablonból	#
+hbui.StartFromTemplateRoute.title.AddOn=Létrehozás...		#### Title for a screen where players can select content for the base of a new world {MaxLength=45}
 hbui.StartFromTemplateRoute.TrialModeModal.button=Vásárold meg a Minecraftot	#
 hbui.StartFromTemplateRoute.TrialModeModal.message=Importálhatsz játékosok ezrei által készített sablonokat, és exportálással a sajátodat is megoszthatod a világgal.	#
 hbui.StartFromTemplateRoute.TrialModeModal.title=Tapasztald meg a teljes élményt	#
@@ -3716,85 +3736,6 @@ hbui.WorldTag.hardcore=Hardcore	#
 hbui.WorldTag.lan=LAN	#
 hbui.WorldTag.survival=Túlélés	#
 hbui.WorldTag.unknown=Ismeretlen	#
-hbui.Sample.hello=Helló, %1$s!	#
-hbui.Accordion.closeInputLegend=Bezárás	#
-hbui.Accordion.openInputLegend=Megnyitás	#
-hbui.BackButton.back=Vissza	#
-hbui.BackButton.narration.backButton=Vissza gomb	#
-hbui.BaseDropdown.close=Bezárás	#
-hbui.BaseDropdown.enumeration=%1$s/%2$s	#
-hbui.BaseDropdown.open=Kinyitás	#
-hbui.BaseDropdown.selected=Kiválasztva	#
-hbui.BaseDropdown.stateCollapsed=Összecsukva	#
-hbui.BaseDropdown.stateExpanded=Kibontva	#
-hbui.BaseDropdown.toggleElementType=Opció	#
-hbui.BaseSlider.currentValue=jelenlegi értéke:	#
-hbui.BaseSlider.elementType=csúszka	#
-hbui.BaseSlider.maxValueIs=maximális értéke:	#
-hbui.BaseSlider.minValueIs=minimális értéke:	#
-hbui.BaseSwitch.elementType=Váltás	#
-hbui.BaseSwitch.narrationDisabled=Letiltás	#
-hbui.BaseSwitch.off=Ki	#
-hbui.BaseSwitch.on=Be	#
-hbui.BaseSwitch.toggle=Kapcsoló	#
-hbui.BaseTextField.addedNarration=Hozzáadva	#
-hbui.BaseTextField.deselect=Kiválasztás törlése	#
-hbui.BaseTextField.hint=Jelenleg szöveget viszel be. Írd be a következőt: %1$s	#
-hbui.BaseTextField.invalidNarration=Érvénytelen	#
-hbui.BaseTextField.removedNarration=Eltávolítva	#
-hbui.BaseTextField.replacedNarration=A következőre cserélve:	#
-hbui.BaseTextField.select=Kiválasztás	#
-hbui.BaseTextField.selected=Kiválasztva	#
-hbui.DropdownItem.elementType=Tárgy	#
-hbui.DropdownItem.narrationComponentType=Opció	#
-hbui.DropdownItem.select=Kiválasztás	#
-hbui.DropdownItem.selected=Kiválasztva	#
-hbui.DropdownItem.unselected=Nincs kiválasztva	#
-hbui.ScrollView.loadingState=Betöltés	#
-hbui.ScrollView.narrationScrollViewComponentType=Tartalom	#
-hbui.TitleBar.Buttons.Back.inputLegend=Vissza	#
-hbui.TitleBar.Buttons.Back.narration=Vissza gomb	#
-hbui.TitleBar.Buttons.Close.inputLegend=Bezárás	#
-hbui.TitleBar.Buttons.Close.narration=Bezárás gomb	#
-hbui.Accordion.closeInputLegend=Bezárás	#
-hbui.Accordion.openInputLegend=Megnyitás	#
-hbui.BackButton.back=Vissza	#
-hbui.BackButton.narration.backButton=Vissza gomb	#
-hbui.BaseDropdown.close=Bezárás	#
-hbui.BaseDropdown.enumeration=%1$s/%2$s	#
-hbui.BaseDropdown.open=Kinyitás	#
-hbui.BaseDropdown.selected=Kiválasztva	#
-hbui.BaseDropdown.stateCollapsed=Összecsukva	#
-hbui.BaseDropdown.stateExpanded=Kibontva	#
-hbui.BaseDropdown.toggleElementType=Opció	#
-hbui.BaseSlider.currentValue=jelenlegi érték:	#
-hbui.BaseSlider.elementType=csúszka	#
-hbui.BaseSlider.maxValueIs=maximális érték:	#
-hbui.BaseSlider.minValueIs=minimális érték:	#
-hbui.BaseSwitch.elementType=Váltás	#
-hbui.BaseSwitch.narrationDisabled=Letiltás	#
-hbui.BaseSwitch.off=Ki	#
-hbui.BaseSwitch.on=Be	#
-hbui.BaseSwitch.toggle=Kapcsoló	#
-hbui.BaseTextField.addedNarration=Hozzáadva	#
-hbui.BaseTextField.deselect=Kiválasztás törlése	#
-hbui.BaseTextField.hint=Jelenleg szöveget viszel be. Írd be a következőt: %1$s	#
-hbui.BaseTextField.invalidNarration=Érvénytelen	#
-hbui.BaseTextField.removedNarration=Eltávolítva	#
-hbui.BaseTextField.replacedNarration=A következőre cserélve:	#
-hbui.BaseTextField.select=Kiválasztás	#
-hbui.BaseTextField.selected=Kiválasztva	#
-hbui.DropdownItem.elementType=Tárgy	#
-hbui.DropdownItem.narrationComponentType=Opció	#
-hbui.DropdownItem.select=Kiválasztás	#
-hbui.DropdownItem.selected=Kiválasztva	#
-hbui.DropdownItem.unselected=Nincs kijelölve	#
-hbui.ScrollView.loadingState=Betöltés	#
-hbui.ScrollView.narrationScrollViewComponentType=Tartalom	#
-hbui.TitleBar.Buttons.Back.inputLegend=Vissza	#
-hbui.TitleBar.Buttons.Back.narration=Vissza gomb	#
-hbui.TitleBar.Buttons.Close.inputLegend=Bezárás	#
-hbui.TitleBar.Buttons.Close.narration=Bezárás gomb	#
 hbui.BackButton.back=Vissza	#
 hbui.BackButton.narrationComponentType=Gomb	#
 hbui.BackButton.narrationGoBack=Visszalépés	#
@@ -3936,3 +3877,82 @@ hbui.Toggle.select=Kiválasztás	#
 hbui.TreeView.collapse=Összecsukás	#
 hbui.TreeView.expand=Bővítés	#
 hbui.TreeView.open=Kinyitás	#
+hbui.Accordion.closeInputLegend=Bezárás	#
+hbui.Accordion.openInputLegend=Megnyitás	#
+hbui.BackButton.back=Vissza	#
+hbui.BackButton.narration.backButton=Vissza gomb	#
+hbui.BaseDropdown.close=Bezárás	#
+hbui.BaseDropdown.enumeration=%1$s/%2$s	#
+hbui.BaseDropdown.open=Kinyitás	#
+hbui.BaseDropdown.selected=Kiválasztva	#
+hbui.BaseDropdown.stateCollapsed=Összecsukva	#
+hbui.BaseDropdown.stateExpanded=Kibontva	#
+hbui.BaseDropdown.toggleElementType=Opció	#
+hbui.BaseSlider.currentValue=jelenlegi értéke:	#
+hbui.BaseSlider.elementType=csúszka	#
+hbui.BaseSlider.maxValueIs=maximális értéke:	#
+hbui.BaseSlider.minValueIs=minimális értéke:	#
+hbui.BaseSwitch.elementType=Váltás	#
+hbui.BaseSwitch.narrationDisabled=Letiltás	#
+hbui.BaseSwitch.off=Ki	#
+hbui.BaseSwitch.on=Be	#
+hbui.BaseSwitch.toggle=Kapcsoló	#
+hbui.BaseTextField.addedNarration=Hozzáadva	#
+hbui.BaseTextField.deselect=Kiválasztás törlése	#
+hbui.BaseTextField.hint=Jelenleg szöveget viszel be. Írd be a következőt: %1$s	#
+hbui.BaseTextField.invalidNarration=Érvénytelen	#
+hbui.BaseTextField.removedNarration=Eltávolítva	#
+hbui.BaseTextField.replacedNarration=A következőre cserélve:	#
+hbui.BaseTextField.select=Kiválasztás	#
+hbui.BaseTextField.selected=Kiválasztva	#
+hbui.DropdownItem.elementType=Tárgy	#
+hbui.DropdownItem.narrationComponentType=Opció	#
+hbui.DropdownItem.select=Kiválasztás	#
+hbui.DropdownItem.selected=Kiválasztva	#
+hbui.DropdownItem.unselected=Nincs kiválasztva	#
+hbui.ScrollView.loadingState=Betöltés	#
+hbui.ScrollView.narrationScrollViewComponentType=Tartalom	#
+hbui.TitleBar.Buttons.Back.inputLegend=Vissza	#
+hbui.TitleBar.Buttons.Back.narration=Vissza gomb	#
+hbui.TitleBar.Buttons.Close.inputLegend=Bezárás	#
+hbui.TitleBar.Buttons.Close.narration=Bezárás gomb	#
+hbui.Sample.hello=Helló, %1$s!	#
+hbui.Accordion.closeInputLegend=Bezárás	#
+hbui.Accordion.openInputLegend=Megnyitás	#
+hbui.BackButton.back=Vissza	#
+hbui.BackButton.narration.backButton=Vissza gomb	#
+hbui.BaseDropdown.close=Bezárás	#
+hbui.BaseDropdown.enumeration=%1$s/%2$s	#
+hbui.BaseDropdown.open=Kinyitás	#
+hbui.BaseDropdown.selected=Kiválasztva	#
+hbui.BaseDropdown.stateCollapsed=Összecsukva	#
+hbui.BaseDropdown.stateExpanded=Kibontva	#
+hbui.BaseDropdown.toggleElementType=Opció	#
+hbui.BaseSlider.currentValue=jelenlegi érték:	#
+hbui.BaseSlider.elementType=csúszka	#
+hbui.BaseSlider.maxValueIs=maximális érték:	#
+hbui.BaseSlider.minValueIs=minimális érték:	#
+hbui.BaseSwitch.elementType=Váltás	#
+hbui.BaseSwitch.narrationDisabled=Letiltás	#
+hbui.BaseSwitch.off=Ki	#
+hbui.BaseSwitch.on=Be	#
+hbui.BaseSwitch.toggle=Kapcsoló	#
+hbui.BaseTextField.addedNarration=Hozzáadva	#
+hbui.BaseTextField.deselect=Kiválasztás törlése	#
+hbui.BaseTextField.hint=Jelenleg szöveget viszel be. Írd be a következőt: %1$s	#
+hbui.BaseTextField.invalidNarration=Érvénytelen	#
+hbui.BaseTextField.removedNarration=Eltávolítva	#
+hbui.BaseTextField.replacedNarration=A következőre cserélve:	#
+hbui.BaseTextField.select=Kiválasztás	#
+hbui.BaseTextField.selected=Kiválasztva	#
+hbui.DropdownItem.elementType=Tárgy	#
+hbui.DropdownItem.narrationComponentType=Opció	#
+hbui.DropdownItem.select=Kiválasztás	#
+hbui.DropdownItem.selected=Kiválasztva	#
+hbui.DropdownItem.unselected=Nincs kijelölve	#
+hbui.ScrollView.loadingState=Betöltés	#
+hbui.ScrollView.narrationScrollViewComponentType=Tartalom	#
+hbui.TitleBar.Buttons.Back.inputLegend=Vissza	#
+hbui.TitleBar.Buttons.Back.narration=Vissza gomb	#
+hbui.TitleBar.Buttons.Close.inputLegend=Bezárás	#
+hbui.TitleBar.Buttons.Close.narration=Bezárás gomb	#

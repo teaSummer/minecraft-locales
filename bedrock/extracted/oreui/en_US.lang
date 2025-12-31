@@ -1680,19 +1680,21 @@ hbui.PlayerPermissionsRoute.Details.ability.build=Build
 hbui.PlayerPermissionsRoute.Details.ability.description.attackMobs=Engage in player vs. environment combat
 hbui.PlayerPermissionsRoute.Details.ability.description.attackPlayers=Engage in player vs. player combat
 hbui.PlayerPermissionsRoute.Details.ability.description.build=Place blocks in the world
-hbui.PlayerPermissionsRoute.Details.ability.description.doorsAndSwitches=Use doors and switches
+hbui.PlayerPermissionsRoute.Details.ability.description.doorsAndSwitches=Activate most useable objects in the world ###Description for doors and switches toggle {MaxLength=400}
 hbui.PlayerPermissionsRoute.Details.ability.description.mine=Destroy world elements and collect blocks
 hbui.PlayerPermissionsRoute.Details.ability.description.openContainers=View, add to, and take from chests
 hbui.PlayerPermissionsRoute.Details.ability.description.operatorCommands=Access advanced server options
 hbui.PlayerPermissionsRoute.Details.ability.description.teleport=Instantly move to anywhere in the world
-hbui.PlayerPermissionsRoute.Details.ability.doorsAndSwitches=Activate most useable objects in the world
+hbui.PlayerPermissionsRoute.Details.ability.doorsAndSwitches=Use doors and switches ###Title for toggle for doors and switches {MaxLength=120}
 hbui.PlayerPermissionsRoute.Details.ability.mine=Mine
 hbui.PlayerPermissionsRoute.Details.ability.openContainers=Open containers
 hbui.PlayerPermissionsRoute.Details.ability.operatorCommands=Operator Commands
 hbui.PlayerPermissionsRoute.Details.ability.teleport=Teleport
 hbui.PlayerPermissionsRoute.Details.kickButton=Kick %1$s from world     ###Text for the button that appears in the Player Permissions Screen - %1$s is the player name {maxLength=40}
 hbui.PlayerPermissionsRoute.Details.kickButton.inputLegend=Select
+hbui.PlayerPermissionsRoute.Details.loading=Loading ###Text on loading modal that appears when clicking "Go to game settings" link {MaxLength=60}
 hbui.PlayerPermissionsRoute.Details.notification.kickCommandFailedFlag=Couldn’t remove this player.   ###Text for snackbar that appears when trying to kick another player fails {maxLength=60}
+hbui.PlayerPermissionsRoute.Details.notification.kickCommandSuccess=Player successfully removed ###Text for snackbar that appears when a player has been kicked from a world {MaxLength=60}
 hbui.PlayerPermissionsRoute.Details.notification.selectedPlayerPermissionsChangedFlag=Player permissions updated by another operator.   ###Text for snackbar that appears when another player has updated the selected player's permissions {maxLength=60}
 hbui.PlayerPermissionsRoute.Details.optionEnumeration=%1$s of %2$s
 hbui.PlayerPermissionsRoute.Details.playerIdInvalidFlag=Couldn’t load permissions for this player   ###Text for empty state that appears when you are trying to load the permissions for an invalid ID {maxLength=60}
@@ -1715,9 +1717,11 @@ hbui.PlayerPermissionsRoute.KickPlayerModal.kickButton=Kick %1$s from world     
 hbui.PlayerPermissionsRoute.KickPlayerModal.title=Kick player?
 hbui.PlayerPermissionsRoute.OperatorRevokedErrorModal.closeButton=Close    ###Close button for modal that appears when operator permissions have been revoked for the current player {MaxLength=40}
 hbui.PlayerPermissionsRoute.OperatorRevokedErrorModal.description=Your operator permissions have been revoked and you can no longer edit the permissions of other players.    ###Description for modal that appears when operator permissions have been revoked for the current player {MaxLength=600}
+hbui.PlayerPermissionsRoute.OperatorRevokedErrorModal.inputLegend=Select    ###Input legend for close button in this modal {MaxLength=40}
 hbui.PlayerPermissionsRoute.OperatorRevokedErrorModal.title=Operator permissions revoked  ###Title for modal that appears when operator permissions have been revoked for the current player {MaxLength=40}
 hbui.PlayerPermissionsRoute.PlayerLeftErrorModal.closeButton=Close    ###Close button for modal that appears when the selected player has left the world {MaxLength=40}
 hbui.PlayerPermissionsRoute.PlayerLeftErrorModal.description=%1$s left the world and their permissions can’t be changed.    ###Description for modal that appears when the selected player has left the world {MaxLength=600}
+hbui.PlayerPermissionsRoute.PlayerLeftErrorModal.inputLegend=Select    ###Input legend for close button in this modal {MaxLength=40}
 hbui.PlayerPermissionsRoute.PlayerLeftErrorModal.title=Player has left  ###Title for modal that appears when the selected player has left the world {MaxLength=40}
 hbui.PlayerPermissionsRoute.RemoveOperatorLevelModal.backButton=Go back
 hbui.PlayerPermissionsRoute.RemoveOperatorLevelModal.description=Lowering this player’s permission level will remove their access to operator commands. Owners can restore permissions at any time.
@@ -1878,7 +1882,7 @@ hbui.PlayScreen.outOfStorageModal.close=Close
 hbui.PlayScreen.outOfStorageModal.closeInputLegend=Close
 hbui.PlayScreen.outOfStorageModal.title=Out of storage space
 hbui.PlayScreen.PlatformMultiplayerDisabledMessage.text=Access these and other social features by enabling multiplayer in your account.
-hbui.PlayScreen.PlatformMultiplayerDisabledMessage.textForPlayStation=Communication features are disabled in your PlayStation™Network account. Access communication features by enabling it in your PlayStation™Network account.	### This is a communication requirement for PS. CertRequirement: [PlayStation™Network] {MaxLength=25}
+hbui.PlayScreen.PlatformMultiplayerDisabledMessage.textForPlayStation=Communication features are disabled in your PlayStation™Network account. Access communication features by enabling it in your PlayStation™Network account.	### This is a communication requirement for PS. CertRequirement: [PlayStation™Network] {MaxLength=300}
 hbui.PlayScreen.PlatformMultiplayerDisabledMessage.title=You shall not pass
 hbui.PlayScreen.realms=Realms ### {StrContains="Realms"}
 hbui.PlayScreen.RealmsBannedMessage.Banned.bodyFirstParagraph=You’ve been banned from Minecraft’s Realms services. This means you can’t play or join Realms.	### {StrContains="Minecraft"} {StrContains="Realms"}
@@ -2320,12 +2324,16 @@ hbui.RealmsPDPScreen.splash.text=Run your own Minecraft server! You set the rule
 hbui.RealmsPDPScreen.splash.title=Your own server, always online    ### {MaxLength="50"}
 hbui.RealmsPDPScreen.splash.tryFree=Try free    ### {MaxLength="20"}
 hbui.RealmsPDPScreen.title=Minecraft Realms ### {StrContains="Realms"}
+hbui.RealmsPlanPickerScreen.banners.coreSubscriptionsLimit=You have reached the limit of Realms Core subscriptions on this platform ### {MaxLength="72"}
+hbui.RealmsPlanPickerScreen.banners.plusSubscriptionsLimit=You have reached the limit of Realms Plus subscriptions on this platform ### {MaxLength="72"}
 hbui.RealmsPlanPickerScreen.buyButtonCore=Buy Realms Core			### {StrContains="Realms"}
 hbui.RealmsPlanPickerScreen.buyButtonCoreNarrationHint=Navigate below to learn more about Realms Core		### {StrContains="Realms"}
 hbui.RealmsPlanPickerScreen.buyButtonPlus=Buy Realms Plus			### {StrContains="Realms"}
 hbui.RealmsPlanPickerScreen.buyButtonPlusNarrationHint=Navigate below to learn more about Realms Plus		### {StrContains="Realms"}
 hbui.RealmsPlanPickerScreen.buyRealmsPlusButtonTrial=Free trial
 hbui.RealmsPlanPickerScreen.currency=$
+hbui.RealmsPlanPickerScreen.emptyStates.maxedOutSubscriptions.body=You have reached the limit for both Realms Core and Realms Plus subscriptions on this platform.  ### {MaxLength="95"}
+hbui.RealmsPlanPickerScreen.emptyStates.maxedOutSubscriptions.title=Realms subscriptions maxed out on this platform ### {MaxLength="47"}
 hbui.RealmsPlanPickerScreen.error.body=Please verify that you are signed into both Minecraft and your device's platform store with the same account, and try again.
 hbui.RealmsPlanPickerScreen.error.button=Try again
 hbui.RealmsPlanPickerScreen.error.title=Couldn’t access platform store
@@ -2458,8 +2466,7 @@ hbui.RealmsStories.feed.fullImage=%1$s Story full image
 hbui.RealmsStories.feed.fullImageClose=Close
 hbui.RealmsStories.feed.fullImageRole=Screen
 hbui.RealmsStories.feed.gamerTag=Gamertag. %1$s of %2$s
-hbui.RealmsStories.feed.guestAccountNotificationBanner.line1=Realm members have access to more Realms Stories features.
-hbui.RealmsStories.feed.guestAccountNotificationBanner.line2=Ask the Realm Owner for an invite to participate.
+hbui.RealmsStories.feed.guestAccountNotificationBanner=Split-screen players cannot like, comment on, or add new Stories ### {MaxLength="120"}
 hbui.RealmsStories.feed.inRealm=Playing on Realm    ### Indication that the player/user is currently playing on the Realm(Product name for hosted server). {MaxLength=100}{StrContains="Realm"}
 hbui.RealmsStories.feed.newHoursLogged=%1$s new hours logged
 hbui.RealmsStories.feed.newMinutesLogged=%1$s new minutes logged
@@ -2631,10 +2638,14 @@ hbui.RealmsStories.messages.timelineEmpty.body=Play on the Realm to generate Tim
 hbui.RealmsStories.messages.timelineEmpty.title=No data available
 hbui.RealmsStories.messages.timelineOff.body=The Realm owner has disabled the Timeline on this Realm.
 hbui.RealmsStories.messages.timelineOff.title=The Timeline is disabled
-hbui.RealmsStories.messages.timelineOptIn.body=See when other members are playing to check out their creations or plan to join them next time! The Timeline shows when players were on the Realm. The bigger the colored block, the longer they played.
+hbui.RealmsStories.messages.timelineOptIn.body=See when other members are playing to check out their creations or plan to join them next time! The Timeline shows when players were on the Realm. The bigger the colored block, the longer they played.	### {StrContains="Realm"} {MaxLength="200"} This is an explanation of the Realms Timeline feature.
 hbui.RealmsStories.messages.timelineOptIn.button=I want to opt in
+hbui.RealmsStories.messages.timelineOptIn.maybeLaterButton=Maybe later	### {MaxLength="20"}  Player is currently declining to opt into the timeline.
 hbui.RealmsStories.messages.timelineOptIn.members=Members who have opted in: %1$s/%2$s
 hbui.RealmsStories.messages.timelineOptIn.membersNarration=Members who have opted in: %1$s out of %2$s
+hbui.RealmsStories.messages.timelineOptIn.ownerRequire.body=Opt into the Timeline to start playing on the Realm. ### {StrContains="Realm"} {MaxLength="100"} Instructing the player they must opt into the Realms timeline feature before they are allowed to play on the Realm they are trying to join.
+hbui.RealmsStories.messages.timelineOptIn.ownerRequire.title=Realm owner requires opt-in to Timeline	### {StrContains="Realm"} {MaxLength="100"}Secondary page title. The Owner of the realm the player wants to play on requires them to opt into the Timeline feature.
+hbui.RealmsStories.messages.timelineOptIn.requiredTitle=Opt in to timeline	### {MaxLength="50"}Title for the page that explains that the player needs to opt into the Timeline feature before they can play on the Realm they are attempting to join
 hbui.RealmsStories.messages.timelineOptIn.textblock=Text block
 hbui.RealmsStories.messages.timelineOptIn.title=Opt in to check timeline
 hbui.RealmsStories.messages.title=Realms Stories couldn't load! ### {StrContains="Realms Stories"}
@@ -3001,25 +3012,17 @@ hbui.ShowcaseDetailsRoute.title=%1$s's Screenshot Details
 hbui.SideStoryPostContainer.hint=%1$s's story
 hbui.SideStoryPostContainer.name=Story post
 hbui.SideStoryPostContainer.role=Text block
-hbui.SignInAchievementsRoute.altSignInHeader=Earn achievements
-hbui.SignInAchievementsRoute.altSignInPrompt=Sign in or sign up for free to start earning achievements
 hbui.SignInAchievementsRoute.laterButton=Maybe later
 hbui.SignInAchievementsRoute.signInButton=Sign in now
-hbui.SignInAchievementsRoute.signInHeader=Sign in to earn achievements
+hbui.SignInAchievementsRoute.signInHeader=Earn achievements ###Short Header for modal, player can earn achievements{MaxLength=55}
 hbui.SignInAchievementsRoute.signInList1=Track your progress and milestones in Minecraft
 hbui.SignInAchievementsRoute.signInList2=Unlock exclusive character creator items
 hbui.SignInAchievementsRoute.signInList3=Show off the achievements you accomplish to your friends
-hbui.SignInAchievementsRoute.signInPrompt=Punched a tree? Survived the first night? Sign in to start earning achievements!
-hbui.SignInAddFriendRoute.altSignInHeader=Find friends on other platforms
-hbui.SignInAddFriendRoute.altSignInPrompt=Sign in or sign up for free to connect with friends on other platforms
+hbui.SignInAchievementsRoute.signInPrompt=Sign in or sign up for free to start earning achievements ###Body of modal, informing player that signing in will allow them to earn achievements{MaxLength=200}
 hbui.SignInAddFriendRoute.laterButton=Maybe later
 hbui.SignInAddFriendRoute.signInButton=Sign in now
-hbui.SignInAddFriendRoute.signInHeader=Find cross-platform friends
-hbui.SignInAddFriendRoute.signInList1=Add friends and invite them into your worlds
-hbui.SignInAddFriendRoute.signInList1NXPS=Add cross-platform friends and invite them into your worlds
-hbui.SignInAddFriendRoute.signInList2=Track your friends list across multiple consoles
-hbui.SignInAddFriendRoute.signInList3=Receive Realms invites from your friends
-hbui.SignInAddFriendRoute.signInPrompt=Ready to join your cross-platform friends in Minecraft? Sign in now to start playing together!
+hbui.SignInAddFriendRoute.signInHeader=Find friends on other platforms  ###Header for modal, allow for searching for friends via search bar{MaxLength=55}
+hbui.SignInAddFriendRoute.signInPrompt=Sign in or sign up for free to connect with friends on other platforms   ###Body of modal, player will be able to play multiplayer with other cross platform friends{MaxLength=200}
 hbui.SignInDressingRoomRoute.laterButton=Maybe later
 hbui.SignInDressingRoomRoute.signInButton=Sign in now
 hbui.SignInDressingRoomRoute.signInHeader=Cool character!
@@ -3029,26 +3032,15 @@ hbui.SignInMarketplaceRoute.signInButton=Sign in now
 hbui.SignInMarketplaceRoute.signInHeader=Welcome to the Marketplace!
 hbui.SignInMarketplaceRoute.signInList1=Access your purchased Marketplace content and character across platforms.
 hbui.SignInMarketplaceRoute.signInPrompt=Sign in to save your purchases to your account so they're always with you.
-hbui.SignInPlayOnServerRoute.altSignInHeader=Play on featured servers
-hbui.SignInPlayOnServerRoute.altSignInPrompt=Sign in or sign up for free to play on featured servers
 hbui.SignInPlayOnServerRoute.laterButton=Maybe later
 hbui.SignInPlayOnServerRoute.signInButton=Sign in now
-hbui.SignInPlayOnServerRoute.signInHeader=Sign in to play on featured servers
-hbui.SignInPlayOnServerRoute.signInList1=Join thousands of players in persistent online worlds
-hbui.SignInPlayOnServerRoute.signInList2=Each server features unique mini-games and challenges
-hbui.SignInPlayOnServerRoute.signInList3=Access servers on all platforms with a single account
-hbui.SignInPlayOnServerRoute.signInPrompt=Ready to join a variety of online multiplayer mini-games? Sign in to access featured servers!
-hbui.SignInSavePurchasesRoute.altSignInHeader=Save your purchases
-hbui.SignInSavePurchasesRoute.altSignInPrompt=Sign in or sign up for free to save your Marketplace purchases
+hbui.SignInPlayOnServerRoute.signInHeader=Play on featured servers  ###Header for modal, allow player to play on big, custom featured servers made by other players{MaxLength=55}
+hbui.SignInPlayOnServerRoute.signInPrompt=Sign in or sign up for free to play on featured servers ###Body of modal, signing in allows player to play on such servers{MaxLength=200}
 hbui.SignInSavePurchasesRoute.createAccountPrompt=Don't have a Microsoft account? Create one now - for free!
 hbui.SignInSavePurchasesRoute.laterButton=Maybe later
 hbui.SignInSavePurchasesRoute.signInButton=Sign in now
-hbui.SignInSavePurchasesRoute.signInHeader=Sign in to save purchases
-hbui.SignInSavePurchasesRoute.signInList1=Access your purchased Marketplace content from any platform
-hbui.SignInSavePurchasesRoute.signInList2=Use your customized characters across platforms
-hbui.SignInSavePurchasesRoute.signInList3=Save purchases so you won't lose them if something happens to your system
-hbui.SignInSavePurchasesRoute.signInPrompt=Have you previously downloaded content or used Minecoins in the Marketplace? Sign in now to share your purchases across platforms.
-hbui.SignInToPlatformNetwork.link=Click here to log in ### Link that is shown next to playstationDisconnectedThirdPartyWithSubscription or nintendoDisconnectedThirdPartyWithSubscription that allows the player to log into the platform network.
+hbui.SignInSavePurchasesRoute.signInHeader=Save your purchases  ###Modal header, save marketplace skin and map entitlements{MaxLength=55}
+hbui.SignInSavePurchasesRoute.signInPrompt=Sign in or sign up for free to save your Marketplace purchases   ###Modal body, signing in allows player to save their entilements{MaxLength=200}
 hbui.SignInWorldsFriendsServersRoute.createAccountPrompt=Don't have a Microsoft account? Create one now - for free!
 hbui.SignInWorldsFriendsServersRoute.laterButton=Maybe later
 hbui.SignInWorldsFriendsServersRoute.signInButton=Sign in now
@@ -3099,6 +3091,7 @@ hbui.StartFromTemplateRoute.NoContentMessage.message=Explore thousands of origin
 hbui.StartFromTemplateRoute.NoContentMessage.title=You don’t own any content... yet!
 hbui.StartFromTemplateRoute.NoFilteredTemplatesMessage.message=Check your spelling or refine your search.
 hbui.StartFromTemplateRoute.NoFilteredTemplatesMessage.title=No matches found
+hbui.StartFromTemplateRoute.notification.downloadComplete=Template downloaded  ###Text for snackbar that appears when the download of a template is completed {MaxLength=40}
 hbui.StartFromTemplateRoute.OwnedByMe.description=Here you'll find all the templates you've purchased from the Marketplace.
 hbui.StartFromTemplateRoute.OwnedByMe.downloadUnavailableModal.goBack=Go back
 hbui.StartFromTemplateRoute.OwnedByMe.downloadUnavailableModal.message=We can't download the template right now. Please make sure you're connected to the internet and try again.
@@ -3319,7 +3312,7 @@ hbui.WorldTag.experimental=Experimental
 hbui.WorldTag.hardcore=Hardcore
 hbui.WorldTag.lan=LAN
 hbui.WorldTag.survival=Survival
-hbui.WorldTag.unknown=Unknown
+hbui.WorldTag.unknown=Unknown   ###Placeholder if the other tags don't fit, the unknown world tag{MaxLength=21}
 hbui.Editor.title=Input Mapping
 hbui.EditorActionBar.leftTray=Left
 hbui.EditorActionBar.rightTray=Right
@@ -3629,6 +3622,7 @@ hbui.EditorPaletteItem.title=Palette Item
 hbui.EditorPaletteItem.type=Simple Block
 hbui.EditorPaletteItem.weight=Weight
 hbui.EditorRemotePane.narration=Panel
+hbui.EditorRemotePane.overlayModal=Overlay Modal ###Represents a modal panel overlaid on another panel. {MaxLength=100}
 hbui.EditorRoute.brushToolDescription=Paints custom brush strokes.
 hbui.EditorRoute.brushToolTooltip=Brush Tool
 hbui.EditorRoute.stampToolDescription=Copies one area of the world onto another area.

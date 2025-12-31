@@ -263,6 +263,7 @@ hbui.EditorKeyboardSettings.tools=Herramientas modales	#
 hbui.EditorKeyboardSettings.viewport=Visor	#
 hbui.EditorKeyboardSettings.viewportDescription=Contexto de entrada para el visor enfocado	#
 hbui.EditorKeyboardSettings.viewportTooltip=Contexto de entrada del visor	#
+hbui.EditorLink.elementType=Enlace 	####Represent UI element type for a clickable link​. {MaxLength=100}
 hbui.EditorLink.warningModal.cancel=Cancelar	#
 hbui.EditorLink.warningModal.content=Precaución: el enlace que estás a punto de abrir no ha sido verificado por Minecraft.	#
 hbui.EditorLink.warningModal.continue=Continuar	#
@@ -427,7 +428,6 @@ hbui.EditorWindowPanel.collapseButton=Botón Contraer panel	#
 hbui.EditorWindowPanel.dragHandle=Arrastrar controlador	#
 hbui.EditorWindowPanel.elementType=Panel	#
 hbui.EditorWindowPanel.expandButton=Botón Expandir panel	#
-hbui.Sample.hello=¡Hola, %1$s!	#
 hbui.Accordion.closeInputLegend=Cerrar	#
 hbui.Accordion.narrationComponentType=Acordeón	#
 hbui.Accordion.narrationCountLabel=%1$s - (%2$s)	#
@@ -653,8 +653,8 @@ hbui.Bedtime.messageAllPlayersSleeping=Dormir esta noche	#
 hbui.Bedtime.messageWaitingForOthersPlural=La noche se saltará cuando duerman %1$s jugadores más.	#
 hbui.Bedtime.messageWaitingForOthersSingular=La noche se saltará cuando duerma otro jugador más.	#
 hbui.Bedtime.openChatButton=Abrir chat	#
-hbui.Bedtime.sleepingNotPossibleNotWorldOwner=El ajuste «Dormir para saltarte la noche» está desactivado. El propietario de este mundo debe activar el ajuste en la edición del mundo.	#
-hbui.Bedtime.sleepingNotPossibleWorldOwner=El ajuste «Dormir para saltarte la noche» está desactivado. Actívalo en los ajustes avanzados de la edición del mundo.	#
+hbui.Bedtime.sleepingNotPossibleNotWorldOwner=El ajuste «Dormir para saltarte la noche» está desactivado. El propietario de este mundo debe activarlo en la edición del mundo.		####This string refers to name of a specific setting (Skip night by sleeping) in a specific screen (Edit world) of the game.{MaxLength=240}
+hbui.Bedtime.sleepingNotPossibleWorldOwner=El ajuste «Dormir para saltarte la noche» está desactivado. Actívalo en los ajustes avanzados de la edición del mundo.		####This string refers to name of a specific setting (Skip night by sleeping) in specifc UI tab (advanced) a specific screen (Edit world) of the game.{MaxLength=290}
 hbui.ChooseRealmRoute.addNewBetaRealm=Añadir un Realm beta	#
 hbui.ChooseRealmRoute.addNewPreviewRealm=Añadir una versión preliminar de un Realm	#
 hbui.ChooseRealmRoute.adventure=Aventura	#
@@ -1116,12 +1116,12 @@ hbui.CreateNewWorld.behaviorPacks.packPriorityInfoMessage=Si varios packs realiz
 hbui.CreateNewWorld.behaviorPacks.tryAgainButton=Inténtalo de nuevo	#
 hbui.CreateNewWorld.behaviorPacksRemoveModal.activateTitle=¿Actualizar el mundo?	#
 hbui.CreateNewWorld.behaviorPacksRemoveModal.addPackLabel=Añadir el pack igualmente	#
-hbui.CreateNewWorld.behaviorPacksRemoveModal.deactivateTitle=¡Peligro, peligro!	#
+hbui.CreateNewWorld.behaviorPacksRemoveModal.continueLabel=Solo continuar	#
+hbui.CreateNewWorld.behaviorPacksRemoveModal.copyContinueLabel=Copiar y continuar	#
+hbui.CreateNewWorld.behaviorPacksRemoveModal.deactivateTitle=¡Un momento!	#
 hbui.CreateNewWorld.behaviorPacksRemoveModal.dontAddPackLabel=No añadir pack	#
-hbui.CreateNewWorld.behaviorPacksRemoveModal.keepLabel=Conservar el pack	#
 hbui.CreateNewWorld.behaviorPacksRemoveModal.messageActivate=Puede que este mundo tenga un aspecto o un comportamiento diferente a los mundos no modificados. Guarda una copia de tu mundo antes de continuar.	#
-hbui.CreateNewWorld.behaviorPacksRemoveModal.messageDeactivate=Añadir o eliminar packs de un mundo después de haber jugado en él podría causar errores y hacer que pierdas todo lo que has creado.	#
-hbui.CreateNewWorld.behaviorPacksRemoveModal.removeLabel=Eliminar el pack igualmente	#
+hbui.CreateNewWorld.behaviorPacksRemoveModal.messageDeactivate=Eliminar packs de mundos jugados anteriormente puede provocar que se pierdan datos de forma permanente ¡Te recomendamos encarecidamente que hagas antes una copia de tu mundo!	#
 hbui.CreateNewWorld.cheats.commandBlocksDescription=Usar comandos para programar estos bloques	#
 hbui.CreateNewWorld.cheats.commandBlocksTitle=Bloques de comandos	#
 hbui.CreateNewWorld.cheats.daylightCycleAlwaysDayDescription=El tiempo en el juego está limitado al mediodía	#
@@ -1498,6 +1498,8 @@ hbui.CreateNewWorldSideMenu.scriptingCodingTabLabel=Scripts y programación	#
 hbui.DebugDrawer.closeButtonNarrationHint=Usa la flecha hacia abajo para ver más acciones	#
 hbui.DebugDrawer.closeDrawerShortcutInputLegend=Cerrar	#
 hbui.DebugDrawer.title=Depuración	#
+hbui.EditRealmWorld.play=Jugar   	#### String for button to start playing on the Realm world
+hbui.EditRealmWorld.title=Editar mundo    	#### Title for the screen where users edit/change their realm world settings
 hbui.EditWorld.clearingPlayerDataModal.description=No salgas del juego. De lo contrario, el proceso podría fallar.	#
 hbui.EditWorld.clearingPlayerDataModal.title=Borrando datos del jugador	#
 hbui.EditWorld.clearPlayerDataErrorModal.description=Vuelve a intentarlo más tarde.	#
@@ -1573,16 +1575,7 @@ hbui.ErrorModal.title=Se ha producido un error	#
 hbui.ExportWorld.error.incorrectWorldID.title=No puedes exportar un mundo que no existe	#
 hbui.ExportWorld.error.needToRemoveVRHeadset.title=Desconecta tu dispositivo VR e inténtalo de nuevo	#
 hbui.ExportWorld.error.unknownError.title=Algo ha salido mal. Vuelve a intentarlo más tarde.	#
-hbui.FirstTimeSignInRoute.altSignInButton=Inicia sesión ya	#
-hbui.FirstTimeSignInRoute.altSignInList1=Guarda tu progreso y tus compras	#
-hbui.FirstTimeSignInRoute.altSignInList2=Protege tu cuenta con la verificación en dos pasos	#
-hbui.FirstTimeSignInRoute.altSignInList3=Accede a logros, Realms, servidores y al Marketplace 	#### {StrContains="Realms"}
-hbui.FirstTimeSignInRoute.altSignInList3PS=Accede a Realms, servidores y al Marketplace 	#### {StrContains="Realms"}
-hbui.FirstTimeSignInRoute.altSignInPrompt=Inicia sesión o regístrate gratis para desbloquear estas funciones y mucho más:	#
-hbui.FirstTimeSignInRoute.altSignInPromptMobile=Inicia sesión o regístrate gratis para guardar tu progreso, conseguir logros, acceder a los servidores y mucho más	#
 hbui.FirstTimeSignInRoute.createAccountPrompt=¿No tienes una cuenta de Microsoft? ¡Crea una gratis!	#
-hbui.FirstTimeSignInRoute.incentivizedSignInButton=Inicia sesión y consigue mi capa	#
-hbui.FirstTimeSignInRoute.incentivizedSignInPrompt=¡Inicia sesión con tu cuenta de Microsoft para elegir una capa gratis que podrás conservar para siempre! No solo eso, sino que también tendrás acceso a toda la gama de funciones en línea, como:	#
 hbui.FirstTimeSignInRoute.laterButton=Quizás más tarde	#
 hbui.FirstTimeSignInRoute.notNowButton=Ahora no	#
 hbui.FirstTimeSignInRoute.signInButton=Iniciar sesión ahora	#
@@ -1596,7 +1589,7 @@ hbui.FirstTimeSignInRoute.signInList4=Poder acceder a tu contenido y tus persona
 hbui.FirstTimeSignInRoute.signInPrompt=Inicia sesión con tu cuenta de Microsoft para desbloquear varias características, entre las que se incluyen las siguientes:	#
 hbui.FriendList.favoriteFriendsNumberMultiple=%1$s amigos favoritos	#
 hbui.FriendList.favoriteFriendsNumberSingular=%1$s amigo favorito	#
-hbui.FriendList.favorites=Favoritos  (%1$s/%2$s)	#
+hbui.FriendList.favorites=Favoritos (%1$s/%2$s)	#
 hbui.FriendList.friends=Amigos (%1$s/%2$s)	#
 hbui.FriendList.mutualFriendsFriendsNumberMultiple=%1$s amigos	#
 hbui.FriendList.mutualFriendsFriendsNumberSingular=%1$s amigo	#
@@ -1658,11 +1651,6 @@ hbui.FriendsDrawer.notLoggedInMessage.text=Necesitas una cuenta para jugar en l�
 hbui.FriendsDrawer.notLoggedInMessage.title=No has iniciado sesión	#
 hbui.FriendsDrawer.numberOfFriends=Tienes %1$s amigos en línea	#
 hbui.FriendsDrawer.openDrawerShortcutInputLegend=Amigos	#
-hbui.FriendsDrawer.OwnProfileModal.myProfile=Mi perfil	#
-hbui.FriendsDrawer.OwnProfileModal.showAway=Mostrar como ausente	#
-hbui.FriendsDrawer.OwnProfileModal.showBusy=Mostrar como ocupado	#
-hbui.FriendsDrawer.OwnProfileModal.showOffline=Mostrar como sin conexión	#
-hbui.FriendsDrawer.OwnProfileModal.title=Ajustes del jugador	#
 hbui.FriendsDrawer.title=Amigos	#
 hbui.FriendsDrawer.titleWithAmount=Amigos (%1$s)	#
 hbui.FriendsDrawer.you=Tú	#
@@ -1688,6 +1676,9 @@ hbui.general.multiplayerPermissionBanner.link=Más información	#
 hbui.general.multiplayerPermissionBanner.text=No puedes crear mundos multijugador.	#
 hbui.general.multiplayerPermissionBanner.textExternal=No puedes crear mundos multijugador	#
 hbui.general.multiplayerPermissionBanner.textParental=No puedes crear mundos multijugador debido a una restricción del control parental.	#
+hbui.GenericErrorMessageModal.closeButton=Cerrar		#### Close button shown in a modal {MaxLength="40"}
+hbui.GenericErrorMessageModal.text=Vuelve a intentarlo más tarde.		#### Please re try logging in to the platform network. {MaxLength="70"}
+hbui.GenericErrorMessageModal.title=Algo ha salido mal		#### Something went wrong while logging into the platform network. {MaxLength="40"}
 hbui.GetMoreButton.buttonNarration=Botón	#
 hbui.GetMoreButton.inputLegend=Descubrir	#
 hbui.GuidedCreateWorldRoute.title=Creación de mundos guiada	#
@@ -1906,6 +1897,12 @@ hbui.MultiplayerPrivilegeBlockedModal.descriptionOnline=No puedes jugar en el mo
 hbui.MultiplayerPrivilegeBlockedModal.descriptionParental=No puedes jugar en Realms debido a una restricción del control parental. Consulta y gestiona los ajustes del modo multijugador con la opción «Seguridad en línea» del control parental. 	#### {StrContains="Realms"}
 hbui.MultiplayerPrivilegeBlockedModal.learnMore=Más información	#
 hbui.MultiplayerPrivilegeBlockedModal.title=¡Necesitas permiso!	#
+hbui.MultiplayerTab.PlayerAccessPanel.manageMembersButton=Gestionar miembros    	#### String for button that takes a realm owner to the settings page for managing the members of their Realm
+hbui.MultiplayerTab.PlayerAccessPanel.manageMembersLegend=Gestionar miembros    	#### String for button that takes a realm owner to the settings page for managing the members of their Realm
+hbui.MultiplayerTab.PlayerAccessPanel.title=Acceso de jugador   	#### Heading for settings section that displays settings for what type of player can join/access the Realm
+hbui.NoInternetModal.button=Cerrar 	#### Close as in closing a modal. {MaxLength="50"}
+hbui.NoInternetModal.text=No tienes conexión. Comprueba tu conexión a internet para acceder a las funciones online.		####  Player is not connected to the internet, he is offline. {MaxLength="340"}
+hbui.NoInternetModal.title=Sin internet		####  Player is not connected to the internet. {MaxLength="40"}
 hbui.Notifications.achievementsDisabled=No puedes obtener logros.	#
 hbui.Notifications.changeSkinLink=Cambiar aspecto	#
 hbui.Notifications.experimentsWarning.informationMessage=Los experimentos son nuevas características potenciales. Ten cuidado, ya que las cosas podrían romperse.	#
@@ -1917,12 +1914,12 @@ hbui.Notifications.inTrialMode=Algunos ajustes están bloqueados porque estás e
 hbui.Notifications.multiplayerWarnings.checkInternetConnection=No tienes conexión a Internet. Conéctate para que tus amigos puedan unirse a tus mundos en el modo multijugador.	#
 hbui.Notifications.multiplayerWarnings.multiplayerPrivilegesBlocked=No puedes jugar al modo multijugador en línea debido a la configuración de tu cuenta de Microsoft. Asegúrate de que tus ajustes de seguridad en línea te permiten jugar en modo multijugador. Visita aka.ms/MCMultiplayerHelp y consulta las instrucciones para cambiar estos ajustes.	#
 hbui.Notifications.multiplayerWarnings.multiplayerPrivilegesBlockedOnConsole=No puedes jugar al modo multijugador en línea debido a la configuración de tu cuenta de Microsoft. Asegúrate de que tus ajustes de seguridad en línea te permiten jugar en clubes y en modo multijugador y de que tienes una suscripción activa Xbox a Game Pass. Visita aka.ms/MCMultiplayerHelp y consulta las instrucciones para cambiar estos ajustes.	###disable_3rd_party_console_resource_pack_check
-hbui.Notifications.multiplayerWarnings.nintendoDisconnectedThirdPartyWithSubscription=No tienes conexión a los servicios de Nintendo Switch Online, por lo que tus amigos de Nintendo no podrán unirse a tu mundo multijugador. Inicia sesión en Nintendo Switch Online para jugar con amigos.	#
+hbui.Notifications.multiplayerWarnings.nintendoDisconnectedThirdPartyWithSubscription=Inicia sesión en Nintendo Switch Online para jugar con amigos y acceder a las funciones multijugador.		#### Warning tha tis shown when in the Multiplayer tab in the CreateNewWorld/EditWorld screens when not logged into a Nintendo account. This text wraps to new lines in the banner. ### {StrContains="Nintendo Switch Online"}
 hbui.Notifications.multiplayerWarnings.nintendoLocalMultiplayerPrivilegesBlockedThirdParty=No puedes jugar al modo multijugador local debido a una restricción del control parental. Consulta y gestiona los ajustes de multijugador con la opción «Comunicación con otros usuarios» en el control parental.	#
 hbui.Notifications.multiplayerWarnings.nintendoMultiplayerPrivilegesBlockedThirdParty=No puedes jugar al modo multijugador local debido a una restricción del control parental. Consulta y gestiona los ajustes de multijugador con la opción «Comunicación con otros usuarios» en el control parental.	#
 hbui.Notifications.multiplayerWarnings.nonMultiplayerSkinEquipped=Tu aspecto actual no está permitido en el multijugador.	#
 hbui.Notifications.multiplayerWarnings.playstationCrossPlatformDisabled=Activa el juego multiplataforma en la sección del perfil del menú de configuración para jugar con amigos en otras plataformas.	#
-hbui.Notifications.multiplayerWarnings.playstationDisconnectedThirdPartyWithSubscription=No te has conectado a PlayStation™Network, por lo que tus amigos de PlayStation™Network no podrán unirse a tu mundo multijugador. Inicia sesión en PlayStation™Network para jugar con tus amigos. 	#### CertRequirement: [PlayStation™Network]
+hbui.Notifications.multiplayerWarnings.playstationDisconnectedThirdPartyWithSubscription=Inicia sesión en PlayStation™Network para jugar con amigos y acceder a las funciones multijugador.		#### Warning that is shown in the Multiplayer tab in the CreateNewWorld/EditWorld screens when not logged into the Playstation network. This text wraps to new lines in the banner.  CertRequirement: [PlayStation™Network]
 hbui.Notifications.multiplayerWarnings.playstationMultiplayerPrivilegesBlockedThirdParty=No puedes jugar al modo multijugador local debido a una restricción del control parental. Consulta y gestiona los ajustes de multijugador con la opción «Comunicación con otros usuarios» en el control parental.	#
 hbui.Notifications.notEnoughStorage=¡Ya casi no te queda espacio de almacenamiento! Minecraft ha limitado el acceso a esta función hasta que liberes más espacio.	#
 hbui.Notifications.readMoreLink=Leer más	#
@@ -2088,6 +2085,7 @@ hbui.PlayerOptionsModal.optionsEnumeration= %1$s de %2$s	#
 hbui.PlayerOptionsModal.optionsTitle=Opciones de la cuenta	#
 hbui.PlayerOptionsModal.privacyAndSafety=Privacidad y seguridad en línea	#
 hbui.PlayerOptionsModal.removeFriend=Eliminar amigo	#
+hbui.PlayerOptionsModal.removeFromFavorites=Quitar de favoritos		####Button text for removing a profile from favorite list {MaxLength=35}
 hbui.PlayerOptionsModal.report=Informar	#
 hbui.PlayerOptionsModal.setFeaturedScreenshot=Establecer captura de pantalla destacada	#
 hbui.PlayerOptionsModal.shareMyProfile=Compartir mi perfil	#
@@ -2110,9 +2108,12 @@ hbui.PlayerPermissionsRoute.Details.ability.mine=Perforar	#
 hbui.PlayerPermissionsRoute.Details.ability.openContainers=Abrir contenedores	#
 hbui.PlayerPermissionsRoute.Details.ability.operatorCommands=Comandos de operador	#
 hbui.PlayerPermissionsRoute.Details.ability.teleport=Teletransportarse	#
-hbui.PlayerPermissionsRoute.Details.kickButton=Expulsar a %1$s	#
+hbui.PlayerPermissionsRoute.Details.kickButton=Expulsar a %1$s del mundo     	####Text for the button that appears in the Player Permissions Screen - %1$s is the player name {maxLength=40}
 hbui.PlayerPermissionsRoute.Details.kickButton.inputLegend=Seleccionar	#
+hbui.PlayerPermissionsRoute.Details.notification.kickCommandFailedFlag=No se ha podido eliminar a este jugador.   	####Text for snackbar that appears when trying to kick another player fails {maxLength=60}
+hbui.PlayerPermissionsRoute.Details.notification.selectedPlayerPermissionsChangedFlag=Permisos de jugador actualizados por otro operador.   	####Text for snackbar that appears when another player has updated the selected player's permissions {maxLength=60}
 hbui.PlayerPermissionsRoute.Details.optionEnumeration=%1$s de %2$s	#
+hbui.PlayerPermissionsRoute.Details.playerIdInvalidFlag=No se han podido cargar los permisos para este jugador.   	####Text for empty state that appears when you are trying to load the permissions for an invalid ID {maxLength=60}
 hbui.PlayerPermissionsRoute.Details.roleDropdown.description.custom=Un conjunto personalizado de permisos para este jugador	#
 hbui.PlayerPermissionsRoute.Details.roleDropdown.description.member=Los miembros pueden construir y excavar, así como atacar a jugadores y criaturas. También pueden interactuar con objetos y entidades.	#
 hbui.PlayerPermissionsRoute.Details.roleDropdown.description.operator=Los operadores pueden teletransportarse y usar comandos. Además, cuentan con todos los permisos de los miembros.	#
@@ -2128,8 +2129,14 @@ hbui.PlayerPermissionsRoute.EnableCheatsModal.title=Los trucos están desactivad
 hbui.PlayerPermissionsRoute.KickPlayerModal.backButton=Volver	#
 hbui.PlayerPermissionsRoute.KickPlayerModal.description=¿Seguro que quieres expulsar a %1$s de este mundo? No podrá volver a unirse a esta sesión.	#
 hbui.PlayerPermissionsRoute.KickPlayerModal.inputLegend=Seleccionar	#
-hbui.PlayerPermissionsRoute.KickPlayerModal.kickButton=Expulsar a %1$s	#
+hbui.PlayerPermissionsRoute.KickPlayerModal.kickButton=Expulsar a %1$s del mundo     	####Button that appears in modal when trying to kick player from a world in the new PP screen - %1$s is the player name {maxLengtah=40}
 hbui.PlayerPermissionsRoute.KickPlayerModal.title=¿Expulsar al jugador?	#
+hbui.PlayerPermissionsRoute.OperatorRevokedErrorModal.closeButton=Cerrar    	####Close button for modal that appears when operator permissions have been revoked for the current player {MaxLength=40}
+hbui.PlayerPermissionsRoute.OperatorRevokedErrorModal.description=Tus permisos de operador se han revocado y ya no puedes editar los permisos de otros jugadores.    	####Description for modal that appears when operator permissions have been revoked for the current player {MaxLength=600}
+hbui.PlayerPermissionsRoute.OperatorRevokedErrorModal.title=Permisos de operador revocados  	####Title for modal that appears when operator permissions have been revoked for the current player {MaxLength=40}
+hbui.PlayerPermissionsRoute.PlayerLeftErrorModal.closeButton=Cerrar    	####Close button for modal that appears when the selected player has left the world {MaxLength=40}
+hbui.PlayerPermissionsRoute.PlayerLeftErrorModal.description=%1$s ha abandonado el mundo y no se pueden cambiar sus permisos.    	####Description for modal that appears when the selected player has left the world {MaxLength=600}
+hbui.PlayerPermissionsRoute.PlayerLeftErrorModal.title=El jugador se ha ido  	####Title for modal that appears when the selected player has left the world {MaxLength=40}
 hbui.PlayerPermissionsRoute.RemoveOperatorLevelModal.backButton=Volver	#
 hbui.PlayerPermissionsRoute.RemoveOperatorLevelModal.description=Al reducir el nivel de permiso de este jugador, se eliminará su acceso a los comandos de operador. Los propietarios pueden restablecer los permisos en cualquier momento.	#
 hbui.PlayerPermissionsRoute.RemoveOperatorLevelModal.inputLegend=Seleccionar	#
@@ -2145,7 +2152,7 @@ hbui.PlayerPermissionsRoute.SideMenu.role.custom=Personalizar	#
 hbui.PlayerPermissionsRoute.SideMenu.role.member=Miembro	#
 hbui.PlayerPermissionsRoute.SideMenu.role.operator=Operador	#
 hbui.PlayerPermissionsRoute.SideMenu.role.visitor=Visitante	#
-hbui.PlayerPermissionsRoute.title=Permisos de jugador	#
+hbui.PlayerPermissionsRoute.title=Permisos de jugador para %1$s		#### %s is a string that represents the name of the world and should not be localized. This is the title of the screen Player Permissions OreUI version. Please take into consideration that the max length is not very accurate because it depends on a user interaction {MaxLength=30}
 hbui.PlayersOnlineInWorld.full=Lleno	#
 hbui.PlayerTag.hint=Pulsa para acceder al perfil del jugador	#
 hbui.PlayerTag.role=Botón	#
@@ -2162,6 +2169,8 @@ hbui.PlayScreen.allWorlds.emptyStateStartFromTemplateButton=Empezar desde planti
 hbui.PlayScreen.allWorlds.emptyStateText=Crea un nuevo mundo de cero o crea un mundo a partir de una plantilla.	#
 hbui.PlayScreen.allWorlds.emptyStateText.trialMode=Crear un mundo nuevo desde cero.	#
 hbui.PlayScreen.allWorlds.emptyStateTitle=¡No hay ningún mundo... aún!	#
+hbui.PlayScreen.AllWorldsTab.ButtonHeader.createFromContent=Crear a partir de...		#### Button text that leads to a page where players can create a world from some form of content, ex. Create from Template or Create from Add-On {MaxLength=30}
+hbui.PlayScreen.AllWorldsTab.ButtonHeader.createFromContentNarration=Explora el contenido creado por otros compis creadores. Utiliza plantillas y complementos ya existentes o cómpralos en el Marketplace. 		#### Narration only, longer description for a button that says "Create from..." implying a player would create a world from some existing content {MaxLength=1000}
 hbui.PlayScreen.AllWorldsTab.ButtonHeader.createFromTemplate=Crear desde plantilla	#
 hbui.PlayScreen.AllWorldsTab.ButtonHeader.createFromTemplateNarration=Explora los mundos creados por los creadores asociados. Utiliza una plantilla que ya existe o compra una en el Marketplace.	#
 hbui.PlayScreen.AllWorldsTab.ButtonHeader.createNewWorld=Crear mundo nuevo	#
@@ -2207,8 +2216,10 @@ hbui.PlayScreen.genericError.servers.title=No se han podido cargar los servidore
 hbui.PlayScreen.guestAccountMessage.bannerLogIn=Iniciar sesión	#
 hbui.PlayScreen.guestAccountMessage.bannerLogInMicrosoft=Inicia sesión o regístrate en Microsoft	#
 hbui.PlayScreen.guestAccountMessage.buttonLogInMicrosoft=Inicia sesión en una cuenta de Microsoft	#
-hbui.PlayScreen.GuestAccountMessage.nintendo.text=Inicia sesión en una cuenta Nintendo para ver qué hay aquí.	#
-hbui.PlayScreen.GuestAccountMessage.playstation.text=Inicia sesión en PlayStation™Network para ver qué hay aquí.		#### CertRequirement: [PlayStation™Network]
+hbui.PlayScreen.GuestAccountMessage.nintendo.button=Log in to a Nintendo Account 	#### Button that is shown in an empty state when the PlayScreen when the player is not logged into a NintendoAccount. {StrContains="Nintendo Account"} {MaxLength="50"}
+hbui.PlayScreen.GuestAccountMessage.nintendo.text=Inicia sesión en una cuenta Nintendo para ver qué hay aquí.	####  Text that is shown in an empty state when the PlayScreen when the player is not logged into a NintendoAccount. {StrContains="Nintendo Account"} {MaxLength="150"}
+hbui.PlayScreen.GuestAccountMessage.playstation.button=Iniciar sesión en PlayStation™Network		#### Button that is shown in an empty state when the PlayScreen when the player is not logged into the Playstation network. CertRequirement: [PlayStation™Network] {MaxLength="50"}
+hbui.PlayScreen.GuestAccountMessage.playstation.text=Inicia sesión en PlayStation™Network para ver qué se cuece por aquí.		#### Text that is shown in an empty state when the PlayScreen when the player is not logged into the Playstation network. CertRequirement: [PlayStation™Network] {MaxLength="150"}
 hbui.PlayScreen.guestAccountMessage.realmsNoMicrosoftAccount=Necesitas una cuenta de Microsoft para jugar en Realms. 	#### {StrContains="Realms"}
 hbui.PlayScreen.guestAccountMessage.realmsNoPlatformAccountNintendo=Necesitas una cuenta Nintendo para jugar en Realms 	#### {StrContains="Realms"}
 hbui.PlayScreen.guestAccountMessage.realmsNoPlatformAccountPlaystation=Necesitas una cuenta de PlayStation™Network para jugar en Realms 	#### CertRequirement: [PlayStation™Network] {StrContains="Realms"}
@@ -2218,7 +2229,6 @@ hbui.PlayScreen.guestAccountMessage.serversNoMicrosoftAccount=Necesitas una cuen
 hbui.PlayScreen.guestAccountMessage.serversNoPlatformAccountNintendo=Necesitas una cuenta Nintendo para jugar en los servidores	#
 hbui.PlayScreen.guestAccountMessage.serversNoPlatformAccountPlaystation=Necesitas una cuenta de PlayStation™Network para jugar en los servidores 	#### CertRequirement: [PlayStation™Network]
 hbui.PlayScreen.guestAccountMessage.serversPlaystationGuest=Necesitas una cuenta de Microsoft para jugar en los servidores.	#
-hbui.PlayScreen.GuestAccountMessage.title=No has iniciado sesión	#
 hbui.PlayScreen.importWorldErrorModal.close=Cerrar	#
 hbui.PlayScreen.importWorldErrorModal.unknownError.body=Se ha producido un problema al importar este mundo.	#
 hbui.PlayScreen.importWorldErrorModal.unknownError.title=Se ha producido un error	#
@@ -2286,6 +2296,7 @@ hbui.PlayScreen.outOfStorageModal.close=Cerrar	#
 hbui.PlayScreen.outOfStorageModal.closeInputLegend=Cerrar	#
 hbui.PlayScreen.outOfStorageModal.title=No queda espacio de almacenamiento	#
 hbui.PlayScreen.PlatformMultiplayerDisabledMessage.text=Para acceder a las funciones sociales, activa el modo multijugador en tu cuenta.	#
+hbui.PlayScreen.PlatformMultiplayerDisabledMessage.textForPlayStation=Las funciones de comunicación están deshabilitadas en tu cuenta de PlayStation™Network. Para usarlas, habilítalas en tu cuenta de PlayStation™Network.		#### This is a communication requirement for PS. CertRequirement: [PlayStation™Network] {MaxLength=25}
 hbui.PlayScreen.PlatformMultiplayerDisabledMessage.title=¡No puedes pasar!	#
 hbui.PlayScreen.realms=Realms 	#### {StrContains="Realms"}
 hbui.PlayScreen.RealmsBannedMessage.Banned.bodyFirstParagraph=Se te ha expulsado de los servicios de Realms de Minecraft. Esto significa que no podrás jugar ni unirte a Realms.		#### {StrContains="Minecraft"} {StrContains="Realms"}
@@ -2867,6 +2878,7 @@ hbui.RealmsStories.feed.fullImageRole=Pantalla	#
 hbui.RealmsStories.feed.gamerTag=Gamertag. %1$s de %2$s	#
 hbui.RealmsStories.feed.guestAccountNotificationBanner.line1=Los miembros del Realm tienen acceso a más funciones de Historias de Realm.	#
 hbui.RealmsStories.feed.guestAccountNotificationBanner.line2=Pídele al propietario del Realm una invitación para participar.	#
+hbui.RealmsStories.feed.inRealm=Jugando en Realm    	#### Indication that the player/user is currently playing on the Realm(Product name for hosted server). {MaxLength=100}{StrContains="Realm"}
 hbui.RealmsStories.feed.newHoursLogged=%1$s horas nuevas registradas	#
 hbui.RealmsStories.feed.newMinutesLogged=%1$s minutos nuevos registrados	#
 hbui.RealmsStories.feed.offline=Desconectado	#
@@ -3005,9 +3017,10 @@ hbui.RealmsStories.likePost=Dar me gusta	#
 hbui.RealmsStories.members=Miembros	#
 hbui.RealmsStories.members.allMembers=Todos los miembros	#
 hbui.RealmsStories.members.enumeration=%1$s de %2$s	#
-hbui.RealmsStories.members.filter.title=Opciones de filtrado	#
+hbui.RealmsStories.members.filter.title=Filtrar miembros del Realm	#
 hbui.RealmsStories.members.fromAtoZ=De la A a la Z	#
 hbui.RealmsStories.members.fromZtoA=De la Z a la A	#
+hbui.RealmsStories.members.inRealmMembers=Miembros que juegan en Realm		#### a option choice to filter members list by those who are currently playing in the Realm(Product name for host server). {MaxLength=60}{StrContains="Realm"}
 hbui.RealmsStories.members.leastRecentlyPlayed=Jugado menos recientemente	#
 hbui.RealmsStories.members.manage=Gestionar miembros	#
 hbui.RealmsStories.members.member=Miembro	#
@@ -3026,7 +3039,7 @@ hbui.RealmsStories.members.searchResult.hint.oneResult=Un resultado de búsqueda
 hbui.RealmsStories.members.searchResult.name=Resultado de búsqueda	#
 hbui.RealmsStories.members.searchResult.role=Pantalla	#
 hbui.RealmsStories.members.section=Sección	#
-hbui.RealmsStories.members.sort.title=Opciones de ordenación	#
+hbui.RealmsStories.members.sort.title=Ordenar miembros del Realm	#
 hbui.RealmsStories.members.visitor=Visitante	#
 hbui.RealmsStories.members.warning=Este Realm tiene demasiados miembros como para enumerarlos a todos	#
 hbui.RealmsStories.members.warning.optedOut=Este Realm tiene demasiados miembros como para enumerar a todos los que se han excluido	#
@@ -3451,6 +3464,7 @@ hbui.SignInSavePurchasesRoute.signInList1=Accede a tu contenido adquirido en Mar
 hbui.SignInSavePurchasesRoute.signInList2=Usa tus personajes personalizados en todas las plataformas	#
 hbui.SignInSavePurchasesRoute.signInList3=Guarda las compras para no perderlas si le pasara algo a tu equipo	#
 hbui.SignInSavePurchasesRoute.signInPrompt=¿Has descargado contenido o usado minecoins en el Marketplace? Inicia sesión ahora para compartir tus compras entre plataformas.	#
+hbui.SignInToPlatformNetwork.link=Haz clic aquí para iniciar sesión 	#### Link that is shown next to playstationDisconnectedThirdPartyWithSubscription or nintendoDisconnectedThirdPartyWithSubscription that allows the player to log into the platform network.
 hbui.SignInWorldsFriendsServersRoute.createAccountPrompt=¿No tienes una cuenta de Microsoft? ¡Crea una gratis!	#
 hbui.SignInWorldsFriendsServersRoute.laterButton=Quizás más tarde	#
 hbui.SignInWorldsFriendsServersRoute.signInButton=Inicia sesión ahora	#
@@ -3475,6 +3489,8 @@ hbui.StartFromTemplateRoute.feedbackPanel.button=Enviar opinión	#
 hbui.StartFromTemplateRoute.feedbackPanel.description=Nos gustaría saber qué te parece este diseño nuevo. Ten en cuenta que todavía estamos trabajando en estas funciones, por lo que algunas podrían no estar disponibles.	#
 hbui.StartFromTemplateRoute.feedbackPanel.inputLegend=Seleccionar	#
 hbui.StartFromTemplateRoute.feedbackPanel.title=¡Te damos la bienvenida a la vista previa de un diseño!	#
+hbui.StartFromTemplateRoute.getMoreButton.AddOn.body=Encuentra cientos de plantillas adicionales y complementos en el Marketplace		#### Subtext on a button that leads to a store page with more content than what is shown on the current screen {MaxLength=210}
+hbui.StartFromTemplateRoute.getMoreButton.AddOn.title=Descubre nuevas plantillas y complementos		#### Main button text that leads to a store page with more content than what is shown on the current screen {MaxLength=50}
 hbui.StartFromTemplateRoute.getMoreButton.body=Encuentra cientos de plantillas adicionales en el Marketplace	#
 hbui.StartFromTemplateRoute.getMoreButton.title=Descubrir nuevas plantillas	#
 hbui.StartFromTemplateRoute.ImportModal.title=Importando contenido	#
@@ -3482,6 +3498,8 @@ hbui.StartFromTemplateRoute.InitializationModal.message=Conectando...	#
 hbui.StartFromTemplateRoute.InitializationModal.title=Iniciando la descarga	#
 hbui.StartFromTemplateRoute.InstallModal.message=Instalación iniciada	#
 hbui.StartFromTemplateRoute.InstallModal.title=Instalando contenido (2 de 2)	#
+hbui.StartFromTemplateRoute.MarketplacePass.AddOn.description=Ve un paso más allá con las plantillas del mundo y los complementos para suscriptores del Marketplace Pass. 	#### Subtext under the title for a screen displaying content from the Marketplace Pass that players can use to create a world {MaxLength=230}{StrContains="Marketplace Pass"}
+hbui.StartFromTemplateRoute.MarketplacePass.AddOn.title=Marketplace Pass		#### Main title for a screen displaying content from the Marketplace Pass that players can use to create a world {MaxLength=50}{StrContains="Marketplace Pass"}
 hbui.StartFromTemplateRoute.MarketplacePass.description=Ve un paso más allá con las plantillas del mundo para suscriptores del Marketplace Pass. 	#### {StrContains="Marketplace Pass"}
 hbui.StartFromTemplateRoute.MarketplacePass.imageNarration=Marketplace pass	#
 hbui.StartFromTemplateRoute.MarketplacePass.imageRole=Imagen	#
@@ -3552,6 +3570,7 @@ hbui.StartFromTemplateRoute.TemplateOperationsErrorModal.title.GenericError=Algo
 hbui.StartFromTemplateRoute.TemplateOperationsErrorModal.title.InsufficientStorage=Espacio de almacenamiento lleno	#
 hbui.StartFromTemplateRoute.TemplateOperationsErrorModal.title.MalformedZip=Error al importar	#
 hbui.StartFromTemplateRoute.title=Crear desde plantilla	#
+hbui.StartFromTemplateRoute.title.AddOn=Crear a partir de...		#### Title for a screen where players can select content for the base of a new world {MaxLength=45}
 hbui.StartFromTemplateRoute.TrialModeModal.button=Comprar Minecraft	#
 hbui.StartFromTemplateRoute.TrialModeModal.message=Importa plantillas creadas por miles de jugadores y exporta las tuyas para compartirlas con el mundo.	#
 hbui.StartFromTemplateRoute.TrialModeModal.title=Desbloquear experiencia completa	#
@@ -3858,45 +3877,7 @@ hbui.Toggle.select=Seleccionar	#
 hbui.TreeView.collapse=Contraer	#
 hbui.TreeView.expand=Expandir	#
 hbui.TreeView.open=Abrir	#
-hbui.Accordion.closeInputLegend=Cerrar	#
-hbui.Accordion.openInputLegend=Abrir	#
-hbui.BackButton.back=Atrás	#
-hbui.BackButton.narration.backButton=Botón Atrás	#
-hbui.BaseDropdown.close=Cerrar	#
-hbui.BaseDropdown.enumeration=%1$s de %2$s	#
-hbui.BaseDropdown.open=Abrir	#
-hbui.BaseDropdown.selected=Seleccionado	#
-hbui.BaseDropdown.stateCollapsed=Contraído	#
-hbui.BaseDropdown.stateExpanded=Ampliado	#
-hbui.BaseDropdown.toggleElementType=Opción	#
-hbui.BaseSlider.currentValue=el valor actual es	#
-hbui.BaseSlider.elementType=control deslizante	#
-hbui.BaseSlider.maxValueIs=el valor máximo es	#
-hbui.BaseSlider.minValueIs=el valor mínimo es	#
-hbui.BaseSwitch.elementType=Conmutador	#
-hbui.BaseSwitch.narrationDisabled=Desactivar	#
-hbui.BaseSwitch.off=No	#
-hbui.BaseSwitch.on=Sí	#
-hbui.BaseSwitch.toggle=Cambiar	#
-hbui.BaseTextField.addedNarration=Agregadas	#
-hbui.BaseTextField.deselect=Deseleccionar	#
-hbui.BaseTextField.hint=Estás en una entrada de texto. Escribe para introducir %1$s	#
-hbui.BaseTextField.invalidNarration=No válido	#
-hbui.BaseTextField.removedNarration=Eliminado	#
-hbui.BaseTextField.replacedNarration=Reemplazado por	#
-hbui.BaseTextField.select=Seleccionar	#
-hbui.BaseTextField.selected=Seleccionado	#
-hbui.DropdownItem.elementType=Objeto	#
-hbui.DropdownItem.narrationComponentType=Opción	#
-hbui.DropdownItem.select=Seleccionar	#
-hbui.DropdownItem.selected=Seleccionado	#
-hbui.DropdownItem.unselected=No seleccionado	#
-hbui.ScrollView.loadingState=Cargando	#
-hbui.ScrollView.narrationScrollViewComponentType=Contenido	#
-hbui.TitleBar.Buttons.Back.inputLegend=Atrás	#
-hbui.TitleBar.Buttons.Back.narration=Botón Atrás	#
-hbui.TitleBar.Buttons.Close.inputLegend=Cerrar	#
-hbui.TitleBar.Buttons.Close.narration=Botón Cerrar	#
+hbui.Sample.hello=¡Hola, %1$s!	#
 hbui.Accordion.closeInputLegend=Cerrar	#
 hbui.Accordion.openInputLegend=Abrir	#
 hbui.BackButton.back=Atrás	#
@@ -3930,6 +3911,45 @@ hbui.DropdownItem.narrationComponentType=Opción	#
 hbui.DropdownItem.select=Seleccionar	#
 hbui.DropdownItem.selected=Seleccionado	#
 hbui.DropdownItem.unselected=Sin seleccionar	#
+hbui.ScrollView.loadingState=Cargando	#
+hbui.ScrollView.narrationScrollViewComponentType=Contenido	#
+hbui.TitleBar.Buttons.Back.inputLegend=Atrás	#
+hbui.TitleBar.Buttons.Back.narration=Botón Atrás	#
+hbui.TitleBar.Buttons.Close.inputLegend=Cerrar	#
+hbui.TitleBar.Buttons.Close.narration=Botón Cerrar	#
+hbui.Accordion.closeInputLegend=Cerrar	#
+hbui.Accordion.openInputLegend=Abrir	#
+hbui.BackButton.back=Atrás	#
+hbui.BackButton.narration.backButton=Botón Atrás	#
+hbui.BaseDropdown.close=Cerrar	#
+hbui.BaseDropdown.enumeration=%1$s de %2$s	#
+hbui.BaseDropdown.open=Abrir	#
+hbui.BaseDropdown.selected=Seleccionado	#
+hbui.BaseDropdown.stateCollapsed=Contraído	#
+hbui.BaseDropdown.stateExpanded=Ampliado	#
+hbui.BaseDropdown.toggleElementType=Opción	#
+hbui.BaseSlider.currentValue=el valor actual es	#
+hbui.BaseSlider.elementType=control deslizante	#
+hbui.BaseSlider.maxValueIs=el valor máximo es	#
+hbui.BaseSlider.minValueIs=el valor mínimo es	#
+hbui.BaseSwitch.elementType=Conmutador	#
+hbui.BaseSwitch.narrationDisabled=Desactivar	#
+hbui.BaseSwitch.off=No	#
+hbui.BaseSwitch.on=Sí	#
+hbui.BaseSwitch.toggle=Cambiar	#
+hbui.BaseTextField.addedNarration=Agregadas	#
+hbui.BaseTextField.deselect=Deseleccionar	#
+hbui.BaseTextField.hint=Estás en una entrada de texto. Escribe para introducir %1$s	#
+hbui.BaseTextField.invalidNarration=No válido	#
+hbui.BaseTextField.removedNarration=Eliminado	#
+hbui.BaseTextField.replacedNarration=Reemplazado por	#
+hbui.BaseTextField.select=Seleccionar	#
+hbui.BaseTextField.selected=Seleccionado	#
+hbui.DropdownItem.elementType=Objeto	#
+hbui.DropdownItem.narrationComponentType=Opción	#
+hbui.DropdownItem.select=Seleccionar	#
+hbui.DropdownItem.selected=Seleccionado	#
+hbui.DropdownItem.unselected=No seleccionado	#
 hbui.ScrollView.loadingState=Cargando	#
 hbui.ScrollView.narrationScrollViewComponentType=Contenido	#
 hbui.TitleBar.Buttons.Back.inputLegend=Atrás	#
