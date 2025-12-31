@@ -575,13 +575,14 @@ hbui.CreateNewWorld.behaviorPacks.noPacksAvailableTitle=No packs available
 hbui.CreateNewWorld.behaviorPacks.noPacksAvailableTitle.edu=No behavior packs available
 hbui.CreateNewWorld.behaviorPacks.packPriorityInfoMessage=If multiple packs make changes to the same asset, the changes from the highest-ranked pack will be applied.
 hbui.CreateNewWorld.behaviorPacks.tryAgainButton=Try again
+hbui.CreateNewWorld.behaviorPacksRemoveModal.activateTitle=Update World?
 hbui.CreateNewWorld.behaviorPacksRemoveModal.addPackLabel=Add the pack anyway
+hbui.CreateNewWorld.behaviorPacksRemoveModal.deactivateTitle=This is Dangerous!
 hbui.CreateNewWorld.behaviorPacksRemoveModal.dontAddPackLabel=Don’t add pack
 hbui.CreateNewWorld.behaviorPacksRemoveModal.keepLabel=Keep the pack
-hbui.CreateNewWorld.behaviorPacksRemoveModal.messageActivate=Adding a behavior pack might break your world.
-hbui.CreateNewWorld.behaviorPacksRemoveModal.messageDeactivate=Removing a behavior pack might break your world.
+hbui.CreateNewWorld.behaviorPacksRemoveModal.messageActivate=This world may not look or behave in the same way as non-modified worlds. You should save a copy of your world before continuing.
+hbui.CreateNewWorld.behaviorPacksRemoveModal.messageDeactivate=Adding or removing Packs after playing a world might break the world and cause you to lose what you created.
 hbui.CreateNewWorld.behaviorPacksRemoveModal.removeLabel=Remove the pack anyway
-hbui.CreateNewWorld.behaviorPacksRemoveModal.title=Are you sure?
 hbui.CreateNewWorld.cheats.commandBlocksDescription=Use commands to program these blocks
 hbui.CreateNewWorld.cheats.commandBlocksDescription.edu=Turning command blocks off may affect the use of certain features in your world.
 hbui.CreateNewWorld.cheats.commandBlocksTitle=Command blocks
@@ -713,6 +714,12 @@ hbui.CreateNewWorld.general.gameModeSurvivalDescription=Explore a mysterious wor
 hbui.CreateNewWorld.general.gameModeSurvivalLabel=Survival
 hbui.CreateNewWorld.general.gameModeTitle=Game mode
 hbui.CreateNewWorld.general.gameModeUnknownLabel=Unknown
+hbui.CreateNewWorld.general.hardcoreModeDescription=You can't respawn if you die. Good luck! You'll need it.
+hbui.CreateNewWorld.general.hardcoreModeTitle=Hardcore
+hbui.CreateNewWorld.general.makeInfiniteButton=Update to Infinite
+hbui.CreateNewWorld.general.makeInfiniteDescription=Turn your old 256x256 block world into an Infinite world. This will automatically make a backup of your old world.
+hbui.CreateNewWorld.general.makeInfiniteHeader=World size
+hbui.CreateNewWorld.general.makingInfiniteWorldProgressModal=Creating backup and Converting world
 hbui.CreateNewWorld.general.optOutButton=Go back to old design
 hbui.CreateNewWorld.general.projectHeader=Project
 hbui.CreateNewWorld.general.worldNamePlaceholder=My World
@@ -974,6 +981,7 @@ hbui.EditWorld.notificationToasts.exportedWorld=World exported successfully
 hbui.EditWorld.notificationToasts.packActivated=Pack activated
 hbui.EditWorld.notificationToasts.packDeactivated=Pack deactivated
 hbui.EditWorld.notificationToasts.saved=Saved
+hbui.EditWorld.notificationToasts.worldConverted=World updated
 hbui.EditWorld.playOnRealmsErrorModal.cannotConnectToRealm.message=We can't connect to the Realm right now. Please try again later.
 hbui.EditWorld.playOnRealmsErrorModal.cannotConnectToRealm.title=Unable to connect to Realm
 hbui.EditWorld.playOnRealmsErrorModal.closeButton=Close
@@ -1215,6 +1223,9 @@ hbui.Notifications.achievementsDisabled=You can’t earn achievements.
 hbui.Notifications.changeSkinLink=Change skin
 hbui.Notifications.experimentsWarning.informationMessage=Experiments are potential new features. Be careful as things might break.
 hbui.Notifications.freeSpace=Free space
+hbui.Notifications.hardcoreMode.advancedTab=Some settings are disabled because you selected hardcore mode.
+hbui.Notifications.hardcoreMode.cheatsTab=All cheats are disabled because you selected hardcore mode.
+hbui.Notifications.hardcoreMode.generalTab=Some settings are disabled because you selected hardcore mode when creating this world.
 hbui.Notifications.inTrialMode=Some settings are locked because you’re in a trial mode.
 hbui.Notifications.multiplayerWarnings.checkInternetConnection=You're not connected to the internet. Go online so your friends can join your multiplayer worlds.
 hbui.Notifications.multiplayerWarnings.multiplayerPrivilegesBlocked=You cannot play online multiplayer because of how your Microsoft Account is set up. Please ensure your online safety settings allow Multiplayer. See instructions for changing these settings at aka.ms/MCMultiplayerHelp.
@@ -1479,9 +1490,18 @@ hbui.PlayScreen.parentalPermissionMessage.helpButton=Help
 hbui.PlayScreen.parentalPermissionMessage.message=You no longer have permission to use this feature. Ask your parent to re-enable permission for this feature for you in their parent account.
 hbui.PlayScreen.parentalPermissionMessage.title=Parental permission needed
 hbui.PlayScreen.realms=Realms
-hbui.PlayScreen.RealmsTab.ButtonHeader.addRealm=Add a Realm server
-hbui.PlayScreen.RealmsTab.ButtonHeader.invitations=Invitations (%1$s)
-hbui.PlayScreen.RealmsTab.ButtonHeader.joinRealm=Join a Realm server
+hbui.PlayScreen.realmsTab.realmsOptionsModalMenu.addRealm=Add a Realms subscription
+hbui.PlayScreen.realmsTab.realmsOptionsModalMenu.joinRealm=Join an existing Realm
+hbui.PlayScreen.realmsTab.realmsOptionsModalMenu.optionsEnumeration=%1$s of %2$s
+hbui.PlayScreen.realmsTab.realmsOptionsModalMenu.title=Options
+hbui.PlayScreen.realmsTab.sideMenu.addOrJoinRealm=Add/join Realm Server
+hbui.PlayScreen.realmsTab.sideMenu.expired=Expired
+hbui.PlayScreen.realmsTab.sideMenu.externalServer=Other Server (%1$s)
+hbui.PlayScreen.realmsTab.sideMenu.inputLegend=Open
+hbui.PlayScreen.realmsTab.sideMenu.invitations=Invitations (%1$s)
+hbui.PlayScreen.realmsTab.sideMenu.narration.addOrJoinRealm=Add/join Realm
+hbui.PlayScreen.realmsTab.sideMenu.narration.buttonSiblings=Button %1$s of %2$s
+hbui.PlayScreen.realmsTab.sideMenu.narrationRoleMenu=Open
 hbui.PlayScreen.select=Select
 hbui.PlayScreen.serverCapacity.fullLabel=Full
 hbui.PlayScreen.ServerPing.highPing=High ping
@@ -1521,6 +1541,7 @@ hbui.PlayScreen.serverTab.joinServerModal.body=During online play you may be exp
 hbui.PlayScreen.serverTab.joinServerModal.proceed=Proceed
 hbui.PlayScreen.serverTab.joinServerModal.title=Online play is not rated
 hbui.PlayScreen.serverTab.narrationRoleGroup=Group
+hbui.PlayScreen.serverTab.narrationRoleMenu=Open
 hbui.PlayScreen.serverTab.narrationRoleTextBlock=Text block
 hbui.PlayScreen.serverTab.narrationScreen=%1$s screen
 hbui.PlayScreen.serverTab.narrationTitleActivities=Server Activities
@@ -1747,7 +1768,70 @@ hbui.RealmsNewStoryRoute.removeScreenshotImage=Remove screenshot image
 hbui.RealmsNewStoryRoute.selectScreenshot=Select screenshot
 hbui.RealmsNewStoryRoute.selectScreenshotOptional=Select screenshot (optional)
 hbui.RealmsNewStoryRoute.textBoxPlaceholder=Write your story...
-hbui.RealmsPDPScreen.title=Choose Your Plan
+hbui.RealmsPDPFAQAccordion.clickToExpand=Click to expand
+hbui.RealmsPDPFAQAccordion.enumeration=%1$s of %2$s
+hbui.RealmsPDPFAQAccordion.textBlock=Textblock
+hbui.RealmsPDPScreen.FAQ.Cost.description1=You can subscribe to a Realms plan:  ### {StrContains="Realms"}
+hbui.RealmsPDPScreen.FAQ.Cost.description2=Realms Core plan: %1$s per month. Add infinite members, play online with 2 other players at the same time.   ### {StrContains="Realms"}
+hbui.RealmsPDPScreen.FAQ.Cost.description3=Realms Plus plan: %1$s per month. Add infinite members, play online with 10 other players at the same time. Plus, enjoy over 150 pieces of Marketplace content from the Marketplace Pass catalog for free.   ### {StrContains="Realms"}
+hbui.RealmsPDPScreen.FAQ.Cost.title=How much does a Realm cost? ### {StrContains="Realm"}
+hbui.RealmsPDPScreen.FAQ.Expiry.description=Your worlds are yours to keep. You have 18 months to download them to your device after your subscription expires. If you resubscribe within that time, you will regain access to your Realm just as you left it.   ### {StrContains="Realm"}
+hbui.RealmsPDPScreen.FAQ.Expiry.title=What happens to the worlds on my Realm when my subscription expires?  ### {StrContains="Realm"}
+hbui.RealmsPDPScreen.FAQ.Friends.description=The people you invite(members) don’t need to purchase a Realms subscription to play on your Realm. You can invite any Minecraft player to join and play in your Realm for free.    ### {StrContains="Realms"} {StrContains="Realm"}
+hbui.RealmsPDPScreen.FAQ.Friends.title=Do my friends need to purchase a Realms subscription to play on my Realm?    ### {StrContains="Realms"} {StrContains="Realm"}
+hbui.RealmsPDPScreen.FAQ.header=Frequently asked questions
+hbui.RealmsPDPScreen.FAQ.HowMany.description=You can store up to 3 worlds on your Realm at one time. Activate any one of them to make that world playable. Only one world is playable at a time.    ### {StrContains="Realm"}
+hbui.RealmsPDPScreen.FAQ.HowMany.title=How many worlds can I have on my Realm?  ### {StrContains="Realm"}
+hbui.RealmsPDPScreen.FAQ.PersonalServer.description=We put your world on a super-computer, with a huge amount of speed and power. We keep the computer running all the time so you can play that world whenever you and your friends want. We protect your world from getting corrupted by saving it automatically all the time. You control who connects to the world. How you play with it is up to you. (the sever will do all the heavy lifting)
+hbui.RealmsPDPScreen.FAQ.PersonalServer.title=What is a personal server?
+hbui.RealmsPDPScreen.FAQ.Realms.description=Realms are small personal servers to host your Minecraft world. Unlike a regular multiplayer session, Realms are always online, so you don’t have to be there for your friends to play. Unlike a large public Minecraft server, Realms are by invite only, so you control who gets in.  ### {StrContains="Realms"}
+hbui.RealmsPDPScreen.FAQ.Realms.title=What are Realms?  ### {StrContains="Realms"}
+hbui.RealmsPDPScreen.hero.content.header=Get additional content with Realms Plus    ### {StrContains="Realms"}
+hbui.RealmsPDPScreen.hero.content.text=Realms Plus subscriptions include Marketplace Pass: more than two 64-stacks of Marketplace content, updated monthly. With skins, Character Creator items, worlds, textures, and mash-up packs, there’s always something new for you to try.  ### {MaxLength="250"} {StrContains="Realms"}
+hbui.RealmsPDPScreen.hero.content.title=Access to over 150 Marketplace packs    ### {MaxLength="56"}
+hbui.RealmsPDPScreen.hero.perks.header=Additional perks included with Realms    ### {StrContains="Realms"}
+hbui.RealmsPDPScreen.hero.perks.text=Share your adventures on the Story Feed, watch your Realm grow with the Members tab, know when people have been playing on the Realm with the Timeline.    ### {MaxLength="250"} {StrContains="Realm"}
+hbui.RealmsPDPScreen.hero.perks.title=Get Social with Realms Stories    ### {MaxLength="56"} {StrContains="Realms"}
+hbui.RealmsPDPScreen.promos.easy.description=No need for technical know-how. Free, no-hassle backups. No sharing personal information.
+hbui.RealmsPDPScreen.promos.easy.title=Easy and safe
+hbui.RealmsPDPScreen.promos.free.description=People you invite become Realm members. They don’t need to pay to join and play on the Realm; they just need a copy of Minecraft: Bedrock. ### {StrContains="Realm"}
+hbui.RealmsPDPScreen.promos.free.title=Members play free
+hbui.RealmsPDPScreen.promos.header=What are Realms? ### {StrContains="Realms"}
+hbui.RealmsPDPScreen.promos.persistent.description=Worlds uploaded to your Realm are always available to you and your invited Realm members – at any time, on any device. Members can play even when you’re away.   ### {StrContains="Realm"}
+hbui.RealmsPDPScreen.promos.persistent.title=Persistent multiplayer worlds
+hbui.RealmsPDPScreen.splash.buyNow=Buy now  ### {MaxLength="20"}
+hbui.RealmsPDPScreen.splash.text=Run your own Minecraft server! You set the rules: who can join and how to play. Members play for free, even when you’re offline. Easy to set up, manage, and access from any device.   ### {MaxLength="200"}
+hbui.RealmsPDPScreen.splash.title=Your own server, always online    ### {MaxLength="50"}
+hbui.RealmsPDPScreen.splash.tryFree=Try free    ### {MaxLength="20"}
+hbui.RealmsPDPScreen.title=Minecraft Realms ### {StrContains="Realms"}
+hbui.RealmsPlanPickerScreen.buyButton=Buy now
+hbui.RealmsPlanPickerScreen.buyRealmsPlusButtonTrial=Free trial
+hbui.RealmsPlanPickerScreen.currency=$
+hbui.RealmsPlanPickerScreen.error.body=Please verify that you are signed into both Minecraft and your device's platform store with the same account, and try again.
+hbui.RealmsPlanPickerScreen.error.button=Try again
+hbui.RealmsPlanPickerScreen.error.title=Couldn’t access platform store
+hbui.RealmsPlanPickerScreen.featureLine0=You +2 friends
+hbui.RealmsPlanPickerScreen.featureLine0Narration=You and 2 friends
+hbui.RealmsPlanPickerScreen.featureLine0Plus=You
+hbui.RealmsPlanPickerScreen.featureLine0PlusNarration=You and 10 friends
+hbui.RealmsPlanPickerScreen.featureLine0PlusNum=+10 friends
+hbui.RealmsPlanPickerScreen.featureLine1=3 world slots
+hbui.RealmsPlanPickerScreen.featureLine2=Server available 24/7
+hbui.RealmsPlanPickerScreen.featureLine3=Members play free
+hbui.RealmsPlanPickerScreen.featureLine4=Cross-platform play
+hbui.RealmsPlanPickerScreen.featureLine5=Automatic free back-ups
+hbui.RealmsPlanPickerScreen.featureLine6=Realms Stories         ### {StrContains="Realms"}
+hbui.RealmsPlanPickerScreen.featureLine7=Free 30-day trial
+hbui.RealmsPlanPickerScreen.featureLine8=Includes Marketplace Pass
+hbui.RealmsPlanPickerScreen.featureNarrationCore=Realms core package details. Text block			### {StrContains="Realms"}
+hbui.RealmsPlanPickerScreen.featureNarrationPlus=Realms plus package details. Text block			### {StrContains="Realms"}
+hbui.RealmsPlanPickerScreen.planCoreCardNarration=Vertical panel. Group. Core $%1$s per month
+hbui.RealmsPlanPickerScreen.planRealmsPlusCardNarration=Vertical panel. Group. Plus $%1$s per month
+hbui.RealmsPlanPickerScreen.priceCore=Core
+hbui.RealmsPlanPickerScreen.priceMonthly=month
+hbui.RealmsPlanPickerScreen.pricePlus=Plus
+hbui.RealmsPlanPickerScreen.title=Choose your plan
+hbui.RealmsPlanPickerScreen.titleNarrationHint=Choose between two plans
 hbui.RealmsPreviews.create.cancel.beta=No, don't create Beta Realm
 hbui.RealmsPreviews.create.cancel.preview=No, don't create Preview Realm
 hbui.RealmsPreviews.create.message.beta=You are about to create a free Beta Realm that will be paired with your paid Realms subscription. This new Beta Realm will be accessible for as long as the paid subscription is active. Your paid Realm will not be affected.
@@ -1825,7 +1909,6 @@ hbui.RealmsStories.feedEvent.medium.NewMember=%1$s joined the realm
 hbui.RealmsStories.feedEvent.medium.PillagerCaptainDefeated=%1$s defeated a Pillager Captain
 hbui.RealmsStories.feedEvent.medium.RealmCreated=A new adventure has begun! What will the story of this Realm be? You decide.
 hbui.RealmsStories.feedEvent.medium.SlotSwitch=The world changed to %1$s
-hbui.RealmsStories.feedEvent.narration.data=Data
 hbui.RealmsStories.feedEvent.narration.textblock=Text block
 hbui.RealmsStories.feedEvent.playersInvolved=Players involved
 hbui.RealmsStories.feedEvent.title=Realm Event
@@ -1928,12 +2011,13 @@ hbui.RealmsStories.members.operator=Operator
 hbui.RealmsStories.members.optedOutMembers=Opted-out members
 hbui.RealmsStories.members.realmMembers=Realm members
 hbui.RealmsStories.members.realmOwner=Realm owner
-hbui.RealmsStories.members.realmStoriesMembers=Realm Stories members
+hbui.RealmsStories.members.realmStoriesMembers=Realms Stories members
 hbui.RealmsStories.members.recentlyPlayed=Recently played
 hbui.RealmsStories.members.search=Search members of the Realm
 hbui.RealmsStories.members.section=Section
 hbui.RealmsStories.members.sort=Sort members of the Realm
 hbui.RealmsStories.members.visitor=Visitor
+hbui.RealmsStories.members.warning=This Realm is too popular to list all the members
 hbui.RealmsStories.messages.button=Try Again
 hbui.RealmsStories.messages.noInternetBody=You're not connected to the internet right now. Reconnect to access Realms Stories.
 hbui.RealmsStories.messages.timelineOff.body=The Timeline is not available on this Realm.
@@ -2108,7 +2192,7 @@ hbui.SignInAddFriendRoute.signInPrompt=Ready to join your cross-platform friends
 hbui.SignInDressingRoomRoute.laterButton=Maybe later
 hbui.SignInDressingRoomRoute.signInButton=Sign in now
 hbui.SignInDressingRoomRoute.signInHeader=Cool character!
-hbui.SignInDressingRoomRoute.signInPrompt=Sign-in to save your character across devices/platforms.
+hbui.SignInDressingRoomRoute.signInPrompt=Sign in to save your character across devices and platforms.
 hbui.SignInMarketplaceRoute.laterButton=Maybe later
 hbui.SignInMarketplaceRoute.signInButton=Sign in now
 hbui.SignInMarketplaceRoute.signInHeader=Welcome to the Marketplace!
@@ -2145,6 +2229,12 @@ hbui.SignInWorldsFriendsServersRoute.signInList3PS=Join hundreds of other player
 hbui.SignInWorldsFriendsServersRoute.signInList4=Access your Marketplace content and characters across multiple platforms
 hbui.SignInWorldsFriendsServersRoute.signInPrompt=Sign in with your Microsoft account now to unlock a variety of features, including:
 hbui.Splash.role=Textblock
+hbui.Splash.select=Select
+hbui.StartFromTemplateRoute.SideMenu.featured=Featured creators
+hbui.StartFromTemplateRoute.SideMenu.inputLegend=Open
+hbui.StartFromTemplateRoute.SideMenu.marketplacePass=Marketplace pass
+hbui.StartFromTemplateRoute.SideMenu.ownedByMe=Owned by me
+hbui.StartFromTemplateRoute.title=Start From Template
 hbui.StatListItem.compareNarration=%1$s vs. %2$s
 hbui.StatListItem.itemNarration=%1$s of %2$s
 hbui.StorageIndicator.bytes=%1$s Bytes
@@ -2263,6 +2353,7 @@ hbui.EditorActionBar.reloadButton=Reload
 hbui.EditorActionBar.reloadTooltipDescription=Reloads all script files from all behavior packs and refreshes UI for all clients
 hbui.EditorActionBar.reloadTooltipTitle=Reload
 hbui.EditorActionBar.title=Action Bar
+hbui.EditorActionBar.triggerError=Trigger Error
 hbui.EditorActionBar.undo=Undo
 hbui.EditorActionBar.undo.description=Undo a transaction
 hbui.EditorActionBar.undo.shortcut=CTRL + Z
@@ -2271,12 +2362,15 @@ hbui.EditorButton.button=Button
 hbui.EditorCheckbox.checked=Checked
 hbui.EditorCheckbox.elementType=Checkbox
 hbui.EditorCheckbox.unchecked=Unchecked
-hbui.EditorControlDemo.windowTitle=UI Settings
 hbui.EditorCrosshairMode.toast.modeSwitch=ESC or %1 to go back to Tool Mode
 hbui.EditorDropdown.disabled=Disabled
 hbui.EditorDropdown.elementType=Dropdown
 hbui.EditorDropdown.selected=Selected
 hbui.EditorDropdown.stateCollapsed=Collapsed
+hbui.EditorErrorModal.default=A script error occurred.
+hbui.EditorErrorModal.quit=Quit
+hbui.EditorErrorModal.reload=Reload
+hbui.EditorErrorModal.title=Error
 hbui.EditorExpander.collapsed=Collapsed
 hbui.EditorExpander.elementType=expander
 hbui.EditorExpander.expanded=Expanded
@@ -2454,13 +2548,14 @@ hbui.EditorTypographySample.colorSectionTitle=Color
 hbui.EditorTypographySample.panelTitle=Typography Sample
 hbui.EditorTypographySample.regularSectionTextSample=Text inside another EditorContainer
 hbui.EditorTypographySample.regularSectionTitle=Text inside an EditorContainer
-hbui.EditorUISettingsDemo.darkLabel=Dark
-hbui.EditorUISettingsDemo.fontUIDropdownLabel=Font
-hbui.EditorUISettingsDemo.highContrastLabel=High Contrast
-hbui.EditorUISettingsDemo.lightLabel=Light
-hbui.EditorUISettingsDemo.redstoneLabel=Redstone
-hbui.EditorUISettingsDemo.scaleUIDropdownLabel=UI Scale
-hbui.EditorUISettingsDemo.themeTitle=Theme
+hbui.EditorUISettingsPanel.darkLabel=Dark
+hbui.EditorUISettingsPanel.fontUIDropdownLabel=Font
+hbui.EditorUISettingsPanel.highContrastLabel=High Contrast
+hbui.EditorUISettingsPanel.lightLabel=Light
+hbui.EditorUISettingsPanel.redstoneLabel=Redstone
+hbui.EditorUISettingsPanel.scaleUIDropdownLabel=UI Scale
+hbui.EditorUISettingsPanel.themeTitle=Theme
+hbui.EditorUISettingsPanel.title=UI Settings
 hbui.EditorVec3TextField.disabled=Disabled
 hbui.EditorVec3TextField.elementType=Vector 3
 hbui.EditorWelcomeDemo.panelSectionText=We are so excited you're here and about to build with Minecraft's Bedrock Editor, where we want to empower Creators of all skillsets to easily create high-quality experiences.
