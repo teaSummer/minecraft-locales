@@ -3132,9 +3132,6 @@ commands.advancement.revoke.criterion.to.one.failure=Couldn't revoke criterion '
 commands.advancement.revoke.criterion.to.many.success=Revoked criterion '%s' of advancement %s from %s players
 commands.advancement.revoke.criterion.to.many.failure=Couldn't revoke criterion '%s' of advancement %s from %s players as they don't have it
 
-commands.blockdata.query=Block %s, %s, %s has block data: %s
-commands.blockdata.success=Block %s, %s, %s has been changed to block data: %s
-
 commands.clear.success.single=Removed %s items from player %s
 commands.clear.success.multiple=Removed %s items from %s players
 commands.clear.test.single=Found %s matching items on player %s
@@ -3156,9 +3153,6 @@ commands.effect.clear.everything.success.single=Removed every effect from %s
 commands.effect.clear.everything.success.multiple=Removed every effect from %s targets
 commands.effect.clear.specific.success.single=Removed effect %s from %s
 commands.effect.clear.specific.success.multiple=Removed effect %s from %s targets
-
-commands.entitydata.query=Entity %s has entity data: %s
-commands.entitydata.success=Entity %s has been changed to entity data: %s
 
 commands.experience.add.points.success.single=Gave %s experience points to %s
 commands.experience.add.points.success.multiple=Gave %s experience points to %s players
@@ -3266,8 +3260,8 @@ commands.banip.info=This ban affects %s players: %s
 commands.pardonip.success=Unbanned IP %s
 
 commands.teleport.success.entity.single=Teleported %s to %s
-commands.teleport.success.entity.multiple=Teleported %s to %s, %s, %s
-commands.teleport.success.location.single=Teleported %s entities to %s
+commands.teleport.success.entity.multiple=Teleported %s entities to %s
+commands.teleport.success.location.single=Teleported %s to %s, %s, %s
 commands.teleport.success.location.multiple=Teleported %s entities to %s, %s, %s
 
 commands.title.cleared.single=Cleared titles for %s
@@ -3354,3 +3348,10 @@ commands.scoreboard.players.operation.success.multiple=Updated %s for %s entitie
 commands.scoreboard.players.get.success=%s has %s %s
 
 commands.reload.success=Reloading!
+
+commands.data.entity.modified=Modified entity data of %s
+commands.data.entity.query=%s has the following entity data: %s
+commands.data.entity.get=%s on %s after scale factor of %s is %s
+commands.data.block.modified=Modified block data of %s, %s, %s
+commands.data.block.query=%s, %s, %s has the following block data: %s
+commands.data.block.get=%s on block %s, %s, %s after scale factor of %s is %s
