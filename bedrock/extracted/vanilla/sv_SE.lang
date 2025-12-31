@@ -99,6 +99,7 @@ accessibility.settings.chooseSeed=Välj frö	#
 accessibility.start.feedback=Skicka feedback	#
 accessibility.start.new=Ny	#
 accessibility.start.profile=Välj profil	#
+accessibility.start.skinPicker=Välj utseende	#
 
 accessibility.store.tag=Tagg	#
 
@@ -1988,7 +1989,7 @@ date.formatted=%s %d %d	#
 dayOneExperience.carousel.title=Välkommen till nya Minecraft!	#
 dayOneExperience.carousel.welcome_text=Den nya versionen av Minecraft är full av spännande nyheter. Kolla in marknaden, skapa ett Realm och spela online med kompisar på andra plattformar!	#
 dayOneExperience.carousel.marketplace=På Minecraft-marknaden kan du hitta nya utseenden, världar, texturer och mixpaket från olika begåvade kreatörer.	#
-dayOneExperience.carousel.cross_platform=Spel över flera plattformar låter dig ansluta till spelare på andra plattformar. Logga in med ditt Microsoft-konto för att spela med alla dina Minecraft-kompisar!	#
+dayOneExperience.carousel.cross_platform=Spel över flera plattformar låter dig ansluta till spelare på andra plattformar. Logga in med ditt Microsoft-konto för att spela med alla dina Minecraft-vänner!	#
 dayOneExperience.carousel.realms=Realms är servrar vi håller igång åt dig och dina kompisar. Håll din Minecraft-värld online är tillgänglig dygnet runt, även när du är utloggad.	#
 dayOneExperience.carousel.villager=Nya Minecraft är den enda versionen som får kommande uppdateringar med nya funktioner, varelser, föremål, block och massa annat!	#
 
@@ -2122,6 +2123,8 @@ disconnect.quitting=Avslutar	#
 disconnect.spam=Sparkades för skräpmeddelanden	#
 disconnect.timeout=Anslutningen tog för lång tid	#
 
+disconnectionScreen.header.realms_hidden=Flerspelarinbjudan	#
+disconnectionScreen.body.realms_hidden=Kan inte ansluta till den här specifika servern.	#
 disconnectionScreen.cantConnect=Kunde inte ansluta till världen.	#
 disconnectionScreen.cantConnectToRealm=Kunde inte ansluta till Realm.	#
 disconnectionScreen.cantConnectToRealms=Kunde inte ansluta till Realms.	#
@@ -2632,10 +2635,12 @@ gui.edu.exitGameWarningCaption=Minecraft: Education Edition		### Use Minecraft �
 gui.edu.exitGameWarningMessage=Avsluta Minecraft: Education Edition?		### Use 离开 Minecraft 教育版? in zh_CN translation
 
 updateScreen.update=Uppdatera	#
+updateScreen.updateRequired=Uppdatering krävs	#
 updateScreen.title=Gammal version	#
 updateScreen.body=Uppdatera till den senaste versionen för att använda alla nya funktioner, spela online med kompisar och se vad som finns på marknaden.	#
 updateScreen.commerceNotSupported.title=Kommer inte åt marknaden	#
 updateScreen.commerceNotSupported.body=Den här versionen av Minecraft har inte tillgång till Minecraft-marknaden. Uppdatera till den senaste versionen för att återfå åtkomsten till marknaden.	#
+updateScreen.packs.updateRequired=Uppdatera till den senaste versionen för att ladda ned paketet du köpte på Minecraft-marknaden.	#
 updateScreen.patchVersion=Patchinformation om version %s:	#
 
 hostOption.codeBuilder=Code Builder	#
@@ -3408,9 +3413,9 @@ howtoplay.theStore.header.1=Utforska innehåll	#
 howtoplay.theStore.text.2=Testa ett nytt utseende för en ny, fräsch look!	#
 howtoplay.theStore.text.3=Kolla in världarna för att låsa upp nya kartor och utmaningar som du kommer vilja spela om och om igen!	#
 howtoplay.theStore.text.4=Ge ditt gamla spel en makeover med texturpaket som kan läggas som lager på dina nuvarande världar och Realms!	#
-howtoplay.theStore.text.4.norealms=Ge ditt gamla spel en makeover med texturpaket som kan läggas som lager på dina nuvarande världar och Realms!	#
+howtoplay.theStore.text.4.norealms=Ge ditt gamla spel en makeover med texturpaket som kan läggas som lager på dina nuvarande världar!	#
 howtoplay.theStore.text.5=Eller testa allt med mixpaket; utvalda samlingar med utseenden, världar och texturer som, när de kombineras, förvandlar dina världar och Realms!	#
-howtoplay.theStore.text.5.norealms=Eller testa allt med mixpaket; utvalda samlingar med utseenden, världar och texturer som, när de kombineras, förvandlar dina världar och Realms!	#
+howtoplay.theStore.text.5.norealms=Eller testa allt med mixpaket; utvalda samlingar med utseenden, världar och texturer som, när de kombineras, förvandlar dina världar!	#
 
 howtoplay.tools=Verktyg	#
 howtoplay.tools.title=Så spelar du: Verktyg	#
@@ -4657,8 +4662,8 @@ itemGroup.name.wood=Trätyper	#
 itemGroup.name.banner_pattern=Fanmönster	#
 
 ##EDU Joincode
-joincode.entry_popup.icon_button=Knapp för anslutningskod	#
-joincode.entry_popup.icon_entry=Ange anslutningskod %1	#
+joincode.entry_popup.icon_button=%1 anslutningskodknapp		# Example: Apple join code button	#
+joincode.entry_popup.icon_entry=%3 anslutningskodangivelse %1 av %2	# Example: Apple join code entry 2 of 5	#
 joincode.entry_popup.title=Ange anslutningskod	#
 joincode.connecting.title=Anslut till värld	#
 joincode.connecting.lower_text=Söker efter värld …	#
@@ -4686,6 +4691,9 @@ joincode.icon_text.12=Äpple	#
 joincode.icon_text.13=Morot	#
 joincode.icon_text.14=Panda	#
 joincode.icon_text.15=Skylt	#
+joincode.icon_text.16=Brygd	#
+joincode.icon_text.17=Karta	#
+joincode.icon_text.18=Lama	#
 joincode.ip_entry.button_tts=Fler alternativ	#
 joincode.ip_entry.address.tooltip=Du kan ta reda på IP-adressen genom att be värden pausa spelet. IP-adressen och portnumret visas på pausskärmens flerspelarflik.	#
 joincode.ip_entry.port.tooltip=Du kan ta reda på portnumret genom att be värden pausa spelet. IP-adressen och portnumret visas på pausskärmens flerspelarflik.	#
@@ -5617,7 +5625,7 @@ options.goBack=Gå tillbaka	#
 options.managePrivacy=Besök https://account.xbox.com/Settings i valfri webbläsare för att hantera dina sekretessinställningar.	#
 options.unlink_msa.button=Koppla ifrån Microsoft-konto	#
 options.unlink_msa.confirm.title=Koppla ifrån Microsoft-konto?	#
-options.unlink_msa.confirm.warning=VARNING: Efter att du kopplat ifrån kan du inte spara framsteg eller köp du gjort med kontot %s på din "PlayStation 4"-konsol.	#
+options.unlink_msa.confirm.warning=VARNING: Efter att du kopplat ifrån kan du inte spara framsteg eller köp du gjort med kontot %s på ditt "PlayStation 4"-system.	#
 options.unlink_msa.confirm.checkbox1=Jag kommer inte längre kunna komma åt butiksinnehåll i spelet när jag spelar på andra plattformar.	#
 options.unlink_msa.confirm.checkbox2=Jag kommer inte längre kunna spela med mina kompisar på andra plattformar.	#
 options.unlink_msa.confirm.checkbox3=Jag kommer inte längre kunna komma åt Realms. Det inkluderar abonnemang på Realms som redan är aktiva.	#
@@ -5652,7 +5660,7 @@ pauseScreen.title=Spelet pausat	#
 pauseScreen.betaFeedback=Betafeedback	#
 pauseScreen.xboxLiveDisconnect=Oj då! Ditt Microsoft-konto har blivit nedkopplat. Logga in i huvudmenyn och starta om din värld för att bjuda in fler spelare.	#
 pauseScreen.joinCode.Label=ANSLUTNINGSKOD	#
-pauseScreen.joinCode.Icon=anslutningskodikon, %1 av 4	#
+pauseScreen.joinCode.Icon=%3 anslutningskodikon, %1 av %2	# Example: Apple join code icon, 2 of 5	#
 
 feedbackScreen.button=Feedback	#
 feedbackScreen.title=Har du feedback?	#
@@ -5925,7 +5933,6 @@ progressScreen.title.connectingLAN=Ansluter till flerspelarsession	#
 progressScreen.title.connectingExternal=Ansluter till extern server	#
 progressScreen.title.connectingRealms=Ansluter till Realm	#
 progressScreen.title.copyingWorld=Världskopia	#
-progressScreen.title.skin_loading=Laddar utseende …	#
 progressScreen.message.copyingWorld=Kopierar värld ... %d%%	#
 progressScreen.message.building=Bygger terräng	#
 progressScreen.message.done=Klar!	#
@@ -5956,7 +5963,6 @@ progressScreen.message.leaveLevel=Spelet sparas. Stäng inte av enheten.	#
 progressScreen.message.genericMayTakeAMoment=Det här kan ta några ögonblick	#
 progressScreen.message.unkownError=Ett okänt har inträffat	#
 progressScreen.message.forbiddenContent=Du äger inte ett eller flera av de tillämpade paketen	#
-progressScreen.message.skin_loading=Ditt valda utseende laddas fortfarande.	#
 progressScreen.dialog.title.resourcePack=Ladda ned världens resurspaket?	#
 progressScreen.dialog.title.behaviorAndResourcePack=Ladda ned världens beteende- och resurspaket?	#
 progressScreen.dialog.title.onlyBehavior=Ladda ned världens beteendepaket?	#
@@ -6480,7 +6486,7 @@ store.realmsPlus.landing.info1.line2=- Din egen personliga Realm-server	#
 store.realmsPlus.landing.info1.line3=- Kompisar spelar gratis i ditt Realm	#
 
 store.realmsPlus.landing.info2.line1=- Säker molnlagring	#
-store.realmsPlus.landing.info2.line2=- Spela på valfri enhet med Minecraft-marknaden	#
+store.realmsPlus.landing.info2.line2=- Spela på valfri enhet med Realms och Minecraft-marknaden	#
 store.realmsPlus.landing.info2.line3=- Stötta Minecraft-communityn	#
 store.realmsPlus.landing.info2.line4=- Gratis demo i 1 månad	#
 
@@ -6490,7 +6496,7 @@ store.realmsPlus.faq.answer1=Till ett lågt månadspris får du obegränsad till
 store.realmsPlus.faq.question2=Kan jag använda mina Realms Plus-paket offline?	#
 store.realmsPlus.faq.answer2=Du måste inte vara online. Paketen som ingår i abonnemanget på Realms Plus kan spelas antingen online på ditt personliga Realm eller på din lokala enhet. Det enda du behöver tänka på är att gå online var trettionde dag för att validera att abonnemanget är aktivt.	#
 store.realmsPlus.faq.question3=Måste mina kompisar ha Realms Plus för att spela i mitt Realm?	#
-store.realmsPlus.faq.answer3=Dina kompisar behöver inget abonnemang på Realms Plus för att ansluta till ett Realm. Du kan bjuda in dina kompisar till ditt Realm helt gratis.	#
+store.realmsPlus.faq.answer3=Dina kompisar behöver inget abonnemang på Realms Plus för att ansluta till ett Realm. Du kan bjuda in dina kompisar med tillgång till Realms för att spela i ditt Realm helt gratis.	#
 store.realmsPlus.faq.question4=Kan jag använda mina världar, texturpaket, utseenden och mixpaket från Realms Plus i mitt Realm?	#
 store.realmsPlus.faq.answer4=Ja! Du kan ladda upp alla världar, texturpaket, utseenden och mixpaket från hela Realms Plus-katalogen och köp från Minecraft-marknaden till ditt Realm och bjuda in dina kompisar helt gratis.	#
 store.realmsPlus.faq.question5=Vad kostar ett abonnemang på Realms Plus?	#
@@ -6504,7 +6510,7 @@ store.realmsPlus.faq.answer8=Paketen i Realms Plus kommer bland annat från andr
 store.realmsPlus.faq.question9=Vilka utgåvor av Minecraft har stöd för Realms Plus?	#
 store.realmsPlus.faq.answer9=Realms Plus är just nu tillgängligt på mobil, Windows 10, Xbox One-konsolerna och Nintendo Switch.	#
 store.realmsPlus.faq.question10=Kan jag använda Realms Plus på vilken Bedrock-enhet som helst?	#
-store.realmsPlus.faq.answer10=Ja! Om du köper Realms Plus på en Bedrock-enhet kan du använda alla paket, din personliga server och din lagring från vilken Minecraft Bedrock-version som helst, så länge du är inloggad med ditt Minecraft-konto.	#
+store.realmsPlus.faq.answer10=Ja! Om du köper Realms Plus på en Bedrock-enhet med tillgång till Realms kan du använda alla paket, personliga servrar och din lagring från vilken Minecraft Bedrock-version som helst, så länge den har tillgång till Realms och du är inloggad med ditt Minecraft-konto.	#
 store.realmsPlus.faq.question11=Hur många världsmallar kan jag spela med Realms Plus?	#
 store.realmsPlus.faq.answer11=Du kan spela och spara alla paket som ingår i Realms Plus på din lokala enhet. Dessutom kan du lägga upp en av dina världsmallar i ett Realm som dina kompisar kan ansluta till gratis! Du kan byta värld i ditt Realm när som helst.	#
 store.realmsPlus.faq.question12=Vad händer med mina Realms och världar när abonnemanget på Realms Plus tar slut?	#
@@ -6520,7 +6526,7 @@ store.realmsPlus.content.mashupDescription=Prova på lite av varje i mixpaket!	#
 
 store.realmsPlus.content.popularPacks=Populära paket i Realms Plus:	#
 store.realmsPlus.content.viewAllPacks=VISA ALLA PAKET	#
-store.realmsPlus.content.contentDescription=Få en direktkanal till otroligt Minecraft-innehåll! Realms Plus ger dig omedelbar tillgång till över 50 produkter på marknaden, bland annat mixpaket, världar, utseendepaket och otroliga äventyr – och nya saker läggs till varje månad. Innehållet lagras på din egen personliga server, och det finns tillgängligt på alla plattformar där du använder Minecraft-marknaden. Upp till 10 spelare kan spela åt gången, och de får tillgång till allt abonnemangsinnehåll i ditt Realm – helt gratis!	#
+store.realmsPlus.content.contentDescription=Få en direktkanal till otroligt Minecraft-innehåll! Realms Plus ger dig omedelbar tillgång till över 50 produkter på marknaden, bland annat mixpaket, världar, utseendepaket och otroliga äventyr – och nya saker läggs till varje månad. Innehållet lagras på din egen personliga server, och det finns tillgängligt på alla plattformar där du använder Minecraft-marknaden och Realms. Upp till 10 spelare kan spela åt gången, och de får tillgång till allt abonnemangsinnehåll i ditt Realm – helt gratis!	#
 
 store.realmsPlus.freeTrial=STARTA 1 MÅNADS PROVABONNEMANG	#
 

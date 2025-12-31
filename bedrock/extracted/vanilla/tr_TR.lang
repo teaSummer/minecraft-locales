@@ -99,6 +99,7 @@ accessibility.settings.chooseSeed=Tohum Seç	#
 accessibility.start.feedback=Geri Bildirim Gönder	#
 accessibility.start.new=Yeni	#
 accessibility.start.profile=Profil Seç	#
+accessibility.start.skinPicker=Dış Görünüş Seç	#
 
 accessibility.store.tag=Etiket	#
 
@@ -1988,7 +1989,7 @@ date.formatted=%s %d %d	#
 dayOneExperience.carousel.title=Yeni Minecraft'a hoş geldin!	#
 dayOneExperience.carousel.welcome_text=Minecraft'ın bu yeni sürümünde bir sürü heyecan verici yeni şey var. Market'e göz atın, bir Realm oluşturun ve Platformlar Arası arkadaşlarınızla çevrimiçi oynayın!	#
 dayOneExperience.carousel.marketplace=Minecraft Market, çeşitli yetenekli yaratıcıların hazırladığı yeni dış görünüş, dünya, doku ve eklenti paketlerini bulabileceğiniz yerdir.	#
-dayOneExperience.carousel.cross_platform=Platformlar Arası oyun, farklı platformlardaki oyuncularla bağlantı kurmanıza olanak tanır. Tüm Minecraft arkadaşlarınızla oynamak için Microsoft Hesabınızla oturum açın!	#
+dayOneExperience.carousel.cross_platform=Platformlar arası oyun, farklı platformlardaki oyuncularla bağlantı kurmanıza olanak tanır. Tüm Minecraft arkadaşlarınızla oynamak için Microsoft Hesabınızla oturum açın!	#
 dayOneExperience.carousel.realms=Bölgeler, sadece siz ve arkadaşlarınız için bizim çalıştırdığımız sunuculardır. Minecraft dünyanızı, oturumu kapattığınızda bile her zaman çevrimiçi ve erişilebilir durumda tutun.	#
 dayOneExperience.carousel.villager=Yeni Minecraft; yeni özellikler, yaratıklar, eşyalar, bloklar ve daha birçok şey içeren gelecek güncellemelerin alınacağı tek yerdir!	#
 
@@ -2122,6 +2123,8 @@ disconnect.quitting=Çıkılıyor	#
 disconnect.spam=İstenmeyen e-posta nedeniyle atıldı	#
 disconnect.timeout=Zaman aşımına uğradı	#
 
+disconnectionScreen.header.realms_hidden=Çok Oyunculu Oyuna Davet	#
+disconnectionScreen.body.realms_hidden=Bu sunucuya katılamazsınız.	#
 disconnectionScreen.cantConnect=Dünyaya bağlanılamıyor.	#
 disconnectionScreen.cantConnectToRealm=Realm'a bağlanılamıyor.	#
 disconnectionScreen.cantConnectToRealms=Realms'a bağlanılamıyor.	#
@@ -2632,10 +2635,12 @@ gui.edu.exitGameWarningCaption=Minecraft: Education Edition		### Use Minecraft �
 gui.edu.exitGameWarningMessage=Minecraft: Education Edition'dan çıkmak istiyor musun?		### Use 离开 Minecraft 教育版? in zh_CN translation
 
 updateScreen.update=Güncelle	#
+updateScreen.updateRequired=Güncelleme Gerekli	#
 updateScreen.title=Sürüm Eski	#
 updateScreen.body=Tüm yeni özelliklere erişmek, arkadaşlarınızla çevrimiçi oynamak veya Market'teki yenilikleri görmek için en son sürüme güncelleyin.	#
 updateScreen.commerceNotSupported.title=Market'e Erişilemiyor	#
 updateScreen.commerceNotSupported.body=Bu Minecraft sürümü artık Minecraft Market'e erişemiyor. Market erişimini yeniden kazanmak için en son sürüme güncelleyin.	#
+updateScreen.packs.updateRequired=Lütfen Minecraft Market'ten satın aldığınız paketi indirmek için en son sürüme güncelleme yapın.	#
 updateScreen.patchVersion=%s Sürümü Yama Notları:	#
 
 hostOption.codeBuilder=Kod Oluşturucusu	#
@@ -3408,9 +3413,9 @@ howtoplay.theStore.header.1=İçeriği Keşfet	#
 howtoplay.theStore.text.2=Yepyeni bir görünüm için yeni bir dış görünüş deneyin!	#
 howtoplay.theStore.text.3=Tekrar tekrar oynamak isteyeceğiniz yeni harita ve zorlukların kilidini açmak için dünyalara göz atın!	#
 howtoplay.theStore.text.4=Mevcut dünya ve Bölgelerinizde katmanlanabilen doku paketleri ile eski oyununuza yeni bir görünüm kazandırın!	#
-howtoplay.theStore.text.4.norealms=Mevcut dünya ve Bölgelerinizde katmanlanabilen doku paketleri ile eski oyununuza yeni bir görünüm kazandırın!	#
+howtoplay.theStore.text.4.norealms=Mevcut dünyalarınızın üzerine döşenebilen doku paketleriyle eski oyununuza yeni bir görünüm kazandırın!	#
 howtoplay.theStore.text.5=Ya da dış görünüş, dünya ve dokularla düzenlenip, birleştirildiğinde dünyalarınızı ve Bölgelerinizi dönüştürecek eklenti paketleriyle hepsini deneyin!	#
-howtoplay.theStore.text.5.norealms=Ya da dış görünüş, dünya ve dokularla düzenlenip, birleştirildiğinde dünyalarınızı ve Bölgelerinizi dönüştürecek eklenti paketleriyle hepsini deneyin!	#
+howtoplay.theStore.text.5.norealms=Ya da dış görünüş, dünya ve dokularla düzenlenip, birleştirildiğinde dünyalarınızı dönüştürecek eklenti paketleriyle hepsini deneyin!	#
 
 howtoplay.tools=Aletler	#
 howtoplay.tools.title=Nasıl Oynanır: Aletler	#
@@ -4657,8 +4662,8 @@ itemGroup.name.wood=Odunlar	#
 itemGroup.name.banner_pattern=Flama Desenleri	#
 
 ##EDU Joincode
-joincode.entry_popup.icon_button=Katılım Kodu Düğmesi	#
-joincode.entry_popup.icon_entry=Katılım Kodu Girişi %1	#
+joincode.entry_popup.icon_button=%1 katılma kodu düğmesi		# Example: Apple join code button	#
+joincode.entry_popup.icon_entry=%3 katılma kodu girişi %1/%2	# Example: Apple join code entry 2 of 5	#
 joincode.entry_popup.title=Katılım Kodu Gir	#
 joincode.connecting.title=Dünyaya Katıl	#
 joincode.connecting.lower_text=Dünya aranıyor...	#
@@ -4686,6 +4691,9 @@ joincode.icon_text.12=Elma	#
 joincode.icon_text.13=Havuç	#
 joincode.icon_text.14=Panda	#
 joincode.icon_text.15=Levha	#
+joincode.icon_text.16=İksir	#
+joincode.icon_text.17=Harita	#
+joincode.icon_text.18=Lama	#
 joincode.ip_entry.button_tts=Daha Fazla Seçenek	#
 joincode.ip_entry.address.tooltip=IP Adresini bulmak için sunucudan oyunu duraklatmasını iste. IP Adresi ve bağlantı noktası numarası, duraklatma ekranının çok oyunculu sekmesinde bulunabilir.	#
 joincode.ip_entry.port.tooltip=Bağlantı noktası numarasını bulmak için sunucudan oyunu duraklatmasını iste. IP Adresi ve bağlantı noktası numarası, duraklatma ekranının çok oyunculu sekmesinde bulunabilir.	#
@@ -5652,7 +5660,7 @@ pauseScreen.title=Oyun Durduruldu	#
 pauseScreen.betaFeedback=Beta Geri Bildirim	#
 pauseScreen.xboxLiveDisconnect=Ah! Microsoft Hesabınızın bağlantısı kesildi. Daha fazla oyuncu davet etmek için Ana Menü'den oturum açın ve dünyanızı yeniden başlatın.	#
 pauseScreen.joinCode.Label=KATILMA KODU	#
-pauseScreen.joinCode.Icon=katılma kodu simgesi, %1/4	#
+pauseScreen.joinCode.Icon=%3 katılma kodu simgesi, %1/%2	# Example: Apple join code icon, 2 of 5	#
 
 feedbackScreen.button=Geri Bildirim	#
 feedbackScreen.title=Geri Bildiriminiz mi var?	#
@@ -5925,7 +5933,6 @@ progressScreen.title.connectingLAN=Çok oyunculu oyuna bağlanılıyor	#
 progressScreen.title.connectingExternal=Harici sunucuya bağlanılıyor	#
 progressScreen.title.connectingRealms=Bölgeye bağlanılıyor	#
 progressScreen.title.copyingWorld=Dünya Kopyası	#
-progressScreen.title.skin_loading=Dış Görünüş Yükleniyor...	#
 progressScreen.message.copyingWorld=Dünya Kopyalanıyor... %d%%	#
 progressScreen.message.building=Arazi oluşturuluyor	#
 progressScreen.message.done=Bitti!	#
@@ -5956,7 +5963,6 @@ progressScreen.message.leaveLevel=Oyununuz kaydediliyor. Lütfen cihazınızı k
 progressScreen.message.genericMayTakeAMoment=Bu işlem biraz sürebilir	#
 progressScreen.message.unkownError=Bir hata oluştu	#
 progressScreen.message.forbiddenContent=Uygulanan paketlerden en az birine sahip değilsiniz	#
-progressScreen.message.skin_loading=Seçtiğiniz dış görünüş hala yükleniyor.	#
 progressScreen.dialog.title.resourcePack=Dünya Kaynak Paketlerini İndir?	#
 progressScreen.dialog.title.behaviorAndResourcePack=Dünya Davranış ve Kaynak Paketlerini İndir?	#
 progressScreen.dialog.title.onlyBehavior=Dünya Davranış Paketlerini İndir?	#
@@ -6480,7 +6486,7 @@ store.realmsPlus.landing.info1.line2=- Kendi kişisel Realm sunucunuz	#
 store.realmsPlus.landing.info1.line3=- Arkadaşlarınız Realm'ınızda ücretsiz oynar	#
 
 store.realmsPlus.landing.info2.line1=- Güvenli bulut depolama alanı	#
-store.realmsPlus.landing.info2.line2=- Minecraft Market ile herhangi bir cihazda oynama	#
+store.realmsPlus.landing.info2.line2=- Realms ve Minecraft Market ile herhangi bir cihazda oynayın	#
 store.realmsPlus.landing.info2.line3=- Minecraft Topluluğuna Destek Verin	#
 store.realmsPlus.landing.info2.line4=- Ücretsiz 1 aylık deneme	#
 
@@ -6490,7 +6496,7 @@ store.realmsPlus.faq.answer1=Düşük bir aylık fiyat karşılığında, ellide
 store.realmsPlus.faq.question2=Realms Plus paketlerimi çevrimdışı kullanabilir miyim?	#
 store.realmsPlus.faq.answer2=Realms Plus oynamak için çevrimiçi olmanız gerekmez. Realms Plus aboneliğine dahil olan paketler kişisel Realm'ınızla çevrimiçi oynanabilir veya yerel bir cihazda oynanabilir. Yalnızca, aboneliğinizin etkin olduğunu doğrulamak için 30 günde bir çevrimiçi olmanız gerekir.	#
 store.realmsPlus.faq.question3=Realm'ımda oynamak için arkadaşlarımın da Realms Plus aboneliği olmalı mı?	#
-store.realmsPlus.faq.answer3=Arkadaşlarınızın bir Realm'a katılması için Realms Plus aboneliği gerekli değildir. Herhangi bir arkadaşınızı Realm'ınıza ücretsiz katılması için davet edebilirsiniz.	#
+store.realmsPlus.faq.answer3=Arkadaşlarınızın bir Realm'a katılması için Realms Plus aboneliği gerekli değildir. Realms'a erişimi olan herhangi bir arkadaşınızı Realm'ınıza ücretsiz katılması için davet edebilirsiniz.	#
 store.realmsPlus.faq.question4=Realms Plus dünyalarımı, doku paketlerimi, dış görünüşlerimi ve karışımlarımı Realm'ımda barındırabilir miyim?	#
 store.realmsPlus.faq.answer4=Evet! Realms Plus kataloğundaki veya Minecraft Market'ten satın aldığınız dünyalarınızı, doku paketlerinizi, dış görünüşlerinizi ve karışımlarınızı Realm'ınıza yükleyebilir ve arkadaşlarınızı ücretsiz katılmaları için davet edebilirsiniz.	#
 store.realmsPlus.faq.question5=Bir Realms Plus aboneliğinin fiyatı nedir?	#
@@ -6504,7 +6510,7 @@ store.realmsPlus.faq.answer8=Realms Plus'taki farklı paketler sizler gibi harik
 store.realmsPlus.faq.question9=Minecraft'ın hangi sürümleri Realms Plus'ı destekler?	#
 store.realmsPlus.faq.answer9=Realms Plus şu anda mobil, Windows 10, Xbox One konsollarının yanı sıra Nintendo Switch üzerindeki Minecraft sürümlerinde kullanılabilmektedir.	#
 store.realmsPlus.faq.question10=Realms Plus aboneliğimi herhangi bir Bedrock cihazında kullanabilir miyim?	#
-store.realmsPlus.faq.answer10=Evet! Bir Bedrock cihazında Realms Plus aboneliği satın alırsanız, Minecraft hesabınızda oturum açtığınız sürece herhangi bir Minecraft Bedrock sürümünden tüm paketlere, kişisel sunucuya ve depolama alanına erişebilirsiniz.	#
+store.realmsPlus.faq.answer10=Evet! Realms özellikli bir Bedrock cihazında Realms Plus aboneliği satın alırsanız, Minecraft hesabınızda oturum açtığınız sürece Realms özelliği olan herhangi bir Minecraft Bedrock sürümünden tüm paketlere, kişisel sunuculara ve depolama alanına erişebilirsiniz.	#
 store.realmsPlus.faq.question11=Realms Plus ile birlikte kaç tane dünya şablonunda oynayabilirim?	#
 store.realmsPlus.faq.answer11=Realms Plus'a dahil olan tüm paketlerinizle yerel cihazınızda oynayıp kaydedebilirsiniz. Ayrıca, arkadaşlarınızın ücretsiz katılması için dünya şablonlarınızdan birini bir Realm üzerinde barındırabilirsiniz! Realm'ınıza yüklediğiniz dünyayı dilediğiniz zaman değiştirebilirsiniz.	#
 store.realmsPlus.faq.question12=Realms Plus aboneliğim sona erdiğinde Realm'larıma ve dünyalarıma ne olacak?	#
@@ -6520,7 +6526,7 @@ store.realmsPlus.content.mashupDescription=Karışımlarda her şeyden biraz den
 
 store.realmsPlus.content.popularPacks=Realms Plus'taki Popüler Paketler:	#
 store.realmsPlus.content.viewAllPacks=TÜM PAKETLERİ GÖR	#
-store.realmsPlus.content.contentDescription=Harika Minecraft içeriklerinin kaynağına dalın! Realms Plus ile her ay yenisi eklenen karışımlar, dünyalar, dış görünüş paketleri ve muhteşem maceralar gibi 50'den fazla market öğesine anında erişim elde edersiniz. İçeriğiniz kişisel sunucunuzda depolanır ve Minecraft Market'i kullandığınız her platformda kullanılabilir. Aynı anda 10 adede kadar oyuncu oynayabilir ve Realm'ınızdaki tüm abone içeriklerine erişebilir – hem de ücretsiz!	#
+store.realmsPlus.content.contentDescription=Harika Minecraft içeriklerinin kaynağına dalın! Realms Plus ile her ay yenisi eklenen karışımlar, dünyalar, dış görünüş paketleri ve muhteşem maceralar gibi 50'den fazla market öğesine anında erişim elde edersiniz. İçeriğiniz kişisel sunucunuzda depolanır ve Realms hem de Minecraft Market'i kullandığınız her platformda kullanılabilir. Aynı anda 10 adede kadar oyuncu oynayabilir ve Realm'ınızdaki tüm abone içeriklerine erişebilir – hem de ücretsiz!	#
 
 store.realmsPlus.freeTrial=1 AYLIK ÜCRETSİZ DENEMEYİ BAŞLAT	#
 

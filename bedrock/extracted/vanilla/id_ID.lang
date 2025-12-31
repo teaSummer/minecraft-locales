@@ -99,6 +99,7 @@ accessibility.settings.chooseSeed=Pilih Benih	#
 accessibility.start.feedback=Kirim Umpan Balik	#
 accessibility.start.new=Baru	#
 accessibility.start.profile=Pilih Profil	#
+accessibility.start.skinPicker=Pilih Skin	#
 
 accessibility.store.tag=Tag	#
 
@@ -1988,7 +1989,7 @@ date.formatted=%s %d %d	#
 dayOneExperience.carousel.title=Selamat datang di Minecraft Baru!	#
 dayOneExperience.carousel.welcome_text=Ada banyak hal baru dan menarik dalam Minecraft versi baru ini! Lihat Marketplace, buat Realm, dan bermain online dengan teman Lintas-Platform!	#
 dayOneExperience.carousel.marketplace=Marketplace Minecraft adalah tempat untuk menemukan paket skin, dunia, tekstur, dan perpaduan baru yang dibuat oleh berbagai kreator berbakat.	#
-dayOneExperience.carousel.cross_platform=Dengan permainan Lintas-Platform, kamu bisa terhubung dengan pemain di platform yang berbeda. Masuk ke Akun Microsoft dan mainlah dengan semua teman Minecraft-mu!	#
+dayOneExperience.carousel.cross_platform=Dengan permainan lintas platform, kamu bisa tersambung dengan pemain di platform lain. Masuk ke Akun Microsoft untuk bermain dengan semua teman Minecraft!	#
 dayOneExperience.carousel.realms=Realm adalah server yang kami jalankan, hanya untuk kamu dan teman-temanmu. Dengan begini, dunia Minecraft-mu tetap online dan selalu bisa diakses bahkan saat kamu keluar.	#
 dayOneExperience.carousel.villager=Minecraft baru ini adalah satu-satunya tempat untuk menerima pembaruan mendatang yang berisi sejumlah fitur, mob, item, blok baru, dan banyak lagi lainnya!	#
 
@@ -2122,6 +2123,8 @@ disconnect.quitting=Menutup	#
 disconnect.spam=Ditendang karena spamming	#
 disconnect.timeout=Waktu habis	#
 
+disconnectionScreen.header.realms_hidden=Undangan Multipemain	#
+disconnectionScreen.body.realms_hidden=Tidak bisa bergabung ke server ini.	#
 disconnectionScreen.cantConnect=Tidak bisa tersambung ke dunia.	#
 disconnectionScreen.cantConnectToRealm=Tidak bisa tersambung ke realm.	#
 disconnectionScreen.cantConnectToRealms=Tidak bisa tersambung ke realm.	#
@@ -2632,10 +2635,12 @@ gui.edu.exitGameWarningCaption=Minecraft: Education Edition		### Use Minecraft �
 gui.edu.exitGameWarningMessage=Keluar dari Minecraft: Education Edition?		### Use 离开 Minecraft 教育版? in zh_CN translation
 
 updateScreen.update=Perbarui	#
+updateScreen.updateRequired=Memerlukan Pembaruan	#
 updateScreen.title=Versi Usang	#
 updateScreen.body=Perbarui ke versi terkini agar bisa mengakses semua fitur baru, bermain dengan teman secara online, atau melihat yang baru di Marketplace.	#
 updateScreen.commerceNotSupported.title=Tidak Dapat Mengakses Marketplace	#
 updateScreen.commerceNotSupported.body=Versi Minecraft yang ini sudah tidak dapat mengakses Marketplace Minecraft. Perbarui ke versi terkini untuk mengembalikan akses Marketplace.	#
+updateScreen.packs.updateRequired=Harap perbarui ke versi terbaru untuk mengunduh paket yang dibeli di Marketplace Minecraft.	#
 updateScreen.patchVersion=Catatan Patch Versi %s:	#
 
 hostOption.codeBuilder=Pembuat Kode	#
@@ -3408,9 +3413,9 @@ howtoplay.theStore.header.1=Telusuri Konten	#
 howtoplay.theStore.text.2=Coba skin baru untuk tampilan baru yang segar!	#
 howtoplay.theStore.text.3=Periksa dunia untuk membuka kunci peta baru dan tantangan yang ingin kamu mainkan lagi dan lagi!	#
 howtoplay.theStore.text.4=Berikan tampilan baru pada permainan lamamu dengan paket tekstur yang bisa melapisi dunia dan Realm-mu saat ini!	#
-howtoplay.theStore.text.4.norealms=Berikan tampilan baru pada permainan lamamu dengan paket tekstur yang bisa melapisi dunia dan Realm-mu saat ini!	#
+howtoplay.theStore.text.4.norealms=Beri permainan lamamu tampilan baru dengan paket tekstur yang bisa diterapkan ke duniamu saat ini!	#
 howtoplay.theStore.text.5=Atau coba semua dengan paket perpaduan berisi koleksi pilihan skin, dunia, dan tekstur yang bila digabungkan akan mengubah dunia dan Realm-mu!	#
-howtoplay.theStore.text.5.norealms=Atau coba semua dengan paket perpaduan berisi koleksi pilihan skin, dunia, dan tekstur yang bila digabungkan akan mengubah dunia dan Realm-mu!	#
+howtoplay.theStore.text.5.norealms=Atau coba semua dengan paket perpaduan yang merupakan kumpulan skin, dunia, dan tekstur yang, bila dikombinasikan, akan mentransformasi duniamu!	#
 
 howtoplay.tools=Alat	#
 howtoplay.tools.title=Cara Main: Alat	#
@@ -4657,8 +4662,8 @@ itemGroup.name.wood=Kayu	#
 itemGroup.name.banner_pattern=Pola Banner	#
 
 ##EDU Joincode
-joincode.entry_popup.icon_button=Tombol Joincode	#
-joincode.entry_popup.icon_entry=Entri Joincode %1	#
+joincode.entry_popup.icon_button=Tombol kode bergabung %1		# Example: Apple join code button	#
+joincode.entry_popup.icon_entry=Entri kode bergabung %3, %1 dari %2	# Example: Apple join code entry 2 of 5	#
 joincode.entry_popup.title=Masukkan Kode Bergabung	#
 joincode.connecting.title=Bergabung ke Dunia	#
 joincode.connecting.lower_text=Mencari dunia...	#
@@ -4686,6 +4691,9 @@ joincode.icon_text.12=Apel	#
 joincode.icon_text.13=Wortel	#
 joincode.icon_text.14=Panda	#
 joincode.icon_text.15=Tanda	#
+joincode.icon_text.16=Ramuan	#
+joincode.icon_text.17=Peta	#
+joincode.icon_text.18=Llama	#
 joincode.ip_entry.button_tts=Opsi Lainnya	#
 joincode.ip_entry.address.tooltip=Untuk menemukan Alamat IP, mintalah host untuk menjeda permainan. Alamat IP dan Nomor port terdapat di tab multipemain layar jeda.	#
 joincode.ip_entry.port.tooltip=Untuk menemukan Nomor port, mintalah host untuk menjeda permainan. Alamat IP dan Nomor port terdapat di tab multipemain layar jeda.	#
@@ -5617,7 +5625,7 @@ options.goBack=Kembali	#
 options.managePrivacy=Untuk mengelola pengaturan privasi, kunjungi https://account.xbox.com/Settings di web browser apa pun.	#
 options.unlink_msa.button=Hapus Tautan Akun Microsoft	#
 options.unlink_msa.confirm.title=Hapus Tautan Akun Microsoft?	#
-options.unlink_msa.confirm.warning=PERINGATAN: Kamu tidak akan bisa menyimpan kemajuan atau pembelian yang dilakukan di Sistem "PlayStation 4" dengan akun %s setelah menghapus tautan.	#
+options.unlink_msa.confirm.warning=PERINGATAN: Kamu tidak akan bisa menyimpan kemajuan atau pembelian yang dilakukan di Sistem "PlayStation 4" di akun %s setelah menghapus tautan.	#
 options.unlink_msa.confirm.checkbox1=Saya tidak akan bisa mengakses segala konten Toko dalam permainan saat bermain di platform lain.	#
 options.unlink_msa.confirm.checkbox2=Saya tidak akan bisa memainkan permainan lintas-platform dengan teman di platform lain.	#
 options.unlink_msa.confirm.checkbox3=Saya tidak akan bisa mengakses Realms, termasuk langganan Realms yang saat ini aktif.	#
@@ -5652,7 +5660,7 @@ pauseScreen.title=Permainan Dijeda	#
 pauseScreen.betaFeedback=Umpan Balik Beta	#
 pauseScreen.xboxLiveDisconnect=Ups! Akun Microsoft kamu terputus. Untuk mengundang lebih banyak pemain, masuk ke Menu Utama dan aktifkan ulang duniamu.	#
 pauseScreen.joinCode.Label=KODE BERGABUNG	#
-pauseScreen.joinCode.Icon=ikon kode bergabung, %1 dari 4	#
+pauseScreen.joinCode.Icon=ikon kode bergabung %3, %1 dari %2	# Example: Apple join code icon, 2 of 5	#
 
 feedbackScreen.button=Umpan Balik	#
 feedbackScreen.title=Ada Umpan Balik?	#
@@ -5925,7 +5933,6 @@ progressScreen.title.connectingLAN=Menyambungkan ke permainan multipemain	#
 progressScreen.title.connectingExternal=Menyambung ke server eksternal	#
 progressScreen.title.connectingRealms=Menyambungkan ke Realm	#
 progressScreen.title.copyingWorld=Salinan Dunia	#
-progressScreen.title.skin_loading=Memuat Skin...	#
 progressScreen.message.copyingWorld=Menyalin Dunia... %d%%	#
 progressScreen.message.building=Membangun medan	#
 progressScreen.message.done=Selesai!	#
@@ -5956,7 +5963,6 @@ progressScreen.message.leaveLevel=Permainanmu sedang disimpan. Jangan mematikan 
 progressScreen.message.genericMayTakeAMoment=Ini mungkin akan berlangsung lama	#
 progressScreen.message.unkownError=Terjadi kesalahan	#
 progressScreen.message.forbiddenContent=Kamu tidak memiliki satu atau beberapa paket yang diterapkan	#
-progressScreen.message.skin_loading=Skin yang kamu pilih masih dimuat.	#
 progressScreen.dialog.title.resourcePack=Unduh Paket Sumber Daya Dunia?	#
 progressScreen.dialog.title.behaviorAndResourcePack=Unduh Paket Perilaku & Sumber Daya Dunia?	#
 progressScreen.dialog.title.onlyBehavior=Unduh Paket Perilaku & Dunia?	#
@@ -6480,7 +6486,7 @@ store.realmsPlus.landing.info1.line2=- Server Realm pribadi	#
 store.realmsPlus.landing.info1.line3=- Teman bisa main gratis di Realm milikmu	#
 
 store.realmsPlus.landing.info2.line1=- Penyimpanan cloud aman	#
-store.realmsPlus.landing.info2.line2=- Main di perangkat apa pun dengan Marketplace Minecraft	#
+store.realmsPlus.landing.info2.line2=- Bermain di perangkat apa pun dengan Realms dan Marketplace Minecraft	#
 store.realmsPlus.landing.info2.line3=- Dukungan Komunitas Minecraft	#
 store.realmsPlus.landing.info2.line4=- Uji coba gratis 1 bulan	#
 
@@ -6490,7 +6496,7 @@ store.realmsPlus.faq.answer1=Dengan harga bulanan yang terjangkau, nikmati akses
 store.realmsPlus.faq.question2=Apakah paket Realms Plus saya bisa digunakan saat bermain offline?	#
 store.realmsPlus.faq.answer2=Kamu tidak harus online untuk menikmati Realms Plus. Paket yang disertakan dalam langganan bisa dimainkan online di Realm pribadimu atau dimainkan di perangkat lokal. Kamu hanya perlu online setiap 30 hari untuk memvalidasi bahwa langgananmu aktif.	#
 store.realmsPlus.faq.question3=Apakah teman saya harus punya Realms Plus untuk bermain di Realm saya?	#
-store.realmsPlus.faq.answer3=Temanmu tidak perlu langganan Realms Plus untuk bergabung ke Realm. Kamu bisa mengundang teman untuk bergabung ke Realm kamu secara gratis.	#
+store.realmsPlus.faq.answer3=Temanmu tidak perlu langganan Realms Plus untuk bergabung ke Realm. Kamu bisa mengundang teman yang bisa mengakses Realms untuk bergabung ke Realm kamu secara gratis.	#
 store.realmsPlus.faq.question4=Apakah saya bisa meng-hosting dunia, paket tekstur, skin, dan perpaduan Realms Plus di Realm saya?	#
 store.realmsPlus.faq.answer4=Ya! Kamu bisa mengunggah dunia, paket tekstur, skin, dan perpaduan apa pun dari katalog Realms Plus atau pembelian dari Marketplace Minecraft ke Realm milikmu dan mengundang teman untuk bergabung secara gratis.	#
 store.realmsPlus.faq.question5=Berapa biaya langganan Realms Plus?	#
@@ -6504,7 +6510,7 @@ store.realmsPlus.faq.answer8=Berbagai paket yang ada di Realms Plus dibuat oleh 
 store.realmsPlus.faq.question9=Minecraft edisi apa yang mendukung Realms Plus?	#
 store.realmsPlus.faq.answer9=Realms Plus saat ini tersedia untuk Minecraft seluler, Windows 10, konsol Xbox One, dan Nintendo Switch.	#
 store.realmsPlus.faq.question10=Apakah Realms Plus bisa digunakan di segala perangkat Bedrock?	#
-store.realmsPlus.faq.answer10=Ya! Jika kamu membeli Realms Plus di satu perangkat Bedrock, kamu bisa menggunakan semua paketnya, server pribadi, serta penyimpanan dari segala versi Minecraft Bedrock selama kamu masuk ke akun Minecraft-mu.	#
+store.realmsPlus.faq.answer10=Ya! Jika kamu membeli Realms Plus di perangkat Bedrock apa pun yang berkemampuan Realms, kamu bisa mengakses semua paket, server pribadi, serta penyimpanan dari segala versi Minecraft Bedrock yang memiliki Realms dan kamu masuk ke akun Minecraft-mu.	#
 store.realmsPlus.faq.question11=Berapa banyak template dunia yang bisa saya mainkan dengan Realms Plus?	#
 store.realmsPlus.faq.answer11=Kamu bisa memainkan dan menyimpan semua paket yang disertakan dalam Realms Plus di perangkat lokalmu. Selain itu, kamu bisa meng-hosting salah satu template duniamu di Realm agar temanmu bisa bergabung secara gratis! Kamu bisa mengubah dunia yang ingin dimuat di Realm kapan saja.	#
 store.realmsPlus.faq.question12=Apa yang akan terjadi pada Realm dan dunia saya ketika langganan Realms Plus saya berakhir?	#
@@ -6520,7 +6526,7 @@ store.realmsPlus.content.mashupDescription=Cobalah banyak hal di perpaduan!	#
 
 store.realmsPlus.content.popularPacks=Paket Populer di Realms Plus:	#
 store.realmsPlus.content.viewAllPacks=LIHAT SEMUA PAKET	#
-store.realmsPlus.content.contentDescription=Lihatlah sumber konten Minecraft yang menakjubkan! Dengan Realms Plus, kamu mendapatkan akses instan ke 50+ item marketplace seperti perpaduan, dunia, paket skin, dan petualangan epik, dengan tambahan baru setiap bulannya. Kontenmu disimpan di server pribadimu sendiri, dan bisa diakses di platform apa pun tempat kamu menggunakan Marketplace Minecraft. Hingga 10 pemain bisa bermain sekaligus, dan mereka bisa mengakses semua konten pelanggan di Realm kamu – gratis!	#
+store.realmsPlus.content.contentDescription=Lihatlah sumber konten Minecraft yang menakjubkan! Dengan Realms Plus, kamu mendapatkan akses instan ke 50+ item marketplace seperti perpaduan, dunia, paket skin, dan petualangan epik, dengan tambahan baru setiap bulannya. Kontenmu disimpan di server pribadimu sendiri, dan bisa diakses di platform apa pun tempat kamu menggunakan Realms dan Marketplace Minecraft. Hingga 10 pemain bisa bermain sekaligus, dan mereka bisa mengakses semua konten pelanggan di Realm kamu – gratis!	#
 
 store.realmsPlus.freeTrial=MULAI UJI COBA GRATIS 1 BULAN	#
 

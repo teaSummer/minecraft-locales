@@ -99,6 +99,7 @@ accessibility.settings.chooseSeed=Seed auswählen	#
 accessibility.start.feedback=Feedback übermitteln	#
 accessibility.start.new=Neu	#
 accessibility.start.profile=Profil auswählen	#
+accessibility.start.skinPicker=Skin auswählen	#
 
 accessibility.store.tag=Tag	#
 
@@ -2122,6 +2123,8 @@ disconnect.quitting=Wird beendet	#
 disconnect.spam=Rausgeworfen wegen Spamming	#
 disconnect.timeout=Zeitüberschreitung	#
 
+disconnectionScreen.header.realms_hidden=Mehrspieler-Einladung	#
+disconnectionScreen.body.realms_hidden=Du kannst diesem bestimmten Server nicht beitreten.	#
 disconnectionScreen.cantConnect=Keine Verbindung zur Welt.	#
 disconnectionScreen.cantConnectToRealm=Es konnte keine Verbindung zum Realm aufgebaut werden.	#
 disconnectionScreen.cantConnectToRealms=Es konnte keine Verbindung zu Realms aufgebaut werden.	#
@@ -2632,10 +2635,12 @@ gui.edu.exitGameWarningCaption=Minecraft: Education Edition		### Use Minecraft �
 gui.edu.exitGameWarningMessage=Minecraft: Education Edition verlassen?		### Use 离开 Minecraft 教育版? in zh_CN translation
 
 updateScreen.update=Update	#
+updateScreen.updateRequired=Aktualisierung erforderlich	#
 updateScreen.title=Veraltete Version	#
 updateScreen.body=Aktualisiere das Spiel auf die neueste Version, um auf alle neuen Funktionen zugreifen zu können, mit Freunden online zu spielen und alle Neuerungen im Marketplace anzuzeigen.	#
 updateScreen.commerceNotSupported.title=Kein Zugriff auf Marketplace	#
 updateScreen.commerceNotSupported.body=Mit dieser Version von Minecraft kannst du nicht mehr auf den Minecraft Marketplace zugreifen. Aktualisiere das Spiel auf die neueste Version, um wieder auf den Marketplace zuzugreifen.	#
+updateScreen.packs.updateRequired=Aktualisiere das Spiel auf die neueste Version, um das Paket herunterladen zu können, das du dir im Minecraft Marketplace gekauft hast.	#
 updateScreen.patchVersion=Patch-Hinweise für Version %s:	#
 
 hostOption.codeBuilder=Code-Builder	#
@@ -3408,9 +3413,9 @@ howtoplay.theStore.header.1=Inhalte erkunden	#
 howtoplay.theStore.text.2=Hol dir mit einer neuen Skin einen frischen Look!	#
 howtoplay.theStore.text.3=Sieh dir Welten an, und schalte spannende neue Karten und Herausforderungen frei.	#
 howtoplay.theStore.text.4=Verpasse deinem Spiel mit Texturpaketen für deine vorhandenen Welten und Realms ein neues Aussehen.	#
-howtoplay.theStore.text.4.norealms=Verpasse deinem Spiel mit Texturpaketen für deine vorhandenen Welten und Realms ein neues Aussehen.	#
+howtoplay.theStore.text.4.norealms=Verpasse deinem Spiel mit Texturpaketen für deine vorhandenen Welten ein neues Aussehen.	#
 howtoplay.theStore.text.5=Oder probiere die Mash-up Pakete mit eigens zusammengestellten Skins, Welten und Features aus, die deine Welten und Realms total umwandeln.	#
-howtoplay.theStore.text.5.norealms=Oder probiere die Mash-up Pakete mit eigens zusammengestellten Skins, Welten und Features aus, die deine Welten und Realms total umwandeln.	#
+howtoplay.theStore.text.5.norealms=Oder probiere die Mash-up Packs mit eigens zusammengestellten Skins, Welten und Features aus, die deine Welten total umwandeln.	#
 
 howtoplay.tools=Werkzeuge	#
 howtoplay.tools.title=So wird gespielt: Werkzeuge	#
@@ -4657,8 +4662,8 @@ itemGroup.name.wood=Holz	#
 itemGroup.name.banner_pattern=Bannermuster	#
 
 ##EDU Joincode
-joincode.entry_popup.icon_button=Beitrittscode-Taste	#
-joincode.entry_popup.icon_entry=Beitrittscode-Eintrag %1	#
+joincode.entry_popup.icon_button=%1 Beitrittscode-Knopf		# Example: Apple join code button	#
+joincode.entry_popup.icon_entry=%3 Zugang mit Beitrittscode, %1 von %2	# Example: Apple join code entry 2 of 5	#
 joincode.entry_popup.title=Beitrittscode eingeben	#
 joincode.connecting.title=Welt beitreten	#
 joincode.connecting.lower_text=Welt wird gesucht ...	#
@@ -4686,6 +4691,9 @@ joincode.icon_text.12=Apfel	#
 joincode.icon_text.13=Karotte	#
 joincode.icon_text.14=Panda	#
 joincode.icon_text.15=Schild	#
+joincode.icon_text.16=Trank	#
+joincode.icon_text.17=Karte	#
+joincode.icon_text.18=Lama	#
 joincode.ip_entry.button_tts=Weitere Optionen	#
 joincode.ip_entry.address.tooltip=Bitte den Host, das Spiel zu unterbrechen, um die IP-Adresse zu finden. IP-Adresse und Portnummer werden auf der Registerkarte "Mehrspieler" des Pausenfensters angezeigt.	#
 joincode.ip_entry.port.tooltip=Bitte den Host, das Spiel zu unterbrechen, um die Portnummer zu finden. IP-Adresse und Portnummer werden auf der Registerkarte "Mehrspieler" des Pausenfensters angezeigt.	#
@@ -5652,7 +5660,7 @@ pauseScreen.title=Spiel pausiert	#
 pauseScreen.betaFeedback=Beta-Feedback	#
 pauseScreen.xboxLiveDisconnect=Hoppla! Die Verbindung zu deinem Microsoft-Konto wurde getrennt. Melde dich im Hauptmenü an und starte deine Welt neu, um weitere Spieler einzuladen.	#
 pauseScreen.joinCode.Label=Beitrittscode	#
-pauseScreen.joinCode.Icon=Beitrittscode-Symbol, %1 von 4	#
+pauseScreen.joinCode.Icon=%3 Beitrittscode-Symbol, %1 von %2	# Example: Apple join code icon, 2 of 5	#
 
 feedbackScreen.button=Feedback	#
 feedbackScreen.title=Feedback?	#
@@ -5925,7 +5933,6 @@ progressScreen.title.connectingLAN=Verbindung zum Mehrspieler-Spiel wird hergest
 progressScreen.title.connectingExternal=Wird mit externem Server verbunden	#
 progressScreen.title.connectingRealms=Verbindung zu Realm wird hergestellt	#
 progressScreen.title.copyingWorld=Welt-Kopie	#
-progressScreen.title.skin_loading=Skin wird geladen ...	#
 progressScreen.message.copyingWorld=Welt wird kopiert... %d%%	#
 progressScreen.message.building=Gelände wird gebaut	#
 progressScreen.message.done=Fertig!	#
@@ -5956,7 +5963,6 @@ progressScreen.message.leaveLevel=Dein Spiel wird gespeichert. Schalte dein Ger�
 progressScreen.message.genericMayTakeAMoment=Dies könnte einen Moment dauern.	#
 progressScreen.message.unkownError=Ein Fehler ist aufgetreten.	#
 progressScreen.message.forbiddenContent=Du besitzt eines oder mehrere der angewendeten Pakete nicht	#
-progressScreen.message.skin_loading=Ausgewählter Skin wird noch geladen.	#
 progressScreen.dialog.title.resourcePack=Welt-Ressourcenpakete herunterladen?	#
 progressScreen.dialog.title.behaviorAndResourcePack=Welt-Verhaltens und -Ressourcenpakete herunterladen?	#
 progressScreen.dialog.title.onlyBehavior=Welt-Verhaltenspakete herunterladen?	#
@@ -6480,7 +6486,7 @@ store.realmsPlus.landing.info1.line2=- Dein persönlicher Realm-Server	#
 store.realmsPlus.landing.info1.line3=– Freunde spielen kostenlos in deinem Realm	#
 
 store.realmsPlus.landing.info2.line1=- Sichere Cloud-Speicherung	#
-store.realmsPlus.landing.info2.line2=- Spiele auf beliebigen Geräten, die Zugriff auf den Minecraft Marketplace haben	#
+store.realmsPlus.landing.info2.line2=- Spiele auf beliebigen Geräten, die Zugriff auf Realms und den Minecraft Marketplace haben	#
 store.realmsPlus.landing.info2.line3=- Unterstützung der Minecraft Community	#
 store.realmsPlus.landing.info2.line4=- 1 Monat kostenlos testen	#
 
@@ -6490,7 +6496,7 @@ store.realmsPlus.faq.answer1=Für einen geringen monatlichen Preis erhältst du 
 store.realmsPlus.faq.question2=Kann ich meine Pakete aus Realms Plus offline nutzen?	#
 store.realmsPlus.faq.answer2=Du musst nicht online sein, um Realms Plus nutzen zu können. Die im Abonnement enthaltenen Pakete können entweder online auf deinem persönlichen Realm oder auf deinem lokalen Gerät gespielt werden. Du musst nur alle 30 Tage online bestätigen, dass dein Abonnement aktiv ist.	#
 store.realmsPlus.faq.question3=Brauchen meine Freunde Realms Plus, um auf meinem Realm zu spielen?	#
-store.realmsPlus.faq.answer3=Deine Freunde brauchen kein Realms Plus-Abonnement, um einem Realm beizutreten. Du kannst deine Freunde kostenlos in deinen Realm einladen.	#
+store.realmsPlus.faq.answer3=Deine Freunde brauchen kein Realms Plus-Abonnement, um einem Realm beizutreten. Du kannst deine Freunde mit Zugriff auf Realms kostenlos in deinen Realm einladen.	#
 store.realmsPlus.faq.question4=Kann ich meine Realms Plus-Welten, Texturpakete, Skins und Mash-ups auf meinem Realm hosten?	#
 store.realmsPlus.faq.answer4=Ja! Du kannst alle beliebigen Welten, Texturpakete, Skins und Mash-ups aus dem Realms Plus-Katalog oder deine Käufe vom Minecraft Marketplace auf deinen Realm hochladen und deine Freunde kostenlos beitreten lassen.	#
 store.realmsPlus.faq.question5=Wie viel kostet ein Realms Plus-Abonnement?	#
@@ -6504,7 +6510,7 @@ store.realmsPlus.faq.answer8=Die verschiedenen Pakete in Realms Plus werden von 
 store.realmsPlus.faq.question9=Welche Minecraft-Editionen unterstützt Realms Plus?	#
 store.realmsPlus.faq.answer9=Realms Plus ist derzeit für Minecraft auf Mobilgeräten, Windows 10, Xbox One-Konsolen sowie der Nintendo Switch verfügbar.	#
 store.realmsPlus.faq.question10=Kann ich mein Realms Plus auf jedem beliebigen Bedrock-Gerät nutzen?	#
-store.realmsPlus.faq.answer10=Ja! Wenn du Realms Plus auf einem Bedrock-Gerät kaufst, kannst du alle Pakete, den persönlichen Server und den Speicher aus jeder Version von Minecraft Bedrock nutzen, solange du mit deinem Minecraft-Konto angemeldet bist.	#
+store.realmsPlus.faq.answer10=Ja! Wenn du Realms Plus auf einem Bedrock-Gerät, auf dem Realms aktiviert ist, kaufst, kannst du alle Pakete, den persönlichen Server und den Speicher aus jeder Version, die über Realms verfügt, von Minecraft Bedrock nutzen, solange du mit deinem Minecraft-Konto angemeldet bist.	#
 store.realmsPlus.faq.question11=Wie viele Weltvorlagen kann ich mit Realms Plus spielen?	#
 store.realmsPlus.faq.answer11=Du kannst alle Pakete spielen und speichern, die in Realms Plus auf deinem lokalen Gerät enthalten sind. Zusätzlich kannst du eine deiner Weltvorlagen auf einem Realm für deine Freunde hosten, die dort kostenlos mit dir spielen können! Du kannst jederzeit ändern, welche Welt du auf deinem Realm lädst.	#
 store.realmsPlus.faq.question12=Was passiert mit meinen Realms und Welten, wenn mein Realms Plus-Abonnement abläuft?	#
@@ -6520,7 +6526,7 @@ store.realmsPlus.content.mashupDescription=Probiere von allem etwas mit Mash-ups
 
 store.realmsPlus.content.popularPacks=Beliebte Pakete in Realms Plus:	#
 store.realmsPlus.content.viewAllPacks=ALLE PAKETE ANZEIGEN	#
-store.realmsPlus.content.contentDescription=Mache dir eine Quelle unglaublicher Minecraft-Inhalte zunutze! Mit Realms Plus erhältst du sofortigen Zugang zu über 50 Marketplace-Objekten wie Mash-ups, Welten, Skinpaketen und epischen Abenteuern. Und jeden Monat gibt es etwas Neues! Deine Inhalte werden auf deinem persönlichen Server gespeichert und stehen dir auf allen Plattformen zur Verfügung, auf denen du auch den Minecraft Marketplace nutzen kannst. Zudem können bis zu 10 Spieler gleichzeitig spielen und sie erhalten alle komplett gratis Zugriff auf die Abonnementinhalte in deinem Realm!	#
+store.realmsPlus.content.contentDescription=Mache dir eine Quelle unglaublicher Minecraft-Inhalte zunutze! Mit Realms Plus erhältst du sofortigen Zugang zu über 50 Marketplace-Objekten wie Mash-ups, Welten, Skinpaketen und epischen Abenteuern. Und jeden Monat gibt es etwas Neues! Deine Inhalte werden auf deinem persönlichen Server gespeichert und stehen dir auf allen Plattformen zur Verfügung, auf denen du auch Realms sowie den Minecraft Marketplace nutzen kannst. Zudem können bis zu 10 Spieler gleichzeitig spielen und sie erhalten alle komplett gratis Zugriff auf die Abonnementinhalte in deinem Realm!	#
 
 store.realmsPlus.freeTrial=KOSTENLOSE TESTVERSION (1 MONAT) STARTEN	#
 

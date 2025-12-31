@@ -99,6 +99,7 @@ accessibility.settings.chooseSeed=Elegir semilla	#
 accessibility.start.feedback=Enviar comentario	#
 accessibility.start.new=Nuevo	#
 accessibility.start.profile=Elegir perfil	#
+accessibility.start.skinPicker=Selecc. aspecto	#
 
 accessibility.store.tag=Etiqueta	#
 
@@ -1988,7 +1989,7 @@ date.formatted=%s %d %d	#
 dayOneExperience.carousel.title=¡Te damos la bienvenida a New Minecraft!	#
 dayOneExperience.carousel.welcome_text=¡Esta nueva versión de Minecraft contiene muchísimas cosas nuevas! ¡Echa un vistazo al Marketplace, crea un Realm y juega en línea en multiplataforma!	#
 dayOneExperience.carousel.marketplace=En el Marketplace de Minecraft, encontrarás nuevos aspectos, mundos, texturas y packs de popurrí creados por diversas personas con talento.	#
-dayOneExperience.carousel.cross_platform=El juego entre diferentes plataformas te permite conectarte con jugadores de otras plataformas. ¡Inicia sesión en tu cuenta de Microsoft para jugar con todos tus amigos de Minecraft!	#
+dayOneExperience.carousel.cross_platform=Las partidas entre distintas plataformas te permiten conectarte con jugadores de otras plataformas. ¡Inicia sesión en tu cuenta de Microsoft para jugar con todos tus amigos de Minecraft!	#
 dayOneExperience.carousel.realms=Los realms son servidores que gestionamos nosotros solo para ti y tus amigos. Mantén tu mundo de Minecraft siempre en línea y disponible, incluso cuando cierras sesión.	#
 dayOneExperience.carousel.villager=¡New Minecraft es el único lugar en el que puedes recibir futuras actualizaciones con nuevas características, criaturas, objetos, bloques y mucho más!	#
 
@@ -2122,6 +2123,8 @@ disconnect.quitting=Desconectando	#
 disconnect.spam=Expulsado por hacer spam	#
 disconnect.timeout=Tiempo de espera agotado	#
 
+disconnectionScreen.header.realms_hidden=Invitación para multijugador	#
+disconnectionScreen.body.realms_hidden=No se puedes unirte a este servidor específico.	#
 disconnectionScreen.cantConnect=No se ha podido conectar con el mundo.	#
 disconnectionScreen.cantConnectToRealm=No se ha podido conectar con el Realm.	#
 disconnectionScreen.cantConnectToRealms=No se ha podido conectar con Realms.	#
@@ -2632,10 +2635,12 @@ gui.edu.exitGameWarningCaption=Minecraft: Education Edition		### Use Minecraft �
 gui.edu.exitGameWarningMessage=¿Quieres salir de Minecraft: Education Edition?		### Use 离开 Minecraft 教育版? in zh_CN translation
 
 updateScreen.update=Actualizar	#
+updateScreen.updateRequired=Actualización necesaria	#
 updateScreen.title=Versión desactualizada	#
 updateScreen.body=Actualízate a la versión más reciente para tener acceso a todas las características nuevas, jugar con amigos en línea o ver las novedades del Marketplace.	#
 updateScreen.commerceNotSupported.title=No puedes acceder al Marketplace	#
 updateScreen.commerceNotSupported.body=Ya no puedes acceder al Marketplace de Minecraft con esta versión de Minecraft. Actualízate a la versión más reciente para recuperar el acceso al Marketplace.	#
+updateScreen.packs.updateRequired=Actualiza a la versión más reciente para descargar el pack que has comprado en el Marketplace de Minecraft.	#
 updateScreen.patchVersion=Notas de parche de la versión %s:	#
 
 hostOption.codeBuilder=Creador de código	#
@@ -3408,9 +3413,9 @@ howtoplay.theStore.header.1=Explorar el contenido	#
 howtoplay.theStore.text.2=¡Prueba un aspecto nuevo a ver qué tal te queda!	#
 howtoplay.theStore.text.3=Busca mundos para desbloquear nuevos mapas y retos a los que querrás jugar una y otra vez.	#
 howtoplay.theStore.text.4=Da a tu antiguo mundo un nuevo aspecto con los packs de texturas que se superponen a tus mundos y Realms actuales.	#
-howtoplay.theStore.text.4.norealms=Da a tu antiguo mundo un nuevo aspecto con los packs de texturas que se superponen a tus mundos y Realms actuales.	#
+howtoplay.theStore.text.4.norealms=Da a tu antiguo mundo un nuevo aspecto con los packs de texturas que se superponen a tus mundos actuales.	#
 howtoplay.theStore.text.5=O bien pruébalos todos con los packs de popurrí, que son colecciones organizadas de aspectos, mundos y texturas que, combinados, transforman tus mundos y Realms.	#
-howtoplay.theStore.text.5.norealms=O bien pruébalos todos con los packs de popurrí, que son colecciones organizadas de aspectos, mundos y texturas que, combinados, transforman tus mundos y Realms.	#
+howtoplay.theStore.text.5.norealms=O pruébalos todos con los packs de popurrí, una colección seleccionada de aspectos, mundos y texturas que al combinarse, transformarán tus mundos.	#
 
 howtoplay.tools=Herramientas	#
 howtoplay.tools.title=Cómo se juega: Herramientas	#
@@ -4657,8 +4662,8 @@ itemGroup.name.wood=Madera	#
 itemGroup.name.banner_pattern=Patrones de estandarte	#
 
 ##EDU Joincode
-joincode.entry_popup.icon_button=Botón de código de unión	#
-joincode.entry_popup.icon_entry=Entrada de código de unión %1	#
+joincode.entry_popup.icon_button=%1 Botón de código de unión		# Example: Apple join code button	#
+joincode.entry_popup.icon_entry=%3 entrada de código de unión %1 de %2	# Example: Apple join code entry 2 of 5	#
 joincode.entry_popup.title=Introducir código de unión	#
 joincode.connecting.title=Unirse al mundo	#
 joincode.connecting.lower_text=Buscando mundo...	#
@@ -4686,6 +4691,9 @@ joincode.icon_text.12=Manzana	#
 joincode.icon_text.13=Zanahoria	#
 joincode.icon_text.14=Panda	#
 joincode.icon_text.15=Señal	#
+joincode.icon_text.16=Poción	#
+joincode.icon_text.17=Mapa	#
+joincode.icon_text.18=Llama	#
 joincode.ip_entry.button_tts=Más opciones	#
 joincode.ip_entry.address.tooltip=Para ver la dirección IP, pide al host que detenga la partida. La dirección IP y el número de puerto se indican en la pestaña de multijugador de la pantalla de pausa.	#
 joincode.ip_entry.port.tooltip=Para ver el número de puerto, pide al host que detenga la partida. La dirección IP y el número de puerto se indican en la pestaña de multijugador de la pantalla de pausa.	#
@@ -5652,7 +5660,7 @@ pauseScreen.title=Juego en pausa	#
 pauseScreen.betaFeedback=Comentarios de la beta	#
 pauseScreen.xboxLiveDisconnect=¡Vaya! La cuenta de Microsoft se ha desconectado. Para invitar a más jugadores, inicia sesión en el menú principal y reinicia tu mundo.	#
 pauseScreen.joinCode.Label=CÓDIGO DE UNIÓN	#
-pauseScreen.joinCode.Icon=icono de código de unión, %1 de 4	#
+pauseScreen.joinCode.Icon=%3 icono de código de unión, %1 de %2	# Example: Apple join code icon, 2 of 5	#
 
 feedbackScreen.button=Comentarios	#
 feedbackScreen.title=¿Algún comentario?	#
@@ -5925,7 +5933,6 @@ progressScreen.title.connectingLAN=Conectando con una partida multijugador	#
 progressScreen.title.connectingExternal=Conectando con servidor externo	#
 progressScreen.title.connectingRealms=Conectando con Realm	#
 progressScreen.title.copyingWorld=Copia del mundo	#
-progressScreen.title.skin_loading=Cargando aspecto...	#
 progressScreen.message.copyingWorld=Copiando mundo... %d%%	#
 progressScreen.message.building=Generando terreno	#
 progressScreen.message.done=¡Hecho!	#
@@ -5956,7 +5963,6 @@ progressScreen.message.leaveLevel=La partida se está guardando. No apagues el d
 progressScreen.message.genericMayTakeAMoment=Esto puede llevar unos segundos	#
 progressScreen.message.unkownError=Ha habido un error.	#
 progressScreen.message.forbiddenContent=No posees uno o más de los packs aplicados.	#
-progressScreen.message.skin_loading=El aspecto seleccionado aún se está cargando.	#
 progressScreen.dialog.title.resourcePack=¿Descargar paquetes de recursos del mundo?	#
 progressScreen.dialog.title.behaviorAndResourcePack=¿Descargar paquetes de recursos y comportamientos del mundo?	#
 progressScreen.dialog.title.onlyBehavior=¿Descargar packs de comportamientos del mundo?	#
@@ -6480,7 +6486,7 @@ store.realmsPlus.landing.info1.line2=- Tu propio servidor personal de Realm	#
 store.realmsPlus.landing.info1.line3=- Tus amigos juegan gratis en tu Realm	#
 
 store.realmsPlus.landing.info2.line1=- Almacenamiento seguro en la nube	#
-store.realmsPlus.landing.info2.line2=- Juega en cualquier dispositivo con el Marketplace de Minecraft	#
+store.realmsPlus.landing.info2.line2=- Juega en cualquier dispositivo con Realms y el Marketplace de Minecraft	#
 store.realmsPlus.landing.info2.line3=- Apoya a la comunidad de Minecraft	#
 store.realmsPlus.landing.info2.line4=- 1 mes de prueba gratis	#
 
@@ -6490,7 +6496,7 @@ store.realmsPlus.faq.answer1=Por una reducida cuota mensual, podrás disfrutar d
 store.realmsPlus.faq.question2=¿Puedo usar mis packs de Realms Plus sin conexión?	#
 store.realmsPlus.faq.answer2=No necesitas estar en línea para disfrutar de Realms Plus. Los packs incluidos en la suscripción pueden jugarse en línea en tu Realm personal o en tu dispositivo local. Solo tienes que conectarte en línea cada 30 días para validar que tu suscripción se encuentra activa.	#
 store.realmsPlus.faq.question3=¿Mis amigos necesitan tener Realms Plus para jugar en mi Realm?	#
-store.realmsPlus.faq.answer3=Tus amigos no necesitan una suscripción a Realms Plus para unirse a un Realm. Puedes invitar a cualquier amigo a unirse a tu Realm gratis.	#
+store.realmsPlus.faq.answer3=Tus amigos no necesitan tener una suscripción a Realms Plus para unirse a un Realm. Puedes invitar a cualquier amigo que tenga acceso a Realms a unirse a tu Realm gratis.	#
 store.realmsPlus.faq.question4=¿Puedo hospedar mis mundos, packs de texturas, aspectos y popurrís de Realms Plus en mi Realm?	#
 store.realmsPlus.faq.answer4=¡Sí! Puedes subir cualquier mundo, pack de texturas, aspecto y popurrí del catálogo de Realms Plus o del Marketplace de Minecraft a tu Realm e invitar a tus amigos a unirse gratis.	#
 store.realmsPlus.faq.question5=¿Cuánto cuesta una suscripción a Realms Plus?	#
@@ -6504,7 +6510,7 @@ store.realmsPlus.faq.answer8=Los distintos packs de Realms Plus los creamos noso
 store.realmsPlus.faq.question9=¿Qué ediciones de Minecraft son compatibles con Realms Plus?	#
 store.realmsPlus.faq.answer9=Realms Plus está disponible en la actualidad en Minecraft para dispositivos móviles, Windows 10, consolas Xbox One y Nintendo Switch.	#
 store.realmsPlus.faq.question10=¿Puedo usar mi Realms Plus en cualquier dispositivo Bedrock?	#
-store.realmsPlus.faq.answer10=¡Sí! Si compras Realms Plus en un dispositivo Bedrock, podrás usar todos los packs, el servidor personal y el almacenamiento desde cualquier versión de Minecraft Bedrock siempre y cuando tengas iniciada la sesión en tu cuenta de Minecraft.	#
+store.realmsPlus.faq.answer10=¡Sí! Si compras Realms Plus en un dispositivo Bedrock compatible con Realms, podrás acceder a todos los packs, servidores personales y el almacenamiento desde cualquier versión de Minecraft Bedrock que tenga disponibles Realms si has iniciado sesión en tu cuenta de Minecraft.	#
 store.realmsPlus.faq.question11=¿Con cuántas plantillas de mundos puedo jugar en Realms Plus?	#
 store.realmsPlus.faq.answer11=Puedes usar y guardar todos los packs incluidos en Realms Plus en tu dispositivo local. Además, puedes hospedar una de tus plantillas de mundos en un Realm para que tus amigos jueguen contigo gratis. Puedes cambiar el mundo que cargas en tu Realm en cualquier momento.	#
 store.realmsPlus.faq.question12=¿Qué les sucede a mis Realms y a los mundos cuando acaba mi suscripción a Realms Plus?	#
@@ -6520,7 +6526,7 @@ store.realmsPlus.content.mashupDescription=¡Prueba un poco de todo con los popu
 
 store.realmsPlus.content.popularPacks=Packs populares en Realms Plus:	#
 store.realmsPlus.content.viewAllPacks=VER TODOS LOS PACKS	#
-store.realmsPlus.content.contentDescription=¡Disfruta del impresionante contenido de Minecraft! Con Realms Plus, tendrás acceso instantáneo a más de 50 objetos del Marketplace, como popurrís, mundos, packs de aspectos y aventuras épicas, y cada mes se añaden muchos otros nuevos. Tu contenido se guarda en tu propio servidor personal y está disponible en cualquier plataforma en la que disfrutes del Marketplace de Minecraft. Pueden jugar al mismo tiempo hasta 10 jugadores, quienes disfrutarán de acceso a todo el contenido para suscriptores de tu Realm... ¡y gratis!	#
+store.realmsPlus.content.contentDescription=¡Disfruta del impresionante contenido de Minecraft! Con Realms Plus, tendrás acceso instantáneo a más de 50 objetos del Marketplace, como popurrís, mundos, packs de aspectos y aventuras épicas, y cada mes se añaden muchos otros nuevos. Tu contenido se guarda en tu propio servidor personal y está disponible en cualquier plataforma en la que disfrutes de Realms y del Marketplace de Minecraft. Pueden jugar al mismo tiempo hasta 10 jugadores, quienes disfrutarán de acceso a todo el contenido para suscriptores de tu Realm... ¡y gratis!	#
 
 store.realmsPlus.freeTrial=INICIAR LA PRUEBA GRATUITA DE 1 MES	#
 
