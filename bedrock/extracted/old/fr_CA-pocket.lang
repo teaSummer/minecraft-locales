@@ -93,6 +93,7 @@ action.interact.stand=Se lever	#
 action.interact.tame=Dresser	#
 action.interact.wolfcollar=Teindre	#
 action.interact.opencontainer=Ouvrir	#
+action.interact.createMap=Créez une carte	#
 
 addServer.add=Terminé	#
 addServer.enterIp=Adresse du serveur	#
@@ -547,6 +548,7 @@ container.dispenser=Distributeur	#
 container.dropper=Droppeur	#
 container.enchant=Enchanter	#
 container.enchant.clue=%s . . . ?	#
+container.enchant.levelrequirement=Niveau requis : %d	#
 container.enchant.lapis.many=%d unités de lapis-lazuli	#
 container.enchant.lapis.one=1 unité de lapis-lazuli	#
 container.enchant.level.many=%d niveaux d'enchantement	#
@@ -558,7 +560,7 @@ container.inventory=Inventaire	#
 container.isLocked=%s est verrouillé(e)!	#
 container.minecart=Wagonnet	#
 container.repair=Réparer et renommer	#
-container.repair.cost=Coût en EXP : %1$d	#
+container.repair.cost=Coût en EXP : %1$d	#
 container.repair.expensive=Trop coûteux!	#
 container.stonecutter=Tailleur de pierre	#
 
@@ -825,13 +827,14 @@ disconnect.timeout=Délai expiré	#
 
 disconnectionScreen.cantConnect=Impossible de se connecter au monde.	#
 disconnectionScreen.disconnected=Déconnecté du serveur	#
+disconnectionScreen.futureVersion=Ce niveau a été sauvegardé avec une version plus récente du jeu et ne peut pas être chargé.	#
 disconnectionScreen.invalidName=Nom invalide!	#
 disconnectionScreen.invalidSkin=Skin non valide!	#
 disconnectionScreen.loggedinOtherLocation=Connecté à partir d'un autre endroit	#
 disconnectionScreen.noReason=Vous avez été déconnecté	#
 disconnectionScreen.noInternet=Connexion au monde impossible. Vérifiez votre connexion Internet et réessayez.	#
-disconnectionScreen.outdatedClient=Impossible de se connecter : client désuet!	#
-disconnectionScreen.outdatedServer=Impossible de se connecter : serveur désuet!	#
+disconnectionScreen.outdatedClient=Impossible de se connecter : client désuet!	#
+disconnectionScreen.outdatedServer=Impossible de se connecter : serveur désuet!	#
 disconnectionScreen.serverFull=Le serveur est plein!	#
 disconnectionScreen.sessionNotFound=Connexion au monde impossible. Il n'est plus possible de rejoindre ce monde.	#
 
@@ -1810,7 +1813,7 @@ item.monsterPlacer.entity.MushroomCow.name=Faire apparaître une champimeuh	#
 item.monsterPlacer.entity.Ocelot.name=Faire apparaître un ocelot	#
 item.monsterPlacer.entity.Pig.name=Faire apparaître un cochon	#
 item.monsterPlacer.entity.PigZombie.name=Faire apparaître un cochon-zombie	#
-item.monsterPlacer.entity.Rabbit.name=Générer un lapin	#
+item.monsterPlacer.entity.Rabbit.name=Faire apparaître un lapin	#
 item.monsterPlacer.entity.Sheep.name=Faire apparaître un mouton	#
 item.monsterPlacer.entity.Silverfish.name=Faire apparaître un poisson d'argent	#
 item.monsterPlacer.entity.Skeleton.name=Faire apparaître un squelette	#
@@ -1820,7 +1823,7 @@ item.monsterPlacer.entity.Spider.name=Faire apparaître une araignée	#
 item.monsterPlacer.entity.Squid.name=Faire apparaître un poulpe	#
 item.monsterPlacer.entity.Villager.name=Faire apparaître un villageois	#
 item.monsterPlacer.entity.VillagerGolem.name=Faire apparaître un golem de fer	#
-item.monsterPlacer.entity.Witch.name=Générer une sorcière	#
+item.monsterPlacer.entity.Witch.name=Faire apparaître une sorcière	#
 item.monsterPlacer.entity.Wolf.name=Faire apparaître un loup	#
 item.monsterPlacer.entity.Zombie.name=Faire apparaître un zombie	#
 item.monsterPlacer.name=Faire apparaître	#
@@ -1976,7 +1979,7 @@ map.toolTip.displayMarkers=Afficher les marqueurs	#
 map.toolTip.scaling=Échelle 1:%s	#
 map.toolTip.level=Niveau %s/%s	#
 map.toolTip.unkown=Carte inconnue	#
-map.position=Position : %s, %s, %s	#
+map.position=Position : %s, %s, %s	#
 
 mcoServer.title=Monde de Minecraft Online	#
 
@@ -2142,7 +2145,7 @@ options.sensitivity.max=ULTRARAPIDE!!!	#
 options.sensitivity.min=*bâille*	#
 options.multiplayergame=Partie multijoueur	#
 options.servervisible=Diffuser en LAN	#
-options.xboxlivevisible=Diffuser sur Xbox Live	#
+options.xboxlivevisible=Diffuser sur Xbox Live	#
 options.skinCustomisation=Personnalisation du skin...	#
 options.skinCustomisation.title=Personnalisation du skin	#
 options.snooper=Autoriser l'envoi	#
@@ -2185,7 +2188,7 @@ options.thirdperson=Vue à la troisième personne	#
 options.title=Options	#
 options.touchscreen=Mode écran tactile	#
 options.usetouchpad=Choix des commandes	#
-options.swapJumpAndSneak=Permuter Sauter et se Faufiller	#
+options.swapJumpAndSneak=Permuter Sauter et se Faufiler	#
 options.usetouchscreen=Jouer avec le pavé tactile	#
 options.vbo=Utiliser les VBO	#
 options.video=Paramètres graphiques...	#
@@ -2211,7 +2214,7 @@ playscreen.lastPlayed.today=Aujourd'hui	#
 playscreen.lastPlayed.weeksAgo=Il y a %1 semaine(s)	#
 playscreen.lastPlayed.yesterday=Hier	#
 playscreen.new=Nouveau	#
-playscreen.remoteWorld=Monde distant à :	#
+playscreen.remoteWorld=Monde distant à :	#
 
 potion.absorption=Absorption	#
 potion.absorption.postfix=Potion d'absorption	#
@@ -2375,7 +2378,8 @@ selectWorld.mapType.normal=Normal	#
 selectWorld.moreWorldOptions=Plus d'options du monde...	#
 selectWorld.newWorld=Nouveau monde	#
 selectWorld.newWorld.copyOf=Copie de %s	#
-selectWorld.realmsComingSoon=Realms arrive bientôt!									## NOTE: "Realms" is the name of a service and doesn't get localized.
+## NOTE: "Realms" is the name of a service and doesn't get localized.
+selectWorld.realmsComingSoon=Realms arrive bientôt !	#
 selectWorld.learnMore=En savoir plus	#
 selectWorld.recreate=Recréer	#
 selectWorld.rename=Renommer	#
@@ -2496,8 +2500,8 @@ skin.Festive.PajamaKidSlim=Tricot tranquille	#
 skin.Festive.SkiBibsSlim=Cocooning coin du feu	#
 skin.Festive.SweaterAlex=Chouette chandail	#
 skin.Festive.MrsClaus=Mère Noël	#
-skin.Festive.ParkaSteve=Parka ?	#
-skin.Festive.SweaterSteve=Pull-over ?	#
+skin.Festive.ParkaSteve=Parka ?	#
+skin.Festive.SweaterSteve=Pull-over ?	#
 skin.Festive.GingerbreadCreeper=Creeper en pain d'épices	#
 
 skinpack.Redstone=Spécialistes de la redstone	#
@@ -2517,28 +2521,28 @@ skin.Redstone.TNTTech=Technicien TNT	#
 skin.Redstone.RedstoneMiser=Amasseur de redstone	#
 skin.Redstone.Tinkerer=Bricolo	#
 
-skinpack.JTTW=Pérégrination vers l'Ouest
-skin.JTTW.Blackwind=Vent noir
-skin.JTTW.BullDemonKing=Roi-démon taureau
-skin.JTTW.Guanyin=Guanyin
-skin.JTTW.JadeEmperor=Empereur de jade
-skin.JTTW.Baigujing=Démon de l'os blanc
-skin.JTTW.ManyEyedDemon=Seigneur aux cent yeux
-skin.JTTW.RedBoy=Enfant rouge
-skin.JTTW.ScorpionDemon=Démon scorpion
-skin.JTTW.LadyEarthFlow=Rat albinos
-skin.JTTW.MonkeyKing=Roi singe
-skin.JTTW.PrincessIronFan=Princesse à l'éventail de fer
-skin.JTTW.ShaWujing=Ogre des sables
-skin.JTTW.SpiderDemon=Démon araignée
-skin.JTTW.Xuangzang=Xuanzang
-skin.JTTW.ZhuBajie=Moine cochon
+skinpack.JTTW=Pérégrination vers l'Ouest	#
+skin.JTTW.Blackwind=Vent noir	#
+skin.JTTW.BullDemonKing=Roi-démon taureau	#
+skin.JTTW.Guanyin=Guanyin	#
+skin.JTTW.JadeEmperor=Empereur de jade	#
+skin.JTTW.Baigujing=Démon de l'os blanc	#
+skin.JTTW.ManyEyedDemon=Seigneur aux cent yeux	#
+skin.JTTW.RedBoy=Enfant rouge	#
+skin.JTTW.ScorpionDemon=Démon scorpion	#
+skin.JTTW.LadyEarthFlow=Rat albinos	#
+skin.JTTW.MonkeyKing=Roi singe	#
+skin.JTTW.PrincessIronFan=Princesse à l'éventail de fer	#
+skin.JTTW.ShaWujing=Ogre des sables	#
+skin.JTTW.SpiderDemon=Démon araignée	#
+skin.JTTW.Xuangzang=Xuanzang	#
+skin.JTTW.ZhuBajie=Moine cochon	#
 
 skins.browse=Naviguer	#
 skins.buy.buyButton=Acheter	#
 skins.buy.cancelButton=Annuler	#
 skins.buy.closeButton=Fermer	#
-skins.buy.description=Voulez-vous acheter toutes les skins de ce pack ?	#
+skins.buy.description=Voulez-vous acheter toutes les skins de ce pack ?	#
 skins.buy.noConnection=Nous sommes dans l'incapacité de nous connecter à la boutique. Peut-être devriez-vous vérifier votre connexion Internet?	#
 skins.buy.purchaseFailed=Désolé, nous sommes dans l'incapacité de terminer votre achat. Peut-être devriez-vous vérifier votre connexion Internet?	#
 skins.buy.waitingForPurchase=Achat en cours! Ce ne devrait pas être long.	#
@@ -3081,11 +3085,11 @@ trial.noInvitesOrJoining=Pour jouer entre amis, veuillez acheter le jeu complet	
 
 trial.upsell.trialLabel=Essai Minecraft	#
 
-trial.upsell.description=Dans cette version d'essai, vous êtes limité à 90 minutes de temps de jeu. Fabriquez, construisez, explorez et amusez-vous ! Votre monde sera préservé si vous choisissez d'acheter la version complète.	#
+trial.upsell.description=Dans cette version d'essai, vous êtes limité à 90 minutes de temps de jeu. Fabriquez, construisez, explorez et amusez-vous ! Votre monde sera préservé si vous choisissez d'acheter la version complète.	#
 
 ## NOTE: The following five lines are all related and shown together. When localizing, you may add line breaks to fit the paragraph,
 ## as opposed to trying to literally translate each line.
-trial.upsell.expiredDescription.line1=Temps écoulé. Déverrouillez le jeu complet pour pouvoir :	#
+trial.upsell.expiredDescription.line1=Temps écoulé. Déverrouillez le jeu complet pour pouvoir :	#
 trial.upsell.expiredDescription.line2=- explorer des mondes infinis	#
 trial.upsell.expiredDescription.line3=- jouer entre amis	#
 trial.upsell.expiredDescription.line4=- fabriquer des centaines d'objets	#
@@ -3095,7 +3099,7 @@ trial.upsell.expiredDescription.line5=- découvrir de mystérieux édifices et r
 xbox.signin.error=Vous devez être connecté à Xbox Live pour jouer avec des amis et accéder au score du joueur et aux succès.	#
 xbox.connection.error=Aucune connexion à Xbox Live.	#
 
-xbox.disconectionscreen.notSignedIn=Connectez-vous avec votre compte Xbox Live pour jouer entre amis.	#
+xbox.disconectionscreen.notSignedIn=Connectez-vous avec votre compte Xbox Live pour jouer entre amis.	#
 xbox.disconectionscreen.multiplayerNotAllowed=Ce compte n'est pas autorisé à rejoindre une partie multijoueur sur Xbox Live.	#
 xbox.disconectionscreen.accessDenied=Vous devez être amis avec un joueur de cette partie pour la rejoindre.	#
 
