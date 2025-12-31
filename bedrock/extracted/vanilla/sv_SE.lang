@@ -927,6 +927,15 @@ commands.gamerule.type.nocheatsenabled=Spelregeln "%1$s" kan bara användas med 
 commands.gamerule.nopermission=Det är bara serverägare som kan ändra "%1$s"	#
 commands.gamerule.norule=Det finns ingen spelregel vid namn "%1$s" tillgänglig	#
 commands.gamerule.success=Spelregeln %1$s har uppdaterats till %2$s	#
+commands.gametips.description=Sätt på eller stäng av speltips på den här enheten	#
+commands.gametips.enabled=Speltips är nu aktiverade	#
+commands.gametips.disabled=Speltips är avstängda	#
+commands.gametips-off.description=Stäng av speltips på den här enheten	#
+commands.gametips-off.success=Speltips är avstängda	#
+commands.gametips-on.description=Sätt på speltips på den här enheten	#
+commands.gametips-on.success=Speltips är nu aktiverade	#
+commands.gametips-reset.description=Nollställ speltips på den här enheten	#
+commands.gametips-reset.success=Speltips har nollställts	#
 commands.generic.async.initiated=Kommandot "%1$s" har startats (asynkront steg %2$d)	#
 commands.generic.boolean.invalid="%1$s" är inte sant eller falskt	#
 commands.generic.chunk.notFound=Det angivna datablocket kunde inte hittas	#
@@ -3078,10 +3087,12 @@ gameTip.breakBlock.mouse=Vänsterklicka och håll in för att bryta block	#
 gameTip.breakBlock.touch=Tryck och håll in för att bryta block	#
 gameTip.breakBlock.touch.classic=Tryck och håll in för att bryta block	#
 gameTip.breakBlock.controller=Tryck och håll in för att bryta block	#
+gameTip.breakBlock.touch.crosshair=Tryck och håll in :tip_virtual_button_action_attack_or_destroy:[LINEBREAK]för att bryta block 	#### {StrContains='LINEBREAK'}
 
-gameTip.placeBlock.mouse=Klicka för att placera blocket	#
+gameTip.placeBlock.mouse=Högerklicka för att placera block	#
 gameTip.placeBlock.touch=Tryck för att placera blocket	#
 gameTip.placeBlock.controller=Klicka på marken för att placera block	#
+gameTip.placeBlock.touch.crosshair=Tryck på :tip_virtual_button_action_build_or_use: för att placera block	#
 
 gameTip.openInventorySurvival.mouse=Öppna förrådet[LINEBREAK]Tryck på :_input_key.inventory:		#### {StrContains='LINEBREAK'}
 gameTip.openInventorySurvival.touch=Öppna förrådet för att se tillverkningsrecept	#
@@ -3207,6 +3218,8 @@ gui.editor.copyProject.failedMessage=Vi kunde inte skapa en kopia av projektet. 
 
 gui.edu.exitGameWarningCaption=Minecraft Education	### Use Minecraft 教育版 in zh_CN translation
 gui.edu.exitGameWarningMessage=Avsluta Minecraft Education?		### Use 离开 Minecraft 教育版? in zh_CN translation
+gui.edu.exitGameWarningCaptionPreview=Minecraft Education-förhandsversion	#
+gui.edu.exitGameWarningMessagePreview=Vill du avsluta förhandsversionen av Minecraft Education?	#
 
 updateScreen.update=Uppdatera	#
 updateScreen.updateRequired=Uppdatering krävs	#
@@ -5918,7 +5931,8 @@ options.delete_account.confirm.button=Ta bort	#
 options.dev_game_tip=Speltips	#
 options.dev_ad_show_debug_panel=Visa EDU-skylt i debug-panelen	#
 options.dev_ad_token_refresh_threshold=Uppdateringsgräns i sekunder för EDU-inloggningsnyckel	#
-options.dev_ad_edu_max_token_refresh=Uppdatering av EDU-maxpolletter (minuter)	#
+options.dev_ad_edu_max_signin_token_refresh=Uppdatering av EDU-inloggningsnyckel (minuter)	#
+options.dev_ad_edu_max_graph_token_refresh=Uppdatering av EDU-maxgrafpolletter (minuter)	#
 options.dev_side_by_side_comparison_rate=Jämförelsegrad sida vid sida	#
 options.dev_playfab_token_refresh_threshold=Minuter för uppdateringströskel för Playfab-token	#
 options.dev_assertions_debug_break=Påståenden fungerar inte i debuggern	#
@@ -6152,8 +6166,8 @@ options.fov.toggle=Synfältet kan ändras av spelet	#
 options.licenses=Licenser	#
 options.licensed_content=Licensierat innehåll	#
 options.networkSettings=Nätverksinställningar	#
-options.ecoMode=Ekologiskt läge		####Eco Mode refers to an ecological friendly mode {MaxLength='20'}
-options.enableEcoMode=Aktivera ekologiskt läge		####Eco Mode refers to an ecological friendly mode {MaxLength='30'}
+options.ecoMode=Experimentell kraft – sparfunktioner		#### {MaxLength='40'}
+options.enableEcoMode=Lägre bilduppdateringsfrekvens utan handkontrollen		#### {MaxLength='55'}
 options.font_license=Teckensnittslicens	#
 options.font_license_body=%1	#
 options.livingRoomFOV=Vardagsrumssynfält	#
@@ -6243,6 +6257,7 @@ options.sneakOption.toggle=Tryck på knappen en gång för att smyga	#
 options.sneakOption.hold=Håll in knappen för att smyga	#
 options.splitscreenInterfaceOpacity=Gränssnittets opacitet med delad skärm	#
 options.textBackgroundOpacity=Opacitet för textbakgrund	#
+options.actionBarTextBackgroundOpacity=Opacitet för åtgärdsfältets bakgrund	#
 options.hidepaperdoll=Dölj pappersdockor	#
 options.showautosaveicon=Visa autosparikon	#
 options.hold=Håll in	#
@@ -6492,6 +6507,9 @@ options.deferred.upscaling=Uppskalning	#
 options.terrainShadowsEnable=Terrängskuggor	#
 options.superFancyWaterEnable=Superdetaljerat vatten	#
 options.onlyTrustedSkinsAllowed=Tillåt endast godkända utseenden	#
+options.restartTutorial=Starta om handledning	#
+options.tutorial=Handledning	#
+options.tutorialHint=Tips för att komma igång med grunderna i Minecraft	#
 
 options.autoUpdateEnabled=Uppdatera upplåsta paket automatiskt	#
 options.autoUpdateMode=Uppdatera upplåsta paket automatiskt	#
@@ -7042,6 +7060,7 @@ progressScreen.title.connectingRealms=Ansluter till Realm	#
 progressScreen.title.copyingWorld=Världskopia	#
 progressScreen.title.deleteStorageAreaContent=Rensar lagringscache	#
 progressScreen.title.loadingSplitScreenAppearances=Laddar gränssnittsutseenden	#
+progressScreen.title.modifiedWorldWarning=Modifierad värld	#
 progressScreen.message.appearanceLoaded=Utseende laddat	#
 progressScreen.message.appearanceLoadWaitTimeMet=Utseendet tar lång tid att ladda. Fortsätter att generera världen…	#
 progressScreen.message.deleteStorageAreaContent=Det här kan ta några minuter.	#
@@ -7090,6 +7109,7 @@ progressScreen.message.directoryDepthError=Den här världen kan inte öppnas p�
 progressScreen.message.forbiddenContent=Du äger inte ett eller flera av de tillämpade paketen	#
 progressScreen.message.loadingSplitScreenAppearances=Laddar gränssnittsutseenden...	#
 progressScreen.message.finishedLoadingSplitScreenAppearances=Laddning av gränssnittsutseenden klar.	#
+progressScreen.message.modifiedWorldWarning=Den här världen kanske inte fungerar riktigt som andra världar och det går inte att låsa upp achievements.	#
 progressScreen.dialog.title.resourcePack=Ladda ned resurspaket?	#
 progressScreen.dialog.title.behaviorAndResourcePack=Ladda ned världens beteende- och resurspaket?	#
 progressScreen.dialog.title.onlyBehavior=Ladda ned världens beteendepaket?	#
@@ -8123,7 +8143,7 @@ store.csb.upsell.rightBullet.3=Innehåller			### Precedes the term Marketplace P
 
 store.csb.upsell.learnMore=Läs mer	#
 store.csb.upsell.price=%s/månad	#
-store.csb.upsell.firstPeriodFree=Gratis provperiod i 30 dagar!*	#
+store.csb.upsell.firstPeriodFree=Gratis provperiod i 30 dagar!	#
 
 store.csb.upsell.realmsPlus=§dREALMS PLUS	#
 
@@ -9814,10 +9834,6 @@ xbox.signinquestion=Logga in?	#
 xbox.notnow=Inte nu	#
 xbox.signingin=Loggar in med ditt Microsoft-konto …	#
 xbox.signingin.offline=Loggar in	#
-xbox.firstsignin.line1=Välkommen till Minecraft! Använd ett Microsoft-konto för att ansluta till Minecraft-communityn, där datorer, konsoler, mobiler och surfplattor kan spela tillsammans. Och vet du vad det bästa är?	#
-xbox.firstsignin.line2=Det är gratis!	#
-xbox.firstsignin.line3=Har du inget konto? Skapa ett nu så kan du börja låsa upp achievements och ansluta till Realms och servrar!	#
-xbox.firstsignin.line3.norealmsOrServers=Har du inget konto? Skapa ett nu så kan du börja låsa upp achievements och spela med dina kompisar på andra plattformar!	#
 xbox.failedsignin.body=Vi kunde inte logga in dig på ditt Microsoft-konto. Åtkomst till Realms, profiler och dina föremål från marknaden kommer att begränsas. Försök igen senare.	#
 xbox.failedsignin.error=Felkod:	#
 xbox.failedsignin.moreInfo=Mer information	#
@@ -10239,6 +10255,12 @@ lategameTips.27=Diorit. Antingen hatar man det, eller så älskar man det.	#
 
 tips.realms.1=Ta en skärmdump med hjälp av spelmenyn.	#
 tips.realms.2=Realms är alltid online, så du och dina kompisar kan spela när ni vill.	#
+tips.realms.3=Håll dig uppdaterad om vad som händer i din värld genom att kolla berättelseflödet i Realms Stories.	#
+tips.realms.4=Dela dina stora ögonblick med andra spelare på i världen genom att lägga till en berättelse i berättelseflödet.	#
+tips.realms.5=Kontrollera tidslinjen i Realms Stories för att ta reda på när andra spelar.	#
+tips.realms.6=Öppna Realms Stories från spelmenyn när du spelar på Realm.	#
+tips.realms.7=Lär känna andra i din värld genom fliken medlemmar i Realms Stories.	#
+tips.realms.8=Använd Realms Stories för att hänga med i dina kompisars framsteg och organisera speltiden.	#
 
 splitscreen.joinPrompt=Anslut som spelare %s	#
 splitscreen.unavailable.toastHeader=Det går inte att spela med delad skärm	#

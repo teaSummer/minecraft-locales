@@ -927,6 +927,15 @@ commands.gamerule.type.nocheatsenabled=ゲーム ルール '%1$s' は、世界�
 commands.gamerule.nopermission='%1$s' を変更できるのはサーバーの管理者のみです	#
 commands.gamerule.norule=ゲーム ルール '%1$s' を指定できません	#
 commands.gamerule.success=ゲーム ルール %1$s が %2$s に更新されました	#
+commands.gametips.description=このデバイスでゲームのヒントを有効または無効にする	#
+commands.gametips.enabled=ゲームのヒントが有効になりました	#
+commands.gametips.disabled=ゲームのヒントが無効になりました	#
+commands.gametips-off.description=このデバイスでゲームのヒントを無効にする	#
+commands.gametips-off.success=ゲームのヒントが無効になりました	#
+commands.gametips-on.description=このデバイスでゲームのヒントを有効にする	#
+commands.gametips-on.success=ゲームのヒントが有効になりました	#
+commands.gametips-reset.description=このデバイスでゲームのヒントをリセットする	#
+commands.gametips-reset.success=ゲームのヒントがリセットされました	#
 commands.generic.async.initiated=%1$s のコマンドを開始しました (非同期ステップ %2$d)	#
 commands.generic.boolean.invalid='%1$s' は true/false のいずれでもありません	#
 commands.generic.chunk.notFound=指定されたチャンクが見つかりません	#
@@ -3078,10 +3087,12 @@ gameTip.breakBlock.mouse=左長押しでブロックを壊します	#
 gameTip.breakBlock.touch=タップと長押しでブロックを壊します	#
 gameTip.breakBlock.touch.classic=タップと長押しでブロックを壊します	#
 gameTip.breakBlock.controller=タップと長押しでブロックを壊します	#
+gameTip.breakBlock.touch.crosshair=:tip_virtual_button_action_attack_or_destroy:[LINEBREAK] をタップと長押しでブロックを壊します 	#### {StrContains='LINEBREAK'}
 
-gameTip.placeBlock.mouse=クリックしてブロックを設置します	#
+gameTip.placeBlock.mouse=右クリックでブロックを配置	#
 gameTip.placeBlock.touch=タップしてブロックを設置します	#
 gameTip.placeBlock.controller=地面をクリックしてブロックを設置します	#
+gameTip.placeBlock.touch.crosshair=:tip_virtual_button_action_build_or_use: をタップしてブロックを配置	#
 
 gameTip.openInventorySurvival.mouse=持ち物を開きましょう[LINEBREAK] :_input_key.inventory:を押してください		#### {StrContains='LINEBREAK'}
 gameTip.openInventorySurvival.touch=持ち物を開いてクラフト レシピを確認する	#
@@ -3207,6 +3218,8 @@ gui.editor.copyProject.failedMessage=このプロジェクトのコピーを作�
 
 gui.edu.exitGameWarningCaption=Minecraft Education	### Use Minecraft 教育版 in zh_CN translation
 gui.edu.exitGameWarningMessage=Minecraft Education を終了しますか??		### Use 离开 Minecraft 教育版? in zh_CN translation
+gui.edu.exitGameWarningCaptionPreview=Minecraft Education プレビュー	#
+gui.edu.exitGameWarningMessagePreview=Minecraft Education プレビューを終了しますか?	#
 
 updateScreen.update=アップデートする	#
 updateScreen.updateRequired=アップデートが必要です	#
@@ -5918,7 +5931,8 @@ options.delete_account.confirm.button=削除	#
 options.dev_game_tip=ゲームプレイのヒント	#
 options.dev_ad_show_debug_panel=デバッグ パネルに EDU マークを表示	#
 options.dev_ad_token_refresh_threshold=トークンの更新のしきい値 (秒) 内の EDU マーク	#
-options.dev_ad_edu_max_token_refresh=EDU トークンの最大更新 (分)	#
+options.dev_ad_edu_max_signin_token_refresh=EDU サイン イン トークンの最大更新 (分)	#
+options.dev_ad_edu_max_graph_token_refresh=EDU グラフ トークンの最大更新 (分)	#
 options.dev_side_by_side_comparison_rate=サイド バイ サイド比較レート	#
 options.dev_playfab_token_refresh_threshold=Playfab トークンの更新期限 (分)	#
 options.dev_assertions_debug_break=アサーションのデバッガーへの割り込み	#
@@ -6152,8 +6166,8 @@ options.fov.toggle=プレイ中の視点変更を許可	#
 options.licenses=ライセンス	#
 options.licensed_content=ライセンス認証されたコンテンツ	#
 options.networkSettings=ネットワーク設定	#
-options.ecoMode=エコ モード		####Eco Mode refers to an ecological friendly mode {MaxLength='20'}
-options.enableEcoMode=エコ モードを有効化します		####Eco Mode refers to an ecological friendly mode {MaxLength='30'}
+options.ecoMode=実験的なパワーセーブ機能		#### {MaxLength='40'}
+options.enableEcoMode=コントローラーの接続が切断されたときにフレームレートを下げる		#### {MaxLength='55'}
 options.font_license=フォント ライセンス	#
 options.font_license_body=%1	#
 options.livingRoomFOV=リビング ルーム FOV	#
@@ -6243,6 +6257,7 @@ options.sneakOption.toggle=一度ボタンをタップしてスニーク	#
 options.sneakOption.hold=ボタンを長押ししてスニーク	#
 options.splitscreenInterfaceOpacity=画面分割時の HUD の不透明度	#
 options.textBackgroundOpacity=背景の不透明度	#
+options.actionBarTextBackgroundOpacity=アクション バー背景の不透明度	#
 options.hidepaperdoll=人形表示をオフにする	#
 options.showautosaveicon=オートセーブ アイコンを表示する	#
 options.hold=固定	#
@@ -6492,6 +6507,9 @@ options.deferred.upscaling=アップスケー リング	#
 options.terrainShadowsEnable=地形の影	#
 options.superFancyWaterEnable=高度な水の表現	#
 options.onlyTrustedSkinsAllowed=信頼できるスキンのみを許可する	#
+options.restartTutorial=チュートリアルをやり直す	#
+options.tutorial=チュートリアル	#
+options.tutorialHint=Minecraft の基本を学ぶためのヒント	#
 
 options.autoUpdateEnabled=購入したパックの自動アップデート	#
 options.autoUpdateMode=購入したパックの自動アップデート	#
@@ -7042,6 +7060,7 @@ progressScreen.title.connectingRealms=Realms に接続中	#
 progressScreen.title.copyingWorld=世界をコピー中	#
 progressScreen.title.deleteStorageAreaContent=ストレージ キャッシュのクリア	#
 progressScreen.title.loadingSplitScreenAppearances=画面分割表示の読み込み	#
+progressScreen.title.modifiedWorldWarning=変更された世界	#
 progressScreen.message.appearanceLoaded=表示が読み込まれました	#
 progressScreen.message.appearanceLoadWaitTimeMet=表示の読み込みに時間がかかります。世界生成中...	#
 progressScreen.message.deleteStorageAreaContent=これには時間がかかる可能性があります	#
@@ -7090,6 +7109,7 @@ progressScreen.message.directoryDepthError=パックのディレクトリに問�
 progressScreen.message.forbiddenContent=適用されているパックの 1 つ以上を所有していません	#
 progressScreen.message.loadingSplitScreenAppearances=画面分割表示の読み込み中...	#
 progressScreen.message.finishedLoadingSplitScreenAppearances=画面分割表示の読み込みが完了しました。	#
+progressScreen.message.modifiedWorldWarning=この世界は、変更されていない世界とは見た目や動作が異なる場合があり、実績を獲得できません。	#
 progressScreen.dialog.title.resourcePack=リソースパックをダウンロードしますか?	#
 progressScreen.dialog.title.behaviorAndResourcePack=世界のビヘイビアーパックとリソースパックをダウンロードしますか?	#
 progressScreen.dialog.title.onlyBehavior=世界のビヘイビアーパックをダウンロードしますか?	#
@@ -8123,7 +8143,7 @@ store.csb.upsell.rightBullet.3=内容			### Precedes the term Marketplace Pass i
 
 store.csb.upsell.learnMore=もっと詳しく	#
 store.csb.upsell.price=月額 %s	#
-store.csb.upsell.firstPeriodFree=30 日間の無料試用!*	#
+store.csb.upsell.firstPeriodFree=30 日間の無料試用!	#
 
 store.csb.upsell.realmsPlus=§dREALMS PLUS	#
 
@@ -9814,10 +9834,6 @@ xbox.signinquestion=サインイン?	#
 xbox.notnow=あとで	#
 xbox.signingin=Microsoft アカウントでサインインしています...	#
 xbox.signingin.offline=サインイン中	#
-xbox.firstsignin.line1=Minecraft へようこそ! Minecraft では、Microsoft アカウントでコミュニティーとつながることで、PC、コンソール、スマートフォン、タブレットの垣根を越えてプレイできます。これの一番うれしいところをお教えしましょう。	#
-xbox.firstsignin.line2=無料なんです!	#
-xbox.firstsignin.line3=アカウントをお持ちでない方も今すぐ作成して、実績を獲得したり、Realms などのサーバーに参加してみましょう!	#
-xbox.firstsignin.line3.norealmsOrServers=アカウントをお持ちでない方も今すぐ作成して、実績を獲得したり、別のプラットフォームのフレンドと一緒にプレイしてみましょう!	#
 xbox.failedsignin.body=Microsoft アカウントにサインインできませんでした。Realms、プロフィール、およびマーケットプレイスのアイテムへのアクセスは制限されます。後でもう一度やり直してください。	#
 xbox.failedsignin.error=エラーコード:	#
 xbox.failedsignin.moreInfo=さらに詳しく	#
@@ -10239,6 +10255,12 @@ lategameTips.27=閃緑岩への思いは人それぞれです。	#
 
 tips.realms.1=ゲーム メニューを使ってスクリーンショットを撮影する。	#
 tips.realms.2=Realm は常にオンラインです。あなたとフレンドはいつでもここで遊ぶことができます。	#
+tips.realms.3=Realms ストーリーでストーリー フィードをチェックして、Realm の最新情報を確認しましょう。	#
+tips.realms.4=ストーリー フィードにストーリーを追加して、この Realm の他のプレイヤーと素晴らしい瞬間を共有しましょう。	#
+tips.realms.5=Realms ストーリーのタイムラインをチェックして、他のプレイヤーがいつプレイしているのかを確認しましょう。	#
+tips.realms.6=Realm でプレイしているときに、ゲーム メニューから Realms ストーリーにアクセスします。	#
+tips.realms.7=Realms ストーリーの [メンバー] タブで Realm のコミュニティを知ることができます。	#
+tips.realms.8=Realms ストーリーを使って、交流を深めたり、フレンドの進捗状況を把握したり、プレイ時間を整理したりできます。	#
 
 splitscreen.joinPrompt=プレイヤー %s として参加	#
 splitscreen.unavailable.toastHeader=分割画面は使用できません	#

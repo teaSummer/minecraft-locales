@@ -927,6 +927,15 @@ commands.gamerule.type.nocheatsenabled=只有这个世界启用作弊时，游�
 commands.gamerule.nopermission=只有服务器所有人才能修改 '%1$s'	#
 commands.gamerule.norule=不存在叫做 '%1$s' 的游戏规则	#
 commands.gamerule.success=游戏规则 %1$s 已更新为 %2$s	#
+commands.gametips.description=Enable or disable the game tips on this device	#
+commands.gametips.enabled=Game tips are now enabled	#
+commands.gametips.disabled=Game tips are now disabled	#
+commands.gametips-off.description=Disable game tips on this device	#
+commands.gametips-off.success=Game tips are now disabled	#
+commands.gametips-on.description=Enable game tips on this device	#
+commands.gametips-on.success=Game tips are now enabled	#
+commands.gametips-reset.description=Reset game tips on this device	#
+commands.gametips-reset.success=Game tips are now reset	#
 commands.generic.async.initiated='%1$s' 的命令已开始（异步步骤 %2$d）	#
 commands.generic.boolean.invalid='%1$s' 不是个布尔值参数	#
 commands.generic.chunk.notFound=未找到指定区块	#
@@ -3078,10 +3087,12 @@ gameTip.breakBlock.mouse=按住左键可打破方块	#
 gameTip.breakBlock.touch=点击并按住可打破方块	#
 gameTip.breakBlock.touch.classic=点击并按住可打破方块	#
 gameTip.breakBlock.controller=点击并按住可打破方块	#
+gameTip.breakBlock.touch.crosshair=Tap and hold :tip_virtual_button_action_attack_or_destroy:[LINEBREAK]to break blocks 	#### {StrContains='LINEBREAK'}
 
 gameTip.placeBlock.mouse=点击放置方块	#
 gameTip.placeBlock.touch=点击放置方块	#
 gameTip.placeBlock.controller=点击地面可放置方块	#
+gameTip.placeBlock.touch.crosshair=Tap :tip_virtual_button_action_build_or_use: to place block	#
 
 gameTip.openInventorySurvival.mouse=打开物品栏[LINEBREAK]按下 :_input_key.inventory:		#### {StrContains='LINEBREAK'}
 gameTip.openInventorySurvival.touch=打开物品栏可查看合成配方	#
@@ -3207,6 +3218,8 @@ gui.editor.copyProject.failedMessage=我们无法创建此项目的副本。可�
 
 gui.edu.exitGameWarningCaption=《Minecraft Education》	### Use Minecraft 教育版 in zh_CN translation
 gui.edu.exitGameWarningMessage=退出Minecraft Education？		### Use 离开 Minecraft 教育版? in zh_CN translation
+gui.edu.exitGameWarningCaptionPreview=Minecraft Education 预览版	#
+gui.edu.exitGameWarningMessagePreview=Exit Minecraft Education Preview?	#
 
 updateScreen.update=更新	#
 updateScreen.updateRequired=需要更新	#
@@ -5918,7 +5931,8 @@ options.delete_account.confirm.button=删除	#
 options.dev_game_tip=游戏提示	#
 options.dev_ad_show_debug_panel=在调试界面中显示教育符号	#
 options.dev_ad_token_refresh_threshold=EDU 登录 Token 刷新阀值秒数	#
-options.dev_ad_edu_max_token_refresh=EDU 最大令牌刷新数（分钟）	#
+options.dev_ad_edu_max_signin_token_refresh=EDU Max Sign In Token Refresh (Minutes)	#
+options.dev_ad_edu_max_graph_token_refresh=EDU Max Graph Token Refresh (Minutes)	#
 options.dev_side_by_side_comparison_rate=并排比较率	#
 options.dev_playfab_token_refresh_threshold=Playfab 令牌刷新阈值分钟数	#
 options.dev_assertions_debug_break=调试器中的断言中断	#
@@ -6152,8 +6166,8 @@ options.fov.toggle=FOV 可以通过游戏指南更改	#
 options.licenses=许可	#
 options.licensed_content=授权内容	#
 options.networkSettings=网络设置	#
-options.ecoMode=生态模式		####Eco Mode refers to an ecological friendly mode {MaxLength='20'}
-options.enableEcoMode=启用生态模式		####Eco Mode refers to an ecological friendly mode {MaxLength='30'}
+options.ecoMode=Experimental Power-Saving Features		#### {MaxLength='40'}
+options.enableEcoMode=Lower framerate when controller is disconnected		#### {MaxLength='55'}
 options.font_license=字体证书	#
 options.font_license_body=%1	#
 options.livingRoomFOV=起居室 FOV	#
@@ -6243,6 +6257,7 @@ options.sneakOption.toggle=点击按钮一下即可潜行	#
 options.sneakOption.hold=长按按钮即可潜行	#
 options.splitscreenInterfaceOpacity=分屏 HUD 不透明度	#
 options.textBackgroundOpacity=文本背景透明度	#
+options.actionBarTextBackgroundOpacity=Action Bar Background Opacity	#
 options.hidepaperdoll=隐藏纸娃娃	#
 options.showautosaveicon=显示自动保存图标	#
 options.hold=保留	#
@@ -6492,6 +6507,9 @@ options.deferred.upscaling=画质提升	#
 options.terrainShadowsEnable=地形阴影	#
 options.superFancyWaterEnable=超级花式水	#
 options.onlyTrustedSkinsAllowed=仅允许受信任的皮肤	#
+options.restartTutorial=Restart Tutorial	#
+options.tutorial=教程	#
+options.tutorialHint=Hints to get going with the basics of Minecraft	#
 
 options.autoUpdateEnabled=自动更新已解锁的包	#
 options.autoUpdateMode=自动更新已解锁的包	#
@@ -7042,6 +7060,7 @@ progressScreen.title.connectingRealms=正在连接 Realm	#
 progressScreen.title.copyingWorld=复制世界	#
 progressScreen.title.deleteStorageAreaContent=清除存储缓存	#
 progressScreen.title.loadingSplitScreenAppearances=加载分屏外观	#
+progressScreen.title.modifiedWorldWarning=Modified World	#
 progressScreen.message.appearanceLoaded=外观已加载	#
 progressScreen.message.appearanceLoadWaitTimeMet=外观需要很长时间才能加载。正在继续生成世界...	#
 progressScreen.message.deleteStorageAreaContent=这可能需要几分钟。	#
@@ -7090,6 +7109,7 @@ progressScreen.message.directoryDepthError=由于包中的目录问题，无法�
 progressScreen.message.forbiddenContent=您未拥有一个或多个所应用的包	#
 progressScreen.message.loadingSplitScreenAppearances=正在加载分屏外观...	#
 progressScreen.message.finishedLoadingSplitScreenAppearances=已完成分屏外观的加载。	#
+progressScreen.message.modifiedWorldWarning=This world may not look or behave in the same way as non-modified worlds and you can't earn achievements.	#
 progressScreen.dialog.title.resourcePack=下载资源包？	#
 progressScreen.dialog.title.behaviorAndResourcePack=下载世界行为和资源包？	#
 progressScreen.dialog.title.onlyBehavior=下载世界行为包？	#
@@ -7752,7 +7772,7 @@ selectTemplate.delete.confirm=是否删除世界模板？	#
 selectTemplate.delete=删除	#
 selectTemplate.myTemplates=我的世界模板	#
 selectTemplate.realmsPlus=精选 Realms Plus 模板	#
-selectTemplate.marketplacePass=Featured Marketplace Pass Templates			#### {StrContains="Marketplace Pass"}
+selectTemplate.marketplacePass=精选 Marketplace Pass 模板			#### {StrContains="Marketplace Pass"}
 selectTemplate.importedTemplates=导入的模板	#
 selectTemplate.download=下载	#
 selectTemplate.noTemplates=这台设备上没有任何世界模板。	#
@@ -9814,10 +9834,6 @@ xbox.signinquestion=登录？	#
 xbox.notnow=稍后再说	#
 xbox.signingin=正在用 Microsoft 账户登录…	#
 xbox.signingin.offline=登录中……	#
-xbox.firstsignin.line1=欢迎来到《我的世界》！使用 Microsoft 账户开始连接《我的世界》社区，在那里，PC、控制台、手机和平板玩家可以一起畅玩。至于最棒的部分？	#
-xbox.firstsignin.line2=它完全免费！	#
-xbox.firstsignin.line3=还没有账户？马上创建一个以获得成就，并加入 Realms 和服务器吧！	#
-xbox.firstsignin.line3.norealmsOrServers=没有账户？立即创建一个以赢取成就并与您的跨平台好友一起畅玩！	#
 xbox.failedsignin.body=无法将您登录到您的 Microsoft 账户。访问 Realms、档案和市场物品将受到限制。请稍后再试。	#
 xbox.failedsignin.error=错误代码：	#
 xbox.failedsignin.moreInfo=更多信息	#
@@ -10239,6 +10255,12 @@ lategameTips.27=闪长岩是一种会让您对它非爱即恨的东西。	#
 
 tips.realms.1=使用游戏菜单截图。	#
 tips.realms.2=有一个 Realm 始终在线，所以您和您的好友可以随时在这里游玩。	#
+tips.realms.3=Keep up to date with what's going on in your Realm by checking the Story Feed in Realms Stories.	#
+tips.realms.4=Share your great moments with the other players on this Realm by adding a story to the Story Feed.	#
+tips.realms.5=Check the Timeline in Realms Stories to find out when others are playing.	#
+tips.realms.6=Access Realms Stories from the game menu while playing on the Realm.	#
+tips.realms.7=Get to know your Realm's community on the Members tab in Realms Stories.	#
+tips.realms.8=Use Realms Stories to get social, keep up with your friends' progress, and organize playtime.	#
 
 splitscreen.joinPrompt=以玩家 %s 身份加入	#
 splitscreen.unavailable.toastHeader=拆分屏幕不可用	#

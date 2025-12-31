@@ -927,6 +927,15 @@ commands.gamerule.type.nocheatsenabled=Правило игры '%1$s' можно
 commands.gamerule.nopermission=Изменять «%1$s» могут только владельцы сервера	#
 commands.gamerule.norule=Правило игры под названием «%1$s» отсутствует	#
 commands.gamerule.success=Правило игры «%1$s» изменено на: «%2$s»	#
+commands.gametips.description=Вкл/выкл подсказки на этом устройстве	#
+commands.gametips.enabled=Подсказки включены.	#
+commands.gametips.disabled=Подсказки выключены.	#
+commands.gametips-off.description=Отключить подсказки на этом устройстве	#
+commands.gametips-off.success=Подсказки выключены.	#
+commands.gametips-on.description=Включить подсказки на этом устройстве	#
+commands.gametips-on.success=Подсказки включены.	#
+commands.gametips-reset.description=Сбросить настройки подсказок на этом устройстве	#
+commands.gametips-reset.success=Настройки подсказок сброшены	#
 commands.generic.async.initiated=Началось выполнение команды «%1$s» (асинхронный шаг %2$d)	#
 commands.generic.boolean.invalid=«%1$s» не является true или false	#
 commands.generic.chunk.notFound=Указанный фрагмент не найден	#
@@ -3078,10 +3087,12 @@ gameTip.breakBlock.mouse=Удерживайте левую кнопку мыши
 gameTip.breakBlock.touch=Коснитесь и удерживайте, чтобы разбить блоки	#
 gameTip.breakBlock.touch.classic=Коснитесь и удерживайте, чтобы разбить блоки	#
 gameTip.breakBlock.controller=Коснитесь и удерживайте, чтобы разбить блоки	#
+gameTip.breakBlock.touch.crosshair=Коснитесь и удерживайте :tip_virtual_button_action_attack_or_destroy:[LINEBREAK], чтобы разбить блоки 	#### {StrContains='LINEBREAK'}
 
-gameTip.placeBlock.mouse=Щелкните, чтобы разместить блок	#
+gameTip.placeBlock.mouse=Щелкните ПКМ, чтобы разместить блок	#
 gameTip.placeBlock.touch=Коснитесь экрана, чтобы разместить блок	#
 gameTip.placeBlock.controller=Нажмите на землю, чтобы поместить блок	#
+gameTip.placeBlock.touch.crosshair=Нажмите :tip_virtual_button_action_build_or_use:, чтобы разместить блок	#
 
 gameTip.openInventorySurvival.mouse=Нажмите :_input_key.inventory:,[LINEBREAK]чтобы открыть инвентарь		#### {StrContains='LINEBREAK'}
 gameTip.openInventorySurvival.touch=Откройте инвентарь. В нем вы найдете рецепты	#
@@ -3207,6 +3218,8 @@ gui.editor.copyProject.failedMessage=Не удалось создать копи
 
 gui.edu.exitGameWarningCaption=Minecraft Education	### Use Minecraft 教育版 in zh_CN translation
 gui.edu.exitGameWarningMessage=Выход из Minecraft Education?		### Use 离开 Minecraft 教育版? in zh_CN translation
+gui.edu.exitGameWarningCaptionPreview=Предварительная версия Minecraft Education	#
+gui.edu.exitGameWarningMessagePreview=Выйти из предварительной версии Minecraft Education?	#
 
 updateScreen.update=Обновить	#
 updateScreen.updateRequired=Требуется обновление	#
@@ -5918,7 +5931,8 @@ options.delete_account.confirm.button=Удалить	#
 options.dev_game_tip=Советы по игровому процессу	#
 options.dev_ad_show_debug_panel=Отображать значок EDU на панели отладки	#
 options.dev_ad_token_refresh_threshold=Граничное количество секунд для интервала обновления маркера входа EDU	#
-options.dev_ad_edu_max_token_refresh=Максимальный срок действия токена обновления EDU (в минутах)	#
+options.dev_ad_edu_max_signin_token_refresh=Максимальный срок действия входа токена обновления EDU (в минутах)	#
+options.dev_ad_edu_max_graph_token_refresh=Максимальное отображение срока действия токена обновления EDU (в минутах)	#
 options.dev_side_by_side_comparison_rate=Параллельное сравнение	#
 options.dev_playfab_token_refresh_threshold=Предельное время обновления жетона Playfab (в минутах)	#
 options.dev_assertions_debug_break=Прерывание утверждений в отладчике	#
@@ -6152,8 +6166,8 @@ options.fov.toggle=Поле зрения может изменяться в пр
 options.licenses=Лицензии	#
 options.licensed_content=Лицензированный контент	#
 options.networkSettings=Настройки сети	#
-options.ecoMode=Экономичный режим		####Eco Mode refers to an ecological friendly mode {MaxLength='20'}
-options.enableEcoMode=Включить экономичный режим		####Eco Mode refers to an ecological friendly mode {MaxLength='30'}
+options.ecoMode=Экономичный режим		#### {MaxLength='40'}
+options.enableEcoMode=Более низкая частота кадров при отключении контроллера		#### {MaxLength='55'}
 options.font_license=Лицензия на шрифт	#
 options.font_license_body=%1	#
 options.livingRoomFOV=Поле зрения в режиме "Гостиная"	#
@@ -6243,6 +6257,7 @@ options.sneakOption.toggle=Нажмите на кнопку один раз, ч�
 options.sneakOption.hold=Удерживайте кнопку, чтобы прокрасться	#
 options.splitscreenInterfaceOpacity=Прозрачность индикаторов (разделение экрана)	#
 options.textBackgroundOpacity=Непрозрачность фона текста	#
+options.actionBarTextBackgroundOpacity=Непрозрачность фона панели действий	#
 options.hidepaperdoll=Скрыть куклу	#
 options.showautosaveicon=Показывать значок автосохранения	#
 options.hold=Удержание	#
@@ -6492,6 +6507,9 @@ options.deferred.upscaling=Увеличение	#
 options.terrainShadowsEnable=Тени рельефа	#
 options.superFancyWaterEnable=Очень классная вода	#
 options.onlyTrustedSkinsAllowed=Разрешить только проверенные скины	#
+options.restartTutorial=Начать обучение заново	#
+options.tutorial=Обучение	#
+options.tutorialHint=Подсказки по основам Minecraft	#
 
 options.autoUpdateEnabled=Автообновление разблокированных наборов	#
 options.autoUpdateMode=Автообновление разблокированных наборов	#
@@ -7042,6 +7060,7 @@ progressScreen.title.connectingRealms=Подключение к Realm	#
 progressScreen.title.copyingWorld=Копирование мира	#
 progressScreen.title.deleteStorageAreaContent=Очистка кэша хранилища	#
 progressScreen.title.loadingSplitScreenAppearances=Загрузка отображения с разделенным экраном	#
+progressScreen.title.modifiedWorldWarning=Модифицированный мир	#
 progressScreen.message.appearanceLoaded=Отображение загружено	#
 progressScreen.message.appearanceLoadWaitTimeMet=Загрузка отображения занимает длительное время. Продолжаем создание мира...	#
 progressScreen.message.deleteStorageAreaContent=Это может занять некоторое время...	#
@@ -7090,6 +7109,7 @@ progressScreen.message.directoryDepthError=Не удается открыть э
 progressScreen.message.forbiddenContent=У вас нет как минимум одного из примененных наборов	#
 progressScreen.message.loadingSplitScreenAppearances=Загрузка отображения с разделенным экраном...	#
 progressScreen.message.finishedLoadingSplitScreenAppearances=Загрузка отображения с разделенным экраном завершена.	#
+progressScreen.message.modifiedWorldWarning=Этот мир может выглядеть и работать не так, как классические миры и вы сможете получать в нем достижения.	#
 progressScreen.dialog.title.resourcePack=Загрузить наборы ресурсов?	#
 progressScreen.dialog.title.behaviorAndResourcePack=Загрузить наборы параметров и ресурсов для мира?	#
 progressScreen.dialog.title.onlyBehavior=Загрузить наборы параметров для мира?	#
@@ -7752,7 +7772,7 @@ selectTemplate.delete.confirm=Удалить шаблон мира?	#
 selectTemplate.delete=Удалить	#
 selectTemplate.myTemplates=Мои шаблоны миров	#
 selectTemplate.realmsPlus=Избранные шаблоны Realms Plus	#
-selectTemplate.marketplacePass=Featured Marketplace Pass Templates			#### {StrContains="Marketplace Pass"}
+selectTemplate.marketplacePass=Избранные шаблоны Marketplace Pass		#### {StrContains="Marketplace Pass"}
 selectTemplate.importedTemplates=Импортированные шаблоны	#
 selectTemplate.download=Скачать	#
 selectTemplate.noTemplates=На этом устройстве нет шаблонов миров.	#
@@ -8123,7 +8143,7 @@ store.csb.upsell.rightBullet.3=Включает			### Precedes the term Marketpl
 
 store.csb.upsell.learnMore=Подробнее	#
 store.csb.upsell.price=%s в месяц	#
-store.csb.upsell.firstPeriodFree=Бесплатная 30-дневная пробная версия!*	#
+store.csb.upsell.firstPeriodFree=Бесплатная 30-дневная пробная версия!	#
 
 store.csb.upsell.realmsPlus=§dREALMS PLUS	#
 
@@ -9814,10 +9834,6 @@ xbox.signinquestion=Войти?	#
 xbox.notnow=Позже	#
 xbox.signingin=Вход в учетную запись Майкрософт...	#
 xbox.signingin.offline=Вход	#
-xbox.firstsignin.line1=Добро пожаловать в Minecraft! Используйте учетную запись Майкрософт, чтобы присоединиться к сообществу Minecraft, где владельцы компьютеров, консолей, телефонов и планшетов играют вместе. И знаете, что главное?	#
-xbox.firstsignin.line2=Это БЕСПЛАТНО!	#
-xbox.firstsignin.line3=Нет учетной записи? Создайте ее, чтобы получать достижения и подключаться к Realms и серверам!	#
-xbox.firstsignin.line3.norealmsOrServers=Нет учетной записи? Создайте ее, чтобы получать достижения и играть с друзьями с других платформ!	#
 xbox.failedsignin.body=Не удается выполнить вход в вашу учетную запись Майкрософт. Доступ к Realms, профилям и предметам с Рынка будет ограничен. Повторите попытку позже.	#
 xbox.failedsignin.error=Код ошибки:	#
 xbox.failedsignin.moreInfo=Подробнее	#
@@ -10239,6 +10255,12 @@ lategameTips.27=Диорит – его или любят, или ненавид
 
 tips.realms.1=Откройте игровое меню, чтобы сделать снимок экрана.	#
 tips.realms.2=Личный сервер Realm всегда находится в сети и доступен для вас и ваших друзей. Играйте, когда захотите.	#
+tips.realms.3=Следите за тем, что происходит в вашем Realm, просматривая ленту историй Realms.	#
+tips.realms.4=Поделитесь своей незабываемой историей с другими игроками Realm.	#
+tips.realms.5=Взгляните на временную шкалу историй Realms, и узнайте, когда играют ваши друзья.	#
+tips.realms.6=Перейдите в истории Realms из игрового меню во время игры.	#
+tips.realms.7=Познакомьтесь с сообществом вашего Realm во вкладке «Участники» в разделе историй.	#
+tips.realms.8=Используйте истории Realms, чтобы общаться, следить за успехами друзей и узнавать, когда они играют.	#
 
 splitscreen.joinPrompt=Войдите как игрок %s	#
 splitscreen.unavailable.toastHeader=Разделенный экран недоступен	#
