@@ -4,6 +4,10 @@
 ## comment on the same line, use TABs.
 accessibility.disableTTS=Text To Speech disabled
 accessibility.enableTTS=Text To Speech enabled
+
+## Translator note:
+## This section of phrases will be given audibly to the user using text to speech
+
 accessibility.chat.tts.says=%s says %s
 accessibility.loading.done=Done
 accessibility.saving.done=Done
@@ -16,6 +20,52 @@ accessibility.importing.Progress=Importing %s percent
 accessibility.importing.canceled=Import canceled
 accessibility.importing.complete=Import complete
 accessibility.signin.xbl=Signing into X box live
+accessibility.chat.howtoopen=Press %s to open chat
+accessibility.key.mouseButton=Mouse Button %s
+accessibility.key.gamepad=Gamepad %s
+accessibility.list.or.two=%s or %
+accessibility.list.or.three_or_more.first=%s
+accessibility.list.or.three_or_more.inner=, %s
+accessibility.list.or.three_or_more.last=, or %s
+
+accessibility.button.tts.title=Button
+accessibility.checkbox.tts.title=Checkbox
+accessibility.checkbox.tts.status=status %s		## Status will be checked or unchecked
+accessibility.dropdown.tts.title=Dropdown
+accessibility.slider.tts.title=Slider
+accessibility.tab.tts.title=Tab
+accessibility.textbox.tts.title=Textbox
+accessibility.toggle.tts.title=Toggle
+
+accessibility.button.close=close
+accessibility.button.back=back
+
+accessibility.sectionName=Section %s: 
+
+accessibility.state.on=: on
+accessibility.state.off=: off
+
+accessibility.state.checked=: checked
+accessibility.state.unchecked=: unchecked
+
+accessibility.slider.tts.percentValue=%s percent
+
+accessibility.play.editWorld=Edit World
+accessibility.play.editRealm=Edit Realm
+accessibility.play.editServer=Edit Server
+accessibility.play.importWorld=Import World
+accessibility.play.leaveRealm=Leave Realm
+accessibility.play.realmFeed=Realm Feed
+
+accessibility.settings.reset=reset
+accessibility.settings.chooseSeed=Choose Seed
+
+accessibility.start.feedback=Submit Feedback
+accessibility.start.skinPicker=Choose Skin
+
+accessibility.worldTemplates.help=Help
+
+## End of audible phrases section
 
 achievement.alternativeFuel=Alternative Fuel
 achievement.alternativeFuel.desc=Power a furnace with a kelp block
@@ -1383,8 +1433,12 @@ realmsCreateScreen.createFailed.title=Something Went Wrong
 realmsCreateScreen.createFailed.content=Your purchase succeeded, but we couldn't create your Realm right now.  We will create your Realm as soon as possible.  Check back later on this device.
 realmsCreateScreen.createFailed.profanity=The Realm name %s is not allowed.
 realmsCreateScreen.createFailed.generic=Club name could not be verified. Please try again later.
-realmsCreateScreen.maxRealms.title=Maximum Realms Reached
-realmsCreateScreen.maxRealms.content=You have the maximum number of active realms and cannot create a new one right now.
+realmsCreateScreen.maxRealms.title=Maximum Subscriptions
+realmsCreateScreen.maxRealms.content=You have the maximum number of active subscriptions on this platform and cannot create a new one right now.
+realmsCreateScreen.offerNotFound.title=Product not found
+realmsCreateScreen.offerNotFound.content=Please try again later
+realmsCreateScreen.offerNotAvailable.title=Product not available for purchase
+realmsCreateScreen.offerNotAvailable.content=Please try again later
 realmsCreateScreen.extendRealms.title=Realm Subscription Full
 realmsCreateScreen.extendRealms.content=You have extended your Realms subscription as long as possible.  You cannot add this additional time right now.  Try again later.
 realmsCreateScreen.usersTwo=2 Players
@@ -2168,6 +2222,13 @@ gui.playOffline=Play Offline
 gui.signIn=Sign In
 gui.genericNetworkError=Something went wrong. Try checking your internet connection.
 
+updateScreen.update=Update
+updateScreen.title=Version Out of Date
+updateScreen.body=Update to the latest version to access all the new features, play with friends online, or see what's new in the Store.
+updateScreen.commerceNotSupported.title=Can't Access Marketplace
+updateScreen.commerceNotSupported.body=This version of Minecraft can no longer access the Minecraft Marketplace. Update to the latest version to restore Marketplace access.
+updateScreen.patchVersion=Version %s Patch Notes:
+
 hostOption.codeBuilder=Code Builder
 hostOption.setWorldSpawn=Set World Spawn
 hostOption.teleport=Teleport
@@ -2800,11 +2861,13 @@ howtoplay.navigation.header.1=Navigation Tools
 howtoplay.navigation.text.3=A Compass will point in the direction of the first place you spawned into the world, an easy way to find where you started.
 howtoplay.navigation.text.4=A Map lets you see the area you've explored. Put it in your offhand slot to use it like a mini-map. You can increase its size by adding more paper to the edges in a Crafting Table.
 howtoplay.navigation.text.5=A Locator Map will show you where you are and what direction you are facing in relation to the Locator Map's origin. It will also show you the location of other players in the same world.
+howtoplay.navigation.text.6=A Cartography Table can help you create, expand, copy and even name maps.
+howtoplay.navigation.text.7=Place paper into the first slot to craft a Map. If you add a compass into the second slot you can craft a Locator Map. Adding Paper or a blank Map will let you expand or copy your Map.  
 howtoplay.navigation.header.2=Navigation Techniques
-howtoplay.navigation.text.6=Try to watch for landmarks as you explore. The more you play on a world, the more you will be able to remember where you are. Another good trick is to place Torches as you go so that you may find your way back home.
-howtoplay.navigation.text.7=The sun can also tell you what direction you are facing. Remember: the sun rises in the east and sets in the west!
+howtoplay.navigation.text.8=Try to watch for landmarks as you explore. The more you play on a world, the more you will be able to remember where you are. Another good trick is to place Torches as you go so that you may find your way back home.
+howtoplay.navigation.text.9=The sun can also tell you what direction you are facing. Remember: the sun rises in the east and sets in the west!
 howtoplay.navigation.header.3=Explorer Maps
-howtoplay.navigation.text.8=There are several places for you to explore. Find a village and look for a Cartographer. He will trade you Explorer Maps that will lead you to strange places very far away.
+howtoplay.navigation.text.10=There are several places for you to explore. Find a village and look for a Cartographer. He will trade you Explorer Maps that will lead you to strange places very far away.
 
 howtoplay.netherPortals=Nether Portal
 howtoplay.netherPortals.title=How to Play : Nether Portal
@@ -2831,6 +2894,13 @@ howtoplay.pets.header.3=Ocelots
 howtoplay.pets.text.3=Ocelots are a neutral mob that hunt in the Jungle. They will attack Chickens and keep Creepers away. They will try to run from you so taming them can be tough. They like fish so give them Raw Cod or Salmon to tame them.
 howtoplay.pets.header.4=Parrots
 howtoplay.pets.text.4=Parrots are a passive mob that also live in the Jungle. They will imitate any other mob in the area. Seeds are their favorite, give them a few to tame them. Parrots will also sit on your shoulder... Yes, you can have more than one up there.
+
+howtoplay.raids=Raids
+howtoplay.raids.title=How to Play : Raids
+howtoplay.raids.text.1=While exploring the world you may encounter a Pillager encampment or patrol. Pillagers are always looking for villages to raid taking their Banners will get their attention, and they may choose to attack a nearby village.  
+howtoplay.raids.text.2=Be sure to defend your village, the attack will stop if you defeat all the Raiders.
+howtoplay.raids.header.1=I Need A Hero
+howtoplay.raids.text.3=Villagers will most likely be very grateful that you have saved them from the raiders. Be sure to check back with them, you might get a good deal.  
 
 howtoplay.ranching=Ranching
 howtoplay.ranching.title=How to Play : Ranching
@@ -2876,7 +2946,7 @@ howtoplay.scaffolding.text.1.touch=Scaffolding can help you create huge structur
 howtoplay.scaffolding.text.1.rift_controller=Scaffolding can help you create huge structures safely! You can walk inside scaffolding and stand on it. If you have a column of scaffolding you can go upward by standing in the scaffolding and pressing the :rift_A: button. If you want to travel downward you can press and hold the :rift_X: button.
 howtoplay.scaffolding.text.1.windowsmr_controller=Scaffolding can help you create huge structures safely! You can walk inside scaffolding and stand on it. If you have a column of scaffolding you can go upward by standing in the scaffolding and pressing the :windowsmr_right_touchpad: button. If you want to travel downward you can press and hold the :windowsmr_right_stick: button.
 howtoplay.scaffolding.header.2=Support Your Build
-howtoplay.scaffolding.text.2=Scaffolding needs support. You can only place 4 scaffolding horizontally without touching a different block. When you attempt to place the 5th scaffolding block without proper support, it will fall. Scaffolding can be placed like normal blocks, but it can also be placed on its own foundation to quickly grow a tall tower.
+howtoplay.scaffolding.text.2=Scaffolding needs support. You can only place so many scaffolding horizontally without touching a different block. When you attempt to place too many scaffolding blocks without proper support, it will fall. Scaffolding can be placed like normal blocks, but it can also be placed on its own foundation to quickly build a tall tower.
 howtoplay.scaffolding.header.3=Break It Down
 howtoplay.scaffolding.text.3=When Scaffolding is broken it will also break every Scaffolding block that was being supported by it. This will let you quickly clean up your scaffolding by breaking the supporting blocks!
 
@@ -2929,10 +2999,11 @@ howtoplay.tools.text.12=Shears are very handy for collecting items like Wool, Le
 
 howtoplay.trading=Villager Trading
 howtoplay.trading.title=How to Play : Villager Trading
-howtoplay.trading.text.1=Trading can be done in villages. Each villager has a profession; they can be Farmers, Butchers, Blacksmiths, Cartographers, Librarians, or Priests. This designates the type of items they can trade.
+howtoplay.trading.text.1=Trading can be done in villages. Each villager has a profession; they can be Farmers, Butchers, Blacksmiths, Cartographers, Librarians, or Priests. Some professions will trade for items that other professions cannot. Explore and trade with many villagers to find all the trades. 
 howtoplay.trading.header.1=Goods for Emeralds
-howtoplay.trading.text.2=You can find a list of all the trades a villager is offering in the trading menu. A villager may modify or add to its trades whenever a player trades with it, although a trade might become temporarily disabled if it is used too frequently.
-howtoplay.trading.text.3=Trades usually involve buying or selling items for emeralds.
+howtoplay.trading.text.2=You can find out what a villager is offering as trade by interacting with them. A villager may adjust the price of a trade whenever a player trades with it. A villager may run out of stock, temporarily disabling the trade if it is used too frequently. Trades usually involve buying or selling items for emeralds. 
+howtoplay.trading.text.3=As you trade with villagers, they will get better at their profession and start to offer better and more valuable trades.  
+howtoplay.trading.text.4=Take care of your villagers, they need to rest, work, and eat to thrive.
 
 howtoplay.transportation=Transportation
 howtoplay.transportation.title=How to Play : Transportation
@@ -4393,6 +4464,7 @@ map.toolTip.displayMarkers=Display Markers
 map.toolTip.scaling=Scaling at 1:%s
 map.toolTip.level=Level %s/%s
 map.toolTip.unkown=Unknown Map
+map.toolTip.locked=Locked
 map.position.agent=Agent Pos: %s, %s, %s
 map.position=Position: %s, %s, %s
 
@@ -4664,6 +4736,10 @@ options.dev_overrideDateMinute=Minute
 options.dev_overrideDayLength=Override Day Length In Minutes (Min: 1)
 options.dev_overrideTimeScale=Scale Speed That Time Passes (Min: 1, Default: 1)
 options.dev_updateOverrideDate=Update Override Date
+options.dev_overrideVersionMajor=Major
+options.dev_overrideVersionMinor=Minor
+options.dev_overrideVersionPatch=Patch
+options.dev_updateVersionOverride=Update Client Version Override
 options.dev_resetOverrideDate=Reset Override Date
 options.dev_clearStoreCache=Clear Store Cache
 options.dev_clearAllCache=Clear All Cache
@@ -4691,6 +4767,7 @@ options.difficulty.normal=Normal
 options.difficulty.peaceful=Peaceful
 options.dpadscale=D-Pad Size
 options.enableChatTextToSpeech=Enable Text To Speech For Chat
+options.enableUITextToSpeech=Enable UI Screen Reader
 options.entityShadows=Entity Shadows
 options.editSettings=Edit Settings
 options.fancyskies=Beautiful Skies
@@ -4862,6 +4939,8 @@ options.snooper.view=Snooper Settings...
 options.sound=Sound Volume
 options.sounds=Audio
 options.sounds.title=Audio Settings
+options.accessibility=Accessibility
+options.accessibility.title=Accessibility Settings
 options.splitscreen=Split Screen
 options.splitscreen.horizontal=Horizontal Split Screen
 options.splitscreen.vertical=Vertical Split Screen
@@ -5284,6 +5363,7 @@ progressScreen.dialog.message.resourcePackRequired=This world has Resource Packs
 progressScreen.dialog.message.scriptConfirm=The world you are about to enter contains scripts that run on your device. Would you like to join this world?
 progressScreen.dialog.message.storageProviderError=Could not sync your world data.  Would you like to try again?
 progressScreen.dialog.message.storageProviderUnusableError=The world is not fully synced or has been corrupted. Try playing the world on a console where it's in a good state and try migrating it again.
+progressScreen.dialog.message.worldCorrupted=The world has been corrupted. Please report this at bugs.mojang.com
 progressScreen.dialog.message.storageProviderLongWait=Syncing this world is taking a long time.  Would you like to continue waiting?
 progressScreen.dialog.button.enter=Enter World
 progressScreen.dialog.button.joinAndDownload=Download & Join - %1
@@ -5427,8 +5507,8 @@ resourcepack.Candy=Candy Texture Pack
 resourcepack.FestiveMashup2016=Festive Mash-up 2016
 resourcepack.ChineseMythology=Chinese Mythology Mash-up
 
-resourcePack.vanilla.name=Minecraft
-resourcePack.vanilla.description=The classic Minecraft resources.
+resourcePack.vanilla.name=Minecraft Texture Pack
+resourcePack.vanilla.description=The default Minecraft graphics, now updated with stylish new textures!
 
 resourcePack.city.name=City
 resourcePack.city.description=Ideal for building structures.
@@ -5486,6 +5566,11 @@ review.item.post.rating.4star=Woohoo! We're glad you're having a good time!
 review.item.post.rating.5star=We're glad you're having a great time!
 review.item.post.rating.submit.toast.line1=Thanks for rating this pack!
 review.item.post.rating.submit.toast.line2=It may take some time for us to show your rating.
+
+roaming.status_brief.limited_usage=Limited usage
+roaming.status_brief.no_restrictions=Usable cross-platform
+roaming.status_hover.limited_usage=Only available on specific platforms.
+roaming.status_hover.no_restrictions=Available on any Bedrock platform!
 
 screenshot.failure=Couldn't save screenshot: %s
 screenshot.success=Saved screenshot as %s
@@ -6561,7 +6646,6 @@ tile.stone_slab.nether_brick.name=Nether Brick Slab
 tile.stone_slab.quartz.name=Quartz Slab
 tile.stone_slab.sand.name=Sandstone Slab
 tile.stone_slab.smoothStoneBrick.name=Stone Bricks Slab
-tile.stone_slab.stone.name=Stone Slab
 tile.stone_slab.wood.name=Wooden Slab
 tile.double_stone_slab2.red_sandstone.name=Red Sandstone Slab
 tile.stone_slab2.red_sandstone.name=Red Sandstone Slab
@@ -7317,6 +7401,9 @@ hbui.mainMenu.HelpModal.howToPlayButton=How to play
 hbui.mainMenu.HelpModal.faqButton=FAQ
 hbui.mainMenu.HelpModal.patchNotesButton=Patch notes
 hbui.mainMenu.HelpModal.closeButton=Close
+hbui.mainMenu.UpdateModal.title=New update available
+hbui.mainMenu.UpdateModal.contents=There is a new version of the game available, do you want to update to it to get all the new features?
+hbui.mainMenu.UpdateModal.UpdateButton=Update
 hbui.mainMenu.LoginModal.signInAs=Signed in as
 hbui.mainMenu.LoginModal.manageAccountButton=Manage account
 hbui.mainMenu.LoginModal.signOutButton=Sign out
@@ -7340,8 +7427,9 @@ trade.doesNotWant=Trader does not want this
 trade.excalamation=!
 trade.expProgress=Experience: %d/%d
 trade.expMax=Experience: MAX
-trade.levelPrefix=Lvl %d
-trade.levelPrefixAndName=Lvl %d - %s
+trade.levelPrefix=Level %d
+trade.levelPrefixAndName=Level %d - %s
+trade.levelPrefixAndName.max=Max Level - %s
 trade.level.1=Novice
 trade.level.2=Apprentice
 trade.level.3=Journeyman
@@ -7358,3 +7446,4 @@ map.locatorMap=Map that Shows Players
 map.extendAndClear=Zoom Out & Clear
 map.clone=Copy Map
 map.name=Map Name
+map.lock=Lock Map
