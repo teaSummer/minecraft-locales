@@ -94,3 +94,33 @@ commands.editor.project.export=project export
 commands.editor.project.exportComplete=Export complete, files written to %s
 commands.editor.project.beginExport=Exporting...
 commands.editor.project.exportCopyFailed=Failed to copy level data %s
+
+## resourcePack.editor.playtestResult. is a prefix that maps directly to an enum value in the editor
+## Ensure that the spelling and case is identical to the enumeration in C++/TypeScript for
+## enum `Editor::Playtest::SessionResult`
+
+resourcePack.editor.playtestResult.OK=Success
+resourcePack.editor.playtestResult.InvalidSessionHandle=Invalid Session Handle
+resourcePack.editor.playtestResult.SessionInfoNotFound=Session Info Not Found
+resourcePack.editor.playtestResult.TooManyPlayers=You cannot test a world when you are hosting other players
+resourcePack.editor.playtestResult.WorldExportFailed=World Export Failed
+resourcePack.editor.playtestResult.WorldExportBusy=World Export Busy
+resourcePack.editor.playtestResult.UnsupportedScenario=You must be hosting the editor project to test the world
+resourcePack.editor.playtestResult.EditorSystemFailure=Editor System Failure
+resourcePack.editor.playtestResult.InvalidLevelId=Invalid Level Id
+resourcePack.editor.playtestResult.PlayerNotFound=Player Not Found
+resourcePack.editor.playtestResult.ResponseTimeout=Response Timeout
+resourcePack.editor.playtestResult.UnspecifiedError=Unspecified Error
+
+
+resourcePack.editor.playtest.Title=Test World
+resourcePack.editor.playtest.Title.Tooltip=Playtest your Editor project as a playable Minecraft world.  No changes will be saved to your project.  Available only when hosting a single player project.
+resourcePack.editor.playtest.Dialog.Title=Test Settings
+resourcePack.editor.playtest.Dialog.GameMode=Game Mode
+resourcePack.editor.playtest.Dialog.Difficulty=Difficulty
+resourcePack.editor.playtest.Dialog.DaylightCycle=Daylight Cycle
+resourcePack.editor.playtest.Dialog.WeatherCycle=Weather Cycle
+resourcePack.editor.playtest.Dialog.ShowCoordinates=Show Coordinates
+resourcePack.editor.playtest.Dialog.OverrideSpawn=Spawn at Current Location
+resourcePack.editor.playtest.Dialog.TimeOfDay=Time of Day
+resourcePack.editor.playtest.Dialog.TestButton=Test World
