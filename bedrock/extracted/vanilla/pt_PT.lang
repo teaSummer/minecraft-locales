@@ -1095,7 +1095,7 @@ commands.ride.stopRiding.success=Condutores que pararam a viagem com êxito: %1$
 commands.ride.summonRide.failed=As viagens foram convocadas, mas estes condutores não puderam ser adicionados às mesmas: %1$s	#
 commands.ride.summonRide.notRideable=A entidade foi convocada, mas não é montável.	#
 commands.ride.summonRide.success=Viagem convocada com sucesso para estes condutores: %1$s	#
-commands.ride.summonRide.skipped=Os passeios não foram convocados para as seguintes entidades que já têm passeios: %1$s	#
+commands.ride.summonRide.skipped=Não foram invocados transportes para as seguintes entidades que já têm transportes: %1$s	#
 commands.ride.summonRider.failed=Os condutores foram convocados, mas não puderam ser adicionados às viagens: %1$s	#
 commands.ride.summonRider.fullRides=Os condutores não puderam viajar nestas viagens porque estão cheias: %1$s	#
 commands.ride.summonRider.ridesWithNoRideableComp=As seguintes entidades não são montáveis: %1$s	#
@@ -2471,7 +2471,7 @@ disconnect.quitting=A sair	#
 disconnect.spam=Expulso por spam	#
 disconnect.timeout=Tempo limite excedido	#
 disconnect.scriptWatchdog=O servidor foi encerrado devido a uma exceção de watchdog de scripts não processada.	#
-disconnect.scriptWatchdogOutOfMemory=O servidor foi desligado devido ao limite de memória de scripting.	#
+disconnect.scriptWatchdogOutOfMemory=O servidor foi desligado por ter sido excedido o limite da memória de scripting.	#
 
 disconnectionScreen.header.realms_hidden=Convite Multijogador	#
 disconnectionScreen.body.realms_hidden=Não foi possível juntar-se a este servidor específico.	#
@@ -2532,7 +2532,6 @@ disconnectionScreen.timeout=O tempo de ligação expirou.	#
 disconnectionScreen.nowifi=Parece que não é possível ligar à tua rede, verifica a ligação.	#
 disconnectionScreen.invalidTenant=Não foi possível estabelecer ligação. Não tens acesso a este mundo.	#
 disconnectionScreen.resourcePack=Foi encontrado um problema ao transferir ou aplicar o pacote de recursos.	#
-disconnectionScreen.restartClient=Não é possível estabelecer a ligação. Reinicia o cliente	#
 disconnectionScreen.badPacket=O servidor enviou um pacote inválido.	#
 disconnectionScreen.realmsDisabled=O Realms está desativado.	#
 disconnectionScreen.realmsDisabledBeta=O Realms está desativado para o beta.	#
@@ -5469,8 +5468,6 @@ keyboard.keyName.period.short=.	#
 keyboard.keyName.backslash.short=\	#
 keyboard.keyName.lbracket.short=[	#
 keyboard.keyName.rbracket.short=]	#
-
-keyboard.onScreen.lineNumber=Linha %s	#
 
 lanServer.otherPlayers=Definições para Outros Jogadores	#
 lanServer.scanning=A procurar jogos locais na rede local	#
@@ -9174,10 +9171,10 @@ authserver.authfailed=Isto é mau. Este servidor chumbou no nosso teste de verif
 platform.model.unknown=DESCONHECIDO	#
 
 ## Misc Compliance copy
-compliance.playtime.greaterThan24Hours=Estás a jogar há mais de 24 horas	#
+compliance.playtime.greaterThan24Hours=Estás a jogar há mais de 24 horas.	#
 compliance.playtime.message=Jogos excessivos podem interferir com a vida diária normal	#
-compliance.playtime.multipleHours=Estás a jogar há %d horas	#
-compliance.playtime.oneHour=Estás a jogar há uma hora	#
+compliance.playtime.multipleHours=Estás a jogar há %d horas.	#
+compliance.playtime.oneHour=Estás a jogar há uma hora.	#
 
 ## resource pack validation errors
 packdiscoveryerror.manifest_pack_error=Não foi possível abrir o pacote.	#
@@ -9957,50 +9954,15 @@ osk.truncation_warning.title=Aviso	#
 osk.truncation_warning.body=Não é possível editar texto. O texto excede os limites e pode resultar em truncamento ou perda de dados.	#
 
 ## Gatherings
-gathering.button.minecraftLive=Votação de Criaturas 2022:	#
-gathering.caption.startsIn=Abre em %s	#
-gathering.caption.endsIn=Fecha em %s	#
+gathering.button.minecraftLive=Minecraft Live	#
+gathering.caption.startsIn=Começa em %s	#
+gathering.caption.endsIn=Termina em %s	#
 gathering.caption.eventOver=Evento terminado	#
-gathering.caption.live=Viver agora	#
 gathering.info.button.readMore=Ler Mais...	#
-gathering.info.button.voteNow=Jogar e Votar	#
-gathering.info.button.watchStream=Vê o minecraft live!	#
-gathering.info.title.liveIsComing=Mude Minecraft para sempre!	#
-gathering.info.header.minecraftLive=Votação de Criaturas 2022:	#
-gathering.info.body.liveIsComing=Que máfia deve juntar-se ao Minecraft? Entre no nosso carnaval bloqueado, jogue alguns mini-jogos, e vote! Pode votar e jogar o quanto quiser, mas só o voto final contará. O vencedor será anunciado no Minecraft Live no dia 15 de outubro, ao meio-dia EDT!	#
+gathering.info.button.voteNow=Vota Agora	#
+gathering.info.title.liveIsComing=O Minecraft Live está a Chegar!	#
+gathering.info.header.minecraftLive=Minecraft Live	#
+gathering.info.body.liveIsComing=Chegou a hora de adicionar uma nova criatura ao Minecraft e a escolha é tua.	#
 gathering.info.modal.title.connectFail=Falha ao ligar	#
 gathering.info.modal.body.connectFail=Infelizmente, não conseguimos encontrar um servidor ao qual ligar. Tenta mais tarde.	#
 gathering.connect.title=A ligar...	#
-gathering.info.qr.title.onlineService=Votar na Web	#
-gathering.info.qr.body.onlineService.nso=Precisas de uma subscrição da Nintendo Switch Online para votar no Minecraft. Por favor, votem na web: aka.ms/MobVote	#
-gathering.info.qr.body.onlineService.psn=Tens de te inscrever na "PlayStation Network" para votar no Minecraft. Por favor, inscreva-se ou vote na web: aka.ms/MobVote	#
-gathering.info.qr.body.onlineService=Tens de te inscrever para votar no Minecraft. Por favor, votem na web: aka.ms/MobVote	#
-gathering.info.qr.title.childAccount=Jogo online não permitido	#
-gathering.info.qr.body.childAccount=Os seus controlos parentais atuais limitam-no a jogar online. Por favor, vote no nosso site: aka.ms/MobVote	#
-gathering.info.qr.title.console=Assista ao evento ao vivo	#
-gathering.info.qr.body.console=Junte-se ao livestream agora no YouTube: aka.ms/MinecraftLive	#
-gathering.info.signIn.title=Inscreva-se para votar	#
-gathering.info.signIn.body=Por favor, inscreva-se na sua Conta Microsoft para participar na votação da máfia.	#
-
-gathering.st.button.minecraftLive=Jogar e Votar	#
-gathering.st.caption.startsIn=Abre em %s	#
-gathering.st.caption.endsIn=Fecha em %s	#
-gathering.st.caption.eventOver=Evento terminado	#
-gathering.st.info.button.readMore=Ler Mais...	#
-gathering.st.info.button.voteNow=Jogar e Votar	#
-gathering.st.info.title.liveIsComing=Teste ao vivo de Minecraft	#
-gathering.st.info.header.minecraftLive=Jogar e Votar	#
-gathering.st.info.body.liveIsComing=Ajude-nos a testar o servidor de votação para o Minecraft Live 2022 Mob Vote! Se te juntaste à votação durante o episódio de agosto do Minecraft Now, já estarás familiarizado com o servidor. Convidamos todos a virem votar e ficar para os mini-jogos!	#
-gathering.st.info.modal.title.connectFail=Falha ao ligar	#
-gathering.st.info.modal.body.connectFail=Infelizmente, não conseguimos encontrar um servidor ao qual ligar. Tenta mais tarde.	#
-gathering.st.connect.title=A ligar…	#
-gathering.st.info.qr.title.onlineService=Conta limitada	#
-gathering.st.info.qr.body.onlineService.nso=Precisas de uma subscrição Nintendo Switch Online para te juntares ao servidor.	#
-gathering.st.info.qr.body.onlineService.psn=Tens de ser inscrito na "PlayStation Network" para te juntares ao servidor.	#
-gathering.st.info.qr.body.onlineService=Tens de ser inscrito para te juntares ao servidor.	#
-gathering.st.info.qr.title.childAccount=Jogo online não permitido	#
-gathering.st.info.qr.body.childAccount=Os seus controlos parentais atuais limitam-no a jogar online.	#
-gathering.st.info.qr.title.console=Assista ao evento ao vivo	#
-gathering.st.info.qr.body.console=Junte-se ao livestream agora no YouTube	#
-gathering.st.info.signIn.title=Inscreva-se para votar	#
-gathering.st.info.signIn.body=Por favor, inscreva-se na sua Conta Microsoft para participar na votação da máfia.	#
