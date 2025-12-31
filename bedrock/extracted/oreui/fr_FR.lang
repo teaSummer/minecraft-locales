@@ -104,8 +104,8 @@ hbui.AddFriendAccordion.narration.gamertagSearchSuggestions=La recherche a donn�
 hbui.AddFriendAccordion.narration.noSuggestionsFound=Aucune suggestion pour le moment	#
 hbui.AddFriendAccordion.narration.noSuggestionsMessagefollowers=Vous avez déjà ajouté tous vos abonnés ! Revenez plus tard.	#
 hbui.AddFriendAccordion.narration.noSuggestionsMessagegamertagSearch=Veuillez affiner votre recherche.	#
-hbui.AddFriendAccordion.narration.noSuggestionsMessagerecentlyPlayedWith=Jouez sur des Realms ou des serveurs pour obtenir plus de suggestions !	#
-hbui.AddFriendAccordion.narration.noSuggestionsMessagerecommendedFriends=Jouez sur des Realms ou des serveurs pour obtenir plus de suggestions !	#
+hbui.AddFriendAccordion.narration.noSuggestionsMessagerecentlyPlayedWith=Jouez sur des Realms ou des serveurs pour obtenir plus de suggestions !	#### {StrContains="Realms"}
+hbui.AddFriendAccordion.narration.noSuggestionsMessagerecommendedFriends=Jouez sur des Realms ou des serveurs pour obtenir plus de suggestions !	#### {StrContains="Realms"}
 hbui.AddFriendAccordion.narration.playerHint=Appuyez pour afficher le profil. Utilisez la flèche de droite pour des actions supplémentaires.	#
 hbui.AddFriendAccordion.narration.recentlyPlayedWithSuggestions=%1$s suggestions de joueurs avec lesquels vous avez récemment joué	#
 hbui.AddFriendAccordion.narration.recommendedFriendsSuggestions=%1$s suggestions d'amis recommandés	#
@@ -218,8 +218,8 @@ hbui.ChooseRealmRoute.chooseAPreviewRealm=1. Choisissez un Realm d'aperçu	#
 hbui.ChooseRealmRoute.chooseARealmSubscription=1. Choisissez un abonnement	#
 hbui.ChooseRealmRoute.creative=Créatif	#
 hbui.ChooseRealmRoute.emptyState.message=Une erreur inconnue s'est produite. Veuillez réessayer.	#
-hbui.ChooseRealmRoute.emptyState.noRealmsErrorTitle.beta=Impossible de charger les Realms bêta !	#
-hbui.ChooseRealmRoute.emptyState.noRealmsErrorTitle.preview=Impossible de charger les Realms d'aperçu !	#
+hbui.ChooseRealmRoute.emptyState.noRealmsErrorTitle.beta=Beta Realms couldn't load! 	#### {StrContains="Beta Realms"}
+hbui.ChooseRealmRoute.emptyState.noRealmsErrorTitle.preview=Preview Realms couldn't load! 	#### {StrContains="Preview Realms"}
 hbui.ChooseRealmRoute.emptyState.noSubscriptionErrorTitle=Impossible de charger les abonnements !	#
 hbui.ChooseRealmRoute.emptyState.tryAgain=Réessayer	#
 hbui.ChooseRealmRoute.pairedWith=Réalisé avec : %s	#
@@ -961,15 +961,15 @@ hbui.CreateNewWorld.resourcePacks.inactivePacksEmptyTitle=Vous ne possédez pas 
 hbui.CreateNewWorld.resourcePacks.inactivePacksEmptyTitle.edu=Vous n'avez pas de packs de ressources	#
 hbui.CreateNewWorld.resourcePacks.inactivePacksOnExpandAccordionHint=Naviguer vers le bas pour accéder à vos packs	#
 hbui.CreateNewWorld.resourcePacks.localPacksListHeader=Local	#
-hbui.CreateNewWorld.resourcePacks.marketplacePassPacksAccordionHeader=Marketplace Pass	#
-hbui.CreateNewWorld.resourcePacks.marketplacePassPacksAccordionHint=Développer pour accéder à tous les packs du Marketplace Pass	#
+hbui.CreateNewWorld.resourcePacks.marketplacePassPacksAccordionHeader=Marketplace Pass	#### {StrContains="Marketplace Pass"}
+hbui.CreateNewWorld.resourcePacks.marketplacePassPacksAccordionHint=Développer pour accéder à tous les packs du Marketplace Pass	#### {StrContains="Marketplace Pass"}
 hbui.CreateNewWorld.resourcePacks.marketplacePassPacksEmptyBody.edu=Les packs de ressources que vous créez et installez s'activent et s'utilisent ici dans vos mondes	#
 hbui.CreateNewWorld.resourcePacks.marketplacePassPacksEmptyTitle=Plus de packs de ressources disponibles	#
-hbui.CreateNewWorld.resourcePacks.marketplacePassPacksOnExpandAccordionHint=Naviguer vers le bas pour accéder aux packs du Marketplace Pass	#
-hbui.CreateNewWorld.resourcePacks.marketplacePassPromotionBody=Découvrez plus de 150 contenus passionnants avec le tout nouvel abonnement au Marketplace Pass ! (Realms Plus inclut désormais le contenu du Marketplace Pass)	#
-hbui.CreateNewWorld.resourcePacks.marketplacePassPromotionButtonInputLegend=Marketplace Pass	#
+hbui.CreateNewWorld.resourcePacks.marketplacePassPacksOnExpandAccordionHint=Naviguer vers le bas pour accéder aux packs du Marketplace Pass	#### {StrContains="Marketplace Pass"}
+hbui.CreateNewWorld.resourcePacks.marketplacePassPromotionBody=Découvrez plus de 150 contenus passionnants avec le tout nouvel abonnement au Marketplace Pass ! (Realms Plus inclut désormais le contenu du Marketplace Pass)	#### {StrContains="Realms Plus"} {StrContains="Marketplace Pass"}
+hbui.CreateNewWorld.resourcePacks.marketplacePassPromotionButtonInputLegend=Marketplace Pass	#### {StrContains="Marketplace Pass"}
 hbui.CreateNewWorld.resourcePacks.marketplacePassPromotionButtonLabel=En savoir plus	#
-hbui.CreateNewWorld.resourcePacks.marketplacePassPromotionTitle=Vous n'avez pas d'abonnement au Marketplace Pass !	#
+hbui.CreateNewWorld.resourcePacks.marketplacePassPromotionTitle=Vous n'avez pas d'abonnement au Marketplace Pass !	#### {StrContains="Marketplace Pass"}
 hbui.CreateNewWorld.resourcePacks.missingDependencyBody=Il manque au moins une dépendance pour ce pack. Voulez-vous l'appliquer quand même ?	#
 hbui.CreateNewWorld.resourcePacks.missingDependencyNewBody=Il manque une ou plusieurs dépendances à ce pack, et son activation peut perturber votre expérience	#
 hbui.CreateNewWorld.resourcePacks.missingDependencyTitle=Dépendances manquantes	#
@@ -1010,12 +1010,12 @@ hbui.CreateNewWorld.scriptingCoding.codeBuilderTitle=Code Builder	#
 hbui.CreateNewWorld.scriptingCoding.narrationComponentTypeSectionHeader=Groupe	#
 hbui.CreateNewWorld.scriptingCoding.settingsTitle=Paramètres de script et de codage	#
 hbui.CreateNewWorld.signInPromptWorldOnRealmModal.cancel=Annuler	#
-hbui.CreateNewWorld.signInPromptWorldOnRealmModal.msaGuestCreateWorld.message=Vous avez besoin d’un compte Microsoft pour créer un monde sur Realms.	#
-hbui.CreateNewWorld.signInPromptWorldOnRealmModal.msaGuestEditWorld.message=Vous avez besoin d’un compte Microsoft pour jouer sur Realms.	#
-hbui.CreateNewWorld.signInPromptWorldOnRealmModal.platformGuestCreate.nintendo.message=Vous devez être connecté à votre compte Nintendo pour créer un monde sur Realms.	#
-hbui.CreateNewWorld.signInPromptWorldOnRealmModal.platformGuestCreate.playStation.message=Une connexion à votre compte pour PlayStation™Network est requise pour créer un monde sur Realms.		#### CertRequirement: [account for PlayStation™Network]
-hbui.CreateNewWorld.signInPromptWorldOnRealmModal.platformGuestEdit.nintendo.message=Vous devez être connecté à votre compte Nintendo pour jouer sur Realms.	#
-hbui.CreateNewWorld.signInPromptWorldOnRealmModal.platformGuestEdit.playStation.message=Une connexion à votre compte à votre compte pour PlayStation™Network est requise pour jouer sur Realms.		#### CertRequirement: [account for PlayStation™Network]
+hbui.CreateNewWorld.signInPromptWorldOnRealmModal.msaGuestCreateWorld.message=Vous avez besoin d’un compte Microsoft pour créer un monde sur Realms.	#### {StrContains="Realms"}
+hbui.CreateNewWorld.signInPromptWorldOnRealmModal.msaGuestEditWorld.message=Vous avez besoin d’un compte Microsoft pour jouer sur Realms.	#### {StrContains="Realms"}
+hbui.CreateNewWorld.signInPromptWorldOnRealmModal.platformGuestCreate.nintendo.message=Vous devez être connecté à votre compte Nintendo pour créer un monde sur Realms.	#### {StrContains="Realms"}
+hbui.CreateNewWorld.signInPromptWorldOnRealmModal.platformGuestCreate.playStation.message=Une connexion à votre compte pour PlayStation™Network est requise pour créer un monde sur Realms.		#### CertRequirement: [account for PlayStation™Network] ### {StrContains="Realms"}
+hbui.CreateNewWorld.signInPromptWorldOnRealmModal.platformGuestEdit.nintendo.message=Vous devez être connecté à votre compte Nintendo pour jouer sur Realms.	#### {StrContains="Realms"}
+hbui.CreateNewWorld.signInPromptWorldOnRealmModal.platformGuestEdit.playStation.message=Une connexion à votre compte à votre compte pour PlayStation™Network est requise pour jouer sur Realms.		#### CertRequirement: [account for PlayStation™Network] ### {StrContains="Realms"}
 hbui.CreateNewWorld.signInPromptWorldOnRealmModal.signIn=Se connecter	#
 hbui.CreateNewWorld.signInPromptWorldOnRealmModal.title=Connexion requise	#
 hbui.CreateNewWorld.tabContainerNarrationSuffix=Sous-menu vertical	#
@@ -1024,12 +1024,18 @@ hbui.CreateNewWorld.unlockSettingsModal.keepSettings=Conserver les paramètres d
 hbui.CreateNewWorld.unlockSettingsModal.message=Vous pourriez altérer l’expérience prévue par le créateur si vous déverrouillez tous les paramètres du monde.	#
 hbui.CreateNewWorld.unlockSettingsModal.title=Déverrouiller tous les paramètres du monde	#
 hbui.CreateNewWorld.unlockSettingsModal.unlock=Déverrouiller malgré tout	#
+hbui.CreateNewWorld.upsellModal.back=Back	#
+hbui.CreateNewWorld.upsellModal.bodyNintendo=You require a Nintendo Switch Online subscription to play on any cross-play multiplayer game.	#
+hbui.CreateNewWorld.upsellModal.bodyPlaystation=Vous devez avoir souscrit à un abonnement premium pour rejoindre une partie multijoueur cross-play.	#
+hbui.CreateNewWorld.upsellModal.bodyXbox=You require a Xbox Gamepass Core subscription to play on any cross-play multiplayer game.	#
+hbui.CreateNewWorld.upsellModal.primaryButton=Learn more	#
+hbui.CreateNewWorld.upsellModal.title=Subscription required	#
 hbui.CreateNewWorldSideMenu.advancedTabLabel=Avancé	#
 hbui.CreateNewWorldSideMenu.behaviorPacksTabLabel=Packs de comportement	#
 hbui.CreateNewWorldSideMenu.cheatsTabLabel=Triche	#
 hbui.CreateNewWorldSideMenu.create=Créer	#
 hbui.CreateNewWorldSideMenu.create.edu=Jouer	#
-hbui.CreateNewWorldSideMenu.createOnRealm=Créer sur Realms	#
+hbui.CreateNewWorldSideMenu.createOnRealm=Créer sur Realms	#### {StrContains="Realms"}
 hbui.CreateNewWorldSideMenu.experimentalFeaturesTabLabel=Expériences	#
 hbui.CreateNewWorldSideMenu.generalTabLabel=Général	#
 hbui.CreateNewWorldSideMenu.inputLegendSelect=Sélectionner	#
@@ -1088,9 +1094,9 @@ hbui.EditWorld.notificationToasts.saved=%1$s sauvegardé	#
 hbui.EditWorld.notificationToasts.worldConverted=Monde mis à jour	#
 hbui.EditWorld.playOnRealmsErrorModal.closeButton=Fermer	#
 hbui.EditWorld.playOnRealmsErrorModal.crossPlatformRestricted.message=Vous ne pouvez pas jouer à ce monde dans votre Realm, car il utilise un pack de ressources qui ne peut pas être utilisé en multijoueur multiplateforme.	#
-hbui.EditWorld.playOnRealmsErrorModal.crossPlatformRestricted.message2=Veuillez supprimer le pack de ressources pour pouvoir jouer sur Realms.	#
+hbui.EditWorld.playOnRealmsErrorModal.crossPlatformRestricted.message2=Veuillez supprimer le pack de ressources pour pouvoir jouer sur Realms.	#### {StrContains="Realms"}
 hbui.EditWorld.playOnRealmsErrorModal.crossPlatformRestricted.title=Pack de ressources non pris en charge	#
-hbui.EditWorld.playOnRealmsErrorModal.memberOfTooManyRealms.message=Vous avez atteint la limite de Realms. Chaque compte peut être associé à un maximum de 1 000 clubs Xbox Live, ce qui comprend les Realms.	#
+hbui.EditWorld.playOnRealmsErrorModal.memberOfTooManyRealms.message=Vous avez atteint la limite de Realms. Chaque compte peut être associé à un maximum de 1 000 clubs Xbox Live, ce qui comprend les Realms.	#### {StrContains="Realms"}
 hbui.EditWorld.playOnRealmsErrorModal.memberOfTooManyRealms.title=Impossible de rejoindre le Realm	#
 hbui.EditWorld.playOnRealmsErrorModal.unknown.errorCode=Code d'erreur : %1$s	#
 hbui.EditWorld.playOnRealmsErrorModal.unknown.message=Veuillez réessayer ultérieurement.	#
@@ -1111,8 +1117,8 @@ hbui.ExportWorld.error.needToRemoveVRHeadset.title=Veuillez déconnecter votre a
 hbui.ExportWorld.error.unknownError.title=Une erreur s'est produite. Veuillez réessayer plus tard.	#
 hbui.FirstTimeSignInRoute.altSignInList1=Sauvegardez votre progression et vos achats	#
 hbui.FirstTimeSignInRoute.altSignInList2=Protégez votre compte en activant l'authentification à deux facteurs	#
-hbui.FirstTimeSignInRoute.altSignInList3=Accédez aux succès, aux Realms, aux serveurs et au magasin	#
-hbui.FirstTimeSignInRoute.altSignInList3PS=Accédez aux Realms, aux serveurs et au magasin	#
+hbui.FirstTimeSignInRoute.altSignInList3=Accédez aux succès, aux Realms, aux serveurs et au magasin	#### {StrContains="Realms"}
+hbui.FirstTimeSignInRoute.altSignInList3PS=Accédez aux Realms, aux serveurs et au magasin	#### {StrContains="Realms"}
 hbui.FirstTimeSignInRoute.altSignInPrompt=Connectez-vous ou inscrivez-vous gratuitement pour débloquer ces fonctionnalités et bien plus encore :	#
 hbui.FirstTimeSignInRoute.altSignInPromptMobile=Connectez-vous ou inscrivez-vous gratuitement pour sauvegarder votre progression, remporter des succès, accéder aux serveurs et bien plus encore.	#
 hbui.FirstTimeSignInRoute.createAccountPrompt=Vous n’avez pas de compte Microsoft ? Créez-en un gratuitement dès maintenant !	#
@@ -1150,6 +1156,7 @@ hbui.FriendsDrawer.AddFriendsOnlineSafety.text=Vous ne pouvez pas ajouter d'amis
 hbui.FriendsDrawer.AddFriendsOnlineSafety.textParental=Vous ne pouvez pas ajouter des amis en raison du contrôle parental. Gérez vos paramètres multijoueur en accédant à « Sécurité en ligne » à partir de Contrôle parental.	#
 hbui.FriendsDrawer.AddFriendsOnlineSafety.title=Autorisation requise !	#
 hbui.FriendsDrawer.backButton=Retour	#
+hbui.FriendsDrawer.bannerLogInMicrosoft=Se connecter ou s'inscrire à Microsoft	#
 hbui.FriendsDrawer.closeButtonNarrationHint=Naviguez vers le bas pour plus d'options	#
 hbui.FriendsDrawer.closeDrawerShortcutInputLegend=Amis proches	#
 hbui.FriendsDrawer.emptyStateBody=Nous sommes toujours en train de travailler sur cette fonctionnalité. Revenez bientôt !	#
@@ -1163,9 +1170,16 @@ hbui.FriendsDrawer.joinFriendServerErrorModal.blockedByVersion.title=Versions du
 hbui.FriendsDrawer.joinFriendServerErrorModal.cancel=Annuler	#
 hbui.FriendsDrawer.joinFriendServerErrorModal.UnknownError.message=Erreur inconnue	#
 hbui.FriendsDrawer.joinFriendServerErrorModal.UnknownError.title=Une erreur est survenue.	#
+hbui.FriendsDrawer.msaGuestNintendoBanner=You need a Microsoft account and a Nintendo Switch Online subscription to play cross-play multiplayer.	#
+hbui.FriendsDrawer.msaGuestPlaystationBanner=You need a Microsoft account and a premium subscription to play cross-play multiplayer.	#
+hbui.FriendsDrawer.msaGuestPremiumBanner=You need a Microsoft account to play cross-play multiplayer.	#
 hbui.FriendsDrawer.multiplayerBanner.learnMore=En savoir plus	#
 hbui.FriendsDrawer.multiplayerBanner.text=Vous avez désactivé le mode multijoueur.	#
 hbui.FriendsDrawer.multiplayerBanner.textParental=Le mode multijoueur est désactivé.	#
+hbui.FriendsDrawer.multiplayerRequireAccountModal.backButtonLabel=Retour	#
+hbui.FriendsDrawer.multiplayerRequireAccountModal.loginButtonLabel=Se connecter ou s'inscrire	#
+hbui.FriendsDrawer.multiplayerRequireAccountModal.text=You require a Microsoft Account to play on any cross-play multiplayer game.	#
+hbui.FriendsDrawer.multiplayerRequireAccountModal.title=Account required	#
 hbui.FriendsDrawer.noInternetMessage=Veuillez vérifier votre connexion Internet afin de voir vos amis.	#
 hbui.FriendsDrawer.notLoggedInMessage.button=Se connecter maintenant	#
 hbui.FriendsDrawer.notLoggedInMessage.inputLegend=Se connecter	#
@@ -1214,7 +1228,7 @@ hbui.InboxListItem.narration.readPost=Lire le message	#
 hbui.InboxListItem.narration.reject=Refuser	#
 hbui.InboxListItem.narration.unreadPost=Message non lu	#
 hbui.InboxListItem.purchased=Acheté	#
-hbui.InboxListItem.realms=Realms	#
+hbui.InboxListItem.realms=Realms 	#### {StrContains="Realms"}
 hbui.InboxListItem.reject=Refuser	#
 hbui.InboxListItem.rejected=Refusé	#
 hbui.InboxListItem.remove=Retirer	#
@@ -1336,8 +1350,8 @@ hbui.JoinRealmsServerError.invalidMultiplayerSkin.changeSkin=Changer de skin	#
 hbui.JoinRealmsServerError.invalidMultiplayerSkin.close=Fermer	#
 hbui.JoinRealmsServerError.invalidMultiplayerSkin.title=Skin non autorisé	#
 hbui.JoinRealmsServerError.inviteLinkNotFound=Ce lien d'invitation n'est pas valide.	#
-hbui.JoinRealmsServerError.memberOfTooManyRealms=Vous avez atteint la limite de Realms que vous pouvez rejoindre.	#
-hbui.JoinRealmsServerError.memberOfTooManyRealms.message=Vous avez atteint la limite de Realms. Chaque compte peut être associé à un maximum de 1 000 clubs Xbox Live, ce qui comprend les Realms.	#
+hbui.JoinRealmsServerError.memberOfTooManyRealms=Vous avez atteint la limite de Realms que vous pouvez rejoindre.	#### {StrContains="Realms"}
+hbui.JoinRealmsServerError.memberOfTooManyRealms.message=Vous avez atteint la limite de Realms. Chaque compte peut être associé à un maximum de 1 000 clubs Xbox Live, ce qui comprend les Realms.	#### {StrContains="Realms"}
 hbui.JoinRealmsServerError.memberOfTooManyRealms.title=Impossible de rejoindre le Realm	#
 hbui.JoinRealmsServerError.noPlatformSubscription.nintendo.body=Vous n'avez pas d'abonnement Nintendo Switch Online. Un abonnement est requis pour le jeu en ligne.	#
 hbui.JoinRealmsServerError.noPlatformSubscription.nintendo.moreInformation=Plus d'informations	#
@@ -1366,7 +1380,7 @@ hbui.JoinRealmsServerTransient.caption=Vous pourrez quitter leur Realm à tout m
 hbui.JoinRealmsServerTransient.joinButtonLabel=Rejoindre	#
 hbui.JoinRealmsServerTransient.joinRealmModal=Connexion au Realm	#
 hbui.JoinRealmsServerTransient.ownerInformation=Voulez-vous rejoindre le Realm de %1$s ?	#
-hbui.JoinRealmsServerTransient.successSnackbar=Vous avez rejoint un nouveau Realm !	#
+hbui.JoinRealmsServerTransient.successSnackbar=You joined "%1$s"!	#
 hbui.JoinRealmsServerTransient.title=Rejoindre un Realm	#
 hbui.JoinServerWarningModal.cancel=Annuler	#
 hbui.JoinServerWarningModal.continue=Continuer	#
@@ -1392,7 +1406,7 @@ hbui.ModalMenuDropdown.dropdown.role=Menu déroulant	#
 hbui.ModalMenuDropdown.inputLegend=Ouvrir	#
 hbui.ModalMenuDropdown.placeholder=Sélectionnez une option...	#
 hbui.MultiplayerPrivilegeBlockedModal.descriptionOnline=Vous ne pouvez pas jouer en multijoueur en raison d'une restriction des paramètres du compte. Gérez vos paramètres multijoueur via « Confidentialité et sécurité en ligne » dans les paramètres du compte.	#
-hbui.MultiplayerPrivilegeBlockedModal.descriptionParental=Vous ne pouvez pas jouer en multijoueur en raison du contrôle parental. Gérez vos paramètres multijoueurs en accédant à « Sécurité en ligne » à partir du menu Contrôle parental.	#
+hbui.MultiplayerPrivilegeBlockedModal.descriptionParental=You cannot play on Realms because of a Parental Control restriction. View and manage your multiplayer settings with "Online Safety" in the Parental Controls. 	#### {StrContains="Realms"}
 hbui.MultiplayerPrivilegeBlockedModal.learnMore=En savoir plus	#
 hbui.MultiplayerPrivilegeBlockedModal.title=Autorisation requise	#
 hbui.Notifications.achievementsDisabled=Vous ne pouvez pas gagner de succès.	#
@@ -1418,10 +1432,10 @@ hbui.Notifications.readMoreLink=Plus	#
 hbui.Notifications.unlockSettingsLink=Déverrouiller les paramètres	#
 hbui.Notifications.unlockSettingsMessage=Certains paramètres sont verrouillés par le créateur du modèle.	#
 hbui.notLoggedInWarning.loginLink=Se connecter ou s'inscrire	#
-hbui.notLoggedInWarning.playScreen.message.realms=Vous avez besoin d’un compte Microsoft pour jouer sur Realms.	#
+hbui.notLoggedInWarning.playScreen.message.realms=Vous avez besoin d’un compte Microsoft pour jouer sur Realms.	#### {StrContains="Realms"}
 hbui.notLoggedInWarning.playScreen.message.servers=Vous avez besoin d’un compte Microsoft pour jouer sur un serveur.	#
 hbui.notLoggedInWarning.startFromTemplateScreen.message.featured=Vous avez besoin d'un compte pour acheter des modèles dans le magasin.	#
-hbui.notLoggedInWarning.startFromTemplateScreen.message.marketplacePass=Il vous faut une compte Microsoft pour accéder au Marketplace Pass.	#
+hbui.notLoggedInWarning.startFromTemplateScreen.message.marketplacePass=Il vous faut une compte Microsoft pour accéder au Marketplace Pass.	#### {StrContains="Marketplace Pass"}
 hbui.PackListItem.activateButtonText=Activer	#
 hbui.PackListItem.collapseDescriptionInputLegend=Réduire	#
 hbui.PackListItem.creatorLabel=Par %1$s	#
@@ -1472,7 +1486,7 @@ hbui.PackListItem.validateButtonText=Valider	#
 hbui.PackTabs.activeTabButtonLabel=Activé	#
 hbui.PackTabs.availableTabButtonLabel=Disponible	#
 hbui.PackTabs.narration.tab=%1$s, onglet %2$s sur %3$s	#
-hbui.PlayerAvatarWrapper.full=Au maximum	#
+hbui.PlayerAvatarsOnlineInWorld.full=Au maximum	#
 hbui.PlayerBannedModalRoute.body=Vous avez été %1$s de Minecraft en multijoueur pour la raison suivante : « %2$s ». Vous ne pourrez pas rejoindre de serveurs, de Realms, héberger ou rejoindre des parties multijoueur, ou utiliser le magasin.	#
 hbui.PlayerBannedModalRoute.body.day=Il vous reste 1 jour de suspension.	#
 hbui.PlayerBannedModalRoute.body.days=Il vous reste %1$s jours de suspension.	#
@@ -1576,6 +1590,7 @@ hbui.PlayerOptionsModal.shareMyProfile=Partager mon profil	#
 hbui.PlayerOptionsModal.shareText=Ajoute-moi comme ami dans Minecraft !	#
 hbui.PlayerOptionsModal.signOut=Se déconnecter	#
 hbui.PlayerOptionsModal.viewXboxProfile=Afficher le profil Xbox	#
+hbui.PlayersOnlineInWorld.full=Au maximum	#
 hbui.PlayerTag.hint=Appuyez pour accéder au profil du joueur	#
 hbui.PlayerTag.role=Bouton	#
 hbui.PlayerTag.viewProfile=Voir le profil du joueur	#
@@ -1623,17 +1638,17 @@ hbui.PlayScreen.friendsDrawerShortcut=Appuyez sur %1$s pour ouvrir ou fermer vot
 hbui.PlayScreen.genericError.realmDetails.description=Une erreur s'est produite. Veuillez réessayer plus tard.	#
 hbui.PlayScreen.genericError.realmDetails.title=Impossible de charger le Realm	#
 hbui.PlayScreen.genericError.realms.description=Une erreur s'est produite. Veuillez réessayer plus tard.	#
-hbui.PlayScreen.genericError.realms.title=Impossible de charger les Realms	#
+hbui.PlayScreen.genericError.realms.title=Impossible de charger les Realms	#### {StrContains="Realms"}
 hbui.PlayScreen.genericError.servers.description=Une erreur s'est produite. Veuillez réessayer plus tard.	#
 hbui.PlayScreen.genericError.servers.title=Impossible de charger le serveur	#
 hbui.PlayScreen.guestAccountMessage.bannerLogIn=Se connecter ou s'inscrire	#
 hbui.PlayScreen.guestAccountMessage.bannerLogInMicrosoft=Se connecter ou s'inscrire à Microsoft	#
 hbui.PlayScreen.guestAccountMessage.buttonLogInMicrosoft=Se connecter à un compte Microsoft	#
-hbui.PlayScreen.guestAccountMessage.realmsNintendoGuest=Vous avez besoin d'un compte Microsoft et d'un abonnement Nintendo Switch Online pour jouer sur des Realms.	#
-hbui.PlayScreen.guestAccountMessage.realmsNoMicrosoftAccount=Vous avez besoin d’un compte Microsoft pour jouer sur Realms.	#
-hbui.PlayScreen.guestAccountMessage.realmsNoPlatformAccountNintendo=Vous avez besoin d'un abonnement Nintendo Switch Online pour jouer sur des Realms.	#
-hbui.PlayScreen.guestAccountMessage.realmsNoPlatformAccountPlaystation=Vous avez besoin d'un abonnement premium pour jouer sur des Realms.	#
-hbui.PlayScreen.guestAccountMessage.realmsPlaystationGuest=Vous avez besoin d'un compte Microsoft et d'un abonnement premium pour jouer sur Realms.	#
+hbui.PlayScreen.guestAccountMessage.realmsNintendoGuest=Vous avez besoin d'un compte Microsoft et d'un abonnement Nintendo Switch Online pour jouer sur des Realms.	#### {StrContains="Realms"}
+hbui.PlayScreen.guestAccountMessage.realmsNoMicrosoftAccount=Vous avez besoin d’un compte Microsoft pour jouer sur Realms.	#### {StrContains="Realms"}
+hbui.PlayScreen.guestAccountMessage.realmsNoPlatformAccountNintendo=Vous avez besoin d'un abonnement Nintendo Switch Online pour jouer sur des Realms.	#### {StrContains="Realms"}
+hbui.PlayScreen.guestAccountMessage.realmsNoPlatformAccountPlaystation=Vous avez besoin d'un abonnement premium pour jouer sur des Realms.	#### {StrContains="Realms"}
+hbui.PlayScreen.guestAccountMessage.realmsPlaystationGuest=Vous avez besoin d'un compte Microsoft et d'un abonnement premium pour jouer sur Realms.	#### {StrContains="Realms"}
 hbui.PlayScreen.guestAccountMessage.serversNintendoGuest=Vous avez besoin d'un compte Microsoft et d'un abonnement Nintendo Switch Online pour jouer sur des serveurs.	#
 hbui.PlayScreen.guestAccountMessage.serversNoMicrosoftAccount=Vous avez besoin d’un compte Microsoft pour jouer sur un serveur.	#
 hbui.PlayScreen.guestAccountMessage.serversNoPlatformAccountNintendo=Vous avez besoin d'un abonnement Nintendo Switch Online pour jouer sur des serveurs.	#
@@ -1670,9 +1685,9 @@ hbui.PlayScreen.nonMultiplayerSkinModal.body=Votre skin actuel provient d’un p
 hbui.PlayScreen.nonMultiplayerSkinModal.changeAction=Changer de skin	#
 hbui.PlayScreen.nonMultiplayerSkinModal.continueAction=Continuer sans le multijoueur	#
 hbui.PlayScreen.nonMultiplayerSkinModal.title=Skin non autorisé	#
-hbui.PlayScreen.noPremiumSubscriptionMessage.realmsNintendo=Vous avez besoin d'un abonnement Nintendo Switch Online pour jouer sur des Realms.	#
-hbui.PlayScreen.noPremiumSubscriptionMessage.realmsPlaystation=Vous avez besoin d'un abonnement premium pour jouer sur des Realms.	#
-hbui.PlayScreen.noPremiumSubscriptionMessage.realmsXbox=Vous avez besoin d'un abonnement Xbox Gamepass Core pour jouer sur des Realms.	#
+hbui.PlayScreen.noPremiumSubscriptionMessage.realmsNintendo=Vous avez besoin d'un abonnement Nintendo Switch Online pour jouer sur des Realms.	#### {StrContains="Realms"}
+hbui.PlayScreen.noPremiumSubscriptionMessage.realmsPlaystation=Vous avez besoin d'un abonnement premium pour jouer sur des Realms.	#### {StrContains="Realms"}
+hbui.PlayScreen.noPremiumSubscriptionMessage.realmsXbox=Vous avez besoin d'un abonnement Xbox Gamepass Core pour jouer sur des Realms.	#### {StrContains="Realms"}
 hbui.PlayScreen.noPremiumSubscriptionMessage.serversNintendo=Vous avez besoin d'un abonnement Nintendo Switch Online pour jouer sur des serveurs.	#
 hbui.PlayScreen.noPremiumSubscriptionMessage.serversPlaystation=Vous devez avoir souscrit un abonnement premium pour jouer sur des serveurs.	#
 hbui.PlayScreen.noPremiumSubscriptionMessage.serversXbox=Vous avez besoin d'un abonnement Xbox Gamepass Core pour jouer sur des serveurs.	#
@@ -1692,7 +1707,7 @@ hbui.PlayScreen.outOfStorageModal.body=Vous n'avez presque plus d'espace libre !
 hbui.PlayScreen.outOfStorageModal.close=Fermer	#
 hbui.PlayScreen.outOfStorageModal.closeInputLegend=Fermer	#
 hbui.PlayScreen.outOfStorageModal.title=Espace de stockage insuffisant	#
-hbui.PlayScreen.realms=Realms	#
+hbui.PlayScreen.realms=Realms	#### {StrContains="Realms"}
 hbui.PlayScreen.realmsTab.bannerClosed=Fermé	#
 hbui.PlayScreen.realmsTab.bannerExpired=Expiré	#
 hbui.PlayScreen.realmsTab.bannerFull=Au maximum	#
@@ -1712,15 +1727,15 @@ hbui.PlayScreen.realmsTab.leaveRealmNotification=Vous avez quitté « %1$s »	
 hbui.PlayScreen.realmsTab.leaveRealmProgressMessage=Sortie du Realm	#
 hbui.PlayScreen.realmsTab.narration.buttonSiblings=%1$s sur %2$s	#
 hbui.PlayScreen.realmsTab.narration.realmInformation=Informations sur le Realm	#
-hbui.PlayScreen.realmsTab.noInternetMessage=Veuillez vérifier votre connexion Internet pour jouer sur Realms.	#
+hbui.PlayScreen.realmsTab.noInternetMessage=Veuillez vérifier votre connexion Internet pour jouer sur Realms.	#### {StrContains="Realms"}
 hbui.PlayScreen.realmsTab.options=Options	#
 hbui.PlayScreen.realmsTab.play=Jouer	#
-hbui.PlayScreen.realmsTab.playersOnline=Joueurs en ligne	#
+hbui.PlayScreen.realmsTab.playersOnline=En ligne	#
 hbui.PlayScreen.realmsTab.playersOnline.realmOwner=Realm de %1$s	#
 hbui.PlayScreen.realmsTab.preproductionAccess.buttonText=En savoir plus	#
-hbui.PlayScreen.realmsTab.preproductionAccess.message=Vous n'avez pas accès à Realms en préproduction. Pour obtenir l'accès, consultez le guide sur aka.ms/Realms-preprod-access.	#
-hbui.PlayScreen.realmsTab.preproductionAccess.title=Vous n'avez pas accès à Realms	#
-hbui.PlayScreen.realmsTab.realmsDescription=Description de Realms	#
+hbui.PlayScreen.realmsTab.preproductionAccess.message=Vous n'avez pas accès à Realms en préproduction. Pour obtenir l'accès, consultez le guide sur aka.ms/Realms-preprod-access.	#### {StrContains="Realms"}
+hbui.PlayScreen.realmsTab.preproductionAccess.title=Vous n'avez pas accès à Realms	#### {StrContains="Realms"}
+hbui.PlayScreen.realmsTab.realmsDescription=Description de Realms	#### {StrContains="Realms"}
 hbui.PlayScreen.realmsTab.realmSettingsModalMenu.edit=Modifier le monde actif	#
 hbui.PlayScreen.realmsTab.realmSettingsModalMenu.optionsEnumeration=%1$s sur %2$s	#
 hbui.PlayScreen.realmsTab.realmSettingsModalMenu.realmSettings=Paramètres du Realm	#
@@ -1732,7 +1747,7 @@ hbui.PlayScreen.realmsTab.realmsLeaveRealmModal.cancelAction=Annuler	#
 hbui.PlayScreen.realmsTab.realmsLeaveRealmModal.description=Vous êtes sur le point de quitter « %1$s ». Pas d'inquiétude : si vous changez d'avis, vous pourrez y revenir plus tard.	#
 hbui.PlayScreen.realmsTab.realmsLeaveRealmModal.leaveRealmAction=Quitter le Realm	#
 hbui.PlayScreen.realmsTab.realmsLeaveRealmModal.title=Quitter le Realm	#
-hbui.PlayScreen.realmsTab.realmsOptionsModalMenu.addRealm=Ajouter un abonnement Realms	#
+hbui.PlayScreen.realmsTab.realmsOptionsModalMenu.addRealm=Ajouter un abonnement Realms	#### {StrContains="Realms"}
 hbui.PlayScreen.realmsTab.realmsOptionsModalMenu.joinRealm=Rejoindre un realm existant	#
 hbui.PlayScreen.realmsTab.realmsOptionsModalMenu.learnMore=En savoir plus	#
 hbui.PlayScreen.realmsTab.realmsOptionsModalMenu.optionsEnumeration=%1$s sur %2$s	#
@@ -1751,7 +1766,7 @@ hbui.PlayScreen.realmsTab.sideMenu.externalServer=Autre serveur (%1$s)	#
 hbui.PlayScreen.realmsTab.sideMenu.full=Au maximum	#
 hbui.PlayScreen.realmsTab.sideMenu.inputLegend=Ouvrir	#
 hbui.PlayScreen.realmsTab.sideMenu.invitations=Invitations (%1$s)	#
-hbui.PlayScreen.realmsTab.sideMenu.joinedRealms=Realms rejoints (%1$s)	#
+hbui.PlayScreen.realmsTab.sideMenu.joinedRealms=Realms rejoints (%1$s)	#### {StrContains="Realms"}
 hbui.PlayScreen.realmsTab.sideMenu.joinRealm=Rejoindre le serveur Realm	#
 hbui.PlayScreen.realmsTab.sideMenu.narration.addOrJoinRealm=Ajouter/rejoindre un realm	#
 hbui.PlayScreen.realmsTab.sideMenu.narration.buttonSiblings=%1$s sur %2$s	#
@@ -1876,8 +1891,8 @@ hbui.PlayScreen.templateScreenNotAvailableInPreview.text=« Créer à partir d'
 hbui.PlayScreen.templateScreenNotAvailableInPreview.title=Non disponible	#
 hbui.PlayScreen.title=Jouer	#
 hbui.PlayScreen.underConstructionMessage=Nous sommes toujours en train de travailler sur cette fonctionnalité. Revenez bientôt !	#
-hbui.PlayScreen.underConstructionMessageRealmsAvailable=On dirait que tu as souscrit un abonnement à Realms ! Nous travaillons toujours à l'adaptation de Realms au nouveau design du menu, veuillez utiliser l'ancienne interface pour le moment.	#
-hbui.PlayScreen.underConstructionMessageRealmsUnavailable=Realms est disponible dans l'ancienne interface utilisateur. Nous travaillons toujours à l'adapter au nouveau design du menu, veuillez utiliser l'ancienne interface pour l'instant.	#
+hbui.PlayScreen.underConstructionMessageRealmsAvailable=On dirait que tu as souscrit un abonnement à Realms ! Nous travaillons toujours à l'adaptation de Realms au nouveau design du menu, veuillez utiliser l'ancienne interface pour le moment.	#### {StrContains="Realms"}
+hbui.PlayScreen.underConstructionMessageRealmsUnavailable=Realms est disponible dans l'ancienne interface utilisateur. Nous travaillons toujours à l'adapter au nouveau design du menu, veuillez utiliser l'ancienne interface pour l'instant.	#### {StrContains="Realms"}
 hbui.PlayScreen.underConstructionTitle=En construction	#
 hbui.PlayScreen.unexpectedLaunchErrorModal.body=Une erreur est survenue lors du chargement de ce monde.	#
 hbui.PlayScreen.unexpectedLaunchErrorModal.body2=Code d’erreur : %1$s	#
@@ -1903,17 +1918,17 @@ hbui.PlayScreen.xboxPermissionMessage.title=Autorisation requise !	#
 hbui.PostToRealmStoriesRoute.accessDenied.button=En savoir plus	#
 hbui.PostToRealmStoriesRoute.accessDenied.message=Vous n'êtes pas autorisé à partager vos captures d'écran. Rendez-vous dans « Sécurité en ligne » et définissez « Vous pouvez télécharger des captures sur Xbox » sur « Autoriser ».	#
 hbui.PostToRealmStoriesRoute.accessDenied.title=Accès refusé	#
-hbui.PostToRealmStoriesRoute.noRealmsFound.button=En savoir plus sur les Realms	#
+hbui.PostToRealmStoriesRoute.noRealmsFound.button=En savoir plus sur les Realms	#### {StrContains="Realms"}
 hbui.PostToRealmStoriesRoute.noRealmsFound.title=Aucun Realm trouvé	#
 hbui.PostToRealmStoriesRoute.realmsCantLoad.button=Réessayer	#
 hbui.PostToRealmStoriesRoute.realmsCantLoad.message=Une erreur inconnue s'est produite, veuillez réessayer.	#
-hbui.PostToRealmStoriesRoute.realmsCantLoad.title=Impossible de charger les Realms !	#
+hbui.PostToRealmStoriesRoute.realmsCantLoad.title=Impossible de charger les Realms !	#### {StrContains="Realms"}
 hbui.PostToRealmStoriesRoute.select=Sélectionner	#
 hbui.PostToRealmStoriesRoute.title=Publier sur Realm Stories	#
 hbui.PostToRealmStoriesRoute.youNeedPermission.button=En savoir plus	#
 hbui.PostToRealmStoriesRoute.youNeedPermission.message=Vous n'êtes pas autorisé à accéder au fil d'actualité. Rendez-vous dans « Sécurité en ligne » et définissez « Vous pouvez créer et rejoindre des clubs » sur « Autoriser ».	#
 hbui.PostToRealmStoriesRoute.youNeedPermission.title=Accès refusé	#
-hbui.PrivacyAndOnlineSafetyModal.buttonAction=Ouvrir le site sur les règles de sécurité de Realms	#
+hbui.PrivacyAndOnlineSafetyModal.buttonAction=Ouvrir le site sur les règles de sécurité de Realms	#### {StrContains="Realms"}
 hbui.PrivacyAndOnlineSafetyModal.clubPermissionMessage=« Vous pouvez créer et rejoindre des clubs » sur Autoriser	#
 hbui.PrivacyAndOnlineSafetyModal.externalLinkText=Aidez-moi à résoudre ce problème	#
 hbui.PrivacyAndOnlineSafetyModal.fromOnlineSafety=De la sécurité en ligne :	#
@@ -1921,13 +1936,13 @@ hbui.PrivacyAndOnlineSafetyModal.header=Oups ! Il vous faut d'abord des autorisa
 hbui.PrivacyAndOnlineSafetyModal.linkButtonHint=Cette action vous redirigera vers une page web qui vous aidera à résoudre ce problème.	#
 hbui.PrivacyAndOnlineSafetyModal.multiplayerPermissionMessage=« Vous pouvez participer à des parties multijoueur » sur Autoriser	#
 hbui.PrivacyAndOnlineSafetyModal.qrCodeHint=Voici un code QR qui vous conduira à un lien externe pour modifier les autorisations.	#
-hbui.PrivacyAndOnlineSafetyModal.toAccessRealms=Pour accéder à Realms, définissez :	#
-hbui.PrivacyAndOnlineSafetyModal.toAccessRealmsNumbered=1. Pour accéder à Realms, définissez :	#
-hbui.PrivacyAndOnlineSafetyModal.toAccessRealmsStories=Pour accéder à Stories de Realms, définissez :	#
-hbui.PrivacyAndOnlineSafetyModal.toAccessRealmsStoriesNumbered=2. Pour accéder à Realms Stories, définissez :	#
+hbui.PrivacyAndOnlineSafetyModal.toAccessRealms=Pour accéder à Realms, définissez :	#### {StrContains="Realms"}
+hbui.PrivacyAndOnlineSafetyModal.toAccessRealmsNumbered=1. Pour accéder à Realms, définissez :	#### {StrContains="Realms"}
+hbui.PrivacyAndOnlineSafetyModal.toAccessRealmsStories=To access Realms Stories, set: 	#### {StrContains="Realms Stories"}
+hbui.PrivacyAndOnlineSafetyModal.toAccessRealmsStoriesNumbered=2. Pour accéder à Realms Stories, définissez :	#### {StrContains="Realms Stories"}
 hbui.PrivacyAndOnlineSafetyModal.tryAgain=Réessayer	#
 hbui.PrivacyAndOnlineSafetySuccessModal.buttonAction=Commencer	#
-hbui.PrivacyAndOnlineSafetySuccessModal.content=Toutes vos autorisations ont été activées avec succès ! Vous pouvez maintenant accéder à Realm et à Realms Stories.	#
+hbui.PrivacyAndOnlineSafetySuccessModal.content=All your permissions have been successfully enabled! Now you can have access to both Realms and Realms Stories. 	#### {StrContains="Realms"} {StrContains="Realms Stories"}
 hbui.PrivacyAndOnlineSafetySuccessModal.header=Autorisations activées !	#
 hbui.ProfanityWarningModalRoute.body=Le texte que vous avez saisi contient des termes que d'autres joueurs peuvent considérer comme offensants et que vous ne pouvez pas utiliser. Veuillez réessayer.	#
 hbui.ProfanityWarningModalRoute.close=Fermer	#
@@ -2009,26 +2024,26 @@ hbui.RealmListItem.role=Élément de liste	#
 hbui.RealmListItem.select=Sélectionner	#
 hbui.RealmListItem.yourRealm=Votre Realm	#
 hbui.Realms.ErrorModals.CannotContactRealms.message=Veuillez vérifier votre connexion Internet et réessayer.	#
-hbui.Realms.ErrorModals.CannotContactRealms.title=Impossible de contacter les Realms	#
+hbui.Realms.ErrorModals.CannotContactRealms.title=Impossible de contacter les Realms	#### {StrContains="Realms"}
 hbui.Realms.ErrorModals.close=Fermer	#
 hbui.Realms.ErrorModals.ok=Fermer	#
 hbui.Realms.ErrorModals.postingCommentFailed.message=Impossible de publier un nouveau commentaire. Veuillez vérifier votre connexion Internet et réessayer.	#
 hbui.Realms.ErrorModals.postingCommentFailed.title=Échec de la publication du commentaire	#
-hbui.Realms.ErrorModals.rateLimitError.message=Réessayez dans quelques minutes. Realms tente de se mettre à jour.	#
+hbui.Realms.ErrorModals.rateLimitError.message=Réessayez dans quelques minutes. Realms tente de se mettre à jour.	#### {StrContains="Realms"}
 hbui.Realms.ErrorModals.rateLimitError.title=Échec de l'action	#
 hbui.Realms.ErrorModals.select=Sélectionner	#
-hbui.Realms.ErrorModals.somethingWentWrong.message=Impossible de contacter Realms. Veuillez réessayer.	#
+hbui.Realms.ErrorModals.somethingWentWrong.message=Impossible de contacter Realms. Veuillez réessayer.	#### {StrContains="Realms"}
 hbui.Realms.ErrorModals.somethingWentWrong.title=Une erreur est survenue.	#
 hbui.Realms.InviteExpiredModals.header=Invitation au Realm expirée	#
 hbui.Realms.InviteExpiredModals.message=Cette invitation n'est plus valide.	#
 hbui.Realms.InviteExpiredModals.ok=O.K.	#
 hbui.Realms.LoadingModals.activatingSlot=Changement d'emplacement...	#
-hbui.Realms.LoadingModals.contactingRealms=Connexion aux Realms...	#
+hbui.Realms.LoadingModals.contactingRealms=Connexion aux Realms...	#### {StrContains="Realms"}
 hbui.Realms.LoadingModals.creatingRealm=Création du Realm...	#
 hbui.Realms.LoadingModals.fetchingRealmInformation=Accès aux informations du Realm...	#
 hbui.Realms.LoadingModals.fetchingSubscriptionInformation=Accès aux informations de l'abonnement...	#
 hbui.Realms.LoadingModals.loading=Chargement...	#
-hbui.Realms.LoadingModals.loadingRealmsStories=Chargement de Realms Stories...	#
+hbui.Realms.LoadingModals.loadingRealmsStories=Chargement de Realms Stories...	#### {StrContains="Realms Stories"}
 hbui.RealmsNewStoryImageSelectRoute.cancel=Annuler	#
 hbui.RealmsNewStoryImageSelectRoute.deleteScreenshotsLabel.plural=Supprimer %1$s captures d'écran	#
 hbui.RealmsNewStoryImageSelectRoute.deleteScreenshotsLabel.single=Supprimer %1$s capture d'écran	#
@@ -2072,8 +2087,8 @@ hbui.RealmsPDPFAQAccordion.clickToExpand=Cliquez pour agrandir	#
 hbui.RealmsPDPFAQAccordion.enumeration=%1$s sur %2$s	#
 hbui.RealmsPDPFAQAccordion.textBlock=Bloc de texte	#
 hbui.RealmsPDPScreen.FAQ.Cost.description1=Vous pouvez souscrire à un abonnement Realms :  	#### {StrContains="Realms"}
-hbui.RealmsPDPScreen.FAQ.Cost.description2=Abonnement Realms de base : %1$s par mois. Ajoutez un nombre illimité de membres et jouez en ligne avec 2 autres joueurs simultanément.   	#### {StrContains="Realms"}
-hbui.RealmsPDPScreen.FAQ.Cost.description3=Abonnement Realms Plus : %1$s par mois. Ajoutez un nombre illimité de membres et jouez en ligne avec un maximum de 10 autres joueurs simultanément. De plus, bénéficiez gratuitement de plus de 150 éléments du magasin grâce au catalogue du Marketplace Pass.   	#### {StrContains="Realms"}
+hbui.RealmsPDPScreen.FAQ.Cost.description2=Realms Core plan: %1$s per month. Add infinite members, play online with 2 other players at the same time.   	#### {StrContains="Realms Core"}
+hbui.RealmsPDPScreen.FAQ.Cost.description3=Abonnement Realms Plus : %1$s par mois. Ajoutez un nombre illimité de membres et jouez en ligne avec un maximum de 10 autres joueurs simultanément. De plus, bénéficiez gratuitement de plus de 150 éléments du magasin grâce au catalogue du Marketplace Pass.   	#### {StrContains="Realms Plus"} {StrContains="Marketplace Pass"}
 hbui.RealmsPDPScreen.FAQ.Cost.title=Combien coûte un Realm ? 	#### {StrContains="Realm"}
 hbui.RealmsPDPScreen.FAQ.Expiry.description=Vos mondes vous appartiennent. Vous disposez de 18 mois pour les télécharger sur votre appareil après expiration de votre abonnement. Souscrivez à nouveau pendant cette période pour regagner accès à votre Realm tel que vous l'avez laissé.   	#### {StrContains="Realm"}
 hbui.RealmsPDPScreen.FAQ.Expiry.title=Qu'advient-il des mondes de mon Realm à l'expiration de mon abonnement ?  	#### {StrContains="Realm"}
@@ -2100,6 +2115,7 @@ hbui.RealmsPDPScreen.promos.header=Que sont les Realms ? 	#### {StrContains="Re
 hbui.RealmsPDPScreen.promos.persistent.description=Les mondes que vous téléchargez sur votre Realm restent accessibles pour vous et vos membres invités, et ce à tout moment et sur n'importe quel appareil. Ainsi, les membres peuvent jouer même en votre absence.   	#### {StrContains="Realm"}
 hbui.RealmsPDPScreen.promos.persistent.title=Des mondes multijoueur permanents	#
 hbui.RealmsPDPScreen.splash.buyNow=Acheter maintenant  	#### {MaxLength="20"}
+hbui.RealmsPDPScreen.splash.subscribeNow=Subscribe now  	#### {MaxLength="20"}
 hbui.RealmsPDPScreen.splash.text=Gérez votre propre serveur Minecraft et fixez les règles ! Les membres peuvent jouer gratuitement, même lorsque vous êtes hors ligne. Facile à configurer, à gérer et accessible depuis n'importe où.   	#### {MaxLength="200"}
 hbui.RealmsPDPScreen.splash.title=Votre propre serveur, toujours en ligne    	#### {MaxLength="50"}
 hbui.RealmsPDPScreen.splash.tryFree=Essayez gratuitement	#### {MaxLength="20"}
@@ -2125,7 +2141,7 @@ hbui.RealmsPlanPickerScreen.featureLine5=Sauvegardes automatiques gratuites	#
 hbui.RealmsPlanPickerScreen.featureLine5Narration=Sauvegardes automatiques gratuites	#
 hbui.RealmsPlanPickerScreen.featureLine6=Realms Stories         	#### {StrContains="Realms"}
 hbui.RealmsPlanPickerScreen.featureLine7=Essai gratuit de 30 jours	#
-hbui.RealmsPlanPickerScreen.featureLine8=Comprend le Marketplace Pass	#
+hbui.RealmsPlanPickerScreen.featureLine8=Comprend le Marketplace Pass	#### {StrContains="Marketplace Pass"}
 hbui.RealmsPlanPickerScreen.featureNarrationCore=Détails du pack Realms Core. Bloc de texte				#### {StrContains="Realms"}
 hbui.RealmsPlanPickerScreen.featureNarrationPlus=Détails du pack Realms Plus. Bloc de texte				#### {StrContains="Realms"}
 hbui.RealmsPlanPickerScreen.planCoreCardNarration=Panneau vertical. Groupe. Core %1$s par mois	#
@@ -2137,8 +2153,8 @@ hbui.RealmsPlanPickerScreen.title=Choisissez votre abonnement	#
 hbui.RealmsPlanPickerScreen.titleNarrationHint=Choisissez parmi deux plans	#
 hbui.RealmsPreviews.create.cancel.beta=Non, ne pas créer de Realm bêta	#
 hbui.RealmsPreviews.create.cancel.preview=Non, ne pas créer de Realm d'aperçu	#
-hbui.RealmsPreviews.create.message.beta=Vous êtes sur le point de créer un Realm bêta gratuit qui sera associé à votre abonnement Realms. Ce nouveau Realm bêta sera accessible tant que l'abonnement payé sera actif. Votre Realm payé ne sera pas affecté.	#
-hbui.RealmsPreviews.create.message.preview=Vous êtes sur le point de créer un Realm d'aperçu gratuit qui sera associé à votre abonnement Realms. Ce nouveau Realm d'aperçu sera accessible tant que l'abonnement payant sera actif. Votre Realm payé ne sera pas affecté.	#
+hbui.RealmsPreviews.create.message.beta=You are about to create a free Beta Realm that will be paired with your paid Realms subscription. This new Beta Realm will be accessible for as long as the paid subscription is active. Your paid Realm will not be affected. 	#### {StrContains="Beta Realms"}
+hbui.RealmsPreviews.create.message.preview=You are about to create a free Preview Realm that will be paired with your paid Realms subscription. This new Preview Realm will be accessible for as long as the paid subscription is active. Your paid Realm will not be affected. 	#### {StrContains="Preview Realms"}
 hbui.RealmsPreviews.create.select=Sélectionner	#
 hbui.RealmsPreviews.create.titleAndButtonLabel.beta=Créer un Realm bêta	#
 hbui.RealmsPreviews.create.titleAndButtonLabel.preview=Créer un Realm d'aperçu	#
@@ -2148,10 +2164,10 @@ hbui.RealmsPreviews.ReplaceWorld.message=Cela supprimera le monde de votre empla
 hbui.RealmsPreviews.ReplaceWorld.select=Sélectionner	#
 hbui.RealmsPreviews.ReplaceWorld.title=Remplacer le monde ?	#
 hbui.RealmsPreviews.SubscriptionNeeded.close=Fermer	#
-hbui.RealmsPreviews.SubscriptionNeeded.message.beta=Un abonnement Realms est nécessaire pour créer un Realm bêta. Veuillez accéder à la version complète de Minecraft pour acheter un abonnement ou commencer un essai gratuit.	#
-hbui.RealmsPreviews.SubscriptionNeeded.message.preview=Un abonnement Realms est nécessaire pour créer un Realm d'aperçu. Veuillez accéder à la version complète de Minecraft pour acheter un abonnement ou commencer un essai gratuit.	#
+hbui.RealmsPreviews.SubscriptionNeeded.message.beta=Un abonnement Realms est nécessaire pour créer un Realm bêta. Veuillez accéder à la version complète de Minecraft pour acheter un abonnement ou commencer un essai gratuit.	#### {StrContains="Realms"}
+hbui.RealmsPreviews.SubscriptionNeeded.message.preview=Un abonnement Realms est nécessaire pour créer un Realm d'aperçu. Veuillez accéder à la version complète de Minecraft pour acheter un abonnement ou commencer un essai gratuit.	#### {StrContains="Realms"}
 hbui.RealmsPreviews.SubscriptionNeeded.select=Sélectionner	#
-hbui.RealmsPreviews.SubscriptionNeeded.title=Abonnement Realms requis	#
+hbui.RealmsPreviews.SubscriptionNeeded.title=Abonnement Realms requis	#### {StrContains="Realms"}
 hbui.RealmsPurchaseSubscriptionRoute.backHint=Cette action vous redirigera à l'écran précédent	#
 hbui.RealmsPurchaseSubscriptionRoute.banner.heading.core=Générateur	#
 hbui.RealmsPurchaseSubscriptionRoute.banner.heading.plus=Plus	#
@@ -2162,10 +2178,10 @@ hbui.RealmsPurchaseSubscriptionRoute.banner.subheading.trial.narration=Essai gra
 hbui.RealmsPurchaseSubscriptionRoute.checkboxLabel=Accepter	#
 hbui.RealmsPurchaseSubscriptionRoute.ErrorModals.close=Fermer	#
 hbui.RealmsPurchaseSubscriptionRoute.ErrorModals.select=Sélectionner	#
-hbui.RealmsPurchaseSubscriptionRoute.header.core=Créer un serveur Realms Core	#
-hbui.RealmsPurchaseSubscriptionRoute.header.plus=Créer un serveur Realms Plus	#
+hbui.RealmsPurchaseSubscriptionRoute.header.core=Créer un serveur Realms Core	#### {StrContains="Realms Core"}
+hbui.RealmsPurchaseSubscriptionRoute.header.plus=Créer un serveur Realms Plus	#### {StrContains="Realms Plus"}
 hbui.RealmsPurchaseSubscriptionRoute.header.renew=Renouvellement de l’abonnement Realm	#
-hbui.RealmsPurchaseSubscriptionRoute.header.trial=Essai gratuit de Realms Plus	#
+hbui.RealmsPurchaseSubscriptionRoute.header.trial=Essai gratuit de Realms Plus	#### {StrContains="Realms Plus"}
 hbui.RealmsPurchaseSubscriptionRoute.heroButton.create=Créer pour %1$s par mois	#
 hbui.RealmsPurchaseSubscriptionRoute.heroButton.renew=Renouveler pour %1$s par mois	#
 hbui.RealmsPurchaseSubscriptionRoute.heroButton.trial=Commencer l'essai gratuit	#
@@ -2203,7 +2219,7 @@ hbui.RealmsStories.errorMessageTitle=Les données du Realm n'ont pas pu être ch
 hbui.RealmsStories.errorModal.commentPostFailedMessage=Votre commentaire n’a pas été publié sur cette histoire de Realm.	#
 hbui.RealmsStories.errorModal.continue=Continuer	#
 hbui.RealmsStories.errorModal.defaultErrorMessage=Une erreur s'est produite.	#
-hbui.RealmsStories.errorModal.header=Erreur de Realms Stories	#
+hbui.RealmsStories.errorModal.header=Erreur de Realms Stories	#### {StrContains="Realms Stories"}
 hbui.RealmsStories.errorModal.storyPostFailedMessage=Votre histoire n'a pas été publiée dans le flux de ce realm.	#
 hbui.RealmsStories.feed=Flux	#
 hbui.RealmsStories.feed.addStory=Publier story		#### The term 'Story' represents a social feature, similar to a 'Post' on social media. Translations should use a term more fitting for a social posting rather than a story book, for example. {MaxLength='15'}
@@ -2245,6 +2261,8 @@ hbui.RealmsStories.feedEvent.medium.FirstAbandonedMineshaftFound=%1$s a découve
 hbui.RealmsStories.feedEvent.medium.FirstAncientCityFound=%1$s a découvert une ancienne cité	#
 hbui.RealmsStories.feedEvent.medium.FirstBadlandsFound=%1$s a découvert un biome Badlands	#
 hbui.RealmsStories.feedEvent.medium.FirstConduit=%1$s commande désormais la mer	#
+hbui.RealmsStories.feedEvent.medium.FirstCraftedNetherite=%1$s est passé à la Netherite	#
+hbui.RealmsStories.feedEvent.medium.FirstCraftedNetherite.grouped=%1$s est passé(e) à la Netherite		#### 1 = List of player names ex. Player1, Player2, and Player 3 upgraded to Netherite
 hbui.RealmsStories.feedEvent.medium.FirstDiamondFound=%1$s a trouvé un diamant	#
 hbui.RealmsStories.feedEvent.medium.FirstEnchantment=%1$s a découvert l'enchantement	#
 hbui.RealmsStories.feedEvent.medium.FirstEnchantment.grouped=%1$s a découvert l'enchantement		#### 1 = List of player names ex. Player1, Player2, and Player 3 discovered enchanting
@@ -2252,8 +2270,6 @@ hbui.RealmsStories.feedEvent.medium.FirstEndPortal=%1$s s'est rendu dans l'Ender
 hbui.RealmsStories.feedEvent.medium.FirstFullyExploredMap=%1$s a commencé à cartographier le monde	#
 hbui.RealmsStories.feedEvent.medium.FirstMushroomFieldFound=%1$s a découvert un champ de champignons	#
 hbui.RealmsStories.feedEvent.medium.FirstNetherFortressFound=%1$s a découvert une forteresse du Nether	#
-hbui.RealmsStories.feedEvent.medium.FirstNetherite=%1$s est passé à la Netherite	#
-hbui.RealmsStories.feedEvent.medium.FirstNetherite.grouped=%1$s est passé(e) à la Netherite		#### 1 = List of player names ex. Player1, Player2, and Player 3 upgraded to Netherite
 hbui.RealmsStories.feedEvent.medium.FirstNetherPortalLit=%1$s a créé un portail vers le Nether	#
 hbui.RealmsStories.feedEvent.medium.FirstPeakMountainFound=%1$s a atteint le pic d'une montagne	#
 hbui.RealmsStories.feedEvent.medium.FirstPillagerOutpostFound=%1$s a découvert un avant-poste de pillards	#
@@ -2359,13 +2375,13 @@ hbui.RealmsStories.members.leastRecentlyPlayed=Joués le moins récemment	#
 hbui.RealmsStories.members.manage=Gérer des membres	#
 hbui.RealmsStories.members.member=Membre	#
 hbui.RealmsStories.members.noMembersFound=Aucun membre trouvé	#
-hbui.RealmsStories.members.notMemberRealmsStories=Pas un membre de Realms Stories	#
+hbui.RealmsStories.members.notMemberRealmsStories=Pas un membre de Realms Stories	#### {StrContains="Realms Stories"}
 hbui.RealmsStories.members.onlineMembers=Membres en ligne	#
 hbui.RealmsStories.members.operator=Opérateur	#
 hbui.RealmsStories.members.optedOutMembers=Membres exclus	#
 hbui.RealmsStories.members.realmMembers=Membres du Realm	#
 hbui.RealmsStories.members.realmOwner=Propriétaire du Realm	#
-hbui.RealmsStories.members.realmStoriesMembers=Membres de Realms Stories	#
+hbui.RealmsStories.members.realmStoriesMembers=Membres de Realms Stories	#### {StrContains="Realms Stories"}
 hbui.RealmsStories.members.recentlyPlayed=Parties récentes	#
 hbui.RealmsStories.members.search=Rechercher des membres du Realm	#
 hbui.RealmsStories.members.searchResult.hint.cleared=Le filtre de recherche a été effacé	#
@@ -2385,21 +2401,21 @@ hbui.RealmsStories.messages.timelineEmpty.body=Jouez sur le Realm pour générer
 hbui.RealmsStories.messages.timelineEmpty.title=Aucune donnée disponible	#
 hbui.RealmsStories.messages.timelineOff.body=La Chronologie n'est pas disponible dans ce Realm.	#
 hbui.RealmsStories.messages.timelineOff.title=La Chronologie est désactivée	#
-hbui.RealmsStories.messages.title=Impossible de charger les Realms Stories !	#
+hbui.RealmsStories.messages.title=Impossible de charger les Realms Stories !	#### {StrContains="Realms Stories"}
 hbui.RealmsStories.messages.titleWithArg=Échec du chargement de %1$s !	#
 hbui.RealmsStories.messages.unknownErrorBody=Une erreur inconnue s'est produite, veuillez réessayer.	#
 hbui.RealmsStories.narration.settings=Paramètres. Bouton	#
-hbui.RealmsStories.narration.title=Realms Stories	#
+hbui.RealmsStories.narration.title=Realms Stories	#### {StrContains="Realms Stories"}
 hbui.RealmsStories.narrationPlayerXOfY=%1$s sur %2$s	#
 hbui.RealmsStories.new=Nouveautés	#
 hbui.RealmsStories.oneUnreadStoryHint=Vous avez 1 histoire non lue	#
 hbui.RealmsStories.OptInModal.message=Maintenant, vous pouvez partager des histoires sur le flux de stories, savoir qui est dans le Realm avec l'onglet Membres, et coordonner les parties en utilisant la Chronologie. Amusez-vous bien !	#
-hbui.RealmsStories.OptInModal.openStoriesButton=Ouvrir Realms Stories	#
-hbui.RealmsStories.OptInModal.title=C'est tout bon ! Bienvenue dans Realms Stories	#
+hbui.RealmsStories.OptInModal.openStoriesButton=Ouvrir Realms Stories	#### {StrContains="Realms Stories"}
+hbui.RealmsStories.OptInModal.title=C'est tout bon ! Bienvenue dans Realms Stories	#### {StrContains="Realms Stories"}
 hbui.RealmsStories.OptInNoticeModal.gotItButton=Compris !	#
-hbui.RealmsStories.OptInNoticeModal.message.p1=Vous êtes prêt... Mais avant de pouvoir utiliser Realms Stories, le propriétaire du Realm doit rejoindre la partie. Demandez-lui de participer !	#
+hbui.RealmsStories.OptInNoticeModal.message.p1=Vous êtes prêt... Mais avant de pouvoir utiliser Realms Stories, le propriétaire du Realm doit rejoindre la partie. Demandez-lui de participer !	#### {StrContains="Realms Stories"}
 hbui.RealmsStories.OptInNoticeModal.message.p2=Une fois qu'il l'a fait, vous pouvez partager des histoires sur le flux de stories, savoir qui est dans le Realm avec l'onglet Membres, et coordonner les parties grâce à la Chronologie.	#
-hbui.RealmsStories.OptInNoticeModal.title=Oups ! Vous ne pouvez pas accéder à Realms Stories	#
+hbui.RealmsStories.OptInNoticeModal.title=Oups ! Vous ne pouvez pas accéder à Realms Stories	#### {StrContains="Realms Stories"}
 hbui.RealmsStories.OptInScreen.learnMore.dataType=Bloc de texte	#
 hbui.RealmsStories.OptInScreen.learnMore.history.body.1=Voyez quand d'autres membres sont en train de jouer pour explorer leurs créations ou les rejoindre la prochaine fois.	#
 hbui.RealmsStories.OptInScreen.learnMore.history.body.2=Sachez ce que les autres joueurs font, et quand. Jouez davantage ensemble !	#
@@ -2410,10 +2426,10 @@ hbui.RealmsStories.OptInScreen.learnMore.members.title=Apprenez à connaître le
 hbui.RealmsStories.OptInScreen.learnMore.social.body.1=Partagez vos propres histoires sur le flux de stories, informez les autres de ce que vous faites, partagez vos aventures et vos créations.	#
 hbui.RealmsStories.OptInScreen.learnMore.social.body.2=Likez et commentez ce que les autres partagent. Célébrez les uns et les autres !	#
 hbui.RealmsStories.OptInScreen.learnMore.social.title=Partager des histoires avec des amis	#
-hbui.RealmsStories.OptInScreen.learnMore.title=En savoir plus sur Realms Stories	#
+hbui.RealmsStories.OptInScreen.learnMore.title=En savoir plus sur Realms Stories	#### {StrContains="Realms Stories"}
 hbui.RealmsStories.OptInScreen.maybeLaterButton=Plus tard	#
 hbui.RealmsStories.OptInScreen.optInButton=Je souhaite participer	#
-hbui.RealmsStories.OptInScreen.optInButton.hint=Cela vous permettra de vous inscrire à Realms Stories	#
+hbui.RealmsStories.OptInScreen.optInButton.hint=Cela vous permettra de vous inscrire à Realms Stories	#### {StrContains="Realms Stories"}
 hbui.RealmsStories.OptInScreen.screen=Écran	#
 hbui.RealmsStories.OptInScreen.title=VOUS VOULEZ REJOINDRE REALMS STORIES ?!	#
 hbui.RealmsStories.OptInScreen.title.suffix=titre	#
@@ -2498,7 +2514,7 @@ hbui.RealmsStories.settings.personalSettings.badgeNotifSwitch.title=Badges de no
 hbui.RealmsStories.settings.personalSettings.description=Ces paramètres ne s'appliquent qu'à vous, pour ce Realm.	#
 hbui.RealmsStories.settings.personalSettings.header=1. Paramètres personnels	#
 hbui.RealmsStories.settings.personalSettings.member.header=Paramètres personnels	#
-hbui.RealmsStories.settings.realmWideSettings.description=Ces paramètres s'appliquent à toute personne dans ce Realm qui a rejoint Realms Stories.	#
+hbui.RealmsStories.settings.realmWideSettings.description=Ces paramètres s'appliquent à toute personne dans ce Realm qui a rejoint Realms Stories.	#### {StrContains="Realms Stories"}
 hbui.RealmsStories.settings.realmWideSettings.header=2. Paramètres pour tout le Realm	#
 hbui.RealmsStories.settings.realmWideSettings.member.header=Paramètres pour tout le Realm	#
 hbui.RealmsStories.settings.realmWideSettings.playerTimeline.description=Autorisez tout le monde à consulter la Chronologie.	#
@@ -2510,10 +2526,10 @@ hbui.RealmsStories.settings.realmWideSettings.storyCoordinates.title=Coordonnée
 hbui.RealmsStories.settings.screen=Écran %1$s	#
 hbui.RealmsStories.settings.screenheader=Stories - Écran de paramètres %1$s	#
 hbui.RealmsStories.settings.section=Section	#
-hbui.RealmsStories.ShareLink.message=Vous pouvez maintenant commencer à jouer avec vos amis dans ce Realm. Vous pouvez également prendre des captures d'écran avec le bouton de l'appareil photo et les partager dans Realms Stories. Amusez-vous bien !	#
-hbui.RealmsStories.ShareLink.openStories=Découvrez Realms Stories	#
+hbui.RealmsStories.ShareLink.message=Vous pouvez maintenant commencer à jouer avec vos amis dans ce Realm. Vous pouvez également prendre des captures d'écran avec le bouton de l'appareil photo et les partager dans Realms Stories. Amusez-vous bien !	#### {StrContains="Realms Stories"}
+hbui.RealmsStories.ShareLink.openStories=Découvrez Realms Stories	#### {StrContains="Realms Stories"}
 hbui.RealmsStories.ShareLink.playNow=Jouer	#
-hbui.RealmsStories.ShareLink.title=C'est tout bon ! Bienvenue dans Realms	#
+hbui.RealmsStories.ShareLink.title=C'est tout bon ! Bienvenue dans Realms	#### {StrContains="Realms"}
 hbui.RealmsStories.storyFeed=Flux de stories	#
 hbui.RealmsStories.timeline=Chronologie	#
 hbui.RealmsStories.Timeline.Information.close=Fermer	#
@@ -2756,12 +2772,12 @@ hbui.StartFromTemplateRoute.InitializationModal.message=Connexion...	#
 hbui.StartFromTemplateRoute.InitializationModal.title=Début du téléchargement	#
 hbui.StartFromTemplateRoute.InstallModal.message=Installation commencée	#
 hbui.StartFromTemplateRoute.InstallModal.title=Installation du contenu (2 sur 2)	#
-hbui.StartFromTemplateRoute.MarketplacePass.description=Continuez avec les modèles de monde pour les abonnés au Marketplace Pass.	#
+hbui.StartFromTemplateRoute.MarketplacePass.description=Continuez avec les modèles de monde pour les abonnés au Marketplace Pass.	#### {StrContains="Marketplace Pass"}
 hbui.StartFromTemplateRoute.MarketplacePass.imageNarration=Marketplace Pass	#
 hbui.StartFromTemplateRoute.MarketplacePass.imageRole=Image	#
 hbui.StartFromTemplateRoute.MarketplacePass.noInternetMessage=Veuillez vérifier votre connexion Internet pour explorer le magasin.	#
 hbui.StartFromTemplateRoute.MarketplacePass.NoTemplatesMessage.button=Aller dans les paramètres	#
-hbui.StartFromTemplateRoute.MarketplacePass.NoTemplatesMessage.description=Pour activer l'écran Marketplace Pass, accédez à l'onglet Débogage du magasin, réglez l'Environnement de découverte du magasin sur Production et redémarrez.	#
+hbui.StartFromTemplateRoute.MarketplacePass.NoTemplatesMessage.description=Pour activer l'écran Marketplace Pass, accédez à l'onglet Débogage du magasin, réglez l'Environnement de découverte du magasin sur Production et redémarrez.	#### {StrContains="Marketplace Pass"}
 hbui.StartFromTemplateRoute.MarketplacePass.NoTemplatesMessage.title=Modèles indisponibles	#
 hbui.StartFromTemplateRoute.MarketplacePass.role=Sous-menu vertical	#
 hbui.StartFromTemplateRoute.MarketplacePass.title=Modèles du Marketplace Pass	#

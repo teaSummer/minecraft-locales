@@ -104,8 +104,8 @@ hbui.AddFriendAccordion.narration.gamertagSearchSuggestions=%1$s søkeresultater
 hbui.AddFriendAccordion.narration.noSuggestionsFound=Ingen forslag for øyeblikket	#
 hbui.AddFriendAccordion.narration.noSuggestionsMessagefollowers=Du har allerede lagt til alle følgerne dine! Sjekk igjen senere.	#
 hbui.AddFriendAccordion.narration.noSuggestionsMessagegamertagSearch=Avgrens søket.	#
-hbui.AddFriendAccordion.narration.noSuggestionsMessagerecentlyPlayedWith=Spill med andre på Realms eller servere for å få flere forslag!	#
-hbui.AddFriendAccordion.narration.noSuggestionsMessagerecommendedFriends=Spill med andre på Realms eller servere for å få flere forslag!	#
+hbui.AddFriendAccordion.narration.noSuggestionsMessagerecentlyPlayedWith=Spill med andre på Realms eller servere for å få flere forslag!	#### {StrContains="Realms"}
+hbui.AddFriendAccordion.narration.noSuggestionsMessagerecommendedFriends=Spill med andre på Realms eller servere for å få flere forslag!	#### {StrContains="Realms"}
 hbui.AddFriendAccordion.narration.playerHint=Trykk for å se profilen. Bruk høyre pil for flere handlinger.	#
 hbui.AddFriendAccordion.narration.recentlyPlayedWithSuggestions=%1$s nylig spilt med-forslag	#
 hbui.AddFriendAccordion.narration.recommendedFriendsSuggestions=%1$s anbefalt venn-forslag	#
@@ -218,8 +218,8 @@ hbui.ChooseRealmRoute.chooseAPreviewRealm=1. Velg en forhåndsvisningsrealm	#
 hbui.ChooseRealmRoute.chooseARealmSubscription=1. Velg et abonnement	#
 hbui.ChooseRealmRoute.creative=Kreativ	#
 hbui.ChooseRealmRoute.emptyState.message=Det oppstod en ukjent feil. Prøv på nytt.	#
-hbui.ChooseRealmRoute.emptyState.noRealmsErrorTitle.beta=Kan ikke laste inn betarealmer!	#
-hbui.ChooseRealmRoute.emptyState.noRealmsErrorTitle.preview=Kan ikke laste inn forhåndsvisningsrealmer!	#
+hbui.ChooseRealmRoute.emptyState.noRealmsErrorTitle.beta=Beta Realms couldn't load! 	#### {StrContains="Beta Realms"}
+hbui.ChooseRealmRoute.emptyState.noRealmsErrorTitle.preview=Preview Realms couldn't load! 	#### {StrContains="Preview Realms"}
 hbui.ChooseRealmRoute.emptyState.noSubscriptionErrorTitle=Kan ikke laste inn abonnementer!	#
 hbui.ChooseRealmRoute.emptyState.tryAgain=Prøv på nytt	#
 hbui.ChooseRealmRoute.pairedWith=Sammenkoblet med: %s	#
@@ -961,15 +961,15 @@ hbui.CreateNewWorld.resourcePacks.inactivePacksEmptyTitle=Du eier ikke noen pakk
 hbui.CreateNewWorld.resourcePacks.inactivePacksEmptyTitle.edu=Du har ingen ressurspakker	#
 hbui.CreateNewWorld.resourcePacks.inactivePacksOnExpandAccordionHint=Naviger ned for å vise pakkene du eier	#
 hbui.CreateNewWorld.resourcePacks.localPacksListHeader=Lokalt	#
-hbui.CreateNewWorld.resourcePacks.marketplacePassPacksAccordionHeader=Markedsplass-pass	#
-hbui.CreateNewWorld.resourcePacks.marketplacePassPacksAccordionHint=Utvid for å vise alle markedsplass-pass-pakkene	#
+hbui.CreateNewWorld.resourcePacks.marketplacePassPacksAccordionHeader=Marketplace Pass 	#### {StrContains="Marketplace Pass"}
+hbui.CreateNewWorld.resourcePacks.marketplacePassPacksAccordionHint=Expand to access all Marketplace Pass packs 	#### {StrContains="Marketplace Pass"}
 hbui.CreateNewWorld.resourcePacks.marketplacePassPacksEmptyBody.edu=Ressurspakker du lager og installerer, blir tilgjengelig her slik at du kan aktivere og bruke dem i verdenene dine	#
 hbui.CreateNewWorld.resourcePacks.marketplacePassPacksEmptyTitle=Ingen flere tilgjengelige ressurspakker	#
-hbui.CreateNewWorld.resourcePacks.marketplacePassPacksOnExpandAccordionHint=Naviger ned for å vise markedsplass-pass-pakker	#
-hbui.CreateNewWorld.resourcePacks.marketplacePassPromotionBody=Abonner på det nye markedsplass-passet, så får du tilgang til mer enn 150 spennende tillegg! (Realms Plus inneholder nå innhold for markedsplass-passet)	#
-hbui.CreateNewWorld.resourcePacks.marketplacePassPromotionButtonInputLegend=Markedsplass-pass	#
+hbui.CreateNewWorld.resourcePacks.marketplacePassPacksOnExpandAccordionHint=Navigate down to access Marketplace Pass packs 	#### {StrContains="Marketplace Pass"}
+hbui.CreateNewWorld.resourcePacks.marketplacePassPromotionBody=Get access to 150+ pieces of exciting content with the new Marketplace Pass Subscription! (Realms Plus now includes Marketplace Pass content)  	#### {StrContains="Realms Plus"} {StrContains="Marketplace Pass"}
+hbui.CreateNewWorld.resourcePacks.marketplacePassPromotionButtonInputLegend=Marketplace Pass 	#### {StrContains="Marketplace Pass"}
 hbui.CreateNewWorld.resourcePacks.marketplacePassPromotionButtonLabel=Finn ut mer	#
-hbui.CreateNewWorld.resourcePacks.marketplacePassPromotionTitle=Du abonnerer ikke på markedsplass-passet!	#
+hbui.CreateNewWorld.resourcePacks.marketplacePassPromotionTitle=You don't have a Marketplace Pass subscription! 	#### {StrContains="Marketplace Pass"}
 hbui.CreateNewWorld.resourcePacks.missingDependencyBody=Denne pakken mangler én eller flere nødvendige komponenter. Vil du ta den i bruk likevel?	#
 hbui.CreateNewWorld.resourcePacks.missingDependencyNewBody=Denne pakken mangler én eller flere nødvendige komponenter, og aktivering kan ødelegge opplevelsen din.	#
 hbui.CreateNewWorld.resourcePacks.missingDependencyTitle=Mangler nødvendige komponenter	#
@@ -1010,12 +1010,12 @@ hbui.CreateNewWorld.scriptingCoding.codeBuilderTitle=Kodebygger	#
 hbui.CreateNewWorld.scriptingCoding.narrationComponentTypeSectionHeader=Gruppe	#
 hbui.CreateNewWorld.scriptingCoding.settingsTitle=Innstillinger for skripting og koding	#
 hbui.CreateNewWorld.signInPromptWorldOnRealmModal.cancel=Avbryt	#
-hbui.CreateNewWorld.signInPromptWorldOnRealmModal.msaGuestCreateWorld.message=Du trenger en Microsoft-konto for å lage en verden på Realms.	#
-hbui.CreateNewWorld.signInPromptWorldOnRealmModal.msaGuestEditWorld.message=Du trenger en Microsoft-konto for å spille på Realms.	#
-hbui.CreateNewWorld.signInPromptWorldOnRealmModal.platformGuestCreate.nintendo.message=Du må være logget på Nintendo-kontoen din for å lage en verden på Realms.	#
-hbui.CreateNewWorld.signInPromptWorldOnRealmModal.platformGuestCreate.playStation.message=Du må være logget på kontoen din for PlayStation™Network for å lage en verden på Realms.		#### CertRequirement: [account for PlayStation™Network]
-hbui.CreateNewWorld.signInPromptWorldOnRealmModal.platformGuestEdit.nintendo.message=Du må være logget på Nintendo-kontoen din for å spille på Realms.	#
-hbui.CreateNewWorld.signInPromptWorldOnRealmModal.platformGuestEdit.playStation.message=Du må være logget på kontoen din for PlayStation™Network for å spille på Realms.		#### CertRequirement: [account for PlayStation™Network]
+hbui.CreateNewWorld.signInPromptWorldOnRealmModal.msaGuestCreateWorld.message=Du trenger en Microsoft-konto for å lage en verden på Realms.	#### {StrContains="Realms"}
+hbui.CreateNewWorld.signInPromptWorldOnRealmModal.msaGuestEditWorld.message=Du trenger en Microsoft-konto for å spille på Realms.	#### {StrContains="Realms"}
+hbui.CreateNewWorld.signInPromptWorldOnRealmModal.platformGuestCreate.nintendo.message=Du må være logget på Nintendo-kontoen din for å lage en verden på Realms.	#### {StrContains="Realms"}
+hbui.CreateNewWorld.signInPromptWorldOnRealmModal.platformGuestCreate.playStation.message=Du må være logget på kontoen din for PlayStation™Network for å lage en verden på Realms.		#### CertRequirement: [account for PlayStation™Network] ### {StrContains="Realms"}
+hbui.CreateNewWorld.signInPromptWorldOnRealmModal.platformGuestEdit.nintendo.message=Du må være logget på Nintendo-kontoen din for å spille på Realms.	#### {StrContains="Realms"}
+hbui.CreateNewWorld.signInPromptWorldOnRealmModal.platformGuestEdit.playStation.message=Du må være logget på kontoen din for PlayStation™Network for å spille på Realms.		#### CertRequirement: [account for PlayStation™Network] ### {StrContains="Realms"}
 hbui.CreateNewWorld.signInPromptWorldOnRealmModal.signIn=Logg på	#
 hbui.CreateNewWorld.signInPromptWorldOnRealmModal.title=Du må logge deg på	#
 hbui.CreateNewWorld.tabContainerNarrationSuffix=Vertikal undermeny	#
@@ -1024,12 +1024,18 @@ hbui.CreateNewWorld.unlockSettingsModal.keepSettings=Behold opprinnelige innstil
 hbui.CreateNewWorld.unlockSettingsModal.message=Du kan ødelegge skaperens tiltenkte opplevelse hvis du låser opp alle innstillinger for verden.	#
 hbui.CreateNewWorld.unlockSettingsModal.title=Lås opp alle innstillinger for verden	#
 hbui.CreateNewWorld.unlockSettingsModal.unlock=Lås opp likevel	#
+hbui.CreateNewWorld.upsellModal.back=Back	#
+hbui.CreateNewWorld.upsellModal.bodyNintendo=You require a Nintendo Switch Online subscription to play on any cross-play multiplayer game.	#
+hbui.CreateNewWorld.upsellModal.bodyPlaystation=Du trenger et premium-abonnement for å spille flerspillerspill med andre på forskjellige enheter.	#
+hbui.CreateNewWorld.upsellModal.bodyXbox=You require a Xbox Gamepass Core subscription to play on any cross-play multiplayer game.	#
+hbui.CreateNewWorld.upsellModal.primaryButton=Learn more	#
+hbui.CreateNewWorld.upsellModal.title=Subscription required	#
 hbui.CreateNewWorldSideMenu.advancedTabLabel=Avansert	#
 hbui.CreateNewWorldSideMenu.behaviorPacksTabLabel=Atferdspakker	#
 hbui.CreateNewWorldSideMenu.cheatsTabLabel=Juksing	#
 hbui.CreateNewWorldSideMenu.create=Opprett	#
 hbui.CreateNewWorldSideMenu.create.edu=Spill	#
-hbui.CreateNewWorldSideMenu.createOnRealm=Lag i Realms	#
+hbui.CreateNewWorldSideMenu.createOnRealm=Lag i Realms	#### {StrContains="Realms"}
 hbui.CreateNewWorldSideMenu.experimentalFeaturesTabLabel=Eksperimenter	#
 hbui.CreateNewWorldSideMenu.generalTabLabel=Generelt	#
 hbui.CreateNewWorldSideMenu.inputLegendSelect=Velg	#
@@ -1088,9 +1094,9 @@ hbui.EditWorld.notificationToasts.saved=%1$s reddet	#
 hbui.EditWorld.notificationToasts.worldConverted=Verdenen ble oppdatert	#
 hbui.EditWorld.playOnRealmsErrorModal.closeButton=Lukk	#
 hbui.EditWorld.playOnRealmsErrorModal.crossPlatformRestricted.message=Du kan ikke spille denne verdenen på realmen din, for den bruker en ressurspakke som ikke kan brukes i flerspiller på forskjellige plattformer.	#
-hbui.EditWorld.playOnRealmsErrorModal.crossPlatformRestricted.message2=Fjern ressurspakken for å kunne spille på Realms.	#
+hbui.EditWorld.playOnRealmsErrorModal.crossPlatformRestricted.message2=Fjern ressurspakken for å kunne spille på Realms.	#### {StrContains="Realms"}
 hbui.EditWorld.playOnRealmsErrorModal.crossPlatformRestricted.title=Ressurspakke støttes ikke	#
-hbui.EditWorld.playOnRealmsErrorModal.memberOfTooManyRealms.message=Du har nådd grensen for hvor mange realmer du kan være medlem av. Hver konto kan maksimalt være medlem av 1000 Xbox Live-klubber, noe som inkluderer realmer.	#
+hbui.EditWorld.playOnRealmsErrorModal.memberOfTooManyRealms.message=You have reached the Realms membership limit. Each account can be associated with a maximum of 1000 Xbox live clubs which includes Realms. 	#### {StrContains="Realms"}
 hbui.EditWorld.playOnRealmsErrorModal.memberOfTooManyRealms.title=Kan ikke bli med i realmen	#
 hbui.EditWorld.playOnRealmsErrorModal.unknown.errorCode=Feilkode: %1$s	#
 hbui.EditWorld.playOnRealmsErrorModal.unknown.message=Prøv på nytt senere.	#
@@ -1111,8 +1117,8 @@ hbui.ExportWorld.error.needToRemoveVRHeadset.title=Koble fra VR-apparatet og pr�
 hbui.ExportWorld.error.unknownError.title=Noe gikk galt. Prøv på nytt senere.	#
 hbui.FirstTimeSignInRoute.altSignInList1=Lagre fremdrift og kjøp	#
 hbui.FirstTimeSignInRoute.altSignInList2=Sikre kontoen din med tofaktorautentisering	#
-hbui.FirstTimeSignInRoute.altSignInList3=Få tilgang til prestasjoner, Realms, servere og markedsplassen	#
-hbui.FirstTimeSignInRoute.altSignInList3PS=Få tilgang til Realms, servere og markedsplassen	#
+hbui.FirstTimeSignInRoute.altSignInList3=Få tilgang til prestasjoner, Realms, servere og markedsplassen	#### {StrContains="Realms"}
+hbui.FirstTimeSignInRoute.altSignInList3PS=Få tilgang til Realms, servere og markedsplassen	#### {StrContains="Realms"}
 hbui.FirstTimeSignInRoute.altSignInPrompt=Logg deg på, eller registrer deg gratis for å låse opp disse funksjonene og mye mer:	#
 hbui.FirstTimeSignInRoute.altSignInPromptMobile=Logg deg på, eller registrer deg gratis for å lagre fremdriften din, oppnå prestasjoner, få tilgang til servere og mye mer	#
 hbui.FirstTimeSignInRoute.createAccountPrompt=Har du ikke en Microsoft-konto? Lag en gratis nå!	#
@@ -1150,6 +1156,7 @@ hbui.FriendsDrawer.AddFriendsOnlineSafety.text=Du kan ikke legge til venner på 
 hbui.FriendsDrawer.AddFriendsOnlineSafety.textParental=Du kan ikke legge til venner på grunn av en begrensning i Sperrefunksjon. Sjekk og administrer flerspillerinnstillingene dine via alternativet for nettsikkerhet i Sperrefunksjon.	#
 hbui.FriendsDrawer.AddFriendsOnlineSafety.title=Du må ha tillatelse!	#
 hbui.FriendsDrawer.backButton=Bakover	#
+hbui.FriendsDrawer.bannerLogInMicrosoft=Logg deg på eller registrer deg hos Microsoft	#
 hbui.FriendsDrawer.closeButtonNarrationHint=Naviger ned for flere alternativer	#
 hbui.FriendsDrawer.closeDrawerShortcutInputLegend=Lukk venner	#
 hbui.FriendsDrawer.emptyStateBody=Vi jobber fortsatt med denne funksjonen. Kom tilbake snart!	#
@@ -1163,9 +1170,16 @@ hbui.FriendsDrawer.joinFriendServerErrorModal.blockedByVersion.title=Ikke-kompat
 hbui.FriendsDrawer.joinFriendServerErrorModal.cancel=Avbryt	#
 hbui.FriendsDrawer.joinFriendServerErrorModal.UnknownError.message=ukjent feil	#
 hbui.FriendsDrawer.joinFriendServerErrorModal.UnknownError.title=Noe gikk galt	#
+hbui.FriendsDrawer.msaGuestNintendoBanner=You need a Microsoft account and a Nintendo Switch Online subscription to play cross-play multiplayer.	#
+hbui.FriendsDrawer.msaGuestPlaystationBanner=You need a Microsoft account and a premium subscription to play cross-play multiplayer.	#
+hbui.FriendsDrawer.msaGuestPremiumBanner=You need a Microsoft account to play cross-play multiplayer.	#
 hbui.FriendsDrawer.multiplayerBanner.learnMore=Finn ut mer	#
 hbui.FriendsDrawer.multiplayerBanner.text=Du har deaktivert flerspiller.	#
 hbui.FriendsDrawer.multiplayerBanner.textParental=Flerspiller er deaktivert.	#
+hbui.FriendsDrawer.multiplayerRequireAccountModal.backButtonLabel=Bakover	#
+hbui.FriendsDrawer.multiplayerRequireAccountModal.loginButtonLabel=Logg på eller registrer deg	#
+hbui.FriendsDrawer.multiplayerRequireAccountModal.text=You require a Microsoft Account to play on any cross-play multiplayer game.	#
+hbui.FriendsDrawer.multiplayerRequireAccountModal.title=Account required	#
 hbui.FriendsDrawer.noInternetMessage=Sjekk internettforbindelsen din for å se vennene dine.	#
 hbui.FriendsDrawer.notLoggedInMessage.button=Logg på nå	#
 hbui.FriendsDrawer.notLoggedInMessage.inputLegend=Logg på	#
@@ -1214,7 +1228,7 @@ hbui.InboxListItem.narration.readPost=Lest innlegg	#
 hbui.InboxListItem.narration.reject=Avslå	#
 hbui.InboxListItem.narration.unreadPost=Ulest innlegg	#
 hbui.InboxListItem.purchased=Kjøpt	#
-hbui.InboxListItem.realms=Realmer	#
+hbui.InboxListItem.realms=Realms 	#### {StrContains="Realms"}
 hbui.InboxListItem.reject=Avslå	#
 hbui.InboxListItem.rejected=Avslått	#
 hbui.InboxListItem.remove=Fjern	#
@@ -1259,7 +1273,7 @@ hbui.InboxRoute.emptyMarketplacePassSubscribePromptText=Marketplace Pass gir deg
 hbui.InboxRoute.emptyMarketplacePassSubscribePromptTitle=Abonner og spill!	#
 hbui.InboxRoute.emptyMarketplacePassText=Her får du meldinger om Marketplace Pass-abonnementet ditt. 	#### {StrContains="Marketplace Pass"}
 hbui.InboxRoute.emptyMarketplacePassTitle=Følg med og få med deg kommende innhold!	#
-hbui.InboxRoute.emptyMessageText=Stikk innom snart for å se etter nye meldinger.	#
+hbui.InboxRoute.emptyMessageText=Kom tilbake senere for å se etter nye meldinger.	#
 hbui.InboxRoute.emptyMessageTitle=Ingen nye meldinger	#
 hbui.InboxRoute.emptyNewsText=Her mottar du nyheter og andre oppdateringer om Minecraft. Kom tilbake snart for nye meldinger.	#
 hbui.InboxRoute.emptyNewsTitle=Ingen nye meldinger	#
@@ -1336,8 +1350,8 @@ hbui.JoinRealmsServerError.invalidMultiplayerSkin.changeSkin=Endre skall	#
 hbui.JoinRealmsServerError.invalidMultiplayerSkin.close=Lukk	#
 hbui.JoinRealmsServerError.invalidMultiplayerSkin.title=Skallet er ikke tillatt	#
 hbui.JoinRealmsServerError.inviteLinkNotFound=Denne invitasjonslenken er ugyldig.	#
-hbui.JoinRealmsServerError.memberOfTooManyRealms=Du har nådd grensen for realmer du kan bli med i.	#
-hbui.JoinRealmsServerError.memberOfTooManyRealms.message=Du har nådd grensen for hvor mange realmer du kan være medlem av. Hver konto kan maksimalt være medlem av 1000 Xbox Live-klubber, noe som inkluderer realmer.	#
+hbui.JoinRealmsServerError.memberOfTooManyRealms=You have reached the limit of Realms you can join. 	#### {StrContains="Realms"}
+hbui.JoinRealmsServerError.memberOfTooManyRealms.message=You have reached the Realms membership limit. Each account can be associated with a maximum of 1000 Xbox live clubs which includes Realms. 	#### {StrContains="Realms"}
 hbui.JoinRealmsServerError.memberOfTooManyRealms.title=Kan ikke bli med i realmen	#
 hbui.JoinRealmsServerError.noPlatformSubscription.nintendo.body=Du har ikke et Nintendo Switch Online-medlemskap. Du trenger det for å spille online	#
 hbui.JoinRealmsServerError.noPlatformSubscription.nintendo.moreInformation=Mer informasjon	#
@@ -1366,7 +1380,7 @@ hbui.JoinRealmsServerTransient.caption=Du kan forlate realmen hens når som hels
 hbui.JoinRealmsServerTransient.joinButtonLabel=Bli med	#
 hbui.JoinRealmsServerTransient.joinRealmModal=Blir med i realmen	#
 hbui.JoinRealmsServerTransient.ownerInformation=Vil du bli med i realmen til %1$s?	#
-hbui.JoinRealmsServerTransient.successSnackbar=Du ble med i en ny realm!	#
+hbui.JoinRealmsServerTransient.successSnackbar=You joined "%1$s"!	#
 hbui.JoinRealmsServerTransient.title=Bli med i en realm	#
 hbui.JoinServerWarningModal.cancel=Avbryt	#
 hbui.JoinServerWarningModal.continue=Fortsett	#
@@ -1392,7 +1406,7 @@ hbui.ModalMenuDropdown.dropdown.role=Rullegardinmeny	#
 hbui.ModalMenuDropdown.inputLegend=Åpne	#
 hbui.ModalMenuDropdown.placeholder=Velg et alternativ ...	#
 hbui.MultiplayerPrivilegeBlockedModal.descriptionOnline=Du kan ikke spille flerspiller på grunn av en kontoinnstillingsbegrensning. Administrer flerspillerinnstillingene dine via alternativet for personvern og nettsikkerhet i kontoinnstillingene.	#
-hbui.MultiplayerPrivilegeBlockedModal.descriptionParental=Du kan ikke spille på Realms på grunn av en begrensning i Sperrefunksjon. Sjekk og administrer flerspillerinnstillingene dine via alternativet for nettsikkerhet i Sperrefunksjon.	#
+hbui.MultiplayerPrivilegeBlockedModal.descriptionParental=Du kan ikke spille på Realms på grunn av en begrensning i Sperrefunksjon. Sjekk og administrer flerspillerinnstillingene dine via alternativet for nettsikkerhet i Sperrefunksjon.	#### {StrContains="Realms"}
 hbui.MultiplayerPrivilegeBlockedModal.learnMore=Finn ut mer	#
 hbui.MultiplayerPrivilegeBlockedModal.title=Du må ha tillatelse!	#
 hbui.Notifications.achievementsDisabled=Du kan ikke låse opp prestasjoner.	#
@@ -1418,10 +1432,10 @@ hbui.Notifications.readMoreLink=Les mer	#
 hbui.Notifications.unlockSettingsLink=Lås opp innstillinger	#
 hbui.Notifications.unlockSettingsMessage=Noen innstillinger er låst av skaperen av malen.	#
 hbui.notLoggedInWarning.loginLink=Logg på eller registrer deg	#
-hbui.notLoggedInWarning.playScreen.message.realms=Du trenger en Microsoft-konto for å spille på Realms.	#
+hbui.notLoggedInWarning.playScreen.message.realms=Du trenger en Microsoft-konto for å spille på Realms.	#### {StrContains="Realms"}
 hbui.notLoggedInWarning.playScreen.message.servers=Du trenger en Microsoft-konto for å spille på servere.	#
 hbui.notLoggedInWarning.startFromTemplateScreen.message.featured=Du trenger en konto for å kjøpe maler på markedsplassen.	#
-hbui.notLoggedInWarning.startFromTemplateScreen.message.marketplacePass=Du trenger en Microsoft-konto for å få tilgang til markedsplass-passet.	#
+hbui.notLoggedInWarning.startFromTemplateScreen.message.marketplacePass=You need a Microsoft account to access Marketplace Pass. 	#### {StrContains="Marketplace Pass"}
 hbui.PackListItem.activateButtonText=Aktiver	#
 hbui.PackListItem.collapseDescriptionInputLegend=Minimer	#
 hbui.PackListItem.creatorLabel=Av %1$s	#
@@ -1472,7 +1486,7 @@ hbui.PackListItem.validateButtonText=Valider	#
 hbui.PackTabs.activeTabButtonLabel=Aktiv	#
 hbui.PackTabs.availableTabButtonLabel=Tilgjengelig	#
 hbui.PackTabs.narration.tab=%1$s, fane %2$s av %3$s	#
-hbui.PlayerAvatarWrapper.full=Full	#
+hbui.PlayerAvatarsOnlineInWorld.full=Full	#
 hbui.PlayerBannedModalRoute.body=Du har blitt %1$s fra å spille flerspiller i Minecraft på grunn av «%2$s». Du vil ikke kunne spille på servere, bli med i Realms, være vert, bli med i flerspillerspill eller bruke markedsplassen.	#
 hbui.PlayerBannedModalRoute.body.day=Du har 1 dag igjen av utestengingen.	#
 hbui.PlayerBannedModalRoute.body.days=Du har %1$s dager igjen av utestengingen.	#
@@ -1576,6 +1590,7 @@ hbui.PlayerOptionsModal.shareMyProfile=Del profilen min	#
 hbui.PlayerOptionsModal.shareText=Legg meg til som venn i Minecraft!	#
 hbui.PlayerOptionsModal.signOut=Logg ut	#
 hbui.PlayerOptionsModal.viewXboxProfile=Vis Xbox-profil	#
+hbui.PlayersOnlineInWorld.full=Full	#
 hbui.PlayerTag.hint=Trykk for å få tilgang til spillerprofilen	#
 hbui.PlayerTag.role=Knapp	#
 hbui.PlayerTag.viewProfile=Vis spillerprofil	#
@@ -1623,17 +1638,17 @@ hbui.PlayScreen.friendsDrawerShortcut=Trykk på %1$s for å åpne eller lukke ve
 hbui.PlayScreen.genericError.realmDetails.description=Noe gikk galt. Prøv på nytt senere.	#
 hbui.PlayScreen.genericError.realmDetails.title=Kan ikke laste inn realm	#
 hbui.PlayScreen.genericError.realms.description=Noe gikk galt. Prøv på nytt senere.	#
-hbui.PlayScreen.genericError.realms.title=Kan ikke laste inn realms	#
+hbui.PlayScreen.genericError.realms.title=Realms couldn't load 	#### {StrContains="Realms"}
 hbui.PlayScreen.genericError.servers.description=Noe gikk galt. Prøv på nytt senere.	#
 hbui.PlayScreen.genericError.servers.title=Serveren kunne ikke lastes inn	#
 hbui.PlayScreen.guestAccountMessage.bannerLogIn=Logg på eller registrer deg	#
 hbui.PlayScreen.guestAccountMessage.bannerLogInMicrosoft=Logg deg på eller registrer deg hos Microsoft	#
 hbui.PlayScreen.guestAccountMessage.buttonLogInMicrosoft=Logg deg på en Microsoft-konto	#
-hbui.PlayScreen.guestAccountMessage.realmsNintendoGuest=Du trenger en Microsoft-konto og et Nintendo Switch Online-abonnement for å spille Realms.	#
-hbui.PlayScreen.guestAccountMessage.realmsNoMicrosoftAccount=Du trenger en Microsoft-konto for å spille på Realms.	#
-hbui.PlayScreen.guestAccountMessage.realmsNoPlatformAccountNintendo=Du trenger et Nintendo Switch Online-abonnement for å spille Realms.	#
-hbui.PlayScreen.guestAccountMessage.realmsNoPlatformAccountPlaystation=Du trenger et premium-abonnement for å spille Realms.	#
-hbui.PlayScreen.guestAccountMessage.realmsPlaystationGuest=Du trenger en Microsoft-konto og et premium-abonnement for å spille Realms.	#
+hbui.PlayScreen.guestAccountMessage.realmsNintendoGuest=Du trenger en Microsoft-konto og et Nintendo Switch Online-abonnement for å spille Realms.	#### {StrContains="Realms"}
+hbui.PlayScreen.guestAccountMessage.realmsNoMicrosoftAccount=Du trenger en Microsoft-konto for å spille på Realms.	#### {StrContains="Realms"}
+hbui.PlayScreen.guestAccountMessage.realmsNoPlatformAccountNintendo=Du trenger et Nintendo Switch Online-abonnement for å spille Realms.	#### {StrContains="Realms"}
+hbui.PlayScreen.guestAccountMessage.realmsNoPlatformAccountPlaystation=Du trenger et premium-abonnement for å spille Realms.	#### {StrContains="Realms"}
+hbui.PlayScreen.guestAccountMessage.realmsPlaystationGuest=Du trenger en Microsoft-konto og et premium-abonnement for å spille Realms.	#### {StrContains="Realms"}
 hbui.PlayScreen.guestAccountMessage.serversNintendoGuest=Du trenger en Microsoft-konto og et Nintendo Switch Online-abonnement for å spille på servere.	#
 hbui.PlayScreen.guestAccountMessage.serversNoMicrosoftAccount=Du trenger en Microsoft-konto for å spille på servere.	#
 hbui.PlayScreen.guestAccountMessage.serversNoPlatformAccountNintendo=Du trenger et Nintendo Switch Online-abonnement for å spille på servere.	#
@@ -1670,9 +1685,9 @@ hbui.PlayScreen.nonMultiplayerSkinModal.body=Ditt nåværende skall er fra en in
 hbui.PlayScreen.nonMultiplayerSkinModal.changeAction=Endre skall	#
 hbui.PlayScreen.nonMultiplayerSkinModal.continueAction=Fortsett uten flerspiller	#
 hbui.PlayScreen.nonMultiplayerSkinModal.title=Skallet er ikke tillatt	#
-hbui.PlayScreen.noPremiumSubscriptionMessage.realmsNintendo=Du trenger et Nintendo Switch Online-abonnement for å spille Realms.	#
-hbui.PlayScreen.noPremiumSubscriptionMessage.realmsPlaystation=Du trenger et premium-abonnement for å spille Realms.	#
-hbui.PlayScreen.noPremiumSubscriptionMessage.realmsXbox=Du trenger et Xbox Gamepass Core-abonnement for å spille Realms.	#
+hbui.PlayScreen.noPremiumSubscriptionMessage.realmsNintendo=Du trenger et Nintendo Switch Online-abonnement for å spille Realms.	#### {StrContains="Realms"}
+hbui.PlayScreen.noPremiumSubscriptionMessage.realmsPlaystation=Du trenger et premium-abonnement for å spille Realms.	#### {StrContains="Realms"}
+hbui.PlayScreen.noPremiumSubscriptionMessage.realmsXbox=Du trenger et Xbox Gamepass Core-abonnement for å spille Realms.	#### {StrContains="Realms"}
 hbui.PlayScreen.noPremiumSubscriptionMessage.serversNintendo=Du trenger et Nintendo Switch Online-abonnement for å spille på servere.	#
 hbui.PlayScreen.noPremiumSubscriptionMessage.serversPlaystation=Du trenger et premium-abonnement for å spille på servere.	#
 hbui.PlayScreen.noPremiumSubscriptionMessage.serversXbox=Du trenger et Xbox Gamepass Core-abonnement for å spille på servere.	#
@@ -1692,7 +1707,7 @@ hbui.PlayScreen.outOfStorageModal.body=Du har nesten ikke mer datalagringsplass 
 hbui.PlayScreen.outOfStorageModal.close=Lukk	#
 hbui.PlayScreen.outOfStorageModal.closeInputLegend=Lukk	#
 hbui.PlayScreen.outOfStorageModal.title=Tom for lagringsplass	#
-hbui.PlayScreen.realms=Realms	#
+hbui.PlayScreen.realms=Realms	#### {StrContains="Realms"}
 hbui.PlayScreen.realmsTab.bannerClosed=Lukket	#
 hbui.PlayScreen.realmsTab.bannerExpired=Utløpt	#
 hbui.PlayScreen.realmsTab.bannerFull=Full	#
@@ -1700,7 +1715,7 @@ hbui.PlayScreen.realmsTab.buttonHeader.buyNowUpsell=Kjøp nå	#
 hbui.PlayScreen.realmsTab.buttonHeader.freeTrialUpsell=Prøv gratis	#
 hbui.PlayScreen.realmsTab.buttonHeader.invitations=Invitasjoner (%1$s)	#
 hbui.PlayScreen.realmsTab.buttonHeader.invitationsAmount=Ventende invitasjoner %1$s	#
-hbui.PlayScreen.realmsTab.buttonHeader.joinRealm=Bli med i Realms	#
+hbui.PlayScreen.realmsTab.buttonHeader.joinRealm=Bli med i en realm	#
 hbui.PlayScreen.realmsTab.buttonHeader.narration.buttonSiblings=%1$s av %2$s	#
 hbui.PlayScreen.realmsTab.buttonHeader.narration.invitationsAmount=Ventende invitasjoner %1$s	#
 hbui.PlayScreen.realmsTab.buttonHeader.subscribeNowUpsell=Abonner nå	#
@@ -1712,15 +1727,15 @@ hbui.PlayScreen.realmsTab.leaveRealmNotification=Du forlot «%1$s»	#
 hbui.PlayScreen.realmsTab.leaveRealmProgressMessage=Forlater realmen	#
 hbui.PlayScreen.realmsTab.narration.buttonSiblings=%1$s av %2$s	#
 hbui.PlayScreen.realmsTab.narration.realmInformation=Realminformasjon	#
-hbui.PlayScreen.realmsTab.noInternetMessage=Sjekk internettforbindelsen din for å spille på Realms.	#
+hbui.PlayScreen.realmsTab.noInternetMessage=Sjekk internettforbindelsen din for å spille på Realms.	#### {StrContains="Realms"}
 hbui.PlayScreen.realmsTab.options=Alternativer	#
 hbui.PlayScreen.realmsTab.play=Spill	#
-hbui.PlayScreen.realmsTab.playersOnline=Spillere online	#
+hbui.PlayScreen.realmsTab.playersOnline=Pålogget	#
 hbui.PlayScreen.realmsTab.playersOnline.realmOwner=%1$s sin realm	#
 hbui.PlayScreen.realmsTab.preproductionAccess.buttonText=Finn ut mer	#
-hbui.PlayScreen.realmsTab.preproductionAccess.message=Du har ikke tilgang til Realms i forproduksjon. Se veiledningen på aka.ms/Realms-preprod-access for å få tilgang.	#
-hbui.PlayScreen.realmsTab.preproductionAccess.title=Du har ikke tilgang til denne realmen.	#
-hbui.PlayScreen.realmsTab.realmsDescription=Realms-beskrivelse	#
+hbui.PlayScreen.realmsTab.preproductionAccess.message=Du har ikke tilgang til Realms i forproduksjon. Se veiledningen på aka.ms/Realms-preprod-access for å få tilgang.	#### {StrContains="Realms"}
+hbui.PlayScreen.realmsTab.preproductionAccess.title=You do not have access to Realms 	#### {StrContains="Realms"}
+hbui.PlayScreen.realmsTab.realmsDescription=Realms-beskrivelse	#### {StrContains="Realms"}
 hbui.PlayScreen.realmsTab.realmSettingsModalMenu.edit=Rediger aktiv verden	#
 hbui.PlayScreen.realmsTab.realmSettingsModalMenu.optionsEnumeration=%1$s av %2$s	#
 hbui.PlayScreen.realmsTab.realmSettingsModalMenu.realmSettings=Innstillinger for realmen	#
@@ -1732,7 +1747,7 @@ hbui.PlayScreen.realmsTab.realmsLeaveRealmModal.cancelAction=Avbryt	#
 hbui.PlayScreen.realmsTab.realmsLeaveRealmModal.description=Du er i ferd med å forlate «%1$s». Det er ingen grunn til bekymring hvis du ombestemmer deg. Du kan bli med igjen senere.	#
 hbui.PlayScreen.realmsTab.realmsLeaveRealmModal.leaveRealmAction=Forlat realm	#
 hbui.PlayScreen.realmsTab.realmsLeaveRealmModal.title=Forlat realmen	#
-hbui.PlayScreen.realmsTab.realmsOptionsModalMenu.addRealm=Legg til et realms-abonnement	#
+hbui.PlayScreen.realmsTab.realmsOptionsModalMenu.addRealm=Add a Realms subscription 	#### {StrContains="Realms"}
 hbui.PlayScreen.realmsTab.realmsOptionsModalMenu.joinRealm=Bli med i en eksisterende realm	#
 hbui.PlayScreen.realmsTab.realmsOptionsModalMenu.learnMore=Finn ut mer	#
 hbui.PlayScreen.realmsTab.realmsOptionsModalMenu.optionsEnumeration=%1$s av %2$s	#
@@ -1751,7 +1766,7 @@ hbui.PlayScreen.realmsTab.sideMenu.externalServer=Annen server (%1$s)	#
 hbui.PlayScreen.realmsTab.sideMenu.full=Full	#
 hbui.PlayScreen.realmsTab.sideMenu.inputLegend=Åpne	#
 hbui.PlayScreen.realmsTab.sideMenu.invitations=Invitasjoner (%1$s)	#
-hbui.PlayScreen.realmsTab.sideMenu.joinedRealms=Realmer blitt med i (%1$s)	#
+hbui.PlayScreen.realmsTab.sideMenu.joinedRealms=Joined Realms (%1$s) 	#### {StrContains="Realms"}
 hbui.PlayScreen.realmsTab.sideMenu.joinRealm=Bli med i realmserver	#
 hbui.PlayScreen.realmsTab.sideMenu.narration.addOrJoinRealm=Legg til / bli med i realm	#
 hbui.PlayScreen.realmsTab.sideMenu.narration.buttonSiblings=%1$s av %2$s	#
@@ -1876,8 +1891,8 @@ hbui.PlayScreen.templateScreenNotAvailableInPreview.text=Lag basert på mal er b
 hbui.PlayScreen.templateScreenNotAvailableInPreview.title=Ikke tilgjengelig	#
 hbui.PlayScreen.title=Spill	#
 hbui.PlayScreen.underConstructionMessage=Vi jobber fortsatt med denne funksjonen. Kom tilbake snart!	#
-hbui.PlayScreen.underConstructionMessageRealmsAvailable=Det ser ut til at du har et abonnement på Realms! Vi jobber fortsatt med å få Realms til det nye menydesignet – bruk det gamle brukergrensesnittet inntil videre.	#
-hbui.PlayScreen.underConstructionMessageRealmsUnavailable=Realms er tilgjengelig i det gamle brukergrensesnittet. Vi jobber fortsatt med å få det til det nye menydesignet – bruk det gamle brukergrensesnittet inntil videre.	#
+hbui.PlayScreen.underConstructionMessageRealmsAvailable=Det ser ut til at du har et abonnement på Realms! Vi jobber fortsatt med å få Realms til det nye menydesignet – bruk det gamle brukergrensesnittet inntil videre.	#### {StrContains="Realms"}
+hbui.PlayScreen.underConstructionMessageRealmsUnavailable=Realms er tilgjengelig i det gamle brukergrensesnittet. Vi jobber fortsatt med å få det til det nye menydesignet – bruk det gamle brukergrensesnittet inntil videre.	#### {StrContains="Realms"}
 hbui.PlayScreen.underConstructionTitle=Under konstruksjon	#
 hbui.PlayScreen.unexpectedLaunchErrorModal.body=Kunne ikke laste inn denne verdenen.	#
 hbui.PlayScreen.unexpectedLaunchErrorModal.body2=Feilkode: %1$s	#
@@ -1903,17 +1918,17 @@ hbui.PlayScreen.xboxPermissionMessage.title=Du må ha tillatelse!	#
 hbui.PostToRealmStoriesRoute.accessDenied.button=Finn ut mer	#
 hbui.PostToRealmStoriesRoute.accessDenied.message=Du har ikke tillatelse til å dele skjermbildene dine. Gå til «Nettsikkerhet» og sett «Du kan laste opp skjermklipp til Xbox» til Tillat.	#
 hbui.PostToRealmStoriesRoute.accessDenied.title=Tilgang avvist.	#
-hbui.PostToRealmStoriesRoute.noRealmsFound.button=Finn ut mer om Realms	#
+hbui.PostToRealmStoriesRoute.noRealmsFound.button=Finn ut mer om Realms	#### {StrContains="Realms"}
 hbui.PostToRealmStoriesRoute.noRealmsFound.title=Fant ingen realmer	#
 hbui.PostToRealmStoriesRoute.realmsCantLoad.button=Prøv på nytt	#
 hbui.PostToRealmStoriesRoute.realmsCantLoad.message=Det oppstod en ukjent feil. Prøv på nytt.	#
-hbui.PostToRealmStoriesRoute.realmsCantLoad.title=Kan ikke laste inn Realms!	#
+hbui.PostToRealmStoriesRoute.realmsCantLoad.title=Kan ikke laste inn Realms!	#### {StrContains="Realms"}
 hbui.PostToRealmStoriesRoute.select=Velg	#
 hbui.PostToRealmStoriesRoute.title=Legg ut på Realms-historier	#
 hbui.PostToRealmStoriesRoute.youNeedPermission.button=Finn ut mer	#
 hbui.PostToRealmStoriesRoute.youNeedPermission.message=Du har ikke tillatelse til å gå inn på historiefeeden. Gå til «Nettsikkerhet» og sett «Du kan opprette og bli med i klubber» til Tillat.	#
 hbui.PostToRealmStoriesRoute.youNeedPermission.title=Tilgang avvist.	#
-hbui.PrivacyAndOnlineSafetyModal.buttonAction=Åpne nettstedet for Realms-sikkerhet	#
+hbui.PrivacyAndOnlineSafetyModal.buttonAction=Åpne nettstedet for Realms-sikkerhet	#### {StrContains="Realms"}
 hbui.PrivacyAndOnlineSafetyModal.clubPermissionMessage=«Du kan opprette og bli med i klubber» til Tillat	#
 hbui.PrivacyAndOnlineSafetyModal.externalLinkText=Hjelp meg med å fikse dette	#
 hbui.PrivacyAndOnlineSafetyModal.fromOnlineSafety=Fra nettsikkerhet:	#
@@ -1921,13 +1936,13 @@ hbui.PrivacyAndOnlineSafetyModal.header=Au da! Du trenger tillatelser først	#
 hbui.PrivacyAndOnlineSafetyModal.linkButtonHint=Dette tar deg til en nettside som vil bidra til å løse problemet	#
 hbui.PrivacyAndOnlineSafetyModal.multiplayerPermissionMessage=«Du kan bli med i flerspillerspill» til Tillat	#
 hbui.PrivacyAndOnlineSafetyModal.qrCodeHint=Dette er en QR-kode som tar deg til en ekstern kobling for å endre tillatelser	#
-hbui.PrivacyAndOnlineSafetyModal.toAccessRealms=For å få tilgang til Realms må du sette:	#
-hbui.PrivacyAndOnlineSafetyModal.toAccessRealmsNumbered=1. For å få tilgang til Realms må du sette:	#
-hbui.PrivacyAndOnlineSafetyModal.toAccessRealmsStories=For å få tilgang til Realms-historier må du sette:	#
-hbui.PrivacyAndOnlineSafetyModal.toAccessRealmsStoriesNumbered=2. For å få tilgang til Realms-historier må du sette:	#
+hbui.PrivacyAndOnlineSafetyModal.toAccessRealms=For å få tilgang til Realms må du sette:	#### {StrContains="Realms"}
+hbui.PrivacyAndOnlineSafetyModal.toAccessRealmsNumbered=1. For å få tilgang til Realms må du sette:	#### {StrContains="Realms"}
+hbui.PrivacyAndOnlineSafetyModal.toAccessRealmsStories=To access Realms Stories, set: 	#### {StrContains="Realms Stories"}
+hbui.PrivacyAndOnlineSafetyModal.toAccessRealmsStoriesNumbered=2. To access Realms Stories, set: 	#### {StrContains="Realms Stories"}
 hbui.PrivacyAndOnlineSafetyModal.tryAgain=Prøv på nytt	#
 hbui.PrivacyAndOnlineSafetySuccessModal.buttonAction=Kom i gang	#
-hbui.PrivacyAndOnlineSafetySuccessModal.content=Alle tillatelsene dine har blitt aktivert! Du har nå tilgang til både Realms og Realms-historier.	#
+hbui.PrivacyAndOnlineSafetySuccessModal.content=All your permissions have been successfully enabled! Now you can have access to both Realms and Realms Stories. 	#### {StrContains="Realms"} {StrContains="Realms Stories"}
 hbui.PrivacyAndOnlineSafetySuccessModal.header=Tillatelser er aktivert!	#
 hbui.ProfanityWarningModalRoute.body=Teksten du har skrevet, inneholder ord som andre kan finne støtende, og kan derfor ikke brukes. Prøv på nytt.	#
 hbui.ProfanityWarningModalRoute.close=Lukk	#
@@ -2009,26 +2024,26 @@ hbui.RealmListItem.role=Listeelement	#
 hbui.RealmListItem.select=Velg	#
 hbui.RealmListItem.yourRealm=Realmen din	#
 hbui.Realms.ErrorModals.CannotContactRealms.message=Sjekk Internett-forbindelsen, og prøv på nytt.	#
-hbui.Realms.ErrorModals.CannotContactRealms.title=Får ikke kontakt med Realms	#
+hbui.Realms.ErrorModals.CannotContactRealms.title=Får ikke kontakt med Realms	#### {StrContains="Realms"}
 hbui.Realms.ErrorModals.close=Lukk	#
 hbui.Realms.ErrorModals.ok=Lukk	#
 hbui.Realms.ErrorModals.postingCommentFailed.message=Kunne ikke publisere ny kommentar. Sjekk internettforbindelsen, og prøv på nytt.	#
 hbui.Realms.ErrorModals.postingCommentFailed.title=Kunne ikke publisere kommentaren	#
-hbui.Realms.ErrorModals.rateLimitError.message=Prøv på nytt om noen minutter. Realms prøver å henge med.	#
+hbui.Realms.ErrorModals.rateLimitError.message=Prøv på nytt om noen minutter. Realms prøver å henge med.	#### {StrContains="Realms"}
 hbui.Realms.ErrorModals.rateLimitError.title=Handlingen mislyktes	#
 hbui.Realms.ErrorModals.select=Velg	#
-hbui.Realms.ErrorModals.somethingWentWrong.message=Får ikke kontakt med Realms. Prøv på nytt.	#
+hbui.Realms.ErrorModals.somethingWentWrong.message=Får ikke kontakt med Realms. Prøv på nytt.	#### {StrContains="Realms"}
 hbui.Realms.ErrorModals.somethingWentWrong.title=Noe gikk galt	#
 hbui.Realms.InviteExpiredModals.header=Realminvitasjonen er utløpt	#
 hbui.Realms.InviteExpiredModals.message=Denne invitasjonen er ikke lenger gyldig.	#
 hbui.Realms.InviteExpiredModals.ok=OK	#
 hbui.Realms.LoadingModals.activatingSlot=Bytter plass ...	#
-hbui.Realms.LoadingModals.contactingRealms=Kontakter Realms ...	#
+hbui.Realms.LoadingModals.contactingRealms=Kontakter Realms ...	#### {StrContains="Realms"}
 hbui.Realms.LoadingModals.creatingRealm=Lager realmen …	#
 hbui.Realms.LoadingModals.fetchingRealmInformation=Henter informasjon om realmen …	#
 hbui.Realms.LoadingModals.fetchingSubscriptionInformation=Henter abonnementsinformasjon ...	#
 hbui.Realms.LoadingModals.loading=Laster inn...	#
-hbui.Realms.LoadingModals.loadingRealmsStories=Laster inn Realms-historier …	#
+hbui.Realms.LoadingModals.loadingRealmsStories=Loading Realms Stories... 	#### {StrContains="Realms Stories"}
 hbui.RealmsNewStoryImageSelectRoute.cancel=Avbryt	#
 hbui.RealmsNewStoryImageSelectRoute.deleteScreenshotsLabel.plural=Slett %1$s skjermbilder	#
 hbui.RealmsNewStoryImageSelectRoute.deleteScreenshotsLabel.single=Slett %1$s skjermbilde	#
@@ -2072,8 +2087,8 @@ hbui.RealmsPDPFAQAccordion.clickToExpand=Klikk for å utvide	#
 hbui.RealmsPDPFAQAccordion.enumeration=%1$s av %2$s	#
 hbui.RealmsPDPFAQAccordion.textBlock=Tekstblokk	#
 hbui.RealmsPDPScreen.FAQ.Cost.description1=Du kan abonnere på en Realms-plan:  	#### {StrContains="Realms"}
-hbui.RealmsPDPScreen.FAQ.Cost.description2=Realms Core-plan: %1$s per måned. Legg til et uendelig antall medlemmer, og spill online med 2 andre spillere samtidig.   	#### {StrContains="Realms"}
-hbui.RealmsPDPScreen.FAQ.Cost.description3=Realms Plus-plan: %1$s per måned. Legg til et uendelig antall medlemmer, og spill online med 10 andre spillere samtidig. I tillegg kan du ha det gøy med over 150 elementer fra markedsplass-pass-katalogen helt gratis.   	#### {StrContains="Realms"}
+hbui.RealmsPDPScreen.FAQ.Cost.description2=Realms Core-plan: %1$s per måned. Legg til et uendelig antall medlemmer, og spill online med 2 andre spillere samtidig.   	#### {StrContains="Realms Core"}
+hbui.RealmsPDPScreen.FAQ.Cost.description3=Realms Plus plan: %1$s per month. Add infinite members, play online with 10 other players at the same time. Plus, enjoy over 150 pieces of Marketplace content from the Marketplace Pass catalog for free.   	#### {StrContains="Realms Plus"} {StrContains="Marketplace Pass"}
 hbui.RealmsPDPScreen.FAQ.Cost.title=Hvor mye koster en Realm? 	#### {StrContains="Realm"}
 hbui.RealmsPDPScreen.FAQ.Expiry.description=Du beholder verdenene dine. Du har 18 måneder på deg til å laste dem ned på enheten din etter at abonnementet utløper. Hvis du starter abonnementet på nytt innen denne tiden, får du tilgang til Realmen din igjen i samme stand som da du forlot den.   	#### {StrContains="Realm"}
 hbui.RealmsPDPScreen.FAQ.Expiry.title=Hva skjer med verdenene på min Realm når abonnementet utløper?  	#### {StrContains="Realm"}
@@ -2100,6 +2115,7 @@ hbui.RealmsPDPScreen.promos.header=Hva er Realms? 	#### {StrContains="Realms"}
 hbui.RealmsPDPScreen.promos.persistent.description=Verdener lastet opp til Realmen din, er alltid tilgjengelig for deg og medlemmer i Realmen som du har invitert, når som helst og på enhver enhet. Medlemmer kan til og med spille når du ikke er der.   	#### {StrContains="Realm"}
 hbui.RealmsPDPScreen.promos.persistent.title=Vedvarende flerspillerverdener	#
 hbui.RealmsPDPScreen.splash.buyNow=Kjøp nå  	#### {MaxLength="20"}
+hbui.RealmsPDPScreen.splash.subscribeNow=Subscribe now  	#### {MaxLength="20"}
 hbui.RealmsPDPScreen.splash.text=Driv din egen Minecraft-server! Du angir reglene: Hvem kan bli med, og hvordan du spiller. Medlemmer spiller gratis, selv når du er frakoblet. Lett å sette opp, styre og nå fra alle enheter.	#### {MaxLength="200"}
 hbui.RealmsPDPScreen.splash.title=Din egen server, alltid på nett    	#### {MaxLength="50"}
 hbui.RealmsPDPScreen.splash.tryFree=Prøv gratis    	#### {MaxLength="20"}
@@ -2125,7 +2141,7 @@ hbui.RealmsPlanPickerScreen.featureLine5=Automatiske gratis sikkerhetskopier	#
 hbui.RealmsPlanPickerScreen.featureLine5Narration=Automatiske gratis sikkerhetskopier	#
 hbui.RealmsPlanPickerScreen.featureLine6=Realms-historier         	#### {StrContains="Realms"}
 hbui.RealmsPlanPickerScreen.featureLine7=Gratis 30-dagers prøveabonnement	#
-hbui.RealmsPlanPickerScreen.featureLine8=Inkluderer Marketplace Pass	#
+hbui.RealmsPlanPickerScreen.featureLine8=Inkluderer Marketplace Pass	#### {StrContains="Marketplace Pass"}
 hbui.RealmsPlanPickerScreen.featureNarrationCore=Realms Core-pakkedetaljer. Tekstblokk				#### {StrContains="Realms"}
 hbui.RealmsPlanPickerScreen.featureNarrationPlus=Realms Plus-pakkedetaljer. Tekstblokk				#### {StrContains="Realms"}
 hbui.RealmsPlanPickerScreen.planCoreCardNarration=Loddrett panel. Gruppe. Core %1$s per måned	#
@@ -2137,8 +2153,8 @@ hbui.RealmsPlanPickerScreen.title=Velg en plan	#
 hbui.RealmsPlanPickerScreen.titleNarrationHint=Velg mellom to planer	#
 hbui.RealmsPreviews.create.cancel.beta=Nei, ikke lag betarealm	#
 hbui.RealmsPreviews.create.cancel.preview=Nei, ikke lag forhåndsvisningsrealm	#
-hbui.RealmsPreviews.create.message.beta=Du er i ferd med å lage en gratis betarealm som vil bli sammenkoblet med abonnementet ditt på Realms. Denne nye betarealmen er tilgjengelig så lenge det betalte abonnementet er aktivt. Realmen du har betalt for, blir ikke påvirket.	#
-hbui.RealmsPreviews.create.message.preview=Du er i ferd med å lage en gratis forhåndsvisningsrealm som vil bli sammenkoblet med abonnementet ditt på Realms. Denne nye forhåndsvisningsrealmen er tilgjengelig så lenge det betalte abonnementet er aktivt. Realmen du har betalt for, blir ikke påvirket.	#
+hbui.RealmsPreviews.create.message.beta=You are about to create a free Beta Realm that will be paired with your paid Realms subscription. This new Beta Realm will be accessible for as long as the paid subscription is active. Your paid Realm will not be affected. 	#### {StrContains="Beta Realms"}
+hbui.RealmsPreviews.create.message.preview=You are about to create a free Preview Realm that will be paired with your paid Realms subscription. This new Preview Realm will be accessible for as long as the paid subscription is active. Your paid Realm will not be affected. 	#### {StrContains="Preview Realms"}
 hbui.RealmsPreviews.create.select=Velg	#
 hbui.RealmsPreviews.create.titleAndButtonLabel.beta=Lag betarealm	#
 hbui.RealmsPreviews.create.titleAndButtonLabel.preview=Lag forhåndsvisningsrealm	#
@@ -2148,10 +2164,10 @@ hbui.RealmsPreviews.ReplaceWorld.message=Dette fjerner verdenen i den aktive pla
 hbui.RealmsPreviews.ReplaceWorld.select=Velg	#
 hbui.RealmsPreviews.ReplaceWorld.title=Erstatte verdenen?	#
 hbui.RealmsPreviews.SubscriptionNeeded.close=Lukk	#
-hbui.RealmsPreviews.SubscriptionNeeded.message.beta=Du trenger et betalt Realms-abonnement for å lage en betarealm. Gå til fullversjonen av Minecraft for å kjøpe et abonnement eller starte en gratis prøveperiode.	#
-hbui.RealmsPreviews.SubscriptionNeeded.message.preview=Du trenger et betalt Realms-abonnement for å opprette en forhåndsvisningsrealm. Gå til fullversjonen av Minecraft for å kjøpe et abonnement eller starte en gratis prøveperiode.	#
+hbui.RealmsPreviews.SubscriptionNeeded.message.beta=Du trenger et betalt Realms-abonnement for å lage en betarealm. Gå til fullversjonen av Minecraft for å kjøpe et abonnement eller starte en gratis prøveperiode.	#### {StrContains="Realms"}
+hbui.RealmsPreviews.SubscriptionNeeded.message.preview=Du trenger et betalt Realms-abonnement for å opprette en forhåndsvisningsrealm. Gå til fullversjonen av Minecraft for å kjøpe et abonnement eller starte en gratis prøveperiode.	#### {StrContains="Realms"}
 hbui.RealmsPreviews.SubscriptionNeeded.select=Velg	#
-hbui.RealmsPreviews.SubscriptionNeeded.title=Abonnement på Realms er nødvendig	#
+hbui.RealmsPreviews.SubscriptionNeeded.title=Abonnement på Realms er nødvendig	#### {StrContains="Realms"}
 hbui.RealmsPurchaseSubscriptionRoute.backHint=Dette tar deg tilbake til forrige skjerm	#
 hbui.RealmsPurchaseSubscriptionRoute.banner.heading.core=Kjerne	#
 hbui.RealmsPurchaseSubscriptionRoute.banner.heading.plus=Pluss	#
@@ -2162,10 +2178,10 @@ hbui.RealmsPurchaseSubscriptionRoute.banner.subheading.trial.narration=Gratis 30
 hbui.RealmsPurchaseSubscriptionRoute.checkboxLabel=Jeg godtar	#
 hbui.RealmsPurchaseSubscriptionRoute.ErrorModals.close=Lukk	#
 hbui.RealmsPurchaseSubscriptionRoute.ErrorModals.select=Velg	#
-hbui.RealmsPurchaseSubscriptionRoute.header.core=Opprett en Realms Core-server	#
-hbui.RealmsPurchaseSubscriptionRoute.header.plus=Opprett en Realms Plus-server	#
+hbui.RealmsPurchaseSubscriptionRoute.header.core=Opprett en Realms Core-server	#### {StrContains="Realms Core"}
+hbui.RealmsPurchaseSubscriptionRoute.header.plus=Opprett en Realms Plus-server	#### {StrContains="Realms Plus"}
 hbui.RealmsPurchaseSubscriptionRoute.header.renew=Forny realm-abonnement	#
-hbui.RealmsPurchaseSubscriptionRoute.header.trial=Gratis prøveperiode for Realms Plus	#
+hbui.RealmsPurchaseSubscriptionRoute.header.trial=Gratis prøveperiode for Realms Plus	#### {StrContains="Realms Plus"}
 hbui.RealmsPurchaseSubscriptionRoute.heroButton.create=Lag for %1$s per måned	#
 hbui.RealmsPurchaseSubscriptionRoute.heroButton.renew=Forny for %1$s per måned	#
 hbui.RealmsPurchaseSubscriptionRoute.heroButton.trial=Start gratis prøveperiode	#
@@ -2203,7 +2219,7 @@ hbui.RealmsStories.errorMessageTitle=Kan ikke laste inn Realm-data.	#
 hbui.RealmsStories.errorModal.commentPostFailedMessage=Kommentaren din ble ikke lagt ut på denne realm-historien.	#
 hbui.RealmsStories.errorModal.continue=Fortsett	#
 hbui.RealmsStories.errorModal.defaultErrorMessage=Det har oppstått en feil.	#
-hbui.RealmsStories.errorModal.header=Feil med Realms-historier	#
+hbui.RealmsStories.errorModal.header=Realms Stories Error 	#### {StrContains="Realms Stories"}
 hbui.RealmsStories.errorModal.storyPostFailedMessage=Historien din ble ikke lagt ut på denne realmens feed.	#
 hbui.RealmsStories.feed=Feed	#
 hbui.RealmsStories.feed.addStory=Tilføy historie	#### The term 'Story' represents a social feature, similar to a 'Post' on social media. Translations should use a term more fitting for a social posting rather than a story book, for example. {MaxLength='15'}
@@ -2245,6 +2261,8 @@ hbui.RealmsStories.feedEvent.medium.FirstAbandonedMineshaftFound=%1$s oppdaget e
 hbui.RealmsStories.feedEvent.medium.FirstAncientCityFound=%1$s oppdaget en eldgammel by	#
 hbui.RealmsStories.feedEvent.medium.FirstBadlandsFound=%1$s oppdaget en steinørken	#
 hbui.RealmsStories.feedEvent.medium.FirstConduit=%1$s kommanderer nå havet	#
+hbui.RealmsStories.feedEvent.medium.FirstCraftedNetherite=%1$s oppgraderte til underverdenstein	#
+hbui.RealmsStories.feedEvent.medium.FirstCraftedNetherite.grouped=%1$s oppgraderte til underverdenstein		#### 1 = List of player names ex. Player1, Player2, and Player 3 upgraded to Netherite
 hbui.RealmsStories.feedEvent.medium.FirstDiamondFound=%1$s fant en diamant	#
 hbui.RealmsStories.feedEvent.medium.FirstEnchantment=%1$s oppdaget fortryllelse	#
 hbui.RealmsStories.feedEvent.medium.FirstEnchantment.grouped=%1$s oppdaget fortryllelse		#### 1 = List of player names ex. Player1, Player2, and Player 3 discovered enchanting
@@ -2252,8 +2270,6 @@ hbui.RealmsStories.feedEvent.medium.FirstEndPortal=%1$s reiste til Slutten?	#
 hbui.RealmsStories.feedEvent.medium.FirstFullyExploredMap=%1$s begynte å kartlegge verden	#
 hbui.RealmsStories.feedEvent.medium.FirstMushroomFieldFound=%1$s oppdaget en soppåker	#
 hbui.RealmsStories.feedEvent.medium.FirstNetherFortressFound=%1$s oppdaget en underverdenfestning	#
-hbui.RealmsStories.feedEvent.medium.FirstNetherite=%1$s oppgraderte til underverdenstein	#
-hbui.RealmsStories.feedEvent.medium.FirstNetherite.grouped=%1$s oppgraderte til underverdenstein		#### 1 = List of player names ex. Player1, Player2, and Player 3 upgraded to Netherite
 hbui.RealmsStories.feedEvent.medium.FirstNetherPortalLit=%1$s lagde en portal til underverdenen	#
 hbui.RealmsStories.feedEvent.medium.FirstPeakMountainFound=%1$s besteg en fjelltopp	#
 hbui.RealmsStories.feedEvent.medium.FirstPillagerOutpostFound=%1$s oppdaget en røverutpost	#
@@ -2359,13 +2375,13 @@ hbui.RealmsStories.members.leastRecentlyPlayed=Minst spilt nylig	#
 hbui.RealmsStories.members.manage=Administrer medlemmer	#
 hbui.RealmsStories.members.member=Medlem	#
 hbui.RealmsStories.members.noMembersFound=Fant ingen medlemmer	#
-hbui.RealmsStories.members.notMemberRealmsStories=Ikke medlem av Realms-historier	#
+hbui.RealmsStories.members.notMemberRealmsStories=Not a member of Realms Stories 	#### {StrContains="Realms Stories"}
 hbui.RealmsStories.members.onlineMembers=Påloggede medlemmer	#
 hbui.RealmsStories.members.operator=Operatør	#
 hbui.RealmsStories.members.optedOutMembers=Frakoblede medlemmer	#
 hbui.RealmsStories.members.realmMembers=Medlemmer i realmen	#
 hbui.RealmsStories.members.realmOwner=Realm-eier	#
-hbui.RealmsStories.members.realmStoriesMembers=Medlemmer av Realms-historier	#
+hbui.RealmsStories.members.realmStoriesMembers=Realms Stories members 	#### {StrContains="Realms Stories"}
 hbui.RealmsStories.members.recentlyPlayed=Nylig spilt	#
 hbui.RealmsStories.members.search=Søk etter medlemmer av realmen	#
 hbui.RealmsStories.members.searchResult.hint.cleared=Søkefilteret er tømt	#
@@ -2385,21 +2401,21 @@ hbui.RealmsStories.messages.timelineEmpty.body=Spill på realmen for å generere
 hbui.RealmsStories.messages.timelineEmpty.title=Ingen data tilgjengelig	#
 hbui.RealmsStories.messages.timelineOff.body=Tidslinjen er ikke tilgjengelig på denne realmen.	#
 hbui.RealmsStories.messages.timelineOff.title=Tidslinjen er deaktivert	#
-hbui.RealmsStories.messages.title=Kan ikke laste inn Realms-historier!	#
+hbui.RealmsStories.messages.title=Realms Stories couldn't load! 	#### {StrContains="Realms Stories"}
 hbui.RealmsStories.messages.titleWithArg=Kan ikke laste inn %1$s!	#
 hbui.RealmsStories.messages.unknownErrorBody=Det oppstod en ukjent feil. Prøv på nytt.	#
 hbui.RealmsStories.narration.settings=Innstillinger. Knapp	#
-hbui.RealmsStories.narration.title=Realms-historier	#
+hbui.RealmsStories.narration.title=Realms Stories 	#### {StrContains="Realms Stories"}
 hbui.RealmsStories.narrationPlayerXOfY=%1$s av %2$s	#
 hbui.RealmsStories.new=Ny	#
 hbui.RealmsStories.oneUnreadStoryHint=Du har 1 ulest historie	#
 hbui.RealmsStories.OptInModal.message=Du kan nå dele historier til historiefeeden, bli kjent med andre som er på realmen med medlemmer-fanen, og koordinere spilltider med dem ved hjelp av tidslinjen. Ha det gøy!	#
-hbui.RealmsStories.OptInModal.openStoriesButton=Åpne Realms-historier	#
-hbui.RealmsStories.OptInModal.title=Du er inne! Velkommen til Realms-historier	#
+hbui.RealmsStories.OptInModal.openStoriesButton=Open Realms Stories 	#### {StrContains="Realms Stories"}
+hbui.RealmsStories.OptInModal.title=You're in! Welcome to Realms Stories 	#### {StrContains="Realms Stories"}
 hbui.RealmsStories.OptInNoticeModal.gotItButton=Forstått!	#
-hbui.RealmsStories.OptInNoticeModal.message.p1=Du har logget deg på ... men før du kan bruke Realms-historier, må realm-eieren bli med. Be hen om å logge på!	#
+hbui.RealmsStories.OptInNoticeModal.message.p1=You've opted in... but before you can use Realms Stories, the Realm owner needs to join. Ask them to opt in! 	#### {StrContains="Realms Stories"}
 hbui.RealmsStories.OptInNoticeModal.message.p2=Når hen har gjort det, kan du dele historier på historiefeeden, bli kjent med andre som er på realmen med medlemmer-fanen, og koordinere spilltider med dem ved hjelp av tidslinjen.	#
-hbui.RealmsStories.OptInNoticeModal.title=Au! Du kan ikke få tilgang til Realms-historier	#
+hbui.RealmsStories.OptInNoticeModal.title=Oops! You cannot access Realms Stories 	#### {StrContains="Realms Stories"}
 hbui.RealmsStories.OptInScreen.learnMore.dataType=Tekstblokk	#
 hbui.RealmsStories.OptInScreen.learnMore.history.body.1=Se når andre medlemmer spiller, slik at du kan sjekke skaperverkene deres eller planlegge å bli med dem neste gang.	#
 hbui.RealmsStories.OptInScreen.learnMore.history.body.2=Få med deg hva andre spillere gjør, og når de spiller. Spill mer sammen!	#
@@ -2410,10 +2426,10 @@ hbui.RealmsStories.OptInScreen.learnMore.members.title=Bli kjent med medlemmene 
 hbui.RealmsStories.OptInScreen.learnMore.social.body.1=Publiser dine egne historier i historiefeeden, fortell andre hva du driver med, del eventyrene og skaperverkene dine.	#
 hbui.RealmsStories.OptInScreen.learnMore.social.body.2=Lik og kommenter det andre deler, og feir hverandre!	#
 hbui.RealmsStories.OptInScreen.learnMore.social.title=Del historier med venner	#
-hbui.RealmsStories.OptInScreen.learnMore.title=Finn ut mer om Realms-historier	#
+hbui.RealmsStories.OptInScreen.learnMore.title=Learn more about Realms Stories 	#### {StrContains="Realms Stories"}
 hbui.RealmsStories.OptInScreen.maybeLaterButton=Kanskje senere	#
 hbui.RealmsStories.OptInScreen.optInButton=Jeg vil bli med	#
-hbui.RealmsStories.OptInScreen.optInButton.hint=Dette gjør at du blir med i Realms-historier	#
+hbui.RealmsStories.OptInScreen.optInButton.hint=This will opt you into Realms Stories 	#### {StrContains="Realms Stories"}
 hbui.RealmsStories.OptInScreen.screen=Skjerm	#
 hbui.RealmsStories.OptInScreen.title=Vil DU BLI MED I REALMS-HISTORIER?!	#
 hbui.RealmsStories.OptInScreen.title.suffix=tittel	#
@@ -2498,7 +2514,7 @@ hbui.RealmsStories.settings.personalSettings.badgeNotifSwitch.title=Merkevarsler
 hbui.RealmsStories.settings.personalSettings.description=Disse innstillingene gjelder bare for deg i denne realmen.	#
 hbui.RealmsStories.settings.personalSettings.header=1. Personlige innstillinger	#
 hbui.RealmsStories.settings.personalSettings.member.header=Personlige innstillinger	#
-hbui.RealmsStories.settings.realmWideSettings.description=Disse innstillingene gjelder for alle i denne realmen som har blitt med i Realms-historier.	#
+hbui.RealmsStories.settings.realmWideSettings.description=These settings apply to everyone in this Realm who has joined Realms Stories. 	#### {StrContains="Realms Stories"}
 hbui.RealmsStories.settings.realmWideSettings.header=2. Innstillinger for hele realmen	#
 hbui.RealmsStories.settings.realmWideSettings.member.header=Innstillinger for hele realmen	#
 hbui.RealmsStories.settings.realmWideSettings.playerTimeline.description=La alle se tidslinjen.	#
@@ -2510,10 +2526,10 @@ hbui.RealmsStories.settings.realmWideSettings.storyCoordinates.title=Realmarrang
 hbui.RealmsStories.settings.screen=%1$s-skjerm	#
 hbui.RealmsStories.settings.screenheader=%1$s historier-innstillinger-skjerm	#
 hbui.RealmsStories.settings.section=Del	#
-hbui.RealmsStories.ShareLink.message=Nå kan du begynne å spille med vennene dine i denne realmen. Du kan også ta skjermbilder ved hjelp av kameraknappen og dele dem i Realms-historier. Kos deg!	#
-hbui.RealmsStories.ShareLink.openStories=Sjekk ut Realms-historier	#
+hbui.RealmsStories.ShareLink.message=Now you can start playing with your friends in this Realm. You can also take screenshots using the camera button and share them in Realms Stories. Enjoy! 	#### {StrContains="Realms Stories"}
+hbui.RealmsStories.ShareLink.openStories=Check out Realms Stories 	#### {StrContains="Realms Stories"}
 hbui.RealmsStories.ShareLink.playNow=Spill nå	#
-hbui.RealmsStories.ShareLink.title=Du er inne! Velkommen til Realms	#
+hbui.RealmsStories.ShareLink.title=Du er inne! Velkommen til Realms	#### {StrContains="Realms"}
 hbui.RealmsStories.storyFeed=Historiefeed	#
 hbui.RealmsStories.timeline=Tidslinje	#
 hbui.RealmsStories.Timeline.Information.close=Lukk	#
@@ -2756,12 +2772,12 @@ hbui.StartFromTemplateRoute.InitializationModal.message=Kobler til …	#
 hbui.StartFromTemplateRoute.InitializationModal.title=Starter nedlastingen	#
 hbui.StartFromTemplateRoute.InstallModal.message=Installasjon startet	#
 hbui.StartFromTemplateRoute.InstallModal.title=Installerer innhold (2 av 2)	#
-hbui.StartFromTemplateRoute.MarketplacePass.description=Opplev mer med verdensmaler for markedsplass-pass-abonnenter.	#
+hbui.StartFromTemplateRoute.MarketplacePass.description=Go further with world templates for Marketplace Pass subscribers. 	#### {StrContains="Marketplace Pass"}
 hbui.StartFromTemplateRoute.MarketplacePass.imageNarration=Markedsplass-pass	#
 hbui.StartFromTemplateRoute.MarketplacePass.imageRole=Bilde	#
 hbui.StartFromTemplateRoute.MarketplacePass.noInternetMessage=Sjekk internettforbindelsen din for å dra til markedsplassen.	#
 hbui.StartFromTemplateRoute.MarketplacePass.NoTemplatesMessage.button=Gå til innstillinger	#
-hbui.StartFromTemplateRoute.MarketplacePass.NoTemplatesMessage.description=Gå til feilsøkingsfanen for markedsplassen, sett Oppdagelsesmiljø for markedsplassen til Produksjon og start på nytt for å aktivere skjermen for Markedsplass-pass.	#
+hbui.StartFromTemplateRoute.MarketplacePass.NoTemplatesMessage.description=To enable the Marketplace Pass screen, go to the Marketplace Debug tab, set the Marketplace Discovery Environment to Production and restart. 	#### {StrContains="Marketplace Pass"}
 hbui.StartFromTemplateRoute.MarketplacePass.NoTemplatesMessage.title=Maler er ikke tilgjengelige	#
 hbui.StartFromTemplateRoute.MarketplacePass.role=Vertikal undermeny	#
 hbui.StartFromTemplateRoute.MarketplacePass.title=Markedsplass-pass-maler	#
@@ -3206,7 +3222,7 @@ hbui.EditorPalette.title=Palett	#
 hbui.EditorPaletteItem.addBlockButtonLabel=Legg til blokk	#
 hbui.EditorPaletteItem.addButton=Legg til blokk	#
 hbui.EditorPaletteItem.balanceButton=Balansevekter	#
-hbui.EditorPaletteItem.blockColumnHeader=Blokker	#
+hbui.EditorPaletteItem.blockColumnHeader=Blokk	#
 hbui.EditorPaletteItem.convertToProbableIconLabel=Lag liste	#
 hbui.EditorPaletteItem.count=%1$s av %2$s	#
 hbui.EditorPaletteItem.probableBlockListType=Sannsynlig blokkliste	#

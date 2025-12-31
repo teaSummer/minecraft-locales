@@ -104,8 +104,8 @@ hbui.AddFriendAccordion.narration.gamertagSearchSuggestions=%1$s 条搜索结果
 hbui.AddFriendAccordion.narration.noSuggestionsFound=当前没有建议	#
 hbui.AddFriendAccordion.narration.noSuggestionsMessagefollowers=您已经添加了所有关注者！请稍后再来查看。	#
 hbui.AddFriendAccordion.narration.noSuggestionsMessagegamertagSearch=请优化搜索。	#
-hbui.AddFriendAccordion.narration.noSuggestionsMessagerecentlyPlayedWith=与 Realms 或服务器上的人一起玩，以获得更多建议！	#
-hbui.AddFriendAccordion.narration.noSuggestionsMessagerecommendedFriends=与 Realms 或服务器上的人一起玩，以获得更多建议！	#
+hbui.AddFriendAccordion.narration.noSuggestionsMessagerecentlyPlayedWith=与 Realms 或服务器上的人一起玩，以获得更多建议！	#### {StrContains="Realms"}
+hbui.AddFriendAccordion.narration.noSuggestionsMessagerecommendedFriends=与 Realms 或服务器上的人一起玩，以获得更多建议！	#### {StrContains="Realms"}
 hbui.AddFriendAccordion.narration.playerHint=按下以查看档案。使用向右箭头执行其他操作。	#
 hbui.AddFriendAccordion.narration.recentlyPlayedWithSuggestions=%1$s 最近一起玩且给出建议的玩家	#
 hbui.AddFriendAccordion.narration.recommendedFriendsSuggestions=%1$s 推荐好友建议	#
@@ -218,8 +218,8 @@ hbui.ChooseRealmRoute.chooseAPreviewRealm=1. 选择预览版 Realm	#
 hbui.ChooseRealmRoute.chooseARealmSubscription=1. 选择订阅	#
 hbui.ChooseRealmRoute.creative=创造	#
 hbui.ChooseRealmRoute.emptyState.message=我们遇到了一个未知错误，请重试。	#
-hbui.ChooseRealmRoute.emptyState.noRealmsErrorTitle.beta=测试版 Realms 无法加载！	#
-hbui.ChooseRealmRoute.emptyState.noRealmsErrorTitle.preview=预览版 Realms 无法加载！	#
+hbui.ChooseRealmRoute.emptyState.noRealmsErrorTitle.beta=Beta Realms couldn't load! 	#### {StrContains="Beta Realms"}
+hbui.ChooseRealmRoute.emptyState.noRealmsErrorTitle.preview=Preview Realms couldn't load! 	#### {StrContains="Preview Realms"}
 hbui.ChooseRealmRoute.emptyState.noSubscriptionErrorTitle=订阅无法加载！	#
 hbui.ChooseRealmRoute.emptyState.tryAgain=再试一次	#
 hbui.ChooseRealmRoute.pairedWith=配对对象：%s	#
@@ -961,15 +961,15 @@ hbui.CreateNewWorld.resourcePacks.inactivePacksEmptyTitle=您尚未拥有任何�
 hbui.CreateNewWorld.resourcePacks.inactivePacksEmptyTitle.edu=您没有任何资源包	#
 hbui.CreateNewWorld.resourcePacks.inactivePacksOnExpandAccordionHint=向下导航以访问您拥有的包	#
 hbui.CreateNewWorld.resourcePacks.localPacksListHeader=本地	#
-hbui.CreateNewWorld.resourcePacks.marketplacePassPacksAccordionHeader=Marketplace Pass	#
-hbui.CreateNewWorld.resourcePacks.marketplacePassPacksAccordionHint=展开以访问所有 Marketplace Pass 包	#
+hbui.CreateNewWorld.resourcePacks.marketplacePassPacksAccordionHeader=Marketplace Pass	#### {StrContains="Marketplace Pass"}
+hbui.CreateNewWorld.resourcePacks.marketplacePassPacksAccordionHint=展开以访问所有 Marketplace Pass 包	#### {StrContains="Marketplace Pass"}
 hbui.CreateNewWorld.resourcePacks.marketplacePassPacksEmptyBody.edu=您创建和安装的资源包可在此处激活并在您的世界中使用	#
 hbui.CreateNewWorld.resourcePacks.marketplacePassPacksEmptyTitle=无更多可用的资源包	#
-hbui.CreateNewWorld.resourcePacks.marketplacePassPacksOnExpandAccordionHint=向下导航以访问 Marketplace Pass 包	#
-hbui.CreateNewWorld.resourcePacks.marketplacePassPromotionBody=通过新的 Marketplace Pass 订阅访问 150+ 件令人兴奋的内容！（Realms Plus 现在包括 Marketplace Pass 内容）	#
-hbui.CreateNewWorld.resourcePacks.marketplacePassPromotionButtonInputLegend=Marketplace Pass	#
+hbui.CreateNewWorld.resourcePacks.marketplacePassPacksOnExpandAccordionHint=向下导航以访问 Marketplace Pass 包	#### {StrContains="Marketplace Pass"}
+hbui.CreateNewWorld.resourcePacks.marketplacePassPromotionBody=通过新的 Marketplace Pass 订阅访问 150+ 件令人兴奋的内容！（Realms Plus 现在包括 Marketplace Pass 内容）	#### {StrContains="Realms Plus"} {StrContains="Marketplace Pass"}
+hbui.CreateNewWorld.resourcePacks.marketplacePassPromotionButtonInputLegend=Marketplace Pass	#### {StrContains="Marketplace Pass"}
 hbui.CreateNewWorld.resourcePacks.marketplacePassPromotionButtonLabel=了解更多	#
-hbui.CreateNewWorld.resourcePacks.marketplacePassPromotionTitle=您没有 Marketplace Pass 订阅！	#
+hbui.CreateNewWorld.resourcePacks.marketplacePassPromotionTitle=您没有 Marketplace Pass 订阅！	#### {StrContains="Marketplace Pass"}
 hbui.CreateNewWorld.resourcePacks.missingDependencyBody=此资源包缺少一个或多个依赖项。是否仍要应用？	#
 hbui.CreateNewWorld.resourcePacks.missingDependencyNewBody=此包缺少一个或多个依赖项，激活包可能会破坏您的体验	#
 hbui.CreateNewWorld.resourcePacks.missingDependencyTitle=缺少依赖项	#
@@ -1010,12 +1010,12 @@ hbui.CreateNewWorld.scriptingCoding.codeBuilderTitle=代码编辑器	#
 hbui.CreateNewWorld.scriptingCoding.narrationComponentTypeSectionHeader=组	#
 hbui.CreateNewWorld.scriptingCoding.settingsTitle=脚本和编码设置	#
 hbui.CreateNewWorld.signInPromptWorldOnRealmModal.cancel=取消	#
-hbui.CreateNewWorld.signInPromptWorldOnRealmModal.msaGuestCreateWorld.message=您需要一个 Microsoft 账号才能在 Realms 上创建世界。	#
-hbui.CreateNewWorld.signInPromptWorldOnRealmModal.msaGuestEditWorld.message=您需要一个 Microsoft 账户才能在 Realms 上游玩。	#
-hbui.CreateNewWorld.signInPromptWorldOnRealmModal.platformGuestCreate.nintendo.message=您需要登录您的 Nintendo 账号才能在 Realms 上创建世界。	#
-hbui.CreateNewWorld.signInPromptWorldOnRealmModal.platformGuestCreate.playStation.message=您需要登录您的 PlayStation™Network 账号才能在 Realms 上创建世界。		#### CertRequirement: [account for PlayStation™Network]
-hbui.CreateNewWorld.signInPromptWorldOnRealmModal.platformGuestEdit.nintendo.message=您需要登录您的 Nintendo 账号才能在 Realms 上游玩。	#
-hbui.CreateNewWorld.signInPromptWorldOnRealmModal.platformGuestEdit.playStation.message=您需要登录您的 PlayStation™Network 账户才能在 Realms 上游玩。		#### CertRequirement: [account for PlayStation™Network]
+hbui.CreateNewWorld.signInPromptWorldOnRealmModal.msaGuestCreateWorld.message=您需要一个 Microsoft 账号才能在 Realms 上创建世界。	#### {StrContains="Realms"}
+hbui.CreateNewWorld.signInPromptWorldOnRealmModal.msaGuestEditWorld.message=您需要一个 Microsoft 账户才能在 Realms 上游玩。	#### {StrContains="Realms"}
+hbui.CreateNewWorld.signInPromptWorldOnRealmModal.platformGuestCreate.nintendo.message=您需要登录您的 Nintendo 账号才能在 Realms 上创建世界。	#### {StrContains="Realms"}
+hbui.CreateNewWorld.signInPromptWorldOnRealmModal.platformGuestCreate.playStation.message=您需要登录您的 PlayStation™Network 账号才能在 Realms 上创建世界。		#### CertRequirement: [account for PlayStation™Network] ### {StrContains="Realms"}
+hbui.CreateNewWorld.signInPromptWorldOnRealmModal.platformGuestEdit.nintendo.message=您需要登录您的 Nintendo 账号才能在 Realms 上游玩。	#### {StrContains="Realms"}
+hbui.CreateNewWorld.signInPromptWorldOnRealmModal.platformGuestEdit.playStation.message=您需要登录您的 PlayStation™Network 账户才能在 Realms 上游玩。		#### CertRequirement: [account for PlayStation™Network] ### {StrContains="Realms"}
 hbui.CreateNewWorld.signInPromptWorldOnRealmModal.signIn=登录	#
 hbui.CreateNewWorld.signInPromptWorldOnRealmModal.title=需要登录	#
 hbui.CreateNewWorld.tabContainerNarrationSuffix=垂直子菜单	#
@@ -1024,12 +1024,18 @@ hbui.CreateNewWorld.unlockSettingsModal.keepSettings=保留初始设置	#
 hbui.CreateNewWorld.unlockSettingsModal.message=如果您解锁所有世界设置，则可能会破坏创建者的预期体验。	#
 hbui.CreateNewWorld.unlockSettingsModal.title=解锁所有世界设置	#
 hbui.CreateNewWorld.unlockSettingsModal.unlock=直接解锁	#
+hbui.CreateNewWorld.upsellModal.back=Back	#
+hbui.CreateNewWorld.upsellModal.bodyNintendo=You require a Nintendo Switch Online subscription to play on any cross-play multiplayer game.	#
+hbui.CreateNewWorld.upsellModal.bodyPlaystation=您需要高级订阅服务才能进行任何跨平台多人游戏。	#
+hbui.CreateNewWorld.upsellModal.bodyXbox=You require a Xbox Gamepass Core subscription to play on any cross-play multiplayer game.	#
+hbui.CreateNewWorld.upsellModal.primaryButton=Learn more	#
+hbui.CreateNewWorld.upsellModal.title=Subscription required	#
 hbui.CreateNewWorldSideMenu.advancedTabLabel=高级	#
 hbui.CreateNewWorldSideMenu.behaviorPacksTabLabel=行为包	#
 hbui.CreateNewWorldSideMenu.cheatsTabLabel=无敌模式	#
 hbui.CreateNewWorldSideMenu.create=创造	#
 hbui.CreateNewWorldSideMenu.create.edu=游戏	#
-hbui.CreateNewWorldSideMenu.createOnRealm=在 Realms 上创建	#
+hbui.CreateNewWorldSideMenu.createOnRealm=在 Realms 上创建	#### {StrContains="Realms"}
 hbui.CreateNewWorldSideMenu.experimentalFeaturesTabLabel=实验性游戏内容	#
 hbui.CreateNewWorldSideMenu.generalTabLabel=通用	#
 hbui.CreateNewWorldSideMenu.inputLegendSelect=选择	#
@@ -1088,9 +1094,9 @@ hbui.EditWorld.notificationToasts.saved=%1$s 已保存	#
 hbui.EditWorld.notificationToasts.worldConverted=世界已更新	#
 hbui.EditWorld.playOnRealmsErrorModal.closeButton=关闭	#
 hbui.EditWorld.playOnRealmsErrorModal.crossPlatformRestricted.message=您无法在您的 Realm 上玩这个世界，因为它使用了无法在跨平台多人游戏中使用的资源包。	#
-hbui.EditWorld.playOnRealmsErrorModal.crossPlatformRestricted.message2=请移除该资源包，以便能够在 Realms 上玩。	#
+hbui.EditWorld.playOnRealmsErrorModal.crossPlatformRestricted.message2=请移除该资源包，以便能够在 Realms 上玩。	#### {StrContains="Realms"}
 hbui.EditWorld.playOnRealmsErrorModal.crossPlatformRestricted.title=不支持的资源包	#
-hbui.EditWorld.playOnRealmsErrorModal.memberOfTooManyRealms.message=您已达到 Realms 成员资格限制。每个账户最多可以关联 1000 个 Xbox live 俱乐部，其中包括 Realms。	#
+hbui.EditWorld.playOnRealmsErrorModal.memberOfTooManyRealms.message=您已达到 Realms 成员资格限制。每个账户最多可以关联 1000 个 Xbox live 俱乐部，其中包括 Realms。	#### {StrContains="Realms"}
 hbui.EditWorld.playOnRealmsErrorModal.memberOfTooManyRealms.title=无法加入 Realm	#
 hbui.EditWorld.playOnRealmsErrorModal.unknown.errorCode=错误代码：%1$s	#
 hbui.EditWorld.playOnRealmsErrorModal.unknown.message=请稍后再试。	#
@@ -1111,8 +1117,8 @@ hbui.ExportWorld.error.needToRemoveVRHeadset.title=请断开 VR 设备，然后�
 hbui.ExportWorld.error.unknownError.title=发生错误。请稍后再试	#
 hbui.FirstTimeSignInRoute.altSignInList1=保存您的进度和购买物品	#
 hbui.FirstTimeSignInRoute.altSignInList2=使用双因素身份验证保护您的帐户	#
-hbui.FirstTimeSignInRoute.altSignInList3=访问成就、Realms、服务器和市场	#
-hbui.FirstTimeSignInRoute.altSignInList3PS=访问 Realms、服务器和市场	#
+hbui.FirstTimeSignInRoute.altSignInList3=访问成就、Realms、服务器和市场	#### {StrContains="Realms"}
+hbui.FirstTimeSignInRoute.altSignInList3PS=访问 Realms、服务器和市场	#### {StrContains="Realms"}
 hbui.FirstTimeSignInRoute.altSignInPrompt=登录或免费注册以解锁这些功能及更多功能：	#
 hbui.FirstTimeSignInRoute.altSignInPromptMobile=登录或免费注册以保存您的进度、获得成就、访问服务器等等	#
 hbui.FirstTimeSignInRoute.createAccountPrompt=没有 Microsoft 帐户？立即免费创建一个！	#
@@ -1150,6 +1156,7 @@ hbui.FriendsDrawer.AddFriendsOnlineSafety.text=由于账户设置限制，您无
 hbui.FriendsDrawer.AddFriendsOnlineSafety.textParental=由于父母监控的限制，您无法添加好友。使用父母监控中的“在线安全”查看和管理您的多人游戏设置。	#
 hbui.FriendsDrawer.AddFriendsOnlineSafety.title=您需要许可！	#
 hbui.FriendsDrawer.backButton=返回	#
+hbui.FriendsDrawer.bannerLogInMicrosoft=登录或注册 Microsoft	#
 hbui.FriendsDrawer.closeButtonNarrationHint=向下导航查看更多选项	#
 hbui.FriendsDrawer.closeDrawerShortcutInputLegend=关闭好友	#
 hbui.FriendsDrawer.emptyStateBody=我们仍在开发此功能。请稍后再来查看！	#
@@ -1163,9 +1170,16 @@ hbui.FriendsDrawer.joinFriendServerErrorModal.blockedByVersion.title=游戏版�
 hbui.FriendsDrawer.joinFriendServerErrorModal.cancel=取消	#
 hbui.FriendsDrawer.joinFriendServerErrorModal.UnknownError.message=未知错误	#
 hbui.FriendsDrawer.joinFriendServerErrorModal.UnknownError.title=出错了	#
+hbui.FriendsDrawer.msaGuestNintendoBanner=You need a Microsoft account and a Nintendo Switch Online subscription to play cross-play multiplayer.	#
+hbui.FriendsDrawer.msaGuestPlaystationBanner=You need a Microsoft account and a premium subscription to play cross-play multiplayer.	#
+hbui.FriendsDrawer.msaGuestPremiumBanner=You need a Microsoft account to play cross-play multiplayer.	#
 hbui.FriendsDrawer.multiplayerBanner.learnMore=了解更多	#
 hbui.FriendsDrawer.multiplayerBanner.text=您已禁用多人游戏。	#
 hbui.FriendsDrawer.multiplayerBanner.textParental=多人游戏已禁用。	#
+hbui.FriendsDrawer.multiplayerRequireAccountModal.backButtonLabel=返回	#
+hbui.FriendsDrawer.multiplayerRequireAccountModal.loginButtonLabel=登录或注册	#
+hbui.FriendsDrawer.multiplayerRequireAccountModal.text=You require a Microsoft Account to play on any cross-play multiplayer game.	#
+hbui.FriendsDrawer.multiplayerRequireAccountModal.title=Account required	#
 hbui.FriendsDrawer.noInternetMessage=请检查您的互联网连接，以查看好友。	#
 hbui.FriendsDrawer.notLoggedInMessage.button=立即登录	#
 hbui.FriendsDrawer.notLoggedInMessage.inputLegend=登录	#
@@ -1214,7 +1228,7 @@ hbui.InboxListItem.narration.readPost=已读帖子	#
 hbui.InboxListItem.narration.reject=拒绝	#
 hbui.InboxListItem.narration.unreadPost=未读帖子	#
 hbui.InboxListItem.purchased=已购买	#
-hbui.InboxListItem.realms=Realms	#
+hbui.InboxListItem.realms=Realms 	#### {StrContains="Realms"}
 hbui.InboxListItem.reject=拒绝	#
 hbui.InboxListItem.rejected=已拒绝	#
 hbui.InboxListItem.remove=移除	#
@@ -1336,8 +1350,8 @@ hbui.JoinRealmsServerError.invalidMultiplayerSkin.changeSkin=更改皮肤	#
 hbui.JoinRealmsServerError.invalidMultiplayerSkin.close=关闭	#
 hbui.JoinRealmsServerError.invalidMultiplayerSkin.title=不允许使用皮肤	#
 hbui.JoinRealmsServerError.inviteLinkNotFound=此邀请链接无效。	#
-hbui.JoinRealmsServerError.memberOfTooManyRealms=您已达到可以加入的 Realms 限制。	#
-hbui.JoinRealmsServerError.memberOfTooManyRealms.message=您已达到 Realms 成员资格限制。每个账户最多可以关联 1000 个 Xbox live 俱乐部，其中包括 Realms。	#
+hbui.JoinRealmsServerError.memberOfTooManyRealms=您已达到可以加入的 Realms 限制。	#### {StrContains="Realms"}
+hbui.JoinRealmsServerError.memberOfTooManyRealms.message=您已达到 Realms 成员资格限制。每个账户最多可以关联 1000 个 Xbox live 俱乐部，其中包括 Realms。	#### {StrContains="Realms"}
 hbui.JoinRealmsServerError.memberOfTooManyRealms.title=无法加入 Realm	#
 hbui.JoinRealmsServerError.noPlatformSubscription.nintendo.body=您没有 Nintendo Switch Online 成员资格。您需要它才能在线玩。	#
 hbui.JoinRealmsServerError.noPlatformSubscription.nintendo.moreInformation=更多信息	#
@@ -1366,7 +1380,7 @@ hbui.JoinRealmsServerTransient.caption=您可以随时离开他们的 Realm。	#
 hbui.JoinRealmsServerTransient.joinButtonLabel=加入	#
 hbui.JoinRealmsServerTransient.joinRealmModal=正在加入 Realm	#
 hbui.JoinRealmsServerTransient.ownerInformation=是否要加入%1$s的 Realm？	#
-hbui.JoinRealmsServerTransient.successSnackbar=已加入新 Realm！	#
+hbui.JoinRealmsServerTransient.successSnackbar=You joined "%1$s"!	#
 hbui.JoinRealmsServerTransient.title=加入 Realm	#
 hbui.JoinServerWarningModal.cancel=取消	#
 hbui.JoinServerWarningModal.continue=继续	#
@@ -1392,7 +1406,7 @@ hbui.ModalMenuDropdown.dropdown.role=下拉	#
 hbui.ModalMenuDropdown.inputLegend=打开	#
 hbui.ModalMenuDropdown.placeholder=选择选项...	#
 hbui.MultiplayerPrivilegeBlockedModal.descriptionOnline=由于账号设置限制，您无法进行多人游戏。使用账号设置中的“隐私和在线安全”管理您的多人游戏设置。	#
-hbui.MultiplayerPrivilegeBlockedModal.descriptionParental=由于家长控制限制，您无法在 Realms 上游玩。使用家长控制中的“在线安全”查看和管理您的多人游戏设置。	#
+hbui.MultiplayerPrivilegeBlockedModal.descriptionParental=由于家长控制限制，您无法在 Realms 上游玩。使用家长控制中的“在线安全”查看和管理您的多人游戏设置。	#### {StrContains="Realms"}
 hbui.MultiplayerPrivilegeBlockedModal.learnMore=了解更多	#
 hbui.MultiplayerPrivilegeBlockedModal.title=您需要许可！	#
 hbui.Notifications.achievementsDisabled=您无法获得成就。	#
@@ -1418,10 +1432,10 @@ hbui.Notifications.readMoreLink=阅读更多	#
 hbui.Notifications.unlockSettingsLink=解锁设置	#
 hbui.Notifications.unlockSettingsMessage=某些设置由模板创建者锁定。	#
 hbui.notLoggedInWarning.loginLink=登录或注册	#
-hbui.notLoggedInWarning.playScreen.message.realms=您需要一个 Microsoft 账户才能在 Realms 上游玩。	#
+hbui.notLoggedInWarning.playScreen.message.realms=您需要一个 Microsoft 账户才能在 Realms 上游玩。	#### {StrContains="Realms"}
 hbui.notLoggedInWarning.playScreen.message.servers=您需要一个 Microsoft 账户才能在服务器上游玩。	#
 hbui.notLoggedInWarning.startFromTemplateScreen.message.featured=您需要一个帐户才能在市场购买模板。	#
-hbui.notLoggedInWarning.startFromTemplateScreen.message.marketplacePass=您需要 Microsoft 账号才能访问 Marketplace Pass。	#
+hbui.notLoggedInWarning.startFromTemplateScreen.message.marketplacePass=您需要 Microsoft 账号才能访问 Marketplace Pass。	#### {StrContains="Marketplace Pass"}
 hbui.PackListItem.activateButtonText=激活	#
 hbui.PackListItem.collapseDescriptionInputLegend=收齐	#
 hbui.PackListItem.creatorLabel=作者：%1$s	#
@@ -1472,7 +1486,7 @@ hbui.PackListItem.validateButtonText=验证	#
 hbui.PackTabs.activeTabButtonLabel=活跃	#
 hbui.PackTabs.availableTabButtonLabel=可用	#
 hbui.PackTabs.narration.tab=%1$s，标签 %2$s，共 %3$s	#
-hbui.PlayerAvatarWrapper.full=满	#
+hbui.PlayerAvatarsOnlineInWorld.full=满	#
 hbui.PlayerBannedModalRoute.body=由于“%2$s”，您已被%1$s玩 Minecraft 多人游戏。您将无法在服务器上玩游戏、加入 Realms、主办或加入多人游戏，或者使用市场。	#
 hbui.PlayerBannedModalRoute.body.day=您的冻结还剩 1 天。	#
 hbui.PlayerBannedModalRoute.body.days=您的冻结还剩 %1$s 天。	#
@@ -1576,6 +1590,7 @@ hbui.PlayerOptionsModal.shareMyProfile=分享我的档案	#
 hbui.PlayerOptionsModal.shareText=在 Minecraft 中添加我为好友！	#
 hbui.PlayerOptionsModal.signOut=注销	#
 hbui.PlayerOptionsModal.viewXboxProfile=查看 Xbox 档案	#
+hbui.PlayersOnlineInWorld.full=满	#
 hbui.PlayerTag.hint=按下以访问玩家档案	#
 hbui.PlayerTag.role=按钮	#
 hbui.PlayerTag.viewProfile=查看玩家档案	#
@@ -1623,17 +1638,17 @@ hbui.PlayScreen.friendsDrawerShortcut=按 %1$s 打开或关闭好友列表	#
 hbui.PlayScreen.genericError.realmDetails.description=发生错误。请稍后再试	#
 hbui.PlayScreen.genericError.realmDetails.title=Realm 无法加载	#
 hbui.PlayScreen.genericError.realms.description=发生错误。请稍后再试	#
-hbui.PlayScreen.genericError.realms.title=Realms 无法加载	#
+hbui.PlayScreen.genericError.realms.title=Realms 无法加载	#### {StrContains="Realms"}
 hbui.PlayScreen.genericError.servers.description=发生错误。请稍后再试	#
 hbui.PlayScreen.genericError.servers.title=服务器无法加载	#
 hbui.PlayScreen.guestAccountMessage.bannerLogIn=登录或注册	#
 hbui.PlayScreen.guestAccountMessage.bannerLogInMicrosoft=登录或注册 Microsoft	#
 hbui.PlayScreen.guestAccountMessage.buttonLogInMicrosoft=登录至 Microsoft 账号	#
-hbui.PlayScreen.guestAccountMessage.realmsNintendoGuest=您需要 Microsoft 账号和 Nintendo Switch Online 订阅服务才能在 Realms 上游玩。	#
-hbui.PlayScreen.guestAccountMessage.realmsNoMicrosoftAccount=您需要一个 Microsoft 账户才能在 Realms 上游玩。	#
-hbui.PlayScreen.guestAccountMessage.realmsNoPlatformAccountNintendo=您需要 Nintendo Switch Online 订阅服务才能在 Realms 上游玩。	#
-hbui.PlayScreen.guestAccountMessage.realmsNoPlatformAccountPlaystation=您需要高级订阅服务才能在 Realms 上游玩。	#
-hbui.PlayScreen.guestAccountMessage.realmsPlaystationGuest=您需要 Microsoft 账号和高级订阅服务才能在 Realms 上游玩。	#
+hbui.PlayScreen.guestAccountMessage.realmsNintendoGuest=您需要 Microsoft 账号和 Nintendo Switch Online 订阅服务才能在 Realms 上游玩。	#### {StrContains="Realms"}
+hbui.PlayScreen.guestAccountMessage.realmsNoMicrosoftAccount=您需要一个 Microsoft 账户才能在 Realms 上游玩。	#### {StrContains="Realms"}
+hbui.PlayScreen.guestAccountMessage.realmsNoPlatformAccountNintendo=您需要 Nintendo Switch Online 订阅服务才能在 Realms 上游玩。	#### {StrContains="Realms"}
+hbui.PlayScreen.guestAccountMessage.realmsNoPlatformAccountPlaystation=您需要高级订阅服务才能在 Realms 上游玩。	#### {StrContains="Realms"}
+hbui.PlayScreen.guestAccountMessage.realmsPlaystationGuest=您需要 Microsoft 账号和高级订阅服务才能在 Realms 上游玩。	#### {StrContains="Realms"}
 hbui.PlayScreen.guestAccountMessage.serversNintendoGuest=您需要 Microsoft 账号和 Nintendo Switch Online 订阅服务才能在服务器上游玩。	#
 hbui.PlayScreen.guestAccountMessage.serversNoMicrosoftAccount=您需要一个 Microsoft 账户才能在服务器上游玩。	#
 hbui.PlayScreen.guestAccountMessage.serversNoPlatformAccountNintendo=您需要 Nintendo Switch Online 订阅服务才能在服务器上游玩。	#
@@ -1670,9 +1685,9 @@ hbui.PlayScreen.nonMultiplayerSkinModal.body=您当前的皮肤来自多人游�
 hbui.PlayScreen.nonMultiplayerSkinModal.changeAction=更改皮肤	#
 hbui.PlayScreen.nonMultiplayerSkinModal.continueAction=在非多人游戏的情况下继续	#
 hbui.PlayScreen.nonMultiplayerSkinModal.title=不允许使用皮肤	#
-hbui.PlayScreen.noPremiumSubscriptionMessage.realmsNintendo=您需要 Nintendo Switch Online 订阅服务才能在 Realms 上游玩。	#
-hbui.PlayScreen.noPremiumSubscriptionMessage.realmsPlaystation=您需要高级订阅服务才能在 Realms 上游玩。	#
-hbui.PlayScreen.noPremiumSubscriptionMessage.realmsXbox=您需要 Xbox Gamepass Core 订阅服务才能在 Realms 上游玩。	#
+hbui.PlayScreen.noPremiumSubscriptionMessage.realmsNintendo=您需要 Nintendo Switch Online 订阅服务才能在 Realms 上游玩。	#### {StrContains="Realms"}
+hbui.PlayScreen.noPremiumSubscriptionMessage.realmsPlaystation=您需要高级订阅服务才能在 Realms 上游玩。	#### {StrContains="Realms"}
+hbui.PlayScreen.noPremiumSubscriptionMessage.realmsXbox=您需要 Xbox Gamepass Core 订阅服务才能在 Realms 上游玩。	#### {StrContains="Realms"}
 hbui.PlayScreen.noPremiumSubscriptionMessage.serversNintendo=您需要 Nintendo Switch Online 订阅服务才能在服务器上游玩。	#
 hbui.PlayScreen.noPremiumSubscriptionMessage.serversPlaystation=您需要高级订阅服务才能在服务器上游玩。	#
 hbui.PlayScreen.noPremiumSubscriptionMessage.serversXbox=您需要 Xbox Gamepass Core 订阅服务才能在服务器上游玩。	#
@@ -1692,7 +1707,7 @@ hbui.PlayScreen.outOfStorageModal.body=您的存储空间即将不足！《我�
 hbui.PlayScreen.outOfStorageModal.close=关闭	#
 hbui.PlayScreen.outOfStorageModal.closeInputLegend=关闭	#
 hbui.PlayScreen.outOfStorageModal.title=存储空间不足	#
-hbui.PlayScreen.realms=Realms	#
+hbui.PlayScreen.realms=Realms	#### {StrContains="Realms"}
 hbui.PlayScreen.realmsTab.bannerClosed=关闭	#
 hbui.PlayScreen.realmsTab.bannerExpired=已过期	#
 hbui.PlayScreen.realmsTab.bannerFull=满	#
@@ -1700,7 +1715,7 @@ hbui.PlayScreen.realmsTab.buttonHeader.buyNowUpsell=立即购买	#
 hbui.PlayScreen.realmsTab.buttonHeader.freeTrialUpsell=免费试用	#
 hbui.PlayScreen.realmsTab.buttonHeader.invitations=邀请 (%1$s)	#
 hbui.PlayScreen.realmsTab.buttonHeader.invitationsAmount=待处理的邀请 %1$s	#
-hbui.PlayScreen.realmsTab.buttonHeader.joinRealm=加入 Realms	#
+hbui.PlayScreen.realmsTab.buttonHeader.joinRealm=加入 Realm	#
 hbui.PlayScreen.realmsTab.buttonHeader.narration.buttonSiblings=第 %1$s 个，共 %2$s 个	#
 hbui.PlayScreen.realmsTab.buttonHeader.narration.invitationsAmount=待处理的邀请 %1$s	#
 hbui.PlayScreen.realmsTab.buttonHeader.subscribeNowUpsell=立即订阅	#
@@ -1712,15 +1727,15 @@ hbui.PlayScreen.realmsTab.leaveRealmNotification=您离开了“%1$s”	#
 hbui.PlayScreen.realmsTab.leaveRealmProgressMessage=正在离开 Realm	#
 hbui.PlayScreen.realmsTab.narration.buttonSiblings=第 %1$s 个，共 %2$s 个	#
 hbui.PlayScreen.realmsTab.narration.realmInformation=Realm 信息	#
-hbui.PlayScreen.realmsTab.noInternetMessage=请检查您的互联网连接，以在 Realms 上玩游戏。	#
+hbui.PlayScreen.realmsTab.noInternetMessage=请检查您的互联网连接，以在 Realms 上玩游戏。	#### {StrContains="Realms"}
 hbui.PlayScreen.realmsTab.options=选项	#
 hbui.PlayScreen.realmsTab.play=游戏	#
-hbui.PlayScreen.realmsTab.playersOnline=在线玩家	#
+hbui.PlayScreen.realmsTab.playersOnline=在线	#
 hbui.PlayScreen.realmsTab.playersOnline.realmOwner=%1$s 的 Realm	#
 hbui.PlayScreen.realmsTab.preproductionAccess.buttonText=了解更多	#
-hbui.PlayScreen.realmsTab.preproductionAccess.message=您无法访问前期制作版的 Realms。若想获得访问权限，请前往 aka.ms/Realms-preprod-access 查看指南	#
-hbui.PlayScreen.realmsTab.preproductionAccess.title=您无权访问 Realms	#
-hbui.PlayScreen.realmsTab.realmsDescription=Realms 描述	#
+hbui.PlayScreen.realmsTab.preproductionAccess.message=您无法访问前期制作版的 Realms。若想获得访问权限，请前往 aka.ms/Realms-preprod-access 查看指南	#### {StrContains="Realms"}
+hbui.PlayScreen.realmsTab.preproductionAccess.title=您无权访问 Realms	#### {StrContains="Realms"}
+hbui.PlayScreen.realmsTab.realmsDescription=Realms 描述	#### {StrContains="Realms"}
 hbui.PlayScreen.realmsTab.realmSettingsModalMenu.edit=编辑启用的世界	#
 hbui.PlayScreen.realmsTab.realmSettingsModalMenu.optionsEnumeration=第 %1$s 个，共 %2$s 个	#
 hbui.PlayScreen.realmsTab.realmSettingsModalMenu.realmSettings=Realm 设置	#
@@ -1732,7 +1747,7 @@ hbui.PlayScreen.realmsTab.realmsLeaveRealmModal.cancelAction=取消	#
 hbui.PlayScreen.realmsTab.realmsLeaveRealmModal.description=您即将离开“%1$s”。如果改变主意，请不要担心，您可以稍后重新加入。	#
 hbui.PlayScreen.realmsTab.realmsLeaveRealmModal.leaveRealmAction=离开 Realm	#
 hbui.PlayScreen.realmsTab.realmsLeaveRealmModal.title=离开 Realm	#
-hbui.PlayScreen.realmsTab.realmsOptionsModalMenu.addRealm=添加一项 Realms 订阅服务	#
+hbui.PlayScreen.realmsTab.realmsOptionsModalMenu.addRealm=添加一项 Realms 订阅服务	#### {StrContains="Realms"}
 hbui.PlayScreen.realmsTab.realmsOptionsModalMenu.joinRealm=加入现有的 Realm	#
 hbui.PlayScreen.realmsTab.realmsOptionsModalMenu.learnMore=了解更多	#
 hbui.PlayScreen.realmsTab.realmsOptionsModalMenu.optionsEnumeration=第 %1$s 个，共 %2$s 个	#
@@ -1751,7 +1766,7 @@ hbui.PlayScreen.realmsTab.sideMenu.externalServer=其他服务器 (%1$s)	#
 hbui.PlayScreen.realmsTab.sideMenu.full=满	#
 hbui.PlayScreen.realmsTab.sideMenu.inputLegend=打开	#
 hbui.PlayScreen.realmsTab.sideMenu.invitations=邀请 (%1$s)	#
-hbui.PlayScreen.realmsTab.sideMenu.joinedRealms=已加入 Realm (%1$s)	#
+hbui.PlayScreen.realmsTab.sideMenu.joinedRealms=Joined Realms (%1$s) 	#### {StrContains="Realms"}
 hbui.PlayScreen.realmsTab.sideMenu.joinRealm=加入 Realm 服务器	#
 hbui.PlayScreen.realmsTab.sideMenu.narration.addOrJoinRealm=添加/加入 Realm	#
 hbui.PlayScreen.realmsTab.sideMenu.narration.buttonSiblings=第 %1$s 个，共 %2$s 个	#
@@ -1876,8 +1891,8 @@ hbui.PlayScreen.templateScreenNotAvailableInPreview.text=“从模板创建”�
 hbui.PlayScreen.templateScreenNotAvailableInPreview.title=不可用	#
 hbui.PlayScreen.title=游戏	#
 hbui.PlayScreen.underConstructionMessage=我们仍在开发此功能。请稍后再来查看！	#
-hbui.PlayScreen.underConstructionMessageRealmsAvailable=看来你已经订阅了 Realms！我们仍在努力将 Realms 引入新版菜单设计中，目前还请暂时使用旧的 UI。	#
-hbui.PlayScreen.underConstructionMessageRealmsUnavailable=可在旧 UI 中找到 Realms。我们仍在努力将 Realms 引入新版菜单设计中，目前还请暂时使用旧的 UI。	#
+hbui.PlayScreen.underConstructionMessageRealmsAvailable=看来你已经订阅了 Realms！我们仍在努力将 Realms 引入新版菜单设计中，目前还请暂时使用旧的 UI。	#### {StrContains="Realms"}
+hbui.PlayScreen.underConstructionMessageRealmsUnavailable=可在旧 UI 中找到 Realms。我们仍在努力将 Realms 引入新版菜单设计中，目前还请暂时使用旧的 UI。	#### {StrContains="Realms"}
 hbui.PlayScreen.underConstructionTitle=建造中	#
 hbui.PlayScreen.unexpectedLaunchErrorModal.body=加载此世界时出错。	#
 hbui.PlayScreen.unexpectedLaunchErrorModal.body2=错误代码：%1$s	#
@@ -1903,17 +1918,17 @@ hbui.PlayScreen.xboxPermissionMessage.title=您需要许可！	#
 hbui.PostToRealmStoriesRoute.accessDenied.button=了解更多	#
 hbui.PostToRealmStoriesRoute.accessDenied.message=您没有共享屏幕截图的权限。转到“在线安全”并将“您可以将截取画面上传到 Xbox”设置为允许。	#
 hbui.PostToRealmStoriesRoute.accessDenied.title=访问被拒绝	#
-hbui.PostToRealmStoriesRoute.noRealmsFound.button=详细了解 Realms	#
+hbui.PostToRealmStoriesRoute.noRealmsFound.button=详细了解 Realms	#### {StrContains="Realms"}
 hbui.PostToRealmStoriesRoute.noRealmsFound.title=未找到 Realms	#
 hbui.PostToRealmStoriesRoute.realmsCantLoad.button=再试一次	#
 hbui.PostToRealmStoriesRoute.realmsCantLoad.message=我们遇到了一个未知错误，请重试。	#
-hbui.PostToRealmStoriesRoute.realmsCantLoad.title=Realms 无法加载！	#
+hbui.PostToRealmStoriesRoute.realmsCantLoad.title=Realms 无法加载！	#### {StrContains="Realms"}
 hbui.PostToRealmStoriesRoute.select=选择	#
 hbui.PostToRealmStoriesRoute.title=发布到 Realm 故事	#
 hbui.PostToRealmStoriesRoute.youNeedPermission.button=了解更多	#
 hbui.PostToRealmStoriesRoute.youNeedPermission.message=您没有访问故事动态的权限。转到“在线安全”并将“您可以创建并加入俱乐部”设置为允许。	#
 hbui.PostToRealmStoriesRoute.youNeedPermission.title=访问被拒绝	#
-hbui.PrivacyAndOnlineSafetyModal.buttonAction=打开 Realms 安全网站	#
+hbui.PrivacyAndOnlineSafetyModal.buttonAction=打开 Realms 安全网站	#### {StrContains="Realms"}
 hbui.PrivacyAndOnlineSafetyModal.clubPermissionMessage=“你可以创建并加入社团”以允许	#
 hbui.PrivacyAndOnlineSafetyModal.externalLinkText=帮我修复此问题	#
 hbui.PrivacyAndOnlineSafetyModal.fromOnlineSafety=来自网络安全：	#
@@ -1921,13 +1936,13 @@ hbui.PrivacyAndOnlineSafetyModal.header=哎呀！你需要先获得权限	#
 hbui.PrivacyAndOnlineSafetyModal.linkButtonHint=这将转至一个能帮助解决此问题的网页	#
 hbui.PrivacyAndOnlineSafetyModal.multiplayerPermissionMessage=“你可以加入多人游戏”以允许	#
 hbui.PrivacyAndOnlineSafetyModal.qrCodeHint=这是一个二维码，其能将你转至外部链接进行权限更改	#
-hbui.PrivacyAndOnlineSafetyModal.toAccessRealms=要访问 Realms，设置：	#
-hbui.PrivacyAndOnlineSafetyModal.toAccessRealmsNumbered=1. 要访问 Realms，设置：	#
-hbui.PrivacyAndOnlineSafetyModal.toAccessRealmsStories=要访问 Realms 故事，设置：	#
-hbui.PrivacyAndOnlineSafetyModal.toAccessRealmsStoriesNumbered=2. 要访问 Realms 故事，设置：	#
+hbui.PrivacyAndOnlineSafetyModal.toAccessRealms=要访问 Realms，设置：	#### {StrContains="Realms"}
+hbui.PrivacyAndOnlineSafetyModal.toAccessRealmsNumbered=1. 要访问 Realms，设置：	#### {StrContains="Realms"}
+hbui.PrivacyAndOnlineSafetyModal.toAccessRealmsStories=To access Realms Stories, set: 	#### {StrContains="Realms Stories"}
+hbui.PrivacyAndOnlineSafetyModal.toAccessRealmsStoriesNumbered=2. To access Realms Stories, set: 	#### {StrContains="Realms Stories"}
 hbui.PrivacyAndOnlineSafetyModal.tryAgain=再试一次	#
 hbui.PrivacyAndOnlineSafetySuccessModal.buttonAction=开始	#
-hbui.PrivacyAndOnlineSafetySuccessModal.content=所有权限均已成功启用！现在，Realms 和 Realms 故事全都可以访问了。	#
+hbui.PrivacyAndOnlineSafetySuccessModal.content=All your permissions have been successfully enabled! Now you can have access to both Realms and Realms Stories. 	#### {StrContains="Realms"} {StrContains="Realms Stories"}
 hbui.PrivacyAndOnlineSafetySuccessModal.header=权限已启用！	#
 hbui.ProfanityWarningModalRoute.body=您输入的文本包含可能对他人具有冒犯性的词汇，因此无法使用。请重试。	#
 hbui.ProfanityWarningModalRoute.close=关闭	#
@@ -2009,26 +2024,26 @@ hbui.RealmListItem.role=列表项	#
 hbui.RealmListItem.select=选择	#
 hbui.RealmListItem.yourRealm=您的 Realm	#
 hbui.Realms.ErrorModals.CannotContactRealms.message=请检查您的互联网连接并重试。	#
-hbui.Realms.ErrorModals.CannotContactRealms.title=无法联系 Realms	#
+hbui.Realms.ErrorModals.CannotContactRealms.title=无法联系 Realms	#### {StrContains="Realms"}
 hbui.Realms.ErrorModals.close=关闭	#
 hbui.Realms.ErrorModals.ok=关闭	#
 hbui.Realms.ErrorModals.postingCommentFailed.message=无法发表新评论。请检查你的网络连接并重试。	#
 hbui.Realms.ErrorModals.postingCommentFailed.title=发布评论失败	#
-hbui.Realms.ErrorModals.rateLimitError.message=请几分钟后再试一次。Realms 正在尝试恢复。	#
+hbui.Realms.ErrorModals.rateLimitError.message=请几分钟后再试一次。Realms 正在尝试恢复。	#### {StrContains="Realms"}
 hbui.Realms.ErrorModals.rateLimitError.title=操作失败	#
 hbui.Realms.ErrorModals.select=选择	#
-hbui.Realms.ErrorModals.somethingWentWrong.message=无法连接 Realms。请重试。	#
+hbui.Realms.ErrorModals.somethingWentWrong.message=无法连接 Realms。请重试。	#### {StrContains="Realms"}
 hbui.Realms.ErrorModals.somethingWentWrong.title=出错了	#
 hbui.Realms.InviteExpiredModals.header=Realm 邀请已过期	#
 hbui.Realms.InviteExpiredModals.message=此邀请已不再有效。	#
 hbui.Realms.InviteExpiredModals.ok=确定	#
 hbui.Realms.LoadingModals.activatingSlot=正在切换栏位...	#
-hbui.Realms.LoadingModals.contactingRealms=正在连接 Realms…	#
+hbui.Realms.LoadingModals.contactingRealms=正在连接 Realms…	#### {StrContains="Realms"}
 hbui.Realms.LoadingModals.creatingRealm=正在创建 Realm……	#
 hbui.Realms.LoadingModals.fetchingRealmInformation=正在提取 Realm 信息…	#
 hbui.Realms.LoadingModals.fetchingSubscriptionInformation=正在获取订阅信息...	#
 hbui.Realms.LoadingModals.loading=加载中...	#
-hbui.Realms.LoadingModals.loadingRealmsStories=正在加载 Realms 故事...	#
+hbui.Realms.LoadingModals.loadingRealmsStories=Loading Realms Stories... 	#### {StrContains="Realms Stories"}
 hbui.RealmsNewStoryImageSelectRoute.cancel=取消	#
 hbui.RealmsNewStoryImageSelectRoute.deleteScreenshotsLabel.plural=删除 %1$s 屏幕截图	#
 hbui.RealmsNewStoryImageSelectRoute.deleteScreenshotsLabel.single=删除 %1$s 屏幕截图	#
@@ -2072,8 +2087,8 @@ hbui.RealmsPDPFAQAccordion.clickToExpand=单击展开	#
 hbui.RealmsPDPFAQAccordion.enumeration=第 %1$s 个，共 %2$s 个	#
 hbui.RealmsPDPFAQAccordion.textBlock=文本块	#
 hbui.RealmsPDPScreen.FAQ.Cost.description1=您可以订阅 Realms 计划：  	#### {StrContains="Realms"}
-hbui.RealmsPDPScreen.FAQ.Cost.description2=Realms 核心计划：%1$s/月。添加成员数无限制，同时与 2 名其他玩家进行在线游戏。   	#### {StrContains="Realms"}
-hbui.RealmsPDPScreen.FAQ.Cost.description3=Realms Plus 计划：%1$s/月。添加成员数无限制，同时与 10 名其他玩家进行在线游戏。此外，在 Marketplace Pass 目录中免费享受超过 150 个商城内容。   	#### {StrContains="Realms"}
+hbui.RealmsPDPScreen.FAQ.Cost.description2=Realms Core plan: %1$s per month. Add infinite members, play online with 2 other players at the same time.   	#### {StrContains="Realms Core"}
+hbui.RealmsPDPScreen.FAQ.Cost.description3=Realms Plus 计划：%1$s/月。添加成员数无限制，同时与 10 名其他玩家进行在线游戏。此外，在 Marketplace Pass 目录中免费享受超过 150 个商城内容。   	#### {StrContains="Realms Plus"} {StrContains="Marketplace Pass"}
 hbui.RealmsPDPScreen.FAQ.Cost.title=Realm 的费用是多少？ 	#### {StrContains="Realm"}
 hbui.RealmsPDPScreen.FAQ.Expiry.description=您的世界需要由自己保管。在订阅到期后，您有 18 个月的时间可以将其下载至您的设备上。如果您在此期间重新订阅，即可再次获得访问您的 Realm 的权限，您的 Realm 与之前离开时相比不会发生任何变化。   	#### {StrContains="Realm"}
 hbui.RealmsPDPScreen.FAQ.Expiry.title=如果订阅到期，我的 Realm 中的世界会怎么样？  	#### {StrContains="Realm"}
@@ -2100,6 +2115,7 @@ hbui.RealmsPDPScreen.promos.header=什么是 Realms？ 	#### {StrContains="Realm
 hbui.RealmsPDPScreen.promos.persistent.description=您和您邀请的 Realm 成员可随时在任意设备上游玩已上传至 Realm 中的世界。即使您不在线，成员也一样可以游玩。   	#### {StrContains="Realm"}
 hbui.RealmsPDPScreen.promos.persistent.title=永不下线的多人游戏世界	#
 hbui.RealmsPDPScreen.splash.buyNow=立即购买  	#### {MaxLength="20"}
+hbui.RealmsPDPScreen.splash.subscribeNow=Subscribe now  	#### {MaxLength="20"}
 hbui.RealmsPDPScreen.splash.text=管理自己的 Minecraft 服务器！哪些玩家可以加入、游戏要怎么玩，都由您来定。即使您不在线，成员也可以免费游玩。轻松设置、管理，并且可在任何设备上游玩。   	#### {MaxLength="200"}
 hbui.RealmsPDPScreen.splash.title=您的专属服务器，永不下线    	#### {MaxLength="50"}
 hbui.RealmsPDPScreen.splash.tryFree=免费试用    	#### {MaxLength="20"}
@@ -2125,7 +2141,7 @@ hbui.RealmsPlanPickerScreen.featureLine5=免费自动备份	#
 hbui.RealmsPlanPickerScreen.featureLine5Narration=免费自动备份	#
 hbui.RealmsPlanPickerScreen.featureLine6=Realms 故事         	#### {StrContains="Realms"}
 hbui.RealmsPlanPickerScreen.featureLine7=30 天免费试用	#
-hbui.RealmsPlanPickerScreen.featureLine8=包含 Marketplace Pass	#
+hbui.RealmsPlanPickerScreen.featureLine8=包含 Marketplace Pass	#### {StrContains="Marketplace Pass"}
 hbui.RealmsPlanPickerScreen.featureNarrationCore=Realms 核心包详细信息。文本块				#### {StrContains="Realms"}
 hbui.RealmsPlanPickerScreen.featureNarrationPlus=Realms plus 包详细信息。文本块				#### {StrContains="Realms"}
 hbui.RealmsPlanPickerScreen.planCoreCardNarration=垂直面板。分组。核心 %1$s/月	#
@@ -2137,8 +2153,8 @@ hbui.RealmsPlanPickerScreen.title=选择您的计划	#
 hbui.RealmsPlanPickerScreen.titleNarrationHint=在两个计划之间进行选择	#
 hbui.RealmsPreviews.create.cancel.beta=不，不要创建测试版 Realm	#
 hbui.RealmsPreviews.create.cancel.preview=不，不要创建预览版 Realm	#
-hbui.RealmsPreviews.create.message.beta=您将创建一个与付费 Realms 订阅匹配的免费测试版 Realm。只要付费订阅处于活跃状态，就可以访问这个全新的测试版 Realm。您的付费 Realm 不会受到影响。	#
-hbui.RealmsPreviews.create.message.preview=您将创建一个与付费 Realms 订阅匹配的免费预览版 Realm。只要付费订阅处于活跃状态，就可以访问这个全新的预览版 Realm。您的付费 Realm 不会受到影响。	#
+hbui.RealmsPreviews.create.message.beta=You are about to create a free Beta Realm that will be paired with your paid Realms subscription. This new Beta Realm will be accessible for as long as the paid subscription is active. Your paid Realm will not be affected. 	#### {StrContains="Beta Realms"}
+hbui.RealmsPreviews.create.message.preview=You are about to create a free Preview Realm that will be paired with your paid Realms subscription. This new Preview Realm will be accessible for as long as the paid subscription is active. Your paid Realm will not be affected. 	#### {StrContains="Preview Realms"}
 hbui.RealmsPreviews.create.select=选择	#
 hbui.RealmsPreviews.create.titleAndButtonLabel.beta=创建测试版 Realm	#
 hbui.RealmsPreviews.create.titleAndButtonLabel.preview=创建预览版 Realm	#
@@ -2148,10 +2164,10 @@ hbui.RealmsPreviews.ReplaceWorld.message=这将删除您活跃槽中的世界，
 hbui.RealmsPreviews.ReplaceWorld.select=选择	#
 hbui.RealmsPreviews.ReplaceWorld.title=替换世界吗？	#
 hbui.RealmsPreviews.SubscriptionNeeded.close=关闭	#
-hbui.RealmsPreviews.SubscriptionNeeded.message.beta=您需要购买 Realms 订阅才能创建测试版 Realm。请前往完整版本的《我的世界》购买订阅或开始免费试用。	#
-hbui.RealmsPreviews.SubscriptionNeeded.message.preview=您需要购买 Realms 订阅才能创建预览版 Realm。请前往完整版本的《我的世界》购买订阅或开始免费试用。	#
+hbui.RealmsPreviews.SubscriptionNeeded.message.beta=您需要购买 Realms 订阅才能创建测试版 Realm。请前往完整版本的《我的世界》购买订阅或开始免费试用。	#### {StrContains="Realms"}
+hbui.RealmsPreviews.SubscriptionNeeded.message.preview=您需要购买 Realms 订阅才能创建预览版 Realm。请前往完整版本的《我的世界》购买订阅或开始免费试用。	#### {StrContains="Realms"}
 hbui.RealmsPreviews.SubscriptionNeeded.select=选择	#
-hbui.RealmsPreviews.SubscriptionNeeded.title=需要购买 Realms 订阅	#
+hbui.RealmsPreviews.SubscriptionNeeded.title=需要购买 Realms 订阅	#### {StrContains="Realms"}
 hbui.RealmsPurchaseSubscriptionRoute.backHint=这将带你返回上一个界面	#
 hbui.RealmsPurchaseSubscriptionRoute.banner.heading.core=核心	#
 hbui.RealmsPurchaseSubscriptionRoute.banner.heading.plus=加号	#
@@ -2162,10 +2178,10 @@ hbui.RealmsPurchaseSubscriptionRoute.banner.subheading.trial.narration=免费试
 hbui.RealmsPurchaseSubscriptionRoute.checkboxLabel=同意	#
 hbui.RealmsPurchaseSubscriptionRoute.ErrorModals.close=关闭	#
 hbui.RealmsPurchaseSubscriptionRoute.ErrorModals.select=选择	#
-hbui.RealmsPurchaseSubscriptionRoute.header.core=创建一个 Realms 核心服务器	#
-hbui.RealmsPurchaseSubscriptionRoute.header.plus=创建一个 Realms Plus 服务器	#
+hbui.RealmsPurchaseSubscriptionRoute.header.core=Create a Realms Core Server 	#### {StrContains="Realms Core"}
+hbui.RealmsPurchaseSubscriptionRoute.header.plus=创建一个 Realms Plus 服务器	#### {StrContains="Realms Plus"}
 hbui.RealmsPurchaseSubscriptionRoute.header.renew=更新 Realm 订阅	#
-hbui.RealmsPurchaseSubscriptionRoute.header.trial=Realms Plus 免费试用	#
+hbui.RealmsPurchaseSubscriptionRoute.header.trial=Realms Plus 免费试用	#### {StrContains="Realms Plus"}
 hbui.RealmsPurchaseSubscriptionRoute.heroButton.create=以每月 %1$s 创建	#
 hbui.RealmsPurchaseSubscriptionRoute.heroButton.renew=以每月 %1$s 更新	#
 hbui.RealmsPurchaseSubscriptionRoute.heroButton.trial=开始免费试用	#
@@ -2203,7 +2219,7 @@ hbui.RealmsStories.errorMessageTitle=无法加载 Realm 数据。	#
 hbui.RealmsStories.errorModal.commentPostFailedMessage=您的评论未能在此 Realm 故事上发布。	#
 hbui.RealmsStories.errorModal.continue=继续	#
 hbui.RealmsStories.errorModal.defaultErrorMessage=出错了。	#
-hbui.RealmsStories.errorModal.header=Realms 故事错误	#
+hbui.RealmsStories.errorModal.header=Realms Stories Error 	#### {StrContains="Realms Stories"}
 hbui.RealmsStories.errorModal.storyPostFailedMessage=你的故事未能发布到此 Realm 的信息流中。	#
 hbui.RealmsStories.feed=动态信息	#
 hbui.RealmsStories.feed.addStory=添加故事		#### The term 'Story' represents a social feature, similar to a 'Post' on social media. Translations should use a term more fitting for a social posting rather than a story book, for example. {MaxLength='15'}
@@ -2245,6 +2261,8 @@ hbui.RealmsStories.feedEvent.medium.FirstAbandonedMineshaftFound=%1$s 发现了�
 hbui.RealmsStories.feedEvent.medium.FirstAncientCityFound=%1$s 发现了一座古城	#
 hbui.RealmsStories.feedEvent.medium.FirstBadlandsFound=%1$s 发现了一块荒地	#
 hbui.RealmsStories.feedEvent.medium.FirstConduit=%1$s 现在可以命令大海	#
+hbui.RealmsStories.feedEvent.medium.FirstCraftedNetherite=%1$s 已升级为下界合金	#
+hbui.RealmsStories.feedEvent.medium.FirstCraftedNetherite.grouped=%1$s 已升级为下界合金		#### 1 = List of player names ex. Player1, Player2, and Player 3 upgraded to Netherite
 hbui.RealmsStories.feedEvent.medium.FirstDiamondFound=%1$s 找到了一颗钻石	#
 hbui.RealmsStories.feedEvent.medium.FirstEnchantment=%1$s 发现了附魔	#
 hbui.RealmsStories.feedEvent.medium.FirstEnchantment.grouped=%1$s 发现了附魔		#### 1 = List of player names ex. Player1, Player2, and Player 3 discovered enchanting
@@ -2252,8 +2270,6 @@ hbui.RealmsStories.feedEvent.medium.FirstEndPortal=%1$s 前往末地了？	#
 hbui.RealmsStories.feedEvent.medium.FirstFullyExploredMap=%1$s 开始绘制世界地图了	#
 hbui.RealmsStories.feedEvent.medium.FirstMushroomFieldFound=%1$s 发现了一个蘑菇田	#
 hbui.RealmsStories.feedEvent.medium.FirstNetherFortressFound=%1$s 发现了一个地狱要塞	#
-hbui.RealmsStories.feedEvent.medium.FirstNetherite=%1$s 已升级为下界合金	#
-hbui.RealmsStories.feedEvent.medium.FirstNetherite.grouped=%1$s 已升级为下界合金		#### 1 = List of player names ex. Player1, Player2, and Player 3 upgraded to Netherite
 hbui.RealmsStories.feedEvent.medium.FirstNetherPortalLit=%1$s 创造了一个通往下界的传送门	#
 hbui.RealmsStories.feedEvent.medium.FirstPeakMountainFound=%1$s 攀登了一座山峰	#
 hbui.RealmsStories.feedEvent.medium.FirstPillagerOutpostFound=%1$s 发现了一个掠夺者前哨	#
@@ -2359,13 +2375,13 @@ hbui.RealmsStories.members.leastRecentlyPlayed=最近玩得最少的	#
 hbui.RealmsStories.members.manage=管理成员	#
 hbui.RealmsStories.members.member=成员	#
 hbui.RealmsStories.members.noMembersFound=未找到成员	#
-hbui.RealmsStories.members.notMemberRealmsStories=不是 Realms 故事的成员	#
+hbui.RealmsStories.members.notMemberRealmsStories=Not a member of Realms Stories 	#### {StrContains="Realms Stories"}
 hbui.RealmsStories.members.onlineMembers=在线成员	#
 hbui.RealmsStories.members.operator=操作员	#
 hbui.RealmsStories.members.optedOutMembers=已选择退出的成员	#
 hbui.RealmsStories.members.realmMembers=Realm 成员	#
 hbui.RealmsStories.members.realmOwner=Realm 拥有者	#
-hbui.RealmsStories.members.realmStoriesMembers=Realms 故事成员	#
+hbui.RealmsStories.members.realmStoriesMembers=Realms Stories members 	#### {StrContains="Realms Stories"}
 hbui.RealmsStories.members.recentlyPlayed=最近玩过的	#
 hbui.RealmsStories.members.search=搜索 Realm 成员	#
 hbui.RealmsStories.members.searchResult.hint.cleared=搜索筛选器已清除	#
@@ -2385,21 +2401,21 @@ hbui.RealmsStories.messages.timelineEmpty.body=在 Realm 上游玩以生成时�
 hbui.RealmsStories.messages.timelineEmpty.title=没有可用的数据	#
 hbui.RealmsStories.messages.timelineOff.body=时间线在此 Realm 中不可用。	#
 hbui.RealmsStories.messages.timelineOff.title=时间线已禁用	#
-hbui.RealmsStories.messages.title=无法加载 Realms 故事！	#
+hbui.RealmsStories.messages.title=Realms Stories couldn't load! 	#### {StrContains="Realms Stories"}
 hbui.RealmsStories.messages.titleWithArg=%1$s 无法加载！	#
 hbui.RealmsStories.messages.unknownErrorBody=我们遇到了一个未知错误，请重试。	#
 hbui.RealmsStories.narration.settings=设置。按钮	#
-hbui.RealmsStories.narration.title=Realms 故事	#
+hbui.RealmsStories.narration.title=Realms Stories 	#### {StrContains="Realms Stories"}
 hbui.RealmsStories.narrationPlayerXOfY=第 %1$s 个，共 %2$s 个	#
 hbui.RealmsStories.new=新建	#
 hbui.RealmsStories.oneUnreadStoryHint=你有 1 则未读故事	#
 hbui.RealmsStories.OptInModal.message=现在您可以将故事分享到故事动态，也可以浏览成员标签查看 Realm 中的其他成员，并使用时间线与他们协调游戏时间。尽情享受吧！	#
-hbui.RealmsStories.OptInModal.openStoriesButton=打开 Realms 故事	#
-hbui.RealmsStories.OptInModal.title=进来喽！ 欢迎来到 Realms 故事	#
+hbui.RealmsStories.OptInModal.openStoriesButton=Open Realms Stories 	#### {StrContains="Realms Stories"}
+hbui.RealmsStories.OptInModal.title=You're in! Welcome to Realms Stories 	#### {StrContains="Realms Stories"}
 hbui.RealmsStories.OptInNoticeModal.gotItButton=明白！	#
-hbui.RealmsStories.OptInNoticeModal.message.p1=您已经选择加入…但进入 Realms 故事需要服务器所有者也一起加入。请他们也加入进来吧！	#
+hbui.RealmsStories.OptInNoticeModal.message.p1=You've opted in... but before you can use Realms Stories, the Realm owner needs to join. Ask them to opt in! 	#### {StrContains="Realms Stories"}
 hbui.RealmsStories.OptInNoticeModal.message.p2=所有者加入后，你就可以将故事分享到故事动态，或者浏览成员标签查看 Realm 中的其他成员，以及使用时间线与他们协调游戏时间。	#
-hbui.RealmsStories.OptInNoticeModal.title=哎呀！ 您无法访问 Realms 故事	#
+hbui.RealmsStories.OptInNoticeModal.title=Oops! You cannot access Realms Stories 	#### {StrContains="Realms Stories"}
 hbui.RealmsStories.OptInScreen.learnMore.dataType=文字方块	#
 hbui.RealmsStories.OptInScreen.learnMore.history.body.1=可以查看其他玩家的游戏时间，了解他们的创作和计划，这样下一次就可以与他们一同游玩。	#
 hbui.RealmsStories.OptInScreen.learnMore.history.body.2=了解其他玩家的游戏时间，观看他们在游戏中的经历。多和他们一起玩！	#
@@ -2410,10 +2426,10 @@ hbui.RealmsStories.OptInScreen.learnMore.members.title=了解 Realm 成员	#
 hbui.RealmsStories.OptInScreen.learnMore.social.body.1=将自己的故事发布到故事动态，分享您的冒险与创作，让其他玩家知道您在做什么。	#
 hbui.RealmsStories.OptInScreen.learnMore.social.body.2=点赞并评论其他玩家的分享。互相赞美和鼓励！	#
 hbui.RealmsStories.OptInScreen.learnMore.social.title=与好友分享故事	#
-hbui.RealmsStories.OptInScreen.learnMore.title=详细了解 Realms 故事	#
+hbui.RealmsStories.OptInScreen.learnMore.title=Learn more about Realms Stories 	#### {StrContains="Realms Stories"}
 hbui.RealmsStories.OptInScreen.maybeLaterButton=过一会吧	#
 hbui.RealmsStories.OptInScreen.optInButton=我想加入	#
-hbui.RealmsStories.OptInScreen.optInButton.hint=这将使您选择加入 Realms 故事	#
+hbui.RealmsStories.OptInScreen.optInButton.hint=This will opt you into Realms Stories 	#### {StrContains="Realms Stories"}
 hbui.RealmsStories.OptInScreen.screen=屏幕	#
 hbui.RealmsStories.OptInScreen.title=想要加入 REALMS 故事吗？！	#
 hbui.RealmsStories.OptInScreen.title.suffix=标题	#
@@ -2498,7 +2514,7 @@ hbui.RealmsStories.settings.personalSettings.badgeNotifSwitch.title=徽章通知
 hbui.RealmsStories.settings.personalSettings.description=对于此 Realm 而言，这些设置仅适用于您。	#
 hbui.RealmsStories.settings.personalSettings.header=1. 个人设置	#
 hbui.RealmsStories.settings.personalSettings.member.header=个人设置	#
-hbui.RealmsStories.settings.realmWideSettings.description=这些设置适用于此 Realm 中已加入 Realms 故事的所有人。	#
+hbui.RealmsStories.settings.realmWideSettings.description=These settings apply to everyone in this Realm who has joined Realms Stories. 	#### {StrContains="Realms Stories"}
 hbui.RealmsStories.settings.realmWideSettings.header=2. Realm 范围设置	#
 hbui.RealmsStories.settings.realmWideSettings.member.header=Realm 范围设置	#
 hbui.RealmsStories.settings.realmWideSettings.playerTimeline.description=允许所有人查看时间线。	#
@@ -2510,10 +2526,10 @@ hbui.RealmsStories.settings.realmWideSettings.storyCoordinates.title=Realm 事�
 hbui.RealmsStories.settings.screen=%1$s 屏幕	#
 hbui.RealmsStories.settings.screenheader=%1$s 故事设置屏幕	#
 hbui.RealmsStories.settings.section=Section	#
-hbui.RealmsStories.ShareLink.message=现在你可以在此 Realm 中与好友一起畅玩。你也可以使用摄像机按钮进行截图，并在 Realms 故事中分享。尽情享受吧！	#
-hbui.RealmsStories.ShareLink.openStories=查看 Realms 故事	#
+hbui.RealmsStories.ShareLink.message=Now you can start playing with your friends in this Realm. You can also take screenshots using the camera button and share them in Realms Stories. Enjoy! 	#### {StrContains="Realms Stories"}
+hbui.RealmsStories.ShareLink.openStories=Check out Realms Stories 	#### {StrContains="Realms Stories"}
 hbui.RealmsStories.ShareLink.playNow=立即播放	#
-hbui.RealmsStories.ShareLink.title=进来喽！欢迎来到 Realms	#
+hbui.RealmsStories.ShareLink.title=进来喽！欢迎来到 Realms	#### {StrContains="Realms"}
 hbui.RealmsStories.storyFeed=故事动态	#
 hbui.RealmsStories.timeline=时间线	#
 hbui.RealmsStories.Timeline.Information.close=关闭	#
@@ -2756,12 +2772,12 @@ hbui.StartFromTemplateRoute.InitializationModal.message=正在查找服务器...
 hbui.StartFromTemplateRoute.InitializationModal.title=正在开始下载	#
 hbui.StartFromTemplateRoute.InstallModal.message=安装已开始	#
 hbui.StartFromTemplateRoute.InstallModal.title=正在安装内容 (2/2)	#
-hbui.StartFromTemplateRoute.MarketplacePass.description=进一步探索 Marketplace Pass 订阅者的世界模板。	#
+hbui.StartFromTemplateRoute.MarketplacePass.description=进一步探索 Marketplace Pass 订阅者的世界模板。	#### {StrContains="Marketplace Pass"}
 hbui.StartFromTemplateRoute.MarketplacePass.imageNarration=Marketplace pass	#
 hbui.StartFromTemplateRoute.MarketplacePass.imageRole=图像	#
 hbui.StartFromTemplateRoute.MarketplacePass.noInternetMessage=请检查您的互联网连接以浏览市场。	#
 hbui.StartFromTemplateRoute.MarketplacePass.NoTemplatesMessage.button=前往设置	#
-hbui.StartFromTemplateRoute.MarketplacePass.NoTemplatesMessage.description=要启用 Marketplace Pass 屏幕，请前往“市场调试”选项卡，将“市场探索环境”设置为“生产”，然后重新启动。	#
+hbui.StartFromTemplateRoute.MarketplacePass.NoTemplatesMessage.description=要启用 Marketplace Pass 屏幕，请前往“市场调试”选项卡，将“市场探索环境”设置为“生产”，然后重新启动。	#### {StrContains="Marketplace Pass"}
 hbui.StartFromTemplateRoute.MarketplacePass.NoTemplatesMessage.title=模板不可用	#
 hbui.StartFromTemplateRoute.MarketplacePass.role=垂直子菜单	#
 hbui.StartFromTemplateRoute.MarketplacePass.title=Marketplace Pass 模板	#
