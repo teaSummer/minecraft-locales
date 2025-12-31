@@ -74,6 +74,9 @@ selectWorld.tooltip.fromNewerVersion2=loading this world could cause problems!
 selectWorld.tooltip.snapshot1=Don't forget to backup this world
 selectWorld.tooltip.snapshot2=before you load it in this snapshot.
 
+selectWorld.unable_to_load=Unable to load worlds
+selectWorld.load_folder_access=Unable to read or access folder where game worlds are saved!
+
 createWorld.customize.presets=Presets
 createWorld.customize.presets.title=Select a Preset
 createWorld.customize.presets.select=Use Preset
@@ -89,6 +92,16 @@ createWorld.customize.flat.layer.top=Top - %d
 createWorld.customize.flat.layer=%d
 createWorld.customize.flat.layer.bottom=Bottom - %d
 createWorld.customize.flat.air=Air
+
+createWorld.customize.preset.classic_flat=Classic Flat
+createWorld.customize.preset.tunnelers_dream=Tunnelers' Dream
+createWorld.customize.preset.water_world=Water World
+createWorld.customize.preset.overworld=Overworld
+createWorld.customize.preset.snowy_kingdom=Snowy Kingdom
+createWorld.customize.preset.bottomless_pit=Bottomless Pit
+createWorld.customize.preset.desert=Desert
+createWorld.customize.preset.redstone_ready=Redstone Ready
+createWorld.customize.preset.the_void=The Void
 
 createWorld.customize.custom.page0=Basic Settings
 createWorld.customize.custom.page1=Ore Settings
@@ -136,12 +149,12 @@ createWorld.customize.custom.fixedBiome=Biome
 createWorld.customize.custom.biomeSize=Biome Size
 createWorld.customize.custom.riverSize=River Size
 
-createWorld.customize.custom.size= Spawn Size
-createWorld.customize.custom.count= Spawn Tries
-createWorld.customize.custom.minHeight= Min. Height
-createWorld.customize.custom.maxHeight= Max. Height
-createWorld.customize.custom.center= Center Height
-createWorld.customize.custom.spread= Spread Height
+createWorld.customize.custom.size=Spawn Size
+createWorld.customize.custom.count=Spawn Tries
+createWorld.customize.custom.minHeight=Min. Height
+createWorld.customize.custom.maxHeight=Max. Height
+createWorld.customize.custom.center=Center Height
+createWorld.customize.custom.spread=Spread Height
 
 createWorld.customize.custom.presets.title=Customize World Presets
 createWorld.customize.custom.presets=Presets
@@ -159,6 +172,15 @@ gameMode.adventure=Adventure Mode
 gameMode.spectator=Spectator Mode
 gameMode.hardcore=Hardcore Mode!
 gameMode.changed=Your game mode has been updated to %s
+
+spectatorMenu.previous_page=Previous Page
+spectatorMenu.next_page=Next Page
+spectatorMenu.close=Close menu
+spectatorMenu.teleport=Teleport to player
+spectatorMenu.teleport.prompt=Select a player to teleport to
+spectatorMenu.team_teleport=Teleport to team member
+spectatorMenu.team_teleport.prompt=Select a team to teleport to
+spectatorMenu.root.prompt=Press a key to select a command, and again to use it.
 
 selectWorld.gameMode=Game Mode
 selectWorld.gameMode.survival=Survival
@@ -337,6 +359,8 @@ options.ao.off=OFF
 options.ao.min=Minimum
 options.ao.max=Maximum
 options.anaglyph=3D Anaglyph
+options.chunks=%s chunks
+options.framerate=%s fps
 options.framerateLimit=Max Framerate
 options.framerateLimit.max=Unlimited
 options.difficulty=Difficulty
@@ -1167,6 +1191,9 @@ item.dyed=Dyed
 item.unbreakable=Unbreakable
 item.canBreak=Can break:
 item.canPlace=Can be placed on:
+item.color=Color: %s
+item.nbt_tags=NBT: %s tag(s)
+item.durability=Durability: %s / %s
 
 entity.Item.name=Item
 entity.XPOrb.name=Experience Orb
@@ -1202,12 +1229,14 @@ entity.Blaze.name=Blaze
 entity.LavaSlime.name=Magma Cube
 entity.MushroomCow.name=Mooshroom
 entity.Villager.name=Villager
+entity.ZombieVillager.name=Zombie Villager
 entity.VillagerGolem.name=Iron Golem
 entity.SnowMan.name=Snow Golem
 entity.EnderDragon.name=Ender Dragon
 entity.WitherBoss.name=Wither
 entity.Witch.name=Witch
 entity.Guardian.name=Guardian
+entity.ElderGuardian.name=Elder Guardian
 entity.Shulker.name=Shulker
 entity.PolarBear.name=Polar Bear
 
@@ -1232,7 +1261,7 @@ entity.Wolf.name=Wolf
 entity.Ozelot.name=Ocelot
 entity.Cat.name=Cat
 entity.Bat.name=Bat
-entity.EntityHorse.name=Horse
+entity.Horse.name=Horse
 entity.Donkey.name=Donkey
 entity.Mule.name=Mule
 entity.SkeletonHorse.name=Skeleton Horse
@@ -1643,6 +1672,7 @@ commands.generic.num.tooSmall=The number you have entered (%d) is too small, it 
 commands.generic.num.tooBig=The number you have entered (%d) is too big, it must be at most %d
 commands.generic.double.tooSmall=The number you have entered (%.2f) is too small, it must be at least %.2f
 commands.generic.double.tooBig=The number you have entered (%.2f) is too big, it must be at most %.2f
+commands.generic.blockstate.invalid='%s' is not a state for block %s
 commands.generic.usage=Usage: %s
 
 commands.setidletimeout.usage=/setidletimeout <Minutes until kick>
@@ -1684,21 +1714,21 @@ commands.summon.success=Object successfully summoned
 commands.summon.failed=Unable to summon object
 commands.summon.tagError=Data tag parsing failed: %s
 commands.summon.outOfWorld=Cannot summon the object out of the world
-commands.testforblock.usage=/testforblock <x> <y> <z> <TileName> [dataValue] [dataTag]
+commands.testforblock.usage=/testforblock <x> <y> <z> <block> [dataValue|-1|state|*] [dataTag]
 commands.testforblock.failed.tile=The block at %d, %d, %d is %s (expected: %s)
 commands.testforblock.failed.data=The block at %d, %d, %d had the data value of %s (expected: %s)
 commands.testforblock.failed.nbt=The block at %d, %d, %d did not have the required NBT keys
 commands.testforblock.failed.tileEntity=The block at %d, %d, %d is not a block entity and cannot support tag matching
 commands.testforblock.success=Successfully found the block at %d, %d, %d
 commands.testforblock.outOfWorld=Cannot test for block outside of the world
-commands.setblock.usage=/setblock <x> <y> <z> <TileName> [dataValue] [oldBlockHandling] [dataTag]
+commands.setblock.usage=/setblock <x> <y> <z> <block> [dataValue|state] [oldBlockHandling] [dataTag]
 commands.setblock.success=Block placed
 commands.setblock.failed=Unable to place block
 commands.setblock.tagError=Data tag parsing failed: %s
 commands.setblock.outOfWorld=Cannot place block outside of the world
 commands.setblock.notFound=There is no such block with ID/name %s
 commands.setblock.noChange=The block couldn't be placed
-commands.fill.usage=/fill <x1> <y1> <z1> <x2> <y2> <z2> <TileName> [dataValue] [oldBlockHandling] [dataTag]
+commands.fill.usage=/fill <x1> <y1> <z1> <x2> <y2> <z2> <block> [dataValue|state] [oldBlockHandling] [dataTag]
 commands.fill.outOfWorld=Cannot place blocks outside of the world
 commands.fill.tagError=Data tag parsing failed: %s
 commands.fill.success=%d blocks filled
@@ -1898,7 +1928,7 @@ commands.scoreboard.teams.leave.noTeam=You are not in a team
 commands.scoreboard.teams.option.usage=/scoreboard teams option <team> <friendlyfire|color|seeFriendlyInvisibles|nametagVisibility|deathMessageVisibility|collisionRule> <value>
 commands.scoreboard.teams.option.noValue=Valid values for option %s are: %s
 commands.scoreboard.teams.option.success=Set option %s for team %s to %s
-commands.execute.usage=/execute <entity> <x> <y> <z> <command> OR /execute <entity> <x> <y> <z> detect <x> <y> <z> <block> <data> <command>
+commands.execute.usage=/execute <entity> <x> <y> <z> <command> OR /execute <entity> <x> <y> <z> detect <x> <y> <z> <block> <dataValue|-1|state|*> <command>
 commands.execute.allInvocationsFailed=All invocations failed: '%s'
 commands.execute.failed=Failed to execute '%s' as %s
 commands.gamemode.success.self=Set own game mode to %s
@@ -3024,3 +3054,32 @@ subtitles.item.shear=Shears click
 subtitles.item.shield.block=Shield blocks
 subtitles.item.shovel.flatten=Shovel flattens
 subtitles.weather.rain=Rain falls
+
+debug.reload_chunks.help=F3 + A = Reload chunks
+debug.show_hitboxes.help=F3 + B = Show hitboxes
+debug.clear_chat.help=F3 + D = Clear chat
+debug.cycle_renderdistance.help=F3 + F = Cycle renderdistance (Shift to inverse)
+debug.chunk_boundaries.help=F3 + G = Show chunk boundaries
+debug.advanced_tooltips.help=F3 + H = Advanced tooltips
+debug.creative_spectator.help=F3 + N = Cycle creative <-> spectator
+debug.pause_focus.help=F3 + P = Pause on lost focus
+debug.help.help=F3 + Q = Show this list
+debug.reload_resourcepacks.help=F3 + T = Reload resourcepacks
+
+debug.reload_chunks.message=Reloading all chunks
+debug.show_hitboxes.on=Hitboxes: shown
+debug.show_hitboxes.off=Hitboxes: hidden
+debug.cycle_renderdistance.message=RenderDistance: %s
+debug.chunk_boundaries.on=Chunk borders: shown
+debug.chunk_boundaries.off=Chunk borders: hidden
+debug.advanced_tooltips.on=Advanced tooltips: shown
+debug.advanced_tooltips.off=Advanced tooltips: hidden
+debug.creative_spectator.error=Unable to switch gamemode, no permission
+debug.pause_focus.on=PauseOnLostFocus: enabled
+debug.pause_focus.off=PauseOnLostFocus: disabled
+debug.help.message=Keybindings:
+debug.reload_resourcepacks.message=Reloaded resourcepacks
+
+resourcepack.downloading=Downloading Resource Pack
+resourcepack.requesting=Making Request...
+resourcepack.progress=Downloading file (%s MB)...
