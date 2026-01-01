@@ -54,6 +54,7 @@ resourcePack.editor.brushPaint.tooltip=Use brushes to paint blocks in the world
 
 resourcePack.editor.BrushPaintControl.brush.title=Brush
 resourcePack.editor.BrushPaintControl.brushSettings.title=Brush Settings
+resourcePack.editor.BrushPaintControl.shapeSettings.title=Shape Settings ###Represents an expander that has UI controls for brush shape settings.{MaxLength=100}
 resourcePack.editor.BrushPaintControl.fillConstraints.mask.title=Mask List
 resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.disabled.tooltip=Disable Block Filters
 resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.disabled=Disabled
@@ -107,6 +108,8 @@ resourcePack.editor.brushShape.pyramid.settings.depth=Depth
 resourcePack.editor.brushShape.pyramid.settings.height=Height
 resourcePack.editor.brushShape.pyramid.settings.width=Width
 resourcePack.editor.brushShape.singleBlock.name=Single Block
+resourcePack.editor.brushShape.star.name=Star ###Represent a star shaped brush.{MaxLength=100}
+resourcePack.editor.brushShape.star.settings.includeVertical=Include Vertical ###Represents a toggle button label that removes vertical parts of a star brush if unchecked.{MaxLength=100}
 
 
 resourcePack.editor.client.description=Editor Client Resources
@@ -216,12 +219,22 @@ resourcePack.editor.entityInspector.toolRail.description=Left click on an entity
 resourcePack.editor.exportProject.exportType=Export Type
 resourcePack.editor.exportProject.exportType.playableWorld=Playable World
 resourcePack.editor.exportProject.exportNotes=Export Notes
+resourcePack.editor.exportProject.exportNotes.export=Exporting Progress   ###This string is intended to express that the title of export progress modal.{MaxLength=100}
 resourcePack.editor.exportProject.exportNotes.warning=You are exporting a v%1 world. Exported Playable worlds cannot be used on versions of Minecraft with a version number prior to v%1. To convert to previous version numbers, use https://chunker.app/ (some functionality may not be available if unsupported in earlier versions)
+resourcePack.editor.exportProject.exportNotes.progress=Exporting the world...    ###This string is intended to express that the progress message of exporting.{MaxLength=100}
+resourcePack.editor.exportProject.exportNotes.exportSuccess=The world was successfully exported    ###This string is intended to express that export the world succeeded.{MaxLength=100}
+resourcePack.editor.exportProject.exportNotes.exportFailed=Exporting world was failure    ###This string is intended to express that export the world failed.{MaxLength=100}
 resourcePack.editor.exportProject.generalSettings=General Settings
 resourcePack.editor.exportProject.generalSettings.worldName=World Name
 resourcePack.editor.exportProject.generalSettings.gameMode=Game Mode
 resourcePack.editor.exportProject.generalSettings.difficulty=Difficulty
 resourcePack.editor.exportProject.generalSettings.hardcore=Hardcore
+resourcePack.editor.exportProject.initialPlaySettings=Inital Play Settings   ###This string is intended to express that the export category for inital play settings.{MaxLength=100}
+resourcePack.editor.exportProject.initialPlaySettings.spawnPosition=World Spawn Point   ###This string is intended to express that player inistal spawn position.{MaxLength=100}
+resourcePack.editor.exportProject.initialPlaySettings.startTime=Start Time   ###This string is intended to express that world start time.{MaxLength=100}
+resourcePack.editor.exportProject.initialPlaySettings.clockType=Clock Type   ###This string is intended to express that start time with different clock type.{MaxLength=100}
+resourcePack.editor.exportProject.initialPlaySettings.customStartTime=Custom Start Time   ###This string is intended to express that custom start time with Minecraft Cloke value.{MaxLength=100}
+resourcePack.editor.exportProject.initialPlaySettings.weather=Start Weather   ###This string is intended to express that the custom start weather.{MaxLength=100}
 resourcePack.editor.exportProject.advancedSettings=Advanced Settings
 resourcePack.editor.exportProject.advancedSettings.startingMap=Starting Map
 resourcePack.editor.exportProject.advancedSettings.bonusChest=Bonus Chest
@@ -266,6 +279,11 @@ resourcePack.editor.exportProject.difficulty.peaceful=Peaceful
 resourcePack.editor.exportProject.difficulty.easy=Easy
 resourcePack.editor.exportProject.difficulty.normal=Normal
 resourcePack.editor.exportProject.difficulty.hard=Hard
+resourcePack.editor.exportProject.weather.default=Default   ###This string is intended to express that the default weather .{MaxLength=100}
+resourcePack.editor.exportProject.weather.clear=Clear   ###This string is intended to express that the weather of Clear.{MaxLength=100}
+resourcePack.editor.exportProject.weather.rain=Rain   ###This string is intended to express that the weather of Rain.{MaxLength=100}
+resourcePack.editor.exportProject.weather.thunder=Thunder   ###This string is intended to express that the weather of Thunder.{MaxLength=100}
+
 
 
 resourcePack.editor.toolRail.ExtrudeTool.title=Extrude Tool
@@ -607,6 +625,8 @@ resourcePack.editor.selectionTool.keyBinding.shrinkLeft=Shrink Selection Left
 resourcePack.editor.selectionTool.keyBinding.shrinkRight=Shrink Selection Right
 resourcePack.editor.selectionTool.keyBinding.shrinkUp=Shrink Selection Up
 resourcePack.editor.selectionTool.keyBinding.toggleTool=Toggle Selection Tool
+resourcePack.editor.selectionTool.keyBinding.select=Select Block		### The action of adding a block to the selection volume using they keyboard {MaxLength="30"}
+resourcePack.editor.selectionTool.keyBinding.selectMultiple=Select Additional Block		### The action of adding an additional block to the selection volume using the keyboard {MaxLength="30"}
 resourcePack.editor.selectionTool.marquee.title=Marquee Selection
 resourcePack.editor.selectionTool.modeSelection.freehand.title=Freehand Brush Mode
 resourcePack.editor.selectionTool.modeSelection.freehand.tooltip=Select blocks in the world using freehand brush shape
@@ -672,6 +692,7 @@ resourcePack.editor.timeOfDay.dropDown.none=None
 resourcePack.editor.timeOfDay.dropDown.noon=Noon
 resourcePack.editor.timeOfDay.dropDown.sunrise=Sunrise
 resourcePack.editor.timeOfDay.dropDown.sunset=Sunset
+resourcePack.editor.timeOfDay.dropDown.custom=Custom	###"Custom" describes a dropdown that players can define the specific start time {MaxLength=20}
 resourcePack.editor.timeOfDay.dropDown.title=Presets
 resourcePack.editor.timeOfDay.menu.title=Time of Day Settings
 resourcePack.editor.timeOfDay.minecraftClock=Minecraft Clock
@@ -689,6 +710,7 @@ resourcePack.editor.toolMode.keyBinding.hotbar6=Select Hotbar 6
 resourcePack.editor.toolMode.keyBinding.hotbar7=Select Hotbar 7
 resourcePack.editor.toolMode.keyBinding.hotbar8=Select Hotbar 8
 resourcePack.editor.toolMode.keyBinding.hotbar9=Select Hotbar 9
+resourcePack.editor.toolMode.keyBinding.reload=Reload ###Represents a label for a key shortcut that reloads scripts and UI.{MaxLength=100}
 
 
 resourcePack.editor.toolRail.blockPalette.title=Block Palette (CTRL+P)
@@ -766,6 +788,12 @@ resourcePack.editor.toolRail.workbenchTool.leftClick=Left Click
 resourcePack.editor.toolRail.workbenchTool.shiftLeftClick=Shift + Left Click
 resourcePack.editor.toolRail.workbenchTool.controlLeftClick=CTRL + Left Click
 resourcePack.editor.toolRail.workbenchTool.shiftControlLeftClick=Shift + CTRL + Left Click
+
+resourcePack.editor.toolRail.workbenchTool.leftClickTooltip=Left Clicking on a block will perform the primary Workbench action	###	This keybinding is a tool tip to convey that a left click will invoke the primary (1st) action of the workbench tool. {MaxLength="150"}
+resourcePack.editor.toolRail.workbenchTool.shiftLeftClickTooltip=Shift + Left Clicking on a block will perform the secondary Workbench action	###	This keybinding is a tool tip to convey that a shift + left click will invoke the primary (1st) action of the workbench tool. {MaxLength="150"}
+resourcePack.editor.toolRail.workbenchTool.controlLeftClickTooltip=Control + Left Clicking on a block will perform the tertiary Workbench action	###	This keybinding is a tool tip to convey that a control + left click will invoke the primary (1st) action of the workbench tool. {MaxLength="150"}
+resourcePack.editor.toolRail.workbenchTool.shiftControlLeftClickTooltip=Shift + Control + Left Clicking on a block will perform the quaternary Workbench action	###	TThis keybinding is a tool tip to convey that a shift + control + left click will invoke the primary (1st) action of the workbench tool. {MaxLength="150"}
+
 resourcePack.editor.toolRail.workbenchTool.stripWood=Strip/unstrip wood	###This string is intended to express whether the wood block has bark (unstripped) or doesn't have bark (stripped).{MaxLength=100}
 resourcePack.editor.toolRail.workbenchTool.ladderLocation=Ladder location
 resourcePack.editor.toolRail.workbenchTool.autoAlign=Auto align
@@ -791,6 +819,17 @@ resourcePack.editor.toolRail.workbenchTool.directionProp=Facing Direction
 resourcePack.editor.toolRail.workbenchTool.weirdoDirectionProp=Rotate
 resourcePack.editor.toolRail.workbenchTool.facingDirectionProp=Facing Direction
 resourcePack.editor.toolRail.workbenchTool.cardinalDirectionProp=Facing Direction
+
+resourcePack.editor.toolRail.workbenchTool.addCustomMapping=Add Custom Mappings	###This string is intended to express that this subpane is for adding custom block property mappings for the tool.{MaxLength=100}
+resourcePack.editor.toolRail.workbenchTool.blockProperty=Block Property	###This string is intended to express that this field is for the Block Property.{MaxLength=50}
+resourcePack.editor.toolRail.workbenchTool.clickBinding=Click Bindings	###This string is intended to express that this dropdown contains the click binding options (left click, shift + left click, etc).{MaxLength=50}
+resourcePack.editor.toolRail.workbenchTool.addMapping=Add Mapping	###This string is intended to express that this button will add the custom mapping provided by the user.{MaxLength=50}
+resourcePack.editor.toolRail.workbenchTool.resetAllMappings=Reset All Mappings	###This string is intended to express that this button will reset all custom mappings provided by the user.{MaxLength=50}
+
+resourcePack.editor.workbenchTool.keyBinding.primaryAction=Workbench Primary Action	###	This keybinding is to invoke the primary (1st) action of the workbench tool. {MaxLength="30"}
+resourcePack.editor.workbenchTool.keyBinding.secondaryAction=Workbench Secondary Action	### This keybinding is to invoke the secondary (2nd) action of the workbench tool. {MaxLength="30"}
+resourcePack.editor.workbenchTool.keyBinding.tertiaryAction=Workbench Tertiary Action	###	This keybinding is to invoke the tertiary (3rd) action of the workbench tool. {MaxLength="30"}
+resourcePack.editor.workbenchTool.keyBinding.quaternaryAction=Workbench Quaternary Action	### This keybinding is to invoke the quaternary (4th) action of the workbench tool. {MaxLength="30"}
 
 
 resourcePack.editor.transaction.keyBinding.redo=Redo
