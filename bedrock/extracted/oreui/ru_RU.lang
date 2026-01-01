@@ -37,46 +37,6 @@ hbui.TitleBar.Buttons.Back.inputLegend=Назад	#
 hbui.TitleBar.Buttons.Back.narration=Кнопка «Назад»	#
 hbui.TitleBar.Buttons.Close.inputLegend=Закрыть	#
 hbui.TitleBar.Buttons.Close.narration=Кнопка «Закрыть»	#
-hbui.Accordion.closeInputLegend=Закрыть	#
-hbui.Accordion.openInputLegend=Открыть	#
-hbui.BackButton.back=Назад	#
-hbui.BackButton.narration.backButton=Кнопка «Назад»	#
-hbui.BaseDropdown.close=Закрыть	#
-hbui.BaseDropdown.enumeration=%1$s из %2$s	#
-hbui.BaseDropdown.open=Открыть	#
-hbui.BaseDropdown.selected=Выбрано	#
-hbui.BaseDropdown.stateCollapsed=Свернуто	#
-hbui.BaseDropdown.stateExpanded=Развернуто	#
-hbui.BaseDropdown.toggleElementType=Параметр	#
-hbui.BaseSlider.currentValue=текущее значение:	#
-hbui.BaseSlider.elementType=ползунок	#
-hbui.BaseSlider.maxValueIs=максимальное значение:	#
-hbui.BaseSlider.minValueIs=минимальное значение:	#
-hbui.BaseSwitch.elementType=Включатель	#
-hbui.BaseSwitch.narrationDisabled=Отключить	#
-hbui.BaseSwitch.off=Выкл.	#
-hbui.BaseSwitch.on=Вкл.	#
-hbui.BaseSwitch.toggle=Переключатель	#
-hbui.BaseTextField.addedNarration=Добавлено	#
-hbui.BaseTextField.deselect=Снять выбор	#
-hbui.BaseTextField.hint=Выполняется ввод текста. Напишите текст для ввода %1$s	#
-hbui.BaseTextField.invalidNarration=Недействительно	#
-hbui.BaseTextField.removedNarration=Удалено	#
-hbui.BaseTextField.replacedNarration=Заменено на	#
-hbui.BaseTextField.select=Выбрать	#
-hbui.BaseTextField.selected=Выбрано	#
-hbui.DropdownItem.elementType=Предмет	#
-hbui.DropdownItem.narrationComponentType=Параметр	#
-hbui.DropdownItem.select=Выбрать	#
-hbui.DropdownItem.selected=Выбрано	#
-hbui.DropdownItem.unselected=Не выбрано	#
-hbui.ScrollView.loadingState=Загрузка	#
-hbui.ScrollView.narrationScrollViewComponentType=Контент	#
-hbui.TitleBar.Buttons.Back.inputLegend=Назад	#
-hbui.TitleBar.Buttons.Back.narration=Кнопка «Назад»	#
-hbui.TitleBar.Buttons.Close.inputLegend=Закрыть	#
-hbui.TitleBar.Buttons.Close.narration=Кнопка «Закрыть»	#
-hbui.Sample.hello=Здравствуйте %1$s!	#
 hbui.Editor.title=Раскладка	#
 hbui.EditorActionBar.leftTray=Влево	#
 hbui.EditorActionBar.rightTray=Вправо	#
@@ -181,6 +141,8 @@ hbui.EditorExpanderSample.expanderIconSample.title=Образец расшири
 hbui.EditorExpanderSample.expanderSample.text=Текст внутри расширителя	#
 hbui.EditorExpanderSample.expanderSample.title=Образец расширителя	#
 hbui.EditorExpanderSample.panelTitle=Образец расширителя	#
+hbui.EditorGraph.nodeCount=Node %1$s of %2$s 	####Graph node that is interactive in appearance and functionality. Can be clicked to trigger actions and dragged to new position. {MaxLength=1000}
+hbui.EditorGraph.type=Graph 	####Graph is a container that represents arbitrary data via nodes. Nodes hold the data, they are clickable and draggabe. {MaxLength=1000}
 hbui.EditorHotbar.default=По умолчанию	#
 hbui.EditorHotbar.manageHotbar=Управление панелью быстрого доступа	#
 hbui.EditorHotbar.manageHotbars=Управление панелями быстрого доступа	#
@@ -436,6 +398,7 @@ hbui.EditorStructurePanel.importLabel=Импорт	#
 hbui.EditorStructurePanel.listViewIconTooltip=Список	#
 hbui.EditorStructurePanel.narration=Структурная панель	#
 hbui.EditorStructurePanel.newFromClipboardLabel=Новое из буфера обмена	#
+hbui.EditorStructurePanel.newFromSelection=New from Selection 	####Label for a button that creates a new structure from a selection {MaxLength=50}
 hbui.EditorStructurePanel.sortLabel=Сортировка	#
 hbui.EditorStructurePanel.structureContentSectionHeader=Данные структуры	#
 hbui.EditorStructurePanel.structureItem=StructureItem	#
@@ -463,6 +426,26 @@ hbui.EditorToggleContainer.prevPage=Кнопка «Пред. страница»	
 hbui.EditorToggleHeader.collapsed=свернуто	#
 hbui.EditorToggleHeader.elementType=переключение заголовка	#
 hbui.EditorToolRail.title=Панель инструментов	#
+hbui.EditorTutorial.button.begin=Begin 	####Button on the tutorial modal that starts the tutorial. {MaxLength=1000}
+hbui.EditorTutorial.button.exit=Exit 	####Button on the tutorial modal that completes tutorial and closes modal. {MaxLength=1000}
+hbui.EditorTutorial.button.next=Next 	####Button on the tutorial modal that skips to the next tutorial stage. {MaxLength=1000}
+hbui.EditorTutorial.exit.cancel=Отмена 	####Button label on the exit tutorial modal that returns user to the current tutorial stage. {MaxLength=1000}
+hbui.EditorTutorial.exit.confirm=Confirm 	####Button label on the exit tutorial modal that ends tutorial. {MaxLength=1000}
+hbui.EditorTutorial.exit.message=Do you want to exit the tutorial? 	####Message that shows on the tutorial modal when exit button is clicked. {MaxLength=1000}
+hbui.EditorTutorial.stage.brush.activate.message=Now let's learn about the Brush Paint tool. Activate the Brush Paint tool by selecting %1$s on the toolrail or with %2$s. You can add blocks to the world by holding Left Click and moving the mouse around the world. 	####Editor tutorial message that explains how to activate brush tool from UI control or key shortcut. {MaxLength=1000}
+hbui.EditorTutorial.stage.brush.delete.message=Holding %1$s down when using the Brush Paint tool will remove blocks from the world instead of adding them. Use the brush to remove some blocks from the world. 	####Editor tutorial message that explains how to remove blocks using brush tool. {MaxLength=1000}
+hbui.EditorTutorial.stage.end.info=You can learn more about Editor by going to %1$s. You can also learn about specific tools by pressing the Info button on the tooltips. 	####Message at the end of editor tutorial that shows a link to documentation and explains where to find additional information. {MaxLength=1000}
+hbui.EditorTutorial.stage.end.message=Great! You now know the basics of Minecraft Editor. Enjoy creating your first Editor experience. Remember to use Test World, to playtest your creation at any time, and then Export your world or upload it to Realms when you are finished to share your creation with friends. 	####Message at the end of editor tutorial that indicates completion of the tutorial. {MaxLength=1000}
+hbui.EditorTutorial.stage.hotbar.message=The hotbar determines which block is for Fill operations, brushes, etc. You can switch the active hotbar slot with the 1-9 keys or select it with the mouse. Select the active slot again to open the block picker to change the block that is being used, or you can use Middle Mouse Button to change it to a block in the world. 	####Editor tutorial message that explains how hotbar is operated. {MaxLength=1000}
+hbui.EditorTutorial.stage.movement.message=While holding Right Click on the mouse: 	####Editor tutorial modal message about steps to execute for player movement example. {MaxLength=1000}
+hbui.EditorTutorial.stage.movement.message.camera=Use the mouse to move the camera around the world.  	####Editor tutorial modal message option for rotating the player camera. {MaxLength=1000}
+hbui.EditorTutorial.stage.movement.message.navigate=Use %1$s, %2$s, %3$s, and %4$s to move around the world.  	####Editor tutorial modal message option for moving the player when parameterized keyboard buttons are pressed. {MaxLength=1000}
+hbui.EditorTutorial.stage.selection.activate.message=Now let's learn about the Selection tool. Activate the Selection tool by selecting the %1$s on the toolrail or by using %2$s hotkey. 	####Editor tutorial message that teaches how to activate selection tool with UI control or key shortcut. {MaxLength=1000}
+hbui.EditorTutorial.stage.selection.create.message=Let's decide where the selection will begin. Use the Mouse to select a block in the world and then use Left Click to place the start position of the selection. Then while still holding left click, drag the mouse to make the selection the size you want 	####Editor tutorial text that teaches how to create a new selection in the world. {MaxLength=1000}
+hbui.EditorTutorial.stage.selection.fill.message=Now that you have a selection, let's fill it with blocks. Select the Fill button on the Action Bar or %1$s to fill the selection with blocks. 	####Editor tutorial message that explains how to fill a selection {MaxLength=1000}
+hbui.EditorTutorial.stage.selection.info.message=The Selection tool can be used to move blocks around, make copies to paste in the world, as well as a wide variety of tools. 	####Editor tutorial message that explains general use cases of selection tool. {MaxLength=1000}
+hbui.EditorTutorial.stage.start.begin=Begin 	####Button label that starts editor tutorial. {MaxLength=1000}
+hbui.EditorTutorial.stage.start.message=Welcome to the Minecraft Editor, a tool designed to help you create stunning worlds in Bedrock with ease. Let's show you some of the basics. The tutorial can be replayed. You can find it under the 'Help' menu. 	####Modal message that displays before starting editor tutorial. {MaxLength=1000}
 hbui.EditorTypographySample.colorSectionTextSample1=Пример текста X	#
 hbui.EditorTypographySample.colorSectionTextSample2=Пример текста Y	#
 hbui.EditorTypographySample.colorSectionTextSample3=Пример текста Z	#
@@ -780,6 +763,12 @@ hbui.Bedtime.messageWaitingForOthersSingularThunderstorm=Thunderstorm will be sk
 hbui.Bedtime.openChatButton=Открыть чат	#
 hbui.Bedtime.sleepingNotPossibleNotWorldOwner=Параметр «Поспать и пропустить ночь» выключен. Владелец этого мира должен включить эту настройку в режиме редактирования.		####This string refers to name of a specific setting (Skip night by sleeping) in a specific screen (Edit world) of the game.{MaxLength=240}
 hbui.Bedtime.sleepingNotPossibleWorldOwner=Параметр «Поспать и пропустить ночь» отключен. Владелец этого мира должен включить этот параметр в расширенных настройках раздела редактирования.		####This string refers to name of a specific setting (Skip night by sleeping) in specifc UI tab (advanced) a specific screen (Edit world) of the game.{MaxLength=290}
+hbui.CapeIncentiveReceivedTransientRoute.buttonEnumeration=%1$s из %2$s		#### Used for narrating eg "button one of two". Large MaxLength is because this is for narration {MaxLength=1000}
+hbui.CapeIncentiveReceivedTransientRoute.continueButton=Continue		#### {MaxLength=30}
+hbui.CapeIncentiveReceivedTransientRoute.dressingRoomButton=Go to Dressing Room		#### Go to the Dressing Room screen, where the player may equip the cape	{MaxLength=30}
+hbui.CapeIncentiveReceivedTransientRoute.text1=You did it! You're all logged in, which means you have a fancy new Common Cape to show off. Or use it to hide among the foliage. The choice is yours.		#### "You did it!" refers to the player having logged in with their Microsoft account. Common is the rarity of the cape.	{MaxLength=1000}
+hbui.CapeIncentiveReceivedTransientRoute.text2=Go to the dressing room to equip now, or continue to play capeless. It's up to you. 	#### "it" is the cape the player has received. Dressing room is a screen in the game where the player may equip their cosmetic items. {MaxLength=1000}
+hbui.CapeIncentiveReceivedTransientRoute.title=Nice cape you've got there		#### Complimenting the player on the wearable cape they have just received for signing in. {MaxLength=60}
 hbui.ChooseRealmRoute.addNewBetaRealm=Добавить бета-версию Realm	#
 hbui.ChooseRealmRoute.addNewPreviewRealm=Добавить предварительную версию Realm	#
 hbui.ChooseRealmRoute.adventure=Приключения	#
@@ -1209,7 +1198,7 @@ hbui.CreateNewWorld.advanced.tileDropsTitle=Выпадение предмето�
 hbui.CreateNewWorld.advanced.title=Расширенные настройки	#
 hbui.CreateNewWorld.advanced.tntExplodesDescription=Красная коробка делает бум	#
 hbui.CreateNewWorld.advanced.tntExplodesTitle=Детонация динамита	#
-hbui.CreateNewWorld.advanced.useFlatWorldDescription=Совершенно плоский мир, уходящий вдаль	#
+hbui.CreateNewWorld.advanced.useFlatWorldDescription=Совершенно плоский мир, уходящий вдаль	#### Flat world is a world that is generated as completely flat. Build up as eg adding structures, mine down as in digging or mining down into the flat world. {MaxLength="100"}
 hbui.CreateNewWorld.advanced.useFlatWorldTitle=Плоский мир	#
 hbui.CreateNewWorld.advanced.vanillaWorldGeneratorDescription=Стандартный мир Minecraft, основанный на ключе генерации мира	#
 hbui.CreateNewWorld.advanced.vanillaWorldGeneratorLabel=Бесконечный мир	#
@@ -1332,6 +1321,8 @@ hbui.CreateNewWorld.experimentalFeatures.addOnCreatorsDescription=Для соз�
 hbui.CreateNewWorld.experimentalFeatures.addOnCreatorsTitle=Авторы дополнений	#
 hbui.CreateNewWorld.experimentalFeatures.gameplayDescription=Изменяйте функционирование своего мира	#
 hbui.CreateNewWorld.experimentalFeatures.gameplayTitle=Игровой процесс	#
+hbui.CreateNewWorld.experimentalFeatures.graphicsDescription=Change the way your world looks    	#### Change the way visuals of a world are viewed {MaxLength="124"}
+hbui.CreateNewWorld.experimentalFeatures.graphicsTitle=Graphics 	#### Visuals, Graphical {MaxLength="60"}
 hbui.CreateNewWorld.experimentalFeatures.internalTestsDescription=Только для разработчиков, не будет отображаться в общедоступной версии	#
 hbui.CreateNewWorld.experimentalFeatures.internalTestsTitle=Внутренние тесты	#
 hbui.CreateNewWorld.experimentalFeatures.narrationComponentTypeSectionHeader=Группа	#
@@ -2184,6 +2175,11 @@ hbui.PackTabs.activeTabButtonLabel=Активные	#
 hbui.PackTabs.availableTabButtonLabel=Доступные	#
 hbui.PackTabs.narration.tab=%1$s, вкладка %2$s из %3$s	#
 hbui.PartyInviteListGroup.titleWithLength=%1$s (%2$s) 	#### the title of a list followed by the number of items in the list. The number is in brackets.
+hbui.PartyTab.invited=Приглашение отправлено 	#### list header title for list of invited players {maxLength = 35}
+hbui.PartyTab.inviteOnlyParty=Invite only party 	#### list header title for list of players in the party indicating that players can only join the party when invited {maxLength = 35}
+hbui.PartyTab.joinableParties=Joinable parties 	#### list header title for list of other player's parties that are available for you to join {maxLength = 35}
+hbui.PartyTab.openParty=Open party 	#### list header title for list of players in the party indicating that the party is open to all players {maxLength = 35}
+hbui.PartyTab.receivedInvites=Received invites 	#### list header title for list of players who have invited you to join their party {maxLength = 35}
 hbui.PlayerAvatarsOnlineInWorld.full=Заполнено	#
 hbui.PlayerBannedModalRoute.body=Ваш доступ к многопользовательским играм в Minecraft изменился на «%1$s» по следующей причине: %2$s. Вы не сможете играть на серверах, присоединяться к Realm, организовывать многопользовательские игры или участвовать в них, а также использовать Рынок.	#
 hbui.PlayerBannedModalRoute.body.day=Ваше отстранение продлится еще 1 д.	#
@@ -2258,6 +2254,7 @@ hbui.PlayerListItem.addButtonText=Add	#
 hbui.PlayerListItem.added=Добавлено	#
 hbui.PlayerListItem.away=Нет на месте	#
 hbui.PlayerListItem.buttonSiblings=Кнопка %1$s из %2$s	#
+hbui.PlayerListItem.cancelButtonText=Отмена 	#### The text that appears on a button for cancelling an invite that you sent to a player {MaxLength=7}
 hbui.PlayerListItem.delete=Удалить	#
 hbui.PlayerListItem.friends=Друзья	#
 hbui.PlayerListItem.inviteButtonInputLegend=Пригласить друга 	#### The input legend text for a button used to invite someone to a party
@@ -3007,6 +3004,10 @@ hbui.RealmsPurchaseSubscriptionRoute.banner.subheading.trial=Бесплатна�
 hbui.RealmsPurchaseSubscriptionRoute.banner.subheading.trial.narration=Бесплатная 30-дневная пробная версия, затем %1$s в месяц.	#
 hbui.RealmsPurchaseSubscriptionRoute.checkboxLabel=Принять	#
 hbui.RealmsPurchaseSubscriptionRoute.checkboxUncheckedHint=Примите положения и условия для создания Realm   	#### {StrContains="Realm"}
+hbui.RealmsPurchaseSubscriptionRoute.errorModals.appStoreNotReady.body=Log in to your Apple Account to continue with this purchase.		#### modal text telling players that they have to sign in to the Apple AppStore before they can continue with the Realm purchase {MaxLength="100"}
+hbui.RealmsPurchaseSubscriptionRoute.errorModals.appStoreNotReady.cancel=Go back		#### text on the cancel button of the modal that tells players that they have to sign in to the Apple AppStore before they can continue with the Realm purchase {MaxLength="10"}
+hbui.RealmsPurchaseSubscriptionRoute.errorModals.appStoreNotReady.confirm=Sign in to Store		#### text on the confirm button of the modal that tells players that they have to sign in to the Apple AppStore before they can continue with the Realm purchase {MaxLength="20"}
+hbui.RealmsPurchaseSubscriptionRoute.errorModals.appStoreNotReady.title=Log in to continue		#### title of the modal that tells players that they have to sign in to the Apple AppStore before they can continue with the Realm purchase {MaxLength="20"}
 hbui.RealmsPurchaseSubscriptionRoute.ErrorModals.close=Закрыть	#
 hbui.RealmsPurchaseSubscriptionRoute.errorModals.failedClubNameValidation.body=Введенный вами текст содержит слова, которые могут быть оскорбительными для других, поэтому использовать их нельзя. Попробуйте еще раз.	#
 hbui.RealmsPurchaseSubscriptionRoute.errorModals.failedClubNameValidation.title=Фильтр сквернословия	#
@@ -3015,6 +3016,7 @@ hbui.RealmsPurchaseSubscriptionRoute.errorModals.genericFailure.title=Something 
 hbui.RealmsPurchaseSubscriptionRoute.errorModals.invalidRealmName.body=Введенное имя Realm недействительно. Убедитесь, что это поле заполнено, и не содержит никаких специальных символов.	#
 hbui.RealmsPurchaseSubscriptionRoute.errorModals.invalidRealmName.title=Неверное имя Realm	#
 hbui.RealmsPurchaseSubscriptionRoute.errorModals.memberOfTooManyRealms.body=You are a member of too many Realms. Leave any old Realms to purchase a new Realms subscription.		#### {MaxLength="150"} message saying that the player has been a member of too many Realms and thus cannot create more Realms
+hbui.RealmsPurchaseSubscriptionRoute.errorModals.memberOfTooManyRealms.cancel=Go back		#### {MaxLength="10"} the button text of the modal saying that the player has been a member of too many Realms
 hbui.RealmsPurchaseSubscriptionRoute.errorModals.memberOfTooManyRealms.title=Too many memberships		#### {MaxLength="25"} the title of the modal saying that the player has been a member of too many Realms
 hbui.RealmsPurchaseSubscriptionRoute.errorModals.noAccess.body=You do not have access to Realms in pre-production. To get access, reach out in #ask-realms-preprod-access or see the guide at aka.ms/Realms-preprod-access. 	#### {MaxLength="160"} message saying that the player has no access to Realms and where to request for help (for devs only)
 hbui.RealmsPurchaseSubscriptionRoute.errorModals.noAccess.title=Error 	#### {MaxLength="5"} the title of the modal saying that the player has no access to Realms
@@ -3689,6 +3691,15 @@ hbui.SignInWorldsFriendsServersRoute.signInList3=Присоединяйтесь 
 hbui.SignInWorldsFriendsServersRoute.signInList3PS=Присоединяйтесь к другим игрокам на уникальном игровом сервере	#
 hbui.SignInWorldsFriendsServersRoute.signInList4=Доступ к контенту и персонажам Рынка на нескольких платформах	#
 hbui.SignInWorldsFriendsServersRoute.signInPrompt=Войдите в систему с помощью своей учетной записи Microsoft, чтобы открыть ряд функций, в том числе:	#
+hbui.SocialDrawer.narration.title=Social Drawer 	#### Social Drawer title used for narrations
+hbui.SocialDrawer.partyTabButtonLabel=Party 	#### Tab button that shows people in the party section {MaxLength=13}
+hbui.SocialDrawer.peopleTabButtonLabel=People (%1$s) 	#### Tab button that shows people in the friends section followed by the number of friends online {MaxLength=13}
+hbui.SocialDrawerHeader.close=Close 	#### input legend for a textless button that closes the social drawer
+hbui.SocialDrawerHeader.narration.close=Close 	#### narration for a textless button that closes the social drawer
+hbui.SocialDrawerHeader.narration.search=Search for people . Button . Find people by searching for their gamertag 	#### narration for a textless button that opens the Search for Players screen
+hbui.SocialDrawerHeader.narration.socialSettings=Social settings 	#### narration for a textless button that opens the social drawer's settings menu
+hbui.SocialDrawerHeader.searchForPeople=Search for people 	#### Text for a button that links to the search for players screen {MaxLength=20}
+hbui.SocialDrawerHeader.socialSettings=Social settings 	#### input legend for a textless button that opens the social drawer's settings menu
 hbui.Splash.enumeration=%1$s из %2$s	#
 hbui.Splash.role=Текстовый раздел	#
 hbui.Splash.select=Выбрать	#
@@ -3792,12 +3803,15 @@ hbui.StartFromTemplateRoute.useTemplateOperations.importNotification=Шабло�
 hbui.StatListItem.compareNarration=%1$s против %2$s	#
 hbui.StatListItem.itemNarration=%1$s из %2$s	#
 hbui.StorageIndicator.bytes=%1$s байт	#
-hbui.StorageIndicator.fullStorageTag=Хранилище заполнено	#
 hbui.StorageIndicator.gigabytes=%1$sГБ	#
 hbui.StorageIndicator.kilobytes=%1$s КБ	#
 hbui.StorageIndicator.megabytes=%1$s МБ	#
 hbui.StorageIndicator.petabytes=%1$s ПБ	#
-hbui.StorageIndicator.settings=Настройки	#
+hbui.StorageIndicator.storage=Go to storage		#### Button that redirects the user to storage settings menu {MaxLength=20}
+hbui.StorageIndicator.storageLabelAlmostFullCreateWorld=Storage almost full. Delete data from Settings to create a world.		####Label used to warn players that storage is almost full and they cannot create a world {MaxLength=80}
+hbui.StorageIndicator.storageLabelAlmostFullEnterWorld=Storage almost full. Delete data from Settings to enter a world.		####Label used to warn players that storage is almost full and they cannot enter a world {MaxLength=80}
+hbui.StorageIndicator.storageLabelFullCreateWorld=Storage is full. Delete data from Settings to create a world.		####Label used to warn players that storage is full and they cannot create a world {MaxLength=80}
+hbui.StorageIndicator.storageLabelFullEnterWorld=Storage is full. Delete data from Settings to enter a world.		####Label used to warn players that storage is full and they cannot enter a world {MaxLength=80}
 hbui.StorageIndicator.storageSpace=Использовано %1$s из %2$s	#
 hbui.StorageIndicator.terabytes=%1$s ТБ	#
 hbui.SwitchAccordion.closeInputLegend=Close    	#### Close an unfolded UI element. {MaxLength="16"}
@@ -3970,6 +3984,45 @@ hbui.WorldTag.hardcore=Хардкор	#
 hbui.WorldTag.lan=Локальная сеть	#
 hbui.WorldTag.survival=Выживание	#
 hbui.WorldTag.unknown=Неизвестный 	#### Unknown type of Minecraft world. A known type would be eg survival or creative. {MaxLength=21}
+hbui.Accordion.closeInputLegend=Закрыть	#
+hbui.Accordion.openInputLegend=Открыть	#
+hbui.BackButton.back=Назад	#
+hbui.BackButton.narration.backButton=Кнопка «Назад»	#
+hbui.BaseDropdown.close=Закрыть	#
+hbui.BaseDropdown.enumeration=%1$s из %2$s	#
+hbui.BaseDropdown.open=Открыть	#
+hbui.BaseDropdown.selected=Выбрано	#
+hbui.BaseDropdown.stateCollapsed=Свернуто	#
+hbui.BaseDropdown.stateExpanded=Развернуто	#
+hbui.BaseDropdown.toggleElementType=Параметр	#
+hbui.BaseSlider.currentValue=текущее значение:	#
+hbui.BaseSlider.elementType=ползунок	#
+hbui.BaseSlider.maxValueIs=максимальное значение:	#
+hbui.BaseSlider.minValueIs=минимальное значение:	#
+hbui.BaseSwitch.elementType=Включатель	#
+hbui.BaseSwitch.narrationDisabled=Отключить	#
+hbui.BaseSwitch.off=Выкл.	#
+hbui.BaseSwitch.on=Вкл.	#
+hbui.BaseSwitch.toggle=Переключатель	#
+hbui.BaseTextField.addedNarration=Добавлено	#
+hbui.BaseTextField.deselect=Снять выбор	#
+hbui.BaseTextField.hint=Выполняется ввод текста. Напишите текст для ввода %1$s	#
+hbui.BaseTextField.invalidNarration=Недействительно	#
+hbui.BaseTextField.removedNarration=Удалено	#
+hbui.BaseTextField.replacedNarration=Заменено на	#
+hbui.BaseTextField.select=Выбрать	#
+hbui.BaseTextField.selected=Выбрано	#
+hbui.DropdownItem.elementType=Предмет	#
+hbui.DropdownItem.narrationComponentType=Параметр	#
+hbui.DropdownItem.select=Выбрать	#
+hbui.DropdownItem.selected=Выбрано	#
+hbui.DropdownItem.unselected=Не выбрано	#
+hbui.ScrollView.loadingState=Загрузка	#
+hbui.ScrollView.narrationScrollViewComponentType=Контент	#
+hbui.TitleBar.Buttons.Back.inputLegend=Назад	#
+hbui.TitleBar.Buttons.Back.narration=Кнопка «Назад»	#
+hbui.TitleBar.Buttons.Close.inputLegend=Закрыть	#
+hbui.TitleBar.Buttons.Close.narration=Кнопка «Закрыть»	#
 hbui.BackButton.back=Назад	#
 hbui.BackButton.narrationComponentType=Кнопка	#
 hbui.BackButton.narrationGoBack=Назад	#
@@ -4028,6 +4081,7 @@ hbui.NavigationBarLayout.DeleteButton.narration=Кнопка «Удалить»	
 hbui.NavigationBarLayout.FriendsButton.friends=Друзья	#
 hbui.NavigationBarLayout.FriendsButton.inputLegend=Друзья	#
 hbui.NavigationBarLayout.FriendsButton.narration=Кнопка «Список друзей»	#
+hbui.NavigationBarLayout.FriendsButton.social=Общение 	#### title for the button that opens the social drawer
 hbui.NavigationBarLayout.MenuButton.inputLegend=Меню	#
 hbui.NavigationBarLayout.MenuButton.narration=Кнопка MENU	#
 hbui.Pagination.componentType=Разбивка на страницы	#
@@ -4111,3 +4165,4 @@ hbui.Toggle.select=Выбрать	#
 hbui.TreeView.collapse=Свернуть	#
 hbui.TreeView.expand=Расширить	#
 hbui.TreeView.open=Открыть	#
+hbui.Sample.hello=Здравствуйте %1$s!	#

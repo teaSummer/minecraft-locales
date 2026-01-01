@@ -16,6 +16,9 @@ resourcePack.editor.actionBar.redo=Refaire	#
 resourcePack.editor.actionBar.undo.tooltipDescription=Annuler une action	#
 resourcePack.editor.actionBar.undo.tooltipTitle=Annuler	#
 resourcePack.editor.actionBar.undo=Annuler	#
+resourcePack.editor.actionBar.fill=Fill 	####Label for an actionbar item that fills the selection with the current hotbar block.{MaxLength=100}
+resourcePack.editor.actionBar.fill.tooltipDescription=Fill the selection volume with the current hotbar block 	####Tooltip description for an actionbar item that fills the selection with the current hotbar block.{MaxLength=100}
+resourcePack.editor.actionBar.fill.tooltipTitle=Fill 	####Tooltip title for an actionbar item that fills the selection with the current hotbar block.{MaxLength=100}
 
 resourcePack.editor.agfx.settings.error.title=Error(s) occurred...	#
 resourcePack.editor.agfx.pane.title=Settings Editor	#
@@ -557,17 +560,23 @@ resourcePack.editor.playtestResult.WorldExportFailed=Échec de l’exportation d
 
 
 resourcePack.editor.menuBar.file.realmsPublish=Publier sur Realms   	####This string is intended to express that the option is for opening the pane to publish your editor world to Realms.{MaxLength=100}
-resourcePack.editor.realmsPublish.userNotLoggedIn=Un abonnement Realms actif est nécessaire pour publier sur Realms. Vous pouvez vous y abonner ou renouveler un abonnement expiré depuis le client Minecraft standard ou sur le site minecraft.net (après vous être connecté(e) à votre compte).    	####This string is intended to express that the user is not logged in currently and the process they need to follow in order to be able to upload their editor world to their Realms subscription.{MaxLength=350}
+resourcePack.editor.realmsPublish.noActiveRealmsSubscription=Un abonnement Realms actif est nécessaire pour publier sur Realms. Vous pouvez vous y abonner ou renouveler un abonnement expiré depuis le client Minecraft standard ou sur le site minecraft.net (après vous être connecté(e) à votre compte).    	####This string is intended to express that the user doesn't have a active Realms subscription and the process they need to follow in order to be able to upload their editor world to their Realms subscription.{MaxLength=350}
+resourcePack.editor.realmsPublish.userNotLoggedIn=Un abonnement Realms actif est nécessaire pour publier sur Realms. Vous pouvez vous y abonner ou renouveler un abonnement expiré depuis le client Minecraft standard ou sur le site minecraft.net (après vous être connecté(e) à votre compte).    	####This string is intended to express that the user is not logged in currently and that they must be logged into their Microsoft account in order to proceed.{MaxLength=350}
+resourcePack.editor.realmsPublish.dedicatedServerWarning=Publish to Realms is unavailable when using a Dedicated Server.		####This string is intended to express that the user is unable to use the Publish to Realms feature on a dedicated server.{MaxLength=350}
+resourcePack.editor.realmsPublish.notSessionHostWarning=Only the Editor session host can Publish to Realms.		####This string is intended to express that the user is unable to use the Publish to Realms when they are not the session host.{MaxLength=350}
+resourcePack.editor.realmsPublish.genericRealmsIssue=There is an issue with the Realms service, try again later.		####This string is intended to express that there is an issue with the realms service and to please try again later.{MaxLength=350}
 resourcePack.editor.realmsPublish.goToMinecraftWebsite=Aller à Minecraft.net  	####This string is intended to express that the link will take the user to Minecraft.net.{MaxLength=100}
 resourcePack.editor.realmsPublish.Refresh=Actualiser  	####This string is intended to express that the button will refresh the pane to see if the user in now logged in.{MaxLength=100}
 resourcePack.editor.realmsPublish.Realm=Realm  	####This string is intended to express that the below dropdown contains all of the users Realms subscriptions.{MaxLength=100}
 resourcePack.editor.realmsPublish.RealmSlot=Emplacement de Realm 	####This string is intended to express that the dropdown contains all of the world slots in for the users selected realms subscription.{MaxLength=100}
+resourcePack.editor.realmsPublish.EmptySlot=Empty Slot		####This string is intended to express that the Realm slot is empty.{MaxLength=100}
 resourcePack.editor.realmsPublish.PublishNotesTitle=Publier sur Realms (remarque)   	####This string is intended to express that the below field will contain additional information for the user about the publish to realms feature, including any warnings or issues.{MaxLength=150}
 resourcePack.editor.realmsPublish.DownloadRealm=Télécharger    	####This string is intended to express that the button will download the currently selected World from the realm slot.{MaxLength=100}
 resourcePack.editor.realmsPublish.PublishRealm=Publier  	####This string is intended to express that the button will publish the current world to the currently selected realm slot.{MaxLength=100}
 resourcePack.editor.realmsPublish.Confirm=Confirmer   	####This string is intended to express that the button will confirm  the request to publish the world to realms.{MaxLength=100}
 resourcePack.editor.realmsPublish.Cancel=Annuler 	####This string is intended to express that the button will cancel the request to publish the world to realms.{MaxLength=100}
 resourcePack.editor.realmsPublish.Back=Retour 	####This string is intended to express that the button will take the user back to the previous pane.{MaxLength=100}
+resourcePack.editor.realmsPublish.PublishFailedNonCompliantWorldName=Publish to Realms failed due to an invalid world name. Please update the world name and try again.		####This string is intended to express that publishing the world to Realms failed due to an invalid world name that was entered by the player .{MaxLength=200}
 resourcePack.editor.realmsPublish.PublishFailed=La publication sur Realms a échoué. Veuillez réessayer plus tard.   	####This string is intended to express that publishing the world to Realms failed and to please try again later.{MaxLength=200}
 resourcePack.editor.realmsPublish.PublishSuccess=La publication sur Realms a été effectuée    	####This string is intended to express that publishing the world to Realms succeeded.{MaxLength=200}
 resourcePack.editor.realmsPublish.PublishConfirmationOptOut=Ne plus me le demander pour ce Realm et cette session  	####This string is intended to express that the checkbox will opt the user out of confirming their publish to realms decisions.{MaxLength=100}
@@ -645,6 +654,8 @@ resourcePack.editor.selectionTool.modeSelection.freehand.title=Mode Pinceau libr
 resourcePack.editor.selectionTool.modeSelection.freehand.tooltip=Sélectionnez des blocs du monde en utilisant une forme de pinceau libre	#
 resourcePack.editor.selectionTool.modeSelection.marquee.title=Mode Rectangle de sélection	#
 resourcePack.editor.selectionTool.modeSelection.marquee.tooltip=Sélectionnez les blocs du monde en utilisant un volume rectangulaire	#
+resourcePack.editor.selectionTool.modeSelection.magic.title=Magic Select Mode			#### Magic Select mode is a mode that searches for contiguous matching blocks in a search radius {MaxLength=30}}
+resourcePack.editor.selectionTool.modeSelection.magic.tooltip=Select blocks in the world using a search pattern from a chosen origin		#### Longer description of the magic select mode {MaxLength=150}}
 resourcePack.editor.selectionTool.modeSelection.title=Mode de sélection	#
 resourcePack.editor.selectionTool.projectThroughLiquid=Afficher à travers les liquides	#
 resourcePack.editor.selectionTool.trimAction.trimVolume=Trim Selection			#### Trim the current selection volume to fit only the solid blocks within {MaxLength=30}
@@ -656,7 +667,6 @@ resourcePack.editor.selectionTool.trimAction.trimVolume.SettingsPane.ignoreLiqui
 resourcePack.editor.selectionTool.trimAction.trimVolume.SettingsPane.ignoreLiquid.tooltip=Ignore any liquid blocks when trimming the volume 	#### {MaxLength=200}
 resourcePack.editor.selectionTool.trimAction.trimVolume.SettingsPane.onlyCollidable=Only Collision Blocks		#### The toggle button title for collision-only blocks {MaxLength=30}
 resourcePack.editor.selectionTool.trimAction.trimVolume.SettingsPane.onlyCollidable.tooltip=Ignore any blocks with no collision (leaves, grass, etc) when trimming the volume 	#### {MaxLength=200}
-resourcePack.editor.selectionTool.trimAction.trimVolume.SettingsPane.blockMaskMode=Block Mask Mode    	#### Title for the toggle action group to selection the block mask mode {MaxLength=20}
 resourcePack.editor.selectionTool.quickAction.clearSelection.tooltip=Désélectionner la sélection actuelle	#
 resourcePack.editor.selectionTool.quickAction.clearSelection=Désélectionner	#
 resourcePack.editor.selectionTool.quickAction.deleteSelection.tooltip=Remove all the blocks inside the current selection volume	#
@@ -675,6 +685,16 @@ resourcePack.editor.selectionTool.transformPane.origin.tooltip=Emplacement d'ori
 resourcePack.editor.selectionTool.transformPane.origin=Origine	#
 resourcePack.editor.selectionTool.transformPane.size=Taille	#
 resourcePack.editor.selectionTool.transformPane.title=Transformer	#
+
+
+resourcePack.editor.BlockMaskControl.trim.rootPane.title=Trim Settings		#### The window pane title for the settings for trim mode {MaxLength=30}
+resourcePack.editor.BlockMaskControl.trim.toggleGroup.title=Mask Mode		#### The title of the toggle group {MaxLength=30}
+resourcePack.editor.BlockMaskControl.trim.toggleGroup.item.disabled.label=Disable Block Filters			#### The title of the icon which disables block filters {MaxLength=30}
+resourcePack.editor.BlockMaskControl.trim.toggleGroup.item.disabled.tooltip=Disabled					#### The tooltip of the icon which disables block filters {MaxLength=100}
+resourcePack.editor.BlockMaskControl.trim.toggleGroup.item.mask.label=Mask								#### The title of the icon which masks block filters {MaxLength=30}
+resourcePack.editor.BlockMaskControl.trim.toggleGroup.item.mask.tooltip=Blocks that match the list will be ignored			#### Mask mode tooltip {MaxLength=100}
+resourcePack.editor.BlockMaskControl.trim.toggleGroup.item.replace.label=Replace						#### The title of the replace block filter {MaxLength=30}
+resourcePack.editor.BlockMaskControl.trim.toggleGroup.item.replace.tooltip=Blocks that match the list will be treated as solid			#### Replace mode tooltip {MaxLength=100}
 
 
 resourcePack.editor.server.description=Ressources du serveur de l'éditeur	#

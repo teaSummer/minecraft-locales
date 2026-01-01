@@ -250,6 +250,12 @@ hbui.Bedtime.messageWaitingForOthersSingularThunderstorm=Thunderstorm will be sk
 hbui.Bedtime.openChatButton=Відкрити чат	#
 hbui.Bedtime.sleepingNotPossibleNotWorldOwner=Параметр «Поспати й пропустити ніч» вимкнено. Власнику цього світу потрібно ввімкнути цей параметр у меню редагування світу.		####This string refers to name of a specific setting (Skip night by sleeping) in a specific screen (Edit world) of the game.{MaxLength=240}
 hbui.Bedtime.sleepingNotPossibleWorldOwner=Параметр «Поспати й пропустити ніч» вимкнено. Увімкніть його в розширених налаштуваннях меню редагування світу.		####This string refers to name of a specific setting (Skip night by sleeping) in specifc UI tab (advanced) a specific screen (Edit world) of the game.{MaxLength=290}
+hbui.CapeIncentiveReceivedTransientRoute.buttonEnumeration=%1$s з %2$s		#### Used for narrating eg "button one of two". Large MaxLength is because this is for narration {MaxLength=1000}
+hbui.CapeIncentiveReceivedTransientRoute.continueButton=Continue		#### {MaxLength=30}
+hbui.CapeIncentiveReceivedTransientRoute.dressingRoomButton=Go to Dressing Room		#### Go to the Dressing Room screen, where the player may equip the cape	{MaxLength=30}
+hbui.CapeIncentiveReceivedTransientRoute.text1=You did it! You're all logged in, which means you have a fancy new Common Cape to show off. Or use it to hide among the foliage. The choice is yours.		#### "You did it!" refers to the player having logged in with their Microsoft account. Common is the rarity of the cape.	{MaxLength=1000}
+hbui.CapeIncentiveReceivedTransientRoute.text2=Go to the dressing room to equip now, or continue to play capeless. It's up to you. 	#### "it" is the cape the player has received. Dressing room is a screen in the game where the player may equip their cosmetic items. {MaxLength=1000}
+hbui.CapeIncentiveReceivedTransientRoute.title=Nice cape you've got there		#### Complimenting the player on the wearable cape they have just received for signing in. {MaxLength=60}
 hbui.ChooseRealmRoute.addNewBetaRealm=Додавання бета-Realm	#
 hbui.ChooseRealmRoute.addNewPreviewRealm=Додавання підготовчої версії Realm	#
 hbui.ChooseRealmRoute.adventure=Пригода	#
@@ -679,7 +685,7 @@ hbui.CreateNewWorld.advanced.tileDropsTitle=Блоки викидають пре
 hbui.CreateNewWorld.advanced.title=Додаткові параметри	#
 hbui.CreateNewWorld.advanced.tntExplodesDescription=Вибух червоного ящика	#
 hbui.CreateNewWorld.advanced.tntExplodesTitle=Спрацювання вибухівки	#
-hbui.CreateNewWorld.advanced.useFlatWorldDescription=Абсолютно плаский світ, що тягнеться вдалину	#
+hbui.CreateNewWorld.advanced.useFlatWorldDescription=Абсолютно плаский світ, що тягнеться вдалину	#### Flat world is a world that is generated as completely flat. Build up as eg adding structures, mine down as in digging or mining down into the flat world. {MaxLength="100"}
 hbui.CreateNewWorld.advanced.useFlatWorldTitle=Плаский світ	#
 hbui.CreateNewWorld.advanced.vanillaWorldGeneratorDescription=Стандартний світ Minecraft, створений на основі сіду світу	#
 hbui.CreateNewWorld.advanced.vanillaWorldGeneratorLabel=Нескінченний світ	#
@@ -802,6 +808,8 @@ hbui.CreateNewWorld.experimentalFeatures.addOnCreatorsDescription=Для авт�
 hbui.CreateNewWorld.experimentalFeatures.addOnCreatorsTitle=Творці доповнень	#
 hbui.CreateNewWorld.experimentalFeatures.gameplayDescription=Змініть принципи існування вашого світу	#
 hbui.CreateNewWorld.experimentalFeatures.gameplayTitle=Геймплей	#
+hbui.CreateNewWorld.experimentalFeatures.graphicsDescription=Change the way your world looks    	#### Change the way visuals of a world are viewed {MaxLength="124"}
+hbui.CreateNewWorld.experimentalFeatures.graphicsTitle=Graphics 	#### Visuals, Graphical {MaxLength="60"}
 hbui.CreateNewWorld.experimentalFeatures.internalTestsDescription=Тільки для розробників, не з’явиться у версії для користувачів	#
 hbui.CreateNewWorld.experimentalFeatures.internalTestsTitle=Внутрішні тести	#
 hbui.CreateNewWorld.experimentalFeatures.narrationComponentTypeSectionHeader=Група	#
@@ -1654,6 +1662,11 @@ hbui.PackTabs.activeTabButtonLabel=Активні	#
 hbui.PackTabs.availableTabButtonLabel=Доступні	#
 hbui.PackTabs.narration.tab=%1$s, вкладка %2$s із %3$s	#
 hbui.PartyInviteListGroup.titleWithLength=%1$s (%2$s) 	#### the title of a list followed by the number of items in the list. The number is in brackets.
+hbui.PartyTab.invited=Запрошено 	#### list header title for list of invited players {maxLength = 35}
+hbui.PartyTab.inviteOnlyParty=Invite only party 	#### list header title for list of players in the party indicating that players can only join the party when invited {maxLength = 35}
+hbui.PartyTab.joinableParties=Joinable parties 	#### list header title for list of other player's parties that are available for you to join {maxLength = 35}
+hbui.PartyTab.openParty=Open party 	#### list header title for list of players in the party indicating that the party is open to all players {maxLength = 35}
+hbui.PartyTab.receivedInvites=Received invites 	#### list header title for list of players who have invited you to join their party {maxLength = 35}
 hbui.PlayerAvatarsOnlineInWorld.full=Переповнено	#
 hbui.PlayerBannedModalRoute.body=Вас було %1$s в мультиплеєрі Minecraft через «%2$s». Ви не зможете брати участь на серверах, приєднуватися до Realms, створювати ігри в мультиплеєрі або приєднуватися до них, а також використовувати ринок.	#
 hbui.PlayerBannedModalRoute.body.day=Ваш бан триватиме ще 1 дн.	#
@@ -1728,6 +1741,7 @@ hbui.PlayerListItem.addButtonText=Add	#
 hbui.PlayerListItem.added=Додано	#
 hbui.PlayerListItem.away=Прибрати	#
 hbui.PlayerListItem.buttonSiblings=Кнопка %1$s із %2$s	#
+hbui.PlayerListItem.cancelButtonText=Cancel 	#### The text that appears on a button for cancelling an invite that you sent to a player {MaxLength=7}
 hbui.PlayerListItem.delete=Delete	#
 hbui.PlayerListItem.friends=Друзі	#
 hbui.PlayerListItem.inviteButtonInputLegend=Запросити друга 	#### The input legend text for a button used to invite someone to a party
@@ -2477,6 +2491,10 @@ hbui.RealmsPurchaseSubscriptionRoute.banner.subheading.trial=Безкоштов�
 hbui.RealmsPurchaseSubscriptionRoute.banner.subheading.trial.narration=Безкоштовна 30-денна ознайомлювальна версія, а потім – %1$s на місяць	#
 hbui.RealmsPurchaseSubscriptionRoute.checkboxLabel=Приймаю	#
 hbui.RealmsPurchaseSubscriptionRoute.checkboxUncheckedHint=Приймаю умови та положення, щоб створити Realm   	#### {StrContains="Realm"}
+hbui.RealmsPurchaseSubscriptionRoute.errorModals.appStoreNotReady.body=Log in to your Apple Account to continue with this purchase.		#### modal text telling players that they have to sign in to the Apple AppStore before they can continue with the Realm purchase {MaxLength="100"}
+hbui.RealmsPurchaseSubscriptionRoute.errorModals.appStoreNotReady.cancel=Go back		#### text on the cancel button of the modal that tells players that they have to sign in to the Apple AppStore before they can continue with the Realm purchase {MaxLength="10"}
+hbui.RealmsPurchaseSubscriptionRoute.errorModals.appStoreNotReady.confirm=Sign in to Store		#### text on the confirm button of the modal that tells players that they have to sign in to the Apple AppStore before they can continue with the Realm purchase {MaxLength="20"}
+hbui.RealmsPurchaseSubscriptionRoute.errorModals.appStoreNotReady.title=Log in to continue		#### title of the modal that tells players that they have to sign in to the Apple AppStore before they can continue with the Realm purchase {MaxLength="20"}
 hbui.RealmsPurchaseSubscriptionRoute.ErrorModals.close=Закрити	#
 hbui.RealmsPurchaseSubscriptionRoute.errorModals.failedClubNameValidation.body=Введений текст містить слова, які можуть бути образливими для інших, тому їх не можна вживати. Спробуйте ще раз.	#
 hbui.RealmsPurchaseSubscriptionRoute.errorModals.failedClubNameValidation.title=Фільтр ненормативної лексики	#
@@ -2485,6 +2503,7 @@ hbui.RealmsPurchaseSubscriptionRoute.errorModals.genericFailure.title=Something 
 hbui.RealmsPurchaseSubscriptionRoute.errorModals.invalidRealmName.body=Введена назва Realm недійсна. Переконайтеся, що це поле заповнене і не містить спеціальних символів.	#
 hbui.RealmsPurchaseSubscriptionRoute.errorModals.invalidRealmName.title=Недійсна назва Realm	#
 hbui.RealmsPurchaseSubscriptionRoute.errorModals.memberOfTooManyRealms.body=You are a member of too many Realms. Leave any old Realms to purchase a new Realms subscription.		#### {MaxLength="150"} message saying that the player has been a member of too many Realms and thus cannot create more Realms
+hbui.RealmsPurchaseSubscriptionRoute.errorModals.memberOfTooManyRealms.cancel=Go back		#### {MaxLength="10"} the button text of the modal saying that the player has been a member of too many Realms
 hbui.RealmsPurchaseSubscriptionRoute.errorModals.memberOfTooManyRealms.title=Too many memberships		#### {MaxLength="25"} the title of the modal saying that the player has been a member of too many Realms
 hbui.RealmsPurchaseSubscriptionRoute.errorModals.noAccess.body=You do not have access to Realms in pre-production. To get access, reach out in #ask-realms-preprod-access or see the guide at aka.ms/Realms-preprod-access. 	#### {MaxLength="160"} message saying that the player has no access to Realms and where to request for help (for devs only)
 hbui.RealmsPurchaseSubscriptionRoute.errorModals.noAccess.title=Error 	#### {MaxLength="5"} the title of the modal saying that the player has no access to Realms
@@ -3159,6 +3178,15 @@ hbui.SignInWorldsFriendsServersRoute.signInList3=Приєднуйтеся до �
 hbui.SignInWorldsFriendsServersRoute.signInList3PS=Приєднуйтеся до сотень інших гравців на серверах з унікальними функціями	#
 hbui.SignInWorldsFriendsServersRoute.signInList4=Отримайте доступ до вмісту Ринку та персонажів на кількох платформах	#
 hbui.SignInWorldsFriendsServersRoute.signInPrompt=Увійдіть у обліковий запис Microsoft зараз, щоб розблокувати різноманітні функції, зокрема:	#
+hbui.SocialDrawer.narration.title=Social Drawer 	#### Social Drawer title used for narrations
+hbui.SocialDrawer.partyTabButtonLabel=Party 	#### Tab button that shows people in the party section {MaxLength=13}
+hbui.SocialDrawer.peopleTabButtonLabel=People (%1$s) 	#### Tab button that shows people in the friends section followed by the number of friends online {MaxLength=13}
+hbui.SocialDrawerHeader.close=Close 	#### input legend for a textless button that closes the social drawer
+hbui.SocialDrawerHeader.narration.close=Close 	#### narration for a textless button that closes the social drawer
+hbui.SocialDrawerHeader.narration.search=Search for people . Button . Find people by searching for their gamertag 	#### narration for a textless button that opens the Search for Players screen
+hbui.SocialDrawerHeader.narration.socialSettings=Social settings 	#### narration for a textless button that opens the social drawer's settings menu
+hbui.SocialDrawerHeader.searchForPeople=Search for people 	#### Text for a button that links to the search for players screen {MaxLength=20}
+hbui.SocialDrawerHeader.socialSettings=Social settings 	#### input legend for a textless button that opens the social drawer's settings menu
 hbui.Splash.enumeration=%1$s of %2$s	#
 hbui.Splash.role=Текстовий блок	#
 hbui.Splash.select=Select	#
@@ -3262,12 +3290,15 @@ hbui.StartFromTemplateRoute.useTemplateOperations.importNotification=Шабло�
 hbui.StatListItem.compareNarration=%1$s проти %2$s	#
 hbui.StatListItem.itemNarration=%1$s of %2$s	#
 hbui.StorageIndicator.bytes=%1$s Б	#
-hbui.StorageIndicator.fullStorageTag=Сховище переповнене	#
 hbui.StorageIndicator.gigabytes=%1$s ГБ	#
 hbui.StorageIndicator.kilobytes=%1$s кБ	#
 hbui.StorageIndicator.megabytes=%1$s МБ	#
 hbui.StorageIndicator.petabytes=%1$s ПБ	#
-hbui.StorageIndicator.settings=Параметри	#
+hbui.StorageIndicator.storage=Go to storage		#### Button that redirects the user to storage settings menu {MaxLength=20}
+hbui.StorageIndicator.storageLabelAlmostFullCreateWorld=Storage almost full. Delete data from Settings to create a world.		####Label used to warn players that storage is almost full and they cannot create a world {MaxLength=80}
+hbui.StorageIndicator.storageLabelAlmostFullEnterWorld=Storage almost full. Delete data from Settings to enter a world.		####Label used to warn players that storage is almost full and they cannot enter a world {MaxLength=80}
+hbui.StorageIndicator.storageLabelFullCreateWorld=Storage is full. Delete data from Settings to create a world.		####Label used to warn players that storage is full and they cannot create a world {MaxLength=80}
+hbui.StorageIndicator.storageLabelFullEnterWorld=Storage is full. Delete data from Settings to enter a world.		####Label used to warn players that storage is full and they cannot enter a world {MaxLength=80}
 hbui.StorageIndicator.storageSpace=Використано %1$s із %2$s	#
 hbui.StorageIndicator.terabytes=%1$s ТБ	#
 hbui.SwitchAccordion.closeInputLegend=Close    	#### Close an unfolded UI element. {MaxLength="16"}
@@ -3440,148 +3471,6 @@ hbui.WorldTag.hardcore=Хардкор	#
 hbui.WorldTag.lan=Локальна мережа	#
 hbui.WorldTag.survival=Виживання	#
 hbui.WorldTag.unknown=Невідомий 	#### Unknown type of Minecraft world. A known type would be eg survival or creative. {MaxLength=21}
-hbui.Sample.hello=Привіт, %1$s!	#
-hbui.BackButton.back=Назад	#
-hbui.BackButton.narrationComponentType=Кнопка	#
-hbui.BackButton.narrationGoBack=Повернутися	#
-hbui.Banner.closeButtonNarrationHint=Переведіть курсор праворуч, щоб закрити це %1$s	#
-hbui.Banner.narrationComponentTypeButton=Кнопка	#
-hbui.Banner.narrationComponentTypeTextBox=Текстове поле	#
-hbui.Button.button=кнопка	#
-hbui.Card.narrationComponentTypeButton=Кнопка	#
-hbui.Checkbox.elementType=Прапорець	#
-hbui.Checkbox.labelChecked=установлено	#
-hbui.Checkbox.labelUnChecked=знято	#
-hbui.Checkbox.toggle=Переключити	#
-hbui.DescriptionList.progressLabel=Прогрес	#
-hbui.Dropdown.elementType=розкривний список	#
-hbui.Dropdown.narrationComponentType=Розкривний список	#
-hbui.Dropdown.narrationDisabled=Вимкнуто	#
-hbui.Dropdown.option=Параметр	#
-hbui.Dropdown.selected=Вибрано	#
-hbui.Dropdown.stateCollapsed=Згорнуто	#
-hbui.Dropdown.stateDisabled=Вимкнуто	#
-hbui.Dropdown.toggleElementType=Параметр	#
-hbui.DropdownItem.disabled=Вимкнуто	#
-hbui.DropdownItem.elementType=елемент	#
-hbui.DropdownItem.select=Вибрати	#
-hbui.DropdownItem.selected=вибрано	#
-hbui.DropdownItem.unselected=не вибрано	#
-hbui.EmptyStateMessage.buttonSelectInputLegend=Вибрати	#
-hbui.EmptyStateMessage.narrationTextBlock=Текстовий блок	#
-hbui.HeroMessage.buttonEnumeration=%1$s із %2$s	#
-hbui.Link.narrationComponentType=Кнопка	#
-hbui.Link.open=Відкрити	#
-hbui.Modal.backInputLegend=Назад	#
-hbui.Modal.backNarration=Кнопка «Назад»	#
-hbui.Modal.closeInputLegend=Закрити	#
-hbui.Modal.closeNarration=Кнопка «Закрити»	#
-hbui.Modal.narrationModalComponentType=Модальний	#
-hbui.Modal.progressPercentage=%1$s%	#
-hbui.Modal.select=Вибрати	#
-hbui.ModalMenu.elementType=Кнопка	#
-hbui.ModalMenu.enumeration=%1$s із %2$s	#
-hbui.ModalMenu.modalTypeHint=Перелік дій нижче	#
-hbui.ModalMenuDropdown.dropdown.collapsed=Згорнуто	#
-hbui.ModalMenuDropdown.dropdown.enumeration=%1$s із %2$s	#
-hbui.ModalMenuDropdown.dropdown.inputLegend=Відкрити	#
-hbui.ModalMenuDropdown.dropdown.label.role=Параметр	#
-hbui.ModalMenuDropdown.dropdown.label.selected=Вибрано	#
-hbui.ModalMenuDropdown.dropdown.placeholder=Виберіть варіант…	#
-hbui.ModalMenuDropdown.dropdown.role=Розкривний список	#
-hbui.ModalMenuDropdown.inputLegend=Відкрити	#
-hbui.ModalMenuDropdown.narrationDisabled=Вимкнуто	#
-hbui.ModalMenuDropdown.placeholder=Виберіть варіант…	#
-hbui.NavigationBarLayout.DebugButton.inputLegend=Налагодження	#
-hbui.NavigationBarLayout.DebugButton.narration=Кнопка налагодження	#
-hbui.NavigationBarLayout.DeleteButton.inputLegend=Видалити	#
-hbui.NavigationBarLayout.DeleteButton.narration=Кнопка «Видалити»		####Narrating a button that says the word "Delete". Not deleting a button.
-hbui.NavigationBarLayout.FriendsButton.friends=Друзі	#
-hbui.NavigationBarLayout.FriendsButton.inputLegend=Друзі	#
-hbui.NavigationBarLayout.FriendsButton.narration=Кнопка «Друзі»	#
-hbui.NavigationBarLayout.MenuButton.inputLegend=Меню	#
-hbui.NavigationBarLayout.MenuButton.narration=Кнопка меню	#
-hbui.Pagination.componentType=Поділ на сторінки	#
-hbui.Pagination.context=Горизонтальний селектор сторінки	#
-hbui.Pagination.contextHintGamepad=Переходьте вліво або вправо, щоб переглянути більше сторінок	#
-hbui.Pagination.contextHintMouse=Більше сторінок доступно ліворуч або праворуч	#
-hbui.Pagination.currentPage=Сторінка %1$s	#
-hbui.Pagination.disabled=Вимкнуто	#
-hbui.Pagination.index=Сторінка %1$s із %2$s %3$s	#
-hbui.Pagination.indexCounter=%1$s / %2$s	#
-hbui.Pagination.next=Далі, %1$s із %2$s	#
-hbui.Pagination.nextPage=Наступна сторінка, перейти на сторінку %1$s	#
-hbui.Pagination.nextPageDisabled=Наступна сторінка, вимкнено	#
-hbui.Pagination.nextPageInputLegend=Наступна сторінка	#
-hbui.Pagination.nowOnPage=Тепер на сторінці %1$s	#
-hbui.Pagination.nowOnPageOf=Тепер на сторінці %1$s з %2$s	#
-hbui.Pagination.previous=Назад, %1$s із %2$s	#
-hbui.Pagination.previousPage=Попередня сторінка, перейти на сторінку %1$s	#
-hbui.Pagination.previousPageDisabled=Попередня сторінка, вимкнено	#
-hbui.Pagination.previousPageInputLegend=Попередня сторінка	#
-hbui.Pagination.select=Вибрати	#
-hbui.Pagination.selected=Вибрано	#
-hbui.Pagination.skipNext=Перейти вперед на сторінку %1$s	#
-hbui.Pagination.skipPrevious=Перейти назад на сторінку %1$s	#
-hbui.Pagination.unselected=Не вибрано	#
-hbui.RadioBox.count=%1$s із %2$s	#
-hbui.RadioBox.disabled=вимкнуто	#
-hbui.RadioBox.elementType=перемикач	#
-hbui.RadioBox.select=Вибрати	#
-hbui.RadioBox.selected=вибрано	#
-hbui.SectionList.groupNarration=%1$s, група %2$s із %3$s	#
-hbui.SideMenu.ListItem.narrationIndex=%1$s із %2$s	#
-hbui.SideMenu.ListItem.narrationRoleButton=Кнопка	#
-hbui.SideMenu.ListItem.narrationRoleMenuItem=Пункт меню	#
-hbui.SideMenu.ListItem.narrationSelected=Вибрано	#
-hbui.SideMenu.ListItem.narrationUnselected=Не вибрано	#
-hbui.SideMenu.ListItem.selected=вибрано	#
-hbui.SideMenu.narrationRoleMenu=Вертикальне меню	#
-hbui.SideMenu.sideMenuItem.selected=вибрано	#
-hbui.Slider.availableValuesAre=може бути	#
-hbui.Slider.currentValue=поточне значення:	#
-hbui.Slider.disabled=повзунок вимкнено	#
-hbui.Slider.elementType=повзунок	#
-hbui.Slider.maxValueIs=максимальне значення:	#
-hbui.Slider.minValueIs=мінімальне значення:	#
-hbui.Slider.narrationComponentType=Повзунок	#
-hbui.Slider.valueIs=є	#
-hbui.Slider.verbose.availableValuesAre=доступні значення:	#
-hbui.Slider.verbose.maxValueIs=максимальне значення:	#
-hbui.Slider.verbose.minValueIs=мінімальне значення:	#
-hbui.Slider.verbose.valueIs=вибране значення:	#
-hbui.SlidingNavigationPane.Menu.elementType=Кнопка	#
-hbui.SlidingNavigationPane.Menu.enumeration=%1$s із %2$s	#
-hbui.SlidingNavigationPane.Menu.select=Вибрати	#
-hbui.Switch.elementType=Перемикач	#
-hbui.Switch.narrationDisabled=Вимкнути	#
-hbui.Switch.off=Вимкнуто	#
-hbui.Switch.on=Увімкнено	#
-hbui.Switch.toggle=Переключити	#
-hbui.TabBar.narrationComponentType=Горизонтальна вкладка	#
-hbui.TabBar.narrationGroup=%1$s Група вкладок	#
-hbui.TabBar.notSelected=Не вибрано	#
-hbui.TabBar.open=Відкрити	#
-hbui.TabBar.selected=Вибрано	#
-hbui.TabBar.selectedTab=%1$s із %2$s	#
-hbui.TextField.currentValue=поточне значення	#
-hbui.TextField.disabled=Вимкнуто	#
-hbui.TextField.empty=Спорожнити	#
-hbui.TextField.field=Поле	#
-hbui.TextField.narrationComponentType=Введення тексту	#
-hbui.TextFieldWithButton.navigationHint=Перемістіться праворуч від цього поля для додаткових дій.	#
-hbui.TextFieldWrapper.narrationComponentType=Введення тексту	#
-hbui.TextFieldWrapper.narrationDisabled=Вимкнуто	#
-hbui.Toggle.count=%1$s із %2$s	#
-hbui.Toggle.narrationComponentType=Горизонтальна група вибору	#
-hbui.Toggle.narrationDisabled=Вимкнути	#
-hbui.Toggle.narrationOptionType=Вибір	#
-hbui.Toggle.narrationSelected=Вибрано	#
-hbui.Toggle.narrationUnselected=Не вибрано	#
-hbui.Toggle.select=Вибрати	#
-hbui.TreeView.collapse=Згорнути	#
-hbui.TreeView.expand=Розширити	#
-hbui.TreeView.open=Відкрити	#
 hbui.Accordion.closeInputLegend=Закрити	#
 hbui.Accordion.openInputLegend=Відкрити	#
 hbui.BackButton.back=Назад	#
@@ -3600,7 +3489,7 @@ hbui.BaseSlider.minValueIs=мінімальне значення:	#
 hbui.BaseSwitch.elementType=Перемикач	#
 hbui.BaseSwitch.narrationDisabled=Вимкнути	#
 hbui.BaseSwitch.off=Вимкнуто	#
-hbui.BaseSwitch.on=Увімкнено	#
+hbui.BaseSwitch.on=Увімк.	#
 hbui.BaseSwitch.toggle=Переключити	#
 hbui.BaseTextField.addedNarration=Додано	#
 hbui.BaseTextField.deselect=Скасувати вибір	#
@@ -3639,7 +3528,7 @@ hbui.BaseSlider.minValueIs=мінімальне значення:	#
 hbui.BaseSwitch.elementType=Перемикач	#
 hbui.BaseSwitch.narrationDisabled=Вимкнути	#
 hbui.BaseSwitch.off=Вимкнуто	#
-hbui.BaseSwitch.on=Увімк.	#
+hbui.BaseSwitch.on=Увімкнено	#
 hbui.BaseSwitch.toggle=Переключити	#
 hbui.BaseTextField.addedNarration=Додано	#
 hbui.BaseTextField.deselect=Скасувати вибір	#
@@ -3764,6 +3653,8 @@ hbui.EditorExpanderSample.expanderIconSample.title=Зразок розширюв
 hbui.EditorExpanderSample.expanderSample.text=Текст всередині розширювача	#
 hbui.EditorExpanderSample.expanderSample.title=Зразок розширювача	#
 hbui.EditorExpanderSample.panelTitle=Зразок розширювача	#
+hbui.EditorGraph.nodeCount=Node %1$s of %2$s 	####Graph node that is interactive in appearance and functionality. Can be clicked to trigger actions and dragged to new position. {MaxLength=1000}
+hbui.EditorGraph.type=Graph 	####Graph is a container that represents arbitrary data via nodes. Nodes hold the data, they are clickable and draggabe. {MaxLength=1000}
 hbui.EditorHotbar.default=Стандартна	#
 hbui.EditorHotbar.manageHotbar=Керувати меню панелі швидкого доступу	#
 hbui.EditorHotbar.manageHotbars=Керувати панелями швидкого доступу	#
@@ -4019,6 +3910,7 @@ hbui.EditorStructurePanel.importLabel=Імпорт	#
 hbui.EditorStructurePanel.listViewIconTooltip=Відображення списком	#
 hbui.EditorStructurePanel.narration=Панель споруди	#
 hbui.EditorStructurePanel.newFromClipboardLabel=Новий із буфера обміну	#
+hbui.EditorStructurePanel.newFromSelection=New from Selection 	####Label for a button that creates a new structure from a selection {MaxLength=50}
 hbui.EditorStructurePanel.sortLabel=Сортувати	#
 hbui.EditorStructurePanel.structureContentSectionHeader=Вміст споруди	#
 hbui.EditorStructurePanel.structureItem=Елемент структури	#
@@ -4046,6 +3938,26 @@ hbui.EditorToggleContainer.prevPage=Кнопка «Попередня сторі
 hbui.EditorToggleHeader.collapsed=згорнуто	#
 hbui.EditorToggleHeader.elementType=переключити заголовок	#
 hbui.EditorToolRail.title=Панель інструментів	#
+hbui.EditorTutorial.button.begin=Begin 	####Button on the tutorial modal that starts the tutorial. {MaxLength=1000}
+hbui.EditorTutorial.button.exit=Exit 	####Button on the tutorial modal that completes tutorial and closes modal. {MaxLength=1000}
+hbui.EditorTutorial.button.next=Next 	####Button on the tutorial modal that skips to the next tutorial stage. {MaxLength=1000}
+hbui.EditorTutorial.exit.cancel=Скасувати 	####Button label on the exit tutorial modal that returns user to the current tutorial stage. {MaxLength=1000}
+hbui.EditorTutorial.exit.confirm=Confirm 	####Button label on the exit tutorial modal that ends tutorial. {MaxLength=1000}
+hbui.EditorTutorial.exit.message=Do you want to exit the tutorial? 	####Message that shows on the tutorial modal when exit button is clicked. {MaxLength=1000}
+hbui.EditorTutorial.stage.brush.activate.message=Now let's learn about the Brush Paint tool. Activate the Brush Paint tool by selecting %1$s on the toolrail or with %2$s. You can add blocks to the world by holding Left Click and moving the mouse around the world. 	####Editor tutorial message that explains how to activate brush tool from UI control or key shortcut. {MaxLength=1000}
+hbui.EditorTutorial.stage.brush.delete.message=Holding %1$s down when using the Brush Paint tool will remove blocks from the world instead of adding them. Use the brush to remove some blocks from the world. 	####Editor tutorial message that explains how to remove blocks using brush tool. {MaxLength=1000}
+hbui.EditorTutorial.stage.end.info=You can learn more about Editor by going to %1$s. You can also learn about specific tools by pressing the Info button on the tooltips. 	####Message at the end of editor tutorial that shows a link to documentation and explains where to find additional information. {MaxLength=1000}
+hbui.EditorTutorial.stage.end.message=Great! You now know the basics of Minecraft Editor. Enjoy creating your first Editor experience. Remember to use Test World, to playtest your creation at any time, and then Export your world or upload it to Realms when you are finished to share your creation with friends. 	####Message at the end of editor tutorial that indicates completion of the tutorial. {MaxLength=1000}
+hbui.EditorTutorial.stage.hotbar.message=The hotbar determines which block is for Fill operations, brushes, etc. You can switch the active hotbar slot with the 1-9 keys or select it with the mouse. Select the active slot again to open the block picker to change the block that is being used, or you can use Middle Mouse Button to change it to a block in the world. 	####Editor tutorial message that explains how hotbar is operated. {MaxLength=1000}
+hbui.EditorTutorial.stage.movement.message=While holding Right Click on the mouse: 	####Editor tutorial modal message about steps to execute for player movement example. {MaxLength=1000}
+hbui.EditorTutorial.stage.movement.message.camera=Use the mouse to move the camera around the world.  	####Editor tutorial modal message option for rotating the player camera. {MaxLength=1000}
+hbui.EditorTutorial.stage.movement.message.navigate=Use %1$s, %2$s, %3$s, and %4$s to move around the world.  	####Editor tutorial modal message option for moving the player when parameterized keyboard buttons are pressed. {MaxLength=1000}
+hbui.EditorTutorial.stage.selection.activate.message=Now let's learn about the Selection tool. Activate the Selection tool by selecting the %1$s on the toolrail or by using %2$s hotkey. 	####Editor tutorial message that teaches how to activate selection tool with UI control or key shortcut. {MaxLength=1000}
+hbui.EditorTutorial.stage.selection.create.message=Let's decide where the selection will begin. Use the Mouse to select a block in the world and then use Left Click to place the start position of the selection. Then while still holding left click, drag the mouse to make the selection the size you want 	####Editor tutorial text that teaches how to create a new selection in the world. {MaxLength=1000}
+hbui.EditorTutorial.stage.selection.fill.message=Now that you have a selection, let's fill it with blocks. Select the Fill button on the Action Bar or %1$s to fill the selection with blocks. 	####Editor tutorial message that explains how to fill a selection {MaxLength=1000}
+hbui.EditorTutorial.stage.selection.info.message=The Selection tool can be used to move blocks around, make copies to paste in the world, as well as a wide variety of tools. 	####Editor tutorial message that explains general use cases of selection tool. {MaxLength=1000}
+hbui.EditorTutorial.stage.start.begin=Begin 	####Button label that starts editor tutorial. {MaxLength=1000}
+hbui.EditorTutorial.stage.start.message=Welcome to the Minecraft Editor, a tool designed to help you create stunning worlds in Bedrock with ease. Let's show you some of the basics. The tutorial can be replayed. You can find it under the 'Help' menu. 	####Modal message that displays before starting editor tutorial. {MaxLength=1000}
 hbui.EditorTypographySample.colorSectionTextSample1=Зразок тексту X	#
 hbui.EditorTypographySample.colorSectionTextSample2=Зразок тексту Y	#
 hbui.EditorTypographySample.colorSectionTextSample3=Зразок тексту Z	#
@@ -4111,3 +4023,146 @@ hbui.EditorWindowPanel.collapseButton=Кнопка «Згорнути панел
 hbui.EditorWindowPanel.dragHandle=Перетягнути маркер	#
 hbui.EditorWindowPanel.elementType=Панель	#
 hbui.EditorWindowPanel.expandButton=Кнопка «Розгорнути панель»	#
+hbui.BackButton.back=Назад	#
+hbui.BackButton.narrationComponentType=Кнопка	#
+hbui.BackButton.narrationGoBack=Повернутися	#
+hbui.Banner.closeButtonNarrationHint=Переведіть курсор праворуч, щоб закрити це %1$s	#
+hbui.Banner.narrationComponentTypeButton=Кнопка	#
+hbui.Banner.narrationComponentTypeTextBox=Текстове поле	#
+hbui.Button.button=кнопка	#
+hbui.Card.narrationComponentTypeButton=Кнопка	#
+hbui.Checkbox.elementType=Прапорець	#
+hbui.Checkbox.labelChecked=установлено	#
+hbui.Checkbox.labelUnChecked=знято	#
+hbui.Checkbox.toggle=Переключити	#
+hbui.DescriptionList.progressLabel=Прогрес	#
+hbui.Dropdown.elementType=розкривний список	#
+hbui.Dropdown.narrationComponentType=Розкривний список	#
+hbui.Dropdown.narrationDisabled=Вимкнуто	#
+hbui.Dropdown.option=Параметр	#
+hbui.Dropdown.selected=Вибрано	#
+hbui.Dropdown.stateCollapsed=Згорнуто	#
+hbui.Dropdown.stateDisabled=Вимкнуто	#
+hbui.Dropdown.toggleElementType=Параметр	#
+hbui.DropdownItem.disabled=Вимкнуто	#
+hbui.DropdownItem.elementType=елемент	#
+hbui.DropdownItem.select=Вибрати	#
+hbui.DropdownItem.selected=вибрано	#
+hbui.DropdownItem.unselected=не вибрано	#
+hbui.EmptyStateMessage.buttonSelectInputLegend=Вибрати	#
+hbui.EmptyStateMessage.narrationTextBlock=Текстовий блок	#
+hbui.HeroMessage.buttonEnumeration=%1$s із %2$s	#
+hbui.Link.narrationComponentType=Кнопка	#
+hbui.Link.open=Відкрити	#
+hbui.Modal.backInputLegend=Назад	#
+hbui.Modal.backNarration=Кнопка «Назад»	#
+hbui.Modal.closeInputLegend=Закрити	#
+hbui.Modal.closeNarration=Кнопка «Закрити»	#
+hbui.Modal.narrationModalComponentType=Модальний	#
+hbui.Modal.progressPercentage=%1$s%	#
+hbui.Modal.select=Вибрати	#
+hbui.ModalMenu.elementType=Кнопка	#
+hbui.ModalMenu.enumeration=%1$s із %2$s	#
+hbui.ModalMenu.modalTypeHint=Перелік дій нижче	#
+hbui.ModalMenuDropdown.dropdown.collapsed=Згорнуто	#
+hbui.ModalMenuDropdown.dropdown.enumeration=%1$s із %2$s	#
+hbui.ModalMenuDropdown.dropdown.inputLegend=Відкрити	#
+hbui.ModalMenuDropdown.dropdown.label.role=Параметр	#
+hbui.ModalMenuDropdown.dropdown.label.selected=Вибрано	#
+hbui.ModalMenuDropdown.dropdown.placeholder=Виберіть варіант…	#
+hbui.ModalMenuDropdown.dropdown.role=Розкривний список	#
+hbui.ModalMenuDropdown.inputLegend=Відкрити	#
+hbui.ModalMenuDropdown.narrationDisabled=Вимкнуто	#
+hbui.ModalMenuDropdown.placeholder=Виберіть варіант…	#
+hbui.NavigationBarLayout.DebugButton.inputLegend=Налагодження	#
+hbui.NavigationBarLayout.DebugButton.narration=Кнопка налагодження	#
+hbui.NavigationBarLayout.DeleteButton.inputLegend=Видалити	#
+hbui.NavigationBarLayout.DeleteButton.narration=Кнопка «Видалити»		####Narrating a button that says the word "Delete". Not deleting a button.
+hbui.NavigationBarLayout.FriendsButton.friends=Друзі	#
+hbui.NavigationBarLayout.FriendsButton.inputLegend=Друзі	#
+hbui.NavigationBarLayout.FriendsButton.narration=Кнопка «Друзі»	#
+hbui.NavigationBarLayout.FriendsButton.social=Спілкування 	#### title for the button that opens the social drawer
+hbui.NavigationBarLayout.MenuButton.inputLegend=Меню	#
+hbui.NavigationBarLayout.MenuButton.narration=Кнопка меню	#
+hbui.Pagination.componentType=Поділ на сторінки	#
+hbui.Pagination.context=Горизонтальний селектор сторінки	#
+hbui.Pagination.contextHintGamepad=Переходьте вліво або вправо, щоб переглянути більше сторінок	#
+hbui.Pagination.contextHintMouse=Більше сторінок доступно ліворуч або праворуч	#
+hbui.Pagination.currentPage=Сторінка %1$s	#
+hbui.Pagination.disabled=Вимкнуто	#
+hbui.Pagination.index=Сторінка %1$s із %2$s %3$s	#
+hbui.Pagination.indexCounter=%1$s / %2$s	#
+hbui.Pagination.next=Далі, %1$s із %2$s	#
+hbui.Pagination.nextPage=Наступна сторінка, перейти на сторінку %1$s	#
+hbui.Pagination.nextPageDisabled=Наступна сторінка, вимкнено	#
+hbui.Pagination.nextPageInputLegend=Наступна сторінка	#
+hbui.Pagination.nowOnPage=Тепер на сторінці %1$s	#
+hbui.Pagination.nowOnPageOf=Тепер на сторінці %1$s з %2$s	#
+hbui.Pagination.previous=Назад, %1$s із %2$s	#
+hbui.Pagination.previousPage=Попередня сторінка, перейти на сторінку %1$s	#
+hbui.Pagination.previousPageDisabled=Попередня сторінка, вимкнено	#
+hbui.Pagination.previousPageInputLegend=Попередня сторінка	#
+hbui.Pagination.select=Вибрати	#
+hbui.Pagination.selected=Вибрано	#
+hbui.Pagination.skipNext=Перейти вперед на сторінку %1$s	#
+hbui.Pagination.skipPrevious=Перейти назад на сторінку %1$s	#
+hbui.Pagination.unselected=Не вибрано	#
+hbui.RadioBox.count=%1$s із %2$s	#
+hbui.RadioBox.disabled=вимкнуто	#
+hbui.RadioBox.elementType=перемикач	#
+hbui.RadioBox.select=Вибрати	#
+hbui.RadioBox.selected=вибрано	#
+hbui.SectionList.groupNarration=%1$s, група %2$s із %3$s	#
+hbui.SideMenu.ListItem.narrationIndex=%1$s із %2$s	#
+hbui.SideMenu.ListItem.narrationRoleButton=Кнопка	#
+hbui.SideMenu.ListItem.narrationRoleMenuItem=Пункт меню	#
+hbui.SideMenu.ListItem.narrationSelected=Вибрано	#
+hbui.SideMenu.ListItem.narrationUnselected=Не вибрано	#
+hbui.SideMenu.ListItem.selected=вибрано	#
+hbui.SideMenu.narrationRoleMenu=Вертикальне меню	#
+hbui.SideMenu.sideMenuItem.selected=вибрано	#
+hbui.Slider.availableValuesAre=може бути	#
+hbui.Slider.currentValue=поточне значення:	#
+hbui.Slider.disabled=повзунок вимкнено	#
+hbui.Slider.elementType=повзунок	#
+hbui.Slider.maxValueIs=максимальне значення:	#
+hbui.Slider.minValueIs=мінімальне значення:	#
+hbui.Slider.narrationComponentType=Повзунок	#
+hbui.Slider.valueIs=є	#
+hbui.Slider.verbose.availableValuesAre=доступні значення:	#
+hbui.Slider.verbose.maxValueIs=максимальне значення:	#
+hbui.Slider.verbose.minValueIs=мінімальне значення:	#
+hbui.Slider.verbose.valueIs=вибране значення:	#
+hbui.SlidingNavigationPane.Menu.elementType=Кнопка	#
+hbui.SlidingNavigationPane.Menu.enumeration=%1$s із %2$s	#
+hbui.SlidingNavigationPane.Menu.select=Вибрати	#
+hbui.Switch.elementType=Перемикач	#
+hbui.Switch.narrationDisabled=Вимкнути	#
+hbui.Switch.off=Вимкнуто	#
+hbui.Switch.on=Увімкнено	#
+hbui.Switch.toggle=Переключити	#
+hbui.TabBar.narrationComponentType=Горизонтальна вкладка	#
+hbui.TabBar.narrationGroup=%1$s Група вкладок	#
+hbui.TabBar.notSelected=Не вибрано	#
+hbui.TabBar.open=Відкрити	#
+hbui.TabBar.selected=Вибрано	#
+hbui.TabBar.selectedTab=%1$s із %2$s	#
+hbui.TextField.currentValue=поточне значення	#
+hbui.TextField.disabled=Вимкнуто	#
+hbui.TextField.empty=Спорожнити	#
+hbui.TextField.field=Поле	#
+hbui.TextField.narrationComponentType=Введення тексту	#
+hbui.TextFieldWithButton.navigationHint=Перемістіться праворуч від цього поля для додаткових дій.	#
+hbui.TextFieldWrapper.narrationComponentType=Введення тексту	#
+hbui.TextFieldWrapper.narrationDisabled=Вимкнуто	#
+hbui.Toggle.count=%1$s із %2$s	#
+hbui.Toggle.narrationComponentType=Горизонтальна група вибору	#
+hbui.Toggle.narrationDisabled=Вимкнути	#
+hbui.Toggle.narrationOptionType=Вибір	#
+hbui.Toggle.narrationSelected=Вибрано	#
+hbui.Toggle.narrationUnselected=Не вибрано	#
+hbui.Toggle.select=Вибрати	#
+hbui.TreeView.collapse=Згорнути	#
+hbui.TreeView.expand=Розширити	#
+hbui.TreeView.open=Відкрити	#
+hbui.Sample.hello=Привіт, %1$s!	#

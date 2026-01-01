@@ -37,7 +37,6 @@ hbui.TitleBar.Buttons.Back.inputLegend=Retour	#
 hbui.TitleBar.Buttons.Back.narration=Bouton Retour	#
 hbui.TitleBar.Buttons.Close.inputLegend=Fermer	#
 hbui.TitleBar.Buttons.Close.narration=Bouton Fermer	#
-hbui.Sample.hello=Bonjour %1$s !	#
 hbui.BackButton.back=Retour	#
 hbui.BackButton.narrationComponentType=Bouton	#
 hbui.BackButton.narrationGoBack=Retour	#
@@ -96,6 +95,7 @@ hbui.NavigationBarLayout.DeleteButton.narration=Bouton Supprimer		####Narrating 
 hbui.NavigationBarLayout.FriendsButton.friends=Amis	#
 hbui.NavigationBarLayout.FriendsButton.inputLegend=Amis	#
 hbui.NavigationBarLayout.FriendsButton.narration=Bouton Amis	#
+hbui.NavigationBarLayout.FriendsButton.social=Social 	#### title for the button that opens the social drawer
 hbui.NavigationBarLayout.MenuButton.inputLegend=Menu	#
 hbui.NavigationBarLayout.MenuButton.narration=Touche Menu	#
 hbui.Pagination.componentType=Pagination	#
@@ -179,6 +179,7 @@ hbui.Toggle.select=Sélectionner	#
 hbui.TreeView.collapse=Réduire	#
 hbui.TreeView.expand=Développer	#
 hbui.TreeView.open=Ouvrir	#
+hbui.Sample.hello=Bonjour %1$s !	#
 hbui.Accordion.closeInputLegend=Fermer	#
 hbui.Accordion.openInputLegend=Ouvrir	#
 hbui.BackButton.back=Retour	#
@@ -470,6 +471,12 @@ hbui.Bedtime.messageWaitingForOthersSingularThunderstorm=Thunderstorm will be sk
 hbui.Bedtime.openChatButton=Ouvrir le tchat	#
 hbui.Bedtime.sleepingNotPossibleNotWorldOwner=Le paramètre « Dormir pour passer la nuit » est désactivé. Le propriétaire de ce monde doit activer ce paramètre dans Modifier le monde.		####This string refers to name of a specific setting (Skip night by sleeping) in a specific screen (Edit world) of the game.{MaxLength=240}
 hbui.Bedtime.sleepingNotPossibleWorldOwner=Le paramètre « Dormir pour passer la nuit » est désactivé. Activez-le dans les paramètres avancés dans Modifier le monde.		####This string refers to name of a specific setting (Skip night by sleeping) in specifc UI tab (advanced) a specific screen (Edit world) of the game.{MaxLength=290}
+hbui.CapeIncentiveReceivedTransientRoute.buttonEnumeration=%1$s sur %2$s		#### Used for narrating eg "button one of two". Large MaxLength is because this is for narration {MaxLength=1000}
+hbui.CapeIncentiveReceivedTransientRoute.continueButton=Continue		#### {MaxLength=30}
+hbui.CapeIncentiveReceivedTransientRoute.dressingRoomButton=Go to Dressing Room		#### Go to the Dressing Room screen, where the player may equip the cape	{MaxLength=30}
+hbui.CapeIncentiveReceivedTransientRoute.text1=You did it! You're all logged in, which means you have a fancy new Common Cape to show off. Or use it to hide among the foliage. The choice is yours.		#### "You did it!" refers to the player having logged in with their Microsoft account. Common is the rarity of the cape.	{MaxLength=1000}
+hbui.CapeIncentiveReceivedTransientRoute.text2=Go to the dressing room to equip now, or continue to play capeless. It's up to you. 	#### "it" is the cape the player has received. Dressing room is a screen in the game where the player may equip their cosmetic items. {MaxLength=1000}
+hbui.CapeIncentiveReceivedTransientRoute.title=Nice cape you've got there		#### Complimenting the player on the wearable cape they have just received for signing in. {MaxLength=60}
 hbui.ChooseRealmRoute.addNewBetaRealm=Ajouter un Realm bêta	#
 hbui.ChooseRealmRoute.addNewPreviewRealm=Ajouter un Realm d'aperçu	#
 hbui.ChooseRealmRoute.adventure=Aventure	#
@@ -899,7 +906,7 @@ hbui.CreateNewWorld.advanced.tileDropsTitle=Butin des blocs	#
 hbui.CreateNewWorld.advanced.title=Paramètres avancés	#
 hbui.CreateNewWorld.advanced.tntExplodesDescription=La boîte rouge explose	#
 hbui.CreateNewWorld.advanced.tntExplodesTitle=Explosion de TNT	#
-hbui.CreateNewWorld.advanced.useFlatWorldDescription=Un monde complètement plat qui s'étend à perte de vue	#
+hbui.CreateNewWorld.advanced.useFlatWorldDescription=Un monde complètement plat qui s'étend à perte de vue	#### Flat world is a world that is generated as completely flat. Build up as eg adding structures, mine down as in digging or mining down into the flat world. {MaxLength="100"}
 hbui.CreateNewWorld.advanced.useFlatWorldTitle=Monde plat	#
 hbui.CreateNewWorld.advanced.vanillaWorldGeneratorDescription=Création d'un monde Minecraft standard basé sur une graine de monde	#
 hbui.CreateNewWorld.advanced.vanillaWorldGeneratorLabel=Monde infini	#
@@ -1022,6 +1029,8 @@ hbui.CreateNewWorld.experimentalFeatures.addOnCreatorsDescription=Pour les créa
 hbui.CreateNewWorld.experimentalFeatures.addOnCreatorsTitle=Créateurs d'extensions	#
 hbui.CreateNewWorld.experimentalFeatures.gameplayDescription=Changer la façon dont votre monde fonctionne	#
 hbui.CreateNewWorld.experimentalFeatures.gameplayTitle=Gameplay	#
+hbui.CreateNewWorld.experimentalFeatures.graphicsDescription=Change the way your world looks    	#### Change the way visuals of a world are viewed {MaxLength="124"}
+hbui.CreateNewWorld.experimentalFeatures.graphicsTitle=Graphics 	#### Visuals, Graphical {MaxLength="60"}
 hbui.CreateNewWorld.experimentalFeatures.internalTestsDescription=Pour les développeurs uniquement, non disponible à la vente physique.	#
 hbui.CreateNewWorld.experimentalFeatures.internalTestsTitle=Tests internes	#
 hbui.CreateNewWorld.experimentalFeatures.narrationComponentTypeSectionHeader=Groupe	#
@@ -1874,6 +1883,11 @@ hbui.PackTabs.activeTabButtonLabel=Activé	#
 hbui.PackTabs.availableTabButtonLabel=Disponible	#
 hbui.PackTabs.narration.tab=%1$s, onglet %2$s sur %3$s	#
 hbui.PartyInviteListGroup.titleWithLength=%1$s (%2$s) 	#### the title of a list followed by the number of items in the list. The number is in brackets.
+hbui.PartyTab.invited=Invité 	#### list header title for list of invited players {maxLength = 35}
+hbui.PartyTab.inviteOnlyParty=Invite only party 	#### list header title for list of players in the party indicating that players can only join the party when invited {maxLength = 35}
+hbui.PartyTab.joinableParties=Joinable parties 	#### list header title for list of other player's parties that are available for you to join {maxLength = 35}
+hbui.PartyTab.openParty=Open party 	#### list header title for list of players in the party indicating that the party is open to all players {maxLength = 35}
+hbui.PartyTab.receivedInvites=Received invites 	#### list header title for list of players who have invited you to join their party {maxLength = 35}
 hbui.PlayerAvatarsOnlineInWorld.full=Au maximum	#
 hbui.PlayerBannedModalRoute.body=Vous avez été %1$s de Minecraft en multijoueur pour la raison suivante : « %2$s ». Vous ne pourrez pas rejoindre de serveurs, de Realms, héberger ou rejoindre des parties multijoueur, ou utiliser le magasin.	#
 hbui.PlayerBannedModalRoute.body.day=Il vous reste 1 jour de suspension.	#
@@ -1948,6 +1962,7 @@ hbui.PlayerListItem.addButtonText=Add	#
 hbui.PlayerListItem.added=Ajouté	#
 hbui.PlayerListItem.away=Absent	#
 hbui.PlayerListItem.buttonSiblings=Bouton %1$s sur %2$s	#
+hbui.PlayerListItem.cancelButtonText=Cancel 	#### The text that appears on a button for cancelling an invite that you sent to a player {MaxLength=7}
 hbui.PlayerListItem.delete=Supprimer	#
 hbui.PlayerListItem.friends=Amis	#
 hbui.PlayerListItem.inviteButtonInputLegend=Inviter un ami 	#### The input legend text for a button used to invite someone to a party
@@ -2697,6 +2712,10 @@ hbui.RealmsPurchaseSubscriptionRoute.banner.subheading.trial=Essai gratuit de 30
 hbui.RealmsPurchaseSubscriptionRoute.banner.subheading.trial.narration=Essai gratuit de 30 jours, puis %1$s par mois	#
 hbui.RealmsPurchaseSubscriptionRoute.checkboxLabel=Accepter	#
 hbui.RealmsPurchaseSubscriptionRoute.checkboxUncheckedHint=Acceptez les conditions générales pour créer un Realm   	#### {StrContains="Realm"}
+hbui.RealmsPurchaseSubscriptionRoute.errorModals.appStoreNotReady.body=Log in to your Apple Account to continue with this purchase.		#### modal text telling players that they have to sign in to the Apple AppStore before they can continue with the Realm purchase {MaxLength="100"}
+hbui.RealmsPurchaseSubscriptionRoute.errorModals.appStoreNotReady.cancel=Go back		#### text on the cancel button of the modal that tells players that they have to sign in to the Apple AppStore before they can continue with the Realm purchase {MaxLength="10"}
+hbui.RealmsPurchaseSubscriptionRoute.errorModals.appStoreNotReady.confirm=Sign in to Store		#### text on the confirm button of the modal that tells players that they have to sign in to the Apple AppStore before they can continue with the Realm purchase {MaxLength="20"}
+hbui.RealmsPurchaseSubscriptionRoute.errorModals.appStoreNotReady.title=Log in to continue		#### title of the modal that tells players that they have to sign in to the Apple AppStore before they can continue with the Realm purchase {MaxLength="20"}
 hbui.RealmsPurchaseSubscriptionRoute.ErrorModals.close=Fermer	#
 hbui.RealmsPurchaseSubscriptionRoute.errorModals.failedClubNameValidation.body=Le texte que vous avez saisi contient des termes que d'autres joueurs peuvent considérer comme offensants et que vous ne pouvez pas utiliser. Veuillez réessayer.	#
 hbui.RealmsPurchaseSubscriptionRoute.errorModals.failedClubNameValidation.title=Filtre anti-obscénités	#
@@ -2705,6 +2724,7 @@ hbui.RealmsPurchaseSubscriptionRoute.errorModals.genericFailure.title=Une erreur
 hbui.RealmsPurchaseSubscriptionRoute.errorModals.invalidRealmName.body=Le nom de Realm que vous avez saisi n'est pas valide. Assurez-vous que ce champ soit rempli et ne comporte aucun caractère spécial.	#
 hbui.RealmsPurchaseSubscriptionRoute.errorModals.invalidRealmName.title=Nom de Realm invalide	#
 hbui.RealmsPurchaseSubscriptionRoute.errorModals.memberOfTooManyRealms.body=You are a member of too many Realms. Leave any old Realms to purchase a new Realms subscription.		#### {MaxLength="150"} message saying that the player has been a member of too many Realms and thus cannot create more Realms
+hbui.RealmsPurchaseSubscriptionRoute.errorModals.memberOfTooManyRealms.cancel=Go back		#### {MaxLength="10"} the button text of the modal saying that the player has been a member of too many Realms
 hbui.RealmsPurchaseSubscriptionRoute.errorModals.memberOfTooManyRealms.title=Too many memberships		#### {MaxLength="25"} the title of the modal saying that the player has been a member of too many Realms
 hbui.RealmsPurchaseSubscriptionRoute.errorModals.noAccess.body=You do not have access to Realms in pre-production. To get access, reach out in #ask-realms-preprod-access or see the guide at aka.ms/Realms-preprod-access. 	#### {MaxLength="160"} message saying that the player has no access to Realms and where to request for help (for devs only)
 hbui.RealmsPurchaseSubscriptionRoute.errorModals.noAccess.title=Error 	#### {MaxLength="5"} the title of the modal saying that the player has no access to Realms
@@ -3379,6 +3399,15 @@ hbui.SignInWorldsFriendsServersRoute.signInList3=Rejoignez des centaines d’aut
 hbui.SignInWorldsFriendsServersRoute.signInList3PS=Rejoignez des centaines d’autres joueurs dans des expériences sur serveurs en vedette uniques	#
 hbui.SignInWorldsFriendsServersRoute.signInList4=Accédez à votre contenu et à vos personnages du Magasin sur plusieurs plateformes	#
 hbui.SignInWorldsFriendsServersRoute.signInPrompt=Connectez-vous avec votre compte Microsoft pour accéder à une variété de fonctionnalités telles que :	#
+hbui.SocialDrawer.narration.title=Social Drawer 	#### Social Drawer title used for narrations
+hbui.SocialDrawer.partyTabButtonLabel=Party 	#### Tab button that shows people in the party section {MaxLength=13}
+hbui.SocialDrawer.peopleTabButtonLabel=People (%1$s) 	#### Tab button that shows people in the friends section followed by the number of friends online {MaxLength=13}
+hbui.SocialDrawerHeader.close=Close 	#### input legend for a textless button that closes the social drawer
+hbui.SocialDrawerHeader.narration.close=Close 	#### narration for a textless button that closes the social drawer
+hbui.SocialDrawerHeader.narration.search=Search for people . Button . Find people by searching for their gamertag 	#### narration for a textless button that opens the Search for Players screen
+hbui.SocialDrawerHeader.narration.socialSettings=Social settings 	#### narration for a textless button that opens the social drawer's settings menu
+hbui.SocialDrawerHeader.searchForPeople=Search for people 	#### Text for a button that links to the search for players screen {MaxLength=20}
+hbui.SocialDrawerHeader.socialSettings=Social settings 	#### input legend for a textless button that opens the social drawer's settings menu
 hbui.Splash.enumeration=%1$s sur %2$s	#
 hbui.Splash.role=Bloc de texte	#
 hbui.Splash.select=Sélectionner	#
@@ -3482,12 +3511,15 @@ hbui.StartFromTemplateRoute.useTemplateOperations.importNotification=Modèle imp
 hbui.StatListItem.compareNarration=%1$s vs. %2$s	#
 hbui.StatListItem.itemNarration=%1$s sur %2$s	#
 hbui.StorageIndicator.bytes=%1$s octets	#
-hbui.StorageIndicator.fullStorageTag=Espace plein	#
 hbui.StorageIndicator.gigabytes=%1$sGo	#
 hbui.StorageIndicator.kilobytes=%1$sKO	#
 hbui.StorageIndicator.megabytes=%1$sMO	#
 hbui.StorageIndicator.petabytes=%1$sPO	#
-hbui.StorageIndicator.settings=Paramètres	#
+hbui.StorageIndicator.storage=Go to storage		#### Button that redirects the user to storage settings menu {MaxLength=20}
+hbui.StorageIndicator.storageLabelAlmostFullCreateWorld=Storage almost full. Delete data from Settings to create a world.		####Label used to warn players that storage is almost full and they cannot create a world {MaxLength=80}
+hbui.StorageIndicator.storageLabelAlmostFullEnterWorld=Storage almost full. Delete data from Settings to enter a world.		####Label used to warn players that storage is almost full and they cannot enter a world {MaxLength=80}
+hbui.StorageIndicator.storageLabelFullCreateWorld=Storage is full. Delete data from Settings to create a world.		####Label used to warn players that storage is full and they cannot create a world {MaxLength=80}
+hbui.StorageIndicator.storageLabelFullEnterWorld=Storage is full. Delete data from Settings to enter a world.		####Label used to warn players that storage is full and they cannot enter a world {MaxLength=80}
 hbui.StorageIndicator.storageSpace=%1$s utilisé sur %2$s	#
 hbui.StorageIndicator.terabytes=%1$sTO	#
 hbui.SwitchAccordion.closeInputLegend=Close    	#### Close an unfolded UI element. {MaxLength="16"}
@@ -3764,6 +3796,8 @@ hbui.EditorExpanderSample.expanderIconSample.title=Échantillon d’extenseur av
 hbui.EditorExpanderSample.expanderSample.text=Texte à l’intérieur de l’extenseur	#
 hbui.EditorExpanderSample.expanderSample.title=Échantillon d’extenseur	#
 hbui.EditorExpanderSample.panelTitle=Échantillon d'extenseur	#
+hbui.EditorGraph.nodeCount=Node %1$s of %2$s 	####Graph node that is interactive in appearance and functionality. Can be clicked to trigger actions and dragged to new position. {MaxLength=1000}
+hbui.EditorGraph.type=Graph 	####Graph is a container that represents arbitrary data via nodes. Nodes hold the data, they are clickable and draggabe. {MaxLength=1000}
 hbui.EditorHotbar.default=Par défaut	#
 hbui.EditorHotbar.manageHotbar=Gérer le menu de la barre d'outils	#
 hbui.EditorHotbar.manageHotbars=Gérer les barres d'outils	#
@@ -4019,6 +4053,7 @@ hbui.EditorStructurePanel.importLabel=Importer	#
 hbui.EditorStructurePanel.listViewIconTooltip=Vue liste	#
 hbui.EditorStructurePanel.narration=Panneau de structure	#
 hbui.EditorStructurePanel.newFromClipboardLabel=Nouveau depuis le presse-papiers	#
+hbui.EditorStructurePanel.newFromSelection=New from Selection 	####Label for a button that creates a new structure from a selection {MaxLength=50}
 hbui.EditorStructurePanel.sortLabel=Trier	#
 hbui.EditorStructurePanel.structureContentSectionHeader=Contenu de la structure	#
 hbui.EditorStructurePanel.structureItem=StructureItem	#
@@ -4046,6 +4081,26 @@ hbui.EditorToggleContainer.prevPage=Bouton de la page précédente	#
 hbui.EditorToggleHeader.collapsed=réduit	#
 hbui.EditorToggleHeader.elementType=afficher/masquer l'entête	#
 hbui.EditorToolRail.title=Barre d'outils	#
+hbui.EditorTutorial.button.begin=Begin 	####Button on the tutorial modal that starts the tutorial. {MaxLength=1000}
+hbui.EditorTutorial.button.exit=Exit 	####Button on the tutorial modal that completes tutorial and closes modal. {MaxLength=1000}
+hbui.EditorTutorial.button.next=Next 	####Button on the tutorial modal that skips to the next tutorial stage. {MaxLength=1000}
+hbui.EditorTutorial.exit.cancel=Cancel 	####Button label on the exit tutorial modal that returns user to the current tutorial stage. {MaxLength=1000}
+hbui.EditorTutorial.exit.confirm=Confirm 	####Button label on the exit tutorial modal that ends tutorial. {MaxLength=1000}
+hbui.EditorTutorial.exit.message=Do you want to exit the tutorial? 	####Message that shows on the tutorial modal when exit button is clicked. {MaxLength=1000}
+hbui.EditorTutorial.stage.brush.activate.message=Now let's learn about the Brush Paint tool. Activate the Brush Paint tool by selecting %1$s on the toolrail or with %2$s. You can add blocks to the world by holding Left Click and moving the mouse around the world. 	####Editor tutorial message that explains how to activate brush tool from UI control or key shortcut. {MaxLength=1000}
+hbui.EditorTutorial.stage.brush.delete.message=Holding %1$s down when using the Brush Paint tool will remove blocks from the world instead of adding them. Use the brush to remove some blocks from the world. 	####Editor tutorial message that explains how to remove blocks using brush tool. {MaxLength=1000}
+hbui.EditorTutorial.stage.end.info=You can learn more about Editor by going to %1$s. You can also learn about specific tools by pressing the Info button on the tooltips. 	####Message at the end of editor tutorial that shows a link to documentation and explains where to find additional information. {MaxLength=1000}
+hbui.EditorTutorial.stage.end.message=Great! You now know the basics of Minecraft Editor. Enjoy creating your first Editor experience. Remember to use Test World, to playtest your creation at any time, and then Export your world or upload it to Realms when you are finished to share your creation with friends. 	####Message at the end of editor tutorial that indicates completion of the tutorial. {MaxLength=1000}
+hbui.EditorTutorial.stage.hotbar.message=The hotbar determines which block is for Fill operations, brushes, etc. You can switch the active hotbar slot with the 1-9 keys or select it with the mouse. Select the active slot again to open the block picker to change the block that is being used, or you can use Middle Mouse Button to change it to a block in the world. 	####Editor tutorial message that explains how hotbar is operated. {MaxLength=1000}
+hbui.EditorTutorial.stage.movement.message=While holding Right Click on the mouse: 	####Editor tutorial modal message about steps to execute for player movement example. {MaxLength=1000}
+hbui.EditorTutorial.stage.movement.message.camera=Use the mouse to move the camera around the world.  	####Editor tutorial modal message option for rotating the player camera. {MaxLength=1000}
+hbui.EditorTutorial.stage.movement.message.navigate=Use %1$s, %2$s, %3$s, and %4$s to move around the world.  	####Editor tutorial modal message option for moving the player when parameterized keyboard buttons are pressed. {MaxLength=1000}
+hbui.EditorTutorial.stage.selection.activate.message=Now let's learn about the Selection tool. Activate the Selection tool by selecting the %1$s on the toolrail or by using %2$s hotkey. 	####Editor tutorial message that teaches how to activate selection tool with UI control or key shortcut. {MaxLength=1000}
+hbui.EditorTutorial.stage.selection.create.message=Let's decide where the selection will begin. Use the Mouse to select a block in the world and then use Left Click to place the start position of the selection. Then while still holding left click, drag the mouse to make the selection the size you want 	####Editor tutorial text that teaches how to create a new selection in the world. {MaxLength=1000}
+hbui.EditorTutorial.stage.selection.fill.message=Now that you have a selection, let's fill it with blocks. Select the Fill button on the Action Bar or %1$s to fill the selection with blocks. 	####Editor tutorial message that explains how to fill a selection {MaxLength=1000}
+hbui.EditorTutorial.stage.selection.info.message=The Selection tool can be used to move blocks around, make copies to paste in the world, as well as a wide variety of tools. 	####Editor tutorial message that explains general use cases of selection tool. {MaxLength=1000}
+hbui.EditorTutorial.stage.start.begin=Begin 	####Button label that starts editor tutorial. {MaxLength=1000}
+hbui.EditorTutorial.stage.start.message=Welcome to the Minecraft Editor, a tool designed to help you create stunning worlds in Bedrock with ease. Let's show you some of the basics. The tutorial can be replayed. You can find it under the 'Help' menu. 	####Modal message that displays before starting editor tutorial. {MaxLength=1000}
 hbui.EditorTypographySample.colorSectionTextSample1=Échantillon de texte X	#
 hbui.EditorTypographySample.colorSectionTextSample2=Échantillon de texte Y	#
 hbui.EditorTypographySample.colorSectionTextSample3=Échantillon de texte Z	#
