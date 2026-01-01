@@ -1580,10 +1580,13 @@ hbui.NewPlayerPathRoute.Difficulty.normalDescription=Hostile mobs spawn and deal
 hbui.NewPlayerPathRoute.Difficulty.normalTitle=Normal	### Title for the Normal difficulty choice {MaxLength="20"}
 hbui.NewPlayerPathRoute.Difficulty.peacefulDescription=No hostile mobs and only some neutral mobs spawn.	### Description for the Peaceful difficulty choice {MaxLength="50"}
 hbui.NewPlayerPathRoute.Difficulty.peacefulTitle=Peaceful	### Title for the Peaceful difficulty choice {MaxLength="20"}
+hbui.NewPlayerPathRoute.Difficulty.select=Select	### button to select and go to the next screen {MaxLength="20"}
 hbui.NewPlayerPathRoute.Difficulty.title=Survival Difficulty	### Title survival difficulty screen. Shown as the top header {MaxLength="30"}
 hbui.NewPlayerPathRoute.Mode.creativeDescription=Build and explore without limits. You can fly, have endless materials, and can’t be hurt by monsters.	### Description for the creative mode choice {MaxLength="105"}
 hbui.NewPlayerPathRoute.Mode.creativeInputLegend=Play	### Input legend for when having the creative card focused {MaxLength="20"}
 hbui.NewPlayerPathRoute.Mode.creativeTitle=Creative	### Title for the creative game mode card {MaxLength="20"}
+hbui.NewPlayerPathRoute.Mode.next=Next	### button to go to the next screen {MaxLength="20"}
+hbui.NewPlayerPathRoute.Mode.select=Select	### Input legend for when having the creative (AB-TEST) game mode card focused {MaxLength="20"}hbui.NewPlayerPathRoute.Mode.survivalInputLegend=Select	### Input legend for when having the survival game mode card focused {MaxLength="20"}
 hbui.NewPlayerPathRoute.Mode.survivalDescription=Explore a mysterious world where you build, collect, craft, and fight monsters.	### Survival card description on the Game Mode screen {MaxLength="105"}
 hbui.NewPlayerPathRoute.Mode.survivalInputLegend=Select	### Input legend for when having the survival game mode card focused {MaxLength="20"}
 hbui.NewPlayerPathRoute.Mode.survivalTitle=Survival	### Title for the survival game mode card {MaxLength="30"}
@@ -1607,6 +1610,7 @@ hbui.NewPlayerPathRoute.Summary.easy=Easy	### Easy tag text {MaxLength="20}
 hbui.NewPlayerPathRoute.Summary.hard=Hard	### Hard tag text {MaxLength="20}
 hbui.NewPlayerPathRoute.Summary.normal=Normal	### Normal tag text {MaxLength="20}
 hbui.NewPlayerPathRoute.Summary.peaceful=Peaceful	### Peaceful tag text {MaxLength="20}
+hbui.NewPlayerPathRoute.Summary.play=Play	### Text for hero play input label {MaxLength="20"}
 hbui.NewPlayerPathRoute.Summary.playMinecraft=Play Minecraft	### Text for hero play button {MaxLength="30"}
 hbui.NewPlayerPathRoute.Summary.survival=Survival	### Survival game mode tag text {MaxLength="20"}
 hbui.NewPlayerPathRoute.Summary.survival.easy.paragraph1=Explore a world full of mysteries to uncover.	### First paragraph explaining survival easy mode {MaxLength="100"}
@@ -2559,8 +2563,6 @@ hbui.RealmsPurchaseSubscriptionRoute.errorModals.checkRealmsPaymentServiceFailed
 hbui.RealmsPurchaseSubscriptionRoute.errorModals.checkRealmsPaymentServiceFailed.cancel=Ok	### {MaxLength="10"} text on a button used to leave the screen for a modal informing player that the realms payment service cannot be reached
 hbui.RealmsPurchaseSubscriptionRoute.errorModals.checkRealmsPaymentServiceFailed.title=Payment service	### {MaxLength="50"} title for modal informing player that the realms payment service cannot be reached
 hbui.RealmsPurchaseSubscriptionRoute.ErrorModals.close=Close
-hbui.RealmsPurchaseSubscriptionRoute.errorModals.failedClubNameValidation.body=The text you entered contains words that others may find offensive and cannot be used. Please try again.
-hbui.RealmsPurchaseSubscriptionRoute.errorModals.failedClubNameValidation.title=Profanity filter
 hbui.RealmsPurchaseSubscriptionRoute.errorModals.fulfillmentFailed.body=Your purchase succeeded, but we couldn’t create your Realm right now. We will create your Realm as soon as possible. Check back later on this device. If this problem happens for more than a day, please contact Mojang Support.	### {StrContains="Realm"} {MaxLength="293"} message for modal informing player that realms purchase fulfillment failed
 hbui.RealmsPurchaseSubscriptionRoute.errorModals.fulfillmentFailed.cancel=Go back	### {MaxLength="20"} text on a button used to leave the screen for a modal informing player that realms purchase fulfillment failed
 hbui.RealmsPurchaseSubscriptionRoute.errorModals.fulfillmentFailed.confirm=Contact support	### {MaxLength="20"} text on a button used to open a support web url for a modal informing player that realms purchase fulfillment failed
@@ -3609,6 +3611,9 @@ hbui.EditorBlockPickerModal.confirm=Confirm
 hbui.EditorBlockPickerModal.count=%1$s of %2$s
 hbui.EditorBlockPickerModal.current=Current
 hbui.EditorBlockPickerModal.makeListLabel=Make List
+hbui.EditorBlockPickerModal.mode.button=Filter mode	###Button that opens a menu with all available block picker filtering modes. {MaxLength=1000}
+hbui.EditorBlockPickerModal.mode.color=Color	###Menu item label that turns block filtering mode to filter by name. {MaxLength=1000}
+hbui.EditorBlockPickerModal.mode.name=Name	###Menu item label that turns block picker filtering mode to filter by name. {MaxLength=1000}
 hbui.EditorBlockPickerModal.new=New
 hbui.EditorBlockPickerModal.recentlyUsed=Recently Used
 hbui.EditorBlockPickerModal.search=Search
@@ -3953,15 +3958,15 @@ hbui.EditorTutorial.button.next=Next ###Button on the tutorial modal that skips 
 hbui.EditorTutorial.exit.cancel=Cancel ###Button label on the exit tutorial modal that returns user to the current tutorial stage. {MaxLength=1000}
 hbui.EditorTutorial.exit.confirm=Confirm ###Button label on the exit tutorial modal that ends tutorial. {MaxLength=1000}
 hbui.EditorTutorial.exit.message=Are you sure you want to exit the tutorial? ###Message that shows on the tutorial modal when exit button is clicked. {MaxLength=1000}
-hbui.EditorTutorial.stage.brush.activate.message=Now, let's explore the Brush Paint tool.[*newLine]Activate it by clicking %1$s on the toolrail or pressing %2$s. ###Editor tutorial message that explains how to activate brush tool from UI control or key shortcut. {MaxLength=1000} {StrContains="[*newLine]"}
+hbui.EditorTutorial.stage.brush.activate.message=Now, let's explore the Brush Paint tool.[*newLine]Activate it by clicking %s on the toolrail or pressing %s. ###Editor tutorial message that explains how to activate brush tool from UI control or key shortcut. {MaxLength=1000} {StrContains="[*newLine]"}
 hbui.EditorTutorial.stage.brush.add.message=Hold Left Click and move the mouse to add blocks. ###Editor tutorial message that explains how to add blocks using brush tool. {MaxLength=1000}
 hbui.EditorTutorial.stage.brush.delete.message=Holding %1$s while using the Brush Paint tool removes blocks. ###Editor tutorial message that explains how to remove blocks using brush tool. {MaxLength=1000}
 hbui.EditorTutorial.stage.end.message=Great! You now know the basics of Minecraft Editor—enjoy creating your first Editor experience![*newLine]Use Test World to playtest anytime, then Export or upload to Realms to share with friends.[*newLine]For more, visit [*link|%1$s]Minecraft Editor Documentation[*link] or press the Info button on tooltips for details on specific tools. ###Message at the end of editor tutorial that indicates completion of the tutorial, shows a parameterized link to documentation and explains where to find additional information. {MaxLength=1000} {StrContains="[*newLine]"} {StrContains="[*link|%1$s]"} {StrContains="[*link]"}
 hbui.EditorTutorial.stage.hotbar.message=The hotbar sets the block for Fill operations, brushes, and more.[*newLine]Switch slots with 1-9 keys or the mouse.[*newLine]To change the block, reselect the active slot. ###Editor tutorial message that explains how hotbar is operated. {MaxLength=1000} {StrContains="[*newLine]"}
-hbui.EditorTutorial.stage.move.message=Movement[*bullet]Use the mouse while holding Right Click to move the camera around the world.[*bullet]Use %1$s, %2$s, %3$s, and %4$s to move forward, backward, left and right.[*bullet]Use %5$s and %6$s to move up and down.[*bullet]Use Middle Mouse scroll to zoom.[*bullet]Use the mouse while holding Middle Mouse Button to pan the camera. ###Editor tutorial modal message about steps to execute for player movement, each step is listed as a bullet point and parameters are key shortcuts. {MaxLength=2000} {StrContains="[*bullet]"}
+hbui.EditorTutorial.stage.move.message=Movement[*%s]Use the mouse while holding Right Click to move the camera around the world.[*%s]Use %s, %s, %s, and %s to move forward, backward, left and right.[*%s]Use %s and %s to move up and down.[*%s]Use Middle Mouse scroll to zoom.[*%s]Use the mouse while holding Middle Mouse Button to pan the camera. ###Editor tutorial modal message about steps to execute for player movement, each step is displayed as a list item with a checkbox and parameters are key shortcuts. {MaxLength=2000} {StrContains="[*%s]"}
 hbui.EditorTutorial.stage.selection.activate.message=Let’s explore the Selection tool.[*newLine]Activate the Selection tool by clicking %1$s on the toolrail or pressing %2$s. ###Editor tutorial message that teaches how to activate selection tool with UI control or key shortcut. {MaxLength=1000} {StrContains="[*newLine]"}
-hbui.EditorTutorial.stage.selection.create.message=Left-click to set the selection start, then drag to adjust its size ###Editor tutorial text that teaches how to create a new selection in the world. {MaxLength=1000}
-hbui.EditorTutorial.stage.selection.fill.message=Click the Fill button on the Action Bar or %1$s to fill the selection with blocks. ###Editor tutorial message that explains how to fill a selection {MaxLength=1000}
+hbui.EditorTutorial.stage.selection.create.message=Left-click to set the selection start, then drag to adjust its size. ###Editor tutorial text that teaches how to create a new selection in the world. {MaxLength=1000}
+hbui.EditorTutorial.stage.selection.fill.message=Click the Fill button on the Action Bar or press %s to fill the selection with blocks. ###Editor tutorial message that explains how to fill a selection {MaxLength=1000}
 hbui.EditorTutorial.stage.selection.info.message=The Selection tool lets you move, copy, and build with precision. ###Editor tutorial message that explains general use cases of selection tool. {MaxLength=1000}
 hbui.EditorTutorial.stage.start.begin=Begin ###Button label that starts editor tutorial. {MaxLength=1000}
 hbui.EditorTutorial.stage.start.message=Welcome to Minecraft Editor, a powerful tool for creating stunning Bedrock worlds with ease.[*newLine]Things work differently in Editor and it's important that you understand a few basics first or you might get lost.[*newLine]Let's dive into the basics. ###Modal message that displays before starting editor tutorial. {MaxLength=1000} {StrContains="[*newLine]"}
