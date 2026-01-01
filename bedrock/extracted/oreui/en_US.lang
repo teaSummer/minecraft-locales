@@ -1205,13 +1205,11 @@ hbui.FirstTimeSignInRoute.createAccountPrompt=Don't have a Microsoft account? Cr
 hbui.FirstTimeSignInRoute.incentivizedSignInButton=Sign in and get my cape	### On clicking this button, the player will sign in to their Microsoft account and be granted a cape {MaxLength=25}
 hbui.FirstTimeSignInRoute.incentivizedSignInPrompt1=Sign in with your Microsoft account and receive an exclusive cape as a free gift!	### The cape is an item the player can wear on their model in-game, given to the player as a reward for signing in here with their Microsoft account. {MaxLength=1000}
 hbui.FirstTimeSignInRoute.incentivizedSignInPrompt2=On top of that, you'll get access to the full range of online features:	### "That" refers to the free cape they are given by signing in here. Signing in is what gives them access to the online features. {MaxLength=1000}
-hbui.FirstTimeSignInRoute.incentivizedSignInPrompt3=Limit 1 per MSFT account. Offer valid %1$s through %2$s. Terms apply:	### Limit of one cape reward per microsoft account. Both arguments are full dates including month, day, and year (eg "May 6, 2025"). Between those dates (inclusive of those dates) the offer of a free cape will be available. The terms apply to the offer, and are not presented here in full but are linked to. {MaxLength=1000}
+hbui.FirstTimeSignInRoute.incentivizedSignInPrompt3=Limit 1 per Microsoft account. Offer valid May 6th, 2025 at 9 a.m. Pacific Time through May 6th, 2026 at 9 a.m. Pacific Time. Terms apply:	### Limit of one cape reward per microsoft account. The terms apply to the offer, and are not presented here in full but are linked to. {MaxLength=1000}
 hbui.FirstTimeSignInRoute.incentivizedSignInPrompt4=See full terms here	### A link that, when clicked, will send the user to an external webpage to view the full terms for the free cape offer. {MaxLength=1000}
 hbui.FirstTimeSignInRoute.incentivizedSignInPromptFeature1=A free Common Cape, to help you fit into the world of Minecraft	### The cape is the item the player is receiving for signing in here. Common refers to rarity. {MaxLength=1000}
 hbui.FirstTimeSignInRoute.laterButton=Maybe later
 hbui.FirstTimeSignInRoute.notNowButton=Not now
-hbui.FirstTimeSignInRoute.offerEndDate=May 5, 2026	### The month May, then day of month, then year {MaxLength=1000}
-hbui.FirstTimeSignInRoute.offerStartDate=May 6, 2025	### The month May, then day of month, then year {MaxLength=1000}
 hbui.FirstTimeSignInRoute.signInButton=Sign in now
 hbui.FirstTimeSignInRoute.signInHeader=Welcome to Minecraft!
 hbui.FirstTimeSignInRoute.signInList1=Unlock achievements and track your progress
@@ -1589,6 +1587,9 @@ hbui.NewPlayerPathRoute.Mode.survivalInputLegend=Select	### Input legend for whe
 hbui.NewPlayerPathRoute.Mode.survivalTitle=Survival	### Title for the survival game mode card {MaxLength="30"}
 hbui.NewPlayerPathRoute.Mode.title=Game Mode	### Title for the game mode screen. Shown atop. {MaxLength="30"}
 hbui.NewPlayerPathRoute.SkipButton.skip=Skip	### button to go skip this screen {MaxLength="20"}
+hbui.NewPlayerPathRoute.Summary.controlClassicLabel=D-Pad & tap	### tag test for d-pad & tap {MaxLength="20"}
+hbui.NewPlayerPathRoute.Summary.controlCrosshairLabel=Joystick & crosshair	### tag test for joystick & crosshair {MaxLength="20"}
+hbui.NewPlayerPathRoute.Summary.controlTouchLabel=Joystick & tap	### tag test for joystick & tap {MaxLength="20"}
 hbui.NewPlayerPathRoute.Summary.creative=Creative	### Text for the game mode Creative summary tag {MaxLength="50"}
 hbui.NewPlayerPathRoute.Summary.creative.heading=Let’s play Creative mode! ### Heading for summary content {MaxLength="50"}
 hbui.NewPlayerPathRoute.Summary.creative.paragraph1=Build with unlimited resources, fly around, and never worry about dying.	### First paragraph explaining creative mode {MaxLength="100"}
@@ -1692,11 +1693,18 @@ hbui.PackTabs.activeTabButtonLabel=Active
 hbui.PackTabs.availableTabButtonLabel=Available
 hbui.PackTabs.narration.tab=%1$s, tab %2$s of %3$s
 hbui.PartyInviteListGroup.titleWithLength=%1$s (%2$s) ### the title of a list followed by the number of items in the list. The number is in brackets.
-hbui.PartyTab.invited=Invited ### list header title for list of invited players {MaxLength="35"}
-hbui.PartyTab.inviteOnlyParty=Invite only party ### list header title for list of players in the party indicating that players can only join the party when invited (Party here refers to a group of players) {MaxLength="35"}
-hbui.PartyTab.joinableParties=Joinable parties ### list header title for list of other player's parties that are available for you to join (Party here refers to a group of players) {MaxLength="35"}
-hbui.PartyTab.openParty=Open party ### list header title for list of players in the party indicating that the party is open to all players (Party here refers to a group of players) {MaxLength="35"}
-hbui.PartyTab.receivedInvites=Received invites ### list header title for list of players who have invited you to join their party (Party here refers to a group of players) {MaxLength="35"}
+hbui.PartyTab.invited=Invited ### list header title for list of invited players {MaxLength=35}
+hbui.PartyTab.inviteOnlyParty=Invite only party ### list header title for list of players in the party indicating that players can only join the party when invited {MaxLength=35}
+hbui.PartyTab.joinableParties=Joinable parties ### list header title for list of other player's parties that are available for you to join {MaxLength=35}
+hbui.PartyTab.openParty=Open party ### list header title for list of players in the party indicating that the party is open to all players {MaxLength=35}
+hbui.PartyTab.optionsForPlayer=Options for %1$s ### title for a menu of actions related to a player {MaxLength=35}
+hbui.PartyTab.PlayerOptionsMenu.addFriend=Add friend ### menu option allowing you to add a player as a friend {MaxLength=45}
+hbui.PartyTab.PlayerOptionsMenu.mute=Mute ### menu option allowing you to mute a player {MaxLength=45}
+hbui.PartyTab.PlayerOptionsMenu.optionsEnumeration=%1$s of %2$s ### narration value showing placement in a list {MaxLength=1000}
+hbui.PartyTab.PlayerOptionsMenu.promoteToLeader=Promote to leader ### menu option allowing you to promote a player to the leader position {MaxLength=45}
+hbui.PartyTab.PlayerOptionsMenu.removeFromParty=Remove from party ### menu option allowing you to remove a player from the party (Party here refers to a group of players) {MaxLength=45}
+hbui.PartyTab.PlayerOptionsMenu.sendMessage=Send message ### menu option allowing you to send a message to a player {MaxLength=45}
+hbui.PartyTab.receivedInvites=Received invites ### list header title for list of players who have invited you to join their party {MaxLength=35}
 hbui.Patchnote.narration.textBlockRole=TextBlock	### The role of the UI element being narrated, referring to a quantity of text (not text being deflected) {MaxLength=1000}
 hbui.PlayerAvatarsOnlineInWorld.full=Full
 hbui.PlayerBannedModalRoute.body=You have been %1$s from playing multiplayer in Minecraft due to "%2$s". You won't be able to play on servers, join Realms, host or join multiplayer games or use the marketplace.	### {StrContains=Realms} {MaxLength=540}
@@ -1748,8 +1756,10 @@ hbui.PlayerBannedModalRoute.xbox.report.realLifeInfo=Real life information and t
 hbui.PlayerBannedModalRoute.xbox.report.selfHarm=Violating community standards
 hbui.PlayerBannedModalRoute.xbox.report.sexuallyInappropriate=Topics or content of a sexual nature
 hbui.PlayerBannedModalRoute.xbox.report.sexualReference=References to sexual content & violence
+hbui.PlayerBannedModalRoute.xbox.report.sexualViolence=Topics or content of a sexual nature	###Communicated to player as reason for banning.{MaxLength="185"}
 hbui.PlayerBannedModalRoute.xbox.report.spam=Spamming for commercial purposes
 hbui.PlayerBannedModalRoute.xbox.report.terrorismOrViolentExtremism=References to hate groups, terrorist organizations, or notorious figures
+hbui.PlayerBannedModalRoute.xbox.report.unconfirmedCSE=Topics or content of a sexual nature	###Communicated to player as reason for banning.{MaxLength="185"}
 hbui.PlayerBannedModalRoute.xbox.report.unsportingBehavior=Unsporting behavior
 hbui.PlayerCard.addedButton=Added
 hbui.PlayerCard.addFriendButton=Add friend
@@ -1774,7 +1784,11 @@ hbui.PlayerListItem.away=Away
 hbui.PlayerListItem.buttonSiblings=Button %1$s of %2$s
 hbui.PlayerListItem.cancelButtonText=Cancel ### The text that appears on a button for cancelling an invite that you sent to a player {MaxLength=7}
 hbui.PlayerListItem.delete=Delete
+hbui.PlayerListItem.friendOfFriendPlaying=Mutual friend playing	### A friend of a friend is playing {MaxLength=40}
+hbui.PlayerListItem.friendOfFriendPlaying.playstation=PSN™ - Mutual friend playing  ### A friend of a friend is playing CertRequirement:{PS4}[PSN™] CertRequirement:{PS5}[PSN™] {MaxLength=40}
+hbui.PlayerListItem.friendOfFriendPlaying.switch=Switch - Mutual friend playing	### A friend of a friend is playing {MaxLength=40}
 hbui.PlayerListItem.friends=Friends
+hbui.PlayerListItem.ignore=Ignore ### Label for button that hides a received invitation to join a party with another player (Party here refers to a group of players) {MaxLength=10}
 hbui.PlayerListItem.inviteButtonInputLegend=Invite friend ### The input legend text for a button used to invite someone to a party. (Party here refers to a group of players) {MaxLength=50}
 hbui.PlayerListItem.inviteButtonText=Invite ### The text that appears on a button for inviting a player to a party (Party here refers to a group of players) {MaxLength=12}
 hbui.PlayerListItem.invited=Invited ### The text that appears after a player has been invited to a party (Party here refers to a group of players) {MaxLength=30}
@@ -2237,8 +2251,6 @@ hbui.PlayScreen.templateScreenNotAvailableInPreview.select=Select
 hbui.PlayScreen.templateScreenNotAvailableInPreview.text=Create from template is only available in the release version of Minecraft.
 hbui.PlayScreen.templateScreenNotAvailableInPreview.title=Not available
 hbui.PlayScreen.title=Play
-hbui.PlayScreen.underConstructionMessage=We're still working on this feature. Check back soon!
-hbui.PlayScreen.underConstructionTitle=Under construction
 hbui.PlayScreen.unexpectedLaunchErrorModal.body=There was a problem loading this world.
 hbui.PlayScreen.unexpectedLaunchErrorModal.body2=Error code: %1$s
 hbui.PlayScreen.unexpectedLaunchErrorModal.close=Close
