@@ -10,6 +10,9 @@ commands.editor.project.exportComplete=Export complete, files written to %s
 commands.editor.project.exportCopyFailed=Failed to copy level data %s
 commands.editor.project.unknownSubcommand=Unknown Subcommand
 
+resourcePack.editor.voidWorld.signMessage1=Courtesy Platform			### A sign message in the void world to inform the creator that the asset is temporary.{MaxLength=30}
+resourcePack.editor.voidWorld.signMessage2=Remove if not required		### A sign message in the void world to inform the creator that the asset is temporary.{MaxLength=30}
+
 resourcePack.editor.actionBar.redo.tooltipDescription=Redo an action
 resourcePack.editor.actionBar.redo.tooltipTitle=Redo
 resourcePack.editor.actionBar.redo=Redo
@@ -38,6 +41,12 @@ resourcePack.editor.toolRail.blockInspectorSettings.blockProperties.name=Propert
 resourcePack.editor.toolRail.blockInspectorSettings.blockProperties.value=Property Value   ###Within the block properties pane, this string goes before the property value.{MaxLength=30}
 resourcePack.editor.toolRail.blockInspectorTool.title=Block Inspector   ###This string is what is shown as the name of the block inspector tool.{MaxLength=30}
 resourcePack.editor.toolRail.blockInspectorTool.tooltip=Inspect block data   ###This string is what is shown when hovering over the block inspector icon.{MaxLength=30}
+resourcePack.editor.toolRail.blockInspectorTool.posX=X	###This string indicates that the text field represents the X component of the position.{MaxLength=30}
+resourcePack.editor.toolRail.blockInspectorTool.posY=Y	###This string indicates that the text field represents the Y component of the position.{MaxLength=30}
+resourcePack.editor.toolRail.blockInspectorTool.posZ=Z	###This string indicates that the text field represents the Z component of the position.{MaxLength=30}
+resourcePack.editor.toolRail.blockInspectorTool.blockType=Block Type	###This string indicates that the text field lists the block type.{MaxLength=50}
+resourcePack.editor.toolRail.blockInspectorTool.dimension=Dimension	###This string indicates that the text field lists the dimension.{MaxLength=50}
+resourcePack.editor.toolRail.blockInspectorTool.components=Components	###This string indicates that subpane contains the components of a block.{MaxLength=50}
 resourcePack.editor.toolRail.blockInspectorTool.pane.helpText=Left click on a block to view and edit its properties   ###This string is shown in the block inspector tool pane before the user clicks to describe how to use it.{MaxLength=100}
 resourcePack.editor.blockInspector.toolRail.description=Left click on a block to view and edit its properties   ###This string is shown in the tool tip to explain the function of the Block Inspector tool.{MaxLength=100}
 
@@ -242,6 +251,7 @@ resourcePack.editor.exportProject.advancedSettings=Advanced Settings
 resourcePack.editor.exportProject.advancedSettings.startingMap=Starting Map
 resourcePack.editor.exportProject.advancedSettings.bonusChest=Bonus Chest
 resourcePack.editor.exportProject.advancedSettings.showCoordinates=Show Coordinates
+resourcePack.editor.exportProject.advancedSettings.showLocatorBar=Show Locator Bar	###This string is intended to express that this option reflects whether or not to show the locator bar.{MaxLength=100}
 resourcePack.editor.exportProject.advancedSettings.showDaysPlayed=Show Days Played
 resourcePack.editor.exportProject.advancedSettings.recipeUnlocking=Recipe Unlocking
 resourcePack.editor.exportProject.advancedSettings.limitedCrafting=Limited Crafting   ###Export pane checkbox label that enable to set crafting limit.{MaxLength=100}
@@ -585,7 +595,7 @@ resourcePack.editor.realmsPublish.PublishingToRealms=Publishing world to Realms.
 resourcePack.editor.realmsPublish.UnableToPublishMissingRealm=Unable to publish to Realms. No Realm selected    ###This string is intended to express that the user is unable to publish their world because a realm to upload to has not been selected.{MaxLength=250}
 resourcePack.editor.realmsPublish.UnableToPublishMissingRealmSlot=Unable to publish to Realms. No Realm Slot selected   ###This string is intended to express that the user is unable to publish their world because a realm slot to upload to has not been selected.{MaxLength=250}
 resourcePack.editor.realmsPublish.PublishConfirmationWarning=This will remove the current world from the selected slot and replace it with your current Editor world (the selected slot will also become the active slot for your Realm). Your Realm's members will have access to your newly replaced world. If you would like to save your current world before publishing, to prevent data loss, cancel this dialog and select "Download" before you "Publish". Select "Confirm" to continue and replace your current world.    ###This string is intended to warn the user that if they publish their world to Realms, the world currently in that Realms slot will be deleted and unrecoverable. It also informs the user that members of the Realm will be able to access this world.{MaxLength=1000}
-resourcePack.editor.realmsPublish.DownloadSuccess=Downloading world from Realms was successful    ###This string is intended to express that downloading a world from Realms succeeded.{MaxLength=200}
+resourcePack.editor.realmsPublish.DownloadSuccess=Downloading world from Realms was successful. Please check the Log Panel to see the directory where your download is located.    ###This string is intended to express that downloading a world from Realms succeeded and that the user can check the log panel to get download path.{MaxLength=1000}
 resourcePack.editor.realmsPublish.DownloadFailed=Downloading world from Realms failed ###This string is intended to express that downloading a world from Realms failed.{MaxLength=200}
 resourcePack.editor.realmsPublish.DownloadingFromRealms=Downloading world from Realms...    ###This string is intended to express that we're in the middle of downloading a world from Realms and waiting for that operation to complete.{MaxLength=200}
 
@@ -803,6 +813,8 @@ resourcePack.editor.toolRail.smartFillTool.tooltip=Click to fill a connected set
 resourcePack.editor.toolRail.smartFillTool.modes.fillVolume=Fill Volume
 resourcePack.editor.toolRail.smartFillTool.areaLimit.title=Area Limit
 resourcePack.editor.toolRail.smartFillTool.areaLimit.tooltip=Maximum area to fill
+resourcePack.editor.toolRail.smartFillTool.limitFillToSelection=Restrict Smart Fill to Selection	###Letting the user know that this toggle will limit the blocks that are affected by the tool to those within the selection. {MaxLength=75}
+resourcePack.editor.toolRail.smartFillTool.limitFillToSelectionTooltip=Restrict smart fill operations to only affect blocks within the active selection.	###Letting the user know that this toggle will limit the blocks that are affected by the tool to those within the active selection. {MaxLength=200}
 
 
 resourcePack.editor.toolRail.summonTool.keyBinding.clear=Clear Selection
@@ -888,6 +900,10 @@ resourcePack.editor.viewport.keyBinding.moveForward=Move Forward
 resourcePack.editor.viewport.keyBinding.moveLeft=Move Left
 resourcePack.editor.viewport.keyBinding.moveRight=Move Right
 resourcePack.editor.viewport.keyBinding.moveUp=Move Up
+resourcePack.editor.viewport.keyBinding.orbitCursorLeft=Orbit Cursor Left   ### Key binding label for an action that orbits camera around block cursor in left direction. {MaxLength="1000"}
+resourcePack.editor.viewport.keyBinding.orbitCursorRight=Orbit Cursor Right ### Key binding label for an action that orbits camera around block cursor in right direction. {MaxLength="1000"}
+resourcePack.editor.viewport.keyBinding.orbitSelectionLeft=Orbit Selection Left ### Key binding label for an action that orbits camera around selection in left direction. {MaxLength="1000"}
+resourcePack.editor.viewport.keyBinding.orbitSelectionRight=Orbit Selection Right   ### Key binding label for an action that orbits camera around selection in right direction. {MaxLength="1000"}
 
 resourcePack.editor.viewport.keyBinding.incrementFlySpeed=Increase Fly Speed
 resourcePack.editor.viewport.keyBinding.decrementFlySpeed=Decrease Fly Speed
@@ -910,3 +926,6 @@ resourcePack.editor.hotbar.defaultDisplayName=Default
 resourcePack.editor.reloadScripts.response.tooMany=Too many players are connected to the server.  Script reloading is only supported on hosts with a single player connected.
 resourcePack.editor.reloadScripts.response.genericError=An error occcurred while attempting to reload scripts.
 resourcePack.editor.reloadScripts.response.noAdminRights=You do not have permission to reload scripts.
+
+editor.logging.worldDownloadMessage=Download from Realms was Successful. World Location: %s	###Logging message to tell the player that their world was downloaded successfully and the location where they can find their downloaded world{MaxLength=1000}
+editor.logging.worldExportMessage=Exporting world was Successful. World Location: %s	###Logging message to tell the player that their world was exported successfully and the location where they can find their exported world{MaxLength=1000}
