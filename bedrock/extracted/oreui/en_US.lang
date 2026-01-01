@@ -40,16 +40,16 @@ hbui.AchievementDisabledModal.cheatsEnabled=Cheats are enabled   ###Reason world
 hbui.AchievementDisabledModal.closeButton=Close  ###Secondary button of modal that appears when the user tries to create a world with settings that will permanently disabled achievements {MaxLength=40}
 hbui.AchievementDisabledModal.confirmButton=Create anyway  ###Primary button of modal that appears when the user tries to create a world with settings that will permanently disabled achievements {MaxLength=40}
 hbui.AchievementDisabledModal.confirmButtonEW=Continue anyway  ###Primary button of modal that appears when the user tries to edit a world with settings that will permanently disabled achievements {MaxLength=40}
-hbui.AchievementDisabledModal.creativeMode=The world is create in creative mode   ###Reason world will have achievements permanently disabled {MaxLength=150}
+hbui.AchievementDisabledModal.creativeMode=The world is created in creative mode   ###Reason world will have achievements permanently disabled {MaxLength=150}
 hbui.AchievementDisabledModal.experiments=Beta features are turned on   ###Reason world will have achievements permanently disabled {MaxLength=150}
 hbui.AchievementDisabledModal.firstParagraph=Creating a world using any of the following features will mean you won't be able to earn achievements in this world. Even if you turn these options off later, you'll need to visit a different world to earn achievements.   ###First paragraph of modal that appears when the user tries to create a world with settings that will permanently disabled achievements {MaxLength=300}
 hbui.AchievementDisabledModal.firstParagraph.singleReason=Creating a world using the following feature will mean you won’t be able to earn achievements in that world. Even if you turn this option off later, you’ll need to visit a different world to earn achievements.   ###First paragraph of modal that appears when the user tries to create a world with settings that will permanently disabled achievements for a single reason {MaxLength=300}
 hbui.AchievementDisabledModal.firstParagraphEW=The way this world has been set up means that you won’t be able to earn achievements while playing in it. Editing the world’s settings now can’t change this. You’ll need to visit a different world to earn achievements.   ###First paragraph of modal that appears when the user tries to edit a world with settings that will permanently disabled achievements {MaxLength=300}
-hbui.AchievementDisabledModal.flatWorld=The world is create as a flat world   ###Reason world will have achievements permanently disabled {MaxLength=150}
+hbui.AchievementDisabledModal.flatWorld=The world is created as a flat world   ###Reason world will have achievements permanently disabled {MaxLength=150}
 hbui.AchievementDisabledModal.goBackButton=Go back  ###Secondary button of modal that appears when the user tries to create a world with settings that will permanently disabled achievements {MaxLength=40}
 hbui.AchievementDisabledModal.operator=The world creator has Operator privileges   ###Reason world will have achievements permanently disabled {MaxLength=150}
 hbui.AchievementDisabledModal.secondParagraph=Achievements can't be earned in this world if:   ###Second paragraph of modal that appears when the user tries to create a world with settings that will permanently disabled achievements {MaxLength=150}
-hbui.AchievementDisabledModal.template=The world is build from a template   ###Reason world will have achievements permanently disabled {MaxLength=150}
+hbui.AchievementDisabledModal.template=The world is built from a template   ###Reason world will have achievements permanently disabled {MaxLength=150}
 hbui.AchievementDisabledModal.title=You can’t earn achievements   ###Title of modal that appears when the user tries to create a world with settings that will permanently disabled achievements {MaxLength=40}
 hbui.AchievementDisabledModal.trial=The world creator is using the trial version of Minecraft   ###Reason world will have achievements permanently disabled {MaxLength=150}
 hbui.AchievementListItem.completed=Completed
@@ -243,8 +243,10 @@ hbui.Bedtime.enumeration=%1$s of %2$s
 hbui.Bedtime.leaveBedButton=Leave bed
 hbui.Bedtime.messageAllPlayersSleepingNight=Sleeping through the night	### Displayed when the player is sleeping through the night using a bed {MaxLength="100"}
 hbui.Bedtime.messageAllPlayersSleepingThunderstorm=Sleeping through the thunderstorm	### Displayed when the player is sleeping through a thunderstorm using a bed {MaxLength="150"}
-hbui.Bedtime.messageWaitingForOthersPlural=Night will be skipped when %1$s more players sleep.
-hbui.Bedtime.messageWaitingForOthersSingular=Night will be skipped when one other player sleeps.
+hbui.Bedtime.messageWaitingForOthersPluralNight=Night will be skipped when %1$s more players sleep.	### Displayed during night time when a player is laying in bed and waiting for more multiple other players to go to bed {MaxLength="200"}
+hbui.Bedtime.messageWaitingForOthersPluralThunderstorm=Thunderstorm will be skipped when %1$s more players sleep.	### Displayed during a thunderstorm when a player is laying in bed and waiting for more multiple other players to go to bed {MaxLength="200"}
+hbui.Bedtime.messageWaitingForOthersSingularNight=Night will be skipped when one other player sleeps. ### Displayed during night time when a player is laying in bed and waiting for one other player to go to bed {MaxLength="200"}
+hbui.Bedtime.messageWaitingForOthersSingularThunderstorm=Thunderstorm will be skipped when one other player sleeps.  ### Displayed during a thunderstorm when a player is laying in bed and waiting for one other player to go to bed {MaxLength="200"}
 hbui.Bedtime.openChatButton=Open chat
 hbui.Bedtime.sleepingNotPossibleNotWorldOwner=The 'Skip night by sleeping' setting is turned off. The owner of this world needs to turn this setting on in edit world.	###This string refers to name of a specific setting (Skip night by sleeping) in a specific screen (Edit world) of the game.{MaxLength=240}
 hbui.Bedtime.sleepingNotPossibleWorldOwner=The 'Skip night by sleeping' setting is turned off. Turn it on under advanced settings in edit world.	###This string refers to name of a specific setting (Skip night by sleeping) in specifc UI tab (advanced) a specific screen (Edit world) of the game.{MaxLength=290}
@@ -624,6 +626,7 @@ hbui.CreateNewWorld.achievementsDisabledMessages.template=Remove template
 hbui.CreateNewWorld.advanced.bonusChestDescription=Spawn close to a chest with items to get you started
 hbui.CreateNewWorld.advanced.bonusChestTitle=Bonus chest
 hbui.CreateNewWorld.advanced.copyToClipboard=Copied to clipboard
+hbui.CreateNewWorld.advanced.expandHintNarration=More options for flat world expanded below ### More options for how to generate a flat world is shown below in the UI. {MaxLength="1000"}
 hbui.CreateNewWorld.advanced.exportSettingsDescription=Some functionality may be overridden during editing session, but are fully respected when exported
 hbui.CreateNewWorld.advanced.exportSettingsHeader=Export settings
 hbui.CreateNewWorld.advanced.firesSpreadsDescription=Fire can spread between entities
@@ -904,13 +907,13 @@ hbui.CreateNewWorld.multiplayer.playerPermissionsOperatorLabel=Operator
 hbui.CreateNewWorld.multiplayer.playerPermissionsTitle=Default player permissions
 hbui.CreateNewWorld.multiplayer.playerPermissionsVisitorDescription=Visitors can only observe your world, not interact with it
 hbui.CreateNewWorld.multiplayer.playerPermissionsVisitorLabel=Visitor
-hbui.CreateNewWorld.multiplayer.playstationPlayerAccessFriendsDescription=Anyone you’ve added as a PlayStation™Network friend can join	### CertRequirement: [PlayStation™Network]
-hbui.CreateNewWorld.multiplayer.playstationPlayerAccessFriendsOfFriendsDescription=Friends of your PlayStation™Network friends can join	### CertRequirement: [PlayStation™Network]
+hbui.CreateNewWorld.multiplayer.playstationPlayerAccessFriendsDescription=Anyone you’ve added as a PlayStation™Network friend can join	### CertRequirement:{PS4}[PlayStation™Network] CertRequirement:{PS5}[PlayStation™Network]{MaxLength=3000}
+hbui.CreateNewWorld.multiplayer.playstationPlayerAccessFriendsOfFriendsDescription=Friends of your PlayStation™Network friends can join	### CertRequirement:{PS4}[PlayStation™Network] CertRequirement:{PS5}[PlayStation™Network]{MaxLength=3000}
 hbui.CreateNewWorld.multiplayer.playstationPlayerAccessInvitedDescription=Anyone you send a direct invite can join
-hbui.CreateNewWorld.multiplayer.playstationPlayerAccessTitle=PlayStation™Network friends	### CertRequirement: [PlayStation™Network]
+hbui.CreateNewWorld.multiplayer.playstationPlayerAccessTitle=PlayStation™Network friends	### CertRequirement:{PS4}[PlayStation™Network] CertRequirement:{PS5}[PlayStation™Network]{MaxLength=3000}
 hbui.CreateNewWorld.multiplayer.playStationPlusSubscriptionPromotionBody=You need it to play online
 hbui.CreateNewWorld.multiplayer.playStationPlusSubscriptionPromotionButtonLabel=More information
-hbui.CreateNewWorld.multiplayer.playStationPlusSubscriptionPromotionTitle=You don’t have a PlayStation®Plus subscription	### CertRequirement: [PlayStation®Plus], CertRequirement: [subscription]{MaxLength=300}
+hbui.CreateNewWorld.multiplayer.playStationPlusSubscriptionPromotionTitle=You don’t have a PlayStation®Plus subscription	### CertRequirement:{PS4}[PlayStation®Plus] CertRequirement:{PS5}[PlayStation®Plus] CertRequirement:{PS4}[subscription] CertRequirement:{PS5}[subscription]{MaxLength=300}
 hbui.CreateNewWorld.multiplayer.settingsTitle=Settings
 hbui.CreateNewWorld.multiplayer.visibleToLanPlayersDescription=Players on your local network can join your world
 hbui.CreateNewWorld.multiplayer.visibleToLanPlayersTitle=Visible to LAN players
@@ -1059,9 +1062,9 @@ hbui.CreateNewWorld.signInPromptWorldOnRealmModal.cancel=Cancel
 hbui.CreateNewWorld.signInPromptWorldOnRealmModal.msaGuestCreateWorld.message=You need a Microsoft account to create a world on Realms. ### {StrContains="Realms"}
 hbui.CreateNewWorld.signInPromptWorldOnRealmModal.msaGuestEditWorld.message=You need a Microsoft account to play on Realms. ### {StrContains="Realms"}
 hbui.CreateNewWorld.signInPromptWorldOnRealmModal.platformGuestCreate.nintendo.message=You need to be signed in to your Nintendo Account to create a world on Realms. ### {StrContains="Realms"}
-hbui.CreateNewWorld.signInPromptWorldOnRealmModal.platformGuestCreate.playStation.message=You need to be signed in to your account for PlayStation™Network to create a world on Realms.	### CertRequirement: [account for PlayStation™Network] ### {StrContains="Realms"}
+hbui.CreateNewWorld.signInPromptWorldOnRealmModal.platformGuestCreate.playStation.message=You need to be signed in to your account for PlayStation™Network to create a world on Realms.	### CertRequirement:{PS4}[account for PlayStation™Network] CertRequirement:{PS5}[account for PlayStation™Network] ### {StrContains="Realms"}{MaxLength=3000}
 hbui.CreateNewWorld.signInPromptWorldOnRealmModal.platformGuestEdit.nintendo.message=You need to be signed in to your Nintendo Account to play on Realms. ### {StrContains="Realms"}
-hbui.CreateNewWorld.signInPromptWorldOnRealmModal.platformGuestEdit.playStation.message=You need to be signed in to your account for PlayStation™Network to play on Realms.	### CertRequirement: [account for PlayStation™Network] ### {StrContains="Realms"}
+hbui.CreateNewWorld.signInPromptWorldOnRealmModal.platformGuestEdit.playStation.message=You need to be signed in to your account for PlayStation™Network to play on Realms.	### CertRequirement:{PS4}[account for PlayStation™Network] CertRequirement:{PS5}[account for PlayStation™Network] ### {StrContains="Realms"}{MaxLength=3000}
 hbui.CreateNewWorld.signInPromptWorldOnRealmModal.signIn=Sign in
 hbui.CreateNewWorld.signInPromptWorldOnRealmModal.title=Sign in required
 hbui.CreateNewWorld.tabContainerNarrationSuffix=Vertical Sub Menu
@@ -1089,7 +1092,7 @@ hbui.CreateNewWorldSideMenu.narrationCreateButtonHint=Create a %1$s world on %2$
 hbui.CreateNewWorldSideMenu.resourcePacksTabLabel=Resource packs
 hbui.CreateNewWorldSideMenu.scriptingCodingTabLabel=Scripting & coding
 hbui.CreatePartyRoute.createPartyHeader=Create party ### Create Party page title. For the purposes of this feature, a Party is a group of players joining up to  play together.
-hbui.CreatePartyRoute.friendsTitle=Friends (%1$s) ### The header for a list of Player List Items containing the user's friends {MaxLength="50"}
+hbui.CreatePartyRoute.friendsTitle=Friends ### The header for a list of Player List Items containing the user's friends {MaxLength="50"}
 hbui.CreatePartyRoute.inviteOnly=Invite only ### The title for a state where players can only join the party if invited {MaxLength="30"}
 hbui.CreatePartyRoute.inviteOnlyDescription=Players must be invited to join party. ### Describes the invite only state {MaxLength="120"}
 hbui.CreatePartyRoute.maxPartyExplanation=A party can have up to 15 players. ### Description explaining the maximum size of a party {MaxLength="120"}
@@ -1200,6 +1203,9 @@ hbui.FirstTimeSignInRoute.signInList3PS=Join hundreds of other players in unique
 hbui.FirstTimeSignInRoute.signInList4=Access your Marketplace content and characters across multiple platforms
 hbui.FirstTimeSignInRoute.signInPrompt=Sign in with your Microsoft account now to unlock a variety of features, including:
 hbui.FlatWorld.description=The layers of blocks that make up your flat world    ### The Minecraft block layers used to generate a flat world, eg layer of stone and a layer of bedrock. {MaxLength="1000"}
+hbui.FlatWorld.designPreviewInputLegend=Select   ### Button legend for feedback button. {MaxLength="1000"}
+hbui.FlatWorld.designPreviewShortDescription=Tell us what you think of this new design!   ### Description below feedback button. {MaxLength="1000"}
+hbui.FlatWorld.feedbackButton=Give feedback   ### Text on feedback button {MaxLength="20"}
 hbui.FlatWorld.height=Height    ### Block height, eg 3 blocks high. {MaxLength="20"}
 hbui.FlatWorld.layers=Layers    ### Material layers, eg layer of stone. {MaxLength="20"}
 hbui.FlatWorld.material=Material    ### Minecraft material, eg stone, redstone block or dirt. {MaxLength="30"}
@@ -1221,6 +1227,7 @@ hbui.FlatWorld.preset.redstoneReady=Redstone Ready   ### Flat world preset name.
 hbui.FlatWorld.preset.snowyKingdom=Snowy Kingdom   ### Flat world preset name. {MaxLength="20"}
 hbui.FlatWorld.preset.tunnelersDream=Tunneler's Dream   ### Flat world preset name. {MaxLength="20"}
 hbui.FlatWorld.preset.waterWorld=Water World   ### Flat world preset name. {MaxLength="20"}
+hbui.FlatWorld.title=Flat world preset ### Flat world is a world that is generated as completely flat, preset is a predetermined composition of layers and materials for this generation. {MaxLength="40"}
 hbui.FriendList.favoriteFriendsNumberMultiple=%1$s friends favorite
 hbui.FriendList.favoriteFriendsNumberSingular=%1$s friend favorite
 hbui.FriendList.favorites=Favorites (%1$s/%2$s)
@@ -1230,21 +1237,21 @@ hbui.FriendList.mutualFriendsFriendsNumberSingular=%1$s friend
 hbui.FriendList.narration.favorites=Favorite friends
 hbui.FriendList.narration.friends=Friends
 hbui.FriendList.narration.offline=Offline Friends
-hbui.FriendList.narration.offline.playstation=Offline PlayStation™Network friends	### CertRequirement: [PlayStation™Network]
+hbui.FriendList.narration.offline.playstation=Offline PlayStation™Network friends	### CertRequirement:{PS4}[PlayStation™Network] CertRequirement:{PS5}[PlayStation™Network]{MaxLength=3000}
 hbui.FriendList.narration.offline.switch=Offline Friends
 hbui.FriendList.narration.online=Online Friends
-hbui.FriendList.narration.online.playstation=Online PlayStation™Network Friends	### CertRequirement: [PlayStation™Network]
+hbui.FriendList.narration.online.playstation=Online PlayStation™Network Friends	### CertRequirement:{PS4}[PlayStation™Network] CertRequirement:{PS5}[PlayStation™Network]{MaxLength=3000}
 hbui.FriendList.narration.online.switch=Online Nintendo Friends
 hbui.FriendList.noFriends=All your friends hade been added as favorites!
 hbui.FriendList.noOfflineFriends=All your friends are online!
 hbui.FriendList.noOnlineFriends=No friends are online
 hbui.FriendList.offline=Offline (%1$s)
-hbui.FriendList.offline.playstation=Offline PSN™ friends (%1$s) ### CertRequirement: [PSN™]
+hbui.FriendList.offline.playstation=Offline PSN™ friends (%1$s) ### CertRequirement:{PS4}[PSN™] CertRequirement:{PS5}[PSN™]{MaxLength=3000}
 hbui.FriendList.offline.switch=Offline Nintendo friends (%1$s)
 hbui.FriendList.offlineFriendsNumberMultiple=%1$s friends offline
 hbui.FriendList.offlineFriendsNumberSingular=%1$s friend offline
 hbui.FriendList.online=Online (%1$s)
-hbui.FriendList.online.playstation=Online PSN™ friends (%1$s)	### CertRequirement: [PSN™]
+hbui.FriendList.online.playstation=Online PSN™ friends (%1$s)	### CertRequirement:{PS4}[PSN™] CertRequirement:{PS5}[PSN™]{MaxLength=3000}
 hbui.FriendList.online.switch=Online Nintendo friends (%1$s)
 hbui.FriendList.onlineFriendsNumberMultiple=%1$s friends online
 hbui.FriendList.onlineFriendsNumberSingular=%1$s friend online
@@ -1444,6 +1451,9 @@ hbui.InboxSettingsRoute.onlyShowFriends=Only show invites from friends
 hbui.InboxSettingsRoute.showInvites=Enable invite badge alerts
 hbui.InboxSettingsRoute.showMessages=Enable message badge alerts
 hbui.InboxSettingsRoute.title=Inbox Settings
+hbui.InviteToPartyRoute.friendsTitle=Friends ### The header for a list of Player List Items containing the user's friends
+hbui.InviteToPartyRoute.inviteToPartyHeader=Invite to party ### Invite to party page title
+hbui.InviteToPartyRoute.recentlyPlayedWithTitle=Recently Played With ### The header for a list of Player List Items containing players the user has recently played with
 hbui.JoinRealmsServer.buttonEnumeration=%1$s of %2$s
 hbui.JoinRealmsServer.helpButtonLabel=Help
 hbui.JoinRealmsServer.inputDescription=Enter the invite link you received to join a Realm.
@@ -1643,6 +1653,7 @@ hbui.PacksLoadingModal.title=Downloading...
 hbui.PackTabs.activeTabButtonLabel=Active
 hbui.PackTabs.availableTabButtonLabel=Available
 hbui.PackTabs.narration.tab=%1$s, tab %2$s of %3$s
+hbui.PartyInviteListGroup.titleWithLength=%1$s (%2$s) ### the title of a list followed by the number of items in the list. The number is in brackets.
 hbui.PlayerAvatarsOnlineInWorld.full=Full
 hbui.PlayerBannedModalRoute.body=You have been %1$s from playing multiplayer in Minecraft due to "%2$s". You won't be able to play on servers, join realms, host or join multiplayer games or use the marketplace.
 hbui.PlayerBannedModalRoute.body.day=You have 1 day remaining on your suspension.
@@ -1735,7 +1746,7 @@ hbui.PlayerListItem.narration.receivedRequest=This player sent you a request
 hbui.PlayerListItem.narration.sentRequest=You sent a request to this player
 hbui.PlayerListItem.offline=Offline
 hbui.PlayerListItem.online=Online
-hbui.PlayerListItem.online.playstation=Online on PSN™	### CertRequirement: [PSN™]
+hbui.PlayerListItem.online.playstation=Online on PSN™	### CertRequirement:{PS4}[PSN™] CertRequirement:{PS5}[PSN™]{MaxLength=3000}
 hbui.PlayerListItem.online.switch=Online on Switch
 hbui.PlayerListItem.pending=Pending
 hbui.PlayerListItem.playingInSameWorld=Playing in this world	###Used as player status when players are in the same world {MaxLength=30}
@@ -1890,16 +1901,16 @@ hbui.PlayScreen.guestAccountMessage.bannerLogInMicrosoft=Log in or sign up to Mi
 hbui.PlayScreen.guestAccountMessage.buttonLogInMicrosoft=Log in to Microsoft account
 hbui.PlayScreen.GuestAccountMessage.nintendo.button=Log in to a Nintendo Account ### Button that is shown in an empty state when the PlayScreen when the player is not logged into a NintendoAccount. {StrContains="Nintendo Account"} {MaxLength="50"}
 hbui.PlayScreen.GuestAccountMessage.nintendo.text=Log in to a Nintendo Account to see what's here. ###  Text that is shown in an empty state when the PlayScreen when the player is not logged into a NintendoAccount. {StrContains="Nintendo Account"} {MaxLength="150"}
-hbui.PlayScreen.GuestAccountMessage.playstation.button=Log in to PlayStation™Network	### Button that is shown in an empty state when the PlayScreen when the player is not logged into the Playstation network. CertRequirement: [PlayStation™Network] {MaxLength="50"}
-hbui.PlayScreen.GuestAccountMessage.playstation.text=Log in to the PlayStation™Network to see what's here.	### Text that is shown in an empty state when the PlayScreen when the player is not logged into the Playstation network. CertRequirement: [PlayStation™Network] {MaxLength="150"}
+hbui.PlayScreen.GuestAccountMessage.playstation.button=Log in to PlayStation™Network	### Button that is shown in an empty state when the PlayScreen when the player is not logged into the Playstation network. CertRequirement:{PS4}[PlayStation™Network] CertRequirement:{PS5}[PlayStation™Network] {MaxLength="50"}
+hbui.PlayScreen.GuestAccountMessage.playstation.text=Log in to the PlayStation™Network to see what's here.	### Text that is shown in an empty state when the PlayScreen when the player is not logged into the Playstation network. CertRequirement:{PS4}[PlayStation™Network] CertRequirement:{PS5}[PlayStation™Network] {MaxLength="150"}
 hbui.PlayScreen.guestAccountMessage.realmsNoMicrosoftAccount=You need a Microsoft account to play on Realms. ### {StrContains="Realms"}
 hbui.PlayScreen.guestAccountMessage.realmsNoPlatformAccountNintendo=You need a Nintendo Account to play on Realms ### {StrContains="Realms"}
-hbui.PlayScreen.guestAccountMessage.realmsNoPlatformAccountPlaystation=You need a PlayStation™Network account to play on Realms ### CertRequirement: [PlayStation™Network] {StrContains="Realms"}
+hbui.PlayScreen.guestAccountMessage.realmsNoPlatformAccountPlaystation=You need a PlayStation™Network account to play on Realms ### CertRequirement:{PS4}[PlayStation™Network] CertRequirement:{PS5}[PlayStation™Network] {StrContains="Realms"} {MaxLength=3000}
 hbui.PlayScreen.guestAccountMessage.realmsPlaystationGuest=You need a Microsoft account to play on Realms. ### {StrContains="Realms"}
 hbui.PlayScreen.guestAccountMessage.serversNintendoGuest=You need a Microsoft account to play on servers.
 hbui.PlayScreen.guestAccountMessage.serversNoMicrosoftAccount=You need a Microsoft account to play on servers.
 hbui.PlayScreen.guestAccountMessage.serversNoPlatformAccountNintendo=You need a Nintendo Account to play on servers
-hbui.PlayScreen.guestAccountMessage.serversNoPlatformAccountPlaystation=You need a PlayStation™Network account to play on servers ### CertRequirement: [PlayStation™Network]
+hbui.PlayScreen.guestAccountMessage.serversNoPlatformAccountPlaystation=You need a PlayStation™Network account to play on servers ### CertRequirement:{PS4}[PlayStation™Network] CertRequirement:{PS5}[PlayStation™Network] {MaxLength=3000}
 hbui.PlayScreen.guestAccountMessage.serversPlaystationGuest=You need a Microsoft account and to play on servers.
 hbui.PlayScreen.importWorldErrorModal.close=Close
 hbui.PlayScreen.importWorldErrorModal.unknownError.body=There was an issue importing this world.
@@ -1968,7 +1979,7 @@ hbui.PlayScreen.outOfStorageModal.close=Close
 hbui.PlayScreen.outOfStorageModal.closeInputLegend=Close
 hbui.PlayScreen.outOfStorageModal.title=Out of storage space
 hbui.PlayScreen.PlatformMultiplayerDisabledMessage.text=Access these and other social features by enabling multiplayer in your account.
-hbui.PlayScreen.PlatformMultiplayerDisabledMessage.textForPlayStation=Communication features are disabled in your PlayStation™Network account. Access communication features by enabling it in your PlayStation™Network account.	### This is a communication requirement for PS. CertRequirement: [PlayStation™Network] {MaxLength=300}
+hbui.PlayScreen.PlatformMultiplayerDisabledMessage.textForPlayStation=Communication features are disabled in your PlayStation™Network account. Access communication features by enabling it in your PlayStation™Network account.	### This is a communication requirement for PS. CertRequirement:{PS4}[PlayStation™Network] CertRequirement:{PS5}[PlayStation™Network] {MaxLength=300}
 hbui.PlayScreen.PlatformMultiplayerDisabledMessage.title=You shall not pass
 hbui.PlayScreen.realms=Realms ### {StrContains="Realms"}
 hbui.PlayScreen.RealmsBannedMessage.Banned.bodyFirstParagraph=You’ve been banned from Minecraft’s Realms services. This means you can’t play or join Realms.	### {StrContains="Minecraft"} {StrContains="Realms"}
@@ -2277,7 +2288,7 @@ hbui.ProfileRoute.noInternetErrorMessage=You're not connected to the internet ri
 hbui.ProfileRoute.notLoggedInMSAErrorMessage=Please sign in to a Microsoft account to view player profiles.
 hbui.ProfileRoute.overviewTabButtonLabel=Overview
 hbui.ProfileRoute.platformOnlyProfileErrorMessage=Player profiles require a Microsoft account.
-hbui.ProfileRoute.playStationAccount=PlayStation™Network	### CertRequirement: [PlayStation™Network]
+hbui.ProfileRoute.playStationAccount=PlayStation™Network	### CertRequirement:{PS4}[PlayStation™Network] CertRequirement:{PS5}[PlayStation™Network] {MaxLength=3000}
 hbui.ProfileRoute.profileUnavailableErrorTitle=Profile Unavailable
 hbui.ProfileRoute.replaceFeaturedMessage=Replace your current featured screenshot with this new one?
 hbui.ProfileRoute.replaceFeaturedTitle=Feature confirmation
@@ -2466,6 +2477,10 @@ hbui.RealmsPurchaseSubscriptionRoute.banner.subheading.trial=Free 30-day trial, 
 hbui.RealmsPurchaseSubscriptionRoute.banner.subheading.trial.narration=Free 30-day trial, then %1$s monthly fee
 hbui.RealmsPurchaseSubscriptionRoute.checkboxLabel=I agree
 hbui.RealmsPurchaseSubscriptionRoute.checkboxUncheckedHint=Accept terms and conditions in order to create a realm   ### {StrContains="Realm"}
+hbui.RealmsPurchaseSubscriptionRoute.errorModals.appStoreNotReady.body=Log in to your Apple Account to continue with this purchase.	### modal text telling players that they have to sign in to the Apple AppStore before they can continue with the Realm purchase {MaxLength="100"}
+hbui.RealmsPurchaseSubscriptionRoute.errorModals.appStoreNotReady.cancel=Go back	### text on the cancel button of the modal that tells players that they have to sign in to the Apple AppStore before they can continue with the Realm purchase {MaxLength="10"}
+hbui.RealmsPurchaseSubscriptionRoute.errorModals.appStoreNotReady.confirm=Sign in to Store	### text on the confirm button of the modal that tells players that they have to sign in to the Apple AppStore before they can continue with the Realm purchase {MaxLength="20"}
+hbui.RealmsPurchaseSubscriptionRoute.errorModals.appStoreNotReady.title=Log in to continue	### title of the modal that tells players that they have to sign in to the Apple AppStore before they can continue with the Realm purchase {MaxLength="20"}
 hbui.RealmsPurchaseSubscriptionRoute.ErrorModals.close=Close
 hbui.RealmsPurchaseSubscriptionRoute.errorModals.failedClubNameValidation.body=The text you entered contains words that others may find offensive and cannot be used. Please try again.
 hbui.RealmsPurchaseSubscriptionRoute.errorModals.failedClubNameValidation.title=Profanity filter
@@ -2474,6 +2489,7 @@ hbui.RealmsPurchaseSubscriptionRoute.errorModals.genericFailure.title=Something 
 hbui.RealmsPurchaseSubscriptionRoute.errorModals.invalidRealmName.body=The Realm name you entered is invalid. Please make sure this field is filled and does not contain any special characters.
 hbui.RealmsPurchaseSubscriptionRoute.errorModals.invalidRealmName.title=Invalid Realm name
 hbui.RealmsPurchaseSubscriptionRoute.errorModals.memberOfTooManyRealms.body=You are a member of too many Realms. Leave any old Realms to purchase a new Realms subscription.	### {MaxLength="150"} message saying that the player has been a member of too many Realms and thus cannot create more Realms
+hbui.RealmsPurchaseSubscriptionRoute.errorModals.memberOfTooManyRealms.cancel=Go back	### {MaxLength="10"} the button text of the modal saying that the player has been a member of too many Realms
 hbui.RealmsPurchaseSubscriptionRoute.errorModals.memberOfTooManyRealms.title=Too many memberships	### {MaxLength="25"} the title of the modal saying that the player has been a member of too many Realms
 hbui.RealmsPurchaseSubscriptionRoute.errorModals.noAccess.body=You do not have access to Realms in pre-production. To get access, reach out in #ask-realms-preprod-access or see the guide at aka.ms/Realms-preprod-access. ### {MaxLength="160"} message saying that the player has no access to Realms and where to request for help (for devs only)
 hbui.RealmsPurchaseSubscriptionRoute.errorModals.noAccess.title=Error ### {MaxLength="5"} the title of the modal saying that the player has no access to Realms
@@ -3259,6 +3275,12 @@ hbui.StorageIndicator.petabytes=%1$sPB
 hbui.StorageIndicator.settings=Settings
 hbui.StorageIndicator.storageSpace=%1$s used out of %2$s
 hbui.StorageIndicator.terabytes=%1$sTB
+hbui.SwitchAccordion.closeInputLegend=Close    ### Close an unfolded UI element. {MaxLength="16"}
+hbui.SwitchAccordion.narrationComponentType=Switch    ### UI element, behaves like a physical switch button. {MaxLength="1000"}
+hbui.SwitchAccordion.narrationCountLabel=%1$s - (%2$s)     ### Number x of n . {MaxLength="1000"}
+hbui.SwitchAccordion.openInputLegend=Open    ### Open a folded UI element. {MaxLength="16"}
+hbui.SwitchAccordion.stateCollapsed=Collapsed    ### Collapsed UI element. {MaxLength="16"}
+hbui.SwitchAccordion.stateExpanded=Expanded   ### Expanded UI element. {MaxLength="16"}
 hbui.TemplateCard.button=Button
 hbui.TemplateCard.componentRole=Template
 hbui.TemplateCard.creator=by %1$s
@@ -3384,6 +3406,8 @@ hbui.WorldCard.multiplayerDisabled=Multiplayer disabled
 hbui.WorldCard.multiplayerWorldOffline=World offline
 hbui.WorldCard.narration.buttonSiblings=Button %1$s of %2$s
 hbui.WorldCard.narration.componentRole=World
+hbui.WorldCard.narration.componentRoleLan=LAN World    ### Minecraft LAN World {MaxLength=35}
+hbui.WorldCard.narration.componentRoleLocal=World    ### Minecraft World {MaxLength=30}
 hbui.WorldCard.narration.edit=Edit
 hbui.WorldCard.narration.gridAmountContext=%1$s of %2$s
 hbui.WorldCard.narration.play=Play
@@ -3396,15 +3420,27 @@ hbui.WorldListItem.multiplayerWorldOffline=Offline
 hbui.WorldListItem.narration.button=Button
 hbui.WorldListItem.narration.buttonSiblings=Button %1$s of %2$s
 hbui.WorldListItem.narration.componentRole=World
+hbui.WorldListItem.narration.componentRoleLan=LAN World    ### Minecraft LAN World {MaxLength=35}
+hbui.WorldListItem.narration.componentRoleLocal=World    ### Minecraft World {MaxLength=30}
 hbui.WorldListItem.narration.edit=Edit
 hbui.WorldListItem.narration.lastSaved=Last saved %1$s
 hbui.WorldListItem.narration.listLengthContext=%1$s of %2$s
 hbui.WorldListItem.narration.play=Play
 hbui.WorldListItem.narration.worldSize=World size %1$s
 hbui.WorldListItem.play=Play
+hbui.WorldSettingsButton.difficultyEasyLabel=Easy    ### Game difficulty setting. Should be the exact same translation as the one used elsewhere in the game. {MaxLength="20"}
+hbui.WorldSettingsButton.difficultyHardLabel=Hard    ### Game difficulty setting. Should be the exact same translation as the one used elsewhere in the game. {MaxLength="20"}
+hbui.WorldSettingsButton.difficultyNormalLabel=Normal    ### Game difficulty setting. Should be the exact same translation as the one used elsewhere in the game. {MaxLength="20"}
+hbui.WorldSettingsButton.difficultyPeacefulLabel=Peaceful    ### Game difficulty setting. Should be the exact same translation as the one used elsewhere in the game. {MaxLength="20"}
+hbui.WorldSettingsButton.gameModeAdventureLabel=Adventure    ### Game mode setting. Should be the exact same translation as the one used elsewhere in the game. {MaxLength="20"}
+hbui.WorldSettingsButton.gameModeCreativeLabel=Creative    ### Game mode setting. Should be the exact same translation as the one used elsewhere in the game. {MaxLength="20"}
+hbui.WorldSettingsButton.gameModeSurvivalLabel=Survival    ### Game mode setting. Should be the exact same translation as the one used elsewhere in the game. {MaxLength="20"}
+hbui.WorldSettingsButton.gameModeUnknownLabel=Unknown    ### Unknown type of Minecraft world. A known type would be eg survival or creative. {MaxLength=21}
+hbui.WorldSettingsButton.worldNamePlaceholder=My World    ### Placeholder for a world name. Should be the exact same translation as the one used in Create new world. {MaxLength="20"}
 hbui.WorldTag.adventure=Adventure
 hbui.WorldTag.creative=Creative
 hbui.WorldTag.experimental=Experimental
+hbui.WorldTag.full=Full    ### Full means that the Minecraft world is full {MaxLength=10}
 hbui.WorldTag.hardcore=Hardcore
 hbui.WorldTag.lan=LAN
 hbui.WorldTag.survival=Survival
@@ -3795,6 +3831,26 @@ hbui.EditorToggleContainer.prevPage=Previous Page Button
 hbui.EditorToggleHeader.collapsed=collapsed
 hbui.EditorToggleHeader.elementType=toggle header
 hbui.EditorToolRail.title=Tool Rail
+hbui.EditorTutorial.button.begin=Begin ###Button on the tutorial modal that starts the tutorial. {MaxLength=1000}
+hbui.EditorTutorial.button.exit=Exit ###Button on the tutorial modal that completes tutorial and closes modal. {MaxLength=1000}
+hbui.EditorTutorial.button.next=Next ###Button on the tutorial modal that skips to the next tutorial stage. {MaxLength=1000}
+hbui.EditorTutorial.exit.cancel=Cancel ###Button label on the exit tutorial modal that returns user to the current tutorial stage. {MaxLength=1000}
+hbui.EditorTutorial.exit.confirm=Confirm ###Button label on the exit tutorial modal that ends tutorial. {MaxLength=1000}
+hbui.EditorTutorial.exit.message=Do you want to exit the tutorial? ###Message that shows on the tutorial modal when exit button is clicked. {MaxLength=1000}
+hbui.EditorTutorial.stage.brush.activate.message=Now let’s learn about the Brush Paint tool. Activate the Brush Paint tool by selecting %1$s on the toolrail or with %2$s. You can add blocks to the world by holding Left Click and moving the mouse around the world. ###Editor tutorial message that explains how to activate brush tool from UI control or key shortcut. {MaxLength=1000}
+hbui.EditorTutorial.stage.brush.delete.message=Holding %1$s down when using the Brush Paint tool will remove blocks from the world instead of adding them. Use the brush to remove some blocks from the world. ###Editor tutorial message that explains how to remove blocks using brush tool. {MaxLength=1000}
+hbui.EditorTutorial.stage.end.info=You can learn more about Editor by going to %1$s. You can also learn about specific tools by pressing the Info button on the tooltips. ###Message at the end of editor tutorial that shows a link to documentation and explains where to find additional information. {MaxLength=1000}
+hbui.EditorTutorial.stage.end.message=Great! You now know the basics of Minecraft Editor. Enjoy creating your first Editor experience. Remember to use Test World, to playtest your creation at any time, and then Export your world or upload it to Realms when you are finished to share your creation with friends. ###Message at the end of editor tutorial that indicates completion of the tutorial. {MaxLength=1000}
+hbui.EditorTutorial.stage.hotbar.message=The hotbar determines which block is for Fill operations, brushes, etc. You can switch the active hotbar slot with the 1-9 keys or select it with the mouse. Select the active slot again to open the block picker to change the block that is being used, or you can use Middle Mouse Button to change it to a block in the world. ###Editor tutorial message that explains how hotbar is operated. {MaxLength=1000}
+hbui.EditorTutorial.stage.movement.message=While holding Right Click on the mouse: ###Editor tutorial modal message about steps to execute for player movement example. {MaxLength=1000}
+hbui.EditorTutorial.stage.movement.message.camera=Use the mouse to move the camera around the world.  ###Editor tutorial modal message option for rotating the player camera. {MaxLength=1000}
+hbui.EditorTutorial.stage.movement.message.navigate=Use %1$s, %2$s, %3$s, and %4$s to move around the world.  ###Editor tutorial modal message option for moving the player when parameterized keyboard buttons are pressed. {MaxLength=1000}
+hbui.EditorTutorial.stage.selection.activate.message=Now let’s learn about the Selection tool. Activate the Selection tool by selecting the %1$s on the toolrail or by using %2$s hotkey. ###Editor tutorial message that teaches how to activate selection tool with UI control or key shortcut. {MaxLength=1000}
+hbui.EditorTutorial.stage.selection.create.message=Let’s decide where the selection will begin. Use the Mouse to select a block in the world and then use Left Click to place the start position of the selection. Then while still holding left click, drag the mouse to make the selection the size you want ###Editor tutorial text that teaches how to create a new selection in the world. {MaxLength=1000}
+hbui.EditorTutorial.stage.selection.fill.message=Now that you have a selection, let’s fill it with blocks. Select the Fill button on the Action Bar or %1$s to fill the selection with blocks. ###Editor tutorial message that explains how to fill a selection {MaxLength=1000}
+hbui.EditorTutorial.stage.selection.info.message=The Selection tool can be used to move blocks around, make copies to paste in the world, as well as a wide variety of tools. ###Editor tutorial message that explains general use cases of selection tool. {MaxLength=1000}
+hbui.EditorTutorial.stage.start.begin=Begin ###Button label that starts editor tutorial. {MaxLength=1000}
+hbui.EditorTutorial.stage.start.message=Welcome to the Minecraft Editor, a tool designed to help you create stunning worlds in Bedrock with ease. Let’s show you some of the basics. The tutorial can be replayed. You can find it under the ‘Help’ menu. ###Modal message that displays before starting editor tutorial. {MaxLength=1000}
 hbui.EditorTypographySample.colorSectionTextSample1=Text Sample X
 hbui.EditorTypographySample.colorSectionTextSample2=Text Sample Y
 hbui.EditorTypographySample.colorSectionTextSample3=Text Sample Z

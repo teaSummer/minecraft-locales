@@ -16,6 +16,9 @@ resourcePack.editor.actionBar.redo=Redo
 resourcePack.editor.actionBar.undo.tooltipDescription=Undo an action
 resourcePack.editor.actionBar.undo.tooltipTitle=Undo
 resourcePack.editor.actionBar.undo=Undo
+resourcePack.editor.actionBar.fill=Fill ###Label for an actionbar item that fills the selection with the current hotbar block.{MaxLength=100}
+resourcePack.editor.actionBar.fill.tooltipDescription=Fill the selection volume with the current hotbar block ###Tooltip description for an actionbar item that fills the selection with the current hotbar block.{MaxLength=100}
+resourcePack.editor.actionBar.fill.tooltipTitle=Fill ###Tooltip title for an actionbar item that fills the selection with the current hotbar block.{MaxLength=100}
 
 resourcePack.editor.agfx.settings.error.title=Error(s) occurred...
 resourcePack.editor.agfx.pane.title=Settings Editor
@@ -241,6 +244,7 @@ resourcePack.editor.exportProject.advancedSettings.bonusChest=Bonus Chest
 resourcePack.editor.exportProject.advancedSettings.showCoordinates=Show Coordinates
 resourcePack.editor.exportProject.advancedSettings.showDaysPlayed=Show Days Played
 resourcePack.editor.exportProject.advancedSettings.recipeUnlocking=Recipe Unlocking
+resourcePack.editor.exportProject.advancedSettings.limitedCrafting=Limited Crafting   ###Export pane checkbox label that enable to set crafting limit.{MaxLength=100}
 resourcePack.editor.exportProject.advancedSettings.fireSpreads=Fire Spreads
 resourcePack.editor.exportProject.advancedSettings.tntExplodes=TNT Explodes
 resourcePack.editor.exportProject.advancedSettings.resawnBlocksExplode=Respawn Blocks Explode
@@ -248,11 +252,13 @@ resourcePack.editor.exportProject.advancedSettings.mobLoot=Mob Loot
 resourcePack.editor.exportProject.advancedSettings.naturalRegeneration=Natural Regeneration
 resourcePack.editor.exportProject.advancedSettings.tileDrops=Tile Drops
 resourcePack.editor.exportProject.advancedSettings.immediateRespawn=Immediate Respawn
+resourcePack.editor.exportProject.advancedSettings.showDeathMessage=Show Death Message   ###Export pane checkbox label that show the death message when player die.{MaxLength=100}
 resourcePack.editor.exportProject.advancedSettings.respawnRadius=Respawn Radius
 resourcePack.editor.exportProject.advancedSettings.simulationDistance=Simulation Distance
 resourcePack.editor.exportProject.advancedSettings.bedsWork=Beds Work
 resourcePack.editor.exportProject.advancedSettings.requiredSleepingPlayers=Required Sleeping Players (%1$s)
 resourcePack.editor.exportProject.advancedSettings.requiredSleepingPlayers.onePlayerMessage=Only 1 player
+resourcePack.editor.exportProject.advancedSettings.showItemTags=Show Item Tags   ###Export pane checkbox label that show item tags.{MaxLength=100}
 resourcePack.editor.exportProject.multiplayerSettings=Multiplayer Settings
 resourcePack.editor.exportProject.multiplayerSettings.multiplayerGame=Multiplayer Game
 resourcePack.editor.exportProject.multiplayerSettings.playerAccess=Player Access
@@ -268,6 +274,16 @@ resourcePack.editor.exportProject.cheatsSettings.mobGriefing=Mob Griefing
 resourcePack.editor.exportProject.cheatsSettings.entitiesDropLoot=Entities Drop Loot
 resourcePack.editor.exportProject.cheatsSettings.weatherCycle=Weather Cycle
 resourcePack.editor.exportProject.cheatsSettings.commandBlocks=Command Blocks
+resourcePack.editor.exportProject.cheatsSettings.commandBlockOutput=Command Block Output   ###Export pane checkbox label that enable to display the command output.{MaxLength=100}
+resourcePack.editor.exportProject.cheatsSettings.sendCommandFeedback=Send Command Feedback   ###This string is the heading for the 'send command feedback' setting when exporting a world.{MaxLength=100}
+resourcePack.editor.exportProject.cheatsSettings.maxCommandChainLength=Max Command Chain Length   ###Export pane number that indicate the max length of the command, it defaults to 65536. It has a minimum of 0 and a max of 2147483647.{MaxLength=100}
+resourcePack.editor.exportProject.cheatsSettings.fireDamage=Fire Damage  ###Export pane checkbox label that enable damage when the player on fire.{MaxLength=100}
+resourcePack.editor.exportProject.cheatsSettings.freezeDamage=Freeze Damage  ###Export pane checkbox label that enable damage when the player freezes.{MaxLength=100}
+resourcePack.editor.exportProject.cheatsSettings.fallDamage=Fall Damage  ###Export pane checkbox label that enable damage when the player falls.{MaxLength=100}
+resourcePack.editor.exportProject.cheatsSettings.drowningDamage=Drowning Damage  ###Export pane checkbox label that enable damage when the player is drowning.{MaxLength=100}
+resourcePack.editor.exportProject.cheatsSettings.insomnia=Insomnia  ###Export pane checkbox label that enable player insomnia status.{MaxLength=100}
+resourcePack.editor.exportProject.cheatsSettings.showBorderEffect=Show Border Effect  ###Export pane checkbox label that show border effect.{MaxLength=100}
+resourcePack.editor.exportProject.cheatsSettings.functionCommandLimit=Function Command Limit  ###Export pane checkbox label that the number of limition for the function command.{MaxLength=100}
 resourcePack.editor.exportProject.cheatsSettings.educationFeatures=Education Features
 resourcePack.editor.exportProject.cheatsSettings.randomTickSpeed=Random Tick Speed
 resourcePack.editor.exportProject.export=Export
@@ -544,7 +560,11 @@ resourcePack.editor.playtestResult.WorldExportFailed=World Export Failed
 
 
 resourcePack.editor.menuBar.file.realmsPublish=Publish to Realms   ###This string is intended to express that the option is for opening the pane to publish your editor world to Realms.{MaxLength=100}
-resourcePack.editor.realmsPublish.userNotLoggedIn=An active Realms subscription is required to Publish to Realms. You can subscribe to Realms or renew expired subscriptions from the standard Minecraft client or on the minecraft.net website (after signing in to your account).    ###This string is intended to express that the user is not logged in currently and the process they need to follow in order to be able to upload their editor world to their Realms subscription.{MaxLength=350}
+resourcePack.editor.realmsPublish.noActiveRealmsSubscription=An active Realms subscription is required to Publish to Realms. You can subscribe to Realms or renew expired subscriptions from the standard Minecraft client or on the minecraft.net website (after signing in to your account).    ###This string is intended to express that the user doesn't have a active Realms subscription and the process they need to follow in order to be able to upload their editor world to their Realms subscription.{MaxLength=350}
+resourcePack.editor.realmsPublish.userNotLoggedIn=An active Realms subscription is required to Publish to Realms. To access any available Realms subscriptions you must be signed in to a Microsoft Account.	###This string is intended to express that the user is not logged in currently and that they must be logged into their Microsoft account in order to proceed.{MaxLength=350}
+resourcePack.editor.realmsPublish.dedicatedServerWarning=Publish to Realms is unavailable when using a Dedicated Server.	###This string is intended to express that the user is unable to use the Publish to Realms feature on a dedicated server.{MaxLength=350}
+resourcePack.editor.realmsPublish.notSessionHostWarning=Only the Editor session host can Publish to Realms.	###This string is intended to express that the user is unable to use the Publish to Realms when they are not the session host.{MaxLength=350}
+resourcePack.editor.realmsPublish.genericRealmsIssue=There is an issue with the Realms service, try again later.	###This string is intended to express that there is an issue with the realms service and to please try again later.{MaxLength=350}
 resourcePack.editor.realmsPublish.goToMinecraftWebsite=Goto Minecraft.net  ###This string is intended to express that the link will take the user to Minecraft.net.{MaxLength=100}
 resourcePack.editor.realmsPublish.Refresh=Refresh  ###This string is intended to express that the button will refresh the pane to see if the user in now logged in.{MaxLength=100}
 resourcePack.editor.realmsPublish.Realm=Realm  ###This string is intended to express that the below dropdown contains all of the users Realms subscriptions.{MaxLength=100}
@@ -634,6 +654,16 @@ resourcePack.editor.selectionTool.modeSelection.marquee.title=Marquee Mode
 resourcePack.editor.selectionTool.modeSelection.marquee.tooltip=Select blocks in the world using a rectangular volume
 resourcePack.editor.selectionTool.modeSelection.title=Selection Mode
 resourcePack.editor.selectionTool.projectThroughLiquid=Project through liquid
+resourcePack.editor.selectionTool.trimAction.trimVolume=Trim Selection		### Trim the current selection volume to fit only the solid blocks within {MaxLength=30}
+resourcePack.editor.selectionTool.trimAction.trimVolume.tooltip=Trim the current selection volume to fit only the solid blocks within   ### {MaxLength=200}
+resourcePack.editor.selectionTool.trimAction.removeAir=Remove Air		### Remove the air from the current selection volume leaving only specified blocks {MaxLength=30}
+resourcePack.editor.selectionTool.trimAction.removeAir.tooltip=Remove the air from the current selection volume leaving only specified blocks ### {MaxLength=200}
+resourcePack.editor.selectionTool.trimAction.trimVolume.SettingsPane.title=Trim Settings	### The window pane title for the settings for trim mode {MaxLength=30}
+resourcePack.editor.selectionTool.trimAction.trimVolume.SettingsPane.ignoreLiquid=Ignore Liquids	### The toggle button title for ignoring liquids {MaxLength=30}
+resourcePack.editor.selectionTool.trimAction.trimVolume.SettingsPane.ignoreLiquid.tooltip=Ignore any liquid blocks when trimming the volume ### {MaxLength=200}
+resourcePack.editor.selectionTool.trimAction.trimVolume.SettingsPane.onlyCollidable=Only Collision Blocks	### The toggle button title for collision-only blocks {MaxLength=30}
+resourcePack.editor.selectionTool.trimAction.trimVolume.SettingsPane.onlyCollidable.tooltip=Ignore any blocks with no collision (leaves, grass, etc) when trimming the volume ### {MaxLength=200}
+resourcePack.editor.selectionTool.trimAction.trimVolume.SettingsPane.blockMaskMode=Block Mask Mode    ### Title for the toggle action group to selection the block mask mode {MaxLength=20}
 resourcePack.editor.selectionTool.quickAction.clearSelection.tooltip=Deselect the current selection
 resourcePack.editor.selectionTool.quickAction.clearSelection=Deselect
 resourcePack.editor.selectionTool.quickAction.deleteSelection.tooltip=Remove all the blocks inside the current selection volume
@@ -781,7 +811,7 @@ resourcePack.editor.toolRail.summonTool.tool.title=Summon Tool
 resourcePack.editor.toolRail.workbenchSettings.title=Workbench
 resourcePack.editor.toolRail.workbenchTool.title=Workbench
 resourcePack.editor.toolRail.workbenchTool.description=Quickly change block states
-resourcePack.editor.toolRail.workbenchTool.howToUse=Left-click on highlighted blocks to change their state (open/close, rotate, invert, etc.). Try using Shift and Control key modifiers as well! Please note that this feature only works on blocks with modifiable properties (e.g., doors, fences, etc.).
+resourcePack.editor.toolRail.workbenchTool.howToUse=Highlight blocks to see the available actions to change their states (open/close, rotate, invert, etc.). Try using Shift and Control key modifiers as well! Please note that this feature only works on blocks with modifiable properties (e.g., doors, fences, stairs, etc.).	###	This text provides a description of the workbench tool and explans how the the user can highlight blocks in order to see the list of actions for changing that blocks state. {MaxLength="500"}
 resourcePack.editor.toolRail.workbenchTool.tooltip=Change block states
 resourcePack.editor.toolRail.workbenchTool.block=Block
 resourcePack.editor.toolRail.workbenchTool.leftClick=Left Click
