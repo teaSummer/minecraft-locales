@@ -54,6 +54,7 @@ resourcePack.editor.brushPaint.tooltip=브러시를 사용해 월드에서 블�
 
 resourcePack.editor.BrushPaintControl.brush.title=브러시	#
 resourcePack.editor.BrushPaintControl.brushSettings.title=브러시 설정	#
+resourcePack.editor.BrushPaintControl.shapeSettings.title=Shape Settings 	####Represents an expander that has UI controls for brush shape settings.{MaxLength=100}
 resourcePack.editor.BrushPaintControl.fillConstraints.mask.title=마스크 목록	#
 resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.disabled.tooltip=블록 필터 비활성화	#
 resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.disabled=비활성화됨	#
@@ -100,13 +101,15 @@ resourcePack.editor.brushShape.cylinder.settings.depth_radius=깊이 반경	#
 resourcePack.editor.brushShape.cylinder.settings.width_radius=폭 반경	#
 resourcePack.editor.brushShape.ellipsoid.name=타원형	#
 resourcePack.editor.brushShape.ellipsoid.settings.depth_radius=깊이 반경	#
-resourcePack.editor.brushShape.ellipsoid.settings.height_radius=높이 반경	#
+resourcePack.editor.brushShape.ellipsoid.settings.height_radius=Height Radius	#
 resourcePack.editor.brushShape.ellipsoid.settings.width_radius=폭 반경	#
 resourcePack.editor.brushShape.pyramid.name=피라미드	#
 resourcePack.editor.brushShape.pyramid.settings.depth=깊이	#
 resourcePack.editor.brushShape.pyramid.settings.height=높이	#
 resourcePack.editor.brushShape.pyramid.settings.width=폭	#
 resourcePack.editor.brushShape.singleBlock.name=단일 블록	#
+resourcePack.editor.brushShape.star.name=Star 	####Represent a star shaped brush.{MaxLength=100}
+resourcePack.editor.brushShape.star.settings.includeVertical=Include Vertical 	####Represents a toggle button label that removes vertical parts of a star brush if unchecked.{MaxLength=100}
 
 
 resourcePack.editor.client.description=편집기 클라이언트 리소스입니다	#
@@ -150,10 +153,10 @@ resourcePack.editor.ClipboardPreviewControl.structureSize.title=클립보드 크
 
 resourcePack.editor.copypaste.actionbar.copy.title=복사	#
 resourcePack.editor.copypaste.actionbar.copy.tooltip=클립보드에 선택 항목 복사	#
-resourcePack.editor.copypaste.actionbar.copy.tooltipDescription=현재 선택 내용을 클립보드에 복사하며, 해당 내용은 그대로 유지됩니다.	#
+resourcePack.editor.copypaste.actionbar.copy.tooltipDescription=Copy the contents of the current selection to the clipboard, leaving the contents of the selection intact	#
 resourcePack.editor.copypaste.actionbar.cut.title=잘라내기	#
 resourcePack.editor.copypaste.actionbar.cut.tooltip=클립보드로 선택 항목 잘라내기/이동	#
-resourcePack.editor.copypaste.actionbar.cut.tooltipDescription=현재 선택 내용을 클립보드에 복사하며, 그 과정에서 해당 내용은 삭제됩니다.	#
+resourcePack.editor.copypaste.actionbar.cut.tooltipDescription=Copy the contents of the current selection to the clipboard and remove the contents of the selection in the process	#
 resourcePack.editor.copypaste.keyBinding.copy=클립보드에 선택 항목 복사	#
 resourcePack.editor.copypaste.keyBinding.cut=클립보드로 선택 항목 잘라내기/이동	#
 resourcePack.editor.copypaste.keyBinding.paste=클립보드를 월드에 붙여넣기	#
@@ -213,21 +216,32 @@ resourcePack.editor.toolRail.entityInspector.tool.tip=개체 데이터 검사   
 resourcePack.editor.toolRail.entityInspector.pane.helpText=엔티티를 왼쪽 클릭하여 특성을 조회하고 편집하세요   	####This string is shown in the block inspector tool pane before the user clicks to describe how to use it.{MaxLength=100}
 resourcePack.editor.entityInspector.toolRail.description=엔티티를 왼쪽 클릭하여 특성을 조회하고 편집하세요   	####This string is shown in the tool tip to explain the function of the Entity Inspector tool.{MaxLength=100}
 
-resourcePack.editor.exportProject.exportType=내보내기 유형	#
+resourcePack.editor.exportProject.exportType=Export Type	#
 resourcePack.editor.exportProject.exportType.playableWorld=플레이 가능 월드	#
-resourcePack.editor.exportProject.exportNotes=메모 내보내기	#
-resourcePack.editor.exportProject.exportNotes.warning=v%1 월드를 내보내고 있습니다. 내보낸 플레이 가능 월드는 v%1 이전 버전의 Minecraft에서 사용할 수 없습니다. 이전 버전으로 변환하려면 https://chunker.app/을 사용하세요(지원하지 않는 더 이전의 버전에서는 일부 기능을 사용하지 못할 수도 있습니다).	#
+resourcePack.editor.exportProject.exportNotes=Export Notes	#
+resourcePack.editor.exportProject.exportNotes.export=Exporting Progress   	####This string is intended to express that the title of export progress modal.{MaxLength=100}
+resourcePack.editor.exportProject.exportNotes.warning=You are exporting a v%1 world. Exported Playable worlds cannot be used on versions of Minecraft with a version number prior to v%1. To convert to previous version numbers, use https://chunker.app/ (some functionality may not be available if unsupported in earlier versions)	#
+resourcePack.editor.exportProject.exportNotes.progress=Exporting the world...    	####This string is intended to express that the progress message of exporting.{MaxLength=100}
+resourcePack.editor.exportProject.exportNotes.exportSuccess=The world was successfully exported    	####This string is intended to express that export the world succeeded.{MaxLength=100}
+resourcePack.editor.exportProject.exportNotes.exportFailed=Exporting world was failure    	####This string is intended to express that export the world failed.{MaxLength=100}
 resourcePack.editor.exportProject.generalSettings=일반 설정	#
 resourcePack.editor.exportProject.generalSettings.worldName=월드 이름	#
 resourcePack.editor.exportProject.generalSettings.gameMode=게임 모드	#
 resourcePack.editor.exportProject.generalSettings.difficulty=난이도	#
 resourcePack.editor.exportProject.generalSettings.hardcore=하드코어	#
+resourcePack.editor.exportProject.initialPlaySettings=Inital Play Settings   	####This string is intended to express that the export category for inital play settings.{MaxLength=100}
+resourcePack.editor.exportProject.initialPlaySettings.spawnPosition=World Spawn Point   	####This string is intended to express that player inistal spawn position.{MaxLength=100}
+resourcePack.editor.exportProject.initialPlaySettings.startTime=Start Time   	####This string is intended to express that world start time.{MaxLength=100}
+resourcePack.editor.exportProject.initialPlaySettings.clockType=Clock Type   	####This string is intended to express that start time with different clock type.{MaxLength=100}
+resourcePack.editor.exportProject.initialPlaySettings.customStartTime=Custom Start Time   	####This string is intended to express that custom start time with Minecraft Cloke value.{MaxLength=100}
+resourcePack.editor.exportProject.initialPlaySettings.weather=Start Weather   	####This string is intended to express that the custom start weather.{MaxLength=100}
 resourcePack.editor.exportProject.advancedSettings=고급 설정	#
 resourcePack.editor.exportProject.advancedSettings.startingMap=지도 시작	#
 resourcePack.editor.exportProject.advancedSettings.bonusChest=보너스 상자	#
 resourcePack.editor.exportProject.advancedSettings.showCoordinates=좌표 표시	#
 resourcePack.editor.exportProject.advancedSettings.showDaysPlayed=플레이 일수 표시	#
 resourcePack.editor.exportProject.advancedSettings.recipeUnlocking=제작법 잠금 해제	#
+resourcePack.editor.exportProject.advancedSettings.limitedCrafting=Limited Crafting   	####Export pane checkbox label that enable to set crafting limit.{MaxLength=100}
 resourcePack.editor.exportProject.advancedSettings.fireSpreads=불 확산	#
 resourcePack.editor.exportProject.advancedSettings.tntExplodes=TNT 폭발	#
 resourcePack.editor.exportProject.advancedSettings.resawnBlocksExplode=리스폰 블록 폭발	#
@@ -235,18 +249,20 @@ resourcePack.editor.exportProject.advancedSettings.mobLoot=몹 전리품	#
 resourcePack.editor.exportProject.advancedSettings.naturalRegeneration=자연 재생	#
 resourcePack.editor.exportProject.advancedSettings.tileDrops=타일 드롭	#
 resourcePack.editor.exportProject.advancedSettings.immediateRespawn=즉시 리스폰	#
+resourcePack.editor.exportProject.advancedSettings.showDeathMessage=Show Death Message   	####Export pane checkbox label that show the death message when player die.{MaxLength=100}
 resourcePack.editor.exportProject.advancedSettings.respawnRadius=리스폰 반경	#
 resourcePack.editor.exportProject.advancedSettings.simulationDistance=시뮬레이션 거리	#
 resourcePack.editor.exportProject.advancedSettings.bedsWork=침대 작동	#
 resourcePack.editor.exportProject.advancedSettings.requiredSleepingPlayers=잠자는 플레이어 필요(%1$s)	#
 resourcePack.editor.exportProject.advancedSettings.requiredSleepingPlayers.onePlayerMessage=플레이어 1명만	#
+resourcePack.editor.exportProject.advancedSettings.showItemTags=Show Item Tags   	####Export pane checkbox label that show item tags.{MaxLength=100}
 resourcePack.editor.exportProject.multiplayerSettings=멀티 플레이 설정	#
 resourcePack.editor.exportProject.multiplayerSettings.multiplayerGame=멀티 플레이 게임	#
-resourcePack.editor.exportProject.multiplayerSettings.playerAccess=플레이어 액세스	#
+resourcePack.editor.exportProject.multiplayerSettings.playerAccess=Player Access	#
 resourcePack.editor.exportProject.multiplayerSettings.playerPermissions=플레이어 권한	#
-resourcePack.editor.exportProject.multiplayerSettings.visibleToLAN=LAN 플레이어 검색 가능	#
+resourcePack.editor.exportProject.multiplayerSettings.visibleToLAN=Visible to LAN PLayers	#
 resourcePack.editor.exportProject.multiplayerSettings.friendlyFire=아군 포격	#
-resourcePack.editor.exportProject.cheatsSettings=치트 설정	#
+resourcePack.editor.exportProject.cheatsSettings=Cheats Settings	#
 resourcePack.editor.exportProject.cheatsSettings.cheats=치트	#
 resourcePack.editor.exportProject.cheatsSettings.daylightCycle=시간대 전환	#
 resourcePack.editor.exportProject.cheatsSettings.keepInventory=소지품 유지	#
@@ -255,7 +271,17 @@ resourcePack.editor.exportProject.cheatsSettings.mobGriefing=몹에 의한 괴�
 resourcePack.editor.exportProject.cheatsSettings.entitiesDropLoot=엔티티 드롭 전리품	#
 resourcePack.editor.exportProject.cheatsSettings.weatherCycle=날씨 전환	#
 resourcePack.editor.exportProject.cheatsSettings.commandBlocks=명령 블록	#
-resourcePack.editor.exportProject.cheatsSettings.educationFeatures=교육 기능	#
+resourcePack.editor.exportProject.cheatsSettings.commandBlockOutput=Command Block Output   	####Export pane checkbox label that enable to display the command output.{MaxLength=100}
+resourcePack.editor.exportProject.cheatsSettings.sendCommandFeedback=Send Command Feedback   	####This string is the heading for the 'send command feedback' setting when exporting a world.{MaxLength=100}
+resourcePack.editor.exportProject.cheatsSettings.maxCommandChainLength=Max Command Chain Length   	####Export pane number that indicate the max length of the command, it defaults to 65536. It has a minimum of 0 and a max of 2147483647.{MaxLength=100}
+resourcePack.editor.exportProject.cheatsSettings.fireDamage=Fire Damage  	####Export pane checkbox label that enable damage when the player on fire.{MaxLength=100}
+resourcePack.editor.exportProject.cheatsSettings.freezeDamage=Freeze Damage  	####Export pane checkbox label that enable damage when the player freezes.{MaxLength=100}
+resourcePack.editor.exportProject.cheatsSettings.fallDamage=Fall Damage  	####Export pane checkbox label that enable damage when the player falls.{MaxLength=100}
+resourcePack.editor.exportProject.cheatsSettings.drowningDamage=Drowning Damage  	####Export pane checkbox label that enable damage when the player is drowning.{MaxLength=100}
+resourcePack.editor.exportProject.cheatsSettings.insomnia=Insomnia  	####Export pane checkbox label that enable player insomnia status.{MaxLength=100}
+resourcePack.editor.exportProject.cheatsSettings.showBorderEffect=Show Border Effect  	####Export pane checkbox label that show border effect.{MaxLength=100}
+resourcePack.editor.exportProject.cheatsSettings.functionCommandLimit=Function Command Limit  	####Export pane checkbox label that the number of limition for the function command.{MaxLength=100}
+resourcePack.editor.exportProject.cheatsSettings.educationFeatures=Education Features	#
 resourcePack.editor.exportProject.cheatsSettings.randomTickSpeed=무작위 틱 속도	#
 resourcePack.editor.exportProject.export=내보내기	#
 resourcePack.editor.exportProject.resetToDefault=기본값으로 초기화	#
@@ -266,6 +292,11 @@ resourcePack.editor.exportProject.difficulty.peaceful=평화로움	#
 resourcePack.editor.exportProject.difficulty.easy=쉬움	#
 resourcePack.editor.exportProject.difficulty.normal=보통	#
 resourcePack.editor.exportProject.difficulty.hard=어려움	#
+resourcePack.editor.exportProject.weather.default=Default   	####This string is intended to express that the default weather .{MaxLength=100}
+resourcePack.editor.exportProject.weather.clear=Clear   	####This string is intended to express that the weather of Clear.{MaxLength=100}
+resourcePack.editor.exportProject.weather.rain=Rain   	####This string is intended to express that the weather of Rain.{MaxLength=100}
+resourcePack.editor.exportProject.weather.thunder=Thunder   	####This string is intended to express that the weather of Thunder.{MaxLength=100}
+
 
 
 resourcePack.editor.toolRail.ExtrudeTool.title=압출 도구	#
@@ -292,7 +323,7 @@ resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.TrailingBlocks.title
 resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.TrailingBlocksSettings.title=잔상 효과 블록 설정	#
 resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.QuickExtrudeSettings.title=간편 압출 설정	#
 resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.QuickExtrudeMode.title=간편 압출 모드	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.QuickExtrudeMode.decrease.title=수축	#
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.QuickExtrudeMode.decrease.title=감소	#
 resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.QuickExtrudeMode.decrease.tooltip=압출 수축	#
 resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.QuickExtrudeMode.expand.title=확장	#
 resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.QuickExtrudeMode.expand.tooltip=압출 확장	#
@@ -306,7 +337,7 @@ resourcePack.editor.toolRail.ExtrudeTool.keyBinding.toggleTool=압출 도구 전
 
 
 resourcePack.editor.toolRail.FarmGenerator.tool.title=농장 생성기	#
-resourcePack.editor.toolRail.FarmGenerator.tool.tooltip=커스텀 농장을 빠르게 만드세요.	#
+resourcePack.editor.toolRail.FarmGenerator.tool.tooltip=커스텀 농장을 빠르게 만드세요	#
 resourcePack.editor.toolRail.FarmGenerator.pane.title=농장 생성기	#
 resourcePack.editor.toolRail.FarmGenerator.pane.length=길이	#
 resourcePack.editor.toolRail.FarmGenerator.pane.width=폭	#
@@ -468,19 +499,19 @@ resourcePack.editor.pastepreview.keyBinding.toggleMouseTracking=마우스 추적
 resourcePack.editor.pastepreview.pane.controls.cursor.fixed=고정 거리	#
 resourcePack.editor.pastepreview.pane.controls.cursor.keyboard=키만	#
 resourcePack.editor.pastepreview.pane.controls.cursor.mouseandkeys=마우스 및 키	#
-resourcePack.editor.pastepreview.pane.controls.cursor.target.block=블록	#
+resourcePack.editor.pastepreview.pane.controls.cursor.target.block=차단	#
 resourcePack.editor.pastepreview.pane.controls.cursor.target.face=인접	#
 resourcePack.editor.pastepreview.pane.controls.cursor.target.title=과녁	#
 resourcePack.editor.pastepreview.pane.controls.cursor=컨트롤	#
 resourcePack.editor.pastepreview.pane.controls.title=커서 컨트롤	#
 resourcePack.editor.pastepreview.pane.placement.mirrorX=X 반전	#
 resourcePack.editor.pastepreview.pane.placement.mirrorZ=Z 반전	#
-resourcePack.editor.pastepreview.pane.placement.offset=범위	#
-resourcePack.editor.pastepreview.pane.placement.origin=원점	#
+resourcePack.editor.pastepreview.pane.placement.offset=오프셋	#
+resourcePack.editor.pastepreview.pane.placement.origin=Origin	#
 resourcePack.editor.pastepreview.pane.placement.pastebutton=붙여넣기	#
 resourcePack.editor.pastepreview.pane.placement.rotation=회전 (Y축)	#
 resourcePack.editor.pastepreview.pane.placement.title=배치 설정	#
-resourcePack.editor.pastepreview.pane.root.size=크기	#
+resourcePack.editor.pastepreview.pane.root.size=Size	#
 resourcePack.editor.pastepreview.pane.root.title=프리뷰 붙여넣기	#
 resourcePack.editor.pastepreview.tool.tip=마우스를 사용하여 클립보드 미리 보기의 위치를 조정하고 클릭하여 월드에 붙여 넣으세요	#
 resourcePack.editor.pastepreview.tool.title=프리뷰 붙여넣기	#
@@ -607,6 +638,8 @@ resourcePack.editor.selectionTool.keyBinding.shrinkLeft=선택 항목 왼쪽으�
 resourcePack.editor.selectionTool.keyBinding.shrinkRight=선택 항목 오른쪽으로 축소	#
 resourcePack.editor.selectionTool.keyBinding.shrinkUp=선택 항목 위로 축소	#
 resourcePack.editor.selectionTool.keyBinding.toggleTool=선택 도구 트리거	#
+resourcePack.editor.selectionTool.keyBinding.select=Select Block			#### The action of adding a block to the selection volume using they keyboard {MaxLength="30"}
+resourcePack.editor.selectionTool.keyBinding.selectMultiple=Select Additional Block			#### The action of adding an additional block to the selection volume using the keyboard {MaxLength="30"}
 resourcePack.editor.selectionTool.marquee.title=선택 윤곽 선택	#
 resourcePack.editor.selectionTool.modeSelection.freehand.title=자유형 브러시 모드	#
 resourcePack.editor.selectionTool.modeSelection.freehand.tooltip=자유형 브러시 모양을 사용하여 월드에서 블록을 선택합니다.	#
@@ -614,7 +647,17 @@ resourcePack.editor.selectionTool.modeSelection.marquee.title=마키 모드	#
 resourcePack.editor.selectionTool.modeSelection.marquee.tooltip=직사각형 볼륨을 사용하여 월드에서 블록을 선택합니다.	#
 resourcePack.editor.selectionTool.modeSelection.title=선택 모드	#
 resourcePack.editor.selectionTool.projectThroughLiquid=액체를 통해 투사	#
-resourcePack.editor.selectionTool.quickAction.clearSelection.tooltip=현재 선택한 부분을 선택 취소합니다.	#
+resourcePack.editor.selectionTool.trimAction.trimVolume=Trim Selection			#### Trim the current selection volume to fit only the solid blocks within {MaxLength=30}
+resourcePack.editor.selectionTool.trimAction.trimVolume.tooltip=Trim the current selection volume to fit only the solid blocks within   	#### {MaxLength=200}
+resourcePack.editor.selectionTool.trimAction.removeAir=Remove Air			#### Remove the air from the current selection volume leaving only specified blocks {MaxLength=30}
+resourcePack.editor.selectionTool.trimAction.removeAir.tooltip=Remove the air from the current selection volume leaving only specified blocks 	#### {MaxLength=200}
+resourcePack.editor.selectionTool.trimAction.trimVolume.SettingsPane.title=Trim Settings		#### The window pane title for the settings for trim mode {MaxLength=30}
+resourcePack.editor.selectionTool.trimAction.trimVolume.SettingsPane.ignoreLiquid=Ignore Liquids		#### The toggle button title for ignoring liquids {MaxLength=30}
+resourcePack.editor.selectionTool.trimAction.trimVolume.SettingsPane.ignoreLiquid.tooltip=Ignore any liquid blocks when trimming the volume 	#### {MaxLength=200}
+resourcePack.editor.selectionTool.trimAction.trimVolume.SettingsPane.onlyCollidable=Only Collision Blocks		#### The toggle button title for collision-only blocks {MaxLength=30}
+resourcePack.editor.selectionTool.trimAction.trimVolume.SettingsPane.onlyCollidable.tooltip=Ignore any blocks with no collision (leaves, grass, etc) when trimming the volume 	#### {MaxLength=200}
+resourcePack.editor.selectionTool.trimAction.trimVolume.SettingsPane.blockMaskMode=Block Mask Mode    	#### Title for the toggle action group to selection the block mask mode {MaxLength=20}
+resourcePack.editor.selectionTool.quickAction.clearSelection.tooltip=Deselect the current selection	#
 resourcePack.editor.selectionTool.quickAction.clearSelection=선택 해제	#
 resourcePack.editor.selectionTool.quickAction.deleteSelection.tooltip=현재 선택한 영역 안의 모든 블록을 제거합니다.	#
 resourcePack.editor.selectionTool.quickAction.deleteSelection=삭제	#
@@ -648,7 +691,7 @@ resourcePack.editor.toolRail.Terrain.SmoothStrength=부드러움 강도	#
 resourcePack.editor.toolRail.Terrain.Roughen.mode.title=거침 모드	#
 resourcePack.editor.toolRail.Terrain.Roughen.tooltip=거침 강도에 따라 지형을 거칠게 표시합니다.	#
 resourcePack.editor.toolRail.Terrain.RoughenStrength=거침 강도	#
-resourcePack.editor.toolRail.Terrain.description=지형 도구가 지형을 부드럽거나 거칠게 합니다.	#
+resourcePack.editor.toolRail.Terrain.description=지형 도구가 지형을 부드럽거나 거칠게 표현합니다.	#
 
 
 resourcePack.editor.help.learnMore=더 알아보기	#
@@ -672,6 +715,7 @@ resourcePack.editor.timeOfDay.dropDown.none=없음	#
 resourcePack.editor.timeOfDay.dropDown.noon=정오	#
 resourcePack.editor.timeOfDay.dropDown.sunrise=일출	#
 resourcePack.editor.timeOfDay.dropDown.sunset=일몰	#
+resourcePack.editor.timeOfDay.dropDown.custom=Custom		####"Custom" describes a dropdown that players can define the specific start time {MaxLength=20}
 resourcePack.editor.timeOfDay.dropDown.title=프리셋	#
 resourcePack.editor.timeOfDay.menu.title=하루 중 시간 설정	#
 resourcePack.editor.timeOfDay.minecraftClock=Minecraft 시계	#
@@ -689,6 +733,7 @@ resourcePack.editor.toolMode.keyBinding.hotbar6=핫바 6 선택	#
 resourcePack.editor.toolMode.keyBinding.hotbar7=핫바 7 선택	#
 resourcePack.editor.toolMode.keyBinding.hotbar8=핫바 8 선택	#
 resourcePack.editor.toolMode.keyBinding.hotbar9=핫바 9 선택	#
+resourcePack.editor.toolMode.keyBinding.reload=Reload 	####Represents a label for a key shortcut that reloads scripts and UI.{MaxLength=100}
 
 
 resourcePack.editor.toolRail.blockPalette.title=블록 팔레트(CTRL+P)	#
@@ -723,7 +768,7 @@ resourcePack.editor.toolRail.line.pane.selectionMode.freeForm=자유형	#
 resourcePack.editor.toolRail.line.pane.selectionMode=선택	#
 resourcePack.editor.toolRail.line.pane.surfaceContour=표면 윤곽	#
 resourcePack.editor.toolRail.line.pane.width.title=폭	#
-resourcePack.editor.toolRail.line.title=대사 전체	#
+resourcePack.editor.toolRail.line.title=일렬	#
 resourcePack.editor.toolRail.line.tooltip=선 도구는 블록 선을 만듭니다	#
 resourcePack.editor.toolRail.rulerTool.title=자 도구	#
 resourcePack.editor.toolRail.rulerTool.tooltip=거리 재기	#
@@ -731,13 +776,13 @@ resourcePack.editor.toolRail.rulerTool.info.title=측정값	#
 
 
 resourcePack.editor.toolRail.smartFillTool.title=스마트 채우기 도구	#
-resourcePack.editor.toolRail.smartFillTool.tooltip=클릭하여 연결된 블록 세트를 채우세요.	#
+resourcePack.editor.toolRail.smartFillTool.tooltip=Click to fill a connected set of blocks	#
 resourcePack.editor.toolRail.smartFillTool.modes.fillVolume=채우기 볼륨	#
 resourcePack.editor.toolRail.smartFillTool.areaLimit.title=영역 제한	#
-resourcePack.editor.toolRail.smartFillTool.areaLimit.tooltip=채울 수 있는 최대 영역	#
+resourcePack.editor.toolRail.smartFillTool.areaLimit.tooltip=Maximum area to fill	#
 
 
-resourcePack.editor.toolRail.summonTool.keyBinding.clear=선택 해제	#
+resourcePack.editor.toolRail.summonTool.keyBinding.clear=Clear Selection	#
 resourcePack.editor.toolRail.summonTool.keyBinding.delete=개체 삭제	#
 resourcePack.editor.toolRail.summonTool.keyBinding.moveBack=선택 항목 뒤로 이동	#
 resourcePack.editor.toolRail.summonTool.keyBinding.moveDown=선택 항목 아래로 이동	#
@@ -759,13 +804,19 @@ resourcePack.editor.toolRail.summonTool.tool.title=소환 도구	#
 resourcePack.editor.toolRail.workbenchSettings.title=작업대	#
 resourcePack.editor.toolRail.workbenchTool.title=작업대	#
 resourcePack.editor.toolRail.workbenchTool.description=블록 상태를 빠르게 변경합니다.	#
-resourcePack.editor.toolRail.workbenchTool.howToUse=강조 표시된 블록을 마우스 왼쪽 버튼으로 클릭하여 상태를 변경합니다(열기/닫기, 회전, 반전 등). Shift 및 컨트롤 키 변경 특성도 사용해 보세요! 이 기능은 수정 가능한 속성(예: 문, 울타리 등)이 있는 블록에서만 작동합니다.	#
+resourcePack.editor.toolRail.workbenchTool.howToUse=Highlight blocks to see the available actions to change their states (open/close, rotate, invert, etc.). Try using Shift and Control key modifiers as well! Please note that this feature only works on blocks with modifiable properties (e.g., doors, fences, stairs, etc.).		####	This text provides a description of the workbench tool and explans how the the user can highlight blocks in order to see the list of actions for changing that blocks state. {MaxLength="500"}
 resourcePack.editor.toolRail.workbenchTool.tooltip=블록 상태 변경	#
-resourcePack.editor.toolRail.workbenchTool.block=블록	#
+resourcePack.editor.toolRail.workbenchTool.block=차단	#
 resourcePack.editor.toolRail.workbenchTool.leftClick=왼쪽 클릭	#
 resourcePack.editor.toolRail.workbenchTool.shiftLeftClick=시프트 + 왼쪽 클릭	#
 resourcePack.editor.toolRail.workbenchTool.controlLeftClick=컨트롤 + 왼쪽 클릭	#
 resourcePack.editor.toolRail.workbenchTool.shiftControlLeftClick=시프트+ 컨트롤 + 왼쪽 클릭	#
+
+resourcePack.editor.toolRail.workbenchTool.leftClickTooltip=Left Clicking on a block will perform the primary Workbench action		####	This keybinding is a tool tip to convey that a left click will invoke the primary (1st) action of the workbench tool. {MaxLength="150"}
+resourcePack.editor.toolRail.workbenchTool.shiftLeftClickTooltip=Shift + Left Clicking on a block will perform the secondary Workbench action		####	This keybinding is a tool tip to convey that a shift + left click will invoke the primary (1st) action of the workbench tool. {MaxLength="150"}
+resourcePack.editor.toolRail.workbenchTool.controlLeftClickTooltip=Control + Left Clicking on a block will perform the tertiary Workbench action		####	This keybinding is a tool tip to convey that a control + left click will invoke the primary (1st) action of the workbench tool. {MaxLength="150"}
+resourcePack.editor.toolRail.workbenchTool.shiftControlLeftClickTooltip=Shift + Control + Left Clicking on a block will perform the quaternary Workbench action		####	TThis keybinding is a tool tip to convey that a shift + control + left click will invoke the primary (1st) action of the workbench tool. {MaxLength="150"}
+
 resourcePack.editor.toolRail.workbenchTool.stripWood=나무 벗기기/벗기기 해제		####This string is intended to express whether the wood block has bark (unstripped) or doesn't have bark (stripped).{MaxLength=100}
 resourcePack.editor.toolRail.workbenchTool.ladderLocation=사다리 위치	#
 resourcePack.editor.toolRail.workbenchTool.autoAlign=자동 정렬	#
@@ -792,6 +843,17 @@ resourcePack.editor.toolRail.workbenchTool.weirdoDirectionProp=회전	#
 resourcePack.editor.toolRail.workbenchTool.facingDirectionProp=바라보는 방향	#
 resourcePack.editor.toolRail.workbenchTool.cardinalDirectionProp=바라보는 방향	#
 
+resourcePack.editor.toolRail.workbenchTool.addCustomMapping=Add Custom Mappings		####This string is intended to express that this subpane is for adding custom block property mappings for the tool.{MaxLength=100}
+resourcePack.editor.toolRail.workbenchTool.blockProperty=Block Property		####This string is intended to express that this field is for the Block Property.{MaxLength=50}
+resourcePack.editor.toolRail.workbenchTool.clickBinding=Click Bindings		####This string is intended to express that this dropdown contains the click binding options (left click, shift + left click, etc).{MaxLength=50}
+resourcePack.editor.toolRail.workbenchTool.addMapping=Add Mapping		####This string is intended to express that this button will add the custom mapping provided by the user.{MaxLength=50}
+resourcePack.editor.toolRail.workbenchTool.resetAllMappings=Reset All Mappings		####This string is intended to express that this button will reset all custom mappings provided by the user.{MaxLength=50}
+
+resourcePack.editor.workbenchTool.keyBinding.primaryAction=Workbench Primary Action		####	This keybinding is to invoke the primary (1st) action of the workbench tool. {MaxLength="30"}
+resourcePack.editor.workbenchTool.keyBinding.secondaryAction=Workbench Secondary Action		#### This keybinding is to invoke the secondary (2nd) action of the workbench tool. {MaxLength="30"}
+resourcePack.editor.workbenchTool.keyBinding.tertiaryAction=Workbench Tertiary Action		####	This keybinding is to invoke the tertiary (3rd) action of the workbench tool. {MaxLength="30"}
+resourcePack.editor.workbenchTool.keyBinding.quaternaryAction=Workbench Quaternary Action		#### This keybinding is to invoke the quaternary (4th) action of the workbench tool. {MaxLength="30"}
+
 
 resourcePack.editor.transaction.keyBinding.redo=다시 실행	#
 resourcePack.editor.transaction.keyBinding.undo=실행 취소	#
@@ -807,16 +869,16 @@ resourcePack.editor.viewport.keyBinding.moveUp=위로 이동	#
 resourcePack.editor.viewport.keyBinding.incrementFlySpeed=비행 속도 증가	#
 resourcePack.editor.viewport.keyBinding.decrementFlySpeed=비행 속도 감소	#
 
-resourcePack.editor.viewSettings.compass.tip=방향 나침반 표시	#
-resourcePack.editor.viewSettings.compass.title=나침반 표시	#
+resourcePack.editor.viewSettings.compass.tip=Show the directional compass	#
+resourcePack.editor.viewSettings.compass.title=Show Compass	#
 resourcePack.editor.viewSettings.chunk.tip=지도에서 청크 경계의 윤곽을 표시합니다.	#
 resourcePack.editor.viewSettings.chunk.title=청크 경계 표시	#
 resourcePack.editor.viewSettings.nightVision.tip=야간 시야가 있는 것처럼 세상을 보여주세요.	#
 resourcePack.editor.viewSettings.nightVision.title=야간 시야	#
 resourcePack.editor.viewSettings.invisible.tip=투명 블록(예: 공허, 방벽 등)을 표시합니다.	#
 resourcePack.editor.viewSettings.invisible.title=투명 블록 표시	#
-resourcePack.editor.viewSettings.flySpeed.tip=지도를 더 빠르게 움직이려면 비행 속도를 높이세요.	#
-resourcePack.editor.viewSettings.flySpeed.title=비행 속도 배수	#
+resourcePack.editor.viewSettings.flySpeed.tip=Increase Fly Speed to maneuver the map faster	#
+resourcePack.editor.viewSettings.flySpeed.title=Fly Speed Multiplier	#
 resourcePack.editor.viewSettings.menu=설정	#
 resourcePack.editor.viewSettings.title=설정	#
 

@@ -1,4 +1,3 @@
-hbui.Sample.hello=Hei, %1$s!	#
 hbui.BackButton.back=Tilbake	#
 hbui.BackButton.narrationComponentType=Knapp	#
 hbui.BackButton.narrationGoBack=Gå tilbake	#
@@ -58,7 +57,7 @@ hbui.NavigationBarLayout.FriendsButton.friends=Venner	#
 hbui.NavigationBarLayout.FriendsButton.inputLegend=Venner	#
 hbui.NavigationBarLayout.FriendsButton.narration=Venner-knapp	#
 hbui.NavigationBarLayout.MenuButton.inputLegend=Meny	#
-hbui.NavigationBarLayout.MenuButton.narration=Meny-knappen	#
+hbui.NavigationBarLayout.MenuButton.narration=Menyknapp	#
 hbui.Pagination.componentType=Sidetall	#
 hbui.Pagination.context=Horisontal sidevelger	#
 hbui.Pagination.contextHintGamepad=Naviger til venstre og høyre for flere sider	#
@@ -124,7 +123,7 @@ hbui.TabBar.selected=Valgt	#
 hbui.TabBar.selectedTab=%1$s av %2$s	#
 hbui.TextField.currentValue=gjeldende verdi	#
 hbui.TextField.disabled=Deaktivert	#
-hbui.TextField.empty=Tom	#
+hbui.TextField.empty=Tøm	#
 hbui.TextField.field=Felt	#
 hbui.TextField.narrationComponentType=Tekstinndata	#
 hbui.TextFieldWithButton.navigationHint=Gå til høyre for dette feltet for å se flere handlinger.	#
@@ -180,15 +179,54 @@ hbui.TitleBar.Buttons.Back.narration=Tilbake-knapp	#
 hbui.TitleBar.Buttons.Close.inputLegend=Lukk	#
 hbui.TitleBar.Buttons.Close.narration=Lukk-knapp	#
 hbui.Accordion.closeInputLegend=Lukk	#
+hbui.Accordion.openInputLegend=Åpne	#
+hbui.BackButton.back=Tilbake	#
+hbui.BackButton.narration.backButton=Tilbake-knapp	#
+hbui.BaseDropdown.close=Lukk	#
+hbui.BaseDropdown.enumeration=%1$s av %2$s	#
+hbui.BaseDropdown.open=Åpne	#
+hbui.BaseDropdown.selected=Valgt	#
+hbui.BaseDropdown.stateCollapsed=Skjult	#
+hbui.BaseDropdown.stateExpanded=Vist	#
+hbui.BaseDropdown.toggleElementType=Alternativ	#
+hbui.BaseSlider.currentValue=gjeldende verdi er	#
+hbui.BaseSlider.elementType=glidebryter	#
+hbui.BaseSlider.maxValueIs=største verdi er	#
+hbui.BaseSlider.minValueIs=minste verdi er	#
+hbui.BaseSwitch.elementType=Bryter	#
+hbui.BaseSwitch.narrationDisabled=Deaktiver	#
+hbui.BaseSwitch.off=Av	#
+hbui.BaseSwitch.on=På	#
+hbui.BaseSwitch.toggle=Aktiver/deaktiver	#
+hbui.BaseTextField.addedNarration=Lagt til	#
+hbui.BaseTextField.deselect=Velg bort	#
+hbui.BaseTextField.hint=Du kan nå skrive inn tekst. Skriv for å angi %1$s	#
+hbui.BaseTextField.invalidNarration=Ugyldige parametere	#
+hbui.BaseTextField.removedNarration=Fjernet	#
+hbui.BaseTextField.replacedNarration=Erstattet med	#
+hbui.BaseTextField.select=Velg	#
+hbui.BaseTextField.selected=Valgt	#
+hbui.DropdownItem.elementType=Gjenstand	#
+hbui.DropdownItem.narrationComponentType=Alternativ	#
+hbui.DropdownItem.select=Velg	#
+hbui.DropdownItem.selected=Valgt	#
+hbui.DropdownItem.unselected=Ikke valgt	#
+hbui.ScrollView.loadingState=Laster inn	#
+hbui.ScrollView.narrationScrollViewComponentType=Innhold	#
+hbui.TitleBar.Buttons.Back.inputLegend=Tilbake	#
+hbui.TitleBar.Buttons.Back.narration=Tilbake-knapp	#
+hbui.TitleBar.Buttons.Close.inputLegend=Lukk	#
+hbui.TitleBar.Buttons.Close.narration=Lukk-knapp	#
+hbui.Accordion.closeInputLegend=Lukk	#
 hbui.Accordion.narrationComponentType=Trekkspill	#
 hbui.Accordion.narrationCountLabel=%1$s - (%2$s)	#
 hbui.Accordion.openInputLegend=Åpne	#
 hbui.Accordion.stateCollapsed=Skjult	#
 hbui.Accordion.stateExpanded=Vist	#
-hbui.AccountUnlinkRoute.cancelButton=Avbryt	#
+hbui.AccountUnlinkRoute.cancelButton=Cancel	#
 hbui.AccountUnlinkRoute.closeResultsButton=OK	#
 hbui.AccountUnlinkRoute.failBody=Kontoene dine kunne ikke frakobles. Kan du sjekke Internett-tilkoblingen?	#
-hbui.AccountUnlinkRoute.failHeader=Noe gikk galt	#
+hbui.AccountUnlinkRoute.failHeader=Something went wrong	#
 hbui.AccountUnlinkRoute.header=Er du sikker?	#
 hbui.AccountUnlinkRoute.progressHeader=Kobler fra kontoene	#
 hbui.AccountUnlinkRoute.successBody=Kontoene dine har blitt frakoblet	#
@@ -205,7 +243,7 @@ hbui.AchievementDetails.yes=Ja	#
 hbui.AchievementDetailsRoute.errorMessage=Kan ikke laste inn prestasjon. Prøv på nytt, eller kontroller Internett-tilkoblingen.	#
 hbui.AchievementDetailsRoute.narration.completed=fullført	#
 hbui.AchievementDetailsRoute.narration.gamerscore=poengsum	#
-hbui.AchievementDetailsRoute.narration.loadingMessage=Laster inn	#
+hbui.AchievementDetailsRoute.narration.loadingMessage=Loading	#
 hbui.AchievementDetailsRoute.narration.locked=låst	#
 hbui.AchievementDetailsRoute.narration.percentage=%1$s av %2$s	#
 hbui.AchievementDetailsRoute.narration.progress=fremdrift	#
@@ -216,13 +254,23 @@ hbui.AchievementDetailsRoute.reward=Belønning	#
 hbui.AchievementDetailsRoute.title=Prestasjonsdetaljer	#
 hbui.AchievementDetailsRoute.titleNarration=Prestasjonsdetaljer	#
 hbui.AchievementDetailsRoute.viewReward=Vis belønning	#
-hbui.AchievementDisabledModal.closeInputLegend=Lukk	#
-hbui.AchievementDisabledModal.goBackButtonText=Gå tilbake	#
-hbui.AchievementDisabledModal.multipleSettingsMessageCNW=Du kan ikke låse opp prestasjoner i denne verdenen med de nåværende innstillingene dine. Hvis du vil låse opp prestasjoner, må du endre disse innstillingene før du oppretter verdenen din:	#
-hbui.AchievementDisabledModal.multipleSettingsMessageEW=Du kan ikke låse opp prestasjoner i denne verden med dine nåværende innstillinger. Du må endre disse innstillingene hvis du vil låse opp prestasjoner:	#
-hbui.AchievementDisabledModal.oneSettingMessageCNW=Du kan ikke låse opp prestasjoner i denne verdenen med de nåværende innstillingene dine. Hvis du vil låse opp prestasjoner, må du endre denne innstillingen før du oppretter verdenen din:	#
-hbui.AchievementDisabledModal.oneSettingMessageEW=Du kan ikke låse opp prestasjoner i denne verden med dine nåværende innstillinger. Du må endre denne innstillingen hvis du vil låse opp prestasjoner:	#
-hbui.AchievementDisabledModal.title=Du kan ikke låse opp prestasjoner	#
+hbui.AchievementDisabledModal.behaviorPacks=A behaviour pack is activated   	####Reason world will have achievements permanently disabled {MaxLength=150}
+hbui.AchievementDisabledModal.cheatsEnabled=Cheats are enabled   	####Reason world will have achievements permanently disabled {MaxLength=150}
+hbui.AchievementDisabledModal.closeButton=Close  	####Secondary button of modal that appears when the user tries to create a world with settings that will permanently disabled achievements {MaxLength=40}
+hbui.AchievementDisabledModal.confirmButton=Create anyway  	####Primary button of modal that appears when the user tries to create a world with settings that will permanently disabled achievements {MaxLength=40}
+hbui.AchievementDisabledModal.confirmButtonEW=Continue anyway  	####Primary button of modal that appears when the user tries to edit a world with settings that will permanently disabled achievements {MaxLength=40}
+hbui.AchievementDisabledModal.creativeMode=The world is created in creative mode   	####Reason world will have achievements permanently disabled {MaxLength=150}
+hbui.AchievementDisabledModal.experiments=Beta features are turned on   	####Reason world will have achievements permanently disabled {MaxLength=150}
+hbui.AchievementDisabledModal.firstParagraph=Creating a world using any of the following features will mean you won't be able to earn achievements in this world. Even if you turn these options off later, you'll need to visit a different world to earn achievements.   	####First paragraph of modal that appears when the user tries to create a world with settings that will permanently disabled achievements {MaxLength=300}
+hbui.AchievementDisabledModal.firstParagraph.singleReason=Creating a world using the following feature will mean you won't be able to earn achievements in that world. Even if you turn this option off later, you'll need to visit a different world to earn achievements.   	####First paragraph of modal that appears when the user tries to create a world with settings that will permanently disabled achievements for a single reason {MaxLength=300}
+hbui.AchievementDisabledModal.firstParagraphEW=The way this world has been set up means that you won't be able to earn achievements while playing in it. Editing the world's settings now can't change this. You'll need to visit a different world to earn achievements.   	####First paragraph of modal that appears when the user tries to edit a world with settings that will permanently disabled achievements {MaxLength=300}
+hbui.AchievementDisabledModal.flatWorld=The world is created as a flat world   	####Reason world will have achievements permanently disabled {MaxLength=150}
+hbui.AchievementDisabledModal.goBackButton=Go back  	####Secondary button of modal that appears when the user tries to create a world with settings that will permanently disabled achievements {MaxLength=40}
+hbui.AchievementDisabledModal.operator=The world creator has Operator privileges   	####Reason world will have achievements permanently disabled {MaxLength=150}
+hbui.AchievementDisabledModal.secondParagraph=Achievements can't be earned in this world if:   	####Second paragraph of modal that appears when the user tries to create a world with settings that will permanently disabled achievements {MaxLength=150}
+hbui.AchievementDisabledModal.template=The world is built from a template   	####Reason world will have achievements permanently disabled {MaxLength=150}
+hbui.AchievementDisabledModal.title=You can't earn achievements   	####Title of modal that appears when the user tries to create a world with settings that will permanently disabled achievements {MaxLength=40}
+hbui.AchievementDisabledModal.trial=The world creator is using the trial version of Minecraft   	####Reason world will have achievements permanently disabled {MaxLength=150}
 hbui.AchievementListItem.completed=Fullført	#
 hbui.AchievementListItem.gamerscoreNarration=poengsum %1$s	#
 hbui.AchievementListItem.groupNarration=Gruppe %1$s av %2$s	#
@@ -295,8 +343,8 @@ hbui.AddFriendAccordion.narration.gamertagSearchSuggestions=%1$s søkeresultater
 hbui.AddFriendAccordion.narration.noSuggestionsFound=Ingen forslag for øyeblikket	#
 hbui.AddFriendAccordion.narration.noSuggestionsMessagefollowers=Du har allerede lagt til alle følgerne dine! Sjekk igjen senere.	#
 hbui.AddFriendAccordion.narration.noSuggestionsMessagegamertagSearch=Avgrens søket.	#
-hbui.AddFriendAccordion.narration.noSuggestionsMessagerecentlyPlayedWith=Spill med andre på Realms eller servere for å få flere forslag! 	#### {StrContains="Realms"}
-hbui.AddFriendAccordion.narration.noSuggestionsMessagerecommendedFriends=Spill med andre på Realms eller servere for å få flere forslag! 	#### {StrContains="Realms"}
+hbui.AddFriendAccordion.narration.noSuggestionsMessagerecentlyPlayedWith=Play with people on Realms or servers to get more suggestions! 	#### {StrContains="Realms"}
+hbui.AddFriendAccordion.narration.noSuggestionsMessagerecommendedFriends=Play with people on Realms or servers to get more suggestions! 	#### {StrContains="Realms"}
 hbui.AddFriendAccordion.narration.recentlyPlayedWithSuggestions=%1$s nylig spilt med-forslag	#
 hbui.AddFriendAccordion.narration.recommendedFriendsSuggestions=%1$s anbefalt venn-forslag	#
 hbui.AddFriendAccordion.recentlyPlayedWith=Nylig spilt med	#
@@ -382,7 +430,7 @@ hbui.BannedOrSuspendedReason.xbox.report.defamation=Å utgi seg for å være and
 hbui.BannedOrSuspendedReason.xbox.report.drugs=Referanser til ulovlige rusmidler	#
 hbui.BannedOrSuspendedReason.xbox.report.exploits=Misbruk og tredjepartsapplikasjoner	#
 hbui.BannedOrSuspendedReason.xbox.report.extremeViolence=Skildringer av overdreven vold eller sterke bilder	#
-hbui.BannedOrSuspendedReason.xbox.report.falseReporting=Utilbørlig mange falske/unøyaktige rapporter	#
+hbui.BannedOrSuspendedReason.xbox.report.falseReporting=Overdreven falske/unøyaktige rapporter	#
 hbui.BannedOrSuspendedReason.xbox.report.fraud=Uredelig anskaffelse eller bruk av innhold	#
 hbui.BannedOrSuspendedReason.xbox.report.harassingComments=Trakasserende eller ærekrenkende kommentarer	#
 hbui.BannedOrSuspendedReason.xbox.report.harassment=Fornærmende språk brukt på en målrettet, skadelig måte	#
@@ -412,12 +460,15 @@ hbui.Bedtime.chatScreenDisabled=Chatten er for øyeblikket deaktivert	#
 hbui.Bedtime.chattingDisabled=Chat med andre spillere er for øyeblikket deaktivert på denne serveren	#
 hbui.Bedtime.enumeration=%1$s av %2$s	#
 hbui.Bedtime.leaveBedButton=Stå opp	#
-hbui.Bedtime.messageAllPlayersSleeping=Sover gjennom natten	#
-hbui.Bedtime.messageWaitingForOthersPlural=Natten hoppes over når %1$s spillere til sover.	#
-hbui.Bedtime.messageWaitingForOthersSingular=Natten hoppes over når én spiller til sover.	#
+hbui.Bedtime.messageAllPlayersSleepingNight=Sleeping through the night		#### Displayed when the player is sleeping through the night using a bed {MaxLength="100"}
+hbui.Bedtime.messageAllPlayersSleepingThunderstorm=Sleeping through the thunderstorm		#### Displayed when the player is sleeping through a thunderstorm using a bed {MaxLength="150"}
+hbui.Bedtime.messageWaitingForOthersPluralNight=Night will be skipped when %1$s more players sleep.		#### Displayed during night time when a player is laying in bed and waiting for more multiple other players to go to bed {MaxLength="200"}
+hbui.Bedtime.messageWaitingForOthersPluralThunderstorm=Thunderstorm will be skipped when %1$s more players sleep.		#### Displayed during a thunderstorm when a player is laying in bed and waiting for more multiple other players to go to bed {MaxLength="200"}
+hbui.Bedtime.messageWaitingForOthersSingularNight=Night will be skipped when one other player sleeps. 	#### Displayed during night time when a player is laying in bed and waiting for one other player to go to bed {MaxLength="200"}
+hbui.Bedtime.messageWaitingForOthersSingularThunderstorm=Thunderstorm will be skipped when one other player sleeps.  	#### Displayed during a thunderstorm when a player is laying in bed and waiting for one other player to go to bed {MaxLength="200"}
 hbui.Bedtime.openChatButton=Åpne chat	#
-hbui.Bedtime.sleepingNotPossibleNotWorldOwner=Innstillingen «Hopp over natten ved å sove» er skrudd av. Eieren av denne verdenen er nødt til å skru denne innstillingen på i Rediger verden.		####This string refers to name of a specific setting (Skip night by sleeping) in a specific screen (Edit world) of the game.{MaxLength=240}
-hbui.Bedtime.sleepingNotPossibleWorldOwner=Innstillingen «Hopp over natten ved å sove» er skrudd av. Skru denne innstillingen på under Avanserte innstillinger i Rediger verden.		####This string refers to name of a specific setting (Skip night by sleeping) in specifc UI tab (advanced) a specific screen (Edit world) of the game.{MaxLength=290}
+hbui.Bedtime.sleepingNotPossibleNotWorldOwner=Innstillingen «Hopp over natten ved å sove» er skrudd av. Eieren av denne verdenen er nødt til å skru på denne innstillingen i Rediger verden.		####This string refers to name of a specific setting (Skip night by sleeping) in a specific screen (Edit world) of the game.{MaxLength=240}
+hbui.Bedtime.sleepingNotPossibleWorldOwner=Innstillingen «Hopp over natten ved å sove» er skrudd av. Skru på denne innstillingen under Avanserte innstillinger i Rediger verden.		####This string refers to name of a specific setting (Skip night by sleeping) in specifc UI tab (advanced) a specific screen (Edit world) of the game.{MaxLength=290}
 hbui.ChooseRealmRoute.addNewBetaRealm=Legg til betarealm	#
 hbui.ChooseRealmRoute.addNewPreviewRealm=Legg til forhåndsvisningsrealm	#
 hbui.ChooseRealmRoute.adventure=Eventyr	#
@@ -427,8 +478,8 @@ hbui.ChooseRealmRoute.chooseAPreviewRealm=1. Velg en forhåndsvisningsrealm	#
 hbui.ChooseRealmRoute.chooseARealmSubscription=1. Velg et abonnement	#
 hbui.ChooseRealmRoute.creative=Kreativ	#
 hbui.ChooseRealmRoute.emptyState.message=Det oppstod en ukjent feil. Prøv på nytt.	#
-hbui.ChooseRealmRoute.emptyState.noRealmsErrorTitle.beta=Kan ikke laste inn Beta Realms! 	#### {StrContains="Beta Realms"}
-hbui.ChooseRealmRoute.emptyState.noRealmsErrorTitle.preview=Kan ikke laste inn Preview Realms! 	#### {StrContains="Preview Realms"}
+hbui.ChooseRealmRoute.emptyState.noRealmsErrorTitle.beta=Beta Realms couldn't load! 	#### {StrContains="Beta Realms"}
+hbui.ChooseRealmRoute.emptyState.noRealmsErrorTitle.preview=Preview Realms couldn't load! 	#### {StrContains="Preview Realms"}
 hbui.ChooseRealmRoute.emptyState.noSubscriptionErrorTitle=Kan ikke laste inn abonnementer!	#
 hbui.ChooseRealmRoute.emptyState.tryAgain=Prøv på nytt	#
 hbui.ChooseRealmRoute.pairedWith=Sammenkoblet med: %s	#
@@ -460,6 +511,10 @@ hbui.Common.narration.roles.button=Knapp	#
 hbui.CompareStatsRoute.header=Statistikk-sammenligning	#
 hbui.CompareStatsRoute.playerItemsListRole=Horisontal liste	#
 hbui.CompareStatsRoute.playerItemsNarration=Sammenlign statistikken til to spillere	#
+hbui.ConfirmDisableAchievementsModal.confirmButton=Continue anyway  	####Primary button of modal that appears when the user tries to edit a world with settings that will permanently disabled achievements {MaxLength=40}
+hbui.ConfirmDisableAchievementsModal.goBackButton=Go back  	####Secondary button of modal that appears when the user tries to edit a world with settings that will permanently disabled achievements {MaxLength=40}
+hbui.ConfirmDisableAchievementsModal.message=Edits made to this world mean you will no longer be able to earn achievements in it, even if you update these settings later.   	####Description for modal that appears when a user edits a world with settings that will permanently disabled achievements and tries to save (or start the world) {MaxLength=300}
+hbui.ConfirmDisableAchievementsModal.title=You can't earn achievements   	####Title of modal that appears when the user tries to edit a world with settings that will permanently disabled achievements {MaxLength=40}
 hbui.ConnectionErrorRoute.backToMenu=Tilbake til menyen	#
 hbui.ControllerSpecificButtonNarration.Gamepad.A.KEYBOARD=Trykk på A	#
 hbui.ControllerSpecificButtonNarration.Gamepad.A.PS=Trykk på A	#
@@ -551,66 +606,66 @@ hbui.ControllerSpecificButtonNarration.Gamepad.PREV.QUEST=Trykk på FORRIGE	#
 hbui.ControllerSpecificButtonNarration.Gamepad.PREV.STEAM=Trykk på FORRIGE	#
 hbui.ControllerSpecificButtonNarration.Gamepad.PREV.SWITCH=Trykk på FORRIGE	#
 hbui.ControllerSpecificButtonNarration.Gamepad.PREV.XBOX=Trykk på FORRIGE	#
-hbui.ControllerSpecificButtonNarration.Gamepad.PSEUDO_BUTTON_1.KEYBOARD=Trykk på PSEUDOKNAPP_1	#
-hbui.ControllerSpecificButtonNarration.Gamepad.PSEUDO_BUTTON_1.PS=Trykk på PSEUDOKNAPP_1	#
-hbui.ControllerSpecificButtonNarration.Gamepad.PSEUDO_BUTTON_1.QUEST=Trykk på PSEUDOKNAPP_1	#
-hbui.ControllerSpecificButtonNarration.Gamepad.PSEUDO_BUTTON_1.STEAM=Trykk på PSEUDOKNAPP_1	#
-hbui.ControllerSpecificButtonNarration.Gamepad.PSEUDO_BUTTON_1.SWITCH=Trykk på PSEUDOKNAPP_1	#
-hbui.ControllerSpecificButtonNarration.Gamepad.PSEUDO_BUTTON_1.XBOX=Trykk på PSEUDOKNAPP_1	#
-hbui.ControllerSpecificButtonNarration.Gamepad.PSEUDO_BUTTON_10.KEYBOARD=Trykk på PSEUDOKNAPP_10	#
-hbui.ControllerSpecificButtonNarration.Gamepad.PSEUDO_BUTTON_10.PS=Trykk på PSEUDOKNAPP_10	#
-hbui.ControllerSpecificButtonNarration.Gamepad.PSEUDO_BUTTON_10.QUEST=Trykk på PSEUDOKNAPP_10	#
-hbui.ControllerSpecificButtonNarration.Gamepad.PSEUDO_BUTTON_10.STEAM=Trykk på PSEUDOKNAPP_10	#
-hbui.ControllerSpecificButtonNarration.Gamepad.PSEUDO_BUTTON_10.SWITCH=Trykk på PSEUDOKNAPP_10	#
-hbui.ControllerSpecificButtonNarration.Gamepad.PSEUDO_BUTTON_10.XBOX=Trykk på PSEUDOKNAPP_10	#
-hbui.ControllerSpecificButtonNarration.Gamepad.PSEUDO_BUTTON_2.KEYBOARD=Trykk på PSEUDOKNAPP_2	#
-hbui.ControllerSpecificButtonNarration.Gamepad.PSEUDO_BUTTON_2.PS=Trykk på PSEUDOKNAPP_2	#
-hbui.ControllerSpecificButtonNarration.Gamepad.PSEUDO_BUTTON_2.QUEST=Trykk på PSEUDOKNAPP_2	#
-hbui.ControllerSpecificButtonNarration.Gamepad.PSEUDO_BUTTON_2.STEAM=Trykk på PSEUDOKNAPP_2	#
-hbui.ControllerSpecificButtonNarration.Gamepad.PSEUDO_BUTTON_2.SWITCH=Trykk på PSEUDOKNAPP_2	#
-hbui.ControllerSpecificButtonNarration.Gamepad.PSEUDO_BUTTON_2.XBOX=Trykk på PSEUDOKNAPP_2	#
-hbui.ControllerSpecificButtonNarration.Gamepad.PSEUDO_BUTTON_3.KEYBOARD=Trykk på PSEUDOKNAPP_3	#
-hbui.ControllerSpecificButtonNarration.Gamepad.PSEUDO_BUTTON_3.PS=Trykk på PSEUDOKNAPP_3	#
-hbui.ControllerSpecificButtonNarration.Gamepad.PSEUDO_BUTTON_3.QUEST=Trykk på PSEUDOKNAPP_3	#
-hbui.ControllerSpecificButtonNarration.Gamepad.PSEUDO_BUTTON_3.STEAM=Trykk på PSEUDOKNAPP_3	#
-hbui.ControllerSpecificButtonNarration.Gamepad.PSEUDO_BUTTON_3.SWITCH=Trykk på PSEUDOKNAPP_3	#
-hbui.ControllerSpecificButtonNarration.Gamepad.PSEUDO_BUTTON_3.XBOX=Trykk på PSEUDOKNAPP_3	#
-hbui.ControllerSpecificButtonNarration.Gamepad.PSEUDO_BUTTON_4.KEYBOARD=Trykk på PSEUDOKNAPP_4	#
-hbui.ControllerSpecificButtonNarration.Gamepad.PSEUDO_BUTTON_4.PS=Trykk på PSEUDOKNAPP_4	#
-hbui.ControllerSpecificButtonNarration.Gamepad.PSEUDO_BUTTON_4.QUEST=Trykk på PSEUDOKNAPP_4	#
-hbui.ControllerSpecificButtonNarration.Gamepad.PSEUDO_BUTTON_4.STEAM=Trykk på PSEUDOKNAPP_4	#
-hbui.ControllerSpecificButtonNarration.Gamepad.PSEUDO_BUTTON_4.SWITCH=Trykk på PSEUDOKNAPP_4	#
-hbui.ControllerSpecificButtonNarration.Gamepad.PSEUDO_BUTTON_4.XBOX=Trykk på PSEUDOKNAPP_4	#
-hbui.ControllerSpecificButtonNarration.Gamepad.PSEUDO_BUTTON_5.KEYBOARD=Trykk på PSEUDOKNAPP_5	#
-hbui.ControllerSpecificButtonNarration.Gamepad.PSEUDO_BUTTON_5.PS=Trykk på PSEUDOKNAPP_5	#
-hbui.ControllerSpecificButtonNarration.Gamepad.PSEUDO_BUTTON_5.QUEST=Trykk på PSEUDOKNAPP_5	#
-hbui.ControllerSpecificButtonNarration.Gamepad.PSEUDO_BUTTON_5.STEAM=Trykk på PSEUDOKNAPP_5	#
-hbui.ControllerSpecificButtonNarration.Gamepad.PSEUDO_BUTTON_5.SWITCH=Trykk på PSEUDOKNAPP_5	#
-hbui.ControllerSpecificButtonNarration.Gamepad.PSEUDO_BUTTON_5.XBOX=Trykk på PSEUDOKNAPP_5	#
-hbui.ControllerSpecificButtonNarration.Gamepad.PSEUDO_BUTTON_6.KEYBOARD=Trykk på PSEUDOKNAPP_6	#
-hbui.ControllerSpecificButtonNarration.Gamepad.PSEUDO_BUTTON_6.PS=Trykk på PSEUDOKNAPP_6	#
-hbui.ControllerSpecificButtonNarration.Gamepad.PSEUDO_BUTTON_6.QUEST=Trykk på PSEUDOKNAPP_6	#
-hbui.ControllerSpecificButtonNarration.Gamepad.PSEUDO_BUTTON_6.STEAM=Trykk på PSEUDOKNAPP_6	#
-hbui.ControllerSpecificButtonNarration.Gamepad.PSEUDO_BUTTON_6.SWITCH=Trykk på PSEUDOKNAPP_6	#
-hbui.ControllerSpecificButtonNarration.Gamepad.PSEUDO_BUTTON_6.XBOX=Trykk på PSEUDOKNAPP_6	#
-hbui.ControllerSpecificButtonNarration.Gamepad.PSEUDO_BUTTON_7.KEYBOARD=Trykk på PSEUDOKNAPP_7	#
-hbui.ControllerSpecificButtonNarration.Gamepad.PSEUDO_BUTTON_7.PS=Trykk på PSEUDOKNAPP_7	#
-hbui.ControllerSpecificButtonNarration.Gamepad.PSEUDO_BUTTON_7.QUEST=Trykk på PSEUDOKNAPP_7	#
-hbui.ControllerSpecificButtonNarration.Gamepad.PSEUDO_BUTTON_7.STEAM=Trykk på PSEUDOKNAPP_7	#
-hbui.ControllerSpecificButtonNarration.Gamepad.PSEUDO_BUTTON_7.SWITCH=Trykk på PSEUDOKNAPP_7	#
-hbui.ControllerSpecificButtonNarration.Gamepad.PSEUDO_BUTTON_7.XBOX=Trykk på PSEUDOKNAPP_7	#
-hbui.ControllerSpecificButtonNarration.Gamepad.PSEUDO_BUTTON_8.KEYBOARD=Trykk på PSEUDOKNAPP_8	#
-hbui.ControllerSpecificButtonNarration.Gamepad.PSEUDO_BUTTON_8.PS=Trykk på PSEUDOKNAPP_8	#
-hbui.ControllerSpecificButtonNarration.Gamepad.PSEUDO_BUTTON_8.QUEST=Trykk på PSEUDOKNAPP_8	#
-hbui.ControllerSpecificButtonNarration.Gamepad.PSEUDO_BUTTON_8.STEAM=Trykk på PSEUDOKNAPP_8	#
-hbui.ControllerSpecificButtonNarration.Gamepad.PSEUDO_BUTTON_8.SWITCH=Trykk på PSEUDOKNAPP_8	#
-hbui.ControllerSpecificButtonNarration.Gamepad.PSEUDO_BUTTON_8.XBOX=Trykk på PSEUDOKNAPP_8	#
-hbui.ControllerSpecificButtonNarration.Gamepad.PSEUDO_BUTTON_9.KEYBOARD=Trykk på PSEUDOKNAPP_9	#
-hbui.ControllerSpecificButtonNarration.Gamepad.PSEUDO_BUTTON_9.PS=Trykk på PSEUDOKNAPP_9	#
-hbui.ControllerSpecificButtonNarration.Gamepad.PSEUDO_BUTTON_9.QUEST=Trykk på PSEUDOKNAPP_9	#
-hbui.ControllerSpecificButtonNarration.Gamepad.PSEUDO_BUTTON_9.STEAM=Trykk på PSEUDOKNAPP_9	#
-hbui.ControllerSpecificButtonNarration.Gamepad.PSEUDO_BUTTON_9.SWITCH=Trykk på PSEUDOKNAPP_9	#
-hbui.ControllerSpecificButtonNarration.Gamepad.PSEUDO_BUTTON_9.XBOX=Trykk på PSEUDOKNAPP_9	#
+hbui.ControllerSpecificButtonNarration.Gamepad.PSEUDO_BUTTON_1.KEYBOARD=Press PSEUDO_BUTTON_1	#
+hbui.ControllerSpecificButtonNarration.Gamepad.PSEUDO_BUTTON_1.PS=Press PSEUDO_BUTTON_1	#
+hbui.ControllerSpecificButtonNarration.Gamepad.PSEUDO_BUTTON_1.QUEST=Press PSEUDO_BUTTON_1	#
+hbui.ControllerSpecificButtonNarration.Gamepad.PSEUDO_BUTTON_1.STEAM=Press PSEUDO_BUTTON_1	#
+hbui.ControllerSpecificButtonNarration.Gamepad.PSEUDO_BUTTON_1.SWITCH=Press PSEUDO_BUTTON_1	#
+hbui.ControllerSpecificButtonNarration.Gamepad.PSEUDO_BUTTON_1.XBOX=Press PSEUDO_BUTTON_1	#
+hbui.ControllerSpecificButtonNarration.Gamepad.PSEUDO_BUTTON_10.KEYBOARD=Press PSEUDO_BUTTON_10	#
+hbui.ControllerSpecificButtonNarration.Gamepad.PSEUDO_BUTTON_10.PS=Press PSEUDO_BUTTON_10	#
+hbui.ControllerSpecificButtonNarration.Gamepad.PSEUDO_BUTTON_10.QUEST=Press PSEUDO_BUTTON_10	#
+hbui.ControllerSpecificButtonNarration.Gamepad.PSEUDO_BUTTON_10.STEAM=Press PSEUDO_BUTTON_10	#
+hbui.ControllerSpecificButtonNarration.Gamepad.PSEUDO_BUTTON_10.SWITCH=Press PSEUDO_BUTTON_10	#
+hbui.ControllerSpecificButtonNarration.Gamepad.PSEUDO_BUTTON_10.XBOX=Press PSEUDO_BUTTON_10	#
+hbui.ControllerSpecificButtonNarration.Gamepad.PSEUDO_BUTTON_2.KEYBOARD=Press PSEUDO_BUTTON_2	#
+hbui.ControllerSpecificButtonNarration.Gamepad.PSEUDO_BUTTON_2.PS=Press PSEUDO_BUTTON_2	#
+hbui.ControllerSpecificButtonNarration.Gamepad.PSEUDO_BUTTON_2.QUEST=Press PSEUDO_BUTTON_2	#
+hbui.ControllerSpecificButtonNarration.Gamepad.PSEUDO_BUTTON_2.STEAM=Press PSEUDO_BUTTON_2	#
+hbui.ControllerSpecificButtonNarration.Gamepad.PSEUDO_BUTTON_2.SWITCH=Press PSEUDO_BUTTON_2	#
+hbui.ControllerSpecificButtonNarration.Gamepad.PSEUDO_BUTTON_2.XBOX=Press PSEUDO_BUTTON_2	#
+hbui.ControllerSpecificButtonNarration.Gamepad.PSEUDO_BUTTON_3.KEYBOARD=Press PSEUDO_BUTTON_3	#
+hbui.ControllerSpecificButtonNarration.Gamepad.PSEUDO_BUTTON_3.PS=Press PSEUDO_BUTTON_3	#
+hbui.ControllerSpecificButtonNarration.Gamepad.PSEUDO_BUTTON_3.QUEST=Press PSEUDO_BUTTON_3	#
+hbui.ControllerSpecificButtonNarration.Gamepad.PSEUDO_BUTTON_3.STEAM=Press PSEUDO_BUTTON_3	#
+hbui.ControllerSpecificButtonNarration.Gamepad.PSEUDO_BUTTON_3.SWITCH=Press PSEUDO_BUTTON_3	#
+hbui.ControllerSpecificButtonNarration.Gamepad.PSEUDO_BUTTON_3.XBOX=Press PSEUDO_BUTTON_3	#
+hbui.ControllerSpecificButtonNarration.Gamepad.PSEUDO_BUTTON_4.KEYBOARD=Press PSEUDO_BUTTON_4	#
+hbui.ControllerSpecificButtonNarration.Gamepad.PSEUDO_BUTTON_4.PS=Press PSEUDO_BUTTON_4	#
+hbui.ControllerSpecificButtonNarration.Gamepad.PSEUDO_BUTTON_4.QUEST=Press PSEUDO_BUTTON_4	#
+hbui.ControllerSpecificButtonNarration.Gamepad.PSEUDO_BUTTON_4.STEAM=Press PSEUDO_BUTTON_4	#
+hbui.ControllerSpecificButtonNarration.Gamepad.PSEUDO_BUTTON_4.SWITCH=Press PSEUDO_BUTTON_4	#
+hbui.ControllerSpecificButtonNarration.Gamepad.PSEUDO_BUTTON_4.XBOX=Press PSEUDO_BUTTON_4	#
+hbui.ControllerSpecificButtonNarration.Gamepad.PSEUDO_BUTTON_5.KEYBOARD=Press PSEUDO_BUTTON_5	#
+hbui.ControllerSpecificButtonNarration.Gamepad.PSEUDO_BUTTON_5.PS=Press PSEUDO_BUTTON_5	#
+hbui.ControllerSpecificButtonNarration.Gamepad.PSEUDO_BUTTON_5.QUEST=Press PSEUDO_BUTTON_5	#
+hbui.ControllerSpecificButtonNarration.Gamepad.PSEUDO_BUTTON_5.STEAM=Press PSEUDO_BUTTON_5	#
+hbui.ControllerSpecificButtonNarration.Gamepad.PSEUDO_BUTTON_5.SWITCH=Press PSEUDO_BUTTON_5	#
+hbui.ControllerSpecificButtonNarration.Gamepad.PSEUDO_BUTTON_5.XBOX=Press PSEUDO_BUTTON_5	#
+hbui.ControllerSpecificButtonNarration.Gamepad.PSEUDO_BUTTON_6.KEYBOARD=Press PSEUDO_BUTTON_6	#
+hbui.ControllerSpecificButtonNarration.Gamepad.PSEUDO_BUTTON_6.PS=Press PSEUDO_BUTTON_6	#
+hbui.ControllerSpecificButtonNarration.Gamepad.PSEUDO_BUTTON_6.QUEST=Press PSEUDO_BUTTON_6	#
+hbui.ControllerSpecificButtonNarration.Gamepad.PSEUDO_BUTTON_6.STEAM=Press PSEUDO_BUTTON_6	#
+hbui.ControllerSpecificButtonNarration.Gamepad.PSEUDO_BUTTON_6.SWITCH=Press PSEUDO_BUTTON_6	#
+hbui.ControllerSpecificButtonNarration.Gamepad.PSEUDO_BUTTON_6.XBOX=Press PSEUDO_BUTTON_6	#
+hbui.ControllerSpecificButtonNarration.Gamepad.PSEUDO_BUTTON_7.KEYBOARD=Press PSEUDO_BUTTON_7	#
+hbui.ControllerSpecificButtonNarration.Gamepad.PSEUDO_BUTTON_7.PS=Press PSEUDO_BUTTON_7	#
+hbui.ControllerSpecificButtonNarration.Gamepad.PSEUDO_BUTTON_7.QUEST=Press PSEUDO_BUTTON_7	#
+hbui.ControllerSpecificButtonNarration.Gamepad.PSEUDO_BUTTON_7.STEAM=Press PSEUDO_BUTTON_7	#
+hbui.ControllerSpecificButtonNarration.Gamepad.PSEUDO_BUTTON_7.SWITCH=Press PSEUDO_BUTTON_7	#
+hbui.ControllerSpecificButtonNarration.Gamepad.PSEUDO_BUTTON_7.XBOX=Press PSEUDO_BUTTON_7	#
+hbui.ControllerSpecificButtonNarration.Gamepad.PSEUDO_BUTTON_8.KEYBOARD=Press PSEUDO_BUTTON_8	#
+hbui.ControllerSpecificButtonNarration.Gamepad.PSEUDO_BUTTON_8.PS=Press PSEUDO_BUTTON_8	#
+hbui.ControllerSpecificButtonNarration.Gamepad.PSEUDO_BUTTON_8.QUEST=Press PSEUDO_BUTTON_8	#
+hbui.ControllerSpecificButtonNarration.Gamepad.PSEUDO_BUTTON_8.STEAM=Press PSEUDO_BUTTON_8	#
+hbui.ControllerSpecificButtonNarration.Gamepad.PSEUDO_BUTTON_8.SWITCH=Press PSEUDO_BUTTON_8	#
+hbui.ControllerSpecificButtonNarration.Gamepad.PSEUDO_BUTTON_8.XBOX=Press PSEUDO_BUTTON_8	#
+hbui.ControllerSpecificButtonNarration.Gamepad.PSEUDO_BUTTON_9.KEYBOARD=Press PSEUDO_BUTTON_9	#
+hbui.ControllerSpecificButtonNarration.Gamepad.PSEUDO_BUTTON_9.PS=Press PSEUDO_BUTTON_9	#
+hbui.ControllerSpecificButtonNarration.Gamepad.PSEUDO_BUTTON_9.QUEST=Press PSEUDO_BUTTON_9	#
+hbui.ControllerSpecificButtonNarration.Gamepad.PSEUDO_BUTTON_9.STEAM=Press PSEUDO_BUTTON_9	#
+hbui.ControllerSpecificButtonNarration.Gamepad.PSEUDO_BUTTON_9.SWITCH=Press PSEUDO_BUTTON_9	#
+hbui.ControllerSpecificButtonNarration.Gamepad.PSEUDO_BUTTON_9.XBOX=Press PSEUDO_BUTTON_9	#
 hbui.ControllerSpecificButtonNarration.Gamepad.R3.KEYBOARD=Trykk på R3	#
 hbui.ControllerSpecificButtonNarration.Gamepad.R3.PS=Trykk på R3	#
 hbui.ControllerSpecificButtonNarration.Gamepad.R3.QUEST=Trykk på R3	#
@@ -766,15 +821,15 @@ hbui.ControllerSpecificButtonNarration.Keyboard.KEY_X=Trykk på TAST_X	#
 hbui.ControllerSpecificButtonNarration.Keyboard.KEY_Y=Trykk på TAST_Y	#
 hbui.ControllerSpecificButtonNarration.Keyboard.KEY_Z=Trykk på TAST_Z	#
 hbui.ControllerSpecificButtonNarration.Keyboard.LEFT=Trykk på VENSTRE	#
-hbui.ControllerSpecificButtonNarration.Keyboard.MOUSE_BUTTON_LEFT=Trykk på MUSEKNAPP_VENSTRE	#
-hbui.ControllerSpecificButtonNarration.Keyboard.MOUSE_BUTTON_MIDDLE=Trykk på MUSEKNAPP_MIDTRE	#
-hbui.ControllerSpecificButtonNarration.Keyboard.MOUSE_BUTTON_RIGHT=Trykk på MUSEKNAPP_HØYRE	#
-hbui.ControllerSpecificButtonNarration.Keyboard.MOUSE_MOVEMENT=Trykk på MUSBEVEGELSE	#
-hbui.ControllerSpecificButtonNarration.Keyboard.MOUSE_WHEEL=Trykk på MUSEHJUL	#
-hbui.ControllerSpecificButtonNarration.Keyboard.PSEUDO_KEY_1=Trykk på PSEUDOTAST_1	#
-hbui.ControllerSpecificButtonNarration.Keyboard.PSEUDO_KEY_2=Trykk på PSEUDOTAST_2	#
-hbui.ControllerSpecificButtonNarration.Keyboard.PSEUDO_KEY_3=Trykk på PSEUDOTAST_3	#
-hbui.ControllerSpecificButtonNarration.Keyboard.PSEUDO_KEY_4=Trykk på PSEUDOTAST_4	#
+hbui.ControllerSpecificButtonNarration.Keyboard.MOUSE_BUTTON_LEFT=Press MOUSE_BUTTON_LEFT	#
+hbui.ControllerSpecificButtonNarration.Keyboard.MOUSE_BUTTON_MIDDLE=Press MOUSE_BUTTON_MIDDLE	#
+hbui.ControllerSpecificButtonNarration.Keyboard.MOUSE_BUTTON_RIGHT=Press MOUSE_BUTTON_RIGHT	#
+hbui.ControllerSpecificButtonNarration.Keyboard.MOUSE_MOVEMENT=Press MOUSE_MOVEMENT	#
+hbui.ControllerSpecificButtonNarration.Keyboard.MOUSE_WHEEL=Press MOUSE_WHEEL	#
+hbui.ControllerSpecificButtonNarration.Keyboard.PSEUDO_KEY_1=Press PSEUDO_KEY_1	#
+hbui.ControllerSpecificButtonNarration.Keyboard.PSEUDO_KEY_2=Press PSEUDO_KEY_2	#
+hbui.ControllerSpecificButtonNarration.Keyboard.PSEUDO_KEY_3=Press PSEUDO_KEY_3	#
+hbui.ControllerSpecificButtonNarration.Keyboard.PSEUDO_KEY_4=Press PSEUDO_KEY_4	#
 hbui.ControllerSpecificButtonNarration.Keyboard.RIGHT=Trykk på HØYRE	#
 hbui.ControllerSpecificButtonNarration.Keyboard.SHIFT=Trykk på SHIFT	#
 hbui.ControllerSpecificButtonNarration.Keyboard.SPACE=Trykk på MELLOMROM	#
@@ -790,6 +845,7 @@ hbui.CreateNewWorld.achievementsDisabledMessages.template=Fjern mal	#
 hbui.CreateNewWorld.advanced.bonusChestDescription=Start nær en kiste med elementer for å komme i gang	#
 hbui.CreateNewWorld.advanced.bonusChestTitle=Bonuskiste	#
 hbui.CreateNewWorld.advanced.copyToClipboard=Kopiert til utklippstavle	#
+hbui.CreateNewWorld.advanced.expandHintNarration=More options for flat world expanded below 	#### More options for how to generate a flat world is shown below in the UI. {MaxLength="1000"}
 hbui.CreateNewWorld.advanced.exportSettingsDescription=Noen funksjoner kan overstyres under redigeringsøkten, men bli respektert fullt ut under eksport	#
 hbui.CreateNewWorld.advanced.exportSettingsHeader=Eksportinnstillinger	#
 hbui.CreateNewWorld.advanced.firesSpreadsDescription=Brann kan spre seg mellom objekter	#
@@ -1005,7 +1061,7 @@ hbui.CreateNewWorld.general.gameModeCreativeLabel=Kreativ	#
 hbui.CreateNewWorld.general.gameModeSurvivalDescription=Utforsk en mystisk verden der du bygger, samler, lager og slåss mot monstre.	#
 hbui.CreateNewWorld.general.gameModeSurvivalLabel=Overlevelse	#
 hbui.CreateNewWorld.general.gameModeTitle=Spillmodus	#
-hbui.CreateNewWorld.general.gameModeUnknownLabel=Ukjent	#
+hbui.CreateNewWorld.general.gameModeUnknownLabel=Unknown	#
 hbui.CreateNewWorld.general.hardcoreModeDescription=Du kan ikke gjenoppstå hvis du dør. Lykke til! Du kommer til å trenge det.	#
 hbui.CreateNewWorld.general.hardcoreModeTitle=Ekstra vanskelig	#
 hbui.CreateNewWorld.general.makeInfiniteButton=Oppdater til uendelig	#
@@ -1070,13 +1126,13 @@ hbui.CreateNewWorld.multiplayer.playerPermissionsOperatorLabel=Operatør	#
 hbui.CreateNewWorld.multiplayer.playerPermissionsTitle=Standard spillertillatelser	#
 hbui.CreateNewWorld.multiplayer.playerPermissionsVisitorDescription=Besøkende kan bare observere verdenen din, ikke samhandle med den	#
 hbui.CreateNewWorld.multiplayer.playerPermissionsVisitorLabel=Besøkende	#
-hbui.CreateNewWorld.multiplayer.playstationPlayerAccessFriendsDescription=Alle du har lagt til som venn på PlayStation™Network, kan bli med		#### CertRequirement: [PlayStation™Network]
-hbui.CreateNewWorld.multiplayer.playstationPlayerAccessFriendsOfFriendsDescription=Venner av vennene dine på PlayStation™Network kan bli med		#### CertRequirement: [PlayStation™Network]
+hbui.CreateNewWorld.multiplayer.playstationPlayerAccessFriendsDescription=Alle du har lagt til som venn på PlayStation™Network, kan bli med		#### CertRequirement:{PS4}[PlayStation™Network] CertRequirement:{PS5}[PlayStation™Network]{MaxLength=3000}
+hbui.CreateNewWorld.multiplayer.playstationPlayerAccessFriendsOfFriendsDescription=Venner av vennene dine på PlayStation™Network kan bli med		#### CertRequirement:{PS4}[PlayStation™Network] CertRequirement:{PS5}[PlayStation™Network]{MaxLength=3000}
 hbui.CreateNewWorld.multiplayer.playstationPlayerAccessInvitedDescription=Alle du sender en direkte invitasjon til, kan bli med	#
-hbui.CreateNewWorld.multiplayer.playstationPlayerAccessTitle=Venner på PlayStation™Network		#### CertRequirement: [PlayStation™Network]
+hbui.CreateNewWorld.multiplayer.playstationPlayerAccessTitle=Venner på PlayStation™Network		#### CertRequirement:{PS4}[PlayStation™Network] CertRequirement:{PS5}[PlayStation™Network]{MaxLength=3000}
 hbui.CreateNewWorld.multiplayer.playStationPlusSubscriptionPromotionBody=Du trenger det for å spille online	#
 hbui.CreateNewWorld.multiplayer.playStationPlusSubscriptionPromotionButtonLabel=Mer informasjon	#
-hbui.CreateNewWorld.multiplayer.playStationPlusSubscriptionPromotionTitle=Du har ikke et abonnement på PlayStation®Plus		#### CertRequirement: [PlayStation®Plus]
+hbui.CreateNewWorld.multiplayer.playStationPlusSubscriptionPromotionTitle=Du har ikke et abonnement på PlayStation®Plus		#### CertRequirement:{PS4}[PlayStation®Plus] CertRequirement:{PS5}[PlayStation®Plus] CertRequirement:{PS4}[subscription] CertRequirement:{PS5}[subscription]{MaxLength=300}
 hbui.CreateNewWorld.multiplayer.settingsTitle=Innstillinger	#
 hbui.CreateNewWorld.multiplayer.visibleToLanPlayersDescription=Spillere på ditt lokale nettverk kan bli med i verdenen din	#
 hbui.CreateNewWorld.multiplayer.visibleToLanPlayersTitle=Synlig for LAN-spillere	#
@@ -1100,9 +1156,9 @@ hbui.CreateNewWorld.packDownloadModal.confirmationBodyActivate=«%1$s» må last
 hbui.CreateNewWorld.packDownloadModal.confirmationBodyAvailableSize=Ledig plass: %1$s.	#
 hbui.CreateNewWorld.packDownloadModal.confirmationBodyMultiple=Pakkene %1$s lastes ned til enheten din.	#
 hbui.CreateNewWorld.packDownloadModal.confirmationBodyPackSize=Total størrelse: %1$s.	#
-hbui.CreateNewWorld.packDownloadModal.confirmationCancelButton=Avbryt	#
+hbui.CreateNewWorld.packDownloadModal.confirmationCancelButton=Cancel	#
 hbui.CreateNewWorld.packDownloadModal.confirmationDownloadAndActivateButton=Last ned og aktiver pakken	#
-hbui.CreateNewWorld.packDownloadModal.confirmationDownloadButton=Last ned	#
+hbui.CreateNewWorld.packDownloadModal.confirmationDownloadButton=Download	#
 hbui.CreateNewWorld.packDownloadModal.confirmationTitle=Er du klar til å laste ned?	#
 hbui.CreateNewWorld.packDownloadModal.confirmationTitleAlt=Last ned innhold?	#
 hbui.CreateNewWorld.packDownloadModal.downloadingProgressLabel=Laster ned	#
@@ -1148,6 +1204,8 @@ hbui.CreateNewWorld.resourcePacks.errorInitializationTimeoutButton=OK	#
 hbui.CreateNewWorld.resourcePacks.errorInitializationTimeoutTitle=Kan ikke lastes ned	#
 hbui.CreateNewWorld.resourcePacks.errorNoStoreBody=Vi kan ikke koble til markedsplassen akkurat nå. Prøv igjen senere.	#
 hbui.CreateNewWorld.resourcePacks.errorNoStoreTitle=Tilkoblingsproblem	#
+hbui.CreateNewWorld.resourcePacks.errorNotEnoughDiskSpaceBody=Free up %1$s on your device to download "%2$s".   	####Text that informs how much storage space the user needs to free up in order to be able to download the specified pack. %1$s - file size of the resource pack; %2$s - name of the resource pack {MaxLength=100}
+hbui.CreateNewWorld.resourcePacks.errorNotEnoughDiskSpaceTitle=Not enough space 	####Title of modal which informs user that they do not have enough disc/storage space on the device {MaxLength=50}
 hbui.CreateNewWorld.resourcePacks.errorPluginRemovalBody=Hvis du fjerner atferdspakker med tilleggsmoduler, kan du ødelegge verdenen og miste det du har laget.	#
 hbui.CreateNewWorld.resourcePacks.errorPluginRemovalTitle=Handlingen er ikke tillatt.	#
 hbui.CreateNewWorld.resourcePacks.errorReadingBody=Spillet kunne ikke fortsette å lese denne pakken fordi den er ødelagt. Å slette pakken og laste den ned igjen kan løse problemet.	#
@@ -1166,7 +1224,7 @@ hbui.CreateNewWorld.resourcePacks.globalPacksDeactivatedSnackbarMessage=Globale 
 hbui.CreateNewWorld.resourcePacks.globalPacksInfoMessage=Globale pakker er aktivert for alle verdenene dine. De deaktiveres når «Delte lokale pakker» er aktivert.	#
 hbui.CreateNewWorld.resourcePacks.globalPacksListHeader=Global	#
 hbui.CreateNewWorld.resourcePacks.goBackButton=Gå tilbake	#
-hbui.CreateNewWorld.resourcePacks.inactivePacksAccordionHeader=Eid	#
+hbui.CreateNewWorld.resourcePacks.inactivePacksAccordionHeader=Eies	#
 hbui.CreateNewWorld.resourcePacks.inactivePacksAccordionHint=Utvid for å vise alle pakkene du eier	#
 hbui.CreateNewWorld.resourcePacks.inactivePacksEmptyBody=Gå til markedsplassen eller online for å finne pakker for å spille verdenen på en annen måte!	#
 hbui.CreateNewWorld.resourcePacks.inactivePacksEmptyTitle=Du eier ikke noen pakker enda	#
@@ -1176,13 +1234,13 @@ hbui.CreateNewWorld.resourcePacks.initializationTimeoutButton=OK	#
 hbui.CreateNewWorld.resourcePacks.initializationTimeoutTitle=Kan ikke lastes ned	#
 hbui.CreateNewWorld.resourcePacks.localPacksListHeader=Lokalt	#
 hbui.CreateNewWorld.resourcePacks.marketplacePassPacksAccordionHeader=Marketplace Pass 	#### {StrContains="Marketplace Pass"}
-hbui.CreateNewWorld.resourcePacks.marketplacePassPacksAccordionHint=Utvid for å vise alle Marketplace Pass-pakkene 	#### {StrContains="Marketplace Pass"}
+hbui.CreateNewWorld.resourcePacks.marketplacePassPacksAccordionHint=Expand to access all Marketplace Pass packs 	#### {StrContains="Marketplace Pass"}
 hbui.CreateNewWorld.resourcePacks.marketplacePassPacksEmptyTitle=Ingen flere tilgjengelige ressurspakker	#
-hbui.CreateNewWorld.resourcePacks.marketplacePassPacksOnExpandAccordionHint=Naviger ned for å vise Marketplace Pass-pakker 	#### {StrContains="Marketplace Pass"}
+hbui.CreateNewWorld.resourcePacks.marketplacePassPacksOnExpandAccordionHint=Navigate down to access Marketplace Pass packs 	#### {StrContains="Marketplace Pass"}
 hbui.CreateNewWorld.resourcePacks.marketplacePassPromotionBody=Abonner på det nye Markedplace Pass, så får du tilgang til mer enn 150 spennende tillegg! (Realms Plus inneholder nå Marketplace Pass-innhold)  	#### {StrContains="Realms Plus"} {StrContains="Marketplace Pass"}
 hbui.CreateNewWorld.resourcePacks.marketplacePassPromotionButtonInputLegend=Marketplace Pass 	#### {StrContains="Marketplace Pass"}
 hbui.CreateNewWorld.resourcePacks.marketplacePassPromotionButtonLabel=Finn ut mer	#
-hbui.CreateNewWorld.resourcePacks.marketplacePassPromotionTitle=Du abonnerer ikke på Marketplace Pass! 	#### {StrContains="Marketplace Pass"}
+hbui.CreateNewWorld.resourcePacks.marketplacePassPromotionTitle=You don't have a Marketplace Pass subscription! 	#### {StrContains="Marketplace Pass"}
 hbui.CreateNewWorld.resourcePacks.missingDependencyBody=Denne pakken mangler én eller flere nødvendige komponenter. Vil du ta den i bruk likevel?	#
 hbui.CreateNewWorld.resourcePacks.missingDependencyNewBody=Denne pakken mangler én eller flere nødvendige komponenter, og aktivering kan ødelegge opplevelsen din.	#
 hbui.CreateNewWorld.resourcePacks.missingDependencyTitle=Mangler nødvendige komponenter	#
@@ -1198,7 +1256,7 @@ hbui.CreateNewWorld.resourcePacks.sharedPacksDeactivatingGlobalPacks=Globale pak
 hbui.CreateNewWorld.resourcePacks.sharedPacksDescription=Spillere bes om å laste ned alle lokale pakker for å bli med i spillet.	#
 hbui.CreateNewWorld.resourcePacks.sharedPacksTitle=Delte pakker	#
 hbui.CreateNewWorld.resourcePacks.storeConnectionFailedBody=Vi har problemer med å koble til markedsplassen akkurat nå. Prøv på nytt senere.	#
-hbui.CreateNewWorld.resourcePacks.storeConnectionFailedTitle=Noe gikk galt	#
+hbui.CreateNewWorld.resourcePacks.storeConnectionFailedTitle=Something went wrong	#
 hbui.CreateNewWorld.resourcePacks.userOwnsNoMessageDescription=Gå til markedsplassen eller online for å finne pakker for å spille verdenen på en annen måte!	#
 hbui.CreateNewWorld.resourcePacks.userOwnsNoPacksMessageTitle=Du eier ikke noen pakker ennå	#
 hbui.CreateNewWorld.resourcePacks.warningBody=Hvis du legger til eller fjerner atferdspakker etter å ha spilt en verden, kan du ødelegge verdenen og miste det du har laget. Trykk på OK for å deaktivere pakken, eller Avbryt for å beholde den aktiv.	#
@@ -1219,13 +1277,13 @@ hbui.CreateNewWorld.scriptingCoding.codeBuilderDescription=Gjør kodingsfunksjon
 hbui.CreateNewWorld.scriptingCoding.codeBuilderTitle=Kodebygger	#
 hbui.CreateNewWorld.scriptingCoding.narrationComponentTypeSectionHeader=Gruppe	#
 hbui.CreateNewWorld.scriptingCoding.settingsTitle=Innstillinger for skripting og koding	#
-hbui.CreateNewWorld.signInPromptWorldOnRealmModal.cancel=Avbryt	#
-hbui.CreateNewWorld.signInPromptWorldOnRealmModal.msaGuestCreateWorld.message=Du trenger en Microsoft-konto for å lage en verden på Realms. 	#### {StrContains="Realms"}
+hbui.CreateNewWorld.signInPromptWorldOnRealmModal.cancel=Cancel	#
+hbui.CreateNewWorld.signInPromptWorldOnRealmModal.msaGuestCreateWorld.message=You need a Microsoft account to create a world on Realms. 	#### {StrContains="Realms"}
 hbui.CreateNewWorld.signInPromptWorldOnRealmModal.msaGuestEditWorld.message=Du trenger en Microsoft-konto for å spille på Realms. 	#### {StrContains="Realms"}
-hbui.CreateNewWorld.signInPromptWorldOnRealmModal.platformGuestCreate.nintendo.message=Du må være logget på Nintendo-kontoen din for å lage en verden på Realms. 	#### {StrContains="Realms"}
-hbui.CreateNewWorld.signInPromptWorldOnRealmModal.platformGuestCreate.playStation.message=Du må være logget på kontoen din for PlayStation™Network for å lage en verden på Realms.		#### CertRequirement: [account for PlayStation™Network] ### {StrContains="Realms"}
-hbui.CreateNewWorld.signInPromptWorldOnRealmModal.platformGuestEdit.nintendo.message=Du må være logget på Nintendo-kontoen din for å spille på Realms. 	#### {StrContains="Realms"}
-hbui.CreateNewWorld.signInPromptWorldOnRealmModal.platformGuestEdit.playStation.message=Du må være logget på kontoen din for PlayStation™Network for å spille på Realms.		#### CertRequirement: [account for PlayStation™Network] ### {StrContains="Realms"}
+hbui.CreateNewWorld.signInPromptWorldOnRealmModal.platformGuestCreate.nintendo.message=You need to be signed in to your Nintendo Account to create a world on Realms. 	#### {StrContains="Realms"}
+hbui.CreateNewWorld.signInPromptWorldOnRealmModal.platformGuestCreate.playStation.message=Du må være logget på kontoen din for PlayStation™Network for å lage en verden på Realms.		#### CertRequirement:{PS4}[account for PlayStation™Network] CertRequirement:{PS5}[account for PlayStation™Network] ### {StrContains="Realms"}{MaxLength=3000}
+hbui.CreateNewWorld.signInPromptWorldOnRealmModal.platformGuestEdit.nintendo.message=You need to be signed in to your Nintendo Account to play on Realms. 	#### {StrContains="Realms"}
+hbui.CreateNewWorld.signInPromptWorldOnRealmModal.platformGuestEdit.playStation.message=Du må være logget på kontoen din for PlayStation™Network for å spille på Realms.		#### CertRequirement:{PS4}[account for PlayStation™Network] CertRequirement:{PS5}[account for PlayStation™Network] ### {StrContains="Realms"}{MaxLength=3000}
 hbui.CreateNewWorld.signInPromptWorldOnRealmModal.signIn=Logg på	#
 hbui.CreateNewWorld.signInPromptWorldOnRealmModal.title=Du må logge deg på	#
 hbui.CreateNewWorld.tabContainerNarrationSuffix=Vertikal undermeny	#
@@ -1234,7 +1292,7 @@ hbui.CreateNewWorld.unlockSettingsModal.keepSettings=Behold opprinnelige innstil
 hbui.CreateNewWorld.unlockSettingsModal.message=Du kan ødelegge skaperens tiltenkte opplevelse hvis du låser opp alle innstillinger for verdenen. Denne endringen er permanent.	#
 hbui.CreateNewWorld.unlockSettingsModal.title=Lås opp alle innstillinger for verden	#
 hbui.CreateNewWorld.unlockSettingsModal.unlock=Lås opp likevel	#
-hbui.CreateNewWorld.upsellModal.back=Tilbake	#
+hbui.CreateNewWorld.upsellModal.back=Back	#
 hbui.CreateNewWorld.upsellModal.bodyNintendo=Du trenger et Nintendo Switch Online-abonnement for å spille flerspillerspill med andre på forskjellige enheter.	#
 hbui.CreateNewWorld.upsellModal.bodyPlaystation=Nettfunksjoner er ikke tilgjengelige.	#
 hbui.CreateNewWorld.upsellModal.bodyXbox=Du trenger et Xbox Game Pass Core-abonnement for å spille flerspillerspill med andre på forskjellige enheter.	#
@@ -1244,7 +1302,7 @@ hbui.CreateNewWorldSideMenu.advancedTabLabel=Avansert	#
 hbui.CreateNewWorldSideMenu.behaviorPacksTabLabel=Atferdspakker	#
 hbui.CreateNewWorldSideMenu.cheatsTabLabel=Juksing	#
 hbui.CreateNewWorldSideMenu.create=Opprett	#
-hbui.CreateNewWorldSideMenu.createOnRealm=Lag i Realms 	#### {StrContains="Realms"}
+hbui.CreateNewWorldSideMenu.createOnRealm=Create on Realms 	#### {StrContains="Realms"}
 hbui.CreateNewWorldSideMenu.experimentalFeaturesTabLabel=Eksperimenter	#
 hbui.CreateNewWorldSideMenu.generalTabLabel=Generelt	#
 hbui.CreateNewWorldSideMenu.inputLegendSelect=Velg	#
@@ -1253,15 +1311,15 @@ hbui.CreateNewWorldSideMenu.narrationCreateButtonHint=Lag en %1$s verden med van
 hbui.CreateNewWorldSideMenu.resourcePacksTabLabel=Ressurspakker	#
 hbui.CreateNewWorldSideMenu.scriptingCodingTabLabel=Skripting og koding	#
 hbui.CreatePartyRoute.createPartyHeader=Opprett gruppe 	#### Create Party page title. For the purposes of this feature, a Party is a group of players joining up to  play together.
-hbui.CreatePartyRoute.friendsTitle=Venner (%1$s) 	#### The header for a list of Player List Items containing the user's friends
-hbui.CreatePartyRoute.inviteOnly=Bare inviterte 	#### The title for a state where players can only join the party if invited
-hbui.CreatePartyRoute.inviteOnlyDescription=Spillere må inviteres for å bli med i gruppen. 	#### Describes the invite only state
-hbui.CreatePartyRoute.maxPartyExplanation=En gruppe kan ha opptil 15 spillere. 	#### Description explaining the maximum size of a party
-hbui.CreatePartyRoute.open=Åpen 	#### The title for a state where anyone can join the party
-hbui.CreatePartyRoute.openDescription=Spillere trenger ikke å bli invitert for å bli med i gruppen. 	#### Describes the Open state
-hbui.CreatePartyRoute.partyPrivacy=Gruppepersonvern 	#### Title for the toggle which controls the party privacy state
-hbui.CreatePartyRoute.partySettings=Gruppeinnstillinger 	#### title of the side bar which contains the party settings options
-hbui.CreatePartyRoute.recentlyPlayedWithTitle=Nylig spilt med 	#### The header for a list of Player List Items containing players the user has recently played with
+hbui.CreatePartyRoute.friendsTitle=Friends 	#### The header for a list of Player List Items containing the user's friends {MaxLength="50"}
+hbui.CreatePartyRoute.inviteOnly=Bare inviterte 	#### The title for a state where players can only join the party if invited {MaxLength="30"}
+hbui.CreatePartyRoute.inviteOnlyDescription=Spillere må inviteres for å bli med i gruppen. 	#### Describes the invite only state {MaxLength="120"}
+hbui.CreatePartyRoute.maxPartyExplanation=En gruppe kan ha opptil 15 spillere. 	#### Description explaining the maximum size of a party {MaxLength="120"}
+hbui.CreatePartyRoute.open=Åpen 	#### The title for a state where anyone can join the party {MaxLength="30"}
+hbui.CreatePartyRoute.openDescription=Everyone can join. 	#### Describes the Open state {MaxLength="120"}
+hbui.CreatePartyRoute.partyPrivacy=Party privacy 	#### Title for the toggle which controls the party privacy state {MaxLength="30"}
+hbui.CreatePartyRoute.partySettings=Party settings 	#### title of the side bar which contains the party settings options {MaxLength="30"}
+hbui.CreatePartyRoute.recentlyPlayedWithTitle=Recently played with 	#### The header for a list of Player List Items containing players the user has recently played with {MaxLength="50"}
 hbui.DebugDrawer.closeButtonNarrationHint=Bruk pil ned for flere handlinger	#
 hbui.DebugDrawer.closeDrawerShortcutInputLegend=Lukk	#
 hbui.DebugDrawer.title=Feilsøking	#
@@ -1275,7 +1333,7 @@ hbui.EditWorld.addonStackingWarningModal.title=Bruk av tillegg    	#### {MaxLeng
 hbui.EditWorld.clearingPlayerDataModal.description=Ikke avslutt spillet. Prosessen kan bli ødelagt hvis du avslutter ...	#
 hbui.EditWorld.clearingPlayerDataModal.title=Sletting av spillerdata	#
 hbui.EditWorld.clearPlayerDataErrorModal.description=Prøv på nytt senere.	#
-hbui.EditWorld.clearPlayerDataErrorModal.title=Noe gikk galt	#
+hbui.EditWorld.clearPlayerDataErrorModal.title=Something went wrong	#
 hbui.EditWorld.clearPlayerDataModal.allButton=Slett alle spillerdata	#
 hbui.EditWorld.clearPlayerDataModal.descriptionOne=Velg «Slett alle spillerdata» for å slette absolutt alle spillerdata fra verdenen. Neste gang en spiller kommer inn i verdenen, starter spilleren med nye, standard data.	#
 hbui.EditWorld.clearPlayerDataModal.descriptionTwo=Ved å velge «Fortsett å eie spillerdata» beholder du dine nåværende data (for eksempel inventarets gjenstander og plassering) og bruker dem til «Verdenseier». Dette er enhver spiller som laster verdenen lokalt, eller eieren av realmen den er på.	#
@@ -1291,7 +1349,7 @@ hbui.EditWorld.errorModals.invalidMultiplayerSkin.text=Skallet du bruker nå, er
 hbui.EditWorld.exportingWorldModal.content=Ikke avslutt spillet. Verdenen kan bli ødelagt hvis du avslutter.	#
 hbui.EditWorld.exportingWorldModal.title=Naturvern	#
 hbui.EditWorld.exportWorldFlow.buttonsEnumaration=%1$s av %2$s	#
-hbui.EditWorld.exportWorldFlow.cancel=Avbryt	#
+hbui.EditWorld.exportWorldFlow.cancel=Cancel	#
 hbui.EditWorld.exportWorldFlow.cancelHint=Gå til høyre for å se flere tilgjengelige handlinger	#
 hbui.EditWorld.exportWorldFlow.clearPlayerDataDescription=Dette sletter alle spillerdataene fullstendig, inkludert kisteinnhold, inventarer og steder.	#
 hbui.EditWorld.exportWorldFlow.clearPlayerDataDescription.alreadyInHardcoreMode=Sletting av data er ikke tilgjengelig på verdener med Beinhard modus aktivert.	#
@@ -1323,24 +1381,28 @@ hbui.EditWorld.notificationToasts.settingsUnlocked=Innstillinger er låst opp	#
 hbui.EditWorld.notificationToasts.worldConverted=Verdenen ble oppdatert	#
 hbui.EditWorld.playOnRealmsErrorModal.closeButton=Lukk	#
 hbui.EditWorld.playOnRealmsErrorModal.crossPlatformRestricted.message=Du kan ikke spille denne verdenen på realmen din, for den bruker en ressurspakke som ikke kan brukes i flerspiller på forskjellige plattformer.	#
-hbui.EditWorld.playOnRealmsErrorModal.crossPlatformRestricted.message2=Fjern ressurspakken for å kunne spille på Realms. 	#### {StrContains="Realms"}
+hbui.EditWorld.playOnRealmsErrorModal.crossPlatformRestricted.message2=Please remove the resource pack to be able to play on Realms. 	#### {StrContains="Realms"}
 hbui.EditWorld.playOnRealmsErrorModal.crossPlatformRestricted.title=Ressurspakke støttes ikke	#
 hbui.EditWorld.playOnRealmsErrorModal.memberOfTooManyRealms.message=Du har nådd grensen for hvor mange realmer du kan være medlem av. Hver konto kan maksimalt være medlem av 1000 Xbox Live-klubber, noe som inkluderer Realms. 	#### {StrContains="Realms"}
 hbui.EditWorld.playOnRealmsErrorModal.memberOfTooManyRealms.title=Kan ikke bli med i realmen	#
 hbui.EditWorld.playOnRealmsErrorModal.unknown.errorCode=Feilkode: %1$s	#
 hbui.EditWorld.playOnRealmsErrorModal.unknown.message=Prøv på nytt senere.	#
-hbui.EditWorld.playOnRealmsErrorModal.unknown.title=Noe gikk galt	#
+hbui.EditWorld.playOnRealmsErrorModal.unknown.title=Something went wrong	#
 hbui.EditWorld.saveChangesModal.discard=Forkast endringer	#
 hbui.EditWorld.saveChangesModal.discardInputLegend=Forkast	#
 hbui.EditWorld.saveChangesModal.message=Du har endringer som ikke er lagret. Sørg for å lagre eller forkaste endringene.	#
 hbui.EditWorld.saveChangesModal.save=Lagre endringer	#
-hbui.EditWorld.saveChangesModal.saveInputLegend=Lagre	#
+hbui.EditWorld.saveChangesModal.saveInputLegend=Save	#
 hbui.EditWorld.saveChangesModal.title=Vil du lagre endringene?	#
 hbui.EditWorld.startLocalWorldModal.title=Laster inn verden …	#
 hbui.EditWorldSideMenu.narrationPlayButtonHint=Spill din %1$s verden med vanskelighetsgrad %2$s, med navnet «%3$s». Naviger for å velge andre alternativer.	#
 hbui.EditWorldSideMenu.play=Spill	#
 hbui.EditWorldSideMenu.playOnRealm=Spill på Realms		#### {StrContains="Realms"}
 hbui.EmptyFriendList.noFriendsCaption=Legg til venner!	#
+hbui.EndHostingMultiplayerSessionModal.cancel=Avbryt 	#### Text of button to cancel joining another game, so the player stays in the current session {MaxLength="50"}
+hbui.EndHostingMultiplayerSessionModal.continue=Continue 	#### Text of button to continue joining another game, ending the current multiplayer session {MaxLength="50"}
+hbui.EndHostingMultiplayerSessionModal.text=You are the host, if you leave this world the multiplayer session will also end. 	####  Text of modal warning that joining another game will cause current multiplayer session to end. {MaxLength="340"}
+hbui.EndHostingMultiplayerSessionModal.title=End multiplayer session? 	####  Title of modal warning that joining another game will cause current multiplayer session to end. {MaxLength="40"}
 hbui.ErrorModal.goBack=Gå tilbake	#
 hbui.ErrorModal.goingBack=Går tilbake til forrige skjerm ...	#
 hbui.ErrorModal.title=Det har oppstått en feil	#
@@ -1359,6 +1421,32 @@ hbui.FirstTimeSignInRoute.signInList3=Få unike serveropplevelser sammen med hun
 hbui.FirstTimeSignInRoute.signInList3PS=Få unike utvalgte serveropplevelser sammen med hundrevis av andre spillere	#
 hbui.FirstTimeSignInRoute.signInList4=Få tilgang til innhold og karakterer fra markedsplassen på tvers av plattformer	#
 hbui.FirstTimeSignInRoute.signInPrompt=Logg på med Microsoft-kontoen din nå for å låse opp en en mengde innhold, inkludert:	#
+hbui.FlatWorld.description=The layers of blocks that make up your flat world    	#### The Minecraft block layers used to generate a flat world, eg layer of stone and a layer of bedrock. {MaxLength="1000"}
+hbui.FlatWorld.designPreviewInputLegend=Select   	#### Button legend for feedback button. {MaxLength="1000"}
+hbui.FlatWorld.designPreviewShortDescription=Tell us what you think of this new design!   	#### Description below feedback button. {MaxLength="1000"}
+hbui.FlatWorld.feedbackButton=Give feedback   	#### Text on feedback button {MaxLength="20"}
+hbui.FlatWorld.height=Height    	#### Block height, eg 3 blocks high. {MaxLength="20"}
+hbui.FlatWorld.layers=Layers    	#### Material layers, eg layer of stone. {MaxLength="20"}
+hbui.FlatWorld.material=Material    	#### Minecraft material, eg stone, redstone block or dirt. {MaxLength="30"}
+hbui.FlatWorld.narration.dropdownHint=Layer material below    	#### Below the content the player is focused on in the UI we show the material that the layers consists of, eg layer of stone. {MaxLength="1000"}
+hbui.FlatWorld.narration.dropdownHintEditWorldOff=Flat world can't be switched on    	#### Flat world setting can't be turned on. {MaxLength="1000"}
+hbui.FlatWorld.narration.dropdownHintEditWorldOn=Flat world can't be switched off. Layer material below    	#### Flat world setting can't be turned off. Below the content the player is focused on in the UI we show the material that the layers consists of, eg layer of stone. {MaxLength="1000"}
+hbui.FlatWorld.narration.height=Height    	#### Block height, eg 3 blocks high. {MaxLength="1000"}
+hbui.FlatWorld.narration.layer=Layer %1$s   	#### Material layer, eg layer of stone. {MaxLength="1000"}
+hbui.FlatWorld.narration.material=Material    	#### Minecraft material, eg stone, redstone block or dirt. {MaxLength="1000"}
+hbui.FlatWorld.narration.switchHintOff=Flat World Presets dropdown hidden until flat world is enabled     	#### Flat world is a world that is generated as completely flat, preset is a predetermined composition of layers and materials for this generation. {MaxLength="1000"}
+hbui.FlatWorld.narration.switchHintOffEditWorld=Flat world can't be switched on    	#### Flat world setting can't be turned on. {MaxLength="1000"}
+hbui.FlatWorld.narration.switchHintOn=Flat World Presets dropdown is shown     	#### Flat world is a world that is generated as completely flat, preset is a predetermined composition of layers and materials for this generation. {MaxLength="1000"}
+hbui.FlatWorld.narration.switchHintOnEditWorld=Flat world can't be switched off    	#### Flat world setting can't be turned off. {MaxLength="1000"}
+hbui.FlatWorld.preset.bottomlessPit=Bottomless Pit   	#### Flat world preset name. {MaxLength="20"}
+hbui.FlatWorld.preset.classicFlat=Classic Flat   	#### Flat world preset name. {MaxLength="20"}
+hbui.FlatWorld.preset.desert=Desert   	#### Flat world preset name. {MaxLength="20"}
+hbui.FlatWorld.preset.overworld=Overworld   	#### Flat world preset name. {MaxLength="20"}
+hbui.FlatWorld.preset.redstoneReady=Redstone Ready   	#### Flat world preset name. {MaxLength="20"}
+hbui.FlatWorld.preset.snowyKingdom=Snowy Kingdom   	#### Flat world preset name. {MaxLength="20"}
+hbui.FlatWorld.preset.tunnelersDream=Tunneler's Dream   	#### Flat world preset name. {MaxLength="20"}
+hbui.FlatWorld.preset.waterWorld=Water World   	#### Flat world preset name. {MaxLength="20"}
+hbui.FlatWorld.title=Flat world preset 	#### Flat world is a world that is generated as completely flat, preset is a predetermined composition of layers and materials for this generation. {MaxLength="40"}
 hbui.FriendList.favoriteFriendsNumberMultiple=%1$s favorittvenner	#
 hbui.FriendList.favoriteFriendsNumberSingular=%1$s favorittvenn	#
 hbui.FriendList.favorites=Favoritter (%1$s/%2$s)	#
@@ -1368,21 +1456,21 @@ hbui.FriendList.mutualFriendsFriendsNumberSingular=%1$s venn	#
 hbui.FriendList.narration.favorites=Favorittvenner!	#
 hbui.FriendList.narration.friends=Venner	#
 hbui.FriendList.narration.offline=Frakoblede venner	#
-hbui.FriendList.narration.offline.playstation=Frakoblede venner på PlayStation™Network		#### CertRequirement: [PlayStation™Network]
+hbui.FriendList.narration.offline.playstation=Frakoblede venner på PlayStation™Network		#### CertRequirement:{PS4}[PlayStation™Network] CertRequirement:{PS5}[PlayStation™Network]{MaxLength=3000}
 hbui.FriendList.narration.offline.switch=Frakoblede venner	#
 hbui.FriendList.narration.online=Tilkoblede venner	#
-hbui.FriendList.narration.online.playstation=Venner online på PlayStation™Network		#### CertRequirement: [PlayStation™Network]
+hbui.FriendList.narration.online.playstation=Venner online på PlayStation™Network		#### CertRequirement:{PS4}[PlayStation™Network] CertRequirement:{PS5}[PlayStation™Network]{MaxLength=3000}
 hbui.FriendList.narration.online.switch=Påloggede Nintendo-venner	#
 hbui.FriendList.noFriends=Alle vennene dine har blitt lagt til som favoritter!	#
 hbui.FriendList.noOfflineFriends=Alle vennene dine er tilkoblet!	#
 hbui.FriendList.noOnlineFriends=Ingen venner er tilkoblet	#
 hbui.FriendList.offline=Frakoblet (%1$s)	#
-hbui.FriendList.offline.playstation=Frakoblede venner på PSN™ (%1$s) 	#### CertRequirement: [PSN™]
+hbui.FriendList.offline.playstation=Frakoblede venner på PSN™ (%1$s) 	#### CertRequirement:{PS4}[PSN™] CertRequirement:{PS5}[PSN™]{MaxLength=3000}
 hbui.FriendList.offline.switch=Frakoblede Nintendo-venner (%1$s)	#
 hbui.FriendList.offlineFriendsNumberMultiple=%1$s venner er frakoblet	#
 hbui.FriendList.offlineFriendsNumberSingular=%1$s venn er frakoblet	#
 hbui.FriendList.online=Online (%1$s)	#
-hbui.FriendList.online.playstation=Venner online på PSN™ (%1$s)		#### CertRequirement: [PSN™]
+hbui.FriendList.online.playstation=Venner online på PSN™ (%1$s)		#### CertRequirement:{PS4}[PSN™] CertRequirement:{PS5}[PSN™]{MaxLength=3000}
 hbui.FriendList.online.switch=Påloggede Nintendo-venner (%1$s)	#
 hbui.FriendList.onlineFriendsNumberMultiple=%1$s venner på nettet	#
 hbui.FriendList.onlineFriendsNumberSingular=%1$s venn på nettet	#
@@ -1395,7 +1483,7 @@ hbui.FriendsDrawer.AddFriendsOnlineSafety.helpButton=Finn ut mer	#
 hbui.FriendsDrawer.AddFriendsOnlineSafety.text=Du kan ikke legge til venner på grunn av en kontoinnstillingsbegrensning. Administrer flerspillerinnstillingene dine via alternativet for personvern og nettsikkerhet i kontoinnstillingene.	#
 hbui.FriendsDrawer.AddFriendsOnlineSafety.textParental=Du kan ikke legge til venner på grunn av en begrensning i Sperrefunksjon. Sjekk og administrer flerspillerinnstillingene dine via alternativet for nettsikkerhet i Sperrefunksjon.	#
 hbui.FriendsDrawer.AddFriendsOnlineSafety.title=Du må ha tillatelse!	#
-hbui.FriendsDrawer.backButton=Bakover	#
+hbui.FriendsDrawer.backButton=Back	#
 hbui.FriendsDrawer.bannerLogInMicrosoft=Logg deg på eller registrer deg hos Microsoft	#
 hbui.FriendsDrawer.closeButtonNarrationHint=Naviger ned for flere alternativer	#
 hbui.FriendsDrawer.closeDrawerShortcutInputLegend=Nære venner	#
@@ -1407,9 +1495,9 @@ hbui.FriendsDrawer.exitShortcut=Trykk på %1$s for å åpne eller lukke venner	#
 hbui.FriendsDrawer.friendsDrawerName=Vennemenylinje	#
 hbui.FriendsDrawer.joinFriendServerErrorModal.blockedByVersion.message=Du kan ikke spille flerspillerspill på nettet, siden du ikke kjører den nyeste versjonen. Installer den nyeste versjonen for å få tilgang til internett-funksjoner.	#
 hbui.FriendsDrawer.joinFriendServerErrorModal.blockedByVersion.title=Ikke-kompatibel spillversjon	#
-hbui.FriendsDrawer.joinFriendServerErrorModal.cancel=Avbryt	#
+hbui.FriendsDrawer.joinFriendServerErrorModal.cancel=Cancel	#
 hbui.FriendsDrawer.joinFriendServerErrorModal.UnknownError.message=Ukjent feil	#
-hbui.FriendsDrawer.joinFriendServerErrorModal.UnknownError.title=Noe gikk galt	#
+hbui.FriendsDrawer.joinFriendServerErrorModal.UnknownError.title=Something went wrong	#
 hbui.FriendsDrawer.msaGuestNintendoBanner=Du trenger en Microsoft-konto for å spille flerspillerspill på tvers av plattformer.	#
 hbui.FriendsDrawer.msaGuestPlaystationBanner=Du trenger en Microsoft-konto for å spille flerspillerspill på tvers av plattformer.	#
 hbui.FriendsDrawer.msaGuestPremiumBanner=Du trenger en Microsoft-konto for å spille flerspillerspill på tvers av plattformer.	#
@@ -1454,7 +1542,15 @@ hbui.GenericErrorMessageModal.title=Noe gikk galt		#### Something went wrong whi
 hbui.GetMoreButton.buttonNarration=Knapp	#
 hbui.GetMoreButton.inputLegend=Oppdag	#
 hbui.GuidedCreateWorldRoute.title=Veiledet oppretting av verden	#
+hbui.HasMarketplacePassModal.body=Realms Plus inneholder Marketplace Pass-innhold. Vi anbefaler at du avslutter abonnementet på Marketplace Pass etter registreringen for Realms Plus.		#### {StrContains="Realms Plus"} {StrContains="Marketplace Pass"} {MaxLength="200"} content for a modal suggesting users to cancel their marketplace pass after purchasing a realms plus subscription
+hbui.HasMarketplacePassModal.goBack=Go Back		#### {MaxLength="10"} cancel button content for a modal suggesting users to cancel their marketplace pass after purchasing a realms plus subscription
+hbui.HasMarketplacePassModal.purchase=Purchase		#### {MaxLength="10"} confirm button content for a modal suggesting users to cancel their marketplace pass after purchasing a realms plus subscription
+hbui.HasMarketplacePassModal.select=Select		#### {MaxLength="10"} input legend when hovering over interactable UI elements for a modal suggesting users to cancel their marketplace pass after purchasing a realms plus subscription
+hbui.HasMarketplacePassModal.title=Subscription overlap		#### {MaxLength="30"} title of a modal suggesting users to cancel their marketplace pass after purchasing a realms plus subscription
+hbui.HasMarketplacePassModal.understand=I understand		#### {MaxLength="15"} checkbox caption inside a modal suggesting users to cancel their marketplace pass after purchasing a realms plus subscription
 hbui.HeroItem.role=Tekstblokk	#
+hbui.IdleScreenRoute.text=You've been away for a bit. Press any button to jump back into the game		#### A message that appears when the player is in game and away from keyboard {MaxLength=73}
+hbui.InboxContentItem.narration.createdBy=Av %1$s	#
 hbui.InboxContentItem.view=Vis	#
 hbui.InboxListItem.accept=Godta	#
 hbui.InboxListItem.delete=Slett	#
@@ -1464,7 +1560,7 @@ hbui.InboxListItem.narration.accept=Godta	#
 hbui.InboxListItem.narration.buttonSiblings=Knapp %1$s av %2$s	#
 hbui.InboxListItem.narration.componentRole=Liste	#
 hbui.InboxListItem.narration.delete=Slett	#
-hbui.InboxListItem.narration.invite=Inviter	#
+hbui.InboxListItem.narration.invite=Invite	#
 hbui.InboxListItem.narration.news=Nyheter	#
 hbui.InboxListItem.narration.postedBy=Lagt ut av %1$s	#
 hbui.InboxListItem.narration.readPost=Lest innlegg	#
@@ -1488,12 +1584,12 @@ hbui.InboxMessageDetailsRoute.gameInvite=Spillinvitasjon	#
 hbui.InboxMessageDetailsRoute.go=Start	#
 hbui.InboxMessageDetailsRoute.inbox=Innboks	#
 hbui.InboxMessageDetailsRoute.invitationNote0=Du ble invitert til å bli med i %1$s sin Realm. 	#### {StrContains="Realm"}
-hbui.InboxMessageDetailsRoute.invitationNote1=En Realm er en personlig server som er tilgjengelig for deg og vennene dine fra alle enheter med Minecraft Bedrock Edition 	#### {StrContains="Realm"}
-hbui.InboxMessageDetailsRoute.invitationNote2=En Realm er alltid online, selv når eieren ikke er det 	#### {StrContains="Realms"}
-hbui.InboxMessageDetailsRoute.invitationNote3=Spill sammen eller asynkront, og del opplevelsene dine med andre medlemmer av realmen i Realms-feeden 	#### {StrContains="Realms"}
-hbui.InboxMessageDetailsRoute.invitationNote4=Realms er en flerspilleropplevelse og krever de rette innstillingene på Microsoft-kontoen din: flerspiller og klubber. 	#### {StrContains="Realms"}
+hbui.InboxMessageDetailsRoute.invitationNote1=A Realm is a personal server accessible to you and your friends from any device with Minecraft Bedrock Edition 	#### {StrContains="Realm"}
+hbui.InboxMessageDetailsRoute.invitationNote2=Realms are always online even when the owner is not 	#### {StrContains="Realms"}
+hbui.InboxMessageDetailsRoute.invitationNote3=Play together or asynchronously and share your experiences with other members of the Realm in the Realms feed 	#### {StrContains="Realms"}
+hbui.InboxMessageDetailsRoute.invitationNote4=Realms is a multiplayer experience and requires the proper settings on your Microsoft account: multiplayer and Clubs. 	#### {StrContains="Realms"}
 hbui.InboxMessageDetailsRoute.invitationRejectedMessageDetails=Du kan be om en ny invitasjon hvis det ikke var meningen å avvise invitasjonen.	#
-hbui.InboxMessageDetailsRoute.join=Delta	#
+hbui.InboxMessageDetailsRoute.join=Bli med	#
 hbui.InboxMessageDetailsRoute.narration.accept=Godta	#
 hbui.InboxMessageDetailsRoute.narration.buttonSiblings=Knapp %1$s av %2$s	#
 hbui.InboxMessageDetailsRoute.narration.reject=Avslå	#
@@ -1515,9 +1611,9 @@ hbui.InboxRoute.details=Detaljer	#
 hbui.InboxRoute.emptyInvitesText=Invitasjonene dine dukker her opp når noen inviterer deg til et Realm.	#
 hbui.InboxRoute.emptyInvitesTitle=Ingen nye invitasjoner	#
 hbui.InboxRoute.emptyMarketplacePassLearn=Finn ut mer	#
-hbui.InboxRoute.emptyMarketplacePassSubscribePromptText=Marketplace Pass gir deg tilgang til over 150 unike innholdselementer, og utvalget oppdateres månedlig! 	#### {StrContains="Marketplace Pass"}
+hbui.InboxRoute.emptyMarketplacePassSubscribePromptText=Marketplace Pass gives you access to 150+ unique pieces of content updated monthly! 	#### {StrContains="Marketplace Pass"}
 hbui.InboxRoute.emptyMarketplacePassSubscribePromptTitle=Marketplace Pass-abonnement er tilgjengelig nå! 	#### {StrContains="Marketplace Pass"}
-hbui.InboxRoute.emptyMarketplacePassText=Her får du meldinger om Marketplace Pass-abonnementet ditt. 	#### {StrContains="Marketplace Pass"}
+hbui.InboxRoute.emptyMarketplacePassText=This is where you'll receive messages about your Marketplace Pass subscription. 	#### {StrContains="Marketplace Pass"}
 hbui.InboxRoute.emptyMarketplacePassTitle=Følg med og få med deg kommende innhold!	#
 hbui.InboxRoute.emptyMessageText=Kom tilbake senere for å se etter nye meldinger.	#
 hbui.InboxRoute.emptyMessageTitle=Ingen nye meldinger	#
@@ -1542,7 +1638,7 @@ hbui.InboxRoute.go=Start	#
 hbui.InboxRoute.header=Innboks	#
 hbui.InboxRoute.invites=Invitasjoner	#
 hbui.InboxRoute.join=Bli med i Realmen 	#### {StrContains="Realm"}
-hbui.InboxRoute.joinRealms=Bli med i en Realm for å spille! 	#### {StrContains="Realms"}
+hbui.InboxRoute.joinRealms=Join Realms to Play! 	#### {StrContains="Realms"}
 hbui.InboxRoute.learn=Finn ut mer	#
 hbui.InboxRoute.marketplacepass=Marketplace Pass 	#### {StrContains="Marketplace Pass"}
 hbui.InboxRoute.messagingServiceFailure=Kunne ikke koble til innboksen	#
@@ -1574,6 +1670,9 @@ hbui.InboxSettingsRoute.onlyShowFriends=Bare vis invitasjoner fra venner	#
 hbui.InboxSettingsRoute.showInvites=Aktiver invitasjonsvarslingsmerker	#
 hbui.InboxSettingsRoute.showMessages=Aktiver meldingsvarslingsmerker	#
 hbui.InboxSettingsRoute.title=Innboksinnstillinger	#
+hbui.InviteToPartyRoute.friendsTitle=Friends 	#### The header for a list of Player List Items containing the user's friends
+hbui.InviteToPartyRoute.inviteToPartyHeader=Invite to party 	#### Invite to party page title
+hbui.InviteToPartyRoute.recentlyPlayedWithTitle=Nylig spilt med 	#### The header for a list of Player List Items containing players the user has recently played with
 hbui.JoinRealmsServer.buttonEnumeration=%1$s av %2$s	#
 hbui.JoinRealmsServer.helpButtonLabel=Hjelp	#
 hbui.JoinRealmsServer.inputDescription=Oppgi invitasjonslenken du har mottatt, for å bli med i en Realm.	#
@@ -1608,10 +1707,10 @@ hbui.JoinRealmsServerError.realmExpired=Realmen du prøvde å bli med i, har utl
 hbui.JoinRealmsServerError.unexpectedServerResponse=Uventet feil. Prøv på nytt senere.	#
 hbui.JoinRealmsServerError.unknown.errorCode=Feilkode: %1$s	#
 hbui.JoinRealmsServerError.unknown.message=Prøv på nytt senere.	#
-hbui.JoinRealmsServerError.unknown.title=Noe gikk galt	#
+hbui.JoinRealmsServerError.unknown.title=Something went wrong	#
 hbui.JoinRealmsServerError.unknownError=Uventet feil	#
 hbui.JoinRealmsServerErrorModal.closeButtonLabel=Lukk	#
-hbui.JoinRealmsServerErrorModal.title=Noe gikk galt	#
+hbui.JoinRealmsServerErrorModal.title=Something went wrong	#
 hbui.JoinRealmsServerInvitationsButton.hasInvitesBody=Sjekk innboksen for å godta den	#
 hbui.JoinRealmsServerInvitationsButton.hasInvitesTitle=Du har fått en invitasjon!	#
 hbui.JoinRealmsServerInvitationsButton.inputLegend=Vis innboks	#
@@ -1628,15 +1727,11 @@ hbui.JoinRealmsServerTransient.joinRealmModal=Blir med i realmen	#
 hbui.JoinRealmsServerTransient.ownerInformation=Du er i ferd med å bli med i %1$s sin Realm    	#### The player is about to become a member of another players Realm. {StrContains="Realm"} {MaxLength="100"}
 hbui.JoinRealmsServerTransient.successSnackbar=Du har blitt med i «%1$s»!	#
 hbui.JoinRealmsServerTransient.title=Bli med %1$s    	#### Join as in "Join Realm". Becoming a member of a Realm. {MaxLength="20"}
-hbui.JoinServerWarningModal.cancel=Avbryt	#
-hbui.JoinServerWarningModal.continue=Fortsett	#
-hbui.JoinServerWarningModal.text=Du er verten, flerspillerøkten avsluttes også hvis du forlater denne verdenen.	#
-hbui.JoinServerWarningModal.title=Avslutte flerspillerøkt?	#
-hbui.JoinWorldBlockedModal.cancel=Gå tilbake	#
-hbui.JoinWorldBlockedModal.confirmation=Lagre og bli med venn	#
-hbui.JoinWorldBlockedModal.message_p1=Du forlater den nåværende verdenen din hvis du blir med en venn.	#
-hbui.JoinWorldBlockedModal.message_p2=Ikke bekymre deg, alt er her når du kommer tilbake.	#
-hbui.JoinWorldBlockedModal.title=Vil du forlate den nåværende verden?	#
+hbui.LeaveWorldThenJoinModal.cancel=Go back 	####  Text of button to cancel joining another game, staying in your current game. {MaxLength="50"}
+hbui.LeaveWorldThenJoinModal.confirmation=Save and join friend 	####  Text of button to accept joining another game and leave your current game. {MaxLength="50"}
+hbui.LeaveWorldThenJoinModal.message_p1=Joining a friend means leaving your current world.  	####  Text of modal warning that joining another game will leave your current game. {MaxLength="340"}
+hbui.LeaveWorldThenJoinModal.message_p2=Don't worry, it will all be here when you get back.  	####  Text of modal warning that joining another game will leave your current game. {MaxLength="340"}
+hbui.LeaveWorldThenJoinModal.title=Leave current world? 	####  Title of modal warning that joining another game will leave your current game. {MaxLength="40"}
 hbui.ManageShowcaseErrorModal.close=Lukk	#
 hbui.ManageShowcaseErrorModal.text=Vi fikk et problem med å lagre endringene i fremvisningsgalleriet ditt.	#
 hbui.ManageShowcaseErrorModal.title=Noe gikk galt	#
@@ -1676,6 +1771,26 @@ hbui.MultiplayerPrivilegeBlockedModal.title=Du må ha tillatelse!	#
 hbui.MultiplayerTab.PlayerAccessPanel.manageMembersButton=Administrer medlemmer    	#### String for button that takes a realm owner to the settings page for managing the members of their Realm
 hbui.MultiplayerTab.PlayerAccessPanel.manageMembersLegend=Administrer medlemmer    	#### String for button that takes a realm owner to the settings page for managing the members of their Realm
 hbui.MultiplayerTab.PlayerAccessPanel.title=Spillertilgang   	#### Heading for settings section that displays settings for what type of player can join/access the Realm
+hbui.NewPlayerPathRoute.CharacterSelector.chooseCharacter=Choose Character 	#### Title heading for the whole screen, shown a top. {MaxLength="50"}
+hbui.NewPlayerPathRoute.CharacterSelector.controlChangeDoesNotAffectGamePlay=Character choice does not affect gameplay 	#### Disclaimer under the selectable character thumbnails {MaxLength="50"}
+hbui.NewPlayerPathRoute.CharacterSelector.next=Next 	#### button to go to the game mode screen {MaxLength="20"}
+hbui.NewPlayerPathRoute.Difficulty.createInputLegend=Create 	#### Input legend that shows when selecting each difficulty card. Means that the action is create a world with the selected difficulty {MaxLength="20"}
+hbui.NewPlayerPathRoute.Difficulty.easyDescription=Hostile mobs spawn but deal less damage. 	#### Description for the Easy difficulty choice {MaxLength="50"}
+hbui.NewPlayerPathRoute.Difficulty.easyTitle=Easy  	#### Title for the Easy difficulty choice {MaxLength="20"}
+hbui.NewPlayerPathRoute.Difficulty.hardDescription=Hostile mobs spawn and deal more damage. 	#### Description for the Hard difficulty choice {MaxLength="50"}
+hbui.NewPlayerPathRoute.Difficulty.hardTitle=Hard 	#### Title for the Hard difficulty choice {MaxLength="20"}
+hbui.NewPlayerPathRoute.Difficulty.normalDescription=Hostile mobs spawn and deal standard damage. 	#### Description for the Normal difficulty choice {MaxLength="50"}
+hbui.NewPlayerPathRoute.Difficulty.normalTitle=Normal 	#### Title for the Normal difficulty choice {MaxLength="20"}
+hbui.NewPlayerPathRoute.Difficulty.peacefulDescription=No hostile mobs and only some neutral mobs spawn. 	#### Description for the Peaceful difficulty choice {MaxLength="50"}
+hbui.NewPlayerPathRoute.Difficulty.peacefulTitle=Peaceful 	#### Title for the Peaceful difficulty choice {MaxLength="20"}
+hbui.NewPlayerPathRoute.Difficulty.title=Survival Difficulty 	#### Title survival difficulty screen. Shown as the top header {MaxLength="30"}
+hbui.NewPlayerPathRoute.Mode.creativeDescription=Build and explore without limits. You can fly, have endless materials, and can't be hurt by monsters. 	#### Description for the creative mode choice {MaxLength="105"}
+hbui.NewPlayerPathRoute.Mode.creativeInputLegend=Play 	#### Input legend for when having the creative card focused {MaxLength="20"}
+hbui.NewPlayerPathRoute.Mode.creativeTitle=Creative 	#### Title for the creative game mode card {MaxLength="20"}
+hbui.NewPlayerPathRoute.Mode.survivalDescription=Explore a mysterious world where you build, collect, craft, and fight monsters. 	#### Survival card description on the Game Mode screen {MaxLength="105"}
+hbui.NewPlayerPathRoute.Mode.survivalInputLegend=Select 	#### Input legend for when having the survival game mode card focused {MaxLength="20"}
+hbui.NewPlayerPathRoute.Mode.survivalTitle=Survival 	#### Title for the survival game mode card {MaxLength="30"}
+hbui.NewPlayerPathRoute.Mode.title=Game Mode 	#### Title for the game mode screen. Shown atop. {MaxLength="30"}
 hbui.NoInternetModal.button=Lukk 	#### Close as in closing a modal. {MaxLength="50"}
 hbui.NoInternetModal.text=Du er frakoblet. Kontroller internett-tilkoblingen for å få tilgang til nettfunksjoner.		####  Player is not connected to the internet, he is offline. {MaxLength="340"}
 hbui.NoInternetModal.title=Ingen tilkobling til internett		####  Player is not connected to the internet. {MaxLength="40"}
@@ -1757,6 +1872,7 @@ hbui.PacksLoadingModal.title=Laster ned …	#
 hbui.PackTabs.activeTabButtonLabel=Aktiv	#
 hbui.PackTabs.availableTabButtonLabel=Tilgjengelig	#
 hbui.PackTabs.narration.tab=%1$s, fane %2$s av %3$s	#
+hbui.PartyInviteListGroup.titleWithLength=%1$s (%2$s) 	#### the title of a list followed by the number of items in the list. The number is in brackets.
 hbui.PlayerAvatarsOnlineInWorld.full=Full	#
 hbui.PlayerBannedModalRoute.body=Du har blitt %1$s fra å spille flerspiller i Minecraft på grunn av «%2$s». Du vil ikke kunne spille på servere, bli med i Realms, være vert, bli med i flerspillerspill eller bruke markedsplassen.	#
 hbui.PlayerBannedModalRoute.body.day=Du har 1 dag igjen av utestengingen.	#
@@ -1827,7 +1943,7 @@ hbui.PlayerCard.optionsButton=Flere alternativer	#
 hbui.PlayerCard.setFeaturedScreenshot=Angi skjermbilde	#
 hbui.PlayerListItem.accept=Godta	#
 hbui.PlayerListItem.addButtonInputLegend=Legg til venn	#
-hbui.PlayerListItem.addButtonText=Legg til	#
+hbui.PlayerListItem.addButtonText=Add	#
 hbui.PlayerListItem.added=Lagt til	#
 hbui.PlayerListItem.away=Borte	#
 hbui.PlayerListItem.buttonSiblings=Knapp %1$s av %2$s	#
@@ -1849,9 +1965,9 @@ hbui.PlayerListItem.narration.receivedRequest=Denne spilleren sendte deg en fore
 hbui.PlayerListItem.narration.sentRequest=Du sendte en forespørsel til denne spilleren	#
 hbui.PlayerListItem.offline=Frakoblet	#
 hbui.PlayerListItem.online=Pålogget	#
-hbui.PlayerListItem.online.playstation=Online på PSN™		#### CertRequirement: [PSN™]
+hbui.PlayerListItem.online.playstation=Online på PSN™		#### CertRequirement:{PS4}[PSN™] CertRequirement:{PS5}[PSN™]{MaxLength=3000}
 hbui.PlayerListItem.online.switch=Online på Switch	#
-hbui.PlayerListItem.pending=Ventende	#
+hbui.PlayerListItem.pending=Venter	#
 hbui.PlayerListItem.playingInSameWorld=Spiller i denne verdenen		####Used as player status when players are in the same world {MaxLength=30}
 hbui.PlayerListItem.receivedRequest=Sendte deg en forespørsel	#
 hbui.PlayerListItem.reject=Avslå	#
@@ -1880,7 +1996,7 @@ hbui.PlayerPermissionsRoute.Details.ability.build=Bygg	#
 hbui.PlayerPermissionsRoute.Details.ability.description.attackMobs=Delta i kamp med spiller mot omgivelser	#
 hbui.PlayerPermissionsRoute.Details.ability.description.attackPlayers=Delta i kamp med spiller mot spiller	#
 hbui.PlayerPermissionsRoute.Details.ability.description.build=Plasser blokker i verdenen	#
-hbui.PlayerPermissionsRoute.Details.ability.description.doorsAndSwitches=Aktiver de fleste brukbare gjenstander i verdenen 	####Description for doors and switches toggle {MaxLength=400}
+hbui.PlayerPermissionsRoute.Details.ability.description.doorsAndSwitches=Aktiver mest brukbare gjenstander i verdenen 	####Description for doors and switches toggle {MaxLength=400}
 hbui.PlayerPermissionsRoute.Details.ability.description.mine=Ødelegg verdenselementer og samle blokker	#
 hbui.PlayerPermissionsRoute.Details.ability.description.openContainers=Se, legg til i og ta fra kister	#
 hbui.PlayerPermissionsRoute.Details.ability.description.operatorCommands=Få tilgang til avanserte serveralternativer	#
@@ -1996,7 +2112,7 @@ hbui.PlayScreen.friendsDrawerShortcut=Trykk på %1$s for å åpne eller lukke ve
 hbui.PlayScreen.genericError.realmDetails.description=Noe gikk galt. Prøv på nytt senere.	#
 hbui.PlayScreen.genericError.realmDetails.title=Kan ikke laste inn realm	#
 hbui.PlayScreen.genericError.realms.description=Noe gikk galt. Prøv på nytt senere.	#
-hbui.PlayScreen.genericError.realms.title=Kan ikke laste inn Realms 	#### {StrContains="Realms"}
+hbui.PlayScreen.genericError.realms.title=Realms couldn't load 	#### {StrContains="Realms"}
 hbui.PlayScreen.genericError.servers.description=Noe gikk galt. Prøv på nytt senere.	#
 hbui.PlayScreen.genericError.servers.title=Serverne kunne ikke lastes inn	#
 hbui.PlayScreen.guestAccountMessage.bannerLogIn=Logg inn	#
@@ -2004,16 +2120,16 @@ hbui.PlayScreen.guestAccountMessage.bannerLogInMicrosoft=Logg deg på eller regi
 hbui.PlayScreen.guestAccountMessage.buttonLogInMicrosoft=Logg deg på en Microsoft-konto	#
 hbui.PlayScreen.GuestAccountMessage.nintendo.button=Logg på en Nintendo Account 	#### Button that is shown in an empty state when the PlayScreen when the player is not logged into a NintendoAccount. {StrContains="Nintendo Account"} {MaxLength="50"}
 hbui.PlayScreen.GuestAccountMessage.nintendo.text=Logg på en Nintendo Account for å se hva som finnes her. 	####  Text that is shown in an empty state when the PlayScreen when the player is not logged into a NintendoAccount. {StrContains="Nintendo Account"} {MaxLength="150"}
-hbui.PlayScreen.GuestAccountMessage.playstation.button=Logg på PlayStation™Network		#### Button that is shown in an empty state when the PlayScreen when the player is not logged into the Playstation network. CertRequirement: [PlayStation™Network] {MaxLength="50"}
-hbui.PlayScreen.GuestAccountMessage.playstation.text=Logg på PlayStation™Network for å se hva som finnes her.		#### Text that is shown in an empty state when the PlayScreen when the player is not logged into the Playstation network. CertRequirement: [PlayStation™Network] {MaxLength="150"}
+hbui.PlayScreen.GuestAccountMessage.playstation.button=Logg på PlayStation™Network		#### Button that is shown in an empty state when the PlayScreen when the player is not logged into the Playstation network. CertRequirement:{PS4}[PlayStation™Network] CertRequirement:{PS5}[PlayStation™Network] {MaxLength="50"}
+hbui.PlayScreen.GuestAccountMessage.playstation.text=Logg på PlayStation™Network for å se hva som finnes her.		#### Text that is shown in an empty state when the PlayScreen when the player is not logged into the Playstation network. CertRequirement:{PS4}[PlayStation™Network] CertRequirement:{PS5}[PlayStation™Network] {MaxLength="150"}
 hbui.PlayScreen.guestAccountMessage.realmsNoMicrosoftAccount=Du trenger en Microsoft-konto for å spille på Realms. 	#### {StrContains="Realms"}
 hbui.PlayScreen.guestAccountMessage.realmsNoPlatformAccountNintendo=Du trenger en Nintendo-konto for å spille på Realms 	#### {StrContains="Realms"}
-hbui.PlayScreen.guestAccountMessage.realmsNoPlatformAccountPlaystation=Du trenger en PlayStation™Network-konto for å spille på Realms 	#### CertRequirement: [PlayStation™Network] {StrContains="Realms"}
+hbui.PlayScreen.guestAccountMessage.realmsNoPlatformAccountPlaystation=Du trenger en PlayStation™Network-konto for å spille på Realms 	#### CertRequirement:{PS4}[PlayStation™Network] CertRequirement:{PS5}[PlayStation™Network] {StrContains="Realms"} {MaxLength=3000}
 hbui.PlayScreen.guestAccountMessage.realmsPlaystationGuest=Du trenger en Microsoft-konto for å spille på Realms. 	#### {StrContains="Realms"}
 hbui.PlayScreen.guestAccountMessage.serversNintendoGuest=Du trenger en Microsoft-konto for å spille på servere.	#
 hbui.PlayScreen.guestAccountMessage.serversNoMicrosoftAccount=Du trenger en Microsoft-konto for å spille på servere.	#
 hbui.PlayScreen.guestAccountMessage.serversNoPlatformAccountNintendo=Du trenger en Nintendo-konto for å spille på servere	#
-hbui.PlayScreen.guestAccountMessage.serversNoPlatformAccountPlaystation=Du trenger en PlayStation™Network-konto for å spille på servere 	#### CertRequirement: [PlayStation™Network]
+hbui.PlayScreen.guestAccountMessage.serversNoPlatformAccountPlaystation=Du trenger en PlayStation™Network-konto for å spille på servere 	#### CertRequirement:{PS4}[PlayStation™Network] CertRequirement:{PS5}[PlayStation™Network] {MaxLength=3000}
 hbui.PlayScreen.guestAccountMessage.serversPlaystationGuest=Du trenger en Microsoft-konto for å spille på servere.	#
 hbui.PlayScreen.importWorldErrorModal.close=Lukk	#
 hbui.PlayScreen.importWorldErrorModal.unknownError.body=Det oppstod et problem under forsøket på å importere denne verdenen.	#
@@ -2063,7 +2179,7 @@ hbui.PlayScreen.noPremiumSubscriptionMessage.realmsXbox=Du trenger et premium-ab
 hbui.PlayScreen.noPremiumSubscriptionMessage.serversNintendo=Du trenger et Nintendo Switch Online-medlemskap for å spille på servere.	#
 hbui.PlayScreen.noPremiumSubscriptionMessage.serversPlaystation=Nettfunksjoner er ikke tilgjengelige.	#
 hbui.PlayScreen.noPremiumSubscriptionMessage.serversXbox=Du trenger et premium-abonnement for å spille på servere	#
-hbui.PlayScreen.onlinePlayWarning.back=Tilbake	#
+hbui.PlayScreen.onlinePlayWarning.back=Back	#
 hbui.PlayScreen.onlinePlayWarning.external.body=Når du spiller på nett, kan du bli utsatt for chatmeldinger eller andre typer brukergenerert innhold som ikke er vurdert, og som kanskje ikke er egnet for alle aldre.	#
 hbui.PlayScreen.onlinePlayWarning.external.header=Spilling på nett har ingen aldersgrense	#
 hbui.PlayScreen.onlinePlayWarning.multiplayerGeneric.body=Når du spiller på nett, kan du bli utsatt for chatmeldinger eller andre typer brukergenerert innhold som ikke er vurdert, og som kanskje ikke er egnet for alle aldre.	#
@@ -2072,7 +2188,7 @@ hbui.PlayScreen.onlinePlayWarning.proceed=Fortsett	#
 hbui.PlayScreen.onlinePlayWarning.thirdParty.body=Advarsel: Online-spilling tilbys av tredjepartsservere som ikke eies, drives eller overvåkes av Mojang Studios eller Microsoft. Under nettspill kan du bli utsatt for umodererte chatmeldinger eller andre typer brukergenerert innhold som kanskje ikke passer for alle.	#
 hbui.PlayScreen.onlinePlayWarning.thirdParty.header=Varsel: tredjeparts spill på nett	#
 hbui.PlayScreen.onlinePlayWarning.title=Spill	#
-hbui.PlayScreen.optOutButton=Bruk eldre grensesnitt	#### {MaxLength="30"}
+hbui.PlayScreen.optOutButton=Go back to old UI    	#### {MaxLength="30"}
 hbui.PlayScreen.outdatedOrRetailWorldsBanner.link=Gå til innstillinger	#
 hbui.PlayScreen.outdatedOrRetailWorldsBanner.preview.text=Verdener fra den endelige versjonen av Minecraft finner du i innstillingene.	#
 hbui.PlayScreen.outdatedOrRetailWorldsBanner.previewPS5.text=Verdener fra tidligere versjoner og den endelige versjonen av Minecraft finner du i innstillingene.	#
@@ -2082,7 +2198,7 @@ hbui.PlayScreen.outOfStorageModal.close=Lukk	#
 hbui.PlayScreen.outOfStorageModal.closeInputLegend=Lukk	#
 hbui.PlayScreen.outOfStorageModal.title=Tom for lagringsplass	#
 hbui.PlayScreen.PlatformMultiplayerDisabledMessage.text=Få tilgang til disse og andre sosiale funksjoner ved å aktivere flerspiller på kontoen din.	#
-hbui.PlayScreen.PlatformMultiplayerDisabledMessage.textForPlayStation=Kommunikasjonsfunksjoner er deaktivert på kontoen din for PlayStation™Network. Få tilgang til kommunikasjonsfunksjoner ved å aktivere det på kontoen din for PlayStation™Network.		#### This is a communication requirement for PS. CertRequirement: [PlayStation™Network] {MaxLength=300}
+hbui.PlayScreen.PlatformMultiplayerDisabledMessage.textForPlayStation=Kommunikasjonsfunksjoner er deaktivert på kontoen din for PlayStation™Network. Få tilgang til kommunikasjonsfunksjoner ved å aktivere det på kontoen din for PlayStation™Network.		#### This is a communication requirement for PS. CertRequirement:{PS4}[PlayStation™Network] CertRequirement:{PS5}[PlayStation™Network] {MaxLength=300}
 hbui.PlayScreen.PlatformMultiplayerDisabledMessage.title=Du skal ikke passere	#
 hbui.PlayScreen.realms=Realms 	#### {StrContains="Realms"}
 hbui.PlayScreen.RealmsBannedMessage.Banned.bodyFirstParagraph=Du har blitt utestengt fra Minecrafts Realms-tjenester. Dette betyr at du ikke kan spille eller bli med i realmer.		#### {StrContains="Minecraft"} {StrContains="Realms"}
@@ -2130,8 +2246,8 @@ hbui.PlayScreen.realmsTab.realmOptionsModalMenu.title=Alternativer	#
 hbui.PlayScreen.realmsTab.realmsDescription=Realms-beskrivelse		#### {StrContains="Realms"}
 hbui.PlayScreen.realmsTab.realmsLeaveRealmErrorModal.closeAction=Lukk	#
 hbui.PlayScreen.realmsTab.realmsLeaveRealmErrorModal.description=Kunne ikke forlate realmen. Prøv på nytt senere.	#
-hbui.PlayScreen.realmsTab.realmsLeaveRealmErrorModal.title=Noe gikk galt	#
-hbui.PlayScreen.realmsTab.realmsLeaveRealmModal.cancelAction=Avbryt	#
+hbui.PlayScreen.realmsTab.realmsLeaveRealmErrorModal.title=Something went wrong	#
+hbui.PlayScreen.realmsTab.realmsLeaveRealmModal.cancelAction=Cancel	#
 hbui.PlayScreen.realmsTab.realmsLeaveRealmModal.description=Du er i ferd med å forlate «%1$s». Hvis du vil bli med på nytt, kan du bruke invitasjonskoden til realmen eller be eieren om å sende deg en ny invitasjon.	#
 hbui.PlayScreen.realmsTab.realmsLeaveRealmModal.leaveRealmAction=Forlat realm	#
 hbui.PlayScreen.realmsTab.realmsLeaveRealmModal.title=Forlat realmen	#
@@ -2160,7 +2276,7 @@ hbui.PlayScreen.realmsTab.sideMenu.externalServer=Annen server (%1$s)	#
 hbui.PlayScreen.realmsTab.sideMenu.full=Full	#
 hbui.PlayScreen.realmsTab.sideMenu.inputLegend=Åpne	#
 hbui.PlayScreen.realmsTab.sideMenu.invitations=Invitasjoner	#
-hbui.PlayScreen.realmsTab.sideMenu.joinedRealms=Realms blitt med i (%1$s) 	#### {StrContains="Realms"}
+hbui.PlayScreen.realmsTab.sideMenu.joinedRealms=Joined Realms (%1$s) 	#### {StrContains="Realms"}
 hbui.PlayScreen.realmsTab.sideMenu.joinRealm=Bli med i realm	#
 hbui.PlayScreen.realmsTab.sideMenu.narration.addOrJoinRealm=Legg til / bli med i realm	#
 hbui.PlayScreen.realmsTab.sideMenu.narration.buttonSiblings=%1$s av %2$s	#
@@ -2199,8 +2315,13 @@ hbui.PlayScreen.serverTab.externalServer=Annen server (%1$s)	#
 hbui.PlayScreen.serverTab.externalServerDetails.address=Serveradresse	#
 hbui.PlayScreen.serverTab.externalServerDetails.editBtnHint=Rediger navnet, adressen eller porten for den tilpassede serveren	#
 hbui.PlayScreen.serverTab.externalServerDetails.editButton=Rediger server	#
+hbui.PlayScreen.serverTab.externalServerDetails.hideButton=Hide     	#### Button that appears next to the ip filed in the external server details {MaxLength=30}
+hbui.PlayScreen.serverTab.externalServerDetails.hideButtonHint=Hide server address    	#### Hint for button that appears next to the ip filed in the external server details {MaxLength=30}
 hbui.PlayScreen.serverTab.externalServerDetails.name=Servernavn	#
+hbui.PlayScreen.serverTab.externalServerDetails.placeholder=XX.XXX.XXX.XXX    	#### Placeholder that appears if the address is hidden {MaxLength=30}
 hbui.PlayScreen.serverTab.externalServerDetails.port=Serverport	#
+hbui.PlayScreen.serverTab.externalServerDetails.showButton=Show     	#### Button that appears next to the ip filed in the external server details {MaxLength=30}
+hbui.PlayScreen.serverTab.externalServerDetails.showButtonHint=Show server address    	#### Hint for button that appears next to the ip filed in the external server details {MaxLength=30}
 hbui.PlayScreen.serverTab.featuredServer=Utvalgt (%1$s)	#
 hbui.PlayScreen.serverTab.joinServerErrorModal.cancel=Lukk	#
 hbui.PlayScreen.serverTab.joinServerErrorModal.NoInternetError.message=Du er ikke tilkoblet internett akkurat nå. Koble til på nytt for å spille på servere.	#
@@ -2208,7 +2329,7 @@ hbui.PlayScreen.serverTab.joinServerErrorModal.NoInternetError.title=Ingen tilko
 hbui.PlayScreen.serverTab.joinServerErrorModal.ThirdPartyBadIPError.message=Serveradressen er ikke riktig formatert. Kontroller at du skriver den inn riktig, og prøv på nytt.	#
 hbui.PlayScreen.serverTab.joinServerErrorModal.ThirdPartyBadIPError.title=Feil serveradresse	#
 hbui.PlayScreen.serverTab.joinServerErrorModal.UnknownError.message=Prøv på nytt senere.	#
-hbui.PlayScreen.serverTab.joinServerErrorModal.UnknownError.title=Noe gikk galt	#
+hbui.PlayScreen.serverTab.joinServerErrorModal.UnknownError.title=Something went wrong	#
 hbui.PlayScreen.serverTab.narration.context=Liste over servere	#
 hbui.PlayScreen.serverTab.narrationRoleGroup=Gruppe	#
 hbui.PlayScreen.serverTab.narrationRoleMenu=Åpne	#
@@ -2253,6 +2374,11 @@ hbui.PlayScreen.serverTab.serverForm.serverPortInvalidValue=Angitt verdi er tom 
 hbui.PlayScreen.serverTab.serverForm.serverPortLabel=Port	#
 hbui.PlayScreen.serverTab.serverForm.serverPortNotWithinRange=Den angitte verdien er for høy. Portnummeret tilbakestilles til den største verdien %1$s.	#
 hbui.PlayScreen.serverTab.ServerNotifications.highPingWarning=Tilkoblingen til den valgte serveren er dårlig. Dette kan påvirke spillopplevelsen.	#
+hbui.PlayScreen.serverTab.ShowServerAddressModal.firstParagraph=Warning: This will reveal your server address to anyone currently viewing your screen (including via streaming). If your server address is the same as your IP address, revealing it could leave you vulnerable to cyber attack.    	#### Message of modal that appears to confirm that user wants to show server address {MaxLength=500}
+hbui.PlayScreen.serverTab.ShowServerAddressModal.primaryButton=Show server address    	#### Primary button text of modal that appears to confirm that user wants to show server address {MaxLength=40}
+hbui.PlayScreen.serverTab.ShowServerAddressModal.secondaryButton=Go back    	#### Secondary button text of modal that appears to confirm that user wants to show server address {MaxLength=40}
+hbui.PlayScreen.serverTab.ShowServerAddressModal.secondParagraph=Are you sure you want to show your server address?    	#### Message of modal that appears to confirm that user wants to show server address {MaxLength=200}
+hbui.PlayScreen.serverTab.ShowServerAddressModal.title=Revealing private data    	#### Title of modal that appears to confirm that user wants to show server address {MaxLength=60}
 hbui.PlayScreen.serverTab.sideMenuInputLegend=Åpne	#
 hbui.PlayScreen.serverTab.unsavedAddChanges.discardChangesButton=Gå tilbake uten å lagre	#
 hbui.PlayScreen.serverTab.unsavedAddChanges.discardChangesButtonInputLegend=Gå tilbake	#
@@ -2264,7 +2390,7 @@ hbui.PlayScreen.serverTab.unsavedChanges.discardChangesButton=Forkast endringer	
 hbui.PlayScreen.serverTab.unsavedChanges.discardChangesButtonInputLegend=Forkast	#
 hbui.PlayScreen.serverTab.unsavedChanges.message=Du har endringer som ikke er lagret. Sørg for å lagre eller forkaste endringene.	#
 hbui.PlayScreen.serverTab.unsavedChanges.saveChangesButton=Lagre endringer	#
-hbui.PlayScreen.serverTab.unsavedChanges.saveChangesButtonInputLegend=Lagre	#
+hbui.PlayScreen.serverTab.unsavedChanges.saveChangesButtonInputLegend=Save	#
 hbui.PlayScreen.serverTab.unsavedChanges.title=Vil du lagre endringene?	#
 hbui.PlayScreen.startLocalWorldModal.title=Laster inn verden …	#
 hbui.PlayScreen.storageBanner.alternativeStorageWorldsHiddenText=Noen verdener kan være skjult fordi de er lagret på et eksternt lagringsmedium.	#
@@ -2284,8 +2410,8 @@ hbui.PlayScreen.templateScreenNotAvailableInPreview.text=Lag basert på mal er b
 hbui.PlayScreen.templateScreenNotAvailableInPreview.title=Ikke tilgjengelig	#
 hbui.PlayScreen.title=Spill	#
 hbui.PlayScreen.underConstructionMessage=Vi jobber fortsatt med denne funksjonen. Kom tilbake snart!	#
-hbui.PlayScreen.underConstructionMessageRealmsAvailable=Det ser ut til at du har et abonnement på Realms! Vi jobber fortsatt med å få Realms til det nye menydesignet – bruk det gamle brukergrensesnittet inntil videre. 	#### {StrContains="Realms"}
-hbui.PlayScreen.underConstructionMessageRealmsUnavailable=Realms er tilgjengelig i det gamle brukergrensesnittet. Vi jobber fortsatt med å få det til det nye menydesignet – bruk det gamle brukergrensesnittet inntil videre. 	#### {StrContains="Realms"}
+hbui.PlayScreen.underConstructionMessageRealmsAvailable=Looks like you've got a Realms subscription! We're still working on bringing Realms to the new menu design — please use the old UI for now. 	#### {StrContains="Realms"}
+hbui.PlayScreen.underConstructionMessageRealmsUnavailable=Realms is available in the old UI. We're still working on bringing it to the new menu design — please use the old UI for now. 	#### {StrContains="Realms"}
 hbui.PlayScreen.underConstructionTitle=Under konstruksjon	#
 hbui.PlayScreen.unexpectedLaunchErrorModal.body=Kunne ikke laste inn denne verdenen.	#
 hbui.PlayScreen.unexpectedLaunchErrorModal.body2=Feilkode: %1$s	#
@@ -2294,7 +2420,7 @@ hbui.PlayScreen.unexpectedLaunchErrorModal.title=Noe gikk galt	#
 hbui.PlayScreen.unknownErrorModal.action=Lukk	#
 hbui.PlayScreen.unknownErrorModal.body=Prøv på nytt senere.	#
 hbui.PlayScreen.unknownErrorModal.errorCode=Feilkode: %1$s	#
-hbui.PlayScreen.unknownErrorModal.title=Noe gikk galt	#
+hbui.PlayScreen.unknownErrorModal.title=Something went wrong	#
 hbui.PlayScreen.unownedPacksModal.body=Denne verdenen bruker innhold som du ikke har tilgang til. Dette innholdet kan deaktiveres i verdensinnstillingene eller kjøpes på markedsplassen.	#
 hbui.PlayScreen.unownedPacksModal.confirm=Vis på markedsplassen	#
 hbui.PlayScreen.unownedPacksModal.decline=Gå tilbake	#
@@ -2332,11 +2458,11 @@ hbui.PrivacyAndOnlineSafetyModal.fromOnlineSafety=Fra nettsikkerhet:	#
 hbui.PrivacyAndOnlineSafetyModal.header=Au da! Du trenger tillatelser først	#
 hbui.PrivacyAndOnlineSafetyModal.linkButtonHint=Dette tar deg til en nettside som vil bidra til å løse problemet	#
 hbui.PrivacyAndOnlineSafetyModal.qrCodeHint=Dette er en QR-kode som tar deg til en ekstern kobling for å endre tillatelser	#
-hbui.PrivacyAndOnlineSafetyModal.toAccessRealms=For å få tilgang til Realms må du angi: 	#### {StrContains="Realms"}
-hbui.PrivacyAndOnlineSafetyModal.toAccessRealmsStories=For å få tilgang til Realms Stories må du angi: 	#### {StrContains="Realms Stories"}
+hbui.PrivacyAndOnlineSafetyModal.toAccessRealms=To access Realms, set: 	#### {StrContains="Realms"}
+hbui.PrivacyAndOnlineSafetyModal.toAccessRealmsStories=To access Realms Stories, set: 	#### {StrContains="Realms Stories"}
 hbui.PrivacyAndOnlineSafetyModal.tryAgain=Prøv på nytt	#
 hbui.PrivacyAndOnlineSafetySuccessModal.buttonAction=Kom i gang	#
-hbui.PrivacyAndOnlineSafetySuccessModal.content=Alle tillatelsene dine har blitt aktivert! Du har nå tilgang til både Realms og Realms Stories. 	#### {StrContains="Realms"} {StrContains="Realms Stories"}
+hbui.PrivacyAndOnlineSafetySuccessModal.content=All your permissions have been successfully enabled! Now you can have access to both Realms and Realms Stories. 	#### {StrContains="Realms"} {StrContains="Realms Stories"}
 hbui.PrivacyAndOnlineSafetySuccessModal.header=Tillatelser er aktivert!	#
 hbui.ProfanityWarningModalRoute.body=Teksten du har skrevet, inneholder ord som andre kan finne støtende, og kan derfor ikke brukes. Prøv på nytt.	#
 hbui.ProfanityWarningModalRoute.close=Lukk	#
@@ -2381,7 +2507,7 @@ hbui.ProfileRoute.noInternetErrorMessage=Du er ikke tilkoblet internett akkurat 
 hbui.ProfileRoute.notLoggedInMSAErrorMessage=Logg deg på en Microsoft-konto for å se spillerprofiler.	#
 hbui.ProfileRoute.overviewTabButtonLabel=Oversikt	#
 hbui.ProfileRoute.platformOnlyProfileErrorMessage=Spillerprofiler krever en Microsoft-konto.	#
-hbui.ProfileRoute.playStationAccount=PlayStation™Network		#### CertRequirement: [PlayStation™Network]
+hbui.ProfileRoute.playStationAccount=PlayStation™Network		#### CertRequirement:{PS4}[PlayStation™Network] CertRequirement:{PS5}[PlayStation™Network] {MaxLength=3000}
 hbui.ProfileRoute.profileUnavailableErrorTitle=Profilen er utilgjengelig	#
 hbui.ProfileRoute.replaceFeaturedMessage=Vil du erstatte det valgte skjermbildet med dette nye?	#
 hbui.ProfileRoute.replaceFeaturedTitle=Bekreftelse av valg	#
@@ -2398,28 +2524,10 @@ hbui.ProfileRoute.signInButton=Logg deg på med Microsoft	#
 hbui.ProfileRoute.statsTabButtonLabel=Statistikk	#
 hbui.ProfileRoute.suggestedAchievementsListLabel=Foreslåtte prestasjoner	#
 hbui.ProfileRoute.tabNarration=%1$s, fane %2$s av %3$s	#
-hbui.ProgressSpinnerModal.title=Laster inn	#
+hbui.ProgressSpinnerModal.title=Loading	#
 hbui.PromoListItem.enumeration=%1$s av %2$s	#
 hbui.PromoListItem.role=Tekstblokk	#
 hbui.PurchaseRealmOnRetailBanner.text=Realms-abonnementer kan kjøpes i fullversjonen av Minecraft.    	#### {StrContains="Realms"}
-hbui.QuickWorldCreationRoute.Difficulty.createInputLegend=Lag	#
-hbui.QuickWorldCreationRoute.Difficulty.easyDescription=Det genereres fiendtlige vesener, men de gjør mindre skade.	#
-hbui.QuickWorldCreationRoute.Difficulty.easyTitle=Lett	#
-hbui.QuickWorldCreationRoute.Difficulty.hardDescription=Det genereres fiendtlige vesener, og de gjør mer skade.	#
-hbui.QuickWorldCreationRoute.Difficulty.hardTitle=Vanskelig	#
-hbui.QuickWorldCreationRoute.Difficulty.inputLegend=Spill	#
-hbui.QuickWorldCreationRoute.Difficulty.normalDescription=Det genereres fiendtlige vesener, og de gjør vanlig skade.	#
-hbui.QuickWorldCreationRoute.Difficulty.normalTitle=Normal	#
-hbui.QuickWorldCreationRoute.Difficulty.peacefulDescription=Det genereres ingen fiendtlige vesener, bare nøytrale vesener.	#
-hbui.QuickWorldCreationRoute.Difficulty.peacefulTitle=Fredelig	#
-hbui.QuickWorldCreationRoute.Difficulty.title=Overlevelsesvanskelighetsgrad	#
-hbui.QuickWorldCreationRoute.Mode.creativeDescription=Bygg og utforsk uten grenser. Du kan fly, ha uendelige materialer og kan ikke bli skadet av monstre.	#
-hbui.QuickWorldCreationRoute.Mode.creativeInputLegend=Spill	#
-hbui.QuickWorldCreationRoute.Mode.creativeTitle=Kreativ	#
-hbui.QuickWorldCreationRoute.Mode.survivalDescription=Utforsk en mystisk verden der du bygger, samler, lager og slåss mot monstre.	#
-hbui.QuickWorldCreationRoute.Mode.survivalInputLegend=Velg	#
-hbui.QuickWorldCreationRoute.Mode.survivalTitle=Overlevelse	#
-hbui.QuickWorldCreationRoute.Mode.title=Spillmodus	#
 hbui.RealmListItem.enumeration=%1$s av %2$s	#
 hbui.RealmListItem.joinedRealm=Ble med i realmen	#
 hbui.RealmListItem.lastPlayed=Sist spilt	#
@@ -2428,7 +2536,7 @@ hbui.RealmListItem.role=Listeelement	#
 hbui.RealmListItem.select=Velg	#
 hbui.RealmListItem.yourRealm=Realmen din	#
 hbui.Realms.ErrorModals.CannotContactRealms.message=Sjekk Internett-forbindelsen, og prøv på nytt.	#
-hbui.Realms.ErrorModals.CannotContactRealms.title=Får ikke kontakt med Realms 	#### {StrContains="Realms"}
+hbui.Realms.ErrorModals.CannotContactRealms.title=Can't contact Realms 	#### {StrContains="Realms"}
 hbui.Realms.ErrorModals.close=Lukk	#
 hbui.Realms.ErrorModals.ok=Lukk	#
 hbui.Realms.ErrorModals.postingCommentFailed.message=Kunne ikke publisere ny kommentar. Sjekk internettforbindelsen, og prøv på nytt.	#
@@ -2436,19 +2544,19 @@ hbui.Realms.ErrorModals.postingCommentFailed.title=Kunne ikke publisere kommenta
 hbui.Realms.ErrorModals.rateLimitError.message=Prøv på nytt om noen minutter. Realms prøver å henge med. 	#### {StrContains="Realms"}
 hbui.Realms.ErrorModals.rateLimitError.title=Handlingen mislyktes	#
 hbui.Realms.ErrorModals.select=Velg	#
-hbui.Realms.ErrorModals.somethingWentWrong.message=Får ikke kontakt med Realms. Prøv på nytt. 	#### {StrContains="Realms"}
-hbui.Realms.ErrorModals.somethingWentWrong.title=Noe gikk galt	#
+hbui.Realms.ErrorModals.somethingWentWrong.message=Couldn't contact Realms. Please try again. 	#### {StrContains="Realms"}
+hbui.Realms.ErrorModals.somethingWentWrong.title=Something went wrong	#
 hbui.Realms.InviteExpiredModals.header=Realminvitasjonen er utløpt	#
 hbui.Realms.InviteExpiredModals.message=Denne invitasjonen er ikke lenger gyldig.	#
 hbui.Realms.InviteExpiredModals.ok=OK	#
 hbui.Realms.LoadingModals.activatingSlot=Bytter plass ...	#
-hbui.Realms.LoadingModals.contactingRealms=Kontakter Realms ... 	#### {StrContains="Realms"}
+hbui.Realms.LoadingModals.contactingRealms=Contacting Realms... 	#### {StrContains="Realms"}
 hbui.Realms.LoadingModals.creatingRealm=Lager realmen …	#
 hbui.Realms.LoadingModals.fetchingRealmInformation=Henter informasjon om realmen …	#
 hbui.Realms.LoadingModals.fetchingSubscriptionInformation=Henter abonnementsinformasjon ...	#
 hbui.Realms.LoadingModals.loading=Laster inn...	#
-hbui.Realms.LoadingModals.loadingRealmsStories=Laster inn Realms Stories … 	#### {StrContains="Realms Stories"}
-hbui.RealmsNewStoryImageSelectRoute.cancel=Avbryt	#
+hbui.Realms.LoadingModals.loadingRealmsStories=Loading Realms Stories... 	#### {StrContains="Realms Stories"}
+hbui.RealmsNewStoryImageSelectRoute.cancel=Cancel	#
 hbui.RealmsNewStoryImageSelectRoute.deleteScreenshotsLabel.plural=Slett %1$s skjermbilder	#
 hbui.RealmsNewStoryImageSelectRoute.deleteScreenshotsLabel.single=Slett %1$s skjermbilde	#
 hbui.RealmsNewStoryImageSelectRoute.group=Gruppe	#
@@ -2490,8 +2598,6 @@ hbui.RealmsNewStoryRoute.textBoxPlaceholder=Skriv historien din ...	#
 hbui.RealmsPDPFAQAccordion.clickToExpand=Klikk for å utvide	#
 hbui.RealmsPDPFAQAccordion.enumeration=%1$s av %2$s	#
 hbui.RealmsPDPFAQAccordion.textBlock=Tekstblokk	#
-hbui.RealmsPDPScreen.banner.notLoggedIn.link=Logg på eller registrer deg	#
-hbui.RealmsPDPScreen.banner.notLoggedIn.title=Du trenger en Microsoft-konto for å spille på Realms.    	#### {StrContains="Realms"}
 hbui.RealmsPDPScreen.FAQ.Cost.description1=Du kan abonnere på en Realms-plan:  	#### {StrContains="Realms"}
 hbui.RealmsPDPScreen.FAQ.Cost.description2=Realms Core-plan: %1$s per måned. Legg til et uendelig antall medlemmer, og spill online med 2 andre spillere samtidig.   	#### {StrContains="Realms Core"}
 hbui.RealmsPDPScreen.FAQ.Cost.description3=Realms Plus-plan: %1$s per måned. Legg til et uendelig antall medlemmer, og spill online med 10 andre spillere samtidig. I tillegg kan du ha det gøy med over 150 elementer fra Marketplace Pass-katalogen helt gratis.   	#### {StrContains="Realms Plus"} {StrContains="Marketplace Pass"}
@@ -2565,8 +2671,8 @@ hbui.RealmsPlanPickerScreen.title=Velg en plan	#
 hbui.RealmsPlanPickerScreen.titleNarrationHint=Velg mellom to planer	#
 hbui.RealmsPreviews.create.cancel.beta=Nei, ikke lag betarealm	#
 hbui.RealmsPreviews.create.cancel.preview=Nei, ikke lag forhåndsvisningsrealm	#
-hbui.RealmsPreviews.create.message.beta=Du er i ferd med å lage en gratis Beta Realm som vil bli sammenkoblet med abonnementet ditt på Realms. Denne nye betarealmen er tilgjengelig så lenge det betalte abonnementet er aktivt. Realmen du har betalt for, blir ikke påvirket. 	#### {StrContains="Beta Realms"}
-hbui.RealmsPreviews.create.message.preview=Du er i ferd med å lage en gratis Preview Realm som vil bli sammenkoblet med abonnementet ditt på Realms. Denne nye forhåndsvisningsrealmen er tilgjengelig så lenge det betalte abonnementet er aktivt. Realmen du har betalt for, blir ikke påvirket. 	#### {StrContains="Preview Realms"}
+hbui.RealmsPreviews.create.message.beta=You are about to create a free Beta Realm that will be paired with your paid Realms subscription. This new Beta Realm will be accessible for as long as the paid subscription is active. Your paid Realm will not be affected. 	#### {StrContains="Beta Realms"}
+hbui.RealmsPreviews.create.message.preview=You are about to create a free Preview Realm that will be paired with your paid Realms subscription. This new Preview Realm will be accessible for as long as the paid subscription is active. Your paid Realm will not be affected. 	#### {StrContains="Preview Realms"}
 hbui.RealmsPreviews.create.select=Velg	#
 hbui.RealmsPreviews.create.titleAndButtonLabel.beta=Lag betarealm	#
 hbui.RealmsPreviews.create.titleAndButtonLabel.preview=Lag forhåndsvisningsrealm	#
@@ -2576,10 +2682,10 @@ hbui.RealmsPreviews.ReplaceWorld.message=Dette fjerner verdenen i den aktive pla
 hbui.RealmsPreviews.ReplaceWorld.select=Velg	#
 hbui.RealmsPreviews.ReplaceWorld.title=Erstatte verdenen?	#
 hbui.RealmsPreviews.SubscriptionNeeded.close=Lukk	#
-hbui.RealmsPreviews.SubscriptionNeeded.message.beta=Du trenger et betalt Realms-abonnement for å opprette en Beta Realm. Gå til fullversjonen av Minecraft for å kjøpe et abonnement eller starte en gratis prøveperiode. 	#### {StrContains="Realms"}
-hbui.RealmsPreviews.SubscriptionNeeded.message.preview=Du trenger et betalt Realms-abonnement for å opprette en Preview Realm. Gå til fullversjonen av Minecraft for å kjøpe et abonnement eller starte en gratis prøveperiode. 	#### {StrContains="Realms"}
+hbui.RealmsPreviews.SubscriptionNeeded.message.beta=You need a paid Realms subscription to create a Beta Realm. Please go to the full version of Minecraft to purchase a subscription or start a free trial. 	#### {StrContains="Realms"}
+hbui.RealmsPreviews.SubscriptionNeeded.message.preview=You need a paid Realms subscription to create a Preview Realm. Please go to the full version of Minecraft to purchase a subscription or start a free trial. 	#### {StrContains="Realms"}
 hbui.RealmsPreviews.SubscriptionNeeded.select=Velg	#
-hbui.RealmsPreviews.SubscriptionNeeded.title=Abonnement på Realms er nødvendig 	#### {StrContains="Realms"}
+hbui.RealmsPreviews.SubscriptionNeeded.title=Realms subscription needed 	#### {StrContains="Realms"}
 hbui.RealmsPurchaseSubscriptionRoute.backHint=Dette tar deg tilbake til forrige skjerm	#
 hbui.RealmsPurchaseSubscriptionRoute.banner.heading.core=Realms Core-server 	#### {StrContains="Realms"}
 hbui.RealmsPurchaseSubscriptionRoute.banner.heading.plus=Realms Plus-server 	#### {StrContains="Realms"}
@@ -2589,14 +2695,18 @@ hbui.RealmsPurchaseSubscriptionRoute.banner.subheading.narration=%1$s i månedli
 hbui.RealmsPurchaseSubscriptionRoute.banner.subheading.trial=Gratis 30-dagers prøveabonnement. %1$s per måned deretter	#
 hbui.RealmsPurchaseSubscriptionRoute.banner.subheading.trial.narration=Gratis prøveperiode på 30 dager, deretter %1$s i måneden	#
 hbui.RealmsPurchaseSubscriptionRoute.checkboxLabel=Jeg godtar	#
-hbui.RealmsPurchaseSubscriptionRoute.checkboxUncheckedHint=Godta vilkårene for å lage en realm   	#### {StrContains="Realm"}
+hbui.RealmsPurchaseSubscriptionRoute.checkboxUncheckedHint=Accept terms and conditions in order to create a realm   	#### {StrContains="Realm"}
 hbui.RealmsPurchaseSubscriptionRoute.ErrorModals.close=Lukk	#
 hbui.RealmsPurchaseSubscriptionRoute.errorModals.failedClubNameValidation.body=Teksten du har skrevet, inneholder ord som andre kan finne støtende, og kan derfor ikke brukes. Prøv på nytt.	#
 hbui.RealmsPurchaseSubscriptionRoute.errorModals.failedClubNameValidation.title=Bannefilter	#
 hbui.RealmsPurchaseSubscriptionRoute.errorModals.genericFailure.body=Kjøpet mislyktes	#
-hbui.RealmsPurchaseSubscriptionRoute.errorModals.genericFailure.title=Noe gikk galt	#
+hbui.RealmsPurchaseSubscriptionRoute.errorModals.genericFailure.title=Something went wrong	#
 hbui.RealmsPurchaseSubscriptionRoute.errorModals.invalidRealmName.body=Realm-navnet du skrev inn, er ugyldig. Sørg for at dette feltet er fylt ut og ikke inneholder noen spesialtegn.	#
 hbui.RealmsPurchaseSubscriptionRoute.errorModals.invalidRealmName.title=Ugyldig Realm-navn	#
+hbui.RealmsPurchaseSubscriptionRoute.errorModals.memberOfTooManyRealms.body=You are a member of too many Realms. Leave any old Realms to purchase a new Realms subscription.		#### {MaxLength="150"} message saying that the player has been a member of too many Realms and thus cannot create more Realms
+hbui.RealmsPurchaseSubscriptionRoute.errorModals.memberOfTooManyRealms.title=Too many memberships		#### {MaxLength="25"} the title of the modal saying that the player has been a member of too many Realms
+hbui.RealmsPurchaseSubscriptionRoute.errorModals.noAccess.body=You do not have access to Realms in pre-production. To get access, reach out in #ask-realms-preprod-access or see the guide at aka.ms/Realms-preprod-access. 	#### {MaxLength="160"} message saying that the player has no access to Realms and where to request for help (for devs only)
+hbui.RealmsPurchaseSubscriptionRoute.errorModals.noAccess.title=Error 	#### {MaxLength="5"} the title of the modal saying that the player has no access to Realms
 hbui.RealmsPurchaseSubscriptionRoute.errorModals.offerNotAvailableAllOffersOccupied.core.body=Dette kjøpet kunne ikke gjennomføres fordi du har nådd grensen for Realms Core-abonnementer på denne plattformen.	#
 hbui.RealmsPurchaseSubscriptionRoute.errorModals.offerNotAvailableAllOffersOccupied.core.title=Maksantallet for Realms Core-abonnementer er nådd	#
 hbui.RealmsPurchaseSubscriptionRoute.errorModals.offerNotAvailableAllOffersOccupied.plus.body=Dette kjøpet kunne ikke gjennomføres fordi du har nådd grensen for Realms Plus-abonnementer på denne plattformen.	#
@@ -2608,15 +2718,15 @@ hbui.RealmsPurchaseSubscriptionRoute.errorModals.offerNotAvailableIncompleteData
 hbui.RealmsPurchaseSubscriptionRoute.errorModals.offerNotFound.body=Vi har støtt på en ukjent feil og kunne ikke gjennomføre kjøpet ditt. Kontroller Internett-tilkoblingen eller prøv på nytt senere.	#
 hbui.RealmsPurchaseSubscriptionRoute.errorModals.offerNotFound.title=Kunne ikke gjennomføre forespørselen	#
 hbui.RealmsPurchaseSubscriptionRoute.ErrorModals.select=Velg	#
-hbui.RealmsPurchaseSubscriptionRoute.header.core=Opprett en Realms Core-server 	#### {StrContains="Realms Core"}
-hbui.RealmsPurchaseSubscriptionRoute.header.plus=Opprett en Realms Plus-server 	#### {StrContains="Realms Plus"}
+hbui.RealmsPurchaseSubscriptionRoute.header.core=Create a Realms Core Server 	#### {StrContains="Realms Core"}
+hbui.RealmsPurchaseSubscriptionRoute.header.plus=Create a Realms Plus Server 	#### {StrContains="Realms Plus"}
 hbui.RealmsPurchaseSubscriptionRoute.header.renew=Forny Realms-abonnement 	####{StrContains="Realms"}
-hbui.RealmsPurchaseSubscriptionRoute.header.trial=Gratis prøveperiode for Realms Plus 	#### {StrContains="Realms Plus"}
+hbui.RealmsPurchaseSubscriptionRoute.header.trial=Realms Plus Free Trial 	#### {StrContains="Realms Plus"}
 hbui.RealmsPurchaseSubscriptionRoute.heroButton.create=Lag for %1$s per måned	#
 hbui.RealmsPurchaseSubscriptionRoute.heroButton.renew=Forny for %1$s per måned	#
 hbui.RealmsPurchaseSubscriptionRoute.heroButton.trial=Start gratis prøveperiode	#
 hbui.RealmsPurchaseSubscriptionRoute.inputLabel=Realmens navn	#
-hbui.RealmsPurchaseSubscriptionRoute.inputLabel.hint=Du kan endre navn på realmer etter at de er laget 	#### {StrContains="Realm"}
+hbui.RealmsPurchaseSubscriptionRoute.inputLabel.hint=You can rename your realm after realm creation 	#### {StrContains="Realm"}
 hbui.RealmsPurchaseSubscriptionRoute.inputLabel.role=Tekstinndata	#
 hbui.RealmsPurchaseSubscriptionRoute.inputPlaceholder=%1$s sin realm	#
 hbui.RealmsPurchaseSubscriptionRoute.modals.purchaseInProgress=Behandler	#
@@ -2626,7 +2736,7 @@ hbui.RealmsPurchaseSubscriptionRoute.panelButton.role=Gruppe	#
 hbui.RealmsPurchaseSubscriptionRoute.panelButton.termsAndConditions=Vilkår	#
 hbui.RealmsPurchaseSubscriptionRoute.panelButton.title=Vilkår	#
 hbui.RealmsPurchaseSubscriptionRoute.purchaseButton.disabled=deaktivert	#
-hbui.RealmsPurchaseSubscriptionRoute.purchaseButton.disabled.hint=Du er nødt til å godta vilkårene ovenfor for å lage en realm   	#### {StrContains="Realm"}
+hbui.RealmsPurchaseSubscriptionRoute.purchaseButton.disabled.hint=You need to accept terms and condition above in order to create a realm   	#### {StrContains="Realm"}
 hbui.RealmsPurchaseSubscriptionRoute.screen=Skjerm	#
 hbui.RealmsPurchaseSubscriptionRoute.select=Velg	#
 hbui.RealmsPurchaseSubscriptionRoute.termsAndConditionsTextBlock.enum=%1$s av %2$s	#
@@ -2635,7 +2745,7 @@ hbui.RealmsPurchaseSubscriptionRoute.termsAndConditionsTextBlock.name=Vilkår	#
 hbui.RealmsPurchaseSubscriptionRoute.termsAndConditionsTextBlock.role=tekstblokk	#
 hbui.RealmsStories.back=Gå tilbake	#
 hbui.RealmsStories.byline=av %1$s	#
-hbui.RealmsStories.CommentsScreen.back=Tilbake	#
+hbui.RealmsStories.CommentsScreen.back=Back	#
 hbui.RealmsStories.CommentsScreen.enumeration=%1$s av %2$s	#
 hbui.RealmsStories.CommentsScreen.header=Kommentarer	#
 hbui.RealmsStories.CommentsScreen.inputField=Inndata-felt	#
@@ -2840,7 +2950,7 @@ hbui.RealmsStories.messages.timelineEmpty.body=Spill på realmen for å generere
 hbui.RealmsStories.messages.timelineEmpty.title=Ingen data tilgjengelig	#
 hbui.RealmsStories.messages.timelineOff.body=Realm-eieren har deaktivert tidslinjen på denne realmen.	#
 hbui.RealmsStories.messages.timelineOff.title=Tidslinjen er deaktivert	#
-hbui.RealmsStories.messages.timelineOptIn.body=Se når andre spiller, for å sjekke skaperverkene deres eller planlegge å spille sammen! Tidslinjen viser når spillerne var i Realmen. Jo større den fargede blokken er, desto lenger spilte de.		#### {StrContains="Realm"} {MaxLength="250"} This is an explanation of the Realms Timeline feature.
+hbui.RealmsStories.messages.timelineOptIn.body=Se når andre spiller for å sjekke skaperverkene deres eller planlegge å spille sammen! Tidslinjen viser når spillerne var i Realmen. Jo større den fargede blokken er, desto lenger spilte de.		#### {StrContains="Realm"} {MaxLength="250"} This is an explanation of the Realms Timeline feature.
 hbui.RealmsStories.messages.timelineOptIn.button=Jeg vil bli med	#
 hbui.RealmsStories.messages.timelineOptIn.maybeLaterButton=Kanskje senere		#### {MaxLength="20"}  Player is currently declining to opt into the timeline.
 hbui.RealmsStories.messages.timelineOptIn.members=Medlemmer som har blitt med: %1$s/%2$s	#
@@ -2850,7 +2960,7 @@ hbui.RealmsStories.messages.timelineOptIn.ownerRequire.title=Realm-eieren krever
 hbui.RealmsStories.messages.timelineOptIn.requiredTitle=Bli med på tidslinjen		#### {MaxLength="50"}Title for the page that explains that the player needs to opt into the Timeline feature before they can play on the Realm they are attempting to join
 hbui.RealmsStories.messages.timelineOptIn.textblock=Tekstblokk	#
 hbui.RealmsStories.messages.timelineOptIn.title=Bli med på å sjekke tidslinjen	#
-hbui.RealmsStories.messages.title=Kan ikke laste inn Realms Stories! 	#### {StrContains="Realms Stories"}
+hbui.RealmsStories.messages.title=Realms Stories couldn't load! 	#### {StrContains="Realms Stories"}
 hbui.RealmsStories.messages.titleWithArg=Kan ikke laste inn %1$s!	#
 hbui.RealmsStories.messages.unknownErrorBody=Det oppstod en ukjent feil. Prøv på nytt.	#
 hbui.RealmsStories.narration.settings=Innstillinger. Knapp	#
@@ -2864,12 +2974,12 @@ hbui.RealmsStories.OptedOutMembers.listRole=Gruppe	#
 hbui.RealmsStories.OptedOutMembers.noOptedOutMembers=Alle realm-medlemmene har gått med på å dele aktiviteten sin på tidslinjen.	#
 hbui.RealmsStories.OptedOutMembers.screen=%1$s-skjerm	#
 hbui.RealmsStories.OptInModal.message=Du kan nå dele historier til historiefeeden, bli kjent med andre som er på realmen med medlemmer-fanen, og koordinere spilltider med dem ved hjelp av tidslinjen. Ha det gøy!	#
-hbui.RealmsStories.OptInModal.openStoriesButton=Åpne Realms Stories 	#### {StrContains="Realms Stories"}
-hbui.RealmsStories.OptInModal.title=Du er inne! Velkommen til Realms Stories 	#### {StrContains="Realms Stories"}
-hbui.RealmsStories.OptInNoticeModal.gotItButton=Forstått!	#
-hbui.RealmsStories.OptInNoticeModal.message.p1=Du har logget deg på ... men før du kan bruke Realms Stories, må realm-eieren bli med. Be hen om å logge på! 	#### {StrContains="Realms Stories"}
+hbui.RealmsStories.OptInModal.openStoriesButton=Open Realms Stories 	#### {StrContains="Realms Stories"}
+hbui.RealmsStories.OptInModal.title=You're in! Welcome to Realms Stories 	#### {StrContains="Realms Stories"}
+hbui.RealmsStories.OptInNoticeModal.gotItButton=Got it!	#
+hbui.RealmsStories.OptInNoticeModal.message.p1=You've opted in... but before you can use Realms Stories, the Realm owner needs to join. Ask them to opt in! 	#### {StrContains="Realms Stories"}
 hbui.RealmsStories.OptInNoticeModal.message.p2=Når hen har gjort det, kan du dele historier på historiefeeden, bli kjent med andre som er på realmen med medlemmer-fanen, og koordinere spilltider med dem ved hjelp av tidslinjen.	#
-hbui.RealmsStories.OptInNoticeModal.title=Au! Du kan ikke få tilgang til Realms Stories 	#### {StrContains="Realms Stories"}
+hbui.RealmsStories.OptInNoticeModal.title=Oops! You cannot access Realms Stories 	#### {StrContains="Realms Stories"}
 hbui.RealmsStories.OptInScreen.learnMore.dataType=Tekstblokk	#
 hbui.RealmsStories.OptInScreen.learnMore.history.body.1=Se når andre medlemmer spiller, slik at du kan sjekke skaperverkene deres eller planlegge å bli med dem neste gang.	#
 hbui.RealmsStories.OptInScreen.learnMore.history.body.2=Få med deg hva andre spillere gjør, og når de spiller. Spill mer sammen!	#
@@ -2880,10 +2990,10 @@ hbui.RealmsStories.OptInScreen.learnMore.members.title=Bli kjent med medlemmene 
 hbui.RealmsStories.OptInScreen.learnMore.social.body.1=Publiser dine egne historier i historiefeeden, fortell andre hva du driver med, del eventyrene og skaperverkene dine.	#
 hbui.RealmsStories.OptInScreen.learnMore.social.body.2=Lik og kommenter det andre deler, og feir hverandre!	#
 hbui.RealmsStories.OptInScreen.learnMore.social.title=Del historier med venner	#
-hbui.RealmsStories.OptInScreen.learnMore.title=Finn ut mer om Realms Stories 	#### {StrContains="Realms Stories"}
+hbui.RealmsStories.OptInScreen.learnMore.title=Learn more about Realms Stories 	#### {StrContains="Realms Stories"}
 hbui.RealmsStories.OptInScreen.maybeLaterButton=Kanskje senere	#
 hbui.RealmsStories.OptInScreen.optInButton=Jeg vil bli med	#
-hbui.RealmsStories.OptInScreen.optInButton.hint=Dette gjør at du blir med i Realms Stories 	#### {StrContains="Realms Stories"}
+hbui.RealmsStories.OptInScreen.optInButton.hint=This will opt you into Realms Stories 	#### {StrContains="Realms Stories"}
 hbui.RealmsStories.OptInScreen.screen=Skjerm	#
 hbui.RealmsStories.OptInScreen.title=Vil du bli med i Realms Stories?	#
 hbui.RealmsStories.OptInScreen.title.suffix=tittel	#
@@ -2904,9 +3014,9 @@ hbui.RealmsStories.ReportFeedItem.commentPanel.description.gamertag=Du er i ferd
 hbui.RealmsStories.ReportFeedItem.commentPanel.placeholder=Fortell oss mer	#
 hbui.RealmsStories.ReportFeedItem.commentPanel.title=Kommentar (valgfritt)	#
 hbui.RealmsStories.ReportFeedItem.enumeration=%1$s av %2$s		#### x of total ex. 1 of 3
-hbui.RealmsStories.ReportFeedItem.error.buttonText=Gå tilbake	#
+hbui.RealmsStories.ReportFeedItem.error.buttonText=Go Back	#
 hbui.RealmsStories.ReportFeedItem.error.text=Det oppstod en intern feil, og vi kunne ikke finne det forespurte innlegget	#
-hbui.RealmsStories.ReportFeedItem.error.title=Intern feil	#
+hbui.RealmsStories.ReportFeedItem.error.title=Internal Error	#
 hbui.RealmsStories.ReportFeedItem.hideContent=Minimer innhold	#
 hbui.RealmsStories.ReportFeedItem.reasonOption.harassment=Trakassering	#
 hbui.RealmsStories.ReportFeedItem.reasonOption.sexuallyinappropriate=Seksuelt upassende	#
@@ -2918,7 +3028,7 @@ hbui.RealmsStories.ReportFeedItem.reasonOptions.placeholder=Velg en grunn	#
 hbui.RealmsStories.ReportFeedItem.reasonOptions.title=Velg en grunn	#
 hbui.RealmsStories.ReportFeedItem.reasonPanel.description=Hvis noen er i umiddelbar fare, må du kontakte lokale nødetater. Ikke vent.	#
 hbui.RealmsStories.ReportFeedItem.reasonPanel.title=Hva er problemet?	#
-hbui.RealmsStories.ReportFeedItem.reportPanel.cancel=Avbryt	#
+hbui.RealmsStories.ReportFeedItem.reportPanel.cancel=Cancel	#
 hbui.RealmsStories.ReportFeedItem.reportPanel.description=Når du sender inn rapporten, bekrefter du at informasjonen du har gitt, er nøyaktig og fullstendig så langt du vet.	#
 hbui.RealmsStories.ReportFeedItem.reportPanel.report=Rapporter til Xbox	#
 hbui.RealmsStories.ReportFeedItem.reportPanel.report.disabledHint=Du må fylle ut skjemaet før du kan sende rapporten	#
@@ -2962,7 +3072,7 @@ hbui.RealmsStories.settings.personalSettings.badgeNotifSwitch.title=Merkevarsler
 hbui.RealmsStories.settings.personalSettings.description=Disse innstillingene gjelder bare for deg i denne realmen.	#
 hbui.RealmsStories.settings.personalSettings.header=1. Personlige innstillinger	#
 hbui.RealmsStories.settings.personalSettings.member.header=Personlige innstillinger	#
-hbui.RealmsStories.settings.realmWideSettings.description=Disse innstillingene gjelder for alle i denne realmen som har blitt med i Realms Stories. 	#### {StrContains="Realms Stories"}
+hbui.RealmsStories.settings.realmWideSettings.description=These settings apply to everyone in this Realm who has joined Realms Stories. 	#### {StrContains="Realms Stories"}
 hbui.RealmsStories.settings.realmWideSettings.header=2. Innstillinger for hele realmen	#
 hbui.RealmsStories.settings.realmWideSettings.member.header=Innstillinger for hele realmen	#
 hbui.RealmsStories.settings.realmWideSettings.playerTimeline.description=La alle se tidslinjen.	#
@@ -3015,7 +3125,7 @@ hbui.RealmTag.maxPlayersNarration=%1$s-spillers realm	#
 hbui.RealmTag.previewRealmOwner=Forhåndsvisningsrealmen din	#
 hbui.RealmTag.realmOwner=Realmen din	#
 hbui.RealmTag.survival=Overlevelse	#
-hbui.RealmTag.unknown=Ukjent	#
+hbui.RealmTag.unknown=Unknown	#
 hbui.RenderDistanceWarningRoute.body1=Du kan få bedre ytelse med innstillinger for gjengivelsesavstand som er optimalisert for enheten din.	#
 hbui.RenderDistanceWarningRoute.body2=Hvis du bruker disse anbefalte innstillingene, får du en bedre spillopplevelse ved å redusere hvor langt du kan se i spillet.	#
 hbui.RenderDistanceWarningRoute.chunksPluralCaption=(%1$s deler)	#
@@ -3029,7 +3139,7 @@ hbui.ReportPlayerRoute.areaPanel.title=Hvor observerte du den dårlige oppførse
 hbui.ReportPlayerRoute.attestation=Denne informasjonen er nøyaktig og fullstendig så vidt jeg vet.	#
 hbui.ReportPlayerRoute.bullying=Trakassering eller mobbing	#
 hbui.ReportPlayerRoute.buttonLegend=Velg 	#### Select this button {MaxLength="16"}
-hbui.ReportPlayerRoute.cancel=Avbryt	#
+hbui.ReportPlayerRoute.cancel=Cancel	#
 hbui.ReportPlayerRoute.chatSelectionDescription=Velg meldinger som skal rapporteres	#
 hbui.ReportPlayerRoute.chatSelectionLimitReached=Maksimalt antall meldinger har blitt valgt	#
 hbui.ReportPlayerRoute.chatSelectionPanel.description=Velg meldinger som skal rapporteres 	#### Description of a panel that allows players to select the specific chat messages in a report {MaxLength="50"}
@@ -3073,7 +3183,7 @@ hbui.ReportPlayerRoute.wantToReportThem=Jeg vil rapportere vedkommende	#
 hbui.ReportPlayerRoute.warningReportAnyway=Rapporter likevel	#
 hbui.ReportPlayerRoute.warningTitle=Rapportere %1$s? 	#### Title for warning modal for reporting a friend {MaxLength="32"}
 hbui.ReportPlayerRoute.whereReport=Hvor observerte du den dårlige oppførselen?	#
-hbui.ReportPlayerRoute.whereReportDescription=Gi oss beskjed om hvor hendelsen fant sted. Dette vil hjelpe oss med å undersøke saken din.	#
+hbui.ReportPlayerRoute.whereReportDescription=Please let us know where the incident took place. This will help us in researching your case.	#
 hbui.ReportPlayerRoute.whyReport=Hvorfor rapporterer du %1$s? 	####Placeholder for dropdown that allows players to select the area in which they saw the issue {MaxLength="50"}
 hbui.ReportPlayerRoute.xbox.report.area.chat=Chatmelding	#
 hbui.ReportPlayerRoute.xbox.report.area.gameplay=Spillopplevelse	#
@@ -3084,7 +3194,7 @@ hbui.ReportPlayerRoute.xbox.report.area.skin=Spillerskall	#
 hbui.ScreenshotDeleteErrorModal.close=Lukk		#### {MaxLength=40} Closes the modal that has appeared. This was previously ScreenshotGalleryRoute.deleteScreenshotsErrorModal.close
 hbui.ScreenshotDeleteErrorModal.text=Kunne ikke slette skjermbildet. Sjekk internettforbindelsen, og prøv på nytt. 	#### {MaxLength=1000} Indicates that an operation requested by the user to delete a screenshot in their gallery has failed. This was previously ScreenshotGalleryRoute.deleteScreenshotsErrorModal.text
 hbui.ScreenshotDeleteErrorModal.title=Kunne ikke slette skjermbildet		#### {MaxLength=40} Indicates that an operation requested by the user to delete a screenshot in their gallery has failed. This was previously ScreenshotGalleryRoute.deleteScreenshotsErrorModal.title
-hbui.ScreenshotDeleteModal.cancel=Avbryt	#
+hbui.ScreenshotDeleteModal.cancel=Cancel	#
 hbui.ScreenshotDeleteModal.delete=Slett	#
 hbui.ScreenshotDeleteModal.text=Denne handlingen kan ikke angres. Er du sikker på at du vil slette dette skjermbildet?	#
 hbui.ScreenshotDeleteModal.title=Slettingsbekreftelse	#
@@ -3096,7 +3206,7 @@ hbui.ScreenshotDetailsRoute.title=Skjermbildedetaljer	#
 hbui.ScreenshotDetailsSideMenu.deleteScreenshot=Slett skjermbilde	#
 hbui.ScreenshotDetailsSideMenu.deviceStorage=Gå til lagringsinnstillinger	#
 hbui.ScreenshotDetailsSideMenu.fullImage=Fullskjerm	#
-hbui.ScreenshotDetailsSideMenu.fullImageBack=Bakover	#
+hbui.ScreenshotDetailsSideMenu.fullImageBack=Back	#
 hbui.ScreenshotDetailsSideMenu.index=%1$s / %2$s	#
 hbui.ScreenshotDetailsSideMenu.manage=Administrer	#
 hbui.ScreenshotDetailsSideMenu.narration.buttonRole=Knapp	#
@@ -3123,8 +3233,8 @@ hbui.ScreenshotDetailsSideMenu.shareOptions.shareToExternal=Del eksternt	#
 hbui.ScreenshotDetailsSideMenu.shareText=Sjekk skjermbildet mitt fra Minecraft!	#
 hbui.ScreenshotDetailsSideMenu.shareTitle=Skjermbilde fra Minecraft	#
 hbui.ScreenshotGalleryContainer.available=Tilgjengelig (%1$s)	#
-hbui.ScreenshotGalleryContainer.cancel=Avbryt	#
-hbui.ScreenshotGalleryContainer.confirmButtonText=Bekreft	#
+hbui.ScreenshotGalleryContainer.cancel=Cancel	#
+hbui.ScreenshotGalleryContainer.confirmButtonText=Confirm	#
 hbui.ScreenshotGalleryContainer.deleteButtonText=Slett %1$s skjermbilder	#
 hbui.ScreenshotGalleryContainer.deleteButtonTextSingular=Slett %1$s skjermbilde	#
 hbui.ScreenshotGalleryContainer.featured=Utvalgt (%1$s)	#
@@ -3211,11 +3321,11 @@ hbui.ScreenshotShowcaseGrid.narration.gridTitle=Fremvisningsgalleriet	#
 hbui.ScreenshotShowcaseGrid.narration.showcasedScreenshotHint=Velg et skjermbilde som skal vises i fremvisningsgalleriet ditt.	#
 hbui.ScreenshotShowcaseRoute.header=%1$s sitt fremvisningsgalleri	#
 hbui.SeedTemplateCard.narrationSuffix=Et forhåndsdefinert frø	#
-hbui.SeedTemplatesRoute.errorBackButtonInputLegend=Tilbake	#
+hbui.SeedTemplatesRoute.errorBackButtonInputLegend=Back	#
 hbui.SeedTemplatesRoute.errorBackButtonText=Gå tilbake	#
 hbui.SeedTemplatesRoute.errorMessageBody=Det oppstod en ukjent feil. Prøv på nytt.	#
 hbui.SeedTemplatesRoute.errorMessageTitle=Kan ikke laste inn frømaler!	#
-hbui.SeedTemplatesRoute.narration.loadingMessage=Laster inn	#
+hbui.SeedTemplatesRoute.narration.loadingMessage=Loading	#
 hbui.SeedTemplatesRoute.selectTemplateInputLegend=Velg mal	#
 hbui.SeedTemplatesRoute.title=Frømaler	#
 hbui.SetWorldThumbnailRoute.errorState.emptyStateCreateNewButton=Lag ny verden	#
@@ -3292,7 +3402,7 @@ hbui.StartFromTemplateRoute.InstallModal.message=Installasjon startet	#
 hbui.StartFromTemplateRoute.InstallModal.title=Installerer innhold (2 av 2)	#
 hbui.StartFromTemplateRoute.MarketplacePass.AddOn.description=Opplev mer med verdensmaler og tillegg for Marketplace Pass-abonnenter. 	#### Subtext under the title for a screen displaying content from the Marketplace Pass that players can use to create a world {MaxLength=230}{StrContains="Marketplace Pass"}
 hbui.StartFromTemplateRoute.MarketplacePass.AddOn.title=Marketplace Pass		#### Main title for a screen displaying content from the Marketplace Pass that players can use to create a world {MaxLength=50}{StrContains="Marketplace Pass"}
-hbui.StartFromTemplateRoute.MarketplacePass.description=Opplev mer med verdensmaler for Marketplace Pass-abonnenter. 	#### {StrContains="Marketplace Pass"}
+hbui.StartFromTemplateRoute.MarketplacePass.description=Go further with world templates for Marketplace Pass subscribers. 	#### {StrContains="Marketplace Pass"}
 hbui.StartFromTemplateRoute.MarketplacePass.imageNarration=Marketplace Pass	#
 hbui.StartFromTemplateRoute.MarketplacePass.imageRole=Bilde	#
 hbui.StartFromTemplateRoute.MarketplacePass.noInternetMessage=Sjekk internettforbindelsen din for å dra til markedsplassen.	#
@@ -3301,7 +3411,7 @@ hbui.StartFromTemplateRoute.MarketplacePass.NoTemplatesMessage.description=Gå t
 hbui.StartFromTemplateRoute.MarketplacePass.NoTemplatesMessage.title=Maler er ikke tilgjengelige	#
 hbui.StartFromTemplateRoute.MarketplacePass.role=Vertikal undermeny	#
 hbui.StartFromTemplateRoute.MarketplacePass.title=Marketplace Pass-maler 	#### {StrContains="Marketplace Pass"}
-hbui.StartFromTemplateRoute.NoContentMessage.goToMarketplaceButton=Gå til markedsplass	#
+hbui.StartFromTemplateRoute.NoContentMessage.goToMarketplaceButton=Gå til markedsplassen	#
 hbui.StartFromTemplateRoute.NoContentMessage.importButton=Importer mal	#
 hbui.StartFromTemplateRoute.NoContentMessage.message=Utforsk tusenvis av originale verdener, maler og skall på markedsplassen – eller importer dine egne.	#
 hbui.StartFromTemplateRoute.NoContentMessage.title=Du eier ikke noe innhold ... ennå!	#
@@ -3359,7 +3469,7 @@ hbui.StartFromTemplateRoute.TemplateOperationsErrorModal.description.Insufficien
 hbui.StartFromTemplateRoute.TemplateOperationsErrorModal.description.MalformedZip=Ugyldig ZIP-arkiv.	#
 hbui.StartFromTemplateRoute.TemplateOperationsErrorModal.title.DownloadFailed=Nedlastingen mislyktes	#
 hbui.StartFromTemplateRoute.TemplateOperationsErrorModal.title.Duplicate=Kunne ikke importere	#
-hbui.StartFromTemplateRoute.TemplateOperationsErrorModal.title.GenericError=Noe gikk galt	#
+hbui.StartFromTemplateRoute.TemplateOperationsErrorModal.title.GenericError=Something went wrong	#
 hbui.StartFromTemplateRoute.TemplateOperationsErrorModal.title.InsufficientStorage=Lagringsplassen er full	#
 hbui.StartFromTemplateRoute.TemplateOperationsErrorModal.title.MalformedZip=Kunne ikke importere	#
 hbui.StartFromTemplateRoute.title=Lag basert på mal	#
@@ -3379,6 +3489,12 @@ hbui.StorageIndicator.petabytes=%1$sPB	#
 hbui.StorageIndicator.settings=Innstillinger	#
 hbui.StorageIndicator.storageSpace=%1$s av %2$s brukt	#
 hbui.StorageIndicator.terabytes=%1$sTB	#
+hbui.SwitchAccordion.closeInputLegend=Close    	#### Close an unfolded UI element. {MaxLength="16"}
+hbui.SwitchAccordion.narrationComponentType=Switch    	#### UI element, behaves like a physical switch button. {MaxLength="1000"}
+hbui.SwitchAccordion.narrationCountLabel=%1$s - (%2$s)     	#### Number x of n . {MaxLength="1000"}
+hbui.SwitchAccordion.openInputLegend=Open    	#### Open a folded UI element. {MaxLength="16"}
+hbui.SwitchAccordion.stateCollapsed=Collapsed    	#### Collapsed UI element. {MaxLength="16"}
+hbui.SwitchAccordion.stateExpanded=Expanded   	#### Expanded UI element. {MaxLength="16"}
 hbui.TemplateCard.button=Knapp	#
 hbui.TemplateCard.componentRole=Mal	#
 hbui.TemplateCard.creator=av %1$s	#
@@ -3387,7 +3503,7 @@ hbui.TemplateCard.imported=Importert	#
 hbui.TemplateCard.installed=Last ned	#
 hbui.TemplateCard.locked=Låst	#
 hbui.TemplateCard.notInstalled=Lag	#
-hbui.TemplateCard.rate=Vurder	#
+hbui.TemplateCard.rate=Rate	#
 hbui.TemplateCard.rating=%1$s stjerner	#
 hbui.TemplateCard.start=Start	#
 hbui.ThumbnailWorldList.daysAgo=%1$s dager siden	#
@@ -3504,6 +3620,8 @@ hbui.WorldCard.multiplayerDisabled=Flerspiller er deaktivert	#
 hbui.WorldCard.multiplayerWorldOffline=Verden uten internettforbindelse	#
 hbui.WorldCard.narration.buttonSiblings=Knapp %1$s av %2$s	#
 hbui.WorldCard.narration.componentRole=Verden	#
+hbui.WorldCard.narration.componentRoleLan=LAN World    	#### Minecraft LAN World {MaxLength=35}
+hbui.WorldCard.narration.componentRoleLocal=World    	#### Minecraft World {MaxLength=30}
 hbui.WorldCard.narration.edit=Rediger	#
 hbui.WorldCard.narration.gridAmountContext=%1$s av %2$s	#
 hbui.WorldCard.narration.play=Spill	#
@@ -3516,58 +3634,31 @@ hbui.WorldListItem.multiplayerWorldOffline=Frakoblet	#
 hbui.WorldListItem.narration.button=Knapp	#
 hbui.WorldListItem.narration.buttonSiblings=Knapp %1$s av %2$s	#
 hbui.WorldListItem.narration.componentRole=Verden	#
+hbui.WorldListItem.narration.componentRoleLan=LAN World    	#### Minecraft LAN World {MaxLength=35}
+hbui.WorldListItem.narration.componentRoleLocal=World    	#### Minecraft World {MaxLength=30}
 hbui.WorldListItem.narration.edit=Rediger	#
 hbui.WorldListItem.narration.lastSaved=Sist lagret %1$s	#
 hbui.WorldListItem.narration.listLengthContext=%1$s av %2$s	#
 hbui.WorldListItem.narration.play=Spill	#
 hbui.WorldListItem.narration.worldSize=Verdensstørrelse %1$s	#
 hbui.WorldListItem.play=Spill	#
+hbui.WorldSettingsButton.difficultyEasyLabel=Easy    	#### Game difficulty setting. Should be the exact same translation as the one used elsewhere in the game. {MaxLength="20"}
+hbui.WorldSettingsButton.difficultyHardLabel=Hard    	#### Game difficulty setting. Should be the exact same translation as the one used elsewhere in the game. {MaxLength="20"}
+hbui.WorldSettingsButton.difficultyNormalLabel=Normal    	#### Game difficulty setting. Should be the exact same translation as the one used elsewhere in the game. {MaxLength="20"}
+hbui.WorldSettingsButton.difficultyPeacefulLabel=Peaceful    	#### Game difficulty setting. Should be the exact same translation as the one used elsewhere in the game. {MaxLength="20"}
+hbui.WorldSettingsButton.gameModeAdventureLabel=Adventure    	#### Game mode setting. Should be the exact same translation as the one used elsewhere in the game. {MaxLength="20"}
+hbui.WorldSettingsButton.gameModeCreativeLabel=Creative    	#### Game mode setting. Should be the exact same translation as the one used elsewhere in the game. {MaxLength="20"}
+hbui.WorldSettingsButton.gameModeSurvivalLabel=Survival    	#### Game mode setting. Should be the exact same translation as the one used elsewhere in the game. {MaxLength="20"}
+hbui.WorldSettingsButton.gameModeUnknownLabel=Unknown    	#### Unknown type of Minecraft world. A known type would be eg survival or creative. {MaxLength=21}
+hbui.WorldSettingsButton.worldNamePlaceholder=My World    	#### Placeholder for a world name. Should be the exact same translation as the one used in Create new world. {MaxLength="20"}
 hbui.WorldTag.adventure=Eventyr	#
 hbui.WorldTag.creative=Kreativ	#
 hbui.WorldTag.experimental=Eksperimentell	#
+hbui.WorldTag.full=Full    	#### Full means that the Minecraft world is full {MaxLength=10}
 hbui.WorldTag.hardcore=Ekstra vanskelig	#
 hbui.WorldTag.lan=LAN	#
 hbui.WorldTag.survival=Overlevelse	#
 hbui.WorldTag.unknown=Ukjent 	#### Unknown type of Minecraft world. A known type would be eg survival or creative. {MaxLength=21}
-hbui.Accordion.closeInputLegend=Lukk	#
-hbui.Accordion.openInputLegend=Åpne	#
-hbui.BackButton.back=Tilbake	#
-hbui.BackButton.narration.backButton=Tilbake-knapp	#
-hbui.BaseDropdown.close=Lukk	#
-hbui.BaseDropdown.enumeration=%1$s av %2$s	#
-hbui.BaseDropdown.open=Åpne	#
-hbui.BaseDropdown.selected=Valgt	#
-hbui.BaseDropdown.stateCollapsed=Skjult	#
-hbui.BaseDropdown.stateExpanded=Vist	#
-hbui.BaseDropdown.toggleElementType=Alternativ	#
-hbui.BaseSlider.currentValue=gjeldende verdi er	#
-hbui.BaseSlider.elementType=glidebryter	#
-hbui.BaseSlider.maxValueIs=største verdi er	#
-hbui.BaseSlider.minValueIs=minste verdi er	#
-hbui.BaseSwitch.elementType=Bryter	#
-hbui.BaseSwitch.narrationDisabled=Deaktiver	#
-hbui.BaseSwitch.off=Av	#
-hbui.BaseSwitch.on=På	#
-hbui.BaseSwitch.toggle=Aktiver/deaktiver	#
-hbui.BaseTextField.addedNarration=Lagt til	#
-hbui.BaseTextField.deselect=Velg bort	#
-hbui.BaseTextField.hint=Du kan nå skrive inn tekst. Skriv for å angi %1$s	#
-hbui.BaseTextField.invalidNarration=Ugyldige parametere	#
-hbui.BaseTextField.removedNarration=Fjernet	#
-hbui.BaseTextField.replacedNarration=Erstattet med	#
-hbui.BaseTextField.select=Velg	#
-hbui.BaseTextField.selected=Valgt	#
-hbui.DropdownItem.elementType=Gjenstand	#
-hbui.DropdownItem.narrationComponentType=Alternativ	#
-hbui.DropdownItem.select=Velg	#
-hbui.DropdownItem.selected=Valgt	#
-hbui.DropdownItem.unselected=Ikke valgt	#
-hbui.ScrollView.loadingState=Laster inn	#
-hbui.ScrollView.narrationScrollViewComponentType=Innhold	#
-hbui.TitleBar.Buttons.Back.inputLegend=Tilbake	#
-hbui.TitleBar.Buttons.Back.narration=Tilbake-knapp	#
-hbui.TitleBar.Buttons.Close.inputLegend=Lukk	#
-hbui.TitleBar.Buttons.Close.narration=Lukk-knapp	#
 hbui.Editor.title=Inndatatilordning	#
 hbui.EditorActionBar.leftTray=Venstre	#
 hbui.EditorActionBar.rightTray=Høyre	#
@@ -3614,8 +3705,8 @@ hbui.EditorBlockPaletteOperationModal.confirm=Bekreft	#
 hbui.EditorBlockPaletteOperationModal.defaultName=Min nye verktøylinje …	#
 hbui.EditorBlockPaletteOperationModal.title=Nytt verktøylinjenavn	#
 hbui.EditorBlockPickerModal.blockItem=Blokkelement	#
-hbui.EditorBlockPickerModal.cancel=Avbryt	#
-hbui.EditorBlockPickerModal.confirm=Bekreft	#
+hbui.EditorBlockPickerModal.cancel=Cancel	#
+hbui.EditorBlockPickerModal.confirm=Confirm	#
 hbui.EditorBlockPickerModal.count=%1$s av %2$s	#
 hbui.EditorBlockPickerModal.current=Nåværende	#
 hbui.EditorBlockPickerModal.makeListLabel=Lag liste	#
@@ -3640,7 +3731,7 @@ hbui.EditorColorPicker.green=Grønn	#
 hbui.EditorColorPicker.red=Rød	#
 hbui.EditorColorPicker.selectedColor=Valgt farge	#
 hbui.EditorColorPicker.type=Fargevelger	#
-hbui.EditorConflictMessagesPopup.cancel=Avbryt	#
+hbui.EditorConflictMessagesPopup.cancel=Cancel	#
 hbui.EditorConflictMessagesPopup.confirmAndClear=Bekreft og fjern konflikt	#
 hbui.EditorConflictMessagesPopup.confirmAndGoTo=Bekreft og gå til konflikt	#
 hbui.EditorConflictMessagesPopup.conflictMessage=%1$s er allerede i bruk og fjernes fra %2$s > %3$s hvis dette bekreftes.	#
@@ -3721,7 +3812,7 @@ hbui.EditorInput.keyName.BRACKET_OPEN=VENSTRE HAKEPARENTES	#
 hbui.EditorInput.keyName.CAPS_LOCK=CAPS LOCK	#
 hbui.EditorInput.keyName.COMMA=KOMMA	#
 hbui.EditorInput.keyName.CTRL=CTRL	#
-hbui.EditorInput.keyName.DELETE=DELETE	#
+hbui.EditorInput.keyName.DELETE=SLETT	#
 hbui.EditorInput.keyName.DOWN=NED	#
 hbui.EditorInput.keyName.END=SLUTT	#
 hbui.EditorInput.keyName.ENTER=GÅ INN	#
@@ -3822,7 +3913,7 @@ hbui.EditorKeyboardSettings.resetAll=Tilbakestill alle	#
 hbui.EditorKeyboardSettings.restore=Bruk standardinnstillinger	#
 hbui.EditorKeyboardSettings.restore.tooltip=Tilbakestill knappetilordninger til standard.	#
 hbui.EditorKeyboardSettings.restoreAll=Gjenopprett alle standardinnstillinger	#
-hbui.EditorKeyboardSettings.save=Lagre	#
+hbui.EditorKeyboardSettings.save=Save	#
 hbui.EditorKeyboardSettings.saveAll=Lagre alt	#
 hbui.EditorKeyboardSettings.shortcut=Snarvei	#
 hbui.EditorKeyboardSettings.title=Innstillinger for tastatur	#
@@ -3834,7 +3925,7 @@ hbui.EditorKeyboardSettings.viewport=Visningsport	#
 hbui.EditorKeyboardSettings.viewportDescription=Inndatakontekst for fokusert visningsport	#
 hbui.EditorKeyboardSettings.viewportTooltip=Inndatakontekst for visningsport	#
 hbui.EditorLink.elementType=Lenke 	####Represent UI element type for a clickable link​. {MaxLength=100}
-hbui.EditorLink.warningModal.cancel=Avbryt	#
+hbui.EditorLink.warningModal.cancel=Cancel	#
 hbui.EditorLink.warningModal.content=Advarsel: Lenken du er i ferd med å åpne, er ikke verifisert av Minecraft.	#
 hbui.EditorLink.warningModal.continue=Fortsett	#
 hbui.EditorLink.warningModal.link=Lenke: %s	#
@@ -3842,7 +3933,7 @@ hbui.EditorLink.warningModal.title=Uverifisert lenke	#
 hbui.EditorListSearchField.noResults=Ingen resultater	#
 hbui.EditorListSearchField.search=Søk	#
 hbui.EditorLogPanel.autoScroll=Automatisk rulling	#
-hbui.EditorLogPanel.clear=Klart	#
+hbui.EditorLogPanel.clear=Tøm	#
 hbui.EditorLogPanel.clipboard=Kopier melding til utklippstavlen	#
 hbui.EditorLogPanel.debug=Feilsøking	#
 hbui.EditorLogPanel.error=Feil	#
@@ -4019,3 +4110,4 @@ hbui.EditorWindowPanel.collapseButton=Skjul panel-knapp	#
 hbui.EditorWindowPanel.dragHandle=Dra-håndtak	#
 hbui.EditorWindowPanel.elementType=Panel	#
 hbui.EditorWindowPanel.expandButton=Utvid panel-knapp	#
+hbui.Sample.hello=Hei, %1$s!	#

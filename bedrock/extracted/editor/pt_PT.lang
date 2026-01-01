@@ -40,7 +40,7 @@ resourcePack.editor.blockInspector.toolRail.description=Clica com o botão esque
 
 
 resourcePack.editor.blockPalette.addSearchItem=Usar Bloco Encontrado	#
-resourcePack.editor.blockPalette.blockPicker=Procurar	#
+resourcePack.editor.blockPalette.blockPicker=Pesquisar	#
 resourcePack.editor.blockPalette.paletteDropdown.title=Paleta	#
 resourcePack.editor.blockPalette.title=Paleta de Blocos	#
 
@@ -54,6 +54,7 @@ resourcePack.editor.brushPaint.tooltip=Usa pincéis para pintar blocos no mundo	
 
 resourcePack.editor.BrushPaintControl.brush.title=Pincel	#
 resourcePack.editor.BrushPaintControl.brushSettings.title=Definições do Pincel	#
+resourcePack.editor.BrushPaintControl.shapeSettings.title=Shape Settings 	####Represents an expander that has UI controls for brush shape settings.{MaxLength=100}
 resourcePack.editor.BrushPaintControl.fillConstraints.mask.title=Lista de Máscaras	#
 resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.disabled.tooltip=Desativar Filtros de Blocos	#
 resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.disabled=Desativado	#
@@ -65,12 +66,12 @@ resourcePack.editor.BrushPaintControl.fillConstraints.replace.title=Lista de Sub
 resourcePack.editor.BrushPaintControl.fillConstraints.replace.tooltip=Os blocos que correspondem à lista serão alterados	#
 resourcePack.editor.BrushPaintControl.fillConstraints.title=Limites de Preenchimento	#
 resourcePack.editor.BrushPaintControl.keybinding.maskMask=Modo de Mascaramento - Mascarar	#
-resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetBack=Empurrar Deslocamento para Trás	#
-resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetDown=Empurrar Deslocamento para Baixo	#
-resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetForward=Empurrar Deslocamento para a Frente	#
-resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetLeft=Empurrar Deslocamento para a Esquerda	#
-resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetRight=Empurrar Deslocamento para a Direita	#
-resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetUp=Empurrar Deslocamento para Cima	#
+resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetBack=Distância de Deslocamento para Trás	#
+resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetDown=Distância de Deslocamento para Baixo	#
+resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetForward=Distância de Deslocamento para a Frente	#
+resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetLeft=Distância de Deslocamento para a Esquerda	#
+resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetRight=Distância de Deslocamento para a Direita	#
+resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetUp=Distância de Deslocamento para Cima	#
 resourcePack.editor.BrushPaintControl.keybinding.replaceMask=Modo de Mascaramento - Substituir	#
 resourcePack.editor.BrushPaintControl.offset.title=Deslocamento	#
 resourcePack.editor.BrushPaintControl.offset.tooltip=O deslocamento da posição do cursor	#
@@ -107,6 +108,8 @@ resourcePack.editor.brushShape.pyramid.settings.depth=Profundidade	#
 resourcePack.editor.brushShape.pyramid.settings.height=Altura	#
 resourcePack.editor.brushShape.pyramid.settings.width=Largura	#
 resourcePack.editor.brushShape.singleBlock.name=Bloco Único	#
+resourcePack.editor.brushShape.star.name=Star 	####Represent a star shaped brush.{MaxLength=100}
+resourcePack.editor.brushShape.star.settings.includeVertical=Include Vertical 	####Represents a toggle button label that removes vertical parts of a star brush if unchecked.{MaxLength=100}
 
 
 resourcePack.editor.client.description=Recursos do Cliente do Editor	#
@@ -166,7 +169,7 @@ resourcePack.editor.core.keyBinding.showLogPanel=Mostrar Painel de Registo	#
 
 
 resourcePack.editor.CursorModeControl.cursorTargetMode.block.tooltip=O bloco debaixo do cursor do rato	#
-resourcePack.editor.CursorModeControl.cursorTargetMode.block=Bloco	#
+resourcePack.editor.CursorModeControl.cursorTargetMode.block=Bloquear	#
 resourcePack.editor.CursorModeControl.cursorTargetMode.face.tooltip=O bloco imediatamente adjacente à face do bloco por baixo do cursor	#
 resourcePack.editor.CursorModeControl.cursorTargetMode.face=Adjacente	#
 resourcePack.editor.CursorModeControl.cursorTargetMode.title=Alvo	#
@@ -216,18 +219,29 @@ resourcePack.editor.entityInspector.toolRail.description=Clica com o botão esqu
 resourcePack.editor.exportProject.exportType=Tipo de Exportação	#
 resourcePack.editor.exportProject.exportType.playableWorld=Mundo Jogável	#
 resourcePack.editor.exportProject.exportNotes=Exportar Notas	#
+resourcePack.editor.exportProject.exportNotes.export=Exporting Progress   	####This string is intended to express that the title of export progress modal.{MaxLength=100}
 resourcePack.editor.exportProject.exportNotes.warning=Estás a exportar um mundo v%1. Os mundos jogáveis exportados não podem ser usados em versões do Minecraft com um número de versão anterior a v%1. Para converter para números de versão anteriores, usa https://chunker.app/ (algumas funcionalidades poderão não estar disponíveis se não forem compatíveis com versões anteriores)	#
+resourcePack.editor.exportProject.exportNotes.progress=Exporting the world...    	####This string is intended to express that the progress message of exporting.{MaxLength=100}
+resourcePack.editor.exportProject.exportNotes.exportSuccess=The world was successfully exported    	####This string is intended to express that export the world succeeded.{MaxLength=100}
+resourcePack.editor.exportProject.exportNotes.exportFailed=Exporting world was failure    	####This string is intended to express that export the world failed.{MaxLength=100}
 resourcePack.editor.exportProject.generalSettings=Definições Gerais	#
 resourcePack.editor.exportProject.generalSettings.worldName=Nome do Mundo	#
 resourcePack.editor.exportProject.generalSettings.gameMode=Modo de Jogo	#
 resourcePack.editor.exportProject.generalSettings.difficulty=Dificuldade	#
 resourcePack.editor.exportProject.generalSettings.hardcore=Hardcore	#
+resourcePack.editor.exportProject.initialPlaySettings=Inital Play Settings   	####This string is intended to express that the export category for inital play settings.{MaxLength=100}
+resourcePack.editor.exportProject.initialPlaySettings.spawnPosition=World Spawn Point   	####This string is intended to express that player inistal spawn position.{MaxLength=100}
+resourcePack.editor.exportProject.initialPlaySettings.startTime=Start Time   	####This string is intended to express that world start time.{MaxLength=100}
+resourcePack.editor.exportProject.initialPlaySettings.clockType=Clock Type   	####This string is intended to express that start time with different clock type.{MaxLength=100}
+resourcePack.editor.exportProject.initialPlaySettings.customStartTime=Custom Start Time   	####This string is intended to express that custom start time with Minecraft Cloke value.{MaxLength=100}
+resourcePack.editor.exportProject.initialPlaySettings.weather=Start Weather   	####This string is intended to express that the custom start weather.{MaxLength=100}
 resourcePack.editor.exportProject.advancedSettings=Configurações Avançadas	#
 resourcePack.editor.exportProject.advancedSettings.startingMap=Mapa Inicial	#
 resourcePack.editor.exportProject.advancedSettings.bonusChest=Baú de Bónus	#
 resourcePack.editor.exportProject.advancedSettings.showCoordinates=Mostrar Coordenadas	#
 resourcePack.editor.exportProject.advancedSettings.showDaysPlayed=Mostrar Dias Jogados	#
 resourcePack.editor.exportProject.advancedSettings.recipeUnlocking=Desbloqueio de Receitas	#
+resourcePack.editor.exportProject.advancedSettings.limitedCrafting=Limited Crafting   	####Export pane checkbox label that enable to set crafting limit.{MaxLength=100}
 resourcePack.editor.exportProject.advancedSettings.fireSpreads=Fogos Propagados	#
 resourcePack.editor.exportProject.advancedSettings.tntExplodes=Explosões de TNT	#
 resourcePack.editor.exportProject.advancedSettings.resawnBlocksExplode=Explosão de Blocos de Regeneração	#
@@ -235,11 +249,13 @@ resourcePack.editor.exportProject.advancedSettings.mobLoot=Saques de Criaturas	#
 resourcePack.editor.exportProject.advancedSettings.naturalRegeneration=Regeneração Natural	#
 resourcePack.editor.exportProject.advancedSettings.tileDrops=Quedas de Blocos	#
 resourcePack.editor.exportProject.advancedSettings.immediateRespawn=Regeneração Imediata	#
+resourcePack.editor.exportProject.advancedSettings.showDeathMessage=Show Death Message   	####Export pane checkbox label that show the death message when player die.{MaxLength=100}
 resourcePack.editor.exportProject.advancedSettings.respawnRadius=Raio de Regeneração	#
 resourcePack.editor.exportProject.advancedSettings.simulationDistance=Distância de Simulação	#
 resourcePack.editor.exportProject.advancedSettings.bedsWork=As Camas Funcionam	#
 resourcePack.editor.exportProject.advancedSettings.requiredSleepingPlayers=Jogadores a Dormir Necessários (%1$s)	#
 resourcePack.editor.exportProject.advancedSettings.requiredSleepingPlayers.onePlayerMessage=Apenas 1 jogador	#
+resourcePack.editor.exportProject.advancedSettings.showItemTags=Show Item Tags   	####Export pane checkbox label that show item tags.{MaxLength=100}
 resourcePack.editor.exportProject.multiplayerSettings=Definições do Modo Multijogador	#
 resourcePack.editor.exportProject.multiplayerSettings.multiplayerGame=Jogo Multijogador	#
 resourcePack.editor.exportProject.multiplayerSettings.playerAccess=Acesso de Jogadores	#
@@ -255,6 +271,16 @@ resourcePack.editor.exportProject.cheatsSettings.mobGriefing=Perturbação de Cr
 resourcePack.editor.exportProject.cheatsSettings.entitiesDropLoot=As Entidades Deixam Cair Saque	#
 resourcePack.editor.exportProject.cheatsSettings.weatherCycle=Ciclo Meteorológico	#
 resourcePack.editor.exportProject.cheatsSettings.commandBlocks=Blocos de Comando	#
+resourcePack.editor.exportProject.cheatsSettings.commandBlockOutput=Command Block Output   	####Export pane checkbox label that enable to display the command output.{MaxLength=100}
+resourcePack.editor.exportProject.cheatsSettings.sendCommandFeedback=Send Command Feedback   	####This string is the heading for the 'send command feedback' setting when exporting a world.{MaxLength=100}
+resourcePack.editor.exportProject.cheatsSettings.maxCommandChainLength=Max Command Chain Length   	####Export pane number that indicate the max length of the command, it defaults to 65536. It has a minimum of 0 and a max of 2147483647.{MaxLength=100}
+resourcePack.editor.exportProject.cheatsSettings.fireDamage=Fire Damage  	####Export pane checkbox label that enable damage when the player on fire.{MaxLength=100}
+resourcePack.editor.exportProject.cheatsSettings.freezeDamage=Freeze Damage  	####Export pane checkbox label that enable damage when the player freezes.{MaxLength=100}
+resourcePack.editor.exportProject.cheatsSettings.fallDamage=Fall Damage  	####Export pane checkbox label that enable damage when the player falls.{MaxLength=100}
+resourcePack.editor.exportProject.cheatsSettings.drowningDamage=Drowning Damage  	####Export pane checkbox label that enable damage when the player is drowning.{MaxLength=100}
+resourcePack.editor.exportProject.cheatsSettings.insomnia=Insomnia  	####Export pane checkbox label that enable player insomnia status.{MaxLength=100}
+resourcePack.editor.exportProject.cheatsSettings.showBorderEffect=Show Border Effect  	####Export pane checkbox label that show border effect.{MaxLength=100}
+resourcePack.editor.exportProject.cheatsSettings.functionCommandLimit=Function Command Limit  	####Export pane checkbox label that the number of limition for the function command.{MaxLength=100}
 resourcePack.editor.exportProject.cheatsSettings.educationFeatures=Funcionalidades Educativas	#
 resourcePack.editor.exportProject.cheatsSettings.randomTickSpeed=Velocidade de Ciclo Aleatória	#
 resourcePack.editor.exportProject.export=Exportar	#
@@ -266,6 +292,11 @@ resourcePack.editor.exportProject.difficulty.peaceful=Pacífico	#
 resourcePack.editor.exportProject.difficulty.easy=Fácil	#
 resourcePack.editor.exportProject.difficulty.normal=Normal	#
 resourcePack.editor.exportProject.difficulty.hard=Difícil	#
+resourcePack.editor.exportProject.weather.default=Default   	####This string is intended to express that the default weather .{MaxLength=100}
+resourcePack.editor.exportProject.weather.clear=Clear   	####This string is intended to express that the weather of Clear.{MaxLength=100}
+resourcePack.editor.exportProject.weather.rain=Rain   	####This string is intended to express that the weather of Rain.{MaxLength=100}
+resourcePack.editor.exportProject.weather.thunder=Thunder   	####This string is intended to express that the weather of Thunder.{MaxLength=100}
+
 
 
 resourcePack.editor.toolRail.ExtrudeTool.title=Ferramenta de Extrusão	#
@@ -394,7 +425,7 @@ resourcePack.editor.menuBar.help.feedback=Comentários	#
 resourcePack.editor.menuBar.help.quickStart=Início rápido	#
 resourcePack.editor.menuBar.help=Ajuda	#
 resourcePack.editor.menuBar.locate=Localizar	#
-resourcePack.editor.menuBar.parentMenu.weather.clear=Limpo	#
+resourcePack.editor.menuBar.parentMenu.weather.clear=Limpar	#
 resourcePack.editor.menuBar.parentMenu.weather.rain=Chuva	#
 resourcePack.editor.menuBar.parentMenu.weather.thunder=Trovão	#
 resourcePack.editor.menuBar.parentMenu.weather=Clima	#
@@ -476,11 +507,11 @@ resourcePack.editor.pastepreview.pane.controls.title=Controlos de Cursor	#
 resourcePack.editor.pastepreview.pane.placement.mirrorX=Espelho X	#
 resourcePack.editor.pastepreview.pane.placement.mirrorZ=Espelho Z	#
 resourcePack.editor.pastepreview.pane.placement.offset=Deslocamento	#
-resourcePack.editor.pastepreview.pane.placement.origin=Origem	#
+resourcePack.editor.pastepreview.pane.placement.origin=Origin	#
 resourcePack.editor.pastepreview.pane.placement.pastebutton=Colar	#
 resourcePack.editor.pastepreview.pane.placement.rotation=Rotação (por Y)	#
 resourcePack.editor.pastepreview.pane.placement.title=Definições de Colocação	#
-resourcePack.editor.pastepreview.pane.root.size=Tamanho	#
+resourcePack.editor.pastepreview.pane.root.size=Size	#
 resourcePack.editor.pastepreview.pane.root.title=Colar Pré-visualização	#
 resourcePack.editor.pastepreview.tool.tip=Usa o rato para ajustar a posição da pré-visualização da área de transferência e clica para colar no mundo	#
 resourcePack.editor.pastepreview.tool.title=Colar Pré-visualização	#
@@ -553,7 +584,7 @@ resourcePack.editor.toolRail.RepeaterTool.title=Ferramenta de Repetição	#
 resourcePack.editor.toolRail.RepeaterTool.tooltip=Ferramenta que serve para repetir um volume de seleção	#
 resourcePack.editor.toolRail.RepeaterTool.pane.Spacing=Espaçamento	#
 resourcePack.editor.toolRail.RepeaterTool.pane.Repetitions=Repetições	#
-resourcePack.editor.toolRail.RepeaterTool.pane.Preview=Pré-Visualização	#
+resourcePack.editor.toolRail.RepeaterTool.pane.Preview=Pré-visualização	#
 resourcePack.editor.toolRail.RepeaterTool.pane.Clear=Limpar	#
 resourcePack.editor.toolRail.RepeaterTool.pane.Apply=Aplicar	#
 resourcePack.editor.toolRail.RepeaterTool.statusMessage.noSelection=Usa a ferramenta de Seleção para selecionar um volume a repetir	#
@@ -607,6 +638,8 @@ resourcePack.editor.selectionTool.keyBinding.shrinkLeft=Encolher Seleção para 
 resourcePack.editor.selectionTool.keyBinding.shrinkRight=Encolher Seleção para a Direita	#
 resourcePack.editor.selectionTool.keyBinding.shrinkUp=Encolher Seleção para Cima	#
 resourcePack.editor.selectionTool.keyBinding.toggleTool=Ativar/Desativar Ferramenta de Seleção	#
+resourcePack.editor.selectionTool.keyBinding.select=Select Block			#### The action of adding a block to the selection volume using they keyboard {MaxLength="30"}
+resourcePack.editor.selectionTool.keyBinding.selectMultiple=Select Additional Block			#### The action of adding an additional block to the selection volume using the keyboard {MaxLength="30"}
 resourcePack.editor.selectionTool.marquee.title=Seleção de Caixa Animada	#
 resourcePack.editor.selectionTool.modeSelection.freehand.title=Modo de Pincel à Mão Livre	#
 resourcePack.editor.selectionTool.modeSelection.freehand.tooltip=Seleciona blocos no mundo usando um modelo de pincel à mão livre	#
@@ -614,6 +647,16 @@ resourcePack.editor.selectionTool.modeSelection.marquee.title=Modo de Caixa	#
 resourcePack.editor.selectionTool.modeSelection.marquee.tooltip=Seleciona blocos no mundo usando um volume retangular	#
 resourcePack.editor.selectionTool.modeSelection.title=Modo de Seleção	#
 resourcePack.editor.selectionTool.projectThroughLiquid=Projeta através de líquidos	#
+resourcePack.editor.selectionTool.trimAction.trimVolume=Trim Selection			#### Trim the current selection volume to fit only the solid blocks within {MaxLength=30}
+resourcePack.editor.selectionTool.trimAction.trimVolume.tooltip=Trim the current selection volume to fit only the solid blocks within   	#### {MaxLength=200}
+resourcePack.editor.selectionTool.trimAction.removeAir=Remove Air			#### Remove the air from the current selection volume leaving only specified blocks {MaxLength=30}
+resourcePack.editor.selectionTool.trimAction.removeAir.tooltip=Remove the air from the current selection volume leaving only specified blocks 	#### {MaxLength=200}
+resourcePack.editor.selectionTool.trimAction.trimVolume.SettingsPane.title=Trim Settings		#### The window pane title for the settings for trim mode {MaxLength=30}
+resourcePack.editor.selectionTool.trimAction.trimVolume.SettingsPane.ignoreLiquid=Ignore Liquids		#### The toggle button title for ignoring liquids {MaxLength=30}
+resourcePack.editor.selectionTool.trimAction.trimVolume.SettingsPane.ignoreLiquid.tooltip=Ignore any liquid blocks when trimming the volume 	#### {MaxLength=200}
+resourcePack.editor.selectionTool.trimAction.trimVolume.SettingsPane.onlyCollidable=Only Collision Blocks		#### The toggle button title for collision-only blocks {MaxLength=30}
+resourcePack.editor.selectionTool.trimAction.trimVolume.SettingsPane.onlyCollidable.tooltip=Ignore any blocks with no collision (leaves, grass, etc) when trimming the volume 	#### {MaxLength=200}
+resourcePack.editor.selectionTool.trimAction.trimVolume.SettingsPane.blockMaskMode=Block Mask Mode    	#### Title for the toggle action group to selection the block mask mode {MaxLength=20}
 resourcePack.editor.selectionTool.quickAction.clearSelection.tooltip=Desseleciona a seleção atual	#
 resourcePack.editor.selectionTool.quickAction.clearSelection=Anular seleção	#
 resourcePack.editor.selectionTool.quickAction.deleteSelection.tooltip=Remove todos os blocos no volume de seleção atual	#
@@ -672,6 +715,7 @@ resourcePack.editor.timeOfDay.dropDown.none=Nenhum	#
 resourcePack.editor.timeOfDay.dropDown.noon=Meio-dia	#
 resourcePack.editor.timeOfDay.dropDown.sunrise=Amanhecer	#
 resourcePack.editor.timeOfDay.dropDown.sunset=Pôr do Sol	#
+resourcePack.editor.timeOfDay.dropDown.custom=Custom		####"Custom" describes a dropdown that players can define the specific start time {MaxLength=20}
 resourcePack.editor.timeOfDay.dropDown.title=Modelos	#
 resourcePack.editor.timeOfDay.menu.title=Definições de Altura do Dia	#
 resourcePack.editor.timeOfDay.minecraftClock=Relógio Minecraft	#
@@ -689,6 +733,7 @@ resourcePack.editor.toolMode.keyBinding.hotbar6=Selecionar Acesso Rápido 6	#
 resourcePack.editor.toolMode.keyBinding.hotbar7=Selecionar Acesso Rápido 7	#
 resourcePack.editor.toolMode.keyBinding.hotbar8=Selecionar Acesso Rápido 8	#
 resourcePack.editor.toolMode.keyBinding.hotbar9=Selecionar Acesso Rápido 9	#
+resourcePack.editor.toolMode.keyBinding.reload=Reload 	####Represents a label for a key shortcut that reloads scripts and UI.{MaxLength=100}
 
 
 resourcePack.editor.toolRail.blockPalette.title=Paleta de Blocos (CTRL+P)	#
@@ -701,7 +746,7 @@ resourcePack.editor.toolRail.floodFillSelectionTool.description=Seleciona a áre
 resourcePack.editor.toolRail.floodFillSelectionTool.title=Ferramenta de Seleção de Enchimento de Inundação.	#
 resourcePack.editor.toolRail.line.keyBinding.delete=Eliminar Conteúdos	#
 resourcePack.editor.toolRail.line.keyBinding.deleteAndClear=Eliminar Conteúdos e Desselecionar	#
-resourcePack.editor.toolRail.line.keyBinding.deselect=Anular seleção	#
+resourcePack.editor.toolRail.line.keyBinding.deselect=Desselecionar	#
 resourcePack.editor.toolRail.line.keyBinding.deselectAll=Anular a seleção de tudo	#
 resourcePack.editor.toolRail.line.keyBinding.fill=Preencher Conteúdos	#
 resourcePack.editor.toolRail.line.keyBinding.fillAndClear=Preencher Conteúdos e Desselecionar	#
@@ -737,7 +782,7 @@ resourcePack.editor.toolRail.smartFillTool.areaLimit.title=Limite de Área	#
 resourcePack.editor.toolRail.smartFillTool.areaLimit.tooltip=Área máxima a preencher	#
 
 
-resourcePack.editor.toolRail.summonTool.keyBinding.clear=Limpar Seleção	#
+resourcePack.editor.toolRail.summonTool.keyBinding.clear=Clear Selection	#
 resourcePack.editor.toolRail.summonTool.keyBinding.delete=Eliminar Entidade	#
 resourcePack.editor.toolRail.summonTool.keyBinding.moveBack=Mover Selecionado para Trás	#
 resourcePack.editor.toolRail.summonTool.keyBinding.moveDown=Mover Selecionado para Baixo	#
@@ -759,13 +804,19 @@ resourcePack.editor.toolRail.summonTool.tool.title=Ferramenta de Invocação	#
 resourcePack.editor.toolRail.workbenchSettings.title=Mesa de Trabalho	#
 resourcePack.editor.toolRail.workbenchTool.title=Mesa de Trabalho	#
 resourcePack.editor.toolRail.workbenchTool.description=Muda rapidamente os estados dos blocos	#
-resourcePack.editor.toolRail.workbenchTool.howToUse=Clica com o botão esquerdo nos blocos destacados para alterar o seu estado (abrir/fechar, rodar, inverter, etc.). Tenta usar também os modificadores das teclas Shift e Control! Nota que isto só funciona em blocos com propriedades modificáveis (por exemplo, portas, cercas, etc.).	#
+resourcePack.editor.toolRail.workbenchTool.howToUse=Highlight blocks to see the available actions to change their states (open/close, rotate, invert, etc.). Try using Shift and Control key modifiers as well! Please note that this feature only works on blocks with modifiable properties (e.g., doors, fences, stairs, etc.).		####	This text provides a description of the workbench tool and explans how the the user can highlight blocks in order to see the list of actions for changing that blocks state. {MaxLength="500"}
 resourcePack.editor.toolRail.workbenchTool.tooltip=Mudar estados dos blocos	#
 resourcePack.editor.toolRail.workbenchTool.block=Bloquear	#
 resourcePack.editor.toolRail.workbenchTool.leftClick=Botão Esquerdo do Rato	#
 resourcePack.editor.toolRail.workbenchTool.shiftLeftClick=Shift + Botão Esquerdo do Rato	#
 resourcePack.editor.toolRail.workbenchTool.controlLeftClick=CTRL + Botão Esquerdo do Rato	#
 resourcePack.editor.toolRail.workbenchTool.shiftControlLeftClick=Shift + CTRL + Botão Esquerdo do Rato	#
+
+resourcePack.editor.toolRail.workbenchTool.leftClickTooltip=Left Clicking on a block will perform the primary Workbench action		####	This keybinding is a tool tip to convey that a left click will invoke the primary (1st) action of the workbench tool. {MaxLength="150"}
+resourcePack.editor.toolRail.workbenchTool.shiftLeftClickTooltip=Shift + Left Clicking on a block will perform the secondary Workbench action		####	This keybinding is a tool tip to convey that a shift + left click will invoke the primary (1st) action of the workbench tool. {MaxLength="150"}
+resourcePack.editor.toolRail.workbenchTool.controlLeftClickTooltip=Control + Left Clicking on a block will perform the tertiary Workbench action		####	This keybinding is a tool tip to convey that a control + left click will invoke the primary (1st) action of the workbench tool. {MaxLength="150"}
+resourcePack.editor.toolRail.workbenchTool.shiftControlLeftClickTooltip=Shift + Control + Left Clicking on a block will perform the quaternary Workbench action		####	TThis keybinding is a tool tip to convey that a shift + control + left click will invoke the primary (1st) action of the workbench tool. {MaxLength="150"}
+
 resourcePack.editor.toolRail.workbenchTool.stripWood=Despojar/pojar madeira		####This string is intended to express whether the wood block has bark (unstripped) or doesn't have bark (stripped).{MaxLength=100}
 resourcePack.editor.toolRail.workbenchTool.ladderLocation=Localização do escadote	#
 resourcePack.editor.toolRail.workbenchTool.autoAlign=Alinhamento automático	#
@@ -791,6 +842,17 @@ resourcePack.editor.toolRail.workbenchTool.directionProp=Direção do rosto	#
 resourcePack.editor.toolRail.workbenchTool.weirdoDirectionProp=Rodar	#
 resourcePack.editor.toolRail.workbenchTool.facingDirectionProp=Direção do rosto	#
 resourcePack.editor.toolRail.workbenchTool.cardinalDirectionProp=Direção do rosto	#
+
+resourcePack.editor.toolRail.workbenchTool.addCustomMapping=Add Custom Mappings		####This string is intended to express that this subpane is for adding custom block property mappings for the tool.{MaxLength=100}
+resourcePack.editor.toolRail.workbenchTool.blockProperty=Block Property		####This string is intended to express that this field is for the Block Property.{MaxLength=50}
+resourcePack.editor.toolRail.workbenchTool.clickBinding=Click Bindings		####This string is intended to express that this dropdown contains the click binding options (left click, shift + left click, etc).{MaxLength=50}
+resourcePack.editor.toolRail.workbenchTool.addMapping=Add Mapping		####This string is intended to express that this button will add the custom mapping provided by the user.{MaxLength=50}
+resourcePack.editor.toolRail.workbenchTool.resetAllMappings=Reset All Mappings		####This string is intended to express that this button will reset all custom mappings provided by the user.{MaxLength=50}
+
+resourcePack.editor.workbenchTool.keyBinding.primaryAction=Workbench Primary Action		####	This keybinding is to invoke the primary (1st) action of the workbench tool. {MaxLength="30"}
+resourcePack.editor.workbenchTool.keyBinding.secondaryAction=Workbench Secondary Action		#### This keybinding is to invoke the secondary (2nd) action of the workbench tool. {MaxLength="30"}
+resourcePack.editor.workbenchTool.keyBinding.tertiaryAction=Workbench Tertiary Action		####	This keybinding is to invoke the tertiary (3rd) action of the workbench tool. {MaxLength="30"}
+resourcePack.editor.workbenchTool.keyBinding.quaternaryAction=Workbench Quaternary Action		#### This keybinding is to invoke the quaternary (4th) action of the workbench tool. {MaxLength="30"}
 
 
 resourcePack.editor.transaction.keyBinding.redo=Refazer	#

@@ -16,8 +16,8 @@ classroomSettings.uriResource.uri.title=URL-адреса кнопки ресур
 classroomSettings.uriResource.uri.warning.invalidUri=Підтримуються лише URL-адреси, які починаються з "http" або "https".	#
 classroomSettings.uriResource.uri.warning.emptyUri=Не забудьте додати URL-адресу, щоб увімкнути кнопку.	#
 
-commands.codebuilder.description=Установлює для гравця стан "Конструктор коду".	#
-commands.codebuilder.invalidRuntimeAction=Це не дійсна дія середовища виконання.	#
+commands.codebuilder.description=Sets Code Builder state for a player.	#
+commands.codebuilder.invalidRuntimeAction=This is not a valid runtime action.	#
 commands.resourceuri.description=Установлює URI ресурсу в меню гри	#
 commands.resourceuri.named=URI ресурсу встановлено на "%s" з ім’ям кнопки "%s"	#
 commands.resourceuri.default=URI ресурсу встановлено на "%s"	#
@@ -47,7 +47,7 @@ edu.cloudError.generic.upload.title=Помилка вивантаження 	###
 edu.cloudError.local.download.title=Помилка завантаження світу 	##### {MaxLength="45"}
 edu.cloudError.local.download.message=Виникла проблема із завантаженням останньої версії з хмари. Ви можете відкрити останню збережену на цьому пристрої версію, а потім вирішити, яку саме версію світу хочете зберегти.	#
 edu.cloudError.local.download.linkDescription=Докладніше про помилки завантаження	#
-edu.cloudError.local.download.open=Відкрити	#
+edu.cloudError.local.download.open=Open	#
 edu.cloudError.local.sync.title=Помилка синхронізації світу 	##### {MaxLength="45"}
 edu.cloudError.local.sync.message=Виникла проблема з синхронізацією з хмарою. Можливо, ваш світ застарів. Ви все ще можете відкрити версію, яку востаннє зберігали на цьому пристрої.	#
 edu.cloudError.notfound.download.message=Ми не можемо знайти цей світ у хмарі. Вийдіть і поверніться до розділу «Мої світи», щоб отримати оновлене подання своїх світів.	#
@@ -69,15 +69,15 @@ item.spawn_egg.entity.npc.failed.edu=Вам потрібні дозволи тв
 item.worldbuilder.block.failed.edu=Вам потрібні дозволи творця світу, щоб розмістити цей блок	#
 
 library.connection.failed.body=Не вдається підключитися до бібліотеки. Це може статися, якщо ваш комп’ютер не підключено до мережі або якщо доступ до бібліотеки заблоковано.	#
-library.connection.failed.help=Отримати допомогу	#
-library.connection.noWorldFound.title=Світ не знайдено	#
-library.connection.noWorldFound.body=Схоже, у цій категорії немає світів.	#
+library.connection.failed.help=Get Help	#
+library.connection.noWorldFound.title=No World Found	#
+library.connection.noWorldFound.body=It looks like there is no world in this category.	#
 library.noLessonsFound.title=Уроків не знайдено	#
 library.noLessonsFound.body=Ця категорія наразі порожня. Ми постійно додаємо нові уроки, тому не забудьте зайти сюди найближчим часом!	#
-library.tip.noAzureNotebook=Уроки з Python доступні для Windows і MacOS.	#
-library.findMoreWorlds=Відкрити більше світів	#
-library.leaveFeedback=Залишити відгук	#
-library.title=Бібліотека	#
+library.tip.noAzureNotebook=Python lessons are available for Windows and MacOS.	#
+library.findMoreWorlds=Find More Worlds	#
+library.leaveFeedback=Leave Feedback	#
+library.title=Library	#
 library.searchResults=Результати за запитом: "%1"	#
 library.item.createdBy=Автор: %s	#
 library.item.age=Вік: %1	#
@@ -115,7 +115,7 @@ library.item.download.noSpace.title=Бракує місця	#
 library.item.download.noSpace.body=Не вдається завантажити цей світ через брак місця на вашому пристрої.	#
 
 library.item.section.languages=ДОСТУПНІ МОВИ	#
-library.item.section.languages.tip=Якщо урок не доступний на бажаній мові, за допомогою функції "Занурення в текст" можна перекладати текст гри, зокрема книжки, знаки, дошки та діалогові вікна NPC.	#
+library.item.section.languages.tip=If this lesson is not available in your preferred language, Immersive Reader can be used to translate in-game text including books, signs, boards, and NPC dialog.	#
 library.item.section.questions=ВАЖЛИВІ ЗАПИТАННЯ	#
 library.item.section.generic_objectives=ЦІЛІ	#
 library.item.section.objectives=ЦІЛІ НАВЧАННЯ	#
@@ -124,12 +124,12 @@ library.item.section.activities=ЗАВДАННЯ УЧНЯ	#
 library.item.section.assessment=ОЦІНЮВАННЯ	#
 library.item.section.extensions=РОЗШИРЕННЯ	#
 
-library.prompt.inGameLink=Поточну гру буде збережено й перервано, включно з усіма підключеннями до мультиплеєра. Справді вийти?	#
-library.fetchingItem=Підключення до бібліотеки...	#
-library.fetchingItem.failed=Не вдалося знайти цей елемент у бібліотеці.	#
+library.prompt.inGameLink=This will save and quit your current game and any multiplayer connections, are you sure you want to quit?	#
+library.fetchingItem=Connecting to library...	#
+library.fetchingItem.failed=Sorry, we weren't able to find that item in the Library.	#
 library.welcome.1=Вітаємо в бібліотеці Minecraft Education!	#
-library.welcome.2=Бібліотека – це нова функція, за допомогою якої вчителі та студенти можуть знаходити навчальні матеріали й імпортувати їх безпосередньо в гру. У цьому випуску є список найпопулярніших світів для імпорту й використання, а також посилання на повну бібліотеку світів на нашому веб-сайті.	#
-library.welcome.3=Ми працюємо над тим, щоб додати підтримку нових типів вмісту та функціональних можливостей найближчими місяцями. Поділіться думкою, натиснувши кнопку зворотного зв’язку.	#
+library.welcome.2=The Library is a new feature we've created to make it easy for teachers and students to find and import educational content directly in the game. In this release, you'll find a list of some of our most popular worlds to import and use, along with a link to the full world library on our website.	#
+library.welcome.3=We're working on adding support for more types of content and functionality in the coming months. Please let us know what you think by clicking the feedback button.	#
 
 library.item.sharepopup.title.simple=Поділитися посиланням	#
 library.item.sharepopup.title.educator=Призначити чи надіслати	#
@@ -141,7 +141,7 @@ library.item.sharepopup.shareText.resource.simple=Ваш світ уже мож�
 library.item.sharepopup.shareLink=Поділитися посиланням	#
 library.item.sharepopup.body=Поділіться посиланням на цей світ.	#
 library.item.sharepopup.copy=КОПІЮВАТИ	#
-library.item.sharepopup.copyButton=Копіювати посилання	#
+library.item.sharepopup.copyButton=Copy Link	#
 library.item.sharepopup.addResourceButton=Додавання ресурсу	#
 library.item.sharepopup.secondaryText=Додати до вашого світу інструмент для оцінювання, тему Flipgrid або веб-сайт перед надсиланням?	#
 library.item.sharepopup.addResource.labelOne=Скопіюйте URL-посилання на вашу вікторину, тему Flipgrid або веб-сайт і вставте його нижче.	#
@@ -157,7 +157,7 @@ library.item.sharepopup.addResource.deleteButton=Видалити	#
 library.item.sharepopup.addResource.invalidSchema=Введіть URL-адресу, яка починається з "http" або "https", щоб продовжити.	#
 library.item.sharepopup.editResourceLabel=Ось ескіз кнопки, яку ми додамо до меню гри для всіх, хто відкриває світ.	#
 library.item.sharepopup.editResource.button.accessibility=Змінити URL-посилання ресурсу	#
-library.item.share.toast.title=Посилання скопійовано до буфера обміну.	#
+library.item.share.toast.title=Link copied to your clipboard.	#
 
 library.item.share.toast.teams=Відкрито Microsoft Teams у вашому веб-браузері.	#
 library.item.share.toast.email=Відкрито електронну пошту.	#
@@ -183,7 +183,7 @@ library.category.label.buildChallenges=ЩОМІСЯЧНІ ЗАВДАННЯ З Б
 library.category.title.buildChallenges=Щомісячні завдання з будівництва	#
 library.category.description.buildChallenges=Допоможіть учням проявити творчість і розвинути навички, потрібні в XXI столітті, з цими простими у виконанні завданнями для класу, табору або клубу.	#
 
-library.category.label.howToPlay=ЯК ГРАТИ	#
+library.category.label.howToPlay=HOW TO PLAY	#
 library.category.description.howToPlay=Ці світи та завдання створені для ознайомлення з використанням Minecraft Education у класі, таборі або клубі.	#
 
 library.category.label.howToPlay.startHere=ПОЧНІТЬ ТУТ	#
@@ -201,8 +201,8 @@ library.category.label.digitalCitizen=ЦИФРОВЕ ГРОМАДЯНСТВО	#
 library.category.title.digitalCitizen=Цифрове громадянство	#
 library.category.description.digitalCitizen=Ці світи й завдання приділяють увагу цифровому громадянству, допомагаючи учням освоювати медіаграмотність, захист конфіденційності та участь в онлайн-спільнотах.	#
 
-library.category.label.equity_and_inclusion=РІВНІСТЬ ТА ІНКЛЮЗІЯ	#this has already been localized	#
-library.category.title.equity_and_inclusion=Рівність та інклюзія	#this has already been localized	#
+library.category.label.equity_and_inclusion=EQUITY AND INCLUSION	#this has already been localized	#
+library.category.title.equity_and_inclusion=Рівність та інклюзивність	#this has already been localized	#
 library.category.description.equity_and_inclusion=Ці світи й завдання приділяють особливу увагу питанням рівності й інклюзивності. Розглядаються такі концепції, як соціальна справедливість, ідентичність і толерантність.	#change in capitalization only, has otherwise been localized	#
 
 library.category.label.lessons=УРОКИ	#
@@ -258,15 +258,15 @@ library.category.title.computerScience=Комп’ютерні науки	#
 
 library.category.label.computerScience.hourOfCode=ГОДИНА КОДУ	#
 library.category.title.computerScience.hourOfCode=Година коду	#
-library.category.description.computerScience.hourOfCode="Година коду" почалась у 2013 році як одногодинне введення в інформатику, створене для того, щоб показати, як будь-хто може вивчити основи програмування. Ці уроки працюють як веселий ввідний курс у програмування в Minecraft, і підходять для людей будь-якого віку.	#
+library.category.description.computerScience.hourOfCode=Проєкт «Година коду» почався у 2013 році як одногодинне введення в інформатику, створене для того, щоб показати, що будь-хто може вивчити основи програмування. Ці уроки є цікавим ввідним курсом у програмування в Minecraft і підходять для людей будь-якого віку.	#
 
 library.category.label.computerScience.computingWithMinecraft=ОБЧИСЛЕННЯ ЗА ДОПОМОГОЮ MINECRAFT	#
 library.category.title.computerScience.computingWithMinecraft=Обчислення за допомогою Minecraft	#
-library.category.description.computerScience.computingWithMinecraft=Створіть власне місто за допомогою цих уроків комп’ютерних наук на основі стандартів CSTA. Дізнайтеся про основні концепції CS, зокрема цикли, алгоритми, умовні команди, налагодження, ітерації тощо.	#
+library.category.description.computerScience.computingWithMinecraft=Створіть власне місто за допомогою цих уроків із комп’ютерних наук, створених за стандартами CSTA. Дізнайтеся про основні концепції інформатики, зокрема цикли, алгоритми, умовні оператори, відлагодження, ітерації тощо.	#
 
 library.category.label.computerScience.codingWithMinecraft=ПРОГРАМУВАННЯ ЗА ДОПОМОГОЮ MINECRAFT	#
 library.category.title.computerScience.codingWithMinecraft=Програмування за допомогою Minecraft	#
-library.category.description.computerScience.codingWithMinecraft=Дізнайтеся про умовні команди, функції, координати, штучний інтелект і багато іншого з цими уроками комп’ютерних наук на основі стандартів CSTA.	#
+library.category.description.computerScience.codingWithMinecraft=Learn conditionals, functions, coordinates, AI, and more with these computer science lessons based on CSTA standards.	#
 
 library.category.label.computerScience.codingFun1=ОСНОВИ ПРОГРАМУВАННЯ: 1	#
 library.category.title.computerScience.codingFun1=Основи програмування: 1	#
@@ -278,11 +278,11 @@ library.category.description.computerScience.codingFun2=Відвідайте М�
 
 library.category.label.computerScience.codingFun3=ОСНОВИ ПРОГРАМУВАННЯ: 3	#
 library.category.title.computerScience.codingFun3=Основи програмування: 3	#
-library.category.description.computerScience.codingFun3=Мандруйте в часі від доісторичної епохи до далекого майбутнього! Знайомтеся з динозаврами, римськими акведуками й Диким Заходом, навчаючись використовувати змінні, події, умови та функції.	#
+library.category.description.computerScience.codingFun3=Travel through time, from the pre-historic era to the far-away future! See dinosaurs, Roman aqueducts, and the Wild West while you learn how to use variables, events, conditionals, and functions.	#
 
 library.category.label.computerScience.ai=ШТУЧНИЙ ІНТЕЛЕКТ	#
 library.category.title.computerScience.ai=Штучний інтелект	#
-library.category.description.computerScience.ai=Цей курс розроблено спільно з Microsoft AI for Earth, щоб познайомити учнів із силою штучного інтелекту або ШІ в наборі реальних сценаріїв. Учні навчаться допомагати людям у віддалених місцевостях, зберігати дику природу та екосистеми, а також досліджувати зміну клімату. Прості курси з інтуїтивними посібниками дають змогу учням відчути концептуальний розвиток ШІ у ході виконання дій, як-от збору даних, створення набору даних, розгортання ШІ та аналізу результатів.	#
+library.category.description.computerScience.ai=Created in collaboration with Microsoft AI for Earth, this course will introduce students to the power of Artificial intelligence or AI in a range of exciting real-world scenarios. Students will help people in remote areas, preserve wildlife and ecosystems, and research climate change. Easy, self-guided tutorials allow students to experience the conceptual development of AI in a series of steps, including the collection of data, dataset creation, AI deployment and analyzing results.	#
 
 library.category.label.computerScience.blockBased=ПРОГРАМУВАННЯ НА ОСНОВІ БЛОКІВ	#
 library.category.title.computerScience.blockBased=Програмування на основі блоків	#
@@ -292,11 +292,11 @@ library.category.title.computerScience.python=Python	#
 
 library.category.label.computerScience.python.python101=ОСНОВИ PYTHON	#
 library.category.title.computerScience.python.python101=Основи Python	#
-library.category.description.computerScience.python101=Почніть програмувати на Python у Minecraft! Вивчіть основи Python, зокрема синтаксис, типи даних, змінні, умови, цикли "for", умовні цикли, списки та функції.	#
+library.category.description.computerScience.python101=Start coding Python in Minecraft! Learn the basics of Python, including syntax, data types, variables, conditionals, 'for' loops, conditional loops, lists, and functions.	#
 
 library.category.label.computerScience.python.python_islands=ОСТРОВИ PYTHON	#
 library.category.title.computerScience.python.python_islands=Острови Python	#
-library.category.description.computerScience.python.python_islands=Ласкаво просимо в Королівство летючих островів! Це містичне королівство літає високо над світом унизу. У цій серії уроків учні вивчать основи Python у кількох тематичних завданнях для кожного світу. Виконайте ці завдання, щоб допомогти королівству розвиватися й процвітати!	#
+library.category.description.computerScience.python.python_islands=Ласкаво просимо в Королівство летючих островів! Це містичне королівство літає високо над світом унизу. У цій серії уроків учні засвоять основи Python у кількох тематичних завданнях для кожного світу. Виконайте ці завдання, щоб допомогти королівству розвиватися й процвітати!	#
 
 library.category.label.computerScience.languageAgnostic=МОВОНЕЗАЛЕЖНЕ ПРОГРАМУВАННЯ	#
 library.category.title.computerScience.languageAgnostic=Мовонезалежне програмування	#
@@ -329,7 +329,7 @@ library.search.multipleResults=%1 результати(-ів) пошуку "%s" 
 library.search.sortMethod.lexicographic.ascending=Сортування по алфавіту	#
 library.search.sortMethod.relevance=Відсортовано за релевантністю	#
 
-menu.eduPlayScreen.header=Грати	#
+menu.eduPlayScreen.header=Play	#
 menu.ai_lesson_crafter=Крафтер уроків 	###Lesson Crafter is the name of our AI Lesson generator for teachers. Lesson as in classroom teaching, crafter as in creating or generating a new teaching plan
 menu.eduLocalStorage=Локальне сховище	#
 menu.eduCloudStorage=Хмарне сховище	#
@@ -382,7 +382,7 @@ resourceUri.launch.success=Відкрито посилання на ресурс
 resourceUri.launch.failure=Не вдалося відкрити посилання на ресурс. Схоже, це не дійсна URL-адреса.	#
 
 resourceUri.tooltip.infotext=Це посилання можна редагувати й використовувати, щоб з’єднувати світи Minecraft з онлайновими ресурсами.	#
-resourceUri.tooltip.infotext.disabled=Можна активувати цю кнопку, додавши URL-адресу до посилання на ресурс, перейшовши в "Параметри > Клас".	#
+resourceUri.tooltip.infotext.disabled=You can enable this button by adding a URL to the Resource Link field in Settings > Classroom.	#
 resourceUri.tooltip.label=ПОСИЛАННЯ НА РЕСУРС	#
 
 signin.acceptTerms=Прийняти умови	#
@@ -476,7 +476,7 @@ tag.geography=Географія	#	#
 tag.geology=Геологія	#	#
 tag.history_and_culture=Історія та культура	#	#
 tag.hour_of_code=Година коду	#	#
-tag.how_to_play=Як грати	#	#
+tag.how_to_play=How to Play	#	#
 tag.intermediate=Середній рівень	#	#
 tag.kensukes_kingdom=Королівство Кенсуке	#	#
 tag.language_arts=Словесність	#	#
@@ -545,7 +545,7 @@ tag.python_islands=Острови Python #	#
 ## END TAG LOCALIZATION SECTION ##
 
 worlds.storage.permission.needed=У нас немає дозволу змінювати цей параметр.	#
-worlds.storage.permission.settings=Відкрийте "Налаштування" в Android і оновіть дозволи програм для Minecraft Education, щоб надати доступ до сховища.	#
+worlds.storage.permission.settings=Please open Android Settings and update app permissions for Minecraft Education to allow storage access.	#
 worlds.storage.android.settings=Відкрити налаштування Android	#
 worlds.storage.permission.dialog.title=Потрібен дозвіл пристрою	#
 worlds.storage.missing=Ваші світи зникли? Спробуйте змінити розташування сховища Minecraft:	#

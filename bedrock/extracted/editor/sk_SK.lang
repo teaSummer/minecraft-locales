@@ -10,10 +10,10 @@ commands.editor.project.exportComplete=Exportovanie dokončené, súbory zapísa
 commands.editor.project.exportCopyFailed=Nepodarilo sa skopírovať údaje o úrovni %s	#
 commands.editor.project.unknownSubcommand=Neznámy podpríkaz	#
 
-resourcePack.editor.actionBar.redo.tooltipDescription=Opakovať akciu	#
+resourcePack.editor.actionBar.redo.tooltipDescription=Redo an action	#
 resourcePack.editor.actionBar.redo.tooltipTitle=Znova	#
 resourcePack.editor.actionBar.redo=Znova	#
-resourcePack.editor.actionBar.undo.tooltipDescription=Zrušiť akciu	#
+resourcePack.editor.actionBar.undo.tooltipDescription=Undo an action	#
 resourcePack.editor.actionBar.undo.tooltipTitle=Vrátiť späť	#
 resourcePack.editor.actionBar.undo=Vrátiť späť	#
 
@@ -54,6 +54,7 @@ resourcePack.editor.brushPaint.tooltip=Používajte štetce na maľovanie blokov
 
 resourcePack.editor.BrushPaintControl.brush.title=Štetec	#
 resourcePack.editor.BrushPaintControl.brushSettings.title=Nastavenia štetca	#
+resourcePack.editor.BrushPaintControl.shapeSettings.title=Shape Settings 	####Represents an expander that has UI controls for brush shape settings.{MaxLength=100}
 resourcePack.editor.BrushPaintControl.fillConstraints.mask.title=Zoznam masiek	#
 resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.disabled.tooltip=Zakázať filtre blokov	#
 resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.disabled=Zakázané	#
@@ -107,6 +108,8 @@ resourcePack.editor.brushShape.pyramid.settings.depth=Hĺbka	#
 resourcePack.editor.brushShape.pyramid.settings.height=Výška	#
 resourcePack.editor.brushShape.pyramid.settings.width=Šírka	#
 resourcePack.editor.brushShape.singleBlock.name=Jeden blok	#
+resourcePack.editor.brushShape.star.name=Star 	####Represent a star shaped brush.{MaxLength=100}
+resourcePack.editor.brushShape.star.settings.includeVertical=Include Vertical 	####Represents a toggle button label that removes vertical parts of a star brush if unchecked.{MaxLength=100}
 
 
 resourcePack.editor.client.description=Klientské zdroje editora	#
@@ -216,18 +219,29 @@ resourcePack.editor.entityInspector.toolRail.description=Kliknutím ľavým tla�
 resourcePack.editor.exportProject.exportType=Typ exportu	#
 resourcePack.editor.exportProject.exportType.playableWorld=Hrateľný svet	#
 resourcePack.editor.exportProject.exportNotes=Poznámky k exportu	#
+resourcePack.editor.exportProject.exportNotes.export=Exporting Progress   	####This string is intended to express that the title of export progress modal.{MaxLength=100}
 resourcePack.editor.exportProject.exportNotes.warning=Exportujete svet verzie %1. Exportované hrateľné svety nemožno používať vo verziách hry Minecraft s číslom verzie nižším ako %1. Ak chcete vykonať konverziu na čísla predchádzajúcich verzií, použite aplikáciu https://chunker.app/ (niektoré funkcie nemusia byť dostupné, ak nie sú podporované v starších verziách).	#
+resourcePack.editor.exportProject.exportNotes.progress=Exporting the world...    	####This string is intended to express that the progress message of exporting.{MaxLength=100}
+resourcePack.editor.exportProject.exportNotes.exportSuccess=The world was successfully exported    	####This string is intended to express that export the world succeeded.{MaxLength=100}
+resourcePack.editor.exportProject.exportNotes.exportFailed=Exporting world was failure    	####This string is intended to express that export the world failed.{MaxLength=100}
 resourcePack.editor.exportProject.generalSettings=Všeobecné nastavenia	#
 resourcePack.editor.exportProject.generalSettings.worldName=Názov sveta	#
 resourcePack.editor.exportProject.generalSettings.gameMode=Herný režim	#
 resourcePack.editor.exportProject.generalSettings.difficulty=Náročnosť	#
 resourcePack.editor.exportProject.generalSettings.hardcore=Drsná	#
+resourcePack.editor.exportProject.initialPlaySettings=Inital Play Settings   	####This string is intended to express that the export category for inital play settings.{MaxLength=100}
+resourcePack.editor.exportProject.initialPlaySettings.spawnPosition=World Spawn Point   	####This string is intended to express that player inistal spawn position.{MaxLength=100}
+resourcePack.editor.exportProject.initialPlaySettings.startTime=Start Time   	####This string is intended to express that world start time.{MaxLength=100}
+resourcePack.editor.exportProject.initialPlaySettings.clockType=Clock Type   	####This string is intended to express that start time with different clock type.{MaxLength=100}
+resourcePack.editor.exportProject.initialPlaySettings.customStartTime=Custom Start Time   	####This string is intended to express that custom start time with Minecraft Cloke value.{MaxLength=100}
+resourcePack.editor.exportProject.initialPlaySettings.weather=Start Weather   	####This string is intended to express that the custom start weather.{MaxLength=100}
 resourcePack.editor.exportProject.advancedSettings=Rozšírené nastavenia	#
 resourcePack.editor.exportProject.advancedSettings.startingMap=Počiatočná mapa	#
 resourcePack.editor.exportProject.advancedSettings.bonusChest=Truhlica s odmenou	#
 resourcePack.editor.exportProject.advancedSettings.showCoordinates=Zobraziť súradnice	#
 resourcePack.editor.exportProject.advancedSettings.showDaysPlayed=Zobraziť odohrané dni	#
 resourcePack.editor.exportProject.advancedSettings.recipeUnlocking=Odomykanie receptov	#
+resourcePack.editor.exportProject.advancedSettings.limitedCrafting=Limited Crafting   	####Export pane checkbox label that enable to set crafting limit.{MaxLength=100}
 resourcePack.editor.exportProject.advancedSettings.fireSpreads=Šírenie ohňa	#
 resourcePack.editor.exportProject.advancedSettings.tntExplodes=Výbuchy TNT	#
 resourcePack.editor.exportProject.advancedSettings.resawnBlocksExplode=Výbuchy blokov znovuzrodenia	#
@@ -235,11 +249,13 @@ resourcePack.editor.exportProject.advancedSettings.mobLoot=Korisť z tvorov	#
 resourcePack.editor.exportProject.advancedSettings.naturalRegeneration=Prirodzená regenerácia	#
 resourcePack.editor.exportProject.advancedSettings.tileDrops=Predmety vypadnuté z dlaždíc	#
 resourcePack.editor.exportProject.advancedSettings.immediateRespawn=Okamžité znovuzrodenie	#
+resourcePack.editor.exportProject.advancedSettings.showDeathMessage=Show Death Message   	####Export pane checkbox label that show the death message when player die.{MaxLength=100}
 resourcePack.editor.exportProject.advancedSettings.respawnRadius=Polomer znovuzrodenia	#
 resourcePack.editor.exportProject.advancedSettings.simulationDistance=Vzdialenosť simulácie	#
 resourcePack.editor.exportProject.advancedSettings.bedsWork=Postele fungujú	#
 resourcePack.editor.exportProject.advancedSettings.requiredSleepingPlayers=Požadovaní spiaci hráči (%1$s)	#
 resourcePack.editor.exportProject.advancedSettings.requiredSleepingPlayers.onePlayerMessage=Iba 1 hráč	#
+resourcePack.editor.exportProject.advancedSettings.showItemTags=Show Item Tags   	####Export pane checkbox label that show item tags.{MaxLength=100}
 resourcePack.editor.exportProject.multiplayerSettings=Nastavenia hry pre viacerých hráčov	#
 resourcePack.editor.exportProject.multiplayerSettings.multiplayerGame=Hra pre viacerých hráčov	#
 resourcePack.editor.exportProject.multiplayerSettings.playerAccess=Prístup hráča	#
@@ -255,6 +271,16 @@ resourcePack.editor.exportProject.cheatsSettings.mobGriefing=Negatívne účinky
 resourcePack.editor.exportProject.cheatsSettings.entitiesDropLoot=Korisť vypadnutá z entít	#
 resourcePack.editor.exportProject.cheatsSettings.weatherCycle=Cyklus počasia	#
 resourcePack.editor.exportProject.cheatsSettings.commandBlocks=Príkazové bloky	#
+resourcePack.editor.exportProject.cheatsSettings.commandBlockOutput=Command Block Output   	####Export pane checkbox label that enable to display the command output.{MaxLength=100}
+resourcePack.editor.exportProject.cheatsSettings.sendCommandFeedback=Send Command Feedback   	####This string is the heading for the 'send command feedback' setting when exporting a world.{MaxLength=100}
+resourcePack.editor.exportProject.cheatsSettings.maxCommandChainLength=Max Command Chain Length   	####Export pane number that indicate the max length of the command, it defaults to 65536. It has a minimum of 0 and a max of 2147483647.{MaxLength=100}
+resourcePack.editor.exportProject.cheatsSettings.fireDamage=Fire Damage  	####Export pane checkbox label that enable damage when the player on fire.{MaxLength=100}
+resourcePack.editor.exportProject.cheatsSettings.freezeDamage=Freeze Damage  	####Export pane checkbox label that enable damage when the player freezes.{MaxLength=100}
+resourcePack.editor.exportProject.cheatsSettings.fallDamage=Fall Damage  	####Export pane checkbox label that enable damage when the player falls.{MaxLength=100}
+resourcePack.editor.exportProject.cheatsSettings.drowningDamage=Drowning Damage  	####Export pane checkbox label that enable damage when the player is drowning.{MaxLength=100}
+resourcePack.editor.exportProject.cheatsSettings.insomnia=Insomnia  	####Export pane checkbox label that enable player insomnia status.{MaxLength=100}
+resourcePack.editor.exportProject.cheatsSettings.showBorderEffect=Show Border Effect  	####Export pane checkbox label that show border effect.{MaxLength=100}
+resourcePack.editor.exportProject.cheatsSettings.functionCommandLimit=Function Command Limit  	####Export pane checkbox label that the number of limition for the function command.{MaxLength=100}
 resourcePack.editor.exportProject.cheatsSettings.educationFeatures=Vzdelávacie funkcie	#
 resourcePack.editor.exportProject.cheatsSettings.randomTickSpeed=Rýchlosť náhodného tikania	#
 resourcePack.editor.exportProject.export=Export	#
@@ -266,6 +292,11 @@ resourcePack.editor.exportProject.difficulty.peaceful=Pokojná	#
 resourcePack.editor.exportProject.difficulty.easy=Jednoduchá	#
 resourcePack.editor.exportProject.difficulty.normal=Normálna	#
 resourcePack.editor.exportProject.difficulty.hard=Ťažká	#
+resourcePack.editor.exportProject.weather.default=Default   	####This string is intended to express that the default weather .{MaxLength=100}
+resourcePack.editor.exportProject.weather.clear=Clear   	####This string is intended to express that the weather of Clear.{MaxLength=100}
+resourcePack.editor.exportProject.weather.rain=Rain   	####This string is intended to express that the weather of Rain.{MaxLength=100}
+resourcePack.editor.exportProject.weather.thunder=Thunder   	####This string is intended to express that the weather of Thunder.{MaxLength=100}
+
 
 
 resourcePack.editor.toolRail.ExtrudeTool.title=Nástroj extrudácie	#
@@ -385,7 +416,7 @@ resourcePack.editor.menuBar.file.cursor.projectThroughLiquid=Premietnuť cez kva
 resourcePack.editor.menuBar.file.cursor=Nastavenia kurzora	#
 resourcePack.editor.menuBar.file.export.project=Editor projektu	#
 resourcePack.editor.menuBar.file.export.world=Hrateľný svet	#
-resourcePack.editor.menuBar.file.export=Exportovať	#
+resourcePack.editor.menuBar.file.export=Export	#
 resourcePack.editor.menuBar.file.pauseScreen=Ponuka hry	#
 resourcePack.editor.menuBar.file.settings=Nastavenia používateľského rozhrania	#
 resourcePack.editor.menuBar.file=Súbor	#
@@ -476,11 +507,11 @@ resourcePack.editor.pastepreview.pane.controls.title=Ovládacie prvky kurzora	#
 resourcePack.editor.pastepreview.pane.placement.mirrorX=Zrkadliť X	#
 resourcePack.editor.pastepreview.pane.placement.mirrorZ=Zrkadliť Z	#
 resourcePack.editor.pastepreview.pane.placement.offset=Posun	#
-resourcePack.editor.pastepreview.pane.placement.origin=Pôvod	#
+resourcePack.editor.pastepreview.pane.placement.origin=Origin	#
 resourcePack.editor.pastepreview.pane.placement.pastebutton=Prilepiť	#
 resourcePack.editor.pastepreview.pane.placement.rotation=Rotácia (okolo osi Y)	#
 resourcePack.editor.pastepreview.pane.placement.title=Nastavenia umiestnenia	#
-resourcePack.editor.pastepreview.pane.root.size=Veľkosť	#
+resourcePack.editor.pastepreview.pane.root.size=Size	#
 resourcePack.editor.pastepreview.pane.root.title=Prilepiť ukážku	#
 resourcePack.editor.pastepreview.tool.tip=Pomocou myši upravte polohu ukážky schránky a kliknutím prilepte do sveta	#
 resourcePack.editor.pastepreview.tool.title=Prilepiť ukážku	#
@@ -607,6 +638,8 @@ resourcePack.editor.selectionTool.keyBinding.shrinkLeft=Zmenšiť výber doľava
 resourcePack.editor.selectionTool.keyBinding.shrinkRight=Zmenšiť výber doprava	#
 resourcePack.editor.selectionTool.keyBinding.shrinkUp=Zmenšiť výber nahor	#
 resourcePack.editor.selectionTool.keyBinding.toggleTool=Prepnúť nástroj výberu	#
+resourcePack.editor.selectionTool.keyBinding.select=Select Block			#### The action of adding a block to the selection volume using they keyboard {MaxLength="30"}
+resourcePack.editor.selectionTool.keyBinding.selectMultiple=Select Additional Block			#### The action of adding an additional block to the selection volume using the keyboard {MaxLength="30"}
 resourcePack.editor.selectionTool.marquee.title=Výber pohybujúceho sa textu	#
 resourcePack.editor.selectionTool.modeSelection.freehand.title=Voľný režim štetca	#
 resourcePack.editor.selectionTool.modeSelection.freehand.tooltip=Výber blokov vo svete pomocou voľného tvaru štetca	#
@@ -614,6 +647,16 @@ resourcePack.editor.selectionTool.modeSelection.marquee.title=Režim pohybujúce
 resourcePack.editor.selectionTool.modeSelection.marquee.tooltip=Výber blokov vo svete pomocou obdĺžnikového objemu	#
 resourcePack.editor.selectionTool.modeSelection.title=Režim výberu	#
 resourcePack.editor.selectionTool.projectThroughLiquid=Premietnuť cez kvapalinu	#
+resourcePack.editor.selectionTool.trimAction.trimVolume=Trim Selection			#### Trim the current selection volume to fit only the solid blocks within {MaxLength=30}
+resourcePack.editor.selectionTool.trimAction.trimVolume.tooltip=Trim the current selection volume to fit only the solid blocks within   	#### {MaxLength=200}
+resourcePack.editor.selectionTool.trimAction.removeAir=Remove Air			#### Remove the air from the current selection volume leaving only specified blocks {MaxLength=30}
+resourcePack.editor.selectionTool.trimAction.removeAir.tooltip=Remove the air from the current selection volume leaving only specified blocks 	#### {MaxLength=200}
+resourcePack.editor.selectionTool.trimAction.trimVolume.SettingsPane.title=Trim Settings		#### The window pane title for the settings for trim mode {MaxLength=30}
+resourcePack.editor.selectionTool.trimAction.trimVolume.SettingsPane.ignoreLiquid=Ignore Liquids		#### The toggle button title for ignoring liquids {MaxLength=30}
+resourcePack.editor.selectionTool.trimAction.trimVolume.SettingsPane.ignoreLiquid.tooltip=Ignore any liquid blocks when trimming the volume 	#### {MaxLength=200}
+resourcePack.editor.selectionTool.trimAction.trimVolume.SettingsPane.onlyCollidable=Only Collision Blocks		#### The toggle button title for collision-only blocks {MaxLength=30}
+resourcePack.editor.selectionTool.trimAction.trimVolume.SettingsPane.onlyCollidable.tooltip=Ignore any blocks with no collision (leaves, grass, etc) when trimming the volume 	#### {MaxLength=200}
+resourcePack.editor.selectionTool.trimAction.trimVolume.SettingsPane.blockMaskMode=Block Mask Mode    	#### Title for the toggle action group to selection the block mask mode {MaxLength=20}
 resourcePack.editor.selectionTool.quickAction.clearSelection.tooltip=Zrušiť aktuálny výber	#
 resourcePack.editor.selectionTool.quickAction.clearSelection=Zrušiť výber	#
 resourcePack.editor.selectionTool.quickAction.deleteSelection.tooltip=Odstrániť všetky bloky v aktuálnom výbere	#
@@ -626,9 +669,9 @@ resourcePack.editor.selectionTool.selectionMode.fixedDistance=Pevná vzdialenos�
 resourcePack.editor.selectionTool.selectionMode.mouseAndKeyboard=Voľný tvar	#
 resourcePack.editor.selectionTool.selectionMode=Režim	#
 resourcePack.editor.selectionTool.settingsPane.title=Výber	#
-resourcePack.editor.selectionTool.toolRail.description=Kliknutím ľavým tlačidlom myši vytvorte výber a pomocou klávesov CTRL + D ho zrušte	#
+resourcePack.editor.selectionTool.toolRail.description=Left mouse click to create a selection; CTRL+D to deselect	#
 resourcePack.editor.selectionTool.toolRail.title=Výber	#
-resourcePack.editor.selectionTool.transformPane.origin.tooltip=Miesto pôvodu výberu na súradniciach sveta	#
+resourcePack.editor.selectionTool.transformPane.origin.tooltip=Origin location of the selection in world coordinates	#
 resourcePack.editor.selectionTool.transformPane.origin=Pôvod	#
 resourcePack.editor.selectionTool.transformPane.size=Veľkosť	#
 resourcePack.editor.selectionTool.transformPane.title=Transformovať	#
@@ -672,6 +715,7 @@ resourcePack.editor.timeOfDay.dropDown.none=Žiadne	#
 resourcePack.editor.timeOfDay.dropDown.noon=Poludnie	#
 resourcePack.editor.timeOfDay.dropDown.sunrise=Východ slnka	#
 resourcePack.editor.timeOfDay.dropDown.sunset=Západ slnka	#
+resourcePack.editor.timeOfDay.dropDown.custom=Custom		####"Custom" describes a dropdown that players can define the specific start time {MaxLength=20}
 resourcePack.editor.timeOfDay.dropDown.title=Predvoľby	#
 resourcePack.editor.timeOfDay.menu.title=Nastavenia času dňa	#
 resourcePack.editor.timeOfDay.minecraftClock=Hodiny Minecraft	#
@@ -689,6 +733,7 @@ resourcePack.editor.toolMode.keyBinding.hotbar6=Vybrať rýchly panel 6	#
 resourcePack.editor.toolMode.keyBinding.hotbar7=Vybrať rýchly panel 7	#
 resourcePack.editor.toolMode.keyBinding.hotbar8=Vybrať rýchly panel 8	#
 resourcePack.editor.toolMode.keyBinding.hotbar9=Vybrať rýchly panel 9	#
+resourcePack.editor.toolMode.keyBinding.reload=Reload 	####Represents a label for a key shortcut that reloads scripts and UI.{MaxLength=100}
 
 
 resourcePack.editor.toolRail.blockPalette.title=Paleta blokov (CTRL + P)	#
@@ -713,7 +758,7 @@ resourcePack.editor.toolRail.line.keyBinding.moveRight=Posunúť vybraté doprav
 resourcePack.editor.toolRail.line.keyBinding.moveUp=Posunúť vybraté nahor	#
 resourcePack.editor.toolRail.line.keyBinding.selectAll=Vybrať všetko	#
 resourcePack.editor.toolRail.line.pane.algorithm.Direct=Smer	#
-resourcePack.editor.toolRail.line.pane.algorithm.Staggered=Rozložené (ploty)	#
+resourcePack.editor.toolRail.line.pane.algorithm.Staggered=Staggered (Fences)	#
 resourcePack.editor.toolRail.line.pane.algorithm.title=Algoritmus	#
 resourcePack.editor.toolRail.line.pane.fillAction=Vyplniť výber	#
 resourcePack.editor.toolRail.line.pane.height.title=Výška	#
@@ -737,7 +782,7 @@ resourcePack.editor.toolRail.smartFillTool.areaLimit.title=Limit oblasti	#
 resourcePack.editor.toolRail.smartFillTool.areaLimit.tooltip=Maximálna oblasť na vyplnenie	#
 
 
-resourcePack.editor.toolRail.summonTool.keyBinding.clear=Vymazať výber	#
+resourcePack.editor.toolRail.summonTool.keyBinding.clear=Clear Selection	#
 resourcePack.editor.toolRail.summonTool.keyBinding.delete=Odstrániť entitu	#
 resourcePack.editor.toolRail.summonTool.keyBinding.moveBack=Posunúť vybraté dozadu	#
 resourcePack.editor.toolRail.summonTool.keyBinding.moveDown=Posunúť vybraté nadol	#
@@ -759,13 +804,19 @@ resourcePack.editor.toolRail.summonTool.tool.title=Nástroj na privolanie	#
 resourcePack.editor.toolRail.workbenchSettings.title=Pracovný stôl	#
 resourcePack.editor.toolRail.workbenchTool.title=Pracovný stôl	#
 resourcePack.editor.toolRail.workbenchTool.description=Rýchla zmena stavov bloku	#
-resourcePack.editor.toolRail.workbenchTool.howToUse=Kliknutím ľavým tlačidlom myši na zvýraznené bloky zmeníte ich stav (otvoriť/zatvoriť, otočiť, prevrátiť atď.). Skúste použiť aj modifikačné klávesy Shift a Control! Upozorňujeme, že táto funkcia funguje iba na blokoch s upraviteľnými vlastnosťami (napr. dvere, ploty atď.).	#
+resourcePack.editor.toolRail.workbenchTool.howToUse=Highlight blocks to see the available actions to change their states (open/close, rotate, invert, etc.). Try using Shift and Control key modifiers as well! Please note that this feature only works on blocks with modifiable properties (e.g., doors, fences, stairs, etc.).		####	This text provides a description of the workbench tool and explans how the the user can highlight blocks in order to see the list of actions for changing that blocks state. {MaxLength="500"}
 resourcePack.editor.toolRail.workbenchTool.tooltip=Zmena stavov bloku	#
-resourcePack.editor.toolRail.workbenchTool.block=Blok	#
+resourcePack.editor.toolRail.workbenchTool.block=Blokovať	#
 resourcePack.editor.toolRail.workbenchTool.leftClick=Kliknutie ľavým tlačidlom myši	#
 resourcePack.editor.toolRail.workbenchTool.shiftLeftClick=Shift + kliknutie ľavým tlačidlom myši	#
 resourcePack.editor.toolRail.workbenchTool.controlLeftClick=CTRL + kliknutie ľavým tlačidlom myši	#
 resourcePack.editor.toolRail.workbenchTool.shiftControlLeftClick=Shift + CTRL + kliknutie ľavým tlačidlom myši	#
+
+resourcePack.editor.toolRail.workbenchTool.leftClickTooltip=Left Clicking on a block will perform the primary Workbench action		####	This keybinding is a tool tip to convey that a left click will invoke the primary (1st) action of the workbench tool. {MaxLength="150"}
+resourcePack.editor.toolRail.workbenchTool.shiftLeftClickTooltip=Shift + Left Clicking on a block will perform the secondary Workbench action		####	This keybinding is a tool tip to convey that a shift + left click will invoke the primary (1st) action of the workbench tool. {MaxLength="150"}
+resourcePack.editor.toolRail.workbenchTool.controlLeftClickTooltip=Control + Left Clicking on a block will perform the tertiary Workbench action		####	This keybinding is a tool tip to convey that a control + left click will invoke the primary (1st) action of the workbench tool. {MaxLength="150"}
+resourcePack.editor.toolRail.workbenchTool.shiftControlLeftClickTooltip=Shift + Control + Left Clicking on a block will perform the quaternary Workbench action		####	TThis keybinding is a tool tip to convey that a shift + control + left click will invoke the primary (1st) action of the workbench tool. {MaxLength="150"}
+
 resourcePack.editor.toolRail.workbenchTool.stripWood=Olúpať/zrušiť olúpanie dreva		####This string is intended to express whether the wood block has bark (unstripped) or doesn't have bark (stripped).{MaxLength=100}
 resourcePack.editor.toolRail.workbenchTool.ladderLocation=Lokalita rebríka	#
 resourcePack.editor.toolRail.workbenchTool.autoAlign=Automatické zarovnanie	#
@@ -791,6 +842,17 @@ resourcePack.editor.toolRail.workbenchTool.directionProp=Smer orientácie	#
 resourcePack.editor.toolRail.workbenchTool.weirdoDirectionProp=Otočiť	#
 resourcePack.editor.toolRail.workbenchTool.facingDirectionProp=Smer orientácie	#
 resourcePack.editor.toolRail.workbenchTool.cardinalDirectionProp=Smer orientácie	#
+
+resourcePack.editor.toolRail.workbenchTool.addCustomMapping=Add Custom Mappings		####This string is intended to express that this subpane is for adding custom block property mappings for the tool.{MaxLength=100}
+resourcePack.editor.toolRail.workbenchTool.blockProperty=Block Property		####This string is intended to express that this field is for the Block Property.{MaxLength=50}
+resourcePack.editor.toolRail.workbenchTool.clickBinding=Click Bindings		####This string is intended to express that this dropdown contains the click binding options (left click, shift + left click, etc).{MaxLength=50}
+resourcePack.editor.toolRail.workbenchTool.addMapping=Add Mapping		####This string is intended to express that this button will add the custom mapping provided by the user.{MaxLength=50}
+resourcePack.editor.toolRail.workbenchTool.resetAllMappings=Reset All Mappings		####This string is intended to express that this button will reset all custom mappings provided by the user.{MaxLength=50}
+
+resourcePack.editor.workbenchTool.keyBinding.primaryAction=Workbench Primary Action		####	This keybinding is to invoke the primary (1st) action of the workbench tool. {MaxLength="30"}
+resourcePack.editor.workbenchTool.keyBinding.secondaryAction=Workbench Secondary Action		#### This keybinding is to invoke the secondary (2nd) action of the workbench tool. {MaxLength="30"}
+resourcePack.editor.workbenchTool.keyBinding.tertiaryAction=Workbench Tertiary Action		####	This keybinding is to invoke the tertiary (3rd) action of the workbench tool. {MaxLength="30"}
+resourcePack.editor.workbenchTool.keyBinding.quaternaryAction=Workbench Quaternary Action		#### This keybinding is to invoke the quaternary (4th) action of the workbench tool. {MaxLength="30"}
 
 
 resourcePack.editor.transaction.keyBinding.redo=Znova	#

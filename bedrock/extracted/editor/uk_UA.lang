@@ -54,6 +54,7 @@ resourcePack.editor.brushPaint.tooltip=Використовуйте пензлі
 
 resourcePack.editor.BrushPaintControl.brush.title=Пензель	#
 resourcePack.editor.BrushPaintControl.brushSettings.title=Налаштування пензля	#
+resourcePack.editor.BrushPaintControl.shapeSettings.title=Shape Settings 	####Represents an expander that has UI controls for brush shape settings.{MaxLength=100}
 resourcePack.editor.BrushPaintControl.fillConstraints.mask.title=Список масок	#
 resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.disabled.tooltip=Вимкнути фільтри блоків	#
 resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.disabled=Вимкнуто	#
@@ -107,6 +108,8 @@ resourcePack.editor.brushShape.pyramid.settings.depth=Глибина	#
 resourcePack.editor.brushShape.pyramid.settings.height=Висота	#
 resourcePack.editor.brushShape.pyramid.settings.width=Ширина	#
 resourcePack.editor.brushShape.singleBlock.name=Одиночний блок	#
+resourcePack.editor.brushShape.star.name=Star 	####Represent a star shaped brush.{MaxLength=100}
+resourcePack.editor.brushShape.star.settings.includeVertical=Include Vertical 	####Represents a toggle button label that removes vertical parts of a star brush if unchecked.{MaxLength=100}
 
 
 resourcePack.editor.client.description=Клієнтські ресурси редактора	#
@@ -216,18 +219,29 @@ resourcePack.editor.entityInspector.toolRail.description=Клацніть лів
 resourcePack.editor.exportProject.exportType=Тип експорту	#
 resourcePack.editor.exportProject.exportType.playableWorld=Ігровий світ	#
 resourcePack.editor.exportProject.exportNotes=Експорт нотаток	#
+resourcePack.editor.exportProject.exportNotes.export=Exporting Progress   	####This string is intended to express that the title of export progress modal.{MaxLength=100}
 resourcePack.editor.exportProject.exportNotes.warning=Ви експортуєте світ v%1. Експортовані ігрові світи не можна використовувати у версіях Minecraft, старших за v%1. Щоб конвертувати світи попередніх версій, скористайтеся посиланням https://chunker.app/ (деякі функції можуть бути недоступні, якщо вони не підтримуються в попередніх версіях)	#
+resourcePack.editor.exportProject.exportNotes.progress=Exporting the world...    	####This string is intended to express that the progress message of exporting.{MaxLength=100}
+resourcePack.editor.exportProject.exportNotes.exportSuccess=The world was successfully exported    	####This string is intended to express that export the world succeeded.{MaxLength=100}
+resourcePack.editor.exportProject.exportNotes.exportFailed=Exporting world was failure    	####This string is intended to express that export the world failed.{MaxLength=100}
 resourcePack.editor.exportProject.generalSettings=Загальні параметри	#
 resourcePack.editor.exportProject.generalSettings.worldName=Назва світу	#
 resourcePack.editor.exportProject.generalSettings.gameMode=Режим гри	#
 resourcePack.editor.exportProject.generalSettings.difficulty=Складність	#
 resourcePack.editor.exportProject.generalSettings.hardcore=Хардкор	#
+resourcePack.editor.exportProject.initialPlaySettings=Inital Play Settings   	####This string is intended to express that the export category for inital play settings.{MaxLength=100}
+resourcePack.editor.exportProject.initialPlaySettings.spawnPosition=World Spawn Point   	####This string is intended to express that player inistal spawn position.{MaxLength=100}
+resourcePack.editor.exportProject.initialPlaySettings.startTime=Start Time   	####This string is intended to express that world start time.{MaxLength=100}
+resourcePack.editor.exportProject.initialPlaySettings.clockType=Clock Type   	####This string is intended to express that start time with different clock type.{MaxLength=100}
+resourcePack.editor.exportProject.initialPlaySettings.customStartTime=Custom Start Time   	####This string is intended to express that custom start time with Minecraft Cloke value.{MaxLength=100}
+resourcePack.editor.exportProject.initialPlaySettings.weather=Start Weather   	####This string is intended to express that the custom start weather.{MaxLength=100}
 resourcePack.editor.exportProject.advancedSettings=Розширені параметри	#
 resourcePack.editor.exportProject.advancedSettings.startingMap=Початкова карта	#
 resourcePack.editor.exportProject.advancedSettings.bonusChest=Скриня бонусів	#
 resourcePack.editor.exportProject.advancedSettings.showCoordinates=Відображення координат	#
 resourcePack.editor.exportProject.advancedSettings.showDaysPlayed=Відображення ігрових днів	#
 resourcePack.editor.exportProject.advancedSettings.recipeUnlocking=Розблокування рецептів	#
+resourcePack.editor.exportProject.advancedSettings.limitedCrafting=Limited Crafting   	####Export pane checkbox label that enable to set crafting limit.{MaxLength=100}
 resourcePack.editor.exportProject.advancedSettings.fireSpreads=Поширення вогню	#
 resourcePack.editor.exportProject.advancedSettings.tntExplodes=Спрацювання вибухівки	#
 resourcePack.editor.exportProject.advancedSettings.resawnBlocksExplode=Вибух блоків відродження	#
@@ -235,11 +249,13 @@ resourcePack.editor.exportProject.advancedSettings.mobLoot=Здобич із м�
 resourcePack.editor.exportProject.advancedSettings.naturalRegeneration=Природне відновлення	#
 resourcePack.editor.exportProject.advancedSettings.tileDrops=Викидання з блоків	#
 resourcePack.editor.exportProject.advancedSettings.immediateRespawn=Миттєве відродження	#
+resourcePack.editor.exportProject.advancedSettings.showDeathMessage=Show Death Message   	####Export pane checkbox label that show the death message when player die.{MaxLength=100}
 resourcePack.editor.exportProject.advancedSettings.respawnRadius=Радіус відродження	#
 resourcePack.editor.exportProject.advancedSettings.simulationDistance=Відстань симуляції	#
 resourcePack.editor.exportProject.advancedSettings.bedsWork=Сон у ліжку	#
 resourcePack.editor.exportProject.advancedSettings.requiredSleepingPlayers=Кількість гравців, які повинні обов’язково лягти спати (%1$s)	#
 resourcePack.editor.exportProject.advancedSettings.requiredSleepingPlayers.onePlayerMessage=Лише 1 гравець	#
+resourcePack.editor.exportProject.advancedSettings.showItemTags=Show Item Tags   	####Export pane checkbox label that show item tags.{MaxLength=100}
 resourcePack.editor.exportProject.multiplayerSettings=Параметри мультиплеєра	#
 resourcePack.editor.exportProject.multiplayerSettings.multiplayerGame=Мультиплеєрна гра	#
 resourcePack.editor.exportProject.multiplayerSettings.playerAccess=Доступ гравців	#
@@ -255,6 +271,16 @@ resourcePack.editor.exportProject.cheatsSettings.mobGriefing=Шкода від �
 resourcePack.editor.exportProject.cheatsSettings.entitiesDropLoot=Сутності викидають здобич	#
 resourcePack.editor.exportProject.cheatsSettings.weatherCycle=Погодний цикл	#
 resourcePack.editor.exportProject.cheatsSettings.commandBlocks=Командні блоки	#
+resourcePack.editor.exportProject.cheatsSettings.commandBlockOutput=Command Block Output   	####Export pane checkbox label that enable to display the command output.{MaxLength=100}
+resourcePack.editor.exportProject.cheatsSettings.sendCommandFeedback=Send Command Feedback   	####This string is the heading for the 'send command feedback' setting when exporting a world.{MaxLength=100}
+resourcePack.editor.exportProject.cheatsSettings.maxCommandChainLength=Max Command Chain Length   	####Export pane number that indicate the max length of the command, it defaults to 65536. It has a minimum of 0 and a max of 2147483647.{MaxLength=100}
+resourcePack.editor.exportProject.cheatsSettings.fireDamage=Fire Damage  	####Export pane checkbox label that enable damage when the player on fire.{MaxLength=100}
+resourcePack.editor.exportProject.cheatsSettings.freezeDamage=Freeze Damage  	####Export pane checkbox label that enable damage when the player freezes.{MaxLength=100}
+resourcePack.editor.exportProject.cheatsSettings.fallDamage=Fall Damage  	####Export pane checkbox label that enable damage when the player falls.{MaxLength=100}
+resourcePack.editor.exportProject.cheatsSettings.drowningDamage=Drowning Damage  	####Export pane checkbox label that enable damage when the player is drowning.{MaxLength=100}
+resourcePack.editor.exportProject.cheatsSettings.insomnia=Insomnia  	####Export pane checkbox label that enable player insomnia status.{MaxLength=100}
+resourcePack.editor.exportProject.cheatsSettings.showBorderEffect=Show Border Effect  	####Export pane checkbox label that show border effect.{MaxLength=100}
+resourcePack.editor.exportProject.cheatsSettings.functionCommandLimit=Function Command Limit  	####Export pane checkbox label that the number of limition for the function command.{MaxLength=100}
 resourcePack.editor.exportProject.cheatsSettings.educationFeatures=Навчальні функції	#
 resourcePack.editor.exportProject.cheatsSettings.randomTickSpeed=Випадкова швидкість такту	#
 resourcePack.editor.exportProject.export=Експорт	#
@@ -266,6 +292,11 @@ resourcePack.editor.exportProject.difficulty.peaceful=Мирно	#
 resourcePack.editor.exportProject.difficulty.easy=Легко	#
 resourcePack.editor.exportProject.difficulty.normal=Нормально	#
 resourcePack.editor.exportProject.difficulty.hard=Важко	#
+resourcePack.editor.exportProject.weather.default=Default   	####This string is intended to express that the default weather .{MaxLength=100}
+resourcePack.editor.exportProject.weather.clear=Clear   	####This string is intended to express that the weather of Clear.{MaxLength=100}
+resourcePack.editor.exportProject.weather.rain=Rain   	####This string is intended to express that the weather of Rain.{MaxLength=100}
+resourcePack.editor.exportProject.weather.thunder=Thunder   	####This string is intended to express that the weather of Thunder.{MaxLength=100}
+
 
 
 resourcePack.editor.toolRail.ExtrudeTool.title=Інструмент екструзії	#
@@ -468,7 +499,7 @@ resourcePack.editor.pastepreview.keyBinding.toggleMouseTracking=Перемика
 resourcePack.editor.pastepreview.pane.controls.cursor.fixed=Фіксована відстань	#
 resourcePack.editor.pastepreview.pane.controls.cursor.keyboard=Лише клавіші	#
 resourcePack.editor.pastepreview.pane.controls.cursor.mouseandkeys=Миша та клавіші	#
-resourcePack.editor.pastepreview.pane.controls.cursor.target.block=Блок	#
+resourcePack.editor.pastepreview.pane.controls.cursor.target.block=Блокувати	#
 resourcePack.editor.pastepreview.pane.controls.cursor.target.face=Суміжні	#
 resourcePack.editor.pastepreview.pane.controls.cursor.target.title=Мішень	#
 resourcePack.editor.pastepreview.pane.controls.cursor=Керування	#
@@ -480,7 +511,7 @@ resourcePack.editor.pastepreview.pane.placement.origin=Початок коорд
 resourcePack.editor.pastepreview.pane.placement.pastebutton=Вставити	#
 resourcePack.editor.pastepreview.pane.placement.rotation=Обертання (навколо Y)	#
 resourcePack.editor.pastepreview.pane.placement.title=Налаштування місця розташування	#
-resourcePack.editor.pastepreview.pane.root.size=Розмір	#
+resourcePack.editor.pastepreview.pane.root.size=Size	#
 resourcePack.editor.pastepreview.pane.root.title=Вставити попередній перегляд	#
 resourcePack.editor.pastepreview.tool.tip=Використовуйте мишу, щоб налаштувати положення попереднього перегляду буфера обміну, і клацніть, щоб вставити у світ	#
 resourcePack.editor.pastepreview.tool.title=Вставити попередній перегляд	#
@@ -607,6 +638,8 @@ resourcePack.editor.selectionTool.keyBinding.shrinkLeft=Стиснути вид�
 resourcePack.editor.selectionTool.keyBinding.shrinkRight=Стиснути виділення праворуч	#
 resourcePack.editor.selectionTool.keyBinding.shrinkUp=Стиснути виділення згори	#
 resourcePack.editor.selectionTool.keyBinding.toggleTool=Перемкнути інструмент «Виділення»	#
+resourcePack.editor.selectionTool.keyBinding.select=Select Block			#### The action of adding a block to the selection volume using they keyboard {MaxLength="30"}
+resourcePack.editor.selectionTool.keyBinding.selectMultiple=Select Additional Block			#### The action of adding an additional block to the selection volume using the keyboard {MaxLength="30"}
 resourcePack.editor.selectionTool.marquee.title=Вибір області	#
 resourcePack.editor.selectionTool.modeSelection.freehand.title=Режим вільного вибору пензлем	#
 resourcePack.editor.selectionTool.modeSelection.freehand.tooltip=Виділяйте блоки у світі в режимі вільного вибору пензлем	#
@@ -614,6 +647,16 @@ resourcePack.editor.selectionTool.modeSelection.marquee.title=Режим виб�
 resourcePack.editor.selectionTool.modeSelection.marquee.tooltip=Виділяйте блоки у світі в межах прямокутної області	#
 resourcePack.editor.selectionTool.modeSelection.title=Режим вибору	#
 resourcePack.editor.selectionTool.projectThroughLiquid=Запустити через рідину	#
+resourcePack.editor.selectionTool.trimAction.trimVolume=Trim Selection			#### Trim the current selection volume to fit only the solid blocks within {MaxLength=30}
+resourcePack.editor.selectionTool.trimAction.trimVolume.tooltip=Trim the current selection volume to fit only the solid blocks within   	#### {MaxLength=200}
+resourcePack.editor.selectionTool.trimAction.removeAir=Remove Air			#### Remove the air from the current selection volume leaving only specified blocks {MaxLength=30}
+resourcePack.editor.selectionTool.trimAction.removeAir.tooltip=Remove the air from the current selection volume leaving only specified blocks 	#### {MaxLength=200}
+resourcePack.editor.selectionTool.trimAction.trimVolume.SettingsPane.title=Trim Settings		#### The window pane title for the settings for trim mode {MaxLength=30}
+resourcePack.editor.selectionTool.trimAction.trimVolume.SettingsPane.ignoreLiquid=Ignore Liquids		#### The toggle button title for ignoring liquids {MaxLength=30}
+resourcePack.editor.selectionTool.trimAction.trimVolume.SettingsPane.ignoreLiquid.tooltip=Ignore any liquid blocks when trimming the volume 	#### {MaxLength=200}
+resourcePack.editor.selectionTool.trimAction.trimVolume.SettingsPane.onlyCollidable=Only Collision Blocks		#### The toggle button title for collision-only blocks {MaxLength=30}
+resourcePack.editor.selectionTool.trimAction.trimVolume.SettingsPane.onlyCollidable.tooltip=Ignore any blocks with no collision (leaves, grass, etc) when trimming the volume 	#### {MaxLength=200}
+resourcePack.editor.selectionTool.trimAction.trimVolume.SettingsPane.blockMaskMode=Block Mask Mode    	#### Title for the toggle action group to selection the block mask mode {MaxLength=20}
 resourcePack.editor.selectionTool.quickAction.clearSelection.tooltip=Скасувати виділення	#
 resourcePack.editor.selectionTool.quickAction.clearSelection=Скасувати вибір	#
 resourcePack.editor.selectionTool.quickAction.deleteSelection.tooltip=Видалення всіх блоків всередині виділеної області	#
@@ -672,6 +715,7 @@ resourcePack.editor.timeOfDay.dropDown.none=Немає	#
 resourcePack.editor.timeOfDay.dropDown.noon=Полудень	#
 resourcePack.editor.timeOfDay.dropDown.sunrise=Схід сонця	#
 resourcePack.editor.timeOfDay.dropDown.sunset=Захід сонця	#
+resourcePack.editor.timeOfDay.dropDown.custom=Custom		####"Custom" describes a dropdown that players can define the specific start time {MaxLength=20}
 resourcePack.editor.timeOfDay.dropDown.title=Заготовки	#
 resourcePack.editor.timeOfDay.menu.title=Налаштування часу доби	#
 resourcePack.editor.timeOfDay.minecraftClock=Годинник Minecraft	#
@@ -689,6 +733,7 @@ resourcePack.editor.toolMode.keyBinding.hotbar6=Панель швидкого д
 resourcePack.editor.toolMode.keyBinding.hotbar7=Панель швидкого доступу 7	#
 resourcePack.editor.toolMode.keyBinding.hotbar8=Панель швидкого доступу 8	#
 resourcePack.editor.toolMode.keyBinding.hotbar9=Панель швидкого доступу 9	#
+resourcePack.editor.toolMode.keyBinding.reload=Reload 	####Represents a label for a key shortcut that reloads scripts and UI.{MaxLength=100}
 
 
 resourcePack.editor.toolRail.blockPalette.title=Палітра блоків (CTRL+P)	#
@@ -719,7 +764,7 @@ resourcePack.editor.toolRail.line.pane.fillAction=Заповнити вибра�
 resourcePack.editor.toolRail.line.pane.height.title=Висота	#
 resourcePack.editor.toolRail.line.pane.selectionMode.adjacent=Суміжне обличчя	#
 resourcePack.editor.toolRail.line.pane.selectionMode.fixedDistance=Фіксована відстань	#
-resourcePack.editor.toolRail.line.pane.selectionMode.freeForm=Полілінія	#
+resourcePack.editor.toolRail.line.pane.selectionMode.freeForm=Вільна форма	#
 resourcePack.editor.toolRail.line.pane.selectionMode=Вибір	#
 resourcePack.editor.toolRail.line.pane.surfaceContour=Контур поверхні	#
 resourcePack.editor.toolRail.line.pane.width.title=Ширина	#
@@ -737,7 +782,7 @@ resourcePack.editor.toolRail.smartFillTool.areaLimit.title=Обмеження о
 resourcePack.editor.toolRail.smartFillTool.areaLimit.tooltip=Максимальна площа заповнення	#
 
 
-resourcePack.editor.toolRail.summonTool.keyBinding.clear=Скасувати вибір	#
+resourcePack.editor.toolRail.summonTool.keyBinding.clear=Clear Selection	#
 resourcePack.editor.toolRail.summonTool.keyBinding.delete=Видалити сутність	#
 resourcePack.editor.toolRail.summonTool.keyBinding.moveBack=Перемістити виділене назад	#
 resourcePack.editor.toolRail.summonTool.keyBinding.moveDown=Перемістити виділене вниз	#
@@ -759,13 +804,19 @@ resourcePack.editor.toolRail.summonTool.tool.title=Інструмент «Вик
 resourcePack.editor.toolRail.workbenchSettings.title=Майстерня	#
 resourcePack.editor.toolRail.workbenchTool.title=Майстерня	#
 resourcePack.editor.toolRail.workbenchTool.description=Швидка зміна станів блока	#
-resourcePack.editor.toolRail.workbenchTool.howToUse=Клацніть лівою кнопкою миші на виділені блоки, щоб змінити їх стан (відкрити / закрити, обернути, інвертувати тощо). Спробуйте також використати модифікатори клавіш Shift та Control! Зверніть увагу, що ця функція працює лише на блоках зі змінними властивостями (наприклад, двері, паркани тощо).	#
+resourcePack.editor.toolRail.workbenchTool.howToUse=Highlight blocks to see the available actions to change their states (open/close, rotate, invert, etc.). Try using Shift and Control key modifiers as well! Please note that this feature only works on blocks with modifiable properties (e.g., doors, fences, stairs, etc.).		####	This text provides a description of the workbench tool and explans how the the user can highlight blocks in order to see the list of actions for changing that blocks state. {MaxLength="500"}
 resourcePack.editor.toolRail.workbenchTool.tooltip=Змінює стан блока	#
-resourcePack.editor.toolRail.workbenchTool.block=Блок	#
+resourcePack.editor.toolRail.workbenchTool.block=Блокувати	#
 resourcePack.editor.toolRail.workbenchTool.leftClick=Клацніть лівою кнопкою миші	#
 resourcePack.editor.toolRail.workbenchTool.shiftLeftClick=Shift + Ліва кнопка миші	#
 resourcePack.editor.toolRail.workbenchTool.controlLeftClick=CTRL + Ліва кнопка миші	#
 resourcePack.editor.toolRail.workbenchTool.shiftControlLeftClick=Shift + CTRL + Ліва кнопка миші	#
+
+resourcePack.editor.toolRail.workbenchTool.leftClickTooltip=Left Clicking on a block will perform the primary Workbench action		####	This keybinding is a tool tip to convey that a left click will invoke the primary (1st) action of the workbench tool. {MaxLength="150"}
+resourcePack.editor.toolRail.workbenchTool.shiftLeftClickTooltip=Shift + Left Clicking on a block will perform the secondary Workbench action		####	This keybinding is a tool tip to convey that a shift + left click will invoke the primary (1st) action of the workbench tool. {MaxLength="150"}
+resourcePack.editor.toolRail.workbenchTool.controlLeftClickTooltip=Control + Left Clicking on a block will perform the tertiary Workbench action		####	This keybinding is a tool tip to convey that a control + left click will invoke the primary (1st) action of the workbench tool. {MaxLength="150"}
+resourcePack.editor.toolRail.workbenchTool.shiftControlLeftClickTooltip=Shift + Control + Left Clicking on a block will perform the quaternary Workbench action		####	TThis keybinding is a tool tip to convey that a shift + control + left click will invoke the primary (1st) action of the workbench tool. {MaxLength="150"}
+
 resourcePack.editor.toolRail.workbenchTool.stripWood=Обтесана / не обтесана деревина		####This string is intended to express whether the wood block has bark (unstripped) or doesn't have bark (stripped).{MaxLength=100}
 resourcePack.editor.toolRail.workbenchTool.ladderLocation=Розташування драбини	#
 resourcePack.editor.toolRail.workbenchTool.autoAlign=Автоматичне вирівнювання	#
@@ -791,6 +842,17 @@ resourcePack.editor.toolRail.workbenchTool.directionProp=Напрямок обе
 resourcePack.editor.toolRail.workbenchTool.weirdoDirectionProp=Повернути	#
 resourcePack.editor.toolRail.workbenchTool.facingDirectionProp=Напрямок обернення	#
 resourcePack.editor.toolRail.workbenchTool.cardinalDirectionProp=Напрямок обернення	#
+
+resourcePack.editor.toolRail.workbenchTool.addCustomMapping=Add Custom Mappings		####This string is intended to express that this subpane is for adding custom block property mappings for the tool.{MaxLength=100}
+resourcePack.editor.toolRail.workbenchTool.blockProperty=Block Property		####This string is intended to express that this field is for the Block Property.{MaxLength=50}
+resourcePack.editor.toolRail.workbenchTool.clickBinding=Click Bindings		####This string is intended to express that this dropdown contains the click binding options (left click, shift + left click, etc).{MaxLength=50}
+resourcePack.editor.toolRail.workbenchTool.addMapping=Add Mapping		####This string is intended to express that this button will add the custom mapping provided by the user.{MaxLength=50}
+resourcePack.editor.toolRail.workbenchTool.resetAllMappings=Reset All Mappings		####This string is intended to express that this button will reset all custom mappings provided by the user.{MaxLength=50}
+
+resourcePack.editor.workbenchTool.keyBinding.primaryAction=Workbench Primary Action		####	This keybinding is to invoke the primary (1st) action of the workbench tool. {MaxLength="30"}
+resourcePack.editor.workbenchTool.keyBinding.secondaryAction=Workbench Secondary Action		#### This keybinding is to invoke the secondary (2nd) action of the workbench tool. {MaxLength="30"}
+resourcePack.editor.workbenchTool.keyBinding.tertiaryAction=Workbench Tertiary Action		####	This keybinding is to invoke the tertiary (3rd) action of the workbench tool. {MaxLength="30"}
+resourcePack.editor.workbenchTool.keyBinding.quaternaryAction=Workbench Quaternary Action		#### This keybinding is to invoke the quaternary (4th) action of the workbench tool. {MaxLength="30"}
 
 
 resourcePack.editor.transaction.keyBinding.redo=Повторити	#

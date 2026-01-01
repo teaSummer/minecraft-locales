@@ -54,6 +54,7 @@ resourcePack.editor.brushPaint.tooltip=Pakai kuas untuk mengecat blok di dunia	#
 
 resourcePack.editor.BrushPaintControl.brush.title=Kuas	#
 resourcePack.editor.BrushPaintControl.brushSettings.title=Pengaturan Kuas	#
+resourcePack.editor.BrushPaintControl.shapeSettings.title=Shape Settings 	####Represents an expander that has UI controls for brush shape settings.{MaxLength=100}
 resourcePack.editor.BrushPaintControl.fillConstraints.mask.title=Daftar Topeng	#
 resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.disabled.tooltip=Nonaktifkan Filter Blok	#
 resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.disabled=Dinonaktifkan	#
@@ -107,6 +108,8 @@ resourcePack.editor.brushShape.pyramid.settings.depth=Kedalaman	#
 resourcePack.editor.brushShape.pyramid.settings.height=Tinggi	#
 resourcePack.editor.brushShape.pyramid.settings.width=Lebar	#
 resourcePack.editor.brushShape.singleBlock.name=Blok Tunggal	#
+resourcePack.editor.brushShape.star.name=Star 	####Represent a star shaped brush.{MaxLength=100}
+resourcePack.editor.brushShape.star.settings.includeVertical=Include Vertical 	####Represents a toggle button label that removes vertical parts of a star brush if unchecked.{MaxLength=100}
 
 
 resourcePack.editor.client.description=Sumber Daya Klien Editor	#
@@ -216,18 +219,29 @@ resourcePack.editor.entityInspector.toolRail.description=Klik kiri pada entitas 
 resourcePack.editor.exportProject.exportType=Ekspor Tipe	#
 resourcePack.editor.exportProject.exportType.playableWorld=Dunia yang Bisa Dimainkan	#
 resourcePack.editor.exportProject.exportNotes=Ekspor Catatan	#
+resourcePack.editor.exportProject.exportNotes.export=Exporting Progress   	####This string is intended to express that the title of export progress modal.{MaxLength=100}
 resourcePack.editor.exportProject.exportNotes.warning=Kamu mengekspor dunia v%1. Dunia yang Bisa Dimainkan dan sudah diekspor tidak bisa dipakai di Minecraft dengan nomor versi sebelum v%1. Untuk mengonversi ke nomor versi sebelumnya, pakai https://chunker.app/ (beberapa fungsi mungkin tidak bisa dijalankan kalau tidak didukung di versi sebelumnya)	#
+resourcePack.editor.exportProject.exportNotes.progress=Exporting the world...    	####This string is intended to express that the progress message of exporting.{MaxLength=100}
+resourcePack.editor.exportProject.exportNotes.exportSuccess=The world was successfully exported    	####This string is intended to express that export the world succeeded.{MaxLength=100}
+resourcePack.editor.exportProject.exportNotes.exportFailed=Exporting world was failure    	####This string is intended to express that export the world failed.{MaxLength=100}
 resourcePack.editor.exportProject.generalSettings=Pengaturan Umum	#
 resourcePack.editor.exportProject.generalSettings.worldName=Nama Dunia	#
 resourcePack.editor.exportProject.generalSettings.gameMode=Mode Permainan	#
 resourcePack.editor.exportProject.generalSettings.difficulty=Tingkat Kesulitan	#
 resourcePack.editor.exportProject.generalSettings.hardcore=Sulit	#
+resourcePack.editor.exportProject.initialPlaySettings=Inital Play Settings   	####This string is intended to express that the export category for inital play settings.{MaxLength=100}
+resourcePack.editor.exportProject.initialPlaySettings.spawnPosition=World Spawn Point   	####This string is intended to express that player inistal spawn position.{MaxLength=100}
+resourcePack.editor.exportProject.initialPlaySettings.startTime=Start Time   	####This string is intended to express that world start time.{MaxLength=100}
+resourcePack.editor.exportProject.initialPlaySettings.clockType=Clock Type   	####This string is intended to express that start time with different clock type.{MaxLength=100}
+resourcePack.editor.exportProject.initialPlaySettings.customStartTime=Custom Start Time   	####This string is intended to express that custom start time with Minecraft Cloke value.{MaxLength=100}
+resourcePack.editor.exportProject.initialPlaySettings.weather=Start Weather   	####This string is intended to express that the custom start weather.{MaxLength=100}
 resourcePack.editor.exportProject.advancedSettings=Pengaturan Lanjutan	#
 resourcePack.editor.exportProject.advancedSettings.startingMap=Peta Awal	#
 resourcePack.editor.exportProject.advancedSettings.bonusChest=Peti Bonus	#
 resourcePack.editor.exportProject.advancedSettings.showCoordinates=Tampilkan Koordinat	#
 resourcePack.editor.exportProject.advancedSettings.showDaysPlayed=Tampilkan Jumlah Hari Bermain	#
 resourcePack.editor.exportProject.advancedSettings.recipeUnlocking=Membuka Resep	#
+resourcePack.editor.exportProject.advancedSettings.limitedCrafting=Limited Crafting   	####Export pane checkbox label that enable to set crafting limit.{MaxLength=100}
 resourcePack.editor.exportProject.advancedSettings.fireSpreads=Api Menjalar	#
 resourcePack.editor.exportProject.advancedSettings.tntExplodes=Dinamit Meledak	#
 resourcePack.editor.exportProject.advancedSettings.resawnBlocksExplode=Blok Muncul-Kembali Meledak	#
@@ -235,11 +249,13 @@ resourcePack.editor.exportProject.advancedSettings.mobLoot=Rampasan Mob	#
 resourcePack.editor.exportProject.advancedSettings.naturalRegeneration=Regenerasi Alamiah	#
 resourcePack.editor.exportProject.advancedSettings.tileDrops=Jatuhan Ubin	#
 resourcePack.editor.exportProject.advancedSettings.immediateRespawn=Muncul Kembali Seketika	#
+resourcePack.editor.exportProject.advancedSettings.showDeathMessage=Show Death Message   	####Export pane checkbox label that show the death message when player die.{MaxLength=100}
 resourcePack.editor.exportProject.advancedSettings.respawnRadius=Radius Muncul Kembali	#
 resourcePack.editor.exportProject.advancedSettings.simulationDistance=Jarak Simulasi	#
 resourcePack.editor.exportProject.advancedSettings.bedsWork=Tempat Tidur Berfungsi	#
 resourcePack.editor.exportProject.advancedSettings.requiredSleepingPlayers=Pemain Tidur yang Diperlukan (%1$s)	#
 resourcePack.editor.exportProject.advancedSettings.requiredSleepingPlayers.onePlayerMessage=Hanya 1 pemain	#
+resourcePack.editor.exportProject.advancedSettings.showItemTags=Show Item Tags   	####Export pane checkbox label that show item tags.{MaxLength=100}
 resourcePack.editor.exportProject.multiplayerSettings=Pengaturan Multipemain	#
 resourcePack.editor.exportProject.multiplayerSettings.multiplayerGame=Game Multipemain	#
 resourcePack.editor.exportProject.multiplayerSettings.playerAccess=Akses Pemain	#
@@ -255,6 +271,16 @@ resourcePack.editor.exportProject.cheatsSettings.mobGriefing=Mob Sedih	#
 resourcePack.editor.exportProject.cheatsSettings.entitiesDropLoot=Rampasan Drop Entitas	#
 resourcePack.editor.exportProject.cheatsSettings.weatherCycle=Siklus Cuaca	#
 resourcePack.editor.exportProject.cheatsSettings.commandBlocks=Blok Perintah	#
+resourcePack.editor.exportProject.cheatsSettings.commandBlockOutput=Command Block Output   	####Export pane checkbox label that enable to display the command output.{MaxLength=100}
+resourcePack.editor.exportProject.cheatsSettings.sendCommandFeedback=Send Command Feedback   	####This string is the heading for the 'send command feedback' setting when exporting a world.{MaxLength=100}
+resourcePack.editor.exportProject.cheatsSettings.maxCommandChainLength=Max Command Chain Length   	####Export pane number that indicate the max length of the command, it defaults to 65536. It has a minimum of 0 and a max of 2147483647.{MaxLength=100}
+resourcePack.editor.exportProject.cheatsSettings.fireDamage=Fire Damage  	####Export pane checkbox label that enable damage when the player on fire.{MaxLength=100}
+resourcePack.editor.exportProject.cheatsSettings.freezeDamage=Freeze Damage  	####Export pane checkbox label that enable damage when the player freezes.{MaxLength=100}
+resourcePack.editor.exportProject.cheatsSettings.fallDamage=Fall Damage  	####Export pane checkbox label that enable damage when the player falls.{MaxLength=100}
+resourcePack.editor.exportProject.cheatsSettings.drowningDamage=Drowning Damage  	####Export pane checkbox label that enable damage when the player is drowning.{MaxLength=100}
+resourcePack.editor.exportProject.cheatsSettings.insomnia=Insomnia  	####Export pane checkbox label that enable player insomnia status.{MaxLength=100}
+resourcePack.editor.exportProject.cheatsSettings.showBorderEffect=Show Border Effect  	####Export pane checkbox label that show border effect.{MaxLength=100}
+resourcePack.editor.exportProject.cheatsSettings.functionCommandLimit=Function Command Limit  	####Export pane checkbox label that the number of limition for the function command.{MaxLength=100}
 resourcePack.editor.exportProject.cheatsSettings.educationFeatures=Fitur Edukasi	#
 resourcePack.editor.exportProject.cheatsSettings.randomTickSpeed=Kecepatan Tick Acak	#
 resourcePack.editor.exportProject.export=Ekspor	#
@@ -266,6 +292,11 @@ resourcePack.editor.exportProject.difficulty.peaceful=Tenang	#
 resourcePack.editor.exportProject.difficulty.easy=Mudah	#
 resourcePack.editor.exportProject.difficulty.normal=Normal	#
 resourcePack.editor.exportProject.difficulty.hard=Sulit	#
+resourcePack.editor.exportProject.weather.default=Default   	####This string is intended to express that the default weather .{MaxLength=100}
+resourcePack.editor.exportProject.weather.clear=Clear   	####This string is intended to express that the weather of Clear.{MaxLength=100}
+resourcePack.editor.exportProject.weather.rain=Rain   	####This string is intended to express that the weather of Rain.{MaxLength=100}
+resourcePack.editor.exportProject.weather.thunder=Thunder   	####This string is intended to express that the weather of Thunder.{MaxLength=100}
+
 
 
 resourcePack.editor.toolRail.ExtrudeTool.title=Alat Ekstrusi	#
@@ -316,13 +347,13 @@ resourcePack.editor.toolRail.FarmGenerator.pane.irrigation.tooltip=Menambahkan b
 resourcePack.editor.toolRail.FarmGenerator.pane.crops.title=Tanaman Panen	#
 resourcePack.editor.toolRail.FarmGenerator.pane.crops.wheat=Gandum	#
 resourcePack.editor.toolRail.FarmGenerator.pane.crops.potato=Kentang	#
-resourcePack.editor.toolRail.FarmGenerator.pane.crops.beets=Ubi Bit Merah	#
+resourcePack.editor.toolRail.FarmGenerator.pane.crops.beets=Beetroot	#
 resourcePack.editor.toolRail.FarmGenerator.pane.crops.pumpkin=Labu	#
 resourcePack.editor.toolRail.FarmGenerator.pane.crops.carrot=Wortel	#
 resourcePack.editor.toolRail.FarmGenerator.pane.animals.title=Hewan	#
 resourcePack.editor.toolRail.FarmGenerator.pane.animals.cow=Sapi	#
 resourcePack.editor.toolRail.FarmGenerator.pane.animals.sheep=Domba	#
-resourcePack.editor.toolRail.FarmGenerator.pane.animals.pig=Babi	#
+resourcePack.editor.toolRail.FarmGenerator.pane.animals.pig=Pig	#
 resourcePack.editor.toolRail.FarmGenerator.keyBinding.toggleTool=Alihkan Alat Generator Pertanian	#
 resourcePack.editor.toolRail.FarmGenerator.keyBinding.place=Tempatkan Pertanian di Kursor	#
 
@@ -394,7 +425,7 @@ resourcePack.editor.menuBar.help.feedback=Umpan Balik	#
 resourcePack.editor.menuBar.help.quickStart=Mulai Cepat	#
 resourcePack.editor.menuBar.help=Bantuan	#
 resourcePack.editor.menuBar.locate=Temukan	#
-resourcePack.editor.menuBar.parentMenu.weather.clear=Hapus	#
+resourcePack.editor.menuBar.parentMenu.weather.clear=Kosongkan	#
 resourcePack.editor.menuBar.parentMenu.weather.rain=Hujan	#
 resourcePack.editor.menuBar.parentMenu.weather.thunder=Guntur	#
 resourcePack.editor.menuBar.parentMenu.weather=Cuaca	#
@@ -469,13 +500,13 @@ resourcePack.editor.pastepreview.pane.controls.cursor.fixed=Jarak Tetap	#
 resourcePack.editor.pastepreview.pane.controls.cursor.keyboard=Hanya tombol	#
 resourcePack.editor.pastepreview.pane.controls.cursor.mouseandkeys=Mouse & Tombol	#
 resourcePack.editor.pastepreview.pane.controls.cursor.target.block=Blokir	#
-resourcePack.editor.pastepreview.pane.controls.cursor.target.face=Berdekatan	#
+resourcePack.editor.pastepreview.pane.controls.cursor.target.face=Bersebelahan	#
 resourcePack.editor.pastepreview.pane.controls.cursor.target.title=Target	#
 resourcePack.editor.pastepreview.pane.controls.cursor=Kontrol	#
 resourcePack.editor.pastepreview.pane.controls.title=Kontrol Kursor	#
 resourcePack.editor.pastepreview.pane.placement.mirrorX=Cerminkan X	#
 resourcePack.editor.pastepreview.pane.placement.mirrorZ=Cerminkan Z	#
-resourcePack.editor.pastepreview.pane.placement.offset=Offset:	#
+resourcePack.editor.pastepreview.pane.placement.offset=Offset	#
 resourcePack.editor.pastepreview.pane.placement.origin=Asal	#
 resourcePack.editor.pastepreview.pane.placement.pastebutton=Tempelkan	#
 resourcePack.editor.pastepreview.pane.placement.rotation=Rotasi (di sekitar Y)	#
@@ -554,7 +585,7 @@ resourcePack.editor.toolRail.RepeaterTool.tooltip=Alat untuk mengulang volume pi
 resourcePack.editor.toolRail.RepeaterTool.pane.Spacing=Jarak	#
 resourcePack.editor.toolRail.RepeaterTool.pane.Repetitions=Pengulangan	#
 resourcePack.editor.toolRail.RepeaterTool.pane.Preview=Pratinjau	#
-resourcePack.editor.toolRail.RepeaterTool.pane.Clear=Hapus	#
+resourcePack.editor.toolRail.RepeaterTool.pane.Clear=Kosongkan	#
 resourcePack.editor.toolRail.RepeaterTool.pane.Apply=Terapkan	#
 resourcePack.editor.toolRail.RepeaterTool.statusMessage.noSelection=Gunakan alat Pilihan untuk memilih volume yang akan diulang	#
 resourcePack.editor.toolRail.RepeaterTool.pane.Mode=Mode		####"Mode" describes a dropdown that contains the two different states the tool can be in. These are "Line" and "Grid" {MaxLength=20}
@@ -607,6 +638,8 @@ resourcePack.editor.selectionTool.keyBinding.shrinkLeft=Kecilkan Pilihan ke Kiri
 resourcePack.editor.selectionTool.keyBinding.shrinkRight=Kurangi Pilihan Kanan	#
 resourcePack.editor.selectionTool.keyBinding.shrinkUp=Kurangi Pilihan Atas	#
 resourcePack.editor.selectionTool.keyBinding.toggleTool=Alihkan Alat Pilihan	#
+resourcePack.editor.selectionTool.keyBinding.select=Select Block			#### The action of adding a block to the selection volume using they keyboard {MaxLength="30"}
+resourcePack.editor.selectionTool.keyBinding.selectMultiple=Select Additional Block			#### The action of adding an additional block to the selection volume using the keyboard {MaxLength="30"}
 resourcePack.editor.selectionTool.marquee.title=Seleksi Marquee	#
 resourcePack.editor.selectionTool.modeSelection.freehand.title=Mode Kuas Tangan Bebas	#
 resourcePack.editor.selectionTool.modeSelection.freehand.tooltip=Pilih blok di dunia dengan bentuk kuas tangan bebas	#
@@ -614,6 +647,16 @@ resourcePack.editor.selectionTool.modeSelection.marquee.title=Mode Lingkup	#
 resourcePack.editor.selectionTool.modeSelection.marquee.tooltip=Pilih blok di dunia dengan volume persegi panjang	#
 resourcePack.editor.selectionTool.modeSelection.title=Mode Pilihan	#
 resourcePack.editor.selectionTool.projectThroughLiquid=Proyeksi lewat cairan	#
+resourcePack.editor.selectionTool.trimAction.trimVolume=Trim Selection			#### Trim the current selection volume to fit only the solid blocks within {MaxLength=30}
+resourcePack.editor.selectionTool.trimAction.trimVolume.tooltip=Trim the current selection volume to fit only the solid blocks within   	#### {MaxLength=200}
+resourcePack.editor.selectionTool.trimAction.removeAir=Remove Air			#### Remove the air from the current selection volume leaving only specified blocks {MaxLength=30}
+resourcePack.editor.selectionTool.trimAction.removeAir.tooltip=Remove the air from the current selection volume leaving only specified blocks 	#### {MaxLength=200}
+resourcePack.editor.selectionTool.trimAction.trimVolume.SettingsPane.title=Trim Settings		#### The window pane title for the settings for trim mode {MaxLength=30}
+resourcePack.editor.selectionTool.trimAction.trimVolume.SettingsPane.ignoreLiquid=Ignore Liquids		#### The toggle button title for ignoring liquids {MaxLength=30}
+resourcePack.editor.selectionTool.trimAction.trimVolume.SettingsPane.ignoreLiquid.tooltip=Ignore any liquid blocks when trimming the volume 	#### {MaxLength=200}
+resourcePack.editor.selectionTool.trimAction.trimVolume.SettingsPane.onlyCollidable=Only Collision Blocks		#### The toggle button title for collision-only blocks {MaxLength=30}
+resourcePack.editor.selectionTool.trimAction.trimVolume.SettingsPane.onlyCollidable.tooltip=Ignore any blocks with no collision (leaves, grass, etc) when trimming the volume 	#### {MaxLength=200}
+resourcePack.editor.selectionTool.trimAction.trimVolume.SettingsPane.blockMaskMode=Block Mask Mode    	#### Title for the toggle action group to selection the block mask mode {MaxLength=20}
 resourcePack.editor.selectionTool.quickAction.clearSelection.tooltip=Batalkan pilihan saat ini	#
 resourcePack.editor.selectionTool.quickAction.clearSelection=Batalkan Pilihan	#
 resourcePack.editor.selectionTool.quickAction.deleteSelection.tooltip=Keluarkan semua blok di dalam volume pilihan saat ini	#
@@ -664,14 +707,15 @@ resourcePack.editor.timeOfDay.24hrClock=Jam 24 jam	#
 resourcePack.editor.timeOfDay.clockType=Jenis Jam	#
 resourcePack.editor.timeOfDay.currentTime=Waktu Saat Ini	#
 resourcePack.editor.timeOfDay.customTime=Waktu Modifikasi	#
-resourcePack.editor.timeOfDay.daylightCycle=Siklus Siang Hari	#
-resourcePack.editor.timeOfDay.dropDown.day=Siang Hari	#
+resourcePack.editor.timeOfDay.daylightCycle=Siklus Siang	#
+resourcePack.editor.timeOfDay.dropDown.day=Hari	#
 resourcePack.editor.timeOfDay.dropDown.midnight=Tengah Malam	#
 resourcePack.editor.timeOfDay.dropDown.night=Malam Hari	#
 resourcePack.editor.timeOfDay.dropDown.none=Tidak Ada	#
 resourcePack.editor.timeOfDay.dropDown.noon=Siang	#
 resourcePack.editor.timeOfDay.dropDown.sunrise=Matahari Terbit	#
 resourcePack.editor.timeOfDay.dropDown.sunset=Matahari Tenggelam	#
+resourcePack.editor.timeOfDay.dropDown.custom=Custom		####"Custom" describes a dropdown that players can define the specific start time {MaxLength=20}
 resourcePack.editor.timeOfDay.dropDown.title=Prasetel	#
 resourcePack.editor.timeOfDay.menu.title=Pengaturan Waktu Siang	#
 resourcePack.editor.timeOfDay.minecraftClock=Jam Minecraft	#
@@ -689,6 +733,7 @@ resourcePack.editor.toolMode.keyBinding.hotbar6=Pilih Hotbar 6	#
 resourcePack.editor.toolMode.keyBinding.hotbar7=Pilih Hotbar 7	#
 resourcePack.editor.toolMode.keyBinding.hotbar8=Pilih Hotbar 8	#
 resourcePack.editor.toolMode.keyBinding.hotbar9=Pilih Hotbar 9	#
+resourcePack.editor.toolMode.keyBinding.reload=Reload 	####Represents a label for a key shortcut that reloads scripts and UI.{MaxLength=100}
 
 
 resourcePack.editor.toolRail.blockPalette.title=Palet Blok (CTRL+P)	#
@@ -737,7 +782,7 @@ resourcePack.editor.toolRail.smartFillTool.areaLimit.title=Batas Luas	#
 resourcePack.editor.toolRail.smartFillTool.areaLimit.tooltip=Luas maksimal yang akan diisi	#
 
 
-resourcePack.editor.toolRail.summonTool.keyBinding.clear=Hapus Pilihan	#
+resourcePack.editor.toolRail.summonTool.keyBinding.clear=Clear Selection	#
 resourcePack.editor.toolRail.summonTool.keyBinding.delete=Hapus Entitas	#
 resourcePack.editor.toolRail.summonTool.keyBinding.moveBack=Gerakkan yang Dipilih ke Belakang	#
 resourcePack.editor.toolRail.summonTool.keyBinding.moveDown=Gerakkan yang Dipilih ke Bawah	#
@@ -759,13 +804,19 @@ resourcePack.editor.toolRail.summonTool.tool.title=Alat Panggil	#
 resourcePack.editor.toolRail.workbenchSettings.title=Meja Kerja	#
 resourcePack.editor.toolRail.workbenchTool.title=Meja Kerja	#
 resourcePack.editor.toolRail.workbenchTool.description=Ubah status blok dengan cepat	#
-resourcePack.editor.toolRail.workbenchTool.howToUse=Klik kiri pada blok yang disorot untuk mengubah status (buka/tutup, putar, balikkan, dll.). Coba gunakan modifikasi Shift dan Control juga! Ingat fitur ini hanya berfungsi pada blok dengan properti yang dapat diubah (misalnya pintu, pagar, dll.).	#
+resourcePack.editor.toolRail.workbenchTool.howToUse=Highlight blocks to see the available actions to change their states (open/close, rotate, invert, etc.). Try using Shift and Control key modifiers as well! Please note that this feature only works on blocks with modifiable properties (e.g., doors, fences, stairs, etc.).		####	This text provides a description of the workbench tool and explans how the the user can highlight blocks in order to see the list of actions for changing that blocks state. {MaxLength="500"}
 resourcePack.editor.toolRail.workbenchTool.tooltip=Ubah status blok	#
-resourcePack.editor.toolRail.workbenchTool.block=Blok	#
+resourcePack.editor.toolRail.workbenchTool.block=Blokir	#
 resourcePack.editor.toolRail.workbenchTool.leftClick=Klik Kiri	#
 resourcePack.editor.toolRail.workbenchTool.shiftLeftClick=Shift + Klik Kiri	#
 resourcePack.editor.toolRail.workbenchTool.controlLeftClick=CTRL + Klik Kiri	#
 resourcePack.editor.toolRail.workbenchTool.shiftControlLeftClick=Shift + CTRL + Klik Kiri	#
+
+resourcePack.editor.toolRail.workbenchTool.leftClickTooltip=Left Clicking on a block will perform the primary Workbench action		####	This keybinding is a tool tip to convey that a left click will invoke the primary (1st) action of the workbench tool. {MaxLength="150"}
+resourcePack.editor.toolRail.workbenchTool.shiftLeftClickTooltip=Shift + Left Clicking on a block will perform the secondary Workbench action		####	This keybinding is a tool tip to convey that a shift + left click will invoke the primary (1st) action of the workbench tool. {MaxLength="150"}
+resourcePack.editor.toolRail.workbenchTool.controlLeftClickTooltip=Control + Left Clicking on a block will perform the tertiary Workbench action		####	This keybinding is a tool tip to convey that a control + left click will invoke the primary (1st) action of the workbench tool. {MaxLength="150"}
+resourcePack.editor.toolRail.workbenchTool.shiftControlLeftClickTooltip=Shift + Control + Left Clicking on a block will perform the quaternary Workbench action		####	TThis keybinding is a tool tip to convey that a shift + control + left click will invoke the primary (1st) action of the workbench tool. {MaxLength="150"}
+
 resourcePack.editor.toolRail.workbenchTool.stripWood=Lepas/kembalikan kayu		####This string is intended to express whether the wood block has bark (unstripped) or doesn't have bark (stripped).{MaxLength=100}
 resourcePack.editor.toolRail.workbenchTool.ladderLocation=Lokasi tangga	#
 resourcePack.editor.toolRail.workbenchTool.autoAlign=Pengaturan otomatis	#
@@ -791,6 +842,17 @@ resourcePack.editor.toolRail.workbenchTool.directionProp=Arah Menghadap	#
 resourcePack.editor.toolRail.workbenchTool.weirdoDirectionProp=Putar	#
 resourcePack.editor.toolRail.workbenchTool.facingDirectionProp=Arah Menghadap	#
 resourcePack.editor.toolRail.workbenchTool.cardinalDirectionProp=Arah Menghadap	#
+
+resourcePack.editor.toolRail.workbenchTool.addCustomMapping=Add Custom Mappings		####This string is intended to express that this subpane is for adding custom block property mappings for the tool.{MaxLength=100}
+resourcePack.editor.toolRail.workbenchTool.blockProperty=Block Property		####This string is intended to express that this field is for the Block Property.{MaxLength=50}
+resourcePack.editor.toolRail.workbenchTool.clickBinding=Click Bindings		####This string is intended to express that this dropdown contains the click binding options (left click, shift + left click, etc).{MaxLength=50}
+resourcePack.editor.toolRail.workbenchTool.addMapping=Add Mapping		####This string is intended to express that this button will add the custom mapping provided by the user.{MaxLength=50}
+resourcePack.editor.toolRail.workbenchTool.resetAllMappings=Reset All Mappings		####This string is intended to express that this button will reset all custom mappings provided by the user.{MaxLength=50}
+
+resourcePack.editor.workbenchTool.keyBinding.primaryAction=Workbench Primary Action		####	This keybinding is to invoke the primary (1st) action of the workbench tool. {MaxLength="30"}
+resourcePack.editor.workbenchTool.keyBinding.secondaryAction=Workbench Secondary Action		#### This keybinding is to invoke the secondary (2nd) action of the workbench tool. {MaxLength="30"}
+resourcePack.editor.workbenchTool.keyBinding.tertiaryAction=Workbench Tertiary Action		####	This keybinding is to invoke the tertiary (3rd) action of the workbench tool. {MaxLength="30"}
+resourcePack.editor.workbenchTool.keyBinding.quaternaryAction=Workbench Quaternary Action		#### This keybinding is to invoke the quaternary (4th) action of the workbench tool. {MaxLength="30"}
 
 
 resourcePack.editor.transaction.keyBinding.redo=Ulangi	#

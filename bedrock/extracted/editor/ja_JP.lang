@@ -54,6 +54,7 @@ resourcePack.editor.brushPaint.tooltip=ブラシを使用してワールド内�
 
 resourcePack.editor.BrushPaintControl.brush.title=ブラシ	#
 resourcePack.editor.BrushPaintControl.brushSettings.title=ブラシ設定	#
+resourcePack.editor.BrushPaintControl.shapeSettings.title=Shape Settings 	####Represents an expander that has UI controls for brush shape settings.{MaxLength=100}
 resourcePack.editor.BrushPaintControl.fillConstraints.mask.title=マスク リスト	#
 resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.disabled.tooltip=ブロック フィルターを無効にする	#
 resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.disabled=無効	#
@@ -88,7 +89,7 @@ resourcePack.editor.brushShape.common.settings.yAxis=Y 軸	#
 resourcePack.editor.brushShape.common.settings.yAxisNeg=-Y 軸	#
 resourcePack.editor.brushShape.common.settings.zAxis=Z 軸	#
 resourcePack.editor.brushShape.common.settings.zAxisNeg=-Z 軸	#
-resourcePack.editor.brushShape.cone.name=円錐	#
+resourcePack.editor.brushShape.cone.name=コーン	#
 resourcePack.editor.brushShape.cone.settings.depth=奥行き半径	#
 resourcePack.editor.brushShape.cone.settings.width=幅半径	#
 resourcePack.editor.brushShape.cuboid.name=直方体	#
@@ -103,10 +104,12 @@ resourcePack.editor.brushShape.ellipsoid.settings.depth_radius=奥行き半径	#
 resourcePack.editor.brushShape.ellipsoid.settings.height_radius=高さ半径	#
 resourcePack.editor.brushShape.ellipsoid.settings.width_radius=幅半径	#
 resourcePack.editor.brushShape.pyramid.name=ピラミッド	#
-resourcePack.editor.brushShape.pyramid.settings.depth=深さ	#
+resourcePack.editor.brushShape.pyramid.settings.depth=奥行き	#
 resourcePack.editor.brushShape.pyramid.settings.height=高さ	#
 resourcePack.editor.brushShape.pyramid.settings.width=幅	#
 resourcePack.editor.brushShape.singleBlock.name=シングル ブロック	#
+resourcePack.editor.brushShape.star.name=Star 	####Represent a star shaped brush.{MaxLength=100}
+resourcePack.editor.brushShape.star.settings.includeVertical=Include Vertical 	####Represents a toggle button label that removes vertical parts of a star brush if unchecked.{MaxLength=100}
 
 
 resourcePack.editor.client.description=エディタ クライアント リソース	#
@@ -216,18 +219,29 @@ resourcePack.editor.entityInspector.toolRail.description=エンティティを�
 resourcePack.editor.exportProject.exportType=エクスポートの種類	#
 resourcePack.editor.exportProject.exportType.playableWorld=プレイ可能な世界	#
 resourcePack.editor.exportProject.exportNotes=ノートをエクスポート	#
+resourcePack.editor.exportProject.exportNotes.export=Exporting Progress   	####This string is intended to express that the title of export progress modal.{MaxLength=100}
 resourcePack.editor.exportProject.exportNotes.warning=v%1 のワールドをエクスポートしています。エクスポートされたプレイ可能なワールドは、バージョン番号が v%1 より前の Minecraft では使用できません。以前のバージョンに変換するには、https://chunker.app/ を使用してください (以前のバージョンでサポートされていない機能は、使用できない場合があります)	#
+resourcePack.editor.exportProject.exportNotes.progress=Exporting the world...    	####This string is intended to express that the progress message of exporting.{MaxLength=100}
+resourcePack.editor.exportProject.exportNotes.exportSuccess=The world was successfully exported    	####This string is intended to express that export the world succeeded.{MaxLength=100}
+resourcePack.editor.exportProject.exportNotes.exportFailed=Exporting world was failure    	####This string is intended to express that export the world failed.{MaxLength=100}
 resourcePack.editor.exportProject.generalSettings=一般設定	#
 resourcePack.editor.exportProject.generalSettings.worldName=ワールド名	#
 resourcePack.editor.exportProject.generalSettings.gameMode=ゲームモード	#
 resourcePack.editor.exportProject.generalSettings.difficulty=難易度	#
 resourcePack.editor.exportProject.generalSettings.hardcore=ハードコア	#
+resourcePack.editor.exportProject.initialPlaySettings=Inital Play Settings   	####This string is intended to express that the export category for inital play settings.{MaxLength=100}
+resourcePack.editor.exportProject.initialPlaySettings.spawnPosition=World Spawn Point   	####This string is intended to express that player inistal spawn position.{MaxLength=100}
+resourcePack.editor.exportProject.initialPlaySettings.startTime=Start Time   	####This string is intended to express that world start time.{MaxLength=100}
+resourcePack.editor.exportProject.initialPlaySettings.clockType=Clock Type   	####This string is intended to express that start time with different clock type.{MaxLength=100}
+resourcePack.editor.exportProject.initialPlaySettings.customStartTime=Custom Start Time   	####This string is intended to express that custom start time with Minecraft Cloke value.{MaxLength=100}
+resourcePack.editor.exportProject.initialPlaySettings.weather=Start Weather   	####This string is intended to express that the custom start weather.{MaxLength=100}
 resourcePack.editor.exportProject.advancedSettings=詳細設定	#
 resourcePack.editor.exportProject.advancedSettings.startingMap=開始時の地図所持	#
 resourcePack.editor.exportProject.advancedSettings.bonusChest=ボーナスチェスト	#
 resourcePack.editor.exportProject.advancedSettings.showCoordinates=座標を表示	#
 resourcePack.editor.exportProject.advancedSettings.showDaysPlayed=プレイ日を表示する	#
 resourcePack.editor.exportProject.advancedSettings.recipeUnlocking=レシピのアンロック	#
+resourcePack.editor.exportProject.advancedSettings.limitedCrafting=Limited Crafting   	####Export pane checkbox label that enable to set crafting limit.{MaxLength=100}
 resourcePack.editor.exportProject.advancedSettings.fireSpreads=火の延焼	#
 resourcePack.editor.exportProject.advancedSettings.tntExplodes=TNT の爆発	#
 resourcePack.editor.exportProject.advancedSettings.resawnBlocksExplode=リスポーン ブロックが爆発する	#
@@ -235,11 +249,13 @@ resourcePack.editor.exportProject.advancedSettings.mobLoot=モブのアイテム
 resourcePack.editor.exportProject.advancedSettings.naturalRegeneration=自然再生	#
 resourcePack.editor.exportProject.advancedSettings.tileDrops=タイルからのドロップ	#
 resourcePack.editor.exportProject.advancedSettings.immediateRespawn=即時リスポーン	#
+resourcePack.editor.exportProject.advancedSettings.showDeathMessage=Show Death Message   	####Export pane checkbox label that show the death message when player die.{MaxLength=100}
 resourcePack.editor.exportProject.advancedSettings.respawnRadius=リスポーン範囲	#
 resourcePack.editor.exportProject.advancedSettings.simulationDistance=演算距離	#
 resourcePack.editor.exportProject.advancedSettings.bedsWork=ベッド ワーク	#
 resourcePack.editor.exportProject.advancedSettings.requiredSleepingPlayers=必要なスリープ状態のプレイヤー (%1$s)	#
 resourcePack.editor.exportProject.advancedSettings.requiredSleepingPlayers.onePlayerMessage=プレイヤー 1 人のみ	#
+resourcePack.editor.exportProject.advancedSettings.showItemTags=Show Item Tags   	####Export pane checkbox label that show item tags.{MaxLength=100}
 resourcePack.editor.exportProject.multiplayerSettings=マルチプレイ設定	#
 resourcePack.editor.exportProject.multiplayerSettings.multiplayerGame=マルチプレイ ゲーム	#
 resourcePack.editor.exportProject.multiplayerSettings.playerAccess=プレイヤー アクセス	#
@@ -255,6 +271,16 @@ resourcePack.editor.exportProject.cheatsSettings.mobGriefing=モブによる妨�
 resourcePack.editor.exportProject.cheatsSettings.entitiesDropLoot=エンティティのアイテム ドロップ	#
 resourcePack.editor.exportProject.cheatsSettings.weatherCycle=天候の変化	#
 resourcePack.editor.exportProject.cheatsSettings.commandBlocks=コマンドブロック	#
+resourcePack.editor.exportProject.cheatsSettings.commandBlockOutput=Command Block Output   	####Export pane checkbox label that enable to display the command output.{MaxLength=100}
+resourcePack.editor.exportProject.cheatsSettings.sendCommandFeedback=Send Command Feedback   	####This string is the heading for the 'send command feedback' setting when exporting a world.{MaxLength=100}
+resourcePack.editor.exportProject.cheatsSettings.maxCommandChainLength=Max Command Chain Length   	####Export pane number that indicate the max length of the command, it defaults to 65536. It has a minimum of 0 and a max of 2147483647.{MaxLength=100}
+resourcePack.editor.exportProject.cheatsSettings.fireDamage=Fire Damage  	####Export pane checkbox label that enable damage when the player on fire.{MaxLength=100}
+resourcePack.editor.exportProject.cheatsSettings.freezeDamage=Freeze Damage  	####Export pane checkbox label that enable damage when the player freezes.{MaxLength=100}
+resourcePack.editor.exportProject.cheatsSettings.fallDamage=Fall Damage  	####Export pane checkbox label that enable damage when the player falls.{MaxLength=100}
+resourcePack.editor.exportProject.cheatsSettings.drowningDamage=Drowning Damage  	####Export pane checkbox label that enable damage when the player is drowning.{MaxLength=100}
+resourcePack.editor.exportProject.cheatsSettings.insomnia=Insomnia  	####Export pane checkbox label that enable player insomnia status.{MaxLength=100}
+resourcePack.editor.exportProject.cheatsSettings.showBorderEffect=Show Border Effect  	####Export pane checkbox label that show border effect.{MaxLength=100}
+resourcePack.editor.exportProject.cheatsSettings.functionCommandLimit=Function Command Limit  	####Export pane checkbox label that the number of limition for the function command.{MaxLength=100}
 resourcePack.editor.exportProject.cheatsSettings.educationFeatures=教育機能	#
 resourcePack.editor.exportProject.cheatsSettings.randomTickSpeed=ランダムなティック速度	#
 resourcePack.editor.exportProject.export=エクスポート	#
@@ -266,6 +292,11 @@ resourcePack.editor.exportProject.difficulty.peaceful=ピースフル	#
 resourcePack.editor.exportProject.difficulty.easy=イージー	#
 resourcePack.editor.exportProject.difficulty.normal=ノーマル	#
 resourcePack.editor.exportProject.difficulty.hard=ハード	#
+resourcePack.editor.exportProject.weather.default=Default   	####This string is intended to express that the default weather .{MaxLength=100}
+resourcePack.editor.exportProject.weather.clear=Clear   	####This string is intended to express that the weather of Clear.{MaxLength=100}
+resourcePack.editor.exportProject.weather.rain=Rain   	####This string is intended to express that the weather of Rain.{MaxLength=100}
+resourcePack.editor.exportProject.weather.thunder=Thunder   	####This string is intended to express that the weather of Thunder.{MaxLength=100}
+
 
 
 resourcePack.editor.toolRail.ExtrudeTool.title=押し出しツール	#
@@ -480,7 +511,7 @@ resourcePack.editor.pastepreview.pane.placement.origin=起点	#
 resourcePack.editor.pastepreview.pane.placement.pastebutton=貼り付け	#
 resourcePack.editor.pastepreview.pane.placement.rotation=回転 (Y 軸周り)	#
 resourcePack.editor.pastepreview.pane.placement.title=配置の設定	#
-resourcePack.editor.pastepreview.pane.root.size=サイズ	#
+resourcePack.editor.pastepreview.pane.root.size=Size	#
 resourcePack.editor.pastepreview.pane.root.title=プレビューを貼り付け	#
 resourcePack.editor.pastepreview.tool.tip=マウスを使用してクリップボードのプレビューの位置を調整し、クリックして世界に貼り付ける	#
 resourcePack.editor.pastepreview.tool.title=プレビューを貼り付け	#
@@ -511,7 +542,7 @@ resourcePack.editor.playtest.Menu.Title=世界をテスト	#
 resourcePack.editor.playtest.Title.Tooltip=プレイ可能な Minecraft の世界として、あなたのエディター プロジェクトのプレイテストを実行します。プロジェクトに変更は保存されません。シングル プレイヤーのプロジェクトをホストするときのみ利用可能です。	#
 
 
-resourcePack.editor.playtestResult.EditorSystemFailure=エディター システム障害	#
+resourcePack.editor.playtestResult.EditorSystemFailure=Editor System Failure	#
 resourcePack.editor.playtestResult.InvalidLevelId=無効なレベル ID	#
 resourcePack.editor.playtestResult.InvalidSessionHandle=無効なセッション ハンドルです	#
 resourcePack.editor.playtestResult.OK=成功	#
@@ -556,7 +587,7 @@ resourcePack.editor.toolRail.RepeaterTool.pane.Repetitions=繰り返し	#
 resourcePack.editor.toolRail.RepeaterTool.pane.Preview=プレビュー	#
 resourcePack.editor.toolRail.RepeaterTool.pane.Clear=クリア	#
 resourcePack.editor.toolRail.RepeaterTool.pane.Apply=適用	#
-resourcePack.editor.toolRail.RepeaterTool.statusMessage.noSelection=選択ツールを使用して、繰り返すボリュームを選択する	#
+resourcePack.editor.toolRail.RepeaterTool.statusMessage.noSelection=選択ツールを使用して繰り返すボリュームを選択する	#
 resourcePack.editor.toolRail.RepeaterTool.pane.Mode=モード		####"Mode" describes a dropdown that contains the two different states the tool can be in. These are "Line" and "Grid" {MaxLength=20}
 resourcePack.editor.toolRail.RepeaterTool.mode.Line=ライン		####"Line" describes a straight, unbroken visual between two points {MaxLength=20}
 resourcePack.editor.toolRail.RepeaterTool.mode.Grid=グリッド		####"Grid" describes a visual consisting of parallel lines at regular intervals, broken up by perpendicular lines at regular intervals, like grid paper. {MaxLength=20}
@@ -607,6 +638,8 @@ resourcePack.editor.selectionTool.keyBinding.shrinkLeft=選択領域を左に縮
 resourcePack.editor.selectionTool.keyBinding.shrinkRight=選択領域を右に縮小	#
 resourcePack.editor.selectionTool.keyBinding.shrinkUp=選択領域を上に縮小	#
 resourcePack.editor.selectionTool.keyBinding.toggleTool=選択ツールの切り替え	#
+resourcePack.editor.selectionTool.keyBinding.select=Select Block			#### The action of adding a block to the selection volume using they keyboard {MaxLength="30"}
+resourcePack.editor.selectionTool.keyBinding.selectMultiple=Select Additional Block			#### The action of adding an additional block to the selection volume using the keyboard {MaxLength="30"}
 resourcePack.editor.selectionTool.marquee.title=マーキー選択	#
 resourcePack.editor.selectionTool.modeSelection.freehand.title=フリーハンド ブラシ モード	#
 resourcePack.editor.selectionTool.modeSelection.freehand.tooltip=フリーハンドのブラシ形状を使用してワールド内のブロックを選択します	#
@@ -614,6 +647,16 @@ resourcePack.editor.selectionTool.modeSelection.marquee.title=マーキー モ�
 resourcePack.editor.selectionTool.modeSelection.marquee.tooltip=長方形の領域を使用してワールド内のブロックを選択します	#
 resourcePack.editor.selectionTool.modeSelection.title=選択モード	#
 resourcePack.editor.selectionTool.projectThroughLiquid=液体を通して投影	#
+resourcePack.editor.selectionTool.trimAction.trimVolume=Trim Selection			#### Trim the current selection volume to fit only the solid blocks within {MaxLength=30}
+resourcePack.editor.selectionTool.trimAction.trimVolume.tooltip=Trim the current selection volume to fit only the solid blocks within   	#### {MaxLength=200}
+resourcePack.editor.selectionTool.trimAction.removeAir=Remove Air			#### Remove the air from the current selection volume leaving only specified blocks {MaxLength=30}
+resourcePack.editor.selectionTool.trimAction.removeAir.tooltip=Remove the air from the current selection volume leaving only specified blocks 	#### {MaxLength=200}
+resourcePack.editor.selectionTool.trimAction.trimVolume.SettingsPane.title=Trim Settings		#### The window pane title for the settings for trim mode {MaxLength=30}
+resourcePack.editor.selectionTool.trimAction.trimVolume.SettingsPane.ignoreLiquid=Ignore Liquids		#### The toggle button title for ignoring liquids {MaxLength=30}
+resourcePack.editor.selectionTool.trimAction.trimVolume.SettingsPane.ignoreLiquid.tooltip=Ignore any liquid blocks when trimming the volume 	#### {MaxLength=200}
+resourcePack.editor.selectionTool.trimAction.trimVolume.SettingsPane.onlyCollidable=Only Collision Blocks		#### The toggle button title for collision-only blocks {MaxLength=30}
+resourcePack.editor.selectionTool.trimAction.trimVolume.SettingsPane.onlyCollidable.tooltip=Ignore any blocks with no collision (leaves, grass, etc) when trimming the volume 	#### {MaxLength=200}
+resourcePack.editor.selectionTool.trimAction.trimVolume.SettingsPane.blockMaskMode=Block Mask Mode    	#### Title for the toggle action group to selection the block mask mode {MaxLength=20}
 resourcePack.editor.selectionTool.quickAction.clearSelection.tooltip=現在の選択を解除する	#
 resourcePack.editor.selectionTool.quickAction.clearSelection=選択解除	#
 resourcePack.editor.selectionTool.quickAction.deleteSelection.tooltip=現在の選択ボリューム内のすべてのブロックを削除する	#
@@ -643,7 +686,7 @@ resourcePack.editor.toolRail.Terrain.keybinding.toggleTool=地形ツールの切
 resourcePack.editor.toolRail.Terrain.keyBinding.switch=地形モードの切り替え	#
 resourcePack.editor.toolRail.Terrain.Mode.title=地形モード	#
 resourcePack.editor.toolRail.Terrain.Smooth.mode.title=スムーズ モード	#
-resourcePack.editor.toolRail.Terrain.Smooth.tooltip=スムージング強度に基づいて地形をスムーズにする	#
+resourcePack.editor.toolRail.Terrain.Smooth.tooltip=スムーズ強度に基づいて地形をスムーズにする	#
 resourcePack.editor.toolRail.Terrain.SmoothStrength=スムーズ強度	#
 resourcePack.editor.toolRail.Terrain.Roughen.mode.title=粗面化モード	#
 resourcePack.editor.toolRail.Terrain.Roughen.tooltip=粗面化強度に基づいて地形を粗くします	#
@@ -672,6 +715,7 @@ resourcePack.editor.timeOfDay.dropDown.none=なし	#
 resourcePack.editor.timeOfDay.dropDown.noon=正午	#
 resourcePack.editor.timeOfDay.dropDown.sunrise=日の出	#
 resourcePack.editor.timeOfDay.dropDown.sunset=日没	#
+resourcePack.editor.timeOfDay.dropDown.custom=Custom		####"Custom" describes a dropdown that players can define the specific start time {MaxLength=20}
 resourcePack.editor.timeOfDay.dropDown.title=プリセット	#
 resourcePack.editor.timeOfDay.menu.title=時間帯設定	#
 resourcePack.editor.timeOfDay.minecraftClock=Minecraft 時計	#
@@ -689,6 +733,7 @@ resourcePack.editor.toolMode.keyBinding.hotbar6=ホットバー 6 を選択	#
 resourcePack.editor.toolMode.keyBinding.hotbar7=ホットバー 7 を選択	#
 resourcePack.editor.toolMode.keyBinding.hotbar8=ホットバー 8 を選択	#
 resourcePack.editor.toolMode.keyBinding.hotbar9=ホットバー 9 を選択	#
+resourcePack.editor.toolMode.keyBinding.reload=Reload 	####Represents a label for a key shortcut that reloads scripts and UI.{MaxLength=100}
 
 
 resourcePack.editor.toolRail.blockPalette.title=ブロック パレット (CTRL+P)	#
@@ -737,7 +782,7 @@ resourcePack.editor.toolRail.smartFillTool.areaLimit.title=エリア制限	#
 resourcePack.editor.toolRail.smartFillTool.areaLimit.tooltip=埋められる最大領域	#
 
 
-resourcePack.editor.toolRail.summonTool.keyBinding.clear=選択解除	#
+resourcePack.editor.toolRail.summonTool.keyBinding.clear=Clear Selection	#
 resourcePack.editor.toolRail.summonTool.keyBinding.delete=エンティティの削除	#
 resourcePack.editor.toolRail.summonTool.keyBinding.moveBack=選択した領域を後方に移動	#
 resourcePack.editor.toolRail.summonTool.keyBinding.moveDown=選択した領域を下に移動	#
@@ -759,13 +804,19 @@ resourcePack.editor.toolRail.summonTool.tool.title=召喚ツール	#
 resourcePack.editor.toolRail.workbenchSettings.title=作業台	#
 resourcePack.editor.toolRail.workbenchTool.title=作業台	#
 resourcePack.editor.toolRail.workbenchTool.description=ブロックの状態をすばやく変更	#
-resourcePack.editor.toolRail.workbenchTool.howToUse=強調表示されたブロックを左クリックすると、状態 (開く/閉じる、回転、反転など) を変更できます。Shift キーや Control キーなどの修飾キーも使ってみてください。この機能は、変更可能なプロパティを持つブロック (ドア、フェンスなど) でのみ機能します。	#
+resourcePack.editor.toolRail.workbenchTool.howToUse=Highlight blocks to see the available actions to change their states (open/close, rotate, invert, etc.). Try using Shift and Control key modifiers as well! Please note that this feature only works on blocks with modifiable properties (e.g., doors, fences, stairs, etc.).		####	This text provides a description of the workbench tool and explans how the the user can highlight blocks in order to see the list of actions for changing that blocks state. {MaxLength="500"}
 resourcePack.editor.toolRail.workbenchTool.tooltip=ブロックの状態を変更	#
 resourcePack.editor.toolRail.workbenchTool.block=ブロック	#
 resourcePack.editor.toolRail.workbenchTool.leftClick=左クリック	#
 resourcePack.editor.toolRail.workbenchTool.shiftLeftClick=Shift + 左クリック	#
 resourcePack.editor.toolRail.workbenchTool.controlLeftClick=CTRL + 左クリック	#
 resourcePack.editor.toolRail.workbenchTool.shiftControlLeftClick=Shift + CTRL + 左クリック	#
+
+resourcePack.editor.toolRail.workbenchTool.leftClickTooltip=Left Clicking on a block will perform the primary Workbench action		####	This keybinding is a tool tip to convey that a left click will invoke the primary (1st) action of the workbench tool. {MaxLength="150"}
+resourcePack.editor.toolRail.workbenchTool.shiftLeftClickTooltip=Shift + Left Clicking on a block will perform the secondary Workbench action		####	This keybinding is a tool tip to convey that a shift + left click will invoke the primary (1st) action of the workbench tool. {MaxLength="150"}
+resourcePack.editor.toolRail.workbenchTool.controlLeftClickTooltip=Control + Left Clicking on a block will perform the tertiary Workbench action		####	This keybinding is a tool tip to convey that a control + left click will invoke the primary (1st) action of the workbench tool. {MaxLength="150"}
+resourcePack.editor.toolRail.workbenchTool.shiftControlLeftClickTooltip=Shift + Control + Left Clicking on a block will perform the quaternary Workbench action		####	TThis keybinding is a tool tip to convey that a shift + control + left click will invoke the primary (1st) action of the workbench tool. {MaxLength="150"}
+
 resourcePack.editor.toolRail.workbenchTool.stripWood=木材の皮はぎ/皮付け		####This string is intended to express whether the wood block has bark (unstripped) or doesn't have bark (stripped).{MaxLength=100}
 resourcePack.editor.toolRail.workbenchTool.ladderLocation=はしごの位置	#
 resourcePack.editor.toolRail.workbenchTool.autoAlign=自動整列	#
@@ -773,7 +824,7 @@ resourcePack.editor.toolRail.workbenchTool.autoAlignFacingDirection=向きを自
 resourcePack.editor.toolRail.workbenchTool.autoAlignRotation=回転を自動整列		####This string is intended to express that the action will align the roatation of the block with the player camera.{MaxLength=100}
 
 resourcePack.editor.toolRail.workbenchTool.topSlotBitProp=トップ/ボトム	#
-resourcePack.editor.toolRail.workbenchTool.pillarAxisProp=向きを変える	#
+resourcePack.editor.toolRail.workbenchTool.pillarAxisProp=回す	#
 resourcePack.editor.toolRail.workbenchTool.heightProp=レイヤー	#
 resourcePack.editor.toolRail.workbenchTool.candlesProp=ろうそくの数	#
 
@@ -788,9 +839,20 @@ resourcePack.editor.toolRail.workbenchTool.litProp=点灯/消灯	#
 resourcePack.editor.toolRail.workbenchTool.dripstoneThicknessProp=鍾乳石の厚さ	#
 
 resourcePack.editor.toolRail.workbenchTool.directionProp=向いている方向	#
-resourcePack.editor.toolRail.workbenchTool.weirdoDirectionProp=向きを変える	#
+resourcePack.editor.toolRail.workbenchTool.weirdoDirectionProp=回す	#
 resourcePack.editor.toolRail.workbenchTool.facingDirectionProp=向いている方向	#
 resourcePack.editor.toolRail.workbenchTool.cardinalDirectionProp=向いている方向	#
+
+resourcePack.editor.toolRail.workbenchTool.addCustomMapping=Add Custom Mappings		####This string is intended to express that this subpane is for adding custom block property mappings for the tool.{MaxLength=100}
+resourcePack.editor.toolRail.workbenchTool.blockProperty=Block Property		####This string is intended to express that this field is for the Block Property.{MaxLength=50}
+resourcePack.editor.toolRail.workbenchTool.clickBinding=Click Bindings		####This string is intended to express that this dropdown contains the click binding options (left click, shift + left click, etc).{MaxLength=50}
+resourcePack.editor.toolRail.workbenchTool.addMapping=Add Mapping		####This string is intended to express that this button will add the custom mapping provided by the user.{MaxLength=50}
+resourcePack.editor.toolRail.workbenchTool.resetAllMappings=Reset All Mappings		####This string is intended to express that this button will reset all custom mappings provided by the user.{MaxLength=50}
+
+resourcePack.editor.workbenchTool.keyBinding.primaryAction=Workbench Primary Action		####	This keybinding is to invoke the primary (1st) action of the workbench tool. {MaxLength="30"}
+resourcePack.editor.workbenchTool.keyBinding.secondaryAction=Workbench Secondary Action		#### This keybinding is to invoke the secondary (2nd) action of the workbench tool. {MaxLength="30"}
+resourcePack.editor.workbenchTool.keyBinding.tertiaryAction=Workbench Tertiary Action		####	This keybinding is to invoke the tertiary (3rd) action of the workbench tool. {MaxLength="30"}
+resourcePack.editor.workbenchTool.keyBinding.quaternaryAction=Workbench Quaternary Action		#### This keybinding is to invoke the quaternary (4th) action of the workbench tool. {MaxLength="30"}
 
 
 resourcePack.editor.transaction.keyBinding.redo=やり直す	#

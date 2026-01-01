@@ -54,6 +54,7 @@ resourcePack.editor.brushPaint.tooltip=Χρησιμοποίησε πινέλα �
 
 resourcePack.editor.BrushPaintControl.brush.title=Πινέλο	#
 resourcePack.editor.BrushPaintControl.brushSettings.title=Ρυθμίσεις Πινέλου	#
+resourcePack.editor.BrushPaintControl.shapeSettings.title=Shape Settings 	####Represents an expander that has UI controls for brush shape settings.{MaxLength=100}
 resourcePack.editor.BrushPaintControl.fillConstraints.mask.title=Λίστα Μάσκας	#
 resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.disabled.tooltip=Απενεργοποίηση φίλτρων αποκλεισμού	#
 resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.disabled=Απενεργοποιημένο	#
@@ -107,6 +108,8 @@ resourcePack.editor.brushShape.pyramid.settings.depth=Βάθος	#
 resourcePack.editor.brushShape.pyramid.settings.height=Ύψος	#
 resourcePack.editor.brushShape.pyramid.settings.width=Πλάτος	#
 resourcePack.editor.brushShape.singleBlock.name=Μονός κύβος	#
+resourcePack.editor.brushShape.star.name=Star 	####Represent a star shaped brush.{MaxLength=100}
+resourcePack.editor.brushShape.star.settings.includeVertical=Include Vertical 	####Represents a toggle button label that removes vertical parts of a star brush if unchecked.{MaxLength=100}
 
 
 resourcePack.editor.client.description=Πόροι πελάτη προγράμματος επεξεργασίας	#
@@ -216,18 +219,29 @@ resourcePack.editor.entityInspector.toolRail.description=Κάνε αριστερ
 resourcePack.editor.exportProject.exportType=Εξαγωγή τύπου	#
 resourcePack.editor.exportProject.exportType.playableWorld=Κόσμος που μπορείς να παίξεις	#
 resourcePack.editor.exportProject.exportNotes=Εξαγωγή σημειώσεων	#
+resourcePack.editor.exportProject.exportNotes.export=Exporting Progress   	####This string is intended to express that the title of export progress modal.{MaxLength=100}
 resourcePack.editor.exportProject.exportNotes.warning=Εξαγάγεις έναν κόσμο έκδ%1. Οι κόσμοι που μπορείς να παίξεις οι οποίοι έχουν εξαχθεί δεν μπορούν να χρησιμοποιηθούν σε εκδόσεις του Minecraft με αριθμό έκδοσης πριν από την έκδ%1. Για να τους μετατρέψεις σε προηγούμενους αριθμούς έκδοσης, χρησιμοποίησε το https://chunker.app/ (Ορισμένες λειτουργίες μπορεί να μην είναι διαθέσιμες αν δεν υποστηρίζονται σε προηγούμενες εκδόσεις)	#
+resourcePack.editor.exportProject.exportNotes.progress=Exporting the world...    	####This string is intended to express that the progress message of exporting.{MaxLength=100}
+resourcePack.editor.exportProject.exportNotes.exportSuccess=The world was successfully exported    	####This string is intended to express that export the world succeeded.{MaxLength=100}
+resourcePack.editor.exportProject.exportNotes.exportFailed=Exporting world was failure    	####This string is intended to express that export the world failed.{MaxLength=100}
 resourcePack.editor.exportProject.generalSettings=Γενικές ρυθμίσεις	#
 resourcePack.editor.exportProject.generalSettings.worldName=Όνομα κόσμου	#
 resourcePack.editor.exportProject.generalSettings.gameMode=Λειτουργία παιχνιδιού	#
 resourcePack.editor.exportProject.generalSettings.difficulty=Δυσκολία	#
 resourcePack.editor.exportProject.generalSettings.hardcore=Σκληροπυρηνική	#
+resourcePack.editor.exportProject.initialPlaySettings=Inital Play Settings   	####This string is intended to express that the export category for inital play settings.{MaxLength=100}
+resourcePack.editor.exportProject.initialPlaySettings.spawnPosition=World Spawn Point   	####This string is intended to express that player inistal spawn position.{MaxLength=100}
+resourcePack.editor.exportProject.initialPlaySettings.startTime=Start Time   	####This string is intended to express that world start time.{MaxLength=100}
+resourcePack.editor.exportProject.initialPlaySettings.clockType=Clock Type   	####This string is intended to express that start time with different clock type.{MaxLength=100}
+resourcePack.editor.exportProject.initialPlaySettings.customStartTime=Custom Start Time   	####This string is intended to express that custom start time with Minecraft Cloke value.{MaxLength=100}
+resourcePack.editor.exportProject.initialPlaySettings.weather=Start Weather   	####This string is intended to express that the custom start weather.{MaxLength=100}
 resourcePack.editor.exportProject.advancedSettings=Προηγμένες ρυθμίσεις	#
 resourcePack.editor.exportProject.advancedSettings.startingMap=Χάρτης έναρξης	#
 resourcePack.editor.exportProject.advancedSettings.bonusChest=Έξτρα σεντούκι	#
 resourcePack.editor.exportProject.advancedSettings.showCoordinates=Εμφάνιση συντεταγμένων	#
 resourcePack.editor.exportProject.advancedSettings.showDaysPlayed=Εμφάνιση ημερών παιχνιδιού	#
 resourcePack.editor.exportProject.advancedSettings.recipeUnlocking=Ξεκλείδωμα συνταγών	#
+resourcePack.editor.exportProject.advancedSettings.limitedCrafting=Limited Crafting   	####Export pane checkbox label that enable to set crafting limit.{MaxLength=100}
 resourcePack.editor.exportProject.advancedSettings.fireSpreads=Εξάπλωση φωτιάς	#
 resourcePack.editor.exportProject.advancedSettings.tntExplodes=Δυναμίτης εκρήγνυται	#
 resourcePack.editor.exportProject.advancedSettings.resawnBlocksExplode=Έκρηξη κύβων επαναγένεσης	#
@@ -235,11 +249,13 @@ resourcePack.editor.exportProject.advancedSettings.mobLoot=Λάφυρα πλασ
 resourcePack.editor.exportProject.advancedSettings.naturalRegeneration=Φυσική αναζωογόνηση	#
 resourcePack.editor.exportProject.advancedSettings.tileDrops=Αποθέσεις από κύβους	#
 resourcePack.editor.exportProject.advancedSettings.immediateRespawn=Άμεση επαναγένεση	#
+resourcePack.editor.exportProject.advancedSettings.showDeathMessage=Show Death Message   	####Export pane checkbox label that show the death message when player die.{MaxLength=100}
 resourcePack.editor.exportProject.advancedSettings.respawnRadius=Ακτίνα επαναγένεσης	#
 resourcePack.editor.exportProject.advancedSettings.simulationDistance=Απόσταση προσομοίωσης	#
 resourcePack.editor.exportProject.advancedSettings.bedsWork=Κρεβάτια που λειτουργούν	#
 resourcePack.editor.exportProject.advancedSettings.requiredSleepingPlayers=Απαιτούμενοι παίκτες που κοιμούνται (%1$s)	#
 resourcePack.editor.exportProject.advancedSettings.requiredSleepingPlayers.onePlayerMessage=Μόνο 1 παίκτης	#
+resourcePack.editor.exportProject.advancedSettings.showItemTags=Show Item Tags   	####Export pane checkbox label that show item tags.{MaxLength=100}
 resourcePack.editor.exportProject.multiplayerSettings=Ρυθμίσεις πολλών παικτών	#
 resourcePack.editor.exportProject.multiplayerSettings.multiplayerGame=Παιχνίδι πολλών παικτών	#
 resourcePack.editor.exportProject.multiplayerSettings.playerAccess=Πρόσβαση παίκτη	#
@@ -255,6 +271,16 @@ resourcePack.editor.exportProject.cheatsSettings.mobGriefing=Παρενόχλη�
 resourcePack.editor.exportProject.cheatsSettings.entitiesDropLoot=Οντότητες ρίχνουν λάφυρα	#
 resourcePack.editor.exportProject.cheatsSettings.weatherCycle=Κύκλος καιρού	#
 resourcePack.editor.exportProject.cheatsSettings.commandBlocks=Κύβοι εντολών	#
+resourcePack.editor.exportProject.cheatsSettings.commandBlockOutput=Command Block Output   	####Export pane checkbox label that enable to display the command output.{MaxLength=100}
+resourcePack.editor.exportProject.cheatsSettings.sendCommandFeedback=Send Command Feedback   	####This string is the heading for the 'send command feedback' setting when exporting a world.{MaxLength=100}
+resourcePack.editor.exportProject.cheatsSettings.maxCommandChainLength=Max Command Chain Length   	####Export pane number that indicate the max length of the command, it defaults to 65536. It has a minimum of 0 and a max of 2147483647.{MaxLength=100}
+resourcePack.editor.exportProject.cheatsSettings.fireDamage=Fire Damage  	####Export pane checkbox label that enable damage when the player on fire.{MaxLength=100}
+resourcePack.editor.exportProject.cheatsSettings.freezeDamage=Freeze Damage  	####Export pane checkbox label that enable damage when the player freezes.{MaxLength=100}
+resourcePack.editor.exportProject.cheatsSettings.fallDamage=Fall Damage  	####Export pane checkbox label that enable damage when the player falls.{MaxLength=100}
+resourcePack.editor.exportProject.cheatsSettings.drowningDamage=Drowning Damage  	####Export pane checkbox label that enable damage when the player is drowning.{MaxLength=100}
+resourcePack.editor.exportProject.cheatsSettings.insomnia=Insomnia  	####Export pane checkbox label that enable player insomnia status.{MaxLength=100}
+resourcePack.editor.exportProject.cheatsSettings.showBorderEffect=Show Border Effect  	####Export pane checkbox label that show border effect.{MaxLength=100}
+resourcePack.editor.exportProject.cheatsSettings.functionCommandLimit=Function Command Limit  	####Export pane checkbox label that the number of limition for the function command.{MaxLength=100}
 resourcePack.editor.exportProject.cheatsSettings.educationFeatures=Εκπαιδευτικές δυνατότητες	#
 resourcePack.editor.exportProject.cheatsSettings.randomTickSpeed=Τυχαία ταχύτητα τικ	#
 resourcePack.editor.exportProject.export=Εξαγωγή	#
@@ -266,6 +292,11 @@ resourcePack.editor.exportProject.difficulty.peaceful=Φιλειρηνική	#
 resourcePack.editor.exportProject.difficulty.easy=Εύκολο	#
 resourcePack.editor.exportProject.difficulty.normal=Κανονικό	#
 resourcePack.editor.exportProject.difficulty.hard=Δύσκολο	#
+resourcePack.editor.exportProject.weather.default=Default   	####This string is intended to express that the default weather .{MaxLength=100}
+resourcePack.editor.exportProject.weather.clear=Clear   	####This string is intended to express that the weather of Clear.{MaxLength=100}
+resourcePack.editor.exportProject.weather.rain=Rain   	####This string is intended to express that the weather of Rain.{MaxLength=100}
+resourcePack.editor.exportProject.weather.thunder=Thunder   	####This string is intended to express that the weather of Thunder.{MaxLength=100}
+
 
 
 resourcePack.editor.toolRail.ExtrudeTool.title=Εργαλείο εξώθησης	#
@@ -394,7 +425,7 @@ resourcePack.editor.menuBar.help.feedback=Σχόλια	#
 resourcePack.editor.menuBar.help.quickStart=Γρήγορη εκκίνηση	#
 resourcePack.editor.menuBar.help=Βοήθεια	#
 resourcePack.editor.menuBar.locate=Εντοπισμός	#
-resourcePack.editor.menuBar.parentMenu.weather.clear=Απαλοιφή	#
+resourcePack.editor.menuBar.parentMenu.weather.clear=Εκκαθάριση	#
 resourcePack.editor.menuBar.parentMenu.weather.rain=Βροχή	#
 resourcePack.editor.menuBar.parentMenu.weather.thunder=Κεραυνός	#
 resourcePack.editor.menuBar.parentMenu.weather=Καιρός	#
@@ -465,7 +496,7 @@ resourcePack.editor.pastepreview.keyBinding.toggleFixedDistance=Ενεργοπο
 resourcePack.editor.pastepreview.keyBinding.toggleMirrorX=Εναλλαγή καθρέφτη X	#
 resourcePack.editor.pastepreview.keyBinding.toggleMirrorZ=Εναλλαγή καθρέφτη Z	#
 resourcePack.editor.pastepreview.keyBinding.toggleMouseTracking=Εναλλαγή Παρακολούθησης Ποντικιού	#
-resourcePack.editor.pastepreview.pane.controls.cursor.fixed=Σταθερή Απόσταση	#
+resourcePack.editor.pastepreview.pane.controls.cursor.fixed=Σταθερή απόσταση	#
 resourcePack.editor.pastepreview.pane.controls.cursor.keyboard=Μόνο πλήκτρα	#
 resourcePack.editor.pastepreview.pane.controls.cursor.mouseandkeys=Ποντίκι και πλήκτρα	#
 resourcePack.editor.pastepreview.pane.controls.cursor.target.block=Αποκλεισμός	#
@@ -476,11 +507,11 @@ resourcePack.editor.pastepreview.pane.controls.title=Στοιχεία ελέγχ
 resourcePack.editor.pastepreview.pane.placement.mirrorX=Καθρέφτης X	#
 resourcePack.editor.pastepreview.pane.placement.mirrorZ=Καθρέφτης Z	#
 resourcePack.editor.pastepreview.pane.placement.offset=Μετατόπιση	#
-resourcePack.editor.pastepreview.pane.placement.origin=Προέλευση	#
+resourcePack.editor.pastepreview.pane.placement.origin=Origin	#
 resourcePack.editor.pastepreview.pane.placement.pastebutton=Επικόλληση	#
 resourcePack.editor.pastepreview.pane.placement.rotation=Περιστροφή (γύρω από το Y)	#
 resourcePack.editor.pastepreview.pane.placement.title=Ρυθμίσεις τοποθέτησης	#
-resourcePack.editor.pastepreview.pane.root.size=Μέγεθος	#
+resourcePack.editor.pastepreview.pane.root.size=Size	#
 resourcePack.editor.pastepreview.pane.root.title=Επικόλληση προεπισκόπησης	#
 resourcePack.editor.pastepreview.tool.tip=Χρησιμοποίησε το ποντίκι για να προσαρμόσεις τη θέση της προεπισκόπησης του πρόχειρου και κάνε κλικ για να κάνεις επικόλληση στον κόσμο	#
 resourcePack.editor.pastepreview.tool.title=Επικόλληση προεπισκόπησης	#
@@ -607,6 +638,8 @@ resourcePack.editor.selectionTool.keyBinding.shrinkLeft=Συρρίκνωση ε�
 resourcePack.editor.selectionTool.keyBinding.shrinkRight=Συρρίκνωση επιλογής δεξιά	#
 resourcePack.editor.selectionTool.keyBinding.shrinkUp=Συρρίκνωση επιλογής πάνω	#
 resourcePack.editor.selectionTool.keyBinding.toggleTool=Εναλλαγή εργαλείου επιλογής	#
+resourcePack.editor.selectionTool.keyBinding.select=Select Block			#### The action of adding a block to the selection volume using they keyboard {MaxLength="30"}
+resourcePack.editor.selectionTool.keyBinding.selectMultiple=Select Additional Block			#### The action of adding an additional block to the selection volume using the keyboard {MaxLength="30"}
 resourcePack.editor.selectionTool.marquee.title=Επιλογή Μαρκίζας	#
 resourcePack.editor.selectionTool.modeSelection.freehand.title=Λειτουργία Πινέλου με το Χέρι	#
 resourcePack.editor.selectionTool.modeSelection.freehand.tooltip=Επίλεξε κύβους στον κόσμο χρησιμοποιώντας σχήμα πινέλου με το χέρι	#
@@ -614,6 +647,16 @@ resourcePack.editor.selectionTool.modeSelection.marquee.title=Λειτουργί
 resourcePack.editor.selectionTool.modeSelection.marquee.tooltip=Επίλεξε κύβους στον κόσμο χρησιμοποιώντας ορθογώνιο όγκο	#
 resourcePack.editor.selectionTool.modeSelection.title=Λειτουργία επιλογής	#
 resourcePack.editor.selectionTool.projectThroughLiquid=Προβολή μέσα από υγρό	#
+resourcePack.editor.selectionTool.trimAction.trimVolume=Trim Selection			#### Trim the current selection volume to fit only the solid blocks within {MaxLength=30}
+resourcePack.editor.selectionTool.trimAction.trimVolume.tooltip=Trim the current selection volume to fit only the solid blocks within   	#### {MaxLength=200}
+resourcePack.editor.selectionTool.trimAction.removeAir=Remove Air			#### Remove the air from the current selection volume leaving only specified blocks {MaxLength=30}
+resourcePack.editor.selectionTool.trimAction.removeAir.tooltip=Remove the air from the current selection volume leaving only specified blocks 	#### {MaxLength=200}
+resourcePack.editor.selectionTool.trimAction.trimVolume.SettingsPane.title=Trim Settings		#### The window pane title for the settings for trim mode {MaxLength=30}
+resourcePack.editor.selectionTool.trimAction.trimVolume.SettingsPane.ignoreLiquid=Ignore Liquids		#### The toggle button title for ignoring liquids {MaxLength=30}
+resourcePack.editor.selectionTool.trimAction.trimVolume.SettingsPane.ignoreLiquid.tooltip=Ignore any liquid blocks when trimming the volume 	#### {MaxLength=200}
+resourcePack.editor.selectionTool.trimAction.trimVolume.SettingsPane.onlyCollidable=Only Collision Blocks		#### The toggle button title for collision-only blocks {MaxLength=30}
+resourcePack.editor.selectionTool.trimAction.trimVolume.SettingsPane.onlyCollidable.tooltip=Ignore any blocks with no collision (leaves, grass, etc) when trimming the volume 	#### {MaxLength=200}
+resourcePack.editor.selectionTool.trimAction.trimVolume.SettingsPane.blockMaskMode=Block Mask Mode    	#### Title for the toggle action group to selection the block mask mode {MaxLength=20}
 resourcePack.editor.selectionTool.quickAction.clearSelection.tooltip=Κατάργηση της τρέχουσας επιλογής	#
 resourcePack.editor.selectionTool.quickAction.clearSelection=Κατάργηση επιλογής	#
 resourcePack.editor.selectionTool.quickAction.deleteSelection.tooltip=Κατάργηση όλων των κύβων μέσα στον τρέχοντα τόμο επιλογής	#
@@ -672,6 +715,7 @@ resourcePack.editor.timeOfDay.dropDown.none=Κανένα	#
 resourcePack.editor.timeOfDay.dropDown.noon=Μεσημέρι	#
 resourcePack.editor.timeOfDay.dropDown.sunrise=Ανατολή ηλίου	#
 resourcePack.editor.timeOfDay.dropDown.sunset=Δύση ηλίου	#
+resourcePack.editor.timeOfDay.dropDown.custom=Custom		####"Custom" describes a dropdown that players can define the specific start time {MaxLength=20}
 resourcePack.editor.timeOfDay.dropDown.title=Προεπιλογές	#
 resourcePack.editor.timeOfDay.menu.title=Ρυθμίσεις Ώρας της Ημέρας	#
 resourcePack.editor.timeOfDay.minecraftClock=Ρολόι Minecraft	#
@@ -689,6 +733,7 @@ resourcePack.editor.toolMode.keyBinding.hotbar6=Επιλογή γραμμής ε
 resourcePack.editor.toolMode.keyBinding.hotbar7=Επιλογή γραμμής ενεργειών 7	#
 resourcePack.editor.toolMode.keyBinding.hotbar8=Επιλογή γραμμής ενεργειών 8	#
 resourcePack.editor.toolMode.keyBinding.hotbar9=Επιλογή γραμμής ενεργειών 9	#
+resourcePack.editor.toolMode.keyBinding.reload=Reload 	####Represents a label for a key shortcut that reloads scripts and UI.{MaxLength=100}
 
 
 resourcePack.editor.toolRail.blockPalette.title=Κυβοπαλέτα (CTL+P)	#
@@ -718,7 +763,7 @@ resourcePack.editor.toolRail.line.pane.algorithm.title=Αλγόριθμος	#
 resourcePack.editor.toolRail.line.pane.fillAction=Επιλογή πλήρωσης	#
 resourcePack.editor.toolRail.line.pane.height.title=Ύψος	#
 resourcePack.editor.toolRail.line.pane.selectionMode.adjacent=Διπλανή Όψη	#
-resourcePack.editor.toolRail.line.pane.selectionMode.fixedDistance=Σταθερή Απόσταση	#
+resourcePack.editor.toolRail.line.pane.selectionMode.fixedDistance=Σταθερή απόσταση	#
 resourcePack.editor.toolRail.line.pane.selectionMode.freeForm=Ελεύθερη μορφή	#
 resourcePack.editor.toolRail.line.pane.selectionMode=Επιλογή	#
 resourcePack.editor.toolRail.line.pane.surfaceContour=Περίγραμμα Επιφάνειας	#
@@ -737,7 +782,7 @@ resourcePack.editor.toolRail.smartFillTool.areaLimit.title=Όριο περιοχ
 resourcePack.editor.toolRail.smartFillTool.areaLimit.tooltip=Μέγιστη περιοχή για γέμισμα	#
 
 
-resourcePack.editor.toolRail.summonTool.keyBinding.clear=Εκκαθάριση επιλογής	#
+resourcePack.editor.toolRail.summonTool.keyBinding.clear=Clear Selection	#
 resourcePack.editor.toolRail.summonTool.keyBinding.delete=Διαγραφή οντότητας	#
 resourcePack.editor.toolRail.summonTool.keyBinding.moveBack=Μετακίνηση επιλογής πίσω	#
 resourcePack.editor.toolRail.summonTool.keyBinding.moveDown=Μετακίνηση επιλογής κάτω	#
@@ -759,13 +804,19 @@ resourcePack.editor.toolRail.summonTool.tool.title=Εργαλείο επίκλη
 resourcePack.editor.toolRail.workbenchSettings.title=Πάγκος εργασίας	#
 resourcePack.editor.toolRail.workbenchTool.title=Πάγκος εργασίας	#
 resourcePack.editor.toolRail.workbenchTool.description=Γρήγορη αλλαγή κατάστασης κύβων	#
-resourcePack.editor.toolRail.workbenchTool.howToUse=Κάνε αριστερό κλικ σε επισημασμένους κύβους, για να αλλάξεις την κατάστασή τους (άνοιγμα/κλείσιμο, περιστροφή, αντιστροφή κ.λπ.). Δοκίμασε να χρησιμοποιήσεις επίσης τις τροποποιήσεις πλήκτρων Shift και Control! Λάβε υπόψη ότι αυτή η δυνατότητα λειτουργεί μόνο σε κύβους με δυνατότητα τροποποίησης ιδιοτήτων (π.χ., πόρτες, φράχτες κ.λπ.).	#
+resourcePack.editor.toolRail.workbenchTool.howToUse=Highlight blocks to see the available actions to change their states (open/close, rotate, invert, etc.). Try using Shift and Control key modifiers as well! Please note that this feature only works on blocks with modifiable properties (e.g., doors, fences, stairs, etc.).		####	This text provides a description of the workbench tool and explans how the the user can highlight blocks in order to see the list of actions for changing that blocks state. {MaxLength="500"}
 resourcePack.editor.toolRail.workbenchTool.tooltip=Αλλαγή καταστάσεων κύβων	#
 resourcePack.editor.toolRail.workbenchTool.block=Αποκλεισμός	#
 resourcePack.editor.toolRail.workbenchTool.leftClick=Αριστερό κλικ	#
 resourcePack.editor.toolRail.workbenchTool.shiftLeftClick=Shift + Αριστερό κλικ	#
 resourcePack.editor.toolRail.workbenchTool.controlLeftClick=CTRL + Αριστερό κλικ	#
 resourcePack.editor.toolRail.workbenchTool.shiftControlLeftClick=Shift + CTRL + Αριστερό κλικ	#
+
+resourcePack.editor.toolRail.workbenchTool.leftClickTooltip=Left Clicking on a block will perform the primary Workbench action		####	This keybinding is a tool tip to convey that a left click will invoke the primary (1st) action of the workbench tool. {MaxLength="150"}
+resourcePack.editor.toolRail.workbenchTool.shiftLeftClickTooltip=Shift + Left Clicking on a block will perform the secondary Workbench action		####	This keybinding is a tool tip to convey that a shift + left click will invoke the primary (1st) action of the workbench tool. {MaxLength="150"}
+resourcePack.editor.toolRail.workbenchTool.controlLeftClickTooltip=Control + Left Clicking on a block will perform the tertiary Workbench action		####	This keybinding is a tool tip to convey that a control + left click will invoke the primary (1st) action of the workbench tool. {MaxLength="150"}
+resourcePack.editor.toolRail.workbenchTool.shiftControlLeftClickTooltip=Shift + Control + Left Clicking on a block will perform the quaternary Workbench action		####	TThis keybinding is a tool tip to convey that a shift + control + left click will invoke the primary (1st) action of the workbench tool. {MaxLength="150"}
+
 resourcePack.editor.toolRail.workbenchTool.stripWood=Αποφλοίωσε/επανάφερε ξύλο		####This string is intended to express whether the wood block has bark (unstripped) or doesn't have bark (stripped).{MaxLength=100}
 resourcePack.editor.toolRail.workbenchTool.ladderLocation=Θέση σκάλας	#
 resourcePack.editor.toolRail.workbenchTool.autoAlign=Αυτόματη ευθυγράμμιση	#
@@ -773,7 +824,7 @@ resourcePack.editor.toolRail.workbenchTool.autoAlignFacingDirection=Αυτόμα
 resourcePack.editor.toolRail.workbenchTool.autoAlignRotation=Αυτόματη Ευθυγράμμιση Περιστροφής		####This string is intended to express that the action will align the roatation of the block with the player camera.{MaxLength=100}
 
 resourcePack.editor.toolRail.workbenchTool.topSlotBitProp=Πάνω/Κάτω	#
-resourcePack.editor.toolRail.workbenchTool.pillarAxisProp=Περιστροφή	#
+resourcePack.editor.toolRail.workbenchTool.pillarAxisProp=Περίστρεψε	#
 resourcePack.editor.toolRail.workbenchTool.heightProp=Στρώσεις	#
 resourcePack.editor.toolRail.workbenchTool.candlesProp=Αριθμός Κεριών	#
 
@@ -788,9 +839,20 @@ resourcePack.editor.toolRail.workbenchTool.litProp=Αναμμένο/Σβηστό
 resourcePack.editor.toolRail.workbenchTool.dripstoneThicknessProp=Πάχος Σπηλαιοθέματος	#
 
 resourcePack.editor.toolRail.workbenchTool.directionProp=Αντικριστή κατεύθυνση	#
-resourcePack.editor.toolRail.workbenchTool.weirdoDirectionProp=Περιστροφή	#
+resourcePack.editor.toolRail.workbenchTool.weirdoDirectionProp=Περίστρεψε	#
 resourcePack.editor.toolRail.workbenchTool.facingDirectionProp=Αντικριστή κατεύθυνση	#
 resourcePack.editor.toolRail.workbenchTool.cardinalDirectionProp=Αντικριστή κατεύθυνση	#
+
+resourcePack.editor.toolRail.workbenchTool.addCustomMapping=Add Custom Mappings		####This string is intended to express that this subpane is for adding custom block property mappings for the tool.{MaxLength=100}
+resourcePack.editor.toolRail.workbenchTool.blockProperty=Block Property		####This string is intended to express that this field is for the Block Property.{MaxLength=50}
+resourcePack.editor.toolRail.workbenchTool.clickBinding=Click Bindings		####This string is intended to express that this dropdown contains the click binding options (left click, shift + left click, etc).{MaxLength=50}
+resourcePack.editor.toolRail.workbenchTool.addMapping=Add Mapping		####This string is intended to express that this button will add the custom mapping provided by the user.{MaxLength=50}
+resourcePack.editor.toolRail.workbenchTool.resetAllMappings=Reset All Mappings		####This string is intended to express that this button will reset all custom mappings provided by the user.{MaxLength=50}
+
+resourcePack.editor.workbenchTool.keyBinding.primaryAction=Workbench Primary Action		####	This keybinding is to invoke the primary (1st) action of the workbench tool. {MaxLength="30"}
+resourcePack.editor.workbenchTool.keyBinding.secondaryAction=Workbench Secondary Action		#### This keybinding is to invoke the secondary (2nd) action of the workbench tool. {MaxLength="30"}
+resourcePack.editor.workbenchTool.keyBinding.tertiaryAction=Workbench Tertiary Action		####	This keybinding is to invoke the tertiary (3rd) action of the workbench tool. {MaxLength="30"}
+resourcePack.editor.workbenchTool.keyBinding.quaternaryAction=Workbench Quaternary Action		#### This keybinding is to invoke the quaternary (4th) action of the workbench tool. {MaxLength="30"}
 
 
 resourcePack.editor.transaction.keyBinding.redo=Επανάληψη	#

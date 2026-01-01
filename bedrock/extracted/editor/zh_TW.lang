@@ -41,7 +41,7 @@ resourcePack.editor.blockInspector.toolRail.description=左鍵按一下方塊以
 
 resourcePack.editor.blockPalette.addSearchItem=使用找到方塊	#
 resourcePack.editor.blockPalette.blockPicker=搜尋	#
-resourcePack.editor.blockPalette.paletteDropdown.title=顏色	#
+resourcePack.editor.blockPalette.paletteDropdown.title=調色板	#
 resourcePack.editor.blockPalette.title=方塊調色板	#
 
 
@@ -54,6 +54,7 @@ resourcePack.editor.brushPaint.tooltip=使用筆刷在世界中繪製方塊	#
 
 resourcePack.editor.BrushPaintControl.brush.title=筆刷	#
 resourcePack.editor.BrushPaintControl.brushSettings.title=筆刷設定	#
+resourcePack.editor.BrushPaintControl.shapeSettings.title=Shape Settings 	####Represents an expander that has UI controls for brush shape settings.{MaxLength=100}
 resourcePack.editor.BrushPaintControl.fillConstraints.mask.title=遮罩清單	#
 resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.disabled.tooltip=停用方塊篩選器	#
 resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.disabled=已停用	#
@@ -107,6 +108,8 @@ resourcePack.editor.brushShape.pyramid.settings.depth=深度	#
 resourcePack.editor.brushShape.pyramid.settings.height=高度	#
 resourcePack.editor.brushShape.pyramid.settings.width=寬度	#
 resourcePack.editor.brushShape.singleBlock.name=單一方塊	#
+resourcePack.editor.brushShape.star.name=Star 	####Represent a star shaped brush.{MaxLength=100}
+resourcePack.editor.brushShape.star.settings.includeVertical=Include Vertical 	####Represents a toggle button label that removes vertical parts of a star brush if unchecked.{MaxLength=100}
 
 
 resourcePack.editor.client.description=編輯器用戶端資源	#
@@ -216,18 +219,29 @@ resourcePack.editor.entityInspector.toolRail.description=左鍵按一下實體�
 resourcePack.editor.exportProject.exportType=匯出類型	#
 resourcePack.editor.exportProject.exportType.playableWorld=可遊玩的世界	#
 resourcePack.editor.exportProject.exportNotes=匯出備註	#
+resourcePack.editor.exportProject.exportNotes.export=Exporting Progress   	####This string is intended to express that the title of export progress modal.{MaxLength=100}
 resourcePack.editor.exportProject.exportNotes.warning=你正在匯出一個 v%1 世界。匯出的可玩世界不能在版本號碼早於 v%1 的 Minecraft 版本上使用。若要轉換為先前的版本號碼，請使用 https://chunker.app/ (若早期版本不支援，則某些功能可能無法使用)	#
+resourcePack.editor.exportProject.exportNotes.progress=Exporting the world...    	####This string is intended to express that the progress message of exporting.{MaxLength=100}
+resourcePack.editor.exportProject.exportNotes.exportSuccess=The world was successfully exported    	####This string is intended to express that export the world succeeded.{MaxLength=100}
+resourcePack.editor.exportProject.exportNotes.exportFailed=Exporting world was failure    	####This string is intended to express that export the world failed.{MaxLength=100}
 resourcePack.editor.exportProject.generalSettings=一般設定	#
 resourcePack.editor.exportProject.generalSettings.worldName=世界名稱	#
 resourcePack.editor.exportProject.generalSettings.gameMode=遊戲模式	#
 resourcePack.editor.exportProject.generalSettings.difficulty=難易度	#
 resourcePack.editor.exportProject.generalSettings.hardcore=極限	#
+resourcePack.editor.exportProject.initialPlaySettings=Inital Play Settings   	####This string is intended to express that the export category for inital play settings.{MaxLength=100}
+resourcePack.editor.exportProject.initialPlaySettings.spawnPosition=World Spawn Point   	####This string is intended to express that player inistal spawn position.{MaxLength=100}
+resourcePack.editor.exportProject.initialPlaySettings.startTime=Start Time   	####This string is intended to express that world start time.{MaxLength=100}
+resourcePack.editor.exportProject.initialPlaySettings.clockType=Clock Type   	####This string is intended to express that start time with different clock type.{MaxLength=100}
+resourcePack.editor.exportProject.initialPlaySettings.customStartTime=Custom Start Time   	####This string is intended to express that custom start time with Minecraft Cloke value.{MaxLength=100}
+resourcePack.editor.exportProject.initialPlaySettings.weather=Start Weather   	####This string is intended to express that the custom start weather.{MaxLength=100}
 resourcePack.editor.exportProject.advancedSettings=進階設定	#
 resourcePack.editor.exportProject.advancedSettings.startingMap=起始地圖	#
 resourcePack.editor.exportProject.advancedSettings.bonusChest=贈品箱	#
 resourcePack.editor.exportProject.advancedSettings.showCoordinates=顯示座標	#
 resourcePack.editor.exportProject.advancedSettings.showDaysPlayed=顯示遊玩天數	#
 resourcePack.editor.exportProject.advancedSettings.recipeUnlocking=配方解鎖	#
+resourcePack.editor.exportProject.advancedSettings.limitedCrafting=Limited Crafting   	####Export pane checkbox label that enable to set crafting limit.{MaxLength=100}
 resourcePack.editor.exportProject.advancedSettings.fireSpreads=火會蔓延	#
 resourcePack.editor.exportProject.advancedSettings.tntExplodes=炸藥會爆炸	#
 resourcePack.editor.exportProject.advancedSettings.resawnBlocksExplode=重生方塊爆炸	#
@@ -235,18 +249,20 @@ resourcePack.editor.exportProject.advancedSettings.mobLoot=生物戰利品	#
 resourcePack.editor.exportProject.advancedSettings.naturalRegeneration=自然再生	#
 resourcePack.editor.exportProject.advancedSettings.tileDrops=磚塊掉落	#
 resourcePack.editor.exportProject.advancedSettings.immediateRespawn=立即生成	#
+resourcePack.editor.exportProject.advancedSettings.showDeathMessage=Show Death Message   	####Export pane checkbox label that show the death message when player die.{MaxLength=100}
 resourcePack.editor.exportProject.advancedSettings.respawnRadius=重生半徑	#
 resourcePack.editor.exportProject.advancedSettings.simulationDistance=模擬距離	#
 resourcePack.editor.exportProject.advancedSettings.bedsWork=床舖有效	#
 resourcePack.editor.exportProject.advancedSettings.requiredSleepingPlayers=所需睡眠玩家數  (%1$s)	#
 resourcePack.editor.exportProject.advancedSettings.requiredSleepingPlayers.onePlayerMessage=僅限 1 名玩家	#
+resourcePack.editor.exportProject.advancedSettings.showItemTags=Show Item Tags   	####Export pane checkbox label that show item tags.{MaxLength=100}
 resourcePack.editor.exportProject.multiplayerSettings=多人遊戲設定	#
 resourcePack.editor.exportProject.multiplayerSettings.multiplayerGame=多人遊戲	#
 resourcePack.editor.exportProject.multiplayerSettings.playerAccess=玩家存取	#
 resourcePack.editor.exportProject.multiplayerSettings.playerPermissions=玩家權限	#
 resourcePack.editor.exportProject.multiplayerSettings.visibleToLAN=LAN 玩家可看見	#
 resourcePack.editor.exportProject.multiplayerSettings.friendlyFire=友方誤傷	#
-resourcePack.editor.exportProject.cheatsSettings=密技設定	#
+resourcePack.editor.exportProject.cheatsSettings=作弊設定	#
 resourcePack.editor.exportProject.cheatsSettings.cheats=作弊	#
 resourcePack.editor.exportProject.cheatsSettings.daylightCycle=日照時長	#
 resourcePack.editor.exportProject.cheatsSettings.keepInventory=保留物品欄	#
@@ -255,6 +271,16 @@ resourcePack.editor.exportProject.cheatsSettings.mobGriefing=生物惡意破壞	
 resourcePack.editor.exportProject.cheatsSettings.entitiesDropLoot=實體掉落拾取	#
 resourcePack.editor.exportProject.cheatsSettings.weatherCycle=天氣循環	#
 resourcePack.editor.exportProject.cheatsSettings.commandBlocks=指令方塊	#
+resourcePack.editor.exportProject.cheatsSettings.commandBlockOutput=Command Block Output   	####Export pane checkbox label that enable to display the command output.{MaxLength=100}
+resourcePack.editor.exportProject.cheatsSettings.sendCommandFeedback=Send Command Feedback   	####This string is the heading for the 'send command feedback' setting when exporting a world.{MaxLength=100}
+resourcePack.editor.exportProject.cheatsSettings.maxCommandChainLength=Max Command Chain Length   	####Export pane number that indicate the max length of the command, it defaults to 65536. It has a minimum of 0 and a max of 2147483647.{MaxLength=100}
+resourcePack.editor.exportProject.cheatsSettings.fireDamage=Fire Damage  	####Export pane checkbox label that enable damage when the player on fire.{MaxLength=100}
+resourcePack.editor.exportProject.cheatsSettings.freezeDamage=Freeze Damage  	####Export pane checkbox label that enable damage when the player freezes.{MaxLength=100}
+resourcePack.editor.exportProject.cheatsSettings.fallDamage=Fall Damage  	####Export pane checkbox label that enable damage when the player falls.{MaxLength=100}
+resourcePack.editor.exportProject.cheatsSettings.drowningDamage=Drowning Damage  	####Export pane checkbox label that enable damage when the player is drowning.{MaxLength=100}
+resourcePack.editor.exportProject.cheatsSettings.insomnia=Insomnia  	####Export pane checkbox label that enable player insomnia status.{MaxLength=100}
+resourcePack.editor.exportProject.cheatsSettings.showBorderEffect=Show Border Effect  	####Export pane checkbox label that show border effect.{MaxLength=100}
+resourcePack.editor.exportProject.cheatsSettings.functionCommandLimit=Function Command Limit  	####Export pane checkbox label that the number of limition for the function command.{MaxLength=100}
 resourcePack.editor.exportProject.cheatsSettings.educationFeatures=Education 功能	#
 resourcePack.editor.exportProject.cheatsSettings.randomTickSpeed=隨機刻速度	#
 resourcePack.editor.exportProject.export=匯出	#
@@ -266,6 +292,11 @@ resourcePack.editor.exportProject.difficulty.peaceful=和平	#
 resourcePack.editor.exportProject.difficulty.easy=簡單	#
 resourcePack.editor.exportProject.difficulty.normal=普通	#
 resourcePack.editor.exportProject.difficulty.hard=困難	#
+resourcePack.editor.exportProject.weather.default=Default   	####This string is intended to express that the default weather .{MaxLength=100}
+resourcePack.editor.exportProject.weather.clear=Clear   	####This string is intended to express that the weather of Clear.{MaxLength=100}
+resourcePack.editor.exportProject.weather.rain=Rain   	####This string is intended to express that the weather of Rain.{MaxLength=100}
+resourcePack.editor.exportProject.weather.thunder=Thunder   	####This string is intended to express that the weather of Thunder.{MaxLength=100}
+
 
 
 resourcePack.editor.toolRail.ExtrudeTool.title=擠壓工具	#
@@ -379,7 +410,7 @@ resourcePack.editor.menuBar.edit.quickPaste=快速貼上	#
 resourcePack.editor.menuBar.edit.redo=取消復原	#
 resourcePack.editor.menuBar.edit.undo=復原	#
 resourcePack.editor.menuBar.edit=編輯	#
-resourcePack.editor.menuBar.experimental=實驗	#
+resourcePack.editor.menuBar.experimental=實驗性	#
 resourcePack.editor.menuBar.extensions=延長時間	#
 resourcePack.editor.menuBar.file.cursor.projectThroughLiquid=藉由液體投射	#
 resourcePack.editor.menuBar.file.cursor=游標設定	#
@@ -473,14 +504,14 @@ resourcePack.editor.pastepreview.pane.controls.cursor.target.face=鄰近的	#
 resourcePack.editor.pastepreview.pane.controls.cursor.target.title=目標	#
 resourcePack.editor.pastepreview.pane.controls.cursor=控制	#
 resourcePack.editor.pastepreview.pane.controls.title=游標控制	#
-resourcePack.editor.pastepreview.pane.placement.mirrorX=鏡子 X	#
-resourcePack.editor.pastepreview.pane.placement.mirrorZ=鏡子 Z	#
+resourcePack.editor.pastepreview.pane.placement.mirrorX=鏡射 X 軸	#
+resourcePack.editor.pastepreview.pane.placement.mirrorZ=鏡射 Z 軸	#
 resourcePack.editor.pastepreview.pane.placement.offset=位移	#
-resourcePack.editor.pastepreview.pane.placement.origin=原點	#
+resourcePack.editor.pastepreview.pane.placement.origin=Origin	#
 resourcePack.editor.pastepreview.pane.placement.pastebutton=貼上	#
 resourcePack.editor.pastepreview.pane.placement.rotation=旋轉(在 Y 附近)	#
 resourcePack.editor.pastepreview.pane.placement.title=放置設定	#
-resourcePack.editor.pastepreview.pane.root.size=大小	#
+resourcePack.editor.pastepreview.pane.root.size=Size	#
 resourcePack.editor.pastepreview.pane.root.title=貼上預覽	#
 resourcePack.editor.pastepreview.tool.tip=使用滑鼠調整剪貼簿預覽的位置，然後點擊貼上至世界中	#
 resourcePack.editor.pastepreview.tool.title=貼上預覽	#
@@ -554,7 +585,7 @@ resourcePack.editor.toolRail.RepeaterTool.tooltip=用於重複選取區域的工
 resourcePack.editor.toolRail.RepeaterTool.pane.Spacing=間距	#
 resourcePack.editor.toolRail.RepeaterTool.pane.Repetitions=重複次數	#
 resourcePack.editor.toolRail.RepeaterTool.pane.Preview=預覽	#
-resourcePack.editor.toolRail.RepeaterTool.pane.Clear=晴朗	#
+resourcePack.editor.toolRail.RepeaterTool.pane.Clear=清除	#
 resourcePack.editor.toolRail.RepeaterTool.pane.Apply=套用	#
 resourcePack.editor.toolRail.RepeaterTool.statusMessage.noSelection=使用選取工具選取要重複的區域	#
 resourcePack.editor.toolRail.RepeaterTool.pane.Mode=模式		####"Mode" describes a dropdown that contains the two different states the tool can be in. These are "Line" and "Grid" {MaxLength=20}
@@ -607,6 +638,8 @@ resourcePack.editor.selectionTool.keyBinding.shrinkLeft=向左縮小選取範圍
 resourcePack.editor.selectionTool.keyBinding.shrinkRight=向右縮小選取範圍	#
 resourcePack.editor.selectionTool.keyBinding.shrinkUp=向上縮小選取範圍	#
 resourcePack.editor.selectionTool.keyBinding.toggleTool=切換選取工具	#
+resourcePack.editor.selectionTool.keyBinding.select=Select Block			#### The action of adding a block to the selection volume using they keyboard {MaxLength="30"}
+resourcePack.editor.selectionTool.keyBinding.selectMultiple=Select Additional Block			#### The action of adding an additional block to the selection volume using the keyboard {MaxLength="30"}
 resourcePack.editor.selectionTool.marquee.title=選取框選擇	#
 resourcePack.editor.selectionTool.modeSelection.freehand.title=手繪畫筆模式	#
 resourcePack.editor.selectionTool.modeSelection.freehand.tooltip=使用手繪畫筆形狀選取世界中的方塊	#
@@ -614,6 +647,16 @@ resourcePack.editor.selectionTool.modeSelection.marquee.title=選取框模式	#
 resourcePack.editor.selectionTool.modeSelection.marquee.tooltip=使用長方體區域選取世界中的方塊	#
 resourcePack.editor.selectionTool.modeSelection.title=選取模式	#
 resourcePack.editor.selectionTool.projectThroughLiquid=藉由液體投射	#
+resourcePack.editor.selectionTool.trimAction.trimVolume=Trim Selection			#### Trim the current selection volume to fit only the solid blocks within {MaxLength=30}
+resourcePack.editor.selectionTool.trimAction.trimVolume.tooltip=Trim the current selection volume to fit only the solid blocks within   	#### {MaxLength=200}
+resourcePack.editor.selectionTool.trimAction.removeAir=Remove Air			#### Remove the air from the current selection volume leaving only specified blocks {MaxLength=30}
+resourcePack.editor.selectionTool.trimAction.removeAir.tooltip=Remove the air from the current selection volume leaving only specified blocks 	#### {MaxLength=200}
+resourcePack.editor.selectionTool.trimAction.trimVolume.SettingsPane.title=Trim Settings		#### The window pane title for the settings for trim mode {MaxLength=30}
+resourcePack.editor.selectionTool.trimAction.trimVolume.SettingsPane.ignoreLiquid=Ignore Liquids		#### The toggle button title for ignoring liquids {MaxLength=30}
+resourcePack.editor.selectionTool.trimAction.trimVolume.SettingsPane.ignoreLiquid.tooltip=Ignore any liquid blocks when trimming the volume 	#### {MaxLength=200}
+resourcePack.editor.selectionTool.trimAction.trimVolume.SettingsPane.onlyCollidable=Only Collision Blocks		#### The toggle button title for collision-only blocks {MaxLength=30}
+resourcePack.editor.selectionTool.trimAction.trimVolume.SettingsPane.onlyCollidable.tooltip=Ignore any blocks with no collision (leaves, grass, etc) when trimming the volume 	#### {MaxLength=200}
+resourcePack.editor.selectionTool.trimAction.trimVolume.SettingsPane.blockMaskMode=Block Mask Mode    	#### Title for the toggle action group to selection the block mask mode {MaxLength=20}
 resourcePack.editor.selectionTool.quickAction.clearSelection.tooltip=取消選取目前的選取區域	#
 resourcePack.editor.selectionTool.quickAction.clearSelection=取消選取	#
 resourcePack.editor.selectionTool.quickAction.deleteSelection.tooltip=移除目前選取範圍內的所有方塊	#
@@ -665,13 +708,14 @@ resourcePack.editor.timeOfDay.clockType=時鐘類型	#
 resourcePack.editor.timeOfDay.currentTime=目前時間	#
 resourcePack.editor.timeOfDay.customTime=自訂時間	#
 resourcePack.editor.timeOfDay.daylightCycle=日照時長	#
-resourcePack.editor.timeOfDay.dropDown.day=白晝	#
+resourcePack.editor.timeOfDay.dropDown.day=日	#
 resourcePack.editor.timeOfDay.dropDown.midnight=午夜	#
 resourcePack.editor.timeOfDay.dropDown.night=夜晚	#
 resourcePack.editor.timeOfDay.dropDown.none=無	#
 resourcePack.editor.timeOfDay.dropDown.noon=中午	#
 resourcePack.editor.timeOfDay.dropDown.sunrise=清晨	#
 resourcePack.editor.timeOfDay.dropDown.sunset=傍晚	#
+resourcePack.editor.timeOfDay.dropDown.custom=Custom		####"Custom" describes a dropdown that players can define the specific start time {MaxLength=20}
 resourcePack.editor.timeOfDay.dropDown.title=預設配置	#
 resourcePack.editor.timeOfDay.menu.title=時刻設定	#
 resourcePack.editor.timeOfDay.minecraftClock=Minecraft 時鐘	#
@@ -689,6 +733,7 @@ resourcePack.editor.toolMode.keyBinding.hotbar6=選擇快捷列 6	#
 resourcePack.editor.toolMode.keyBinding.hotbar7=選擇快捷列 7	#
 resourcePack.editor.toolMode.keyBinding.hotbar8=選擇快捷列 8	#
 resourcePack.editor.toolMode.keyBinding.hotbar9=選擇快捷列 9	#
+resourcePack.editor.toolMode.keyBinding.reload=Reload 	####Represents a label for a key shortcut that reloads scripts and UI.{MaxLength=100}
 
 
 resourcePack.editor.toolRail.blockPalette.title=方塊調色板 (CTRL+P)	#
@@ -715,7 +760,7 @@ resourcePack.editor.toolRail.line.keyBinding.selectAll=全選	#
 resourcePack.editor.toolRail.line.pane.algorithm.Direct=指揮	#
 resourcePack.editor.toolRail.line.pane.algorithm.Staggered=交錯 (柵欄)	#
 resourcePack.editor.toolRail.line.pane.algorithm.title=演算法	#
-resourcePack.editor.toolRail.line.pane.fillAction=填滿選擇	#
+resourcePack.editor.toolRail.line.pane.fillAction=填滿選擇區域	#
 resourcePack.editor.toolRail.line.pane.height.title=高度	#
 resourcePack.editor.toolRail.line.pane.selectionMode.adjacent=相鄰面	#
 resourcePack.editor.toolRail.line.pane.selectionMode.fixedDistance=固定距離	#
@@ -723,7 +768,7 @@ resourcePack.editor.toolRail.line.pane.selectionMode.freeForm=任意形狀	#
 resourcePack.editor.toolRail.line.pane.selectionMode=選擇	#
 resourcePack.editor.toolRail.line.pane.surfaceContour=表面輪廓	#
 resourcePack.editor.toolRail.line.pane.width.title=寬度	#
-resourcePack.editor.toolRail.line.title=整行	#
+resourcePack.editor.toolRail.line.title=橫列	#
 resourcePack.editor.toolRail.line.tooltip=線條工具建立方塊條	#
 resourcePack.editor.toolRail.rulerTool.title=尺規工具	#
 resourcePack.editor.toolRail.rulerTool.tooltip=測量距離	#
@@ -737,7 +782,7 @@ resourcePack.editor.toolRail.smartFillTool.areaLimit.title=面積限制	#
 resourcePack.editor.toolRail.smartFillTool.areaLimit.tooltip=最大填滿區域	#
 
 
-resourcePack.editor.toolRail.summonTool.keyBinding.clear=清除選擇	#
+resourcePack.editor.toolRail.summonTool.keyBinding.clear=Clear Selection	#
 resourcePack.editor.toolRail.summonTool.keyBinding.delete=刪除實體	#
 resourcePack.editor.toolRail.summonTool.keyBinding.moveBack=向後移動已選取項目	#
 resourcePack.editor.toolRail.summonTool.keyBinding.moveDown=向下移動已選取項目	#
@@ -759,13 +804,19 @@ resourcePack.editor.toolRail.summonTool.tool.title=召喚工具	#
 resourcePack.editor.toolRail.workbenchSettings.title=工作台	#
 resourcePack.editor.toolRail.workbenchTool.title=工作台	#
 resourcePack.editor.toolRail.workbenchTool.description=快速變更方塊狀態	#
-resourcePack.editor.toolRail.workbenchTool.howToUse=在醒目提示的方塊上按一下滑鼠左鍵，即可變更其狀態 (開啟 / 關閉、旋轉、反轉等)。另外試著用用看 Shift 和 Ctrl 修飾鍵！請注意，此功能僅適用於具有可修改屬性的方塊 (例如門、柵欄等)。	#
+resourcePack.editor.toolRail.workbenchTool.howToUse=Highlight blocks to see the available actions to change their states (open/close, rotate, invert, etc.). Try using Shift and Control key modifiers as well! Please note that this feature only works on blocks with modifiable properties (e.g., doors, fences, stairs, etc.).		####	This text provides a description of the workbench tool and explans how the the user can highlight blocks in order to see the list of actions for changing that blocks state. {MaxLength="500"}
 resourcePack.editor.toolRail.workbenchTool.tooltip=變更方塊狀態	#
-resourcePack.editor.toolRail.workbenchTool.block=方塊	#
+resourcePack.editor.toolRail.workbenchTool.block=封鎖	#
 resourcePack.editor.toolRail.workbenchTool.leftClick=按一下左鍵	#
 resourcePack.editor.toolRail.workbenchTool.shiftLeftClick=Shift + 滑鼠左鍵按一下	#
 resourcePack.editor.toolRail.workbenchTool.controlLeftClick=CTRL + 滑鼠左鍵按一下	#
 resourcePack.editor.toolRail.workbenchTool.shiftControlLeftClick=Shift + CTRL + 滑鼠左鍵按一下	#
+
+resourcePack.editor.toolRail.workbenchTool.leftClickTooltip=Left Clicking on a block will perform the primary Workbench action		####	This keybinding is a tool tip to convey that a left click will invoke the primary (1st) action of the workbench tool. {MaxLength="150"}
+resourcePack.editor.toolRail.workbenchTool.shiftLeftClickTooltip=Shift + Left Clicking on a block will perform the secondary Workbench action		####	This keybinding is a tool tip to convey that a shift + left click will invoke the primary (1st) action of the workbench tool. {MaxLength="150"}
+resourcePack.editor.toolRail.workbenchTool.controlLeftClickTooltip=Control + Left Clicking on a block will perform the tertiary Workbench action		####	This keybinding is a tool tip to convey that a control + left click will invoke the primary (1st) action of the workbench tool. {MaxLength="150"}
+resourcePack.editor.toolRail.workbenchTool.shiftControlLeftClickTooltip=Shift + Control + Left Clicking on a block will perform the quaternary Workbench action		####	TThis keybinding is a tool tip to convey that a shift + control + left click will invoke the primary (1st) action of the workbench tool. {MaxLength="150"}
+
 resourcePack.editor.toolRail.workbenchTool.stripWood=剝皮 / 未剝皮木頭		####This string is intended to express whether the wood block has bark (unstripped) or doesn't have bark (stripped).{MaxLength=100}
 resourcePack.editor.toolRail.workbenchTool.ladderLocation=階梯位置	#
 resourcePack.editor.toolRail.workbenchTool.autoAlign=自動對齊	#
@@ -791,6 +842,17 @@ resourcePack.editor.toolRail.workbenchTool.directionProp=面對方向	#
 resourcePack.editor.toolRail.workbenchTool.weirdoDirectionProp=旋轉	#
 resourcePack.editor.toolRail.workbenchTool.facingDirectionProp=面對方向	#
 resourcePack.editor.toolRail.workbenchTool.cardinalDirectionProp=面對方向	#
+
+resourcePack.editor.toolRail.workbenchTool.addCustomMapping=Add Custom Mappings		####This string is intended to express that this subpane is for adding custom block property mappings for the tool.{MaxLength=100}
+resourcePack.editor.toolRail.workbenchTool.blockProperty=Block Property		####This string is intended to express that this field is for the Block Property.{MaxLength=50}
+resourcePack.editor.toolRail.workbenchTool.clickBinding=Click Bindings		####This string is intended to express that this dropdown contains the click binding options (left click, shift + left click, etc).{MaxLength=50}
+resourcePack.editor.toolRail.workbenchTool.addMapping=Add Mapping		####This string is intended to express that this button will add the custom mapping provided by the user.{MaxLength=50}
+resourcePack.editor.toolRail.workbenchTool.resetAllMappings=Reset All Mappings		####This string is intended to express that this button will reset all custom mappings provided by the user.{MaxLength=50}
+
+resourcePack.editor.workbenchTool.keyBinding.primaryAction=Workbench Primary Action		####	This keybinding is to invoke the primary (1st) action of the workbench tool. {MaxLength="30"}
+resourcePack.editor.workbenchTool.keyBinding.secondaryAction=Workbench Secondary Action		#### This keybinding is to invoke the secondary (2nd) action of the workbench tool. {MaxLength="30"}
+resourcePack.editor.workbenchTool.keyBinding.tertiaryAction=Workbench Tertiary Action		####	This keybinding is to invoke the tertiary (3rd) action of the workbench tool. {MaxLength="30"}
+resourcePack.editor.workbenchTool.keyBinding.quaternaryAction=Workbench Quaternary Action		#### This keybinding is to invoke the quaternary (4th) action of the workbench tool. {MaxLength="30"}
 
 
 resourcePack.editor.transaction.keyBinding.redo=取消復原	#
