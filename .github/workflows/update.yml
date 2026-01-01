@@ -5,11 +5,11 @@ permissions:
 
 on:
   schedule:
-    - cron: 0 */2 * * *
+    - cron: 0 */1 * * *
   workflow_dispatch:
     inputs:
       export_languages:
-        description: 'Comma-separated languages to export (en-US), blank for all'
+        description: Comma-separated languages to export (en-US), blank for all
         type: string
         required: false
 

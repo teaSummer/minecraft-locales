@@ -5,7 +5,7 @@
 A collection of Minecraft language files, including translations for all supported languages:
 
 - *Minecraft: Java Edition*
-- *Minecraft: Bedrock Edition* (with *Minecraft Education* language files)
+- *Minecraft: Bedrock Edition* (with *Minecraft Education* and *Minecraft: Pocket Edition* language files)
 
 ## File Structure
 
