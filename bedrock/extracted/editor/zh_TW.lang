@@ -1,912 +1,806 @@
-﻿## Comments can be added anywhere on a valid line by starting with '##'
-##
-## Note, trailing spaces will NOT be trimmed. If you want room between the end of the string and the start of a
-## comment on the same line, use TABs.
-
-commands.editor.project.beginExport=正在匯出...	#
-commands.editor.project.description=操作當前載入的專案	#
-commands.editor.project.export=專案匯出	#
-commands.editor.project.exportComplete=匯出完成，檔案已寫入 %s	#
-commands.editor.project.exportCopyFailed=無法複製等級資料 %s	#
-commands.editor.project.unknownSubcommand=未知子命令	#
-
-resourcePack.editor.actionBar.redo.tooltipDescription=重新執行動作	#
-resourcePack.editor.actionBar.redo.tooltipTitle=取消復原	#
-resourcePack.editor.actionBar.redo=取消復原	#
-resourcePack.editor.actionBar.undo.tooltipDescription=復原動作	#
-resourcePack.editor.actionBar.undo.tooltipTitle=復原	#
-resourcePack.editor.actionBar.undo=復原	#
-resourcePack.editor.actionBar.fill=填滿 	####Label for an actionbar item that fills the selection with the current hotbar block.{MaxLength=100}
-resourcePack.editor.actionBar.fill.tooltipDescription=使用目前的快捷列方塊填滿所有選擇音量 	####Tooltip description for an actionbar item that fills the selection with the current hotbar block.{MaxLength=100}
-resourcePack.editor.actionBar.fill.tooltipTitle=填滿 	####Tooltip title for an actionbar item that fills the selection with the current hotbar block.{MaxLength=100}
-
-resourcePack.editor.agfx.settings.error.title=發生錯誤...	#
-resourcePack.editor.agfx.pane.title=設定編輯器	#
-resourcePack.editor.agfx.pane.settings_selector=選擇設定	#
-resourcePack.editor.agfx.pane.settings.title=設定	#
-resourcePack.editor.agfx.pane.settings.revert_changes=還原變更	#
-resourcePack.editor.agfx.pane.settings.export_to_clipboard=匯出到剪貼簿	#
-
-
-resourcePack.editor.toolRail.blockInspectorSettings.title=方塊檢查器   	####This string is what is shown in the title bar of the Editor pane for inspecting blocks.{MaxLength=30}
-resourcePack.editor.toolRail.blockInspectorSettings.specifics=方塊詳情   	####This string is the heading that contains the block tags and block properties subpane.{MaxLength=30}
-resourcePack.editor.toolRail.blockInspectorSettings.actions.refresh=重新整理方塊資料   	####This string shown on a button for forcing an update to the block data state.{MaxLength=30}
-resourcePack.editor.toolRail.blockInspectorSettings.actions.clear=清除選擇   	####This string shown on a button for clearing what block is currently selected.{MaxLength=30}
-resourcePack.editor.toolRail.blockInspectorSettings.blockTags=方塊標籤   	####This string is a header for a panel that shows the block tags on the currently selected block.{MaxLength=30}
-resourcePack.editor.toolRail.blockInspectorSettings.blockProperties=方塊屬性   	####This string is a header for a panel that shows the block properties on the currently selected block.{MaxLength=30}
-resourcePack.editor.toolRail.blockInspectorSettings.blockProperties.name=屬性名稱   	####Within the block properties pane, this string goes before the property name.{MaxLength=30}
-resourcePack.editor.toolRail.blockInspectorSettings.blockProperties.value=屬性值   	####Within the block properties pane, this string goes before the property value.{MaxLength=30}
-resourcePack.editor.toolRail.blockInspectorTool.title=方塊檢查器   	####This string is what is shown as the name of the block inspector tool.{MaxLength=30}
-resourcePack.editor.toolRail.blockInspectorTool.tooltip=檢查方塊資料   	####This string is what is shown when hovering over the block inspector icon.{MaxLength=30}
-resourcePack.editor.toolRail.blockInspectorTool.pane.helpText=左鍵按一下方塊以檢視並編輯其屬性   	####This string is shown in the block inspector tool pane before the user clicks to describe how to use it.{MaxLength=100}
-resourcePack.editor.blockInspector.toolRail.description=左鍵按一下方塊以檢視並編輯其屬性   	####This string is shown in the tool tip to explain the function of the Block Inspector tool.{MaxLength=100}
-
-
-resourcePack.editor.blockPalette.addSearchItem=使用找到方塊	#
-resourcePack.editor.blockPalette.blockPicker=搜尋	#
-resourcePack.editor.blockPalette.paletteDropdown.title=調色板	#
-resourcePack.editor.blockPalette.title=方塊調色板	#
-
-
-resourcePack.editor.brushPaint.inputContext.activateBrushPaint=啟動筆刷彩繪	#
-resourcePack.editor.brushPaint.inputContext.oneshot=繪製一次	#
-resourcePack.editor.brushPaint.inputContext.title=筆刷彩繪	#
-resourcePack.editor.brushPaint.title=筆刷彩繪	#
-resourcePack.editor.brushPaint.tooltip=使用筆刷在世界中繪製方塊	#
-
-
-resourcePack.editor.BrushPaintControl.brush.title=筆刷	#
-resourcePack.editor.BrushPaintControl.brushSettings.title=筆刷設定	#
-resourcePack.editor.BrushPaintControl.shapeSettings.title=形狀設定 	####Represents an expander that has UI controls for brush shape settings.{MaxLength=100}
-resourcePack.editor.BrushPaintControl.fillConstraints.mask.title=遮罩清單	#
-resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.disabled.tooltip=停用方塊篩選器	#
-resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.disabled=已停用	#
-resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.mask.tooltip=符合清單的方塊將被忽略並保持不受影響	#
-resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.mask=面具	#
-resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.replace=取代	#
-resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.title=筆刷方塊篩選器	#
-resourcePack.editor.BrushPaintControl.fillConstraints.replace.title=更換清單	#
-resourcePack.editor.BrushPaintControl.fillConstraints.replace.tooltip=將對符合清單的方塊執行操作	#
-resourcePack.editor.BrushPaintControl.fillConstraints.title=填寫限制	#
-resourcePack.editor.BrushPaintControl.keybinding.maskMask=遮罩模式 - 遮罩	#
-resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetBack=向後微移偏移	#
-resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetDown=向下微移偏移	#
-resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetForward=向前微移偏移	#
-resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetLeft=向左微移偏移	#
-resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetRight=向右微移偏移	#
-resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetUp=向上微移偏移	#
-resourcePack.editor.BrushPaintControl.keybinding.replaceMask=遮罩模式 - 替換	#
-resourcePack.editor.BrushPaintControl.offset.title=位移	#
-resourcePack.editor.BrushPaintControl.offset.tooltip=與游標位置的偏移	#
-resourcePack.editor.BrushPaintControl.rootPane.title=筆刷設定	#
-
-
-resourcePack.editor.brushShape.common.settings.axis=擠出軸	#
-resourcePack.editor.brushShape.common.settings.height=高度	#
-resourcePack.editor.brushShape.common.settings.length=時長	#
-resourcePack.editor.brushShape.common.settings.radius=半徑	#
-resourcePack.editor.brushShape.common.settings.uniform=U	#
-resourcePack.editor.brushShape.common.settings.xAxis=X 軸	#
-resourcePack.editor.brushShape.common.settings.xAxisNeg=-X 軸	#
-resourcePack.editor.brushShape.common.settings.yAxis=Y 軸	#
-resourcePack.editor.brushShape.common.settings.yAxisNeg=-Y 軸	#
-resourcePack.editor.brushShape.common.settings.zAxis=Z 軸	#
-resourcePack.editor.brushShape.common.settings.zAxisNeg=-Z 軸	#
-resourcePack.editor.brushShape.cone.name=光錐	#
-resourcePack.editor.brushShape.cone.settings.depth=深度半徑	#
-resourcePack.editor.brushShape.cone.settings.width=寬度半徑	#
-resourcePack.editor.brushShape.cuboid.name=方塊	#
-resourcePack.editor.brushShape.cuboid.settings.depth=深度	#
-resourcePack.editor.brushShape.cuboid.settings.height=高度	#
-resourcePack.editor.brushShape.cuboid.settings.width=寬度	#
-resourcePack.editor.brushShape.cylinder.name=圓柱形	#
-resourcePack.editor.brushShape.cylinder.settings.depth_radius=深度半徑	#
-resourcePack.editor.brushShape.cylinder.settings.width_radius=寬度半徑	#
-resourcePack.editor.brushShape.ellipsoid.name=橢圓體	#
-resourcePack.editor.brushShape.ellipsoid.settings.depth_radius=深度半徑	#
-resourcePack.editor.brushShape.ellipsoid.settings.height_radius=高度半徑	#
-resourcePack.editor.brushShape.ellipsoid.settings.width_radius=寬度半徑	#
-resourcePack.editor.brushShape.pyramid.name=金字塔	#
-resourcePack.editor.brushShape.pyramid.settings.depth=深度	#
-resourcePack.editor.brushShape.pyramid.settings.height=高度	#
-resourcePack.editor.brushShape.pyramid.settings.width=寬度	#
-resourcePack.editor.brushShape.singleBlock.name=單一方塊	#
-resourcePack.editor.brushShape.star.name=星星 	####Represent a star shaped brush.{MaxLength=100}
-resourcePack.editor.brushShape.star.settings.includeVertical=包含垂直 	####Represents a toggle button label that removes vertical parts of a star brush if unchecked.{MaxLength=100}
-
-
-resourcePack.editor.client.description=編輯器用戶端資源	#
-resourcePack.editor.client.name=編輯器資源	#
-
-
-resourcePack.editor.ClipboardPreviewControl.keybinding.moveOriginBack=向後移動原點	#
-resourcePack.editor.ClipboardPreviewControl.keybinding.moveOriginDown=向下移動原點	#
-resourcePack.editor.ClipboardPreviewControl.keybinding.moveOriginForward=向前移動原點	#
-resourcePack.editor.ClipboardPreviewControl.keybinding.moveOriginLeft=向左移動原點	#
-resourcePack.editor.ClipboardPreviewControl.keybinding.moveOriginRight=向右移動原點	#
-resourcePack.editor.ClipboardPreviewControl.keybinding.moveOriginUp=向上移動原點	#
-resourcePack.editor.ClipboardPreviewControl.keyBinding.nudgeOffsetBack=向後微移偏移	#
-resourcePack.editor.ClipboardPreviewControl.keyBinding.nudgeOffsetDown=向下微移偏移	#
-resourcePack.editor.ClipboardPreviewControl.keyBinding.nudgeOffsetForward=向前微移偏移	#
-resourcePack.editor.ClipboardPreviewControl.keyBinding.nudgeOffsetLeft=向左微移偏移	#
-resourcePack.editor.ClipboardPreviewControl.keyBinding.nudgeOffsetRight=向右微移偏移	#
-resourcePack.editor.ClipboardPreviewControl.keyBinding.nudgeOffsetUp=向上微移偏移	#
-resourcePack.editor.ClipboardPreviewControl.keybinding.rotateClockWise=順時針旋轉預覽	#
-resourcePack.editor.ClipboardPreviewControl.keybinding.rotateCounterClockWise=逆時針旋轉預覽	#
-resourcePack.editor.ClipboardPreviewControl.keybinding.toggleMirrorX=切換鏡像 X	#
-resourcePack.editor.ClipboardPreviewControl.keybinding.toggleMirrorZ=切換鏡像 Z	#
-resourcePack.editor.ClipboardPreviewControl.mirror.axis.x.tooltip=在原點圍繞 X 軸鏡像剪貼簿項目	#
-resourcePack.editor.ClipboardPreviewControl.mirror.axis.x=鏡像 (X 軸)	#
-resourcePack.editor.ClipboardPreviewControl.mirror.axis.z.tooltip=在原點圍繞 Z 軸鏡像剪貼簿項目	#
-resourcePack.editor.ClipboardPreviewControl.mirror.axis.z=鏡像 (Z 軸)	#
-resourcePack.editor.ClipboardPreviewControl.offset.title=位移	#
-resourcePack.editor.ClipboardPreviewControl.offset.tooltip=從放置點到剪貼簿項目原點的額外偏移	#
-resourcePack.editor.ClipboardPreviewControl.origin.title=原點	#
-resourcePack.editor.ClipboardPreviewControl.origin.tooltip=剪貼簿項目中的原點。這用作放置錨點以及剪貼簿圍繞其旋轉和鏡像的點	#
-resourcePack.editor.ClipboardPreviewControl.placement.title=選項	#
-resourcePack.editor.ClipboardPreviewControl.rootPane.title=剪貼簿資訊	#
-resourcePack.editor.ClipboardPreviewControl.rotation.180=180°	#
-resourcePack.editor.ClipboardPreviewControl.rotation.270=270°	#
-resourcePack.editor.ClipboardPreviewControl.rotation.90=90°	#
-resourcePack.editor.ClipboardPreviewControl.rotation.none=無	#
-resourcePack.editor.ClipboardPreviewControl.rotation.title=旋轉	#
-resourcePack.editor.ClipboardPreviewControl.rotation.tooltip=原點圍繞 Y 軸的旋轉量	#
-resourcePack.editor.ClipboardPreviewControl.structureSize.title=剪貼簿大小	#
-
-
-resourcePack.editor.copypaste.actionbar.copy.title=複製	#
-resourcePack.editor.copypaste.actionbar.copy.tooltip=將選取複製到剪貼簿	#
-resourcePack.editor.copypaste.actionbar.copy.tooltipDescription=將目前選取的內容複製到剪貼簿，保留選取的內容不變	#
-resourcePack.editor.copypaste.actionbar.cut.title=剪下	#
-resourcePack.editor.copypaste.actionbar.cut.tooltip=剪下/移動選取到剪貼簿	#
-resourcePack.editor.copypaste.actionbar.cut.tooltipDescription=將目前選取的內容複製到剪貼簿，並在此過程中移除選取的內容	#
-resourcePack.editor.copypaste.keyBinding.copy=將選取複製到剪貼簿	#
-resourcePack.editor.copypaste.keyBinding.cut=剪下/移動選取到剪貼簿	#
-resourcePack.editor.copypaste.keyBinding.paste=將剪貼簿貼上到世界	#
-resourcePack.editor.copypaste.menu.copy.title=複製選取範圍	#
-resourcePack.editor.copypaste.menu.cut.title=剪下選取範圍	#
-
-
-resourcePack.editor.core.keyBinding.showGameMenu=顯示遊戲選單	#
-resourcePack.editor.core.keyBinding.showLogPanel=顯示日誌面板	#
-
-
-resourcePack.editor.CursorModeControl.cursorTargetMode.block.tooltip=滑鼠游標下的方塊	#
-resourcePack.editor.CursorModeControl.cursorTargetMode.block=方塊	#
-resourcePack.editor.CursorModeControl.cursorTargetMode.face.tooltip=與滑鼠游標下方塊面直接相鄰的方塊	#
-resourcePack.editor.CursorModeControl.cursorTargetMode.face=鄰近的	#
-resourcePack.editor.CursorModeControl.cursorTargetMode.title=目標	#
-resourcePack.editor.CursorModeControl.cursorTargetMode.tooltip=選擇游標目標模式	#
-resourcePack.editor.CursorModeControl.fixedDistance.slider.title=固定游標距離	#
-resourcePack.editor.CursorModeControl.fixedDistance.slider.tooltip=調整放置方塊游標與玩家之間的固定距離	#
-resourcePack.editor.CursorModeControl.keybinding.moveCursorBack=向後移動游標	#
-resourcePack.editor.CursorModeControl.keybinding.moveCursorDown=向下移動游標	#
-resourcePack.editor.CursorModeControl.keybinding.moveCursorForward=向前微移	#
-resourcePack.editor.CursorModeControl.keybinding.moveCursorLeft=向左移動游標	#
-resourcePack.editor.CursorModeControl.keybinding.moveCursorRight=向右移動游標	#
-resourcePack.editor.CursorModeControl.keybinding.moveCursorUp=向上移動游標	#
-resourcePack.editor.CursorModeControl.keybinding.toggleBlockTargetMode=切換方塊/相鄰模式	#
-resourcePack.editor.CursorModeControl.keybinding.toggleFixedDistance=切換固定距離模式	#
-resourcePack.editor.CursorModeControl.keybinding.toggleMouseTracking=切換滑鼠追蹤	#
-resourcePack.editor.CursorModeControl.mouseControlMode.fixed=固定距離	#
-resourcePack.editor.CursorModeControl.mouseControlMode.keyboard=僅限鍵盤	#
-resourcePack.editor.CursorModeControl.mouseControlMode.keyboardAndMouse=滑鼠與按鍵	#
-resourcePack.editor.CursorModeControl.mouseControlMode.title=輸入方式	#
-resourcePack.editor.CursorModeControl.mouseControlMode.tooltip=選擇世界方塊游標的輸入方式	#
-resourcePack.editor.CursorModeControl.projectThroughWater.title=穿透水投射	#
-resourcePack.editor.CursorModeControl.projectThroughWater.tooltip=滑鼠射線將穿透水投射，允許選取水下元素	#
-resourcePack.editor.CursorModeControl.rootPane.title=游標設定	#
-
-
-resourcePack.editor.datatransferaccessors.atmospheric_scattering=大氣散射	#
-resourcePack.editor.datatransferaccessors.color_grading=顏色分級	#
-resourcePack.editor.datatransferaccessors.lighting_group=全域光照	#
-resourcePack.editor.datatransferaccessors.pbr_fallbacks=PBR 備援	#
-resourcePack.editor.datatransferaccessors.point_lights=點光源	#
-resourcePack.editor.datatransferaccessors.water=水	#
-resourcePack.editor.datatransferaccessors.shadows=黑影	#
-
-
-resourcePack.editor.deferredLightingSettings.menu.title=延遲光照設定	#
-
-
-resourcePack.editor.delete.keyBinding=刪除選取範圍內容	#
-
-
-resourcePack.editor.toolRail.entityInspector.pane.title=實體檢查器   	####This string is what is shown in the title bar of the Editor pane for modifying entities.{MaxLength=30}
-resourcePack.editor.toolRail.entityInspector.tool.title=實體檢查器   	####This string is what is shown at the top of the Editor pane for modifying entities.{MaxLength=30}
-resourcePack.editor.toolRail.entityInspector.tool.tip=檢查實體資料   	####This string is what is shown on the tool tip of Editor pane for modifying entities (gives context on what the tool does).{MaxLength=100}
-resourcePack.editor.toolRail.entityInspector.pane.helpText=左鍵按一下實體以檢視並編輯其屬性   	####This string is shown in the block inspector tool pane before the user clicks to describe how to use it.{MaxLength=100}
-resourcePack.editor.entityInspector.toolRail.description=左鍵按一下實體以檢視並編輯其屬性   	####This string is shown in the tool tip to explain the function of the Entity Inspector tool.{MaxLength=100}
-
-resourcePack.editor.exportProject.exportType=匯出類型	#
-resourcePack.editor.exportProject.exportType.playableWorld=可遊玩的世界	#
-resourcePack.editor.exportProject.exportNotes=匯出備註	#
-resourcePack.editor.exportProject.exportNotes.export=正在匯出進度   	####This string is intended to express that the title of export progress modal.{MaxLength=100}
-resourcePack.editor.exportProject.exportNotes.warning=你正在匯出一個 v%1 世界。匯出的可玩世界不能在版本號碼早於 v%1 的 Minecraft 版本上使用。若要轉換為先前的版本號碼，請使用 https://chunker.app/ (若早期版本不支援，則某些功能可能無法使用)	#
-resourcePack.editor.exportProject.exportNotes.progress=正在匯出世界......    	####This string is intended to express that the progress message of exporting.{MaxLength=100}
-resourcePack.editor.exportProject.exportNotes.exportSuccess=已成功匯出世界    	####This string is intended to express that export the world succeeded.{MaxLength=100}
-resourcePack.editor.exportProject.exportNotes.exportFailed=匯出世界失敗    	####This string is intended to express that export the world failed.{MaxLength=100}
-resourcePack.editor.exportProject.generalSettings=一般設定	#
-resourcePack.editor.exportProject.generalSettings.worldName=世界名稱	#
-resourcePack.editor.exportProject.generalSettings.gameMode=遊戲模式	#
-resourcePack.editor.exportProject.generalSettings.difficulty=難易度	#
-resourcePack.editor.exportProject.generalSettings.hardcore=極限	#
-resourcePack.editor.exportProject.initialPlaySettings=初始遊玩設定   	####This string is intended to express that the export category for inital play settings.{MaxLength=100}
-resourcePack.editor.exportProject.initialPlaySettings.spawnPosition=世界起始點   	####This string is intended to express that player inistal spawn position.{MaxLength=100}
-resourcePack.editor.exportProject.initialPlaySettings.startTime=開始時間   	####This string is intended to express that world start time.{MaxLength=100}
-resourcePack.editor.exportProject.initialPlaySettings.clockType=時鐘類型   	####This string is intended to express that start time with different clock type.{MaxLength=100}
-resourcePack.editor.exportProject.initialPlaySettings.customStartTime=自訂開始時間   	####This string is intended to express that custom start time with Minecraft Cloke value.{MaxLength=100}
-resourcePack.editor.exportProject.initialPlaySettings.weather=開始時的天氣   	####This string is intended to express that the custom start weather.{MaxLength=100}
-resourcePack.editor.exportProject.advancedSettings=進階設定	#
-resourcePack.editor.exportProject.advancedSettings.startingMap=起始地圖	#
-resourcePack.editor.exportProject.advancedSettings.bonusChest=贈品箱	#
-resourcePack.editor.exportProject.advancedSettings.showCoordinates=顯示座標	#
-resourcePack.editor.exportProject.advancedSettings.showDaysPlayed=顯示遊玩天數	#
-resourcePack.editor.exportProject.advancedSettings.recipeUnlocking=配方解鎖	#
-resourcePack.editor.exportProject.advancedSettings.limitedCrafting=限量合成   	####Export pane checkbox label that enable to set crafting limit.{MaxLength=100}
-resourcePack.editor.exportProject.advancedSettings.fireSpreads=火會蔓延	#
-resourcePack.editor.exportProject.advancedSettings.tntExplodes=炸藥會爆炸	#
-resourcePack.editor.exportProject.advancedSettings.resawnBlocksExplode=重生方塊爆炸	#
-resourcePack.editor.exportProject.advancedSettings.mobLoot=生物戰利品	#
-resourcePack.editor.exportProject.advancedSettings.naturalRegeneration=自然再生	#
-resourcePack.editor.exportProject.advancedSettings.tileDrops=磚塊掉落	#
-resourcePack.editor.exportProject.advancedSettings.immediateRespawn=立即生成	#
-resourcePack.editor.exportProject.advancedSettings.showDeathMessage=顯示死亡訊息   	####Export pane checkbox label that show the death message when player die.{MaxLength=100}
-resourcePack.editor.exportProject.advancedSettings.respawnRadius=重生半徑	#
-resourcePack.editor.exportProject.advancedSettings.simulationDistance=模擬距離	#
-resourcePack.editor.exportProject.advancedSettings.bedsWork=床舖有效	#
-resourcePack.editor.exportProject.advancedSettings.requiredSleepingPlayers=所需睡眠玩家數  (%1$s)	#
-resourcePack.editor.exportProject.advancedSettings.requiredSleepingPlayers.onePlayerMessage=僅限 1 名玩家	#
-resourcePack.editor.exportProject.advancedSettings.showItemTags=顯示物品標籤   	####Export pane checkbox label that show item tags.{MaxLength=100}
-resourcePack.editor.exportProject.multiplayerSettings=多人遊戲設定	#
-resourcePack.editor.exportProject.multiplayerSettings.multiplayerGame=多人遊戲	#
-resourcePack.editor.exportProject.multiplayerSettings.playerAccess=玩家存取	#
-resourcePack.editor.exportProject.multiplayerSettings.playerPermissions=玩家權限	#
-resourcePack.editor.exportProject.multiplayerSettings.visibleToLAN=LAN 玩家可看見	#
-resourcePack.editor.exportProject.multiplayerSettings.friendlyFire=友方誤傷	#
-resourcePack.editor.exportProject.cheatsSettings=作弊設定	#
-resourcePack.editor.exportProject.cheatsSettings.cheats=作弊	#
-resourcePack.editor.exportProject.cheatsSettings.daylightCycle=日照時長	#
-resourcePack.editor.exportProject.cheatsSettings.keepInventory=保留物品欄	#
-resourcePack.editor.exportProject.cheatsSettings.mobSpawning=生物重生	#
-resourcePack.editor.exportProject.cheatsSettings.mobGriefing=生物惡意破壞	#
-resourcePack.editor.exportProject.cheatsSettings.entitiesDropLoot=實體掉落拾取	#
-resourcePack.editor.exportProject.cheatsSettings.weatherCycle=天氣循環	#
-resourcePack.editor.exportProject.cheatsSettings.commandBlocks=指令方塊	#
-resourcePack.editor.exportProject.cheatsSettings.commandBlockOutput=指令方塊輸出   	####Export pane checkbox label that enable to display the command output.{MaxLength=100}
-resourcePack.editor.exportProject.cheatsSettings.sendCommandFeedback=傳送指令回饋   	####This string is the heading for the 'send command feedback' setting when exporting a world.{MaxLength=100}
-resourcePack.editor.exportProject.cheatsSettings.maxCommandChainLength=最大指令鏈長度   	####Export pane number that indicate the max length of the command, it defaults to 65536. It has a minimum of 0 and a max of 2147483647.{MaxLength=100}
-resourcePack.editor.exportProject.cheatsSettings.fireDamage=火燒傷害  	####Export pane checkbox label that enable damage when the player on fire.{MaxLength=100}
-resourcePack.editor.exportProject.cheatsSettings.freezeDamage=凍結傷害  	####Export pane checkbox label that enable damage when the player freezes.{MaxLength=100}
-resourcePack.editor.exportProject.cheatsSettings.fallDamage=掉落傷害  	####Export pane checkbox label that enable damage when the player falls.{MaxLength=100}
-resourcePack.editor.exportProject.cheatsSettings.drowningDamage=溺水傷害  	####Export pane checkbox label that enable damage when the player is drowning.{MaxLength=100}
-resourcePack.editor.exportProject.cheatsSettings.insomnia=失眠  	####Export pane checkbox label that enable player insomnia status.{MaxLength=100}
-resourcePack.editor.exportProject.cheatsSettings.showBorderEffect=顯示邊界效果  	####Export pane checkbox label that show border effect.{MaxLength=100}
-resourcePack.editor.exportProject.cheatsSettings.functionCommandLimit=函數指令限制  	####Export pane checkbox label that the number of limition for the function command.{MaxLength=100}
-resourcePack.editor.exportProject.cheatsSettings.educationFeatures=Education 功能	#
-resourcePack.editor.exportProject.cheatsSettings.randomTickSpeed=隨機刻速度	#
-resourcePack.editor.exportProject.export=匯出	#
-resourcePack.editor.exportProject.resetToDefault=重設為預設值	#
-resourcePack.editor.exportProject.gameMode.survival=生存	#
-resourcePack.editor.exportProject.gameMode.creative=創造	#
-resourcePack.editor.exportProject.gameMode.adventure=冒險	#
-resourcePack.editor.exportProject.difficulty.peaceful=和平	#
-resourcePack.editor.exportProject.difficulty.easy=簡單	#
-resourcePack.editor.exportProject.difficulty.normal=普通	#
-resourcePack.editor.exportProject.difficulty.hard=困難	#
-resourcePack.editor.exportProject.weather.default=預設   	####This string is intended to express that the default weather .{MaxLength=100}
-resourcePack.editor.exportProject.weather.clear=晴朗   	####This string is intended to express that the weather of Clear.{MaxLength=100}
-resourcePack.editor.exportProject.weather.rain=雨天   	####This string is intended to express that the weather of Rain.{MaxLength=100}
-resourcePack.editor.exportProject.weather.thunder=雷霆   	####This string is intended to express that the weather of Thunder.{MaxLength=100}
-
-
-
-resourcePack.editor.toolRail.ExtrudeTool.title=擠壓工具	#
-resourcePack.editor.toolRail.ExtrudeTool.tooltip=用於擴展和減少方塊的擠壓工具	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.ContiguousSelectionBlockListSubPane.title=連續選取方塊清單	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.TrailingBlocksSettingsSubPane.title=尾隨方塊設定	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.SampleLayerCount.title=樣本層數	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.ContiguousSelectionSettings.title=連續選取設定	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.ContiguousSelectionType.title=連續選取類型	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.ContiguousSelectionType.SameBlocks=相同方塊	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.ContiguousSelectionType.SameBlocksAndStates=相同方塊和狀態	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.ContiguousSelectionType.SolidBlocks=固體方塊	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.ContiguousSelectionType.AllBlocks=所有方塊	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.ContiguousSelectionType.CustomBlockList=自訂方塊清單	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.ToleranceLevel.title=容差等級	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.HasAdjacentBlocks.title=有相鄰的方塊	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.ExtruderSettings.title=擠壓器設定	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.Radius.title=半徑	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.title=選取模式	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.ContiguousSelection=連續選取	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.MarqueeSelection=選取框選擇	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.ContiguousSettings.title=連續選取設定	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.TrailingBlocks.title=尾隨方塊	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.TrailingBlocksSettings.title=尾隨方塊設定	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.QuickExtrudeSettings.title=快速擠壓設定	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.QuickExtrudeMode.title=快速擠壓模式	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.QuickExtrudeMode.decrease.title=減少	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.QuickExtrudeMode.decrease.tooltip=減少擠壓	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.QuickExtrudeMode.expand.title=展開	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.QuickExtrudeMode.expand.tooltip=擴展擠壓	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.LayerCount.title=層數	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.preview_warning=注意：預覽版視覺將只顯示第一層圖層 	#### {MaxLength="500"}, used to inform the user that the preview visualization for this tool is limited to a single layer.  This string is on screen whenever this tool is active
-resourcePack.editor.toolRail.ExtrudeTool.pane.ExtrusionType.title=擠壓類型	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.ExtrusionType.Extrude=擠壓	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.ExtrusionType.QuickExtrude=快速擠壓	#
-resourcePack.editor.toolRail.ExtrudeTool.keyBinding.deselect=取消選取	#
-resourcePack.editor.toolRail.ExtrudeTool.keyBinding.toggleTool=切換擠壓工具	#
-
-
-resourcePack.editor.toolRail.FarmGenerator.tool.title=農場產生器	#
-resourcePack.editor.toolRail.FarmGenerator.tool.tooltip=快速建立自訂農場	#
-resourcePack.editor.toolRail.FarmGenerator.pane.title=農場產生器	#
-resourcePack.editor.toolRail.FarmGenerator.pane.length=時長	#
-resourcePack.editor.toolRail.FarmGenerator.pane.width=寬度	#
-resourcePack.editor.toolRail.FarmGenerator.pane.fence=籬笆	#
-resourcePack.editor.toolRail.FarmGenerator.pane.irrigation=新增灌溉系統	#
-resourcePack.editor.toolRail.FarmGenerator.pane.irrigation.tooltip=在農田裡新增水方塊來灌溉作物。	#
-resourcePack.editor.toolRail.FarmGenerator.pane.crops.title=作物	#
-resourcePack.editor.toolRail.FarmGenerator.pane.crops.wheat=小麥	#
-resourcePack.editor.toolRail.FarmGenerator.pane.crops.potato=馬鈴薯	#
-resourcePack.editor.toolRail.FarmGenerator.pane.crops.beets=甜菜根	#
-resourcePack.editor.toolRail.FarmGenerator.pane.crops.pumpkin=南瓜	#
-resourcePack.editor.toolRail.FarmGenerator.pane.crops.carrot=胡蘿蔔	#
-resourcePack.editor.toolRail.FarmGenerator.pane.animals.title=動物	#
-resourcePack.editor.toolRail.FarmGenerator.pane.animals.cow=乳牛	#
-resourcePack.editor.toolRail.FarmGenerator.pane.animals.sheep=綿羊	#
-resourcePack.editor.toolRail.FarmGenerator.pane.animals.pig=豬	#
-resourcePack.editor.toolRail.FarmGenerator.keyBinding.toggleTool=切換農場生成器工具	#
-resourcePack.editor.toolRail.FarmGenerator.keyBinding.place=在游標處放置農場	#
-
-
-resourcePack.editor.global.keyBinding.toggleMode=切換模式	#
-
-
-resourcePack.editor.goToMark.actionBar.tooltip.description=玩家導航工具面板	#
-resourcePack.editor.goToMark.actionBar.tooltip.title=導航面板	#
-resourcePack.editor.goToMark.pane.goToSpawn=前往起始點	#
-resourcePack.editor.goToMark.pane.location=玩家位置	#
-resourcePack.editor.goToMark.pane.locationPane.delete=刪除已儲存位置	#
-resourcePack.editor.goToMark.pane.locationPane.dropdownLabel=儲存的位置	#
-resourcePack.editor.goToMark.pane.locationPane.inputName=新名稱	#
-resourcePack.editor.goToMark.pane.locationPane.markColor=位置標記顏色	#
-resourcePack.editor.goToMark.pane.locationPane.store=將目前位置儲存為...	#
-resourcePack.editor.goToMark.pane.locationPane.teleport=傳送至已儲存位置 %1$s	#
-resourcePack.editor.goToMark.pane.locationPane.title=已儲存位置	#
-resourcePack.editor.goToMark.pane.mapSize=地圖尺寸	#
-resourcePack.editor.goToMark.pane.refreshMap=重新整理地圖	#
-resourcePack.editor.goToMark.pane.setSpawn=將起始點設定為目前	#
-resourcePack.editor.goToMark.pane.showMap=顯示地圖	#
-resourcePack.editor.goToMark.pane.teleport=傳送至位置	#
-resourcePack.editor.goToMark.title=導航面板	#
-
-
-resourcePack.editor.grapple.keyBinding.flyToCursor=飛向游標	#
-resourcePack.editor.grapple.keyBinding.flyToSelection=飛往選取區域	#
-
-
-resourcePack.editor.locate.biome.find=尋找生態域	#
-resourcePack.editor.locate.biome.title=生態域	#
-resourcePack.editor.locate.keyBinding.toggleTool=切換定位生態域工具	#
-resourcePack.editor.locate.locatetype.biome=生態域	#
-resourcePack.editor.locate.locatetype.structure=結構	#
-resourcePack.editor.locate.locatetype.title=尋找類型	#
-resourcePack.editor.locate.results.foundat.title=發現於	#
-resourcePack.editor.locate.results.foundat=發現於	#
-resourcePack.editor.locate.results.goto=前往	#
-resourcePack.editor.locate.results.notfound.title=沒有結果	#
-resourcePack.editor.locate.results.notfound=找不到結果	#
-resourcePack.editor.locate.results.title=結果	#
-resourcePack.editor.locate.structure.message=目前不支援結構搜尋	#
-resourcePack.editor.locate.structure.title=結構	#
-resourcePack.editor.locate.title=位置	#
-
-
-resourcePack.editor.menuBar.edit.copy=複製	#
-resourcePack.editor.menuBar.edit.cut=切	#
-resourcePack.editor.menuBar.edit.delete=刪除	#
-resourcePack.editor.menuBar.edit.deselect=取消選取	#
-resourcePack.editor.menuBar.edit.quickFill=快速填滿	#
-resourcePack.editor.menuBar.edit.quickPaste=快速貼上	#
-resourcePack.editor.menuBar.edit.redo=取消復原	#
-resourcePack.editor.menuBar.edit.undo=復原	#
-resourcePack.editor.menuBar.edit=編輯	#
-resourcePack.editor.menuBar.experimental=實驗性	#
-resourcePack.editor.menuBar.extensions=延長時間	#
-resourcePack.editor.menuBar.file.cursor.projectThroughLiquid=藉由液體投射	#
-resourcePack.editor.menuBar.file.cursor=游標設定	#
-resourcePack.editor.menuBar.file.export.project=編輯者專案	#
-resourcePack.editor.menuBar.file.export.world=可遊玩的世界	#
-resourcePack.editor.menuBar.file.export=匯出	#
-resourcePack.editor.menuBar.file.pauseScreen=遊戲目錄	#
-resourcePack.editor.menuBar.file.settings=UI 設定	#
-resourcePack.editor.menuBar.file=檔案	#
-resourcePack.editor.menuBar.help.tutorial=教學 	#### {MaxLength="500"} Represent menu bar item in help menu that activates editor tutorial when pressed
-resourcePack.editor.menuBar.help.documentation=文件	#
-resourcePack.editor.menuBar.help.feedback=反饋	#
-resourcePack.editor.menuBar.help.quickStart=快速開始	#
-resourcePack.editor.menuBar.help=幫助	#
-resourcePack.editor.menuBar.locate=位置	#
-resourcePack.editor.menuBar.parentMenu.weather.clear=晴朗	#
-resourcePack.editor.menuBar.parentMenu.weather.rain=雨天	#
-resourcePack.editor.menuBar.parentMenu.weather.thunder=雷霆	#
-resourcePack.editor.menuBar.parentMenu.weather=天氣	#
-resourcePack.editor.menuBar.view.blockPalette=方塊調色板	#
-resourcePack.editor.menuBar.view.logging=記錄面板	#
-resourcePack.editor.menuBar.view.navigationLogging=導航記錄	#
-resourcePack.editor.menuBar.view=檢視	#
-resourcePack.editor.menuBar.worldOptions.changeDimension.end=終界行	#
-resourcePack.editor.menuBar.worldOptions.changeDimension.nether=地獄	#
-resourcePack.editor.menuBar.worldOptions.changeDimension.overworld=主世界	#
-resourcePack.editor.menuBar.worldOptions.changeDimension=變更維度	#
-resourcePack.editor.menuBar.worldOptions.pause.entities=實體	#
-resourcePack.editor.menuBar.worldOptions.pause=暫停	#
-resourcePack.editor.menuBar.worldOptions=世界選項	#
-
-
-resourcePack.editor.navigation.keyBinding.add=新增導航位置	#
-resourcePack.editor.navigation.keyBinding.next=前往下一個導航位置	#
-resourcePack.editor.navigation.keyBinding.previous=前往上一個導航位置	#
-
-
-resourcePack.editor.paste.pane.submitButton=確認貼上	#
-resourcePack.editor.paste.pane.title=貼上	#
-resourcePack.editor.paste.pane.transform.mirrorX=鏡射 X 軸	#
-resourcePack.editor.paste.pane.transform.mirrorZ=鏡射 Z 軸	#
-resourcePack.editor.paste.pane.transform.origin.title=位移	#
-resourcePack.editor.paste.pane.transform.rotation.180=180°	#
-resourcePack.editor.paste.pane.transform.rotation.270=270	#
-resourcePack.editor.paste.pane.transform.rotation.90=90°	#
-resourcePack.editor.paste.pane.transform.rotation.none=0°	#
-resourcePack.editor.paste.pane.transform.rotation.title=旋轉	#
-resourcePack.editor.paste.pane.transform.title=變換	#
-resourcePack.editor.paste.toolRail.description=按下滑鼠左鍵選取方塊，接著精準貼上剪貼簿中物品	#
-resourcePack.editor.paste.toolRail.title=貼上預覽	#
-
-
-resourcePack.editor.pastepreview.inputContext.title=貼上預覽	#
-resourcePack.editor.pastepreview.keyBinding.clearPreview=清除預覽	#
-resourcePack.editor.pastepreview.keyBinding.copy=複製選取範圍	#
-resourcePack.editor.pastepreview.keyBinding.cut=剪下選取範圍	#
-resourcePack.editor.pastepreview.keyBinding.moveBack=向後移動預覽	#
-resourcePack.editor.pastepreview.keyBinding.moveDown=向下移動預覽	#
-resourcePack.editor.pastepreview.keyBinding.moveForward=向前移動預覽	#
-resourcePack.editor.pastepreview.keyBinding.moveLeft=向左移動預覽	#
-resourcePack.editor.pastepreview.keyBinding.moveOffsetBack=向後移動偏移	#
-resourcePack.editor.pastepreview.keyBinding.moveOffsetDown=向下移動位移	#
-resourcePack.editor.pastepreview.keyBinding.moveOffsetForward=向前移動偏移	#
-resourcePack.editor.pastepreview.keyBinding.moveOffsetLeft=向左移動偏移	#
-resourcePack.editor.pastepreview.keyBinding.moveOffsetRight=向右移動偏移	#
-resourcePack.editor.pastepreview.keyBinding.moveOffsetUp=向上移動偏移	#
-resourcePack.editor.pastepreview.keyBinding.moveOriginBack=向後移動原點	#
-resourcePack.editor.pastepreview.keyBinding.moveOriginDown=向下移動原點	#
-resourcePack.editor.pastepreview.keyBinding.moveOriginForward=向前移動原點	#
-resourcePack.editor.pastepreview.keyBinding.moveOriginLeft=向左移動原點	#
-resourcePack.editor.pastepreview.keyBinding.moveOriginRight=向右移動原點	#
-resourcePack.editor.pastepreview.keyBinding.moveOriginUp=向上移動原點	#
-resourcePack.editor.pastepreview.keyBinding.moveRight=往右移動預覽	#
-resourcePack.editor.pastepreview.keyBinding.moveUp=向上移動預覽	#
-resourcePack.editor.pastepreview.keyBinding.paste=貼上	#
-resourcePack.editor.pastepreview.keyBinding.pasteAtCursor=在游標處貼上	#
-resourcePack.editor.pastepreview.keyBinding.pastepreview=貼上預覽	#
-resourcePack.editor.pastepreview.keyBinding.quickPaste=快速貼上	#
-resourcePack.editor.pastepreview.keyBinding.rotateClockWise=順時針旋轉預覽	#
-resourcePack.editor.pastepreview.keyBinding.rotateCounterClockWise=逆時針旋轉預覽	#
-resourcePack.editor.pastepreview.keyBinding.toggleAdjacentTarget=切換相鄰目標模式	#
-resourcePack.editor.pastepreview.keyBinding.toggleBlockTarget=切換方塊目標模式	#
-resourcePack.editor.pastepreview.keyBinding.toggleFixedDistance=啟用固定距離	#
-resourcePack.editor.pastepreview.keyBinding.toggleMirrorX=切換鏡像 X	#
-resourcePack.editor.pastepreview.keyBinding.toggleMirrorZ=切換鏡像 Z	#
-resourcePack.editor.pastepreview.keyBinding.toggleMouseTracking=切換滑鼠追蹤	#
-resourcePack.editor.pastepreview.pane.controls.cursor.fixed=固定距離	#
-resourcePack.editor.pastepreview.pane.controls.cursor.keyboard=僅限按鍵	#
-resourcePack.editor.pastepreview.pane.controls.cursor.mouseandkeys=滑鼠與按鍵	#
-resourcePack.editor.pastepreview.pane.controls.cursor.target.block=封鎖	#
-resourcePack.editor.pastepreview.pane.controls.cursor.target.face=鄰近的	#
-resourcePack.editor.pastepreview.pane.controls.cursor.target.title=目標	#
-resourcePack.editor.pastepreview.pane.controls.cursor=控制	#
-resourcePack.editor.pastepreview.pane.controls.title=游標控制	#
-resourcePack.editor.pastepreview.pane.placement.mirrorX=鏡射 X 軸	#
-resourcePack.editor.pastepreview.pane.placement.mirrorZ=鏡射 Z 軸	#
-resourcePack.editor.pastepreview.pane.placement.offset=位移	#
-resourcePack.editor.pastepreview.pane.placement.origin=原點	#
-resourcePack.editor.pastepreview.pane.placement.pastebutton=貼上	#
-resourcePack.editor.pastepreview.pane.placement.rotation=旋轉(在 Y 附近)	#
-resourcePack.editor.pastepreview.pane.placement.title=放置設定	#
-resourcePack.editor.pastepreview.pane.root.size=大小	#
-resourcePack.editor.pastepreview.pane.root.title=貼上預覽	#
-resourcePack.editor.pastepreview.tool.tip=使用滑鼠調整剪貼簿預覽的位置，然後點擊貼上至世界中	#
-resourcePack.editor.pastepreview.tool.title=貼上預覽	#
-
-
-resourcePack.editor.playerPositionExtension.dimension=維度	#
-resourcePack.editor.playerPositionExtension.menu.player=玩家	#
-resourcePack.editor.playerPositionExtension.menu.showPlayerSettings=顯示玩家設定	#
-resourcePack.editor.playerPositionExtension.nether=地獄	#
-resourcePack.editor.playerPositionExtension.overworld=主世界	#
-resourcePack.editor.playerPositionExtension.pane=玩家設定	#
-resourcePack.editor.playerPositionExtension.theEnd=終界	#
-resourcePack.editor.playerPositionExtension.worldSettings=世界設定	#
-
-
-resourcePack.editor.playtest.AdvancedSettings.title=進階設定	#
-resourcePack.editor.playtest.Dialog.DaylightCycle=日照時長	#
-resourcePack.editor.playtest.Dialog.Difficulty=難易度	#
-resourcePack.editor.playtest.Dialog.GameMode=遊戲模式	#
-resourcePack.editor.playtest.Dialog.OverrideSpawn=在目前位置生成	#
-resourcePack.editor.playtest.Dialog.ShowCoordinates=顯示座標	#
-resourcePack.editor.playtest.Dialog.TestButton=測試世界	#
-resourcePack.editor.playtest.Dialog.TimeOfDay=時間	#
-resourcePack.editor.playtest.Dialog.Title=測試設定	#
-resourcePack.editor.playtest.Dialog.Weather=天氣	#
-resourcePack.editor.playtest.Dialog.WeatherCycle=天氣循環	#
-resourcePack.editor.playtest.Menu.Title=測試世界	#
-resourcePack.editor.playtest.Title.Tooltip=在可玩的 Minecraft 世界中遊玩測試你的編輯者專案。無法儲存變更至你的專案。只有在主持單一玩家專案時才可使用。	#
-
-
-resourcePack.editor.playtestResult.EditorSystemFailure=編輯者系統故障	#
-resourcePack.editor.playtestResult.InvalidLevelId=無效的關卡 ID	#
-resourcePack.editor.playtestResult.InvalidSessionHandle=無效的工作階段處理	#
-resourcePack.editor.playtestResult.OK=成功	#
-resourcePack.editor.playtestResult.PlayerNotFound=找不到玩家	#
-resourcePack.editor.playtestResult.ResponseTimeout=反應逾時	#
-resourcePack.editor.playtestResult.SessionInfoNotFound=找不到工作階段資訊	#
-resourcePack.editor.playtestResult.TooManyPlayers=你無法在擔任其他玩家的主持者時測試世界	#
-resourcePack.editor.playtestResult.UnspecifiedError=非特定錯誤	#
-resourcePack.editor.playtestResult.UnsupportedScenario=你必須主持編輯者專案才能測試世界	#
-resourcePack.editor.playtestResult.WorldExportBusy=世界匯出忙碌	#
-resourcePack.editor.playtestResult.WorldExportFailed=世界匯出失敗	#
-
-
-resourcePack.editor.menuBar.file.realmsPublish=發布至 Realms   	####This string is intended to express that the option is for opening the pane to publish your editor world to Realms.{MaxLength=100}
-resourcePack.editor.realmsPublish.noActiveRealmsSubscription=需要啟用中的 Realms 定期服務才能發布至 Realms。你可以從經授權的 Minecraft 代理商或在 minecraft.net 網站上 (登入至帳戶後) 訂閱 Realms 或續訂已過期的定期服務。    	####This string is intended to express that the user doesn't have a active Realms subscription and the process they need to follow in order to be able to upload their editor world to their Realms subscription.{MaxLength=350}
-resourcePack.editor.realmsPublish.userNotLoggedIn=需要啟用中的 Realms 定期服務才能發布至 Realms。若要存取任何可用的 Realms 定期服務，必須登入 Microsoft 帳戶。		####This string is intended to express that the user is not logged in currently and that they must be logged into their Microsoft account in order to proceed.{MaxLength=350}
-resourcePack.editor.realmsPublish.dedicatedServerWarning=使用專用伺服器時無法發布到 Realms。		####This string is intended to express that the user is unable to use the Publish to Realms feature on a dedicated server.{MaxLength=350}
-resourcePack.editor.realmsPublish.notSessionHostWarning=只有編輯器工作階段主持人可以發布至 Realms。		####This string is intended to express that the user is unable to use the Publish to Realms when they are not the session host.{MaxLength=350}
-resourcePack.editor.realmsPublish.genericRealmsIssue=Realms 服務發生問題，請稍後再試。		####This string is intended to express that there is an issue with the realms service and to please try again later.{MaxLength=350}
-resourcePack.editor.realmsPublish.goToMinecraftWebsite=前往 Minecraft.net  	####This string is intended to express that the link will take the user to Minecraft.net.{MaxLength=100}
-resourcePack.editor.realmsPublish.Refresh=重新整理  	####This string is intended to express that the button will refresh the pane to see if the user in now logged in.{MaxLength=100}
-resourcePack.editor.realmsPublish.Realm=Realm  	####This string is intended to express that the below dropdown contains all of the users Realms subscriptions.{MaxLength=100}
-resourcePack.editor.realmsPublish.RealmSlot=Realm 插槽 	####This string is intended to express that the dropdown contains all of the world slots in for the users selected realms subscription.{MaxLength=100}
-resourcePack.editor.realmsPublish.EmptySlot=空的欄位		####This string is intended to express that the Realm slot is empty.{MaxLength=100}
-resourcePack.editor.realmsPublish.PublishNotesTitle=發布至 Realms Note   	####This string is intended to express that the below field will contain additional information for the user about the publish to realms feature, including any warnings or issues.{MaxLength=150}
-resourcePack.editor.realmsPublish.DownloadRealm=下載    	####This string is intended to express that the button will download the currently selected World from the realm slot.{MaxLength=100}
-resourcePack.editor.realmsPublish.PublishRealm=發布  	####This string is intended to express that the button will publish the current world to the currently selected realm slot.{MaxLength=100}
-resourcePack.editor.realmsPublish.Confirm=確認   	####This string is intended to express that the button will confirm  the request to publish the world to realms.{MaxLength=100}
-resourcePack.editor.realmsPublish.Cancel=取消 	####This string is intended to express that the button will cancel the request to publish the world to realms.{MaxLength=100}
-resourcePack.editor.realmsPublish.Back=返回 	####This string is intended to express that the button will take the user back to the previous pane.{MaxLength=100}
-resourcePack.editor.realmsPublish.PublishFailedNonCompliantWorldName=由於世界名稱無效，發布到 Realms 失敗。請更新世界名稱後再試一次。		####This string is intended to express that publishing the world to Realms failed due to an invalid world name that was entered by the player .{MaxLength=200}
-resourcePack.editor.realmsPublish.PublishFailed=發布到 Realms 失敗。請稍後再試。   	####This string is intended to express that publishing the world to Realms failed and to please try again later.{MaxLength=200}
-resourcePack.editor.realmsPublish.PublishSuccess=已成功發布到 Realms    	####This string is intended to express that publishing the world to Realms succeeded.{MaxLength=200}
-resourcePack.editor.realmsPublish.PublishConfirmationOptOut=不要再詢問這個 Realm 和工作階段  	####This string is intended to express that the checkbox will opt the user out of confirming their publish to realms decisions.{MaxLength=100}
-resourcePack.editor.realmsPublish.PublishingToRealms=正在將世界發布到 Realms...  	####This string is intended to express that the world is currently in the process of being published to Realms.{MaxLength=100}
-resourcePack.editor.realmsPublish.UnableToPublishMissingRealm=無法發布到 Realms。未選擇 Realm    	####This string is intended to express that the user is unable to publish their world because a realm to upload to has not been selected.{MaxLength=250}
-resourcePack.editor.realmsPublish.UnableToPublishMissingRealmSlot=無法發布到 Realms。未選擇 Realm 欄位   	####This string is intended to express that the user is unable to publish their world because a realm slot to upload to has not been selected.{MaxLength=250}
-resourcePack.editor.realmsPublish.PublishConfirmationWarning=這會將目前世界從所選欄位移除，並以您目前的編輯器世界取代 (所選欄位也會成為您 Realm 的已啟用欄位)。您 Realm 的成員將可以存取您剛取代的世界。如果您想在發布前儲存目前的世界，以防止資料遺失，請取消此對話方塊，並在「發布」前選取「下載」。選取「確認」以繼續並取代您目前的世界。    	####This string is intended to warn the user that if they publish their world to Realms, the world currently in that Realms slot will be deleted and unrecoverable. It also informs the user that members of the Realm will be able to access this world.{MaxLength=1000}
-resourcePack.editor.realmsPublish.DownloadSuccess=在 Realms 中下載世界成功    	####This string is intended to express that downloading a world from Realms succeeded.{MaxLength=200}
-resourcePack.editor.realmsPublish.DownloadFailed=從 Realms 下載世界失敗 	####This string is intended to express that downloading a world from Realms failed.{MaxLength=200}
-resourcePack.editor.realmsPublish.DownloadingFromRealms=正從 Realms 下載世界…    	####This string is intended to express that we're in the middle of downloading a world from Realms and waiting for that operation to complete.{MaxLength=200}
-
-
-resourcePack.editor.toolRail.RepeaterTool.title=中繼器工具	#
-resourcePack.editor.toolRail.RepeaterTool.tooltip=用於重複選取區域的工具	#
-resourcePack.editor.toolRail.RepeaterTool.pane.Spacing=間距	#
-resourcePack.editor.toolRail.RepeaterTool.pane.Repetitions=重複次數	#
-resourcePack.editor.toolRail.RepeaterTool.pane.Preview=預覽	#
-resourcePack.editor.toolRail.RepeaterTool.pane.Clear=清除	#
-resourcePack.editor.toolRail.RepeaterTool.pane.Apply=套用	#
-resourcePack.editor.toolRail.RepeaterTool.statusMessage.noSelection=使用選取工具選取要重複的區域	#
-resourcePack.editor.toolRail.RepeaterTool.pane.Mode=模式		####"Mode" describes a dropdown that contains the two different states the tool can be in. These are "Line" and "Grid" {MaxLength=20}
-resourcePack.editor.toolRail.RepeaterTool.mode.Line=直線		####"Line" describes a straight, unbroken visual between two points {MaxLength=20}
-resourcePack.editor.toolRail.RepeaterTool.mode.Grid=網格		####"Grid" describes a visual consisting of parallel lines at regular intervals, broken up by perpendicular lines at regular intervals, like grid paper. {MaxLength=20}
-resourcePack.editor.toolRail.RepeaterTool.pane.RepeatType=重複類型		####"Repeat Type" describes a dropdown that contains the two types "Uniform" and "Separate" and represents how the repetitions along the three axes (plural of "axis") will be determined {MaxLength=40}
-resourcePack.editor.toolRail.RepeaterTool.repeat.Uniform=一致化		####"Uniform" describes the repeat state of the Repeater Tool where it applies the same number of repetitions across all three axes (X, Y, and Z). "Uniform" was chosen as a short word that also means "consistent across multiple instances" {MaxLength=20}
-resourcePack.editor.toolRail.RepeaterTool.pane.RepeatAlongX=沿 X 重複		####"Repeat Along" describes a checkbox and means to apply the number of Uniform Repetitions across a given axis. This one is the X axis. "X", "Y", and "Z" have a mathematical meaning and it may not be appropriate to translate unless the mathematical meaning is also translated. More info can be found at https://en.wikipedia.org/wiki/Coordinate_system {MaxLength=40}
-resourcePack.editor.toolRail.RepeaterTool.pane.RepeatAlongY=沿 Y 重複		####See "Repeat Along X" but this is for the Y axis. {MaxLength=40}
-resourcePack.editor.toolRail.RepeaterTool.pane.RepeatAlongZ=沿 Z 重複		####See "Repeat Along X" but this is for the Z axis. {MaxLength=40}
-resourcePack.editor.toolRail.RepeaterTool.repeat.Separate=分離		####"Separate" describes the repeat state of the Repeater Tool where the number of repetitions along each axis is set using separate number input elements, rather than one single number input {MaxLength=20}
-resourcePack.editor.toolRail.RepeaterTool.pane.XCount=X 計數		####"X Count" describes a number input field and represents the number of repetitions along the X axis. "X", "Y", and "Z" have a mathematical meaning and it may not be appropriate to translate unless the mathematical meaning is also translated. More info can be found at https://en.wikipedia.org/wiki/Coordinate_system {MaxLength=20}
-resourcePack.editor.toolRail.RepeaterTool.pane.YCount=Y 計數		####See "X Count" but this is for the Y axis. {MaxLength=20}
-resourcePack.editor.toolRail.RepeaterTool.pane.ZCount=Z 計數		####See "X Count" but this is for the Z axis. {MaxLength=20}
-
-
-resourcePack.editor.selectionTool.deselect=取消選取	#
-resourcePack.editor.selectionTool.fillPane.fillAction=填滿選擇	#
-resourcePack.editor.selectionTool.fillPane.title=填滿選擇區域	#
-resourcePack.editor.selectionTool.keyBinding.deselect=取消選取範圍內容	#
-resourcePack.editor.selectionTool.keyBinding.fill=填滿選取範圍內容	#
-resourcePack.editor.selectionTool.keyBinding.growBack=向後擴展選取範圍	#
-resourcePack.editor.selectionTool.keyBinding.growDown=向下擴展選取範圍	#
-resourcePack.editor.selectionTool.keyBinding.growForward=向前擴展選取範圍	#
-resourcePack.editor.selectionTool.keyBinding.growLeft=向左擴展選取範圍	#
-resourcePack.editor.selectionTool.keyBinding.growRight=向右擴展選取範圍	#
-resourcePack.editor.selectionTool.keyBinding.growUp=向上擴展選取範圍	#
-resourcePack.editor.selectionTool.keyBinding.moveAllSelectionBack=將所有選取範圍向後移動	#
-resourcePack.editor.selectionTool.keyBinding.moveAllSelectionDown=將所有選取範圍向下移動	#
-resourcePack.editor.selectionTool.keyBinding.moveAllSelectionForward=將所有選取範圍向前移動	#
-resourcePack.editor.selectionTool.keyBinding.moveAllSelectionLeft=將所有選取範圍向左移動	#
-resourcePack.editor.selectionTool.keyBinding.moveAllSelectionRight=將所有選取範圍向右移動	#
-resourcePack.editor.selectionTool.keyBinding.moveAllSelectionUp=將所有選取範圍向上移動	#
-resourcePack.editor.selectionTool.keyBinding.moveCursorBack=向後移動游標	#
-resourcePack.editor.selectionTool.keyBinding.moveCursorDown=向下移動游標	#
-resourcePack.editor.selectionTool.keyBinding.moveCursorForward=向前移動游標	#
-resourcePack.editor.selectionTool.keyBinding.moveCursorLeft=向左移動游標	#
-resourcePack.editor.selectionTool.keyBinding.moveCursorRight=向右移動游標	#
-resourcePack.editor.selectionTool.keyBinding.moveCursorUp=向上移動游標	#
-resourcePack.editor.selectionTool.keyBinding.moveSelectionBack=向後移動選取範圍	#
-resourcePack.editor.selectionTool.keyBinding.moveSelectionDown=向下移動選取範圍	#
-resourcePack.editor.selectionTool.keyBinding.moveSelectionForward=向前移動選取範圍	#
-resourcePack.editor.selectionTool.keyBinding.moveSelectionLeft=向左移動選取範圍	#
-resourcePack.editor.selectionTool.keyBinding.moveSelectionRight=向右移動選取範圍	#
-resourcePack.editor.selectionTool.keyBinding.moveSelectionUp=向上移動選取範圍	#
-resourcePack.editor.selectionTool.keyBinding.shrinkBack=向後縮小選取範圍	#
-resourcePack.editor.selectionTool.keyBinding.shrinkDown=向下縮小選取範圍	#
-resourcePack.editor.selectionTool.keyBinding.shrinkForward=向前縮小選取範圍	#
-resourcePack.editor.selectionTool.keyBinding.shrinkLeft=向左縮小選取範圍	#
-resourcePack.editor.selectionTool.keyBinding.shrinkRight=向右縮小選取範圍	#
-resourcePack.editor.selectionTool.keyBinding.shrinkUp=向上縮小選取範圍	#
-resourcePack.editor.selectionTool.keyBinding.toggleTool=切換選取工具	#
-resourcePack.editor.selectionTool.keyBinding.select=選取方塊			#### The action of adding a block to the selection volume using they keyboard {MaxLength="30"}
-resourcePack.editor.selectionTool.keyBinding.selectMultiple=選取額外的方塊			#### The action of adding an additional block to the selection volume using the keyboard {MaxLength="30"}
-resourcePack.editor.selectionTool.keyBinding.trimVolume=修剪選擇 (界限)					#### Keybinding description for Trim the current selection volume to fit only the solid blocks within {MaxLength=30}
-resourcePack.editor.selectionTool.keyBinding.trimRemoveAir=修剪選擇 (移除空氣)			#### Keybinding description for Remove the air from the current selection volume leaving only specified blocks {MaxLength=30}
-resourcePack.editor.selectionTool.marquee.title=選取框選擇	#
-resourcePack.editor.selectionTool.modeSelection.freehand.title=手繪畫筆模式	#
-resourcePack.editor.selectionTool.modeSelection.freehand.tooltip=使用手繪畫筆形狀選取世界中的方塊	#
-resourcePack.editor.selectionTool.modeSelection.marquee.title=選取框模式	#
-resourcePack.editor.selectionTool.modeSelection.marquee.tooltip=使用長方體區域選取世界中的方塊	#
-resourcePack.editor.selectionTool.modeSelection.magic.title=魔法選擇模式			#### Magic Select mode is a mode that searches for contiguous matching blocks in a search radius {MaxLength=30}}
-resourcePack.editor.selectionTool.modeSelection.magic.tooltip=從選定的原點開始，使用搜尋模式來選取世界中的方塊		#### Longer description of the magic select mode {MaxLength=150}}
-resourcePack.editor.selectionTool.modeSelection.title=選取模式	#
-resourcePack.editor.selectionTool.projectThroughLiquid=藉由液體投射	#
-resourcePack.editor.selectionTool.trimAction.trimVolume=修剪選擇			#### Trim the current selection volume to fit only the solid blocks within {MaxLength=30}
-resourcePack.editor.selectionTool.trimAction.trimVolume.tooltip=修剪目前選取的區域，以便於內部僅裝載實心方塊   	#### {MaxLength=200}
-resourcePack.editor.selectionTool.trimAction.removeAir=移除空氣			#### Remove the air from the current selection volume leaving only specified blocks {MaxLength=30}
-resourcePack.editor.selectionTool.trimAction.removeAir.tooltip=從目前選取的區域中移除空氣，僅留下指定的方塊 	#### {MaxLength=200}
-resourcePack.editor.selectionTool.trimAction.trimVolume.SettingsPane.title=修剪設定		#### The window pane title for the settings for trim mode {MaxLength=30}
-resourcePack.editor.selectionTool.trimAction.trimVolume.SettingsPane.ignoreLiquid=忽略液體		#### The toggle button title for ignoring liquids {MaxLength=30}
-resourcePack.editor.selectionTool.trimAction.trimVolume.SettingsPane.ignoreLiquid.tooltip=修剪區域時，忽略所有的液體方塊 	#### {MaxLength=200}
-resourcePack.editor.selectionTool.trimAction.trimVolume.SettingsPane.onlyCollidable=僅限碰撞方塊		#### The toggle button title for collision-only blocks {MaxLength=30}
-resourcePack.editor.selectionTool.trimAction.trimVolume.SettingsPane.onlyCollidable.tooltip=修剪區域時，忽略所有沒有碰撞的方塊 (草、樹葉等) 	#### {MaxLength=200}
-resourcePack.editor.selectionTool.quickAction.clearSelection.tooltip=取消選取目前的選取區域	#
-resourcePack.editor.selectionTool.quickAction.clearSelection=取消選取	#
-resourcePack.editor.selectionTool.quickAction.deleteSelection.tooltip=移除目前選取範圍內的所有方塊	#
-resourcePack.editor.selectionTool.quickAction.deleteSelection=刪除	#
-resourcePack.editor.selectionTool.quickAction.fillSelection.tooltip=使用目前選取的方塊類型填充目前的選擇區域	#
-resourcePack.editor.selectionTool.quickAction.fillSelection=填滿	#
-resourcePack.editor.selectionTool.quickAction.title=快速反應事件	#
-resourcePack.editor.selectionTool.selectionMode.adjacent=鄰近的	#
-resourcePack.editor.selectionTool.selectionMode.fixedDistance=固定距離	#
-resourcePack.editor.selectionTool.selectionMode.mouseAndKeyboard=任意形狀	#
-resourcePack.editor.selectionTool.selectionMode=模式	#
-resourcePack.editor.selectionTool.settingsPane.title=選擇	#
-resourcePack.editor.selectionTool.toolRail.description=按一下滑鼠左鍵以建立選取範圍；按下 CTRL+D 取消選擇	#
-resourcePack.editor.selectionTool.toolRail.title=選擇	#
-resourcePack.editor.selectionTool.transformPane.origin.tooltip=在世界座標中，選取範圍的原點位置。	#
-resourcePack.editor.selectionTool.transformPane.origin=原點	#
-resourcePack.editor.selectionTool.transformPane.size=大小	#
-resourcePack.editor.selectionTool.transformPane.title=變形	#
-
-
-resourcePack.editor.BlockMaskControl.trim.rootPane.title=修剪設定		#### The window pane title for the settings for trim mode {MaxLength=30}
-resourcePack.editor.BlockMaskControl.trim.toggleGroup.title=遮罩模式		#### The title of the toggle group {MaxLength=30}
-resourcePack.editor.BlockMaskControl.trim.toggleGroup.item.disabled.label=停用方塊篩選器			#### The title of the icon which disables block filters {MaxLength=30}
-resourcePack.editor.BlockMaskControl.trim.toggleGroup.item.disabled.tooltip=已停用					#### The tooltip of the icon which disables block filters {MaxLength=100}
-resourcePack.editor.BlockMaskControl.trim.toggleGroup.item.mask.label=遮罩								#### The title of the icon which masks block filters {MaxLength=30}
-resourcePack.editor.BlockMaskControl.trim.toggleGroup.item.mask.tooltip=符合清單的方塊會被忽略			#### Mask mode tooltip {MaxLength=100}
-resourcePack.editor.BlockMaskControl.trim.toggleGroup.item.replace.label=取代						#### The title of the replace block filter {MaxLength=30}
-resourcePack.editor.BlockMaskControl.trim.toggleGroup.item.replace.tooltip=符合清單的方塊會被視為固體			#### Replace mode tooltip {MaxLength=100}
-
-
-resourcePack.editor.server.description=編輯器伺服器資源	#
-resourcePack.editor.server.name=編輯器資源	#
-
-
-resourcePack.editor.toolRail.Terrain.title=地形	#
-resourcePack.editor.toolRail.Terrain.keybinding.toggleTool=切換地形工具	#
-resourcePack.editor.toolRail.Terrain.keyBinding.switch=切換地形模式	#
-resourcePack.editor.toolRail.Terrain.Mode.title=地形模式	#
-resourcePack.editor.toolRail.Terrain.Smooth.mode.title=平滑視角模式	#
-resourcePack.editor.toolRail.Terrain.Smooth.tooltip=根據平滑強度對地形進行平滑處理	#
-resourcePack.editor.toolRail.Terrain.SmoothStrength=平滑強度	#
-resourcePack.editor.toolRail.Terrain.Roughen.mode.title=粗糙模式	#
-resourcePack.editor.toolRail.Terrain.Roughen.tooltip=根據粗糙強度對地形進行粗糙化	#
-resourcePack.editor.toolRail.Terrain.RoughenStrength=粗糙強度	#
-resourcePack.editor.toolRail.Terrain.description=地形工具可平滑或粗化地形	#
-
-
-resourcePack.editor.help.learnMore=深入了解	#
-
-resourcePack.editor.statusBar.connectedPlayers=已連線的玩家 %s	#
-
-
-resourcePack.editor.summonTool.summonSubPane.EntityPickerTitle=實體類型	#
-
-
-resourcePack.editor.timeOfDay.12hrClock=12 小時制	#
-resourcePack.editor.timeOfDay.24hrClock=24 小時制	#
-resourcePack.editor.timeOfDay.clockType=時鐘類型	#
-resourcePack.editor.timeOfDay.currentTime=目前時間	#
-resourcePack.editor.timeOfDay.customTime=自訂時間	#
-resourcePack.editor.timeOfDay.daylightCycle=日照時長	#
-resourcePack.editor.timeOfDay.dropDown.day=日	#
-resourcePack.editor.timeOfDay.dropDown.midnight=午夜	#
-resourcePack.editor.timeOfDay.dropDown.night=夜晚	#
-resourcePack.editor.timeOfDay.dropDown.none=無	#
-resourcePack.editor.timeOfDay.dropDown.noon=中午	#
-resourcePack.editor.timeOfDay.dropDown.sunrise=清晨	#
-resourcePack.editor.timeOfDay.dropDown.sunset=傍晚	#
-resourcePack.editor.timeOfDay.dropDown.custom=自訂		####"Custom" describes a dropdown that players can define the specific start time {MaxLength=20}
-resourcePack.editor.timeOfDay.dropDown.title=預設配置	#
-resourcePack.editor.timeOfDay.menu.title=時刻設定	#
-resourcePack.editor.timeOfDay.minecraftClock=Minecraft 時鐘	#
-resourcePack.editor.timeOfDay.title=時間設定	#
-
-
-resourcePack.editor.toolMode.keyBinding.console=開啟主控台	#
-resourcePack.editor.toolMode.keyBinding.devConsole=開啟開發人員主控台	#
-resourcePack.editor.toolMode.keyBinding.hotbar1=選擇快捷列 1	#
-resourcePack.editor.toolMode.keyBinding.hotbar2=選擇快捷列 2	#
-resourcePack.editor.toolMode.keyBinding.hotbar3=選擇快捷列 3	#
-resourcePack.editor.toolMode.keyBinding.hotbar4=選擇快捷列 4	#
-resourcePack.editor.toolMode.keyBinding.hotbar5=選擇快捷列 5	#
-resourcePack.editor.toolMode.keyBinding.hotbar6=選擇快捷列 6	#
-resourcePack.editor.toolMode.keyBinding.hotbar7=選擇快捷列 7	#
-resourcePack.editor.toolMode.keyBinding.hotbar8=選擇快捷列 8	#
-resourcePack.editor.toolMode.keyBinding.hotbar9=選擇快捷列 9	#
-resourcePack.editor.toolMode.keyBinding.reload=重新載入 	####Represents a label for a key shortcut that reloads scripts and UI.{MaxLength=100}
-
-
-resourcePack.editor.toolRail.blockPalette.title=方塊調色板 (CTRL+P)	#
-resourcePack.editor.toolRail.blockPalette.tooltip=設定您最喜歡或最常用的調色板	#
-resourcePack.editor.toolRail.flattenBrush.title=平滑筆刷	#
-resourcePack.editor.toolRail.flattenBrush.tooltip=將一個區域垂直削平到所選方塊的高度	#
-resourcePack.editor.toolRail.flattenBrush.settings.heightThreshold=高度界限	#
-resourcePack.editor.toolRail.flattenBrush.settings.radius=半徑	#
-resourcePack.editor.toolRail.floodFillSelectionTool.description=使用泛洪填充演算法選擇目前正在查看的區域。	#
-resourcePack.editor.toolRail.floodFillSelectionTool.title=泛洪填充選擇工具。	#
-resourcePack.editor.toolRail.line.keyBinding.delete=刪除內容	#
-resourcePack.editor.toolRail.line.keyBinding.deleteAndClear=刪除內容並取消選取	#
-resourcePack.editor.toolRail.line.keyBinding.deselect=取消選取	#
-resourcePack.editor.toolRail.line.keyBinding.deselectAll=全部取消選取	#
-resourcePack.editor.toolRail.line.keyBinding.fill=填滿內容	#
-resourcePack.editor.toolRail.line.keyBinding.fillAndClear=填滿內容並取消選取	#
-resourcePack.editor.toolRail.line.keyBinding.moveBack=向後移動已選取範圍	#
-resourcePack.editor.toolRail.line.keyBinding.moveDown=向下移動已選取範圍	#
-resourcePack.editor.toolRail.line.keyBinding.moveForward=向前移動已選取項目	#
-resourcePack.editor.toolRail.line.keyBinding.moveLeft=向左移動已選取項目	#
-resourcePack.editor.toolRail.line.keyBinding.moveRight=向右移動已選取項目	#
-resourcePack.editor.toolRail.line.keyBinding.moveUp=向上移動已選取項目	#
-resourcePack.editor.toolRail.line.keyBinding.selectAll=全選	#
-resourcePack.editor.toolRail.line.pane.algorithm.Direct=指揮	#
-resourcePack.editor.toolRail.line.pane.algorithm.Staggered=交錯 (柵欄)	#
-resourcePack.editor.toolRail.line.pane.algorithm.title=演算法	#
-resourcePack.editor.toolRail.line.pane.fillAction=填滿選擇區域	#
-resourcePack.editor.toolRail.line.pane.height.title=高度	#
-resourcePack.editor.toolRail.line.pane.selectionMode.adjacent=相鄰面	#
-resourcePack.editor.toolRail.line.pane.selectionMode.fixedDistance=固定距離	#
-resourcePack.editor.toolRail.line.pane.selectionMode.freeForm=任意形狀	#
-resourcePack.editor.toolRail.line.pane.selectionMode=選擇	#
-resourcePack.editor.toolRail.line.pane.surfaceContour=表面輪廓	#
-resourcePack.editor.toolRail.line.pane.width.title=寬度	#
-resourcePack.editor.toolRail.line.title=橫列	#
-resourcePack.editor.toolRail.line.tooltip=線條工具建立方塊條	#
-resourcePack.editor.toolRail.rulerTool.title=尺規工具	#
-resourcePack.editor.toolRail.rulerTool.tooltip=測量距離	#
-resourcePack.editor.toolRail.rulerTool.info.title=測量	#
-
-
-resourcePack.editor.toolRail.smartFillTool.title=智慧填充工具	#
-resourcePack.editor.toolRail.smartFillTool.tooltip=按一下以填滿已連結的方塊	#
-resourcePack.editor.toolRail.smartFillTool.modes.fillVolume=填充體積	#
-resourcePack.editor.toolRail.smartFillTool.areaLimit.title=面積限制	#
-resourcePack.editor.toolRail.smartFillTool.areaLimit.tooltip=最大填滿區域	#
-
-
-resourcePack.editor.toolRail.summonTool.keyBinding.clear=清除選擇	#
-resourcePack.editor.toolRail.summonTool.keyBinding.delete=刪除實體	#
-resourcePack.editor.toolRail.summonTool.keyBinding.moveBack=向後移動已選取項目	#
-resourcePack.editor.toolRail.summonTool.keyBinding.moveDown=向下移動已選取項目	#
-resourcePack.editor.toolRail.summonTool.keyBinding.moveForward=向前移動已選取項目	#
-resourcePack.editor.toolRail.summonTool.keyBinding.moveLeft=向左移動已選取項目	#
-resourcePack.editor.toolRail.summonTool.keyBinding.moveRight=向右移動已選取項目	#
-resourcePack.editor.toolRail.summonTool.keyBinding.moveUp=向上移動已選取項目	#
-resourcePack.editor.toolRail.summonTool.keyBinding.toggle=切換召喚工具	#
-resourcePack.editor.toolRail.summonTool.pane.select=選取模式	#
-resourcePack.editor.toolRail.summonTool.pane.title=召喚工具	#
-resourcePack.editor.toolRail.summonTool.pane.type=實體類型	#
-resourcePack.editor.toolRail.summonTool.tool.infoText=按一下實體來選取它，或按一下地圖來召喚一個新的實體	#
-resourcePack.editor.toolRail.summonTool.tool.selectSubPane.rotation=旋轉	#
-resourcePack.editor.toolRail.summonTool.tool.selectSubPane=實體選取	#
-resourcePack.editor.toolRail.summonTool.tool.summonSubPane=實體生成	#
-resourcePack.editor.toolRail.summonTool.tool.tip=按一下以召喚實體	#
-resourcePack.editor.toolRail.summonTool.tool.title=召喚工具	#
-
-resourcePack.editor.toolRail.workbenchSettings.title=工作台	#
-resourcePack.editor.toolRail.workbenchTool.title=工作台	#
-resourcePack.editor.toolRail.workbenchTool.description=快速變更方塊狀態	#
-resourcePack.editor.toolRail.workbenchTool.howToUse=高亮顯示方塊以查看可用的動作來變更其狀態 (開啟/關閉、旋轉、反轉等)。同時嘗試使用 Shift 和 Control 鍵作為修飾鍵！請注意，此功能僅適用於具有可修改屬性的方塊 (例如：門、柵欄、樓梯等)。		####	This text provides a description of the workbench tool and explans how the the user can highlight blocks in order to see the list of actions for changing that blocks state. {MaxLength="500"}
-resourcePack.editor.toolRail.workbenchTool.tooltip=變更方塊狀態	#
-resourcePack.editor.toolRail.workbenchTool.block=封鎖	#
-resourcePack.editor.toolRail.workbenchTool.leftClick=按一下左鍵	#
-resourcePack.editor.toolRail.workbenchTool.shiftLeftClick=Shift + 滑鼠左鍵按一下	#
-resourcePack.editor.toolRail.workbenchTool.controlLeftClick=CTRL + 滑鼠左鍵按一下	#
-resourcePack.editor.toolRail.workbenchTool.shiftControlLeftClick=Shift + CTRL + 滑鼠左鍵按一下	#
-
-resourcePack.editor.toolRail.workbenchTool.leftClickTooltip=在方塊上按一下右鍵，即可執行主要工作台行動		####	This keybinding is a tool tip to convey that a left click will invoke the primary (1st) action of the workbench tool. {MaxLength="150"}
-resourcePack.editor.toolRail.workbenchTool.shiftLeftClickTooltip=Shift +向左按一下方塊即可執行次要工作台行動		####	This keybinding is a tool tip to convey that a shift + left click will invoke the primary (1st) action of the workbench tool. {MaxLength="150"}
-resourcePack.editor.toolRail.workbenchTool.controlLeftClickTooltip=Control + 在方塊上按一下左鍵，即可執行第三工作台行動		####	This keybinding is a tool tip to convey that a control + left click will invoke the primary (1st) action of the workbench tool. {MaxLength="150"}
-resourcePack.editor.toolRail.workbenchTool.shiftControlLeftClickTooltip=Shift + Control + 左鍵按一下區塊會執行第四工作台行動		####	TThis keybinding is a tool tip to convey that a shift + control + left click will invoke the primary (1st) action of the workbench tool. {MaxLength="150"}
-
-resourcePack.editor.toolRail.workbenchTool.stripWood=剝皮 / 未剝皮木頭		####This string is intended to express whether the wood block has bark (unstripped) or doesn't have bark (stripped).{MaxLength=100}
-resourcePack.editor.toolRail.workbenchTool.ladderLocation=階梯位置	#
-resourcePack.editor.toolRail.workbenchTool.autoAlign=自動對齊	#
-resourcePack.editor.toolRail.workbenchTool.autoAlignFacingDirection=自動對齊面對方向		####This string is intended to express that the action will align the facing direction of the block with the player camera.{MaxLength=100}
-resourcePack.editor.toolRail.workbenchTool.autoAlignRotation=自動對齊旋轉		####This string is intended to express that the action will align the roatation of the block with the player camera.{MaxLength=100}
-
-resourcePack.editor.toolRail.workbenchTool.topSlotBitProp=頂部 / 底部	#
-resourcePack.editor.toolRail.workbenchTool.pillarAxisProp=旋轉	#
-resourcePack.editor.toolRail.workbenchTool.heightProp=圖層	#
-resourcePack.editor.toolRail.workbenchTool.candlesProp=蠟燭數量	#
-
-resourcePack.editor.toolRail.workbenchTool.turtleEggCountProp=海龜蛋數量	#
-resourcePack.editor.toolRail.workbenchTool.clusterCountProp=火體蟲數量	#
-resourcePack.editor.toolRail.workbenchTool.hangingProp=切換從另一個方塊懸掛	#
-resourcePack.editor.toolRail.workbenchTool.wallPostBitProp=切換貼文	#
-
-resourcePack.editor.toolRail.workbenchTool.upsideDownBitProp=頂部 / 底部	#
-resourcePack.editor.toolRail.workbenchTool.openBitProp=開啟 / 關閉	#
-resourcePack.editor.toolRail.workbenchTool.litProp=點亮 / 未點亮	#
-resourcePack.editor.toolRail.workbenchTool.dripstoneThicknessProp=滴水石厚度	#
-
-resourcePack.editor.toolRail.workbenchTool.directionProp=面對方向	#
-resourcePack.editor.toolRail.workbenchTool.weirdoDirectionProp=旋轉	#
-resourcePack.editor.toolRail.workbenchTool.facingDirectionProp=面對方向	#
-resourcePack.editor.toolRail.workbenchTool.cardinalDirectionProp=面對方向	#
-
-resourcePack.editor.toolRail.workbenchTool.addCustomMapping=新增自訂對應		####This string is intended to express that this subpane is for adding custom block property mappings for the tool.{MaxLength=100}
-resourcePack.editor.toolRail.workbenchTool.blockProperty=方塊屬性		####This string is intended to express that this field is for the Block Property.{MaxLength=50}
-resourcePack.editor.toolRail.workbenchTool.clickBinding=按一下綁定		####This string is intended to express that this dropdown contains the click binding options (left click, shift + left click, etc).{MaxLength=50}
-resourcePack.editor.toolRail.workbenchTool.addMapping=新增對應		####This string is intended to express that this button will add the custom mapping provided by the user.{MaxLength=50}
-resourcePack.editor.toolRail.workbenchTool.resetAllMappings=重設所有對應		####This string is intended to express that this button will reset all custom mappings provided by the user.{MaxLength=50}
-
-resourcePack.editor.workbenchTool.keyBinding.primaryAction=工作台主要行動		####	This keybinding is to invoke the primary (1st) action of the workbench tool. {MaxLength="30"}
-resourcePack.editor.workbenchTool.keyBinding.secondaryAction=工作台次要行動		#### This keybinding is to invoke the secondary (2nd) action of the workbench tool. {MaxLength="30"}
-resourcePack.editor.workbenchTool.keyBinding.tertiaryAction=工作台第三行動		####	This keybinding is to invoke the tertiary (3rd) action of the workbench tool. {MaxLength="30"}
-resourcePack.editor.workbenchTool.keyBinding.quaternaryAction=工作台第四行動		#### This keybinding is to invoke the quaternary (4th) action of the workbench tool. {MaxLength="30"}
-
-
-resourcePack.editor.transaction.keyBinding.redo=取消復原	#
-resourcePack.editor.transaction.keyBinding.undo=復原	#
-
-
-resourcePack.editor.viewport.keyBinding.moveBack=往後	#
-resourcePack.editor.viewport.keyBinding.moveDown=向下移動	#
-resourcePack.editor.viewport.keyBinding.moveForward=往前	#
-resourcePack.editor.viewport.keyBinding.moveLeft=往左	#
-resourcePack.editor.viewport.keyBinding.moveRight=往右	#
-resourcePack.editor.viewport.keyBinding.moveUp=向上移動	#
-
-resourcePack.editor.viewport.keyBinding.incrementFlySpeed=提升飛行速度	#
-resourcePack.editor.viewport.keyBinding.decrementFlySpeed=減少飛行速度	#
-
-resourcePack.editor.viewSettings.compass.tip=顯示方向羅盤	#
-resourcePack.editor.viewSettings.compass.title=顯示羅盤	#
-resourcePack.editor.viewSettings.chunk.tip=在地圖上顯示區塊邊界的輪廓	#
-resourcePack.editor.viewSettings.chunk.title=顯示區塊邊界	#
-resourcePack.editor.viewSettings.nightVision.tip=向世界展現你擁有夜視能力	#
-resourcePack.editor.viewSettings.nightVision.title=夜視	#
-resourcePack.editor.viewSettings.invisible.tip=顯示隱形方塊 (例如虛空、屏障等)	#
-resourcePack.editor.viewSettings.invisible.title=顯示隱形方塊	#
-resourcePack.editor.viewSettings.flySpeed.tip=提升飛行速度以更快地操控地圖	#
-resourcePack.editor.viewSettings.flySpeed.title=飛行速度加倍	#
-resourcePack.editor.viewSettings.menu=設定	#
-resourcePack.editor.viewSettings.title=設定	#
-
-resourcePack.editor.hotbar.defaultDisplayName=預設	#
-
-resourcePack.editor.reloadScripts.response.tooMany=連線到伺服器的玩家人數過多。只有單一玩家連線的主機才支援指令碼重新載入。	#
-resourcePack.editor.reloadScripts.response.genericError=嘗試重新載入指令碼時發生錯誤。	#
-resourcePack.editor.reloadScripts.response.noAdminRights=你沒有重新載入指令碼的權限。	#
+﻿
+commands.editor.project.beginExport=正在匯出...
+commands.editor.project.description=操作當前載入的專案
+commands.editor.project.export=專案匯出
+commands.editor.project.exportComplete=匯出完成，檔案已寫入 %s
+commands.editor.project.exportCopyFailed=無法複製等級資料 %s
+commands.editor.project.unknownSubcommand=未知子命令
+resourcePack.editor.actionBar.redo.tooltipDescription=重新執行動作
+resourcePack.editor.actionBar.redo.tooltipTitle=取消復原
+resourcePack.editor.actionBar.redo=取消復原
+resourcePack.editor.actionBar.undo.tooltipDescription=復原動作
+resourcePack.editor.actionBar.undo.tooltipTitle=復原
+resourcePack.editor.actionBar.undo=復原
+resourcePack.editor.actionBar.fill=填滿 
+resourcePack.editor.actionBar.fill.tooltipDescription=使用目前的快捷列方塊填滿所有選擇音量 
+resourcePack.editor.actionBar.fill.tooltipTitle=填滿 
+resourcePack.editor.agfx.settings.error.title=發生錯誤...
+resourcePack.editor.agfx.pane.title=設定編輯器
+resourcePack.editor.agfx.pane.settings_selector=選擇設定
+resourcePack.editor.agfx.pane.settings.title=設定
+resourcePack.editor.agfx.pane.settings.revert_changes=還原變更
+resourcePack.editor.agfx.pane.settings.export_to_clipboard=匯出到剪貼簿
+resourcePack.editor.toolRail.blockInspectorSettings.title=方塊檢查器   
+resourcePack.editor.toolRail.blockInspectorSettings.specifics=方塊詳情   
+resourcePack.editor.toolRail.blockInspectorSettings.actions.refresh=重新整理方塊資料   
+resourcePack.editor.toolRail.blockInspectorSettings.actions.clear=清除選擇   
+resourcePack.editor.toolRail.blockInspectorSettings.blockTags=方塊標籤   
+resourcePack.editor.toolRail.blockInspectorSettings.blockProperties=方塊屬性   
+resourcePack.editor.toolRail.blockInspectorSettings.blockProperties.name=屬性名稱   
+resourcePack.editor.toolRail.blockInspectorSettings.blockProperties.value=屬性值   
+resourcePack.editor.toolRail.blockInspectorTool.title=方塊檢查器   
+resourcePack.editor.toolRail.blockInspectorTool.tooltip=檢查方塊資料   
+resourcePack.editor.toolRail.blockInspectorTool.pane.helpText=左鍵按一下方塊以檢視並編輯其屬性   
+resourcePack.editor.blockInspector.toolRail.description=左鍵按一下方塊以檢視並編輯其屬性   
+resourcePack.editor.blockPalette.addSearchItem=使用找到方塊
+resourcePack.editor.blockPalette.blockPicker=搜尋
+resourcePack.editor.blockPalette.paletteDropdown.title=調色板
+resourcePack.editor.blockPalette.title=方塊調色板
+resourcePack.editor.brushPaint.inputContext.activateBrushPaint=啟動筆刷彩繪
+resourcePack.editor.brushPaint.inputContext.oneshot=繪製一次
+resourcePack.editor.brushPaint.inputContext.title=筆刷彩繪
+resourcePack.editor.brushPaint.title=筆刷彩繪
+resourcePack.editor.brushPaint.tooltip=使用筆刷在世界中繪製方塊
+resourcePack.editor.BrushPaintControl.brush.title=筆刷
+resourcePack.editor.BrushPaintControl.brushSettings.title=筆刷設定
+resourcePack.editor.BrushPaintControl.shapeSettings.title=形狀設定 
+resourcePack.editor.BrushPaintControl.fillConstraints.mask.title=遮罩清單
+resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.disabled.tooltip=停用方塊篩選器
+resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.disabled=已停用
+resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.mask.tooltip=符合清單的方塊將被忽略並保持不受影響
+resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.mask=面具
+resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.replace=取代
+resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.title=筆刷方塊篩選器
+resourcePack.editor.BrushPaintControl.fillConstraints.replace.title=更換清單
+resourcePack.editor.BrushPaintControl.fillConstraints.replace.tooltip=將對符合清單的方塊執行操作
+resourcePack.editor.BrushPaintControl.fillConstraints.title=填寫限制
+resourcePack.editor.BrushPaintControl.keybinding.maskMask=遮罩模式 - 遮罩
+resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetBack=向後微移偏移
+resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetDown=向下微移偏移
+resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetForward=向前微移偏移
+resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetLeft=向左微移偏移
+resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetRight=向右微移偏移
+resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetUp=向上微移偏移
+resourcePack.editor.BrushPaintControl.keybinding.replaceMask=遮罩模式 - 替換
+resourcePack.editor.BrushPaintControl.offset.title=位移
+resourcePack.editor.BrushPaintControl.offset.tooltip=與游標位置的偏移
+resourcePack.editor.BrushPaintControl.rootPane.title=筆刷設定
+resourcePack.editor.brushShape.common.settings.axis=擠出軸
+resourcePack.editor.brushShape.common.settings.height=高度
+resourcePack.editor.brushShape.common.settings.length=時長
+resourcePack.editor.brushShape.common.settings.radius=半徑
+resourcePack.editor.brushShape.common.settings.uniform=U
+resourcePack.editor.brushShape.common.settings.xAxis=X 軸
+resourcePack.editor.brushShape.common.settings.xAxisNeg=-X 軸
+resourcePack.editor.brushShape.common.settings.yAxis=Y 軸
+resourcePack.editor.brushShape.common.settings.yAxisNeg=-Y 軸
+resourcePack.editor.brushShape.common.settings.zAxis=Z 軸
+resourcePack.editor.brushShape.common.settings.zAxisNeg=-Z 軸
+resourcePack.editor.brushShape.cone.name=光錐
+resourcePack.editor.brushShape.cone.settings.depth=深度半徑
+resourcePack.editor.brushShape.cone.settings.width=寬度半徑
+resourcePack.editor.brushShape.cuboid.name=方塊
+resourcePack.editor.brushShape.cuboid.settings.depth=深度
+resourcePack.editor.brushShape.cuboid.settings.height=高度
+resourcePack.editor.brushShape.cuboid.settings.width=寬度
+resourcePack.editor.brushShape.cylinder.name=圓柱形
+resourcePack.editor.brushShape.cylinder.settings.depth_radius=深度半徑
+resourcePack.editor.brushShape.cylinder.settings.width_radius=寬度半徑
+resourcePack.editor.brushShape.ellipsoid.name=橢圓體
+resourcePack.editor.brushShape.ellipsoid.settings.depth_radius=深度半徑
+resourcePack.editor.brushShape.ellipsoid.settings.height_radius=高度半徑
+resourcePack.editor.brushShape.ellipsoid.settings.width_radius=寬度半徑
+resourcePack.editor.brushShape.pyramid.name=金字塔
+resourcePack.editor.brushShape.pyramid.settings.depth=深度
+resourcePack.editor.brushShape.pyramid.settings.height=高度
+resourcePack.editor.brushShape.pyramid.settings.width=寬度
+resourcePack.editor.brushShape.singleBlock.name=單一方塊
+resourcePack.editor.brushShape.star.name=星星 
+resourcePack.editor.brushShape.star.settings.includeVertical=包含垂直 
+resourcePack.editor.client.description=編輯器用戶端資源
+resourcePack.editor.client.name=編輯器資源
+resourcePack.editor.ClipboardPreviewControl.keybinding.moveOriginBack=向後移動原點
+resourcePack.editor.ClipboardPreviewControl.keybinding.moveOriginDown=向下移動原點
+resourcePack.editor.ClipboardPreviewControl.keybinding.moveOriginForward=向前移動原點
+resourcePack.editor.ClipboardPreviewControl.keybinding.moveOriginLeft=向左移動原點
+resourcePack.editor.ClipboardPreviewControl.keybinding.moveOriginRight=向右移動原點
+resourcePack.editor.ClipboardPreviewControl.keybinding.moveOriginUp=向上移動原點
+resourcePack.editor.ClipboardPreviewControl.keyBinding.nudgeOffsetBack=向後微移偏移
+resourcePack.editor.ClipboardPreviewControl.keyBinding.nudgeOffsetDown=向下微移偏移
+resourcePack.editor.ClipboardPreviewControl.keyBinding.nudgeOffsetForward=向前微移偏移
+resourcePack.editor.ClipboardPreviewControl.keyBinding.nudgeOffsetLeft=向左微移偏移
+resourcePack.editor.ClipboardPreviewControl.keyBinding.nudgeOffsetRight=向右微移偏移
+resourcePack.editor.ClipboardPreviewControl.keyBinding.nudgeOffsetUp=向上微移偏移
+resourcePack.editor.ClipboardPreviewControl.keybinding.rotateClockWise=順時針旋轉預覽
+resourcePack.editor.ClipboardPreviewControl.keybinding.rotateCounterClockWise=逆時針旋轉預覽
+resourcePack.editor.ClipboardPreviewControl.keybinding.toggleMirrorX=切換鏡像 X
+resourcePack.editor.ClipboardPreviewControl.keybinding.toggleMirrorZ=切換鏡像 Z
+resourcePack.editor.ClipboardPreviewControl.mirror.axis.x.tooltip=在原點圍繞 X 軸鏡像剪貼簿項目
+resourcePack.editor.ClipboardPreviewControl.mirror.axis.x=鏡像 (X 軸)
+resourcePack.editor.ClipboardPreviewControl.mirror.axis.z.tooltip=在原點圍繞 Z 軸鏡像剪貼簿項目
+resourcePack.editor.ClipboardPreviewControl.mirror.axis.z=鏡像 (Z 軸)
+resourcePack.editor.ClipboardPreviewControl.offset.title=位移
+resourcePack.editor.ClipboardPreviewControl.offset.tooltip=從放置點到剪貼簿項目原點的額外偏移
+resourcePack.editor.ClipboardPreviewControl.origin.title=原點
+resourcePack.editor.ClipboardPreviewControl.origin.tooltip=剪貼簿項目中的原點。這用作放置錨點以及剪貼簿圍繞其旋轉和鏡像的點
+resourcePack.editor.ClipboardPreviewControl.placement.title=選項
+resourcePack.editor.ClipboardPreviewControl.rootPane.title=剪貼簿資訊
+resourcePack.editor.ClipboardPreviewControl.rotation.180=180°
+resourcePack.editor.ClipboardPreviewControl.rotation.270=270°
+resourcePack.editor.ClipboardPreviewControl.rotation.90=90°
+resourcePack.editor.ClipboardPreviewControl.rotation.none=無
+resourcePack.editor.ClipboardPreviewControl.rotation.title=旋轉
+resourcePack.editor.ClipboardPreviewControl.rotation.tooltip=原點圍繞 Y 軸的旋轉量
+resourcePack.editor.ClipboardPreviewControl.structureSize.title=剪貼簿大小
+resourcePack.editor.copypaste.actionbar.copy.title=複製
+resourcePack.editor.copypaste.actionbar.copy.tooltip=將選取複製到剪貼簿
+resourcePack.editor.copypaste.actionbar.copy.tooltipDescription=將目前選取的內容複製到剪貼簿，保留選取的內容不變
+resourcePack.editor.copypaste.actionbar.cut.title=剪下
+resourcePack.editor.copypaste.actionbar.cut.tooltip=剪下/移動選取到剪貼簿
+resourcePack.editor.copypaste.actionbar.cut.tooltipDescription=將目前選取的內容複製到剪貼簿，並在此過程中移除選取的內容
+resourcePack.editor.copypaste.keyBinding.copy=將選取複製到剪貼簿
+resourcePack.editor.copypaste.keyBinding.cut=剪下/移動選取到剪貼簿
+resourcePack.editor.copypaste.keyBinding.paste=將剪貼簿貼上到世界
+resourcePack.editor.copypaste.menu.copy.title=複製選取範圍
+resourcePack.editor.copypaste.menu.cut.title=剪下選取範圍
+resourcePack.editor.core.keyBinding.showGameMenu=顯示遊戲選單
+resourcePack.editor.core.keyBinding.showLogPanel=顯示日誌面板
+resourcePack.editor.CursorModeControl.cursorTargetMode.block.tooltip=滑鼠游標下的方塊
+resourcePack.editor.CursorModeControl.cursorTargetMode.block=方塊
+resourcePack.editor.CursorModeControl.cursorTargetMode.face.tooltip=與滑鼠游標下方塊面直接相鄰的方塊
+resourcePack.editor.CursorModeControl.cursorTargetMode.face=鄰近的
+resourcePack.editor.CursorModeControl.cursorTargetMode.title=目標
+resourcePack.editor.CursorModeControl.cursorTargetMode.tooltip=選擇游標目標模式
+resourcePack.editor.CursorModeControl.fixedDistance.slider.title=固定游標距離
+resourcePack.editor.CursorModeControl.fixedDistance.slider.tooltip=調整放置方塊游標與玩家之間的固定距離
+resourcePack.editor.CursorModeControl.keybinding.moveCursorBack=向後移動游標
+resourcePack.editor.CursorModeControl.keybinding.moveCursorDown=向下移動游標
+resourcePack.editor.CursorModeControl.keybinding.moveCursorForward=向前微移
+resourcePack.editor.CursorModeControl.keybinding.moveCursorLeft=向左移動游標
+resourcePack.editor.CursorModeControl.keybinding.moveCursorRight=向右移動游標
+resourcePack.editor.CursorModeControl.keybinding.moveCursorUp=向上移動游標
+resourcePack.editor.CursorModeControl.keybinding.toggleBlockTargetMode=切換方塊/相鄰模式
+resourcePack.editor.CursorModeControl.keybinding.toggleFixedDistance=切換固定距離模式
+resourcePack.editor.CursorModeControl.keybinding.toggleMouseTracking=切換滑鼠追蹤
+resourcePack.editor.CursorModeControl.mouseControlMode.fixed=固定距離
+resourcePack.editor.CursorModeControl.mouseControlMode.keyboard=僅限鍵盤
+resourcePack.editor.CursorModeControl.mouseControlMode.keyboardAndMouse=滑鼠與按鍵
+resourcePack.editor.CursorModeControl.mouseControlMode.title=輸入方式
+resourcePack.editor.CursorModeControl.mouseControlMode.tooltip=選擇世界方塊游標的輸入方式
+resourcePack.editor.CursorModeControl.projectThroughWater.title=穿透水投射
+resourcePack.editor.CursorModeControl.projectThroughWater.tooltip=滑鼠射線將穿透水投射，允許選取水下元素
+resourcePack.editor.CursorModeControl.rootPane.title=游標設定
+resourcePack.editor.datatransferaccessors.atmospheric_scattering=大氣散射
+resourcePack.editor.datatransferaccessors.color_grading=顏色分級
+resourcePack.editor.datatransferaccessors.lighting_group=全域光照
+resourcePack.editor.datatransferaccessors.pbr_fallbacks=PBR 備援
+resourcePack.editor.datatransferaccessors.point_lights=點光源
+resourcePack.editor.datatransferaccessors.water=水
+resourcePack.editor.datatransferaccessors.shadows=黑影
+resourcePack.editor.deferredLightingSettings.menu.title=延遲光照設定
+resourcePack.editor.delete.keyBinding=刪除選取範圍內容
+resourcePack.editor.toolRail.entityInspector.pane.title=實體檢查器   
+resourcePack.editor.toolRail.entityInspector.tool.title=實體檢查器   
+resourcePack.editor.toolRail.entityInspector.tool.tip=檢查實體資料   
+resourcePack.editor.toolRail.entityInspector.pane.helpText=左鍵按一下實體以檢視並編輯其屬性   
+resourcePack.editor.entityInspector.toolRail.description=左鍵按一下實體以檢視並編輯其屬性   
+resourcePack.editor.exportProject.exportType=匯出類型
+resourcePack.editor.exportProject.exportType.playableWorld=可遊玩的世界
+resourcePack.editor.exportProject.exportNotes=匯出備註
+resourcePack.editor.exportProject.exportNotes.export=正在匯出進度   
+resourcePack.editor.exportProject.exportNotes.warning=你正在匯出一個 v%1 世界。匯出的可玩世界不能在版本號碼早於 v%1 的 Minecraft 版本上使用。若要轉換為先前的版本號碼，請使用 https://chunker.app/ (若早期版本不支援，則某些功能可能無法使用)
+resourcePack.editor.exportProject.exportNotes.progress=正在匯出世界......    
+resourcePack.editor.exportProject.exportNotes.exportSuccess=已成功匯出世界    
+resourcePack.editor.exportProject.exportNotes.exportFailed=匯出世界失敗    
+resourcePack.editor.exportProject.generalSettings=一般設定
+resourcePack.editor.exportProject.generalSettings.worldName=世界名稱
+resourcePack.editor.exportProject.generalSettings.gameMode=遊戲模式
+resourcePack.editor.exportProject.generalSettings.difficulty=難易度
+resourcePack.editor.exportProject.generalSettings.hardcore=極限
+resourcePack.editor.exportProject.initialPlaySettings=初始遊玩設定   
+resourcePack.editor.exportProject.initialPlaySettings.spawnPosition=世界起始點   
+resourcePack.editor.exportProject.initialPlaySettings.startTime=開始時間   
+resourcePack.editor.exportProject.initialPlaySettings.clockType=時鐘類型   
+resourcePack.editor.exportProject.initialPlaySettings.customStartTime=自訂開始時間   
+resourcePack.editor.exportProject.initialPlaySettings.weather=開始時的天氣   
+resourcePack.editor.exportProject.advancedSettings=進階設定
+resourcePack.editor.exportProject.advancedSettings.startingMap=起始地圖
+resourcePack.editor.exportProject.advancedSettings.bonusChest=贈品箱
+resourcePack.editor.exportProject.advancedSettings.showCoordinates=顯示座標
+resourcePack.editor.exportProject.advancedSettings.showDaysPlayed=顯示遊玩天數
+resourcePack.editor.exportProject.advancedSettings.recipeUnlocking=配方解鎖
+resourcePack.editor.exportProject.advancedSettings.limitedCrafting=限量合成   
+resourcePack.editor.exportProject.advancedSettings.fireSpreads=火會蔓延
+resourcePack.editor.exportProject.advancedSettings.tntExplodes=炸藥會爆炸
+resourcePack.editor.exportProject.advancedSettings.resawnBlocksExplode=重生方塊爆炸
+resourcePack.editor.exportProject.advancedSettings.mobLoot=生物戰利品
+resourcePack.editor.exportProject.advancedSettings.naturalRegeneration=自然再生
+resourcePack.editor.exportProject.advancedSettings.tileDrops=磚塊掉落
+resourcePack.editor.exportProject.advancedSettings.immediateRespawn=立即生成
+resourcePack.editor.exportProject.advancedSettings.showDeathMessage=顯示死亡訊息   
+resourcePack.editor.exportProject.advancedSettings.respawnRadius=重生半徑
+resourcePack.editor.exportProject.advancedSettings.simulationDistance=模擬距離
+resourcePack.editor.exportProject.advancedSettings.bedsWork=床舖有效
+resourcePack.editor.exportProject.advancedSettings.requiredSleepingPlayers=所需睡眠玩家數  (%1$s)
+resourcePack.editor.exportProject.advancedSettings.requiredSleepingPlayers.onePlayerMessage=僅限 1 名玩家
+resourcePack.editor.exportProject.advancedSettings.showItemTags=顯示物品標籤   
+resourcePack.editor.exportProject.multiplayerSettings=多人遊戲設定
+resourcePack.editor.exportProject.multiplayerSettings.multiplayerGame=多人遊戲
+resourcePack.editor.exportProject.multiplayerSettings.playerAccess=玩家存取
+resourcePack.editor.exportProject.multiplayerSettings.playerPermissions=玩家權限
+resourcePack.editor.exportProject.multiplayerSettings.visibleToLAN=LAN 玩家可看見
+resourcePack.editor.exportProject.multiplayerSettings.friendlyFire=友方誤傷
+resourcePack.editor.exportProject.cheatsSettings=作弊設定
+resourcePack.editor.exportProject.cheatsSettings.cheats=作弊
+resourcePack.editor.exportProject.cheatsSettings.daylightCycle=日照時長
+resourcePack.editor.exportProject.cheatsSettings.keepInventory=保留物品欄
+resourcePack.editor.exportProject.cheatsSettings.mobSpawning=生物重生
+resourcePack.editor.exportProject.cheatsSettings.mobGriefing=生物惡意破壞
+resourcePack.editor.exportProject.cheatsSettings.entitiesDropLoot=實體掉落拾取
+resourcePack.editor.exportProject.cheatsSettings.weatherCycle=天氣循環
+resourcePack.editor.exportProject.cheatsSettings.commandBlocks=指令方塊
+resourcePack.editor.exportProject.cheatsSettings.commandBlockOutput=指令方塊輸出   
+resourcePack.editor.exportProject.cheatsSettings.sendCommandFeedback=傳送指令回饋   
+resourcePack.editor.exportProject.cheatsSettings.maxCommandChainLength=最大指令鏈長度   
+resourcePack.editor.exportProject.cheatsSettings.fireDamage=火燒傷害  
+resourcePack.editor.exportProject.cheatsSettings.freezeDamage=凍結傷害  
+resourcePack.editor.exportProject.cheatsSettings.fallDamage=掉落傷害  
+resourcePack.editor.exportProject.cheatsSettings.drowningDamage=溺水傷害  
+resourcePack.editor.exportProject.cheatsSettings.insomnia=失眠  
+resourcePack.editor.exportProject.cheatsSettings.showBorderEffect=顯示邊界效果  
+resourcePack.editor.exportProject.cheatsSettings.functionCommandLimit=函數指令限制  
+resourcePack.editor.exportProject.cheatsSettings.educationFeatures=Education 功能
+resourcePack.editor.exportProject.cheatsSettings.randomTickSpeed=隨機刻速度
+resourcePack.editor.exportProject.export=匯出
+resourcePack.editor.exportProject.resetToDefault=重設為預設值
+resourcePack.editor.exportProject.gameMode.survival=生存
+resourcePack.editor.exportProject.gameMode.creative=創造
+resourcePack.editor.exportProject.gameMode.adventure=冒險
+resourcePack.editor.exportProject.difficulty.peaceful=和平
+resourcePack.editor.exportProject.difficulty.easy=簡單
+resourcePack.editor.exportProject.difficulty.normal=普通
+resourcePack.editor.exportProject.difficulty.hard=困難
+resourcePack.editor.exportProject.weather.default=預設   
+resourcePack.editor.exportProject.weather.clear=晴朗   
+resourcePack.editor.exportProject.weather.rain=雨天   
+resourcePack.editor.exportProject.weather.thunder=雷霆   
+resourcePack.editor.toolRail.ExtrudeTool.title=擠壓工具
+resourcePack.editor.toolRail.ExtrudeTool.tooltip=用於擴展和減少方塊的擠壓工具
+resourcePack.editor.toolRail.ExtrudeTool.pane.ContiguousSelectionBlockListSubPane.title=連續選取方塊清單
+resourcePack.editor.toolRail.ExtrudeTool.pane.TrailingBlocksSettingsSubPane.title=尾隨方塊設定
+resourcePack.editor.toolRail.ExtrudeTool.pane.SampleLayerCount.title=樣本層數
+resourcePack.editor.toolRail.ExtrudeTool.pane.ContiguousSelectionSettings.title=連續選取設定
+resourcePack.editor.toolRail.ExtrudeTool.pane.ContiguousSelectionType.title=連續選取類型
+resourcePack.editor.toolRail.ExtrudeTool.pane.ContiguousSelectionType.SameBlocks=相同方塊
+resourcePack.editor.toolRail.ExtrudeTool.pane.ContiguousSelectionType.SameBlocksAndStates=相同方塊和狀態
+resourcePack.editor.toolRail.ExtrudeTool.pane.ContiguousSelectionType.SolidBlocks=固體方塊
+resourcePack.editor.toolRail.ExtrudeTool.pane.ContiguousSelectionType.AllBlocks=所有方塊
+resourcePack.editor.toolRail.ExtrudeTool.pane.ContiguousSelectionType.CustomBlockList=自訂方塊清單
+resourcePack.editor.toolRail.ExtrudeTool.pane.ToleranceLevel.title=容差等級
+resourcePack.editor.toolRail.ExtrudeTool.pane.HasAdjacentBlocks.title=有相鄰的方塊
+resourcePack.editor.toolRail.ExtrudeTool.pane.ExtruderSettings.title=擠壓器設定
+resourcePack.editor.toolRail.ExtrudeTool.pane.Radius.title=半徑
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.title=選取模式
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.ContiguousSelection=連續選取
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.MarqueeSelection=選取框選擇
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.ContiguousSettings.title=連續選取設定
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.TrailingBlocks.title=尾隨方塊
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.TrailingBlocksSettings.title=尾隨方塊設定
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.QuickExtrudeSettings.title=快速擠壓設定
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.QuickExtrudeMode.title=快速擠壓模式
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.QuickExtrudeMode.decrease.title=減少
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.QuickExtrudeMode.decrease.tooltip=減少擠壓
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.QuickExtrudeMode.expand.title=展開
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.QuickExtrudeMode.expand.tooltip=擴展擠壓
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.LayerCount.title=層數
+resourcePack.editor.toolRail.ExtrudeTool.pane.preview_warning=注意：預覽版視覺將只顯示第一層圖層 
+resourcePack.editor.toolRail.ExtrudeTool.pane.ExtrusionType.title=擠壓類型
+resourcePack.editor.toolRail.ExtrudeTool.pane.ExtrusionType.Extrude=擠壓
+resourcePack.editor.toolRail.ExtrudeTool.pane.ExtrusionType.QuickExtrude=快速擠壓
+resourcePack.editor.toolRail.ExtrudeTool.keyBinding.deselect=取消選取
+resourcePack.editor.toolRail.ExtrudeTool.keyBinding.toggleTool=切換擠壓工具
+resourcePack.editor.toolRail.FarmGenerator.tool.title=農場產生器
+resourcePack.editor.toolRail.FarmGenerator.tool.tooltip=快速建立自訂農場
+resourcePack.editor.toolRail.FarmGenerator.pane.title=農場產生器
+resourcePack.editor.toolRail.FarmGenerator.pane.length=時長
+resourcePack.editor.toolRail.FarmGenerator.pane.width=寬度
+resourcePack.editor.toolRail.FarmGenerator.pane.fence=籬笆
+resourcePack.editor.toolRail.FarmGenerator.pane.irrigation=新增灌溉系統
+resourcePack.editor.toolRail.FarmGenerator.pane.irrigation.tooltip=在農田裡新增水方塊來灌溉作物。
+resourcePack.editor.toolRail.FarmGenerator.pane.crops.title=作物
+resourcePack.editor.toolRail.FarmGenerator.pane.crops.wheat=小麥
+resourcePack.editor.toolRail.FarmGenerator.pane.crops.potato=馬鈴薯
+resourcePack.editor.toolRail.FarmGenerator.pane.crops.beets=甜菜根
+resourcePack.editor.toolRail.FarmGenerator.pane.crops.pumpkin=南瓜
+resourcePack.editor.toolRail.FarmGenerator.pane.crops.carrot=胡蘿蔔
+resourcePack.editor.toolRail.FarmGenerator.pane.animals.title=動物
+resourcePack.editor.toolRail.FarmGenerator.pane.animals.cow=乳牛
+resourcePack.editor.toolRail.FarmGenerator.pane.animals.sheep=綿羊
+resourcePack.editor.toolRail.FarmGenerator.pane.animals.pig=豬
+resourcePack.editor.toolRail.FarmGenerator.keyBinding.toggleTool=切換農場生成器工具
+resourcePack.editor.toolRail.FarmGenerator.keyBinding.place=在游標處放置農場
+resourcePack.editor.global.keyBinding.toggleMode=切換模式
+resourcePack.editor.goToMark.actionBar.tooltip.description=玩家導航工具面板
+resourcePack.editor.goToMark.actionBar.tooltip.title=導航面板
+resourcePack.editor.goToMark.pane.goToSpawn=前往起始點
+resourcePack.editor.goToMark.pane.location=玩家位置
+resourcePack.editor.goToMark.pane.locationPane.delete=刪除已儲存位置
+resourcePack.editor.goToMark.pane.locationPane.dropdownLabel=儲存的位置
+resourcePack.editor.goToMark.pane.locationPane.inputName=新名稱
+resourcePack.editor.goToMark.pane.locationPane.markColor=位置標記顏色
+resourcePack.editor.goToMark.pane.locationPane.store=將目前位置儲存為...
+resourcePack.editor.goToMark.pane.locationPane.teleport=傳送至已儲存位置 %1$s
+resourcePack.editor.goToMark.pane.locationPane.title=已儲存位置
+resourcePack.editor.goToMark.pane.mapSize=地圖尺寸
+resourcePack.editor.goToMark.pane.refreshMap=重新整理地圖
+resourcePack.editor.goToMark.pane.setSpawn=將起始點設定為目前
+resourcePack.editor.goToMark.pane.showMap=顯示地圖
+resourcePack.editor.goToMark.pane.teleport=傳送至位置
+resourcePack.editor.goToMark.title=導航面板
+resourcePack.editor.grapple.keyBinding.flyToCursor=飛向游標
+resourcePack.editor.grapple.keyBinding.flyToSelection=飛往選取區域
+resourcePack.editor.locate.biome.find=尋找生態域
+resourcePack.editor.locate.biome.title=生態域
+resourcePack.editor.locate.keyBinding.toggleTool=切換定位生態域工具
+resourcePack.editor.locate.locatetype.biome=生態域
+resourcePack.editor.locate.locatetype.structure=結構
+resourcePack.editor.locate.locatetype.title=尋找類型
+resourcePack.editor.locate.results.foundat.title=發現於
+resourcePack.editor.locate.results.foundat=發現於
+resourcePack.editor.locate.results.goto=前往
+resourcePack.editor.locate.results.notfound.title=沒有結果
+resourcePack.editor.locate.results.notfound=找不到結果
+resourcePack.editor.locate.results.title=結果
+resourcePack.editor.locate.structure.message=目前不支援結構搜尋
+resourcePack.editor.locate.structure.title=結構
+resourcePack.editor.locate.title=位置
+resourcePack.editor.menuBar.edit.copy=複製
+resourcePack.editor.menuBar.edit.cut=切
+resourcePack.editor.menuBar.edit.delete=刪除
+resourcePack.editor.menuBar.edit.deselect=取消選取
+resourcePack.editor.menuBar.edit.quickFill=快速填滿
+resourcePack.editor.menuBar.edit.quickPaste=快速貼上
+resourcePack.editor.menuBar.edit.redo=取消復原
+resourcePack.editor.menuBar.edit.undo=復原
+resourcePack.editor.menuBar.edit=編輯
+resourcePack.editor.menuBar.experimental=實驗性
+resourcePack.editor.menuBar.extensions=延長時間
+resourcePack.editor.menuBar.file.cursor.projectThroughLiquid=藉由液體投射
+resourcePack.editor.menuBar.file.cursor=游標設定
+resourcePack.editor.menuBar.file.export.project=編輯者專案
+resourcePack.editor.menuBar.file.export.world=可遊玩的世界
+resourcePack.editor.menuBar.file.export=匯出
+resourcePack.editor.menuBar.file.pauseScreen=遊戲目錄
+resourcePack.editor.menuBar.file.settings=UI 設定
+resourcePack.editor.menuBar.file=檔案
+resourcePack.editor.menuBar.help.tutorial=教學 
+resourcePack.editor.menuBar.help.documentation=文件
+resourcePack.editor.menuBar.help.feedback=反饋
+resourcePack.editor.menuBar.help.quickStart=快速開始
+resourcePack.editor.menuBar.help=幫助
+resourcePack.editor.menuBar.locate=位置
+resourcePack.editor.menuBar.parentMenu.weather.clear=晴朗
+resourcePack.editor.menuBar.parentMenu.weather.rain=雨天
+resourcePack.editor.menuBar.parentMenu.weather.thunder=雷霆
+resourcePack.editor.menuBar.parentMenu.weather=天氣
+resourcePack.editor.menuBar.view.blockPalette=方塊調色板
+resourcePack.editor.menuBar.view.logging=記錄面板
+resourcePack.editor.menuBar.view.navigationLogging=導航記錄
+resourcePack.editor.menuBar.view=檢視
+resourcePack.editor.menuBar.worldOptions.changeDimension.end=終界行
+resourcePack.editor.menuBar.worldOptions.changeDimension.nether=地獄
+resourcePack.editor.menuBar.worldOptions.changeDimension.overworld=主世界
+resourcePack.editor.menuBar.worldOptions.changeDimension=變更維度
+resourcePack.editor.menuBar.worldOptions.pause.entities=實體
+resourcePack.editor.menuBar.worldOptions.pause=暫停
+resourcePack.editor.menuBar.worldOptions=世界選項
+resourcePack.editor.navigation.keyBinding.add=新增導航位置
+resourcePack.editor.navigation.keyBinding.next=前往下一個導航位置
+resourcePack.editor.navigation.keyBinding.previous=前往上一個導航位置
+resourcePack.editor.paste.pane.submitButton=確認貼上
+resourcePack.editor.paste.pane.title=貼上
+resourcePack.editor.paste.pane.transform.mirrorX=鏡射 X 軸
+resourcePack.editor.paste.pane.transform.mirrorZ=鏡射 Z 軸
+resourcePack.editor.paste.pane.transform.origin.title=位移
+resourcePack.editor.paste.pane.transform.rotation.180=180°
+resourcePack.editor.paste.pane.transform.rotation.270=270
+resourcePack.editor.paste.pane.transform.rotation.90=90°
+resourcePack.editor.paste.pane.transform.rotation.none=0°
+resourcePack.editor.paste.pane.transform.rotation.title=旋轉
+resourcePack.editor.paste.pane.transform.title=變換
+resourcePack.editor.paste.toolRail.description=按下滑鼠左鍵選取方塊，接著精準貼上剪貼簿中物品
+resourcePack.editor.paste.toolRail.title=貼上預覽
+resourcePack.editor.pastepreview.inputContext.title=貼上預覽
+resourcePack.editor.pastepreview.keyBinding.clearPreview=清除預覽
+resourcePack.editor.pastepreview.keyBinding.copy=複製選取範圍
+resourcePack.editor.pastepreview.keyBinding.cut=剪下選取範圍
+resourcePack.editor.pastepreview.keyBinding.moveBack=向後移動預覽
+resourcePack.editor.pastepreview.keyBinding.moveDown=向下移動預覽
+resourcePack.editor.pastepreview.keyBinding.moveForward=向前移動預覽
+resourcePack.editor.pastepreview.keyBinding.moveLeft=向左移動預覽
+resourcePack.editor.pastepreview.keyBinding.moveOffsetBack=向後移動偏移
+resourcePack.editor.pastepreview.keyBinding.moveOffsetDown=向下移動位移
+resourcePack.editor.pastepreview.keyBinding.moveOffsetForward=向前移動偏移
+resourcePack.editor.pastepreview.keyBinding.moveOffsetLeft=向左移動偏移
+resourcePack.editor.pastepreview.keyBinding.moveOffsetRight=向右移動偏移
+resourcePack.editor.pastepreview.keyBinding.moveOffsetUp=向上移動偏移
+resourcePack.editor.pastepreview.keyBinding.moveOriginBack=向後移動原點
+resourcePack.editor.pastepreview.keyBinding.moveOriginDown=向下移動原點
+resourcePack.editor.pastepreview.keyBinding.moveOriginForward=向前移動原點
+resourcePack.editor.pastepreview.keyBinding.moveOriginLeft=向左移動原點
+resourcePack.editor.pastepreview.keyBinding.moveOriginRight=向右移動原點
+resourcePack.editor.pastepreview.keyBinding.moveOriginUp=向上移動原點
+resourcePack.editor.pastepreview.keyBinding.moveRight=往右移動預覽
+resourcePack.editor.pastepreview.keyBinding.moveUp=向上移動預覽
+resourcePack.editor.pastepreview.keyBinding.paste=貼上
+resourcePack.editor.pastepreview.keyBinding.pasteAtCursor=在游標處貼上
+resourcePack.editor.pastepreview.keyBinding.pastepreview=貼上預覽
+resourcePack.editor.pastepreview.keyBinding.quickPaste=快速貼上
+resourcePack.editor.pastepreview.keyBinding.rotateClockWise=順時針旋轉預覽
+resourcePack.editor.pastepreview.keyBinding.rotateCounterClockWise=逆時針旋轉預覽
+resourcePack.editor.pastepreview.keyBinding.toggleAdjacentTarget=切換相鄰目標模式
+resourcePack.editor.pastepreview.keyBinding.toggleBlockTarget=切換方塊目標模式
+resourcePack.editor.pastepreview.keyBinding.toggleFixedDistance=啟用固定距離
+resourcePack.editor.pastepreview.keyBinding.toggleMirrorX=切換鏡像 X
+resourcePack.editor.pastepreview.keyBinding.toggleMirrorZ=切換鏡像 Z
+resourcePack.editor.pastepreview.keyBinding.toggleMouseTracking=切換滑鼠追蹤
+resourcePack.editor.pastepreview.pane.controls.cursor.fixed=固定距離
+resourcePack.editor.pastepreview.pane.controls.cursor.keyboard=僅限按鍵
+resourcePack.editor.pastepreview.pane.controls.cursor.mouseandkeys=滑鼠與按鍵
+resourcePack.editor.pastepreview.pane.controls.cursor.target.block=封鎖
+resourcePack.editor.pastepreview.pane.controls.cursor.target.face=鄰近的
+resourcePack.editor.pastepreview.pane.controls.cursor.target.title=目標
+resourcePack.editor.pastepreview.pane.controls.cursor=控制
+resourcePack.editor.pastepreview.pane.controls.title=游標控制
+resourcePack.editor.pastepreview.pane.placement.mirrorX=鏡射 X 軸
+resourcePack.editor.pastepreview.pane.placement.mirrorZ=鏡射 Z 軸
+resourcePack.editor.pastepreview.pane.placement.offset=位移
+resourcePack.editor.pastepreview.pane.placement.origin=原點
+resourcePack.editor.pastepreview.pane.placement.pastebutton=貼上
+resourcePack.editor.pastepreview.pane.placement.rotation=旋轉(在 Y 附近)
+resourcePack.editor.pastepreview.pane.placement.title=放置設定
+resourcePack.editor.pastepreview.pane.root.size=大小
+resourcePack.editor.pastepreview.pane.root.title=貼上預覽
+resourcePack.editor.pastepreview.tool.tip=使用滑鼠調整剪貼簿預覽的位置，然後點擊貼上至世界中
+resourcePack.editor.pastepreview.tool.title=貼上預覽
+resourcePack.editor.playerPositionExtension.dimension=維度
+resourcePack.editor.playerPositionExtension.menu.player=玩家
+resourcePack.editor.playerPositionExtension.menu.showPlayerSettings=顯示玩家設定
+resourcePack.editor.playerPositionExtension.nether=地獄
+resourcePack.editor.playerPositionExtension.overworld=主世界
+resourcePack.editor.playerPositionExtension.pane=玩家設定
+resourcePack.editor.playerPositionExtension.theEnd=終界
+resourcePack.editor.playerPositionExtension.worldSettings=世界設定
+resourcePack.editor.playtest.AdvancedSettings.title=進階設定
+resourcePack.editor.playtest.Dialog.DaylightCycle=日照時長
+resourcePack.editor.playtest.Dialog.Difficulty=難易度
+resourcePack.editor.playtest.Dialog.GameMode=遊戲模式
+resourcePack.editor.playtest.Dialog.OverrideSpawn=在目前位置生成
+resourcePack.editor.playtest.Dialog.ShowCoordinates=顯示座標
+resourcePack.editor.playtest.Dialog.TestButton=測試世界
+resourcePack.editor.playtest.Dialog.TimeOfDay=時間
+resourcePack.editor.playtest.Dialog.Title=測試設定
+resourcePack.editor.playtest.Dialog.Weather=天氣
+resourcePack.editor.playtest.Dialog.WeatherCycle=天氣循環
+resourcePack.editor.playtest.Menu.Title=測試世界
+resourcePack.editor.playtest.Title.Tooltip=在可玩的 Minecraft 世界中遊玩測試你的編輯者專案。無法儲存變更至你的專案。只有在主持單一玩家專案時才可使用。
+resourcePack.editor.playtestResult.EditorSystemFailure=編輯者系統故障
+resourcePack.editor.playtestResult.InvalidLevelId=無效的關卡 ID
+resourcePack.editor.playtestResult.InvalidSessionHandle=無效的工作階段處理
+resourcePack.editor.playtestResult.OK=成功
+resourcePack.editor.playtestResult.PlayerNotFound=找不到玩家
+resourcePack.editor.playtestResult.ResponseTimeout=反應逾時
+resourcePack.editor.playtestResult.SessionInfoNotFound=找不到工作階段資訊
+resourcePack.editor.playtestResult.TooManyPlayers=你無法在擔任其他玩家的主持者時測試世界
+resourcePack.editor.playtestResult.UnspecifiedError=非特定錯誤
+resourcePack.editor.playtestResult.UnsupportedScenario=你必須主持編輯者專案才能測試世界
+resourcePack.editor.playtestResult.WorldExportBusy=世界匯出忙碌
+resourcePack.editor.playtestResult.WorldExportFailed=世界匯出失敗
+resourcePack.editor.menuBar.file.realmsPublish=發布至 Realms   
+resourcePack.editor.realmsPublish.noActiveRealmsSubscription=需要啟用中的 Realms 定期服務才能發布至 Realms。你可以從經授權的 Minecraft 代理商或在 minecraft.net 網站上 (登入至帳戶後) 訂閱 Realms 或續訂已過期的定期服務。    
+resourcePack.editor.realmsPublish.userNotLoggedIn=需要啟用中的 Realms 定期服務才能發布至 Realms。若要存取任何可用的 Realms 定期服務，必須登入 Microsoft 帳戶。
+resourcePack.editor.realmsPublish.dedicatedServerWarning=使用專用伺服器時無法發布到 Realms。
+resourcePack.editor.realmsPublish.notSessionHostWarning=只有編輯器工作階段主持人可以發布至 Realms。
+resourcePack.editor.realmsPublish.genericRealmsIssue=Realms 服務發生問題，請稍後再試。
+resourcePack.editor.realmsPublish.goToMinecraftWebsite=前往 Minecraft.net  
+resourcePack.editor.realmsPublish.Refresh=重新整理  
+resourcePack.editor.realmsPublish.Realm=Realm  
+resourcePack.editor.realmsPublish.RealmSlot=Realm 插槽 
+resourcePack.editor.realmsPublish.EmptySlot=空的欄位
+resourcePack.editor.realmsPublish.PublishNotesTitle=發布至 Realms Note   
+resourcePack.editor.realmsPublish.DownloadRealm=下載    
+resourcePack.editor.realmsPublish.PublishRealm=發布  
+resourcePack.editor.realmsPublish.Confirm=確認   
+resourcePack.editor.realmsPublish.Cancel=取消 
+resourcePack.editor.realmsPublish.Back=返回 
+resourcePack.editor.realmsPublish.PublishFailedNonCompliantWorldName=由於世界名稱無效，發布到 Realms 失敗。請更新世界名稱後再試一次。
+resourcePack.editor.realmsPublish.PublishFailed=發布到 Realms 失敗。請稍後再試。   
+resourcePack.editor.realmsPublish.PublishSuccess=已成功發布到 Realms    
+resourcePack.editor.realmsPublish.PublishConfirmationOptOut=不要再詢問這個 Realm 和工作階段  
+resourcePack.editor.realmsPublish.PublishingToRealms=正在將世界發布到 Realms...  
+resourcePack.editor.realmsPublish.UnableToPublishMissingRealm=無法發布到 Realms。未選擇 Realm    
+resourcePack.editor.realmsPublish.UnableToPublishMissingRealmSlot=無法發布到 Realms。未選擇 Realm 欄位   
+resourcePack.editor.realmsPublish.PublishConfirmationWarning=這會將目前世界從所選欄位移除，並以您目前的編輯器世界取代 (所選欄位也會成為您 Realm 的已啟用欄位)。您 Realm 的成員將可以存取您剛取代的世界。如果您想在發布前儲存目前的世界，以防止資料遺失，請取消此對話方塊，並在「發布」前選取「下載」。選取「確認」以繼續並取代您目前的世界。    
+resourcePack.editor.realmsPublish.DownloadSuccess=在 Realms 中下載世界成功    
+resourcePack.editor.realmsPublish.DownloadFailed=從 Realms 下載世界失敗 
+resourcePack.editor.realmsPublish.DownloadingFromRealms=正從 Realms 下載世界…    
+resourcePack.editor.toolRail.RepeaterTool.title=中繼器工具
+resourcePack.editor.toolRail.RepeaterTool.tooltip=用於重複選取區域的工具
+resourcePack.editor.toolRail.RepeaterTool.pane.Spacing=間距
+resourcePack.editor.toolRail.RepeaterTool.pane.Repetitions=重複次數
+resourcePack.editor.toolRail.RepeaterTool.pane.Preview=預覽
+resourcePack.editor.toolRail.RepeaterTool.pane.Clear=清除
+resourcePack.editor.toolRail.RepeaterTool.pane.Apply=套用
+resourcePack.editor.toolRail.RepeaterTool.statusMessage.noSelection=使用選取工具選取要重複的區域
+resourcePack.editor.toolRail.RepeaterTool.pane.Mode=模式
+resourcePack.editor.toolRail.RepeaterTool.mode.Line=直線
+resourcePack.editor.toolRail.RepeaterTool.mode.Grid=網格
+resourcePack.editor.toolRail.RepeaterTool.pane.RepeatType=重複類型
+resourcePack.editor.toolRail.RepeaterTool.repeat.Uniform=一致化
+resourcePack.editor.toolRail.RepeaterTool.pane.RepeatAlongX=沿 X 重複
+resourcePack.editor.toolRail.RepeaterTool.pane.RepeatAlongY=沿 Y 重複
+resourcePack.editor.toolRail.RepeaterTool.pane.RepeatAlongZ=沿 Z 重複
+resourcePack.editor.toolRail.RepeaterTool.repeat.Separate=分離
+resourcePack.editor.toolRail.RepeaterTool.pane.XCount=X 計數
+resourcePack.editor.toolRail.RepeaterTool.pane.YCount=Y 計數
+resourcePack.editor.toolRail.RepeaterTool.pane.ZCount=Z 計數
+resourcePack.editor.selectionTool.deselect=取消選取
+resourcePack.editor.selectionTool.fillPane.fillAction=填滿選擇
+resourcePack.editor.selectionTool.fillPane.title=填滿選擇區域
+resourcePack.editor.selectionTool.keyBinding.deselect=取消選取範圍內容
+resourcePack.editor.selectionTool.keyBinding.fill=填滿選取範圍內容
+resourcePack.editor.selectionTool.keyBinding.growBack=向後擴展選取範圍
+resourcePack.editor.selectionTool.keyBinding.growDown=向下擴展選取範圍
+resourcePack.editor.selectionTool.keyBinding.growForward=向前擴展選取範圍
+resourcePack.editor.selectionTool.keyBinding.growLeft=向左擴展選取範圍
+resourcePack.editor.selectionTool.keyBinding.growRight=向右擴展選取範圍
+resourcePack.editor.selectionTool.keyBinding.growUp=向上擴展選取範圍
+resourcePack.editor.selectionTool.keyBinding.moveAllSelectionBack=將所有選取範圍向後移動
+resourcePack.editor.selectionTool.keyBinding.moveAllSelectionDown=將所有選取範圍向下移動
+resourcePack.editor.selectionTool.keyBinding.moveAllSelectionForward=將所有選取範圍向前移動
+resourcePack.editor.selectionTool.keyBinding.moveAllSelectionLeft=將所有選取範圍向左移動
+resourcePack.editor.selectionTool.keyBinding.moveAllSelectionRight=將所有選取範圍向右移動
+resourcePack.editor.selectionTool.keyBinding.moveAllSelectionUp=將所有選取範圍向上移動
+resourcePack.editor.selectionTool.keyBinding.moveCursorBack=向後移動游標
+resourcePack.editor.selectionTool.keyBinding.moveCursorDown=向下移動游標
+resourcePack.editor.selectionTool.keyBinding.moveCursorForward=向前移動游標
+resourcePack.editor.selectionTool.keyBinding.moveCursorLeft=向左移動游標
+resourcePack.editor.selectionTool.keyBinding.moveCursorRight=向右移動游標
+resourcePack.editor.selectionTool.keyBinding.moveCursorUp=向上移動游標
+resourcePack.editor.selectionTool.keyBinding.moveSelectionBack=向後移動選取範圍
+resourcePack.editor.selectionTool.keyBinding.moveSelectionDown=向下移動選取範圍
+resourcePack.editor.selectionTool.keyBinding.moveSelectionForward=向前移動選取範圍
+resourcePack.editor.selectionTool.keyBinding.moveSelectionLeft=向左移動選取範圍
+resourcePack.editor.selectionTool.keyBinding.moveSelectionRight=向右移動選取範圍
+resourcePack.editor.selectionTool.keyBinding.moveSelectionUp=向上移動選取範圍
+resourcePack.editor.selectionTool.keyBinding.shrinkBack=向後縮小選取範圍
+resourcePack.editor.selectionTool.keyBinding.shrinkDown=向下縮小選取範圍
+resourcePack.editor.selectionTool.keyBinding.shrinkForward=向前縮小選取範圍
+resourcePack.editor.selectionTool.keyBinding.shrinkLeft=向左縮小選取範圍
+resourcePack.editor.selectionTool.keyBinding.shrinkRight=向右縮小選取範圍
+resourcePack.editor.selectionTool.keyBinding.shrinkUp=向上縮小選取範圍
+resourcePack.editor.selectionTool.keyBinding.toggleTool=切換選取工具
+resourcePack.editor.selectionTool.keyBinding.select=選取方塊
+resourcePack.editor.selectionTool.keyBinding.selectMultiple=選取額外的方塊
+resourcePack.editor.selectionTool.keyBinding.trimVolume=修剪選擇 (界限)
+resourcePack.editor.selectionTool.keyBinding.trimRemoveAir=修剪選擇 (移除空氣)
+resourcePack.editor.selectionTool.marquee.title=選取框選擇
+resourcePack.editor.selectionTool.modeSelection.freehand.title=手繪畫筆模式
+resourcePack.editor.selectionTool.modeSelection.freehand.tooltip=使用手繪畫筆形狀選取世界中的方塊
+resourcePack.editor.selectionTool.modeSelection.marquee.title=選取框模式
+resourcePack.editor.selectionTool.modeSelection.marquee.tooltip=使用長方體區域選取世界中的方塊
+resourcePack.editor.selectionTool.modeSelection.magic.title=魔法選擇模式
+resourcePack.editor.selectionTool.modeSelection.magic.tooltip=從選定的原點開始，使用搜尋模式來選取世界中的方塊
+resourcePack.editor.selectionTool.modeSelection.title=選取模式
+resourcePack.editor.selectionTool.projectThroughLiquid=藉由液體投射
+resourcePack.editor.selectionTool.trimAction.trimVolume=修剪選擇
+resourcePack.editor.selectionTool.trimAction.trimVolume.tooltip=修剪目前選取的區域，以便於內部僅裝載實心方塊   
+resourcePack.editor.selectionTool.trimAction.removeAir=移除空氣
+resourcePack.editor.selectionTool.trimAction.removeAir.tooltip=從目前選取的區域中移除空氣，僅留下指定的方塊 
+resourcePack.editor.selectionTool.trimAction.trimVolume.SettingsPane.title=修剪設定
+resourcePack.editor.selectionTool.trimAction.trimVolume.SettingsPane.ignoreLiquid=忽略液體
+resourcePack.editor.selectionTool.trimAction.trimVolume.SettingsPane.ignoreLiquid.tooltip=修剪區域時，忽略所有的液體方塊 
+resourcePack.editor.selectionTool.trimAction.trimVolume.SettingsPane.onlyCollidable=僅限碰撞方塊
+resourcePack.editor.selectionTool.trimAction.trimVolume.SettingsPane.onlyCollidable.tooltip=修剪區域時，忽略所有沒有碰撞的方塊 (草、樹葉等) 
+resourcePack.editor.selectionTool.quickAction.clearSelection.tooltip=取消選取目前的選取區域
+resourcePack.editor.selectionTool.quickAction.clearSelection=取消選取
+resourcePack.editor.selectionTool.quickAction.deleteSelection.tooltip=移除目前選取範圍內的所有方塊
+resourcePack.editor.selectionTool.quickAction.deleteSelection=刪除
+resourcePack.editor.selectionTool.quickAction.fillSelection.tooltip=使用目前選取的方塊類型填充目前的選擇區域
+resourcePack.editor.selectionTool.quickAction.fillSelection=填滿
+resourcePack.editor.selectionTool.quickAction.title=快速反應事件
+resourcePack.editor.selectionTool.selectionMode.adjacent=鄰近的
+resourcePack.editor.selectionTool.selectionMode.fixedDistance=固定距離
+resourcePack.editor.selectionTool.selectionMode.mouseAndKeyboard=任意形狀
+resourcePack.editor.selectionTool.selectionMode=模式
+resourcePack.editor.selectionTool.settingsPane.title=選擇
+resourcePack.editor.selectionTool.toolRail.description=按一下滑鼠左鍵以建立選取範圍；按下 CTRL+D 取消選擇
+resourcePack.editor.selectionTool.toolRail.title=選擇
+resourcePack.editor.selectionTool.transformPane.origin.tooltip=在世界座標中，選取範圍的原點位置。
+resourcePack.editor.selectionTool.transformPane.origin=原點
+resourcePack.editor.selectionTool.transformPane.size=大小
+resourcePack.editor.selectionTool.transformPane.title=變形
+resourcePack.editor.BlockMaskControl.trim.rootPane.title=修剪設定
+resourcePack.editor.BlockMaskControl.trim.toggleGroup.title=遮罩模式
+resourcePack.editor.BlockMaskControl.trim.toggleGroup.item.disabled.label=停用方塊篩選器
+resourcePack.editor.BlockMaskControl.trim.toggleGroup.item.disabled.tooltip=已停用
+resourcePack.editor.BlockMaskControl.trim.toggleGroup.item.mask.label=遮罩
+resourcePack.editor.BlockMaskControl.trim.toggleGroup.item.mask.tooltip=符合清單的方塊會被忽略
+resourcePack.editor.BlockMaskControl.trim.toggleGroup.item.replace.label=取代
+resourcePack.editor.BlockMaskControl.trim.toggleGroup.item.replace.tooltip=符合清單的方塊會被視為固體
+resourcePack.editor.server.description=編輯器伺服器資源
+resourcePack.editor.server.name=編輯器資源
+resourcePack.editor.toolRail.Terrain.title=地形
+resourcePack.editor.toolRail.Terrain.keybinding.toggleTool=切換地形工具
+resourcePack.editor.toolRail.Terrain.keyBinding.switch=切換地形模式
+resourcePack.editor.toolRail.Terrain.Mode.title=地形模式
+resourcePack.editor.toolRail.Terrain.Smooth.mode.title=平滑視角模式
+resourcePack.editor.toolRail.Terrain.Smooth.tooltip=根據平滑強度對地形進行平滑處理
+resourcePack.editor.toolRail.Terrain.SmoothStrength=平滑強度
+resourcePack.editor.toolRail.Terrain.Roughen.mode.title=粗糙模式
+resourcePack.editor.toolRail.Terrain.Roughen.tooltip=根據粗糙強度對地形進行粗糙化
+resourcePack.editor.toolRail.Terrain.RoughenStrength=粗糙強度
+resourcePack.editor.toolRail.Terrain.description=地形工具可平滑或粗化地形
+resourcePack.editor.help.learnMore=深入了解
+resourcePack.editor.statusBar.connectedPlayers=已連線的玩家 %s
+resourcePack.editor.summonTool.summonSubPane.EntityPickerTitle=實體類型
+resourcePack.editor.timeOfDay.12hrClock=12 小時制
+resourcePack.editor.timeOfDay.24hrClock=24 小時制
+resourcePack.editor.timeOfDay.clockType=時鐘類型
+resourcePack.editor.timeOfDay.currentTime=目前時間
+resourcePack.editor.timeOfDay.customTime=自訂時間
+resourcePack.editor.timeOfDay.daylightCycle=日照時長
+resourcePack.editor.timeOfDay.dropDown.day=日
+resourcePack.editor.timeOfDay.dropDown.midnight=午夜
+resourcePack.editor.timeOfDay.dropDown.night=夜晚
+resourcePack.editor.timeOfDay.dropDown.none=無
+resourcePack.editor.timeOfDay.dropDown.noon=中午
+resourcePack.editor.timeOfDay.dropDown.sunrise=清晨
+resourcePack.editor.timeOfDay.dropDown.sunset=傍晚
+resourcePack.editor.timeOfDay.dropDown.custom=自訂
+resourcePack.editor.timeOfDay.dropDown.title=預設配置
+resourcePack.editor.timeOfDay.menu.title=時刻設定
+resourcePack.editor.timeOfDay.minecraftClock=Minecraft 時鐘
+resourcePack.editor.timeOfDay.title=時間設定
+resourcePack.editor.toolMode.keyBinding.console=開啟主控台
+resourcePack.editor.toolMode.keyBinding.devConsole=開啟開發人員主控台
+resourcePack.editor.toolMode.keyBinding.hotbar1=選擇快捷列 1
+resourcePack.editor.toolMode.keyBinding.hotbar2=選擇快捷列 2
+resourcePack.editor.toolMode.keyBinding.hotbar3=選擇快捷列 3
+resourcePack.editor.toolMode.keyBinding.hotbar4=選擇快捷列 4
+resourcePack.editor.toolMode.keyBinding.hotbar5=選擇快捷列 5
+resourcePack.editor.toolMode.keyBinding.hotbar6=選擇快捷列 6
+resourcePack.editor.toolMode.keyBinding.hotbar7=選擇快捷列 7
+resourcePack.editor.toolMode.keyBinding.hotbar8=選擇快捷列 8
+resourcePack.editor.toolMode.keyBinding.hotbar9=選擇快捷列 9
+resourcePack.editor.toolMode.keyBinding.reload=重新載入 
+resourcePack.editor.toolRail.blockPalette.title=方塊調色板 (CTRL+P)
+resourcePack.editor.toolRail.blockPalette.tooltip=設定您最喜歡或最常用的調色板
+resourcePack.editor.toolRail.flattenBrush.title=平滑筆刷
+resourcePack.editor.toolRail.flattenBrush.tooltip=將一個區域垂直削平到所選方塊的高度
+resourcePack.editor.toolRail.flattenBrush.settings.heightThreshold=高度界限
+resourcePack.editor.toolRail.flattenBrush.settings.radius=半徑
+resourcePack.editor.toolRail.floodFillSelectionTool.description=使用泛洪填充演算法選擇目前正在查看的區域。
+resourcePack.editor.toolRail.floodFillSelectionTool.title=泛洪填充選擇工具。
+resourcePack.editor.toolRail.line.keyBinding.delete=刪除內容
+resourcePack.editor.toolRail.line.keyBinding.deleteAndClear=刪除內容並取消選取
+resourcePack.editor.toolRail.line.keyBinding.deselect=取消選取
+resourcePack.editor.toolRail.line.keyBinding.deselectAll=全部取消選取
+resourcePack.editor.toolRail.line.keyBinding.fill=填滿內容
+resourcePack.editor.toolRail.line.keyBinding.fillAndClear=填滿內容並取消選取
+resourcePack.editor.toolRail.line.keyBinding.moveBack=向後移動已選取範圍
+resourcePack.editor.toolRail.line.keyBinding.moveDown=向下移動已選取範圍
+resourcePack.editor.toolRail.line.keyBinding.moveForward=向前移動已選取項目
+resourcePack.editor.toolRail.line.keyBinding.moveLeft=向左移動已選取項目
+resourcePack.editor.toolRail.line.keyBinding.moveRight=向右移動已選取項目
+resourcePack.editor.toolRail.line.keyBinding.moveUp=向上移動已選取項目
+resourcePack.editor.toolRail.line.keyBinding.selectAll=全選
+resourcePack.editor.toolRail.line.pane.algorithm.Direct=指揮
+resourcePack.editor.toolRail.line.pane.algorithm.Staggered=交錯 (柵欄)
+resourcePack.editor.toolRail.line.pane.algorithm.title=演算法
+resourcePack.editor.toolRail.line.pane.fillAction=填滿選擇區域
+resourcePack.editor.toolRail.line.pane.height.title=高度
+resourcePack.editor.toolRail.line.pane.selectionMode.adjacent=相鄰面
+resourcePack.editor.toolRail.line.pane.selectionMode.fixedDistance=固定距離
+resourcePack.editor.toolRail.line.pane.selectionMode.freeForm=任意形狀
+resourcePack.editor.toolRail.line.pane.selectionMode=選擇
+resourcePack.editor.toolRail.line.pane.surfaceContour=表面輪廓
+resourcePack.editor.toolRail.line.pane.width.title=寬度
+resourcePack.editor.toolRail.line.title=橫列
+resourcePack.editor.toolRail.line.tooltip=線條工具建立方塊條
+resourcePack.editor.toolRail.rulerTool.title=尺規工具
+resourcePack.editor.toolRail.rulerTool.tooltip=測量距離
+resourcePack.editor.toolRail.rulerTool.info.title=測量
+resourcePack.editor.toolRail.smartFillTool.title=智慧填充工具
+resourcePack.editor.toolRail.smartFillTool.tooltip=按一下以填滿已連結的方塊
+resourcePack.editor.toolRail.smartFillTool.modes.fillVolume=填充體積
+resourcePack.editor.toolRail.smartFillTool.areaLimit.title=面積限制
+resourcePack.editor.toolRail.smartFillTool.areaLimit.tooltip=最大填滿區域
+resourcePack.editor.toolRail.summonTool.keyBinding.clear=清除選擇
+resourcePack.editor.toolRail.summonTool.keyBinding.delete=刪除實體
+resourcePack.editor.toolRail.summonTool.keyBinding.moveBack=向後移動已選取項目
+resourcePack.editor.toolRail.summonTool.keyBinding.moveDown=向下移動已選取項目
+resourcePack.editor.toolRail.summonTool.keyBinding.moveForward=向前移動已選取項目
+resourcePack.editor.toolRail.summonTool.keyBinding.moveLeft=向左移動已選取項目
+resourcePack.editor.toolRail.summonTool.keyBinding.moveRight=向右移動已選取項目
+resourcePack.editor.toolRail.summonTool.keyBinding.moveUp=向上移動已選取項目
+resourcePack.editor.toolRail.summonTool.keyBinding.toggle=切換召喚工具
+resourcePack.editor.toolRail.summonTool.pane.select=選取模式
+resourcePack.editor.toolRail.summonTool.pane.title=召喚工具
+resourcePack.editor.toolRail.summonTool.pane.type=實體類型
+resourcePack.editor.toolRail.summonTool.tool.infoText=按一下實體來選取它，或按一下地圖來召喚一個新的實體
+resourcePack.editor.toolRail.summonTool.tool.selectSubPane.rotation=旋轉
+resourcePack.editor.toolRail.summonTool.tool.selectSubPane=實體選取
+resourcePack.editor.toolRail.summonTool.tool.summonSubPane=實體生成
+resourcePack.editor.toolRail.summonTool.tool.tip=按一下以召喚實體
+resourcePack.editor.toolRail.summonTool.tool.title=召喚工具
+resourcePack.editor.toolRail.workbenchSettings.title=工作台
+resourcePack.editor.toolRail.workbenchTool.title=工作台
+resourcePack.editor.toolRail.workbenchTool.description=快速變更方塊狀態
+resourcePack.editor.toolRail.workbenchTool.howToUse=高亮顯示方塊以查看可用的動作來變更其狀態 (開啟/關閉、旋轉、反轉等)。同時嘗試使用 Shift 和 Control 鍵作為修飾鍵！請注意，此功能僅適用於具有可修改屬性的方塊 (例如：門、柵欄、樓梯等)。
+resourcePack.editor.toolRail.workbenchTool.tooltip=變更方塊狀態
+resourcePack.editor.toolRail.workbenchTool.block=封鎖
+resourcePack.editor.toolRail.workbenchTool.leftClick=按一下左鍵
+resourcePack.editor.toolRail.workbenchTool.shiftLeftClick=Shift + 滑鼠左鍵按一下
+resourcePack.editor.toolRail.workbenchTool.controlLeftClick=CTRL + 滑鼠左鍵按一下
+resourcePack.editor.toolRail.workbenchTool.shiftControlLeftClick=Shift + CTRL + 滑鼠左鍵按一下
+resourcePack.editor.toolRail.workbenchTool.leftClickTooltip=在方塊上按一下右鍵，即可執行主要工作台行動
+resourcePack.editor.toolRail.workbenchTool.shiftLeftClickTooltip=Shift +向左按一下方塊即可執行次要工作台行動
+resourcePack.editor.toolRail.workbenchTool.controlLeftClickTooltip=Control + 在方塊上按一下左鍵，即可執行第三工作台行動
+resourcePack.editor.toolRail.workbenchTool.shiftControlLeftClickTooltip=Shift + Control + 左鍵按一下區塊會執行第四工作台行動
+resourcePack.editor.toolRail.workbenchTool.stripWood=剝皮 / 未剝皮木頭
+resourcePack.editor.toolRail.workbenchTool.ladderLocation=階梯位置
+resourcePack.editor.toolRail.workbenchTool.autoAlign=自動對齊
+resourcePack.editor.toolRail.workbenchTool.autoAlignFacingDirection=自動對齊面對方向
+resourcePack.editor.toolRail.workbenchTool.autoAlignRotation=自動對齊旋轉
+resourcePack.editor.toolRail.workbenchTool.topSlotBitProp=頂部 / 底部
+resourcePack.editor.toolRail.workbenchTool.pillarAxisProp=旋轉
+resourcePack.editor.toolRail.workbenchTool.heightProp=圖層
+resourcePack.editor.toolRail.workbenchTool.candlesProp=蠟燭數量
+resourcePack.editor.toolRail.workbenchTool.turtleEggCountProp=海龜蛋數量
+resourcePack.editor.toolRail.workbenchTool.clusterCountProp=火體蟲數量
+resourcePack.editor.toolRail.workbenchTool.hangingProp=切換從另一個方塊懸掛
+resourcePack.editor.toolRail.workbenchTool.wallPostBitProp=切換貼文
+resourcePack.editor.toolRail.workbenchTool.upsideDownBitProp=頂部 / 底部
+resourcePack.editor.toolRail.workbenchTool.openBitProp=開啟 / 關閉
+resourcePack.editor.toolRail.workbenchTool.litProp=點亮 / 未點亮
+resourcePack.editor.toolRail.workbenchTool.dripstoneThicknessProp=滴水石厚度
+resourcePack.editor.toolRail.workbenchTool.directionProp=面對方向
+resourcePack.editor.toolRail.workbenchTool.weirdoDirectionProp=旋轉
+resourcePack.editor.toolRail.workbenchTool.facingDirectionProp=面對方向
+resourcePack.editor.toolRail.workbenchTool.cardinalDirectionProp=面對方向
+resourcePack.editor.toolRail.workbenchTool.addCustomMapping=新增自訂對應
+resourcePack.editor.toolRail.workbenchTool.blockProperty=方塊屬性
+resourcePack.editor.toolRail.workbenchTool.clickBinding=按一下綁定
+resourcePack.editor.toolRail.workbenchTool.addMapping=新增對應
+resourcePack.editor.toolRail.workbenchTool.resetAllMappings=重設所有對應
+resourcePack.editor.workbenchTool.keyBinding.primaryAction=工作台主要行動
+resourcePack.editor.workbenchTool.keyBinding.secondaryAction=工作台次要行動
+resourcePack.editor.workbenchTool.keyBinding.tertiaryAction=工作台第三行動
+resourcePack.editor.workbenchTool.keyBinding.quaternaryAction=工作台第四行動
+resourcePack.editor.transaction.keyBinding.redo=取消復原
+resourcePack.editor.transaction.keyBinding.undo=復原
+resourcePack.editor.viewport.keyBinding.moveBack=往後
+resourcePack.editor.viewport.keyBinding.moveDown=向下移動
+resourcePack.editor.viewport.keyBinding.moveForward=往前
+resourcePack.editor.viewport.keyBinding.moveLeft=往左
+resourcePack.editor.viewport.keyBinding.moveRight=往右
+resourcePack.editor.viewport.keyBinding.moveUp=向上移動
+resourcePack.editor.viewport.keyBinding.incrementFlySpeed=提升飛行速度
+resourcePack.editor.viewport.keyBinding.decrementFlySpeed=減少飛行速度
+resourcePack.editor.viewSettings.compass.tip=顯示方向羅盤
+resourcePack.editor.viewSettings.compass.title=顯示羅盤
+resourcePack.editor.viewSettings.chunk.tip=在地圖上顯示區塊邊界的輪廓
+resourcePack.editor.viewSettings.chunk.title=顯示區塊邊界
+resourcePack.editor.viewSettings.nightVision.tip=向世界展現你擁有夜視能力
+resourcePack.editor.viewSettings.nightVision.title=夜視
+resourcePack.editor.viewSettings.invisible.tip=顯示隱形方塊 (例如虛空、屏障等)
+resourcePack.editor.viewSettings.invisible.title=顯示隱形方塊
+resourcePack.editor.viewSettings.flySpeed.tip=提升飛行速度以更快地操控地圖
+resourcePack.editor.viewSettings.flySpeed.title=飛行速度加倍
+resourcePack.editor.viewSettings.menu=設定
+resourcePack.editor.viewSettings.title=設定
+resourcePack.editor.hotbar.defaultDisplayName=預設
+resourcePack.editor.reloadScripts.response.tooMany=連線到伺服器的玩家人數過多。只有單一玩家連線的主機才支援指令碼重新載入。
+resourcePack.editor.reloadScripts.response.genericError=嘗試重新載入指令碼時發生錯誤。
+resourcePack.editor.reloadScripts.response.noAdminRights=你沒有重新載入指令碼的權限。

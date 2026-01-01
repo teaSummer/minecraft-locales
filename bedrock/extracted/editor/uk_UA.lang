@@ -1,912 +1,806 @@
-﻿## Comments can be added anywhere on a valid line by starting with '##'
-##
-## Note, trailing spaces will NOT be trimmed. If you want room between the end of the string and the start of a
-## comment on the same line, use TABs.
-
-commands.editor.project.beginExport=Експорт...	#
-commands.editor.project.description=Маніпулювання поточним завантаженим проєктом	#
-commands.editor.project.export=Експорт проєктів	#
-commands.editor.project.exportComplete=Експорт завершено, файли переписані на %s	#
-commands.editor.project.exportCopyFailed=Не вдалося скопіювати дані рівня %s	#
-commands.editor.project.unknownSubcommand=Невідома підкоманда	#
-
-resourcePack.editor.actionBar.redo.tooltipDescription=Повторення дії	#
-resourcePack.editor.actionBar.redo.tooltipTitle=Повторити	#
-resourcePack.editor.actionBar.redo=Повторити	#
-resourcePack.editor.actionBar.undo.tooltipDescription=Скасування дії	#
-resourcePack.editor.actionBar.undo.tooltipTitle=Скасувати	#
-resourcePack.editor.actionBar.undo=Скасувати	#
-resourcePack.editor.actionBar.fill=Заповнити 	####Label for an actionbar item that fills the selection with the current hotbar block.{MaxLength=100}
-resourcePack.editor.actionBar.fill.tooltipDescription=Заповніть виділену область поточним блоком панелі швидкого доступу 	####Tooltip description for an actionbar item that fills the selection with the current hotbar block.{MaxLength=100}
-resourcePack.editor.actionBar.fill.tooltipTitle=Заповнити 	####Tooltip title for an actionbar item that fills the selection with the current hotbar block.{MaxLength=100}
-
-resourcePack.editor.agfx.settings.error.title=Сталася помилка(помилки)…	#
-resourcePack.editor.agfx.pane.title=Редактор параметрів	#
-resourcePack.editor.agfx.pane.settings_selector=Вибрати налаштування	#
-resourcePack.editor.agfx.pane.settings.title=Налаштування	#
-resourcePack.editor.agfx.pane.settings.revert_changes=Скасувати зміни	#
-resourcePack.editor.agfx.pane.settings.export_to_clipboard=Експорт у буфер обміну	#
-
-
-resourcePack.editor.toolRail.blockInspectorSettings.title=Інспектор блока   	####This string is what is shown in the title bar of the Editor pane for inspecting blocks.{MaxLength=30}
-resourcePack.editor.toolRail.blockInspectorSettings.specifics=Специфічні параметри блока   	####This string is the heading that contains the block tags and block properties subpane.{MaxLength=30}
-resourcePack.editor.toolRail.blockInspectorSettings.actions.refresh=Оновити дані блока   	####This string shown on a button for forcing an update to the block data state.{MaxLength=30}
-resourcePack.editor.toolRail.blockInspectorSettings.actions.clear=Скасувати вибір   	####This string shown on a button for clearing what block is currently selected.{MaxLength=30}
-resourcePack.editor.toolRail.blockInspectorSettings.blockTags=Теги блока   	####This string is a header for a panel that shows the block tags on the currently selected block.{MaxLength=30}
-resourcePack.editor.toolRail.blockInspectorSettings.blockProperties=Властивості блока   	####This string is a header for a panel that shows the block properties on the currently selected block.{MaxLength=30}
-resourcePack.editor.toolRail.blockInspectorSettings.blockProperties.name=Назва властивості   	####Within the block properties pane, this string goes before the property name.{MaxLength=30}
-resourcePack.editor.toolRail.blockInspectorSettings.blockProperties.value=Значення властивості   	####Within the block properties pane, this string goes before the property value.{MaxLength=30}
-resourcePack.editor.toolRail.blockInspectorTool.title=Інспектор блока   	####This string is what is shown as the name of the block inspector tool.{MaxLength=30}
-resourcePack.editor.toolRail.blockInspectorTool.tooltip=Переглянути дані блока   	####This string is what is shown when hovering over the block inspector icon.{MaxLength=30}
-resourcePack.editor.toolRail.blockInspectorTool.pane.helpText=Клацніть лівою кнопкою миші на блок, щоб переглянути та відредагувати його властивості   	####This string is shown in the block inspector tool pane before the user clicks to describe how to use it.{MaxLength=100}
-resourcePack.editor.blockInspector.toolRail.description=Клацніть лівою кнопкою миші на блок, щоб переглянути та відредагувати його властивості   	####This string is shown in the tool tip to explain the function of the Block Inspector tool.{MaxLength=100}
-
-
-resourcePack.editor.blockPalette.addSearchItem=Використати знайдений блок	#
-resourcePack.editor.blockPalette.blockPicker=Пошук	#
-resourcePack.editor.blockPalette.paletteDropdown.title=Палітра	#
-resourcePack.editor.blockPalette.title=Палітра блоків	#
-
-
-resourcePack.editor.brushPaint.inputContext.activateBrushPaint=Активація пензля	#
-resourcePack.editor.brushPaint.inputContext.oneshot=Одноразове фарбування	#
-resourcePack.editor.brushPaint.inputContext.title=Пензель	#
-resourcePack.editor.brushPaint.title=Пензель	#
-resourcePack.editor.brushPaint.tooltip=Використовуйте пензлі для розфарбовування блоків у світі	#
-
-
-resourcePack.editor.BrushPaintControl.brush.title=Пензель	#
-resourcePack.editor.BrushPaintControl.brushSettings.title=Налаштування пензля	#
-resourcePack.editor.BrushPaintControl.shapeSettings.title=Налаштування форми 	####Represents an expander that has UI controls for brush shape settings.{MaxLength=100}
-resourcePack.editor.BrushPaintControl.fillConstraints.mask.title=Список масок	#
-resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.disabled.tooltip=Вимкнути фільтри блоків	#
-resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.disabled=Вимкнуто	#
-resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.mask.tooltip=Блоки зі списку будуть проігноровані й залишаться незмінними	#
-resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.mask=Маска	#
-resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.replace=Замінити	#
-resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.title=Фільтр блоків пензля	#
-resourcePack.editor.BrushPaintControl.fillConstraints.replace.title=Замінити список	#
-resourcePack.editor.BrushPaintControl.fillConstraints.replace.tooltip=З блоками зі списку можна здійснювати операції	#
-resourcePack.editor.BrushPaintControl.fillConstraints.title=Обмеження заповнення	#
-resourcePack.editor.BrushPaintControl.keybinding.maskMask=Режим маски – Маска	#
-resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetBack=Виштовхнути зсув назад	#
-resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetDown=Виштовхнути зсув униз	#
-resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetForward=Виштовхнути зсув уперед	#
-resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetLeft=Виштовхнути зсув ліворуч	#
-resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetRight=Виштовхнути зсув праворуч	#
-resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetUp=Виштовхнути зсув угору	#
-resourcePack.editor.BrushPaintControl.keybinding.replaceMask=Режим маски – Заміна	#
-resourcePack.editor.BrushPaintControl.offset.title=Зсув	#
-resourcePack.editor.BrushPaintControl.offset.tooltip=Зсув від позиції курсора	#
-resourcePack.editor.BrushPaintControl.rootPane.title=Налаштування пензля	#
-
-
-resourcePack.editor.brushShape.common.settings.axis=Вісь екструзії	#
-resourcePack.editor.brushShape.common.settings.height=Висота	#
-resourcePack.editor.brushShape.common.settings.length=Довжина	#
-resourcePack.editor.brushShape.common.settings.radius=Радіус	#
-resourcePack.editor.brushShape.common.settings.uniform=Рівномірний	#
-resourcePack.editor.brushShape.common.settings.xAxis=Вісь X	#
-resourcePack.editor.brushShape.common.settings.xAxisNeg=-Вісь X	#
-resourcePack.editor.brushShape.common.settings.yAxis=Вісь Y	#
-resourcePack.editor.brushShape.common.settings.yAxisNeg=-Вісь Y	#
-resourcePack.editor.brushShape.common.settings.zAxis=Вісь Z	#
-resourcePack.editor.brushShape.common.settings.zAxisNeg=-Вісь Z	#
-resourcePack.editor.brushShape.cone.name=Конус	#
-resourcePack.editor.brushShape.cone.settings.depth=Глибина радіуса	#
-resourcePack.editor.brushShape.cone.settings.width=Ширина радіуса	#
-resourcePack.editor.brushShape.cuboid.name=Кубоїд	#
-resourcePack.editor.brushShape.cuboid.settings.depth=Глибина	#
-resourcePack.editor.brushShape.cuboid.settings.height=Висота	#
-resourcePack.editor.brushShape.cuboid.settings.width=Ширина	#
-resourcePack.editor.brushShape.cylinder.name=Циліндр	#
-resourcePack.editor.brushShape.cylinder.settings.depth_radius=Глибина радіуса	#
-resourcePack.editor.brushShape.cylinder.settings.width_radius=Ширина радіуса	#
-resourcePack.editor.brushShape.ellipsoid.name=Еліпсоїд	#
-resourcePack.editor.brushShape.ellipsoid.settings.depth_radius=Глибина радіуса	#
-resourcePack.editor.brushShape.ellipsoid.settings.height_radius=Висота радіуса	#
-resourcePack.editor.brushShape.ellipsoid.settings.width_radius=Ширина радіуса	#
-resourcePack.editor.brushShape.pyramid.name=Піраміда	#
-resourcePack.editor.brushShape.pyramid.settings.depth=Глибина	#
-resourcePack.editor.brushShape.pyramid.settings.height=Висота	#
-resourcePack.editor.brushShape.pyramid.settings.width=Ширина	#
-resourcePack.editor.brushShape.singleBlock.name=Одиночний блок	#
-resourcePack.editor.brushShape.star.name=Зірка 	####Represent a star shaped brush.{MaxLength=100}
-resourcePack.editor.brushShape.star.settings.includeVertical=Включати вертикальні 	####Represents a toggle button label that removes vertical parts of a star brush if unchecked.{MaxLength=100}
-
-
-resourcePack.editor.client.description=Клієнтські ресурси редактора	#
-resourcePack.editor.client.name=Ресурси редактора	#
-
-
-resourcePack.editor.ClipboardPreviewControl.keybinding.moveOriginBack=Перемістити початкову точку назад	#
-resourcePack.editor.ClipboardPreviewControl.keybinding.moveOriginDown=Перемістити початкову точку вниз	#
-resourcePack.editor.ClipboardPreviewControl.keybinding.moveOriginForward=Перемістити початкову точку вперед	#
-resourcePack.editor.ClipboardPreviewControl.keybinding.moveOriginLeft=Перемістити початкову точку ліворуч	#
-resourcePack.editor.ClipboardPreviewControl.keybinding.moveOriginRight=Перемістити початкову точку праворуч	#
-resourcePack.editor.ClipboardPreviewControl.keybinding.moveOriginUp=Перемістити початкову точку вгору	#
-resourcePack.editor.ClipboardPreviewControl.keyBinding.nudgeOffsetBack=Виштовхнути зсув назад	#
-resourcePack.editor.ClipboardPreviewControl.keyBinding.nudgeOffsetDown=Виштовхнути зсув униз	#
-resourcePack.editor.ClipboardPreviewControl.keyBinding.nudgeOffsetForward=Виштовхнути зсув уперед	#
-resourcePack.editor.ClipboardPreviewControl.keyBinding.nudgeOffsetLeft=Виштовхнути зсув ліворуч	#
-resourcePack.editor.ClipboardPreviewControl.keyBinding.nudgeOffsetRight=Виштовхнути зсув праворуч	#
-resourcePack.editor.ClipboardPreviewControl.keyBinding.nudgeOffsetUp=Виштовхнути зсув угору	#
-resourcePack.editor.ClipboardPreviewControl.keybinding.rotateClockWise=Повернути попередній перегляд за годинниковою стрілкою	#
-resourcePack.editor.ClipboardPreviewControl.keybinding.rotateCounterClockWise=Повернути попередній перегляд проти годинникової стрілки	#
-resourcePack.editor.ClipboardPreviewControl.keybinding.toggleMirrorX=Перемкнути віддзеркалення X	#
-resourcePack.editor.ClipboardPreviewControl.keybinding.toggleMirrorZ=Перемкнути віддзеркалення Z	#
-resourcePack.editor.ClipboardPreviewControl.mirror.axis.x.tooltip=Віддзеркалення елемента буфера обміну навколо осі X у початковій точці	#
-resourcePack.editor.ClipboardPreviewControl.mirror.axis.x=Віддзеркалити (вісь X)	#
-resourcePack.editor.ClipboardPreviewControl.mirror.axis.z.tooltip=Віддзеркалення елемента буфера обміну навколо осі Z у початковій точці	#
-resourcePack.editor.ClipboardPreviewControl.mirror.axis.z=Віддзеркалити (вісь Z)	#
-resourcePack.editor.ClipboardPreviewControl.offset.title=Зсув	#
-resourcePack.editor.ClipboardPreviewControl.offset.tooltip=Додатковий зсув від точки розміщення до початкової точки елемента буфера обміну	#
-resourcePack.editor.ClipboardPreviewControl.origin.title=Початок координат	#
-resourcePack.editor.ClipboardPreviewControl.origin.tooltip=Початкова точка в елементі буфера обміну.  Використовується як прив'язка для розміщення, а також як точка, навколо якої буфер обміну обертається і дзеркально відображається	#
-resourcePack.editor.ClipboardPreviewControl.placement.title=Параметри	#
-resourcePack.editor.ClipboardPreviewControl.rootPane.title=Інформація про буфер обміну	#
-resourcePack.editor.ClipboardPreviewControl.rotation.180=180°	#
-resourcePack.editor.ClipboardPreviewControl.rotation.270=270°	#
-resourcePack.editor.ClipboardPreviewControl.rotation.90=90°	#
-resourcePack.editor.ClipboardPreviewControl.rotation.none=Немає	#
-resourcePack.editor.ClipboardPreviewControl.rotation.title=Обертання	#
-resourcePack.editor.ClipboardPreviewControl.rotation.tooltip=Величина обертання навколо осі Y у початковій точці	#
-resourcePack.editor.ClipboardPreviewControl.structureSize.title=Розмір буфера обміну	#
-
-
-resourcePack.editor.copypaste.actionbar.copy.title=Копіювати	#
-resourcePack.editor.copypaste.actionbar.copy.tooltip=Копіювати вибране в буфер обміну	#
-resourcePack.editor.copypaste.actionbar.copy.tooltipDescription=Копіювання вмісту виділеної області в буфер обміну, без змін у виділеній області	#
-resourcePack.editor.copypaste.actionbar.cut.title=Вирізати	#
-resourcePack.editor.copypaste.actionbar.cut.tooltip=Вирізати / перемістити виділену область у буфер обміну	#
-resourcePack.editor.copypaste.actionbar.cut.tooltipDescription=Копіювання вмісту виділеної області в буфер обміну та видалення вибраного вмісту	#
-resourcePack.editor.copypaste.keyBinding.copy=Копіювати вибране в буфер обміну	#
-resourcePack.editor.copypaste.keyBinding.cut=Вирізати / перемістити вибране в буфер обміну	#
-resourcePack.editor.copypaste.keyBinding.paste=Вставити елемент із буферу обміну у світ	#
-resourcePack.editor.copypaste.menu.copy.title=Копіювати виділення	#
-resourcePack.editor.copypaste.menu.cut.title=Вирізати виділену область	#
-
-
-resourcePack.editor.core.keyBinding.showGameMenu=Показати меню гри	#
-resourcePack.editor.core.keyBinding.showLogPanel=Показати панель журналу	#
-
-
-resourcePack.editor.CursorModeControl.cursorTargetMode.block.tooltip=Блок під курсором миші	#
-resourcePack.editor.CursorModeControl.cursorTargetMode.block=Блок	#
-resourcePack.editor.CursorModeControl.cursorTargetMode.face.tooltip=Блок, що безпосередньо примикає до грані блоку під курсором	#
-resourcePack.editor.CursorModeControl.cursorTargetMode.face=Суміжні	#
-resourcePack.editor.CursorModeControl.cursorTargetMode.title=Мішень	#
-resourcePack.editor.CursorModeControl.cursorTargetMode.tooltip=Виберіть режим мішені курсору	#
-resourcePack.editor.CursorModeControl.fixedDistance.slider.title=Фіксована відстань курсору	#
-resourcePack.editor.CursorModeControl.fixedDistance.slider.tooltip=Відрегулюйте фіксовану відстань від гравця, на якій розміщено блоковий курсор	#
-resourcePack.editor.CursorModeControl.keybinding.moveCursorBack=Перемістити курсор назад	#
-resourcePack.editor.CursorModeControl.keybinding.moveCursorDown=Перемістити курсор вниз	#
-resourcePack.editor.CursorModeControl.keybinding.moveCursorForward=Поштовх уперед	#
-resourcePack.editor.CursorModeControl.keybinding.moveCursorLeft=Перемістити курсор ліворуч	#
-resourcePack.editor.CursorModeControl.keybinding.moveCursorRight=Перемістити курсор праворуч	#
-resourcePack.editor.CursorModeControl.keybinding.moveCursorUp=Перемістити курсор вгору	#
-resourcePack.editor.CursorModeControl.keybinding.toggleBlockTargetMode=Перемкнути блок/Суміжний режим	#
-resourcePack.editor.CursorModeControl.keybinding.toggleFixedDistance=Перемкнути режим фіксованої відстані	#
-resourcePack.editor.CursorModeControl.keybinding.toggleMouseTracking=Перемкнути відстеження миші	#
-resourcePack.editor.CursorModeControl.mouseControlMode.fixed=Фіксована відстань	#
-resourcePack.editor.CursorModeControl.mouseControlMode.keyboard=Тільки клавіатура	#
-resourcePack.editor.CursorModeControl.mouseControlMode.keyboardAndMouse=Миша й клавіші	#
-resourcePack.editor.CursorModeControl.mouseControlMode.title=Спосіб введення	#
-resourcePack.editor.CursorModeControl.mouseControlMode.tooltip=Виберіть спосіб введення для блокового курсору у світі	#
-resourcePack.editor.CursorModeControl.projectThroughWater.title=Проєктувати крізь воду	#
-resourcePack.editor.CursorModeControl.projectThroughWater.tooltip=Промінь від миші буде проєктуватися крізь воду, даючи змогу вибирати підводні елементи	#
-resourcePack.editor.CursorModeControl.rootPane.title=Налаштування курсору	#
-
-
-resourcePack.editor.datatransferaccessors.atmospheric_scattering=Атмосферне розсіювання	#
-resourcePack.editor.datatransferaccessors.color_grading=Корекція кольорів	#
-resourcePack.editor.datatransferaccessors.lighting_group=Глобальне освітлення	#
-resourcePack.editor.datatransferaccessors.pbr_fallbacks=Резервні копії PBR	#
-resourcePack.editor.datatransferaccessors.point_lights=Точкові джерела світла	#
-resourcePack.editor.datatransferaccessors.water=Вода	#
-resourcePack.editor.datatransferaccessors.shadows=Тіні	#
-
-
-resourcePack.editor.deferredLightingSettings.menu.title=Параметри відкладеного освітлення	#
-
-
-resourcePack.editor.delete.keyBinding=Видалити вміст виділення	#
-
-
-resourcePack.editor.toolRail.entityInspector.pane.title=Інспектор сутностей   	####This string is what is shown in the title bar of the Editor pane for modifying entities.{MaxLength=30}
-resourcePack.editor.toolRail.entityInspector.tool.title=Інспектор сутностей   	####This string is what is shown at the top of the Editor pane for modifying entities.{MaxLength=30}
-resourcePack.editor.toolRail.entityInspector.tool.tip=Переглянути дані сутності   	####This string is what is shown on the tool tip of Editor pane for modifying entities (gives context on what the tool does).{MaxLength=100}
-resourcePack.editor.toolRail.entityInspector.pane.helpText=Клацніть лівою кнопкою миші на сутності, щоб переглянути та відредагувати її властивості   	####This string is shown in the block inspector tool pane before the user clicks to describe how to use it.{MaxLength=100}
-resourcePack.editor.entityInspector.toolRail.description=Клацніть лівою кнопкою миші на сутності, щоб переглянути та відредагувати її властивості   	####This string is shown in the tool tip to explain the function of the Entity Inspector tool.{MaxLength=100}
-
-resourcePack.editor.exportProject.exportType=Тип експорту	#
-resourcePack.editor.exportProject.exportType.playableWorld=Ігровий світ	#
-resourcePack.editor.exportProject.exportNotes=Експорт нотаток	#
-resourcePack.editor.exportProject.exportNotes.export=Триває експорт   	####This string is intended to express that the title of export progress modal.{MaxLength=100}
-resourcePack.editor.exportProject.exportNotes.warning=Ви експортуєте світ v%1. Експортовані ігрові світи не можна використовувати у версіях Minecraft, старших за v%1. Щоб конвертувати світи попередніх версій, скористайтеся посиланням https://chunker.app/ (деякі функції можуть бути недоступні, якщо вони не підтримуються в попередніх версіях)	#
-resourcePack.editor.exportProject.exportNotes.progress=Експорт світу…    	####This string is intended to express that the progress message of exporting.{MaxLength=100}
-resourcePack.editor.exportProject.exportNotes.exportSuccess=Світ успішно експортовано    	####This string is intended to express that export the world succeeded.{MaxLength=100}
-resourcePack.editor.exportProject.exportNotes.exportFailed=Не вдалося експортувати світ    	####This string is intended to express that export the world failed.{MaxLength=100}
-resourcePack.editor.exportProject.generalSettings=Загальні параметри	#
-resourcePack.editor.exportProject.generalSettings.worldName=Назва світу	#
-resourcePack.editor.exportProject.generalSettings.gameMode=Режим гри	#
-resourcePack.editor.exportProject.generalSettings.difficulty=Складність	#
-resourcePack.editor.exportProject.generalSettings.hardcore=Хардкор	#
-resourcePack.editor.exportProject.initialPlaySettings=Початкові налаштування гри   	####This string is intended to express that the export category for inital play settings.{MaxLength=100}
-resourcePack.editor.exportProject.initialPlaySettings.spawnPosition=Місце призову у світі   	####This string is intended to express that player inistal spawn position.{MaxLength=100}
-resourcePack.editor.exportProject.initialPlaySettings.startTime=Час початку   	####This string is intended to express that world start time.{MaxLength=100}
-resourcePack.editor.exportProject.initialPlaySettings.clockType=Тип годинника   	####This string is intended to express that start time with different clock type.{MaxLength=100}
-resourcePack.editor.exportProject.initialPlaySettings.customStartTime=Налаштовуваний час початку   	####This string is intended to express that custom start time with Minecraft Cloke value.{MaxLength=100}
-resourcePack.editor.exportProject.initialPlaySettings.weather=Початкова погода   	####This string is intended to express that the custom start weather.{MaxLength=100}
-resourcePack.editor.exportProject.advancedSettings=Розширені параметри	#
-resourcePack.editor.exportProject.advancedSettings.startingMap=Початкова карта	#
-resourcePack.editor.exportProject.advancedSettings.bonusChest=Скриня бонусів	#
-resourcePack.editor.exportProject.advancedSettings.showCoordinates=Відображення координат	#
-resourcePack.editor.exportProject.advancedSettings.showDaysPlayed=Відображення ігрових днів	#
-resourcePack.editor.exportProject.advancedSettings.recipeUnlocking=Розблокування рецептів	#
-resourcePack.editor.exportProject.advancedSettings.limitedCrafting=Обмежений крафтинг   	####Export pane checkbox label that enable to set crafting limit.{MaxLength=100}
-resourcePack.editor.exportProject.advancedSettings.fireSpreads=Поширення вогню	#
-resourcePack.editor.exportProject.advancedSettings.tntExplodes=Спрацювання вибухівки	#
-resourcePack.editor.exportProject.advancedSettings.resawnBlocksExplode=Вибух блоків відродження	#
-resourcePack.editor.exportProject.advancedSettings.mobLoot=Здобич із мобів	#
-resourcePack.editor.exportProject.advancedSettings.naturalRegeneration=Природне відновлення	#
-resourcePack.editor.exportProject.advancedSettings.tileDrops=Викидання з блоків	#
-resourcePack.editor.exportProject.advancedSettings.immediateRespawn=Миттєве відродження	#
-resourcePack.editor.exportProject.advancedSettings.showDeathMessage=Показувати повідомлення про смерть   	####Export pane checkbox label that show the death message when player die.{MaxLength=100}
-resourcePack.editor.exportProject.advancedSettings.respawnRadius=Радіус відродження	#
-resourcePack.editor.exportProject.advancedSettings.simulationDistance=Відстань симуляції	#
-resourcePack.editor.exportProject.advancedSettings.bedsWork=Сон у ліжку	#
-resourcePack.editor.exportProject.advancedSettings.requiredSleepingPlayers=Кількість гравців, які повинні обов’язково лягти спати (%1$s)	#
-resourcePack.editor.exportProject.advancedSettings.requiredSleepingPlayers.onePlayerMessage=Лише 1 гравець	#
-resourcePack.editor.exportProject.advancedSettings.showItemTags=Показувати ярлики предметів   	####Export pane checkbox label that show item tags.{MaxLength=100}
-resourcePack.editor.exportProject.multiplayerSettings=Параметри мультиплеєра	#
-resourcePack.editor.exportProject.multiplayerSettings.multiplayerGame=Мультиплеєрна гра	#
-resourcePack.editor.exportProject.multiplayerSettings.playerAccess=Доступ гравців	#
-resourcePack.editor.exportProject.multiplayerSettings.playerPermissions=Дозволи гравців	#
-resourcePack.editor.exportProject.multiplayerSettings.visibleToLAN=Видиме для гравців у локальній мережі	#
-resourcePack.editor.exportProject.multiplayerSettings.friendlyFire=Дружній вогонь	#
-resourcePack.editor.exportProject.cheatsSettings=Налаштування читів	#
-resourcePack.editor.exportProject.cheatsSettings.cheats=Чити	#
-resourcePack.editor.exportProject.cheatsSettings.daylightCycle=Зміна часу доби	#
-resourcePack.editor.exportProject.cheatsSettings.keepInventory=Збереження інвентарю	#
-resourcePack.editor.exportProject.cheatsSettings.mobSpawning=Призов моба	#
-resourcePack.editor.exportProject.cheatsSettings.mobGriefing=Шкода від мобів	#
-resourcePack.editor.exportProject.cheatsSettings.entitiesDropLoot=Сутності викидають здобич	#
-resourcePack.editor.exportProject.cheatsSettings.weatherCycle=Погодний цикл	#
-resourcePack.editor.exportProject.cheatsSettings.commandBlocks=Командні блоки	#
-resourcePack.editor.exportProject.cheatsSettings.commandBlockOutput=Виведення командного блока   	####Export pane checkbox label that enable to display the command output.{MaxLength=100}
-resourcePack.editor.exportProject.cheatsSettings.sendCommandFeedback=Надсилання зворотного зв’язку на команди   	####This string is the heading for the 'send command feedback' setting when exporting a world.{MaxLength=100}
-resourcePack.editor.exportProject.cheatsSettings.maxCommandChainLength=Максимальна довжина ланцюжка команд   	####Export pane number that indicate the max length of the command, it defaults to 65536. It has a minimum of 0 and a max of 2147483647.{MaxLength=100}
-resourcePack.editor.exportProject.cheatsSettings.fireDamage=Ушкодження від вогню  	####Export pane checkbox label that enable damage when the player on fire.{MaxLength=100}
-resourcePack.editor.exportProject.cheatsSettings.freezeDamage=Ушкодження від заморозки  	####Export pane checkbox label that enable damage when the player freezes.{MaxLength=100}
-resourcePack.editor.exportProject.cheatsSettings.fallDamage=Ушкодження від падіння  	####Export pane checkbox label that enable damage when the player falls.{MaxLength=100}
-resourcePack.editor.exportProject.cheatsSettings.drowningDamage=Ушкодження від утоплення  	####Export pane checkbox label that enable damage when the player is drowning.{MaxLength=100}
-resourcePack.editor.exportProject.cheatsSettings.insomnia=Безсоння  	####Export pane checkbox label that enable player insomnia status.{MaxLength=100}
-resourcePack.editor.exportProject.cheatsSettings.showBorderEffect=Показувати ефект кордонів  	####Export pane checkbox label that show border effect.{MaxLength=100}
-resourcePack.editor.exportProject.cheatsSettings.functionCommandLimit=Обмеження команди підпрограми  	####Export pane checkbox label that the number of limition for the function command.{MaxLength=100}
-resourcePack.editor.exportProject.cheatsSettings.educationFeatures=Навчальні функції	#
-resourcePack.editor.exportProject.cheatsSettings.randomTickSpeed=Випадкова швидкість такту	#
-resourcePack.editor.exportProject.export=Експорт	#
-resourcePack.editor.exportProject.resetToDefault=Відновити параметри за промовчанням	#
-resourcePack.editor.exportProject.gameMode.survival=Виживання	#
-resourcePack.editor.exportProject.gameMode.creative=Творчий	#
-resourcePack.editor.exportProject.gameMode.adventure=Пригода	#
-resourcePack.editor.exportProject.difficulty.peaceful=Мирно	#
-resourcePack.editor.exportProject.difficulty.easy=Легко	#
-resourcePack.editor.exportProject.difficulty.normal=Нормально	#
-resourcePack.editor.exportProject.difficulty.hard=Важко	#
-resourcePack.editor.exportProject.weather.default=Стандартна   	####This string is intended to express that the default weather .{MaxLength=100}
-resourcePack.editor.exportProject.weather.clear=Ясна   	####This string is intended to express that the weather of Clear.{MaxLength=100}
-resourcePack.editor.exportProject.weather.rain=Дощ   	####This string is intended to express that the weather of Rain.{MaxLength=100}
-resourcePack.editor.exportProject.weather.thunder=Грім   	####This string is intended to express that the weather of Thunder.{MaxLength=100}
-
-
-
-resourcePack.editor.toolRail.ExtrudeTool.title=Інструмент екструзії	#
-resourcePack.editor.toolRail.ExtrudeTool.tooltip=Інструмент екструзії для розширення та зменшення блоків	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.ContiguousSelectionBlockListSubPane.title=Список блоків суміжного вибору	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.TrailingBlocksSettingsSubPane.title=Налаштування залишкових блоків	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.SampleLayerCount.title=Кількість зразків шарів	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.ContiguousSelectionSettings.title=Налаштування суміжного вибору	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.ContiguousSelectionType.title=Тип суміжного вибору	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.ContiguousSelectionType.SameBlocks=Ті самі блоки	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.ContiguousSelectionType.SameBlocksAndStates=Ті самі блоки та стани	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.ContiguousSelectionType.SolidBlocks=Суцільні блоки	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.ContiguousSelectionType.AllBlocks=Усі блоки	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.ContiguousSelectionType.CustomBlockList=Список нестандартних блоків	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.ToleranceLevel.title=Рівень допустимого відхилення	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.HasAdjacentBlocks.title=Має суміжні блоки	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.ExtruderSettings.title=Налаштування екструдера	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.Radius.title=Радіус	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.title=Режим вибору	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.ContiguousSelection=Суміжний вибір	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.MarqueeSelection=Вибір області	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.ContiguousSettings.title=Налаштування суміжного вибору	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.TrailingBlocks.title=Залишкові блоки	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.TrailingBlocksSettings.title=Налаштування залишкових блоків	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.QuickExtrudeSettings.title=Налаштування швидкої екструзії	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.QuickExtrudeMode.title=Режим швидкої екструзії	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.QuickExtrudeMode.decrease.title=Зменшити	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.QuickExtrudeMode.decrease.tooltip=Зменшити екструзію	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.QuickExtrudeMode.expand.title=Розгорнути	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.QuickExtrudeMode.expand.tooltip=Розгорнути екструзію	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.LayerCount.title=Кількість шарів	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.preview_warning=Важливо: Візуалізація попереднього перегляду показує лише перший шар 	#### {MaxLength="500"}, used to inform the user that the preview visualization for this tool is limited to a single layer.  This string is on screen whenever this tool is active
-resourcePack.editor.toolRail.ExtrudeTool.pane.ExtrusionType.title=Тип екструзії	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.ExtrusionType.Extrude=Екструзія	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.ExtrusionType.QuickExtrude=Швидка екструзія	#
-resourcePack.editor.toolRail.ExtrudeTool.keyBinding.deselect=Скасувати вибір	#
-resourcePack.editor.toolRail.ExtrudeTool.keyBinding.toggleTool=Перемкнути інструмент екструзії	#
-
-
-resourcePack.editor.toolRail.FarmGenerator.tool.title=Генератор ферм	#
-resourcePack.editor.toolRail.FarmGenerator.tool.tooltip=Швидке створення нестандартної ферми	#
-resourcePack.editor.toolRail.FarmGenerator.pane.title=Генератор ферм	#
-resourcePack.editor.toolRail.FarmGenerator.pane.length=Довжина	#
-resourcePack.editor.toolRail.FarmGenerator.pane.width=Ширина	#
-resourcePack.editor.toolRail.FarmGenerator.pane.fence=Паркан	#
-resourcePack.editor.toolRail.FarmGenerator.pane.irrigation=Додати зрошення	#
-resourcePack.editor.toolRail.FarmGenerator.pane.irrigation.tooltip=Додає на ферму водні блоки для зрошення врожаю.	#
-resourcePack.editor.toolRail.FarmGenerator.pane.crops.title=Урожай	#
-resourcePack.editor.toolRail.FarmGenerator.pane.crops.wheat=Пшениця	#
-resourcePack.editor.toolRail.FarmGenerator.pane.crops.potato=Картопля	#
-resourcePack.editor.toolRail.FarmGenerator.pane.crops.beets=Буряк	#
-resourcePack.editor.toolRail.FarmGenerator.pane.crops.pumpkin=Гарбуз	#
-resourcePack.editor.toolRail.FarmGenerator.pane.crops.carrot=Морква	#
-resourcePack.editor.toolRail.FarmGenerator.pane.animals.title=Тварини	#
-resourcePack.editor.toolRail.FarmGenerator.pane.animals.cow=Корова	#
-resourcePack.editor.toolRail.FarmGenerator.pane.animals.sheep=Вівця	#
-resourcePack.editor.toolRail.FarmGenerator.pane.animals.pig=Свиня	#
-resourcePack.editor.toolRail.FarmGenerator.keyBinding.toggleTool=Перемкнути інструмент «Генератор ферм»	#
-resourcePack.editor.toolRail.FarmGenerator.keyBinding.place=Розмістити ферму на місці курсора	#
-
-
-resourcePack.editor.global.keyBinding.toggleMode=Перемкнути режим	#
-
-
-resourcePack.editor.goToMark.actionBar.tooltip.description=Допоміжна панель навігації гравця	#
-resourcePack.editor.goToMark.actionBar.tooltip.title=Панель навігації	#
-resourcePack.editor.goToMark.pane.goToSpawn=Перейти до місця призову	#
-resourcePack.editor.goToMark.pane.location=Місце гравця	#
-resourcePack.editor.goToMark.pane.locationPane.delete=Видалити збережене місце	#
-resourcePack.editor.goToMark.pane.locationPane.dropdownLabel=Збережене місце	#
-resourcePack.editor.goToMark.pane.locationPane.inputName=Нова назва	#
-resourcePack.editor.goToMark.pane.locationPane.markColor=Колір позначки місцезнаходження	#
-resourcePack.editor.goToMark.pane.locationPane.store=Зберегти поточне місце як...	#
-resourcePack.editor.goToMark.pane.locationPane.teleport=Телепортувати на збережене місце %1$s	#
-resourcePack.editor.goToMark.pane.locationPane.title=Збережені місця	#
-resourcePack.editor.goToMark.pane.mapSize=Розмір карти	#
-resourcePack.editor.goToMark.pane.refreshMap=Оновити карту	#
-resourcePack.editor.goToMark.pane.setSpawn=Зробити місце призову поточним	#
-resourcePack.editor.goToMark.pane.showMap=Показати карту	#
-resourcePack.editor.goToMark.pane.teleport=Телепортувати на місце	#
-resourcePack.editor.goToMark.title=Панель навігації	#
-
-
-resourcePack.editor.grapple.keyBinding.flyToCursor=Полетіти до положення курсора	#
-resourcePack.editor.grapple.keyBinding.flyToSelection=Полетіти до виділення	#
-
-
-resourcePack.editor.locate.biome.find=Знайти біом	#
-resourcePack.editor.locate.biome.title=Біом	#
-resourcePack.editor.locate.keyBinding.toggleTool=Перемкнути інструмент «Знайти біом»	#
-resourcePack.editor.locate.locatetype.biome=Біом	#
-resourcePack.editor.locate.locatetype.structure=Споруда	#
-resourcePack.editor.locate.locatetype.title=Визначити тип	#
-resourcePack.editor.locate.results.foundat.title=Знайдено тут:	#
-resourcePack.editor.locate.results.foundat=Знайдено тут:	#
-resourcePack.editor.locate.results.goto=Перейти до	#
-resourcePack.editor.locate.results.notfound.title=Немає результатів	#
-resourcePack.editor.locate.results.notfound=Результатів не знайдено	#
-resourcePack.editor.locate.results.title=Результати	#
-resourcePack.editor.locate.structure.message=Пошук споруди наразі не підтримується	#
-resourcePack.editor.locate.structure.title=Споруда	#
-resourcePack.editor.locate.title=Знайти	#
-
-
-resourcePack.editor.menuBar.edit.copy=Копіювати	#
-resourcePack.editor.menuBar.edit.cut=Вирізати	#
-resourcePack.editor.menuBar.edit.delete=Видалити	#
-resourcePack.editor.menuBar.edit.deselect=Скасувати вибір	#
-resourcePack.editor.menuBar.edit.quickFill=Швидке заповнення	#
-resourcePack.editor.menuBar.edit.quickPaste=Швидке вставлення	#
-resourcePack.editor.menuBar.edit.redo=Повторити	#
-resourcePack.editor.menuBar.edit.undo=Скасувати	#
-resourcePack.editor.menuBar.edit=Змінити	#
-resourcePack.editor.menuBar.experimental=Експериментальна функція	#
-resourcePack.editor.menuBar.extensions=Розширення	#
-resourcePack.editor.menuBar.file.cursor.projectThroughLiquid=Запустити через рідину	#
-resourcePack.editor.menuBar.file.cursor=Налаштування курсора	#
-resourcePack.editor.menuBar.file.export.project=Проєкт редактора	#
-resourcePack.editor.menuBar.file.export.world=Ігровий світ	#
-resourcePack.editor.menuBar.file.export=Експорт	#
-resourcePack.editor.menuBar.file.pauseScreen=Меню гри	#
-resourcePack.editor.menuBar.file.settings=Налаштування інтерфейсу користувача	#
-resourcePack.editor.menuBar.file=Файл	#
-resourcePack.editor.menuBar.help.tutorial=Посібник 	#### {MaxLength="500"} Represent menu bar item in help menu that activates editor tutorial when pressed
-resourcePack.editor.menuBar.help.documentation=Документація	#
-resourcePack.editor.menuBar.help.feedback=Відгук	#
-resourcePack.editor.menuBar.help.quickStart=Швидкий початок	#
-resourcePack.editor.menuBar.help=Довідка	#
-resourcePack.editor.menuBar.locate=Знайти	#
-resourcePack.editor.menuBar.parentMenu.weather.clear=Очистити	#
-resourcePack.editor.menuBar.parentMenu.weather.rain=Дощ	#
-resourcePack.editor.menuBar.parentMenu.weather.thunder=Грім	#
-resourcePack.editor.menuBar.parentMenu.weather=Погода	#
-resourcePack.editor.menuBar.view.blockPalette=Палітра блоків	#
-resourcePack.editor.menuBar.view.logging=Панель журналу	#
-resourcePack.editor.menuBar.view.navigationLogging=Ведення журналу навігації	#
-resourcePack.editor.menuBar.view=Переглянути	#
-resourcePack.editor.menuBar.worldOptions.changeDimension.end=Енд	#
-resourcePack.editor.menuBar.worldOptions.changeDimension.nether=Незер	#
-resourcePack.editor.menuBar.worldOptions.changeDimension.overworld=Верхній світ	#
-resourcePack.editor.menuBar.worldOptions.changeDimension=Змінити розмір	#
-resourcePack.editor.menuBar.worldOptions.pause.entities=Істоти	#
-resourcePack.editor.menuBar.worldOptions.pause=Пауза	#
-resourcePack.editor.menuBar.worldOptions=Варіанти світу	#
-
-
-resourcePack.editor.navigation.keyBinding.add=Додати навігаційну позицію	#
-resourcePack.editor.navigation.keyBinding.next=Перейти до наступної навігаційної позиції	#
-resourcePack.editor.navigation.keyBinding.previous=Перейти до попередньої навігаційної позиції	#
-
-
-resourcePack.editor.paste.pane.submitButton=Підтвердити вставлення	#
-resourcePack.editor.paste.pane.title=Вставити	#
-resourcePack.editor.paste.pane.transform.mirrorX=Дзеркало Х	#
-resourcePack.editor.paste.pane.transform.mirrorZ=Дзеркало Z	#
-resourcePack.editor.paste.pane.transform.origin.title=Зсув	#
-resourcePack.editor.paste.pane.transform.rotation.180=180	#
-resourcePack.editor.paste.pane.transform.rotation.270=270	#
-resourcePack.editor.paste.pane.transform.rotation.90=90	#
-resourcePack.editor.paste.pane.transform.rotation.none=0°	#
-resourcePack.editor.paste.pane.transform.rotation.title=Повернути	#
-resourcePack.editor.paste.pane.transform.title=Перетворити	#
-resourcePack.editor.paste.toolRail.description=Клацніть лівою кнопкою миші, щоб вибрати блок, а потім точно вставити елемент буфера обміну	#
-resourcePack.editor.paste.toolRail.title=Вставити попередній перегляд	#
-
-
-resourcePack.editor.pastepreview.inputContext.title=Вставити попередній перегляд	#
-resourcePack.editor.pastepreview.keyBinding.clearPreview=Очистити попередній перегляд	#
-resourcePack.editor.pastepreview.keyBinding.copy=Копіювати виділення	#
-resourcePack.editor.pastepreview.keyBinding.cut=Вирізати виділене	#
-resourcePack.editor.pastepreview.keyBinding.moveBack=Перемістити попередній перегляд назад	#
-resourcePack.editor.pastepreview.keyBinding.moveDown=Перемістити попередній перегляд униз	#
-resourcePack.editor.pastepreview.keyBinding.moveForward=Перемістити попередній перегляд уперед	#
-resourcePack.editor.pastepreview.keyBinding.moveLeft=Перемістити попередній перегляд ліворуч	#
-resourcePack.editor.pastepreview.keyBinding.moveOffsetBack=Перемістити зсув назад	#
-resourcePack.editor.pastepreview.keyBinding.moveOffsetDown=Перемістити зсув униз	#
-resourcePack.editor.pastepreview.keyBinding.moveOffsetForward=Перемістити зсув уперед	#
-resourcePack.editor.pastepreview.keyBinding.moveOffsetLeft=Перемістити зсув ліворуч	#
-resourcePack.editor.pastepreview.keyBinding.moveOffsetRight=Перемістити зсув праворуч	#
-resourcePack.editor.pastepreview.keyBinding.moveOffsetUp=Перемістити зсув угору	#
-resourcePack.editor.pastepreview.keyBinding.moveOriginBack=Перемістити початкову точку назад	#
-resourcePack.editor.pastepreview.keyBinding.moveOriginDown=Перемістити початкову точку вниз	#
-resourcePack.editor.pastepreview.keyBinding.moveOriginForward=Перемістити початкову точку вперед	#
-resourcePack.editor.pastepreview.keyBinding.moveOriginLeft=Перемістити початкову точку ліворуч	#
-resourcePack.editor.pastepreview.keyBinding.moveOriginRight=Перемістити початкову точку праворуч	#
-resourcePack.editor.pastepreview.keyBinding.moveOriginUp=Перемістити початкову точку вгору	#
-resourcePack.editor.pastepreview.keyBinding.moveRight=Перемістити попередній перегляд праворуч	#
-resourcePack.editor.pastepreview.keyBinding.moveUp=Перемістити попередній перегляд угору	#
-resourcePack.editor.pastepreview.keyBinding.paste=Вставити	#
-resourcePack.editor.pastepreview.keyBinding.pasteAtCursor=Вставити на позиції курсора	#
-resourcePack.editor.pastepreview.keyBinding.pastepreview=Вставити попередній перегляд	#
-resourcePack.editor.pastepreview.keyBinding.quickPaste=Швидке вставлення	#
-resourcePack.editor.pastepreview.keyBinding.rotateClockWise=Повернути попередній перегляд за годинниковою стрілкою	#
-resourcePack.editor.pastepreview.keyBinding.rotateCounterClockWise=Повернути попередній перегляд проти годинникової стрілки	#
-resourcePack.editor.pastepreview.keyBinding.toggleAdjacentTarget=Перемкнути режим сусідньої цілі	#
-resourcePack.editor.pastepreview.keyBinding.toggleBlockTarget=Перемкнути режим цільового блоку	#
-resourcePack.editor.pastepreview.keyBinding.toggleFixedDistance=Увімкнути фіксовану відстань	#
-resourcePack.editor.pastepreview.keyBinding.toggleMirrorX=Перемкнути віддзеркалення X	#
-resourcePack.editor.pastepreview.keyBinding.toggleMirrorZ=Перемкнути віддзеркалення Z	#
-resourcePack.editor.pastepreview.keyBinding.toggleMouseTracking=Перемикання відстеження миші	#
-resourcePack.editor.pastepreview.pane.controls.cursor.fixed=Фіксована відстань	#
-resourcePack.editor.pastepreview.pane.controls.cursor.keyboard=Лише клавіші	#
-resourcePack.editor.pastepreview.pane.controls.cursor.mouseandkeys=Миша та клавіші	#
-resourcePack.editor.pastepreview.pane.controls.cursor.target.block=Блокувати	#
-resourcePack.editor.pastepreview.pane.controls.cursor.target.face=Суміжні	#
-resourcePack.editor.pastepreview.pane.controls.cursor.target.title=Мішень	#
-resourcePack.editor.pastepreview.pane.controls.cursor=Керування	#
-resourcePack.editor.pastepreview.pane.controls.title=Елементи керування курсором	#
-resourcePack.editor.pastepreview.pane.placement.mirrorX=Дзеркало Х	#
-resourcePack.editor.pastepreview.pane.placement.mirrorZ=Дзеркало Z	#
-resourcePack.editor.pastepreview.pane.placement.offset=Зсув	#
-resourcePack.editor.pastepreview.pane.placement.origin=Початок координат	#
-resourcePack.editor.pastepreview.pane.placement.pastebutton=Вставити	#
-resourcePack.editor.pastepreview.pane.placement.rotation=Обертання (навколо Y)	#
-resourcePack.editor.pastepreview.pane.placement.title=Налаштування місця розташування	#
-resourcePack.editor.pastepreview.pane.root.size=Розмір	#
-resourcePack.editor.pastepreview.pane.root.title=Вставити попередній перегляд	#
-resourcePack.editor.pastepreview.tool.tip=Використовуйте мишу, щоб налаштувати положення попереднього перегляду буфера обміну, і клацніть, щоб вставити у світ	#
-resourcePack.editor.pastepreview.tool.title=Вставити попередній перегляд	#
-
-
-resourcePack.editor.playerPositionExtension.dimension=Вимір	#
-resourcePack.editor.playerPositionExtension.menu.player=Плеєр	#
-resourcePack.editor.playerPositionExtension.menu.showPlayerSettings=Показати налаштування плеєра	#
-resourcePack.editor.playerPositionExtension.nether=Незер	#
-resourcePack.editor.playerPositionExtension.overworld=Верхній світ	#
-resourcePack.editor.playerPositionExtension.pane=Налаштування плеєра	#
-resourcePack.editor.playerPositionExtension.theEnd=Енд	#
-resourcePack.editor.playerPositionExtension.worldSettings=Параметри світу	#
-
-
-resourcePack.editor.playtest.AdvancedSettings.title=Розширені параметри	#
-resourcePack.editor.playtest.Dialog.DaylightCycle=Зміна часу доби	#
-resourcePack.editor.playtest.Dialog.Difficulty=Складність	#
-resourcePack.editor.playtest.Dialog.GameMode=Режим гри	#
-resourcePack.editor.playtest.Dialog.OverrideSpawn=Призов у поточному місці	#
-resourcePack.editor.playtest.Dialog.ShowCoordinates=Показ координат	#
-resourcePack.editor.playtest.Dialog.TestButton=Випробувати світ	#
-resourcePack.editor.playtest.Dialog.TimeOfDay=Час доби	#
-resourcePack.editor.playtest.Dialog.Title=Налаштування тесту	#
-resourcePack.editor.playtest.Dialog.Weather=Погода	#
-resourcePack.editor.playtest.Dialog.WeatherCycle=Погодній цикл	#
-resourcePack.editor.playtest.Menu.Title=Випробувальний світ	#
-resourcePack.editor.playtest.Title.Tooltip=Випробуйте свій редакторський проект як світ Minecraft в ігровому режимі.  Зміни у вашому проекті не зберігаються.  Доступно тільки при веденні одиночного проекту.	#
-
-
-resourcePack.editor.playtestResult.EditorSystemFailure=Системний збій редактора	#
-resourcePack.editor.playtestResult.InvalidLevelId=Недійсний ідентифікатор рівня	#
-resourcePack.editor.playtestResult.InvalidSessionHandle=Недійсний маркер сеансу	#
-resourcePack.editor.playtestResult.OK=Успішно	#
-resourcePack.editor.playtestResult.PlayerNotFound=Гравця не знайдено	#
-resourcePack.editor.playtestResult.ResponseTimeout=Тайм-аут відповіді	#
-resourcePack.editor.playtestResult.SessionInfoNotFound=Інформацію про сеанс не знайдено	#
-resourcePack.editor.playtestResult.TooManyPlayers=Ви не можете випробовувати світ, коли приймаєте інших гравців	#
-resourcePack.editor.playtestResult.UnspecifiedError=Невизначена помилка	#
-resourcePack.editor.playtestResult.UnsupportedScenario=Ви повинні бути ведучим редакторського проекту, щоб перевірити світ	#
-resourcePack.editor.playtestResult.WorldExportBusy=Функція експорту світу зайнята	#
-resourcePack.editor.playtestResult.WorldExportFailed=Помилка експорту світу	#
-
-
-resourcePack.editor.menuBar.file.realmsPublish=Опублікувати в Realms   	####This string is intended to express that the option is for opening the pane to publish your editor world to Realms.{MaxLength=100}
-resourcePack.editor.realmsPublish.noActiveRealmsSubscription=Для публікації в Realms потрібна активна підписка на Realms. Підписатися на Realms або поновити старі підписки можна в стандартному клієнті Minecraft або на сайті minecraft.net (після входу в обліковий запис).    	####This string is intended to express that the user doesn't have a active Realms subscription and the process they need to follow in order to be able to upload their editor world to their Realms subscription.{MaxLength=350}
-resourcePack.editor.realmsPublish.userNotLoggedIn=Для публікацій у Realms потрібна активна підписка на Realms. Щоб отримати доступ до будь-яких наявних підписок на Realms, потрібно ввійти в обліковий запис Microsoft.		####This string is intended to express that the user is not logged in currently and that they must be logged into their Microsoft account in order to proceed.{MaxLength=350}
-resourcePack.editor.realmsPublish.dedicatedServerWarning=Публікація в Realms недоступна під час використання виділеного сервера.		####This string is intended to express that the user is unable to use the Publish to Realms feature on a dedicated server.{MaxLength=350}
-resourcePack.editor.realmsPublish.notSessionHostWarning=Публікувати в Realms може лише хост сеансу роботи в редакторі.		####This string is intended to express that the user is unable to use the Publish to Realms when they are not the session host.{MaxLength=350}
-resourcePack.editor.realmsPublish.genericRealmsIssue=Виникла проблема зі службою Realms, спробуйте ще раз згодом.		####This string is intended to express that there is an issue with the realms service and to please try again later.{MaxLength=350}
-resourcePack.editor.realmsPublish.goToMinecraftWebsite=Перейти до Minecraft.net  	####This string is intended to express that the link will take the user to Minecraft.net.{MaxLength=100}
-resourcePack.editor.realmsPublish.Refresh=Оновити  	####This string is intended to express that the button will refresh the pane to see if the user in now logged in.{MaxLength=100}
-resourcePack.editor.realmsPublish.Realm=Realm  	####This string is intended to express that the below dropdown contains all of the users Realms subscriptions.{MaxLength=100}
-resourcePack.editor.realmsPublish.RealmSlot=Слот Realm 	####This string is intended to express that the dropdown contains all of the world slots in for the users selected realms subscription.{MaxLength=100}
-resourcePack.editor.realmsPublish.EmptySlot=Порожній слот		####This string is intended to express that the Realm slot is empty.{MaxLength=100}
-resourcePack.editor.realmsPublish.PublishNotesTitle=Опублікувати в Realms із приміткою   	####This string is intended to express that the below field will contain additional information for the user about the publish to realms feature, including any warnings or issues.{MaxLength=150}
-resourcePack.editor.realmsPublish.DownloadRealm=Завантажити    	####This string is intended to express that the button will download the currently selected World from the realm slot.{MaxLength=100}
-resourcePack.editor.realmsPublish.PublishRealm=Опублікувати  	####This string is intended to express that the button will publish the current world to the currently selected realm slot.{MaxLength=100}
-resourcePack.editor.realmsPublish.Confirm=Підтвердити   	####This string is intended to express that the button will confirm  the request to publish the world to realms.{MaxLength=100}
-resourcePack.editor.realmsPublish.Cancel=Скасувати 	####This string is intended to express that the button will cancel the request to publish the world to realms.{MaxLength=100}
-resourcePack.editor.realmsPublish.Back=Назад 	####This string is intended to express that the button will take the user back to the previous pane.{MaxLength=100}
-resourcePack.editor.realmsPublish.PublishFailedNonCompliantWorldName=Не вдалось опублікувати в Realmsчерез недійсну назву світу. Оновіть назву світу та спробуйте ще раз.		####This string is intended to express that publishing the world to Realms failed due to an invalid world name that was entered by the player .{MaxLength=200}
-resourcePack.editor.realmsPublish.PublishFailed=Не вдалося опублікувати у Realms. Спробуйте ще раз згодом.   	####This string is intended to express that publishing the world to Realms failed and to please try again later.{MaxLength=200}
-resourcePack.editor.realmsPublish.PublishSuccess=Успішно опубліковано у Realms    	####This string is intended to express that publishing the world to Realms succeeded.{MaxLength=200}
-resourcePack.editor.realmsPublish.PublishConfirmationOptOut=Більше не запитувати для цього Realm упродовж цієї сесії  	####This string is intended to express that the checkbox will opt the user out of confirming their publish to realms decisions.{MaxLength=100}
-resourcePack.editor.realmsPublish.PublishingToRealms=Публікування світу у Realms…  	####This string is intended to express that the world is currently in the process of being published to Realms.{MaxLength=100}
-resourcePack.editor.realmsPublish.UnableToPublishMissingRealm=Не вдається опублікувати у Realms. Не вибрано жодного Realm    	####This string is intended to express that the user is unable to publish their world because a realm to upload to has not been selected.{MaxLength=250}
-resourcePack.editor.realmsPublish.UnableToPublishMissingRealmSlot=Не вдається опублікувати у Realms. Не вибрано жодного слота Realm   	####This string is intended to express that the user is unable to publish their world because a realm slot to upload to has not been selected.{MaxLength=250}
-resourcePack.editor.realmsPublish.PublishConfirmationWarning=Це видалить поточний світ з обраного слота та замінить його вашим поточним світом у редакторі (вибраний слот також стане активним слотом для вашого Realm). Учасники вашого Realm матимуть доступ до вашого щойно заміненого світу. Якщо ви хочете зберегти свій поточний світ перед публікацією, щоб запобігти втраті даних, закрийте це діалоговий вікно та виберіть «Завантажити» перед тим, як натиснути «Опублікувати». Виберіть «Підтвердити», щоб продовжити та замінити свій поточний світ.    	####This string is intended to warn the user that if they publish their world to Realms, the world currently in that Realms slot will be deleted and unrecoverable. It also informs the user that members of the Realm will be able to access this world.{MaxLength=1000}
-resourcePack.editor.realmsPublish.DownloadSuccess=Світ успішно завантажено з Realms    	####This string is intended to express that downloading a world from Realms succeeded.{MaxLength=200}
-resourcePack.editor.realmsPublish.DownloadFailed=Не вдалося завантажити світ з Realms 	####This string is intended to express that downloading a world from Realms failed.{MaxLength=200}
-resourcePack.editor.realmsPublish.DownloadingFromRealms=Завантаження світу з Realms…    	####This string is intended to express that we're in the middle of downloading a world from Realms and waiting for that operation to complete.{MaxLength=200}
-
-
-resourcePack.editor.toolRail.RepeaterTool.title=Інструмент «Повторювач»	#
-resourcePack.editor.toolRail.RepeaterTool.tooltip=Інструмент для повторення виділеного тривимірного вмісту	#
-resourcePack.editor.toolRail.RepeaterTool.pane.Spacing=Інтервал	#
-resourcePack.editor.toolRail.RepeaterTool.pane.Repetitions=Повторення	#
-resourcePack.editor.toolRail.RepeaterTool.pane.Preview=Попередній перегляд	#
-resourcePack.editor.toolRail.RepeaterTool.pane.Clear=Очистити	#
-resourcePack.editor.toolRail.RepeaterTool.pane.Apply=Застосовувати	#
-resourcePack.editor.toolRail.RepeaterTool.statusMessage.noSelection=За допомогою інструмента «Виділення» виберіть тривимірний вміст для повторення	#
-resourcePack.editor.toolRail.RepeaterTool.pane.Mode=Режим		####"Mode" describes a dropdown that contains the two different states the tool can be in. These are "Line" and "Grid" {MaxLength=20}
-resourcePack.editor.toolRail.RepeaterTool.mode.Line=Лінія		####"Line" describes a straight, unbroken visual between two points {MaxLength=20}
-resourcePack.editor.toolRail.RepeaterTool.mode.Grid=Сітка		####"Grid" describes a visual consisting of parallel lines at regular intervals, broken up by perpendicular lines at regular intervals, like grid paper. {MaxLength=20}
-resourcePack.editor.toolRail.RepeaterTool.pane.RepeatType=Повторити тип		####"Repeat Type" describes a dropdown that contains the two types "Uniform" and "Separate" and represents how the repetitions along the three axes (plural of "axis") will be determined {MaxLength=40}
-resourcePack.editor.toolRail.RepeaterTool.repeat.Uniform=Рівномірний		####"Uniform" describes the repeat state of the Repeater Tool where it applies the same number of repetitions across all three axes (X, Y, and Z). "Uniform" was chosen as a short word that also means "consistent across multiple instances" {MaxLength=20}
-resourcePack.editor.toolRail.RepeaterTool.pane.RepeatAlongX=Повторити за віссю Х		####"Repeat Along" describes a checkbox and means to apply the number of Uniform Repetitions across a given axis. This one is the X axis. "X", "Y", and "Z" have a mathematical meaning and it may not be appropriate to translate unless the mathematical meaning is also translated. More info can be found at https://en.wikipedia.org/wiki/Coordinate_system {MaxLength=40}
-resourcePack.editor.toolRail.RepeaterTool.pane.RepeatAlongY=Повторити за віссю Y		####See "Repeat Along X" but this is for the Y axis. {MaxLength=40}
-resourcePack.editor.toolRail.RepeaterTool.pane.RepeatAlongZ=Повторити за віссю Z		####See "Repeat Along X" but this is for the Z axis. {MaxLength=40}
-resourcePack.editor.toolRail.RepeaterTool.repeat.Separate=Окремо		####"Separate" describes the repeat state of the Repeater Tool where the number of repetitions along each axis is set using separate number input elements, rather than one single number input {MaxLength=20}
-resourcePack.editor.toolRail.RepeaterTool.pane.XCount=Координата X		####"X Count" describes a number input field and represents the number of repetitions along the X axis. "X", "Y", and "Z" have a mathematical meaning and it may not be appropriate to translate unless the mathematical meaning is also translated. More info can be found at https://en.wikipedia.org/wiki/Coordinate_system {MaxLength=20}
-resourcePack.editor.toolRail.RepeaterTool.pane.YCount=Координата Y		####See "X Count" but this is for the Y axis. {MaxLength=20}
-resourcePack.editor.toolRail.RepeaterTool.pane.ZCount=Координата Z		####See "X Count" but this is for the Z axis. {MaxLength=20}
-
-
-resourcePack.editor.selectionTool.deselect=Скасувати вибір	#
-resourcePack.editor.selectionTool.fillPane.fillAction=Заповнити вибране	#
-resourcePack.editor.selectionTool.fillPane.title=Заповнити вибір	#
-resourcePack.editor.selectionTool.keyBinding.deselect=Зняти виділення	#
-resourcePack.editor.selectionTool.keyBinding.fill=Заповнити виділення вмістом	#
-resourcePack.editor.selectionTool.keyBinding.growBack=Розширити виділення назад	#
-resourcePack.editor.selectionTool.keyBinding.growDown=Розширити виділення вниз	#
-resourcePack.editor.selectionTool.keyBinding.growForward=Розширити виділення вперед	#
-resourcePack.editor.selectionTool.keyBinding.growLeft=Розширити виділення ліворуч	#
-resourcePack.editor.selectionTool.keyBinding.growRight=Розширити виділення праворуч	#
-resourcePack.editor.selectionTool.keyBinding.growUp=Розширити виділення вгору	#
-resourcePack.editor.selectionTool.keyBinding.moveAllSelectionBack=Перемістити все виділення назад	#
-resourcePack.editor.selectionTool.keyBinding.moveAllSelectionDown=Перемістити все виділення вниз	#
-resourcePack.editor.selectionTool.keyBinding.moveAllSelectionForward=Перемістити все виділення вперед	#
-resourcePack.editor.selectionTool.keyBinding.moveAllSelectionLeft=Перемістити все виділення ліворуч	#
-resourcePack.editor.selectionTool.keyBinding.moveAllSelectionRight=Перемістити все виділення праворуч	#
-resourcePack.editor.selectionTool.keyBinding.moveAllSelectionUp=Перемістити все виділення вгору	#
-resourcePack.editor.selectionTool.keyBinding.moveCursorBack=Перемістити курсор назад	#
-resourcePack.editor.selectionTool.keyBinding.moveCursorDown=Перемістити курсор вниз	#
-resourcePack.editor.selectionTool.keyBinding.moveCursorForward=Перемістити курсор уперед	#
-resourcePack.editor.selectionTool.keyBinding.moveCursorLeft=Перемістити курсор ліворуч	#
-resourcePack.editor.selectionTool.keyBinding.moveCursorRight=Перемістити курсор праворуч	#
-resourcePack.editor.selectionTool.keyBinding.moveCursorUp=Перемістити курсор вгору	#
-resourcePack.editor.selectionTool.keyBinding.moveSelectionBack=Перемістити виділення назад	#
-resourcePack.editor.selectionTool.keyBinding.moveSelectionDown=Перемістити виділення вниз	#
-resourcePack.editor.selectionTool.keyBinding.moveSelectionForward=Перемістити виділення вперед	#
-resourcePack.editor.selectionTool.keyBinding.moveSelectionLeft=Перемістити виділення вліво	#
-resourcePack.editor.selectionTool.keyBinding.moveSelectionRight=Перемістити виділення праворуч	#
-resourcePack.editor.selectionTool.keyBinding.moveSelectionUp=Перемістити виділення вгору	#
-resourcePack.editor.selectionTool.keyBinding.shrinkBack=Стиснути виділення назад	#
-resourcePack.editor.selectionTool.keyBinding.shrinkDown=Стиснути виділення знизу	#
-resourcePack.editor.selectionTool.keyBinding.shrinkForward=Стиснути виділення вперед	#
-resourcePack.editor.selectionTool.keyBinding.shrinkLeft=Стиснути виділення ліворуч	#
-resourcePack.editor.selectionTool.keyBinding.shrinkRight=Стиснути виділення праворуч	#
-resourcePack.editor.selectionTool.keyBinding.shrinkUp=Стиснути виділення згори	#
-resourcePack.editor.selectionTool.keyBinding.toggleTool=Перемкнути інструмент «Виділення»	#
-resourcePack.editor.selectionTool.keyBinding.select=Вибрати блок			#### The action of adding a block to the selection volume using they keyboard {MaxLength="30"}
-resourcePack.editor.selectionTool.keyBinding.selectMultiple=Вибрати додатковий блок			#### The action of adding an additional block to the selection volume using the keyboard {MaxLength="30"}
-resourcePack.editor.selectionTool.keyBinding.trimVolume=Обрізати виділення (межі)					#### Keybinding description for Trim the current selection volume to fit only the solid blocks within {MaxLength=30}
-resourcePack.editor.selectionTool.keyBinding.trimRemoveAir=Trim Selection (Remove Air)			#### Keybinding description for Remove the air from the current selection volume leaving only specified blocks {MaxLength=30}
-resourcePack.editor.selectionTool.marquee.title=Вибір області	#
-resourcePack.editor.selectionTool.modeSelection.freehand.title=Режим вільного вибору пензлем	#
-resourcePack.editor.selectionTool.modeSelection.freehand.tooltip=Виділяйте блоки у світі в режимі вільного вибору пензлем	#
-resourcePack.editor.selectionTool.modeSelection.marquee.title=Режим вибору області	#
-resourcePack.editor.selectionTool.modeSelection.marquee.tooltip=Виділяйте блоки у світі в межах прямокутної області	#
-resourcePack.editor.selectionTool.modeSelection.magic.title=Режим магічного вибору			#### Magic Select mode is a mode that searches for contiguous matching blocks in a search radius {MaxLength=30}}
-resourcePack.editor.selectionTool.modeSelection.magic.tooltip=Виберіть блоки у світі за допомогою шаблону пошуку з обраного джерела		#### Longer description of the magic select mode {MaxLength=150}}
-resourcePack.editor.selectionTool.modeSelection.title=Режим вибору	#
-resourcePack.editor.selectionTool.projectThroughLiquid=Запустити через рідину	#
-resourcePack.editor.selectionTool.trimAction.trimVolume=Обрізати виділення			#### Trim the current selection volume to fit only the solid blocks within {MaxLength=30}
-resourcePack.editor.selectionTool.trimAction.trimVolume.tooltip=Обрізати поточну виділену область, щоб вона містила лише тверді блоки   	#### {MaxLength=200}
-resourcePack.editor.selectionTool.trimAction.removeAir=Видалити повітря			#### Remove the air from the current selection volume leaving only specified blocks {MaxLength=30}
-resourcePack.editor.selectionTool.trimAction.removeAir.tooltip=Видалити повітря з поточної виділеної області й залишити лише вказані блоки 	#### {MaxLength=200}
-resourcePack.editor.selectionTool.trimAction.trimVolume.SettingsPane.title=Налаштування обрізки		#### The window pane title for the settings for trim mode {MaxLength=30}
-resourcePack.editor.selectionTool.trimAction.trimVolume.SettingsPane.ignoreLiquid=Ігнорувати рідини		#### The toggle button title for ignoring liquids {MaxLength=30}
-resourcePack.editor.selectionTool.trimAction.trimVolume.SettingsPane.ignoreLiquid.tooltip=Ігнорувати будь-які блоки рідини під час обрізання області 	#### {MaxLength=200}
-resourcePack.editor.selectionTool.trimAction.trimVolume.SettingsPane.onlyCollidable=Лише блоки зіткнення		#### The toggle button title for collision-only blocks {MaxLength=30}
-resourcePack.editor.selectionTool.trimAction.trimVolume.SettingsPane.onlyCollidable.tooltip=Ігноруйте будь-які блоки без зіткнення (листя, трава тощо) під час обрізання області 	#### {MaxLength=200}
-resourcePack.editor.selectionTool.quickAction.clearSelection.tooltip=Скасувати виділення	#
-resourcePack.editor.selectionTool.quickAction.clearSelection=Скасувати вибір	#
-resourcePack.editor.selectionTool.quickAction.deleteSelection.tooltip=Видалення всіх блоків всередині виділеної області	#
-resourcePack.editor.selectionTool.quickAction.deleteSelection=Видалити	#
-resourcePack.editor.selectionTool.quickAction.fillSelection.tooltip=Заповнити поточну виділену область вибраним типом блоків	#
-resourcePack.editor.selectionTool.quickAction.fillSelection=Заповнити	#
-resourcePack.editor.selectionTool.quickAction.title=Швидкі дії	#
-resourcePack.editor.selectionTool.selectionMode.adjacent=Суміжні	#
-resourcePack.editor.selectionTool.selectionMode.fixedDistance=Фіксована відстань	#
-resourcePack.editor.selectionTool.selectionMode.mouseAndKeyboard=Полілінія	#
-resourcePack.editor.selectionTool.selectionMode=Режим	#
-resourcePack.editor.selectionTool.settingsPane.title=Вибір	#
-resourcePack.editor.selectionTool.toolRail.description=Клацніть лівою кнопкою миші, щоб створити виділення; натисніть CTRL + D, щоб зняти виділення	#
-resourcePack.editor.selectionTool.toolRail.title=Вибір	#
-resourcePack.editor.selectionTool.transformPane.origin.tooltip=Вихідна точка виділення у координатах світу.	#
-resourcePack.editor.selectionTool.transformPane.origin=Початок координат	#
-resourcePack.editor.selectionTool.transformPane.size=Розмір	#
-resourcePack.editor.selectionTool.transformPane.title=Перетворити	#
-
-
-resourcePack.editor.BlockMaskControl.trim.rootPane.title=Налаштування обрізки		#### The window pane title for the settings for trim mode {MaxLength=30}
-resourcePack.editor.BlockMaskControl.trim.toggleGroup.title=Режим маски		#### The title of the toggle group {MaxLength=30}
-resourcePack.editor.BlockMaskControl.trim.toggleGroup.item.disabled.label=Вимкнути фільтри блоків			#### The title of the icon which disables block filters {MaxLength=30}
-resourcePack.editor.BlockMaskControl.trim.toggleGroup.item.disabled.tooltip=Вимкнуто					#### The tooltip of the icon which disables block filters {MaxLength=100}
-resourcePack.editor.BlockMaskControl.trim.toggleGroup.item.mask.label=Маска								#### The title of the icon which masks block filters {MaxLength=30}
-resourcePack.editor.BlockMaskControl.trim.toggleGroup.item.mask.tooltip=Блоки зі списку будуть проігноровані			#### Mask mode tooltip {MaxLength=100}
-resourcePack.editor.BlockMaskControl.trim.toggleGroup.item.replace.label=Замінити						#### The title of the replace block filter {MaxLength=30}
-resourcePack.editor.BlockMaskControl.trim.toggleGroup.item.replace.tooltip=З блоками зі списку можна здійснювати операції як із твердими			#### Replace mode tooltip {MaxLength=100}
-
-
-resourcePack.editor.server.description=Серверні ресурси редактора	#
-resourcePack.editor.server.name=Ресурси редактора	#
-
-
-resourcePack.editor.toolRail.Terrain.title=Рельєф	#
-resourcePack.editor.toolRail.Terrain.keybinding.toggleTool=Перемкнути інструмент «Рельєф»	#
-resourcePack.editor.toolRail.Terrain.keyBinding.switch=Перемкнути режим «Рельєф»	#
-resourcePack.editor.toolRail.Terrain.Mode.title=Режим «Рельєф»	#
-resourcePack.editor.toolRail.Terrain.Smooth.mode.title=Режим «Згладжування»	#
-resourcePack.editor.toolRail.Terrain.Smooth.tooltip=Згладжування рельєфу з урахуванням сили згладжування	#
-resourcePack.editor.toolRail.Terrain.SmoothStrength=Сила згладжування	#
-resourcePack.editor.toolRail.Terrain.Roughen.mode.title=Режим «Створення нерівностей»	#
-resourcePack.editor.toolRail.Terrain.Roughen.tooltip=Створює нерівності рельєфу відповідно до ступеню нерівності	#
-resourcePack.editor.toolRail.Terrain.RoughenStrength=Ступінь нерівності	#
-resourcePack.editor.toolRail.Terrain.description=Інструмент для рельєфу згладжує рельєф або надає йому нерівності	#
-
-
-resourcePack.editor.help.learnMore=Докладніше	#
-
-resourcePack.editor.statusBar.connectedPlayers=Підключені гравці %s	#
-
-
-resourcePack.editor.summonTool.summonSubPane.EntityPickerTitle=Тип сутності	#
-
-
-resourcePack.editor.timeOfDay.12hrClock=12-годинний формат часу	#
-resourcePack.editor.timeOfDay.24hrClock=24-годинний формат часу	#
-resourcePack.editor.timeOfDay.clockType=Тип годинника	#
-resourcePack.editor.timeOfDay.currentTime=Поточний час	#
-resourcePack.editor.timeOfDay.customTime=Налаштовуваний час	#
-resourcePack.editor.timeOfDay.daylightCycle=Зміна часу доби	#
-resourcePack.editor.timeOfDay.dropDown.day=День	#
-resourcePack.editor.timeOfDay.dropDown.midnight=Північ	#
-resourcePack.editor.timeOfDay.dropDown.night=Ніч	#
-resourcePack.editor.timeOfDay.dropDown.none=Немає	#
-resourcePack.editor.timeOfDay.dropDown.noon=Полудень	#
-resourcePack.editor.timeOfDay.dropDown.sunrise=Схід сонця	#
-resourcePack.editor.timeOfDay.dropDown.sunset=Захід сонця	#
-resourcePack.editor.timeOfDay.dropDown.custom=Власний		####"Custom" describes a dropdown that players can define the specific start time {MaxLength=20}
-resourcePack.editor.timeOfDay.dropDown.title=Заготовки	#
-resourcePack.editor.timeOfDay.menu.title=Налаштування часу доби	#
-resourcePack.editor.timeOfDay.minecraftClock=Годинник Minecraft	#
-resourcePack.editor.timeOfDay.title=Налаштування часу	#
-
-
-resourcePack.editor.toolMode.keyBinding.console=Відкрити консоль	#
-resourcePack.editor.toolMode.keyBinding.devConsole=Відкрити консоль розробника	#
-resourcePack.editor.toolMode.keyBinding.hotbar1=Панель швидкого доступу 1	#
-resourcePack.editor.toolMode.keyBinding.hotbar2=Панель швидкого доступу 2	#
-resourcePack.editor.toolMode.keyBinding.hotbar3=Панель швидкого доступу 3	#
-resourcePack.editor.toolMode.keyBinding.hotbar4=Панель швидкого доступу 4	#
-resourcePack.editor.toolMode.keyBinding.hotbar5=Панель швидкого доступу 5	#
-resourcePack.editor.toolMode.keyBinding.hotbar6=Панель швидкого доступу 6	#
-resourcePack.editor.toolMode.keyBinding.hotbar7=Панель швидкого доступу 7	#
-resourcePack.editor.toolMode.keyBinding.hotbar8=Панель швидкого доступу 8	#
-resourcePack.editor.toolMode.keyBinding.hotbar9=Панель швидкого доступу 9	#
-resourcePack.editor.toolMode.keyBinding.reload=Перезавантажити 	####Represents a label for a key shortcut that reloads scripts and UI.{MaxLength=100}
-
-
-resourcePack.editor.toolRail.blockPalette.title=Палітра блоків (CTRL+P)	#
-resourcePack.editor.toolRail.blockPalette.tooltip=Установіть палітру улюблених або найбільш часто використовуваних блоків	#
-resourcePack.editor.toolRail.flattenBrush.title=Пензель для вирівнювання	#
-resourcePack.editor.toolRail.flattenBrush.tooltip=Вертикальне вирівнювання області до висоти вибраного блоку	#
-resourcePack.editor.toolRail.flattenBrush.settings.heightThreshold=Поріг висоти	#
-resourcePack.editor.toolRail.flattenBrush.settings.radius=Радіус	#
-resourcePack.editor.toolRail.floodFillSelectionTool.description=Вибирає область, яку ви зараз переглядаєте, використовуючи алгоритм заповнення заливкою.	#
-resourcePack.editor.toolRail.floodFillSelectionTool.title=Інструмент вибору заливки.	#
-resourcePack.editor.toolRail.line.keyBinding.delete=Видалити вміст	#
-resourcePack.editor.toolRail.line.keyBinding.deleteAndClear=Видалити вміст і зняти виділення	#
-resourcePack.editor.toolRail.line.keyBinding.deselect=Скасувати вибір	#
-resourcePack.editor.toolRail.line.keyBinding.deselectAll=Відхилити все вибране	#
-resourcePack.editor.toolRail.line.keyBinding.fill=Заповнити вмістом	#
-resourcePack.editor.toolRail.line.keyBinding.fillAndClear=Заповнити вмістом та зняти виділення	#
-resourcePack.editor.toolRail.line.keyBinding.moveBack=Перемістити виділене назад	#
-resourcePack.editor.toolRail.line.keyBinding.moveDown=Перемістити виділене вниз	#
-resourcePack.editor.toolRail.line.keyBinding.moveForward=Перемістити виділене вперед	#
-resourcePack.editor.toolRail.line.keyBinding.moveLeft=Перемістити виділене ліворуч	#
-resourcePack.editor.toolRail.line.keyBinding.moveRight=Перемістити виділене праворуч	#
-resourcePack.editor.toolRail.line.keyBinding.moveUp=Перемістити виділене вгору	#
-resourcePack.editor.toolRail.line.keyBinding.selectAll=Виділити все	#
-resourcePack.editor.toolRail.line.pane.algorithm.Direct=Спрямувати	#
-resourcePack.editor.toolRail.line.pane.algorithm.Staggered=У шаховому порядку (паркани)	#
-resourcePack.editor.toolRail.line.pane.algorithm.title=Алгоритм	#
-resourcePack.editor.toolRail.line.pane.fillAction=Заповнити вибране	#
-resourcePack.editor.toolRail.line.pane.height.title=Висота	#
-resourcePack.editor.toolRail.line.pane.selectionMode.adjacent=Суміжне обличчя	#
-resourcePack.editor.toolRail.line.pane.selectionMode.fixedDistance=Фіксована відстань	#
-resourcePack.editor.toolRail.line.pane.selectionMode.freeForm=Вільна форма	#
-resourcePack.editor.toolRail.line.pane.selectionMode=Вибір	#
-resourcePack.editor.toolRail.line.pane.surfaceContour=Контур поверхні	#
-resourcePack.editor.toolRail.line.pane.width.title=Ширина	#
-resourcePack.editor.toolRail.line.title=Лінія	#
-resourcePack.editor.toolRail.line.tooltip=Інструмент «Лінія» створює лінії блоків	#
-resourcePack.editor.toolRail.rulerTool.title=Інструмент «Лінійка»	#
-resourcePack.editor.toolRail.rulerTool.tooltip=Вимірювання відстані	#
-resourcePack.editor.toolRail.rulerTool.info.title=Вимірювання	#
-
-
-resourcePack.editor.toolRail.smartFillTool.title=Інструмент Розумна заливка	#
-resourcePack.editor.toolRail.smartFillTool.tooltip=Натисніть для заповнення з’єднаного набору блоків	#
-resourcePack.editor.toolRail.smartFillTool.modes.fillVolume=Заповнити об’єм	#
-resourcePack.editor.toolRail.smartFillTool.areaLimit.title=Обмеження області	#
-resourcePack.editor.toolRail.smartFillTool.areaLimit.tooltip=Максимальна площа заповнення	#
-
-
-resourcePack.editor.toolRail.summonTool.keyBinding.clear=Скасувати вибір	#
-resourcePack.editor.toolRail.summonTool.keyBinding.delete=Видалити сутність	#
-resourcePack.editor.toolRail.summonTool.keyBinding.moveBack=Перемістити виділене назад	#
-resourcePack.editor.toolRail.summonTool.keyBinding.moveDown=Перемістити виділене вниз	#
-resourcePack.editor.toolRail.summonTool.keyBinding.moveForward=Перемістити виділене вперед	#
-resourcePack.editor.toolRail.summonTool.keyBinding.moveLeft=Перемістити виділене ліворуч	#
-resourcePack.editor.toolRail.summonTool.keyBinding.moveRight=Перемістити виділене праворуч	#
-resourcePack.editor.toolRail.summonTool.keyBinding.moveUp=Перемістити виділене вгору	#
-resourcePack.editor.toolRail.summonTool.keyBinding.toggle=Перемкнути інструмент «Виклик»	#
-resourcePack.editor.toolRail.summonTool.pane.select=Вибрати режим	#
-resourcePack.editor.toolRail.summonTool.pane.title=Інструмент «Виклик»	#
-resourcePack.editor.toolRail.summonTool.pane.type=Тип сутності	#
-resourcePack.editor.toolRail.summonTool.tool.infoText=Клацніть сутність, щоб вибрати її, або натисніть карту, щоб викликати нову сутність	#
-resourcePack.editor.toolRail.summonTool.tool.selectSubPane.rotation=Обертання	#
-resourcePack.editor.toolRail.summonTool.tool.selectSubPane=Вибір сутностей	#
-resourcePack.editor.toolRail.summonTool.tool.summonSubPane=Генерування сутностей	#
-resourcePack.editor.toolRail.summonTool.tool.tip=Натисніть, щоб призвати сутності	#
-resourcePack.editor.toolRail.summonTool.tool.title=Інструмент «Виклик»	#
-
-resourcePack.editor.toolRail.workbenchSettings.title=Майстерня	#
-resourcePack.editor.toolRail.workbenchTool.title=Майстерня	#
-resourcePack.editor.toolRail.workbenchTool.description=Швидка зміна станів блока	#
-resourcePack.editor.toolRail.workbenchTool.howToUse=Виділіть блоки, щоб побачити доступні дії та змінити їхній стан (відкрити / закрити, обернути, інвертувати тощо). Спробуйте також використати модифікатори клавіш Shift та Control! Зверніть увагу, що ця функція працює лише на блоках зі змінними властивостями (наприклад, двері, паркани, сходи тощо).		####	This text provides a description of the workbench tool and explans how the the user can highlight blocks in order to see the list of actions for changing that blocks state. {MaxLength="500"}
-resourcePack.editor.toolRail.workbenchTool.tooltip=Змінює стан блока	#
-resourcePack.editor.toolRail.workbenchTool.block=Блокувати	#
-resourcePack.editor.toolRail.workbenchTool.leftClick=Клацніть лівою кнопкою миші	#
-resourcePack.editor.toolRail.workbenchTool.shiftLeftClick=Shift + Ліва кнопка миші	#
-resourcePack.editor.toolRail.workbenchTool.controlLeftClick=CTRL + Ліва кнопка миші	#
-resourcePack.editor.toolRail.workbenchTool.shiftControlLeftClick=Shift + CTRL + Ліва кнопка миші	#
-
-resourcePack.editor.toolRail.workbenchTool.leftClickTooltip=Клацніть лівою кнопкою миші на блоці, щоб виконати основну дію в Майстерні		####	This keybinding is a tool tip to convey that a left click will invoke the primary (1st) action of the workbench tool. {MaxLength="150"}
-resourcePack.editor.toolRail.workbenchTool.shiftLeftClickTooltip=Shift + ліва кнопка миші на блоці виконає другорядну дію в Майстерні		####	This keybinding is a tool tip to convey that a shift + left click will invoke the primary (1st) action of the workbench tool. {MaxLength="150"}
-resourcePack.editor.toolRail.workbenchTool.controlLeftClickTooltip=Ctrl + ліва кнопка миші на блоці виконає третинну дію в Майстерні		####	This keybinding is a tool tip to convey that a control + left click will invoke the primary (1st) action of the workbench tool. {MaxLength="150"}
-resourcePack.editor.toolRail.workbenchTool.shiftControlLeftClickTooltip=Shift + Ctrl + ліва кнопка миші на блоці виконає четвертинну дію в Майстерні		####	TThis keybinding is a tool tip to convey that a shift + control + left click will invoke the primary (1st) action of the workbench tool. {MaxLength="150"}
-
-resourcePack.editor.toolRail.workbenchTool.stripWood=Обтесана / не обтесана деревина		####This string is intended to express whether the wood block has bark (unstripped) or doesn't have bark (stripped).{MaxLength=100}
-resourcePack.editor.toolRail.workbenchTool.ladderLocation=Розташування драбини	#
-resourcePack.editor.toolRail.workbenchTool.autoAlign=Автоматичне вирівнювання	#
-resourcePack.editor.toolRail.workbenchTool.autoAlignFacingDirection=Автоматичне вирівнювання напрямку обернення		####This string is intended to express that the action will align the facing direction of the block with the player camera.{MaxLength=100}
-resourcePack.editor.toolRail.workbenchTool.autoAlignRotation=Автоматичне вирівнювання обертання		####This string is intended to express that the action will align the roatation of the block with the player camera.{MaxLength=100}
-
-resourcePack.editor.toolRail.workbenchTool.topSlotBitProp=Верх / низ	#
-resourcePack.editor.toolRail.workbenchTool.pillarAxisProp=Повернути	#
-resourcePack.editor.toolRail.workbenchTool.heightProp=Шари	#
-resourcePack.editor.toolRail.workbenchTool.candlesProp=Кількість свічок	#
-
-resourcePack.editor.toolRail.workbenchTool.turtleEggCountProp=Кількість яєць черепахи	#
-resourcePack.editor.toolRail.workbenchTool.clusterCountProp=Кількість морських огірків	#
-resourcePack.editor.toolRail.workbenchTool.hangingProp=Перемкніть звисання з іншого блоку	#
-resourcePack.editor.toolRail.workbenchTool.wallPostBitProp=Перемкнути опору	#
-
-resourcePack.editor.toolRail.workbenchTool.upsideDownBitProp=Верх / низ	#
-resourcePack.editor.toolRail.workbenchTool.openBitProp=Відкрити / закрити	#
-resourcePack.editor.toolRail.workbenchTool.litProp=Запалити / загасити	#
-resourcePack.editor.toolRail.workbenchTool.dripstoneThicknessProp=Товщина печерного наросту	#
-
-resourcePack.editor.toolRail.workbenchTool.directionProp=Напрямок обернення	#
-resourcePack.editor.toolRail.workbenchTool.weirdoDirectionProp=Повернути	#
-resourcePack.editor.toolRail.workbenchTool.facingDirectionProp=Напрямок обернення	#
-resourcePack.editor.toolRail.workbenchTool.cardinalDirectionProp=Напрямок обернення	#
-
-resourcePack.editor.toolRail.workbenchTool.addCustomMapping=Додати нестандартну розкладку		####This string is intended to express that this subpane is for adding custom block property mappings for the tool.{MaxLength=100}
-resourcePack.editor.toolRail.workbenchTool.blockProperty=Властивість блоку		####This string is intended to express that this field is for the Block Property.{MaxLength=50}
-resourcePack.editor.toolRail.workbenchTool.clickBinding=Клацніть на «Прив’язки»		####This string is intended to express that this dropdown contains the click binding options (left click, shift + left click, etc).{MaxLength=50}
-resourcePack.editor.toolRail.workbenchTool.addMapping=Додати розкладку		####This string is intended to express that this button will add the custom mapping provided by the user.{MaxLength=50}
-resourcePack.editor.toolRail.workbenchTool.resetAllMappings=Скинути всі розкладки		####This string is intended to express that this button will reset all custom mappings provided by the user.{MaxLength=50}
-
-resourcePack.editor.workbenchTool.keyBinding.primaryAction=Основна дія в Майстерні		####	This keybinding is to invoke the primary (1st) action of the workbench tool. {MaxLength="30"}
-resourcePack.editor.workbenchTool.keyBinding.secondaryAction=Вторинна дія в Майстерні		#### This keybinding is to invoke the secondary (2nd) action of the workbench tool. {MaxLength="30"}
-resourcePack.editor.workbenchTool.keyBinding.tertiaryAction=Третинна дія в Майстерні		####	This keybinding is to invoke the tertiary (3rd) action of the workbench tool. {MaxLength="30"}
-resourcePack.editor.workbenchTool.keyBinding.quaternaryAction=Четвертинна дія в Майстерні		#### This keybinding is to invoke the quaternary (4th) action of the workbench tool. {MaxLength="30"}
-
-
-resourcePack.editor.transaction.keyBinding.redo=Повторити	#
-resourcePack.editor.transaction.keyBinding.undo=Скасувати	#
-
-
-resourcePack.editor.viewport.keyBinding.moveBack=Назад	#
-resourcePack.editor.viewport.keyBinding.moveDown=Перемістити вниз	#
-resourcePack.editor.viewport.keyBinding.moveForward=Вперед	#
-resourcePack.editor.viewport.keyBinding.moveLeft=Вліво	#
-resourcePack.editor.viewport.keyBinding.moveRight=Вправо	#
-resourcePack.editor.viewport.keyBinding.moveUp=Перемістити вгору	#
-
-resourcePack.editor.viewport.keyBinding.incrementFlySpeed=Збільшити швидкість польоту	#
-resourcePack.editor.viewport.keyBinding.decrementFlySpeed=Зменшити швидкість польоту	#
-
-resourcePack.editor.viewSettings.compass.tip=Показати компас із напрямком	#
-resourcePack.editor.viewSettings.compass.title=Показати компас	#
-resourcePack.editor.viewSettings.chunk.tip=Відобразити контур кордонів чанків на карті	#
-resourcePack.editor.viewSettings.chunk.title=Відобразити межі чанків	#
-resourcePack.editor.viewSettings.nightVision.tip=Показати світ так, ніби ви бачите в темряві	#
-resourcePack.editor.viewSettings.nightVision.title=Нічне бачення	#
-resourcePack.editor.viewSettings.invisible.tip=Показувати невидимі блоки (наприклад, порожнечу, бар’єри тощо)	#
-resourcePack.editor.viewSettings.invisible.title=Показувати невидимі блоки	#
-resourcePack.editor.viewSettings.flySpeed.tip=Збільшує швидкість польоту для швидшого маневрування на карті	#
-resourcePack.editor.viewSettings.flySpeed.title=Коефіцієнт збільшення швидкості польоту	#
-resourcePack.editor.viewSettings.menu=Налаштування	#
-resourcePack.editor.viewSettings.title=Налаштування	#
-
-resourcePack.editor.hotbar.defaultDisplayName=Стандартний	#
-
-resourcePack.editor.reloadScripts.response.tooMany=До сервера підключено забагато гравців. Перезавантаження скрипту підтримується лише на хостах з одним підключеним гравцем.	#
-resourcePack.editor.reloadScripts.response.genericError=Під час спроби перезавантажити скрипти виникла помилка.	#
-resourcePack.editor.reloadScripts.response.noAdminRights=Ви не маєте дозволу на перезавантаження скриптів.	#
+﻿
+commands.editor.project.beginExport=Експорт...
+commands.editor.project.description=Маніпулювання поточним завантаженим проєктом
+commands.editor.project.export=Експорт проєктів
+commands.editor.project.exportComplete=Експорт завершено, файли переписані на %s
+commands.editor.project.exportCopyFailed=Не вдалося скопіювати дані рівня %s
+commands.editor.project.unknownSubcommand=Невідома підкоманда
+resourcePack.editor.actionBar.redo.tooltipDescription=Повторення дії
+resourcePack.editor.actionBar.redo.tooltipTitle=Повторити
+resourcePack.editor.actionBar.redo=Повторити
+resourcePack.editor.actionBar.undo.tooltipDescription=Скасування дії
+resourcePack.editor.actionBar.undo.tooltipTitle=Скасувати
+resourcePack.editor.actionBar.undo=Скасувати
+resourcePack.editor.actionBar.fill=Заповнити 
+resourcePack.editor.actionBar.fill.tooltipDescription=Заповніть виділену область поточним блоком панелі швидкого доступу 
+resourcePack.editor.actionBar.fill.tooltipTitle=Заповнити 
+resourcePack.editor.agfx.settings.error.title=Сталася помилка(помилки)…
+resourcePack.editor.agfx.pane.title=Редактор параметрів
+resourcePack.editor.agfx.pane.settings_selector=Вибрати налаштування
+resourcePack.editor.agfx.pane.settings.title=Налаштування
+resourcePack.editor.agfx.pane.settings.revert_changes=Скасувати зміни
+resourcePack.editor.agfx.pane.settings.export_to_clipboard=Експорт у буфер обміну
+resourcePack.editor.toolRail.blockInspectorSettings.title=Інспектор блока   
+resourcePack.editor.toolRail.blockInspectorSettings.specifics=Специфічні параметри блока   
+resourcePack.editor.toolRail.blockInspectorSettings.actions.refresh=Оновити дані блока   
+resourcePack.editor.toolRail.blockInspectorSettings.actions.clear=Скасувати вибір   
+resourcePack.editor.toolRail.blockInspectorSettings.blockTags=Теги блока   
+resourcePack.editor.toolRail.blockInspectorSettings.blockProperties=Властивості блока   
+resourcePack.editor.toolRail.blockInspectorSettings.blockProperties.name=Назва властивості   
+resourcePack.editor.toolRail.blockInspectorSettings.blockProperties.value=Значення властивості   
+resourcePack.editor.toolRail.blockInspectorTool.title=Інспектор блока   
+resourcePack.editor.toolRail.blockInspectorTool.tooltip=Переглянути дані блока   
+resourcePack.editor.toolRail.blockInspectorTool.pane.helpText=Клацніть лівою кнопкою миші на блок, щоб переглянути та відредагувати його властивості   
+resourcePack.editor.blockInspector.toolRail.description=Клацніть лівою кнопкою миші на блок, щоб переглянути та відредагувати його властивості   
+resourcePack.editor.blockPalette.addSearchItem=Використати знайдений блок
+resourcePack.editor.blockPalette.blockPicker=Пошук
+resourcePack.editor.blockPalette.paletteDropdown.title=Палітра
+resourcePack.editor.blockPalette.title=Палітра блоків
+resourcePack.editor.brushPaint.inputContext.activateBrushPaint=Активація пензля
+resourcePack.editor.brushPaint.inputContext.oneshot=Одноразове фарбування
+resourcePack.editor.brushPaint.inputContext.title=Пензель
+resourcePack.editor.brushPaint.title=Пензель
+resourcePack.editor.brushPaint.tooltip=Використовуйте пензлі для розфарбовування блоків у світі
+resourcePack.editor.BrushPaintControl.brush.title=Пензель
+resourcePack.editor.BrushPaintControl.brushSettings.title=Налаштування пензля
+resourcePack.editor.BrushPaintControl.shapeSettings.title=Налаштування форми 
+resourcePack.editor.BrushPaintControl.fillConstraints.mask.title=Список масок
+resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.disabled.tooltip=Вимкнути фільтри блоків
+resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.disabled=Вимкнуто
+resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.mask.tooltip=Блоки зі списку будуть проігноровані й залишаться незмінними
+resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.mask=Маска
+resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.replace=Замінити
+resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.title=Фільтр блоків пензля
+resourcePack.editor.BrushPaintControl.fillConstraints.replace.title=Замінити список
+resourcePack.editor.BrushPaintControl.fillConstraints.replace.tooltip=З блоками зі списку можна здійснювати операції
+resourcePack.editor.BrushPaintControl.fillConstraints.title=Обмеження заповнення
+resourcePack.editor.BrushPaintControl.keybinding.maskMask=Режим маски – Маска
+resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetBack=Виштовхнути зсув назад
+resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetDown=Виштовхнути зсув униз
+resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetForward=Виштовхнути зсув уперед
+resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetLeft=Виштовхнути зсув ліворуч
+resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetRight=Виштовхнути зсув праворуч
+resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetUp=Виштовхнути зсув угору
+resourcePack.editor.BrushPaintControl.keybinding.replaceMask=Режим маски – Заміна
+resourcePack.editor.BrushPaintControl.offset.title=Зсув
+resourcePack.editor.BrushPaintControl.offset.tooltip=Зсув від позиції курсора
+resourcePack.editor.BrushPaintControl.rootPane.title=Налаштування пензля
+resourcePack.editor.brushShape.common.settings.axis=Вісь екструзії
+resourcePack.editor.brushShape.common.settings.height=Висота
+resourcePack.editor.brushShape.common.settings.length=Довжина
+resourcePack.editor.brushShape.common.settings.radius=Радіус
+resourcePack.editor.brushShape.common.settings.uniform=Рівномірний
+resourcePack.editor.brushShape.common.settings.xAxis=Вісь X
+resourcePack.editor.brushShape.common.settings.xAxisNeg=-Вісь X
+resourcePack.editor.brushShape.common.settings.yAxis=Вісь Y
+resourcePack.editor.brushShape.common.settings.yAxisNeg=-Вісь Y
+resourcePack.editor.brushShape.common.settings.zAxis=Вісь Z
+resourcePack.editor.brushShape.common.settings.zAxisNeg=-Вісь Z
+resourcePack.editor.brushShape.cone.name=Конус
+resourcePack.editor.brushShape.cone.settings.depth=Глибина радіуса
+resourcePack.editor.brushShape.cone.settings.width=Ширина радіуса
+resourcePack.editor.brushShape.cuboid.name=Кубоїд
+resourcePack.editor.brushShape.cuboid.settings.depth=Глибина
+resourcePack.editor.brushShape.cuboid.settings.height=Висота
+resourcePack.editor.brushShape.cuboid.settings.width=Ширина
+resourcePack.editor.brushShape.cylinder.name=Циліндр
+resourcePack.editor.brushShape.cylinder.settings.depth_radius=Глибина радіуса
+resourcePack.editor.brushShape.cylinder.settings.width_radius=Ширина радіуса
+resourcePack.editor.brushShape.ellipsoid.name=Еліпсоїд
+resourcePack.editor.brushShape.ellipsoid.settings.depth_radius=Глибина радіуса
+resourcePack.editor.brushShape.ellipsoid.settings.height_radius=Висота радіуса
+resourcePack.editor.brushShape.ellipsoid.settings.width_radius=Ширина радіуса
+resourcePack.editor.brushShape.pyramid.name=Піраміда
+resourcePack.editor.brushShape.pyramid.settings.depth=Глибина
+resourcePack.editor.brushShape.pyramid.settings.height=Висота
+resourcePack.editor.brushShape.pyramid.settings.width=Ширина
+resourcePack.editor.brushShape.singleBlock.name=Одиночний блок
+resourcePack.editor.brushShape.star.name=Зірка 
+resourcePack.editor.brushShape.star.settings.includeVertical=Включати вертикальні 
+resourcePack.editor.client.description=Клієнтські ресурси редактора
+resourcePack.editor.client.name=Ресурси редактора
+resourcePack.editor.ClipboardPreviewControl.keybinding.moveOriginBack=Перемістити початкову точку назад
+resourcePack.editor.ClipboardPreviewControl.keybinding.moveOriginDown=Перемістити початкову точку вниз
+resourcePack.editor.ClipboardPreviewControl.keybinding.moveOriginForward=Перемістити початкову точку вперед
+resourcePack.editor.ClipboardPreviewControl.keybinding.moveOriginLeft=Перемістити початкову точку ліворуч
+resourcePack.editor.ClipboardPreviewControl.keybinding.moveOriginRight=Перемістити початкову точку праворуч
+resourcePack.editor.ClipboardPreviewControl.keybinding.moveOriginUp=Перемістити початкову точку вгору
+resourcePack.editor.ClipboardPreviewControl.keyBinding.nudgeOffsetBack=Виштовхнути зсув назад
+resourcePack.editor.ClipboardPreviewControl.keyBinding.nudgeOffsetDown=Виштовхнути зсув униз
+resourcePack.editor.ClipboardPreviewControl.keyBinding.nudgeOffsetForward=Виштовхнути зсув уперед
+resourcePack.editor.ClipboardPreviewControl.keyBinding.nudgeOffsetLeft=Виштовхнути зсув ліворуч
+resourcePack.editor.ClipboardPreviewControl.keyBinding.nudgeOffsetRight=Виштовхнути зсув праворуч
+resourcePack.editor.ClipboardPreviewControl.keyBinding.nudgeOffsetUp=Виштовхнути зсув угору
+resourcePack.editor.ClipboardPreviewControl.keybinding.rotateClockWise=Повернути попередній перегляд за годинниковою стрілкою
+resourcePack.editor.ClipboardPreviewControl.keybinding.rotateCounterClockWise=Повернути попередній перегляд проти годинникової стрілки
+resourcePack.editor.ClipboardPreviewControl.keybinding.toggleMirrorX=Перемкнути віддзеркалення X
+resourcePack.editor.ClipboardPreviewControl.keybinding.toggleMirrorZ=Перемкнути віддзеркалення Z
+resourcePack.editor.ClipboardPreviewControl.mirror.axis.x.tooltip=Віддзеркалення елемента буфера обміну навколо осі X у початковій точці
+resourcePack.editor.ClipboardPreviewControl.mirror.axis.x=Віддзеркалити (вісь X)
+resourcePack.editor.ClipboardPreviewControl.mirror.axis.z.tooltip=Віддзеркалення елемента буфера обміну навколо осі Z у початковій точці
+resourcePack.editor.ClipboardPreviewControl.mirror.axis.z=Віддзеркалити (вісь Z)
+resourcePack.editor.ClipboardPreviewControl.offset.title=Зсув
+resourcePack.editor.ClipboardPreviewControl.offset.tooltip=Додатковий зсув від точки розміщення до початкової точки елемента буфера обміну
+resourcePack.editor.ClipboardPreviewControl.origin.title=Початок координат
+resourcePack.editor.ClipboardPreviewControl.origin.tooltip=Початкова точка в елементі буфера обміну.  Використовується як прив'язка для розміщення, а також як точка, навколо якої буфер обміну обертається і дзеркально відображається
+resourcePack.editor.ClipboardPreviewControl.placement.title=Параметри
+resourcePack.editor.ClipboardPreviewControl.rootPane.title=Інформація про буфер обміну
+resourcePack.editor.ClipboardPreviewControl.rotation.180=180°
+resourcePack.editor.ClipboardPreviewControl.rotation.270=270°
+resourcePack.editor.ClipboardPreviewControl.rotation.90=90°
+resourcePack.editor.ClipboardPreviewControl.rotation.none=Немає
+resourcePack.editor.ClipboardPreviewControl.rotation.title=Обертання
+resourcePack.editor.ClipboardPreviewControl.rotation.tooltip=Величина обертання навколо осі Y у початковій точці
+resourcePack.editor.ClipboardPreviewControl.structureSize.title=Розмір буфера обміну
+resourcePack.editor.copypaste.actionbar.copy.title=Копіювати
+resourcePack.editor.copypaste.actionbar.copy.tooltip=Копіювати вибране в буфер обміну
+resourcePack.editor.copypaste.actionbar.copy.tooltipDescription=Копіювання вмісту виділеної області в буфер обміну, без змін у виділеній області
+resourcePack.editor.copypaste.actionbar.cut.title=Вирізати
+resourcePack.editor.copypaste.actionbar.cut.tooltip=Вирізати / перемістити виділену область у буфер обміну
+resourcePack.editor.copypaste.actionbar.cut.tooltipDescription=Копіювання вмісту виділеної області в буфер обміну та видалення вибраного вмісту
+resourcePack.editor.copypaste.keyBinding.copy=Копіювати вибране в буфер обміну
+resourcePack.editor.copypaste.keyBinding.cut=Вирізати / перемістити вибране в буфер обміну
+resourcePack.editor.copypaste.keyBinding.paste=Вставити елемент із буферу обміну у світ
+resourcePack.editor.copypaste.menu.copy.title=Копіювати виділення
+resourcePack.editor.copypaste.menu.cut.title=Вирізати виділену область
+resourcePack.editor.core.keyBinding.showGameMenu=Показати меню гри
+resourcePack.editor.core.keyBinding.showLogPanel=Показати панель журналу
+resourcePack.editor.CursorModeControl.cursorTargetMode.block.tooltip=Блок під курсором миші
+resourcePack.editor.CursorModeControl.cursorTargetMode.block=Блок
+resourcePack.editor.CursorModeControl.cursorTargetMode.face.tooltip=Блок, що безпосередньо примикає до грані блоку під курсором
+resourcePack.editor.CursorModeControl.cursorTargetMode.face=Суміжні
+resourcePack.editor.CursorModeControl.cursorTargetMode.title=Мішень
+resourcePack.editor.CursorModeControl.cursorTargetMode.tooltip=Виберіть режим мішені курсору
+resourcePack.editor.CursorModeControl.fixedDistance.slider.title=Фіксована відстань курсору
+resourcePack.editor.CursorModeControl.fixedDistance.slider.tooltip=Відрегулюйте фіксовану відстань від гравця, на якій розміщено блоковий курсор
+resourcePack.editor.CursorModeControl.keybinding.moveCursorBack=Перемістити курсор назад
+resourcePack.editor.CursorModeControl.keybinding.moveCursorDown=Перемістити курсор вниз
+resourcePack.editor.CursorModeControl.keybinding.moveCursorForward=Поштовх уперед
+resourcePack.editor.CursorModeControl.keybinding.moveCursorLeft=Перемістити курсор ліворуч
+resourcePack.editor.CursorModeControl.keybinding.moveCursorRight=Перемістити курсор праворуч
+resourcePack.editor.CursorModeControl.keybinding.moveCursorUp=Перемістити курсор вгору
+resourcePack.editor.CursorModeControl.keybinding.toggleBlockTargetMode=Перемкнути блок/Суміжний режим
+resourcePack.editor.CursorModeControl.keybinding.toggleFixedDistance=Перемкнути режим фіксованої відстані
+resourcePack.editor.CursorModeControl.keybinding.toggleMouseTracking=Перемкнути відстеження миші
+resourcePack.editor.CursorModeControl.mouseControlMode.fixed=Фіксована відстань
+resourcePack.editor.CursorModeControl.mouseControlMode.keyboard=Тільки клавіатура
+resourcePack.editor.CursorModeControl.mouseControlMode.keyboardAndMouse=Миша й клавіші
+resourcePack.editor.CursorModeControl.mouseControlMode.title=Спосіб введення
+resourcePack.editor.CursorModeControl.mouseControlMode.tooltip=Виберіть спосіб введення для блокового курсору у світі
+resourcePack.editor.CursorModeControl.projectThroughWater.title=Проєктувати крізь воду
+resourcePack.editor.CursorModeControl.projectThroughWater.tooltip=Промінь від миші буде проєктуватися крізь воду, даючи змогу вибирати підводні елементи
+resourcePack.editor.CursorModeControl.rootPane.title=Налаштування курсору
+resourcePack.editor.datatransferaccessors.atmospheric_scattering=Атмосферне розсіювання
+resourcePack.editor.datatransferaccessors.color_grading=Корекція кольорів
+resourcePack.editor.datatransferaccessors.lighting_group=Глобальне освітлення
+resourcePack.editor.datatransferaccessors.pbr_fallbacks=Резервні копії PBR
+resourcePack.editor.datatransferaccessors.point_lights=Точкові джерела світла
+resourcePack.editor.datatransferaccessors.water=Вода
+resourcePack.editor.datatransferaccessors.shadows=Тіні
+resourcePack.editor.deferredLightingSettings.menu.title=Параметри відкладеного освітлення
+resourcePack.editor.delete.keyBinding=Видалити вміст виділення
+resourcePack.editor.toolRail.entityInspector.pane.title=Інспектор сутностей   
+resourcePack.editor.toolRail.entityInspector.tool.title=Інспектор сутностей   
+resourcePack.editor.toolRail.entityInspector.tool.tip=Переглянути дані сутності   
+resourcePack.editor.toolRail.entityInspector.pane.helpText=Клацніть лівою кнопкою миші на сутності, щоб переглянути та відредагувати її властивості   
+resourcePack.editor.entityInspector.toolRail.description=Клацніть лівою кнопкою миші на сутності, щоб переглянути та відредагувати її властивості   
+resourcePack.editor.exportProject.exportType=Тип експорту
+resourcePack.editor.exportProject.exportType.playableWorld=Ігровий світ
+resourcePack.editor.exportProject.exportNotes=Експорт нотаток
+resourcePack.editor.exportProject.exportNotes.export=Триває експорт   
+resourcePack.editor.exportProject.exportNotes.warning=Ви експортуєте світ v%1. Експортовані ігрові світи не можна використовувати у версіях Minecraft, старших за v%1. Щоб конвертувати світи попередніх версій, скористайтеся посиланням https://chunker.app/ (деякі функції можуть бути недоступні, якщо вони не підтримуються в попередніх версіях)
+resourcePack.editor.exportProject.exportNotes.progress=Експорт світу…    
+resourcePack.editor.exportProject.exportNotes.exportSuccess=Світ успішно експортовано    
+resourcePack.editor.exportProject.exportNotes.exportFailed=Не вдалося експортувати світ    
+resourcePack.editor.exportProject.generalSettings=Загальні параметри
+resourcePack.editor.exportProject.generalSettings.worldName=Назва світу
+resourcePack.editor.exportProject.generalSettings.gameMode=Режим гри
+resourcePack.editor.exportProject.generalSettings.difficulty=Складність
+resourcePack.editor.exportProject.generalSettings.hardcore=Хардкор
+resourcePack.editor.exportProject.initialPlaySettings=Початкові налаштування гри   
+resourcePack.editor.exportProject.initialPlaySettings.spawnPosition=Місце призову у світі   
+resourcePack.editor.exportProject.initialPlaySettings.startTime=Час початку   
+resourcePack.editor.exportProject.initialPlaySettings.clockType=Тип годинника   
+resourcePack.editor.exportProject.initialPlaySettings.customStartTime=Налаштовуваний час початку   
+resourcePack.editor.exportProject.initialPlaySettings.weather=Початкова погода   
+resourcePack.editor.exportProject.advancedSettings=Розширені параметри
+resourcePack.editor.exportProject.advancedSettings.startingMap=Початкова карта
+resourcePack.editor.exportProject.advancedSettings.bonusChest=Скриня бонусів
+resourcePack.editor.exportProject.advancedSettings.showCoordinates=Відображення координат
+resourcePack.editor.exportProject.advancedSettings.showDaysPlayed=Відображення ігрових днів
+resourcePack.editor.exportProject.advancedSettings.recipeUnlocking=Розблокування рецептів
+resourcePack.editor.exportProject.advancedSettings.limitedCrafting=Обмежений крафтинг   
+resourcePack.editor.exportProject.advancedSettings.fireSpreads=Поширення вогню
+resourcePack.editor.exportProject.advancedSettings.tntExplodes=Спрацювання вибухівки
+resourcePack.editor.exportProject.advancedSettings.resawnBlocksExplode=Вибух блоків відродження
+resourcePack.editor.exportProject.advancedSettings.mobLoot=Здобич із мобів
+resourcePack.editor.exportProject.advancedSettings.naturalRegeneration=Природне відновлення
+resourcePack.editor.exportProject.advancedSettings.tileDrops=Викидання з блоків
+resourcePack.editor.exportProject.advancedSettings.immediateRespawn=Миттєве відродження
+resourcePack.editor.exportProject.advancedSettings.showDeathMessage=Показувати повідомлення про смерть   
+resourcePack.editor.exportProject.advancedSettings.respawnRadius=Радіус відродження
+resourcePack.editor.exportProject.advancedSettings.simulationDistance=Відстань симуляції
+resourcePack.editor.exportProject.advancedSettings.bedsWork=Сон у ліжку
+resourcePack.editor.exportProject.advancedSettings.requiredSleepingPlayers=Кількість гравців, які повинні обов’язково лягти спати (%1$s)
+resourcePack.editor.exportProject.advancedSettings.requiredSleepingPlayers.onePlayerMessage=Лише 1 гравець
+resourcePack.editor.exportProject.advancedSettings.showItemTags=Показувати ярлики предметів   
+resourcePack.editor.exportProject.multiplayerSettings=Параметри мультиплеєра
+resourcePack.editor.exportProject.multiplayerSettings.multiplayerGame=Мультиплеєрна гра
+resourcePack.editor.exportProject.multiplayerSettings.playerAccess=Доступ гравців
+resourcePack.editor.exportProject.multiplayerSettings.playerPermissions=Дозволи гравців
+resourcePack.editor.exportProject.multiplayerSettings.visibleToLAN=Видиме для гравців у локальній мережі
+resourcePack.editor.exportProject.multiplayerSettings.friendlyFire=Дружній вогонь
+resourcePack.editor.exportProject.cheatsSettings=Налаштування читів
+resourcePack.editor.exportProject.cheatsSettings.cheats=Чити
+resourcePack.editor.exportProject.cheatsSettings.daylightCycle=Зміна часу доби
+resourcePack.editor.exportProject.cheatsSettings.keepInventory=Збереження інвентарю
+resourcePack.editor.exportProject.cheatsSettings.mobSpawning=Призов моба
+resourcePack.editor.exportProject.cheatsSettings.mobGriefing=Шкода від мобів
+resourcePack.editor.exportProject.cheatsSettings.entitiesDropLoot=Сутності викидають здобич
+resourcePack.editor.exportProject.cheatsSettings.weatherCycle=Погодний цикл
+resourcePack.editor.exportProject.cheatsSettings.commandBlocks=Командні блоки
+resourcePack.editor.exportProject.cheatsSettings.commandBlockOutput=Виведення командного блока   
+resourcePack.editor.exportProject.cheatsSettings.sendCommandFeedback=Надсилання зворотного зв’язку на команди   
+resourcePack.editor.exportProject.cheatsSettings.maxCommandChainLength=Максимальна довжина ланцюжка команд   
+resourcePack.editor.exportProject.cheatsSettings.fireDamage=Ушкодження від вогню  
+resourcePack.editor.exportProject.cheatsSettings.freezeDamage=Ушкодження від заморозки  
+resourcePack.editor.exportProject.cheatsSettings.fallDamage=Ушкодження від падіння  
+resourcePack.editor.exportProject.cheatsSettings.drowningDamage=Ушкодження від утоплення  
+resourcePack.editor.exportProject.cheatsSettings.insomnia=Безсоння  
+resourcePack.editor.exportProject.cheatsSettings.showBorderEffect=Показувати ефект кордонів  
+resourcePack.editor.exportProject.cheatsSettings.functionCommandLimit=Обмеження команди підпрограми  
+resourcePack.editor.exportProject.cheatsSettings.educationFeatures=Навчальні функції
+resourcePack.editor.exportProject.cheatsSettings.randomTickSpeed=Випадкова швидкість такту
+resourcePack.editor.exportProject.export=Експорт
+resourcePack.editor.exportProject.resetToDefault=Відновити параметри за промовчанням
+resourcePack.editor.exportProject.gameMode.survival=Виживання
+resourcePack.editor.exportProject.gameMode.creative=Творчий
+resourcePack.editor.exportProject.gameMode.adventure=Пригода
+resourcePack.editor.exportProject.difficulty.peaceful=Мирно
+resourcePack.editor.exportProject.difficulty.easy=Легко
+resourcePack.editor.exportProject.difficulty.normal=Нормально
+resourcePack.editor.exportProject.difficulty.hard=Важко
+resourcePack.editor.exportProject.weather.default=Стандартна   
+resourcePack.editor.exportProject.weather.clear=Ясна   
+resourcePack.editor.exportProject.weather.rain=Дощ   
+resourcePack.editor.exportProject.weather.thunder=Грім   
+resourcePack.editor.toolRail.ExtrudeTool.title=Інструмент екструзії
+resourcePack.editor.toolRail.ExtrudeTool.tooltip=Інструмент екструзії для розширення та зменшення блоків
+resourcePack.editor.toolRail.ExtrudeTool.pane.ContiguousSelectionBlockListSubPane.title=Список блоків суміжного вибору
+resourcePack.editor.toolRail.ExtrudeTool.pane.TrailingBlocksSettingsSubPane.title=Налаштування залишкових блоків
+resourcePack.editor.toolRail.ExtrudeTool.pane.SampleLayerCount.title=Кількість зразків шарів
+resourcePack.editor.toolRail.ExtrudeTool.pane.ContiguousSelectionSettings.title=Налаштування суміжного вибору
+resourcePack.editor.toolRail.ExtrudeTool.pane.ContiguousSelectionType.title=Тип суміжного вибору
+resourcePack.editor.toolRail.ExtrudeTool.pane.ContiguousSelectionType.SameBlocks=Ті самі блоки
+resourcePack.editor.toolRail.ExtrudeTool.pane.ContiguousSelectionType.SameBlocksAndStates=Ті самі блоки та стани
+resourcePack.editor.toolRail.ExtrudeTool.pane.ContiguousSelectionType.SolidBlocks=Суцільні блоки
+resourcePack.editor.toolRail.ExtrudeTool.pane.ContiguousSelectionType.AllBlocks=Усі блоки
+resourcePack.editor.toolRail.ExtrudeTool.pane.ContiguousSelectionType.CustomBlockList=Список нестандартних блоків
+resourcePack.editor.toolRail.ExtrudeTool.pane.ToleranceLevel.title=Рівень допустимого відхилення
+resourcePack.editor.toolRail.ExtrudeTool.pane.HasAdjacentBlocks.title=Має суміжні блоки
+resourcePack.editor.toolRail.ExtrudeTool.pane.ExtruderSettings.title=Налаштування екструдера
+resourcePack.editor.toolRail.ExtrudeTool.pane.Radius.title=Радіус
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.title=Режим вибору
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.ContiguousSelection=Суміжний вибір
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.MarqueeSelection=Вибір області
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.ContiguousSettings.title=Налаштування суміжного вибору
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.TrailingBlocks.title=Залишкові блоки
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.TrailingBlocksSettings.title=Налаштування залишкових блоків
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.QuickExtrudeSettings.title=Налаштування швидкої екструзії
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.QuickExtrudeMode.title=Режим швидкої екструзії
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.QuickExtrudeMode.decrease.title=Зменшити
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.QuickExtrudeMode.decrease.tooltip=Зменшити екструзію
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.QuickExtrudeMode.expand.title=Розгорнути
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.QuickExtrudeMode.expand.tooltip=Розгорнути екструзію
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.LayerCount.title=Кількість шарів
+resourcePack.editor.toolRail.ExtrudeTool.pane.preview_warning=Важливо: Візуалізація попереднього перегляду показує лише перший шар 
+resourcePack.editor.toolRail.ExtrudeTool.pane.ExtrusionType.title=Тип екструзії
+resourcePack.editor.toolRail.ExtrudeTool.pane.ExtrusionType.Extrude=Екструзія
+resourcePack.editor.toolRail.ExtrudeTool.pane.ExtrusionType.QuickExtrude=Швидка екструзія
+resourcePack.editor.toolRail.ExtrudeTool.keyBinding.deselect=Скасувати вибір
+resourcePack.editor.toolRail.ExtrudeTool.keyBinding.toggleTool=Перемкнути інструмент екструзії
+resourcePack.editor.toolRail.FarmGenerator.tool.title=Генератор ферм
+resourcePack.editor.toolRail.FarmGenerator.tool.tooltip=Швидке створення нестандартної ферми
+resourcePack.editor.toolRail.FarmGenerator.pane.title=Генератор ферм
+resourcePack.editor.toolRail.FarmGenerator.pane.length=Довжина
+resourcePack.editor.toolRail.FarmGenerator.pane.width=Ширина
+resourcePack.editor.toolRail.FarmGenerator.pane.fence=Паркан
+resourcePack.editor.toolRail.FarmGenerator.pane.irrigation=Додати зрошення
+resourcePack.editor.toolRail.FarmGenerator.pane.irrigation.tooltip=Додає на ферму водні блоки для зрошення врожаю.
+resourcePack.editor.toolRail.FarmGenerator.pane.crops.title=Урожай
+resourcePack.editor.toolRail.FarmGenerator.pane.crops.wheat=Пшениця
+resourcePack.editor.toolRail.FarmGenerator.pane.crops.potato=Картопля
+resourcePack.editor.toolRail.FarmGenerator.pane.crops.beets=Буряк
+resourcePack.editor.toolRail.FarmGenerator.pane.crops.pumpkin=Гарбуз
+resourcePack.editor.toolRail.FarmGenerator.pane.crops.carrot=Морква
+resourcePack.editor.toolRail.FarmGenerator.pane.animals.title=Тварини
+resourcePack.editor.toolRail.FarmGenerator.pane.animals.cow=Корова
+resourcePack.editor.toolRail.FarmGenerator.pane.animals.sheep=Вівця
+resourcePack.editor.toolRail.FarmGenerator.pane.animals.pig=Свиня
+resourcePack.editor.toolRail.FarmGenerator.keyBinding.toggleTool=Перемкнути інструмент «Генератор ферм»
+resourcePack.editor.toolRail.FarmGenerator.keyBinding.place=Розмістити ферму на місці курсора
+resourcePack.editor.global.keyBinding.toggleMode=Перемкнути режим
+resourcePack.editor.goToMark.actionBar.tooltip.description=Допоміжна панель навігації гравця
+resourcePack.editor.goToMark.actionBar.tooltip.title=Панель навігації
+resourcePack.editor.goToMark.pane.goToSpawn=Перейти до місця призову
+resourcePack.editor.goToMark.pane.location=Місце гравця
+resourcePack.editor.goToMark.pane.locationPane.delete=Видалити збережене місце
+resourcePack.editor.goToMark.pane.locationPane.dropdownLabel=Збережене місце
+resourcePack.editor.goToMark.pane.locationPane.inputName=Нова назва
+resourcePack.editor.goToMark.pane.locationPane.markColor=Колір позначки місцезнаходження
+resourcePack.editor.goToMark.pane.locationPane.store=Зберегти поточне місце як...
+resourcePack.editor.goToMark.pane.locationPane.teleport=Телепортувати на збережене місце %1$s
+resourcePack.editor.goToMark.pane.locationPane.title=Збережені місця
+resourcePack.editor.goToMark.pane.mapSize=Розмір карти
+resourcePack.editor.goToMark.pane.refreshMap=Оновити карту
+resourcePack.editor.goToMark.pane.setSpawn=Зробити місце призову поточним
+resourcePack.editor.goToMark.pane.showMap=Показати карту
+resourcePack.editor.goToMark.pane.teleport=Телепортувати на місце
+resourcePack.editor.goToMark.title=Панель навігації
+resourcePack.editor.grapple.keyBinding.flyToCursor=Полетіти до положення курсора
+resourcePack.editor.grapple.keyBinding.flyToSelection=Полетіти до виділення
+resourcePack.editor.locate.biome.find=Знайти біом
+resourcePack.editor.locate.biome.title=Біом
+resourcePack.editor.locate.keyBinding.toggleTool=Перемкнути інструмент «Знайти біом»
+resourcePack.editor.locate.locatetype.biome=Біом
+resourcePack.editor.locate.locatetype.structure=Споруда
+resourcePack.editor.locate.locatetype.title=Визначити тип
+resourcePack.editor.locate.results.foundat.title=Знайдено тут:
+resourcePack.editor.locate.results.foundat=Знайдено тут:
+resourcePack.editor.locate.results.goto=Перейти до
+resourcePack.editor.locate.results.notfound.title=Немає результатів
+resourcePack.editor.locate.results.notfound=Результатів не знайдено
+resourcePack.editor.locate.results.title=Результати
+resourcePack.editor.locate.structure.message=Пошук споруди наразі не підтримується
+resourcePack.editor.locate.structure.title=Споруда
+resourcePack.editor.locate.title=Знайти
+resourcePack.editor.menuBar.edit.copy=Копіювати
+resourcePack.editor.menuBar.edit.cut=Вирізати
+resourcePack.editor.menuBar.edit.delete=Видалити
+resourcePack.editor.menuBar.edit.deselect=Скасувати вибір
+resourcePack.editor.menuBar.edit.quickFill=Швидке заповнення
+resourcePack.editor.menuBar.edit.quickPaste=Швидке вставлення
+resourcePack.editor.menuBar.edit.redo=Повторити
+resourcePack.editor.menuBar.edit.undo=Скасувати
+resourcePack.editor.menuBar.edit=Змінити
+resourcePack.editor.menuBar.experimental=Експериментальна функція
+resourcePack.editor.menuBar.extensions=Розширення
+resourcePack.editor.menuBar.file.cursor.projectThroughLiquid=Запустити через рідину
+resourcePack.editor.menuBar.file.cursor=Налаштування курсора
+resourcePack.editor.menuBar.file.export.project=Проєкт редактора
+resourcePack.editor.menuBar.file.export.world=Ігровий світ
+resourcePack.editor.menuBar.file.export=Експорт
+resourcePack.editor.menuBar.file.pauseScreen=Меню гри
+resourcePack.editor.menuBar.file.settings=Налаштування інтерфейсу користувача
+resourcePack.editor.menuBar.file=Файл
+resourcePack.editor.menuBar.help.tutorial=Посібник 
+resourcePack.editor.menuBar.help.documentation=Документація
+resourcePack.editor.menuBar.help.feedback=Відгук
+resourcePack.editor.menuBar.help.quickStart=Швидкий початок
+resourcePack.editor.menuBar.help=Довідка
+resourcePack.editor.menuBar.locate=Знайти
+resourcePack.editor.menuBar.parentMenu.weather.clear=Очистити
+resourcePack.editor.menuBar.parentMenu.weather.rain=Дощ
+resourcePack.editor.menuBar.parentMenu.weather.thunder=Грім
+resourcePack.editor.menuBar.parentMenu.weather=Погода
+resourcePack.editor.menuBar.view.blockPalette=Палітра блоків
+resourcePack.editor.menuBar.view.logging=Панель журналу
+resourcePack.editor.menuBar.view.navigationLogging=Ведення журналу навігації
+resourcePack.editor.menuBar.view=Переглянути
+resourcePack.editor.menuBar.worldOptions.changeDimension.end=Енд
+resourcePack.editor.menuBar.worldOptions.changeDimension.nether=Незер
+resourcePack.editor.menuBar.worldOptions.changeDimension.overworld=Верхній світ
+resourcePack.editor.menuBar.worldOptions.changeDimension=Змінити розмір
+resourcePack.editor.menuBar.worldOptions.pause.entities=Істоти
+resourcePack.editor.menuBar.worldOptions.pause=Пауза
+resourcePack.editor.menuBar.worldOptions=Варіанти світу
+resourcePack.editor.navigation.keyBinding.add=Додати навігаційну позицію
+resourcePack.editor.navigation.keyBinding.next=Перейти до наступної навігаційної позиції
+resourcePack.editor.navigation.keyBinding.previous=Перейти до попередньої навігаційної позиції
+resourcePack.editor.paste.pane.submitButton=Підтвердити вставлення
+resourcePack.editor.paste.pane.title=Вставити
+resourcePack.editor.paste.pane.transform.mirrorX=Дзеркало Х
+resourcePack.editor.paste.pane.transform.mirrorZ=Дзеркало Z
+resourcePack.editor.paste.pane.transform.origin.title=Зсув
+resourcePack.editor.paste.pane.transform.rotation.180=180
+resourcePack.editor.paste.pane.transform.rotation.270=270
+resourcePack.editor.paste.pane.transform.rotation.90=90
+resourcePack.editor.paste.pane.transform.rotation.none=0°
+resourcePack.editor.paste.pane.transform.rotation.title=Повернути
+resourcePack.editor.paste.pane.transform.title=Перетворити
+resourcePack.editor.paste.toolRail.description=Клацніть лівою кнопкою миші, щоб вибрати блок, а потім точно вставити елемент буфера обміну
+resourcePack.editor.paste.toolRail.title=Вставити попередній перегляд
+resourcePack.editor.pastepreview.inputContext.title=Вставити попередній перегляд
+resourcePack.editor.pastepreview.keyBinding.clearPreview=Очистити попередній перегляд
+resourcePack.editor.pastepreview.keyBinding.copy=Копіювати виділення
+resourcePack.editor.pastepreview.keyBinding.cut=Вирізати виділене
+resourcePack.editor.pastepreview.keyBinding.moveBack=Перемістити попередній перегляд назад
+resourcePack.editor.pastepreview.keyBinding.moveDown=Перемістити попередній перегляд униз
+resourcePack.editor.pastepreview.keyBinding.moveForward=Перемістити попередній перегляд уперед
+resourcePack.editor.pastepreview.keyBinding.moveLeft=Перемістити попередній перегляд ліворуч
+resourcePack.editor.pastepreview.keyBinding.moveOffsetBack=Перемістити зсув назад
+resourcePack.editor.pastepreview.keyBinding.moveOffsetDown=Перемістити зсув униз
+resourcePack.editor.pastepreview.keyBinding.moveOffsetForward=Перемістити зсув уперед
+resourcePack.editor.pastepreview.keyBinding.moveOffsetLeft=Перемістити зсув ліворуч
+resourcePack.editor.pastepreview.keyBinding.moveOffsetRight=Перемістити зсув праворуч
+resourcePack.editor.pastepreview.keyBinding.moveOffsetUp=Перемістити зсув угору
+resourcePack.editor.pastepreview.keyBinding.moveOriginBack=Перемістити початкову точку назад
+resourcePack.editor.pastepreview.keyBinding.moveOriginDown=Перемістити початкову точку вниз
+resourcePack.editor.pastepreview.keyBinding.moveOriginForward=Перемістити початкову точку вперед
+resourcePack.editor.pastepreview.keyBinding.moveOriginLeft=Перемістити початкову точку ліворуч
+resourcePack.editor.pastepreview.keyBinding.moveOriginRight=Перемістити початкову точку праворуч
+resourcePack.editor.pastepreview.keyBinding.moveOriginUp=Перемістити початкову точку вгору
+resourcePack.editor.pastepreview.keyBinding.moveRight=Перемістити попередній перегляд праворуч
+resourcePack.editor.pastepreview.keyBinding.moveUp=Перемістити попередній перегляд угору
+resourcePack.editor.pastepreview.keyBinding.paste=Вставити
+resourcePack.editor.pastepreview.keyBinding.pasteAtCursor=Вставити на позиції курсора
+resourcePack.editor.pastepreview.keyBinding.pastepreview=Вставити попередній перегляд
+resourcePack.editor.pastepreview.keyBinding.quickPaste=Швидке вставлення
+resourcePack.editor.pastepreview.keyBinding.rotateClockWise=Повернути попередній перегляд за годинниковою стрілкою
+resourcePack.editor.pastepreview.keyBinding.rotateCounterClockWise=Повернути попередній перегляд проти годинникової стрілки
+resourcePack.editor.pastepreview.keyBinding.toggleAdjacentTarget=Перемкнути режим сусідньої цілі
+resourcePack.editor.pastepreview.keyBinding.toggleBlockTarget=Перемкнути режим цільового блоку
+resourcePack.editor.pastepreview.keyBinding.toggleFixedDistance=Увімкнути фіксовану відстань
+resourcePack.editor.pastepreview.keyBinding.toggleMirrorX=Перемкнути віддзеркалення X
+resourcePack.editor.pastepreview.keyBinding.toggleMirrorZ=Перемкнути віддзеркалення Z
+resourcePack.editor.pastepreview.keyBinding.toggleMouseTracking=Перемикання відстеження миші
+resourcePack.editor.pastepreview.pane.controls.cursor.fixed=Фіксована відстань
+resourcePack.editor.pastepreview.pane.controls.cursor.keyboard=Лише клавіші
+resourcePack.editor.pastepreview.pane.controls.cursor.mouseandkeys=Миша та клавіші
+resourcePack.editor.pastepreview.pane.controls.cursor.target.block=Блокувати
+resourcePack.editor.pastepreview.pane.controls.cursor.target.face=Суміжні
+resourcePack.editor.pastepreview.pane.controls.cursor.target.title=Мішень
+resourcePack.editor.pastepreview.pane.controls.cursor=Керування
+resourcePack.editor.pastepreview.pane.controls.title=Елементи керування курсором
+resourcePack.editor.pastepreview.pane.placement.mirrorX=Дзеркало Х
+resourcePack.editor.pastepreview.pane.placement.mirrorZ=Дзеркало Z
+resourcePack.editor.pastepreview.pane.placement.offset=Зсув
+resourcePack.editor.pastepreview.pane.placement.origin=Початок координат
+resourcePack.editor.pastepreview.pane.placement.pastebutton=Вставити
+resourcePack.editor.pastepreview.pane.placement.rotation=Обертання (навколо Y)
+resourcePack.editor.pastepreview.pane.placement.title=Налаштування місця розташування
+resourcePack.editor.pastepreview.pane.root.size=Розмір
+resourcePack.editor.pastepreview.pane.root.title=Вставити попередній перегляд
+resourcePack.editor.pastepreview.tool.tip=Використовуйте мишу, щоб налаштувати положення попереднього перегляду буфера обміну, і клацніть, щоб вставити у світ
+resourcePack.editor.pastepreview.tool.title=Вставити попередній перегляд
+resourcePack.editor.playerPositionExtension.dimension=Вимір
+resourcePack.editor.playerPositionExtension.menu.player=Плеєр
+resourcePack.editor.playerPositionExtension.menu.showPlayerSettings=Показати налаштування плеєра
+resourcePack.editor.playerPositionExtension.nether=Незер
+resourcePack.editor.playerPositionExtension.overworld=Верхній світ
+resourcePack.editor.playerPositionExtension.pane=Налаштування плеєра
+resourcePack.editor.playerPositionExtension.theEnd=Енд
+resourcePack.editor.playerPositionExtension.worldSettings=Параметри світу
+resourcePack.editor.playtest.AdvancedSettings.title=Розширені параметри
+resourcePack.editor.playtest.Dialog.DaylightCycle=Зміна часу доби
+resourcePack.editor.playtest.Dialog.Difficulty=Складність
+resourcePack.editor.playtest.Dialog.GameMode=Режим гри
+resourcePack.editor.playtest.Dialog.OverrideSpawn=Призов у поточному місці
+resourcePack.editor.playtest.Dialog.ShowCoordinates=Показ координат
+resourcePack.editor.playtest.Dialog.TestButton=Випробувати світ
+resourcePack.editor.playtest.Dialog.TimeOfDay=Час доби
+resourcePack.editor.playtest.Dialog.Title=Налаштування тесту
+resourcePack.editor.playtest.Dialog.Weather=Погода
+resourcePack.editor.playtest.Dialog.WeatherCycle=Погодній цикл
+resourcePack.editor.playtest.Menu.Title=Випробувальний світ
+resourcePack.editor.playtest.Title.Tooltip=Випробуйте свій редакторський проект як світ Minecraft в ігровому режимі.  Зміни у вашому проекті не зберігаються.  Доступно тільки при веденні одиночного проекту.
+resourcePack.editor.playtestResult.EditorSystemFailure=Системний збій редактора
+resourcePack.editor.playtestResult.InvalidLevelId=Недійсний ідентифікатор рівня
+resourcePack.editor.playtestResult.InvalidSessionHandle=Недійсний маркер сеансу
+resourcePack.editor.playtestResult.OK=Успішно
+resourcePack.editor.playtestResult.PlayerNotFound=Гравця не знайдено
+resourcePack.editor.playtestResult.ResponseTimeout=Тайм-аут відповіді
+resourcePack.editor.playtestResult.SessionInfoNotFound=Інформацію про сеанс не знайдено
+resourcePack.editor.playtestResult.TooManyPlayers=Ви не можете випробовувати світ, коли приймаєте інших гравців
+resourcePack.editor.playtestResult.UnspecifiedError=Невизначена помилка
+resourcePack.editor.playtestResult.UnsupportedScenario=Ви повинні бути ведучим редакторського проекту, щоб перевірити світ
+resourcePack.editor.playtestResult.WorldExportBusy=Функція експорту світу зайнята
+resourcePack.editor.playtestResult.WorldExportFailed=Помилка експорту світу
+resourcePack.editor.menuBar.file.realmsPublish=Опублікувати в Realms   
+resourcePack.editor.realmsPublish.noActiveRealmsSubscription=Для публікації в Realms потрібна активна підписка на Realms. Підписатися на Realms або поновити старі підписки можна в стандартному клієнті Minecraft або на сайті minecraft.net (після входу в обліковий запис).    
+resourcePack.editor.realmsPublish.userNotLoggedIn=Для публікацій у Realms потрібна активна підписка на Realms. Щоб отримати доступ до будь-яких наявних підписок на Realms, потрібно ввійти в обліковий запис Microsoft.
+resourcePack.editor.realmsPublish.dedicatedServerWarning=Публікація в Realms недоступна під час використання виділеного сервера.
+resourcePack.editor.realmsPublish.notSessionHostWarning=Публікувати в Realms може лише хост сеансу роботи в редакторі.
+resourcePack.editor.realmsPublish.genericRealmsIssue=Виникла проблема зі службою Realms, спробуйте ще раз згодом.
+resourcePack.editor.realmsPublish.goToMinecraftWebsite=Перейти до Minecraft.net  
+resourcePack.editor.realmsPublish.Refresh=Оновити  
+resourcePack.editor.realmsPublish.Realm=Realm  
+resourcePack.editor.realmsPublish.RealmSlot=Слот Realm 
+resourcePack.editor.realmsPublish.EmptySlot=Порожній слот
+resourcePack.editor.realmsPublish.PublishNotesTitle=Опублікувати в Realms із приміткою   
+resourcePack.editor.realmsPublish.DownloadRealm=Завантажити    
+resourcePack.editor.realmsPublish.PublishRealm=Опублікувати  
+resourcePack.editor.realmsPublish.Confirm=Підтвердити   
+resourcePack.editor.realmsPublish.Cancel=Скасувати 
+resourcePack.editor.realmsPublish.Back=Назад 
+resourcePack.editor.realmsPublish.PublishFailedNonCompliantWorldName=Не вдалось опублікувати в Realmsчерез недійсну назву світу. Оновіть назву світу та спробуйте ще раз.
+resourcePack.editor.realmsPublish.PublishFailed=Не вдалося опублікувати у Realms. Спробуйте ще раз згодом.   
+resourcePack.editor.realmsPublish.PublishSuccess=Успішно опубліковано у Realms    
+resourcePack.editor.realmsPublish.PublishConfirmationOptOut=Більше не запитувати для цього Realm упродовж цієї сесії  
+resourcePack.editor.realmsPublish.PublishingToRealms=Публікування світу у Realms…  
+resourcePack.editor.realmsPublish.UnableToPublishMissingRealm=Не вдається опублікувати у Realms. Не вибрано жодного Realm    
+resourcePack.editor.realmsPublish.UnableToPublishMissingRealmSlot=Не вдається опублікувати у Realms. Не вибрано жодного слота Realm   
+resourcePack.editor.realmsPublish.PublishConfirmationWarning=Це видалить поточний світ з обраного слота та замінить його вашим поточним світом у редакторі (вибраний слот також стане активним слотом для вашого Realm). Учасники вашого Realm матимуть доступ до вашого щойно заміненого світу. Якщо ви хочете зберегти свій поточний світ перед публікацією, щоб запобігти втраті даних, закрийте це діалоговий вікно та виберіть «Завантажити» перед тим, як натиснути «Опублікувати». Виберіть «Підтвердити», щоб продовжити та замінити свій поточний світ.    
+resourcePack.editor.realmsPublish.DownloadSuccess=Світ успішно завантажено з Realms    
+resourcePack.editor.realmsPublish.DownloadFailed=Не вдалося завантажити світ з Realms 
+resourcePack.editor.realmsPublish.DownloadingFromRealms=Завантаження світу з Realms…    
+resourcePack.editor.toolRail.RepeaterTool.title=Інструмент «Повторювач»
+resourcePack.editor.toolRail.RepeaterTool.tooltip=Інструмент для повторення виділеного тривимірного вмісту
+resourcePack.editor.toolRail.RepeaterTool.pane.Spacing=Інтервал
+resourcePack.editor.toolRail.RepeaterTool.pane.Repetitions=Повторення
+resourcePack.editor.toolRail.RepeaterTool.pane.Preview=Попередній перегляд
+resourcePack.editor.toolRail.RepeaterTool.pane.Clear=Очистити
+resourcePack.editor.toolRail.RepeaterTool.pane.Apply=Застосовувати
+resourcePack.editor.toolRail.RepeaterTool.statusMessage.noSelection=За допомогою інструмента «Виділення» виберіть тривимірний вміст для повторення
+resourcePack.editor.toolRail.RepeaterTool.pane.Mode=Режим
+resourcePack.editor.toolRail.RepeaterTool.mode.Line=Лінія
+resourcePack.editor.toolRail.RepeaterTool.mode.Grid=Сітка
+resourcePack.editor.toolRail.RepeaterTool.pane.RepeatType=Повторити тип
+resourcePack.editor.toolRail.RepeaterTool.repeat.Uniform=Рівномірний
+resourcePack.editor.toolRail.RepeaterTool.pane.RepeatAlongX=Повторити за віссю Х
+resourcePack.editor.toolRail.RepeaterTool.pane.RepeatAlongY=Повторити за віссю Y
+resourcePack.editor.toolRail.RepeaterTool.pane.RepeatAlongZ=Повторити за віссю Z
+resourcePack.editor.toolRail.RepeaterTool.repeat.Separate=Окремо
+resourcePack.editor.toolRail.RepeaterTool.pane.XCount=Координата X
+resourcePack.editor.toolRail.RepeaterTool.pane.YCount=Координата Y
+resourcePack.editor.toolRail.RepeaterTool.pane.ZCount=Координата Z
+resourcePack.editor.selectionTool.deselect=Скасувати вибір
+resourcePack.editor.selectionTool.fillPane.fillAction=Заповнити вибране
+resourcePack.editor.selectionTool.fillPane.title=Заповнити вибір
+resourcePack.editor.selectionTool.keyBinding.deselect=Зняти виділення
+resourcePack.editor.selectionTool.keyBinding.fill=Заповнити виділення вмістом
+resourcePack.editor.selectionTool.keyBinding.growBack=Розширити виділення назад
+resourcePack.editor.selectionTool.keyBinding.growDown=Розширити виділення вниз
+resourcePack.editor.selectionTool.keyBinding.growForward=Розширити виділення вперед
+resourcePack.editor.selectionTool.keyBinding.growLeft=Розширити виділення ліворуч
+resourcePack.editor.selectionTool.keyBinding.growRight=Розширити виділення праворуч
+resourcePack.editor.selectionTool.keyBinding.growUp=Розширити виділення вгору
+resourcePack.editor.selectionTool.keyBinding.moveAllSelectionBack=Перемістити все виділення назад
+resourcePack.editor.selectionTool.keyBinding.moveAllSelectionDown=Перемістити все виділення вниз
+resourcePack.editor.selectionTool.keyBinding.moveAllSelectionForward=Перемістити все виділення вперед
+resourcePack.editor.selectionTool.keyBinding.moveAllSelectionLeft=Перемістити все виділення ліворуч
+resourcePack.editor.selectionTool.keyBinding.moveAllSelectionRight=Перемістити все виділення праворуч
+resourcePack.editor.selectionTool.keyBinding.moveAllSelectionUp=Перемістити все виділення вгору
+resourcePack.editor.selectionTool.keyBinding.moveCursorBack=Перемістити курсор назад
+resourcePack.editor.selectionTool.keyBinding.moveCursorDown=Перемістити курсор вниз
+resourcePack.editor.selectionTool.keyBinding.moveCursorForward=Перемістити курсор уперед
+resourcePack.editor.selectionTool.keyBinding.moveCursorLeft=Перемістити курсор ліворуч
+resourcePack.editor.selectionTool.keyBinding.moveCursorRight=Перемістити курсор праворуч
+resourcePack.editor.selectionTool.keyBinding.moveCursorUp=Перемістити курсор вгору
+resourcePack.editor.selectionTool.keyBinding.moveSelectionBack=Перемістити виділення назад
+resourcePack.editor.selectionTool.keyBinding.moveSelectionDown=Перемістити виділення вниз
+resourcePack.editor.selectionTool.keyBinding.moveSelectionForward=Перемістити виділення вперед
+resourcePack.editor.selectionTool.keyBinding.moveSelectionLeft=Перемістити виділення вліво
+resourcePack.editor.selectionTool.keyBinding.moveSelectionRight=Перемістити виділення праворуч
+resourcePack.editor.selectionTool.keyBinding.moveSelectionUp=Перемістити виділення вгору
+resourcePack.editor.selectionTool.keyBinding.shrinkBack=Стиснути виділення назад
+resourcePack.editor.selectionTool.keyBinding.shrinkDown=Стиснути виділення знизу
+resourcePack.editor.selectionTool.keyBinding.shrinkForward=Стиснути виділення вперед
+resourcePack.editor.selectionTool.keyBinding.shrinkLeft=Стиснути виділення ліворуч
+resourcePack.editor.selectionTool.keyBinding.shrinkRight=Стиснути виділення праворуч
+resourcePack.editor.selectionTool.keyBinding.shrinkUp=Стиснути виділення згори
+resourcePack.editor.selectionTool.keyBinding.toggleTool=Перемкнути інструмент «Виділення»
+resourcePack.editor.selectionTool.keyBinding.select=Вибрати блок
+resourcePack.editor.selectionTool.keyBinding.selectMultiple=Вибрати додатковий блок
+resourcePack.editor.selectionTool.keyBinding.trimVolume=Обрізати виділення (межі)
+resourcePack.editor.selectionTool.keyBinding.trimRemoveAir=Trim Selection (Remove Air)
+resourcePack.editor.selectionTool.marquee.title=Вибір області
+resourcePack.editor.selectionTool.modeSelection.freehand.title=Режим вільного вибору пензлем
+resourcePack.editor.selectionTool.modeSelection.freehand.tooltip=Виділяйте блоки у світі в режимі вільного вибору пензлем
+resourcePack.editor.selectionTool.modeSelection.marquee.title=Режим вибору області
+resourcePack.editor.selectionTool.modeSelection.marquee.tooltip=Виділяйте блоки у світі в межах прямокутної області
+resourcePack.editor.selectionTool.modeSelection.magic.title=Режим магічного вибору
+resourcePack.editor.selectionTool.modeSelection.magic.tooltip=Виберіть блоки у світі за допомогою шаблону пошуку з обраного джерела
+resourcePack.editor.selectionTool.modeSelection.title=Режим вибору
+resourcePack.editor.selectionTool.projectThroughLiquid=Запустити через рідину
+resourcePack.editor.selectionTool.trimAction.trimVolume=Обрізати виділення
+resourcePack.editor.selectionTool.trimAction.trimVolume.tooltip=Обрізати поточну виділену область, щоб вона містила лише тверді блоки   
+resourcePack.editor.selectionTool.trimAction.removeAir=Видалити повітря
+resourcePack.editor.selectionTool.trimAction.removeAir.tooltip=Видалити повітря з поточної виділеної області й залишити лише вказані блоки 
+resourcePack.editor.selectionTool.trimAction.trimVolume.SettingsPane.title=Налаштування обрізки
+resourcePack.editor.selectionTool.trimAction.trimVolume.SettingsPane.ignoreLiquid=Ігнорувати рідини
+resourcePack.editor.selectionTool.trimAction.trimVolume.SettingsPane.ignoreLiquid.tooltip=Ігнорувати будь-які блоки рідини під час обрізання області 
+resourcePack.editor.selectionTool.trimAction.trimVolume.SettingsPane.onlyCollidable=Лише блоки зіткнення
+resourcePack.editor.selectionTool.trimAction.trimVolume.SettingsPane.onlyCollidable.tooltip=Ігноруйте будь-які блоки без зіткнення (листя, трава тощо) під час обрізання області 
+resourcePack.editor.selectionTool.quickAction.clearSelection.tooltip=Скасувати виділення
+resourcePack.editor.selectionTool.quickAction.clearSelection=Скасувати вибір
+resourcePack.editor.selectionTool.quickAction.deleteSelection.tooltip=Видалення всіх блоків всередині виділеної області
+resourcePack.editor.selectionTool.quickAction.deleteSelection=Видалити
+resourcePack.editor.selectionTool.quickAction.fillSelection.tooltip=Заповнити поточну виділену область вибраним типом блоків
+resourcePack.editor.selectionTool.quickAction.fillSelection=Заповнити
+resourcePack.editor.selectionTool.quickAction.title=Швидкі дії
+resourcePack.editor.selectionTool.selectionMode.adjacent=Суміжні
+resourcePack.editor.selectionTool.selectionMode.fixedDistance=Фіксована відстань
+resourcePack.editor.selectionTool.selectionMode.mouseAndKeyboard=Полілінія
+resourcePack.editor.selectionTool.selectionMode=Режим
+resourcePack.editor.selectionTool.settingsPane.title=Вибір
+resourcePack.editor.selectionTool.toolRail.description=Клацніть лівою кнопкою миші, щоб створити виділення; натисніть CTRL + D, щоб зняти виділення
+resourcePack.editor.selectionTool.toolRail.title=Вибір
+resourcePack.editor.selectionTool.transformPane.origin.tooltip=Вихідна точка виділення у координатах світу.
+resourcePack.editor.selectionTool.transformPane.origin=Початок координат
+resourcePack.editor.selectionTool.transformPane.size=Розмір
+resourcePack.editor.selectionTool.transformPane.title=Перетворити
+resourcePack.editor.BlockMaskControl.trim.rootPane.title=Налаштування обрізки
+resourcePack.editor.BlockMaskControl.trim.toggleGroup.title=Режим маски
+resourcePack.editor.BlockMaskControl.trim.toggleGroup.item.disabled.label=Вимкнути фільтри блоків
+resourcePack.editor.BlockMaskControl.trim.toggleGroup.item.disabled.tooltip=Вимкнуто
+resourcePack.editor.BlockMaskControl.trim.toggleGroup.item.mask.label=Маска
+resourcePack.editor.BlockMaskControl.trim.toggleGroup.item.mask.tooltip=Блоки зі списку будуть проігноровані
+resourcePack.editor.BlockMaskControl.trim.toggleGroup.item.replace.label=Замінити
+resourcePack.editor.BlockMaskControl.trim.toggleGroup.item.replace.tooltip=З блоками зі списку можна здійснювати операції як із твердими
+resourcePack.editor.server.description=Серверні ресурси редактора
+resourcePack.editor.server.name=Ресурси редактора
+resourcePack.editor.toolRail.Terrain.title=Рельєф
+resourcePack.editor.toolRail.Terrain.keybinding.toggleTool=Перемкнути інструмент «Рельєф»
+resourcePack.editor.toolRail.Terrain.keyBinding.switch=Перемкнути режим «Рельєф»
+resourcePack.editor.toolRail.Terrain.Mode.title=Режим «Рельєф»
+resourcePack.editor.toolRail.Terrain.Smooth.mode.title=Режим «Згладжування»
+resourcePack.editor.toolRail.Terrain.Smooth.tooltip=Згладжування рельєфу з урахуванням сили згладжування
+resourcePack.editor.toolRail.Terrain.SmoothStrength=Сила згладжування
+resourcePack.editor.toolRail.Terrain.Roughen.mode.title=Режим «Створення нерівностей»
+resourcePack.editor.toolRail.Terrain.Roughen.tooltip=Створює нерівності рельєфу відповідно до ступеню нерівності
+resourcePack.editor.toolRail.Terrain.RoughenStrength=Ступінь нерівності
+resourcePack.editor.toolRail.Terrain.description=Інструмент для рельєфу згладжує рельєф або надає йому нерівності
+resourcePack.editor.help.learnMore=Докладніше
+resourcePack.editor.statusBar.connectedPlayers=Підключені гравці %s
+resourcePack.editor.summonTool.summonSubPane.EntityPickerTitle=Тип сутності
+resourcePack.editor.timeOfDay.12hrClock=12-годинний формат часу
+resourcePack.editor.timeOfDay.24hrClock=24-годинний формат часу
+resourcePack.editor.timeOfDay.clockType=Тип годинника
+resourcePack.editor.timeOfDay.currentTime=Поточний час
+resourcePack.editor.timeOfDay.customTime=Налаштовуваний час
+resourcePack.editor.timeOfDay.daylightCycle=Зміна часу доби
+resourcePack.editor.timeOfDay.dropDown.day=День
+resourcePack.editor.timeOfDay.dropDown.midnight=Північ
+resourcePack.editor.timeOfDay.dropDown.night=Ніч
+resourcePack.editor.timeOfDay.dropDown.none=Немає
+resourcePack.editor.timeOfDay.dropDown.noon=Полудень
+resourcePack.editor.timeOfDay.dropDown.sunrise=Схід сонця
+resourcePack.editor.timeOfDay.dropDown.sunset=Захід сонця
+resourcePack.editor.timeOfDay.dropDown.custom=Власний
+resourcePack.editor.timeOfDay.dropDown.title=Заготовки
+resourcePack.editor.timeOfDay.menu.title=Налаштування часу доби
+resourcePack.editor.timeOfDay.minecraftClock=Годинник Minecraft
+resourcePack.editor.timeOfDay.title=Налаштування часу
+resourcePack.editor.toolMode.keyBinding.console=Відкрити консоль
+resourcePack.editor.toolMode.keyBinding.devConsole=Відкрити консоль розробника
+resourcePack.editor.toolMode.keyBinding.hotbar1=Панель швидкого доступу 1
+resourcePack.editor.toolMode.keyBinding.hotbar2=Панель швидкого доступу 2
+resourcePack.editor.toolMode.keyBinding.hotbar3=Панель швидкого доступу 3
+resourcePack.editor.toolMode.keyBinding.hotbar4=Панель швидкого доступу 4
+resourcePack.editor.toolMode.keyBinding.hotbar5=Панель швидкого доступу 5
+resourcePack.editor.toolMode.keyBinding.hotbar6=Панель швидкого доступу 6
+resourcePack.editor.toolMode.keyBinding.hotbar7=Панель швидкого доступу 7
+resourcePack.editor.toolMode.keyBinding.hotbar8=Панель швидкого доступу 8
+resourcePack.editor.toolMode.keyBinding.hotbar9=Панель швидкого доступу 9
+resourcePack.editor.toolMode.keyBinding.reload=Перезавантажити 
+resourcePack.editor.toolRail.blockPalette.title=Палітра блоків (CTRL+P)
+resourcePack.editor.toolRail.blockPalette.tooltip=Установіть палітру улюблених або найбільш часто використовуваних блоків
+resourcePack.editor.toolRail.flattenBrush.title=Пензель для вирівнювання
+resourcePack.editor.toolRail.flattenBrush.tooltip=Вертикальне вирівнювання області до висоти вибраного блоку
+resourcePack.editor.toolRail.flattenBrush.settings.heightThreshold=Поріг висоти
+resourcePack.editor.toolRail.flattenBrush.settings.radius=Радіус
+resourcePack.editor.toolRail.floodFillSelectionTool.description=Вибирає область, яку ви зараз переглядаєте, використовуючи алгоритм заповнення заливкою.
+resourcePack.editor.toolRail.floodFillSelectionTool.title=Інструмент вибору заливки.
+resourcePack.editor.toolRail.line.keyBinding.delete=Видалити вміст
+resourcePack.editor.toolRail.line.keyBinding.deleteAndClear=Видалити вміст і зняти виділення
+resourcePack.editor.toolRail.line.keyBinding.deselect=Скасувати вибір
+resourcePack.editor.toolRail.line.keyBinding.deselectAll=Відхилити все вибране
+resourcePack.editor.toolRail.line.keyBinding.fill=Заповнити вмістом
+resourcePack.editor.toolRail.line.keyBinding.fillAndClear=Заповнити вмістом та зняти виділення
+resourcePack.editor.toolRail.line.keyBinding.moveBack=Перемістити виділене назад
+resourcePack.editor.toolRail.line.keyBinding.moveDown=Перемістити виділене вниз
+resourcePack.editor.toolRail.line.keyBinding.moveForward=Перемістити виділене вперед
+resourcePack.editor.toolRail.line.keyBinding.moveLeft=Перемістити виділене ліворуч
+resourcePack.editor.toolRail.line.keyBinding.moveRight=Перемістити виділене праворуч
+resourcePack.editor.toolRail.line.keyBinding.moveUp=Перемістити виділене вгору
+resourcePack.editor.toolRail.line.keyBinding.selectAll=Виділити все
+resourcePack.editor.toolRail.line.pane.algorithm.Direct=Спрямувати
+resourcePack.editor.toolRail.line.pane.algorithm.Staggered=У шаховому порядку (паркани)
+resourcePack.editor.toolRail.line.pane.algorithm.title=Алгоритм
+resourcePack.editor.toolRail.line.pane.fillAction=Заповнити вибране
+resourcePack.editor.toolRail.line.pane.height.title=Висота
+resourcePack.editor.toolRail.line.pane.selectionMode.adjacent=Суміжне обличчя
+resourcePack.editor.toolRail.line.pane.selectionMode.fixedDistance=Фіксована відстань
+resourcePack.editor.toolRail.line.pane.selectionMode.freeForm=Вільна форма
+resourcePack.editor.toolRail.line.pane.selectionMode=Вибір
+resourcePack.editor.toolRail.line.pane.surfaceContour=Контур поверхні
+resourcePack.editor.toolRail.line.pane.width.title=Ширина
+resourcePack.editor.toolRail.line.title=Лінія
+resourcePack.editor.toolRail.line.tooltip=Інструмент «Лінія» створює лінії блоків
+resourcePack.editor.toolRail.rulerTool.title=Інструмент «Лінійка»
+resourcePack.editor.toolRail.rulerTool.tooltip=Вимірювання відстані
+resourcePack.editor.toolRail.rulerTool.info.title=Вимірювання
+resourcePack.editor.toolRail.smartFillTool.title=Інструмент Розумна заливка
+resourcePack.editor.toolRail.smartFillTool.tooltip=Натисніть для заповнення з’єднаного набору блоків
+resourcePack.editor.toolRail.smartFillTool.modes.fillVolume=Заповнити об’єм
+resourcePack.editor.toolRail.smartFillTool.areaLimit.title=Обмеження області
+resourcePack.editor.toolRail.smartFillTool.areaLimit.tooltip=Максимальна площа заповнення
+resourcePack.editor.toolRail.summonTool.keyBinding.clear=Скасувати вибір
+resourcePack.editor.toolRail.summonTool.keyBinding.delete=Видалити сутність
+resourcePack.editor.toolRail.summonTool.keyBinding.moveBack=Перемістити виділене назад
+resourcePack.editor.toolRail.summonTool.keyBinding.moveDown=Перемістити виділене вниз
+resourcePack.editor.toolRail.summonTool.keyBinding.moveForward=Перемістити виділене вперед
+resourcePack.editor.toolRail.summonTool.keyBinding.moveLeft=Перемістити виділене ліворуч
+resourcePack.editor.toolRail.summonTool.keyBinding.moveRight=Перемістити виділене праворуч
+resourcePack.editor.toolRail.summonTool.keyBinding.moveUp=Перемістити виділене вгору
+resourcePack.editor.toolRail.summonTool.keyBinding.toggle=Перемкнути інструмент «Виклик»
+resourcePack.editor.toolRail.summonTool.pane.select=Вибрати режим
+resourcePack.editor.toolRail.summonTool.pane.title=Інструмент «Виклик»
+resourcePack.editor.toolRail.summonTool.pane.type=Тип сутності
+resourcePack.editor.toolRail.summonTool.tool.infoText=Клацніть сутність, щоб вибрати її, або натисніть карту, щоб викликати нову сутність
+resourcePack.editor.toolRail.summonTool.tool.selectSubPane.rotation=Обертання
+resourcePack.editor.toolRail.summonTool.tool.selectSubPane=Вибір сутностей
+resourcePack.editor.toolRail.summonTool.tool.summonSubPane=Генерування сутностей
+resourcePack.editor.toolRail.summonTool.tool.tip=Натисніть, щоб призвати сутності
+resourcePack.editor.toolRail.summonTool.tool.title=Інструмент «Виклик»
+resourcePack.editor.toolRail.workbenchSettings.title=Майстерня
+resourcePack.editor.toolRail.workbenchTool.title=Майстерня
+resourcePack.editor.toolRail.workbenchTool.description=Швидка зміна станів блока
+resourcePack.editor.toolRail.workbenchTool.howToUse=Виділіть блоки, щоб побачити доступні дії та змінити їхній стан (відкрити / закрити, обернути, інвертувати тощо). Спробуйте також використати модифікатори клавіш Shift та Control! Зверніть увагу, що ця функція працює лише на блоках зі змінними властивостями (наприклад, двері, паркани, сходи тощо).
+resourcePack.editor.toolRail.workbenchTool.tooltip=Змінює стан блока
+resourcePack.editor.toolRail.workbenchTool.block=Блокувати
+resourcePack.editor.toolRail.workbenchTool.leftClick=Клацніть лівою кнопкою миші
+resourcePack.editor.toolRail.workbenchTool.shiftLeftClick=Shift + Ліва кнопка миші
+resourcePack.editor.toolRail.workbenchTool.controlLeftClick=CTRL + Ліва кнопка миші
+resourcePack.editor.toolRail.workbenchTool.shiftControlLeftClick=Shift + CTRL + Ліва кнопка миші
+resourcePack.editor.toolRail.workbenchTool.leftClickTooltip=Клацніть лівою кнопкою миші на блоці, щоб виконати основну дію в Майстерні
+resourcePack.editor.toolRail.workbenchTool.shiftLeftClickTooltip=Shift + ліва кнопка миші на блоці виконає другорядну дію в Майстерні
+resourcePack.editor.toolRail.workbenchTool.controlLeftClickTooltip=Ctrl + ліва кнопка миші на блоці виконає третинну дію в Майстерні
+resourcePack.editor.toolRail.workbenchTool.shiftControlLeftClickTooltip=Shift + Ctrl + ліва кнопка миші на блоці виконає четвертинну дію в Майстерні
+resourcePack.editor.toolRail.workbenchTool.stripWood=Обтесана / не обтесана деревина
+resourcePack.editor.toolRail.workbenchTool.ladderLocation=Розташування драбини
+resourcePack.editor.toolRail.workbenchTool.autoAlign=Автоматичне вирівнювання
+resourcePack.editor.toolRail.workbenchTool.autoAlignFacingDirection=Автоматичне вирівнювання напрямку обернення
+resourcePack.editor.toolRail.workbenchTool.autoAlignRotation=Автоматичне вирівнювання обертання
+resourcePack.editor.toolRail.workbenchTool.topSlotBitProp=Верх / низ
+resourcePack.editor.toolRail.workbenchTool.pillarAxisProp=Повернути
+resourcePack.editor.toolRail.workbenchTool.heightProp=Шари
+resourcePack.editor.toolRail.workbenchTool.candlesProp=Кількість свічок
+resourcePack.editor.toolRail.workbenchTool.turtleEggCountProp=Кількість яєць черепахи
+resourcePack.editor.toolRail.workbenchTool.clusterCountProp=Кількість морських огірків
+resourcePack.editor.toolRail.workbenchTool.hangingProp=Перемкніть звисання з іншого блоку
+resourcePack.editor.toolRail.workbenchTool.wallPostBitProp=Перемкнути опору
+resourcePack.editor.toolRail.workbenchTool.upsideDownBitProp=Верх / низ
+resourcePack.editor.toolRail.workbenchTool.openBitProp=Відкрити / закрити
+resourcePack.editor.toolRail.workbenchTool.litProp=Запалити / загасити
+resourcePack.editor.toolRail.workbenchTool.dripstoneThicknessProp=Товщина печерного наросту
+resourcePack.editor.toolRail.workbenchTool.directionProp=Напрямок обернення
+resourcePack.editor.toolRail.workbenchTool.weirdoDirectionProp=Повернути
+resourcePack.editor.toolRail.workbenchTool.facingDirectionProp=Напрямок обернення
+resourcePack.editor.toolRail.workbenchTool.cardinalDirectionProp=Напрямок обернення
+resourcePack.editor.toolRail.workbenchTool.addCustomMapping=Додати нестандартну розкладку
+resourcePack.editor.toolRail.workbenchTool.blockProperty=Властивість блоку
+resourcePack.editor.toolRail.workbenchTool.clickBinding=Клацніть на «Прив’язки»
+resourcePack.editor.toolRail.workbenchTool.addMapping=Додати розкладку
+resourcePack.editor.toolRail.workbenchTool.resetAllMappings=Скинути всі розкладки
+resourcePack.editor.workbenchTool.keyBinding.primaryAction=Основна дія в Майстерні
+resourcePack.editor.workbenchTool.keyBinding.secondaryAction=Вторинна дія в Майстерні
+resourcePack.editor.workbenchTool.keyBinding.tertiaryAction=Третинна дія в Майстерні
+resourcePack.editor.workbenchTool.keyBinding.quaternaryAction=Четвертинна дія в Майстерні
+resourcePack.editor.transaction.keyBinding.redo=Повторити
+resourcePack.editor.transaction.keyBinding.undo=Скасувати
+resourcePack.editor.viewport.keyBinding.moveBack=Назад
+resourcePack.editor.viewport.keyBinding.moveDown=Перемістити вниз
+resourcePack.editor.viewport.keyBinding.moveForward=Вперед
+resourcePack.editor.viewport.keyBinding.moveLeft=Вліво
+resourcePack.editor.viewport.keyBinding.moveRight=Вправо
+resourcePack.editor.viewport.keyBinding.moveUp=Перемістити вгору
+resourcePack.editor.viewport.keyBinding.incrementFlySpeed=Збільшити швидкість польоту
+resourcePack.editor.viewport.keyBinding.decrementFlySpeed=Зменшити швидкість польоту
+resourcePack.editor.viewSettings.compass.tip=Показати компас із напрямком
+resourcePack.editor.viewSettings.compass.title=Показати компас
+resourcePack.editor.viewSettings.chunk.tip=Відобразити контур кордонів чанків на карті
+resourcePack.editor.viewSettings.chunk.title=Відобразити межі чанків
+resourcePack.editor.viewSettings.nightVision.tip=Показати світ так, ніби ви бачите в темряві
+resourcePack.editor.viewSettings.nightVision.title=Нічне бачення
+resourcePack.editor.viewSettings.invisible.tip=Показувати невидимі блоки (наприклад, порожнечу, бар’єри тощо)
+resourcePack.editor.viewSettings.invisible.title=Показувати невидимі блоки
+resourcePack.editor.viewSettings.flySpeed.tip=Збільшує швидкість польоту для швидшого маневрування на карті
+resourcePack.editor.viewSettings.flySpeed.title=Коефіцієнт збільшення швидкості польоту
+resourcePack.editor.viewSettings.menu=Налаштування
+resourcePack.editor.viewSettings.title=Налаштування
+resourcePack.editor.hotbar.defaultDisplayName=Стандартний
+resourcePack.editor.reloadScripts.response.tooMany=До сервера підключено забагато гравців. Перезавантаження скрипту підтримується лише на хостах з одним підключеним гравцем.
+resourcePack.editor.reloadScripts.response.genericError=Під час спроби перезавантажити скрипти виникла помилка.
+resourcePack.editor.reloadScripts.response.noAdminRights=Ви не маєте дозволу на перезавантаження скриптів.

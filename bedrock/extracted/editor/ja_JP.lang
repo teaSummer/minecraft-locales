@@ -1,912 +1,806 @@
-﻿## Comments can be added anywhere on a valid line by starting with '##'
-##
-## Note, trailing spaces will NOT be trimmed. If you want room between the end of the string and the start of a
-## comment on the same line, use TABs.
-
-commands.editor.project.beginExport=エクスポート中...	#
-commands.editor.project.description=現在読み込まれているプロジェクトを操作します	#
-commands.editor.project.export=プロジェクト エクスポート	#
-commands.editor.project.exportComplete=エクスポート完了、%sにファイルが書き込まれました	#
-commands.editor.project.exportCopyFailed=レベル データ%sのコピーに失敗しました	#
-commands.editor.project.unknownSubcommand=不明なサブコマンド	#
-
-resourcePack.editor.actionBar.redo.tooltipDescription=アクションをやり直す	#
-resourcePack.editor.actionBar.redo.tooltipTitle=やり直す	#
-resourcePack.editor.actionBar.redo=やり直す	#
-resourcePack.editor.actionBar.undo.tooltipDescription=アクションを元に戻す	#
-resourcePack.editor.actionBar.undo.tooltipTitle=取り消す	#
-resourcePack.editor.actionBar.undo=取り消す	#
-resourcePack.editor.actionBar.fill=塗りつぶす 	####Label for an actionbar item that fills the selection with the current hotbar block.{MaxLength=100}
-resourcePack.editor.actionBar.fill.tooltipDescription=選択ボリュームを現在のホットバー ブロックで埋める 	####Tooltip description for an actionbar item that fills the selection with the current hotbar block.{MaxLength=100}
-resourcePack.editor.actionBar.fill.tooltipTitle=塗りつぶす 	####Tooltip title for an actionbar item that fills the selection with the current hotbar block.{MaxLength=100}
-
-resourcePack.editor.agfx.settings.error.title=エラーが発生しました...	#
-resourcePack.editor.agfx.pane.title=設定エディター	#
-resourcePack.editor.agfx.pane.settings_selector=設定を選択	#
-resourcePack.editor.agfx.pane.settings.title=設定	#
-resourcePack.editor.agfx.pane.settings.revert_changes=変更を元に戻す	#
-resourcePack.editor.agfx.pane.settings.export_to_clipboard=クリップボードにエクスポートする	#
-
-
-resourcePack.editor.toolRail.blockInspectorSettings.title=ブロック インスペクター   	####This string is what is shown in the title bar of the Editor pane for inspecting blocks.{MaxLength=30}
-resourcePack.editor.toolRail.blockInspectorSettings.specifics=ブロックの詳細   	####This string is the heading that contains the block tags and block properties subpane.{MaxLength=30}
-resourcePack.editor.toolRail.blockInspectorSettings.actions.refresh=ブロック データを更新   	####This string shown on a button for forcing an update to the block data state.{MaxLength=30}
-resourcePack.editor.toolRail.blockInspectorSettings.actions.clear=選択解除   	####This string shown on a button for clearing what block is currently selected.{MaxLength=30}
-resourcePack.editor.toolRail.blockInspectorSettings.blockTags=ブロック タグ   	####This string is a header for a panel that shows the block tags on the currently selected block.{MaxLength=30}
-resourcePack.editor.toolRail.blockInspectorSettings.blockProperties=ブロック プロパティ   	####This string is a header for a panel that shows the block properties on the currently selected block.{MaxLength=30}
-resourcePack.editor.toolRail.blockInspectorSettings.blockProperties.name=プロパティ名   	####Within the block properties pane, this string goes before the property name.{MaxLength=30}
-resourcePack.editor.toolRail.blockInspectorSettings.blockProperties.value=プロパティ値   	####Within the block properties pane, this string goes before the property value.{MaxLength=30}
-resourcePack.editor.toolRail.blockInspectorTool.title=ブロック インスペクター   	####This string is what is shown as the name of the block inspector tool.{MaxLength=30}
-resourcePack.editor.toolRail.blockInspectorTool.tooltip=ブロック データを検査   	####This string is what is shown when hovering over the block inspector icon.{MaxLength=30}
-resourcePack.editor.toolRail.blockInspectorTool.pane.helpText=ブロックを左クリックして、プロパティの表示と編集をします   	####This string is shown in the block inspector tool pane before the user clicks to describe how to use it.{MaxLength=100}
-resourcePack.editor.blockInspector.toolRail.description=ブロックを左クリックして、プロパティの表示と編集をします   	####This string is shown in the tool tip to explain the function of the Block Inspector tool.{MaxLength=100}
-
-
-resourcePack.editor.blockPalette.addSearchItem=見つけたブロックを使用	#
-resourcePack.editor.blockPalette.blockPicker=検索	#
-resourcePack.editor.blockPalette.paletteDropdown.title=パレット	#
-resourcePack.editor.blockPalette.title=ブロック パレット	#
-
-
-resourcePack.editor.brushPaint.inputContext.activateBrushPaint=ブラシ ペイントをアクティブにします	#
-resourcePack.editor.brushPaint.inputContext.oneshot=1回ペイントする	#
-resourcePack.editor.brushPaint.inputContext.title=ブラシ ペイント	#
-resourcePack.editor.brushPaint.title=ブラシ ペイント	#
-resourcePack.editor.brushPaint.tooltip=ブラシを使用してワールド内のブロックをペイントします	#
-
-
-resourcePack.editor.BrushPaintControl.brush.title=ブラシ	#
-resourcePack.editor.BrushPaintControl.brushSettings.title=ブラシ設定	#
-resourcePack.editor.BrushPaintControl.shapeSettings.title=シェイプ設定 	####Represents an expander that has UI controls for brush shape settings.{MaxLength=100}
-resourcePack.editor.BrushPaintControl.fillConstraints.mask.title=マスク リスト	#
-resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.disabled.tooltip=ブロック フィルターを無効にする	#
-resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.disabled=無効	#
-resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.mask.tooltip=リストに一致するブロックは無視され、影響を受けません	#
-resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.mask=マスク	#
-resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.replace=置き換える	#
-resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.title=ブラシ ブロック フィルター	#
-resourcePack.editor.BrushPaintControl.fillConstraints.replace.title=リストを置き換える	#
-resourcePack.editor.BrushPaintControl.fillConstraints.replace.tooltip=リストに一致するブロックが操作対象となります	#
-resourcePack.editor.BrushPaintControl.fillConstraints.title=埋め立て制約	#
-resourcePack.editor.BrushPaintControl.keybinding.maskMask=マスク モード - マスク	#
-resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetBack=オフセットを後ろに微調整	#
-resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetDown=オフセットを下に微調整	#
-resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetForward=オフセットを前方に微調整	#
-resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetLeft=オフセットを左に微調整	#
-resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetRight=オフセットを右に微調整	#
-resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetUp=オフセットを上に微調整	#
-resourcePack.editor.BrushPaintControl.keybinding.replaceMask=マスク モード - 置換	#
-resourcePack.editor.BrushPaintControl.offset.title=オフセット	#
-resourcePack.editor.BrushPaintControl.offset.tooltip=カーソル位置からのオフセット	#
-resourcePack.editor.BrushPaintControl.rootPane.title=ブラシ設定	#
-
-
-resourcePack.editor.brushShape.common.settings.axis=押し出し軸	#
-resourcePack.editor.brushShape.common.settings.height=高さ	#
-resourcePack.editor.brushShape.common.settings.length=長さ	#
-resourcePack.editor.brushShape.common.settings.radius=半径	#
-resourcePack.editor.brushShape.common.settings.uniform=ユニフォーム	#
-resourcePack.editor.brushShape.common.settings.xAxis=X 軸	#
-resourcePack.editor.brushShape.common.settings.xAxisNeg=-X 軸	#
-resourcePack.editor.brushShape.common.settings.yAxis=Y 軸	#
-resourcePack.editor.brushShape.common.settings.yAxisNeg=-Y 軸	#
-resourcePack.editor.brushShape.common.settings.zAxis=Z 軸	#
-resourcePack.editor.brushShape.common.settings.zAxisNeg=-Z 軸	#
-resourcePack.editor.brushShape.cone.name=コーン	#
-resourcePack.editor.brushShape.cone.settings.depth=奥行き半径	#
-resourcePack.editor.brushShape.cone.settings.width=幅半径	#
-resourcePack.editor.brushShape.cuboid.name=直方体	#
-resourcePack.editor.brushShape.cuboid.settings.depth=奥行き	#
-resourcePack.editor.brushShape.cuboid.settings.height=高さ	#
-resourcePack.editor.brushShape.cuboid.settings.width=幅	#
-resourcePack.editor.brushShape.cylinder.name=円柱	#
-resourcePack.editor.brushShape.cylinder.settings.depth_radius=奥行き半径	#
-resourcePack.editor.brushShape.cylinder.settings.width_radius=幅半径	#
-resourcePack.editor.brushShape.ellipsoid.name=楕円	#
-resourcePack.editor.brushShape.ellipsoid.settings.depth_radius=奥行き半径	#
-resourcePack.editor.brushShape.ellipsoid.settings.height_radius=高さ半径	#
-resourcePack.editor.brushShape.ellipsoid.settings.width_radius=幅半径	#
-resourcePack.editor.brushShape.pyramid.name=ピラミッド	#
-resourcePack.editor.brushShape.pyramid.settings.depth=奥行き	#
-resourcePack.editor.brushShape.pyramid.settings.height=高さ	#
-resourcePack.editor.brushShape.pyramid.settings.width=幅	#
-resourcePack.editor.brushShape.singleBlock.name=シングル ブロック	#
-resourcePack.editor.brushShape.star.name=星 	####Represent a star shaped brush.{MaxLength=100}
-resourcePack.editor.brushShape.star.settings.includeVertical=縦を含める 	####Represents a toggle button label that removes vertical parts of a star brush if unchecked.{MaxLength=100}
-
-
-resourcePack.editor.client.description=エディタ クライアント リソース	#
-resourcePack.editor.client.name=エディタ リソース	#
-
-
-resourcePack.editor.ClipboardPreviewControl.keybinding.moveOriginBack=原点を後方に移動	#
-resourcePack.editor.ClipboardPreviewControl.keybinding.moveOriginDown=原点を下に移動	#
-resourcePack.editor.ClipboardPreviewControl.keybinding.moveOriginForward=原点を前方に移動	#
-resourcePack.editor.ClipboardPreviewControl.keybinding.moveOriginLeft=原点を左に移動	#
-resourcePack.editor.ClipboardPreviewControl.keybinding.moveOriginRight=原点を右に移動	#
-resourcePack.editor.ClipboardPreviewControl.keybinding.moveOriginUp=原点を上に移動	#
-resourcePack.editor.ClipboardPreviewControl.keyBinding.nudgeOffsetBack=オフセットを後ろに微調整	#
-resourcePack.editor.ClipboardPreviewControl.keyBinding.nudgeOffsetDown=オフセットを下に微調整	#
-resourcePack.editor.ClipboardPreviewControl.keyBinding.nudgeOffsetForward=オフセットを前方に微調整	#
-resourcePack.editor.ClipboardPreviewControl.keyBinding.nudgeOffsetLeft=オフセットを左に微調整	#
-resourcePack.editor.ClipboardPreviewControl.keyBinding.nudgeOffsetRight=オフセットを右に微調整	#
-resourcePack.editor.ClipboardPreviewControl.keyBinding.nudgeOffsetUp=オフセットを上に微調整	#
-resourcePack.editor.ClipboardPreviewControl.keybinding.rotateClockWise=プレビューを時計回りに回転	#
-resourcePack.editor.ClipboardPreviewControl.keybinding.rotateCounterClockWise=プレビューを反時計回りに回転	#
-resourcePack.editor.ClipboardPreviewControl.keybinding.toggleMirrorX=鏡 X の切り替え	#
-resourcePack.editor.ClipboardPreviewControl.keybinding.toggleMirrorZ=鏡 Z の切り替え	#
-resourcePack.editor.ClipboardPreviewControl.mirror.axis.x.tooltip=原点の X 軸の辺りを中心にクリップボードのアイテムを対照に映し出す	#
-resourcePack.editor.ClipboardPreviewControl.mirror.axis.x=ミラー (X 軸)	#
-resourcePack.editor.ClipboardPreviewControl.mirror.axis.z.tooltip=原点の Z 軸の辺りを中心にクリップボードのアイテムを対照に映し出す	#
-resourcePack.editor.ClipboardPreviewControl.mirror.axis.z=ミラー (Z 軸)	#
-resourcePack.editor.ClipboardPreviewControl.offset.title=オフセット	#
-resourcePack.editor.ClipboardPreviewControl.offset.tooltip=配置ポイントからクリップボード アイテムの原点までの追加のオフセット	#
-resourcePack.editor.ClipboardPreviewControl.origin.title=原点	#
-resourcePack.editor.ClipboardPreviewControl.origin.tooltip=クリップボードアイテム内の原点。配置する際の中心、またはクリップボードを回転およびミラーするポイントとして用いられる	#
-resourcePack.editor.ClipboardPreviewControl.placement.title=オプション	#
-resourcePack.editor.ClipboardPreviewControl.rootPane.title=クリップボード情報	#
-resourcePack.editor.ClipboardPreviewControl.rotation.180=180°	#
-resourcePack.editor.ClipboardPreviewControl.rotation.270=270°	#
-resourcePack.editor.ClipboardPreviewControl.rotation.90=90°	#
-resourcePack.editor.ClipboardPreviewControl.rotation.none=なし	#
-resourcePack.editor.ClipboardPreviewControl.rotation.title=回転	#
-resourcePack.editor.ClipboardPreviewControl.rotation.tooltip=原点で Y 軸を中心として回転する量	#
-resourcePack.editor.ClipboardPreviewControl.structureSize.title=クリップボードのサイズ	#
-
-
-resourcePack.editor.copypaste.actionbar.copy.title=コピー	#
-resourcePack.editor.copypaste.actionbar.copy.tooltip=選択範囲をクリップボードにコピーする	#
-resourcePack.editor.copypaste.actionbar.copy.tooltipDescription=現在選択したコンテンツをクリップボードにコピーし、選択したコンテンツはそのまま維持する	#
-resourcePack.editor.copypaste.actionbar.cut.title=切り取り	#
-resourcePack.editor.copypaste.actionbar.cut.tooltip=選択範囲をクリップボードに切り取る/移動する	#
-resourcePack.editor.copypaste.actionbar.cut.tooltipDescription=現在選択したコンテンツをクリップボードにコピーし、そのプロセスで選択したコンテンツを削除する	#
-resourcePack.editor.copypaste.keyBinding.copy=選択範囲をクリップボードにコピーする	#
-resourcePack.editor.copypaste.keyBinding.cut=選択範囲をクリップボードに切り取る/移動する	#
-resourcePack.editor.copypaste.keyBinding.paste=クリップボードをワールドに貼り付ける	#
-resourcePack.editor.copypaste.menu.copy.title=選択領域をコピー	#
-resourcePack.editor.copypaste.menu.cut.title=選択領域を切り取る	#
-
-
-resourcePack.editor.core.keyBinding.showGameMenu=ゲーム メニューを表示	#
-resourcePack.editor.core.keyBinding.showLogPanel=ログパネルの表示	#
-
-
-resourcePack.editor.CursorModeControl.cursorTargetMode.block.tooltip=マウス カーソルの下のブロック	#
-resourcePack.editor.CursorModeControl.cursorTargetMode.block=ブロック	#
-resourcePack.editor.CursorModeControl.cursorTargetMode.face.tooltip=カーソルの下のブロックの面に隣接するブロック	#
-resourcePack.editor.CursorModeControl.cursorTargetMode.face=隣接	#
-resourcePack.editor.CursorModeControl.cursorTargetMode.title=ターゲット	#
-resourcePack.editor.CursorModeControl.cursorTargetMode.tooltip=カーソル ターゲット モードを選択します	#
-resourcePack.editor.CursorModeControl.fixedDistance.slider.title=固定カーソル距離	#
-resourcePack.editor.CursorModeControl.fixedDistance.slider.tooltip=プレイヤーからブロック カーソルが配置される固定距離を調整します	#
-resourcePack.editor.CursorModeControl.keybinding.moveCursorBack=カーソルを後ろに移動	#
-resourcePack.editor.CursorModeControl.keybinding.moveCursorDown=カーソルを下に移動	#
-resourcePack.editor.CursorModeControl.keybinding.moveCursorForward=前に押す	#
-resourcePack.editor.CursorModeControl.keybinding.moveCursorLeft=カーソルを左に移動	#
-resourcePack.editor.CursorModeControl.keybinding.moveCursorRight=カーソルを右に移動	#
-resourcePack.editor.CursorModeControl.keybinding.moveCursorUp=カーソルを上に移動	#
-resourcePack.editor.CursorModeControl.keybinding.toggleBlockTargetMode=ブロック/隣接モードの切り替え	#
-resourcePack.editor.CursorModeControl.keybinding.toggleFixedDistance=固定距離モードの切り替え	#
-resourcePack.editor.CursorModeControl.keybinding.toggleMouseTracking=マウス トラッキングの切り替え	#
-resourcePack.editor.CursorModeControl.mouseControlMode.fixed=固定距離	#
-resourcePack.editor.CursorModeControl.mouseControlMode.keyboard=キーボードのみ	#
-resourcePack.editor.CursorModeControl.mouseControlMode.keyboardAndMouse=マウスとキー	#
-resourcePack.editor.CursorModeControl.mouseControlMode.title=入力方法	#
-resourcePack.editor.CursorModeControl.mouseControlMode.tooltip=ワールド ブロック カーソルの入力方法を選択します	#
-resourcePack.editor.CursorModeControl.projectThroughWater.title=水を通して投影	#
-resourcePack.editor.CursorModeControl.projectThroughWater.tooltip=マウスのレイキャストは水中を通過して投影され、水中の要素を選択できるようになる	#
-resourcePack.editor.CursorModeControl.rootPane.title=カーソル設定	#
-
-
-resourcePack.editor.datatransferaccessors.atmospheric_scattering=大気散乱	#
-resourcePack.editor.datatransferaccessors.color_grading=カラー グレーディング	#
-resourcePack.editor.datatransferaccessors.lighting_group=グローバル ライティング	#
-resourcePack.editor.datatransferaccessors.pbr_fallbacks=PBR フォールバック	#
-resourcePack.editor.datatransferaccessors.point_lights=ポイント ライト	#
-resourcePack.editor.datatransferaccessors.water=水	#
-resourcePack.editor.datatransferaccessors.shadows=シャドウ	#
-
-
-resourcePack.editor.deferredLightingSettings.menu.title=遅延シェーディングの設定	#
-
-
-resourcePack.editor.delete.keyBinding=選択内容の削除	#
-
-
-resourcePack.editor.toolRail.entityInspector.pane.title=エンティティ インスペクター   	####This string is what is shown in the title bar of the Editor pane for modifying entities.{MaxLength=30}
-resourcePack.editor.toolRail.entityInspector.tool.title=エンティティ インスペクター   	####This string is what is shown at the top of the Editor pane for modifying entities.{MaxLength=30}
-resourcePack.editor.toolRail.entityInspector.tool.tip=エンティティ データの検査   	####This string is what is shown on the tool tip of Editor pane for modifying entities (gives context on what the tool does).{MaxLength=100}
-resourcePack.editor.toolRail.entityInspector.pane.helpText=エンティティを左クリックして、プロパティの表示と編集をします   	####This string is shown in the block inspector tool pane before the user clicks to describe how to use it.{MaxLength=100}
-resourcePack.editor.entityInspector.toolRail.description=エンティティを左クリックして、プロパティの表示と編集をします   	####This string is shown in the tool tip to explain the function of the Entity Inspector tool.{MaxLength=100}
-
-resourcePack.editor.exportProject.exportType=エクスポートの種類	#
-resourcePack.editor.exportProject.exportType.playableWorld=プレイ可能な世界	#
-resourcePack.editor.exportProject.exportNotes=ノートをエクスポート	#
-resourcePack.editor.exportProject.exportNotes.export=進行状況をエクスポート中   	####This string is intended to express that the title of export progress modal.{MaxLength=100}
-resourcePack.editor.exportProject.exportNotes.warning=v%1 のワールドをエクスポートしています。エクスポートされたプレイ可能なワールドは、バージョン番号が v%1 より前の Minecraft では使用できません。以前のバージョンに変換するには、https://chunker.app/ を使用してください (以前のバージョンでサポートされていない機能は、使用できない場合があります)	#
-resourcePack.editor.exportProject.exportNotes.progress=ワールドをエクスポート中...    	####This string is intended to express that the progress message of exporting.{MaxLength=100}
-resourcePack.editor.exportProject.exportNotes.exportSuccess=ワールドのエクスポートに成功しました    	####This string is intended to express that export the world succeeded.{MaxLength=100}
-resourcePack.editor.exportProject.exportNotes.exportFailed=ワールドのエクスポートに失敗しました    	####This string is intended to express that export the world failed.{MaxLength=100}
-resourcePack.editor.exportProject.generalSettings=一般設定	#
-resourcePack.editor.exportProject.generalSettings.worldName=ワールド名	#
-resourcePack.editor.exportProject.generalSettings.gameMode=ゲームモード	#
-resourcePack.editor.exportProject.generalSettings.difficulty=難易度	#
-resourcePack.editor.exportProject.generalSettings.hardcore=ハードコア	#
-resourcePack.editor.exportProject.initialPlaySettings=初期プレイ設定   	####This string is intended to express that the export category for inital play settings.{MaxLength=100}
-resourcePack.editor.exportProject.initialPlaySettings.spawnPosition=ワールドのスポーン地点   	####This string is intended to express that player inistal spawn position.{MaxLength=100}
-resourcePack.editor.exportProject.initialPlaySettings.startTime=開始時刻   	####This string is intended to express that world start time.{MaxLength=100}
-resourcePack.editor.exportProject.initialPlaySettings.clockType=時計の種類   	####This string is intended to express that start time with different clock type.{MaxLength=100}
-resourcePack.editor.exportProject.initialPlaySettings.customStartTime=カスタム開始時間   	####This string is intended to express that custom start time with Minecraft Cloke value.{MaxLength=100}
-resourcePack.editor.exportProject.initialPlaySettings.weather=開始時の天候   	####This string is intended to express that the custom start weather.{MaxLength=100}
-resourcePack.editor.exportProject.advancedSettings=詳細設定	#
-resourcePack.editor.exportProject.advancedSettings.startingMap=開始時の地図所持	#
-resourcePack.editor.exportProject.advancedSettings.bonusChest=ボーナスチェスト	#
-resourcePack.editor.exportProject.advancedSettings.showCoordinates=座標を表示	#
-resourcePack.editor.exportProject.advancedSettings.showDaysPlayed=プレイ日を表示する	#
-resourcePack.editor.exportProject.advancedSettings.recipeUnlocking=レシピのアンロック	#
-resourcePack.editor.exportProject.advancedSettings.limitedCrafting=限定クラフト   	####Export pane checkbox label that enable to set crafting limit.{MaxLength=100}
-resourcePack.editor.exportProject.advancedSettings.fireSpreads=火の延焼	#
-resourcePack.editor.exportProject.advancedSettings.tntExplodes=TNT の爆発	#
-resourcePack.editor.exportProject.advancedSettings.resawnBlocksExplode=リスポーン ブロックが爆発する	#
-resourcePack.editor.exportProject.advancedSettings.mobLoot=モブのアイテム ドロップ	#
-resourcePack.editor.exportProject.advancedSettings.naturalRegeneration=自然再生	#
-resourcePack.editor.exportProject.advancedSettings.tileDrops=タイルからのドロップ	#
-resourcePack.editor.exportProject.advancedSettings.immediateRespawn=即時リスポーン	#
-resourcePack.editor.exportProject.advancedSettings.showDeathMessage=死亡メッセージを表示   	####Export pane checkbox label that show the death message when player die.{MaxLength=100}
-resourcePack.editor.exportProject.advancedSettings.respawnRadius=リスポーン範囲	#
-resourcePack.editor.exportProject.advancedSettings.simulationDistance=演算距離	#
-resourcePack.editor.exportProject.advancedSettings.bedsWork=ベッド ワーク	#
-resourcePack.editor.exportProject.advancedSettings.requiredSleepingPlayers=必要なスリープ状態のプレイヤー (%1$s)	#
-resourcePack.editor.exportProject.advancedSettings.requiredSleepingPlayers.onePlayerMessage=プレイヤー 1 人のみ	#
-resourcePack.editor.exportProject.advancedSettings.showItemTags=アイテムタグを表示   	####Export pane checkbox label that show item tags.{MaxLength=100}
-resourcePack.editor.exportProject.multiplayerSettings=マルチプレイ設定	#
-resourcePack.editor.exportProject.multiplayerSettings.multiplayerGame=マルチプレイ ゲーム	#
-resourcePack.editor.exportProject.multiplayerSettings.playerAccess=プレイヤー アクセス	#
-resourcePack.editor.exportProject.multiplayerSettings.playerPermissions=プレイヤー権限	#
-resourcePack.editor.exportProject.multiplayerSettings.visibleToLAN=LAN プレイヤーに表示	#
-resourcePack.editor.exportProject.multiplayerSettings.friendlyFire=味方による攻撃	#
-resourcePack.editor.exportProject.cheatsSettings=チート設定	#
-resourcePack.editor.exportProject.cheatsSettings.cheats=チート	#
-resourcePack.editor.exportProject.cheatsSettings.daylightCycle=昼夜サイクル	#
-resourcePack.editor.exportProject.cheatsSettings.keepInventory=持ち物の保持	#
-resourcePack.editor.exportProject.cheatsSettings.mobSpawning=モブのスポーン	#
-resourcePack.editor.exportProject.cheatsSettings.mobGriefing=モブによる妨害	#
-resourcePack.editor.exportProject.cheatsSettings.entitiesDropLoot=エンティティのアイテム ドロップ	#
-resourcePack.editor.exportProject.cheatsSettings.weatherCycle=天候の変化	#
-resourcePack.editor.exportProject.cheatsSettings.commandBlocks=コマンドブロック	#
-resourcePack.editor.exportProject.cheatsSettings.commandBlockOutput=コマンドブロック出力   	####Export pane checkbox label that enable to display the command output.{MaxLength=100}
-resourcePack.editor.exportProject.cheatsSettings.sendCommandFeedback=コマンド フィードバックの送信   	####This string is the heading for the 'send command feedback' setting when exporting a world.{MaxLength=100}
-resourcePack.editor.exportProject.cheatsSettings.maxCommandChainLength=最大コマンド チェーン長   	####Export pane number that indicate the max length of the command, it defaults to 65536. It has a minimum of 0 and a max of 2147483647.{MaxLength=100}
-resourcePack.editor.exportProject.cheatsSettings.fireDamage=炎ダメージ  	####Export pane checkbox label that enable damage when the player on fire.{MaxLength=100}
-resourcePack.editor.exportProject.cheatsSettings.freezeDamage=フリーズ ダメージ  	####Export pane checkbox label that enable damage when the player freezes.{MaxLength=100}
-resourcePack.editor.exportProject.cheatsSettings.fallDamage=落下ダメージ  	####Export pane checkbox label that enable damage when the player falls.{MaxLength=100}
-resourcePack.editor.exportProject.cheatsSettings.drowningDamage=窒息ダメージ  	####Export pane checkbox label that enable damage when the player is drowning.{MaxLength=100}
-resourcePack.editor.exportProject.cheatsSettings.insomnia=不眠症  	####Export pane checkbox label that enable player insomnia status.{MaxLength=100}
-resourcePack.editor.exportProject.cheatsSettings.showBorderEffect=ボーダー エフェクトの表示  	####Export pane checkbox label that show border effect.{MaxLength=100}
-resourcePack.editor.exportProject.cheatsSettings.functionCommandLimit=関数コマンドの制限  	####Export pane checkbox label that the number of limition for the function command.{MaxLength=100}
-resourcePack.editor.exportProject.cheatsSettings.educationFeatures=教育機能	#
-resourcePack.editor.exportProject.cheatsSettings.randomTickSpeed=ランダムなティック速度	#
-resourcePack.editor.exportProject.export=エクスポート	#
-resourcePack.editor.exportProject.resetToDefault=初期設定にリセット	#
-resourcePack.editor.exportProject.gameMode.survival=サバイバル	#
-resourcePack.editor.exportProject.gameMode.creative=クリエイティブ	#
-resourcePack.editor.exportProject.gameMode.adventure=アドベンチャー	#
-resourcePack.editor.exportProject.difficulty.peaceful=ピースフル	#
-resourcePack.editor.exportProject.difficulty.easy=イージー	#
-resourcePack.editor.exportProject.difficulty.normal=ノーマル	#
-resourcePack.editor.exportProject.difficulty.hard=ハード	#
-resourcePack.editor.exportProject.weather.default=デフォルト   	####This string is intended to express that the default weather .{MaxLength=100}
-resourcePack.editor.exportProject.weather.clear=クリア   	####This string is intended to express that the weather of Clear.{MaxLength=100}
-resourcePack.editor.exportProject.weather.rain=雨   	####This string is intended to express that the weather of Rain.{MaxLength=100}
-resourcePack.editor.exportProject.weather.thunder=雷   	####This string is intended to express that the weather of Thunder.{MaxLength=100}
-
-
-
-resourcePack.editor.toolRail.ExtrudeTool.title=押し出しツール	#
-resourcePack.editor.toolRail.ExtrudeTool.tooltip=ブロックの拡大や縮小を行うための押し出しツール	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.ContiguousSelectionBlockListSubPane.title=ブロック リストの連続選択	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.TrailingBlocksSettingsSubPane.title=トレーリング ブロック設定	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.SampleLayerCount.title=サンプル レイヤー数	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.ContiguousSelectionSettings.title=連続選択の設定	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.ContiguousSelectionType.title=連続選択のタイプ	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.ContiguousSelectionType.SameBlocks=同一ブロック	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.ContiguousSelectionType.SameBlocksAndStates=同一ブロックおよび状態	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.ContiguousSelectionType.SolidBlocks=固体ブロック	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.ContiguousSelectionType.AllBlocks=すべてのブロック	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.ContiguousSelectionType.CustomBlockList=カスタム ブロック リスト	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.ToleranceLevel.title=許容レベル	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.HasAdjacentBlocks.title=隣接ブロックあり	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.ExtruderSettings.title=押し出し機能の設定	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.Radius.title=半径	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.title=選択モード	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.ContiguousSelection=連続選択	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.MarqueeSelection=マーキー選択	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.ContiguousSettings.title=連続選択の設定	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.TrailingBlocks.title=トレーリング ブロック	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.TrailingBlocksSettings.title=トレーリング ブロック設定	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.QuickExtrudeSettings.title=クイック押し出し設定	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.QuickExtrudeMode.title=クイック押し出しモード	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.QuickExtrudeMode.decrease.title=減少	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.QuickExtrudeMode.decrease.tooltip=押し出しの減少	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.QuickExtrudeMode.expand.title=拡大	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.QuickExtrudeMode.expand.tooltip=押し出しの拡張	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.LayerCount.title=レイヤー数	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.preview_warning=注: プレビューのビジュアルには、最初のレイヤーのみが表示されます 	#### {MaxLength="500"}, used to inform the user that the preview visualization for this tool is limited to a single layer.  This string is on screen whenever this tool is active
-resourcePack.editor.toolRail.ExtrudeTool.pane.ExtrusionType.title=押し出しタイプ	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.ExtrusionType.Extrude=押し出し	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.ExtrusionType.QuickExtrude=クイック押し出し	#
-resourcePack.editor.toolRail.ExtrudeTool.keyBinding.deselect=選択解除	#
-resourcePack.editor.toolRail.ExtrudeTool.keyBinding.toggleTool=押し出しツールの切り替え	#
-
-
-resourcePack.editor.toolRail.FarmGenerator.tool.title=農場ジェネレーター	#
-resourcePack.editor.toolRail.FarmGenerator.tool.tooltip=カスタムの農場を素早く作成	#
-resourcePack.editor.toolRail.FarmGenerator.pane.title=農場ジェネレーター	#
-resourcePack.editor.toolRail.FarmGenerator.pane.length=長さ	#
-resourcePack.editor.toolRail.FarmGenerator.pane.width=幅	#
-resourcePack.editor.toolRail.FarmGenerator.pane.fence=フェンス	#
-resourcePack.editor.toolRail.FarmGenerator.pane.irrigation=灌漑の追加	#
-resourcePack.editor.toolRail.FarmGenerator.pane.irrigation.tooltip=農場に水ブロックを追加して作物を灌漑します。	#
-resourcePack.editor.toolRail.FarmGenerator.pane.crops.title=作物	#
-resourcePack.editor.toolRail.FarmGenerator.pane.crops.wheat=小麦	#
-resourcePack.editor.toolRail.FarmGenerator.pane.crops.potato=ジャガイモ	#
-resourcePack.editor.toolRail.FarmGenerator.pane.crops.beets=ビートルート	#
-resourcePack.editor.toolRail.FarmGenerator.pane.crops.pumpkin=カボチャ	#
-resourcePack.editor.toolRail.FarmGenerator.pane.crops.carrot=ニンジン	#
-resourcePack.editor.toolRail.FarmGenerator.pane.animals.title=動物	#
-resourcePack.editor.toolRail.FarmGenerator.pane.animals.cow=ウシ	#
-resourcePack.editor.toolRail.FarmGenerator.pane.animals.sheep=ヒツジ	#
-resourcePack.editor.toolRail.FarmGenerator.pane.animals.pig=ブタ	#
-resourcePack.editor.toolRail.FarmGenerator.keyBinding.toggleTool=農場ジェネレーターツール切替	#
-resourcePack.editor.toolRail.FarmGenerator.keyBinding.place=カーソル位置に農場を配置	#
-
-
-resourcePack.editor.global.keyBinding.toggleMode=モードの切り替え	#
-
-
-resourcePack.editor.goToMark.actionBar.tooltip.description=プレイヤー ナビゲーション用のユーティリティ パネル	#
-resourcePack.editor.goToMark.actionBar.tooltip.title=ナビゲーション パネル	#
-resourcePack.editor.goToMark.pane.goToSpawn=スポーン地点に移動	#
-resourcePack.editor.goToMark.pane.location=プレイヤーの場所	#
-resourcePack.editor.goToMark.pane.locationPane.delete=保存された場所を削除	#
-resourcePack.editor.goToMark.pane.locationPane.dropdownLabel=保存された場所	#
-resourcePack.editor.goToMark.pane.locationPane.inputName=新しい名前	#
-resourcePack.editor.goToMark.pane.locationPane.markColor=ロケーション マークの色	#
-resourcePack.editor.goToMark.pane.locationPane.store=現在の場所に次を保存:	#
-resourcePack.editor.goToMark.pane.locationPane.teleport=保存された場所にテレポート %1$s	#
-resourcePack.editor.goToMark.pane.locationPane.title=保存された場所	#
-resourcePack.editor.goToMark.pane.mapSize=マップ サイズ	#
-resourcePack.editor.goToMark.pane.refreshMap=マップの更新	#
-resourcePack.editor.goToMark.pane.setSpawn=現在の位置をスポーン地点に設定	#
-resourcePack.editor.goToMark.pane.showMap=マップを表示する	#
-resourcePack.editor.goToMark.pane.teleport=位置にテレポート	#
-resourcePack.editor.goToMark.title=ナビゲーション パネル	#
-
-
-resourcePack.editor.grapple.keyBinding.flyToCursor=カーソルへ飛ぶ	#
-resourcePack.editor.grapple.keyBinding.flyToSelection=選択領域へ飛ぶ	#
-
-
-resourcePack.editor.locate.biome.find=バイオームを探す	#
-resourcePack.editor.locate.biome.title=バイオーム	#
-resourcePack.editor.locate.keyBinding.toggleTool=バイオーム位置特定ツール切替	#
-resourcePack.editor.locate.locatetype.biome=バイオーム	#
-resourcePack.editor.locate.locatetype.structure=構造物	#
-resourcePack.editor.locate.locatetype.title=タイプを探す	#
-resourcePack.editor.locate.results.foundat.title=見つかった場所	#
-resourcePack.editor.locate.results.foundat=見つかった場所	#
-resourcePack.editor.locate.results.goto=移動	#
-resourcePack.editor.locate.results.notfound.title=該当なし	#
-resourcePack.editor.locate.results.notfound=検索結果が見つかりません	#
-resourcePack.editor.locate.results.title=結果	#
-resourcePack.editor.locate.structure.message=構造物の検索は現在サポートされていません	#
-resourcePack.editor.locate.structure.title=構造物	#
-resourcePack.editor.locate.title=位置を特定	#
-
-
-resourcePack.editor.menuBar.edit.copy=コピー	#
-resourcePack.editor.menuBar.edit.cut=切り取り	#
-resourcePack.editor.menuBar.edit.delete=削除	#
-resourcePack.editor.menuBar.edit.deselect=選択解除	#
-resourcePack.editor.menuBar.edit.quickFill=クイック フィル	#
-resourcePack.editor.menuBar.edit.quickPaste=クイック ペースト	#
-resourcePack.editor.menuBar.edit.redo=やり直す	#
-resourcePack.editor.menuBar.edit.undo=取り消す	#
-resourcePack.editor.menuBar.edit=編集	#
-resourcePack.editor.menuBar.experimental=実験的	#
-resourcePack.editor.menuBar.extensions=拡張	#
-resourcePack.editor.menuBar.file.cursor.projectThroughLiquid=液体を通して投影	#
-resourcePack.editor.menuBar.file.cursor=カーソル設定	#
-resourcePack.editor.menuBar.file.export.project=エディター プロジェクト	#
-resourcePack.editor.menuBar.file.export.world=プレイ可能な世界	#
-resourcePack.editor.menuBar.file.export=エクスポート	#
-resourcePack.editor.menuBar.file.pauseScreen=ゲーム メニュー	#
-resourcePack.editor.menuBar.file.settings=UI 設定	#
-resourcePack.editor.menuBar.file=ファイル	#
-resourcePack.editor.menuBar.help.tutorial=チュートリアル 	#### {MaxLength="500"} Represent menu bar item in help menu that activates editor tutorial when pressed
-resourcePack.editor.menuBar.help.documentation=ドキュメント	#
-resourcePack.editor.menuBar.help.feedback=フィードバック	#
-resourcePack.editor.menuBar.help.quickStart=クイック スタート	#
-resourcePack.editor.menuBar.help=ヘルプ	#
-resourcePack.editor.menuBar.locate=位置を特定	#
-resourcePack.editor.menuBar.parentMenu.weather.clear=快晴	#
-resourcePack.editor.menuBar.parentMenu.weather.rain=雨	#
-resourcePack.editor.menuBar.parentMenu.weather.thunder=雷	#
-resourcePack.editor.menuBar.parentMenu.weather=天候	#
-resourcePack.editor.menuBar.view.blockPalette=ブロック パレット	#
-resourcePack.editor.menuBar.view.logging=ログパネル	#
-resourcePack.editor.menuBar.view.navigationLogging=ナビゲーション ログ	#
-resourcePack.editor.menuBar.view=表示	#
-resourcePack.editor.menuBar.worldOptions.changeDimension.end=ジ・エンド	#
-resourcePack.editor.menuBar.worldOptions.changeDimension.nether=ネザー	#
-resourcePack.editor.menuBar.worldOptions.changeDimension.overworld=オーバーワールド	#
-resourcePack.editor.menuBar.worldOptions.changeDimension=ディメンションを変更	#
-resourcePack.editor.menuBar.worldOptions.pause.entities=エンティティ	#
-resourcePack.editor.menuBar.worldOptions.pause=一時停止	#
-resourcePack.editor.menuBar.worldOptions=世界のオプション	#
-
-
-resourcePack.editor.navigation.keyBinding.add=ナビゲーション位置の追加	#
-resourcePack.editor.navigation.keyBinding.next=次のナビゲーション位置に移動	#
-resourcePack.editor.navigation.keyBinding.previous=前のナビゲーション位置に移動	#
-
-
-resourcePack.editor.paste.pane.submitButton=貼り付けを確認	#
-resourcePack.editor.paste.pane.title=貼り付け	#
-resourcePack.editor.paste.pane.transform.mirrorX=ミラー X	#
-resourcePack.editor.paste.pane.transform.mirrorZ=ミラー Z	#
-resourcePack.editor.paste.pane.transform.origin.title=オフセット	#
-resourcePack.editor.paste.pane.transform.rotation.180=180°	#
-resourcePack.editor.paste.pane.transform.rotation.270=270	#
-resourcePack.editor.paste.pane.transform.rotation.90=90°	#
-resourcePack.editor.paste.pane.transform.rotation.none=0 キー	#
-resourcePack.editor.paste.pane.transform.rotation.title=向きを変える	#
-resourcePack.editor.paste.pane.transform.title=変形	#
-resourcePack.editor.paste.toolRail.description=マウスの左クリックでブロックを選択してから、クリップボード アイテムを正確に貼り付けます	#
-resourcePack.editor.paste.toolRail.title=プレビューを貼り付け	#
-
-
-resourcePack.editor.pastepreview.inputContext.title=プレビューを貼り付け	#
-resourcePack.editor.pastepreview.keyBinding.clearPreview=プレビューをクリア	#
-resourcePack.editor.pastepreview.keyBinding.copy=選択領域をコピー	#
-resourcePack.editor.pastepreview.keyBinding.cut=選択領域を切り取る	#
-resourcePack.editor.pastepreview.keyBinding.moveBack=プレビューを後方に移動	#
-resourcePack.editor.pastepreview.keyBinding.moveDown=プレビューを下に移動	#
-resourcePack.editor.pastepreview.keyBinding.moveForward=プレビューを前方に移動	#
-resourcePack.editor.pastepreview.keyBinding.moveLeft=プレビューを左に移動	#
-resourcePack.editor.pastepreview.keyBinding.moveOffsetBack=オフセットを後方に移動	#
-resourcePack.editor.pastepreview.keyBinding.moveOffsetDown=オフセットを下に移動	#
-resourcePack.editor.pastepreview.keyBinding.moveOffsetForward=オフセットを前方に移動	#
-resourcePack.editor.pastepreview.keyBinding.moveOffsetLeft=オフセットを左に移動	#
-resourcePack.editor.pastepreview.keyBinding.moveOffsetRight=オフセットを右に移動	#
-resourcePack.editor.pastepreview.keyBinding.moveOffsetUp=オフセットを上に移動	#
-resourcePack.editor.pastepreview.keyBinding.moveOriginBack=起点を後方に移動	#
-resourcePack.editor.pastepreview.keyBinding.moveOriginDown=起点を下に移動	#
-resourcePack.editor.pastepreview.keyBinding.moveOriginForward=起点を前方に移動	#
-resourcePack.editor.pastepreview.keyBinding.moveOriginLeft=起点を左に移動	#
-resourcePack.editor.pastepreview.keyBinding.moveOriginRight=起点を右に移動	#
-resourcePack.editor.pastepreview.keyBinding.moveOriginUp=起点を上に移動	#
-resourcePack.editor.pastepreview.keyBinding.moveRight=プレビューを右に移動	#
-resourcePack.editor.pastepreview.keyBinding.moveUp=プレビューを上に移動	#
-resourcePack.editor.pastepreview.keyBinding.paste=貼り付け	#
-resourcePack.editor.pastepreview.keyBinding.pasteAtCursor=カーソルに貼り付け	#
-resourcePack.editor.pastepreview.keyBinding.pastepreview=プレビューを貼り付け	#
-resourcePack.editor.pastepreview.keyBinding.quickPaste=クイック ペースト	#
-resourcePack.editor.pastepreview.keyBinding.rotateClockWise=プレビューを時計回りに回転	#
-resourcePack.editor.pastepreview.keyBinding.rotateCounterClockWise=プレビューを反時計回りに回転	#
-resourcePack.editor.pastepreview.keyBinding.toggleAdjacentTarget=隣接ターゲット モードの切り替え	#
-resourcePack.editor.pastepreview.keyBinding.toggleBlockTarget=ブロックターゲット モードの切り替え	#
-resourcePack.editor.pastepreview.keyBinding.toggleFixedDistance=固定距離を有効にする	#
-resourcePack.editor.pastepreview.keyBinding.toggleMirrorX=ミラー X の切り替え	#
-resourcePack.editor.pastepreview.keyBinding.toggleMirrorZ=ミラー Z の切り替え	#
-resourcePack.editor.pastepreview.keyBinding.toggleMouseTracking=マウス トラッキングの切り替え	#
-resourcePack.editor.pastepreview.pane.controls.cursor.fixed=固定距離	#
-resourcePack.editor.pastepreview.pane.controls.cursor.keyboard=キーのみ	#
-resourcePack.editor.pastepreview.pane.controls.cursor.mouseandkeys=マウスとキー	#
-resourcePack.editor.pastepreview.pane.controls.cursor.target.block=ブロック	#
-resourcePack.editor.pastepreview.pane.controls.cursor.target.face=隣接	#
-resourcePack.editor.pastepreview.pane.controls.cursor.target.title=対象	#
-resourcePack.editor.pastepreview.pane.controls.cursor=操作	#
-resourcePack.editor.pastepreview.pane.controls.title=カーソルの制御	#
-resourcePack.editor.pastepreview.pane.placement.mirrorX=ミラー X	#
-resourcePack.editor.pastepreview.pane.placement.mirrorZ=ミラー Z	#
-resourcePack.editor.pastepreview.pane.placement.offset=オフセット	#
-resourcePack.editor.pastepreview.pane.placement.origin=起点	#
-resourcePack.editor.pastepreview.pane.placement.pastebutton=貼り付け	#
-resourcePack.editor.pastepreview.pane.placement.rotation=回転 (Y 軸周り)	#
-resourcePack.editor.pastepreview.pane.placement.title=配置の設定	#
-resourcePack.editor.pastepreview.pane.root.size=サイズ	#
-resourcePack.editor.pastepreview.pane.root.title=プレビューを貼り付け	#
-resourcePack.editor.pastepreview.tool.tip=マウスを使用してクリップボードのプレビューの位置を調整し、クリックして世界に貼り付ける	#
-resourcePack.editor.pastepreview.tool.title=プレビューを貼り付け	#
-
-
-resourcePack.editor.playerPositionExtension.dimension=ディメンション	#
-resourcePack.editor.playerPositionExtension.menu.player=プレイヤー	#
-resourcePack.editor.playerPositionExtension.menu.showPlayerSettings=プレーヤー設定を表示	#
-resourcePack.editor.playerPositionExtension.nether=ネザー	#
-resourcePack.editor.playerPositionExtension.overworld=オーバーワールド	#
-resourcePack.editor.playerPositionExtension.pane=プレイヤー設定	#
-resourcePack.editor.playerPositionExtension.theEnd=ジ・エンド	#
-resourcePack.editor.playerPositionExtension.worldSettings=世界の設定	#
-
-
-resourcePack.editor.playtest.AdvancedSettings.title=詳細設定	#
-resourcePack.editor.playtest.Dialog.DaylightCycle=昼夜サイクル	#
-resourcePack.editor.playtest.Dialog.Difficulty=難易度	#
-resourcePack.editor.playtest.Dialog.GameMode=ゲームモード	#
-resourcePack.editor.playtest.Dialog.OverrideSpawn=現在地に出現	#
-resourcePack.editor.playtest.Dialog.ShowCoordinates=座標を表示	#
-resourcePack.editor.playtest.Dialog.TestButton=世界をテスト	#
-resourcePack.editor.playtest.Dialog.TimeOfDay=時刻	#
-resourcePack.editor.playtest.Dialog.Title=テスト設定	#
-resourcePack.editor.playtest.Dialog.Weather=天候	#
-resourcePack.editor.playtest.Dialog.WeatherCycle=天候の変化	#
-resourcePack.editor.playtest.Menu.Title=世界をテスト	#
-resourcePack.editor.playtest.Title.Tooltip=プレイ可能な Minecraft の世界として、あなたのエディター プロジェクトのプレイテストを実行します。プロジェクトに変更は保存されません。シングル プレイヤーのプロジェクトをホストするときのみ利用可能です。	#
-
-
-resourcePack.editor.playtestResult.EditorSystemFailure=エディター システム エラー	#
-resourcePack.editor.playtestResult.InvalidLevelId=無効なレベル ID	#
-resourcePack.editor.playtestResult.InvalidSessionHandle=無効なセッション ハンドルです	#
-resourcePack.editor.playtestResult.OK=成功	#
-resourcePack.editor.playtestResult.PlayerNotFound=プレイヤーが見つかりません	#
-resourcePack.editor.playtestResult.ResponseTimeout=応答タイムアウト	#
-resourcePack.editor.playtestResult.SessionInfoNotFound=セッション情報が見つかりません	#
-resourcePack.editor.playtestResult.TooManyPlayers=他のプレイヤーをホストしている場合、世界をテストすることはできません	#
-resourcePack.editor.playtestResult.UnspecifiedError=不明なエラー	#
-resourcePack.editor.playtestResult.UnsupportedScenario=世界をテストするには、エディター プロジェクトをホストする必要があります	#
-resourcePack.editor.playtestResult.WorldExportBusy=世界のエクスポート (ビジー)	#
-resourcePack.editor.playtestResult.WorldExportFailed=世界のエクスポート (失敗)	#
-
-
-resourcePack.editor.menuBar.file.realmsPublish=Realms に公開する   	####This string is intended to express that the option is for opening the pane to publish your editor world to Realms.{MaxLength=100}
-resourcePack.editor.realmsPublish.noActiveRealmsSubscription=Realms に公開するには、有効な Realms サブスクリプションが必要です。Realms の登録や、期限切れのサブスクリプションの更新は、標準の Minecraft クライアントまたは minecraft.net ウェブサイト (アカウントにサインインした後) から行うことができます。    	####This string is intended to express that the user doesn't have a active Realms subscription and the process they need to follow in order to be able to upload their editor world to their Realms subscription.{MaxLength=350}
-resourcePack.editor.realmsPublish.userNotLoggedIn=Realms に公開するには、有効な Realms の定額サービスが必要です。利用可能な Realms の定額サービスにアクセスするには、Microsoft アカウントにサインインする必要があります		####This string is intended to express that the user is not logged in currently and that they must be logged into their Microsoft account in order to proceed.{MaxLength=350}
-resourcePack.editor.realmsPublish.dedicatedServerWarning=専用サーバーを使用している場合、Realms への公開は使用できません。		####This string is intended to express that the user is unable to use the Publish to Realms feature on a dedicated server.{MaxLength=350}
-resourcePack.editor.realmsPublish.notSessionHostWarning=エディター セッションホストのみが Realms に公開できます。		####This string is intended to express that the user is unable to use the Publish to Realms when they are not the session host.{MaxLength=350}
-resourcePack.editor.realmsPublish.genericRealmsIssue=Realms サービスに問題があるため、後でもう一度やり直してください。		####This string is intended to express that there is an issue with the realms service and to please try again later.{MaxLength=350}
-resourcePack.editor.realmsPublish.goToMinecraftWebsite=Minecraft.net に移動する  	####This string is intended to express that the link will take the user to Minecraft.net.{MaxLength=100}
-resourcePack.editor.realmsPublish.Refresh=更新  	####This string is intended to express that the button will refresh the pane to see if the user in now logged in.{MaxLength=100}
-resourcePack.editor.realmsPublish.Realm=Realm  	####This string is intended to express that the below dropdown contains all of the users Realms subscriptions.{MaxLength=100}
-resourcePack.editor.realmsPublish.RealmSlot=Realm スロット 	####This string is intended to express that the dropdown contains all of the world slots in for the users selected realms subscription.{MaxLength=100}
-resourcePack.editor.realmsPublish.EmptySlot=空きスロット		####This string is intended to express that the Realm slot is empty.{MaxLength=100}
-resourcePack.editor.realmsPublish.PublishNotesTitle=Realms ノートに公開する   	####This string is intended to express that the below field will contain additional information for the user about the publish to realms feature, including any warnings or issues.{MaxLength=150}
-resourcePack.editor.realmsPublish.DownloadRealm=ダウンロード    	####This string is intended to express that the button will download the currently selected World from the realm slot.{MaxLength=100}
-resourcePack.editor.realmsPublish.PublishRealm=公開  	####This string is intended to express that the button will publish the current world to the currently selected realm slot.{MaxLength=100}
-resourcePack.editor.realmsPublish.Confirm=確認   	####This string is intended to express that the button will confirm  the request to publish the world to realms.{MaxLength=100}
-resourcePack.editor.realmsPublish.Cancel=キャンセル 	####This string is intended to express that the button will cancel the request to publish the world to realms.{MaxLength=100}
-resourcePack.editor.realmsPublish.Back=戻る 	####This string is intended to express that the button will take the user back to the previous pane.{MaxLength=100}
-resourcePack.editor.realmsPublish.PublishFailedNonCompliantWorldName=ワールド名が無効であるため、Realms への公開に失敗しました。ワールド名を更新して、もう一度お試しください。		####This string is intended to express that publishing the world to Realms failed due to an invalid world name that was entered by the player .{MaxLength=200}
-resourcePack.editor.realmsPublish.PublishFailed=Realms への公開に失敗しました。しばらくしてからもう一度お試しください。   	####This string is intended to express that publishing the world to Realms failed and to please try again later.{MaxLength=200}
-resourcePack.editor.realmsPublish.PublishSuccess=Realms への公開が成功しました    	####This string is intended to express that publishing the world to Realms succeeded.{MaxLength=200}
-resourcePack.editor.realmsPublish.PublishConfirmationOptOut=この Realm とセッションには再確認をしないでください  	####This string is intended to express that the checkbox will opt the user out of confirming their publish to realms decisions.{MaxLength=100}
-resourcePack.editor.realmsPublish.PublishingToRealms=ワールドを Realms に公開中...  	####This string is intended to express that the world is currently in the process of being published to Realms.{MaxLength=100}
-resourcePack.editor.realmsPublish.UnableToPublishMissingRealm=Realms に公開できません。Realm が選択されていません    	####This string is intended to express that the user is unable to publish their world because a realm to upload to has not been selected.{MaxLength=250}
-resourcePack.editor.realmsPublish.UnableToPublishMissingRealmSlot=Realms に公開できません。Realm スロットが選択されていません   	####This string is intended to express that the user is unable to publish their world because a realm slot to upload to has not been selected.{MaxLength=250}
-resourcePack.editor.realmsPublish.PublishConfirmationWarning=この操作を行うと、選択したスロットから現在のワールドが削除され、現在のエディター ワールドに置き換わります (選択したスロットは、お客様の Realm のアクティブ スロットにもなります)。Realm のメンバーは、新たに置き換えられたワールドにアクセスできるようになります。公開前に現在のワールドを保存したい場合は、データを損失しないように、このダイアログをキャンセルし、「ダウンロード」を選択してから「公開」を行ってください。「確認」を選択して、現在のワールドを置き換えてください。    	####This string is intended to warn the user that if they publish their world to Realms, the world currently in that Realms slot will be deleted and unrecoverable. It also informs the user that members of the Realm will be able to access this world.{MaxLength=1000}
-resourcePack.editor.realmsPublish.DownloadSuccess=Realms からのワールドのダウンロードに成功しました    	####This string is intended to express that downloading a world from Realms succeeded.{MaxLength=200}
-resourcePack.editor.realmsPublish.DownloadFailed=Realms からのワールドのダウンロードに失敗しました 	####This string is intended to express that downloading a world from Realms failed.{MaxLength=200}
-resourcePack.editor.realmsPublish.DownloadingFromRealms=Realms からワールドをダウンロード中...    	####This string is intended to express that we're in the middle of downloading a world from Realms and waiting for that operation to complete.{MaxLength=200}
-
-
-resourcePack.editor.toolRail.RepeaterTool.title=繰り返しツール	#
-resourcePack.editor.toolRail.RepeaterTool.tooltip=選択したボリュームを繰り返すためのツール	#
-resourcePack.editor.toolRail.RepeaterTool.pane.Spacing=スペーシング	#
-resourcePack.editor.toolRail.RepeaterTool.pane.Repetitions=繰り返し	#
-resourcePack.editor.toolRail.RepeaterTool.pane.Preview=プレビュー	#
-resourcePack.editor.toolRail.RepeaterTool.pane.Clear=クリア	#
-resourcePack.editor.toolRail.RepeaterTool.pane.Apply=適用	#
-resourcePack.editor.toolRail.RepeaterTool.statusMessage.noSelection=選択ツールを使用して繰り返すボリュームを選択する	#
-resourcePack.editor.toolRail.RepeaterTool.pane.Mode=モード		####"Mode" describes a dropdown that contains the two different states the tool can be in. These are "Line" and "Grid" {MaxLength=20}
-resourcePack.editor.toolRail.RepeaterTool.mode.Line=ライン		####"Line" describes a straight, unbroken visual between two points {MaxLength=20}
-resourcePack.editor.toolRail.RepeaterTool.mode.Grid=グリッド		####"Grid" describes a visual consisting of parallel lines at regular intervals, broken up by perpendicular lines at regular intervals, like grid paper. {MaxLength=20}
-resourcePack.editor.toolRail.RepeaterTool.pane.RepeatType=リピート タイプ		####"Repeat Type" describes a dropdown that contains the two types "Uniform" and "Separate" and represents how the repetitions along the three axes (plural of "axis") will be determined {MaxLength=40}
-resourcePack.editor.toolRail.RepeaterTool.repeat.Uniform=一様		####"Uniform" describes the repeat state of the Repeater Tool where it applies the same number of repetitions across all three axes (X, Y, and Z). "Uniform" was chosen as a short word that also means "consistent across multiple instances" {MaxLength=20}
-resourcePack.editor.toolRail.RepeaterTool.pane.RepeatAlongX=X 軸に沿って繰り返す		####"Repeat Along" describes a checkbox and means to apply the number of Uniform Repetitions across a given axis. This one is the X axis. "X", "Y", and "Z" have a mathematical meaning and it may not be appropriate to translate unless the mathematical meaning is also translated. More info can be found at https://en.wikipedia.org/wiki/Coordinate_system {MaxLength=40}
-resourcePack.editor.toolRail.RepeaterTool.pane.RepeatAlongY=Y 軸に沿って繰り返す		####See "Repeat Along X" but this is for the Y axis. {MaxLength=40}
-resourcePack.editor.toolRail.RepeaterTool.pane.RepeatAlongZ=Z 軸に沿って繰り返す		####See "Repeat Along X" but this is for the Z axis. {MaxLength=40}
-resourcePack.editor.toolRail.RepeaterTool.repeat.Separate=個別		####"Separate" describes the repeat state of the Repeater Tool where the number of repetitions along each axis is set using separate number input elements, rather than one single number input {MaxLength=20}
-resourcePack.editor.toolRail.RepeaterTool.pane.XCount=X 軸の数		####"X Count" describes a number input field and represents the number of repetitions along the X axis. "X", "Y", and "Z" have a mathematical meaning and it may not be appropriate to translate unless the mathematical meaning is also translated. More info can be found at https://en.wikipedia.org/wiki/Coordinate_system {MaxLength=20}
-resourcePack.editor.toolRail.RepeaterTool.pane.YCount=Y 軸の数		####See "X Count" but this is for the Y axis. {MaxLength=20}
-resourcePack.editor.toolRail.RepeaterTool.pane.ZCount=Z 軸の数		####See "X Count" but this is for the Z axis. {MaxLength=20}
-
-
-resourcePack.editor.selectionTool.deselect=選択解除	#
-resourcePack.editor.selectionTool.fillPane.fillAction=選択範囲を塗りつぶす	#
-resourcePack.editor.selectionTool.fillPane.title=選択範囲を塗りつぶす	#
-resourcePack.editor.selectionTool.keyBinding.deselect=選択を解除	#
-resourcePack.editor.selectionTool.keyBinding.fill=選択コンテンツを塗りつぶす	#
-resourcePack.editor.selectionTool.keyBinding.growBack=選択領域を後方に拡大	#
-resourcePack.editor.selectionTool.keyBinding.growDown=選択領域を下に拡大	#
-resourcePack.editor.selectionTool.keyBinding.growForward=選択領域を前方に拡張	#
-resourcePack.editor.selectionTool.keyBinding.growLeft=選択領域を左に拡大	#
-resourcePack.editor.selectionTool.keyBinding.growRight=選択領域を右に拡張	#
-resourcePack.editor.selectionTool.keyBinding.growUp=選択領域を上に拡大	#
-resourcePack.editor.selectionTool.keyBinding.moveAllSelectionBack=すべての選択領域を後方に移動	#
-resourcePack.editor.selectionTool.keyBinding.moveAllSelectionDown=すべての選択領域を下に移動	#
-resourcePack.editor.selectionTool.keyBinding.moveAllSelectionForward=すべての選択領域を前方に移動	#
-resourcePack.editor.selectionTool.keyBinding.moveAllSelectionLeft=すべての選択領域を左に移動	#
-resourcePack.editor.selectionTool.keyBinding.moveAllSelectionRight=すべての選択領域を右に移動	#
-resourcePack.editor.selectionTool.keyBinding.moveAllSelectionUp=すべての選択領域を上に移動	#
-resourcePack.editor.selectionTool.keyBinding.moveCursorBack=カーソルを後ろに移動	#
-resourcePack.editor.selectionTool.keyBinding.moveCursorDown=カーソルを下に移動	#
-resourcePack.editor.selectionTool.keyBinding.moveCursorForward=カーソルを前方に移動	#
-resourcePack.editor.selectionTool.keyBinding.moveCursorLeft=カーソルを左に移動	#
-resourcePack.editor.selectionTool.keyBinding.moveCursorRight=カーソルを右に移動	#
-resourcePack.editor.selectionTool.keyBinding.moveCursorUp=カーソルを上に移動	#
-resourcePack.editor.selectionTool.keyBinding.moveSelectionBack=選択領域を後方に移動	#
-resourcePack.editor.selectionTool.keyBinding.moveSelectionDown=選択領域を下に移動	#
-resourcePack.editor.selectionTool.keyBinding.moveSelectionForward=選択領域を前方に移動	#
-resourcePack.editor.selectionTool.keyBinding.moveSelectionLeft=選択領域を左に移動	#
-resourcePack.editor.selectionTool.keyBinding.moveSelectionRight=選択領域を右に移動	#
-resourcePack.editor.selectionTool.keyBinding.moveSelectionUp=選択領域を上に移動	#
-resourcePack.editor.selectionTool.keyBinding.shrinkBack=選択領域を後方に縮小	#
-resourcePack.editor.selectionTool.keyBinding.shrinkDown=選択領域を下に縮小	#
-resourcePack.editor.selectionTool.keyBinding.shrinkForward=選択領域を前方に縮小	#
-resourcePack.editor.selectionTool.keyBinding.shrinkLeft=選択領域を左に縮小	#
-resourcePack.editor.selectionTool.keyBinding.shrinkRight=選択領域を右に縮小	#
-resourcePack.editor.selectionTool.keyBinding.shrinkUp=選択領域を上に縮小	#
-resourcePack.editor.selectionTool.keyBinding.toggleTool=選択ツールの切り替え	#
-resourcePack.editor.selectionTool.keyBinding.select=ブロックの選択			#### The action of adding a block to the selection volume using they keyboard {MaxLength="30"}
-resourcePack.editor.selectionTool.keyBinding.selectMultiple=追加のブロックを選択			#### The action of adding an additional block to the selection volume using the keyboard {MaxLength="30"}
-resourcePack.editor.selectionTool.keyBinding.trimVolume=トリムの選択 (境界)					#### Keybinding description for Trim the current selection volume to fit only the solid blocks within {MaxLength=30}
-resourcePack.editor.selectionTool.keyBinding.trimRemoveAir=トリムの選択 (空気を削除)			#### Keybinding description for Remove the air from the current selection volume leaving only specified blocks {MaxLength=30}
-resourcePack.editor.selectionTool.marquee.title=マーキー選択	#
-resourcePack.editor.selectionTool.modeSelection.freehand.title=フリーハンド ブラシ モード	#
-resourcePack.editor.selectionTool.modeSelection.freehand.tooltip=フリーハンドのブラシ形状を使用してワールド内のブロックを選択します	#
-resourcePack.editor.selectionTool.modeSelection.marquee.title=マーキー モード	#
-resourcePack.editor.selectionTool.modeSelection.marquee.tooltip=長方形の領域を使用してワールド内のブロックを選択します	#
-resourcePack.editor.selectionTool.modeSelection.magic.title=マジック選択モード			#### Magic Select mode is a mode that searches for contiguous matching blocks in a search radius {MaxLength=30}}
-resourcePack.editor.selectionTool.modeSelection.magic.tooltip=選択した起点からの検索パターンを使用して、ワールド内のブロックを選択します		#### Longer description of the magic select mode {MaxLength=150}}
-resourcePack.editor.selectionTool.modeSelection.title=選択モード	#
-resourcePack.editor.selectionTool.projectThroughLiquid=液体を通して投影	#
-resourcePack.editor.selectionTool.trimAction.trimVolume=トリムの選択			#### Trim the current selection volume to fit only the solid blocks within {MaxLength=30}
-resourcePack.editor.selectionTool.trimAction.trimVolume.tooltip=現在の選択ボリュームをトリミングして、その中の固体ブロックのみに合わせます   	#### {MaxLength=200}
-resourcePack.editor.selectionTool.trimAction.removeAir=空気を削除			#### Remove the air from the current selection volume leaving only specified blocks {MaxLength=30}
-resourcePack.editor.selectionTool.trimAction.removeAir.tooltip=現在の選択ボリュームから空気を削除し、指定したブロックのみを残します 	#### {MaxLength=200}
-resourcePack.editor.selectionTool.trimAction.trimVolume.SettingsPane.title=トリムの設定		#### The window pane title for the settings for trim mode {MaxLength=30}
-resourcePack.editor.selectionTool.trimAction.trimVolume.SettingsPane.ignoreLiquid=液体を無視		#### The toggle button title for ignoring liquids {MaxLength=30}
-resourcePack.editor.selectionTool.trimAction.trimVolume.SettingsPane.ignoreLiquid.tooltip=ボリュームをトリミングするときに液体ブロックを無視します 	#### {MaxLength=200}
-resourcePack.editor.selectionTool.trimAction.trimVolume.SettingsPane.onlyCollidable=衝突ブロックのみ		#### The toggle button title for collision-only blocks {MaxLength=30}
-resourcePack.editor.selectionTool.trimAction.trimVolume.SettingsPane.onlyCollidable.tooltip=ボリュームをトリミングする際に、衝突のないブロック (葉、草など) は無視します 	#### {MaxLength=200}
-resourcePack.editor.selectionTool.quickAction.clearSelection.tooltip=現在の選択を解除する	#
-resourcePack.editor.selectionTool.quickAction.clearSelection=選択解除	#
-resourcePack.editor.selectionTool.quickAction.deleteSelection.tooltip=現在の選択ボリューム内のすべてのブロックを削除する	#
-resourcePack.editor.selectionTool.quickAction.deleteSelection=削除	#
-resourcePack.editor.selectionTool.quickAction.fillSelection.tooltip=現在の選択ボリュームを、現在選択中のブロックのタイプで埋める	#
-resourcePack.editor.selectionTool.quickAction.fillSelection=塗りつぶす	#
-resourcePack.editor.selectionTool.quickAction.title=クイック アクション	#
-resourcePack.editor.selectionTool.selectionMode.adjacent=隣接	#
-resourcePack.editor.selectionTool.selectionMode.fixedDistance=固定距離	#
-resourcePack.editor.selectionTool.selectionMode.mouseAndKeyboard=フリー	#
-resourcePack.editor.selectionTool.selectionMode=モード	#
-resourcePack.editor.selectionTool.settingsPane.title=選択	#
-resourcePack.editor.selectionTool.toolRail.description=マウスの左クリックで選択を作成。CTRL+D で選択を解除	#
-resourcePack.editor.selectionTool.toolRail.title=選択	#
-resourcePack.editor.selectionTool.transformPane.origin.tooltip=選択の起点をワールド座標系で表示する	#
-resourcePack.editor.selectionTool.transformPane.origin=原点	#
-resourcePack.editor.selectionTool.transformPane.size=サイズ	#
-resourcePack.editor.selectionTool.transformPane.title=変形	#
-
-
-resourcePack.editor.BlockMaskControl.trim.rootPane.title=トリムの設定		#### The window pane title for the settings for trim mode {MaxLength=30}
-resourcePack.editor.BlockMaskControl.trim.toggleGroup.title=マスク モード		#### The title of the toggle group {MaxLength=30}
-resourcePack.editor.BlockMaskControl.trim.toggleGroup.item.disabled.label=ブロック フィルターを無効にする			#### The title of the icon which disables block filters {MaxLength=30}
-resourcePack.editor.BlockMaskControl.trim.toggleGroup.item.disabled.tooltip=無効					#### The tooltip of the icon which disables block filters {MaxLength=100}
-resourcePack.editor.BlockMaskControl.trim.toggleGroup.item.mask.label=マスク								#### The title of the icon which masks block filters {MaxLength=30}
-resourcePack.editor.BlockMaskControl.trim.toggleGroup.item.mask.tooltip=リストに一致するブロックは無視され、影響を受けません			#### Mask mode tooltip {MaxLength=100}
-resourcePack.editor.BlockMaskControl.trim.toggleGroup.item.replace.label=交換						#### The title of the replace block filter {MaxLength=30}
-resourcePack.editor.BlockMaskControl.trim.toggleGroup.item.replace.tooltip=リストに一致するブロックは固体として処理されます			#### Replace mode tooltip {MaxLength=100}
-
-
-resourcePack.editor.server.description=エディタ サーバー リソース	#
-resourcePack.editor.server.name=エディタ リソース	#
-
-
-resourcePack.editor.toolRail.Terrain.title=地形	#
-resourcePack.editor.toolRail.Terrain.keybinding.toggleTool=地形ツールの切り替え	#
-resourcePack.editor.toolRail.Terrain.keyBinding.switch=地形モードの切り替え	#
-resourcePack.editor.toolRail.Terrain.Mode.title=地形モード	#
-resourcePack.editor.toolRail.Terrain.Smooth.mode.title=スムーズ モード	#
-resourcePack.editor.toolRail.Terrain.Smooth.tooltip=スムーズ強度に基づいて地形をスムーズにする	#
-resourcePack.editor.toolRail.Terrain.SmoothStrength=スムーズ強度	#
-resourcePack.editor.toolRail.Terrain.Roughen.mode.title=粗面化モード	#
-resourcePack.editor.toolRail.Terrain.Roughen.tooltip=粗面化強度に基づいて地形を粗くします	#
-resourcePack.editor.toolRail.Terrain.RoughenStrength=粗面化強度	#
-resourcePack.editor.toolRail.Terrain.description=地形を滑らかにしたり粗くしたりする地形ツール	#
-
-
-resourcePack.editor.help.learnMore=詳細を確認	#
-
-resourcePack.editor.statusBar.connectedPlayers=接続中のプレイヤー %s	#
-
-
-resourcePack.editor.summonTool.summonSubPane.EntityPickerTitle=エンティティの種類	#
-
-
-resourcePack.editor.timeOfDay.12hrClock=12 時間時計	#
-resourcePack.editor.timeOfDay.24hrClock=24 時間時計	#
-resourcePack.editor.timeOfDay.clockType=時計の種類	#
-resourcePack.editor.timeOfDay.currentTime=現在時刻	#
-resourcePack.editor.timeOfDay.customTime=カスタム時間	#
-resourcePack.editor.timeOfDay.daylightCycle=昼夜サイクル	#
-resourcePack.editor.timeOfDay.dropDown.day=日	#
-resourcePack.editor.timeOfDay.dropDown.midnight=午前 0 時	#
-resourcePack.editor.timeOfDay.dropDown.night=夜	#
-resourcePack.editor.timeOfDay.dropDown.none=なし	#
-resourcePack.editor.timeOfDay.dropDown.noon=正午	#
-resourcePack.editor.timeOfDay.dropDown.sunrise=日の出	#
-resourcePack.editor.timeOfDay.dropDown.sunset=日没	#
-resourcePack.editor.timeOfDay.dropDown.custom=カスタム		####"Custom" describes a dropdown that players can define the specific start time {MaxLength=20}
-resourcePack.editor.timeOfDay.dropDown.title=プリセット	#
-resourcePack.editor.timeOfDay.menu.title=時間帯設定	#
-resourcePack.editor.timeOfDay.minecraftClock=Minecraft 時計	#
-resourcePack.editor.timeOfDay.title=時間設定	#
-
-
-resourcePack.editor.toolMode.keyBinding.console=コンソールを開く	#
-resourcePack.editor.toolMode.keyBinding.devConsole=開発者コンソールを開く	#
-resourcePack.editor.toolMode.keyBinding.hotbar1=ホットバー 1 を選択	#
-resourcePack.editor.toolMode.keyBinding.hotbar2=ホットバー 2 を選択	#
-resourcePack.editor.toolMode.keyBinding.hotbar3=ホットバー 3 を選択	#
-resourcePack.editor.toolMode.keyBinding.hotbar4=ホットバー 4 を選択	#
-resourcePack.editor.toolMode.keyBinding.hotbar5=ホットバー 5 を選択	#
-resourcePack.editor.toolMode.keyBinding.hotbar6=ホットバー 6 を選択	#
-resourcePack.editor.toolMode.keyBinding.hotbar7=ホットバー 7 を選択	#
-resourcePack.editor.toolMode.keyBinding.hotbar8=ホットバー 8 を選択	#
-resourcePack.editor.toolMode.keyBinding.hotbar9=ホットバー 9 を選択	#
-resourcePack.editor.toolMode.keyBinding.reload=再読み込み 	####Represents a label for a key shortcut that reloads scripts and UI.{MaxLength=100}
-
-
-resourcePack.editor.toolRail.blockPalette.title=ブロック パレット (CTRL+P)	#
-resourcePack.editor.toolRail.blockPalette.tooltip=お気に入りのブロックや、頻繁に使用するブロックのパレットを設定します	#
-resourcePack.editor.toolRail.flattenBrush.title=フラット化ブラシ	#
-resourcePack.editor.toolRail.flattenBrush.tooltip=選択したブロックの高さまでエリアを垂直にフラット化します	#
-resourcePack.editor.toolRail.flattenBrush.settings.heightThreshold=高さのしきい値	#
-resourcePack.editor.toolRail.flattenBrush.settings.radius=半径	#
-resourcePack.editor.toolRail.floodFillSelectionTool.description=フラッド塗りつぶしアルゴリズムを使用して、現在見ている領域を選択します。	#
-resourcePack.editor.toolRail.floodFillSelectionTool.title=フラッド塗りつぶし選択ツール。	#
-resourcePack.editor.toolRail.line.keyBinding.delete=コンテンツの削除	#
-resourcePack.editor.toolRail.line.keyBinding.deleteAndClear=コンテンツを削除して選択解除	#
-resourcePack.editor.toolRail.line.keyBinding.deselect=選択解除	#
-resourcePack.editor.toolRail.line.keyBinding.deselectAll=すべて選択解除	#
-resourcePack.editor.toolRail.line.keyBinding.fill=コンテンツを塗りつぶす	#
-resourcePack.editor.toolRail.line.keyBinding.fillAndClear=コンテンツを塗りつぶして選択解除	#
-resourcePack.editor.toolRail.line.keyBinding.moveBack=選択した領域を後方に移動	#
-resourcePack.editor.toolRail.line.keyBinding.moveDown=選択した領域を下に移動	#
-resourcePack.editor.toolRail.line.keyBinding.moveForward=選択した領域を前方に移動	#
-resourcePack.editor.toolRail.line.keyBinding.moveLeft=選択した領域を左に移動	#
-resourcePack.editor.toolRail.line.keyBinding.moveRight=選択した領域を右に移動	#
-resourcePack.editor.toolRail.line.keyBinding.moveUp=選択した領域を上に移動	#
-resourcePack.editor.toolRail.line.keyBinding.selectAll=すべて選択	#
-resourcePack.editor.toolRail.line.pane.algorithm.Direct=指揮	#
-resourcePack.editor.toolRail.line.pane.algorithm.Staggered=スタッガード (フェンス)	#
-resourcePack.editor.toolRail.line.pane.algorithm.title=アルゴリズム	#
-resourcePack.editor.toolRail.line.pane.fillAction=選択範囲を塗りつぶす	#
-resourcePack.editor.toolRail.line.pane.height.title=高さ	#
-resourcePack.editor.toolRail.line.pane.selectionMode.adjacent=隣接面	#
-resourcePack.editor.toolRail.line.pane.selectionMode.fixedDistance=固定距離	#
-resourcePack.editor.toolRail.line.pane.selectionMode.freeForm=フリー	#
-resourcePack.editor.toolRail.line.pane.selectionMode=選択	#
-resourcePack.editor.toolRail.line.pane.surfaceContour=地表の等高線	#
-resourcePack.editor.toolRail.line.pane.width.title=幅	#
-resourcePack.editor.toolRail.line.title=線	#
-resourcePack.editor.toolRail.line.tooltip=線ツールによるブロック行の作成	#
-resourcePack.editor.toolRail.rulerTool.title=定規ツール	#
-resourcePack.editor.toolRail.rulerTool.tooltip=距離を測る	#
-resourcePack.editor.toolRail.rulerTool.info.title=測定	#
-
-
-resourcePack.editor.toolRail.smartFillTool.title=スマート フィル ツール	#
-resourcePack.editor.toolRail.smartFillTool.tooltip=クリックして、連結されたブロックのセットを埋める	#
-resourcePack.editor.toolRail.smartFillTool.modes.fillVolume=充填ボリューム	#
-resourcePack.editor.toolRail.smartFillTool.areaLimit.title=エリア制限	#
-resourcePack.editor.toolRail.smartFillTool.areaLimit.tooltip=埋められる最大領域	#
-
-
-resourcePack.editor.toolRail.summonTool.keyBinding.clear=選択解除	#
-resourcePack.editor.toolRail.summonTool.keyBinding.delete=エンティティの削除	#
-resourcePack.editor.toolRail.summonTool.keyBinding.moveBack=選択した領域を後方に移動	#
-resourcePack.editor.toolRail.summonTool.keyBinding.moveDown=選択した領域を下に移動	#
-resourcePack.editor.toolRail.summonTool.keyBinding.moveForward=選択した領域を前方に移動	#
-resourcePack.editor.toolRail.summonTool.keyBinding.moveLeft=選択した領域を左に移動	#
-resourcePack.editor.toolRail.summonTool.keyBinding.moveRight=選択した領域を右に移動	#
-resourcePack.editor.toolRail.summonTool.keyBinding.moveUp=選択した領域を上に移動	#
-resourcePack.editor.toolRail.summonTool.keyBinding.toggle=召喚ツールの切り替え	#
-resourcePack.editor.toolRail.summonTool.pane.select=モード選択	#
-resourcePack.editor.toolRail.summonTool.pane.title=召喚ツール	#
-resourcePack.editor.toolRail.summonTool.pane.type=エンティティの種類	#
-resourcePack.editor.toolRail.summonTool.tool.infoText=エンティティをクリックして選択するか、マップをクリックして新しいエンティティを召喚する	#
-resourcePack.editor.toolRail.summonTool.tool.selectSubPane.rotation=回転	#
-resourcePack.editor.toolRail.summonTool.tool.selectSubPane=エンティティの選択	#
-resourcePack.editor.toolRail.summonTool.tool.summonSubPane=エンティティのスポーン	#
-resourcePack.editor.toolRail.summonTool.tool.tip=クリックしてエンティティを召喚する	#
-resourcePack.editor.toolRail.summonTool.tool.title=召喚ツール	#
-
-resourcePack.editor.toolRail.workbenchSettings.title=作業台	#
-resourcePack.editor.toolRail.workbenchTool.title=作業台	#
-resourcePack.editor.toolRail.workbenchTool.description=ブロックの状態をすばやく変更	#
-resourcePack.editor.toolRail.workbenchTool.howToUse=ブロックをハイライトすると、状態を変更するための利用可能なアクション (開閉、回転、反転など) が表示されます。Shift キーと Ctrl キーの併用もお試しください。この機能は、変更可能なプロパティを持つブロック (ドア、フェンス、階段など) でのみ機能しますのでご注意ください。		####	This text provides a description of the workbench tool and explans how the the user can highlight blocks in order to see the list of actions for changing that blocks state. {MaxLength="500"}
-resourcePack.editor.toolRail.workbenchTool.tooltip=ブロックの状態を変更	#
-resourcePack.editor.toolRail.workbenchTool.block=ブロック	#
-resourcePack.editor.toolRail.workbenchTool.leftClick=左クリック	#
-resourcePack.editor.toolRail.workbenchTool.shiftLeftClick=Shift + 左クリック	#
-resourcePack.editor.toolRail.workbenchTool.controlLeftClick=CTRL + 左クリック	#
-resourcePack.editor.toolRail.workbenchTool.shiftControlLeftClick=Shift + CTRL + 左クリック	#
-
-resourcePack.editor.toolRail.workbenchTool.leftClickTooltip=ブロックを左クリックして、作業台のメイン アクションを実行します		####	This keybinding is a tool tip to convey that a left click will invoke the primary (1st) action of the workbench tool. {MaxLength="150"}
-resourcePack.editor.toolRail.workbenchTool.shiftLeftClickTooltip=ブロックを Shift + 左クリックして、作業台の 2 番目のアクションを実行します		####	This keybinding is a tool tip to convey that a shift + left click will invoke the primary (1st) action of the workbench tool. {MaxLength="150"}
-resourcePack.editor.toolRail.workbenchTool.controlLeftClickTooltip=ブロックを Ctrl + 左クリックして、作業台の 3 番目のアクションを実行します		####	This keybinding is a tool tip to convey that a control + left click will invoke the primary (1st) action of the workbench tool. {MaxLength="150"}
-resourcePack.editor.toolRail.workbenchTool.shiftControlLeftClickTooltip=ブロックを Shift + Ctrl + 左クリックして、作業台の 4 番目のアクションを実行します		####	TThis keybinding is a tool tip to convey that a shift + control + left click will invoke the primary (1st) action of the workbench tool. {MaxLength="150"}
-
-resourcePack.editor.toolRail.workbenchTool.stripWood=木材の皮はぎ/皮付け		####This string is intended to express whether the wood block has bark (unstripped) or doesn't have bark (stripped).{MaxLength=100}
-resourcePack.editor.toolRail.workbenchTool.ladderLocation=はしごの位置	#
-resourcePack.editor.toolRail.workbenchTool.autoAlign=自動整列	#
-resourcePack.editor.toolRail.workbenchTool.autoAlignFacingDirection=向きを自動整列		####This string is intended to express that the action will align the facing direction of the block with the player camera.{MaxLength=100}
-resourcePack.editor.toolRail.workbenchTool.autoAlignRotation=回転を自動整列		####This string is intended to express that the action will align the roatation of the block with the player camera.{MaxLength=100}
-
-resourcePack.editor.toolRail.workbenchTool.topSlotBitProp=トップ/ボトム	#
-resourcePack.editor.toolRail.workbenchTool.pillarAxisProp=回す	#
-resourcePack.editor.toolRail.workbenchTool.heightProp=レイヤー	#
-resourcePack.editor.toolRail.workbenchTool.candlesProp=ろうそくの数	#
-
-resourcePack.editor.toolRail.workbenchTool.turtleEggCountProp=カメの卵の数	#
-resourcePack.editor.toolRail.workbenchTool.clusterCountProp=シーピクルスの数	#
-resourcePack.editor.toolRail.workbenchTool.hangingProp=別のブロックからの吊り下げの切り替え	#
-resourcePack.editor.toolRail.workbenchTool.wallPostBitProp=ポストの切り替え	#
-
-resourcePack.editor.toolRail.workbenchTool.upsideDownBitProp=トップ/ボトム	#
-resourcePack.editor.toolRail.workbenchTool.openBitProp=開く/閉じる	#
-resourcePack.editor.toolRail.workbenchTool.litProp=点灯/消灯	#
-resourcePack.editor.toolRail.workbenchTool.dripstoneThicknessProp=鍾乳石の厚さ	#
-
-resourcePack.editor.toolRail.workbenchTool.directionProp=向いている方向	#
-resourcePack.editor.toolRail.workbenchTool.weirdoDirectionProp=回す	#
-resourcePack.editor.toolRail.workbenchTool.facingDirectionProp=向いている方向	#
-resourcePack.editor.toolRail.workbenchTool.cardinalDirectionProp=向いている方向	#
-
-resourcePack.editor.toolRail.workbenchTool.addCustomMapping=カスタム マッピングを追加		####This string is intended to express that this subpane is for adding custom block property mappings for the tool.{MaxLength=100}
-resourcePack.editor.toolRail.workbenchTool.blockProperty=ブロック プロパティ		####This string is intended to express that this field is for the Block Property.{MaxLength=50}
-resourcePack.editor.toolRail.workbenchTool.clickBinding=割り当てをクリック		####This string is intended to express that this dropdown contains the click binding options (left click, shift + left click, etc).{MaxLength=50}
-resourcePack.editor.toolRail.workbenchTool.addMapping=マッピングを追加		####This string is intended to express that this button will add the custom mapping provided by the user.{MaxLength=50}
-resourcePack.editor.toolRail.workbenchTool.resetAllMappings=全マッピングのリセット		####This string is intended to express that this button will reset all custom mappings provided by the user.{MaxLength=50}
-
-resourcePack.editor.workbenchTool.keyBinding.primaryAction=作業台のプライマリ アクション		####	This keybinding is to invoke the primary (1st) action of the workbench tool. {MaxLength="30"}
-resourcePack.editor.workbenchTool.keyBinding.secondaryAction=作業台の 2 番目のアクション		#### This keybinding is to invoke the secondary (2nd) action of the workbench tool. {MaxLength="30"}
-resourcePack.editor.workbenchTool.keyBinding.tertiaryAction=作業台の 3 番目のアクション		####	This keybinding is to invoke the tertiary (3rd) action of the workbench tool. {MaxLength="30"}
-resourcePack.editor.workbenchTool.keyBinding.quaternaryAction=作業台の 4 番目のアクション		#### This keybinding is to invoke the quaternary (4th) action of the workbench tool. {MaxLength="30"}
-
-
-resourcePack.editor.transaction.keyBinding.redo=やり直す	#
-resourcePack.editor.transaction.keyBinding.undo=取り消す	#
-
-
-resourcePack.editor.viewport.keyBinding.moveBack=後退	#
-resourcePack.editor.viewport.keyBinding.moveDown=下に移動	#
-resourcePack.editor.viewport.keyBinding.moveForward=前進	#
-resourcePack.editor.viewport.keyBinding.moveLeft=左に移動	#
-resourcePack.editor.viewport.keyBinding.moveRight=右に移動	#
-resourcePack.editor.viewport.keyBinding.moveUp=上に移動	#
-
-resourcePack.editor.viewport.keyBinding.incrementFlySpeed=飛行速度を増加	#
-resourcePack.editor.viewport.keyBinding.decrementFlySpeed=飛行速度を減少	#
-
-resourcePack.editor.viewSettings.compass.tip=方向コンパスを表示する	#
-resourcePack.editor.viewSettings.compass.title=コンパスを表示	#
-resourcePack.editor.viewSettings.chunk.tip=マップ内のチャンク境界のアウトラインを表示する	#
-resourcePack.editor.viewSettings.chunk.title=チャンク境界の表示	#
-resourcePack.editor.viewSettings.nightVision.tip=暗視があるかのようにワールドを見せる	#
-resourcePack.editor.viewSettings.nightVision.title=暗視	#
-resourcePack.editor.viewSettings.invisible.tip=非表示のブロックを表示する (例: 虚無、バリアなど)	#
-resourcePack.editor.viewSettings.invisible.title=非表示のブロックを表示	#
-resourcePack.editor.viewSettings.flySpeed.tip=マップを素早く移動するため飛行速度を上げる	#
-resourcePack.editor.viewSettings.flySpeed.title=飛行速度の倍率	#
-resourcePack.editor.viewSettings.menu=設定	#
-resourcePack.editor.viewSettings.title=設定	#
-
-resourcePack.editor.hotbar.defaultDisplayName=デフォルト	#
-
-resourcePack.editor.reloadScripts.response.tooMany=サーバーに接続しているプレイヤーが多すぎます。スクリプトの再読み込みは、 1 人のプレイヤーが接続されているホストでのみサポートされます。	#
-resourcePack.editor.reloadScripts.response.genericError=スクリプトの再読み込み中にエラーが発生しました。	#
-resourcePack.editor.reloadScripts.response.noAdminRights=スクリプトを再読み込みする権限がありません。	#
+﻿
+commands.editor.project.beginExport=エクスポート中...
+commands.editor.project.description=現在読み込まれているプロジェクトを操作します
+commands.editor.project.export=プロジェクト エクスポート
+commands.editor.project.exportComplete=エクスポート完了、%sにファイルが書き込まれました
+commands.editor.project.exportCopyFailed=レベル データ%sのコピーに失敗しました
+commands.editor.project.unknownSubcommand=不明なサブコマンド
+resourcePack.editor.actionBar.redo.tooltipDescription=アクションをやり直す
+resourcePack.editor.actionBar.redo.tooltipTitle=やり直す
+resourcePack.editor.actionBar.redo=やり直す
+resourcePack.editor.actionBar.undo.tooltipDescription=アクションを元に戻す
+resourcePack.editor.actionBar.undo.tooltipTitle=取り消す
+resourcePack.editor.actionBar.undo=取り消す
+resourcePack.editor.actionBar.fill=塗りつぶす 
+resourcePack.editor.actionBar.fill.tooltipDescription=選択ボリュームを現在のホットバー ブロックで埋める 
+resourcePack.editor.actionBar.fill.tooltipTitle=塗りつぶす 
+resourcePack.editor.agfx.settings.error.title=エラーが発生しました...
+resourcePack.editor.agfx.pane.title=設定エディター
+resourcePack.editor.agfx.pane.settings_selector=設定を選択
+resourcePack.editor.agfx.pane.settings.title=設定
+resourcePack.editor.agfx.pane.settings.revert_changes=変更を元に戻す
+resourcePack.editor.agfx.pane.settings.export_to_clipboard=クリップボードにエクスポートする
+resourcePack.editor.toolRail.blockInspectorSettings.title=ブロック インスペクター   
+resourcePack.editor.toolRail.blockInspectorSettings.specifics=ブロックの詳細   
+resourcePack.editor.toolRail.blockInspectorSettings.actions.refresh=ブロック データを更新   
+resourcePack.editor.toolRail.blockInspectorSettings.actions.clear=選択解除   
+resourcePack.editor.toolRail.blockInspectorSettings.blockTags=ブロック タグ   
+resourcePack.editor.toolRail.blockInspectorSettings.blockProperties=ブロック プロパティ   
+resourcePack.editor.toolRail.blockInspectorSettings.blockProperties.name=プロパティ名   
+resourcePack.editor.toolRail.blockInspectorSettings.blockProperties.value=プロパティ値   
+resourcePack.editor.toolRail.blockInspectorTool.title=ブロック インスペクター   
+resourcePack.editor.toolRail.blockInspectorTool.tooltip=ブロック データを検査   
+resourcePack.editor.toolRail.blockInspectorTool.pane.helpText=ブロックを左クリックして、プロパティの表示と編集をします   
+resourcePack.editor.blockInspector.toolRail.description=ブロックを左クリックして、プロパティの表示と編集をします   
+resourcePack.editor.blockPalette.addSearchItem=見つけたブロックを使用
+resourcePack.editor.blockPalette.blockPicker=検索
+resourcePack.editor.blockPalette.paletteDropdown.title=パレット
+resourcePack.editor.blockPalette.title=ブロック パレット
+resourcePack.editor.brushPaint.inputContext.activateBrushPaint=ブラシ ペイントをアクティブにします
+resourcePack.editor.brushPaint.inputContext.oneshot=1回ペイントする
+resourcePack.editor.brushPaint.inputContext.title=ブラシ ペイント
+resourcePack.editor.brushPaint.title=ブラシ ペイント
+resourcePack.editor.brushPaint.tooltip=ブラシを使用してワールド内のブロックをペイントします
+resourcePack.editor.BrushPaintControl.brush.title=ブラシ
+resourcePack.editor.BrushPaintControl.brushSettings.title=ブラシ設定
+resourcePack.editor.BrushPaintControl.shapeSettings.title=シェイプ設定 
+resourcePack.editor.BrushPaintControl.fillConstraints.mask.title=マスク リスト
+resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.disabled.tooltip=ブロック フィルターを無効にする
+resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.disabled=無効
+resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.mask.tooltip=リストに一致するブロックは無視され、影響を受けません
+resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.mask=マスク
+resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.replace=置き換える
+resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.title=ブラシ ブロック フィルター
+resourcePack.editor.BrushPaintControl.fillConstraints.replace.title=リストを置き換える
+resourcePack.editor.BrushPaintControl.fillConstraints.replace.tooltip=リストに一致するブロックが操作対象となります
+resourcePack.editor.BrushPaintControl.fillConstraints.title=埋め立て制約
+resourcePack.editor.BrushPaintControl.keybinding.maskMask=マスク モード - マスク
+resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetBack=オフセットを後ろに微調整
+resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetDown=オフセットを下に微調整
+resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetForward=オフセットを前方に微調整
+resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetLeft=オフセットを左に微調整
+resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetRight=オフセットを右に微調整
+resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetUp=オフセットを上に微調整
+resourcePack.editor.BrushPaintControl.keybinding.replaceMask=マスク モード - 置換
+resourcePack.editor.BrushPaintControl.offset.title=オフセット
+resourcePack.editor.BrushPaintControl.offset.tooltip=カーソル位置からのオフセット
+resourcePack.editor.BrushPaintControl.rootPane.title=ブラシ設定
+resourcePack.editor.brushShape.common.settings.axis=押し出し軸
+resourcePack.editor.brushShape.common.settings.height=高さ
+resourcePack.editor.brushShape.common.settings.length=長さ
+resourcePack.editor.brushShape.common.settings.radius=半径
+resourcePack.editor.brushShape.common.settings.uniform=ユニフォーム
+resourcePack.editor.brushShape.common.settings.xAxis=X 軸
+resourcePack.editor.brushShape.common.settings.xAxisNeg=-X 軸
+resourcePack.editor.brushShape.common.settings.yAxis=Y 軸
+resourcePack.editor.brushShape.common.settings.yAxisNeg=-Y 軸
+resourcePack.editor.brushShape.common.settings.zAxis=Z 軸
+resourcePack.editor.brushShape.common.settings.zAxisNeg=-Z 軸
+resourcePack.editor.brushShape.cone.name=コーン
+resourcePack.editor.brushShape.cone.settings.depth=奥行き半径
+resourcePack.editor.brushShape.cone.settings.width=幅半径
+resourcePack.editor.brushShape.cuboid.name=直方体
+resourcePack.editor.brushShape.cuboid.settings.depth=奥行き
+resourcePack.editor.brushShape.cuboid.settings.height=高さ
+resourcePack.editor.brushShape.cuboid.settings.width=幅
+resourcePack.editor.brushShape.cylinder.name=円柱
+resourcePack.editor.brushShape.cylinder.settings.depth_radius=奥行き半径
+resourcePack.editor.brushShape.cylinder.settings.width_radius=幅半径
+resourcePack.editor.brushShape.ellipsoid.name=楕円
+resourcePack.editor.brushShape.ellipsoid.settings.depth_radius=奥行き半径
+resourcePack.editor.brushShape.ellipsoid.settings.height_radius=高さ半径
+resourcePack.editor.brushShape.ellipsoid.settings.width_radius=幅半径
+resourcePack.editor.brushShape.pyramid.name=ピラミッド
+resourcePack.editor.brushShape.pyramid.settings.depth=奥行き
+resourcePack.editor.brushShape.pyramid.settings.height=高さ
+resourcePack.editor.brushShape.pyramid.settings.width=幅
+resourcePack.editor.brushShape.singleBlock.name=シングル ブロック
+resourcePack.editor.brushShape.star.name=星 
+resourcePack.editor.brushShape.star.settings.includeVertical=縦を含める 
+resourcePack.editor.client.description=エディタ クライアント リソース
+resourcePack.editor.client.name=エディタ リソース
+resourcePack.editor.ClipboardPreviewControl.keybinding.moveOriginBack=原点を後方に移動
+resourcePack.editor.ClipboardPreviewControl.keybinding.moveOriginDown=原点を下に移動
+resourcePack.editor.ClipboardPreviewControl.keybinding.moveOriginForward=原点を前方に移動
+resourcePack.editor.ClipboardPreviewControl.keybinding.moveOriginLeft=原点を左に移動
+resourcePack.editor.ClipboardPreviewControl.keybinding.moveOriginRight=原点を右に移動
+resourcePack.editor.ClipboardPreviewControl.keybinding.moveOriginUp=原点を上に移動
+resourcePack.editor.ClipboardPreviewControl.keyBinding.nudgeOffsetBack=オフセットを後ろに微調整
+resourcePack.editor.ClipboardPreviewControl.keyBinding.nudgeOffsetDown=オフセットを下に微調整
+resourcePack.editor.ClipboardPreviewControl.keyBinding.nudgeOffsetForward=オフセットを前方に微調整
+resourcePack.editor.ClipboardPreviewControl.keyBinding.nudgeOffsetLeft=オフセットを左に微調整
+resourcePack.editor.ClipboardPreviewControl.keyBinding.nudgeOffsetRight=オフセットを右に微調整
+resourcePack.editor.ClipboardPreviewControl.keyBinding.nudgeOffsetUp=オフセットを上に微調整
+resourcePack.editor.ClipboardPreviewControl.keybinding.rotateClockWise=プレビューを時計回りに回転
+resourcePack.editor.ClipboardPreviewControl.keybinding.rotateCounterClockWise=プレビューを反時計回りに回転
+resourcePack.editor.ClipboardPreviewControl.keybinding.toggleMirrorX=鏡 X の切り替え
+resourcePack.editor.ClipboardPreviewControl.keybinding.toggleMirrorZ=鏡 Z の切り替え
+resourcePack.editor.ClipboardPreviewControl.mirror.axis.x.tooltip=原点の X 軸の辺りを中心にクリップボードのアイテムを対照に映し出す
+resourcePack.editor.ClipboardPreviewControl.mirror.axis.x=ミラー (X 軸)
+resourcePack.editor.ClipboardPreviewControl.mirror.axis.z.tooltip=原点の Z 軸の辺りを中心にクリップボードのアイテムを対照に映し出す
+resourcePack.editor.ClipboardPreviewControl.mirror.axis.z=ミラー (Z 軸)
+resourcePack.editor.ClipboardPreviewControl.offset.title=オフセット
+resourcePack.editor.ClipboardPreviewControl.offset.tooltip=配置ポイントからクリップボード アイテムの原点までの追加のオフセット
+resourcePack.editor.ClipboardPreviewControl.origin.title=原点
+resourcePack.editor.ClipboardPreviewControl.origin.tooltip=クリップボードアイテム内の原点。配置する際の中心、またはクリップボードを回転およびミラーするポイントとして用いられる
+resourcePack.editor.ClipboardPreviewControl.placement.title=オプション
+resourcePack.editor.ClipboardPreviewControl.rootPane.title=クリップボード情報
+resourcePack.editor.ClipboardPreviewControl.rotation.180=180°
+resourcePack.editor.ClipboardPreviewControl.rotation.270=270°
+resourcePack.editor.ClipboardPreviewControl.rotation.90=90°
+resourcePack.editor.ClipboardPreviewControl.rotation.none=なし
+resourcePack.editor.ClipboardPreviewControl.rotation.title=回転
+resourcePack.editor.ClipboardPreviewControl.rotation.tooltip=原点で Y 軸を中心として回転する量
+resourcePack.editor.ClipboardPreviewControl.structureSize.title=クリップボードのサイズ
+resourcePack.editor.copypaste.actionbar.copy.title=コピー
+resourcePack.editor.copypaste.actionbar.copy.tooltip=選択範囲をクリップボードにコピーする
+resourcePack.editor.copypaste.actionbar.copy.tooltipDescription=現在選択したコンテンツをクリップボードにコピーし、選択したコンテンツはそのまま維持する
+resourcePack.editor.copypaste.actionbar.cut.title=切り取り
+resourcePack.editor.copypaste.actionbar.cut.tooltip=選択範囲をクリップボードに切り取る/移動する
+resourcePack.editor.copypaste.actionbar.cut.tooltipDescription=現在選択したコンテンツをクリップボードにコピーし、そのプロセスで選択したコンテンツを削除する
+resourcePack.editor.copypaste.keyBinding.copy=選択範囲をクリップボードにコピーする
+resourcePack.editor.copypaste.keyBinding.cut=選択範囲をクリップボードに切り取る/移動する
+resourcePack.editor.copypaste.keyBinding.paste=クリップボードをワールドに貼り付ける
+resourcePack.editor.copypaste.menu.copy.title=選択領域をコピー
+resourcePack.editor.copypaste.menu.cut.title=選択領域を切り取る
+resourcePack.editor.core.keyBinding.showGameMenu=ゲーム メニューを表示
+resourcePack.editor.core.keyBinding.showLogPanel=ログパネルの表示
+resourcePack.editor.CursorModeControl.cursorTargetMode.block.tooltip=マウス カーソルの下のブロック
+resourcePack.editor.CursorModeControl.cursorTargetMode.block=ブロック
+resourcePack.editor.CursorModeControl.cursorTargetMode.face.tooltip=カーソルの下のブロックの面に隣接するブロック
+resourcePack.editor.CursorModeControl.cursorTargetMode.face=隣接
+resourcePack.editor.CursorModeControl.cursorTargetMode.title=ターゲット
+resourcePack.editor.CursorModeControl.cursorTargetMode.tooltip=カーソル ターゲット モードを選択します
+resourcePack.editor.CursorModeControl.fixedDistance.slider.title=固定カーソル距離
+resourcePack.editor.CursorModeControl.fixedDistance.slider.tooltip=プレイヤーからブロック カーソルが配置される固定距離を調整します
+resourcePack.editor.CursorModeControl.keybinding.moveCursorBack=カーソルを後ろに移動
+resourcePack.editor.CursorModeControl.keybinding.moveCursorDown=カーソルを下に移動
+resourcePack.editor.CursorModeControl.keybinding.moveCursorForward=前に押す
+resourcePack.editor.CursorModeControl.keybinding.moveCursorLeft=カーソルを左に移動
+resourcePack.editor.CursorModeControl.keybinding.moveCursorRight=カーソルを右に移動
+resourcePack.editor.CursorModeControl.keybinding.moveCursorUp=カーソルを上に移動
+resourcePack.editor.CursorModeControl.keybinding.toggleBlockTargetMode=ブロック/隣接モードの切り替え
+resourcePack.editor.CursorModeControl.keybinding.toggleFixedDistance=固定距離モードの切り替え
+resourcePack.editor.CursorModeControl.keybinding.toggleMouseTracking=マウス トラッキングの切り替え
+resourcePack.editor.CursorModeControl.mouseControlMode.fixed=固定距離
+resourcePack.editor.CursorModeControl.mouseControlMode.keyboard=キーボードのみ
+resourcePack.editor.CursorModeControl.mouseControlMode.keyboardAndMouse=マウスとキー
+resourcePack.editor.CursorModeControl.mouseControlMode.title=入力方法
+resourcePack.editor.CursorModeControl.mouseControlMode.tooltip=ワールド ブロック カーソルの入力方法を選択します
+resourcePack.editor.CursorModeControl.projectThroughWater.title=水を通して投影
+resourcePack.editor.CursorModeControl.projectThroughWater.tooltip=マウスのレイキャストは水中を通過して投影され、水中の要素を選択できるようになる
+resourcePack.editor.CursorModeControl.rootPane.title=カーソル設定
+resourcePack.editor.datatransferaccessors.atmospheric_scattering=大気散乱
+resourcePack.editor.datatransferaccessors.color_grading=カラー グレーディング
+resourcePack.editor.datatransferaccessors.lighting_group=グローバル ライティング
+resourcePack.editor.datatransferaccessors.pbr_fallbacks=PBR フォールバック
+resourcePack.editor.datatransferaccessors.point_lights=ポイント ライト
+resourcePack.editor.datatransferaccessors.water=水
+resourcePack.editor.datatransferaccessors.shadows=シャドウ
+resourcePack.editor.deferredLightingSettings.menu.title=遅延シェーディングの設定
+resourcePack.editor.delete.keyBinding=選択内容の削除
+resourcePack.editor.toolRail.entityInspector.pane.title=エンティティ インスペクター   
+resourcePack.editor.toolRail.entityInspector.tool.title=エンティティ インスペクター   
+resourcePack.editor.toolRail.entityInspector.tool.tip=エンティティ データの検査   
+resourcePack.editor.toolRail.entityInspector.pane.helpText=エンティティを左クリックして、プロパティの表示と編集をします   
+resourcePack.editor.entityInspector.toolRail.description=エンティティを左クリックして、プロパティの表示と編集をします   
+resourcePack.editor.exportProject.exportType=エクスポートの種類
+resourcePack.editor.exportProject.exportType.playableWorld=プレイ可能な世界
+resourcePack.editor.exportProject.exportNotes=ノートをエクスポート
+resourcePack.editor.exportProject.exportNotes.export=進行状況をエクスポート中   
+resourcePack.editor.exportProject.exportNotes.warning=v%1 のワールドをエクスポートしています。エクスポートされたプレイ可能なワールドは、バージョン番号が v%1 より前の Minecraft では使用できません。以前のバージョンに変換するには、https://chunker.app/ を使用してください (以前のバージョンでサポートされていない機能は、使用できない場合があります)
+resourcePack.editor.exportProject.exportNotes.progress=ワールドをエクスポート中...    
+resourcePack.editor.exportProject.exportNotes.exportSuccess=ワールドのエクスポートに成功しました    
+resourcePack.editor.exportProject.exportNotes.exportFailed=ワールドのエクスポートに失敗しました    
+resourcePack.editor.exportProject.generalSettings=一般設定
+resourcePack.editor.exportProject.generalSettings.worldName=ワールド名
+resourcePack.editor.exportProject.generalSettings.gameMode=ゲームモード
+resourcePack.editor.exportProject.generalSettings.difficulty=難易度
+resourcePack.editor.exportProject.generalSettings.hardcore=ハードコア
+resourcePack.editor.exportProject.initialPlaySettings=初期プレイ設定   
+resourcePack.editor.exportProject.initialPlaySettings.spawnPosition=ワールドのスポーン地点   
+resourcePack.editor.exportProject.initialPlaySettings.startTime=開始時刻   
+resourcePack.editor.exportProject.initialPlaySettings.clockType=時計の種類   
+resourcePack.editor.exportProject.initialPlaySettings.customStartTime=カスタム開始時間   
+resourcePack.editor.exportProject.initialPlaySettings.weather=開始時の天候   
+resourcePack.editor.exportProject.advancedSettings=詳細設定
+resourcePack.editor.exportProject.advancedSettings.startingMap=開始時の地図所持
+resourcePack.editor.exportProject.advancedSettings.bonusChest=ボーナスチェスト
+resourcePack.editor.exportProject.advancedSettings.showCoordinates=座標を表示
+resourcePack.editor.exportProject.advancedSettings.showDaysPlayed=プレイ日を表示する
+resourcePack.editor.exportProject.advancedSettings.recipeUnlocking=レシピのアンロック
+resourcePack.editor.exportProject.advancedSettings.limitedCrafting=限定クラフト   
+resourcePack.editor.exportProject.advancedSettings.fireSpreads=火の延焼
+resourcePack.editor.exportProject.advancedSettings.tntExplodes=TNT の爆発
+resourcePack.editor.exportProject.advancedSettings.resawnBlocksExplode=リスポーン ブロックが爆発する
+resourcePack.editor.exportProject.advancedSettings.mobLoot=モブのアイテム ドロップ
+resourcePack.editor.exportProject.advancedSettings.naturalRegeneration=自然再生
+resourcePack.editor.exportProject.advancedSettings.tileDrops=タイルからのドロップ
+resourcePack.editor.exportProject.advancedSettings.immediateRespawn=即時リスポーン
+resourcePack.editor.exportProject.advancedSettings.showDeathMessage=死亡メッセージを表示   
+resourcePack.editor.exportProject.advancedSettings.respawnRadius=リスポーン範囲
+resourcePack.editor.exportProject.advancedSettings.simulationDistance=演算距離
+resourcePack.editor.exportProject.advancedSettings.bedsWork=ベッド ワーク
+resourcePack.editor.exportProject.advancedSettings.requiredSleepingPlayers=必要なスリープ状態のプレイヤー (%1$s)
+resourcePack.editor.exportProject.advancedSettings.requiredSleepingPlayers.onePlayerMessage=プレイヤー 1 人のみ
+resourcePack.editor.exportProject.advancedSettings.showItemTags=アイテムタグを表示   
+resourcePack.editor.exportProject.multiplayerSettings=マルチプレイ設定
+resourcePack.editor.exportProject.multiplayerSettings.multiplayerGame=マルチプレイ ゲーム
+resourcePack.editor.exportProject.multiplayerSettings.playerAccess=プレイヤー アクセス
+resourcePack.editor.exportProject.multiplayerSettings.playerPermissions=プレイヤー権限
+resourcePack.editor.exportProject.multiplayerSettings.visibleToLAN=LAN プレイヤーに表示
+resourcePack.editor.exportProject.multiplayerSettings.friendlyFire=味方による攻撃
+resourcePack.editor.exportProject.cheatsSettings=チート設定
+resourcePack.editor.exportProject.cheatsSettings.cheats=チート
+resourcePack.editor.exportProject.cheatsSettings.daylightCycle=昼夜サイクル
+resourcePack.editor.exportProject.cheatsSettings.keepInventory=持ち物の保持
+resourcePack.editor.exportProject.cheatsSettings.mobSpawning=モブのスポーン
+resourcePack.editor.exportProject.cheatsSettings.mobGriefing=モブによる妨害
+resourcePack.editor.exportProject.cheatsSettings.entitiesDropLoot=エンティティのアイテム ドロップ
+resourcePack.editor.exportProject.cheatsSettings.weatherCycle=天候の変化
+resourcePack.editor.exportProject.cheatsSettings.commandBlocks=コマンドブロック
+resourcePack.editor.exportProject.cheatsSettings.commandBlockOutput=コマンドブロック出力   
+resourcePack.editor.exportProject.cheatsSettings.sendCommandFeedback=コマンド フィードバックの送信   
+resourcePack.editor.exportProject.cheatsSettings.maxCommandChainLength=最大コマンド チェーン長   
+resourcePack.editor.exportProject.cheatsSettings.fireDamage=炎ダメージ  
+resourcePack.editor.exportProject.cheatsSettings.freezeDamage=フリーズ ダメージ  
+resourcePack.editor.exportProject.cheatsSettings.fallDamage=落下ダメージ  
+resourcePack.editor.exportProject.cheatsSettings.drowningDamage=窒息ダメージ  
+resourcePack.editor.exportProject.cheatsSettings.insomnia=不眠症  
+resourcePack.editor.exportProject.cheatsSettings.showBorderEffect=ボーダー エフェクトの表示  
+resourcePack.editor.exportProject.cheatsSettings.functionCommandLimit=関数コマンドの制限  
+resourcePack.editor.exportProject.cheatsSettings.educationFeatures=教育機能
+resourcePack.editor.exportProject.cheatsSettings.randomTickSpeed=ランダムなティック速度
+resourcePack.editor.exportProject.export=エクスポート
+resourcePack.editor.exportProject.resetToDefault=初期設定にリセット
+resourcePack.editor.exportProject.gameMode.survival=サバイバル
+resourcePack.editor.exportProject.gameMode.creative=クリエイティブ
+resourcePack.editor.exportProject.gameMode.adventure=アドベンチャー
+resourcePack.editor.exportProject.difficulty.peaceful=ピースフル
+resourcePack.editor.exportProject.difficulty.easy=イージー
+resourcePack.editor.exportProject.difficulty.normal=ノーマル
+resourcePack.editor.exportProject.difficulty.hard=ハード
+resourcePack.editor.exportProject.weather.default=デフォルト   
+resourcePack.editor.exportProject.weather.clear=クリア   
+resourcePack.editor.exportProject.weather.rain=雨   
+resourcePack.editor.exportProject.weather.thunder=雷   
+resourcePack.editor.toolRail.ExtrudeTool.title=押し出しツール
+resourcePack.editor.toolRail.ExtrudeTool.tooltip=ブロックの拡大や縮小を行うための押し出しツール
+resourcePack.editor.toolRail.ExtrudeTool.pane.ContiguousSelectionBlockListSubPane.title=ブロック リストの連続選択
+resourcePack.editor.toolRail.ExtrudeTool.pane.TrailingBlocksSettingsSubPane.title=トレーリング ブロック設定
+resourcePack.editor.toolRail.ExtrudeTool.pane.SampleLayerCount.title=サンプル レイヤー数
+resourcePack.editor.toolRail.ExtrudeTool.pane.ContiguousSelectionSettings.title=連続選択の設定
+resourcePack.editor.toolRail.ExtrudeTool.pane.ContiguousSelectionType.title=連続選択のタイプ
+resourcePack.editor.toolRail.ExtrudeTool.pane.ContiguousSelectionType.SameBlocks=同一ブロック
+resourcePack.editor.toolRail.ExtrudeTool.pane.ContiguousSelectionType.SameBlocksAndStates=同一ブロックおよび状態
+resourcePack.editor.toolRail.ExtrudeTool.pane.ContiguousSelectionType.SolidBlocks=固体ブロック
+resourcePack.editor.toolRail.ExtrudeTool.pane.ContiguousSelectionType.AllBlocks=すべてのブロック
+resourcePack.editor.toolRail.ExtrudeTool.pane.ContiguousSelectionType.CustomBlockList=カスタム ブロック リスト
+resourcePack.editor.toolRail.ExtrudeTool.pane.ToleranceLevel.title=許容レベル
+resourcePack.editor.toolRail.ExtrudeTool.pane.HasAdjacentBlocks.title=隣接ブロックあり
+resourcePack.editor.toolRail.ExtrudeTool.pane.ExtruderSettings.title=押し出し機能の設定
+resourcePack.editor.toolRail.ExtrudeTool.pane.Radius.title=半径
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.title=選択モード
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.ContiguousSelection=連続選択
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.MarqueeSelection=マーキー選択
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.ContiguousSettings.title=連続選択の設定
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.TrailingBlocks.title=トレーリング ブロック
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.TrailingBlocksSettings.title=トレーリング ブロック設定
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.QuickExtrudeSettings.title=クイック押し出し設定
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.QuickExtrudeMode.title=クイック押し出しモード
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.QuickExtrudeMode.decrease.title=減少
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.QuickExtrudeMode.decrease.tooltip=押し出しの減少
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.QuickExtrudeMode.expand.title=拡大
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.QuickExtrudeMode.expand.tooltip=押し出しの拡張
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.LayerCount.title=レイヤー数
+resourcePack.editor.toolRail.ExtrudeTool.pane.preview_warning=注: プレビューのビジュアルには、最初のレイヤーのみが表示されます 
+resourcePack.editor.toolRail.ExtrudeTool.pane.ExtrusionType.title=押し出しタイプ
+resourcePack.editor.toolRail.ExtrudeTool.pane.ExtrusionType.Extrude=押し出し
+resourcePack.editor.toolRail.ExtrudeTool.pane.ExtrusionType.QuickExtrude=クイック押し出し
+resourcePack.editor.toolRail.ExtrudeTool.keyBinding.deselect=選択解除
+resourcePack.editor.toolRail.ExtrudeTool.keyBinding.toggleTool=押し出しツールの切り替え
+resourcePack.editor.toolRail.FarmGenerator.tool.title=農場ジェネレーター
+resourcePack.editor.toolRail.FarmGenerator.tool.tooltip=カスタムの農場を素早く作成
+resourcePack.editor.toolRail.FarmGenerator.pane.title=農場ジェネレーター
+resourcePack.editor.toolRail.FarmGenerator.pane.length=長さ
+resourcePack.editor.toolRail.FarmGenerator.pane.width=幅
+resourcePack.editor.toolRail.FarmGenerator.pane.fence=フェンス
+resourcePack.editor.toolRail.FarmGenerator.pane.irrigation=灌漑の追加
+resourcePack.editor.toolRail.FarmGenerator.pane.irrigation.tooltip=農場に水ブロックを追加して作物を灌漑します。
+resourcePack.editor.toolRail.FarmGenerator.pane.crops.title=作物
+resourcePack.editor.toolRail.FarmGenerator.pane.crops.wheat=小麦
+resourcePack.editor.toolRail.FarmGenerator.pane.crops.potato=ジャガイモ
+resourcePack.editor.toolRail.FarmGenerator.pane.crops.beets=ビートルート
+resourcePack.editor.toolRail.FarmGenerator.pane.crops.pumpkin=カボチャ
+resourcePack.editor.toolRail.FarmGenerator.pane.crops.carrot=ニンジン
+resourcePack.editor.toolRail.FarmGenerator.pane.animals.title=動物
+resourcePack.editor.toolRail.FarmGenerator.pane.animals.cow=ウシ
+resourcePack.editor.toolRail.FarmGenerator.pane.animals.sheep=ヒツジ
+resourcePack.editor.toolRail.FarmGenerator.pane.animals.pig=ブタ
+resourcePack.editor.toolRail.FarmGenerator.keyBinding.toggleTool=農場ジェネレーターツール切替
+resourcePack.editor.toolRail.FarmGenerator.keyBinding.place=カーソル位置に農場を配置
+resourcePack.editor.global.keyBinding.toggleMode=モードの切り替え
+resourcePack.editor.goToMark.actionBar.tooltip.description=プレイヤー ナビゲーション用のユーティリティ パネル
+resourcePack.editor.goToMark.actionBar.tooltip.title=ナビゲーション パネル
+resourcePack.editor.goToMark.pane.goToSpawn=スポーン地点に移動
+resourcePack.editor.goToMark.pane.location=プレイヤーの場所
+resourcePack.editor.goToMark.pane.locationPane.delete=保存された場所を削除
+resourcePack.editor.goToMark.pane.locationPane.dropdownLabel=保存された場所
+resourcePack.editor.goToMark.pane.locationPane.inputName=新しい名前
+resourcePack.editor.goToMark.pane.locationPane.markColor=ロケーション マークの色
+resourcePack.editor.goToMark.pane.locationPane.store=現在の場所に次を保存:
+resourcePack.editor.goToMark.pane.locationPane.teleport=保存された場所にテレポート %1$s
+resourcePack.editor.goToMark.pane.locationPane.title=保存された場所
+resourcePack.editor.goToMark.pane.mapSize=マップ サイズ
+resourcePack.editor.goToMark.pane.refreshMap=マップの更新
+resourcePack.editor.goToMark.pane.setSpawn=現在の位置をスポーン地点に設定
+resourcePack.editor.goToMark.pane.showMap=マップを表示する
+resourcePack.editor.goToMark.pane.teleport=位置にテレポート
+resourcePack.editor.goToMark.title=ナビゲーション パネル
+resourcePack.editor.grapple.keyBinding.flyToCursor=カーソルへ飛ぶ
+resourcePack.editor.grapple.keyBinding.flyToSelection=選択領域へ飛ぶ
+resourcePack.editor.locate.biome.find=バイオームを探す
+resourcePack.editor.locate.biome.title=バイオーム
+resourcePack.editor.locate.keyBinding.toggleTool=バイオーム位置特定ツール切替
+resourcePack.editor.locate.locatetype.biome=バイオーム
+resourcePack.editor.locate.locatetype.structure=構造物
+resourcePack.editor.locate.locatetype.title=タイプを探す
+resourcePack.editor.locate.results.foundat.title=見つかった場所
+resourcePack.editor.locate.results.foundat=見つかった場所
+resourcePack.editor.locate.results.goto=移動
+resourcePack.editor.locate.results.notfound.title=該当なし
+resourcePack.editor.locate.results.notfound=検索結果が見つかりません
+resourcePack.editor.locate.results.title=結果
+resourcePack.editor.locate.structure.message=構造物の検索は現在サポートされていません
+resourcePack.editor.locate.structure.title=構造物
+resourcePack.editor.locate.title=位置を特定
+resourcePack.editor.menuBar.edit.copy=コピー
+resourcePack.editor.menuBar.edit.cut=切り取り
+resourcePack.editor.menuBar.edit.delete=削除
+resourcePack.editor.menuBar.edit.deselect=選択解除
+resourcePack.editor.menuBar.edit.quickFill=クイック フィル
+resourcePack.editor.menuBar.edit.quickPaste=クイック ペースト
+resourcePack.editor.menuBar.edit.redo=やり直す
+resourcePack.editor.menuBar.edit.undo=取り消す
+resourcePack.editor.menuBar.edit=編集
+resourcePack.editor.menuBar.experimental=実験的
+resourcePack.editor.menuBar.extensions=拡張
+resourcePack.editor.menuBar.file.cursor.projectThroughLiquid=液体を通して投影
+resourcePack.editor.menuBar.file.cursor=カーソル設定
+resourcePack.editor.menuBar.file.export.project=エディター プロジェクト
+resourcePack.editor.menuBar.file.export.world=プレイ可能な世界
+resourcePack.editor.menuBar.file.export=エクスポート
+resourcePack.editor.menuBar.file.pauseScreen=ゲーム メニュー
+resourcePack.editor.menuBar.file.settings=UI 設定
+resourcePack.editor.menuBar.file=ファイル
+resourcePack.editor.menuBar.help.tutorial=チュートリアル 
+resourcePack.editor.menuBar.help.documentation=ドキュメント
+resourcePack.editor.menuBar.help.feedback=フィードバック
+resourcePack.editor.menuBar.help.quickStart=クイック スタート
+resourcePack.editor.menuBar.help=ヘルプ
+resourcePack.editor.menuBar.locate=位置を特定
+resourcePack.editor.menuBar.parentMenu.weather.clear=快晴
+resourcePack.editor.menuBar.parentMenu.weather.rain=雨
+resourcePack.editor.menuBar.parentMenu.weather.thunder=雷
+resourcePack.editor.menuBar.parentMenu.weather=天候
+resourcePack.editor.menuBar.view.blockPalette=ブロック パレット
+resourcePack.editor.menuBar.view.logging=ログパネル
+resourcePack.editor.menuBar.view.navigationLogging=ナビゲーション ログ
+resourcePack.editor.menuBar.view=表示
+resourcePack.editor.menuBar.worldOptions.changeDimension.end=ジ・エンド
+resourcePack.editor.menuBar.worldOptions.changeDimension.nether=ネザー
+resourcePack.editor.menuBar.worldOptions.changeDimension.overworld=オーバーワールド
+resourcePack.editor.menuBar.worldOptions.changeDimension=ディメンションを変更
+resourcePack.editor.menuBar.worldOptions.pause.entities=エンティティ
+resourcePack.editor.menuBar.worldOptions.pause=一時停止
+resourcePack.editor.menuBar.worldOptions=世界のオプション
+resourcePack.editor.navigation.keyBinding.add=ナビゲーション位置の追加
+resourcePack.editor.navigation.keyBinding.next=次のナビゲーション位置に移動
+resourcePack.editor.navigation.keyBinding.previous=前のナビゲーション位置に移動
+resourcePack.editor.paste.pane.submitButton=貼り付けを確認
+resourcePack.editor.paste.pane.title=貼り付け
+resourcePack.editor.paste.pane.transform.mirrorX=ミラー X
+resourcePack.editor.paste.pane.transform.mirrorZ=ミラー Z
+resourcePack.editor.paste.pane.transform.origin.title=オフセット
+resourcePack.editor.paste.pane.transform.rotation.180=180°
+resourcePack.editor.paste.pane.transform.rotation.270=270
+resourcePack.editor.paste.pane.transform.rotation.90=90°
+resourcePack.editor.paste.pane.transform.rotation.none=0 キー
+resourcePack.editor.paste.pane.transform.rotation.title=向きを変える
+resourcePack.editor.paste.pane.transform.title=変形
+resourcePack.editor.paste.toolRail.description=マウスの左クリックでブロックを選択してから、クリップボード アイテムを正確に貼り付けます
+resourcePack.editor.paste.toolRail.title=プレビューを貼り付け
+resourcePack.editor.pastepreview.inputContext.title=プレビューを貼り付け
+resourcePack.editor.pastepreview.keyBinding.clearPreview=プレビューをクリア
+resourcePack.editor.pastepreview.keyBinding.copy=選択領域をコピー
+resourcePack.editor.pastepreview.keyBinding.cut=選択領域を切り取る
+resourcePack.editor.pastepreview.keyBinding.moveBack=プレビューを後方に移動
+resourcePack.editor.pastepreview.keyBinding.moveDown=プレビューを下に移動
+resourcePack.editor.pastepreview.keyBinding.moveForward=プレビューを前方に移動
+resourcePack.editor.pastepreview.keyBinding.moveLeft=プレビューを左に移動
+resourcePack.editor.pastepreview.keyBinding.moveOffsetBack=オフセットを後方に移動
+resourcePack.editor.pastepreview.keyBinding.moveOffsetDown=オフセットを下に移動
+resourcePack.editor.pastepreview.keyBinding.moveOffsetForward=オフセットを前方に移動
+resourcePack.editor.pastepreview.keyBinding.moveOffsetLeft=オフセットを左に移動
+resourcePack.editor.pastepreview.keyBinding.moveOffsetRight=オフセットを右に移動
+resourcePack.editor.pastepreview.keyBinding.moveOffsetUp=オフセットを上に移動
+resourcePack.editor.pastepreview.keyBinding.moveOriginBack=起点を後方に移動
+resourcePack.editor.pastepreview.keyBinding.moveOriginDown=起点を下に移動
+resourcePack.editor.pastepreview.keyBinding.moveOriginForward=起点を前方に移動
+resourcePack.editor.pastepreview.keyBinding.moveOriginLeft=起点を左に移動
+resourcePack.editor.pastepreview.keyBinding.moveOriginRight=起点を右に移動
+resourcePack.editor.pastepreview.keyBinding.moveOriginUp=起点を上に移動
+resourcePack.editor.pastepreview.keyBinding.moveRight=プレビューを右に移動
+resourcePack.editor.pastepreview.keyBinding.moveUp=プレビューを上に移動
+resourcePack.editor.pastepreview.keyBinding.paste=貼り付け
+resourcePack.editor.pastepreview.keyBinding.pasteAtCursor=カーソルに貼り付け
+resourcePack.editor.pastepreview.keyBinding.pastepreview=プレビューを貼り付け
+resourcePack.editor.pastepreview.keyBinding.quickPaste=クイック ペースト
+resourcePack.editor.pastepreview.keyBinding.rotateClockWise=プレビューを時計回りに回転
+resourcePack.editor.pastepreview.keyBinding.rotateCounterClockWise=プレビューを反時計回りに回転
+resourcePack.editor.pastepreview.keyBinding.toggleAdjacentTarget=隣接ターゲット モードの切り替え
+resourcePack.editor.pastepreview.keyBinding.toggleBlockTarget=ブロックターゲット モードの切り替え
+resourcePack.editor.pastepreview.keyBinding.toggleFixedDistance=固定距離を有効にする
+resourcePack.editor.pastepreview.keyBinding.toggleMirrorX=ミラー X の切り替え
+resourcePack.editor.pastepreview.keyBinding.toggleMirrorZ=ミラー Z の切り替え
+resourcePack.editor.pastepreview.keyBinding.toggleMouseTracking=マウス トラッキングの切り替え
+resourcePack.editor.pastepreview.pane.controls.cursor.fixed=固定距離
+resourcePack.editor.pastepreview.pane.controls.cursor.keyboard=キーのみ
+resourcePack.editor.pastepreview.pane.controls.cursor.mouseandkeys=マウスとキー
+resourcePack.editor.pastepreview.pane.controls.cursor.target.block=ブロック
+resourcePack.editor.pastepreview.pane.controls.cursor.target.face=隣接
+resourcePack.editor.pastepreview.pane.controls.cursor.target.title=対象
+resourcePack.editor.pastepreview.pane.controls.cursor=操作
+resourcePack.editor.pastepreview.pane.controls.title=カーソルの制御
+resourcePack.editor.pastepreview.pane.placement.mirrorX=ミラー X
+resourcePack.editor.pastepreview.pane.placement.mirrorZ=ミラー Z
+resourcePack.editor.pastepreview.pane.placement.offset=オフセット
+resourcePack.editor.pastepreview.pane.placement.origin=起点
+resourcePack.editor.pastepreview.pane.placement.pastebutton=貼り付け
+resourcePack.editor.pastepreview.pane.placement.rotation=回転 (Y 軸周り)
+resourcePack.editor.pastepreview.pane.placement.title=配置の設定
+resourcePack.editor.pastepreview.pane.root.size=サイズ
+resourcePack.editor.pastepreview.pane.root.title=プレビューを貼り付け
+resourcePack.editor.pastepreview.tool.tip=マウスを使用してクリップボードのプレビューの位置を調整し、クリックして世界に貼り付ける
+resourcePack.editor.pastepreview.tool.title=プレビューを貼り付け
+resourcePack.editor.playerPositionExtension.dimension=ディメンション
+resourcePack.editor.playerPositionExtension.menu.player=プレイヤー
+resourcePack.editor.playerPositionExtension.menu.showPlayerSettings=プレーヤー設定を表示
+resourcePack.editor.playerPositionExtension.nether=ネザー
+resourcePack.editor.playerPositionExtension.overworld=オーバーワールド
+resourcePack.editor.playerPositionExtension.pane=プレイヤー設定
+resourcePack.editor.playerPositionExtension.theEnd=ジ・エンド
+resourcePack.editor.playerPositionExtension.worldSettings=世界の設定
+resourcePack.editor.playtest.AdvancedSettings.title=詳細設定
+resourcePack.editor.playtest.Dialog.DaylightCycle=昼夜サイクル
+resourcePack.editor.playtest.Dialog.Difficulty=難易度
+resourcePack.editor.playtest.Dialog.GameMode=ゲームモード
+resourcePack.editor.playtest.Dialog.OverrideSpawn=現在地に出現
+resourcePack.editor.playtest.Dialog.ShowCoordinates=座標を表示
+resourcePack.editor.playtest.Dialog.TestButton=世界をテスト
+resourcePack.editor.playtest.Dialog.TimeOfDay=時刻
+resourcePack.editor.playtest.Dialog.Title=テスト設定
+resourcePack.editor.playtest.Dialog.Weather=天候
+resourcePack.editor.playtest.Dialog.WeatherCycle=天候の変化
+resourcePack.editor.playtest.Menu.Title=世界をテスト
+resourcePack.editor.playtest.Title.Tooltip=プレイ可能な Minecraft の世界として、あなたのエディター プロジェクトのプレイテストを実行します。プロジェクトに変更は保存されません。シングル プレイヤーのプロジェクトをホストするときのみ利用可能です。
+resourcePack.editor.playtestResult.EditorSystemFailure=エディター システム エラー
+resourcePack.editor.playtestResult.InvalidLevelId=無効なレベル ID
+resourcePack.editor.playtestResult.InvalidSessionHandle=無効なセッション ハンドルです
+resourcePack.editor.playtestResult.OK=成功
+resourcePack.editor.playtestResult.PlayerNotFound=プレイヤーが見つかりません
+resourcePack.editor.playtestResult.ResponseTimeout=応答タイムアウト
+resourcePack.editor.playtestResult.SessionInfoNotFound=セッション情報が見つかりません
+resourcePack.editor.playtestResult.TooManyPlayers=他のプレイヤーをホストしている場合、世界をテストすることはできません
+resourcePack.editor.playtestResult.UnspecifiedError=不明なエラー
+resourcePack.editor.playtestResult.UnsupportedScenario=世界をテストするには、エディター プロジェクトをホストする必要があります
+resourcePack.editor.playtestResult.WorldExportBusy=世界のエクスポート (ビジー)
+resourcePack.editor.playtestResult.WorldExportFailed=世界のエクスポート (失敗)
+resourcePack.editor.menuBar.file.realmsPublish=Realms に公開する   
+resourcePack.editor.realmsPublish.noActiveRealmsSubscription=Realms に公開するには、有効な Realms サブスクリプションが必要です。Realms の登録や、期限切れのサブスクリプションの更新は、標準の Minecraft クライアントまたは minecraft.net ウェブサイト (アカウントにサインインした後) から行うことができます。    
+resourcePack.editor.realmsPublish.userNotLoggedIn=Realms に公開するには、有効な Realms の定額サービスが必要です。利用可能な Realms の定額サービスにアクセスするには、Microsoft アカウントにサインインする必要があります
+resourcePack.editor.realmsPublish.dedicatedServerWarning=専用サーバーを使用している場合、Realms への公開は使用できません。
+resourcePack.editor.realmsPublish.notSessionHostWarning=エディター セッションホストのみが Realms に公開できます。
+resourcePack.editor.realmsPublish.genericRealmsIssue=Realms サービスに問題があるため、後でもう一度やり直してください。
+resourcePack.editor.realmsPublish.goToMinecraftWebsite=Minecraft.net に移動する  
+resourcePack.editor.realmsPublish.Refresh=更新  
+resourcePack.editor.realmsPublish.Realm=Realm  
+resourcePack.editor.realmsPublish.RealmSlot=Realm スロット 
+resourcePack.editor.realmsPublish.EmptySlot=空きスロット
+resourcePack.editor.realmsPublish.PublishNotesTitle=Realms ノートに公開する   
+resourcePack.editor.realmsPublish.DownloadRealm=ダウンロード    
+resourcePack.editor.realmsPublish.PublishRealm=公開  
+resourcePack.editor.realmsPublish.Confirm=確認   
+resourcePack.editor.realmsPublish.Cancel=キャンセル 
+resourcePack.editor.realmsPublish.Back=戻る 
+resourcePack.editor.realmsPublish.PublishFailedNonCompliantWorldName=ワールド名が無効であるため、Realms への公開に失敗しました。ワールド名を更新して、もう一度お試しください。
+resourcePack.editor.realmsPublish.PublishFailed=Realms への公開に失敗しました。しばらくしてからもう一度お試しください。   
+resourcePack.editor.realmsPublish.PublishSuccess=Realms への公開が成功しました    
+resourcePack.editor.realmsPublish.PublishConfirmationOptOut=この Realm とセッションには再確認をしないでください  
+resourcePack.editor.realmsPublish.PublishingToRealms=ワールドを Realms に公開中...  
+resourcePack.editor.realmsPublish.UnableToPublishMissingRealm=Realms に公開できません。Realm が選択されていません    
+resourcePack.editor.realmsPublish.UnableToPublishMissingRealmSlot=Realms に公開できません。Realm スロットが選択されていません   
+resourcePack.editor.realmsPublish.PublishConfirmationWarning=この操作を行うと、選択したスロットから現在のワールドが削除され、現在のエディター ワールドに置き換わります (選択したスロットは、お客様の Realm のアクティブ スロットにもなります)。Realm のメンバーは、新たに置き換えられたワールドにアクセスできるようになります。公開前に現在のワールドを保存したい場合は、データを損失しないように、このダイアログをキャンセルし、「ダウンロード」を選択してから「公開」を行ってください。「確認」を選択して、現在のワールドを置き換えてください。    
+resourcePack.editor.realmsPublish.DownloadSuccess=Realms からのワールドのダウンロードに成功しました    
+resourcePack.editor.realmsPublish.DownloadFailed=Realms からのワールドのダウンロードに失敗しました 
+resourcePack.editor.realmsPublish.DownloadingFromRealms=Realms からワールドをダウンロード中...    
+resourcePack.editor.toolRail.RepeaterTool.title=繰り返しツール
+resourcePack.editor.toolRail.RepeaterTool.tooltip=選択したボリュームを繰り返すためのツール
+resourcePack.editor.toolRail.RepeaterTool.pane.Spacing=スペーシング
+resourcePack.editor.toolRail.RepeaterTool.pane.Repetitions=繰り返し
+resourcePack.editor.toolRail.RepeaterTool.pane.Preview=プレビュー
+resourcePack.editor.toolRail.RepeaterTool.pane.Clear=クリア
+resourcePack.editor.toolRail.RepeaterTool.pane.Apply=適用
+resourcePack.editor.toolRail.RepeaterTool.statusMessage.noSelection=選択ツールを使用して繰り返すボリュームを選択する
+resourcePack.editor.toolRail.RepeaterTool.pane.Mode=モード
+resourcePack.editor.toolRail.RepeaterTool.mode.Line=ライン
+resourcePack.editor.toolRail.RepeaterTool.mode.Grid=グリッド
+resourcePack.editor.toolRail.RepeaterTool.pane.RepeatType=リピート タイプ
+resourcePack.editor.toolRail.RepeaterTool.repeat.Uniform=一様
+resourcePack.editor.toolRail.RepeaterTool.pane.RepeatAlongX=X 軸に沿って繰り返す
+resourcePack.editor.toolRail.RepeaterTool.pane.RepeatAlongY=Y 軸に沿って繰り返す
+resourcePack.editor.toolRail.RepeaterTool.pane.RepeatAlongZ=Z 軸に沿って繰り返す
+resourcePack.editor.toolRail.RepeaterTool.repeat.Separate=個別
+resourcePack.editor.toolRail.RepeaterTool.pane.XCount=X 軸の数
+resourcePack.editor.toolRail.RepeaterTool.pane.YCount=Y 軸の数
+resourcePack.editor.toolRail.RepeaterTool.pane.ZCount=Z 軸の数
+resourcePack.editor.selectionTool.deselect=選択解除
+resourcePack.editor.selectionTool.fillPane.fillAction=選択範囲を塗りつぶす
+resourcePack.editor.selectionTool.fillPane.title=選択範囲を塗りつぶす
+resourcePack.editor.selectionTool.keyBinding.deselect=選択を解除
+resourcePack.editor.selectionTool.keyBinding.fill=選択コンテンツを塗りつぶす
+resourcePack.editor.selectionTool.keyBinding.growBack=選択領域を後方に拡大
+resourcePack.editor.selectionTool.keyBinding.growDown=選択領域を下に拡大
+resourcePack.editor.selectionTool.keyBinding.growForward=選択領域を前方に拡張
+resourcePack.editor.selectionTool.keyBinding.growLeft=選択領域を左に拡大
+resourcePack.editor.selectionTool.keyBinding.growRight=選択領域を右に拡張
+resourcePack.editor.selectionTool.keyBinding.growUp=選択領域を上に拡大
+resourcePack.editor.selectionTool.keyBinding.moveAllSelectionBack=すべての選択領域を後方に移動
+resourcePack.editor.selectionTool.keyBinding.moveAllSelectionDown=すべての選択領域を下に移動
+resourcePack.editor.selectionTool.keyBinding.moveAllSelectionForward=すべての選択領域を前方に移動
+resourcePack.editor.selectionTool.keyBinding.moveAllSelectionLeft=すべての選択領域を左に移動
+resourcePack.editor.selectionTool.keyBinding.moveAllSelectionRight=すべての選択領域を右に移動
+resourcePack.editor.selectionTool.keyBinding.moveAllSelectionUp=すべての選択領域を上に移動
+resourcePack.editor.selectionTool.keyBinding.moveCursorBack=カーソルを後ろに移動
+resourcePack.editor.selectionTool.keyBinding.moveCursorDown=カーソルを下に移動
+resourcePack.editor.selectionTool.keyBinding.moveCursorForward=カーソルを前方に移動
+resourcePack.editor.selectionTool.keyBinding.moveCursorLeft=カーソルを左に移動
+resourcePack.editor.selectionTool.keyBinding.moveCursorRight=カーソルを右に移動
+resourcePack.editor.selectionTool.keyBinding.moveCursorUp=カーソルを上に移動
+resourcePack.editor.selectionTool.keyBinding.moveSelectionBack=選択領域を後方に移動
+resourcePack.editor.selectionTool.keyBinding.moveSelectionDown=選択領域を下に移動
+resourcePack.editor.selectionTool.keyBinding.moveSelectionForward=選択領域を前方に移動
+resourcePack.editor.selectionTool.keyBinding.moveSelectionLeft=選択領域を左に移動
+resourcePack.editor.selectionTool.keyBinding.moveSelectionRight=選択領域を右に移動
+resourcePack.editor.selectionTool.keyBinding.moveSelectionUp=選択領域を上に移動
+resourcePack.editor.selectionTool.keyBinding.shrinkBack=選択領域を後方に縮小
+resourcePack.editor.selectionTool.keyBinding.shrinkDown=選択領域を下に縮小
+resourcePack.editor.selectionTool.keyBinding.shrinkForward=選択領域を前方に縮小
+resourcePack.editor.selectionTool.keyBinding.shrinkLeft=選択領域を左に縮小
+resourcePack.editor.selectionTool.keyBinding.shrinkRight=選択領域を右に縮小
+resourcePack.editor.selectionTool.keyBinding.shrinkUp=選択領域を上に縮小
+resourcePack.editor.selectionTool.keyBinding.toggleTool=選択ツールの切り替え
+resourcePack.editor.selectionTool.keyBinding.select=ブロックの選択
+resourcePack.editor.selectionTool.keyBinding.selectMultiple=追加のブロックを選択
+resourcePack.editor.selectionTool.keyBinding.trimVolume=トリムの選択 (境界)
+resourcePack.editor.selectionTool.keyBinding.trimRemoveAir=トリムの選択 (空気を削除)
+resourcePack.editor.selectionTool.marquee.title=マーキー選択
+resourcePack.editor.selectionTool.modeSelection.freehand.title=フリーハンド ブラシ モード
+resourcePack.editor.selectionTool.modeSelection.freehand.tooltip=フリーハンドのブラシ形状を使用してワールド内のブロックを選択します
+resourcePack.editor.selectionTool.modeSelection.marquee.title=マーキー モード
+resourcePack.editor.selectionTool.modeSelection.marquee.tooltip=長方形の領域を使用してワールド内のブロックを選択します
+resourcePack.editor.selectionTool.modeSelection.magic.title=マジック選択モード
+resourcePack.editor.selectionTool.modeSelection.magic.tooltip=選択した起点からの検索パターンを使用して、ワールド内のブロックを選択します
+resourcePack.editor.selectionTool.modeSelection.title=選択モード
+resourcePack.editor.selectionTool.projectThroughLiquid=液体を通して投影
+resourcePack.editor.selectionTool.trimAction.trimVolume=トリムの選択
+resourcePack.editor.selectionTool.trimAction.trimVolume.tooltip=現在の選択ボリュームをトリミングして、その中の固体ブロックのみに合わせます   
+resourcePack.editor.selectionTool.trimAction.removeAir=空気を削除
+resourcePack.editor.selectionTool.trimAction.removeAir.tooltip=現在の選択ボリュームから空気を削除し、指定したブロックのみを残します 
+resourcePack.editor.selectionTool.trimAction.trimVolume.SettingsPane.title=トリムの設定
+resourcePack.editor.selectionTool.trimAction.trimVolume.SettingsPane.ignoreLiquid=液体を無視
+resourcePack.editor.selectionTool.trimAction.trimVolume.SettingsPane.ignoreLiquid.tooltip=ボリュームをトリミングするときに液体ブロックを無視します 
+resourcePack.editor.selectionTool.trimAction.trimVolume.SettingsPane.onlyCollidable=衝突ブロックのみ
+resourcePack.editor.selectionTool.trimAction.trimVolume.SettingsPane.onlyCollidable.tooltip=ボリュームをトリミングする際に、衝突のないブロック (葉、草など) は無視します 
+resourcePack.editor.selectionTool.quickAction.clearSelection.tooltip=現在の選択を解除する
+resourcePack.editor.selectionTool.quickAction.clearSelection=選択解除
+resourcePack.editor.selectionTool.quickAction.deleteSelection.tooltip=現在の選択ボリューム内のすべてのブロックを削除する
+resourcePack.editor.selectionTool.quickAction.deleteSelection=削除
+resourcePack.editor.selectionTool.quickAction.fillSelection.tooltip=現在の選択ボリュームを、現在選択中のブロックのタイプで埋める
+resourcePack.editor.selectionTool.quickAction.fillSelection=塗りつぶす
+resourcePack.editor.selectionTool.quickAction.title=クイック アクション
+resourcePack.editor.selectionTool.selectionMode.adjacent=隣接
+resourcePack.editor.selectionTool.selectionMode.fixedDistance=固定距離
+resourcePack.editor.selectionTool.selectionMode.mouseAndKeyboard=フリー
+resourcePack.editor.selectionTool.selectionMode=モード
+resourcePack.editor.selectionTool.settingsPane.title=選択
+resourcePack.editor.selectionTool.toolRail.description=マウスの左クリックで選択を作成。CTRL+D で選択を解除
+resourcePack.editor.selectionTool.toolRail.title=選択
+resourcePack.editor.selectionTool.transformPane.origin.tooltip=選択の起点をワールド座標系で表示する
+resourcePack.editor.selectionTool.transformPane.origin=原点
+resourcePack.editor.selectionTool.transformPane.size=サイズ
+resourcePack.editor.selectionTool.transformPane.title=変形
+resourcePack.editor.BlockMaskControl.trim.rootPane.title=トリムの設定
+resourcePack.editor.BlockMaskControl.trim.toggleGroup.title=マスク モード
+resourcePack.editor.BlockMaskControl.trim.toggleGroup.item.disabled.label=ブロック フィルターを無効にする
+resourcePack.editor.BlockMaskControl.trim.toggleGroup.item.disabled.tooltip=無効
+resourcePack.editor.BlockMaskControl.trim.toggleGroup.item.mask.label=マスク
+resourcePack.editor.BlockMaskControl.trim.toggleGroup.item.mask.tooltip=リストに一致するブロックは無視され、影響を受けません
+resourcePack.editor.BlockMaskControl.trim.toggleGroup.item.replace.label=交換
+resourcePack.editor.BlockMaskControl.trim.toggleGroup.item.replace.tooltip=リストに一致するブロックは固体として処理されます
+resourcePack.editor.server.description=エディタ サーバー リソース
+resourcePack.editor.server.name=エディタ リソース
+resourcePack.editor.toolRail.Terrain.title=地形
+resourcePack.editor.toolRail.Terrain.keybinding.toggleTool=地形ツールの切り替え
+resourcePack.editor.toolRail.Terrain.keyBinding.switch=地形モードの切り替え
+resourcePack.editor.toolRail.Terrain.Mode.title=地形モード
+resourcePack.editor.toolRail.Terrain.Smooth.mode.title=スムーズ モード
+resourcePack.editor.toolRail.Terrain.Smooth.tooltip=スムーズ強度に基づいて地形をスムーズにする
+resourcePack.editor.toolRail.Terrain.SmoothStrength=スムーズ強度
+resourcePack.editor.toolRail.Terrain.Roughen.mode.title=粗面化モード
+resourcePack.editor.toolRail.Terrain.Roughen.tooltip=粗面化強度に基づいて地形を粗くします
+resourcePack.editor.toolRail.Terrain.RoughenStrength=粗面化強度
+resourcePack.editor.toolRail.Terrain.description=地形を滑らかにしたり粗くしたりする地形ツール
+resourcePack.editor.help.learnMore=詳細を確認
+resourcePack.editor.statusBar.connectedPlayers=接続中のプレイヤー %s
+resourcePack.editor.summonTool.summonSubPane.EntityPickerTitle=エンティティの種類
+resourcePack.editor.timeOfDay.12hrClock=12 時間時計
+resourcePack.editor.timeOfDay.24hrClock=24 時間時計
+resourcePack.editor.timeOfDay.clockType=時計の種類
+resourcePack.editor.timeOfDay.currentTime=現在時刻
+resourcePack.editor.timeOfDay.customTime=カスタム時間
+resourcePack.editor.timeOfDay.daylightCycle=昼夜サイクル
+resourcePack.editor.timeOfDay.dropDown.day=日
+resourcePack.editor.timeOfDay.dropDown.midnight=午前 0 時
+resourcePack.editor.timeOfDay.dropDown.night=夜
+resourcePack.editor.timeOfDay.dropDown.none=なし
+resourcePack.editor.timeOfDay.dropDown.noon=正午
+resourcePack.editor.timeOfDay.dropDown.sunrise=日の出
+resourcePack.editor.timeOfDay.dropDown.sunset=日没
+resourcePack.editor.timeOfDay.dropDown.custom=カスタム
+resourcePack.editor.timeOfDay.dropDown.title=プリセット
+resourcePack.editor.timeOfDay.menu.title=時間帯設定
+resourcePack.editor.timeOfDay.minecraftClock=Minecraft 時計
+resourcePack.editor.timeOfDay.title=時間設定
+resourcePack.editor.toolMode.keyBinding.console=コンソールを開く
+resourcePack.editor.toolMode.keyBinding.devConsole=開発者コンソールを開く
+resourcePack.editor.toolMode.keyBinding.hotbar1=ホットバー 1 を選択
+resourcePack.editor.toolMode.keyBinding.hotbar2=ホットバー 2 を選択
+resourcePack.editor.toolMode.keyBinding.hotbar3=ホットバー 3 を選択
+resourcePack.editor.toolMode.keyBinding.hotbar4=ホットバー 4 を選択
+resourcePack.editor.toolMode.keyBinding.hotbar5=ホットバー 5 を選択
+resourcePack.editor.toolMode.keyBinding.hotbar6=ホットバー 6 を選択
+resourcePack.editor.toolMode.keyBinding.hotbar7=ホットバー 7 を選択
+resourcePack.editor.toolMode.keyBinding.hotbar8=ホットバー 8 を選択
+resourcePack.editor.toolMode.keyBinding.hotbar9=ホットバー 9 を選択
+resourcePack.editor.toolMode.keyBinding.reload=再読み込み 
+resourcePack.editor.toolRail.blockPalette.title=ブロック パレット (CTRL+P)
+resourcePack.editor.toolRail.blockPalette.tooltip=お気に入りのブロックや、頻繁に使用するブロックのパレットを設定します
+resourcePack.editor.toolRail.flattenBrush.title=フラット化ブラシ
+resourcePack.editor.toolRail.flattenBrush.tooltip=選択したブロックの高さまでエリアを垂直にフラット化します
+resourcePack.editor.toolRail.flattenBrush.settings.heightThreshold=高さのしきい値
+resourcePack.editor.toolRail.flattenBrush.settings.radius=半径
+resourcePack.editor.toolRail.floodFillSelectionTool.description=フラッド塗りつぶしアルゴリズムを使用して、現在見ている領域を選択します。
+resourcePack.editor.toolRail.floodFillSelectionTool.title=フラッド塗りつぶし選択ツール。
+resourcePack.editor.toolRail.line.keyBinding.delete=コンテンツの削除
+resourcePack.editor.toolRail.line.keyBinding.deleteAndClear=コンテンツを削除して選択解除
+resourcePack.editor.toolRail.line.keyBinding.deselect=選択解除
+resourcePack.editor.toolRail.line.keyBinding.deselectAll=すべて選択解除
+resourcePack.editor.toolRail.line.keyBinding.fill=コンテンツを塗りつぶす
+resourcePack.editor.toolRail.line.keyBinding.fillAndClear=コンテンツを塗りつぶして選択解除
+resourcePack.editor.toolRail.line.keyBinding.moveBack=選択した領域を後方に移動
+resourcePack.editor.toolRail.line.keyBinding.moveDown=選択した領域を下に移動
+resourcePack.editor.toolRail.line.keyBinding.moveForward=選択した領域を前方に移動
+resourcePack.editor.toolRail.line.keyBinding.moveLeft=選択した領域を左に移動
+resourcePack.editor.toolRail.line.keyBinding.moveRight=選択した領域を右に移動
+resourcePack.editor.toolRail.line.keyBinding.moveUp=選択した領域を上に移動
+resourcePack.editor.toolRail.line.keyBinding.selectAll=すべて選択
+resourcePack.editor.toolRail.line.pane.algorithm.Direct=指揮
+resourcePack.editor.toolRail.line.pane.algorithm.Staggered=スタッガード (フェンス)
+resourcePack.editor.toolRail.line.pane.algorithm.title=アルゴリズム
+resourcePack.editor.toolRail.line.pane.fillAction=選択範囲を塗りつぶす
+resourcePack.editor.toolRail.line.pane.height.title=高さ
+resourcePack.editor.toolRail.line.pane.selectionMode.adjacent=隣接面
+resourcePack.editor.toolRail.line.pane.selectionMode.fixedDistance=固定距離
+resourcePack.editor.toolRail.line.pane.selectionMode.freeForm=フリー
+resourcePack.editor.toolRail.line.pane.selectionMode=選択
+resourcePack.editor.toolRail.line.pane.surfaceContour=地表の等高線
+resourcePack.editor.toolRail.line.pane.width.title=幅
+resourcePack.editor.toolRail.line.title=線
+resourcePack.editor.toolRail.line.tooltip=線ツールによるブロック行の作成
+resourcePack.editor.toolRail.rulerTool.title=定規ツール
+resourcePack.editor.toolRail.rulerTool.tooltip=距離を測る
+resourcePack.editor.toolRail.rulerTool.info.title=測定
+resourcePack.editor.toolRail.smartFillTool.title=スマート フィル ツール
+resourcePack.editor.toolRail.smartFillTool.tooltip=クリックして、連結されたブロックのセットを埋める
+resourcePack.editor.toolRail.smartFillTool.modes.fillVolume=充填ボリューム
+resourcePack.editor.toolRail.smartFillTool.areaLimit.title=エリア制限
+resourcePack.editor.toolRail.smartFillTool.areaLimit.tooltip=埋められる最大領域
+resourcePack.editor.toolRail.summonTool.keyBinding.clear=選択解除
+resourcePack.editor.toolRail.summonTool.keyBinding.delete=エンティティの削除
+resourcePack.editor.toolRail.summonTool.keyBinding.moveBack=選択した領域を後方に移動
+resourcePack.editor.toolRail.summonTool.keyBinding.moveDown=選択した領域を下に移動
+resourcePack.editor.toolRail.summonTool.keyBinding.moveForward=選択した領域を前方に移動
+resourcePack.editor.toolRail.summonTool.keyBinding.moveLeft=選択した領域を左に移動
+resourcePack.editor.toolRail.summonTool.keyBinding.moveRight=選択した領域を右に移動
+resourcePack.editor.toolRail.summonTool.keyBinding.moveUp=選択した領域を上に移動
+resourcePack.editor.toolRail.summonTool.keyBinding.toggle=召喚ツールの切り替え
+resourcePack.editor.toolRail.summonTool.pane.select=モード選択
+resourcePack.editor.toolRail.summonTool.pane.title=召喚ツール
+resourcePack.editor.toolRail.summonTool.pane.type=エンティティの種類
+resourcePack.editor.toolRail.summonTool.tool.infoText=エンティティをクリックして選択するか、マップをクリックして新しいエンティティを召喚する
+resourcePack.editor.toolRail.summonTool.tool.selectSubPane.rotation=回転
+resourcePack.editor.toolRail.summonTool.tool.selectSubPane=エンティティの選択
+resourcePack.editor.toolRail.summonTool.tool.summonSubPane=エンティティのスポーン
+resourcePack.editor.toolRail.summonTool.tool.tip=クリックしてエンティティを召喚する
+resourcePack.editor.toolRail.summonTool.tool.title=召喚ツール
+resourcePack.editor.toolRail.workbenchSettings.title=作業台
+resourcePack.editor.toolRail.workbenchTool.title=作業台
+resourcePack.editor.toolRail.workbenchTool.description=ブロックの状態をすばやく変更
+resourcePack.editor.toolRail.workbenchTool.howToUse=ブロックをハイライトすると、状態を変更するための利用可能なアクション (開閉、回転、反転など) が表示されます。Shift キーと Ctrl キーの併用もお試しください。この機能は、変更可能なプロパティを持つブロック (ドア、フェンス、階段など) でのみ機能しますのでご注意ください。
+resourcePack.editor.toolRail.workbenchTool.tooltip=ブロックの状態を変更
+resourcePack.editor.toolRail.workbenchTool.block=ブロック
+resourcePack.editor.toolRail.workbenchTool.leftClick=左クリック
+resourcePack.editor.toolRail.workbenchTool.shiftLeftClick=Shift + 左クリック
+resourcePack.editor.toolRail.workbenchTool.controlLeftClick=CTRL + 左クリック
+resourcePack.editor.toolRail.workbenchTool.shiftControlLeftClick=Shift + CTRL + 左クリック
+resourcePack.editor.toolRail.workbenchTool.leftClickTooltip=ブロックを左クリックして、作業台のメイン アクションを実行します
+resourcePack.editor.toolRail.workbenchTool.shiftLeftClickTooltip=ブロックを Shift + 左クリックして、作業台の 2 番目のアクションを実行します
+resourcePack.editor.toolRail.workbenchTool.controlLeftClickTooltip=ブロックを Ctrl + 左クリックして、作業台の 3 番目のアクションを実行します
+resourcePack.editor.toolRail.workbenchTool.shiftControlLeftClickTooltip=ブロックを Shift + Ctrl + 左クリックして、作業台の 4 番目のアクションを実行します
+resourcePack.editor.toolRail.workbenchTool.stripWood=木材の皮はぎ/皮付け
+resourcePack.editor.toolRail.workbenchTool.ladderLocation=はしごの位置
+resourcePack.editor.toolRail.workbenchTool.autoAlign=自動整列
+resourcePack.editor.toolRail.workbenchTool.autoAlignFacingDirection=向きを自動整列
+resourcePack.editor.toolRail.workbenchTool.autoAlignRotation=回転を自動整列
+resourcePack.editor.toolRail.workbenchTool.topSlotBitProp=トップ/ボトム
+resourcePack.editor.toolRail.workbenchTool.pillarAxisProp=回す
+resourcePack.editor.toolRail.workbenchTool.heightProp=レイヤー
+resourcePack.editor.toolRail.workbenchTool.candlesProp=ろうそくの数
+resourcePack.editor.toolRail.workbenchTool.turtleEggCountProp=カメの卵の数
+resourcePack.editor.toolRail.workbenchTool.clusterCountProp=シーピクルスの数
+resourcePack.editor.toolRail.workbenchTool.hangingProp=別のブロックからの吊り下げの切り替え
+resourcePack.editor.toolRail.workbenchTool.wallPostBitProp=ポストの切り替え
+resourcePack.editor.toolRail.workbenchTool.upsideDownBitProp=トップ/ボトム
+resourcePack.editor.toolRail.workbenchTool.openBitProp=開く/閉じる
+resourcePack.editor.toolRail.workbenchTool.litProp=点灯/消灯
+resourcePack.editor.toolRail.workbenchTool.dripstoneThicknessProp=鍾乳石の厚さ
+resourcePack.editor.toolRail.workbenchTool.directionProp=向いている方向
+resourcePack.editor.toolRail.workbenchTool.weirdoDirectionProp=回す
+resourcePack.editor.toolRail.workbenchTool.facingDirectionProp=向いている方向
+resourcePack.editor.toolRail.workbenchTool.cardinalDirectionProp=向いている方向
+resourcePack.editor.toolRail.workbenchTool.addCustomMapping=カスタム マッピングを追加
+resourcePack.editor.toolRail.workbenchTool.blockProperty=ブロック プロパティ
+resourcePack.editor.toolRail.workbenchTool.clickBinding=割り当てをクリック
+resourcePack.editor.toolRail.workbenchTool.addMapping=マッピングを追加
+resourcePack.editor.toolRail.workbenchTool.resetAllMappings=全マッピングのリセット
+resourcePack.editor.workbenchTool.keyBinding.primaryAction=作業台のプライマリ アクション
+resourcePack.editor.workbenchTool.keyBinding.secondaryAction=作業台の 2 番目のアクション
+resourcePack.editor.workbenchTool.keyBinding.tertiaryAction=作業台の 3 番目のアクション
+resourcePack.editor.workbenchTool.keyBinding.quaternaryAction=作業台の 4 番目のアクション
+resourcePack.editor.transaction.keyBinding.redo=やり直す
+resourcePack.editor.transaction.keyBinding.undo=取り消す
+resourcePack.editor.viewport.keyBinding.moveBack=後退
+resourcePack.editor.viewport.keyBinding.moveDown=下に移動
+resourcePack.editor.viewport.keyBinding.moveForward=前進
+resourcePack.editor.viewport.keyBinding.moveLeft=左に移動
+resourcePack.editor.viewport.keyBinding.moveRight=右に移動
+resourcePack.editor.viewport.keyBinding.moveUp=上に移動
+resourcePack.editor.viewport.keyBinding.incrementFlySpeed=飛行速度を増加
+resourcePack.editor.viewport.keyBinding.decrementFlySpeed=飛行速度を減少
+resourcePack.editor.viewSettings.compass.tip=方向コンパスを表示する
+resourcePack.editor.viewSettings.compass.title=コンパスを表示
+resourcePack.editor.viewSettings.chunk.tip=マップ内のチャンク境界のアウトラインを表示する
+resourcePack.editor.viewSettings.chunk.title=チャンク境界の表示
+resourcePack.editor.viewSettings.nightVision.tip=暗視があるかのようにワールドを見せる
+resourcePack.editor.viewSettings.nightVision.title=暗視
+resourcePack.editor.viewSettings.invisible.tip=非表示のブロックを表示する (例: 虚無、バリアなど)
+resourcePack.editor.viewSettings.invisible.title=非表示のブロックを表示
+resourcePack.editor.viewSettings.flySpeed.tip=マップを素早く移動するため飛行速度を上げる
+resourcePack.editor.viewSettings.flySpeed.title=飛行速度の倍率
+resourcePack.editor.viewSettings.menu=設定
+resourcePack.editor.viewSettings.title=設定
+resourcePack.editor.hotbar.defaultDisplayName=デフォルト
+resourcePack.editor.reloadScripts.response.tooMany=サーバーに接続しているプレイヤーが多すぎます。スクリプトの再読み込みは、 1 人のプレイヤーが接続されているホストでのみサポートされます。
+resourcePack.editor.reloadScripts.response.genericError=スクリプトの再読み込み中にエラーが発生しました。
+resourcePack.editor.reloadScripts.response.noAdminRights=スクリプトを再読み込みする権限がありません。

@@ -1,912 +1,806 @@
-﻿## Comments can be added anywhere on a valid line by starting with '##'
-##
-## Note, trailing spaces will NOT be trimmed. If you want room between the end of the string and the start of a
-## comment on the same line, use TABs.
-
-commands.editor.project.beginExport=Mengekspor ...	#
-commands.editor.project.description=Manipulasi proyek yang saat ini dimuat	#
-commands.editor.project.export=ekspor proyek	#
-commands.editor.project.exportComplete=Ekspor selesai, file ditulis ke %s	#
-commands.editor.project.exportCopyFailed=Gagal menyalin data level %s	#
-commands.editor.project.unknownSubcommand=Subperintah Tidak Diketahui	#
-
-resourcePack.editor.actionBar.redo.tooltipDescription=Ulangi tindakan	#
-resourcePack.editor.actionBar.redo.tooltipTitle=Ulangi	#
-resourcePack.editor.actionBar.redo=Ulangi	#
-resourcePack.editor.actionBar.undo.tooltipDescription=Batalkan tindakan	#
-resourcePack.editor.actionBar.undo.tooltipTitle=Batalkan	#
-resourcePack.editor.actionBar.undo=Batalkan	#
-resourcePack.editor.actionBar.fill=Isi 	####Label for an actionbar item that fills the selection with the current hotbar block.{MaxLength=100}
-resourcePack.editor.actionBar.fill.tooltipDescription=Isi volume pilihan dengan blok hotbar saat ini 	####Tooltip description for an actionbar item that fills the selection with the current hotbar block.{MaxLength=100}
-resourcePack.editor.actionBar.fill.tooltipTitle=Isi 	####Tooltip title for an actionbar item that fills the selection with the current hotbar block.{MaxLength=100}
-
-resourcePack.editor.agfx.settings.error.title=Terjadi kesalahan...	#
-resourcePack.editor.agfx.pane.title=Editor Pengaturan	#
-resourcePack.editor.agfx.pane.settings_selector=Pilih pengaturan	#
-resourcePack.editor.agfx.pane.settings.title=Pengaturan	#
-resourcePack.editor.agfx.pane.settings.revert_changes=Batalkan Perubahan	#
-resourcePack.editor.agfx.pane.settings.export_to_clipboard=Ekspor ke clipboard	#
-
-
-resourcePack.editor.toolRail.blockInspectorSettings.title=Pemeriksa Blok   	####This string is what is shown in the title bar of the Editor pane for inspecting blocks.{MaxLength=30}
-resourcePack.editor.toolRail.blockInspectorSettings.specifics=Spesifik Blok   	####This string is the heading that contains the block tags and block properties subpane.{MaxLength=30}
-resourcePack.editor.toolRail.blockInspectorSettings.actions.refresh=Segarkan Data Blok   	####This string shown on a button for forcing an update to the block data state.{MaxLength=30}
-resourcePack.editor.toolRail.blockInspectorSettings.actions.clear=Hapus Pilihan   	####This string shown on a button for clearing what block is currently selected.{MaxLength=30}
-resourcePack.editor.toolRail.blockInspectorSettings.blockTags=Label Blok   	####This string is a header for a panel that shows the block tags on the currently selected block.{MaxLength=30}
-resourcePack.editor.toolRail.blockInspectorSettings.blockProperties=Properti Blok   	####This string is a header for a panel that shows the block properties on the currently selected block.{MaxLength=30}
-resourcePack.editor.toolRail.blockInspectorSettings.blockProperties.name=Nama Properti   	####Within the block properties pane, this string goes before the property name.{MaxLength=30}
-resourcePack.editor.toolRail.blockInspectorSettings.blockProperties.value=Nilai Properti   	####Within the block properties pane, this string goes before the property value.{MaxLength=30}
-resourcePack.editor.toolRail.blockInspectorTool.title=Pemeriksa Blok   	####This string is what is shown as the name of the block inspector tool.{MaxLength=30}
-resourcePack.editor.toolRail.blockInspectorTool.tooltip=Periksa data blok   	####This string is what is shown when hovering over the block inspector icon.{MaxLength=30}
-resourcePack.editor.toolRail.blockInspectorTool.pane.helpText=Klik kiri pada blok untuk melihat dan mengedit propertinya   	####This string is shown in the block inspector tool pane before the user clicks to describe how to use it.{MaxLength=100}
-resourcePack.editor.blockInspector.toolRail.description=Klik kiri pada blok untuk melihat dan mengedit propertinya   	####This string is shown in the tool tip to explain the function of the Block Inspector tool.{MaxLength=100}
-
-
-resourcePack.editor.blockPalette.addSearchItem=Pakai Blok Temuan	#
-resourcePack.editor.blockPalette.blockPicker=Cari	#
-resourcePack.editor.blockPalette.paletteDropdown.title=Palet	#
-resourcePack.editor.blockPalette.title=Palet Blok	#
-
-
-resourcePack.editor.brushPaint.inputContext.activateBrushPaint=Aktifkan Cat Kuas	#
-resourcePack.editor.brushPaint.inputContext.oneshot=Cat Sekali	#
-resourcePack.editor.brushPaint.inputContext.title=Cat Kuas	#
-resourcePack.editor.brushPaint.title=Cat Kuas	#
-resourcePack.editor.brushPaint.tooltip=Pakai kuas untuk mengecat blok di dunia	#
-
-
-resourcePack.editor.BrushPaintControl.brush.title=Kuas	#
-resourcePack.editor.BrushPaintControl.brushSettings.title=Pengaturan Kuas	#
-resourcePack.editor.BrushPaintControl.shapeSettings.title=Pengaturan Bentuk 	####Represents an expander that has UI controls for brush shape settings.{MaxLength=100}
-resourcePack.editor.BrushPaintControl.fillConstraints.mask.title=Daftar Topeng	#
-resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.disabled.tooltip=Nonaktifkan Filter Blok	#
-resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.disabled=Dinonaktifkan	#
-resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.mask.tooltip=Blok yang cocok dengan daftar akan diabaikan dan tidak akan terpengaruhi	#
-resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.mask=Topeng	#
-resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.replace=Ganti	#
-resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.title=Filter Blok Kuas	#
-resourcePack.editor.BrushPaintControl.fillConstraints.replace.title=Daftar Ganti	#
-resourcePack.editor.BrushPaintControl.fillConstraints.replace.tooltip=Blok yang cocok dengan daftar akan diproses	#
-resourcePack.editor.BrushPaintControl.fillConstraints.title=Batasan Isi	#
-resourcePack.editor.BrushPaintControl.keybinding.maskMask=Mode Topeng - Topeng	#
-resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetBack=Geser Offset ke Belakang	#
-resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetDown=Geser Offset ke Bawah	#
-resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetForward=Geser Offset ke Depan	#
-resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetLeft=Geser Offset ke Kiri	#
-resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetRight=Geser Offset ke Kanan	#
-resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetUp=Geser Offset ke Atas	#
-resourcePack.editor.BrushPaintControl.keybinding.replaceMask=Mode Topeng - Ganti	#
-resourcePack.editor.BrushPaintControl.offset.title=Offset	#
-resourcePack.editor.BrushPaintControl.offset.tooltip=Offset dari posisi kursor	#
-resourcePack.editor.BrushPaintControl.rootPane.title=Pengaturan Kuas	#
-
-
-resourcePack.editor.brushShape.common.settings.axis=Sumbu Ekstrusi	#
-resourcePack.editor.brushShape.common.settings.height=Tinggi	#
-resourcePack.editor.brushShape.common.settings.length=Panjang	#
-resourcePack.editor.brushShape.common.settings.radius=Radius	#
-resourcePack.editor.brushShape.common.settings.uniform=Seragam	#
-resourcePack.editor.brushShape.common.settings.xAxis=Sumbu X	#
-resourcePack.editor.brushShape.common.settings.xAxisNeg=Sumbu -X	#
-resourcePack.editor.brushShape.common.settings.yAxis=Sumbu Y	#
-resourcePack.editor.brushShape.common.settings.yAxisNeg=Sumbu -Y	#
-resourcePack.editor.brushShape.common.settings.zAxis=Sumbu Z	#
-resourcePack.editor.brushShape.common.settings.zAxisNeg=Sumbu -Z	#
-resourcePack.editor.brushShape.cone.name=Kerucut	#
-resourcePack.editor.brushShape.cone.settings.depth=Radius Kedalaman	#
-resourcePack.editor.brushShape.cone.settings.width=Radius Lebar	#
-resourcePack.editor.brushShape.cuboid.name=Kubus	#
-resourcePack.editor.brushShape.cuboid.settings.depth=Dalam	#
-resourcePack.editor.brushShape.cuboid.settings.height=Tinggi	#
-resourcePack.editor.brushShape.cuboid.settings.width=Lebar	#
-resourcePack.editor.brushShape.cylinder.name=Silinder	#
-resourcePack.editor.brushShape.cylinder.settings.depth_radius=Radius Dalam	#
-resourcePack.editor.brushShape.cylinder.settings.width_radius=Radius Lebar	#
-resourcePack.editor.brushShape.ellipsoid.name=Elipsoid	#
-resourcePack.editor.brushShape.ellipsoid.settings.depth_radius=Radius Dalam	#
-resourcePack.editor.brushShape.ellipsoid.settings.height_radius=Radius Tinggi	#
-resourcePack.editor.brushShape.ellipsoid.settings.width_radius=Radius Lebar	#
-resourcePack.editor.brushShape.pyramid.name=Piramida	#
-resourcePack.editor.brushShape.pyramid.settings.depth=Kedalaman	#
-resourcePack.editor.brushShape.pyramid.settings.height=Tinggi	#
-resourcePack.editor.brushShape.pyramid.settings.width=Lebar	#
-resourcePack.editor.brushShape.singleBlock.name=Blok Tunggal	#
-resourcePack.editor.brushShape.star.name=Bintang 	####Represent a star shaped brush.{MaxLength=100}
-resourcePack.editor.brushShape.star.settings.includeVertical=Sertakan Vertikal 	####Represents a toggle button label that removes vertical parts of a star brush if unchecked.{MaxLength=100}
-
-
-resourcePack.editor.client.description=Sumber Daya Klien Editor	#
-resourcePack.editor.client.name=Sumber Daya Editor	#
-
-
-resourcePack.editor.ClipboardPreviewControl.keybinding.moveOriginBack=Gerakkan Asal ke Belakang	#
-resourcePack.editor.ClipboardPreviewControl.keybinding.moveOriginDown=Gerakkan Asal ke Bawah	#
-resourcePack.editor.ClipboardPreviewControl.keybinding.moveOriginForward=Gerakkan Asal ke Depan	#
-resourcePack.editor.ClipboardPreviewControl.keybinding.moveOriginLeft=Gerakkan Asal ke Kiri	#
-resourcePack.editor.ClipboardPreviewControl.keybinding.moveOriginRight=Gerakkan Asal ke Kanan	#
-resourcePack.editor.ClipboardPreviewControl.keybinding.moveOriginUp=Gerakkan Asal ke Atas	#
-resourcePack.editor.ClipboardPreviewControl.keyBinding.nudgeOffsetBack=Geser Offset ke Belakang	#
-resourcePack.editor.ClipboardPreviewControl.keyBinding.nudgeOffsetDown=Geser Offset ke Bawah	#
-resourcePack.editor.ClipboardPreviewControl.keyBinding.nudgeOffsetForward=Geser Offset ke Depan	#
-resourcePack.editor.ClipboardPreviewControl.keyBinding.nudgeOffsetLeft=Geser Offset ke Kiri	#
-resourcePack.editor.ClipboardPreviewControl.keyBinding.nudgeOffsetRight=Geser Offset ke Kanan	#
-resourcePack.editor.ClipboardPreviewControl.keyBinding.nudgeOffsetUp=Geser Offset ke Atas	#
-resourcePack.editor.ClipboardPreviewControl.keybinding.rotateClockWise=Putar Pratinjau Searah Jarum Jam	#
-resourcePack.editor.ClipboardPreviewControl.keybinding.rotateCounterClockWise=Putar Pratinjau Berlawanan Arah Jarum Jam	#
-resourcePack.editor.ClipboardPreviewControl.keybinding.toggleMirrorX=Alihkan Cermin X	#
-resourcePack.editor.ClipboardPreviewControl.keybinding.toggleMirrorZ=Alihkan Cermin Z	#
-resourcePack.editor.ClipboardPreviewControl.mirror.axis.x.tooltip=Mencerminkan item clipboard di sekitar sumbu-X pada titik asal	#
-resourcePack.editor.ClipboardPreviewControl.mirror.axis.x=Cermin (sumbu-X)	#
-resourcePack.editor.ClipboardPreviewControl.mirror.axis.z.tooltip=Mencerminkan item clipboard di sekitar sumbu-Z pada titik asal	#
-resourcePack.editor.ClipboardPreviewControl.mirror.axis.z=Cermin (sumbu-Z)	#
-resourcePack.editor.ClipboardPreviewControl.offset.title=Offset	#
-resourcePack.editor.ClipboardPreviewControl.offset.tooltip=Offset tambahan dari titik penempatan ke item clipboard asal	#
-resourcePack.editor.ClipboardPreviewControl.origin.title=Asal	#
-resourcePack.editor.ClipboardPreviewControl.origin.tooltip=Titik asal di dalam item clipboard. Ini digunakan sebagai jangkar penempatan dan titik tempat clipboard diputar dan dicerminkan	#
-resourcePack.editor.ClipboardPreviewControl.placement.title=Opsi	#
-resourcePack.editor.ClipboardPreviewControl.rootPane.title=Info Clipboard	#
-resourcePack.editor.ClipboardPreviewControl.rotation.180=180°	#
-resourcePack.editor.ClipboardPreviewControl.rotation.270=270°	#
-resourcePack.editor.ClipboardPreviewControl.rotation.90=90°	#
-resourcePack.editor.ClipboardPreviewControl.rotation.none=Tidak Ada	#
-resourcePack.editor.ClipboardPreviewControl.rotation.title=Rotasi	#
-resourcePack.editor.ClipboardPreviewControl.rotation.tooltip=Jumlah rotasi di sekitar sumbu Y pada titik asal	#
-resourcePack.editor.ClipboardPreviewControl.structureSize.title=Ukuran Clipboard	#
-
-
-resourcePack.editor.copypaste.actionbar.copy.title=Salin	#
-resourcePack.editor.copypaste.actionbar.copy.tooltip=Salin Pilihan ke clipboard	#
-resourcePack.editor.copypaste.actionbar.copy.tooltipDescription=Salin konten pilihan saat ini ke clipboard dan biarkan konten pilihan tetap utuh	#
-resourcePack.editor.copypaste.actionbar.cut.title=Potong	#
-resourcePack.editor.copypaste.actionbar.cut.tooltip=Potong/Gerakkan Pilihan ke clipboard	#
-resourcePack.editor.copypaste.actionbar.cut.tooltipDescription=Salin konten pilihan saat ini ke clipboard dan hapus konten pilihan dalam prosesnya	#
-resourcePack.editor.copypaste.keyBinding.copy=Salin Pilihan ke clipboard	#
-resourcePack.editor.copypaste.keyBinding.cut=Potong/Gerakkan Pilihan ke clipboard	#
-resourcePack.editor.copypaste.keyBinding.paste=Tempelkan clipboard ke dunia	#
-resourcePack.editor.copypaste.menu.copy.title=Salin Pilihan	#
-resourcePack.editor.copypaste.menu.cut.title=Potong Pilihan	#
-
-
-resourcePack.editor.core.keyBinding.showGameMenu=Tampilkan Menu Game	#
-resourcePack.editor.core.keyBinding.showLogPanel=Tampilkan Panel Log	#
-
-
-resourcePack.editor.CursorModeControl.cursorTargetMode.block.tooltip=Blok di bawah kursor mouse	#
-resourcePack.editor.CursorModeControl.cursorTargetMode.block=Blok	#
-resourcePack.editor.CursorModeControl.cursorTargetMode.face.tooltip=Blok bersebelahan langsung dengan muka blok di bawah kursor	#
-resourcePack.editor.CursorModeControl.cursorTargetMode.face=Bersebelahan	#
-resourcePack.editor.CursorModeControl.cursorTargetMode.title=Target	#
-resourcePack.editor.CursorModeControl.cursorTargetMode.tooltip=Pilih mode target kursor	#
-resourcePack.editor.CursorModeControl.fixedDistance.slider.title=Jarak Kursor Tetap	#
-resourcePack.editor.CursorModeControl.fixedDistance.slider.tooltip=Sesuaikan jarak tetap dari pemain di tempat kursor blok berada	#
-resourcePack.editor.CursorModeControl.keybinding.moveCursorBack=Pindahkan Kursor ke Belakang	#
-resourcePack.editor.CursorModeControl.keybinding.moveCursorDown=Pindahkan Kursor ke Bawah	#
-resourcePack.editor.CursorModeControl.keybinding.moveCursorForward=Geser ke Depan	#
-resourcePack.editor.CursorModeControl.keybinding.moveCursorLeft=Gerakkan Kursor ke Kiri	#
-resourcePack.editor.CursorModeControl.keybinding.moveCursorRight=Pindahkan Kursor ke Kanan	#
-resourcePack.editor.CursorModeControl.keybinding.moveCursorUp=Pindahkan Kursor ke Atas	#
-resourcePack.editor.CursorModeControl.keybinding.toggleBlockTargetMode=Alihkan Mode Blok/Sebelah	#
-resourcePack.editor.CursorModeControl.keybinding.toggleFixedDistance=Alihkan Mode Jarak Tetap	#
-resourcePack.editor.CursorModeControl.keybinding.toggleMouseTracking=Alihkan Pelacakan Mouse	#
-resourcePack.editor.CursorModeControl.mouseControlMode.fixed=Jarak Tetap	#
-resourcePack.editor.CursorModeControl.mouseControlMode.keyboard=Hanya Keyboard	#
-resourcePack.editor.CursorModeControl.mouseControlMode.keyboardAndMouse=Mouse & Tombol	#
-resourcePack.editor.CursorModeControl.mouseControlMode.title=Metode Input	#
-resourcePack.editor.CursorModeControl.mouseControlMode.tooltip=Pilih metode input untuk kursor blok dunia	#
-resourcePack.editor.CursorModeControl.projectThroughWater.title=Proyeksi Melalui Air	#
-resourcePack.editor.CursorModeControl.projectThroughWater.tooltip=Raycast mouse akan diproyeksikan lewat air sehingga bisa memilih elemen bawah air	#
-resourcePack.editor.CursorModeControl.rootPane.title=Pengaturan Kursor	#
-
-
-resourcePack.editor.datatransferaccessors.atmospheric_scattering=Penyebaran Atmosferik	#
-resourcePack.editor.datatransferaccessors.color_grading=Gradasi Warna	#
-resourcePack.editor.datatransferaccessors.lighting_group=Pencahayaan Global	#
-resourcePack.editor.datatransferaccessors.pbr_fallbacks=Rencana Cadangan PBR	#
-resourcePack.editor.datatransferaccessors.point_lights=Cahaya Titik	#
-resourcePack.editor.datatransferaccessors.water=Air	#
-resourcePack.editor.datatransferaccessors.shadows=Bayangan	#
-
-
-resourcePack.editor.deferredLightingSettings.menu.title=Pengaturan Pencahayaan yang Ditangguhkan	#
-
-
-resourcePack.editor.delete.keyBinding=Hapus Konten Pilihan	#
-
-
-resourcePack.editor.toolRail.entityInspector.pane.title=Pemeriksa Entitas   	####This string is what is shown in the title bar of the Editor pane for modifying entities.{MaxLength=30}
-resourcePack.editor.toolRail.entityInspector.tool.title=Pemeriksa Entitas   	####This string is what is shown at the top of the Editor pane for modifying entities.{MaxLength=30}
-resourcePack.editor.toolRail.entityInspector.tool.tip=Periksa data entitas   	####This string is what is shown on the tool tip of Editor pane for modifying entities (gives context on what the tool does).{MaxLength=100}
-resourcePack.editor.toolRail.entityInspector.pane.helpText=Klik kiri pada entitas untuk melihat dan mengedit propertinya   	####This string is shown in the block inspector tool pane before the user clicks to describe how to use it.{MaxLength=100}
-resourcePack.editor.entityInspector.toolRail.description=Klik kiri pada entitas untuk melihat dan mengedit propertinya   	####This string is shown in the tool tip to explain the function of the Entity Inspector tool.{MaxLength=100}
-
-resourcePack.editor.exportProject.exportType=Ekspor Tipe	#
-resourcePack.editor.exportProject.exportType.playableWorld=Dunia yang Bisa Dimainkan	#
-resourcePack.editor.exportProject.exportNotes=Ekspor Catatan	#
-resourcePack.editor.exportProject.exportNotes.export=Kemajuan Ekspor   	####This string is intended to express that the title of export progress modal.{MaxLength=100}
-resourcePack.editor.exportProject.exportNotes.warning=Kamu mengekspor dunia v%1. Dunia yang Bisa Dimainkan dan sudah diekspor tidak bisa dipakai di Minecraft dengan nomor versi sebelum v%1. Untuk mengonversi ke nomor versi sebelumnya, pakai https://chunker.app/ (beberapa fungsi mungkin tidak bisa dijalankan kalau tidak didukung di versi sebelumnya)	#
-resourcePack.editor.exportProject.exportNotes.progress=Sedang mengekspor dunia ....    	####This string is intended to express that the progress message of exporting.{MaxLength=100}
-resourcePack.editor.exportProject.exportNotes.exportSuccess=Dunia berhasil diekspor    	####This string is intended to express that export the world succeeded.{MaxLength=100}
-resourcePack.editor.exportProject.exportNotes.exportFailed=Dunia tidak berhasil diekspor    	####This string is intended to express that export the world failed.{MaxLength=100}
-resourcePack.editor.exportProject.generalSettings=Pengaturan Umum	#
-resourcePack.editor.exportProject.generalSettings.worldName=Nama Dunia	#
-resourcePack.editor.exportProject.generalSettings.gameMode=Mode Permainan	#
-resourcePack.editor.exportProject.generalSettings.difficulty=Tingkat Kesulitan	#
-resourcePack.editor.exportProject.generalSettings.hardcore=Sulit	#
-resourcePack.editor.exportProject.initialPlaySettings=Pengaturan Permainan Awal   	####This string is intended to express that the export category for inital play settings.{MaxLength=100}
-resourcePack.editor.exportProject.initialPlaySettings.spawnPosition=Titik Kemunculan Dunia   	####This string is intended to express that player inistal spawn position.{MaxLength=100}
-resourcePack.editor.exportProject.initialPlaySettings.startTime=Waktu Mulai   	####This string is intended to express that world start time.{MaxLength=100}
-resourcePack.editor.exportProject.initialPlaySettings.clockType=Jenis Jam   	####This string is intended to express that start time with different clock type.{MaxLength=100}
-resourcePack.editor.exportProject.initialPlaySettings.customStartTime=Modifikasi Waktu Mulai   	####This string is intended to express that custom start time with Minecraft Cloke value.{MaxLength=100}
-resourcePack.editor.exportProject.initialPlaySettings.weather=Mulai Cuaca   	####This string is intended to express that the custom start weather.{MaxLength=100}
-resourcePack.editor.exportProject.advancedSettings=Pengaturan Lanjutan	#
-resourcePack.editor.exportProject.advancedSettings.startingMap=Peta Awal	#
-resourcePack.editor.exportProject.advancedSettings.bonusChest=Peti Bonus	#
-resourcePack.editor.exportProject.advancedSettings.showCoordinates=Tampilkan Koordinat	#
-resourcePack.editor.exportProject.advancedSettings.showDaysPlayed=Tampilkan Jumlah Hari Bermain	#
-resourcePack.editor.exportProject.advancedSettings.recipeUnlocking=Membuka Resep	#
-resourcePack.editor.exportProject.advancedSettings.limitedCrafting=Pembuatan Terbatas   	####Export pane checkbox label that enable to set crafting limit.{MaxLength=100}
-resourcePack.editor.exportProject.advancedSettings.fireSpreads=Api Menjalar	#
-resourcePack.editor.exportProject.advancedSettings.tntExplodes=Dinamit Meledak	#
-resourcePack.editor.exportProject.advancedSettings.resawnBlocksExplode=Blok Muncul-Kembali Meledak	#
-resourcePack.editor.exportProject.advancedSettings.mobLoot=Rampasan Mob	#
-resourcePack.editor.exportProject.advancedSettings.naturalRegeneration=Regenerasi Alamiah	#
-resourcePack.editor.exportProject.advancedSettings.tileDrops=Jatuhan Ubin	#
-resourcePack.editor.exportProject.advancedSettings.immediateRespawn=Muncul Kembali Seketika	#
-resourcePack.editor.exportProject.advancedSettings.showDeathMessage=Tampilkan Pesan Kematian   	####Export pane checkbox label that show the death message when player die.{MaxLength=100}
-resourcePack.editor.exportProject.advancedSettings.respawnRadius=Radius Muncul Kembali	#
-resourcePack.editor.exportProject.advancedSettings.simulationDistance=Jarak Simulasi	#
-resourcePack.editor.exportProject.advancedSettings.bedsWork=Tempat Tidur Berfungsi	#
-resourcePack.editor.exportProject.advancedSettings.requiredSleepingPlayers=Pemain Tidur yang Diperlukan (%1$s)	#
-resourcePack.editor.exportProject.advancedSettings.requiredSleepingPlayers.onePlayerMessage=Hanya 1 pemain	#
-resourcePack.editor.exportProject.advancedSettings.showItemTags=Tampilkan Tag Item   	####Export pane checkbox label that show item tags.{MaxLength=100}
-resourcePack.editor.exportProject.multiplayerSettings=Pengaturan Multipemain	#
-resourcePack.editor.exportProject.multiplayerSettings.multiplayerGame=Game Multipemain	#
-resourcePack.editor.exportProject.multiplayerSettings.playerAccess=Akses Pemain	#
-resourcePack.editor.exportProject.multiplayerSettings.playerPermissions=Izin Pemain	#
-resourcePack.editor.exportProject.multiplayerSettings.visibleToLAN=Terlihat oleh Pemain LAN	#
-resourcePack.editor.exportProject.multiplayerSettings.friendlyFire=Tembakan Teman	#
-resourcePack.editor.exportProject.cheatsSettings=Pengaturan Cheat	#
-resourcePack.editor.exportProject.cheatsSettings.cheats=Cheat	#
-resourcePack.editor.exportProject.cheatsSettings.daylightCycle=Siklus Siang	#
-resourcePack.editor.exportProject.cheatsSettings.keepInventory=Simpan Persediaan	#
-resourcePack.editor.exportProject.cheatsSettings.mobSpawning=Mob Muncul	#
-resourcePack.editor.exportProject.cheatsSettings.mobGriefing=Mob Sedih	#
-resourcePack.editor.exportProject.cheatsSettings.entitiesDropLoot=Rampasan Drop Entitas	#
-resourcePack.editor.exportProject.cheatsSettings.weatherCycle=Siklus Cuaca	#
-resourcePack.editor.exportProject.cheatsSettings.commandBlocks=Blok Perintah	#
-resourcePack.editor.exportProject.cheatsSettings.commandBlockOutput=Output Blok Perintah   	####Export pane checkbox label that enable to display the command output.{MaxLength=100}
-resourcePack.editor.exportProject.cheatsSettings.sendCommandFeedback=Kirim Umpan Balik Perintah   	####This string is the heading for the 'send command feedback' setting when exporting a world.{MaxLength=100}
-resourcePack.editor.exportProject.cheatsSettings.maxCommandChainLength=Panjang Rantai Perintah Maksimum   	####Export pane number that indicate the max length of the command, it defaults to 65536. It has a minimum of 0 and a max of 2147483647.{MaxLength=100}
-resourcePack.editor.exportProject.cheatsSettings.fireDamage=Kerusakan Akibat Api  	####Export pane checkbox label that enable damage when the player on fire.{MaxLength=100}
-resourcePack.editor.exportProject.cheatsSettings.freezeDamage=Kerusakan Saat Dibekukan  	####Export pane checkbox label that enable damage when the player freezes.{MaxLength=100}
-resourcePack.editor.exportProject.cheatsSettings.fallDamage=Kerusakan Akibat Jatuh  	####Export pane checkbox label that enable damage when the player falls.{MaxLength=100}
-resourcePack.editor.exportProject.cheatsSettings.drowningDamage=Kerusakan Akibat Tenggelam  	####Export pane checkbox label that enable damage when the player is drowning.{MaxLength=100}
-resourcePack.editor.exportProject.cheatsSettings.insomnia=Insomnia  	####Export pane checkbox label that enable player insomnia status.{MaxLength=100}
-resourcePack.editor.exportProject.cheatsSettings.showBorderEffect=Tampilkan Efek Batas  	####Export pane checkbox label that show border effect.{MaxLength=100}
-resourcePack.editor.exportProject.cheatsSettings.functionCommandLimit=Batas Perintah Fungsi  	####Export pane checkbox label that the number of limition for the function command.{MaxLength=100}
-resourcePack.editor.exportProject.cheatsSettings.educationFeatures=Fitur Edukasi	#
-resourcePack.editor.exportProject.cheatsSettings.randomTickSpeed=Kecepatan Tick Acak	#
-resourcePack.editor.exportProject.export=Ekspor	#
-resourcePack.editor.exportProject.resetToDefault=Atur Ulang ke Default	#
-resourcePack.editor.exportProject.gameMode.survival=Bertahan Hidup	#
-resourcePack.editor.exportProject.gameMode.creative=Kreatif	#
-resourcePack.editor.exportProject.gameMode.adventure=Petualangan	#
-resourcePack.editor.exportProject.difficulty.peaceful=Tenang	#
-resourcePack.editor.exportProject.difficulty.easy=Mudah	#
-resourcePack.editor.exportProject.difficulty.normal=Normal	#
-resourcePack.editor.exportProject.difficulty.hard=Sulit	#
-resourcePack.editor.exportProject.weather.default=Default   	####This string is intended to express that the default weather .{MaxLength=100}
-resourcePack.editor.exportProject.weather.clear=Hapus   	####This string is intended to express that the weather of Clear.{MaxLength=100}
-resourcePack.editor.exportProject.weather.rain=Hujan   	####This string is intended to express that the weather of Rain.{MaxLength=100}
-resourcePack.editor.exportProject.weather.thunder=Guntur   	####This string is intended to express that the weather of Thunder.{MaxLength=100}
-
-
-
-resourcePack.editor.toolRail.ExtrudeTool.title=Alat Ekstrusi	#
-resourcePack.editor.toolRail.ExtrudeTool.tooltip=Alat ekstrusi untuk memperluas dan mengurangi blok	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.ContiguousSelectionBlockListSubPane.title=Daftar Blok Pilihan Bersebelahan	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.TrailingBlocksSettingsSubPane.title=Pengaturan Blok Jejak	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.SampleLayerCount.title=Jumlah Lapisan Sampel	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.ContiguousSelectionSettings.title=Pengaturan Pilihan Bersebelahan	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.ContiguousSelectionType.title=Tipe Seleksi Bersebelahan	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.ContiguousSelectionType.SameBlocks=Blok yang Sama	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.ContiguousSelectionType.SameBlocksAndStates=Blok dan Keadaan yang Sama	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.ContiguousSelectionType.SolidBlocks=Blok Pejal	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.ContiguousSelectionType.AllBlocks=Semua Blok	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.ContiguousSelectionType.CustomBlockList=Daftar Blok Modifikasi	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.ToleranceLevel.title=Tingkat Toleransi	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.HasAdjacentBlocks.title=Memiliki Blok Berdekatan	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.ExtruderSettings.title=Pengaturan Ekstrusi	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.Radius.title=Radius	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.title=Mode Pilihan	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.ContiguousSelection=Pilihan Bersebelahan	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.MarqueeSelection=Pilihan Lingkup	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.ContiguousSettings.title=Pengaturan Pilihan Bersebelahan	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.TrailingBlocks.title=Blok Jejak	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.TrailingBlocksSettings.title=Pengaturan Blok Jejak	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.QuickExtrudeSettings.title=Pengaturan Ekstrusi Cepat	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.QuickExtrudeMode.title=Mode Ekstrusi Cepat	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.QuickExtrudeMode.decrease.title=Kurangi	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.QuickExtrudeMode.decrease.tooltip=Kurangi Ekstrusi	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.QuickExtrudeMode.expand.title=Perluas	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.QuickExtrudeMode.expand.tooltip=Perluas Ekstrusi	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.LayerCount.title=Jumlah Lapisan	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.preview_warning=Catatan: Visualisasi pratinjau hanya menampilkan lapisan pertama 	#### {MaxLength="500"}, used to inform the user that the preview visualization for this tool is limited to a single layer.  This string is on screen whenever this tool is active
-resourcePack.editor.toolRail.ExtrudeTool.pane.ExtrusionType.title=Tipe Ekstrusi	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.ExtrusionType.Extrude=Ekstrusi	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.ExtrusionType.QuickExtrude=Ekstrusi Cepat	#
-resourcePack.editor.toolRail.ExtrudeTool.keyBinding.deselect=Batalkan Pilihan	#
-resourcePack.editor.toolRail.ExtrudeTool.keyBinding.toggleTool=Alihkan Alat Ekstrusi	#
-
-
-resourcePack.editor.toolRail.FarmGenerator.tool.title=Generator Pertanian	#
-resourcePack.editor.toolRail.FarmGenerator.tool.tooltip=Buat pertanian modifikasi dengan cepat	#
-resourcePack.editor.toolRail.FarmGenerator.pane.title=Generator Pertanian	#
-resourcePack.editor.toolRail.FarmGenerator.pane.length=Panjang	#
-resourcePack.editor.toolRail.FarmGenerator.pane.width=Lebar	#
-resourcePack.editor.toolRail.FarmGenerator.pane.fence=Pagar	#
-resourcePack.editor.toolRail.FarmGenerator.pane.irrigation=Tambah Irigasi	#
-resourcePack.editor.toolRail.FarmGenerator.pane.irrigation.tooltip=Menambahkan blok air di peternakan untuk irigasi tanaman panen.	#
-resourcePack.editor.toolRail.FarmGenerator.pane.crops.title=Tanaman Panen	#
-resourcePack.editor.toolRail.FarmGenerator.pane.crops.wheat=Gandum	#
-resourcePack.editor.toolRail.FarmGenerator.pane.crops.potato=Kentang	#
-resourcePack.editor.toolRail.FarmGenerator.pane.crops.beets=Ubi Bit Merah	#
-resourcePack.editor.toolRail.FarmGenerator.pane.crops.pumpkin=Labu	#
-resourcePack.editor.toolRail.FarmGenerator.pane.crops.carrot=Wortel	#
-resourcePack.editor.toolRail.FarmGenerator.pane.animals.title=Hewan	#
-resourcePack.editor.toolRail.FarmGenerator.pane.animals.cow=Sapi	#
-resourcePack.editor.toolRail.FarmGenerator.pane.animals.sheep=Domba	#
-resourcePack.editor.toolRail.FarmGenerator.pane.animals.pig=Babi	#
-resourcePack.editor.toolRail.FarmGenerator.keyBinding.toggleTool=Alihkan Alat Generator Pertanian	#
-resourcePack.editor.toolRail.FarmGenerator.keyBinding.place=Tempatkan Pertanian di Kursor	#
-
-
-resourcePack.editor.global.keyBinding.toggleMode=Alihkan Mode	#
-
-
-resourcePack.editor.goToMark.actionBar.tooltip.description=Panel utilitas untuk navigasi pemain	#
-resourcePack.editor.goToMark.actionBar.tooltip.title=Panel Navigasi	#
-resourcePack.editor.goToMark.pane.goToSpawn=Titik Kemunculan Kunjungi	#
-resourcePack.editor.goToMark.pane.location=Lokasi Pemain	#
-resourcePack.editor.goToMark.pane.locationPane.delete=Hapus Lokasi Tersimpan	#
-resourcePack.editor.goToMark.pane.locationPane.dropdownLabel=Lokasi Tersimpan	#
-resourcePack.editor.goToMark.pane.locationPane.inputName=Nama Baru	#
-resourcePack.editor.goToMark.pane.locationPane.markColor=Warna Tanda Lokasi	#
-resourcePack.editor.goToMark.pane.locationPane.store=Simpan Lokasi Saat Ini sebagai ...	#
-resourcePack.editor.goToMark.pane.locationPane.teleport=Berteleportasi ke Lokasi Tersimpan %1$s	#
-resourcePack.editor.goToMark.pane.locationPane.title=Lokasi Tersimpan	#
-resourcePack.editor.goToMark.pane.mapSize=Ukuran Peta	#
-resourcePack.editor.goToMark.pane.refreshMap=Segarkan Peta	#
-resourcePack.editor.goToMark.pane.setSpawn=Atur Titik Kemunculan ke saat ini	#
-resourcePack.editor.goToMark.pane.showMap=Tampilkan Peta	#
-resourcePack.editor.goToMark.pane.teleport=Teleportasi ke lokasi	#
-resourcePack.editor.goToMark.title=Panel Navigasi	#
-
-
-resourcePack.editor.grapple.keyBinding.flyToCursor=Terbang ke Kursor	#
-resourcePack.editor.grapple.keyBinding.flyToSelection=Terbang ke Pilihan	#
-
-
-resourcePack.editor.locate.biome.find=Cari Bioma	#
-resourcePack.editor.locate.biome.title=Bioma	#
-resourcePack.editor.locate.keyBinding.toggleTool=Alihkan Alat Pencari Bioma	#
-resourcePack.editor.locate.locatetype.biome=Bioma	#
-resourcePack.editor.locate.locatetype.structure=Bangunan	#
-resourcePack.editor.locate.locatetype.title=Cari Tipe	#
-resourcePack.editor.locate.results.foundat.title=Ditemukan di	#
-resourcePack.editor.locate.results.foundat=Ditemukan di	#
-resourcePack.editor.locate.results.goto=Pergi ke	#
-resourcePack.editor.locate.results.notfound.title=Tidak ada hasil	#
-resourcePack.editor.locate.results.notfound=Hasil tidak ditemukan	#
-resourcePack.editor.locate.results.title=Hasil	#
-resourcePack.editor.locate.structure.message=Pencarian bangunan saat ini tidak didukung	#
-resourcePack.editor.locate.structure.title=Bangunan	#
-resourcePack.editor.locate.title=Temukan	#
-
-
-resourcePack.editor.menuBar.edit.copy=Salin	#
-resourcePack.editor.menuBar.edit.cut=Potong	#
-resourcePack.editor.menuBar.edit.delete=Hapus	#
-resourcePack.editor.menuBar.edit.deselect=Batalkan Pilihan	#
-resourcePack.editor.menuBar.edit.quickFill=Isian Cepat	#
-resourcePack.editor.menuBar.edit.quickPaste=Tempel Cepat	#
-resourcePack.editor.menuBar.edit.redo=Ulangi	#
-resourcePack.editor.menuBar.edit.undo=Batalkan	#
-resourcePack.editor.menuBar.edit=Edit	#
-resourcePack.editor.menuBar.experimental=Eksperimental	#
-resourcePack.editor.menuBar.extensions=Ekstensi	#
-resourcePack.editor.menuBar.file.cursor.projectThroughLiquid=Proyeksi lewat cairan	#
-resourcePack.editor.menuBar.file.cursor=Pengaturan kursor	#
-resourcePack.editor.menuBar.file.export.project=Proyek Editor	#
-resourcePack.editor.menuBar.file.export.world=Dunia yang Dapat Dimainkan	#
-resourcePack.editor.menuBar.file.export=Ekspor	#
-resourcePack.editor.menuBar.file.pauseScreen=Menu permainan	#
-resourcePack.editor.menuBar.file.settings=Pengaturan UI	#
-resourcePack.editor.menuBar.file=File	#
-resourcePack.editor.menuBar.help.tutorial=Panduan 	#### {MaxLength="500"} Represent menu bar item in help menu that activates editor tutorial when pressed
-resourcePack.editor.menuBar.help.documentation=Dokumentasi	#
-resourcePack.editor.menuBar.help.feedback=Umpan Balik	#
-resourcePack.editor.menuBar.help.quickStart=Mulai Cepat	#
-resourcePack.editor.menuBar.help=Bantuan	#
-resourcePack.editor.menuBar.locate=Temukan	#
-resourcePack.editor.menuBar.parentMenu.weather.clear=Kosongkan	#
-resourcePack.editor.menuBar.parentMenu.weather.rain=Hujan	#
-resourcePack.editor.menuBar.parentMenu.weather.thunder=Guntur	#
-resourcePack.editor.menuBar.parentMenu.weather=Cuaca	#
-resourcePack.editor.menuBar.view.blockPalette=Palet Blok	#
-resourcePack.editor.menuBar.view.logging=Panel Log	#
-resourcePack.editor.menuBar.view.navigationLogging=Pencatatan navigasi	#
-resourcePack.editor.menuBar.view=Lihat	#
-resourcePack.editor.menuBar.worldOptions.changeDimension.end=Akhir	#
-resourcePack.editor.menuBar.worldOptions.changeDimension.nether=Nether	#
-resourcePack.editor.menuBar.worldOptions.changeDimension.overworld=Overworld	#
-resourcePack.editor.menuBar.worldOptions.changeDimension=Ubah dimensi	#
-resourcePack.editor.menuBar.worldOptions.pause.entities=Entitas	#
-resourcePack.editor.menuBar.worldOptions.pause=Jeda	#
-resourcePack.editor.menuBar.worldOptions=Opsi Dunia	#
-
-
-resourcePack.editor.navigation.keyBinding.add=Tambahkan Posisi Navigasi	#
-resourcePack.editor.navigation.keyBinding.next=Ke Posisi Navigasi Berikutnya	#
-resourcePack.editor.navigation.keyBinding.previous=Ke Posisi Navigasi Sebelumnya	#
-
-
-resourcePack.editor.paste.pane.submitButton=Konfirmasi Tempel	#
-resourcePack.editor.paste.pane.title=Tempelkan	#
-resourcePack.editor.paste.pane.transform.mirrorX=Cerminkan X	#
-resourcePack.editor.paste.pane.transform.mirrorZ=Cerminkan Z	#
-resourcePack.editor.paste.pane.transform.origin.title=Offset:	#
-resourcePack.editor.paste.pane.transform.rotation.180=180	#
-resourcePack.editor.paste.pane.transform.rotation.270=270	#
-resourcePack.editor.paste.pane.transform.rotation.90=90	#
-resourcePack.editor.paste.pane.transform.rotation.none=0°	#
-resourcePack.editor.paste.pane.transform.rotation.title=Putar	#
-resourcePack.editor.paste.pane.transform.title=Ubah	#
-resourcePack.editor.paste.toolRail.description=Klik kiri mouse untuk memilih blok dan kemudian dengan tepat menempelkan item clipboard	#
-resourcePack.editor.paste.toolRail.title=Tempel Pratinjau	#
-
-
-resourcePack.editor.pastepreview.inputContext.title=Tempel Pratinjau	#
-resourcePack.editor.pastepreview.keyBinding.clearPreview=Hapus Pratinjau	#
-resourcePack.editor.pastepreview.keyBinding.copy=Salin Pilihan	#
-resourcePack.editor.pastepreview.keyBinding.cut=Potong Pilihan	#
-resourcePack.editor.pastepreview.keyBinding.moveBack=Gerakkan Pratinjau ke Belakang	#
-resourcePack.editor.pastepreview.keyBinding.moveDown=Gerakkan Pratinjau ke Bawah	#
-resourcePack.editor.pastepreview.keyBinding.moveForward=Gerakkan Pratinjau ke Depan	#
-resourcePack.editor.pastepreview.keyBinding.moveLeft=Gerakkan Pratinjau ke Kiri	#
-resourcePack.editor.pastepreview.keyBinding.moveOffsetBack=Gerakkan Offset ke Belakang	#
-resourcePack.editor.pastepreview.keyBinding.moveOffsetDown=Gerakkan Offset ke Bawah	#
-resourcePack.editor.pastepreview.keyBinding.moveOffsetForward=Gerakkan Offset ke Depan	#
-resourcePack.editor.pastepreview.keyBinding.moveOffsetLeft=Gerakkan Offset ke Kiri	#
-resourcePack.editor.pastepreview.keyBinding.moveOffsetRight=Gerakkan Offset ke Kanan	#
-resourcePack.editor.pastepreview.keyBinding.moveOffsetUp=Gerakkan Offset ke Atas	#
-resourcePack.editor.pastepreview.keyBinding.moveOriginBack=Gerakkan Asal ke Belakang	#
-resourcePack.editor.pastepreview.keyBinding.moveOriginDown=Gerakkan Asal ke Bawah	#
-resourcePack.editor.pastepreview.keyBinding.moveOriginForward=Gerakkan Asal ke Depan	#
-resourcePack.editor.pastepreview.keyBinding.moveOriginLeft=Gerakkan Asal ke Kiri	#
-resourcePack.editor.pastepreview.keyBinding.moveOriginRight=Gerakkan Asal ke Kanan	#
-resourcePack.editor.pastepreview.keyBinding.moveOriginUp=Gerakkan Asal ke Atas	#
-resourcePack.editor.pastepreview.keyBinding.moveRight=Gerakkan Pratinjau ke Kanan	#
-resourcePack.editor.pastepreview.keyBinding.moveUp=Gerakkan Pratinjau ke Atas	#
-resourcePack.editor.pastepreview.keyBinding.paste=Tempelkan	#
-resourcePack.editor.pastepreview.keyBinding.pasteAtCursor=Salin Di Kursor	#
-resourcePack.editor.pastepreview.keyBinding.pastepreview=Tempel Pratinjau	#
-resourcePack.editor.pastepreview.keyBinding.quickPaste=Tempel Cepat	#
-resourcePack.editor.pastepreview.keyBinding.rotateClockWise=Putar Pratinjau Searah Jarum Jam	#
-resourcePack.editor.pastepreview.keyBinding.rotateCounterClockWise=Putar Pratinjau Berlawanan Jarum Jam	#
-resourcePack.editor.pastepreview.keyBinding.toggleAdjacentTarget=Alihkan Mode Target Berdekatan	#
-resourcePack.editor.pastepreview.keyBinding.toggleBlockTarget=Alihkan Mode Target Blok	#
-resourcePack.editor.pastepreview.keyBinding.toggleFixedDistance=Aktifkan Jarak Tetap	#
-resourcePack.editor.pastepreview.keyBinding.toggleMirrorX=Alihkan Cermin X	#
-resourcePack.editor.pastepreview.keyBinding.toggleMirrorZ=Alihkan Cermin Z	#
-resourcePack.editor.pastepreview.keyBinding.toggleMouseTracking=Aktifkan Pelacakan Mouse	#
-resourcePack.editor.pastepreview.pane.controls.cursor.fixed=Jarak Tetap	#
-resourcePack.editor.pastepreview.pane.controls.cursor.keyboard=Hanya tombol	#
-resourcePack.editor.pastepreview.pane.controls.cursor.mouseandkeys=Mouse & Tombol	#
-resourcePack.editor.pastepreview.pane.controls.cursor.target.block=Blokir	#
-resourcePack.editor.pastepreview.pane.controls.cursor.target.face=Bersebelahan	#
-resourcePack.editor.pastepreview.pane.controls.cursor.target.title=Target	#
-resourcePack.editor.pastepreview.pane.controls.cursor=Kontrol	#
-resourcePack.editor.pastepreview.pane.controls.title=Kontrol Kursor	#
-resourcePack.editor.pastepreview.pane.placement.mirrorX=Cerminkan X	#
-resourcePack.editor.pastepreview.pane.placement.mirrorZ=Cerminkan Z	#
-resourcePack.editor.pastepreview.pane.placement.offset=Offset	#
-resourcePack.editor.pastepreview.pane.placement.origin=Asal	#
-resourcePack.editor.pastepreview.pane.placement.pastebutton=Tempelkan	#
-resourcePack.editor.pastepreview.pane.placement.rotation=Rotasi (di sekitar Y)	#
-resourcePack.editor.pastepreview.pane.placement.title=Pengaturan Penempatan	#
-resourcePack.editor.pastepreview.pane.root.size=Ukuran	#
-resourcePack.editor.pastepreview.pane.root.title=Tempel Pratinjau	#
-resourcePack.editor.pastepreview.tool.tip=Gunakan mouse untuk menyesuaikan posisi pratinjau clipboard, lalu klik untuk menempelkan ke dunia	#
-resourcePack.editor.pastepreview.tool.title=Tempel Pratinjau	#
-
-
-resourcePack.editor.playerPositionExtension.dimension=Dimensi	#
-resourcePack.editor.playerPositionExtension.menu.player=Pemain	#
-resourcePack.editor.playerPositionExtension.menu.showPlayerSettings=Tampilkan Pengaturan Pemain	#
-resourcePack.editor.playerPositionExtension.nether=Nether	#
-resourcePack.editor.playerPositionExtension.overworld=Overworld	#
-resourcePack.editor.playerPositionExtension.pane=Pengaturan Pemain	#
-resourcePack.editor.playerPositionExtension.theEnd=Akhir	#
-resourcePack.editor.playerPositionExtension.worldSettings=Pengaturan Dunia	#
-
-
-resourcePack.editor.playtest.AdvancedSettings.title=Pengaturan Lanjutan	#
-resourcePack.editor.playtest.Dialog.DaylightCycle=Siklus Siang Hari	#
-resourcePack.editor.playtest.Dialog.Difficulty=Kesulitan	#
-resourcePack.editor.playtest.Dialog.GameMode=Mode Permainan	#
-resourcePack.editor.playtest.Dialog.OverrideSpawn=Munculkan di Lokasi Saat Ini	#
-resourcePack.editor.playtest.Dialog.ShowCoordinates=Tampilkan Koordinat	#
-resourcePack.editor.playtest.Dialog.TestButton=Uji Dunia	#
-resourcePack.editor.playtest.Dialog.TimeOfDay=Waktu	#
-resourcePack.editor.playtest.Dialog.Title=Pengaturan Pengujian	#
-resourcePack.editor.playtest.Dialog.Weather=Cuaca	#
-resourcePack.editor.playtest.Dialog.WeatherCycle=Siklus Cuaca	#
-resourcePack.editor.playtest.Menu.Title=Dunia Pengujian	#
-resourcePack.editor.playtest.Title.Tooltip=Uji proyek Editor sebagai dunia Minecraft yang bisa dimainkan. Tidak ada perubahan yang akan disimpan pada proyekmu. Hanya tersedia saat menjadi host proyek pemain tunggal.	#
-
-
-resourcePack.editor.playtestResult.EditorSystemFailure=Kegagalan Sistem Editor	#
-resourcePack.editor.playtestResult.InvalidLevelId=ID Level Tidak Valid	#
-resourcePack.editor.playtestResult.InvalidSessionHandle=Pengaturan Sesi Tidak Valid	#
-resourcePack.editor.playtestResult.OK=Berhasil	#
-resourcePack.editor.playtestResult.PlayerNotFound=Pemain Tidak Ditemukan	#
-resourcePack.editor.playtestResult.ResponseTimeout=Waktu Respons Habis	#
-resourcePack.editor.playtestResult.SessionInfoNotFound=Info Sesi Tidak Ditemukan	#
-resourcePack.editor.playtestResult.TooManyPlayers=Kamu tidak bisa menguji dunia saat kamu menjadi host pemain lain	#
-resourcePack.editor.playtestResult.UnspecifiedError=Kesalahan Tidak Spesifik	#
-resourcePack.editor.playtestResult.UnsupportedScenario=Kamu harus menjadi host proyek editor untuk menguji dunia	#
-resourcePack.editor.playtestResult.WorldExportBusy=Ekspor Dunia Sibuk	#
-resourcePack.editor.playtestResult.WorldExportFailed=Ekspor Dunia Gagal	#
-
-
-resourcePack.editor.menuBar.file.realmsPublish=Publikasi ke Realms   	####This string is intended to express that the option is for opening the pane to publish your editor world to Realms.{MaxLength=100}
-resourcePack.editor.realmsPublish.noActiveRealmsSubscription=Langganan Realms aktif diperlukan untuk Publikasi ke Realms. Kamu bisa berlangganan Realms atau memperbarui langganan kedaluwarsa dari klien Minecraft standar atau di situs web minecraft.net (setelah masuk ke akunmu).    	####This string is intended to express that the user doesn't have a active Realms subscription and the process they need to follow in order to be able to upload their editor world to their Realms subscription.{MaxLength=350}
-resourcePack.editor.realmsPublish.userNotLoggedIn=Langganan Realms aktif diperlukan untuk Publikasikan ke Realms. Untuk mengakses langganan Realms yang tersedia, kamu harus masuk ke Akun Microsoft.		####This string is intended to express that the user is not logged in currently and that they must be logged into their Microsoft account in order to proceed.{MaxLength=350}
-resourcePack.editor.realmsPublish.dedicatedServerWarning=Publikasi ke Realms tidak tersedia saat menggunakan Server Khusus.		####This string is intended to express that the user is unable to use the Publish to Realms feature on a dedicated server.{MaxLength=350}
-resourcePack.editor.realmsPublish.notSessionHostWarning=Hanya host sesi Editor yang bisa melakukan Publikasi ke Realms.		####This string is intended to express that the user is unable to use the Publish to Realms when they are not the session host.{MaxLength=350}
-resourcePack.editor.realmsPublish.genericRealmsIssue=Ada masalah dengan layanan Realms, coba lagi nanti.		####This string is intended to express that there is an issue with the realms service and to please try again later.{MaxLength=350}
-resourcePack.editor.realmsPublish.goToMinecraftWebsite=Pergi ke Minecraft.net  	####This string is intended to express that the link will take the user to Minecraft.net.{MaxLength=100}
-resourcePack.editor.realmsPublish.Refresh=Refresh  	####This string is intended to express that the button will refresh the pane to see if the user in now logged in.{MaxLength=100}
-resourcePack.editor.realmsPublish.Realm=Realm  	####This string is intended to express that the below dropdown contains all of the users Realms subscriptions.{MaxLength=100}
-resourcePack.editor.realmsPublish.RealmSlot=Slot Realm 	####This string is intended to express that the dropdown contains all of the world slots in for the users selected realms subscription.{MaxLength=100}
-resourcePack.editor.realmsPublish.EmptySlot=Slot Kosong		####This string is intended to express that the Realm slot is empty.{MaxLength=100}
-resourcePack.editor.realmsPublish.PublishNotesTitle=Publikasi ke Catatan Realms   	####This string is intended to express that the below field will contain additional information for the user about the publish to realms feature, including any warnings or issues.{MaxLength=150}
-resourcePack.editor.realmsPublish.DownloadRealm=Unduh    	####This string is intended to express that the button will download the currently selected World from the realm slot.{MaxLength=100}
-resourcePack.editor.realmsPublish.PublishRealm=Publikasikan  	####This string is intended to express that the button will publish the current world to the currently selected realm slot.{MaxLength=100}
-resourcePack.editor.realmsPublish.Confirm=Konfirmasi   	####This string is intended to express that the button will confirm  the request to publish the world to realms.{MaxLength=100}
-resourcePack.editor.realmsPublish.Cancel=Batal 	####This string is intended to express that the button will cancel the request to publish the world to realms.{MaxLength=100}
-resourcePack.editor.realmsPublish.Back=Kembali 	####This string is intended to express that the button will take the user back to the previous pane.{MaxLength=100}
-resourcePack.editor.realmsPublish.PublishFailedNonCompliantWorldName=Publikasi ke Realms gagal karena nama dunia yang tidak valid. Perbarui nama dunia dan coba lagi.		####This string is intended to express that publishing the world to Realms failed due to an invalid world name that was entered by the player .{MaxLength=200}
-resourcePack.editor.realmsPublish.PublishFailed=Publikasi ke Realms gagal. Coba lagi nanti.   	####This string is intended to express that publishing the world to Realms failed and to please try again later.{MaxLength=200}
-resourcePack.editor.realmsPublish.PublishSuccess=Publikasi ke Realms berhasil    	####This string is intended to express that publishing the world to Realms succeeded.{MaxLength=200}
-resourcePack.editor.realmsPublish.PublishConfirmationOptOut=Jangan tanya lagi untuk Realm dan sesi ini  	####This string is intended to express that the checkbox will opt the user out of confirming their publish to realms decisions.{MaxLength=100}
-resourcePack.editor.realmsPublish.PublishingToRealms=Memublikasikan dunia ke Realms ...  	####This string is intended to express that the world is currently in the process of being published to Realms.{MaxLength=100}
-resourcePack.editor.realmsPublish.UnableToPublishMissingRealm=Tidak bisa memublikasikan ke Realms. Realm belum dipilih    	####This string is intended to express that the user is unable to publish their world because a realm to upload to has not been selected.{MaxLength=250}
-resourcePack.editor.realmsPublish.UnableToPublishMissingRealmSlot=Tidak bisa memublikasikan ke Realms. Slot Realm belum dipilih   	####This string is intended to express that the user is unable to publish their world because a realm slot to upload to has not been selected.{MaxLength=250}
-resourcePack.editor.realmsPublish.PublishConfirmationWarning=Tindakan ini akan menghapus duniamu saat ini dari slot yang dipilih dan menggantinya dengan dunia Editormu saat ini (slot yang dipilih juga akan jadi slot aktif untuk Realm kamu). Anggota Realm kamu akan bisa mengakses duniamu yang baru diganti. Kalau kamu mau menyimpan duniamu saat ini supaya datanya tidak hilang sebelum memublikasikan, batalkan dialog ini dan pilih "Unduh" sebelum "Publikasikan". Pilih "Konfirmasi" untuk melanjutkan dan mengganti duniamu saat ini.    	####This string is intended to warn the user that if they publish their world to Realms, the world currently in that Realms slot will be deleted and unrecoverable. It also informs the user that members of the Realm will be able to access this world.{MaxLength=1000}
-resourcePack.editor.realmsPublish.DownloadSuccess=Berhasil mengunduh dunia dari Realms    	####This string is intended to express that downloading a world from Realms succeeded.{MaxLength=200}
-resourcePack.editor.realmsPublish.DownloadFailed=Gagal mengunduh dunia dari Realms 	####This string is intended to express that downloading a world from Realms failed.{MaxLength=200}
-resourcePack.editor.realmsPublish.DownloadingFromRealms=Mengunduh dunia dari Realms...    	####This string is intended to express that we're in the middle of downloading a world from Realms and waiting for that operation to complete.{MaxLength=200}
-
-
-resourcePack.editor.toolRail.RepeaterTool.title=Alat Pengulang	#
-resourcePack.editor.toolRail.RepeaterTool.tooltip=Alat untuk mengulang volume pilihan	#
-resourcePack.editor.toolRail.RepeaterTool.pane.Spacing=Jarak	#
-resourcePack.editor.toolRail.RepeaterTool.pane.Repetitions=Pengulangan	#
-resourcePack.editor.toolRail.RepeaterTool.pane.Preview=Pratinjau	#
-resourcePack.editor.toolRail.RepeaterTool.pane.Clear=Kosongkan	#
-resourcePack.editor.toolRail.RepeaterTool.pane.Apply=Terapkan	#
-resourcePack.editor.toolRail.RepeaterTool.statusMessage.noSelection=Gunakan alat Pilihan untuk memilih volume yang akan diulang	#
-resourcePack.editor.toolRail.RepeaterTool.pane.Mode=Mode		####"Mode" describes a dropdown that contains the two different states the tool can be in. These are "Line" and "Grid" {MaxLength=20}
-resourcePack.editor.toolRail.RepeaterTool.mode.Line=Baris		####"Line" describes a straight, unbroken visual between two points {MaxLength=20}
-resourcePack.editor.toolRail.RepeaterTool.mode.Grid=Grid		####"Grid" describes a visual consisting of parallel lines at regular intervals, broken up by perpendicular lines at regular intervals, like grid paper. {MaxLength=20}
-resourcePack.editor.toolRail.RepeaterTool.pane.RepeatType=Ulangi Jenis		####"Repeat Type" describes a dropdown that contains the two types "Uniform" and "Separate" and represents how the repetitions along the three axes (plural of "axis") will be determined {MaxLength=40}
-resourcePack.editor.toolRail.RepeaterTool.repeat.Uniform=Seragam		####"Uniform" describes the repeat state of the Repeater Tool where it applies the same number of repetitions across all three axes (X, Y, and Z). "Uniform" was chosen as a short word that also means "consistent across multiple instances" {MaxLength=20}
-resourcePack.editor.toolRail.RepeaterTool.pane.RepeatAlongX=Ulangi Sepanjang X		####"Repeat Along" describes a checkbox and means to apply the number of Uniform Repetitions across a given axis. This one is the X axis. "X", "Y", and "Z" have a mathematical meaning and it may not be appropriate to translate unless the mathematical meaning is also translated. More info can be found at https://en.wikipedia.org/wiki/Coordinate_system {MaxLength=40}
-resourcePack.editor.toolRail.RepeaterTool.pane.RepeatAlongY=Ulangi Sepanjang Y		####See "Repeat Along X" but this is for the Y axis. {MaxLength=40}
-resourcePack.editor.toolRail.RepeaterTool.pane.RepeatAlongZ=Ulangi Sepanjang Z		####See "Repeat Along X" but this is for the Z axis. {MaxLength=40}
-resourcePack.editor.toolRail.RepeaterTool.repeat.Separate=Pisahkan		####"Separate" describes the repeat state of the Repeater Tool where the number of repetitions along each axis is set using separate number input elements, rather than one single number input {MaxLength=20}
-resourcePack.editor.toolRail.RepeaterTool.pane.XCount=Jumlah X		####"X Count" describes a number input field and represents the number of repetitions along the X axis. "X", "Y", and "Z" have a mathematical meaning and it may not be appropriate to translate unless the mathematical meaning is also translated. More info can be found at https://en.wikipedia.org/wiki/Coordinate_system {MaxLength=20}
-resourcePack.editor.toolRail.RepeaterTool.pane.YCount=Jumlah Y		####See "X Count" but this is for the Y axis. {MaxLength=20}
-resourcePack.editor.toolRail.RepeaterTool.pane.ZCount=Jumlah Z		####See "X Count" but this is for the Z axis. {MaxLength=20}
-
-
-resourcePack.editor.selectionTool.deselect=Batalkan Pilihan	#
-resourcePack.editor.selectionTool.fillPane.fillAction=Pemilihan Isian	#
-resourcePack.editor.selectionTool.fillPane.title=Pemilihan Isian	#
-resourcePack.editor.selectionTool.keyBinding.deselect=Batalkan Pilihan	#
-resourcePack.editor.selectionTool.keyBinding.fill=Isi Konten Pilihan	#
-resourcePack.editor.selectionTool.keyBinding.growBack=Tumbuhkan Pilihan Belakang	#
-resourcePack.editor.selectionTool.keyBinding.growDown=Tumbuhkan Pilihan Bawah	#
-resourcePack.editor.selectionTool.keyBinding.growForward=Besarkan Pilihan ke Depan	#
-resourcePack.editor.selectionTool.keyBinding.growLeft=Tumbuhkan Pilihan Kiri	#
-resourcePack.editor.selectionTool.keyBinding.growRight=Besarkan Pilihan ke Kanan	#
-resourcePack.editor.selectionTool.keyBinding.growUp=Tumbuhkan Pilihan Atas	#
-resourcePack.editor.selectionTool.keyBinding.moveAllSelectionBack=Gerakkan Semua Pilihan ke Belakang	#
-resourcePack.editor.selectionTool.keyBinding.moveAllSelectionDown=Gerakkan Semua Pilihan ke Bawah	#
-resourcePack.editor.selectionTool.keyBinding.moveAllSelectionForward=Gerakkan Semua Pilihan ke Depan	#
-resourcePack.editor.selectionTool.keyBinding.moveAllSelectionLeft=Gerakkan Semua Pilihan ke Kiri	#
-resourcePack.editor.selectionTool.keyBinding.moveAllSelectionRight=Gerakkan Semua Pilihan ke Kanan	#
-resourcePack.editor.selectionTool.keyBinding.moveAllSelectionUp=Gerakkan Semua Pilihan ke Atas	#
-resourcePack.editor.selectionTool.keyBinding.moveCursorBack=Pindahkan Kursor ke Belakang	#
-resourcePack.editor.selectionTool.keyBinding.moveCursorDown=Pindahkan Kursor ke Bawah	#
-resourcePack.editor.selectionTool.keyBinding.moveCursorForward=Gerakkan Kursor ke Depan	#
-resourcePack.editor.selectionTool.keyBinding.moveCursorLeft=Gerakkan Kursor ke Kiri	#
-resourcePack.editor.selectionTool.keyBinding.moveCursorRight=Pindahkan Kursor ke Kanan	#
-resourcePack.editor.selectionTool.keyBinding.moveCursorUp=Pindahkan Kursor ke Atas	#
-resourcePack.editor.selectionTool.keyBinding.moveSelectionBack=Pindahkan Pilihan ke Belakang	#
-resourcePack.editor.selectionTool.keyBinding.moveSelectionDown=Pindahkan Pilihan ke Bawah	#
-resourcePack.editor.selectionTool.keyBinding.moveSelectionForward=Pindahkan Pilihan ke Depan	#
-resourcePack.editor.selectionTool.keyBinding.moveSelectionLeft=Pindahkan Pilihan ke Kiri	#
-resourcePack.editor.selectionTool.keyBinding.moveSelectionRight=Gerakkan Pilihan ke Kanan	#
-resourcePack.editor.selectionTool.keyBinding.moveSelectionUp=Pindahkan Pilihan ke Atas	#
-resourcePack.editor.selectionTool.keyBinding.shrinkBack=Kurangi Pilihan Belakang	#
-resourcePack.editor.selectionTool.keyBinding.shrinkDown=Kurangi Pilihan Bawah	#
-resourcePack.editor.selectionTool.keyBinding.shrinkForward=Kecilkan Pilihan ke Depan	#
-resourcePack.editor.selectionTool.keyBinding.shrinkLeft=Kecilkan Pilihan ke Kiri	#
-resourcePack.editor.selectionTool.keyBinding.shrinkRight=Kurangi Pilihan Kanan	#
-resourcePack.editor.selectionTool.keyBinding.shrinkUp=Kurangi Pilihan Atas	#
-resourcePack.editor.selectionTool.keyBinding.toggleTool=Alihkan Alat Pilihan	#
-resourcePack.editor.selectionTool.keyBinding.select=Pilih Blok			#### The action of adding a block to the selection volume using they keyboard {MaxLength="30"}
-resourcePack.editor.selectionTool.keyBinding.selectMultiple=Pilih Blok Tambahan			#### The action of adding an additional block to the selection volume using the keyboard {MaxLength="30"}
-resourcePack.editor.selectionTool.keyBinding.trimVolume=Pilihan Trim (Batas)					#### Keybinding description for Trim the current selection volume to fit only the solid blocks within {MaxLength=30}
-resourcePack.editor.selectionTool.keyBinding.trimRemoveAir=Pilihan Trim (Hapus Udara)			#### Keybinding description for Remove the air from the current selection volume leaving only specified blocks {MaxLength=30}
-resourcePack.editor.selectionTool.marquee.title=Seleksi Marquee	#
-resourcePack.editor.selectionTool.modeSelection.freehand.title=Mode Kuas Tangan Bebas	#
-resourcePack.editor.selectionTool.modeSelection.freehand.tooltip=Pilih blok di dunia dengan bentuk kuas tangan bebas	#
-resourcePack.editor.selectionTool.modeSelection.marquee.title=Mode Lingkup	#
-resourcePack.editor.selectionTool.modeSelection.marquee.tooltip=Pilih blok di dunia dengan volume persegi panjang	#
-resourcePack.editor.selectionTool.modeSelection.magic.title=Mode Pilih Ajaib			#### Magic Select mode is a mode that searches for contiguous matching blocks in a search radius {MaxLength=30}}
-resourcePack.editor.selectionTool.modeSelection.magic.tooltip=Pilih blok di dunia menggunakan pola pencarian dari asal yang dipilih		#### Longer description of the magic select mode {MaxLength=150}}
-resourcePack.editor.selectionTool.modeSelection.title=Mode Pilihan	#
-resourcePack.editor.selectionTool.projectThroughLiquid=Proyeksi lewat cairan	#
-resourcePack.editor.selectionTool.trimAction.trimVolume=Pangkas Pilihan			#### Trim the current selection volume to fit only the solid blocks within {MaxLength=30}
-resourcePack.editor.selectionTool.trimAction.trimVolume.tooltip=Pangkas volume pilihan saat ini supaya hanya memuat blok pejal   	#### {MaxLength=200}
-resourcePack.editor.selectionTool.trimAction.removeAir=Hilangkan Udara			#### Remove the air from the current selection volume leaving only specified blocks {MaxLength=30}
-resourcePack.editor.selectionTool.trimAction.removeAir.tooltip=Hilangkan udara dari volume pilihan saat ini sehingga menyisakan blok yang ditentukan saja 	#### {MaxLength=200}
-resourcePack.editor.selectionTool.trimAction.trimVolume.SettingsPane.title=Pengaturan Pemangkasan		#### The window pane title for the settings for trim mode {MaxLength=30}
-resourcePack.editor.selectionTool.trimAction.trimVolume.SettingsPane.ignoreLiquid=Abaikan Cairan		#### The toggle button title for ignoring liquids {MaxLength=30}
-resourcePack.editor.selectionTool.trimAction.trimVolume.SettingsPane.ignoreLiquid.tooltip=Abaikan semua blok cairan saat memangkas volume 	#### {MaxLength=200}
-resourcePack.editor.selectionTool.trimAction.trimVolume.SettingsPane.onlyCollidable=Hanya Blok Benturan		#### The toggle button title for collision-only blocks {MaxLength=30}
-resourcePack.editor.selectionTool.trimAction.trimVolume.SettingsPane.onlyCollidable.tooltip=Abaikan blok apa pun tanpa benturan (daun, rumput, dll.) ketika memangkas volume 	#### {MaxLength=200}
-resourcePack.editor.selectionTool.quickAction.clearSelection.tooltip=Batalkan pilihan saat ini	#
-resourcePack.editor.selectionTool.quickAction.clearSelection=Batalkan Pilihan	#
-resourcePack.editor.selectionTool.quickAction.deleteSelection.tooltip=Keluarkan semua blok di dalam volume pilihan saat ini	#
-resourcePack.editor.selectionTool.quickAction.deleteSelection=Hapus	#
-resourcePack.editor.selectionTool.quickAction.fillSelection.tooltip=Isi volume pilihan saat ini dengan jenis blok yang dipilih saat ini	#
-resourcePack.editor.selectionTool.quickAction.fillSelection=Isi	#
-resourcePack.editor.selectionTool.quickAction.title=Aksi Cepat	#
-resourcePack.editor.selectionTool.selectionMode.adjacent=Berdekatan	#
-resourcePack.editor.selectionTool.selectionMode.fixedDistance=Jarak Tetap	#
-resourcePack.editor.selectionTool.selectionMode.mouseAndKeyboard=Bentuk Bebas	#
-resourcePack.editor.selectionTool.selectionMode=Mode	#
-resourcePack.editor.selectionTool.settingsPane.title=Pilihan	#
-resourcePack.editor.selectionTool.toolRail.description=Klik kiri mouse untuk membuat pilihan; CTRL+D untuk membatalkan pilihan	#
-resourcePack.editor.selectionTool.toolRail.title=Pilihan	#
-resourcePack.editor.selectionTool.transformPane.origin.tooltip=Lokasi asal pilihan dalam koordinat dunia.	#
-resourcePack.editor.selectionTool.transformPane.origin=Asal	#
-resourcePack.editor.selectionTool.transformPane.size=Ukuran	#
-resourcePack.editor.selectionTool.transformPane.title=Ubah	#
-
-
-resourcePack.editor.BlockMaskControl.trim.rootPane.title=Pengaturan Pemangkasan		#### The window pane title for the settings for trim mode {MaxLength=30}
-resourcePack.editor.BlockMaskControl.trim.toggleGroup.title=Mode Topeng		#### The title of the toggle group {MaxLength=30}
-resourcePack.editor.BlockMaskControl.trim.toggleGroup.item.disabled.label=Nonaktifkan Filter Blok			#### The title of the icon which disables block filters {MaxLength=30}
-resourcePack.editor.BlockMaskControl.trim.toggleGroup.item.disabled.tooltip=Dinonaktifkan					#### The tooltip of the icon which disables block filters {MaxLength=100}
-resourcePack.editor.BlockMaskControl.trim.toggleGroup.item.mask.label=Topeng								#### The title of the icon which masks block filters {MaxLength=30}
-resourcePack.editor.BlockMaskControl.trim.toggleGroup.item.mask.tooltip=Blok yang cocok dengan daftar akan diabaikan			#### Mask mode tooltip {MaxLength=100}
-resourcePack.editor.BlockMaskControl.trim.toggleGroup.item.replace.label=Ganti						#### The title of the replace block filter {MaxLength=30}
-resourcePack.editor.BlockMaskControl.trim.toggleGroup.item.replace.tooltip=Blok yang cocok dengan daftar akan dianggap solid			#### Replace mode tooltip {MaxLength=100}
-
-
-resourcePack.editor.server.description=Sumber Daya Server Editor	#
-resourcePack.editor.server.name=Sumber Daya Editor	#
-
-
-resourcePack.editor.toolRail.Terrain.title=Medan	#
-resourcePack.editor.toolRail.Terrain.keybinding.toggleTool=Alihkan Alat Medan	#
-resourcePack.editor.toolRail.Terrain.keyBinding.switch=Ganti Mode Medan	#
-resourcePack.editor.toolRail.Terrain.Mode.title=Mode Medan	#
-resourcePack.editor.toolRail.Terrain.Smooth.mode.title=Mode Halus	#
-resourcePack.editor.toolRail.Terrain.Smooth.tooltip=Menghaluskan medan berdasarkan kekuatan penghalusan	#
-resourcePack.editor.toolRail.Terrain.SmoothStrength=Kekuatan Penghalusan	#
-resourcePack.editor.toolRail.Terrain.Roughen.mode.title=Mode Perkasar	#
-resourcePack.editor.toolRail.Terrain.Roughen.tooltip=Memperkasar medan berdasarkan kekuatan perkasaran	#
-resourcePack.editor.toolRail.Terrain.RoughenStrength=Kekuatan Perkasar	#
-resourcePack.editor.toolRail.Terrain.description=Alat medan memperhalus atau memperkasar medan	#
-
-
-resourcePack.editor.help.learnMore=Pelajari lebih lanjut	#
-
-resourcePack.editor.statusBar.connectedPlayers=Pemain yang Terhubung %s	#
-
-
-resourcePack.editor.summonTool.summonSubPane.EntityPickerTitle=Jenis Entitas	#
-
-
-resourcePack.editor.timeOfDay.12hrClock=Jam 12 jam	#
-resourcePack.editor.timeOfDay.24hrClock=Jam 24 jam	#
-resourcePack.editor.timeOfDay.clockType=Jenis Jam	#
-resourcePack.editor.timeOfDay.currentTime=Waktu Saat Ini	#
-resourcePack.editor.timeOfDay.customTime=Waktu Modifikasi	#
-resourcePack.editor.timeOfDay.daylightCycle=Siklus Siang	#
-resourcePack.editor.timeOfDay.dropDown.day=Hari	#
-resourcePack.editor.timeOfDay.dropDown.midnight=Tengah Malam	#
-resourcePack.editor.timeOfDay.dropDown.night=Malam Hari	#
-resourcePack.editor.timeOfDay.dropDown.none=Tidak Ada	#
-resourcePack.editor.timeOfDay.dropDown.noon=Siang	#
-resourcePack.editor.timeOfDay.dropDown.sunrise=Matahari Terbit	#
-resourcePack.editor.timeOfDay.dropDown.sunset=Matahari Tenggelam	#
-resourcePack.editor.timeOfDay.dropDown.custom=Modifikasi		####"Custom" describes a dropdown that players can define the specific start time {MaxLength=20}
-resourcePack.editor.timeOfDay.dropDown.title=Prasetel	#
-resourcePack.editor.timeOfDay.menu.title=Pengaturan Waktu Siang	#
-resourcePack.editor.timeOfDay.minecraftClock=Jam Minecraft	#
-resourcePack.editor.timeOfDay.title=Pengaturan Waktu	#
-
-
-resourcePack.editor.toolMode.keyBinding.console=Buka Konsol	#
-resourcePack.editor.toolMode.keyBinding.devConsole=Buka Konsol Pengembang	#
-resourcePack.editor.toolMode.keyBinding.hotbar1=Pilih Hotbar 1	#
-resourcePack.editor.toolMode.keyBinding.hotbar2=Pilih Hotbar 2	#
-resourcePack.editor.toolMode.keyBinding.hotbar3=Pilih Hotbar 3	#
-resourcePack.editor.toolMode.keyBinding.hotbar4=Pilih Hotbar 4	#
-resourcePack.editor.toolMode.keyBinding.hotbar5=Pilih Hotbar 5	#
-resourcePack.editor.toolMode.keyBinding.hotbar6=Pilih Hotbar 6	#
-resourcePack.editor.toolMode.keyBinding.hotbar7=Pilih Hotbar 7	#
-resourcePack.editor.toolMode.keyBinding.hotbar8=Pilih Hotbar 8	#
-resourcePack.editor.toolMode.keyBinding.hotbar9=Pilih Hotbar 9	#
-resourcePack.editor.toolMode.keyBinding.reload=Muat Ulang 	####Represents a label for a key shortcut that reloads scripts and UI.{MaxLength=100}
-
-
-resourcePack.editor.toolRail.blockPalette.title=Palet Blok (CTRL+P)	#
-resourcePack.editor.toolRail.blockPalette.tooltip=Atur palet blok yang kamu sukai atau yang paling sering digunakan	#
-resourcePack.editor.toolRail.flattenBrush.title=Kuas Datar	#
-resourcePack.editor.toolRail.flattenBrush.tooltip=Meratakan area secara vertikal ke ketinggian blok yang dipilih	#
-resourcePack.editor.toolRail.flattenBrush.settings.heightThreshold=Ambang Ketinggian	#
-resourcePack.editor.toolRail.flattenBrush.settings.radius=Radius	#
-resourcePack.editor.toolRail.floodFillSelectionTool.description=Memilih area yang saat ini sedang Anda lihat menggunakan algoritma isian meluap.	#
-resourcePack.editor.toolRail.floodFillSelectionTool.title=Alat Pemilihan Isian Meluap	#
-resourcePack.editor.toolRail.line.keyBinding.delete=Hapus Konten	#
-resourcePack.editor.toolRail.line.keyBinding.deleteAndClear=Hapus Konten dan Batalkan Pilihan	#
-resourcePack.editor.toolRail.line.keyBinding.deselect=Batalkan Pilihan	#
-resourcePack.editor.toolRail.line.keyBinding.deselectAll=Batalkan Semua	#
-resourcePack.editor.toolRail.line.keyBinding.fill=Isi Konten	#
-resourcePack.editor.toolRail.line.keyBinding.fillAndClear=Isi Konten dan Batalkan Pilihan	#
-resourcePack.editor.toolRail.line.keyBinding.moveBack=Gerakkan yang Dipilih ke Belakang	#
-resourcePack.editor.toolRail.line.keyBinding.moveDown=Gerakkan yang Dipilih ke Bawah	#
-resourcePack.editor.toolRail.line.keyBinding.moveForward=Gerakkan yang Dipilih ke Depan	#
-resourcePack.editor.toolRail.line.keyBinding.moveLeft=Gerakkan yang Dipilih ke Kiri	#
-resourcePack.editor.toolRail.line.keyBinding.moveRight=Gerakkan yang Dipilih ke Kanan	#
-resourcePack.editor.toolRail.line.keyBinding.moveUp=Gerakkan yang Dipilih ke Atas	#
-resourcePack.editor.toolRail.line.keyBinding.selectAll=Pilih Semua	#
-resourcePack.editor.toolRail.line.pane.algorithm.Direct=Arahkan	#
-resourcePack.editor.toolRail.line.pane.algorithm.Staggered=Selang-seling (Pagar)	#
-resourcePack.editor.toolRail.line.pane.algorithm.title=Algoritma	#
-resourcePack.editor.toolRail.line.pane.fillAction=Pemilihan Isian	#
-resourcePack.editor.toolRail.line.pane.height.title=Tinggi	#
-resourcePack.editor.toolRail.line.pane.selectionMode.adjacent=Wajah yang Bersisian	#
-resourcePack.editor.toolRail.line.pane.selectionMode.fixedDistance=Jarak Tetap	#
-resourcePack.editor.toolRail.line.pane.selectionMode.freeForm=Bentuk Bebas	#
-resourcePack.editor.toolRail.line.pane.selectionMode=Pilihan	#
-resourcePack.editor.toolRail.line.pane.surfaceContour=Kontur Permukaan	#
-resourcePack.editor.toolRail.line.pane.width.title=Lebar	#
-resourcePack.editor.toolRail.line.title=Baris	#
-resourcePack.editor.toolRail.line.tooltip=Alat baris menciptakan barisan blok	#
-resourcePack.editor.toolRail.rulerTool.title=Alat Penggaris	#
-resourcePack.editor.toolRail.rulerTool.tooltip=Ukur Jarak	#
-resourcePack.editor.toolRail.rulerTool.info.title=Pengukuran	#
-
-
-resourcePack.editor.toolRail.smartFillTool.title=Alat Isi Pintar	#
-resourcePack.editor.toolRail.smartFillTool.tooltip=Klik untuk mengisi set blok yang terhubung	#
-resourcePack.editor.toolRail.smartFillTool.modes.fillVolume=Isi Volume	#
-resourcePack.editor.toolRail.smartFillTool.areaLimit.title=Batas Luas	#
-resourcePack.editor.toolRail.smartFillTool.areaLimit.tooltip=Luas maksimal yang akan diisi	#
-
-
-resourcePack.editor.toolRail.summonTool.keyBinding.clear=Hapus Pilihan	#
-resourcePack.editor.toolRail.summonTool.keyBinding.delete=Hapus Entitas	#
-resourcePack.editor.toolRail.summonTool.keyBinding.moveBack=Gerakkan yang Dipilih ke Belakang	#
-resourcePack.editor.toolRail.summonTool.keyBinding.moveDown=Gerakkan yang Dipilih ke Bawah	#
-resourcePack.editor.toolRail.summonTool.keyBinding.moveForward=Gerakkan yang Dipilih ke Depan	#
-resourcePack.editor.toolRail.summonTool.keyBinding.moveLeft=Gerakkan yang Dipilih ke Kiri	#
-resourcePack.editor.toolRail.summonTool.keyBinding.moveRight=Gerakkan yang Dipilih ke Kanan	#
-resourcePack.editor.toolRail.summonTool.keyBinding.moveUp=Gerakkan yang Dipilih ke Atas	#
-resourcePack.editor.toolRail.summonTool.keyBinding.toggle=Alihkan Alat Panggil	#
-resourcePack.editor.toolRail.summonTool.pane.select=Pilih Mode	#
-resourcePack.editor.toolRail.summonTool.pane.title=Alat Panggil	#
-resourcePack.editor.toolRail.summonTool.pane.type=Jenis Entitas	#
-resourcePack.editor.toolRail.summonTool.tool.infoText=Pilih entitas dengan mengklik atau klik peta untuk memanggil entitas baru	#
-resourcePack.editor.toolRail.summonTool.tool.selectSubPane.rotation=Rotasi	#
-resourcePack.editor.toolRail.summonTool.tool.selectSubPane=Pemilihan Entitas	#
-resourcePack.editor.toolRail.summonTool.tool.summonSubPane=Kemunculan Entitas	#
-resourcePack.editor.toolRail.summonTool.tool.tip=Klik untuk memanggil entitas	#
-resourcePack.editor.toolRail.summonTool.tool.title=Alat Panggil	#
-
-resourcePack.editor.toolRail.workbenchSettings.title=Meja Kerja	#
-resourcePack.editor.toolRail.workbenchTool.title=Meja Kerja	#
-resourcePack.editor.toolRail.workbenchTool.description=Ubah status blok dengan cepat	#
-resourcePack.editor.toolRail.workbenchTool.howToUse=Sorot blok untuk melihat aksi yang tersedia untuk mengubah statusnya (buka/tutup, putar, balikkan, dll.). Coba pakai modifikasi tombol Shift dan Control juga! Ingat fitur ini hanya berfungsi pada blok dengan properti yang dapat dimodifikasi (misalnya pintu, pagar, tangga, dll.).		####	This text provides a description of the workbench tool and explans how the the user can highlight blocks in order to see the list of actions for changing that blocks state. {MaxLength="500"}
-resourcePack.editor.toolRail.workbenchTool.tooltip=Ubah status blok	#
-resourcePack.editor.toolRail.workbenchTool.block=Blokir	#
-resourcePack.editor.toolRail.workbenchTool.leftClick=Klik Kiri	#
-resourcePack.editor.toolRail.workbenchTool.shiftLeftClick=Shift + Klik Kiri	#
-resourcePack.editor.toolRail.workbenchTool.controlLeftClick=CTRL + Klik Kiri	#
-resourcePack.editor.toolRail.workbenchTool.shiftControlLeftClick=Shift + CTRL + Klik Kiri	#
-
-resourcePack.editor.toolRail.workbenchTool.leftClickTooltip=Klik Kiri di blok akan menerapkan aksi Meja Kerja utama		####	This keybinding is a tool tip to convey that a left click will invoke the primary (1st) action of the workbench tool. {MaxLength="150"}
-resourcePack.editor.toolRail.workbenchTool.shiftLeftClickTooltip=Shift + Klik Kiri di blok akan menerapkan aksi Meja Kerja sekunder		####	This keybinding is a tool tip to convey that a shift + left click will invoke the primary (1st) action of the workbench tool. {MaxLength="150"}
-resourcePack.editor.toolRail.workbenchTool.controlLeftClickTooltip=Control + Klik Kiri di blok akan menerapkan aksi Meja Kerja tersier		####	This keybinding is a tool tip to convey that a control + left click will invoke the primary (1st) action of the workbench tool. {MaxLength="150"}
-resourcePack.editor.toolRail.workbenchTool.shiftControlLeftClickTooltip=Shift + Control + Klik Kiri di blok akan menerapkan aksi Meja Kerja keempat		####	TThis keybinding is a tool tip to convey that a shift + control + left click will invoke the primary (1st) action of the workbench tool. {MaxLength="150"}
-
-resourcePack.editor.toolRail.workbenchTool.stripWood=Lepas/kembalikan kayu		####This string is intended to express whether the wood block has bark (unstripped) or doesn't have bark (stripped).{MaxLength=100}
-resourcePack.editor.toolRail.workbenchTool.ladderLocation=Lokasi tangga	#
-resourcePack.editor.toolRail.workbenchTool.autoAlign=Pengaturan otomatis	#
-resourcePack.editor.toolRail.workbenchTool.autoAlignFacingDirection=Otomatis Sejajarkan Arah Hadap		####This string is intended to express that the action will align the facing direction of the block with the player camera.{MaxLength=100}
-resourcePack.editor.toolRail.workbenchTool.autoAlignRotation=Otomatis Sejajarkan Rotasi		####This string is intended to express that the action will align the roatation of the block with the player camera.{MaxLength=100}
-
-resourcePack.editor.toolRail.workbenchTool.topSlotBitProp=Atas/Bawah	#
-resourcePack.editor.toolRail.workbenchTool.pillarAxisProp=Putar	#
-resourcePack.editor.toolRail.workbenchTool.heightProp=Lapisan	#
-resourcePack.editor.toolRail.workbenchTool.candlesProp=Jumlah Lilin	#
-
-resourcePack.editor.toolRail.workbenchTool.turtleEggCountProp=Jumlah Telur Kura-Kura	#
-resourcePack.editor.toolRail.workbenchTool.clusterCountProp=Jumlah Acar Laut	#
-resourcePack.editor.toolRail.workbenchTool.hangingProp=Alihkan menggantung dari blok lain	#
-resourcePack.editor.toolRail.workbenchTool.wallPostBitProp=Alihkan Tiang	#
-
-resourcePack.editor.toolRail.workbenchTool.upsideDownBitProp=Atas/Bawah	#
-resourcePack.editor.toolRail.workbenchTool.openBitProp=Buka/Tutup	#
-resourcePack.editor.toolRail.workbenchTool.litProp=Nyala/Mati	#
-resourcePack.editor.toolRail.workbenchTool.dripstoneThicknessProp=Ketebalan Dripstone	#
-
-resourcePack.editor.toolRail.workbenchTool.directionProp=Arah Menghadap	#
-resourcePack.editor.toolRail.workbenchTool.weirdoDirectionProp=Putar	#
-resourcePack.editor.toolRail.workbenchTool.facingDirectionProp=Arah Menghadap	#
-resourcePack.editor.toolRail.workbenchTool.cardinalDirectionProp=Arah Menghadap	#
-
-resourcePack.editor.toolRail.workbenchTool.addCustomMapping=Tambah Pemetaan Kustom		####This string is intended to express that this subpane is for adding custom block property mappings for the tool.{MaxLength=100}
-resourcePack.editor.toolRail.workbenchTool.blockProperty=Properti Blok		####This string is intended to express that this field is for the Block Property.{MaxLength=50}
-resourcePack.editor.toolRail.workbenchTool.clickBinding=Ikatan Klik		####This string is intended to express that this dropdown contains the click binding options (left click, shift + left click, etc).{MaxLength=50}
-resourcePack.editor.toolRail.workbenchTool.addMapping=Tambahkan Pemetaan		####This string is intended to express that this button will add the custom mapping provided by the user.{MaxLength=50}
-resourcePack.editor.toolRail.workbenchTool.resetAllMappings=Reset Semua Pemetaan		####This string is intended to express that this button will reset all custom mappings provided by the user.{MaxLength=50}
-
-resourcePack.editor.workbenchTool.keyBinding.primaryAction=Aksi Meja Kerja Primer		####	This keybinding is to invoke the primary (1st) action of the workbench tool. {MaxLength="30"}
-resourcePack.editor.workbenchTool.keyBinding.secondaryAction=Aksi Meja Kerja Sekunder		#### This keybinding is to invoke the secondary (2nd) action of the workbench tool. {MaxLength="30"}
-resourcePack.editor.workbenchTool.keyBinding.tertiaryAction=Aksi Meja Kerja Tersier		####	This keybinding is to invoke the tertiary (3rd) action of the workbench tool. {MaxLength="30"}
-resourcePack.editor.workbenchTool.keyBinding.quaternaryAction=Aksi Meja Kerja Keempat		#### This keybinding is to invoke the quaternary (4th) action of the workbench tool. {MaxLength="30"}
-
-
-resourcePack.editor.transaction.keyBinding.redo=Ulangi	#
-resourcePack.editor.transaction.keyBinding.undo=Batalkan	#
-
-
-resourcePack.editor.viewport.keyBinding.moveBack=Mundur	#
-resourcePack.editor.viewport.keyBinding.moveDown=Pindahkan Ke Bawah	#
-resourcePack.editor.viewport.keyBinding.moveForward=Maju	#
-resourcePack.editor.viewport.keyBinding.moveLeft=Bergerak ke Kiri	#
-resourcePack.editor.viewport.keyBinding.moveRight=Bergerak ke Kanan	#
-resourcePack.editor.viewport.keyBinding.moveUp=Pindahkan Ke Atas	#
-
-resourcePack.editor.viewport.keyBinding.incrementFlySpeed=Menambah Kecepatan Terbang	#
-resourcePack.editor.viewport.keyBinding.decrementFlySpeed=Mengurangi Kecepatan Terbang	#
-
-resourcePack.editor.viewSettings.compass.tip=Tampilkan kompas arah	#
-resourcePack.editor.viewSettings.compass.title=Tampilkan Kompas	#
-resourcePack.editor.viewSettings.chunk.tip=Tampilkan garis batas bongkah di peta	#
-resourcePack.editor.viewSettings.chunk.title=Tampilkan Batas Bongkah	#
-resourcePack.editor.viewSettings.nightVision.tip=Tunjukkan kepada dunia seolah-olah kamu punya penglihatan malam	#
-resourcePack.editor.viewSettings.nightVision.title=Penglihatan Malam	#
-resourcePack.editor.viewSettings.invisible.tip=Tampilkan blok takterlihat (misalnya, kehampaan, penghalang, dll.)	#
-resourcePack.editor.viewSettings.invisible.title=Tampilkan Blok Takterlihat	#
-resourcePack.editor.viewSettings.flySpeed.tip=Tingkatkan Kecepatan Terbang untuk bermanuver di peta lebih cepat	#
-resourcePack.editor.viewSettings.flySpeed.title=Pengganda Kecepatan Terbang	#
-resourcePack.editor.viewSettings.menu=Pengaturan	#
-resourcePack.editor.viewSettings.title=Pengaturan	#
-
-resourcePack.editor.hotbar.defaultDisplayName=Default	#
-
-resourcePack.editor.reloadScripts.response.tooMany=Terlalu banyak pemain yang tersambung ke server. Pemuatan Ulang Skrip hanya didukung pada host dengan satu pemain yang terhubung.	#
-resourcePack.editor.reloadScripts.response.genericError=Terjadi kesalahan saat mencoba memuat ulang skrip.	#
-resourcePack.editor.reloadScripts.response.noAdminRights=Kamu tidak memiliki izin untuk memuat ulang skrip.	#
+﻿
+commands.editor.project.beginExport=Mengekspor ...
+commands.editor.project.description=Manipulasi proyek yang saat ini dimuat
+commands.editor.project.export=ekspor proyek
+commands.editor.project.exportComplete=Ekspor selesai, file ditulis ke %s
+commands.editor.project.exportCopyFailed=Gagal menyalin data level %s
+commands.editor.project.unknownSubcommand=Subperintah Tidak Diketahui
+resourcePack.editor.actionBar.redo.tooltipDescription=Ulangi tindakan
+resourcePack.editor.actionBar.redo.tooltipTitle=Ulangi
+resourcePack.editor.actionBar.redo=Ulangi
+resourcePack.editor.actionBar.undo.tooltipDescription=Batalkan tindakan
+resourcePack.editor.actionBar.undo.tooltipTitle=Batalkan
+resourcePack.editor.actionBar.undo=Batalkan
+resourcePack.editor.actionBar.fill=Isi 
+resourcePack.editor.actionBar.fill.tooltipDescription=Isi volume pilihan dengan blok hotbar saat ini 
+resourcePack.editor.actionBar.fill.tooltipTitle=Isi 
+resourcePack.editor.agfx.settings.error.title=Terjadi kesalahan...
+resourcePack.editor.agfx.pane.title=Editor Pengaturan
+resourcePack.editor.agfx.pane.settings_selector=Pilih pengaturan
+resourcePack.editor.agfx.pane.settings.title=Pengaturan
+resourcePack.editor.agfx.pane.settings.revert_changes=Batalkan Perubahan
+resourcePack.editor.agfx.pane.settings.export_to_clipboard=Ekspor ke clipboard
+resourcePack.editor.toolRail.blockInspectorSettings.title=Pemeriksa Blok   
+resourcePack.editor.toolRail.blockInspectorSettings.specifics=Spesifik Blok   
+resourcePack.editor.toolRail.blockInspectorSettings.actions.refresh=Segarkan Data Blok   
+resourcePack.editor.toolRail.blockInspectorSettings.actions.clear=Hapus Pilihan   
+resourcePack.editor.toolRail.blockInspectorSettings.blockTags=Label Blok   
+resourcePack.editor.toolRail.blockInspectorSettings.blockProperties=Properti Blok   
+resourcePack.editor.toolRail.blockInspectorSettings.blockProperties.name=Nama Properti   
+resourcePack.editor.toolRail.blockInspectorSettings.blockProperties.value=Nilai Properti   
+resourcePack.editor.toolRail.blockInspectorTool.title=Pemeriksa Blok   
+resourcePack.editor.toolRail.blockInspectorTool.tooltip=Periksa data blok   
+resourcePack.editor.toolRail.blockInspectorTool.pane.helpText=Klik kiri pada blok untuk melihat dan mengedit propertinya   
+resourcePack.editor.blockInspector.toolRail.description=Klik kiri pada blok untuk melihat dan mengedit propertinya   
+resourcePack.editor.blockPalette.addSearchItem=Pakai Blok Temuan
+resourcePack.editor.blockPalette.blockPicker=Cari
+resourcePack.editor.blockPalette.paletteDropdown.title=Palet
+resourcePack.editor.blockPalette.title=Palet Blok
+resourcePack.editor.brushPaint.inputContext.activateBrushPaint=Aktifkan Cat Kuas
+resourcePack.editor.brushPaint.inputContext.oneshot=Cat Sekali
+resourcePack.editor.brushPaint.inputContext.title=Cat Kuas
+resourcePack.editor.brushPaint.title=Cat Kuas
+resourcePack.editor.brushPaint.tooltip=Pakai kuas untuk mengecat blok di dunia
+resourcePack.editor.BrushPaintControl.brush.title=Kuas
+resourcePack.editor.BrushPaintControl.brushSettings.title=Pengaturan Kuas
+resourcePack.editor.BrushPaintControl.shapeSettings.title=Pengaturan Bentuk 
+resourcePack.editor.BrushPaintControl.fillConstraints.mask.title=Daftar Topeng
+resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.disabled.tooltip=Nonaktifkan Filter Blok
+resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.disabled=Dinonaktifkan
+resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.mask.tooltip=Blok yang cocok dengan daftar akan diabaikan dan tidak akan terpengaruhi
+resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.mask=Topeng
+resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.replace=Ganti
+resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.title=Filter Blok Kuas
+resourcePack.editor.BrushPaintControl.fillConstraints.replace.title=Daftar Ganti
+resourcePack.editor.BrushPaintControl.fillConstraints.replace.tooltip=Blok yang cocok dengan daftar akan diproses
+resourcePack.editor.BrushPaintControl.fillConstraints.title=Batasan Isi
+resourcePack.editor.BrushPaintControl.keybinding.maskMask=Mode Topeng - Topeng
+resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetBack=Geser Offset ke Belakang
+resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetDown=Geser Offset ke Bawah
+resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetForward=Geser Offset ke Depan
+resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetLeft=Geser Offset ke Kiri
+resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetRight=Geser Offset ke Kanan
+resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetUp=Geser Offset ke Atas
+resourcePack.editor.BrushPaintControl.keybinding.replaceMask=Mode Topeng - Ganti
+resourcePack.editor.BrushPaintControl.offset.title=Offset
+resourcePack.editor.BrushPaintControl.offset.tooltip=Offset dari posisi kursor
+resourcePack.editor.BrushPaintControl.rootPane.title=Pengaturan Kuas
+resourcePack.editor.brushShape.common.settings.axis=Sumbu Ekstrusi
+resourcePack.editor.brushShape.common.settings.height=Tinggi
+resourcePack.editor.brushShape.common.settings.length=Panjang
+resourcePack.editor.brushShape.common.settings.radius=Radius
+resourcePack.editor.brushShape.common.settings.uniform=Seragam
+resourcePack.editor.brushShape.common.settings.xAxis=Sumbu X
+resourcePack.editor.brushShape.common.settings.xAxisNeg=Sumbu -X
+resourcePack.editor.brushShape.common.settings.yAxis=Sumbu Y
+resourcePack.editor.brushShape.common.settings.yAxisNeg=Sumbu -Y
+resourcePack.editor.brushShape.common.settings.zAxis=Sumbu Z
+resourcePack.editor.brushShape.common.settings.zAxisNeg=Sumbu -Z
+resourcePack.editor.brushShape.cone.name=Kerucut
+resourcePack.editor.brushShape.cone.settings.depth=Radius Kedalaman
+resourcePack.editor.brushShape.cone.settings.width=Radius Lebar
+resourcePack.editor.brushShape.cuboid.name=Kubus
+resourcePack.editor.brushShape.cuboid.settings.depth=Dalam
+resourcePack.editor.brushShape.cuboid.settings.height=Tinggi
+resourcePack.editor.brushShape.cuboid.settings.width=Lebar
+resourcePack.editor.brushShape.cylinder.name=Silinder
+resourcePack.editor.brushShape.cylinder.settings.depth_radius=Radius Dalam
+resourcePack.editor.brushShape.cylinder.settings.width_radius=Radius Lebar
+resourcePack.editor.brushShape.ellipsoid.name=Elipsoid
+resourcePack.editor.brushShape.ellipsoid.settings.depth_radius=Radius Dalam
+resourcePack.editor.brushShape.ellipsoid.settings.height_radius=Radius Tinggi
+resourcePack.editor.brushShape.ellipsoid.settings.width_radius=Radius Lebar
+resourcePack.editor.brushShape.pyramid.name=Piramida
+resourcePack.editor.brushShape.pyramid.settings.depth=Kedalaman
+resourcePack.editor.brushShape.pyramid.settings.height=Tinggi
+resourcePack.editor.brushShape.pyramid.settings.width=Lebar
+resourcePack.editor.brushShape.singleBlock.name=Blok Tunggal
+resourcePack.editor.brushShape.star.name=Bintang 
+resourcePack.editor.brushShape.star.settings.includeVertical=Sertakan Vertikal 
+resourcePack.editor.client.description=Sumber Daya Klien Editor
+resourcePack.editor.client.name=Sumber Daya Editor
+resourcePack.editor.ClipboardPreviewControl.keybinding.moveOriginBack=Gerakkan Asal ke Belakang
+resourcePack.editor.ClipboardPreviewControl.keybinding.moveOriginDown=Gerakkan Asal ke Bawah
+resourcePack.editor.ClipboardPreviewControl.keybinding.moveOriginForward=Gerakkan Asal ke Depan
+resourcePack.editor.ClipboardPreviewControl.keybinding.moveOriginLeft=Gerakkan Asal ke Kiri
+resourcePack.editor.ClipboardPreviewControl.keybinding.moveOriginRight=Gerakkan Asal ke Kanan
+resourcePack.editor.ClipboardPreviewControl.keybinding.moveOriginUp=Gerakkan Asal ke Atas
+resourcePack.editor.ClipboardPreviewControl.keyBinding.nudgeOffsetBack=Geser Offset ke Belakang
+resourcePack.editor.ClipboardPreviewControl.keyBinding.nudgeOffsetDown=Geser Offset ke Bawah
+resourcePack.editor.ClipboardPreviewControl.keyBinding.nudgeOffsetForward=Geser Offset ke Depan
+resourcePack.editor.ClipboardPreviewControl.keyBinding.nudgeOffsetLeft=Geser Offset ke Kiri
+resourcePack.editor.ClipboardPreviewControl.keyBinding.nudgeOffsetRight=Geser Offset ke Kanan
+resourcePack.editor.ClipboardPreviewControl.keyBinding.nudgeOffsetUp=Geser Offset ke Atas
+resourcePack.editor.ClipboardPreviewControl.keybinding.rotateClockWise=Putar Pratinjau Searah Jarum Jam
+resourcePack.editor.ClipboardPreviewControl.keybinding.rotateCounterClockWise=Putar Pratinjau Berlawanan Arah Jarum Jam
+resourcePack.editor.ClipboardPreviewControl.keybinding.toggleMirrorX=Alihkan Cermin X
+resourcePack.editor.ClipboardPreviewControl.keybinding.toggleMirrorZ=Alihkan Cermin Z
+resourcePack.editor.ClipboardPreviewControl.mirror.axis.x.tooltip=Mencerminkan item clipboard di sekitar sumbu-X pada titik asal
+resourcePack.editor.ClipboardPreviewControl.mirror.axis.x=Cermin (sumbu-X)
+resourcePack.editor.ClipboardPreviewControl.mirror.axis.z.tooltip=Mencerminkan item clipboard di sekitar sumbu-Z pada titik asal
+resourcePack.editor.ClipboardPreviewControl.mirror.axis.z=Cermin (sumbu-Z)
+resourcePack.editor.ClipboardPreviewControl.offset.title=Offset
+resourcePack.editor.ClipboardPreviewControl.offset.tooltip=Offset tambahan dari titik penempatan ke item clipboard asal
+resourcePack.editor.ClipboardPreviewControl.origin.title=Asal
+resourcePack.editor.ClipboardPreviewControl.origin.tooltip=Titik asal di dalam item clipboard. Ini digunakan sebagai jangkar penempatan dan titik tempat clipboard diputar dan dicerminkan
+resourcePack.editor.ClipboardPreviewControl.placement.title=Opsi
+resourcePack.editor.ClipboardPreviewControl.rootPane.title=Info Clipboard
+resourcePack.editor.ClipboardPreviewControl.rotation.180=180°
+resourcePack.editor.ClipboardPreviewControl.rotation.270=270°
+resourcePack.editor.ClipboardPreviewControl.rotation.90=90°
+resourcePack.editor.ClipboardPreviewControl.rotation.none=Tidak Ada
+resourcePack.editor.ClipboardPreviewControl.rotation.title=Rotasi
+resourcePack.editor.ClipboardPreviewControl.rotation.tooltip=Jumlah rotasi di sekitar sumbu Y pada titik asal
+resourcePack.editor.ClipboardPreviewControl.structureSize.title=Ukuran Clipboard
+resourcePack.editor.copypaste.actionbar.copy.title=Salin
+resourcePack.editor.copypaste.actionbar.copy.tooltip=Salin Pilihan ke clipboard
+resourcePack.editor.copypaste.actionbar.copy.tooltipDescription=Salin konten pilihan saat ini ke clipboard dan biarkan konten pilihan tetap utuh
+resourcePack.editor.copypaste.actionbar.cut.title=Potong
+resourcePack.editor.copypaste.actionbar.cut.tooltip=Potong/Gerakkan Pilihan ke clipboard
+resourcePack.editor.copypaste.actionbar.cut.tooltipDescription=Salin konten pilihan saat ini ke clipboard dan hapus konten pilihan dalam prosesnya
+resourcePack.editor.copypaste.keyBinding.copy=Salin Pilihan ke clipboard
+resourcePack.editor.copypaste.keyBinding.cut=Potong/Gerakkan Pilihan ke clipboard
+resourcePack.editor.copypaste.keyBinding.paste=Tempelkan clipboard ke dunia
+resourcePack.editor.copypaste.menu.copy.title=Salin Pilihan
+resourcePack.editor.copypaste.menu.cut.title=Potong Pilihan
+resourcePack.editor.core.keyBinding.showGameMenu=Tampilkan Menu Game
+resourcePack.editor.core.keyBinding.showLogPanel=Tampilkan Panel Log
+resourcePack.editor.CursorModeControl.cursorTargetMode.block.tooltip=Blok di bawah kursor mouse
+resourcePack.editor.CursorModeControl.cursorTargetMode.block=Blok
+resourcePack.editor.CursorModeControl.cursorTargetMode.face.tooltip=Blok bersebelahan langsung dengan muka blok di bawah kursor
+resourcePack.editor.CursorModeControl.cursorTargetMode.face=Bersebelahan
+resourcePack.editor.CursorModeControl.cursorTargetMode.title=Target
+resourcePack.editor.CursorModeControl.cursorTargetMode.tooltip=Pilih mode target kursor
+resourcePack.editor.CursorModeControl.fixedDistance.slider.title=Jarak Kursor Tetap
+resourcePack.editor.CursorModeControl.fixedDistance.slider.tooltip=Sesuaikan jarak tetap dari pemain di tempat kursor blok berada
+resourcePack.editor.CursorModeControl.keybinding.moveCursorBack=Pindahkan Kursor ke Belakang
+resourcePack.editor.CursorModeControl.keybinding.moveCursorDown=Pindahkan Kursor ke Bawah
+resourcePack.editor.CursorModeControl.keybinding.moveCursorForward=Geser ke Depan
+resourcePack.editor.CursorModeControl.keybinding.moveCursorLeft=Gerakkan Kursor ke Kiri
+resourcePack.editor.CursorModeControl.keybinding.moveCursorRight=Pindahkan Kursor ke Kanan
+resourcePack.editor.CursorModeControl.keybinding.moveCursorUp=Pindahkan Kursor ke Atas
+resourcePack.editor.CursorModeControl.keybinding.toggleBlockTargetMode=Alihkan Mode Blok/Sebelah
+resourcePack.editor.CursorModeControl.keybinding.toggleFixedDistance=Alihkan Mode Jarak Tetap
+resourcePack.editor.CursorModeControl.keybinding.toggleMouseTracking=Alihkan Pelacakan Mouse
+resourcePack.editor.CursorModeControl.mouseControlMode.fixed=Jarak Tetap
+resourcePack.editor.CursorModeControl.mouseControlMode.keyboard=Hanya Keyboard
+resourcePack.editor.CursorModeControl.mouseControlMode.keyboardAndMouse=Mouse & Tombol
+resourcePack.editor.CursorModeControl.mouseControlMode.title=Metode Input
+resourcePack.editor.CursorModeControl.mouseControlMode.tooltip=Pilih metode input untuk kursor blok dunia
+resourcePack.editor.CursorModeControl.projectThroughWater.title=Proyeksi Melalui Air
+resourcePack.editor.CursorModeControl.projectThroughWater.tooltip=Raycast mouse akan diproyeksikan lewat air sehingga bisa memilih elemen bawah air
+resourcePack.editor.CursorModeControl.rootPane.title=Pengaturan Kursor
+resourcePack.editor.datatransferaccessors.atmospheric_scattering=Penyebaran Atmosferik
+resourcePack.editor.datatransferaccessors.color_grading=Gradasi Warna
+resourcePack.editor.datatransferaccessors.lighting_group=Pencahayaan Global
+resourcePack.editor.datatransferaccessors.pbr_fallbacks=Rencana Cadangan PBR
+resourcePack.editor.datatransferaccessors.point_lights=Cahaya Titik
+resourcePack.editor.datatransferaccessors.water=Air
+resourcePack.editor.datatransferaccessors.shadows=Bayangan
+resourcePack.editor.deferredLightingSettings.menu.title=Pengaturan Pencahayaan yang Ditangguhkan
+resourcePack.editor.delete.keyBinding=Hapus Konten Pilihan
+resourcePack.editor.toolRail.entityInspector.pane.title=Pemeriksa Entitas   
+resourcePack.editor.toolRail.entityInspector.tool.title=Pemeriksa Entitas   
+resourcePack.editor.toolRail.entityInspector.tool.tip=Periksa data entitas   
+resourcePack.editor.toolRail.entityInspector.pane.helpText=Klik kiri pada entitas untuk melihat dan mengedit propertinya   
+resourcePack.editor.entityInspector.toolRail.description=Klik kiri pada entitas untuk melihat dan mengedit propertinya   
+resourcePack.editor.exportProject.exportType=Ekspor Tipe
+resourcePack.editor.exportProject.exportType.playableWorld=Dunia yang Bisa Dimainkan
+resourcePack.editor.exportProject.exportNotes=Ekspor Catatan
+resourcePack.editor.exportProject.exportNotes.export=Kemajuan Ekspor   
+resourcePack.editor.exportProject.exportNotes.warning=Kamu mengekspor dunia v%1. Dunia yang Bisa Dimainkan dan sudah diekspor tidak bisa dipakai di Minecraft dengan nomor versi sebelum v%1. Untuk mengonversi ke nomor versi sebelumnya, pakai https://chunker.app/ (beberapa fungsi mungkin tidak bisa dijalankan kalau tidak didukung di versi sebelumnya)
+resourcePack.editor.exportProject.exportNotes.progress=Sedang mengekspor dunia ....    
+resourcePack.editor.exportProject.exportNotes.exportSuccess=Dunia berhasil diekspor    
+resourcePack.editor.exportProject.exportNotes.exportFailed=Dunia tidak berhasil diekspor    
+resourcePack.editor.exportProject.generalSettings=Pengaturan Umum
+resourcePack.editor.exportProject.generalSettings.worldName=Nama Dunia
+resourcePack.editor.exportProject.generalSettings.gameMode=Mode Permainan
+resourcePack.editor.exportProject.generalSettings.difficulty=Tingkat Kesulitan
+resourcePack.editor.exportProject.generalSettings.hardcore=Sulit
+resourcePack.editor.exportProject.initialPlaySettings=Pengaturan Permainan Awal   
+resourcePack.editor.exportProject.initialPlaySettings.spawnPosition=Titik Kemunculan Dunia   
+resourcePack.editor.exportProject.initialPlaySettings.startTime=Waktu Mulai   
+resourcePack.editor.exportProject.initialPlaySettings.clockType=Jenis Jam   
+resourcePack.editor.exportProject.initialPlaySettings.customStartTime=Modifikasi Waktu Mulai   
+resourcePack.editor.exportProject.initialPlaySettings.weather=Mulai Cuaca   
+resourcePack.editor.exportProject.advancedSettings=Pengaturan Lanjutan
+resourcePack.editor.exportProject.advancedSettings.startingMap=Peta Awal
+resourcePack.editor.exportProject.advancedSettings.bonusChest=Peti Bonus
+resourcePack.editor.exportProject.advancedSettings.showCoordinates=Tampilkan Koordinat
+resourcePack.editor.exportProject.advancedSettings.showDaysPlayed=Tampilkan Jumlah Hari Bermain
+resourcePack.editor.exportProject.advancedSettings.recipeUnlocking=Membuka Resep
+resourcePack.editor.exportProject.advancedSettings.limitedCrafting=Pembuatan Terbatas   
+resourcePack.editor.exportProject.advancedSettings.fireSpreads=Api Menjalar
+resourcePack.editor.exportProject.advancedSettings.tntExplodes=Dinamit Meledak
+resourcePack.editor.exportProject.advancedSettings.resawnBlocksExplode=Blok Muncul-Kembali Meledak
+resourcePack.editor.exportProject.advancedSettings.mobLoot=Rampasan Mob
+resourcePack.editor.exportProject.advancedSettings.naturalRegeneration=Regenerasi Alamiah
+resourcePack.editor.exportProject.advancedSettings.tileDrops=Jatuhan Ubin
+resourcePack.editor.exportProject.advancedSettings.immediateRespawn=Muncul Kembali Seketika
+resourcePack.editor.exportProject.advancedSettings.showDeathMessage=Tampilkan Pesan Kematian   
+resourcePack.editor.exportProject.advancedSettings.respawnRadius=Radius Muncul Kembali
+resourcePack.editor.exportProject.advancedSettings.simulationDistance=Jarak Simulasi
+resourcePack.editor.exportProject.advancedSettings.bedsWork=Tempat Tidur Berfungsi
+resourcePack.editor.exportProject.advancedSettings.requiredSleepingPlayers=Pemain Tidur yang Diperlukan (%1$s)
+resourcePack.editor.exportProject.advancedSettings.requiredSleepingPlayers.onePlayerMessage=Hanya 1 pemain
+resourcePack.editor.exportProject.advancedSettings.showItemTags=Tampilkan Tag Item   
+resourcePack.editor.exportProject.multiplayerSettings=Pengaturan Multipemain
+resourcePack.editor.exportProject.multiplayerSettings.multiplayerGame=Game Multipemain
+resourcePack.editor.exportProject.multiplayerSettings.playerAccess=Akses Pemain
+resourcePack.editor.exportProject.multiplayerSettings.playerPermissions=Izin Pemain
+resourcePack.editor.exportProject.multiplayerSettings.visibleToLAN=Terlihat oleh Pemain LAN
+resourcePack.editor.exportProject.multiplayerSettings.friendlyFire=Tembakan Teman
+resourcePack.editor.exportProject.cheatsSettings=Pengaturan Cheat
+resourcePack.editor.exportProject.cheatsSettings.cheats=Cheat
+resourcePack.editor.exportProject.cheatsSettings.daylightCycle=Siklus Siang
+resourcePack.editor.exportProject.cheatsSettings.keepInventory=Simpan Persediaan
+resourcePack.editor.exportProject.cheatsSettings.mobSpawning=Mob Muncul
+resourcePack.editor.exportProject.cheatsSettings.mobGriefing=Mob Sedih
+resourcePack.editor.exportProject.cheatsSettings.entitiesDropLoot=Rampasan Drop Entitas
+resourcePack.editor.exportProject.cheatsSettings.weatherCycle=Siklus Cuaca
+resourcePack.editor.exportProject.cheatsSettings.commandBlocks=Blok Perintah
+resourcePack.editor.exportProject.cheatsSettings.commandBlockOutput=Output Blok Perintah   
+resourcePack.editor.exportProject.cheatsSettings.sendCommandFeedback=Kirim Umpan Balik Perintah   
+resourcePack.editor.exportProject.cheatsSettings.maxCommandChainLength=Panjang Rantai Perintah Maksimum   
+resourcePack.editor.exportProject.cheatsSettings.fireDamage=Kerusakan Akibat Api  
+resourcePack.editor.exportProject.cheatsSettings.freezeDamage=Kerusakan Saat Dibekukan  
+resourcePack.editor.exportProject.cheatsSettings.fallDamage=Kerusakan Akibat Jatuh  
+resourcePack.editor.exportProject.cheatsSettings.drowningDamage=Kerusakan Akibat Tenggelam  
+resourcePack.editor.exportProject.cheatsSettings.insomnia=Insomnia  
+resourcePack.editor.exportProject.cheatsSettings.showBorderEffect=Tampilkan Efek Batas  
+resourcePack.editor.exportProject.cheatsSettings.functionCommandLimit=Batas Perintah Fungsi  
+resourcePack.editor.exportProject.cheatsSettings.educationFeatures=Fitur Edukasi
+resourcePack.editor.exportProject.cheatsSettings.randomTickSpeed=Kecepatan Tick Acak
+resourcePack.editor.exportProject.export=Ekspor
+resourcePack.editor.exportProject.resetToDefault=Atur Ulang ke Default
+resourcePack.editor.exportProject.gameMode.survival=Bertahan Hidup
+resourcePack.editor.exportProject.gameMode.creative=Kreatif
+resourcePack.editor.exportProject.gameMode.adventure=Petualangan
+resourcePack.editor.exportProject.difficulty.peaceful=Tenang
+resourcePack.editor.exportProject.difficulty.easy=Mudah
+resourcePack.editor.exportProject.difficulty.normal=Normal
+resourcePack.editor.exportProject.difficulty.hard=Sulit
+resourcePack.editor.exportProject.weather.default=Default   
+resourcePack.editor.exportProject.weather.clear=Hapus   
+resourcePack.editor.exportProject.weather.rain=Hujan   
+resourcePack.editor.exportProject.weather.thunder=Guntur   
+resourcePack.editor.toolRail.ExtrudeTool.title=Alat Ekstrusi
+resourcePack.editor.toolRail.ExtrudeTool.tooltip=Alat ekstrusi untuk memperluas dan mengurangi blok
+resourcePack.editor.toolRail.ExtrudeTool.pane.ContiguousSelectionBlockListSubPane.title=Daftar Blok Pilihan Bersebelahan
+resourcePack.editor.toolRail.ExtrudeTool.pane.TrailingBlocksSettingsSubPane.title=Pengaturan Blok Jejak
+resourcePack.editor.toolRail.ExtrudeTool.pane.SampleLayerCount.title=Jumlah Lapisan Sampel
+resourcePack.editor.toolRail.ExtrudeTool.pane.ContiguousSelectionSettings.title=Pengaturan Pilihan Bersebelahan
+resourcePack.editor.toolRail.ExtrudeTool.pane.ContiguousSelectionType.title=Tipe Seleksi Bersebelahan
+resourcePack.editor.toolRail.ExtrudeTool.pane.ContiguousSelectionType.SameBlocks=Blok yang Sama
+resourcePack.editor.toolRail.ExtrudeTool.pane.ContiguousSelectionType.SameBlocksAndStates=Blok dan Keadaan yang Sama
+resourcePack.editor.toolRail.ExtrudeTool.pane.ContiguousSelectionType.SolidBlocks=Blok Pejal
+resourcePack.editor.toolRail.ExtrudeTool.pane.ContiguousSelectionType.AllBlocks=Semua Blok
+resourcePack.editor.toolRail.ExtrudeTool.pane.ContiguousSelectionType.CustomBlockList=Daftar Blok Modifikasi
+resourcePack.editor.toolRail.ExtrudeTool.pane.ToleranceLevel.title=Tingkat Toleransi
+resourcePack.editor.toolRail.ExtrudeTool.pane.HasAdjacentBlocks.title=Memiliki Blok Berdekatan
+resourcePack.editor.toolRail.ExtrudeTool.pane.ExtruderSettings.title=Pengaturan Ekstrusi
+resourcePack.editor.toolRail.ExtrudeTool.pane.Radius.title=Radius
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.title=Mode Pilihan
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.ContiguousSelection=Pilihan Bersebelahan
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.MarqueeSelection=Pilihan Lingkup
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.ContiguousSettings.title=Pengaturan Pilihan Bersebelahan
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.TrailingBlocks.title=Blok Jejak
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.TrailingBlocksSettings.title=Pengaturan Blok Jejak
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.QuickExtrudeSettings.title=Pengaturan Ekstrusi Cepat
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.QuickExtrudeMode.title=Mode Ekstrusi Cepat
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.QuickExtrudeMode.decrease.title=Kurangi
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.QuickExtrudeMode.decrease.tooltip=Kurangi Ekstrusi
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.QuickExtrudeMode.expand.title=Perluas
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.QuickExtrudeMode.expand.tooltip=Perluas Ekstrusi
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.LayerCount.title=Jumlah Lapisan
+resourcePack.editor.toolRail.ExtrudeTool.pane.preview_warning=Catatan: Visualisasi pratinjau hanya menampilkan lapisan pertama 
+resourcePack.editor.toolRail.ExtrudeTool.pane.ExtrusionType.title=Tipe Ekstrusi
+resourcePack.editor.toolRail.ExtrudeTool.pane.ExtrusionType.Extrude=Ekstrusi
+resourcePack.editor.toolRail.ExtrudeTool.pane.ExtrusionType.QuickExtrude=Ekstrusi Cepat
+resourcePack.editor.toolRail.ExtrudeTool.keyBinding.deselect=Batalkan Pilihan
+resourcePack.editor.toolRail.ExtrudeTool.keyBinding.toggleTool=Alihkan Alat Ekstrusi
+resourcePack.editor.toolRail.FarmGenerator.tool.title=Generator Pertanian
+resourcePack.editor.toolRail.FarmGenerator.tool.tooltip=Buat pertanian modifikasi dengan cepat
+resourcePack.editor.toolRail.FarmGenerator.pane.title=Generator Pertanian
+resourcePack.editor.toolRail.FarmGenerator.pane.length=Panjang
+resourcePack.editor.toolRail.FarmGenerator.pane.width=Lebar
+resourcePack.editor.toolRail.FarmGenerator.pane.fence=Pagar
+resourcePack.editor.toolRail.FarmGenerator.pane.irrigation=Tambah Irigasi
+resourcePack.editor.toolRail.FarmGenerator.pane.irrigation.tooltip=Menambahkan blok air di peternakan untuk irigasi tanaman panen.
+resourcePack.editor.toolRail.FarmGenerator.pane.crops.title=Tanaman Panen
+resourcePack.editor.toolRail.FarmGenerator.pane.crops.wheat=Gandum
+resourcePack.editor.toolRail.FarmGenerator.pane.crops.potato=Kentang
+resourcePack.editor.toolRail.FarmGenerator.pane.crops.beets=Ubi Bit Merah
+resourcePack.editor.toolRail.FarmGenerator.pane.crops.pumpkin=Labu
+resourcePack.editor.toolRail.FarmGenerator.pane.crops.carrot=Wortel
+resourcePack.editor.toolRail.FarmGenerator.pane.animals.title=Hewan
+resourcePack.editor.toolRail.FarmGenerator.pane.animals.cow=Sapi
+resourcePack.editor.toolRail.FarmGenerator.pane.animals.sheep=Domba
+resourcePack.editor.toolRail.FarmGenerator.pane.animals.pig=Babi
+resourcePack.editor.toolRail.FarmGenerator.keyBinding.toggleTool=Alihkan Alat Generator Pertanian
+resourcePack.editor.toolRail.FarmGenerator.keyBinding.place=Tempatkan Pertanian di Kursor
+resourcePack.editor.global.keyBinding.toggleMode=Alihkan Mode
+resourcePack.editor.goToMark.actionBar.tooltip.description=Panel utilitas untuk navigasi pemain
+resourcePack.editor.goToMark.actionBar.tooltip.title=Panel Navigasi
+resourcePack.editor.goToMark.pane.goToSpawn=Titik Kemunculan Kunjungi
+resourcePack.editor.goToMark.pane.location=Lokasi Pemain
+resourcePack.editor.goToMark.pane.locationPane.delete=Hapus Lokasi Tersimpan
+resourcePack.editor.goToMark.pane.locationPane.dropdownLabel=Lokasi Tersimpan
+resourcePack.editor.goToMark.pane.locationPane.inputName=Nama Baru
+resourcePack.editor.goToMark.pane.locationPane.markColor=Warna Tanda Lokasi
+resourcePack.editor.goToMark.pane.locationPane.store=Simpan Lokasi Saat Ini sebagai ...
+resourcePack.editor.goToMark.pane.locationPane.teleport=Berteleportasi ke Lokasi Tersimpan %1$s
+resourcePack.editor.goToMark.pane.locationPane.title=Lokasi Tersimpan
+resourcePack.editor.goToMark.pane.mapSize=Ukuran Peta
+resourcePack.editor.goToMark.pane.refreshMap=Segarkan Peta
+resourcePack.editor.goToMark.pane.setSpawn=Atur Titik Kemunculan ke saat ini
+resourcePack.editor.goToMark.pane.showMap=Tampilkan Peta
+resourcePack.editor.goToMark.pane.teleport=Teleportasi ke lokasi
+resourcePack.editor.goToMark.title=Panel Navigasi
+resourcePack.editor.grapple.keyBinding.flyToCursor=Terbang ke Kursor
+resourcePack.editor.grapple.keyBinding.flyToSelection=Terbang ke Pilihan
+resourcePack.editor.locate.biome.find=Cari Bioma
+resourcePack.editor.locate.biome.title=Bioma
+resourcePack.editor.locate.keyBinding.toggleTool=Alihkan Alat Pencari Bioma
+resourcePack.editor.locate.locatetype.biome=Bioma
+resourcePack.editor.locate.locatetype.structure=Bangunan
+resourcePack.editor.locate.locatetype.title=Cari Tipe
+resourcePack.editor.locate.results.foundat.title=Ditemukan di
+resourcePack.editor.locate.results.foundat=Ditemukan di
+resourcePack.editor.locate.results.goto=Pergi ke
+resourcePack.editor.locate.results.notfound.title=Tidak ada hasil
+resourcePack.editor.locate.results.notfound=Hasil tidak ditemukan
+resourcePack.editor.locate.results.title=Hasil
+resourcePack.editor.locate.structure.message=Pencarian bangunan saat ini tidak didukung
+resourcePack.editor.locate.structure.title=Bangunan
+resourcePack.editor.locate.title=Temukan
+resourcePack.editor.menuBar.edit.copy=Salin
+resourcePack.editor.menuBar.edit.cut=Potong
+resourcePack.editor.menuBar.edit.delete=Hapus
+resourcePack.editor.menuBar.edit.deselect=Batalkan Pilihan
+resourcePack.editor.menuBar.edit.quickFill=Isian Cepat
+resourcePack.editor.menuBar.edit.quickPaste=Tempel Cepat
+resourcePack.editor.menuBar.edit.redo=Ulangi
+resourcePack.editor.menuBar.edit.undo=Batalkan
+resourcePack.editor.menuBar.edit=Edit
+resourcePack.editor.menuBar.experimental=Eksperimental
+resourcePack.editor.menuBar.extensions=Ekstensi
+resourcePack.editor.menuBar.file.cursor.projectThroughLiquid=Proyeksi lewat cairan
+resourcePack.editor.menuBar.file.cursor=Pengaturan kursor
+resourcePack.editor.menuBar.file.export.project=Proyek Editor
+resourcePack.editor.menuBar.file.export.world=Dunia yang Dapat Dimainkan
+resourcePack.editor.menuBar.file.export=Ekspor
+resourcePack.editor.menuBar.file.pauseScreen=Menu permainan
+resourcePack.editor.menuBar.file.settings=Pengaturan UI
+resourcePack.editor.menuBar.file=File
+resourcePack.editor.menuBar.help.tutorial=Panduan 
+resourcePack.editor.menuBar.help.documentation=Dokumentasi
+resourcePack.editor.menuBar.help.feedback=Umpan Balik
+resourcePack.editor.menuBar.help.quickStart=Mulai Cepat
+resourcePack.editor.menuBar.help=Bantuan
+resourcePack.editor.menuBar.locate=Temukan
+resourcePack.editor.menuBar.parentMenu.weather.clear=Kosongkan
+resourcePack.editor.menuBar.parentMenu.weather.rain=Hujan
+resourcePack.editor.menuBar.parentMenu.weather.thunder=Guntur
+resourcePack.editor.menuBar.parentMenu.weather=Cuaca
+resourcePack.editor.menuBar.view.blockPalette=Palet Blok
+resourcePack.editor.menuBar.view.logging=Panel Log
+resourcePack.editor.menuBar.view.navigationLogging=Pencatatan navigasi
+resourcePack.editor.menuBar.view=Lihat
+resourcePack.editor.menuBar.worldOptions.changeDimension.end=Akhir
+resourcePack.editor.menuBar.worldOptions.changeDimension.nether=Nether
+resourcePack.editor.menuBar.worldOptions.changeDimension.overworld=Overworld
+resourcePack.editor.menuBar.worldOptions.changeDimension=Ubah dimensi
+resourcePack.editor.menuBar.worldOptions.pause.entities=Entitas
+resourcePack.editor.menuBar.worldOptions.pause=Jeda
+resourcePack.editor.menuBar.worldOptions=Opsi Dunia
+resourcePack.editor.navigation.keyBinding.add=Tambahkan Posisi Navigasi
+resourcePack.editor.navigation.keyBinding.next=Ke Posisi Navigasi Berikutnya
+resourcePack.editor.navigation.keyBinding.previous=Ke Posisi Navigasi Sebelumnya
+resourcePack.editor.paste.pane.submitButton=Konfirmasi Tempel
+resourcePack.editor.paste.pane.title=Tempelkan
+resourcePack.editor.paste.pane.transform.mirrorX=Cerminkan X
+resourcePack.editor.paste.pane.transform.mirrorZ=Cerminkan Z
+resourcePack.editor.paste.pane.transform.origin.title=Offset:
+resourcePack.editor.paste.pane.transform.rotation.180=180
+resourcePack.editor.paste.pane.transform.rotation.270=270
+resourcePack.editor.paste.pane.transform.rotation.90=90
+resourcePack.editor.paste.pane.transform.rotation.none=0°
+resourcePack.editor.paste.pane.transform.rotation.title=Putar
+resourcePack.editor.paste.pane.transform.title=Ubah
+resourcePack.editor.paste.toolRail.description=Klik kiri mouse untuk memilih blok dan kemudian dengan tepat menempelkan item clipboard
+resourcePack.editor.paste.toolRail.title=Tempel Pratinjau
+resourcePack.editor.pastepreview.inputContext.title=Tempel Pratinjau
+resourcePack.editor.pastepreview.keyBinding.clearPreview=Hapus Pratinjau
+resourcePack.editor.pastepreview.keyBinding.copy=Salin Pilihan
+resourcePack.editor.pastepreview.keyBinding.cut=Potong Pilihan
+resourcePack.editor.pastepreview.keyBinding.moveBack=Gerakkan Pratinjau ke Belakang
+resourcePack.editor.pastepreview.keyBinding.moveDown=Gerakkan Pratinjau ke Bawah
+resourcePack.editor.pastepreview.keyBinding.moveForward=Gerakkan Pratinjau ke Depan
+resourcePack.editor.pastepreview.keyBinding.moveLeft=Gerakkan Pratinjau ke Kiri
+resourcePack.editor.pastepreview.keyBinding.moveOffsetBack=Gerakkan Offset ke Belakang
+resourcePack.editor.pastepreview.keyBinding.moveOffsetDown=Gerakkan Offset ke Bawah
+resourcePack.editor.pastepreview.keyBinding.moveOffsetForward=Gerakkan Offset ke Depan
+resourcePack.editor.pastepreview.keyBinding.moveOffsetLeft=Gerakkan Offset ke Kiri
+resourcePack.editor.pastepreview.keyBinding.moveOffsetRight=Gerakkan Offset ke Kanan
+resourcePack.editor.pastepreview.keyBinding.moveOffsetUp=Gerakkan Offset ke Atas
+resourcePack.editor.pastepreview.keyBinding.moveOriginBack=Gerakkan Asal ke Belakang
+resourcePack.editor.pastepreview.keyBinding.moveOriginDown=Gerakkan Asal ke Bawah
+resourcePack.editor.pastepreview.keyBinding.moveOriginForward=Gerakkan Asal ke Depan
+resourcePack.editor.pastepreview.keyBinding.moveOriginLeft=Gerakkan Asal ke Kiri
+resourcePack.editor.pastepreview.keyBinding.moveOriginRight=Gerakkan Asal ke Kanan
+resourcePack.editor.pastepreview.keyBinding.moveOriginUp=Gerakkan Asal ke Atas
+resourcePack.editor.pastepreview.keyBinding.moveRight=Gerakkan Pratinjau ke Kanan
+resourcePack.editor.pastepreview.keyBinding.moveUp=Gerakkan Pratinjau ke Atas
+resourcePack.editor.pastepreview.keyBinding.paste=Tempelkan
+resourcePack.editor.pastepreview.keyBinding.pasteAtCursor=Salin Di Kursor
+resourcePack.editor.pastepreview.keyBinding.pastepreview=Tempel Pratinjau
+resourcePack.editor.pastepreview.keyBinding.quickPaste=Tempel Cepat
+resourcePack.editor.pastepreview.keyBinding.rotateClockWise=Putar Pratinjau Searah Jarum Jam
+resourcePack.editor.pastepreview.keyBinding.rotateCounterClockWise=Putar Pratinjau Berlawanan Jarum Jam
+resourcePack.editor.pastepreview.keyBinding.toggleAdjacentTarget=Alihkan Mode Target Berdekatan
+resourcePack.editor.pastepreview.keyBinding.toggleBlockTarget=Alihkan Mode Target Blok
+resourcePack.editor.pastepreview.keyBinding.toggleFixedDistance=Aktifkan Jarak Tetap
+resourcePack.editor.pastepreview.keyBinding.toggleMirrorX=Alihkan Cermin X
+resourcePack.editor.pastepreview.keyBinding.toggleMirrorZ=Alihkan Cermin Z
+resourcePack.editor.pastepreview.keyBinding.toggleMouseTracking=Aktifkan Pelacakan Mouse
+resourcePack.editor.pastepreview.pane.controls.cursor.fixed=Jarak Tetap
+resourcePack.editor.pastepreview.pane.controls.cursor.keyboard=Hanya tombol
+resourcePack.editor.pastepreview.pane.controls.cursor.mouseandkeys=Mouse & Tombol
+resourcePack.editor.pastepreview.pane.controls.cursor.target.block=Blokir
+resourcePack.editor.pastepreview.pane.controls.cursor.target.face=Bersebelahan
+resourcePack.editor.pastepreview.pane.controls.cursor.target.title=Target
+resourcePack.editor.pastepreview.pane.controls.cursor=Kontrol
+resourcePack.editor.pastepreview.pane.controls.title=Kontrol Kursor
+resourcePack.editor.pastepreview.pane.placement.mirrorX=Cerminkan X
+resourcePack.editor.pastepreview.pane.placement.mirrorZ=Cerminkan Z
+resourcePack.editor.pastepreview.pane.placement.offset=Offset
+resourcePack.editor.pastepreview.pane.placement.origin=Asal
+resourcePack.editor.pastepreview.pane.placement.pastebutton=Tempelkan
+resourcePack.editor.pastepreview.pane.placement.rotation=Rotasi (di sekitar Y)
+resourcePack.editor.pastepreview.pane.placement.title=Pengaturan Penempatan
+resourcePack.editor.pastepreview.pane.root.size=Ukuran
+resourcePack.editor.pastepreview.pane.root.title=Tempel Pratinjau
+resourcePack.editor.pastepreview.tool.tip=Gunakan mouse untuk menyesuaikan posisi pratinjau clipboard, lalu klik untuk menempelkan ke dunia
+resourcePack.editor.pastepreview.tool.title=Tempel Pratinjau
+resourcePack.editor.playerPositionExtension.dimension=Dimensi
+resourcePack.editor.playerPositionExtension.menu.player=Pemain
+resourcePack.editor.playerPositionExtension.menu.showPlayerSettings=Tampilkan Pengaturan Pemain
+resourcePack.editor.playerPositionExtension.nether=Nether
+resourcePack.editor.playerPositionExtension.overworld=Overworld
+resourcePack.editor.playerPositionExtension.pane=Pengaturan Pemain
+resourcePack.editor.playerPositionExtension.theEnd=Akhir
+resourcePack.editor.playerPositionExtension.worldSettings=Pengaturan Dunia
+resourcePack.editor.playtest.AdvancedSettings.title=Pengaturan Lanjutan
+resourcePack.editor.playtest.Dialog.DaylightCycle=Siklus Siang Hari
+resourcePack.editor.playtest.Dialog.Difficulty=Kesulitan
+resourcePack.editor.playtest.Dialog.GameMode=Mode Permainan
+resourcePack.editor.playtest.Dialog.OverrideSpawn=Munculkan di Lokasi Saat Ini
+resourcePack.editor.playtest.Dialog.ShowCoordinates=Tampilkan Koordinat
+resourcePack.editor.playtest.Dialog.TestButton=Uji Dunia
+resourcePack.editor.playtest.Dialog.TimeOfDay=Waktu
+resourcePack.editor.playtest.Dialog.Title=Pengaturan Pengujian
+resourcePack.editor.playtest.Dialog.Weather=Cuaca
+resourcePack.editor.playtest.Dialog.WeatherCycle=Siklus Cuaca
+resourcePack.editor.playtest.Menu.Title=Dunia Pengujian
+resourcePack.editor.playtest.Title.Tooltip=Uji proyek Editor sebagai dunia Minecraft yang bisa dimainkan. Tidak ada perubahan yang akan disimpan pada proyekmu. Hanya tersedia saat menjadi host proyek pemain tunggal.
+resourcePack.editor.playtestResult.EditorSystemFailure=Kegagalan Sistem Editor
+resourcePack.editor.playtestResult.InvalidLevelId=ID Level Tidak Valid
+resourcePack.editor.playtestResult.InvalidSessionHandle=Pengaturan Sesi Tidak Valid
+resourcePack.editor.playtestResult.OK=Berhasil
+resourcePack.editor.playtestResult.PlayerNotFound=Pemain Tidak Ditemukan
+resourcePack.editor.playtestResult.ResponseTimeout=Waktu Respons Habis
+resourcePack.editor.playtestResult.SessionInfoNotFound=Info Sesi Tidak Ditemukan
+resourcePack.editor.playtestResult.TooManyPlayers=Kamu tidak bisa menguji dunia saat kamu menjadi host pemain lain
+resourcePack.editor.playtestResult.UnspecifiedError=Kesalahan Tidak Spesifik
+resourcePack.editor.playtestResult.UnsupportedScenario=Kamu harus menjadi host proyek editor untuk menguji dunia
+resourcePack.editor.playtestResult.WorldExportBusy=Ekspor Dunia Sibuk
+resourcePack.editor.playtestResult.WorldExportFailed=Ekspor Dunia Gagal
+resourcePack.editor.menuBar.file.realmsPublish=Publikasi ke Realms   
+resourcePack.editor.realmsPublish.noActiveRealmsSubscription=Langganan Realms aktif diperlukan untuk Publikasi ke Realms. Kamu bisa berlangganan Realms atau memperbarui langganan kedaluwarsa dari klien Minecraft standar atau di situs web minecraft.net (setelah masuk ke akunmu).    
+resourcePack.editor.realmsPublish.userNotLoggedIn=Langganan Realms aktif diperlukan untuk Publikasikan ke Realms. Untuk mengakses langganan Realms yang tersedia, kamu harus masuk ke Akun Microsoft.
+resourcePack.editor.realmsPublish.dedicatedServerWarning=Publikasi ke Realms tidak tersedia saat menggunakan Server Khusus.
+resourcePack.editor.realmsPublish.notSessionHostWarning=Hanya host sesi Editor yang bisa melakukan Publikasi ke Realms.
+resourcePack.editor.realmsPublish.genericRealmsIssue=Ada masalah dengan layanan Realms, coba lagi nanti.
+resourcePack.editor.realmsPublish.goToMinecraftWebsite=Pergi ke Minecraft.net  
+resourcePack.editor.realmsPublish.Refresh=Refresh  
+resourcePack.editor.realmsPublish.Realm=Realm  
+resourcePack.editor.realmsPublish.RealmSlot=Slot Realm 
+resourcePack.editor.realmsPublish.EmptySlot=Slot Kosong
+resourcePack.editor.realmsPublish.PublishNotesTitle=Publikasi ke Catatan Realms   
+resourcePack.editor.realmsPublish.DownloadRealm=Unduh    
+resourcePack.editor.realmsPublish.PublishRealm=Publikasikan  
+resourcePack.editor.realmsPublish.Confirm=Konfirmasi   
+resourcePack.editor.realmsPublish.Cancel=Batal 
+resourcePack.editor.realmsPublish.Back=Kembali 
+resourcePack.editor.realmsPublish.PublishFailedNonCompliantWorldName=Publikasi ke Realms gagal karena nama dunia yang tidak valid. Perbarui nama dunia dan coba lagi.
+resourcePack.editor.realmsPublish.PublishFailed=Publikasi ke Realms gagal. Coba lagi nanti.   
+resourcePack.editor.realmsPublish.PublishSuccess=Publikasi ke Realms berhasil    
+resourcePack.editor.realmsPublish.PublishConfirmationOptOut=Jangan tanya lagi untuk Realm dan sesi ini  
+resourcePack.editor.realmsPublish.PublishingToRealms=Memublikasikan dunia ke Realms ...  
+resourcePack.editor.realmsPublish.UnableToPublishMissingRealm=Tidak bisa memublikasikan ke Realms. Realm belum dipilih    
+resourcePack.editor.realmsPublish.UnableToPublishMissingRealmSlot=Tidak bisa memublikasikan ke Realms. Slot Realm belum dipilih   
+resourcePack.editor.realmsPublish.PublishConfirmationWarning=Tindakan ini akan menghapus duniamu saat ini dari slot yang dipilih dan menggantinya dengan dunia Editormu saat ini (slot yang dipilih juga akan jadi slot aktif untuk Realm kamu). Anggota Realm kamu akan bisa mengakses duniamu yang baru diganti. Kalau kamu mau menyimpan duniamu saat ini supaya datanya tidak hilang sebelum memublikasikan, batalkan dialog ini dan pilih "Unduh" sebelum "Publikasikan". Pilih "Konfirmasi" untuk melanjutkan dan mengganti duniamu saat ini.    
+resourcePack.editor.realmsPublish.DownloadSuccess=Berhasil mengunduh dunia dari Realms    
+resourcePack.editor.realmsPublish.DownloadFailed=Gagal mengunduh dunia dari Realms 
+resourcePack.editor.realmsPublish.DownloadingFromRealms=Mengunduh dunia dari Realms...    
+resourcePack.editor.toolRail.RepeaterTool.title=Alat Pengulang
+resourcePack.editor.toolRail.RepeaterTool.tooltip=Alat untuk mengulang volume pilihan
+resourcePack.editor.toolRail.RepeaterTool.pane.Spacing=Jarak
+resourcePack.editor.toolRail.RepeaterTool.pane.Repetitions=Pengulangan
+resourcePack.editor.toolRail.RepeaterTool.pane.Preview=Pratinjau
+resourcePack.editor.toolRail.RepeaterTool.pane.Clear=Kosongkan
+resourcePack.editor.toolRail.RepeaterTool.pane.Apply=Terapkan
+resourcePack.editor.toolRail.RepeaterTool.statusMessage.noSelection=Gunakan alat Pilihan untuk memilih volume yang akan diulang
+resourcePack.editor.toolRail.RepeaterTool.pane.Mode=Mode
+resourcePack.editor.toolRail.RepeaterTool.mode.Line=Baris
+resourcePack.editor.toolRail.RepeaterTool.mode.Grid=Grid
+resourcePack.editor.toolRail.RepeaterTool.pane.RepeatType=Ulangi Jenis
+resourcePack.editor.toolRail.RepeaterTool.repeat.Uniform=Seragam
+resourcePack.editor.toolRail.RepeaterTool.pane.RepeatAlongX=Ulangi Sepanjang X
+resourcePack.editor.toolRail.RepeaterTool.pane.RepeatAlongY=Ulangi Sepanjang Y
+resourcePack.editor.toolRail.RepeaterTool.pane.RepeatAlongZ=Ulangi Sepanjang Z
+resourcePack.editor.toolRail.RepeaterTool.repeat.Separate=Pisahkan
+resourcePack.editor.toolRail.RepeaterTool.pane.XCount=Jumlah X
+resourcePack.editor.toolRail.RepeaterTool.pane.YCount=Jumlah Y
+resourcePack.editor.toolRail.RepeaterTool.pane.ZCount=Jumlah Z
+resourcePack.editor.selectionTool.deselect=Batalkan Pilihan
+resourcePack.editor.selectionTool.fillPane.fillAction=Pemilihan Isian
+resourcePack.editor.selectionTool.fillPane.title=Pemilihan Isian
+resourcePack.editor.selectionTool.keyBinding.deselect=Batalkan Pilihan
+resourcePack.editor.selectionTool.keyBinding.fill=Isi Konten Pilihan
+resourcePack.editor.selectionTool.keyBinding.growBack=Tumbuhkan Pilihan Belakang
+resourcePack.editor.selectionTool.keyBinding.growDown=Tumbuhkan Pilihan Bawah
+resourcePack.editor.selectionTool.keyBinding.growForward=Besarkan Pilihan ke Depan
+resourcePack.editor.selectionTool.keyBinding.growLeft=Tumbuhkan Pilihan Kiri
+resourcePack.editor.selectionTool.keyBinding.growRight=Besarkan Pilihan ke Kanan
+resourcePack.editor.selectionTool.keyBinding.growUp=Tumbuhkan Pilihan Atas
+resourcePack.editor.selectionTool.keyBinding.moveAllSelectionBack=Gerakkan Semua Pilihan ke Belakang
+resourcePack.editor.selectionTool.keyBinding.moveAllSelectionDown=Gerakkan Semua Pilihan ke Bawah
+resourcePack.editor.selectionTool.keyBinding.moveAllSelectionForward=Gerakkan Semua Pilihan ke Depan
+resourcePack.editor.selectionTool.keyBinding.moveAllSelectionLeft=Gerakkan Semua Pilihan ke Kiri
+resourcePack.editor.selectionTool.keyBinding.moveAllSelectionRight=Gerakkan Semua Pilihan ke Kanan
+resourcePack.editor.selectionTool.keyBinding.moveAllSelectionUp=Gerakkan Semua Pilihan ke Atas
+resourcePack.editor.selectionTool.keyBinding.moveCursorBack=Pindahkan Kursor ke Belakang
+resourcePack.editor.selectionTool.keyBinding.moveCursorDown=Pindahkan Kursor ke Bawah
+resourcePack.editor.selectionTool.keyBinding.moveCursorForward=Gerakkan Kursor ke Depan
+resourcePack.editor.selectionTool.keyBinding.moveCursorLeft=Gerakkan Kursor ke Kiri
+resourcePack.editor.selectionTool.keyBinding.moveCursorRight=Pindahkan Kursor ke Kanan
+resourcePack.editor.selectionTool.keyBinding.moveCursorUp=Pindahkan Kursor ke Atas
+resourcePack.editor.selectionTool.keyBinding.moveSelectionBack=Pindahkan Pilihan ke Belakang
+resourcePack.editor.selectionTool.keyBinding.moveSelectionDown=Pindahkan Pilihan ke Bawah
+resourcePack.editor.selectionTool.keyBinding.moveSelectionForward=Pindahkan Pilihan ke Depan
+resourcePack.editor.selectionTool.keyBinding.moveSelectionLeft=Pindahkan Pilihan ke Kiri
+resourcePack.editor.selectionTool.keyBinding.moveSelectionRight=Gerakkan Pilihan ke Kanan
+resourcePack.editor.selectionTool.keyBinding.moveSelectionUp=Pindahkan Pilihan ke Atas
+resourcePack.editor.selectionTool.keyBinding.shrinkBack=Kurangi Pilihan Belakang
+resourcePack.editor.selectionTool.keyBinding.shrinkDown=Kurangi Pilihan Bawah
+resourcePack.editor.selectionTool.keyBinding.shrinkForward=Kecilkan Pilihan ke Depan
+resourcePack.editor.selectionTool.keyBinding.shrinkLeft=Kecilkan Pilihan ke Kiri
+resourcePack.editor.selectionTool.keyBinding.shrinkRight=Kurangi Pilihan Kanan
+resourcePack.editor.selectionTool.keyBinding.shrinkUp=Kurangi Pilihan Atas
+resourcePack.editor.selectionTool.keyBinding.toggleTool=Alihkan Alat Pilihan
+resourcePack.editor.selectionTool.keyBinding.select=Pilih Blok
+resourcePack.editor.selectionTool.keyBinding.selectMultiple=Pilih Blok Tambahan
+resourcePack.editor.selectionTool.keyBinding.trimVolume=Pilihan Trim (Batas)
+resourcePack.editor.selectionTool.keyBinding.trimRemoveAir=Pilihan Trim (Hapus Udara)
+resourcePack.editor.selectionTool.marquee.title=Seleksi Marquee
+resourcePack.editor.selectionTool.modeSelection.freehand.title=Mode Kuas Tangan Bebas
+resourcePack.editor.selectionTool.modeSelection.freehand.tooltip=Pilih blok di dunia dengan bentuk kuas tangan bebas
+resourcePack.editor.selectionTool.modeSelection.marquee.title=Mode Lingkup
+resourcePack.editor.selectionTool.modeSelection.marquee.tooltip=Pilih blok di dunia dengan volume persegi panjang
+resourcePack.editor.selectionTool.modeSelection.magic.title=Mode Pilih Ajaib
+resourcePack.editor.selectionTool.modeSelection.magic.tooltip=Pilih blok di dunia menggunakan pola pencarian dari asal yang dipilih
+resourcePack.editor.selectionTool.modeSelection.title=Mode Pilihan
+resourcePack.editor.selectionTool.projectThroughLiquid=Proyeksi lewat cairan
+resourcePack.editor.selectionTool.trimAction.trimVolume=Pangkas Pilihan
+resourcePack.editor.selectionTool.trimAction.trimVolume.tooltip=Pangkas volume pilihan saat ini supaya hanya memuat blok pejal   
+resourcePack.editor.selectionTool.trimAction.removeAir=Hilangkan Udara
+resourcePack.editor.selectionTool.trimAction.removeAir.tooltip=Hilangkan udara dari volume pilihan saat ini sehingga menyisakan blok yang ditentukan saja 
+resourcePack.editor.selectionTool.trimAction.trimVolume.SettingsPane.title=Pengaturan Pemangkasan
+resourcePack.editor.selectionTool.trimAction.trimVolume.SettingsPane.ignoreLiquid=Abaikan Cairan
+resourcePack.editor.selectionTool.trimAction.trimVolume.SettingsPane.ignoreLiquid.tooltip=Abaikan semua blok cairan saat memangkas volume 
+resourcePack.editor.selectionTool.trimAction.trimVolume.SettingsPane.onlyCollidable=Hanya Blok Benturan
+resourcePack.editor.selectionTool.trimAction.trimVolume.SettingsPane.onlyCollidable.tooltip=Abaikan blok apa pun tanpa benturan (daun, rumput, dll.) ketika memangkas volume 
+resourcePack.editor.selectionTool.quickAction.clearSelection.tooltip=Batalkan pilihan saat ini
+resourcePack.editor.selectionTool.quickAction.clearSelection=Batalkan Pilihan
+resourcePack.editor.selectionTool.quickAction.deleteSelection.tooltip=Keluarkan semua blok di dalam volume pilihan saat ini
+resourcePack.editor.selectionTool.quickAction.deleteSelection=Hapus
+resourcePack.editor.selectionTool.quickAction.fillSelection.tooltip=Isi volume pilihan saat ini dengan jenis blok yang dipilih saat ini
+resourcePack.editor.selectionTool.quickAction.fillSelection=Isi
+resourcePack.editor.selectionTool.quickAction.title=Aksi Cepat
+resourcePack.editor.selectionTool.selectionMode.adjacent=Berdekatan
+resourcePack.editor.selectionTool.selectionMode.fixedDistance=Jarak Tetap
+resourcePack.editor.selectionTool.selectionMode.mouseAndKeyboard=Bentuk Bebas
+resourcePack.editor.selectionTool.selectionMode=Mode
+resourcePack.editor.selectionTool.settingsPane.title=Pilihan
+resourcePack.editor.selectionTool.toolRail.description=Klik kiri mouse untuk membuat pilihan; CTRL+D untuk membatalkan pilihan
+resourcePack.editor.selectionTool.toolRail.title=Pilihan
+resourcePack.editor.selectionTool.transformPane.origin.tooltip=Lokasi asal pilihan dalam koordinat dunia.
+resourcePack.editor.selectionTool.transformPane.origin=Asal
+resourcePack.editor.selectionTool.transformPane.size=Ukuran
+resourcePack.editor.selectionTool.transformPane.title=Ubah
+resourcePack.editor.BlockMaskControl.trim.rootPane.title=Pengaturan Pemangkasan
+resourcePack.editor.BlockMaskControl.trim.toggleGroup.title=Mode Topeng
+resourcePack.editor.BlockMaskControl.trim.toggleGroup.item.disabled.label=Nonaktifkan Filter Blok
+resourcePack.editor.BlockMaskControl.trim.toggleGroup.item.disabled.tooltip=Dinonaktifkan
+resourcePack.editor.BlockMaskControl.trim.toggleGroup.item.mask.label=Topeng
+resourcePack.editor.BlockMaskControl.trim.toggleGroup.item.mask.tooltip=Blok yang cocok dengan daftar akan diabaikan
+resourcePack.editor.BlockMaskControl.trim.toggleGroup.item.replace.label=Ganti
+resourcePack.editor.BlockMaskControl.trim.toggleGroup.item.replace.tooltip=Blok yang cocok dengan daftar akan dianggap solid
+resourcePack.editor.server.description=Sumber Daya Server Editor
+resourcePack.editor.server.name=Sumber Daya Editor
+resourcePack.editor.toolRail.Terrain.title=Medan
+resourcePack.editor.toolRail.Terrain.keybinding.toggleTool=Alihkan Alat Medan
+resourcePack.editor.toolRail.Terrain.keyBinding.switch=Ganti Mode Medan
+resourcePack.editor.toolRail.Terrain.Mode.title=Mode Medan
+resourcePack.editor.toolRail.Terrain.Smooth.mode.title=Mode Halus
+resourcePack.editor.toolRail.Terrain.Smooth.tooltip=Menghaluskan medan berdasarkan kekuatan penghalusan
+resourcePack.editor.toolRail.Terrain.SmoothStrength=Kekuatan Penghalusan
+resourcePack.editor.toolRail.Terrain.Roughen.mode.title=Mode Perkasar
+resourcePack.editor.toolRail.Terrain.Roughen.tooltip=Memperkasar medan berdasarkan kekuatan perkasaran
+resourcePack.editor.toolRail.Terrain.RoughenStrength=Kekuatan Perkasar
+resourcePack.editor.toolRail.Terrain.description=Alat medan memperhalus atau memperkasar medan
+resourcePack.editor.help.learnMore=Pelajari lebih lanjut
+resourcePack.editor.statusBar.connectedPlayers=Pemain yang Terhubung %s
+resourcePack.editor.summonTool.summonSubPane.EntityPickerTitle=Jenis Entitas
+resourcePack.editor.timeOfDay.12hrClock=Jam 12 jam
+resourcePack.editor.timeOfDay.24hrClock=Jam 24 jam
+resourcePack.editor.timeOfDay.clockType=Jenis Jam
+resourcePack.editor.timeOfDay.currentTime=Waktu Saat Ini
+resourcePack.editor.timeOfDay.customTime=Waktu Modifikasi
+resourcePack.editor.timeOfDay.daylightCycle=Siklus Siang
+resourcePack.editor.timeOfDay.dropDown.day=Hari
+resourcePack.editor.timeOfDay.dropDown.midnight=Tengah Malam
+resourcePack.editor.timeOfDay.dropDown.night=Malam Hari
+resourcePack.editor.timeOfDay.dropDown.none=Tidak Ada
+resourcePack.editor.timeOfDay.dropDown.noon=Siang
+resourcePack.editor.timeOfDay.dropDown.sunrise=Matahari Terbit
+resourcePack.editor.timeOfDay.dropDown.sunset=Matahari Tenggelam
+resourcePack.editor.timeOfDay.dropDown.custom=Modifikasi
+resourcePack.editor.timeOfDay.dropDown.title=Prasetel
+resourcePack.editor.timeOfDay.menu.title=Pengaturan Waktu Siang
+resourcePack.editor.timeOfDay.minecraftClock=Jam Minecraft
+resourcePack.editor.timeOfDay.title=Pengaturan Waktu
+resourcePack.editor.toolMode.keyBinding.console=Buka Konsol
+resourcePack.editor.toolMode.keyBinding.devConsole=Buka Konsol Pengembang
+resourcePack.editor.toolMode.keyBinding.hotbar1=Pilih Hotbar 1
+resourcePack.editor.toolMode.keyBinding.hotbar2=Pilih Hotbar 2
+resourcePack.editor.toolMode.keyBinding.hotbar3=Pilih Hotbar 3
+resourcePack.editor.toolMode.keyBinding.hotbar4=Pilih Hotbar 4
+resourcePack.editor.toolMode.keyBinding.hotbar5=Pilih Hotbar 5
+resourcePack.editor.toolMode.keyBinding.hotbar6=Pilih Hotbar 6
+resourcePack.editor.toolMode.keyBinding.hotbar7=Pilih Hotbar 7
+resourcePack.editor.toolMode.keyBinding.hotbar8=Pilih Hotbar 8
+resourcePack.editor.toolMode.keyBinding.hotbar9=Pilih Hotbar 9
+resourcePack.editor.toolMode.keyBinding.reload=Muat Ulang 
+resourcePack.editor.toolRail.blockPalette.title=Palet Blok (CTRL+P)
+resourcePack.editor.toolRail.blockPalette.tooltip=Atur palet blok yang kamu sukai atau yang paling sering digunakan
+resourcePack.editor.toolRail.flattenBrush.title=Kuas Datar
+resourcePack.editor.toolRail.flattenBrush.tooltip=Meratakan area secara vertikal ke ketinggian blok yang dipilih
+resourcePack.editor.toolRail.flattenBrush.settings.heightThreshold=Ambang Ketinggian
+resourcePack.editor.toolRail.flattenBrush.settings.radius=Radius
+resourcePack.editor.toolRail.floodFillSelectionTool.description=Memilih area yang saat ini sedang Anda lihat menggunakan algoritma isian meluap.
+resourcePack.editor.toolRail.floodFillSelectionTool.title=Alat Pemilihan Isian Meluap
+resourcePack.editor.toolRail.line.keyBinding.delete=Hapus Konten
+resourcePack.editor.toolRail.line.keyBinding.deleteAndClear=Hapus Konten dan Batalkan Pilihan
+resourcePack.editor.toolRail.line.keyBinding.deselect=Batalkan Pilihan
+resourcePack.editor.toolRail.line.keyBinding.deselectAll=Batalkan Semua
+resourcePack.editor.toolRail.line.keyBinding.fill=Isi Konten
+resourcePack.editor.toolRail.line.keyBinding.fillAndClear=Isi Konten dan Batalkan Pilihan
+resourcePack.editor.toolRail.line.keyBinding.moveBack=Gerakkan yang Dipilih ke Belakang
+resourcePack.editor.toolRail.line.keyBinding.moveDown=Gerakkan yang Dipilih ke Bawah
+resourcePack.editor.toolRail.line.keyBinding.moveForward=Gerakkan yang Dipilih ke Depan
+resourcePack.editor.toolRail.line.keyBinding.moveLeft=Gerakkan yang Dipilih ke Kiri
+resourcePack.editor.toolRail.line.keyBinding.moveRight=Gerakkan yang Dipilih ke Kanan
+resourcePack.editor.toolRail.line.keyBinding.moveUp=Gerakkan yang Dipilih ke Atas
+resourcePack.editor.toolRail.line.keyBinding.selectAll=Pilih Semua
+resourcePack.editor.toolRail.line.pane.algorithm.Direct=Arahkan
+resourcePack.editor.toolRail.line.pane.algorithm.Staggered=Selang-seling (Pagar)
+resourcePack.editor.toolRail.line.pane.algorithm.title=Algoritma
+resourcePack.editor.toolRail.line.pane.fillAction=Pemilihan Isian
+resourcePack.editor.toolRail.line.pane.height.title=Tinggi
+resourcePack.editor.toolRail.line.pane.selectionMode.adjacent=Wajah yang Bersisian
+resourcePack.editor.toolRail.line.pane.selectionMode.fixedDistance=Jarak Tetap
+resourcePack.editor.toolRail.line.pane.selectionMode.freeForm=Bentuk Bebas
+resourcePack.editor.toolRail.line.pane.selectionMode=Pilihan
+resourcePack.editor.toolRail.line.pane.surfaceContour=Kontur Permukaan
+resourcePack.editor.toolRail.line.pane.width.title=Lebar
+resourcePack.editor.toolRail.line.title=Baris
+resourcePack.editor.toolRail.line.tooltip=Alat baris menciptakan barisan blok
+resourcePack.editor.toolRail.rulerTool.title=Alat Penggaris
+resourcePack.editor.toolRail.rulerTool.tooltip=Ukur Jarak
+resourcePack.editor.toolRail.rulerTool.info.title=Pengukuran
+resourcePack.editor.toolRail.smartFillTool.title=Alat Isi Pintar
+resourcePack.editor.toolRail.smartFillTool.tooltip=Klik untuk mengisi set blok yang terhubung
+resourcePack.editor.toolRail.smartFillTool.modes.fillVolume=Isi Volume
+resourcePack.editor.toolRail.smartFillTool.areaLimit.title=Batas Luas
+resourcePack.editor.toolRail.smartFillTool.areaLimit.tooltip=Luas maksimal yang akan diisi
+resourcePack.editor.toolRail.summonTool.keyBinding.clear=Hapus Pilihan
+resourcePack.editor.toolRail.summonTool.keyBinding.delete=Hapus Entitas
+resourcePack.editor.toolRail.summonTool.keyBinding.moveBack=Gerakkan yang Dipilih ke Belakang
+resourcePack.editor.toolRail.summonTool.keyBinding.moveDown=Gerakkan yang Dipilih ke Bawah
+resourcePack.editor.toolRail.summonTool.keyBinding.moveForward=Gerakkan yang Dipilih ke Depan
+resourcePack.editor.toolRail.summonTool.keyBinding.moveLeft=Gerakkan yang Dipilih ke Kiri
+resourcePack.editor.toolRail.summonTool.keyBinding.moveRight=Gerakkan yang Dipilih ke Kanan
+resourcePack.editor.toolRail.summonTool.keyBinding.moveUp=Gerakkan yang Dipilih ke Atas
+resourcePack.editor.toolRail.summonTool.keyBinding.toggle=Alihkan Alat Panggil
+resourcePack.editor.toolRail.summonTool.pane.select=Pilih Mode
+resourcePack.editor.toolRail.summonTool.pane.title=Alat Panggil
+resourcePack.editor.toolRail.summonTool.pane.type=Jenis Entitas
+resourcePack.editor.toolRail.summonTool.tool.infoText=Pilih entitas dengan mengklik atau klik peta untuk memanggil entitas baru
+resourcePack.editor.toolRail.summonTool.tool.selectSubPane.rotation=Rotasi
+resourcePack.editor.toolRail.summonTool.tool.selectSubPane=Pemilihan Entitas
+resourcePack.editor.toolRail.summonTool.tool.summonSubPane=Kemunculan Entitas
+resourcePack.editor.toolRail.summonTool.tool.tip=Klik untuk memanggil entitas
+resourcePack.editor.toolRail.summonTool.tool.title=Alat Panggil
+resourcePack.editor.toolRail.workbenchSettings.title=Meja Kerja
+resourcePack.editor.toolRail.workbenchTool.title=Meja Kerja
+resourcePack.editor.toolRail.workbenchTool.description=Ubah status blok dengan cepat
+resourcePack.editor.toolRail.workbenchTool.howToUse=Sorot blok untuk melihat aksi yang tersedia untuk mengubah statusnya (buka/tutup, putar, balikkan, dll.). Coba pakai modifikasi tombol Shift dan Control juga! Ingat fitur ini hanya berfungsi pada blok dengan properti yang dapat dimodifikasi (misalnya pintu, pagar, tangga, dll.).
+resourcePack.editor.toolRail.workbenchTool.tooltip=Ubah status blok
+resourcePack.editor.toolRail.workbenchTool.block=Blokir
+resourcePack.editor.toolRail.workbenchTool.leftClick=Klik Kiri
+resourcePack.editor.toolRail.workbenchTool.shiftLeftClick=Shift + Klik Kiri
+resourcePack.editor.toolRail.workbenchTool.controlLeftClick=CTRL + Klik Kiri
+resourcePack.editor.toolRail.workbenchTool.shiftControlLeftClick=Shift + CTRL + Klik Kiri
+resourcePack.editor.toolRail.workbenchTool.leftClickTooltip=Klik Kiri di blok akan menerapkan aksi Meja Kerja utama
+resourcePack.editor.toolRail.workbenchTool.shiftLeftClickTooltip=Shift + Klik Kiri di blok akan menerapkan aksi Meja Kerja sekunder
+resourcePack.editor.toolRail.workbenchTool.controlLeftClickTooltip=Control + Klik Kiri di blok akan menerapkan aksi Meja Kerja tersier
+resourcePack.editor.toolRail.workbenchTool.shiftControlLeftClickTooltip=Shift + Control + Klik Kiri di blok akan menerapkan aksi Meja Kerja keempat
+resourcePack.editor.toolRail.workbenchTool.stripWood=Lepas/kembalikan kayu
+resourcePack.editor.toolRail.workbenchTool.ladderLocation=Lokasi tangga
+resourcePack.editor.toolRail.workbenchTool.autoAlign=Pengaturan otomatis
+resourcePack.editor.toolRail.workbenchTool.autoAlignFacingDirection=Otomatis Sejajarkan Arah Hadap
+resourcePack.editor.toolRail.workbenchTool.autoAlignRotation=Otomatis Sejajarkan Rotasi
+resourcePack.editor.toolRail.workbenchTool.topSlotBitProp=Atas/Bawah
+resourcePack.editor.toolRail.workbenchTool.pillarAxisProp=Putar
+resourcePack.editor.toolRail.workbenchTool.heightProp=Lapisan
+resourcePack.editor.toolRail.workbenchTool.candlesProp=Jumlah Lilin
+resourcePack.editor.toolRail.workbenchTool.turtleEggCountProp=Jumlah Telur Kura-Kura
+resourcePack.editor.toolRail.workbenchTool.clusterCountProp=Jumlah Acar Laut
+resourcePack.editor.toolRail.workbenchTool.hangingProp=Alihkan menggantung dari blok lain
+resourcePack.editor.toolRail.workbenchTool.wallPostBitProp=Alihkan Tiang
+resourcePack.editor.toolRail.workbenchTool.upsideDownBitProp=Atas/Bawah
+resourcePack.editor.toolRail.workbenchTool.openBitProp=Buka/Tutup
+resourcePack.editor.toolRail.workbenchTool.litProp=Nyala/Mati
+resourcePack.editor.toolRail.workbenchTool.dripstoneThicknessProp=Ketebalan Dripstone
+resourcePack.editor.toolRail.workbenchTool.directionProp=Arah Menghadap
+resourcePack.editor.toolRail.workbenchTool.weirdoDirectionProp=Putar
+resourcePack.editor.toolRail.workbenchTool.facingDirectionProp=Arah Menghadap
+resourcePack.editor.toolRail.workbenchTool.cardinalDirectionProp=Arah Menghadap
+resourcePack.editor.toolRail.workbenchTool.addCustomMapping=Tambah Pemetaan Kustom
+resourcePack.editor.toolRail.workbenchTool.blockProperty=Properti Blok
+resourcePack.editor.toolRail.workbenchTool.clickBinding=Ikatan Klik
+resourcePack.editor.toolRail.workbenchTool.addMapping=Tambahkan Pemetaan
+resourcePack.editor.toolRail.workbenchTool.resetAllMappings=Reset Semua Pemetaan
+resourcePack.editor.workbenchTool.keyBinding.primaryAction=Aksi Meja Kerja Primer
+resourcePack.editor.workbenchTool.keyBinding.secondaryAction=Aksi Meja Kerja Sekunder
+resourcePack.editor.workbenchTool.keyBinding.tertiaryAction=Aksi Meja Kerja Tersier
+resourcePack.editor.workbenchTool.keyBinding.quaternaryAction=Aksi Meja Kerja Keempat
+resourcePack.editor.transaction.keyBinding.redo=Ulangi
+resourcePack.editor.transaction.keyBinding.undo=Batalkan
+resourcePack.editor.viewport.keyBinding.moveBack=Mundur
+resourcePack.editor.viewport.keyBinding.moveDown=Pindahkan Ke Bawah
+resourcePack.editor.viewport.keyBinding.moveForward=Maju
+resourcePack.editor.viewport.keyBinding.moveLeft=Bergerak ke Kiri
+resourcePack.editor.viewport.keyBinding.moveRight=Bergerak ke Kanan
+resourcePack.editor.viewport.keyBinding.moveUp=Pindahkan Ke Atas
+resourcePack.editor.viewport.keyBinding.incrementFlySpeed=Menambah Kecepatan Terbang
+resourcePack.editor.viewport.keyBinding.decrementFlySpeed=Mengurangi Kecepatan Terbang
+resourcePack.editor.viewSettings.compass.tip=Tampilkan kompas arah
+resourcePack.editor.viewSettings.compass.title=Tampilkan Kompas
+resourcePack.editor.viewSettings.chunk.tip=Tampilkan garis batas bongkah di peta
+resourcePack.editor.viewSettings.chunk.title=Tampilkan Batas Bongkah
+resourcePack.editor.viewSettings.nightVision.tip=Tunjukkan kepada dunia seolah-olah kamu punya penglihatan malam
+resourcePack.editor.viewSettings.nightVision.title=Penglihatan Malam
+resourcePack.editor.viewSettings.invisible.tip=Tampilkan blok takterlihat (misalnya, kehampaan, penghalang, dll.)
+resourcePack.editor.viewSettings.invisible.title=Tampilkan Blok Takterlihat
+resourcePack.editor.viewSettings.flySpeed.tip=Tingkatkan Kecepatan Terbang untuk bermanuver di peta lebih cepat
+resourcePack.editor.viewSettings.flySpeed.title=Pengganda Kecepatan Terbang
+resourcePack.editor.viewSettings.menu=Pengaturan
+resourcePack.editor.viewSettings.title=Pengaturan
+resourcePack.editor.hotbar.defaultDisplayName=Default
+resourcePack.editor.reloadScripts.response.tooMany=Terlalu banyak pemain yang tersambung ke server. Pemuatan Ulang Skrip hanya didukung pada host dengan satu pemain yang terhubung.
+resourcePack.editor.reloadScripts.response.genericError=Terjadi kesalahan saat mencoba memuat ulang skrip.
+resourcePack.editor.reloadScripts.response.noAdminRights=Kamu tidak memiliki izin untuk memuat ulang skrip.

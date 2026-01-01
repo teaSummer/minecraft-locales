@@ -1,912 +1,806 @@
-﻿## Comments can be added anywhere on a valid line by starting with '##'
-##
-## Note, trailing spaces will NOT be trimmed. If you want room between the end of the string and the start of a
-## comment on the same line, use TABs.
-
-commands.editor.project.beginExport=Exporterar…	#
-commands.editor.project.description=Manipulera det inlästa projektet	#
-commands.editor.project.export=projektexportering	#
-commands.editor.project.exportComplete=Exportering klar, filer sparade i %s	#
-commands.editor.project.exportCopyFailed=Kunde inte kopiera nivådata %s	#
-commands.editor.project.unknownSubcommand=Okänt underkommando	#
-
-resourcePack.editor.actionBar.redo.tooltipDescription=Gör om en handling	#
-resourcePack.editor.actionBar.redo.tooltipTitle=Gör om	#
-resourcePack.editor.actionBar.redo=Gör om	#
-resourcePack.editor.actionBar.undo.tooltipDescription=Ångra en handling	#
-resourcePack.editor.actionBar.undo.tooltipTitle=Ångra	#
-resourcePack.editor.actionBar.undo=Ångra	#
-resourcePack.editor.actionBar.fill=Fyll 	####Label for an actionbar item that fills the selection with the current hotbar block.{MaxLength=100}
-resourcePack.editor.actionBar.fill.tooltipDescription=Fyll markeringsvolymen med det aktuella snabbfältsblocket 	####Tooltip description for an actionbar item that fills the selection with the current hotbar block.{MaxLength=100}
-resourcePack.editor.actionBar.fill.tooltipTitle=Fyll 	####Tooltip title for an actionbar item that fills the selection with the current hotbar block.{MaxLength=100}
-
-resourcePack.editor.agfx.settings.error.title=Fel har uppstått…	#
-resourcePack.editor.agfx.pane.title=Inställningar för redigerare	#
-resourcePack.editor.agfx.pane.settings_selector=Välj inställningar	#
-resourcePack.editor.agfx.pane.settings.title=Inställningar	#
-resourcePack.editor.agfx.pane.settings.revert_changes=Återställ ändringar	#
-resourcePack.editor.agfx.pane.settings.export_to_clipboard=Exportera till urklipp	#
-
-
-resourcePack.editor.toolRail.blockInspectorSettings.title=Blockinspektör   	####This string is what is shown in the title bar of the Editor pane for inspecting blocks.{MaxLength=30}
-resourcePack.editor.toolRail.blockInspectorSettings.specifics=Blockspecifikt   	####This string is the heading that contains the block tags and block properties subpane.{MaxLength=30}
-resourcePack.editor.toolRail.blockInspectorSettings.actions.refresh=Uppdatera blockdata   	####This string shown on a button for forcing an update to the block data state.{MaxLength=30}
-resourcePack.editor.toolRail.blockInspectorSettings.actions.clear=Rensa markering   	####This string shown on a button for clearing what block is currently selected.{MaxLength=30}
-resourcePack.editor.toolRail.blockInspectorSettings.blockTags=Blocktaggar   	####This string is a header for a panel that shows the block tags on the currently selected block.{MaxLength=30}
-resourcePack.editor.toolRail.blockInspectorSettings.blockProperties=Blockegenskaper   	####This string is a header for a panel that shows the block properties on the currently selected block.{MaxLength=30}
-resourcePack.editor.toolRail.blockInspectorSettings.blockProperties.name=Egenskapsnamn   	####Within the block properties pane, this string goes before the property name.{MaxLength=30}
-resourcePack.editor.toolRail.blockInspectorSettings.blockProperties.value=Egenskapsvärde   	####Within the block properties pane, this string goes before the property value.{MaxLength=30}
-resourcePack.editor.toolRail.blockInspectorTool.title=Blockinspektör   	####This string is what is shown as the name of the block inspector tool.{MaxLength=30}
-resourcePack.editor.toolRail.blockInspectorTool.tooltip=Inspektera blockdata   	####This string is what is shown when hovering over the block inspector icon.{MaxLength=30}
-resourcePack.editor.toolRail.blockInspectorTool.pane.helpText=Vänsterklicka på ett block för att visa och redigera blockets egenskaper   	####This string is shown in the block inspector tool pane before the user clicks to describe how to use it.{MaxLength=100}
-resourcePack.editor.blockInspector.toolRail.description=Vänsterklicka på ett block för att visa och redigera blockets egenskaper   	####This string is shown in the tool tip to explain the function of the Block Inspector tool.{MaxLength=100}
-
-
-resourcePack.editor.blockPalette.addSearchItem=Använd hittat block	#
-resourcePack.editor.blockPalette.blockPicker=Sök	#
-resourcePack.editor.blockPalette.paletteDropdown.title=Palett	#
-resourcePack.editor.blockPalette.title=Blockpalett	#
-
-
-resourcePack.editor.brushPaint.inputContext.activateBrushPaint=Aktivera penselfärg	#
-resourcePack.editor.brushPaint.inputContext.oneshot=Måla en gång	#
-resourcePack.editor.brushPaint.inputContext.title=Penselfärg	#
-resourcePack.editor.brushPaint.title=Penselfärg	#
-resourcePack.editor.brushPaint.tooltip=Använd penslar för att måla block i världen	#
-
-
-resourcePack.editor.BrushPaintControl.brush.title=Pensel	#
-resourcePack.editor.BrushPaintControl.brushSettings.title=Inställningar för pensel	#
-resourcePack.editor.BrushPaintControl.shapeSettings.title=Forminställningar 	####Represents an expander that has UI controls for brush shape settings.{MaxLength=100}
-resourcePack.editor.BrushPaintControl.fillConstraints.mask.title=Masklista	#
-resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.disabled.tooltip=Stäng av blockfilter	#
-resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.disabled=Avstängd	#
-resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.mask.tooltip=Block som matchar listan kommer att ignoreras och påverkas inte	#
-resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.mask=Mask	#
-resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.replace=Ersätt	#
-resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.title=Penselblocksfilter	#
-resourcePack.editor.BrushPaintControl.fillConstraints.replace.title=Ersätt lista	#
-resourcePack.editor.BrushPaintControl.fillConstraints.replace.tooltip=Block som matchar listan kommer att användas	#
-resourcePack.editor.BrushPaintControl.fillConstraints.title=Ifyllnadsbegränsningar	#
-resourcePack.editor.BrushPaintControl.keybinding.maskMask=Maskläge – Mask	#
-resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetBack=Knuffa justeringen bakåt	#
-resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetDown=Knuffa justeringen nedåt	#
-resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetForward=Knuffa justeringen framåt	#
-resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetLeft=Knuffa justeringen åt vänster	#
-resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetRight=Knuffa justeringen åt höger	#
-resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetUp=Knuffa justeringen uppåt	#
-resourcePack.editor.BrushPaintControl.keybinding.replaceMask=Maskläge – Ersätt	#
-resourcePack.editor.BrushPaintControl.offset.title=Förskjutning	#
-resourcePack.editor.BrushPaintControl.offset.tooltip=Justering av markörens position	#
-resourcePack.editor.BrushPaintControl.rootPane.title=Inställningar för pensel	#
-
-
-resourcePack.editor.brushShape.common.settings.axis=Utskjutningsaxel	#
-resourcePack.editor.brushShape.common.settings.height=Höjd	#
-resourcePack.editor.brushShape.common.settings.length=Längd	#
-resourcePack.editor.brushShape.common.settings.radius=Radie	#
-resourcePack.editor.brushShape.common.settings.uniform=Enhetlig	#
-resourcePack.editor.brushShape.common.settings.xAxis=X-axel	#
-resourcePack.editor.brushShape.common.settings.xAxisNeg=-X-axel	#
-resourcePack.editor.brushShape.common.settings.yAxis=Y-axel	#
-resourcePack.editor.brushShape.common.settings.yAxisNeg=-Y-axel	#
-resourcePack.editor.brushShape.common.settings.zAxis=Z-axel	#
-resourcePack.editor.brushShape.common.settings.zAxisNeg=-Z-axel	#
-resourcePack.editor.brushShape.cone.name=Kon	#
-resourcePack.editor.brushShape.cone.settings.depth=Djupradie	#
-resourcePack.editor.brushShape.cone.settings.width=Breddradie	#
-resourcePack.editor.brushShape.cuboid.name=Rätblock	#
-resourcePack.editor.brushShape.cuboid.settings.depth=Djup	#
-resourcePack.editor.brushShape.cuboid.settings.height=Höjd	#
-resourcePack.editor.brushShape.cuboid.settings.width=Bredd	#
-resourcePack.editor.brushShape.cylinder.name=Cylinder	#
-resourcePack.editor.brushShape.cylinder.settings.depth_radius=Djupradie	#
-resourcePack.editor.brushShape.cylinder.settings.width_radius=Breddradie	#
-resourcePack.editor.brushShape.ellipsoid.name=Ellipsoid	#
-resourcePack.editor.brushShape.ellipsoid.settings.depth_radius=Djupradie	#
-resourcePack.editor.brushShape.ellipsoid.settings.height_radius=Höjdradie	#
-resourcePack.editor.brushShape.ellipsoid.settings.width_radius=Breddradie	#
-resourcePack.editor.brushShape.pyramid.name=Pyramiden	#
-resourcePack.editor.brushShape.pyramid.settings.depth=Djup	#
-resourcePack.editor.brushShape.pyramid.settings.height=Höjd	#
-resourcePack.editor.brushShape.pyramid.settings.width=Bredd	#
-resourcePack.editor.brushShape.singleBlock.name=Enskilt block	#
-resourcePack.editor.brushShape.star.name=Stjärna 	####Represent a star shaped brush.{MaxLength=100}
-resourcePack.editor.brushShape.star.settings.includeVertical=Inkludera vertikalt 	####Represents a toggle button label that removes vertical parts of a star brush if unchecked.{MaxLength=100}
-
-
-resourcePack.editor.client.description=Resurser för redigeringsklient	#
-resourcePack.editor.client.name=Resurser för redigerare	#
-
-
-resourcePack.editor.ClipboardPreviewControl.keybinding.moveOriginBack=Flytta ursprung bakåt	#
-resourcePack.editor.ClipboardPreviewControl.keybinding.moveOriginDown=Flytta ursprung nedåt	#
-resourcePack.editor.ClipboardPreviewControl.keybinding.moveOriginForward=Flytta ursprung framåt	#
-resourcePack.editor.ClipboardPreviewControl.keybinding.moveOriginLeft=Flytta ursprung åt vänster	#
-resourcePack.editor.ClipboardPreviewControl.keybinding.moveOriginRight=Flytta ursprung åt höger	#
-resourcePack.editor.ClipboardPreviewControl.keybinding.moveOriginUp=Flytta ursprung uppåt	#
-resourcePack.editor.ClipboardPreviewControl.keyBinding.nudgeOffsetBack=Knuffa justeringen bakåt	#
-resourcePack.editor.ClipboardPreviewControl.keyBinding.nudgeOffsetDown=Knuffa ner justeringen	#
-resourcePack.editor.ClipboardPreviewControl.keyBinding.nudgeOffsetForward=Knuffa justeringen framåt	#
-resourcePack.editor.ClipboardPreviewControl.keyBinding.nudgeOffsetLeft=Knuffa justeringen åt vänster	#
-resourcePack.editor.ClipboardPreviewControl.keyBinding.nudgeOffsetRight=Knuffa justeringen åt höger	#
-resourcePack.editor.ClipboardPreviewControl.keyBinding.nudgeOffsetUp=Knuffa upp justeringen	#
-resourcePack.editor.ClipboardPreviewControl.keybinding.rotateClockWise=Rotera förhandsgranskningen medurs	#
-resourcePack.editor.ClipboardPreviewControl.keybinding.rotateCounterClockWise=Rotera förhandsgranskningen moturs	#
-resourcePack.editor.ClipboardPreviewControl.keybinding.toggleMirrorX=Växla till att spegla X	#
-resourcePack.editor.ClipboardPreviewControl.keybinding.toggleMirrorZ=Växla till att spegla Z	#
-resourcePack.editor.ClipboardPreviewControl.mirror.axis.x.tooltip=Spegla urklippsobjektet runt X-axeln vid utgångspunkten	#
-resourcePack.editor.ClipboardPreviewControl.mirror.axis.x=Spegla (X-axel)	#
-resourcePack.editor.ClipboardPreviewControl.mirror.axis.z.tooltip=Spegla urklippsobjektet runt Z-axeln vid utgångspunkten	#
-resourcePack.editor.ClipboardPreviewControl.mirror.axis.z=Spegla (Z-axel)	#
-resourcePack.editor.ClipboardPreviewControl.offset.title=Justering	#
-resourcePack.editor.ClipboardPreviewControl.offset.tooltip=Ytterligare justering från placeringspunkten till urklippsobjektets ursprung	#
-resourcePack.editor.ClipboardPreviewControl.origin.title=Ursprung	#
-resourcePack.editor.ClipboardPreviewControl.origin.tooltip=Ursprungsplatsen i urklipp-föremålet. Det används som ett placeringsankare och den punkt som urklippet redigeras ifrån	#
-resourcePack.editor.ClipboardPreviewControl.placement.title=Alternativ	#
-resourcePack.editor.ClipboardPreviewControl.rootPane.title=Information om urklipp	#
-resourcePack.editor.ClipboardPreviewControl.rotation.180=180°	#
-resourcePack.editor.ClipboardPreviewControl.rotation.270=270°	#
-resourcePack.editor.ClipboardPreviewControl.rotation.90=90°	#
-resourcePack.editor.ClipboardPreviewControl.rotation.none=Ingen	#
-resourcePack.editor.ClipboardPreviewControl.rotation.title=Rotation	#
-resourcePack.editor.ClipboardPreviewControl.rotation.tooltip=Rotation runt Y-axeln vid ursprungspunkten	#
-resourcePack.editor.ClipboardPreviewControl.structureSize.title=Urklippsstorlek	#
-
-
-resourcePack.editor.copypaste.actionbar.copy.title=Kopiera	#
-resourcePack.editor.copypaste.actionbar.copy.tooltip=Kopiera val till urklipp	#
-resourcePack.editor.copypaste.actionbar.copy.tooltipDescription=Kopiera innehållet i den aktuella markeringen till urklipp och lämna innehållet i markeringen orört	#
-resourcePack.editor.copypaste.actionbar.cut.title=Klipp ut	#
-resourcePack.editor.copypaste.actionbar.cut.tooltip=Klipp ut/flytta val till urklipp	#
-resourcePack.editor.copypaste.actionbar.cut.tooltipDescription=Kopiera innehållet i den aktuella markeringen till urklipp och ta bort innehållet i markeringen samtidigt	#
-resourcePack.editor.copypaste.keyBinding.copy=Kopiera val till urklipp	#
-resourcePack.editor.copypaste.keyBinding.cut=Klipp ut/flytta val till urklipp	#
-resourcePack.editor.copypaste.keyBinding.paste=Klistra in urklipp till värld	#
-resourcePack.editor.copypaste.menu.copy.title=Kopiera markering	#
-resourcePack.editor.copypaste.menu.cut.title=Klipp ut markering	#
-
-
-resourcePack.editor.core.keyBinding.showGameMenu=Visa spelmeny	#
-resourcePack.editor.core.keyBinding.showLogPanel=Visa loggpanel	#
-
-
-resourcePack.editor.CursorModeControl.cursorTargetMode.block.tooltip=Blocket under muspekaren	#
-resourcePack.editor.CursorModeControl.cursorTargetMode.block=Block	#
-resourcePack.editor.CursorModeControl.cursorTargetMode.face.tooltip=Blocket bredvid blocket under markören	#
-resourcePack.editor.CursorModeControl.cursorTargetMode.face=Angränsande	#
-resourcePack.editor.CursorModeControl.cursorTargetMode.title=Mål	#
-resourcePack.editor.CursorModeControl.cursorTargetMode.tooltip=Välj målläge för markören	#
-resourcePack.editor.CursorModeControl.fixedDistance.slider.title=Fast avstånd till markören	#
-resourcePack.editor.CursorModeControl.fixedDistance.slider.tooltip=Justera det fasta avståndet från spelaren där blockmarkören är placerad	#
-resourcePack.editor.CursorModeControl.keybinding.moveCursorBack=Flytta markören bakåt	#
-resourcePack.editor.CursorModeControl.keybinding.moveCursorDown=Flytta markören nedåt	#
-resourcePack.editor.CursorModeControl.keybinding.moveCursorForward=Knuffa framåt	#
-resourcePack.editor.CursorModeControl.keybinding.moveCursorLeft=Flytta markören åt vänster	#
-resourcePack.editor.CursorModeControl.keybinding.moveCursorRight=Flytta markören åt höger	#
-resourcePack.editor.CursorModeControl.keybinding.moveCursorUp=Flytta markören uppåt	#
-resourcePack.editor.CursorModeControl.keybinding.toggleBlockTargetMode=Växla mellan block- och intilliggande läge	#
-resourcePack.editor.CursorModeControl.keybinding.toggleFixedDistance=Växla läge för fast avstånd	#
-resourcePack.editor.CursorModeControl.keybinding.toggleMouseTracking=Växla musspårning	#
-resourcePack.editor.CursorModeControl.mouseControlMode.fixed=Fast avstånd	#
-resourcePack.editor.CursorModeControl.mouseControlMode.keyboard=Endast tangentbord	#
-resourcePack.editor.CursorModeControl.mouseControlMode.keyboardAndMouse=Mus och tangenter	#
-resourcePack.editor.CursorModeControl.mouseControlMode.title=Inmatningsmetod	#
-resourcePack.editor.CursorModeControl.mouseControlMode.tooltip=Välj inmatningsmetod för världsblockmarkören	#
-resourcePack.editor.CursorModeControl.projectThroughWater.title=Projicera genom vatten	#
-resourcePack.editor.CursorModeControl.projectThroughWater.tooltip=Muspekaren kommer att projicera genom vatten, vilket gör det möjligt att välja undervattenselement	#
-resourcePack.editor.CursorModeControl.rootPane.title=Markörinställningar	#
-
-
-resourcePack.editor.datatransferaccessors.atmospheric_scattering=Atmosfärisk spridning	#
-resourcePack.editor.datatransferaccessors.color_grading=Färggradering	#
-resourcePack.editor.datatransferaccessors.lighting_group=Global belysning	#
-resourcePack.editor.datatransferaccessors.pbr_fallbacks=Reservsystem för PBR	#
-resourcePack.editor.datatransferaccessors.point_lights=Punktljus	#
-resourcePack.editor.datatransferaccessors.water=Vatten	#
-resourcePack.editor.datatransferaccessors.shadows=Skuggor	#
-
-
-resourcePack.editor.deferredLightingSettings.menu.title=Inställningar för uppskjuten belysning	#
-
-
-resourcePack.editor.delete.keyBinding=Radera markeringsinnehåll	#
-
-
-resourcePack.editor.toolRail.entityInspector.pane.title=Entitetsinspektör   	####This string is what is shown in the title bar of the Editor pane for modifying entities.{MaxLength=30}
-resourcePack.editor.toolRail.entityInspector.tool.title=Entitetsinspektör   	####This string is what is shown at the top of the Editor pane for modifying entities.{MaxLength=30}
-resourcePack.editor.toolRail.entityInspector.tool.tip=Inspektera entitetsdata   	####This string is what is shown on the tool tip of Editor pane for modifying entities (gives context on what the tool does).{MaxLength=100}
-resourcePack.editor.toolRail.entityInspector.pane.helpText=Vänsterklicka på en entitet för att visa och redigera entitetens egenskaper   	####This string is shown in the block inspector tool pane before the user clicks to describe how to use it.{MaxLength=100}
-resourcePack.editor.entityInspector.toolRail.description=Vänsterklicka på en entitet för att visa och redigera entitetens egenskaper   	####This string is shown in the tool tip to explain the function of the Entity Inspector tool.{MaxLength=100}
-
-resourcePack.editor.exportProject.exportType=Exporttyp	#
-resourcePack.editor.exportProject.exportType.playableWorld=Spelbar värld	#
-resourcePack.editor.exportProject.exportNotes=Exportanteckningar	#
-resourcePack.editor.exportProject.exportNotes.export=Exporterar framsteg   	####This string is intended to express that the title of export progress modal.{MaxLength=100}
-resourcePack.editor.exportProject.exportNotes.warning=Du exporterar en v%1-värld. Exporterade spelbara världar kan inte användas i Minecraft-versioner med en siffra lägre än v%1. För att konvertera till tidigare versioner använder du https://chunker.app/ (viss funktionalitet kanske inte är tillgänglig om den inte stöds i tidigare versioner).	#
-resourcePack.editor.exportProject.exportNotes.progress=Exporterar världen…    	####This string is intended to express that the progress message of exporting.{MaxLength=100}
-resourcePack.editor.exportProject.exportNotes.exportSuccess=Världen har exporterats    	####This string is intended to express that export the world succeeded.{MaxLength=100}
-resourcePack.editor.exportProject.exportNotes.exportFailed=Det gick inte att exportera världen    	####This string is intended to express that export the world failed.{MaxLength=100}
-resourcePack.editor.exportProject.generalSettings=Allmänna inställningar	#
-resourcePack.editor.exportProject.generalSettings.worldName=Världsnamn	#
-resourcePack.editor.exportProject.generalSettings.gameMode=Spelläge	#
-resourcePack.editor.exportProject.generalSettings.difficulty=Svårighetsgrad	#
-resourcePack.editor.exportProject.generalSettings.hardcore=Hardcore	#
-resourcePack.editor.exportProject.initialPlaySettings=Grundläggande spelinställningar   	####This string is intended to express that the export category for inital play settings.{MaxLength=100}
-resourcePack.editor.exportProject.initialPlaySettings.spawnPosition=Världens spawnplats   	####This string is intended to express that player inistal spawn position.{MaxLength=100}
-resourcePack.editor.exportProject.initialPlaySettings.startTime=Starttid   	####This string is intended to express that world start time.{MaxLength=100}
-resourcePack.editor.exportProject.initialPlaySettings.clockType=Typ av klocka   	####This string is intended to express that start time with different clock type.{MaxLength=100}
-resourcePack.editor.exportProject.initialPlaySettings.customStartTime=Anpassad starttid   	####This string is intended to express that custom start time with Minecraft Cloke value.{MaxLength=100}
-resourcePack.editor.exportProject.initialPlaySettings.weather=Väder vid start   	####This string is intended to express that the custom start weather.{MaxLength=100}
-resourcePack.editor.exportProject.advancedSettings=Avancerade inställningar	#
-resourcePack.editor.exportProject.advancedSettings.startingMap=Startkarta	#
-resourcePack.editor.exportProject.advancedSettings.bonusChest=Bonuskista	#
-resourcePack.editor.exportProject.advancedSettings.showCoordinates=Visa koordinater	#
-resourcePack.editor.exportProject.advancedSettings.showDaysPlayed=Visa antal dagar spelade	#
-resourcePack.editor.exportProject.advancedSettings.recipeUnlocking=Upplåsning av recept	#
-resourcePack.editor.exportProject.advancedSettings.limitedCrafting=Begränsad tillverkning   	####Export pane checkbox label that enable to set crafting limit.{MaxLength=100}
-resourcePack.editor.exportProject.advancedSettings.fireSpreads=Eld sprider sig	#
-resourcePack.editor.exportProject.advancedSettings.tntExplodes=Dynamit exploderar	#
-resourcePack.editor.exportProject.advancedSettings.resawnBlocksExplode=Respawnarblock exploderar	#
-resourcePack.editor.exportProject.advancedSettings.mobLoot=Föremål från varelser	#
-resourcePack.editor.exportProject.advancedSettings.naturalRegeneration=Naturlig återhämtning	#
-resourcePack.editor.exportProject.advancedSettings.tileDrops=Drop från block	#
-resourcePack.editor.exportProject.advancedSettings.immediateRespawn=Omedelbar respawn	#
-resourcePack.editor.exportProject.advancedSettings.showDeathMessage=Visa dödsmeddelande   	####Export pane checkbox label that show the death message when player die.{MaxLength=100}
-resourcePack.editor.exportProject.advancedSettings.respawnRadius=Respawnradie	#
-resourcePack.editor.exportProject.advancedSettings.simulationDistance=Simuleringsavstånd	#
-resourcePack.editor.exportProject.advancedSettings.bedsWork=Sängar fungerar	#
-resourcePack.editor.exportProject.advancedSettings.requiredSleepingPlayers=Sovande spelare som krävs (%1$s)	#
-resourcePack.editor.exportProject.advancedSettings.requiredSleepingPlayers.onePlayerMessage=Endast 1 spelare	#
-resourcePack.editor.exportProject.advancedSettings.showItemTags=Visa föremålstaggar   	####Export pane checkbox label that show item tags.{MaxLength=100}
-resourcePack.editor.exportProject.multiplayerSettings=Flerspelarinställningar	#
-resourcePack.editor.exportProject.multiplayerSettings.multiplayerGame=Flerspelarsession	#
-resourcePack.editor.exportProject.multiplayerSettings.playerAccess=Spelaråtkomst	#
-resourcePack.editor.exportProject.multiplayerSettings.playerPermissions=Spelartillstånd	#
-resourcePack.editor.exportProject.multiplayerSettings.visibleToLAN=Synlig för LAN-spelare	#
-resourcePack.editor.exportProject.multiplayerSettings.friendlyFire=Kan skada medspelare	#
-resourcePack.editor.exportProject.cheatsSettings=Fuskinställningar	#
-resourcePack.editor.exportProject.cheatsSettings.cheats=Fusk	#
-resourcePack.editor.exportProject.cheatsSettings.daylightCycle=Dygnsrytm	#
-resourcePack.editor.exportProject.cheatsSettings.keepInventory=Behåll förråd	#
-resourcePack.editor.exportProject.cheatsSettings.mobSpawning=Varelsespawn	#
-resourcePack.editor.exportProject.cheatsSettings.mobGriefing=Destruktiva varelser	#
-resourcePack.editor.exportProject.cheatsSettings.entitiesDropLoot=Föremål från entiteter	#
-resourcePack.editor.exportProject.cheatsSettings.weatherCycle=Vädercykel	#
-resourcePack.editor.exportProject.cheatsSettings.commandBlocks=Kommandoblock	#
-resourcePack.editor.exportProject.cheatsSettings.commandBlockOutput=Resultat av kommandoblock   	####Export pane checkbox label that enable to display the command output.{MaxLength=100}
-resourcePack.editor.exportProject.cheatsSettings.sendCommandFeedback=Skicka kommandofeedback   	####This string is the heading for the 'send command feedback' setting when exporting a world.{MaxLength=100}
-resourcePack.editor.exportProject.cheatsSettings.maxCommandChainLength=Maximal längd på kommandokedja   	####Export pane number that indicate the max length of the command, it defaults to 65536. It has a minimum of 0 and a max of 2147483647.{MaxLength=100}
-resourcePack.editor.exportProject.cheatsSettings.fireDamage=Eldskada  	####Export pane checkbox label that enable damage when the player on fire.{MaxLength=100}
-resourcePack.editor.exportProject.cheatsSettings.freezeDamage=Frysskada  	####Export pane checkbox label that enable damage when the player freezes.{MaxLength=100}
-resourcePack.editor.exportProject.cheatsSettings.fallDamage=Fallskada  	####Export pane checkbox label that enable damage when the player falls.{MaxLength=100}
-resourcePack.editor.exportProject.cheatsSettings.drowningDamage=Drunkningsskada  	####Export pane checkbox label that enable damage when the player is drowning.{MaxLength=100}
-resourcePack.editor.exportProject.cheatsSettings.insomnia=Sömnlöshet  	####Export pane checkbox label that enable player insomnia status.{MaxLength=100}
-resourcePack.editor.exportProject.cheatsSettings.showBorderEffect=Visa kantlinjeeffekt  	####Export pane checkbox label that show border effect.{MaxLength=100}
-resourcePack.editor.exportProject.cheatsSettings.functionCommandLimit=Funktionskommandogräns  	####Export pane checkbox label that the number of limition for the function command.{MaxLength=100}
-resourcePack.editor.exportProject.cheatsSettings.educationFeatures=Utbildningsfunktioner	#
-resourcePack.editor.exportProject.cheatsSettings.randomTickSpeed=Slumpad ticktakt	#
-resourcePack.editor.exportProject.export=Exportera	#
-resourcePack.editor.exportProject.resetToDefault=Återställ till standard	#
-resourcePack.editor.exportProject.gameMode.survival=Överlevnad	#
-resourcePack.editor.exportProject.gameMode.creative=Kreativt	#
-resourcePack.editor.exportProject.gameMode.adventure=Äventyr	#
-resourcePack.editor.exportProject.difficulty.peaceful=Fridfull	#
-resourcePack.editor.exportProject.difficulty.easy=Lätt	#
-resourcePack.editor.exportProject.difficulty.normal=Normalt	#
-resourcePack.editor.exportProject.difficulty.hard=Svårt	#
-resourcePack.editor.exportProject.weather.default=Standard   	####This string is intended to express that the default weather .{MaxLength=100}
-resourcePack.editor.exportProject.weather.clear=Klart   	####This string is intended to express that the weather of Clear.{MaxLength=100}
-resourcePack.editor.exportProject.weather.rain=Regn   	####This string is intended to express that the weather of Rain.{MaxLength=100}
-resourcePack.editor.exportProject.weather.thunder=Åska   	####This string is intended to express that the weather of Thunder.{MaxLength=100}
-
-
-
-resourcePack.editor.toolRail.ExtrudeTool.title=Extruderingsverktyg	#
-resourcePack.editor.toolRail.ExtrudeTool.tooltip=Extruderingsverktyg för att göra block större eller mindre	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.ContiguousSelectionBlockListSubPane.title=Lista över sammanhängande markerade block	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.TrailingBlocksSettingsSubPane.title=Inställningar för följande block	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.SampleLayerCount.title=Antal samplingslager	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.ContiguousSelectionSettings.title=Inställningar för sammanhängande markering	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.ContiguousSelectionType.title=Typ av sammanhängande markering	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.ContiguousSelectionType.SameBlocks=Samma block	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.ContiguousSelectionType.SameBlocksAndStates=Samma block och tillstånd	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.ContiguousSelectionType.SolidBlocks=Solida block	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.ContiguousSelectionType.AllBlocks=Alla block	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.ContiguousSelectionType.CustomBlockList=Anpassad blocklista	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.ToleranceLevel.title=Toleransnivå	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.HasAdjacentBlocks.title=Har intilliggande block	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.ExtruderSettings.title=Extruderarinställningar	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.Radius.title=Radie	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.title=Urvalsläge	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.ContiguousSelection=Sammanhängande markering	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.MarqueeSelection=Rammarkering	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.ContiguousSettings.title=Inställningar för sammanhängande markering	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.TrailingBlocks.title=Följande block	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.TrailingBlocksSettings.title=Inställningar för följande block	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.QuickExtrudeSettings.title=Inställningar för snabbextrudering	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.QuickExtrudeMode.title=Snabbextruderingsläge	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.QuickExtrudeMode.decrease.title=Minska	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.QuickExtrudeMode.decrease.tooltip=Minska extrudering	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.QuickExtrudeMode.expand.title=Expandera	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.QuickExtrudeMode.expand.tooltip=Utöka extrudering	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.LayerCount.title=Antal lager	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.preview_warning=Obs! Förhandsgranskning visar bara det första lagret 	#### {MaxLength="500"}, used to inform the user that the preview visualization for this tool is limited to a single layer.  This string is on screen whenever this tool is active
-resourcePack.editor.toolRail.ExtrudeTool.pane.ExtrusionType.title=Extruderingstyp	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.ExtrusionType.Extrude=Extrudera	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.ExtrusionType.QuickExtrude=Snabbextrudering	#
-resourcePack.editor.toolRail.ExtrudeTool.keyBinding.deselect=Avmarkera	#
-resourcePack.editor.toolRail.ExtrudeTool.keyBinding.toggleTool=Extruderingsverktyg på/av	#
-
-
-resourcePack.editor.toolRail.FarmGenerator.tool.title=Gårdsgenerator	#
-resourcePack.editor.toolRail.FarmGenerator.tool.tooltip=Skapa en anpassad gård snabbt	#
-resourcePack.editor.toolRail.FarmGenerator.pane.title=Gårdsgenerator	#
-resourcePack.editor.toolRail.FarmGenerator.pane.length=Längd	#
-resourcePack.editor.toolRail.FarmGenerator.pane.width=Bredd	#
-resourcePack.editor.toolRail.FarmGenerator.pane.fence=Staket	#
-resourcePack.editor.toolRail.FarmGenerator.pane.irrigation=Lägg till bevattning	#
-resourcePack.editor.toolRail.FarmGenerator.pane.irrigation.tooltip=Lägger till vattenblock på gården för att vattna grödor.	#
-resourcePack.editor.toolRail.FarmGenerator.pane.crops.title=Grödor	#
-resourcePack.editor.toolRail.FarmGenerator.pane.crops.wheat=Vete	#
-resourcePack.editor.toolRail.FarmGenerator.pane.crops.potato=Potatis	#
-resourcePack.editor.toolRail.FarmGenerator.pane.crops.beets=Rödbeta	#
-resourcePack.editor.toolRail.FarmGenerator.pane.crops.pumpkin=Pumpa	#
-resourcePack.editor.toolRail.FarmGenerator.pane.crops.carrot=Morot	#
-resourcePack.editor.toolRail.FarmGenerator.pane.animals.title=Djur	#
-resourcePack.editor.toolRail.FarmGenerator.pane.animals.cow=Ko	#
-resourcePack.editor.toolRail.FarmGenerator.pane.animals.sheep=Får	#
-resourcePack.editor.toolRail.FarmGenerator.pane.animals.pig=Gris	#
-resourcePack.editor.toolRail.FarmGenerator.keyBinding.toggleTool=Växla till gårdsgeneratorsverktyget	#
-resourcePack.editor.toolRail.FarmGenerator.keyBinding.place=Placera gård vid markören	#
-
-
-resourcePack.editor.global.keyBinding.toggleMode=Växla läge	#
-
-
-resourcePack.editor.goToMark.actionBar.tooltip.description=Verktygspanel för spelarnavigering	#
-resourcePack.editor.goToMark.actionBar.tooltip.title=Navigeringspanel	#
-resourcePack.editor.goToMark.pane.goToSpawn=Gå till spawnplats	#
-resourcePack.editor.goToMark.pane.location=Spelarplats	#
-resourcePack.editor.goToMark.pane.locationPane.delete=Radera sparad plats	#
-resourcePack.editor.goToMark.pane.locationPane.dropdownLabel=Sparad plats	#
-resourcePack.editor.goToMark.pane.locationPane.inputName=Nytt namn	#
-resourcePack.editor.goToMark.pane.locationPane.markColor=Platsmarkörfärg	#
-resourcePack.editor.goToMark.pane.locationPane.store=Spara aktuell plats som…	#
-resourcePack.editor.goToMark.pane.locationPane.teleport=Teleportera till sparad plats %1$s	#
-resourcePack.editor.goToMark.pane.locationPane.title=Sparade platser	#
-resourcePack.editor.goToMark.pane.mapSize=Kartstorlek	#
-resourcePack.editor.goToMark.pane.refreshMap=Uppdatera kartan	#
-resourcePack.editor.goToMark.pane.setSpawn=Ställ in aktuell plats som spawnplats	#
-resourcePack.editor.goToMark.pane.showMap=Visa kartan	#
-resourcePack.editor.goToMark.pane.teleport=Teleportera till plats	#
-resourcePack.editor.goToMark.title=Navigeringspanel	#
-
-
-resourcePack.editor.grapple.keyBinding.flyToCursor=Flyg till markören	#
-resourcePack.editor.grapple.keyBinding.flyToSelection=Flyg till markering	#
-
-
-resourcePack.editor.locate.biome.find=Hitta ekosystem	#
-resourcePack.editor.locate.biome.title=Ekosystem	#
-resourcePack.editor.locate.keyBinding.toggleTool=Växla till lokaliseringsverktyget för ekosystem	#
-resourcePack.editor.locate.locatetype.biome=Ekosystem	#
-resourcePack.editor.locate.locatetype.structure=Struktur	#
-resourcePack.editor.locate.locatetype.title=Hitta typ	#
-resourcePack.editor.locate.results.foundat.title=Hittades i	#
-resourcePack.editor.locate.results.foundat=Hittades i	#
-resourcePack.editor.locate.results.goto=Gå till	#
-resourcePack.editor.locate.results.notfound.title=Inga resultat	#
-resourcePack.editor.locate.results.notfound=Hittade inga resultat	#
-resourcePack.editor.locate.results.title=Resultat	#
-resourcePack.editor.locate.structure.message=Struktursökning stöds inte just nu	#
-resourcePack.editor.locate.structure.title=Struktur	#
-resourcePack.editor.locate.title=Hitta	#
-
-
-resourcePack.editor.menuBar.edit.copy=Kopiera	#
-resourcePack.editor.menuBar.edit.cut=Klipp ut	#
-resourcePack.editor.menuBar.edit.delete=Radera	#
-resourcePack.editor.menuBar.edit.deselect=Avmarkera	#
-resourcePack.editor.menuBar.edit.quickFill=Snabb fyllning	#
-resourcePack.editor.menuBar.edit.quickPaste=Snabbinklistring	#
-resourcePack.editor.menuBar.edit.redo=Gör om	#
-resourcePack.editor.menuBar.edit.undo=Ångra	#
-resourcePack.editor.menuBar.edit=Redigera	#
-resourcePack.editor.menuBar.experimental=Experimentell	#
-resourcePack.editor.menuBar.extensions=Förlängningar	#
-resourcePack.editor.menuBar.file.cursor.projectThroughLiquid=Projicera genom vätska	#
-resourcePack.editor.menuBar.file.cursor=Markörinställningar	#
-resourcePack.editor.menuBar.file.export.project=Redigerarprojekt	#
-resourcePack.editor.menuBar.file.export.world=Spelbar värld	#
-resourcePack.editor.menuBar.file.export=Exportera	#
-resourcePack.editor.menuBar.file.pauseScreen=Spelmeny	#
-resourcePack.editor.menuBar.file.settings=Gränssnittsinställningar	#
-resourcePack.editor.menuBar.file=Fil	#
-resourcePack.editor.menuBar.help.tutorial=Handledning 	#### {MaxLength="500"} Represent menu bar item in help menu that activates editor tutorial when pressed
-resourcePack.editor.menuBar.help.documentation=Dokumentation	#
-resourcePack.editor.menuBar.help.feedback=Feedback	#
-resourcePack.editor.menuBar.help.quickStart=Snabbstart	#
-resourcePack.editor.menuBar.help=Hjälp	#
-resourcePack.editor.menuBar.locate=Hitta	#
-resourcePack.editor.menuBar.parentMenu.weather.clear=Rensa	#
-resourcePack.editor.menuBar.parentMenu.weather.rain=Regn	#
-resourcePack.editor.menuBar.parentMenu.weather.thunder=Åska	#
-resourcePack.editor.menuBar.parentMenu.weather=Väder	#
-resourcePack.editor.menuBar.view.blockPalette=Blockpalett	#
-resourcePack.editor.menuBar.view.logging=Loggpanel	#
-resourcePack.editor.menuBar.view.navigationLogging=Navigeringsloggning	#
-resourcePack.editor.menuBar.view=Visa	#
-resourcePack.editor.menuBar.worldOptions.changeDimension.end=End	#
-resourcePack.editor.menuBar.worldOptions.changeDimension.nether=Nether	#
-resourcePack.editor.menuBar.worldOptions.changeDimension.overworld=Ytvärld	#
-resourcePack.editor.menuBar.worldOptions.changeDimension=Ändra dimensioner	#
-resourcePack.editor.menuBar.worldOptions.pause.entities=Entiteter	#
-resourcePack.editor.menuBar.worldOptions.pause=Pausa	#
-resourcePack.editor.menuBar.worldOptions=Världsalternativ	#
-
-
-resourcePack.editor.navigation.keyBinding.add=Lägg till navigeringsposition	#
-resourcePack.editor.navigation.keyBinding.next=Gå till nästa navigeringsposition	#
-resourcePack.editor.navigation.keyBinding.previous=Gå till förra navigeringsposition	#
-
-
-resourcePack.editor.paste.pane.submitButton=Bekräfta klistra in	#
-resourcePack.editor.paste.pane.title=Klistra in	#
-resourcePack.editor.paste.pane.transform.mirrorX=Spegla X	#
-resourcePack.editor.paste.pane.transform.mirrorZ=Spegla Z	#
-resourcePack.editor.paste.pane.transform.origin.title=Justering	#
-resourcePack.editor.paste.pane.transform.rotation.180=180°	#
-resourcePack.editor.paste.pane.transform.rotation.270=270°	#
-resourcePack.editor.paste.pane.transform.rotation.90=90°	#
-resourcePack.editor.paste.pane.transform.rotation.none=0°	#
-resourcePack.editor.paste.pane.transform.rotation.title=Rotera	#
-resourcePack.editor.paste.pane.transform.title=Förvandla	#
-resourcePack.editor.paste.toolRail.description=Vänsterklicka för att välja ett block och klistra in ett urklippsobjekt	#
-resourcePack.editor.paste.toolRail.title=Förhandsgranska inklistring	#
-
-
-resourcePack.editor.pastepreview.inputContext.title=Förhandsgranska inklistring	#
-resourcePack.editor.pastepreview.keyBinding.clearPreview=Rensa förhandsgranskning	#
-resourcePack.editor.pastepreview.keyBinding.copy=Kopiera markering	#
-resourcePack.editor.pastepreview.keyBinding.cut=Klipp ut markering	#
-resourcePack.editor.pastepreview.keyBinding.moveBack=Flytta förhandsgranskning bakåt	#
-resourcePack.editor.pastepreview.keyBinding.moveDown=Flytta förhandsgranskning nedåt	#
-resourcePack.editor.pastepreview.keyBinding.moveForward=Flytta förhandsgranskning framåt	#
-resourcePack.editor.pastepreview.keyBinding.moveLeft=Flytta förhandsgranskning åt vänster	#
-resourcePack.editor.pastepreview.keyBinding.moveOffsetBack=Flytta justeringen bakåt	#
-resourcePack.editor.pastepreview.keyBinding.moveOffsetDown=Flytta justeringen nedåt	#
-resourcePack.editor.pastepreview.keyBinding.moveOffsetForward=Flytta justeringen framåt	#
-resourcePack.editor.pastepreview.keyBinding.moveOffsetLeft=Flytta justeringen åt vänster	#
-resourcePack.editor.pastepreview.keyBinding.moveOffsetRight=Flytta justeringen åt höger	#
-resourcePack.editor.pastepreview.keyBinding.moveOffsetUp=Flytta justeringen uppåt	#
-resourcePack.editor.pastepreview.keyBinding.moveOriginBack=Flytta ursprung bakåt	#
-resourcePack.editor.pastepreview.keyBinding.moveOriginDown=Flytta ursprung nedåt	#
-resourcePack.editor.pastepreview.keyBinding.moveOriginForward=Flytta ursprung framåt	#
-resourcePack.editor.pastepreview.keyBinding.moveOriginLeft=Flytta ursprung åt vänster	#
-resourcePack.editor.pastepreview.keyBinding.moveOriginRight=Flytta ursprung åt höger	#
-resourcePack.editor.pastepreview.keyBinding.moveOriginUp=Flytta ursprung uppåt	#
-resourcePack.editor.pastepreview.keyBinding.moveRight=Flytta förhandsgranskning åt höger	#
-resourcePack.editor.pastepreview.keyBinding.moveUp=Flytta förhandsgranskning uppåt	#
-resourcePack.editor.pastepreview.keyBinding.paste=Klistra in	#
-resourcePack.editor.pastepreview.keyBinding.pasteAtCursor=Klistra in vid markören	#
-resourcePack.editor.pastepreview.keyBinding.pastepreview=Förhandsgranska inklistring	#
-resourcePack.editor.pastepreview.keyBinding.quickPaste=Snabbinklistring	#
-resourcePack.editor.pastepreview.keyBinding.rotateClockWise=Rotera förhandsgranskningen medurs	#
-resourcePack.editor.pastepreview.keyBinding.rotateCounterClockWise=Rotera förhandsgranskningen moturs	#
-resourcePack.editor.pastepreview.keyBinding.toggleAdjacentTarget=Växla till intilliggande målläge	#
-resourcePack.editor.pastepreview.keyBinding.toggleBlockTarget=Växla läge för blockmål	#
-resourcePack.editor.pastepreview.keyBinding.toggleFixedDistance=Aktivera fast avstånd	#
-resourcePack.editor.pastepreview.keyBinding.toggleMirrorX=Växla till att spegla X	#
-resourcePack.editor.pastepreview.keyBinding.toggleMirrorZ=Växla till att spegla Z	#
-resourcePack.editor.pastepreview.keyBinding.toggleMouseTracking=Växla musspårning	#
-resourcePack.editor.pastepreview.pane.controls.cursor.fixed=Fast avstånd	#
-resourcePack.editor.pastepreview.pane.controls.cursor.keyboard=Endast tangenter	#
-resourcePack.editor.pastepreview.pane.controls.cursor.mouseandkeys=Mus och tangenter	#
-resourcePack.editor.pastepreview.pane.controls.cursor.target.block=Blockera	#
-resourcePack.editor.pastepreview.pane.controls.cursor.target.face=Angränsande	#
-resourcePack.editor.pastepreview.pane.controls.cursor.target.title=Mål	#
-resourcePack.editor.pastepreview.pane.controls.cursor=Kontroll	#
-resourcePack.editor.pastepreview.pane.controls.title=Markörskontroller	#
-resourcePack.editor.pastepreview.pane.placement.mirrorX=Spegla X	#
-resourcePack.editor.pastepreview.pane.placement.mirrorZ=Spegla Z	#
-resourcePack.editor.pastepreview.pane.placement.offset=Justering	#
-resourcePack.editor.pastepreview.pane.placement.origin=Ursprung	#
-resourcePack.editor.pastepreview.pane.placement.pastebutton=Klistra in	#
-resourcePack.editor.pastepreview.pane.placement.rotation=Rotation (runt Y-axeln)	#
-resourcePack.editor.pastepreview.pane.placement.title=Placeringsinställningar	#
-resourcePack.editor.pastepreview.pane.root.size=Storlek	#
-resourcePack.editor.pastepreview.pane.root.title=Förhandsgranska inklistring	#
-resourcePack.editor.pastepreview.tool.tip=Använd musen för att justera positionen för förhandsgranskningen av urklippet och klicka för att klistra in i världen	#
-resourcePack.editor.pastepreview.tool.title=Förhandsgranska inklistring	#
-
-
-resourcePack.editor.playerPositionExtension.dimension=Dimension	#
-resourcePack.editor.playerPositionExtension.menu.player=Spelare	#
-resourcePack.editor.playerPositionExtension.menu.showPlayerSettings=Visa spelarinställningar	#
-resourcePack.editor.playerPositionExtension.nether=Nether	#
-resourcePack.editor.playerPositionExtension.overworld=Ytvärld	#
-resourcePack.editor.playerPositionExtension.pane=Spelarinställningar	#
-resourcePack.editor.playerPositionExtension.theEnd=End	#
-resourcePack.editor.playerPositionExtension.worldSettings=Världsinställningar	#
-
-
-resourcePack.editor.playtest.AdvancedSettings.title=Avancerade inställningar	#
-resourcePack.editor.playtest.Dialog.DaylightCycle=Dygnsrytm	#
-resourcePack.editor.playtest.Dialog.Difficulty=Svårighetsgrad	#
-resourcePack.editor.playtest.Dialog.GameMode=Spelläge	#
-resourcePack.editor.playtest.Dialog.OverrideSpawn=Spawna på nuvarande plats	#
-resourcePack.editor.playtest.Dialog.ShowCoordinates=Visa koordinater	#
-resourcePack.editor.playtest.Dialog.TestButton=Testa världen	#
-resourcePack.editor.playtest.Dialog.TimeOfDay=Tid på dagen	#
-resourcePack.editor.playtest.Dialog.Title=Testa inställningar	#
-resourcePack.editor.playtest.Dialog.Weather=Väder	#
-resourcePack.editor.playtest.Dialog.WeatherCycle=Vädercykel	#
-resourcePack.editor.playtest.Menu.Title=Testa världen	#
-resourcePack.editor.playtest.Title.Tooltip=Provspela ditt redigeringsprojekt som en spelbar Minecraft-värld. Inga ändringar sparas i projektet. Endast tillgängligt när du är värd för ett enspelarprojekt.	#
-
-
-resourcePack.editor.playtestResult.EditorSystemFailure=Fel i redigeringssystemet	#
-resourcePack.editor.playtestResult.InvalidLevelId=Ogiltigt nivå-id	#
-resourcePack.editor.playtestResult.InvalidSessionHandle=Ogiltigt sessionsnamn	#
-resourcePack.editor.playtestResult.OK=Lyckat	#
-resourcePack.editor.playtestResult.PlayerNotFound=Spelaren hittades inte	#
-resourcePack.editor.playtestResult.ResponseTimeout=Svaret tog för lång tid	#
-resourcePack.editor.playtestResult.SessionInfoNotFound=Sessionsinformationen hittades inte	#
-resourcePack.editor.playtestResult.TooManyPlayers=Du kan inte testa en värld när du står värd för andra spelare	#
-resourcePack.editor.playtestResult.UnspecifiedError=Ospecificerat fel	#
-resourcePack.editor.playtestResult.UnsupportedScenario=Du måste vara värd för redigeringprojektet för att testa världen	#
-resourcePack.editor.playtestResult.WorldExportBusy=Världsexporteringen är upptagen	#
-resourcePack.editor.playtestResult.WorldExportFailed=Kunde inte exportera världen	#
-
-
-resourcePack.editor.menuBar.file.realmsPublish=Publicera till Realms   	####This string is intended to express that the option is for opening the pane to publish your editor world to Realms.{MaxLength=100}
-resourcePack.editor.realmsPublish.noActiveRealmsSubscription=Ett aktivt Realms-abonnemang krävs för att publicera något på Realms. Du kan prenumerera på Realms eller förnya din prenumeration från den vanliga Minecraft-klienten eller på minecraft.net-webbplatsen (efter att ha loggat in på ditt konto).    	####This string is intended to express that the user doesn't have a active Realms subscription and the process they need to follow in order to be able to upload their editor world to their Realms subscription.{MaxLength=350}
-resourcePack.editor.realmsPublish.userNotLoggedIn=Det krävs ett aktivt Realms-abonnemang för att publicera i Realms. För att få tillgång till tillgängliga Realms-abonnemang måste du vara inloggad på ett Microsoft-konto.		####This string is intended to express that the user is not logged in currently and that they must be logged into their Microsoft account in order to proceed.{MaxLength=350}
-resourcePack.editor.realmsPublish.dedicatedServerWarning=Publicera till Realms är inte tillgängligt när man använder en dedikerad server.		####This string is intended to express that the user is unable to use the Publish to Realms feature on a dedicated server.{MaxLength=350}
-resourcePack.editor.realmsPublish.notSessionHostWarning=Bara värden för redigeringssessionen kan publicera till Realms.		####This string is intended to express that the user is unable to use the Publish to Realms when they are not the session host.{MaxLength=350}
-resourcePack.editor.realmsPublish.genericRealmsIssue=Det har uppstått problem med Realms-tjänsten. Försök igen senare.		####This string is intended to express that there is an issue with the realms service and to please try again later.{MaxLength=350}
-resourcePack.editor.realmsPublish.goToMinecraftWebsite=Gå till Minecraft.net  	####This string is intended to express that the link will take the user to Minecraft.net.{MaxLength=100}
-resourcePack.editor.realmsPublish.Refresh=Uppdatera  	####This string is intended to express that the button will refresh the pane to see if the user in now logged in.{MaxLength=100}
-resourcePack.editor.realmsPublish.Realm=Realm  	####This string is intended to express that the below dropdown contains all of the users Realms subscriptions.{MaxLength=100}
-resourcePack.editor.realmsPublish.RealmSlot=Realm-plats 	####This string is intended to express that the dropdown contains all of the world slots in for the users selected realms subscription.{MaxLength=100}
-resourcePack.editor.realmsPublish.EmptySlot=Tom plats		####This string is intended to express that the Realm slot is empty.{MaxLength=100}
-resourcePack.editor.realmsPublish.PublishNotesTitle=Publicera till Realms-anteckning   	####This string is intended to express that the below field will contain additional information for the user about the publish to realms feature, including any warnings or issues.{MaxLength=150}
-resourcePack.editor.realmsPublish.DownloadRealm=Ladda ner    	####This string is intended to express that the button will download the currently selected World from the realm slot.{MaxLength=100}
-resourcePack.editor.realmsPublish.PublishRealm=Publicera  	####This string is intended to express that the button will publish the current world to the currently selected realm slot.{MaxLength=100}
-resourcePack.editor.realmsPublish.Confirm=Bekräfta   	####This string is intended to express that the button will confirm  the request to publish the world to realms.{MaxLength=100}
-resourcePack.editor.realmsPublish.Cancel=Avbryt 	####This string is intended to express that the button will cancel the request to publish the world to realms.{MaxLength=100}
-resourcePack.editor.realmsPublish.Back=Tillbaka 	####This string is intended to express that the button will take the user back to the previous pane.{MaxLength=100}
-resourcePack.editor.realmsPublish.PublishFailedNonCompliantWorldName=Publicera till Realms misslyckades på grund av ett ogiltigt världsnamn. Uppdatera världsnamnet och försök igen.		####This string is intended to express that publishing the world to Realms failed due to an invalid world name that was entered by the player .{MaxLength=200}
-resourcePack.editor.realmsPublish.PublishFailed=Kunde inte publicera till Realms. Försök igen senare.   	####This string is intended to express that publishing the world to Realms failed and to please try again later.{MaxLength=200}
-resourcePack.editor.realmsPublish.PublishSuccess=Publicerade till Realms    	####This string is intended to express that publishing the world to Realms succeeded.{MaxLength=200}
-resourcePack.editor.realmsPublish.PublishConfirmationOptOut=Fråga inte igen på detta Realm eller i denna session  	####This string is intended to express that the checkbox will opt the user out of confirming their publish to realms decisions.{MaxLength=100}
-resourcePack.editor.realmsPublish.PublishingToRealms=Publicerar världen till Realms…  	####This string is intended to express that the world is currently in the process of being published to Realms.{MaxLength=100}
-resourcePack.editor.realmsPublish.UnableToPublishMissingRealm=Kunde inte publicera till Realms. Inget Realm valt.    	####This string is intended to express that the user is unable to publish their world because a realm to upload to has not been selected.{MaxLength=250}
-resourcePack.editor.realmsPublish.UnableToPublishMissingRealmSlot=Kunde inte publicera till Realms. Ingen Realm-plats vald.   	####This string is intended to express that the user is unable to publish their world because a realm slot to upload to has not been selected.{MaxLength=250}
-resourcePack.editor.realmsPublish.PublishConfirmationWarning=Det här tar bort den aktuella världen från den valda platsen och ersätter den med din nuvarande Redigeraren-värld (den valda platsen kommer också att bli den aktiva platsen för ditt Realm). Medlemmarna i ditt Realm får tillgång till din nya värld. Om du vill spara din nuvarande värld och undvika dataförlust innan du publicerar ska du avbryta och välja ”Ladda ner” innan du publicerar. Tryck på ”Bekräfta” för att fortsätta och ersätta din nuvarande värld.    	####This string is intended to warn the user that if they publish their world to Realms, the world currently in that Realms slot will be deleted and unrecoverable. It also informs the user that members of the Realm will be able to access this world.{MaxLength=1000}
-resourcePack.editor.realmsPublish.DownloadSuccess=Nedladdningen av världen från Realms lyckades    	####This string is intended to express that downloading a world from Realms succeeded.{MaxLength=200}
-resourcePack.editor.realmsPublish.DownloadFailed=Nedladdningen av världen från Realms misslyckades 	####This string is intended to express that downloading a world from Realms failed.{MaxLength=200}
-resourcePack.editor.realmsPublish.DownloadingFromRealms=Laddar ner värld från Realms…    	####This string is intended to express that we're in the middle of downloading a world from Realms and waiting for that operation to complete.{MaxLength=200}
-
-
-resourcePack.editor.toolRail.RepeaterTool.title=Upprepningsverktyg	#
-resourcePack.editor.toolRail.RepeaterTool.tooltip=Verktyg för att upprepa en markeringsvolym	#
-resourcePack.editor.toolRail.RepeaterTool.pane.Spacing=Avstånd	#
-resourcePack.editor.toolRail.RepeaterTool.pane.Repetitions=Upprepningar	#
-resourcePack.editor.toolRail.RepeaterTool.pane.Preview=Förhandsvisning	#
-resourcePack.editor.toolRail.RepeaterTool.pane.Clear=Rensa	#
-resourcePack.editor.toolRail.RepeaterTool.pane.Apply=Tillämpa	#
-resourcePack.editor.toolRail.RepeaterTool.statusMessage.noSelection=Använd markeringsverktyget för att välja en volym att upprepa	#
-resourcePack.editor.toolRail.RepeaterTool.pane.Mode=Läge		####"Mode" describes a dropdown that contains the two different states the tool can be in. These are "Line" and "Grid" {MaxLength=20}
-resourcePack.editor.toolRail.RepeaterTool.mode.Line=Rad		####"Line" describes a straight, unbroken visual between two points {MaxLength=20}
-resourcePack.editor.toolRail.RepeaterTool.mode.Grid=Rutnät		####"Grid" describes a visual consisting of parallel lines at regular intervals, broken up by perpendicular lines at regular intervals, like grid paper. {MaxLength=20}
-resourcePack.editor.toolRail.RepeaterTool.pane.RepeatType=Upprepa typ		####"Repeat Type" describes a dropdown that contains the two types "Uniform" and "Separate" and represents how the repetitions along the three axes (plural of "axis") will be determined {MaxLength=40}
-resourcePack.editor.toolRail.RepeaterTool.repeat.Uniform=Enhetlig		####"Uniform" describes the repeat state of the Repeater Tool where it applies the same number of repetitions across all three axes (X, Y, and Z). "Uniform" was chosen as a short word that also means "consistent across multiple instances" {MaxLength=20}
-resourcePack.editor.toolRail.RepeaterTool.pane.RepeatAlongX=Upprepa längs med X		####"Repeat Along" describes a checkbox and means to apply the number of Uniform Repetitions across a given axis. This one is the X axis. "X", "Y", and "Z" have a mathematical meaning and it may not be appropriate to translate unless the mathematical meaning is also translated. More info can be found at https://en.wikipedia.org/wiki/Coordinate_system {MaxLength=40}
-resourcePack.editor.toolRail.RepeaterTool.pane.RepeatAlongY=Upprepa längs med Y		####See "Repeat Along X" but this is for the Y axis. {MaxLength=40}
-resourcePack.editor.toolRail.RepeaterTool.pane.RepeatAlongZ=Upprepa längs med Z		####See "Repeat Along X" but this is for the Z axis. {MaxLength=40}
-resourcePack.editor.toolRail.RepeaterTool.repeat.Separate=Separera		####"Separate" describes the repeat state of the Repeater Tool where the number of repetitions along each axis is set using separate number input elements, rather than one single number input {MaxLength=20}
-resourcePack.editor.toolRail.RepeaterTool.pane.XCount=X-antal		####"X Count" describes a number input field and represents the number of repetitions along the X axis. "X", "Y", and "Z" have a mathematical meaning and it may not be appropriate to translate unless the mathematical meaning is also translated. More info can be found at https://en.wikipedia.org/wiki/Coordinate_system {MaxLength=20}
-resourcePack.editor.toolRail.RepeaterTool.pane.YCount=Y-antal		####See "X Count" but this is for the Y axis. {MaxLength=20}
-resourcePack.editor.toolRail.RepeaterTool.pane.ZCount=Z-antal		####See "X Count" but this is for the Z axis. {MaxLength=20}
-
-
-resourcePack.editor.selectionTool.deselect=Avmarkera	#
-resourcePack.editor.selectionTool.fillPane.fillAction=Fyll markering	#
-resourcePack.editor.selectionTool.fillPane.title=Fyll markering	#
-resourcePack.editor.selectionTool.keyBinding.deselect=Avmarkera markering	#
-resourcePack.editor.selectionTool.keyBinding.fill=Fyll i markeringsinnehåll	#
-resourcePack.editor.selectionTool.keyBinding.growBack=Förstora markering bakåt	#
-resourcePack.editor.selectionTool.keyBinding.growDown=Förstora markering nedåt	#
-resourcePack.editor.selectionTool.keyBinding.growForward=Förstora markering framåt	#
-resourcePack.editor.selectionTool.keyBinding.growLeft=Förstora markering åt vänster	#
-resourcePack.editor.selectionTool.keyBinding.growRight=Förstora markering åt höger	#
-resourcePack.editor.selectionTool.keyBinding.growUp=Förstora markering uppåt	#
-resourcePack.editor.selectionTool.keyBinding.moveAllSelectionBack=Flytta alla markeringar bakåt	#
-resourcePack.editor.selectionTool.keyBinding.moveAllSelectionDown=Flytta alla markeringar nedåt	#
-resourcePack.editor.selectionTool.keyBinding.moveAllSelectionForward=Flytta alla markeringar framåt	#
-resourcePack.editor.selectionTool.keyBinding.moveAllSelectionLeft=Flytta alla markeringar åt vänster	#
-resourcePack.editor.selectionTool.keyBinding.moveAllSelectionRight=Flytta alla markeringar åt höger	#
-resourcePack.editor.selectionTool.keyBinding.moveAllSelectionUp=Flytta alla markeringar uppåt	#
-resourcePack.editor.selectionTool.keyBinding.moveCursorBack=Flytta markören bakåt	#
-resourcePack.editor.selectionTool.keyBinding.moveCursorDown=Flytta markören nedåt	#
-resourcePack.editor.selectionTool.keyBinding.moveCursorForward=Flytta markören framåt	#
-resourcePack.editor.selectionTool.keyBinding.moveCursorLeft=Flytta markören åt vänster	#
-resourcePack.editor.selectionTool.keyBinding.moveCursorRight=Flytta markören åt höger	#
-resourcePack.editor.selectionTool.keyBinding.moveCursorUp=Flytta markören uppåt	#
-resourcePack.editor.selectionTool.keyBinding.moveSelectionBack=Flytta markering bakåt	#
-resourcePack.editor.selectionTool.keyBinding.moveSelectionDown=Flytta markering nedåt	#
-resourcePack.editor.selectionTool.keyBinding.moveSelectionForward=Flytta markering framåt	#
-resourcePack.editor.selectionTool.keyBinding.moveSelectionLeft=Flytta markering åt vänster	#
-resourcePack.editor.selectionTool.keyBinding.moveSelectionRight=Flytta markering åt höger	#
-resourcePack.editor.selectionTool.keyBinding.moveSelectionUp=Flytta markering uppåt	#
-resourcePack.editor.selectionTool.keyBinding.shrinkBack=Förminska markering bakåt	#
-resourcePack.editor.selectionTool.keyBinding.shrinkDown=Förminska markering nedåt	#
-resourcePack.editor.selectionTool.keyBinding.shrinkForward=Förminska markering framåt	#
-resourcePack.editor.selectionTool.keyBinding.shrinkLeft=Förminska markering åt vänster	#
-resourcePack.editor.selectionTool.keyBinding.shrinkRight=Förminska markering åt höger	#
-resourcePack.editor.selectionTool.keyBinding.shrinkUp=Förminska markering uppåt	#
-resourcePack.editor.selectionTool.keyBinding.toggleTool=Växla till markeringsverktyg	#
-resourcePack.editor.selectionTool.keyBinding.select=Välj block			#### The action of adding a block to the selection volume using they keyboard {MaxLength="30"}
-resourcePack.editor.selectionTool.keyBinding.selectMultiple=Välj ytterligare block			#### The action of adding an additional block to the selection volume using the keyboard {MaxLength="30"}
-resourcePack.editor.selectionTool.keyBinding.trimVolume=Trimma markering (gränser)					#### Keybinding description for Trim the current selection volume to fit only the solid blocks within {MaxLength=30}
-resourcePack.editor.selectionTool.keyBinding.trimRemoveAir=Ändra mark. (radera luft)			#### Keybinding description for Remove the air from the current selection volume leaving only specified blocks {MaxLength=30}
-resourcePack.editor.selectionTool.marquee.title=Rammarkering	#
-resourcePack.editor.selectionTool.modeSelection.freehand.title=Läge för frihandspensel	#
-resourcePack.editor.selectionTool.modeSelection.freehand.tooltip=Välj block i världen med frihandspensel	#
-resourcePack.editor.selectionTool.modeSelection.marquee.title=Tältläge	#
-resourcePack.editor.selectionTool.modeSelection.marquee.tooltip=Välj block i världen med en rektangulär volym	#
-resourcePack.editor.selectionTool.modeSelection.magic.title=Magiskt markeringsläge			#### Magic Select mode is a mode that searches for contiguous matching blocks in a search radius {MaxLength=30}}
-resourcePack.editor.selectionTool.modeSelection.magic.tooltip=Välj block i världen med ett sökmönster från ett valt ursprung		#### Longer description of the magic select mode {MaxLength=150}}
-resourcePack.editor.selectionTool.modeSelection.title=Urvalsläge	#
-resourcePack.editor.selectionTool.projectThroughLiquid=Projicera genom vätska	#
-resourcePack.editor.selectionTool.trimAction.trimVolume=Trimma markering			#### Trim the current selection volume to fit only the solid blocks within {MaxLength=30}
-resourcePack.editor.selectionTool.trimAction.trimVolume.tooltip=Trimma den aktuella markeringsvolymen så att den endast passar de solida blocken inuti   	#### {MaxLength=200}
-resourcePack.editor.selectionTool.trimAction.removeAir=Ta bort luft			#### Remove the air from the current selection volume leaving only specified blocks {MaxLength=30}
-resourcePack.editor.selectionTool.trimAction.removeAir.tooltip=Ta bort luften från den aktuella markeringsvolymen och lämna endast angivna block 	#### {MaxLength=200}
-resourcePack.editor.selectionTool.trimAction.trimVolume.SettingsPane.title=Trimningsinställningar		#### The window pane title for the settings for trim mode {MaxLength=30}
-resourcePack.editor.selectionTool.trimAction.trimVolume.SettingsPane.ignoreLiquid=Ignorera vätskor		#### The toggle button title for ignoring liquids {MaxLength=30}
-resourcePack.editor.selectionTool.trimAction.trimVolume.SettingsPane.ignoreLiquid.tooltip=Ignorera eventuella vätskeblock när du trimmar volymen 	#### {MaxLength=200}
-resourcePack.editor.selectionTool.trimAction.trimVolume.SettingsPane.onlyCollidable=Endast kollisionsblock		#### The toggle button title for collision-only blocks {MaxLength=30}
-resourcePack.editor.selectionTool.trimAction.trimVolume.SettingsPane.onlyCollidable.tooltip=Ignorera block utan kollision (löv, gräs, osv.) vid trimning av volymen 	#### {MaxLength=200}
-resourcePack.editor.selectionTool.quickAction.clearSelection.tooltip=Avmarkera den aktuella markeringen	#
-resourcePack.editor.selectionTool.quickAction.clearSelection=Avmarkera	#
-resourcePack.editor.selectionTool.quickAction.deleteSelection.tooltip=Ta bort alla block i den aktuella markeringsvolymen	#
-resourcePack.editor.selectionTool.quickAction.deleteSelection=Radera	#
-resourcePack.editor.selectionTool.quickAction.fillSelection.tooltip=Fyll den aktuella markeringsvolymen med den valda blocktypen	#
-resourcePack.editor.selectionTool.quickAction.fillSelection=Fyll	#
-resourcePack.editor.selectionTool.quickAction.title=Snabbåtgärder	#
-resourcePack.editor.selectionTool.selectionMode.adjacent=Angränsande	#
-resourcePack.editor.selectionTool.selectionMode.fixedDistance=Fast avstånd	#
-resourcePack.editor.selectionTool.selectionMode.mouseAndKeyboard=Frihand	#
-resourcePack.editor.selectionTool.selectionMode=Läge	#
-resourcePack.editor.selectionTool.settingsPane.title=Markering	#
-resourcePack.editor.selectionTool.toolRail.description=Vänsterklicka för att markera; CTRL + D för att avmarkera	#
-resourcePack.editor.selectionTool.toolRail.title=Markering	#
-resourcePack.editor.selectionTool.transformPane.origin.tooltip=Ursprungsplatsen för markering i världskoordinater	#
-resourcePack.editor.selectionTool.transformPane.origin=Ursprung	#
-resourcePack.editor.selectionTool.transformPane.size=Storlek	#
-resourcePack.editor.selectionTool.transformPane.title=Förvandla	#
-
-
-resourcePack.editor.BlockMaskControl.trim.rootPane.title=Trimningsinställningar		#### The window pane title for the settings for trim mode {MaxLength=30}
-resourcePack.editor.BlockMaskControl.trim.toggleGroup.title=Maskläge	#### The title of the toggle group {MaxLength=30}
-resourcePack.editor.BlockMaskControl.trim.toggleGroup.item.disabled.label=Stäng av blockfilter			#### The title of the icon which disables block filters {MaxLength=30}
-resourcePack.editor.BlockMaskControl.trim.toggleGroup.item.disabled.tooltip=Avstängt					#### The tooltip of the icon which disables block filters {MaxLength=100}
-resourcePack.editor.BlockMaskControl.trim.toggleGroup.item.mask.label=Mask								#### The title of the icon which masks block filters {MaxLength=30}
-resourcePack.editor.BlockMaskControl.trim.toggleGroup.item.mask.tooltip=Block som matchar listan kommer att ignoreras			#### Mask mode tooltip {MaxLength=100}
-resourcePack.editor.BlockMaskControl.trim.toggleGroup.item.replace.label=Byt ut						#### The title of the replace block filter {MaxLength=30}
-resourcePack.editor.BlockMaskControl.trim.toggleGroup.item.replace.tooltip=Block som matchar listan kommer att behandlas som solida			#### Replace mode tooltip {MaxLength=100}
-
-
-resourcePack.editor.server.description=Resurser för redigeringsserver	#
-resourcePack.editor.server.name=Resurser för redigerare	#
-
-
-resourcePack.editor.toolRail.Terrain.title=Terräng	#
-resourcePack.editor.toolRail.Terrain.keybinding.toggleTool=Växla terrängverktyg	#
-resourcePack.editor.toolRail.Terrain.keyBinding.switch=Byt terrängläge	#
-resourcePack.editor.toolRail.Terrain.Mode.title=Terrängläge	#
-resourcePack.editor.toolRail.Terrain.Smooth.mode.title=Utjämningsläge	#
-resourcePack.editor.toolRail.Terrain.Smooth.tooltip=Utjämna terräng baserat på utjämningsstyrkan	#
-resourcePack.editor.toolRail.Terrain.SmoothStrength=Utjämningsstyrka	#
-resourcePack.editor.toolRail.Terrain.Roughen.mode.title=Upprivningsläge	#
-resourcePack.editor.toolRail.Terrain.Roughen.tooltip=Riv upp terrängen baserat på upprivningsstyrkan	#
-resourcePack.editor.toolRail.Terrain.RoughenStrength=Upprivningsstyrka	#
-resourcePack.editor.toolRail.Terrain.description=Terrängverktyget gör terrängen jämnare eller grövre	#
-
-
-resourcePack.editor.help.learnMore=Läs mer	#
-
-resourcePack.editor.statusBar.connectedPlayers=Anslutna spelare %s	#
-
-
-resourcePack.editor.summonTool.summonSubPane.EntityPickerTitle=Entitetstyp	#
-
-
-resourcePack.editor.timeOfDay.12hrClock=12-timmars klocka	#
-resourcePack.editor.timeOfDay.24hrClock=24-timmars klocka	#
-resourcePack.editor.timeOfDay.clockType=Typ av klocka	#
-resourcePack.editor.timeOfDay.currentTime=Aktuell tid	#
-resourcePack.editor.timeOfDay.customTime=Anpassad tid	#
-resourcePack.editor.timeOfDay.daylightCycle=Dygnsrytm	#
-resourcePack.editor.timeOfDay.dropDown.day=Dag	#
-resourcePack.editor.timeOfDay.dropDown.midnight=Midnatt	#
-resourcePack.editor.timeOfDay.dropDown.night=Natt	#
-resourcePack.editor.timeOfDay.dropDown.none=Ingen	#
-resourcePack.editor.timeOfDay.dropDown.noon=Middag	#
-resourcePack.editor.timeOfDay.dropDown.sunrise=Soluppgång	#
-resourcePack.editor.timeOfDay.dropDown.sunset=Solnedgång	#
-resourcePack.editor.timeOfDay.dropDown.custom=Anpassad		####"Custom" describes a dropdown that players can define the specific start time {MaxLength=20}
-resourcePack.editor.timeOfDay.dropDown.title=Mallar	#
-resourcePack.editor.timeOfDay.menu.title=Inställningar för tid på dagen	#
-resourcePack.editor.timeOfDay.minecraftClock=Minecraft-klocka	#
-resourcePack.editor.timeOfDay.title=Tidsinställningar	#
-
-
-resourcePack.editor.toolMode.keyBinding.console=Öppna konsol	#
-resourcePack.editor.toolMode.keyBinding.devConsole=Öppna utvecklarkonsol	#
-resourcePack.editor.toolMode.keyBinding.hotbar1=Välj snabbfält 1	#
-resourcePack.editor.toolMode.keyBinding.hotbar2=Välj snabbfält 2	#
-resourcePack.editor.toolMode.keyBinding.hotbar3=Välj snabbfält 3	#
-resourcePack.editor.toolMode.keyBinding.hotbar4=Välj snabbfält 4	#
-resourcePack.editor.toolMode.keyBinding.hotbar5=Välj snabbfält 5	#
-resourcePack.editor.toolMode.keyBinding.hotbar6=Välj snabbfält 6	#
-resourcePack.editor.toolMode.keyBinding.hotbar7=Välj snabbfält 7	#
-resourcePack.editor.toolMode.keyBinding.hotbar8=Välj snabbfält 8	#
-resourcePack.editor.toolMode.keyBinding.hotbar9=Välj snabbfält 9	#
-resourcePack.editor.toolMode.keyBinding.reload=Läs in igen	####Represents a label for a key shortcut that reloads scripts and UI.{MaxLength=100}
-
-
-resourcePack.editor.toolRail.blockPalette.title=Blockpalett (CTRL+P)	#
-resourcePack.editor.toolRail.blockPalette.tooltip=Skapa en palett med dina oftast använd block och favoriter	#
-resourcePack.editor.toolRail.flattenBrush.title=Utjämningspensel	#
-resourcePack.editor.toolRail.flattenBrush.tooltip=Jämna ut ett område till det valda blockets höjd	#
-resourcePack.editor.toolRail.flattenBrush.settings.heightThreshold=Höjdgräns	#
-resourcePack.editor.toolRail.flattenBrush.settings.radius=Radie	#
-resourcePack.editor.toolRail.floodFillSelectionTool.description=Väljer område som du för närvarande tittar på med hjälp av algoritmen för svepfyllning.	#
-resourcePack.editor.toolRail.floodFillSelectionTool.title=Markeringsverktyg för svepfyllning.	#
-resourcePack.editor.toolRail.line.keyBinding.delete=Radera innehåll	#
-resourcePack.editor.toolRail.line.keyBinding.deleteAndClear=Radera innehåll och avmarkera	#
-resourcePack.editor.toolRail.line.keyBinding.deselect=Avmarkera	#
-resourcePack.editor.toolRail.line.keyBinding.deselectAll=Avmarkera alla	#
-resourcePack.editor.toolRail.line.keyBinding.fill=Fyll innehåll	#
-resourcePack.editor.toolRail.line.keyBinding.fillAndClear=Fyll innehåll och avmarkera	#
-resourcePack.editor.toolRail.line.keyBinding.moveBack=Flytta markerade bakåt	#
-resourcePack.editor.toolRail.line.keyBinding.moveDown=Flytta markerade nedåt	#
-resourcePack.editor.toolRail.line.keyBinding.moveForward=Flytta markerade framåt	#
-resourcePack.editor.toolRail.line.keyBinding.moveLeft=Flytta markerade åt vänster	#
-resourcePack.editor.toolRail.line.keyBinding.moveRight=Flytta markerade åt höger	#
-resourcePack.editor.toolRail.line.keyBinding.moveUp=Flytta markerade uppåt	#
-resourcePack.editor.toolRail.line.keyBinding.selectAll=Markera allt	#
-resourcePack.editor.toolRail.line.pane.algorithm.Direct=Direkt	#
-resourcePack.editor.toolRail.line.pane.algorithm.Staggered=Sicksack (staket)	#
-resourcePack.editor.toolRail.line.pane.algorithm.title=Algoritm	#
-resourcePack.editor.toolRail.line.pane.fillAction=Fyll markering	#
-resourcePack.editor.toolRail.line.pane.height.title=Höjd	#
-resourcePack.editor.toolRail.line.pane.selectionMode.adjacent=Intilliggande yta	#
-resourcePack.editor.toolRail.line.pane.selectionMode.fixedDistance=Fast avstånd	#
-resourcePack.editor.toolRail.line.pane.selectionMode.freeForm=Frihand	#
-resourcePack.editor.toolRail.line.pane.selectionMode=Markering	#
-resourcePack.editor.toolRail.line.pane.surfaceContour=Ytkontur	#
-resourcePack.editor.toolRail.line.pane.width.title=Bredd	#
-resourcePack.editor.toolRail.line.title=Linje	#
-resourcePack.editor.toolRail.line.tooltip=Linjeverktyget skapar rader av block	#
-resourcePack.editor.toolRail.rulerTool.title=Mätverktyg	#
-resourcePack.editor.toolRail.rulerTool.tooltip=Mät avstånd	#
-resourcePack.editor.toolRail.rulerTool.info.title=Mått	#
-
-
-resourcePack.editor.toolRail.smartFillTool.title=Smart fyllningsverktyg	#
-resourcePack.editor.toolRail.smartFillTool.tooltip=Klicka för att fylla block som sitter ihop	#
-resourcePack.editor.toolRail.smartFillTool.modes.fillVolume=Fyll volym	#
-resourcePack.editor.toolRail.smartFillTool.areaLimit.title=Områdesgräns	#
-resourcePack.editor.toolRail.smartFillTool.areaLimit.tooltip=Maximal yta att fylla	#
-
-
-resourcePack.editor.toolRail.summonTool.keyBinding.clear=Rensa markering	#
-resourcePack.editor.toolRail.summonTool.keyBinding.delete=Radera entitet	#
-resourcePack.editor.toolRail.summonTool.keyBinding.moveBack=Flytta markerade bakåt	#
-resourcePack.editor.toolRail.summonTool.keyBinding.moveDown=Flytta markerade nedåt	#
-resourcePack.editor.toolRail.summonTool.keyBinding.moveForward=Flytta markerade framåt	#
-resourcePack.editor.toolRail.summonTool.keyBinding.moveLeft=Flytta markerade åt vänster	#
-resourcePack.editor.toolRail.summonTool.keyBinding.moveRight=Flytta markerade åt höger	#
-resourcePack.editor.toolRail.summonTool.keyBinding.moveUp=Flytta markerade uppåt	#
-resourcePack.editor.toolRail.summonTool.keyBinding.toggle=Växla till åkallningsverktyg	#
-resourcePack.editor.toolRail.summonTool.pane.select=Välj läge	#
-resourcePack.editor.toolRail.summonTool.pane.title=Åkallningsverktyg	#
-resourcePack.editor.toolRail.summonTool.pane.type=Entitetstyp	#
-resourcePack.editor.toolRail.summonTool.tool.infoText=Klicka på en entitet för att välja den, eller klicka på kartan för att åkalla en ny	#
-resourcePack.editor.toolRail.summonTool.tool.selectSubPane.rotation=Rotation	#
-resourcePack.editor.toolRail.summonTool.tool.selectSubPane=Välj entitet	#
-resourcePack.editor.toolRail.summonTool.tool.summonSubPane=Spawna entitet	#
-resourcePack.editor.toolRail.summonTool.tool.tip=Klicka för att åkalla entiteter	#
-resourcePack.editor.toolRail.summonTool.tool.title=Åkallningsverktyg	#
-
-resourcePack.editor.toolRail.workbenchSettings.title=Arbetsbänk	#
-resourcePack.editor.toolRail.workbenchTool.title=Arbetsbänk	#
-resourcePack.editor.toolRail.workbenchTool.description=Byt blocktillstånd snabbt	#
-resourcePack.editor.toolRail.workbenchTool.howToUse=Markera block för att se tillgängliga handlingar eller ändra tillstånd (öppna/stänga, rotera, invertera med mera). Prova även att använda skift- och ctrl-tangentsmodifierare! Obs! Funktionen fungerar bara på block med egenskaper som kan modifieras (som dörrar, staket och så vidare).		####	This text provides a description of the workbench tool and explans how the the user can highlight blocks in order to see the list of actions for changing that blocks state. {MaxLength="500"}
-resourcePack.editor.toolRail.workbenchTool.tooltip=Ändra blocktillstånd	#
-resourcePack.editor.toolRail.workbenchTool.block=Blockera	#
-resourcePack.editor.toolRail.workbenchTool.leftClick=Vänsterklicka	#
-resourcePack.editor.toolRail.workbenchTool.shiftLeftClick=Skift + vänsterklick	#
-resourcePack.editor.toolRail.workbenchTool.controlLeftClick=CTRL + vänsterklick	#
-resourcePack.editor.toolRail.workbenchTool.shiftControlLeftClick=Skift + CTRL + vänsterklick	#
-
-resourcePack.editor.toolRail.workbenchTool.leftClickTooltip=Vänsterklicka på ett block för att utföra den primära arbetsbänkshandlingen		####	This keybinding is a tool tip to convey that a left click will invoke the primary (1st) action of the workbench tool. {MaxLength="150"}
-resourcePack.editor.toolRail.workbenchTool.shiftLeftClickTooltip=Skift + vänsterklicka på ett block för att utföra den sekundära arbetsbänkshandlingen		####	This keybinding is a tool tip to convey that a shift + left click will invoke the primary (1st) action of the workbench tool. {MaxLength="150"}
-resourcePack.editor.toolRail.workbenchTool.controlLeftClickTooltip=Ctrl + vänsterklicka på ett block för att utföra den tredje arbetsbänkshandlingen		####	This keybinding is a tool tip to convey that a control + left click will invoke the primary (1st) action of the workbench tool. {MaxLength="150"}
-resourcePack.editor.toolRail.workbenchTool.shiftControlLeftClickTooltip=Skift + ctrl + vänsterklicka på ett block för att utföra den fjärde arbetsbänkshandlingen		####	TThis keybinding is a tool tip to convey that a shift + control + left click will invoke the primary (1st) action of the workbench tool. {MaxLength="150"}
-
-resourcePack.editor.toolRail.workbenchTool.stripWood=Skala/återställ trä		####This string is intended to express whether the wood block has bark (unstripped) or doesn't have bark (stripped).{MaxLength=100}
-resourcePack.editor.toolRail.workbenchTool.ladderLocation=Plats för stege	#
-resourcePack.editor.toolRail.workbenchTool.autoAlign=Justera automatiskt	#
-resourcePack.editor.toolRail.workbenchTool.autoAlignFacingDirection=Justera riktning automatiskt		####This string is intended to express that the action will align the facing direction of the block with the player camera.{MaxLength=100}
-resourcePack.editor.toolRail.workbenchTool.autoAlignRotation=Justera rotation automatiskt		####This string is intended to express that the action will align the roatation of the block with the player camera.{MaxLength=100}
-
-resourcePack.editor.toolRail.workbenchTool.topSlotBitProp=Övre/nedre del	#
-resourcePack.editor.toolRail.workbenchTool.pillarAxisProp=Rotera	#
-resourcePack.editor.toolRail.workbenchTool.heightProp=Lager	#
-resourcePack.editor.toolRail.workbenchTool.candlesProp=Antal ljus	#
-
-resourcePack.editor.toolRail.workbenchTool.turtleEggCountProp=Antal sköldpaddsägg	#
-resourcePack.editor.toolRail.workbenchTool.clusterCountProp=Antal havsgurkor	#
-resourcePack.editor.toolRail.workbenchTool.hangingProp=Växla till att hänga från ett annat block	#
-resourcePack.editor.toolRail.workbenchTool.wallPostBitProp=Växla stolpe	#
-
-resourcePack.editor.toolRail.workbenchTool.upsideDownBitProp=Övre/nedre del	#
-resourcePack.editor.toolRail.workbenchTool.openBitProp=Öppna/stäng	#
-resourcePack.editor.toolRail.workbenchTool.litProp=Tänd/släck	#
-resourcePack.editor.toolRail.workbenchTool.dripstoneThicknessProp=Tjocklek på droppsten	#
-
-resourcePack.editor.toolRail.workbenchTool.directionProp=Vänd åt riktning	#
-resourcePack.editor.toolRail.workbenchTool.weirdoDirectionProp=Rotera	#
-resourcePack.editor.toolRail.workbenchTool.facingDirectionProp=Vänd åt riktning	#
-resourcePack.editor.toolRail.workbenchTool.cardinalDirectionProp=Vänd åt riktning	#
-
-resourcePack.editor.toolRail.workbenchTool.addCustomMapping=Lägg till anpassade bindningar		####This string is intended to express that this subpane is for adding custom block property mappings for the tool.{MaxLength=100}
-resourcePack.editor.toolRail.workbenchTool.blockProperty=Blockegenskap		####This string is intended to express that this field is for the Block Property.{MaxLength=50}
-resourcePack.editor.toolRail.workbenchTool.clickBinding=Klickbindningar		####This string is intended to express that this dropdown contains the click binding options (left click, shift + left click, etc).{MaxLength=50}
-resourcePack.editor.toolRail.workbenchTool.addMapping=Lägg till bindning		####This string is intended to express that this button will add the custom mapping provided by the user.{MaxLength=50}
-resourcePack.editor.toolRail.workbenchTool.resetAllMappings=Återställ alla bindningar		####This string is intended to express that this button will reset all custom mappings provided by the user.{MaxLength=50}
-
-resourcePack.editor.workbenchTool.keyBinding.primaryAction=Primär arbetsbänkshandling		####	This keybinding is to invoke the primary (1st) action of the workbench tool. {MaxLength="30"}
-resourcePack.editor.workbenchTool.keyBinding.secondaryAction=Sekundär arbetsbänkshandling		#### This keybinding is to invoke the secondary (2nd) action of the workbench tool. {MaxLength="30"}
-resourcePack.editor.workbenchTool.keyBinding.tertiaryAction=Tredje arbetsbänkshandling		####	This keybinding is to invoke the tertiary (3rd) action of the workbench tool. {MaxLength="30"}
-resourcePack.editor.workbenchTool.keyBinding.quaternaryAction=Fjärde arbetsbänkshandling		#### This keybinding is to invoke the quaternary (4th) action of the workbench tool. {MaxLength="30"}
-
-
-resourcePack.editor.transaction.keyBinding.redo=Gör om	#
-resourcePack.editor.transaction.keyBinding.undo=Ångra	#
-
-
-resourcePack.editor.viewport.keyBinding.moveBack=Styr bakåt	#
-resourcePack.editor.viewport.keyBinding.moveDown=Flytta nedåt	#
-resourcePack.editor.viewport.keyBinding.moveForward=Styr framåt	#
-resourcePack.editor.viewport.keyBinding.moveLeft=Styr åt vänster	#
-resourcePack.editor.viewport.keyBinding.moveRight=Styr åt höger	#
-resourcePack.editor.viewport.keyBinding.moveUp=Flytta uppåt	#
-
-resourcePack.editor.viewport.keyBinding.incrementFlySpeed=Öka flyghastigheten	#
-resourcePack.editor.viewport.keyBinding.decrementFlySpeed=Minska flyghastigheten	#
-
-resourcePack.editor.viewSettings.compass.tip=Visa riktningskompassen	#
-resourcePack.editor.viewSettings.compass.title=Visa kompass	#
-resourcePack.editor.viewSettings.chunk.tip=Visa konturen på datablocksgränser på kartan	#
-resourcePack.editor.viewSettings.chunk.title=Visa datablocksgränser	#
-resourcePack.editor.viewSettings.nightVision.tip=Se världen som om du har mörkerseende	#
-resourcePack.editor.viewSettings.nightVision.title=Mörkerseende	#
-resourcePack.editor.viewSettings.invisible.tip=Visa osynliga block (t.ex. tomrum, barriärer o.s.v.)	#
-resourcePack.editor.viewSettings.invisible.title=Visa osynliga block	#
-resourcePack.editor.viewSettings.flySpeed.tip=Höj flyghastigheten för snabbare kartförflyttning	#
-resourcePack.editor.viewSettings.flySpeed.title=Multiplikator för flyghastighet	#
-resourcePack.editor.viewSettings.menu=Inställningar	#
-resourcePack.editor.viewSettings.title=Inställningar	#
-
-resourcePack.editor.hotbar.defaultDisplayName=Standard	#
-
-resourcePack.editor.reloadScripts.response.tooMany=För många spelare är anslutna till servern. Inläsning av skript stöds endast med en enda spelare ansluten.	#
-resourcePack.editor.reloadScripts.response.genericError=Ett fel uppstod vid försök att läsa in skript.	#
-resourcePack.editor.reloadScripts.response.noAdminRights=Du har inte tillstånd att läsa in skript.	#
+﻿
+commands.editor.project.beginExport=Exporterar…
+commands.editor.project.description=Manipulera det inlästa projektet
+commands.editor.project.export=projektexportering
+commands.editor.project.exportComplete=Exportering klar, filer sparade i %s
+commands.editor.project.exportCopyFailed=Kunde inte kopiera nivådata %s
+commands.editor.project.unknownSubcommand=Okänt underkommando
+resourcePack.editor.actionBar.redo.tooltipDescription=Gör om en handling
+resourcePack.editor.actionBar.redo.tooltipTitle=Gör om
+resourcePack.editor.actionBar.redo=Gör om
+resourcePack.editor.actionBar.undo.tooltipDescription=Ångra en handling
+resourcePack.editor.actionBar.undo.tooltipTitle=Ångra
+resourcePack.editor.actionBar.undo=Ångra
+resourcePack.editor.actionBar.fill=Fyll 
+resourcePack.editor.actionBar.fill.tooltipDescription=Fyll markeringsvolymen med det aktuella snabbfältsblocket 
+resourcePack.editor.actionBar.fill.tooltipTitle=Fyll 
+resourcePack.editor.agfx.settings.error.title=Fel har uppstått…
+resourcePack.editor.agfx.pane.title=Inställningar för redigerare
+resourcePack.editor.agfx.pane.settings_selector=Välj inställningar
+resourcePack.editor.agfx.pane.settings.title=Inställningar
+resourcePack.editor.agfx.pane.settings.revert_changes=Återställ ändringar
+resourcePack.editor.agfx.pane.settings.export_to_clipboard=Exportera till urklipp
+resourcePack.editor.toolRail.blockInspectorSettings.title=Blockinspektör   
+resourcePack.editor.toolRail.blockInspectorSettings.specifics=Blockspecifikt   
+resourcePack.editor.toolRail.blockInspectorSettings.actions.refresh=Uppdatera blockdata   
+resourcePack.editor.toolRail.blockInspectorSettings.actions.clear=Rensa markering   
+resourcePack.editor.toolRail.blockInspectorSettings.blockTags=Blocktaggar   
+resourcePack.editor.toolRail.blockInspectorSettings.blockProperties=Blockegenskaper   
+resourcePack.editor.toolRail.blockInspectorSettings.blockProperties.name=Egenskapsnamn   
+resourcePack.editor.toolRail.blockInspectorSettings.blockProperties.value=Egenskapsvärde   
+resourcePack.editor.toolRail.blockInspectorTool.title=Blockinspektör   
+resourcePack.editor.toolRail.blockInspectorTool.tooltip=Inspektera blockdata   
+resourcePack.editor.toolRail.blockInspectorTool.pane.helpText=Vänsterklicka på ett block för att visa och redigera blockets egenskaper   
+resourcePack.editor.blockInspector.toolRail.description=Vänsterklicka på ett block för att visa och redigera blockets egenskaper   
+resourcePack.editor.blockPalette.addSearchItem=Använd hittat block
+resourcePack.editor.blockPalette.blockPicker=Sök
+resourcePack.editor.blockPalette.paletteDropdown.title=Palett
+resourcePack.editor.blockPalette.title=Blockpalett
+resourcePack.editor.brushPaint.inputContext.activateBrushPaint=Aktivera penselfärg
+resourcePack.editor.brushPaint.inputContext.oneshot=Måla en gång
+resourcePack.editor.brushPaint.inputContext.title=Penselfärg
+resourcePack.editor.brushPaint.title=Penselfärg
+resourcePack.editor.brushPaint.tooltip=Använd penslar för att måla block i världen
+resourcePack.editor.BrushPaintControl.brush.title=Pensel
+resourcePack.editor.BrushPaintControl.brushSettings.title=Inställningar för pensel
+resourcePack.editor.BrushPaintControl.shapeSettings.title=Forminställningar 
+resourcePack.editor.BrushPaintControl.fillConstraints.mask.title=Masklista
+resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.disabled.tooltip=Stäng av blockfilter
+resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.disabled=Avstängd
+resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.mask.tooltip=Block som matchar listan kommer att ignoreras och påverkas inte
+resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.mask=Mask
+resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.replace=Ersätt
+resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.title=Penselblocksfilter
+resourcePack.editor.BrushPaintControl.fillConstraints.replace.title=Ersätt lista
+resourcePack.editor.BrushPaintControl.fillConstraints.replace.tooltip=Block som matchar listan kommer att användas
+resourcePack.editor.BrushPaintControl.fillConstraints.title=Ifyllnadsbegränsningar
+resourcePack.editor.BrushPaintControl.keybinding.maskMask=Maskläge – Mask
+resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetBack=Knuffa justeringen bakåt
+resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetDown=Knuffa justeringen nedåt
+resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetForward=Knuffa justeringen framåt
+resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetLeft=Knuffa justeringen åt vänster
+resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetRight=Knuffa justeringen åt höger
+resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetUp=Knuffa justeringen uppåt
+resourcePack.editor.BrushPaintControl.keybinding.replaceMask=Maskläge – Ersätt
+resourcePack.editor.BrushPaintControl.offset.title=Förskjutning
+resourcePack.editor.BrushPaintControl.offset.tooltip=Justering av markörens position
+resourcePack.editor.BrushPaintControl.rootPane.title=Inställningar för pensel
+resourcePack.editor.brushShape.common.settings.axis=Utskjutningsaxel
+resourcePack.editor.brushShape.common.settings.height=Höjd
+resourcePack.editor.brushShape.common.settings.length=Längd
+resourcePack.editor.brushShape.common.settings.radius=Radie
+resourcePack.editor.brushShape.common.settings.uniform=Enhetlig
+resourcePack.editor.brushShape.common.settings.xAxis=X-axel
+resourcePack.editor.brushShape.common.settings.xAxisNeg=-X-axel
+resourcePack.editor.brushShape.common.settings.yAxis=Y-axel
+resourcePack.editor.brushShape.common.settings.yAxisNeg=-Y-axel
+resourcePack.editor.brushShape.common.settings.zAxis=Z-axel
+resourcePack.editor.brushShape.common.settings.zAxisNeg=-Z-axel
+resourcePack.editor.brushShape.cone.name=Kon
+resourcePack.editor.brushShape.cone.settings.depth=Djupradie
+resourcePack.editor.brushShape.cone.settings.width=Breddradie
+resourcePack.editor.brushShape.cuboid.name=Rätblock
+resourcePack.editor.brushShape.cuboid.settings.depth=Djup
+resourcePack.editor.brushShape.cuboid.settings.height=Höjd
+resourcePack.editor.brushShape.cuboid.settings.width=Bredd
+resourcePack.editor.brushShape.cylinder.name=Cylinder
+resourcePack.editor.brushShape.cylinder.settings.depth_radius=Djupradie
+resourcePack.editor.brushShape.cylinder.settings.width_radius=Breddradie
+resourcePack.editor.brushShape.ellipsoid.name=Ellipsoid
+resourcePack.editor.brushShape.ellipsoid.settings.depth_radius=Djupradie
+resourcePack.editor.brushShape.ellipsoid.settings.height_radius=Höjdradie
+resourcePack.editor.brushShape.ellipsoid.settings.width_radius=Breddradie
+resourcePack.editor.brushShape.pyramid.name=Pyramiden
+resourcePack.editor.brushShape.pyramid.settings.depth=Djup
+resourcePack.editor.brushShape.pyramid.settings.height=Höjd
+resourcePack.editor.brushShape.pyramid.settings.width=Bredd
+resourcePack.editor.brushShape.singleBlock.name=Enskilt block
+resourcePack.editor.brushShape.star.name=Stjärna 
+resourcePack.editor.brushShape.star.settings.includeVertical=Inkludera vertikalt 
+resourcePack.editor.client.description=Resurser för redigeringsklient
+resourcePack.editor.client.name=Resurser för redigerare
+resourcePack.editor.ClipboardPreviewControl.keybinding.moveOriginBack=Flytta ursprung bakåt
+resourcePack.editor.ClipboardPreviewControl.keybinding.moveOriginDown=Flytta ursprung nedåt
+resourcePack.editor.ClipboardPreviewControl.keybinding.moveOriginForward=Flytta ursprung framåt
+resourcePack.editor.ClipboardPreviewControl.keybinding.moveOriginLeft=Flytta ursprung åt vänster
+resourcePack.editor.ClipboardPreviewControl.keybinding.moveOriginRight=Flytta ursprung åt höger
+resourcePack.editor.ClipboardPreviewControl.keybinding.moveOriginUp=Flytta ursprung uppåt
+resourcePack.editor.ClipboardPreviewControl.keyBinding.nudgeOffsetBack=Knuffa justeringen bakåt
+resourcePack.editor.ClipboardPreviewControl.keyBinding.nudgeOffsetDown=Knuffa ner justeringen
+resourcePack.editor.ClipboardPreviewControl.keyBinding.nudgeOffsetForward=Knuffa justeringen framåt
+resourcePack.editor.ClipboardPreviewControl.keyBinding.nudgeOffsetLeft=Knuffa justeringen åt vänster
+resourcePack.editor.ClipboardPreviewControl.keyBinding.nudgeOffsetRight=Knuffa justeringen åt höger
+resourcePack.editor.ClipboardPreviewControl.keyBinding.nudgeOffsetUp=Knuffa upp justeringen
+resourcePack.editor.ClipboardPreviewControl.keybinding.rotateClockWise=Rotera förhandsgranskningen medurs
+resourcePack.editor.ClipboardPreviewControl.keybinding.rotateCounterClockWise=Rotera förhandsgranskningen moturs
+resourcePack.editor.ClipboardPreviewControl.keybinding.toggleMirrorX=Växla till att spegla X
+resourcePack.editor.ClipboardPreviewControl.keybinding.toggleMirrorZ=Växla till att spegla Z
+resourcePack.editor.ClipboardPreviewControl.mirror.axis.x.tooltip=Spegla urklippsobjektet runt X-axeln vid utgångspunkten
+resourcePack.editor.ClipboardPreviewControl.mirror.axis.x=Spegla (X-axel)
+resourcePack.editor.ClipboardPreviewControl.mirror.axis.z.tooltip=Spegla urklippsobjektet runt Z-axeln vid utgångspunkten
+resourcePack.editor.ClipboardPreviewControl.mirror.axis.z=Spegla (Z-axel)
+resourcePack.editor.ClipboardPreviewControl.offset.title=Justering
+resourcePack.editor.ClipboardPreviewControl.offset.tooltip=Ytterligare justering från placeringspunkten till urklippsobjektets ursprung
+resourcePack.editor.ClipboardPreviewControl.origin.title=Ursprung
+resourcePack.editor.ClipboardPreviewControl.origin.tooltip=Ursprungsplatsen i urklipp-föremålet. Det används som ett placeringsankare och den punkt som urklippet redigeras ifrån
+resourcePack.editor.ClipboardPreviewControl.placement.title=Alternativ
+resourcePack.editor.ClipboardPreviewControl.rootPane.title=Information om urklipp
+resourcePack.editor.ClipboardPreviewControl.rotation.180=180°
+resourcePack.editor.ClipboardPreviewControl.rotation.270=270°
+resourcePack.editor.ClipboardPreviewControl.rotation.90=90°
+resourcePack.editor.ClipboardPreviewControl.rotation.none=Ingen
+resourcePack.editor.ClipboardPreviewControl.rotation.title=Rotation
+resourcePack.editor.ClipboardPreviewControl.rotation.tooltip=Rotation runt Y-axeln vid ursprungspunkten
+resourcePack.editor.ClipboardPreviewControl.structureSize.title=Urklippsstorlek
+resourcePack.editor.copypaste.actionbar.copy.title=Kopiera
+resourcePack.editor.copypaste.actionbar.copy.tooltip=Kopiera val till urklipp
+resourcePack.editor.copypaste.actionbar.copy.tooltipDescription=Kopiera innehållet i den aktuella markeringen till urklipp och lämna innehållet i markeringen orört
+resourcePack.editor.copypaste.actionbar.cut.title=Klipp ut
+resourcePack.editor.copypaste.actionbar.cut.tooltip=Klipp ut/flytta val till urklipp
+resourcePack.editor.copypaste.actionbar.cut.tooltipDescription=Kopiera innehållet i den aktuella markeringen till urklipp och ta bort innehållet i markeringen samtidigt
+resourcePack.editor.copypaste.keyBinding.copy=Kopiera val till urklipp
+resourcePack.editor.copypaste.keyBinding.cut=Klipp ut/flytta val till urklipp
+resourcePack.editor.copypaste.keyBinding.paste=Klistra in urklipp till värld
+resourcePack.editor.copypaste.menu.copy.title=Kopiera markering
+resourcePack.editor.copypaste.menu.cut.title=Klipp ut markering
+resourcePack.editor.core.keyBinding.showGameMenu=Visa spelmeny
+resourcePack.editor.core.keyBinding.showLogPanel=Visa loggpanel
+resourcePack.editor.CursorModeControl.cursorTargetMode.block.tooltip=Blocket under muspekaren
+resourcePack.editor.CursorModeControl.cursorTargetMode.block=Block
+resourcePack.editor.CursorModeControl.cursorTargetMode.face.tooltip=Blocket bredvid blocket under markören
+resourcePack.editor.CursorModeControl.cursorTargetMode.face=Angränsande
+resourcePack.editor.CursorModeControl.cursorTargetMode.title=Mål
+resourcePack.editor.CursorModeControl.cursorTargetMode.tooltip=Välj målläge för markören
+resourcePack.editor.CursorModeControl.fixedDistance.slider.title=Fast avstånd till markören
+resourcePack.editor.CursorModeControl.fixedDistance.slider.tooltip=Justera det fasta avståndet från spelaren där blockmarkören är placerad
+resourcePack.editor.CursorModeControl.keybinding.moveCursorBack=Flytta markören bakåt
+resourcePack.editor.CursorModeControl.keybinding.moveCursorDown=Flytta markören nedåt
+resourcePack.editor.CursorModeControl.keybinding.moveCursorForward=Knuffa framåt
+resourcePack.editor.CursorModeControl.keybinding.moveCursorLeft=Flytta markören åt vänster
+resourcePack.editor.CursorModeControl.keybinding.moveCursorRight=Flytta markören åt höger
+resourcePack.editor.CursorModeControl.keybinding.moveCursorUp=Flytta markören uppåt
+resourcePack.editor.CursorModeControl.keybinding.toggleBlockTargetMode=Växla mellan block- och intilliggande läge
+resourcePack.editor.CursorModeControl.keybinding.toggleFixedDistance=Växla läge för fast avstånd
+resourcePack.editor.CursorModeControl.keybinding.toggleMouseTracking=Växla musspårning
+resourcePack.editor.CursorModeControl.mouseControlMode.fixed=Fast avstånd
+resourcePack.editor.CursorModeControl.mouseControlMode.keyboard=Endast tangentbord
+resourcePack.editor.CursorModeControl.mouseControlMode.keyboardAndMouse=Mus och tangenter
+resourcePack.editor.CursorModeControl.mouseControlMode.title=Inmatningsmetod
+resourcePack.editor.CursorModeControl.mouseControlMode.tooltip=Välj inmatningsmetod för världsblockmarkören
+resourcePack.editor.CursorModeControl.projectThroughWater.title=Projicera genom vatten
+resourcePack.editor.CursorModeControl.projectThroughWater.tooltip=Muspekaren kommer att projicera genom vatten, vilket gör det möjligt att välja undervattenselement
+resourcePack.editor.CursorModeControl.rootPane.title=Markörinställningar
+resourcePack.editor.datatransferaccessors.atmospheric_scattering=Atmosfärisk spridning
+resourcePack.editor.datatransferaccessors.color_grading=Färggradering
+resourcePack.editor.datatransferaccessors.lighting_group=Global belysning
+resourcePack.editor.datatransferaccessors.pbr_fallbacks=Reservsystem för PBR
+resourcePack.editor.datatransferaccessors.point_lights=Punktljus
+resourcePack.editor.datatransferaccessors.water=Vatten
+resourcePack.editor.datatransferaccessors.shadows=Skuggor
+resourcePack.editor.deferredLightingSettings.menu.title=Inställningar för uppskjuten belysning
+resourcePack.editor.delete.keyBinding=Radera markeringsinnehåll
+resourcePack.editor.toolRail.entityInspector.pane.title=Entitetsinspektör   
+resourcePack.editor.toolRail.entityInspector.tool.title=Entitetsinspektör   
+resourcePack.editor.toolRail.entityInspector.tool.tip=Inspektera entitetsdata   
+resourcePack.editor.toolRail.entityInspector.pane.helpText=Vänsterklicka på en entitet för att visa och redigera entitetens egenskaper   
+resourcePack.editor.entityInspector.toolRail.description=Vänsterklicka på en entitet för att visa och redigera entitetens egenskaper   
+resourcePack.editor.exportProject.exportType=Exporttyp
+resourcePack.editor.exportProject.exportType.playableWorld=Spelbar värld
+resourcePack.editor.exportProject.exportNotes=Exportanteckningar
+resourcePack.editor.exportProject.exportNotes.export=Exporterar framsteg   
+resourcePack.editor.exportProject.exportNotes.warning=Du exporterar en v%1-värld. Exporterade spelbara världar kan inte användas i Minecraft-versioner med en siffra lägre än v%1. För att konvertera till tidigare versioner använder du https://chunker.app/ (viss funktionalitet kanske inte är tillgänglig om den inte stöds i tidigare versioner).
+resourcePack.editor.exportProject.exportNotes.progress=Exporterar världen…    
+resourcePack.editor.exportProject.exportNotes.exportSuccess=Världen har exporterats    
+resourcePack.editor.exportProject.exportNotes.exportFailed=Det gick inte att exportera världen    
+resourcePack.editor.exportProject.generalSettings=Allmänna inställningar
+resourcePack.editor.exportProject.generalSettings.worldName=Världsnamn
+resourcePack.editor.exportProject.generalSettings.gameMode=Spelläge
+resourcePack.editor.exportProject.generalSettings.difficulty=Svårighetsgrad
+resourcePack.editor.exportProject.generalSettings.hardcore=Hardcore
+resourcePack.editor.exportProject.initialPlaySettings=Grundläggande spelinställningar   
+resourcePack.editor.exportProject.initialPlaySettings.spawnPosition=Världens spawnplats   
+resourcePack.editor.exportProject.initialPlaySettings.startTime=Starttid   
+resourcePack.editor.exportProject.initialPlaySettings.clockType=Typ av klocka   
+resourcePack.editor.exportProject.initialPlaySettings.customStartTime=Anpassad starttid   
+resourcePack.editor.exportProject.initialPlaySettings.weather=Väder vid start   
+resourcePack.editor.exportProject.advancedSettings=Avancerade inställningar
+resourcePack.editor.exportProject.advancedSettings.startingMap=Startkarta
+resourcePack.editor.exportProject.advancedSettings.bonusChest=Bonuskista
+resourcePack.editor.exportProject.advancedSettings.showCoordinates=Visa koordinater
+resourcePack.editor.exportProject.advancedSettings.showDaysPlayed=Visa antal dagar spelade
+resourcePack.editor.exportProject.advancedSettings.recipeUnlocking=Upplåsning av recept
+resourcePack.editor.exportProject.advancedSettings.limitedCrafting=Begränsad tillverkning   
+resourcePack.editor.exportProject.advancedSettings.fireSpreads=Eld sprider sig
+resourcePack.editor.exportProject.advancedSettings.tntExplodes=Dynamit exploderar
+resourcePack.editor.exportProject.advancedSettings.resawnBlocksExplode=Respawnarblock exploderar
+resourcePack.editor.exportProject.advancedSettings.mobLoot=Föremål från varelser
+resourcePack.editor.exportProject.advancedSettings.naturalRegeneration=Naturlig återhämtning
+resourcePack.editor.exportProject.advancedSettings.tileDrops=Drop från block
+resourcePack.editor.exportProject.advancedSettings.immediateRespawn=Omedelbar respawn
+resourcePack.editor.exportProject.advancedSettings.showDeathMessage=Visa dödsmeddelande   
+resourcePack.editor.exportProject.advancedSettings.respawnRadius=Respawnradie
+resourcePack.editor.exportProject.advancedSettings.simulationDistance=Simuleringsavstånd
+resourcePack.editor.exportProject.advancedSettings.bedsWork=Sängar fungerar
+resourcePack.editor.exportProject.advancedSettings.requiredSleepingPlayers=Sovande spelare som krävs (%1$s)
+resourcePack.editor.exportProject.advancedSettings.requiredSleepingPlayers.onePlayerMessage=Endast 1 spelare
+resourcePack.editor.exportProject.advancedSettings.showItemTags=Visa föremålstaggar   
+resourcePack.editor.exportProject.multiplayerSettings=Flerspelarinställningar
+resourcePack.editor.exportProject.multiplayerSettings.multiplayerGame=Flerspelarsession
+resourcePack.editor.exportProject.multiplayerSettings.playerAccess=Spelaråtkomst
+resourcePack.editor.exportProject.multiplayerSettings.playerPermissions=Spelartillstånd
+resourcePack.editor.exportProject.multiplayerSettings.visibleToLAN=Synlig för LAN-spelare
+resourcePack.editor.exportProject.multiplayerSettings.friendlyFire=Kan skada medspelare
+resourcePack.editor.exportProject.cheatsSettings=Fuskinställningar
+resourcePack.editor.exportProject.cheatsSettings.cheats=Fusk
+resourcePack.editor.exportProject.cheatsSettings.daylightCycle=Dygnsrytm
+resourcePack.editor.exportProject.cheatsSettings.keepInventory=Behåll förråd
+resourcePack.editor.exportProject.cheatsSettings.mobSpawning=Varelsespawn
+resourcePack.editor.exportProject.cheatsSettings.mobGriefing=Destruktiva varelser
+resourcePack.editor.exportProject.cheatsSettings.entitiesDropLoot=Föremål från entiteter
+resourcePack.editor.exportProject.cheatsSettings.weatherCycle=Vädercykel
+resourcePack.editor.exportProject.cheatsSettings.commandBlocks=Kommandoblock
+resourcePack.editor.exportProject.cheatsSettings.commandBlockOutput=Resultat av kommandoblock   
+resourcePack.editor.exportProject.cheatsSettings.sendCommandFeedback=Skicka kommandofeedback   
+resourcePack.editor.exportProject.cheatsSettings.maxCommandChainLength=Maximal längd på kommandokedja   
+resourcePack.editor.exportProject.cheatsSettings.fireDamage=Eldskada  
+resourcePack.editor.exportProject.cheatsSettings.freezeDamage=Frysskada  
+resourcePack.editor.exportProject.cheatsSettings.fallDamage=Fallskada  
+resourcePack.editor.exportProject.cheatsSettings.drowningDamage=Drunkningsskada  
+resourcePack.editor.exportProject.cheatsSettings.insomnia=Sömnlöshet  
+resourcePack.editor.exportProject.cheatsSettings.showBorderEffect=Visa kantlinjeeffekt  
+resourcePack.editor.exportProject.cheatsSettings.functionCommandLimit=Funktionskommandogräns  
+resourcePack.editor.exportProject.cheatsSettings.educationFeatures=Utbildningsfunktioner
+resourcePack.editor.exportProject.cheatsSettings.randomTickSpeed=Slumpad ticktakt
+resourcePack.editor.exportProject.export=Exportera
+resourcePack.editor.exportProject.resetToDefault=Återställ till standard
+resourcePack.editor.exportProject.gameMode.survival=Överlevnad
+resourcePack.editor.exportProject.gameMode.creative=Kreativt
+resourcePack.editor.exportProject.gameMode.adventure=Äventyr
+resourcePack.editor.exportProject.difficulty.peaceful=Fridfull
+resourcePack.editor.exportProject.difficulty.easy=Lätt
+resourcePack.editor.exportProject.difficulty.normal=Normalt
+resourcePack.editor.exportProject.difficulty.hard=Svårt
+resourcePack.editor.exportProject.weather.default=Standard   
+resourcePack.editor.exportProject.weather.clear=Klart   
+resourcePack.editor.exportProject.weather.rain=Regn   
+resourcePack.editor.exportProject.weather.thunder=Åska   
+resourcePack.editor.toolRail.ExtrudeTool.title=Extruderingsverktyg
+resourcePack.editor.toolRail.ExtrudeTool.tooltip=Extruderingsverktyg för att göra block större eller mindre
+resourcePack.editor.toolRail.ExtrudeTool.pane.ContiguousSelectionBlockListSubPane.title=Lista över sammanhängande markerade block
+resourcePack.editor.toolRail.ExtrudeTool.pane.TrailingBlocksSettingsSubPane.title=Inställningar för följande block
+resourcePack.editor.toolRail.ExtrudeTool.pane.SampleLayerCount.title=Antal samplingslager
+resourcePack.editor.toolRail.ExtrudeTool.pane.ContiguousSelectionSettings.title=Inställningar för sammanhängande markering
+resourcePack.editor.toolRail.ExtrudeTool.pane.ContiguousSelectionType.title=Typ av sammanhängande markering
+resourcePack.editor.toolRail.ExtrudeTool.pane.ContiguousSelectionType.SameBlocks=Samma block
+resourcePack.editor.toolRail.ExtrudeTool.pane.ContiguousSelectionType.SameBlocksAndStates=Samma block och tillstånd
+resourcePack.editor.toolRail.ExtrudeTool.pane.ContiguousSelectionType.SolidBlocks=Solida block
+resourcePack.editor.toolRail.ExtrudeTool.pane.ContiguousSelectionType.AllBlocks=Alla block
+resourcePack.editor.toolRail.ExtrudeTool.pane.ContiguousSelectionType.CustomBlockList=Anpassad blocklista
+resourcePack.editor.toolRail.ExtrudeTool.pane.ToleranceLevel.title=Toleransnivå
+resourcePack.editor.toolRail.ExtrudeTool.pane.HasAdjacentBlocks.title=Har intilliggande block
+resourcePack.editor.toolRail.ExtrudeTool.pane.ExtruderSettings.title=Extruderarinställningar
+resourcePack.editor.toolRail.ExtrudeTool.pane.Radius.title=Radie
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.title=Urvalsläge
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.ContiguousSelection=Sammanhängande markering
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.MarqueeSelection=Rammarkering
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.ContiguousSettings.title=Inställningar för sammanhängande markering
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.TrailingBlocks.title=Följande block
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.TrailingBlocksSettings.title=Inställningar för följande block
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.QuickExtrudeSettings.title=Inställningar för snabbextrudering
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.QuickExtrudeMode.title=Snabbextruderingsläge
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.QuickExtrudeMode.decrease.title=Minska
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.QuickExtrudeMode.decrease.tooltip=Minska extrudering
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.QuickExtrudeMode.expand.title=Expandera
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.QuickExtrudeMode.expand.tooltip=Utöka extrudering
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.LayerCount.title=Antal lager
+resourcePack.editor.toolRail.ExtrudeTool.pane.preview_warning=Obs! Förhandsgranskning visar bara det första lagret 
+resourcePack.editor.toolRail.ExtrudeTool.pane.ExtrusionType.title=Extruderingstyp
+resourcePack.editor.toolRail.ExtrudeTool.pane.ExtrusionType.Extrude=Extrudera
+resourcePack.editor.toolRail.ExtrudeTool.pane.ExtrusionType.QuickExtrude=Snabbextrudering
+resourcePack.editor.toolRail.ExtrudeTool.keyBinding.deselect=Avmarkera
+resourcePack.editor.toolRail.ExtrudeTool.keyBinding.toggleTool=Extruderingsverktyg på/av
+resourcePack.editor.toolRail.FarmGenerator.tool.title=Gårdsgenerator
+resourcePack.editor.toolRail.FarmGenerator.tool.tooltip=Skapa en anpassad gård snabbt
+resourcePack.editor.toolRail.FarmGenerator.pane.title=Gårdsgenerator
+resourcePack.editor.toolRail.FarmGenerator.pane.length=Längd
+resourcePack.editor.toolRail.FarmGenerator.pane.width=Bredd
+resourcePack.editor.toolRail.FarmGenerator.pane.fence=Staket
+resourcePack.editor.toolRail.FarmGenerator.pane.irrigation=Lägg till bevattning
+resourcePack.editor.toolRail.FarmGenerator.pane.irrigation.tooltip=Lägger till vattenblock på gården för att vattna grödor.
+resourcePack.editor.toolRail.FarmGenerator.pane.crops.title=Grödor
+resourcePack.editor.toolRail.FarmGenerator.pane.crops.wheat=Vete
+resourcePack.editor.toolRail.FarmGenerator.pane.crops.potato=Potatis
+resourcePack.editor.toolRail.FarmGenerator.pane.crops.beets=Rödbeta
+resourcePack.editor.toolRail.FarmGenerator.pane.crops.pumpkin=Pumpa
+resourcePack.editor.toolRail.FarmGenerator.pane.crops.carrot=Morot
+resourcePack.editor.toolRail.FarmGenerator.pane.animals.title=Djur
+resourcePack.editor.toolRail.FarmGenerator.pane.animals.cow=Ko
+resourcePack.editor.toolRail.FarmGenerator.pane.animals.sheep=Får
+resourcePack.editor.toolRail.FarmGenerator.pane.animals.pig=Gris
+resourcePack.editor.toolRail.FarmGenerator.keyBinding.toggleTool=Växla till gårdsgeneratorsverktyget
+resourcePack.editor.toolRail.FarmGenerator.keyBinding.place=Placera gård vid markören
+resourcePack.editor.global.keyBinding.toggleMode=Växla läge
+resourcePack.editor.goToMark.actionBar.tooltip.description=Verktygspanel för spelarnavigering
+resourcePack.editor.goToMark.actionBar.tooltip.title=Navigeringspanel
+resourcePack.editor.goToMark.pane.goToSpawn=Gå till spawnplats
+resourcePack.editor.goToMark.pane.location=Spelarplats
+resourcePack.editor.goToMark.pane.locationPane.delete=Radera sparad plats
+resourcePack.editor.goToMark.pane.locationPane.dropdownLabel=Sparad plats
+resourcePack.editor.goToMark.pane.locationPane.inputName=Nytt namn
+resourcePack.editor.goToMark.pane.locationPane.markColor=Platsmarkörfärg
+resourcePack.editor.goToMark.pane.locationPane.store=Spara aktuell plats som…
+resourcePack.editor.goToMark.pane.locationPane.teleport=Teleportera till sparad plats %1$s
+resourcePack.editor.goToMark.pane.locationPane.title=Sparade platser
+resourcePack.editor.goToMark.pane.mapSize=Kartstorlek
+resourcePack.editor.goToMark.pane.refreshMap=Uppdatera kartan
+resourcePack.editor.goToMark.pane.setSpawn=Ställ in aktuell plats som spawnplats
+resourcePack.editor.goToMark.pane.showMap=Visa kartan
+resourcePack.editor.goToMark.pane.teleport=Teleportera till plats
+resourcePack.editor.goToMark.title=Navigeringspanel
+resourcePack.editor.grapple.keyBinding.flyToCursor=Flyg till markören
+resourcePack.editor.grapple.keyBinding.flyToSelection=Flyg till markering
+resourcePack.editor.locate.biome.find=Hitta ekosystem
+resourcePack.editor.locate.biome.title=Ekosystem
+resourcePack.editor.locate.keyBinding.toggleTool=Växla till lokaliseringsverktyget för ekosystem
+resourcePack.editor.locate.locatetype.biome=Ekosystem
+resourcePack.editor.locate.locatetype.structure=Struktur
+resourcePack.editor.locate.locatetype.title=Hitta typ
+resourcePack.editor.locate.results.foundat.title=Hittades i
+resourcePack.editor.locate.results.foundat=Hittades i
+resourcePack.editor.locate.results.goto=Gå till
+resourcePack.editor.locate.results.notfound.title=Inga resultat
+resourcePack.editor.locate.results.notfound=Hittade inga resultat
+resourcePack.editor.locate.results.title=Resultat
+resourcePack.editor.locate.structure.message=Struktursökning stöds inte just nu
+resourcePack.editor.locate.structure.title=Struktur
+resourcePack.editor.locate.title=Hitta
+resourcePack.editor.menuBar.edit.copy=Kopiera
+resourcePack.editor.menuBar.edit.cut=Klipp ut
+resourcePack.editor.menuBar.edit.delete=Radera
+resourcePack.editor.menuBar.edit.deselect=Avmarkera
+resourcePack.editor.menuBar.edit.quickFill=Snabb fyllning
+resourcePack.editor.menuBar.edit.quickPaste=Snabbinklistring
+resourcePack.editor.menuBar.edit.redo=Gör om
+resourcePack.editor.menuBar.edit.undo=Ångra
+resourcePack.editor.menuBar.edit=Redigera
+resourcePack.editor.menuBar.experimental=Experimentell
+resourcePack.editor.menuBar.extensions=Förlängningar
+resourcePack.editor.menuBar.file.cursor.projectThroughLiquid=Projicera genom vätska
+resourcePack.editor.menuBar.file.cursor=Markörinställningar
+resourcePack.editor.menuBar.file.export.project=Redigerarprojekt
+resourcePack.editor.menuBar.file.export.world=Spelbar värld
+resourcePack.editor.menuBar.file.export=Exportera
+resourcePack.editor.menuBar.file.pauseScreen=Spelmeny
+resourcePack.editor.menuBar.file.settings=Gränssnittsinställningar
+resourcePack.editor.menuBar.file=Fil
+resourcePack.editor.menuBar.help.tutorial=Handledning 
+resourcePack.editor.menuBar.help.documentation=Dokumentation
+resourcePack.editor.menuBar.help.feedback=Feedback
+resourcePack.editor.menuBar.help.quickStart=Snabbstart
+resourcePack.editor.menuBar.help=Hjälp
+resourcePack.editor.menuBar.locate=Hitta
+resourcePack.editor.menuBar.parentMenu.weather.clear=Rensa
+resourcePack.editor.menuBar.parentMenu.weather.rain=Regn
+resourcePack.editor.menuBar.parentMenu.weather.thunder=Åska
+resourcePack.editor.menuBar.parentMenu.weather=Väder
+resourcePack.editor.menuBar.view.blockPalette=Blockpalett
+resourcePack.editor.menuBar.view.logging=Loggpanel
+resourcePack.editor.menuBar.view.navigationLogging=Navigeringsloggning
+resourcePack.editor.menuBar.view=Visa
+resourcePack.editor.menuBar.worldOptions.changeDimension.end=End
+resourcePack.editor.menuBar.worldOptions.changeDimension.nether=Nether
+resourcePack.editor.menuBar.worldOptions.changeDimension.overworld=Ytvärld
+resourcePack.editor.menuBar.worldOptions.changeDimension=Ändra dimensioner
+resourcePack.editor.menuBar.worldOptions.pause.entities=Entiteter
+resourcePack.editor.menuBar.worldOptions.pause=Pausa
+resourcePack.editor.menuBar.worldOptions=Världsalternativ
+resourcePack.editor.navigation.keyBinding.add=Lägg till navigeringsposition
+resourcePack.editor.navigation.keyBinding.next=Gå till nästa navigeringsposition
+resourcePack.editor.navigation.keyBinding.previous=Gå till förra navigeringsposition
+resourcePack.editor.paste.pane.submitButton=Bekräfta klistra in
+resourcePack.editor.paste.pane.title=Klistra in
+resourcePack.editor.paste.pane.transform.mirrorX=Spegla X
+resourcePack.editor.paste.pane.transform.mirrorZ=Spegla Z
+resourcePack.editor.paste.pane.transform.origin.title=Justering
+resourcePack.editor.paste.pane.transform.rotation.180=180°
+resourcePack.editor.paste.pane.transform.rotation.270=270°
+resourcePack.editor.paste.pane.transform.rotation.90=90°
+resourcePack.editor.paste.pane.transform.rotation.none=0°
+resourcePack.editor.paste.pane.transform.rotation.title=Rotera
+resourcePack.editor.paste.pane.transform.title=Förvandla
+resourcePack.editor.paste.toolRail.description=Vänsterklicka för att välja ett block och klistra in ett urklippsobjekt
+resourcePack.editor.paste.toolRail.title=Förhandsgranska inklistring
+resourcePack.editor.pastepreview.inputContext.title=Förhandsgranska inklistring
+resourcePack.editor.pastepreview.keyBinding.clearPreview=Rensa förhandsgranskning
+resourcePack.editor.pastepreview.keyBinding.copy=Kopiera markering
+resourcePack.editor.pastepreview.keyBinding.cut=Klipp ut markering
+resourcePack.editor.pastepreview.keyBinding.moveBack=Flytta förhandsgranskning bakåt
+resourcePack.editor.pastepreview.keyBinding.moveDown=Flytta förhandsgranskning nedåt
+resourcePack.editor.pastepreview.keyBinding.moveForward=Flytta förhandsgranskning framåt
+resourcePack.editor.pastepreview.keyBinding.moveLeft=Flytta förhandsgranskning åt vänster
+resourcePack.editor.pastepreview.keyBinding.moveOffsetBack=Flytta justeringen bakåt
+resourcePack.editor.pastepreview.keyBinding.moveOffsetDown=Flytta justeringen nedåt
+resourcePack.editor.pastepreview.keyBinding.moveOffsetForward=Flytta justeringen framåt
+resourcePack.editor.pastepreview.keyBinding.moveOffsetLeft=Flytta justeringen åt vänster
+resourcePack.editor.pastepreview.keyBinding.moveOffsetRight=Flytta justeringen åt höger
+resourcePack.editor.pastepreview.keyBinding.moveOffsetUp=Flytta justeringen uppåt
+resourcePack.editor.pastepreview.keyBinding.moveOriginBack=Flytta ursprung bakåt
+resourcePack.editor.pastepreview.keyBinding.moveOriginDown=Flytta ursprung nedåt
+resourcePack.editor.pastepreview.keyBinding.moveOriginForward=Flytta ursprung framåt
+resourcePack.editor.pastepreview.keyBinding.moveOriginLeft=Flytta ursprung åt vänster
+resourcePack.editor.pastepreview.keyBinding.moveOriginRight=Flytta ursprung åt höger
+resourcePack.editor.pastepreview.keyBinding.moveOriginUp=Flytta ursprung uppåt
+resourcePack.editor.pastepreview.keyBinding.moveRight=Flytta förhandsgranskning åt höger
+resourcePack.editor.pastepreview.keyBinding.moveUp=Flytta förhandsgranskning uppåt
+resourcePack.editor.pastepreview.keyBinding.paste=Klistra in
+resourcePack.editor.pastepreview.keyBinding.pasteAtCursor=Klistra in vid markören
+resourcePack.editor.pastepreview.keyBinding.pastepreview=Förhandsgranska inklistring
+resourcePack.editor.pastepreview.keyBinding.quickPaste=Snabbinklistring
+resourcePack.editor.pastepreview.keyBinding.rotateClockWise=Rotera förhandsgranskningen medurs
+resourcePack.editor.pastepreview.keyBinding.rotateCounterClockWise=Rotera förhandsgranskningen moturs
+resourcePack.editor.pastepreview.keyBinding.toggleAdjacentTarget=Växla till intilliggande målläge
+resourcePack.editor.pastepreview.keyBinding.toggleBlockTarget=Växla läge för blockmål
+resourcePack.editor.pastepreview.keyBinding.toggleFixedDistance=Aktivera fast avstånd
+resourcePack.editor.pastepreview.keyBinding.toggleMirrorX=Växla till att spegla X
+resourcePack.editor.pastepreview.keyBinding.toggleMirrorZ=Växla till att spegla Z
+resourcePack.editor.pastepreview.keyBinding.toggleMouseTracking=Växla musspårning
+resourcePack.editor.pastepreview.pane.controls.cursor.fixed=Fast avstånd
+resourcePack.editor.pastepreview.pane.controls.cursor.keyboard=Endast tangenter
+resourcePack.editor.pastepreview.pane.controls.cursor.mouseandkeys=Mus och tangenter
+resourcePack.editor.pastepreview.pane.controls.cursor.target.block=Blockera
+resourcePack.editor.pastepreview.pane.controls.cursor.target.face=Angränsande
+resourcePack.editor.pastepreview.pane.controls.cursor.target.title=Mål
+resourcePack.editor.pastepreview.pane.controls.cursor=Kontroll
+resourcePack.editor.pastepreview.pane.controls.title=Markörskontroller
+resourcePack.editor.pastepreview.pane.placement.mirrorX=Spegla X
+resourcePack.editor.pastepreview.pane.placement.mirrorZ=Spegla Z
+resourcePack.editor.pastepreview.pane.placement.offset=Justering
+resourcePack.editor.pastepreview.pane.placement.origin=Ursprung
+resourcePack.editor.pastepreview.pane.placement.pastebutton=Klistra in
+resourcePack.editor.pastepreview.pane.placement.rotation=Rotation (runt Y-axeln)
+resourcePack.editor.pastepreview.pane.placement.title=Placeringsinställningar
+resourcePack.editor.pastepreview.pane.root.size=Storlek
+resourcePack.editor.pastepreview.pane.root.title=Förhandsgranska inklistring
+resourcePack.editor.pastepreview.tool.tip=Använd musen för att justera positionen för förhandsgranskningen av urklippet och klicka för att klistra in i världen
+resourcePack.editor.pastepreview.tool.title=Förhandsgranska inklistring
+resourcePack.editor.playerPositionExtension.dimension=Dimension
+resourcePack.editor.playerPositionExtension.menu.player=Spelare
+resourcePack.editor.playerPositionExtension.menu.showPlayerSettings=Visa spelarinställningar
+resourcePack.editor.playerPositionExtension.nether=Nether
+resourcePack.editor.playerPositionExtension.overworld=Ytvärld
+resourcePack.editor.playerPositionExtension.pane=Spelarinställningar
+resourcePack.editor.playerPositionExtension.theEnd=End
+resourcePack.editor.playerPositionExtension.worldSettings=Världsinställningar
+resourcePack.editor.playtest.AdvancedSettings.title=Avancerade inställningar
+resourcePack.editor.playtest.Dialog.DaylightCycle=Dygnsrytm
+resourcePack.editor.playtest.Dialog.Difficulty=Svårighetsgrad
+resourcePack.editor.playtest.Dialog.GameMode=Spelläge
+resourcePack.editor.playtest.Dialog.OverrideSpawn=Spawna på nuvarande plats
+resourcePack.editor.playtest.Dialog.ShowCoordinates=Visa koordinater
+resourcePack.editor.playtest.Dialog.TestButton=Testa världen
+resourcePack.editor.playtest.Dialog.TimeOfDay=Tid på dagen
+resourcePack.editor.playtest.Dialog.Title=Testa inställningar
+resourcePack.editor.playtest.Dialog.Weather=Väder
+resourcePack.editor.playtest.Dialog.WeatherCycle=Vädercykel
+resourcePack.editor.playtest.Menu.Title=Testa världen
+resourcePack.editor.playtest.Title.Tooltip=Provspela ditt redigeringsprojekt som en spelbar Minecraft-värld. Inga ändringar sparas i projektet. Endast tillgängligt när du är värd för ett enspelarprojekt.
+resourcePack.editor.playtestResult.EditorSystemFailure=Fel i redigeringssystemet
+resourcePack.editor.playtestResult.InvalidLevelId=Ogiltigt nivå-id
+resourcePack.editor.playtestResult.InvalidSessionHandle=Ogiltigt sessionsnamn
+resourcePack.editor.playtestResult.OK=Lyckat
+resourcePack.editor.playtestResult.PlayerNotFound=Spelaren hittades inte
+resourcePack.editor.playtestResult.ResponseTimeout=Svaret tog för lång tid
+resourcePack.editor.playtestResult.SessionInfoNotFound=Sessionsinformationen hittades inte
+resourcePack.editor.playtestResult.TooManyPlayers=Du kan inte testa en värld när du står värd för andra spelare
+resourcePack.editor.playtestResult.UnspecifiedError=Ospecificerat fel
+resourcePack.editor.playtestResult.UnsupportedScenario=Du måste vara värd för redigeringprojektet för att testa världen
+resourcePack.editor.playtestResult.WorldExportBusy=Världsexporteringen är upptagen
+resourcePack.editor.playtestResult.WorldExportFailed=Kunde inte exportera världen
+resourcePack.editor.menuBar.file.realmsPublish=Publicera till Realms   
+resourcePack.editor.realmsPublish.noActiveRealmsSubscription=Ett aktivt Realms-abonnemang krävs för att publicera något på Realms. Du kan prenumerera på Realms eller förnya din prenumeration från den vanliga Minecraft-klienten eller på minecraft.net-webbplatsen (efter att ha loggat in på ditt konto).    
+resourcePack.editor.realmsPublish.userNotLoggedIn=Det krävs ett aktivt Realms-abonnemang för att publicera i Realms. För att få tillgång till tillgängliga Realms-abonnemang måste du vara inloggad på ett Microsoft-konto.
+resourcePack.editor.realmsPublish.dedicatedServerWarning=Publicera till Realms är inte tillgängligt när man använder en dedikerad server.
+resourcePack.editor.realmsPublish.notSessionHostWarning=Bara värden för redigeringssessionen kan publicera till Realms.
+resourcePack.editor.realmsPublish.genericRealmsIssue=Det har uppstått problem med Realms-tjänsten. Försök igen senare.
+resourcePack.editor.realmsPublish.goToMinecraftWebsite=Gå till Minecraft.net  
+resourcePack.editor.realmsPublish.Refresh=Uppdatera  
+resourcePack.editor.realmsPublish.Realm=Realm  
+resourcePack.editor.realmsPublish.RealmSlot=Realm-plats 
+resourcePack.editor.realmsPublish.EmptySlot=Tom plats
+resourcePack.editor.realmsPublish.PublishNotesTitle=Publicera till Realms-anteckning   
+resourcePack.editor.realmsPublish.DownloadRealm=Ladda ner    
+resourcePack.editor.realmsPublish.PublishRealm=Publicera  
+resourcePack.editor.realmsPublish.Confirm=Bekräfta   
+resourcePack.editor.realmsPublish.Cancel=Avbryt 
+resourcePack.editor.realmsPublish.Back=Tillbaka 
+resourcePack.editor.realmsPublish.PublishFailedNonCompliantWorldName=Publicera till Realms misslyckades på grund av ett ogiltigt världsnamn. Uppdatera världsnamnet och försök igen.
+resourcePack.editor.realmsPublish.PublishFailed=Kunde inte publicera till Realms. Försök igen senare.   
+resourcePack.editor.realmsPublish.PublishSuccess=Publicerade till Realms    
+resourcePack.editor.realmsPublish.PublishConfirmationOptOut=Fråga inte igen på detta Realm eller i denna session  
+resourcePack.editor.realmsPublish.PublishingToRealms=Publicerar världen till Realms…  
+resourcePack.editor.realmsPublish.UnableToPublishMissingRealm=Kunde inte publicera till Realms. Inget Realm valt.    
+resourcePack.editor.realmsPublish.UnableToPublishMissingRealmSlot=Kunde inte publicera till Realms. Ingen Realm-plats vald.   
+resourcePack.editor.realmsPublish.PublishConfirmationWarning=Det här tar bort den aktuella världen från den valda platsen och ersätter den med din nuvarande Redigeraren-värld (den valda platsen kommer också att bli den aktiva platsen för ditt Realm). Medlemmarna i ditt Realm får tillgång till din nya värld. Om du vill spara din nuvarande värld och undvika dataförlust innan du publicerar ska du avbryta och välja ”Ladda ner” innan du publicerar. Tryck på ”Bekräfta” för att fortsätta och ersätta din nuvarande värld.    
+resourcePack.editor.realmsPublish.DownloadSuccess=Nedladdningen av världen från Realms lyckades    
+resourcePack.editor.realmsPublish.DownloadFailed=Nedladdningen av världen från Realms misslyckades 
+resourcePack.editor.realmsPublish.DownloadingFromRealms=Laddar ner värld från Realms…    
+resourcePack.editor.toolRail.RepeaterTool.title=Upprepningsverktyg
+resourcePack.editor.toolRail.RepeaterTool.tooltip=Verktyg för att upprepa en markeringsvolym
+resourcePack.editor.toolRail.RepeaterTool.pane.Spacing=Avstånd
+resourcePack.editor.toolRail.RepeaterTool.pane.Repetitions=Upprepningar
+resourcePack.editor.toolRail.RepeaterTool.pane.Preview=Förhandsvisning
+resourcePack.editor.toolRail.RepeaterTool.pane.Clear=Rensa
+resourcePack.editor.toolRail.RepeaterTool.pane.Apply=Tillämpa
+resourcePack.editor.toolRail.RepeaterTool.statusMessage.noSelection=Använd markeringsverktyget för att välja en volym att upprepa
+resourcePack.editor.toolRail.RepeaterTool.pane.Mode=Läge
+resourcePack.editor.toolRail.RepeaterTool.mode.Line=Rad
+resourcePack.editor.toolRail.RepeaterTool.mode.Grid=Rutnät
+resourcePack.editor.toolRail.RepeaterTool.pane.RepeatType=Upprepa typ
+resourcePack.editor.toolRail.RepeaterTool.repeat.Uniform=Enhetlig
+resourcePack.editor.toolRail.RepeaterTool.pane.RepeatAlongX=Upprepa längs med X
+resourcePack.editor.toolRail.RepeaterTool.pane.RepeatAlongY=Upprepa längs med Y
+resourcePack.editor.toolRail.RepeaterTool.pane.RepeatAlongZ=Upprepa längs med Z
+resourcePack.editor.toolRail.RepeaterTool.repeat.Separate=Separera
+resourcePack.editor.toolRail.RepeaterTool.pane.XCount=X-antal
+resourcePack.editor.toolRail.RepeaterTool.pane.YCount=Y-antal
+resourcePack.editor.toolRail.RepeaterTool.pane.ZCount=Z-antal
+resourcePack.editor.selectionTool.deselect=Avmarkera
+resourcePack.editor.selectionTool.fillPane.fillAction=Fyll markering
+resourcePack.editor.selectionTool.fillPane.title=Fyll markering
+resourcePack.editor.selectionTool.keyBinding.deselect=Avmarkera markering
+resourcePack.editor.selectionTool.keyBinding.fill=Fyll i markeringsinnehåll
+resourcePack.editor.selectionTool.keyBinding.growBack=Förstora markering bakåt
+resourcePack.editor.selectionTool.keyBinding.growDown=Förstora markering nedåt
+resourcePack.editor.selectionTool.keyBinding.growForward=Förstora markering framåt
+resourcePack.editor.selectionTool.keyBinding.growLeft=Förstora markering åt vänster
+resourcePack.editor.selectionTool.keyBinding.growRight=Förstora markering åt höger
+resourcePack.editor.selectionTool.keyBinding.growUp=Förstora markering uppåt
+resourcePack.editor.selectionTool.keyBinding.moveAllSelectionBack=Flytta alla markeringar bakåt
+resourcePack.editor.selectionTool.keyBinding.moveAllSelectionDown=Flytta alla markeringar nedåt
+resourcePack.editor.selectionTool.keyBinding.moveAllSelectionForward=Flytta alla markeringar framåt
+resourcePack.editor.selectionTool.keyBinding.moveAllSelectionLeft=Flytta alla markeringar åt vänster
+resourcePack.editor.selectionTool.keyBinding.moveAllSelectionRight=Flytta alla markeringar åt höger
+resourcePack.editor.selectionTool.keyBinding.moveAllSelectionUp=Flytta alla markeringar uppåt
+resourcePack.editor.selectionTool.keyBinding.moveCursorBack=Flytta markören bakåt
+resourcePack.editor.selectionTool.keyBinding.moveCursorDown=Flytta markören nedåt
+resourcePack.editor.selectionTool.keyBinding.moveCursorForward=Flytta markören framåt
+resourcePack.editor.selectionTool.keyBinding.moveCursorLeft=Flytta markören åt vänster
+resourcePack.editor.selectionTool.keyBinding.moveCursorRight=Flytta markören åt höger
+resourcePack.editor.selectionTool.keyBinding.moveCursorUp=Flytta markören uppåt
+resourcePack.editor.selectionTool.keyBinding.moveSelectionBack=Flytta markering bakåt
+resourcePack.editor.selectionTool.keyBinding.moveSelectionDown=Flytta markering nedåt
+resourcePack.editor.selectionTool.keyBinding.moveSelectionForward=Flytta markering framåt
+resourcePack.editor.selectionTool.keyBinding.moveSelectionLeft=Flytta markering åt vänster
+resourcePack.editor.selectionTool.keyBinding.moveSelectionRight=Flytta markering åt höger
+resourcePack.editor.selectionTool.keyBinding.moveSelectionUp=Flytta markering uppåt
+resourcePack.editor.selectionTool.keyBinding.shrinkBack=Förminska markering bakåt
+resourcePack.editor.selectionTool.keyBinding.shrinkDown=Förminska markering nedåt
+resourcePack.editor.selectionTool.keyBinding.shrinkForward=Förminska markering framåt
+resourcePack.editor.selectionTool.keyBinding.shrinkLeft=Förminska markering åt vänster
+resourcePack.editor.selectionTool.keyBinding.shrinkRight=Förminska markering åt höger
+resourcePack.editor.selectionTool.keyBinding.shrinkUp=Förminska markering uppåt
+resourcePack.editor.selectionTool.keyBinding.toggleTool=Växla till markeringsverktyg
+resourcePack.editor.selectionTool.keyBinding.select=Välj block
+resourcePack.editor.selectionTool.keyBinding.selectMultiple=Välj ytterligare block
+resourcePack.editor.selectionTool.keyBinding.trimVolume=Trimma markering (gränser)
+resourcePack.editor.selectionTool.keyBinding.trimRemoveAir=Ändra mark. (radera luft)
+resourcePack.editor.selectionTool.marquee.title=Rammarkering
+resourcePack.editor.selectionTool.modeSelection.freehand.title=Läge för frihandspensel
+resourcePack.editor.selectionTool.modeSelection.freehand.tooltip=Välj block i världen med frihandspensel
+resourcePack.editor.selectionTool.modeSelection.marquee.title=Tältläge
+resourcePack.editor.selectionTool.modeSelection.marquee.tooltip=Välj block i världen med en rektangulär volym
+resourcePack.editor.selectionTool.modeSelection.magic.title=Magiskt markeringsläge
+resourcePack.editor.selectionTool.modeSelection.magic.tooltip=Välj block i världen med ett sökmönster från ett valt ursprung
+resourcePack.editor.selectionTool.modeSelection.title=Urvalsläge
+resourcePack.editor.selectionTool.projectThroughLiquid=Projicera genom vätska
+resourcePack.editor.selectionTool.trimAction.trimVolume=Trimma markering
+resourcePack.editor.selectionTool.trimAction.trimVolume.tooltip=Trimma den aktuella markeringsvolymen så att den endast passar de solida blocken inuti   
+resourcePack.editor.selectionTool.trimAction.removeAir=Ta bort luft
+resourcePack.editor.selectionTool.trimAction.removeAir.tooltip=Ta bort luften från den aktuella markeringsvolymen och lämna endast angivna block 
+resourcePack.editor.selectionTool.trimAction.trimVolume.SettingsPane.title=Trimningsinställningar
+resourcePack.editor.selectionTool.trimAction.trimVolume.SettingsPane.ignoreLiquid=Ignorera vätskor
+resourcePack.editor.selectionTool.trimAction.trimVolume.SettingsPane.ignoreLiquid.tooltip=Ignorera eventuella vätskeblock när du trimmar volymen 
+resourcePack.editor.selectionTool.trimAction.trimVolume.SettingsPane.onlyCollidable=Endast kollisionsblock
+resourcePack.editor.selectionTool.trimAction.trimVolume.SettingsPane.onlyCollidable.tooltip=Ignorera block utan kollision (löv, gräs, osv.) vid trimning av volymen 
+resourcePack.editor.selectionTool.quickAction.clearSelection.tooltip=Avmarkera den aktuella markeringen
+resourcePack.editor.selectionTool.quickAction.clearSelection=Avmarkera
+resourcePack.editor.selectionTool.quickAction.deleteSelection.tooltip=Ta bort alla block i den aktuella markeringsvolymen
+resourcePack.editor.selectionTool.quickAction.deleteSelection=Radera
+resourcePack.editor.selectionTool.quickAction.fillSelection.tooltip=Fyll den aktuella markeringsvolymen med den valda blocktypen
+resourcePack.editor.selectionTool.quickAction.fillSelection=Fyll
+resourcePack.editor.selectionTool.quickAction.title=Snabbåtgärder
+resourcePack.editor.selectionTool.selectionMode.adjacent=Angränsande
+resourcePack.editor.selectionTool.selectionMode.fixedDistance=Fast avstånd
+resourcePack.editor.selectionTool.selectionMode.mouseAndKeyboard=Frihand
+resourcePack.editor.selectionTool.selectionMode=Läge
+resourcePack.editor.selectionTool.settingsPane.title=Markering
+resourcePack.editor.selectionTool.toolRail.description=Vänsterklicka för att markera; CTRL + D för att avmarkera
+resourcePack.editor.selectionTool.toolRail.title=Markering
+resourcePack.editor.selectionTool.transformPane.origin.tooltip=Ursprungsplatsen för markering i världskoordinater
+resourcePack.editor.selectionTool.transformPane.origin=Ursprung
+resourcePack.editor.selectionTool.transformPane.size=Storlek
+resourcePack.editor.selectionTool.transformPane.title=Förvandla
+resourcePack.editor.BlockMaskControl.trim.rootPane.title=Trimningsinställningar
+resourcePack.editor.BlockMaskControl.trim.toggleGroup.title=Maskläge
+resourcePack.editor.BlockMaskControl.trim.toggleGroup.item.disabled.label=Stäng av blockfilter
+resourcePack.editor.BlockMaskControl.trim.toggleGroup.item.disabled.tooltip=Avstängt
+resourcePack.editor.BlockMaskControl.trim.toggleGroup.item.mask.label=Mask
+resourcePack.editor.BlockMaskControl.trim.toggleGroup.item.mask.tooltip=Block som matchar listan kommer att ignoreras
+resourcePack.editor.BlockMaskControl.trim.toggleGroup.item.replace.label=Byt ut
+resourcePack.editor.BlockMaskControl.trim.toggleGroup.item.replace.tooltip=Block som matchar listan kommer att behandlas som solida
+resourcePack.editor.server.description=Resurser för redigeringsserver
+resourcePack.editor.server.name=Resurser för redigerare
+resourcePack.editor.toolRail.Terrain.title=Terräng
+resourcePack.editor.toolRail.Terrain.keybinding.toggleTool=Växla terrängverktyg
+resourcePack.editor.toolRail.Terrain.keyBinding.switch=Byt terrängläge
+resourcePack.editor.toolRail.Terrain.Mode.title=Terrängläge
+resourcePack.editor.toolRail.Terrain.Smooth.mode.title=Utjämningsläge
+resourcePack.editor.toolRail.Terrain.Smooth.tooltip=Utjämna terräng baserat på utjämningsstyrkan
+resourcePack.editor.toolRail.Terrain.SmoothStrength=Utjämningsstyrka
+resourcePack.editor.toolRail.Terrain.Roughen.mode.title=Upprivningsläge
+resourcePack.editor.toolRail.Terrain.Roughen.tooltip=Riv upp terrängen baserat på upprivningsstyrkan
+resourcePack.editor.toolRail.Terrain.RoughenStrength=Upprivningsstyrka
+resourcePack.editor.toolRail.Terrain.description=Terrängverktyget gör terrängen jämnare eller grövre
+resourcePack.editor.help.learnMore=Läs mer
+resourcePack.editor.statusBar.connectedPlayers=Anslutna spelare %s
+resourcePack.editor.summonTool.summonSubPane.EntityPickerTitle=Entitetstyp
+resourcePack.editor.timeOfDay.12hrClock=12-timmars klocka
+resourcePack.editor.timeOfDay.24hrClock=24-timmars klocka
+resourcePack.editor.timeOfDay.clockType=Typ av klocka
+resourcePack.editor.timeOfDay.currentTime=Aktuell tid
+resourcePack.editor.timeOfDay.customTime=Anpassad tid
+resourcePack.editor.timeOfDay.daylightCycle=Dygnsrytm
+resourcePack.editor.timeOfDay.dropDown.day=Dag
+resourcePack.editor.timeOfDay.dropDown.midnight=Midnatt
+resourcePack.editor.timeOfDay.dropDown.night=Natt
+resourcePack.editor.timeOfDay.dropDown.none=Ingen
+resourcePack.editor.timeOfDay.dropDown.noon=Middag
+resourcePack.editor.timeOfDay.dropDown.sunrise=Soluppgång
+resourcePack.editor.timeOfDay.dropDown.sunset=Solnedgång
+resourcePack.editor.timeOfDay.dropDown.custom=Anpassad
+resourcePack.editor.timeOfDay.dropDown.title=Mallar
+resourcePack.editor.timeOfDay.menu.title=Inställningar för tid på dagen
+resourcePack.editor.timeOfDay.minecraftClock=Minecraft-klocka
+resourcePack.editor.timeOfDay.title=Tidsinställningar
+resourcePack.editor.toolMode.keyBinding.console=Öppna konsol
+resourcePack.editor.toolMode.keyBinding.devConsole=Öppna utvecklarkonsol
+resourcePack.editor.toolMode.keyBinding.hotbar1=Välj snabbfält 1
+resourcePack.editor.toolMode.keyBinding.hotbar2=Välj snabbfält 2
+resourcePack.editor.toolMode.keyBinding.hotbar3=Välj snabbfält 3
+resourcePack.editor.toolMode.keyBinding.hotbar4=Välj snabbfält 4
+resourcePack.editor.toolMode.keyBinding.hotbar5=Välj snabbfält 5
+resourcePack.editor.toolMode.keyBinding.hotbar6=Välj snabbfält 6
+resourcePack.editor.toolMode.keyBinding.hotbar7=Välj snabbfält 7
+resourcePack.editor.toolMode.keyBinding.hotbar8=Välj snabbfält 8
+resourcePack.editor.toolMode.keyBinding.hotbar9=Välj snabbfält 9
+resourcePack.editor.toolMode.keyBinding.reload=Läs in igen
+resourcePack.editor.toolRail.blockPalette.title=Blockpalett (CTRL+P)
+resourcePack.editor.toolRail.blockPalette.tooltip=Skapa en palett med dina oftast använd block och favoriter
+resourcePack.editor.toolRail.flattenBrush.title=Utjämningspensel
+resourcePack.editor.toolRail.flattenBrush.tooltip=Jämna ut ett område till det valda blockets höjd
+resourcePack.editor.toolRail.flattenBrush.settings.heightThreshold=Höjdgräns
+resourcePack.editor.toolRail.flattenBrush.settings.radius=Radie
+resourcePack.editor.toolRail.floodFillSelectionTool.description=Väljer område som du för närvarande tittar på med hjälp av algoritmen för svepfyllning.
+resourcePack.editor.toolRail.floodFillSelectionTool.title=Markeringsverktyg för svepfyllning.
+resourcePack.editor.toolRail.line.keyBinding.delete=Radera innehåll
+resourcePack.editor.toolRail.line.keyBinding.deleteAndClear=Radera innehåll och avmarkera
+resourcePack.editor.toolRail.line.keyBinding.deselect=Avmarkera
+resourcePack.editor.toolRail.line.keyBinding.deselectAll=Avmarkera alla
+resourcePack.editor.toolRail.line.keyBinding.fill=Fyll innehåll
+resourcePack.editor.toolRail.line.keyBinding.fillAndClear=Fyll innehåll och avmarkera
+resourcePack.editor.toolRail.line.keyBinding.moveBack=Flytta markerade bakåt
+resourcePack.editor.toolRail.line.keyBinding.moveDown=Flytta markerade nedåt
+resourcePack.editor.toolRail.line.keyBinding.moveForward=Flytta markerade framåt
+resourcePack.editor.toolRail.line.keyBinding.moveLeft=Flytta markerade åt vänster
+resourcePack.editor.toolRail.line.keyBinding.moveRight=Flytta markerade åt höger
+resourcePack.editor.toolRail.line.keyBinding.moveUp=Flytta markerade uppåt
+resourcePack.editor.toolRail.line.keyBinding.selectAll=Markera allt
+resourcePack.editor.toolRail.line.pane.algorithm.Direct=Direkt
+resourcePack.editor.toolRail.line.pane.algorithm.Staggered=Sicksack (staket)
+resourcePack.editor.toolRail.line.pane.algorithm.title=Algoritm
+resourcePack.editor.toolRail.line.pane.fillAction=Fyll markering
+resourcePack.editor.toolRail.line.pane.height.title=Höjd
+resourcePack.editor.toolRail.line.pane.selectionMode.adjacent=Intilliggande yta
+resourcePack.editor.toolRail.line.pane.selectionMode.fixedDistance=Fast avstånd
+resourcePack.editor.toolRail.line.pane.selectionMode.freeForm=Frihand
+resourcePack.editor.toolRail.line.pane.selectionMode=Markering
+resourcePack.editor.toolRail.line.pane.surfaceContour=Ytkontur
+resourcePack.editor.toolRail.line.pane.width.title=Bredd
+resourcePack.editor.toolRail.line.title=Linje
+resourcePack.editor.toolRail.line.tooltip=Linjeverktyget skapar rader av block
+resourcePack.editor.toolRail.rulerTool.title=Mätverktyg
+resourcePack.editor.toolRail.rulerTool.tooltip=Mät avstånd
+resourcePack.editor.toolRail.rulerTool.info.title=Mått
+resourcePack.editor.toolRail.smartFillTool.title=Smart fyllningsverktyg
+resourcePack.editor.toolRail.smartFillTool.tooltip=Klicka för att fylla block som sitter ihop
+resourcePack.editor.toolRail.smartFillTool.modes.fillVolume=Fyll volym
+resourcePack.editor.toolRail.smartFillTool.areaLimit.title=Områdesgräns
+resourcePack.editor.toolRail.smartFillTool.areaLimit.tooltip=Maximal yta att fylla
+resourcePack.editor.toolRail.summonTool.keyBinding.clear=Rensa markering
+resourcePack.editor.toolRail.summonTool.keyBinding.delete=Radera entitet
+resourcePack.editor.toolRail.summonTool.keyBinding.moveBack=Flytta markerade bakåt
+resourcePack.editor.toolRail.summonTool.keyBinding.moveDown=Flytta markerade nedåt
+resourcePack.editor.toolRail.summonTool.keyBinding.moveForward=Flytta markerade framåt
+resourcePack.editor.toolRail.summonTool.keyBinding.moveLeft=Flytta markerade åt vänster
+resourcePack.editor.toolRail.summonTool.keyBinding.moveRight=Flytta markerade åt höger
+resourcePack.editor.toolRail.summonTool.keyBinding.moveUp=Flytta markerade uppåt
+resourcePack.editor.toolRail.summonTool.keyBinding.toggle=Växla till åkallningsverktyg
+resourcePack.editor.toolRail.summonTool.pane.select=Välj läge
+resourcePack.editor.toolRail.summonTool.pane.title=Åkallningsverktyg
+resourcePack.editor.toolRail.summonTool.pane.type=Entitetstyp
+resourcePack.editor.toolRail.summonTool.tool.infoText=Klicka på en entitet för att välja den, eller klicka på kartan för att åkalla en ny
+resourcePack.editor.toolRail.summonTool.tool.selectSubPane.rotation=Rotation
+resourcePack.editor.toolRail.summonTool.tool.selectSubPane=Välj entitet
+resourcePack.editor.toolRail.summonTool.tool.summonSubPane=Spawna entitet
+resourcePack.editor.toolRail.summonTool.tool.tip=Klicka för att åkalla entiteter
+resourcePack.editor.toolRail.summonTool.tool.title=Åkallningsverktyg
+resourcePack.editor.toolRail.workbenchSettings.title=Arbetsbänk
+resourcePack.editor.toolRail.workbenchTool.title=Arbetsbänk
+resourcePack.editor.toolRail.workbenchTool.description=Byt blocktillstånd snabbt
+resourcePack.editor.toolRail.workbenchTool.howToUse=Markera block för att se tillgängliga handlingar eller ändra tillstånd (öppna/stänga, rotera, invertera med mera). Prova även att använda skift- och ctrl-tangentsmodifierare! Obs! Funktionen fungerar bara på block med egenskaper som kan modifieras (som dörrar, staket och så vidare).
+resourcePack.editor.toolRail.workbenchTool.tooltip=Ändra blocktillstånd
+resourcePack.editor.toolRail.workbenchTool.block=Blockera
+resourcePack.editor.toolRail.workbenchTool.leftClick=Vänsterklicka
+resourcePack.editor.toolRail.workbenchTool.shiftLeftClick=Skift + vänsterklick
+resourcePack.editor.toolRail.workbenchTool.controlLeftClick=CTRL + vänsterklick
+resourcePack.editor.toolRail.workbenchTool.shiftControlLeftClick=Skift + CTRL + vänsterklick
+resourcePack.editor.toolRail.workbenchTool.leftClickTooltip=Vänsterklicka på ett block för att utföra den primära arbetsbänkshandlingen
+resourcePack.editor.toolRail.workbenchTool.shiftLeftClickTooltip=Skift + vänsterklicka på ett block för att utföra den sekundära arbetsbänkshandlingen
+resourcePack.editor.toolRail.workbenchTool.controlLeftClickTooltip=Ctrl + vänsterklicka på ett block för att utföra den tredje arbetsbänkshandlingen
+resourcePack.editor.toolRail.workbenchTool.shiftControlLeftClickTooltip=Skift + ctrl + vänsterklicka på ett block för att utföra den fjärde arbetsbänkshandlingen
+resourcePack.editor.toolRail.workbenchTool.stripWood=Skala/återställ trä
+resourcePack.editor.toolRail.workbenchTool.ladderLocation=Plats för stege
+resourcePack.editor.toolRail.workbenchTool.autoAlign=Justera automatiskt
+resourcePack.editor.toolRail.workbenchTool.autoAlignFacingDirection=Justera riktning automatiskt
+resourcePack.editor.toolRail.workbenchTool.autoAlignRotation=Justera rotation automatiskt
+resourcePack.editor.toolRail.workbenchTool.topSlotBitProp=Övre/nedre del
+resourcePack.editor.toolRail.workbenchTool.pillarAxisProp=Rotera
+resourcePack.editor.toolRail.workbenchTool.heightProp=Lager
+resourcePack.editor.toolRail.workbenchTool.candlesProp=Antal ljus
+resourcePack.editor.toolRail.workbenchTool.turtleEggCountProp=Antal sköldpaddsägg
+resourcePack.editor.toolRail.workbenchTool.clusterCountProp=Antal havsgurkor
+resourcePack.editor.toolRail.workbenchTool.hangingProp=Växla till att hänga från ett annat block
+resourcePack.editor.toolRail.workbenchTool.wallPostBitProp=Växla stolpe
+resourcePack.editor.toolRail.workbenchTool.upsideDownBitProp=Övre/nedre del
+resourcePack.editor.toolRail.workbenchTool.openBitProp=Öppna/stäng
+resourcePack.editor.toolRail.workbenchTool.litProp=Tänd/släck
+resourcePack.editor.toolRail.workbenchTool.dripstoneThicknessProp=Tjocklek på droppsten
+resourcePack.editor.toolRail.workbenchTool.directionProp=Vänd åt riktning
+resourcePack.editor.toolRail.workbenchTool.weirdoDirectionProp=Rotera
+resourcePack.editor.toolRail.workbenchTool.facingDirectionProp=Vänd åt riktning
+resourcePack.editor.toolRail.workbenchTool.cardinalDirectionProp=Vänd åt riktning
+resourcePack.editor.toolRail.workbenchTool.addCustomMapping=Lägg till anpassade bindningar
+resourcePack.editor.toolRail.workbenchTool.blockProperty=Blockegenskap
+resourcePack.editor.toolRail.workbenchTool.clickBinding=Klickbindningar
+resourcePack.editor.toolRail.workbenchTool.addMapping=Lägg till bindning
+resourcePack.editor.toolRail.workbenchTool.resetAllMappings=Återställ alla bindningar
+resourcePack.editor.workbenchTool.keyBinding.primaryAction=Primär arbetsbänkshandling
+resourcePack.editor.workbenchTool.keyBinding.secondaryAction=Sekundär arbetsbänkshandling
+resourcePack.editor.workbenchTool.keyBinding.tertiaryAction=Tredje arbetsbänkshandling
+resourcePack.editor.workbenchTool.keyBinding.quaternaryAction=Fjärde arbetsbänkshandling
+resourcePack.editor.transaction.keyBinding.redo=Gör om
+resourcePack.editor.transaction.keyBinding.undo=Ångra
+resourcePack.editor.viewport.keyBinding.moveBack=Styr bakåt
+resourcePack.editor.viewport.keyBinding.moveDown=Flytta nedåt
+resourcePack.editor.viewport.keyBinding.moveForward=Styr framåt
+resourcePack.editor.viewport.keyBinding.moveLeft=Styr åt vänster
+resourcePack.editor.viewport.keyBinding.moveRight=Styr åt höger
+resourcePack.editor.viewport.keyBinding.moveUp=Flytta uppåt
+resourcePack.editor.viewport.keyBinding.incrementFlySpeed=Öka flyghastigheten
+resourcePack.editor.viewport.keyBinding.decrementFlySpeed=Minska flyghastigheten
+resourcePack.editor.viewSettings.compass.tip=Visa riktningskompassen
+resourcePack.editor.viewSettings.compass.title=Visa kompass
+resourcePack.editor.viewSettings.chunk.tip=Visa konturen på datablocksgränser på kartan
+resourcePack.editor.viewSettings.chunk.title=Visa datablocksgränser
+resourcePack.editor.viewSettings.nightVision.tip=Se världen som om du har mörkerseende
+resourcePack.editor.viewSettings.nightVision.title=Mörkerseende
+resourcePack.editor.viewSettings.invisible.tip=Visa osynliga block (t.ex. tomrum, barriärer o.s.v.)
+resourcePack.editor.viewSettings.invisible.title=Visa osynliga block
+resourcePack.editor.viewSettings.flySpeed.tip=Höj flyghastigheten för snabbare kartförflyttning
+resourcePack.editor.viewSettings.flySpeed.title=Multiplikator för flyghastighet
+resourcePack.editor.viewSettings.menu=Inställningar
+resourcePack.editor.viewSettings.title=Inställningar
+resourcePack.editor.hotbar.defaultDisplayName=Standard
+resourcePack.editor.reloadScripts.response.tooMany=För många spelare är anslutna till servern. Inläsning av skript stöds endast med en enda spelare ansluten.
+resourcePack.editor.reloadScripts.response.genericError=Ett fel uppstod vid försök att läsa in skript.
+resourcePack.editor.reloadScripts.response.noAdminRights=Du har inte tillstånd att läsa in skript.

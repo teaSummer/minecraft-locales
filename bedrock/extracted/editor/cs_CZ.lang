@@ -1,912 +1,806 @@
-﻿## Comments can be added anywhere on a valid line by starting with '##'
-##
-## Note, trailing spaces will NOT be trimmed. If you want room between the end of the string and the start of a
-## comment on the same line, use TABs.
-
-commands.editor.project.beginExport=Exportování...	#
-commands.editor.project.description=Manipulace s aktuálně načteným projektem	#
-commands.editor.project.export=export projektu	#
-commands.editor.project.exportComplete=Export dokončen, soubory zapsány do %s	#
-commands.editor.project.exportCopyFailed=Nepodařilo se zkopírovat data úrovně %s	#
-commands.editor.project.unknownSubcommand=Neznámý podpříkaz	#
-
-resourcePack.editor.actionBar.redo.tooltipDescription=Opakovat akci	#
-resourcePack.editor.actionBar.redo.tooltipTitle=Znovu	#
-resourcePack.editor.actionBar.redo=Znovu	#
-resourcePack.editor.actionBar.undo.tooltipDescription=Vrátit akci zpět	#
-resourcePack.editor.actionBar.undo.tooltipTitle=Zpět	#
-resourcePack.editor.actionBar.undo=Zpět	#
-resourcePack.editor.actionBar.fill=Vyplnit 	####Label for an actionbar item that fills the selection with the current hotbar block.{MaxLength=100}
-resourcePack.editor.actionBar.fill.tooltipDescription=Vyplňte oblast výběru aktuálním blokem z lišty předmětů 	####Tooltip description for an actionbar item that fills the selection with the current hotbar block.{MaxLength=100}
-resourcePack.editor.actionBar.fill.tooltipTitle=Vyplnit 	####Tooltip title for an actionbar item that fills the selection with the current hotbar block.{MaxLength=100}
-
-resourcePack.editor.agfx.settings.error.title=Nastaly potíže…	#
-resourcePack.editor.agfx.pane.title=Editor nastavení	#
-resourcePack.editor.agfx.pane.settings_selector=Vybrat nastavení	#
-resourcePack.editor.agfx.pane.settings.title=Nastavení	#
-resourcePack.editor.agfx.pane.settings.revert_changes=Vrátit změny	#
-resourcePack.editor.agfx.pane.settings.export_to_clipboard=Exportovat do schránky	#
-
-
-resourcePack.editor.toolRail.blockInspectorSettings.title=Inspektor bloků   	####This string is what is shown in the title bar of the Editor pane for inspecting blocks.{MaxLength=30}
-resourcePack.editor.toolRail.blockInspectorSettings.specifics=Specifika bloku   	####This string is the heading that contains the block tags and block properties subpane.{MaxLength=30}
-resourcePack.editor.toolRail.blockInspectorSettings.actions.refresh=Obnovit data bloku   	####This string shown on a button for forcing an update to the block data state.{MaxLength=30}
-resourcePack.editor.toolRail.blockInspectorSettings.actions.clear=Vymazat výběr   	####This string shown on a button for clearing what block is currently selected.{MaxLength=30}
-resourcePack.editor.toolRail.blockInspectorSettings.blockTags=Štítky bloku   	####This string is a header for a panel that shows the block tags on the currently selected block.{MaxLength=30}
-resourcePack.editor.toolRail.blockInspectorSettings.blockProperties=Vlastnosti bloku   	####This string is a header for a panel that shows the block properties on the currently selected block.{MaxLength=30}
-resourcePack.editor.toolRail.blockInspectorSettings.blockProperties.name=Název vlastnosti   	####Within the block properties pane, this string goes before the property name.{MaxLength=30}
-resourcePack.editor.toolRail.blockInspectorSettings.blockProperties.value=Hodnota vlastnosti   	####Within the block properties pane, this string goes before the property value.{MaxLength=30}
-resourcePack.editor.toolRail.blockInspectorTool.title=Inspektor bloků   	####This string is what is shown as the name of the block inspector tool.{MaxLength=30}
-resourcePack.editor.toolRail.blockInspectorTool.tooltip=Inspekce dat bloku   	####This string is what is shown when hovering over the block inspector icon.{MaxLength=30}
-resourcePack.editor.toolRail.blockInspectorTool.pane.helpText=Kliknutím levým tlačítkem na blok zobrazíte a upravíte jeho vlastnosti   	####This string is shown in the block inspector tool pane before the user clicks to describe how to use it.{MaxLength=100}
-resourcePack.editor.blockInspector.toolRail.description=Kliknutím levým tlačítkem na blok zobrazíte a upravíte jeho vlastnosti   	####This string is shown in the tool tip to explain the function of the Block Inspector tool.{MaxLength=100}
-
-
-resourcePack.editor.blockPalette.addSearchItem=Použijte nalezený blok	#
-resourcePack.editor.blockPalette.blockPicker=Hledat	#
-resourcePack.editor.blockPalette.paletteDropdown.title=Paleta	#
-resourcePack.editor.blockPalette.title=Paleta bloků	#
-
-
-resourcePack.editor.brushPaint.inputContext.activateBrushPaint=Aktivovat Barevný štětec	#
-resourcePack.editor.brushPaint.inputContext.oneshot=Nabarvit jednou	#
-resourcePack.editor.brushPaint.inputContext.title=Barevný štětec	#
-resourcePack.editor.brushPaint.title=Barevný štětec	#
-resourcePack.editor.brushPaint.tooltip=Použijte štětce k nabarvení bloků ve světě	#
-
-
-resourcePack.editor.BrushPaintControl.brush.title=Štětec	#
-resourcePack.editor.BrushPaintControl.brushSettings.title=Nastavení štětce	#
-resourcePack.editor.BrushPaintControl.shapeSettings.title=Nastavení tvaru 	####Represents an expander that has UI controls for brush shape settings.{MaxLength=100}
-resourcePack.editor.BrushPaintControl.fillConstraints.mask.title=Seznam masek	#
-resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.disabled.tooltip=Vypnout filtry bloků	#
-resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.disabled=Vypnuto	#
-resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.mask.tooltip=Bloky, které odpovídají seznamu, budou ignorovány a zůstanou beze změny	#
-resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.mask=Maska	#
-resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.replace=Nahradit	#
-resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.title=Filtr bloku štětce	#
-resourcePack.editor.BrushPaintControl.fillConstraints.replace.title=Seznam pro nahrazení	#
-resourcePack.editor.BrushPaintControl.fillConstraints.replace.tooltip=Bloky, které odpovídají seznamu, projdou změnami	#
-resourcePack.editor.BrushPaintControl.fillConstraints.title=Omezení vyplňování	#
-resourcePack.editor.BrushPaintControl.keybinding.maskMask=Režim masky – Maska	#
-resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetBack=Posunout odsazení dozadu	#
-resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetDown=Posunout odsazení dolů	#
-resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetForward=Posunout odsazení dopředu	#
-resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetLeft=Posunout odsazení doleva	#
-resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetRight=Posunout odsazení doprava	#
-resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetUp=Posunout odsazení nahoru	#
-resourcePack.editor.BrushPaintControl.keybinding.replaceMask=Režim masky – Nahradit	#
-resourcePack.editor.BrushPaintControl.offset.title=Odsazení	#
-resourcePack.editor.BrushPaintControl.offset.tooltip=Odsazení od pozice kurzoru	#
-resourcePack.editor.BrushPaintControl.rootPane.title=Nastavení štětce	#
-
-
-resourcePack.editor.brushShape.common.settings.axis=Osa vysunutí	#
-resourcePack.editor.brushShape.common.settings.height=Výška	#
-resourcePack.editor.brushShape.common.settings.length=Délka	#
-resourcePack.editor.brushShape.common.settings.radius=Poloměr	#
-resourcePack.editor.brushShape.common.settings.uniform=Jednotný	#
-resourcePack.editor.brushShape.common.settings.xAxis=Osa X	#
-resourcePack.editor.brushShape.common.settings.xAxisNeg=Osa -X	#
-resourcePack.editor.brushShape.common.settings.yAxis=Osa Y	#
-resourcePack.editor.brushShape.common.settings.yAxisNeg=Osa -Y	#
-resourcePack.editor.brushShape.common.settings.zAxis=Osa Z	#
-resourcePack.editor.brushShape.common.settings.zAxisNeg=Osa -Z	#
-resourcePack.editor.brushShape.cone.name=Kužel	#
-resourcePack.editor.brushShape.cone.settings.depth=Poloměr hloubky	#
-resourcePack.editor.brushShape.cone.settings.width=Poloměr šířky	#
-resourcePack.editor.brushShape.cuboid.name=Kvádr	#
-resourcePack.editor.brushShape.cuboid.settings.depth=Hloubka	#
-resourcePack.editor.brushShape.cuboid.settings.height=Výška	#
-resourcePack.editor.brushShape.cuboid.settings.width=Šířka	#
-resourcePack.editor.brushShape.cylinder.name=Válec	#
-resourcePack.editor.brushShape.cylinder.settings.depth_radius=Poloměr hloubky	#
-resourcePack.editor.brushShape.cylinder.settings.width_radius=Poloměr šířky	#
-resourcePack.editor.brushShape.ellipsoid.name=Elipsoid	#
-resourcePack.editor.brushShape.ellipsoid.settings.depth_radius=Poloměr hloubky	#
-resourcePack.editor.brushShape.ellipsoid.settings.height_radius=Poloměr výšky	#
-resourcePack.editor.brushShape.ellipsoid.settings.width_radius=Poloměr šířky	#
-resourcePack.editor.brushShape.pyramid.name=Pyramida	#
-resourcePack.editor.brushShape.pyramid.settings.depth=Hloubka	#
-resourcePack.editor.brushShape.pyramid.settings.height=Výška	#
-resourcePack.editor.brushShape.pyramid.settings.width=Šířka	#
-resourcePack.editor.brushShape.singleBlock.name=Jeden blok	#
-resourcePack.editor.brushShape.star.name=Hvězda 	####Represent a star shaped brush.{MaxLength=100}
-resourcePack.editor.brushShape.star.settings.includeVertical=Zahrnout svislé 	####Represents a toggle button label that removes vertical parts of a star brush if unchecked.{MaxLength=100}
-
-
-resourcePack.editor.client.description=Klientské zdroje pro editory	#
-resourcePack.editor.client.name=Zdroje pro editory	#
-
-
-resourcePack.editor.ClipboardPreviewControl.keybinding.moveOriginBack=Posunout počátek dozadu	#
-resourcePack.editor.ClipboardPreviewControl.keybinding.moveOriginDown=Posunout počátek dolů	#
-resourcePack.editor.ClipboardPreviewControl.keybinding.moveOriginForward=Posunout počátek dopředu	#
-resourcePack.editor.ClipboardPreviewControl.keybinding.moveOriginLeft=Posunout počátek doleva	#
-resourcePack.editor.ClipboardPreviewControl.keybinding.moveOriginRight=Posunout počátek doprava	#
-resourcePack.editor.ClipboardPreviewControl.keybinding.moveOriginUp=Posunout počátek nahoru	#
-resourcePack.editor.ClipboardPreviewControl.keyBinding.nudgeOffsetBack=Posunout odsazení dozadu	#
-resourcePack.editor.ClipboardPreviewControl.keyBinding.nudgeOffsetDown=Posunout odsazení dolů	#
-resourcePack.editor.ClipboardPreviewControl.keyBinding.nudgeOffsetForward=Posunout odsazení dopředu	#
-resourcePack.editor.ClipboardPreviewControl.keyBinding.nudgeOffsetLeft=Posunout odsazení doleva	#
-resourcePack.editor.ClipboardPreviewControl.keyBinding.nudgeOffsetRight=Posunout odsazení doprava	#
-resourcePack.editor.ClipboardPreviewControl.keyBinding.nudgeOffsetUp=Posunout odsazení nahoru	#
-resourcePack.editor.ClipboardPreviewControl.keybinding.rotateClockWise=Otočit náhled po směru hodinových ručiček	#
-resourcePack.editor.ClipboardPreviewControl.keybinding.rotateCounterClockWise=Otočit náhled proti směru hodinových ručiček	#
-resourcePack.editor.ClipboardPreviewControl.keybinding.toggleMirrorX=Zapnout zrcadlení X	#
-resourcePack.editor.ClipboardPreviewControl.keybinding.toggleMirrorZ=Zapnout zrcadlení Z	#
-resourcePack.editor.ClipboardPreviewControl.mirror.axis.x.tooltip=Zrcadlí předmět ve schránce kolem osy X v počáteční bodu	#
-resourcePack.editor.ClipboardPreviewControl.mirror.axis.x=Zrcadlení (osa X)	#
-resourcePack.editor.ClipboardPreviewControl.mirror.axis.z.tooltip=Zrcadlí předmět ve schránce kolem osy Z v počáteční bodu	#
-resourcePack.editor.ClipboardPreviewControl.mirror.axis.z=Zrcadlení (osa Z)	#
-resourcePack.editor.ClipboardPreviewControl.offset.title=Odsazení	#
-resourcePack.editor.ClipboardPreviewControl.offset.tooltip=Dodatečné odsazení od umisťovacího bodu až k počátečnímu bodu položky ve schránce	#
-resourcePack.editor.ClipboardPreviewControl.origin.title=Počátek	#
-resourcePack.editor.ClipboardPreviewControl.origin.tooltip=Počáteční bod položky ve schránce. Používá se jako kotva při umístění, ale také jako bod, kolem kterého se schránka otáčí a kolem kterého se zrcadlí	#
-resourcePack.editor.ClipboardPreviewControl.placement.title=Možnosti	#
-resourcePack.editor.ClipboardPreviewControl.rootPane.title=Informace o schránce	#
-resourcePack.editor.ClipboardPreviewControl.rotation.180=180°	#
-resourcePack.editor.ClipboardPreviewControl.rotation.270=270°	#
-resourcePack.editor.ClipboardPreviewControl.rotation.90=90°	#
-resourcePack.editor.ClipboardPreviewControl.rotation.none=Žádný	#
-resourcePack.editor.ClipboardPreviewControl.rotation.title=Otočení	#
-resourcePack.editor.ClipboardPreviewControl.rotation.tooltip=Počet otočení okolo osy Y v počáteční bodu	#
-resourcePack.editor.ClipboardPreviewControl.structureSize.title=Velikost schránky	#
-
-
-resourcePack.editor.copypaste.actionbar.copy.title=Kopírovat	#
-resourcePack.editor.copypaste.actionbar.copy.tooltip=Kopírovat výběr do schránky	#
-resourcePack.editor.copypaste.actionbar.copy.tooltipDescription=Zkopíruje obsah aktuální oblasti výběru do schránky, aniž by se obsah výběru jakkoliv měnil	#
-resourcePack.editor.copypaste.actionbar.cut.title=Vyjmout	#
-resourcePack.editor.copypaste.actionbar.cut.tooltip=Vyjmout/přesunout výběr do schránky	#
-resourcePack.editor.copypaste.actionbar.cut.tooltipDescription=Zkopíruje obsah aktuální oblasti výběru do schránky a během tohoto procesu se odstraní obsah výběru	#
-resourcePack.editor.copypaste.keyBinding.copy=Kopírovat výběr do schránky	#
-resourcePack.editor.copypaste.keyBinding.cut=Vyjmout/přesunout výběr do schránky	#
-resourcePack.editor.copypaste.keyBinding.paste=Vložit obsah schránky do světa	#
-resourcePack.editor.copypaste.menu.copy.title=Kopírovat vybrané	#
-resourcePack.editor.copypaste.menu.cut.title=Vyjmout vybrané	#
-
-
-resourcePack.editor.core.keyBinding.showGameMenu=Zobrazit herní nabídku	#
-resourcePack.editor.core.keyBinding.showLogPanel=Zobrazit panel záznamů	#
-
-
-resourcePack.editor.CursorModeControl.cursorTargetMode.block.tooltip=Blok pod kurzorem myši	#
-resourcePack.editor.CursorModeControl.cursorTargetMode.block=Blok	#
-resourcePack.editor.CursorModeControl.cursorTargetMode.face.tooltip=Blok přilehlý přímo k bloku pod kurzorem	#
-resourcePack.editor.CursorModeControl.cursorTargetMode.face=Přilehlý	#
-resourcePack.editor.CursorModeControl.cursorTargetMode.title=Cíl	#
-resourcePack.editor.CursorModeControl.cursorTargetMode.tooltip=Zvolte režim cíle kurzoru	#
-resourcePack.editor.CursorModeControl.fixedDistance.slider.title=Fixní vzdálenost kurzoru	#
-resourcePack.editor.CursorModeControl.fixedDistance.slider.tooltip=Upravte fixní vzdálenost od hráče, na kterém je kurzor bloku umístěn	#
-resourcePack.editor.CursorModeControl.keybinding.moveCursorBack=Pohnout kurzorem dozadu	#
-resourcePack.editor.CursorModeControl.keybinding.moveCursorDown=Pohnout kurzorem dolů	#
-resourcePack.editor.CursorModeControl.keybinding.moveCursorForward=Šťouchnutí vpřed	#
-resourcePack.editor.CursorModeControl.keybinding.moveCursorLeft=Pohnout kurzorem doleva	#
-resourcePack.editor.CursorModeControl.keybinding.moveCursorRight=Pohnout kurzorem doprava	#
-resourcePack.editor.CursorModeControl.keybinding.moveCursorUp=Pohnout kurzorem nahoru	#
-resourcePack.editor.CursorModeControl.keybinding.toggleBlockTargetMode=Přepnout Blokový/Přilehlý režim	#
-resourcePack.editor.CursorModeControl.keybinding.toggleFixedDistance=Přepnout režim fixní vzdálenosti	#
-resourcePack.editor.CursorModeControl.keybinding.toggleMouseTracking=Přepnout sledování myši	#
-resourcePack.editor.CursorModeControl.mouseControlMode.fixed=Pevná vzdálenost	#
-resourcePack.editor.CursorModeControl.mouseControlMode.keyboard=Pouze klávesnice	#
-resourcePack.editor.CursorModeControl.mouseControlMode.keyboardAndMouse=Myš a klávesnice	#
-resourcePack.editor.CursorModeControl.mouseControlMode.title=Metoda vstupu	#
-resourcePack.editor.CursorModeControl.mouseControlMode.tooltip=Vyberte metodu vstupu pro kurzor bloku ve světě	#
-resourcePack.editor.CursorModeControl.projectThroughWater.title=Prostupnost vodou	#
-resourcePack.editor.CursorModeControl.projectThroughWater.tooltip=Nastavení myši umožní prostupnost vodou a výběr prvků pod vodní hladinou	#
-resourcePack.editor.CursorModeControl.rootPane.title=Nastavení kurzoru	#
-
-
-resourcePack.editor.datatransferaccessors.atmospheric_scattering=Atmosférické světelné rozptýlení	#
-resourcePack.editor.datatransferaccessors.color_grading=Přechod barev	#
-resourcePack.editor.datatransferaccessors.lighting_group=Globální osvětlení	#
-resourcePack.editor.datatransferaccessors.pbr_fallbacks=PBR Fallbacks	#
-resourcePack.editor.datatransferaccessors.point_lights=Bodová světla	#
-resourcePack.editor.datatransferaccessors.water=Voda	#
-resourcePack.editor.datatransferaccessors.shadows=Stíny	#
-
-
-resourcePack.editor.deferredLightingSettings.menu.title=Nastavení pozdrženého osvětlení	#
-
-
-resourcePack.editor.delete.keyBinding=Odstranit vybraný obsah	#
-
-
-resourcePack.editor.toolRail.entityInspector.pane.title=Inspektor entit   	####This string is what is shown in the title bar of the Editor pane for modifying entities.{MaxLength=30}
-resourcePack.editor.toolRail.entityInspector.tool.title=Inspektor entit   	####This string is what is shown at the top of the Editor pane for modifying entities.{MaxLength=30}
-resourcePack.editor.toolRail.entityInspector.tool.tip=Inspekce dat entity   	####This string is what is shown on the tool tip of Editor pane for modifying entities (gives context on what the tool does).{MaxLength=100}
-resourcePack.editor.toolRail.entityInspector.pane.helpText=Kliknutím levým tlačítkem na entitu zobrazíte a upravíte její vlastnosti   	####This string is shown in the block inspector tool pane before the user clicks to describe how to use it.{MaxLength=100}
-resourcePack.editor.entityInspector.toolRail.description=Kliknutím levým tlačítkem na entitu zobrazíte a upravíte její vlastnosti   	####This string is shown in the tool tip to explain the function of the Entity Inspector tool.{MaxLength=100}
-
-resourcePack.editor.exportProject.exportType=Typ exportu	#
-resourcePack.editor.exportProject.exportType.playableWorld=Hratelný svět	#
-resourcePack.editor.exportProject.exportNotes=Poznámky k exportu	#
-resourcePack.editor.exportProject.exportNotes.export=Probíhá export   	####This string is intended to express that the title of export progress modal.{MaxLength=100}
-resourcePack.editor.exportProject.exportNotes.warning=Exportujete svět v%1. Exportované hratelné světy nelze spustit na verzích Minecraftu starších než v%1. Chcete-li převést světy na předchozí verze, použijte https://chunker.app/ (některé funkce nemusí být dostupné, pokud nebyly podporovány v dřívějších verzích)	#
-resourcePack.editor.exportProject.exportNotes.progress=Exportování světa...    	####This string is intended to express that the progress message of exporting.{MaxLength=100}
-resourcePack.editor.exportProject.exportNotes.exportSuccess=Svět byl úspěšně exportován    	####This string is intended to express that export the world succeeded.{MaxLength=100}
-resourcePack.editor.exportProject.exportNotes.exportFailed=Export světa se nezdařil    	####This string is intended to express that export the world failed.{MaxLength=100}
-resourcePack.editor.exportProject.generalSettings=Obecná nastavení	#
-resourcePack.editor.exportProject.generalSettings.worldName=Název světa	#
-resourcePack.editor.exportProject.generalSettings.gameMode=Herní režim	#
-resourcePack.editor.exportProject.generalSettings.difficulty=Obtížnost	#
-resourcePack.editor.exportProject.generalSettings.hardcore=Extrémně těžký	#
-resourcePack.editor.exportProject.initialPlaySettings=Počáteční nastavení   	####This string is intended to express that the export category for inital play settings.{MaxLength=100}
-resourcePack.editor.exportProject.initialPlaySettings.spawnPosition=Bod vstupu světa   	####This string is intended to express that player inistal spawn position.{MaxLength=100}
-resourcePack.editor.exportProject.initialPlaySettings.startTime=Počáteční čas   	####This string is intended to express that world start time.{MaxLength=100}
-resourcePack.editor.exportProject.initialPlaySettings.clockType=Typ hodin   	####This string is intended to express that start time with different clock type.{MaxLength=100}
-resourcePack.editor.exportProject.initialPlaySettings.customStartTime=Vlastní čas zahájení   	####This string is intended to express that custom start time with Minecraft Cloke value.{MaxLength=100}
-resourcePack.editor.exportProject.initialPlaySettings.weather=Počáteční počasí   	####This string is intended to express that the custom start weather.{MaxLength=100}
-resourcePack.editor.exportProject.advancedSettings=Pokročilá nastavení	#
-resourcePack.editor.exportProject.advancedSettings.startingMap=Počáteční mapa	#
-resourcePack.editor.exportProject.advancedSettings.bonusChest=Bonusová truhla	#
-resourcePack.editor.exportProject.advancedSettings.showCoordinates=Zobrazit souřadnice	#
-resourcePack.editor.exportProject.advancedSettings.showDaysPlayed=Zobrazit počet odehraných dnů	#
-resourcePack.editor.exportProject.advancedSettings.recipeUnlocking=Recept se odemyká	#
-resourcePack.editor.exportProject.advancedSettings.limitedCrafting=Omezená výroba   	####Export pane checkbox label that enable to set crafting limit.{MaxLength=100}
-resourcePack.editor.exportProject.advancedSettings.fireSpreads=Oheň se šíří	#
-resourcePack.editor.exportProject.advancedSettings.tntExplodes=TNT vybuchuje	#
-resourcePack.editor.exportProject.advancedSettings.resawnBlocksExplode=Bloky znovuzrození explodují	#
-resourcePack.editor.exportProject.advancedSettings.mobLoot=Kořist ze stvoření	#
-resourcePack.editor.exportProject.advancedSettings.naturalRegeneration=Přirozená regenerace	#
-resourcePack.editor.exportProject.advancedSettings.tileDrops=Kořist z dlaždic	#
-resourcePack.editor.exportProject.advancedSettings.immediateRespawn=Okamžité znovuzrození	#
-resourcePack.editor.exportProject.advancedSettings.showDeathMessage=Zobrazit úmrtní hlášku   	####Export pane checkbox label that show the death message when player die.{MaxLength=100}
-resourcePack.editor.exportProject.advancedSettings.respawnRadius=Rozsah znovuzrození	#
-resourcePack.editor.exportProject.advancedSettings.simulationDistance=Vzdálenost simulace	#
-resourcePack.editor.exportProject.advancedSettings.bedsWork=Postele fungují	#
-resourcePack.editor.exportProject.advancedSettings.requiredSleepingPlayers=Požadováno spících hráčů (%1$s)	#
-resourcePack.editor.exportProject.advancedSettings.requiredSleepingPlayers.onePlayerMessage=Pouze 1 hráč	#
-resourcePack.editor.exportProject.advancedSettings.showItemTags=Zobrazit značky předmětů   	####Export pane checkbox label that show item tags.{MaxLength=100}
-resourcePack.editor.exportProject.multiplayerSettings=Nastavení hry pro více hráčů	#
-resourcePack.editor.exportProject.multiplayerSettings.multiplayerGame=Hra pro více hráčů	#
-resourcePack.editor.exportProject.multiplayerSettings.playerAccess=Přístup hráčů	#
-resourcePack.editor.exportProject.multiplayerSettings.playerPermissions=Oprávnění hráčů	#
-resourcePack.editor.exportProject.multiplayerSettings.visibleToLAN=Viditelné pro hráče v síti LAN	#
-resourcePack.editor.exportProject.multiplayerSettings.friendlyFire=Střelba do vlastních	#
-resourcePack.editor.exportProject.cheatsSettings=Nastavení cheatů	#
-resourcePack.editor.exportProject.cheatsSettings.cheats=Cheaty	#
-resourcePack.editor.exportProject.cheatsSettings.daylightCycle=Cyklus denního světla	#
-resourcePack.editor.exportProject.cheatsSettings.keepInventory=Ponechat inventář	#
-resourcePack.editor.exportProject.cheatsSettings.mobSpawning=Výskyt stvoření	#
-resourcePack.editor.exportProject.cheatsSettings.mobGriefing=Obtěžování stvoření	#
-resourcePack.editor.exportProject.cheatsSettings.entitiesDropLoot=Entity po sobě zanechávají kořist	#
-resourcePack.editor.exportProject.cheatsSettings.weatherCycle=Cyklus počasí	#
-resourcePack.editor.exportProject.cheatsSettings.commandBlocks=Příkazové bloky	#
-resourcePack.editor.exportProject.cheatsSettings.commandBlockOutput=Výstup příkazového bloku   	####Export pane checkbox label that enable to display the command output.{MaxLength=100}
-resourcePack.editor.exportProject.cheatsSettings.sendCommandFeedback=Odeslat zpětnou vazbu k příkazu   	####This string is the heading for the 'send command feedback' setting when exporting a world.{MaxLength=100}
-resourcePack.editor.exportProject.cheatsSettings.maxCommandChainLength=Max. délka příkazového řetězu   	####Export pane number that indicate the max length of the command, it defaults to 65536. It has a minimum of 0 and a max of 2147483647.{MaxLength=100}
-resourcePack.editor.exportProject.cheatsSettings.fireDamage=Poškození ohněm  	####Export pane checkbox label that enable damage when the player on fire.{MaxLength=100}
-resourcePack.editor.exportProject.cheatsSettings.freezeDamage=Poškození mrazem  	####Export pane checkbox label that enable damage when the player freezes.{MaxLength=100}
-resourcePack.editor.exportProject.cheatsSettings.fallDamage=Poškození pádem  	####Export pane checkbox label that enable damage when the player falls.{MaxLength=100}
-resourcePack.editor.exportProject.cheatsSettings.drowningDamage=Poškození při topení  	####Export pane checkbox label that enable damage when the player is drowning.{MaxLength=100}
-resourcePack.editor.exportProject.cheatsSettings.insomnia=Nespavost  	####Export pane checkbox label that enable player insomnia status.{MaxLength=100}
-resourcePack.editor.exportProject.cheatsSettings.showBorderEffect=Zobrazit efekt okraje  	####Export pane checkbox label that show border effect.{MaxLength=100}
-resourcePack.editor.exportProject.cheatsSettings.functionCommandLimit=Limit pro příkazy funkcí  	####Export pane checkbox label that the number of limition for the function command.{MaxLength=100}
-resourcePack.editor.exportProject.cheatsSettings.educationFeatures=Funkce pro vzdělávání	#
-resourcePack.editor.exportProject.cheatsSettings.randomTickSpeed=Rychlost náhodného tikání	#
-resourcePack.editor.exportProject.export=Exportovat	#
-resourcePack.editor.exportProject.resetToDefault=Obnovit výchozí hodnoty	#
-resourcePack.editor.exportProject.gameMode.survival=Hra o přežití	#
-resourcePack.editor.exportProject.gameMode.creative=Tvořivá hra	#
-resourcePack.editor.exportProject.gameMode.adventure=Dobrodružství	#
-resourcePack.editor.exportProject.difficulty.peaceful=Mírumilovná	#
-resourcePack.editor.exportProject.difficulty.easy=Snadná	#
-resourcePack.editor.exportProject.difficulty.normal=Normální	#
-resourcePack.editor.exportProject.difficulty.hard=Těžká	#
-resourcePack.editor.exportProject.weather.default=Výchozí   	####This string is intended to express that the default weather .{MaxLength=100}
-resourcePack.editor.exportProject.weather.clear=Jasno   	####This string is intended to express that the weather of Clear.{MaxLength=100}
-resourcePack.editor.exportProject.weather.rain=Déšť   	####This string is intended to express that the weather of Rain.{MaxLength=100}
-resourcePack.editor.exportProject.weather.thunder=Hrom   	####This string is intended to express that the weather of Thunder.{MaxLength=100}
-
-
-
-resourcePack.editor.toolRail.ExtrudeTool.title=Tvarovací nástroj	#
-resourcePack.editor.toolRail.ExtrudeTool.tooltip=Tvarovací nástroj pro rozšiřování a snižování bloků	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.ContiguousSelectionBlockListSubPane.title=Seznam bloků v přilehlém výběru	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.TrailingBlocksSettingsSubPane.title=Nastavení pohyblivých bloků	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.SampleLayerCount.title=Počet vzorových vrstev	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.ContiguousSelectionSettings.title=Nastavení přilehlého výběru	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.ContiguousSelectionType.title=Typ přilehlého výběru	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.ContiguousSelectionType.SameBlocks=Stejné bloky	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.ContiguousSelectionType.SameBlocksAndStates=Stejné bloky a skupenství	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.ContiguousSelectionType.SolidBlocks=Pevné bloky	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.ContiguousSelectionType.AllBlocks=Všechny bloky	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.ContiguousSelectionType.CustomBlockList=Seznam speciálních bloků	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.ToleranceLevel.title=Úroveň tolerance	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.HasAdjacentBlocks.title=Obsahuje sousední bloky	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.ExtruderSettings.title=Nastavení tvarovače	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.Radius.title=Poloměr	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.title=Režim výběru	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.ContiguousSelection=Přilehlý výběr	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.MarqueeSelection=Výběr poutače	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.ContiguousSettings.title=Nastavení přilehlého výběru	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.TrailingBlocks.title=Pohyblivé bloky	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.TrailingBlocksSettings.title=Nastavení pohyblivých bloků	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.QuickExtrudeSettings.title=Nastavení rychlého tvarování	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.QuickExtrudeMode.title=Režim rychlého tvarování	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.QuickExtrudeMode.decrease.title=Snížit	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.QuickExtrudeMode.decrease.tooltip=Snížit tvarování	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.QuickExtrudeMode.expand.title=Rozšířit	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.QuickExtrudeMode.expand.tooltip=Rozšířit tvarování	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.LayerCount.title=Počet vrstev	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.preview_warning=Poznámka: Předběžná vizualizace zobrazuje pouze první vrstvu 	#### {MaxLength="500"}, used to inform the user that the preview visualization for this tool is limited to a single layer.  This string is on screen whenever this tool is active
-resourcePack.editor.toolRail.ExtrudeTool.pane.ExtrusionType.title=Typ tvarování	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.ExtrusionType.Extrude=Tvarovat	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.ExtrusionType.QuickExtrude=Rychlé tvarování	#
-resourcePack.editor.toolRail.ExtrudeTool.keyBinding.deselect=Zrušit výběr	#
-resourcePack.editor.toolRail.ExtrudeTool.keyBinding.toggleTool=Přepnout tvarovací nástroj	#
-
-
-resourcePack.editor.toolRail.FarmGenerator.tool.title=Generátor farmy	#
-resourcePack.editor.toolRail.FarmGenerator.tool.tooltip=Rychle vytvoří vlastní farmu	#
-resourcePack.editor.toolRail.FarmGenerator.pane.title=Generátor farmy	#
-resourcePack.editor.toolRail.FarmGenerator.pane.length=Délka	#
-resourcePack.editor.toolRail.FarmGenerator.pane.width=Šířka	#
-resourcePack.editor.toolRail.FarmGenerator.pane.fence=Plot	#
-resourcePack.editor.toolRail.FarmGenerator.pane.irrigation=Přidat zavlažování	#
-resourcePack.editor.toolRail.FarmGenerator.pane.irrigation.tooltip=Přidá na farmu bloky vody k zavlažení plodin.	#
-resourcePack.editor.toolRail.FarmGenerator.pane.crops.title=Plodiny	#
-resourcePack.editor.toolRail.FarmGenerator.pane.crops.wheat=Pšenice	#
-resourcePack.editor.toolRail.FarmGenerator.pane.crops.potato=Brambora	#
-resourcePack.editor.toolRail.FarmGenerator.pane.crops.beets=Řepa	#
-resourcePack.editor.toolRail.FarmGenerator.pane.crops.pumpkin=Dýně	#
-resourcePack.editor.toolRail.FarmGenerator.pane.crops.carrot=Mrkev	#
-resourcePack.editor.toolRail.FarmGenerator.pane.animals.title=Zvířata	#
-resourcePack.editor.toolRail.FarmGenerator.pane.animals.cow=Kráva	#
-resourcePack.editor.toolRail.FarmGenerator.pane.animals.sheep=Ovce	#
-resourcePack.editor.toolRail.FarmGenerator.pane.animals.pig=Prase	#
-resourcePack.editor.toolRail.FarmGenerator.keyBinding.toggleTool=Přepnout nástroj Generátor farmy	#
-resourcePack.editor.toolRail.FarmGenerator.keyBinding.place=Umístit farmu na kurzor	#
-
-
-resourcePack.editor.global.keyBinding.toggleMode=Přepnout režimy	#
-
-
-resourcePack.editor.goToMark.actionBar.tooltip.description=Panel nástrojů pro navigaci hráče	#
-resourcePack.editor.goToMark.actionBar.tooltip.title=Navigační Panel	#
-resourcePack.editor.goToMark.pane.goToSpawn=Přejít na počáteční bod	#
-resourcePack.editor.goToMark.pane.location=Umístění hráče	#
-resourcePack.editor.goToMark.pane.locationPane.delete=Odstranit uložené umístění	#
-resourcePack.editor.goToMark.pane.locationPane.dropdownLabel=Uložená lokace	#
-resourcePack.editor.goToMark.pane.locationPane.inputName=Nový název	#
-resourcePack.editor.goToMark.pane.locationPane.markColor=Barva značky umístění	#
-resourcePack.editor.goToMark.pane.locationPane.store=Uložit aktuální umístění jako ...	#
-resourcePack.editor.goToMark.pane.locationPane.teleport=Teleportování do uloženého umístění %1$s	#
-resourcePack.editor.goToMark.pane.locationPane.title=Uložená místa	#
-resourcePack.editor.goToMark.pane.mapSize=Velikost mapy	#
-resourcePack.editor.goToMark.pane.refreshMap=Obnovit mapu	#
-resourcePack.editor.goToMark.pane.setSpawn=Nastavit počáteční bod na aktuální	#
-resourcePack.editor.goToMark.pane.showMap=Otevření mapy	#
-resourcePack.editor.goToMark.pane.teleport=Teleportovat se na místo	#
-resourcePack.editor.goToMark.title=Navigační Panel	#
-
-
-resourcePack.editor.grapple.keyBinding.flyToCursor=Doletět ke kurzoru	#
-resourcePack.editor.grapple.keyBinding.flyToSelection=Doletět k výběru	#
-
-
-resourcePack.editor.locate.biome.find=Najít biom	#
-resourcePack.editor.locate.biome.title=Biom	#
-resourcePack.editor.locate.keyBinding.toggleTool=Zapnout nástroj Najít biom	#
-resourcePack.editor.locate.locatetype.biome=Biom	#
-resourcePack.editor.locate.locatetype.structure=Budova	#
-resourcePack.editor.locate.locatetype.title=Najít typ	#
-resourcePack.editor.locate.results.foundat.title=Nalezeno v	#
-resourcePack.editor.locate.results.foundat=Nalezeno v	#
-resourcePack.editor.locate.results.goto=Přejít na	#
-resourcePack.editor.locate.results.notfound.title=Žádné výsledky	#
-resourcePack.editor.locate.results.notfound=Nenalezeny žádné výsledky	#
-resourcePack.editor.locate.results.title=Výsledky	#
-resourcePack.editor.locate.structure.message=Vyhledávání budov není momentálně podporováno	#
-resourcePack.editor.locate.structure.title=Budova	#
-resourcePack.editor.locate.title=Nalézt	#
-
-
-resourcePack.editor.menuBar.edit.copy=Kopírovat	#
-resourcePack.editor.menuBar.edit.cut=Vyjmout	#
-resourcePack.editor.menuBar.edit.delete=Odstranit	#
-resourcePack.editor.menuBar.edit.deselect=Zrušit výběr	#
-resourcePack.editor.menuBar.edit.quickFill=Rychlé vyplnění	#
-resourcePack.editor.menuBar.edit.quickPaste=Rychlé vložení	#
-resourcePack.editor.menuBar.edit.redo=Znovu	#
-resourcePack.editor.menuBar.edit.undo=Zpět	#
-resourcePack.editor.menuBar.edit=Upravit	#
-resourcePack.editor.menuBar.experimental=Experimentální	#
-resourcePack.editor.menuBar.extensions=Rozšíření	#
-resourcePack.editor.menuBar.file.cursor.projectThroughLiquid=Prostupnost kapalinou	#
-resourcePack.editor.menuBar.file.cursor=Nastavení kurzoru	#
-resourcePack.editor.menuBar.file.export.project=Editor projektu	#
-resourcePack.editor.menuBar.file.export.world=Hratelný svět	#
-resourcePack.editor.menuBar.file.export=Exportovat	#
-resourcePack.editor.menuBar.file.pauseScreen=Herní nabídka	#
-resourcePack.editor.menuBar.file.settings=Nastavení uživatelského rozhraní	#
-resourcePack.editor.menuBar.file=Soubor	#
-resourcePack.editor.menuBar.help.tutorial=Výuka 	#### {MaxLength="500"} Represent menu bar item in help menu that activates editor tutorial when pressed
-resourcePack.editor.menuBar.help.documentation=Dokumentace	#
-resourcePack.editor.menuBar.help.feedback=Zpětná vazba	#
-resourcePack.editor.menuBar.help.quickStart=Rychlý úvod	#
-resourcePack.editor.menuBar.help=Nápověda	#
-resourcePack.editor.menuBar.locate=Nalézt	#
-resourcePack.editor.menuBar.parentMenu.weather.clear=Vymazat	#
-resourcePack.editor.menuBar.parentMenu.weather.rain=Déšť	#
-resourcePack.editor.menuBar.parentMenu.weather.thunder=Bouřka	#
-resourcePack.editor.menuBar.parentMenu.weather=Počasí	#
-resourcePack.editor.menuBar.view.blockPalette=Paleta bloků	#
-resourcePack.editor.menuBar.view.logging=Panel záznamů	#
-resourcePack.editor.menuBar.view.navigationLogging=Protokolování navigace	#
-resourcePack.editor.menuBar.view=Zobrazit	#
-resourcePack.editor.menuBar.worldOptions.changeDimension.end=Konec	#
-resourcePack.editor.menuBar.worldOptions.changeDimension.nether=Nether	#
-resourcePack.editor.menuBar.worldOptions.changeDimension.overworld=Běžný svět	#
-resourcePack.editor.menuBar.worldOptions.changeDimension=Změnit dimenzi	#
-resourcePack.editor.menuBar.worldOptions.pause.entities=Entity	#
-resourcePack.editor.menuBar.worldOptions.pause=Pozastavení	#
-resourcePack.editor.menuBar.worldOptions=Možnosti světa	#
-
-
-resourcePack.editor.navigation.keyBinding.add=Přidat navigační pozici	#
-resourcePack.editor.navigation.keyBinding.next=Přejít na další navigační pozici	#
-resourcePack.editor.navigation.keyBinding.previous=Přejít na předchozí navigační pozici	#
-
-
-resourcePack.editor.paste.pane.submitButton=Potvrdit vložení	#
-resourcePack.editor.paste.pane.title=Vložit	#
-resourcePack.editor.paste.pane.transform.mirrorX=Zrcadlit X	#
-resourcePack.editor.paste.pane.transform.mirrorZ=Zrcadlit Z	#
-resourcePack.editor.paste.pane.transform.origin.title=Odsazení	#
-resourcePack.editor.paste.pane.transform.rotation.180=180°	#
-resourcePack.editor.paste.pane.transform.rotation.270=270	#
-resourcePack.editor.paste.pane.transform.rotation.90=90°	#
-resourcePack.editor.paste.pane.transform.rotation.none=0°	#
-resourcePack.editor.paste.pane.transform.rotation.title=Otočit	#
-resourcePack.editor.paste.pane.transform.title=Transformovat	#
-resourcePack.editor.paste.toolRail.description=Kliknutím levým tlačítkem myši vyberte blok a poté přesně vložte položku schránky	#
-resourcePack.editor.paste.toolRail.title=Vložit náhled	#
-
-
-resourcePack.editor.pastepreview.inputContext.title=Vložit náhled	#
-resourcePack.editor.pastepreview.keyBinding.clearPreview=Vymazat náhled	#
-resourcePack.editor.pastepreview.keyBinding.copy=Kopírovat vybrané	#
-resourcePack.editor.pastepreview.keyBinding.cut=Vyjmout vybrané	#
-resourcePack.editor.pastepreview.keyBinding.moveBack=Posunout náhled dozadu	#
-resourcePack.editor.pastepreview.keyBinding.moveDown=Posunout náhled dolů	#
-resourcePack.editor.pastepreview.keyBinding.moveForward=Posunout náhled dopředu	#
-resourcePack.editor.pastepreview.keyBinding.moveLeft=Posunout náhled doleva	#
-resourcePack.editor.pastepreview.keyBinding.moveOffsetBack=Posunout odsazení dozadu	#
-resourcePack.editor.pastepreview.keyBinding.moveOffsetDown=Posunout odsazení dolů	#
-resourcePack.editor.pastepreview.keyBinding.moveOffsetForward=Posunout odsazení dopředu	#
-resourcePack.editor.pastepreview.keyBinding.moveOffsetLeft=Posunout odsazení doleva	#
-resourcePack.editor.pastepreview.keyBinding.moveOffsetRight=Posunout odsazení doprava	#
-resourcePack.editor.pastepreview.keyBinding.moveOffsetUp=Posunout odsazení nahoru	#
-resourcePack.editor.pastepreview.keyBinding.moveOriginBack=Posunout začátek dozadu	#
-resourcePack.editor.pastepreview.keyBinding.moveOriginDown=Posunout začátek dolů	#
-resourcePack.editor.pastepreview.keyBinding.moveOriginForward=Posunout začátek dopředu	#
-resourcePack.editor.pastepreview.keyBinding.moveOriginLeft=Posunout začátek doleva	#
-resourcePack.editor.pastepreview.keyBinding.moveOriginRight=Posunout začátek doprava	#
-resourcePack.editor.pastepreview.keyBinding.moveOriginUp=Posunout začátek nahoru	#
-resourcePack.editor.pastepreview.keyBinding.moveRight=Posunout náhled doprava	#
-resourcePack.editor.pastepreview.keyBinding.moveUp=Posunout náhled nahoru	#
-resourcePack.editor.pastepreview.keyBinding.paste=Vložit	#
-resourcePack.editor.pastepreview.keyBinding.pasteAtCursor=Vložit na kurzor	#
-resourcePack.editor.pastepreview.keyBinding.pastepreview=Vložit náhled	#
-resourcePack.editor.pastepreview.keyBinding.quickPaste=Rychlé vložení	#
-resourcePack.editor.pastepreview.keyBinding.rotateClockWise=Otočit náhled po směru hodinových ručiček	#
-resourcePack.editor.pastepreview.keyBinding.rotateCounterClockWise=Otočit náhled proti směru hodinových ručiček	#
-resourcePack.editor.pastepreview.keyBinding.toggleAdjacentTarget=Zapnout režim Zacílení na vedlejší položky	#
-resourcePack.editor.pastepreview.keyBinding.toggleBlockTarget=Zapnout režim Zacílení na blok	#
-resourcePack.editor.pastepreview.keyBinding.toggleFixedDistance=Povolit fixní vzdálenost	#
-resourcePack.editor.pastepreview.keyBinding.toggleMirrorX=Zapnout zrcadlení X	#
-resourcePack.editor.pastepreview.keyBinding.toggleMirrorZ=Zapnout zrcadlení Z	#
-resourcePack.editor.pastepreview.keyBinding.toggleMouseTracking=Přepnout sledování myši	#
-resourcePack.editor.pastepreview.pane.controls.cursor.fixed=Pevná vzdálenost	#
-resourcePack.editor.pastepreview.pane.controls.cursor.keyboard=Pouze klávesy	#
-resourcePack.editor.pastepreview.pane.controls.cursor.mouseandkeys=Myš a klávesnice	#
-resourcePack.editor.pastepreview.pane.controls.cursor.target.block=Zablokovat	#
-resourcePack.editor.pastepreview.pane.controls.cursor.target.face=Přilehlý	#
-resourcePack.editor.pastepreview.pane.controls.cursor.target.title=Terč	#
-resourcePack.editor.pastepreview.pane.controls.cursor=Ovládání	#
-resourcePack.editor.pastepreview.pane.controls.title=Ovládání kurzoru	#
-resourcePack.editor.pastepreview.pane.placement.mirrorX=Zrcadlit X	#
-resourcePack.editor.pastepreview.pane.placement.mirrorZ=Zrcadlit Z	#
-resourcePack.editor.pastepreview.pane.placement.offset=Odsazení	#
-resourcePack.editor.pastepreview.pane.placement.origin=Počátek	#
-resourcePack.editor.pastepreview.pane.placement.pastebutton=Vložit	#
-resourcePack.editor.pastepreview.pane.placement.rotation=Otáčení (okolo osy Y)	#
-resourcePack.editor.pastepreview.pane.placement.title=Nastavení umístění	#
-resourcePack.editor.pastepreview.pane.root.size=Velikost	#
-resourcePack.editor.pastepreview.pane.root.title=Vložit náhled	#
-resourcePack.editor.pastepreview.tool.tip=Pomocí myši upravte polohu náhledu schránky a kliknutím na tlačítko vložte do světa	#
-resourcePack.editor.pastepreview.tool.title=Vložit náhled	#
-
-
-resourcePack.editor.playerPositionExtension.dimension=Rozměr	#
-resourcePack.editor.playerPositionExtension.menu.player=Hráč	#
-resourcePack.editor.playerPositionExtension.menu.showPlayerSettings=Zobrazit nastavení přehrávače	#
-resourcePack.editor.playerPositionExtension.nether=Nether	#
-resourcePack.editor.playerPositionExtension.overworld=Běžný svět	#
-resourcePack.editor.playerPositionExtension.pane=Nastavení hráče	#
-resourcePack.editor.playerPositionExtension.theEnd=End	#
-resourcePack.editor.playerPositionExtension.worldSettings=Nastavení světa	#
-
-
-resourcePack.editor.playtest.AdvancedSettings.title=Pokročilá nastavení	#
-resourcePack.editor.playtest.Dialog.DaylightCycle=Cyklus denního světla	#
-resourcePack.editor.playtest.Dialog.Difficulty=Obtížnost	#
-resourcePack.editor.playtest.Dialog.GameMode=Herní režim	#
-resourcePack.editor.playtest.Dialog.OverrideSpawn=Objevit se na aktuálním místě	#
-resourcePack.editor.playtest.Dialog.ShowCoordinates=Zobrazit souřadnice	#
-resourcePack.editor.playtest.Dialog.TestButton=Testovací svět	#
-resourcePack.editor.playtest.Dialog.TimeOfDay=Denní doba	#
-resourcePack.editor.playtest.Dialog.Title=Nastavení testování	#
-resourcePack.editor.playtest.Dialog.Weather=Počasí	#
-resourcePack.editor.playtest.Dialog.WeatherCycle=Cyklus počasí	#
-resourcePack.editor.playtest.Menu.Title=Testovací svět	#
-resourcePack.editor.playtest.Title.Tooltip=Hrajte svůj projekt v editoru jako herní svět pro hru Minecraft. Do vašeho projektu nebudou uloženy žádné změny. Dostupné pouze při hostování jednoho hráče.	#
-
-
-resourcePack.editor.playtestResult.EditorSystemFailure=Systémová chyba editoru	#
-resourcePack.editor.playtestResult.InvalidLevelId=Neplatné Id úrovně	#
-resourcePack.editor.playtestResult.InvalidSessionHandle=Neplatná verze relace	#
-resourcePack.editor.playtestResult.OK=Povedlo se	#
-resourcePack.editor.playtestResult.PlayerNotFound=Hráč nebyl nalezen	#
-resourcePack.editor.playtestResult.ResponseTimeout=Časový limit pro odpověď vypršel	#
-resourcePack.editor.playtestResult.SessionInfoNotFound=Informace o relaci nebyly nalezeny	#
-resourcePack.editor.playtestResult.TooManyPlayers=Nemůžete otestovat svět, když hostujete ostatní hráče	#
-resourcePack.editor.playtestResult.UnspecifiedError=Neuvedená chyba	#
-resourcePack.editor.playtestResult.UnsupportedScenario=Abyste otestovali svět, musíte mít hosting editorského projektu	#
-resourcePack.editor.playtestResult.WorldExportBusy=Export světa je zaneprázdněn	#
-resourcePack.editor.playtestResult.WorldExportFailed=Export světa se nezdařil	#
-
-
-resourcePack.editor.menuBar.file.realmsPublish=Zveřejnit ve službě Realms   	####This string is intended to express that the option is for opening the pane to publish your editor world to Realms.{MaxLength=100}
-resourcePack.editor.realmsPublish.noActiveRealmsSubscription=Zveřejňování ve službě Realms vyžaduje aktivní předplatné služby Realms. Zahájit předplatné, nebo ho obnovit, pokud jeho platnost vypršela, můžete pomocí standardního klienta Minecraftu nebo na webu minecraft.net (po přihlášení ke svému účtu).    	####This string is intended to express that the user doesn't have a active Realms subscription and the process they need to follow in order to be able to upload their editor world to their Realms subscription.{MaxLength=350}
-resourcePack.editor.realmsPublish.userNotLoggedIn=Aktivní předplatné služby Realms je vyžadováno pro zveřejnění do Říší. Chcete-li získat přístup ke všem dostupným předplatným služby Realms, musíte se přihlásit k účtu Microsoft.		####This string is intended to express that the user is not logged in currently and that they must be logged into their Microsoft account in order to proceed.{MaxLength=350}
-resourcePack.editor.realmsPublish.dedicatedServerWarning=Při použití dedikovaného serveru není publikování do služby Realms k dispozici.		####This string is intended to express that the user is unable to use the Publish to Realms feature on a dedicated server.{MaxLength=350}
-resourcePack.editor.realmsPublish.notSessionHostWarning=Do služby Realms může zveřejňovat pouze hostitel relace editoru.		####This string is intended to express that the user is unable to use the Publish to Realms when they are not the session host.{MaxLength=350}
-resourcePack.editor.realmsPublish.genericRealmsIssue=Došlo k problému se službou Realms, zkuste to znovu později.		####This string is intended to express that there is an issue with the realms service and to please try again later.{MaxLength=350}
-resourcePack.editor.realmsPublish.goToMinecraftWebsite=Jít na Minecraft.net  	####This string is intended to express that the link will take the user to Minecraft.net.{MaxLength=100}
-resourcePack.editor.realmsPublish.Refresh=Aktualizovat  	####This string is intended to express that the button will refresh the pane to see if the user in now logged in.{MaxLength=100}
-resourcePack.editor.realmsPublish.Realm=Realm  	####This string is intended to express that the below dropdown contains all of the users Realms subscriptions.{MaxLength=100}
-resourcePack.editor.realmsPublish.RealmSlot=Slot pro Realm 	####This string is intended to express that the dropdown contains all of the world slots in for the users selected realms subscription.{MaxLength=100}
-resourcePack.editor.realmsPublish.EmptySlot=Prázdný slot		####This string is intended to express that the Realm slot is empty.{MaxLength=100}
-resourcePack.editor.realmsPublish.PublishNotesTitle=Poznámka ke zveřejnění ve službě Realms   	####This string is intended to express that the below field will contain additional information for the user about the publish to realms feature, including any warnings or issues.{MaxLength=150}
-resourcePack.editor.realmsPublish.DownloadRealm=Stáhnout    	####This string is intended to express that the button will download the currently selected World from the realm slot.{MaxLength=100}
-resourcePack.editor.realmsPublish.PublishRealm=Publikovat  	####This string is intended to express that the button will publish the current world to the currently selected realm slot.{MaxLength=100}
-resourcePack.editor.realmsPublish.Confirm=Potvrdit   	####This string is intended to express that the button will confirm  the request to publish the world to realms.{MaxLength=100}
-resourcePack.editor.realmsPublish.Cancel=Zrušit 	####This string is intended to express that the button will cancel the request to publish the world to realms.{MaxLength=100}
-resourcePack.editor.realmsPublish.Back=Zpět 	####This string is intended to express that the button will take the user back to the previous pane.{MaxLength=100}
-resourcePack.editor.realmsPublish.PublishFailedNonCompliantWorldName=Zveřejnění do služby Realms se nezdařilo z důvodu neplatného jména světa. Aktualizujte název světa a zkuste to znovu.		####This string is intended to express that publishing the world to Realms failed due to an invalid world name that was entered by the player .{MaxLength=200}
-resourcePack.editor.realmsPublish.PublishFailed=Publikování ve službě Realms se nezdařilo. Zkuste to prosím později.   	####This string is intended to express that publishing the world to Realms failed and to please try again later.{MaxLength=200}
-resourcePack.editor.realmsPublish.PublishSuccess=Publikování ve službě Realms bylo úspěšné    	####This string is intended to express that publishing the world to Realms succeeded.{MaxLength=200}
-resourcePack.editor.realmsPublish.PublishConfirmationOptOut=Znovu se nedotazovat pro tuto Říši a relaci  	####This string is intended to express that the checkbox will opt the user out of confirming their publish to realms decisions.{MaxLength=100}
-resourcePack.editor.realmsPublish.PublishingToRealms=Publikuji svět do služby Realms…  	####This string is intended to express that the world is currently in the process of being published to Realms.{MaxLength=100}
-resourcePack.editor.realmsPublish.UnableToPublishMissingRealm=Nelze publikovat do služby Realms. Nebyla zvolena žádná říše.    	####This string is intended to express that the user is unable to publish their world because a realm to upload to has not been selected.{MaxLength=250}
-resourcePack.editor.realmsPublish.UnableToPublishMissingRealmSlot=Nelze publikovat do služby Realms. Nebyl zvolen žádný slot říše.   	####This string is intended to express that the user is unable to publish their world because a realm slot to upload to has not been selected.{MaxLength=250}
-resourcePack.editor.realmsPublish.PublishConfirmationWarning=Tímto odstraníte aktuální svět z vybraného slotu a nahradíte jej aktuálním světem z Editoru (vybraný slot se zároveň stane aktivním slotem pro vaši říši). Členové vaší říše budou mít přístup k nově nahrazenému světu. Pokud chcete před zveřejněním svůj aktuální svět uložit, abyste zabránili ztrátě dat, zrušte tento dialog a ještě před volbou „Publikovat“ vyberte možnost „Stáhnout“. Výběrem možnosti „Potvrdit“ pokračujte a nahraďte svůj aktuální svět.    	####This string is intended to warn the user that if they publish their world to Realms, the world currently in that Realms slot will be deleted and unrecoverable. It also informs the user that members of the Realm will be able to access this world.{MaxLength=1000}
-resourcePack.editor.realmsPublish.DownloadSuccess=Stahování světa z Realms proběhlo úspěšně    	####This string is intended to express that downloading a world from Realms succeeded.{MaxLength=200}
-resourcePack.editor.realmsPublish.DownloadFailed=Stahování světa z Realms se nezdařilo 	####This string is intended to express that downloading a world from Realms failed.{MaxLength=200}
-resourcePack.editor.realmsPublish.DownloadingFromRealms=Stahování světa z Realms…    	####This string is intended to express that we're in the middle of downloading a world from Realms and waiting for that operation to complete.{MaxLength=200}
-
-
-resourcePack.editor.toolRail.RepeaterTool.title=Opakovací nástroj	#
-resourcePack.editor.toolRail.RepeaterTool.tooltip=Nástroj pro opakování oblasti výběru	#
-resourcePack.editor.toolRail.RepeaterTool.pane.Spacing=Rozestupy	#
-resourcePack.editor.toolRail.RepeaterTool.pane.Repetitions=Opakování	#
-resourcePack.editor.toolRail.RepeaterTool.pane.Preview=Náhled	#
-resourcePack.editor.toolRail.RepeaterTool.pane.Clear=Vymazat	#
-resourcePack.editor.toolRail.RepeaterTool.pane.Apply=Použít	#
-resourcePack.editor.toolRail.RepeaterTool.statusMessage.noSelection=Pro výběr obsahu, který chcete zopakovat, použijte Nástroj pro výběr	#
-resourcePack.editor.toolRail.RepeaterTool.pane.Mode=Režim		####"Mode" describes a dropdown that contains the two different states the tool can be in. These are "Line" and "Grid" {MaxLength=20}
-resourcePack.editor.toolRail.RepeaterTool.mode.Line=Linie	####"Line" describes a straight, unbroken visual between two points {MaxLength=20}
-resourcePack.editor.toolRail.RepeaterTool.mode.Grid=Mřížka		####"Grid" describes a visual consisting of parallel lines at regular intervals, broken up by perpendicular lines at regular intervals, like grid paper. {MaxLength=20}
-resourcePack.editor.toolRail.RepeaterTool.pane.RepeatType=Typ opakování		####"Repeat Type" describes a dropdown that contains the two types "Uniform" and "Separate" and represents how the repetitions along the three axes (plural of "axis") will be determined {MaxLength=40}
-resourcePack.editor.toolRail.RepeaterTool.repeat.Uniform=Standardní		####"Uniform" describes the repeat state of the Repeater Tool where it applies the same number of repetitions across all three axes (X, Y, and Z). "Uniform" was chosen as a short word that also means "consistent across multiple instances" {MaxLength=20}
-resourcePack.editor.toolRail.RepeaterTool.pane.RepeatAlongX=Opakovat po X		####"Repeat Along" describes a checkbox and means to apply the number of Uniform Repetitions across a given axis. This one is the X axis. "X", "Y", and "Z" have a mathematical meaning and it may not be appropriate to translate unless the mathematical meaning is also translated. More info can be found at https://en.wikipedia.org/wiki/Coordinate_system {MaxLength=40}
-resourcePack.editor.toolRail.RepeaterTool.pane.RepeatAlongY=Opakovat po Y		####See "Repeat Along X" but this is for the Y axis. {MaxLength=40}
-resourcePack.editor.toolRail.RepeaterTool.pane.RepeatAlongZ=Opakovat po Z		####See "Repeat Along X" but this is for the Z axis. {MaxLength=40}
-resourcePack.editor.toolRail.RepeaterTool.repeat.Separate=Rozdělit		####"Separate" describes the repeat state of the Repeater Tool where the number of repetitions along each axis is set using separate number input elements, rather than one single number input {MaxLength=20}
-resourcePack.editor.toolRail.RepeaterTool.pane.XCount=Počet X		####"X Count" describes a number input field and represents the number of repetitions along the X axis. "X", "Y", and "Z" have a mathematical meaning and it may not be appropriate to translate unless the mathematical meaning is also translated. More info can be found at https://en.wikipedia.org/wiki/Coordinate_system {MaxLength=20}
-resourcePack.editor.toolRail.RepeaterTool.pane.YCount=Počet Y		####See "X Count" but this is for the Y axis. {MaxLength=20}
-resourcePack.editor.toolRail.RepeaterTool.pane.ZCount=Počet Z		####See "X Count" but this is for the Z axis. {MaxLength=20}
-
-
-resourcePack.editor.selectionTool.deselect=Zrušit výběr	#
-resourcePack.editor.selectionTool.fillPane.fillAction=Nástroj pro výběr	#
-resourcePack.editor.selectionTool.fillPane.title=Nástroj pro výběr	#
-resourcePack.editor.selectionTool.keyBinding.deselect=Zrušit výběr	#
-resourcePack.editor.selectionTool.keyBinding.fill=Zaplnit výběr obsahu	#
-resourcePack.editor.selectionTool.keyBinding.growBack=Zvětšit vybrané směrem dozadu	#
-resourcePack.editor.selectionTool.keyBinding.growDown=Zvětšit vybrané směrem dolů	#
-resourcePack.editor.selectionTool.keyBinding.growForward=Zvětšit vybrané směrem dopředu	#
-resourcePack.editor.selectionTool.keyBinding.growLeft=Zvětšit vybrané směrem doleva	#
-resourcePack.editor.selectionTool.keyBinding.growRight=Zvětšit vybrané směrem doprava	#
-resourcePack.editor.selectionTool.keyBinding.growUp=Zvětšit vybrané směrem nahoru	#
-resourcePack.editor.selectionTool.keyBinding.moveAllSelectionBack=Posunout vše vybrané dozadu	#
-resourcePack.editor.selectionTool.keyBinding.moveAllSelectionDown=Posunout vše vybrané dolů	#
-resourcePack.editor.selectionTool.keyBinding.moveAllSelectionForward=Posunout vše vybrané dopředu	#
-resourcePack.editor.selectionTool.keyBinding.moveAllSelectionLeft=Posunout vše vybrané doleva	#
-resourcePack.editor.selectionTool.keyBinding.moveAllSelectionRight=Posunout vše vybrané doprava	#
-resourcePack.editor.selectionTool.keyBinding.moveAllSelectionUp=Posunout vše vybrané nahoru	#
-resourcePack.editor.selectionTool.keyBinding.moveCursorBack=Pohnout kurzorem dozadu	#
-resourcePack.editor.selectionTool.keyBinding.moveCursorDown=Pohnout kurzorem dolů	#
-resourcePack.editor.selectionTool.keyBinding.moveCursorForward=Posunout kurzor dopředu	#
-resourcePack.editor.selectionTool.keyBinding.moveCursorLeft=Posunout kurzor doleva	#
-resourcePack.editor.selectionTool.keyBinding.moveCursorRight=Pohnout kurzorem doprava	#
-resourcePack.editor.selectionTool.keyBinding.moveCursorUp=Pohnout kurzorem nahoru	#
-resourcePack.editor.selectionTool.keyBinding.moveSelectionBack=Posunout vybrané dozadu	#
-resourcePack.editor.selectionTool.keyBinding.moveSelectionDown=Posunout vybrané dolů	#
-resourcePack.editor.selectionTool.keyBinding.moveSelectionForward=Posunout vybrané dopředu	#
-resourcePack.editor.selectionTool.keyBinding.moveSelectionLeft=Posunout vybrané doleva	#
-resourcePack.editor.selectionTool.keyBinding.moveSelectionRight=Posunout vybrané doprava	#
-resourcePack.editor.selectionTool.keyBinding.moveSelectionUp=Posunout vybrané nahoru	#
-resourcePack.editor.selectionTool.keyBinding.shrinkBack=Zmenšit vybrané směrem dozadu	#
-resourcePack.editor.selectionTool.keyBinding.shrinkDown=Zmenšit vybrané směrem dolů	#
-resourcePack.editor.selectionTool.keyBinding.shrinkForward=Zmenšit vybrané směrem dopředu	#
-resourcePack.editor.selectionTool.keyBinding.shrinkLeft=Zmenšit vybrané směrem doleva	#
-resourcePack.editor.selectionTool.keyBinding.shrinkRight=Zmenšit vybrané směrem doprava	#
-resourcePack.editor.selectionTool.keyBinding.shrinkUp=Zmenšit vybrané směrem nahoru	#
-resourcePack.editor.selectionTool.keyBinding.toggleTool=Zapnout nástroj Výběr	#
-resourcePack.editor.selectionTool.keyBinding.select=Vybrat blok			#### The action of adding a block to the selection volume using they keyboard {MaxLength="30"}
-resourcePack.editor.selectionTool.keyBinding.selectMultiple=Vybrat další blok			#### The action of adding an additional block to the selection volume using the keyboard {MaxLength="30"}
-resourcePack.editor.selectionTool.keyBinding.trimVolume=Omezit výběr (ohraničení)					#### Keybinding description for Trim the current selection volume to fit only the solid blocks within {MaxLength=30}
-resourcePack.editor.selectionTool.keyBinding.trimRemoveAir=Omezit výběr (Odebrat vzduch)	#### Keybinding description for Remove the air from the current selection volume leaving only specified blocks {MaxLength=30}
-resourcePack.editor.selectionTool.marquee.title=Výběr poutače	#
-resourcePack.editor.selectionTool.modeSelection.freehand.title=Režim volného štětce	#
-resourcePack.editor.selectionTool.modeSelection.freehand.tooltip=Vyberte bloky ve světě pomocí tvaru volného štětce	#
-resourcePack.editor.selectionTool.modeSelection.marquee.title=Režim poutače	#
-resourcePack.editor.selectionTool.modeSelection.marquee.tooltip=Vyberte bloky ve světě pomocí obdélníkového objemu	#
-resourcePack.editor.selectionTool.modeSelection.magic.title=Režim magického výběru			#### Magic Select mode is a mode that searches for contiguous matching blocks in a search radius {MaxLength=30}}
-resourcePack.editor.selectionTool.modeSelection.magic.tooltip=Výběr bloků ve světě pomocí vyhledávacího vzoru ze zvoleného původu		#### Longer description of the magic select mode {MaxLength=150}}
-resourcePack.editor.selectionTool.modeSelection.title=Režim výběru	#
-resourcePack.editor.selectionTool.projectThroughLiquid=Prostupnost kapalinou	#
-resourcePack.editor.selectionTool.trimAction.trimVolume=Omezit výběr			#### Trim the current selection volume to fit only the solid blocks within {MaxLength=30}
-resourcePack.editor.selectionTool.trimAction.trimVolume.tooltip=Omezit aktuální výběr na pouze pevné bloky   	#### {MaxLength=200}
-resourcePack.editor.selectionTool.trimAction.removeAir=Odebrat vzduch			#### Remove the air from the current selection volume leaving only specified blocks {MaxLength=30}
-resourcePack.editor.selectionTool.trimAction.removeAir.tooltip=Odebrat vzduch z aktuálního výběru a zanechat pouze zadané bloky 	#### {MaxLength=200}
-resourcePack.editor.selectionTool.trimAction.trimVolume.SettingsPane.title=Nastavení omezení		#### The window pane title for the settings for trim mode {MaxLength=30}
-resourcePack.editor.selectionTool.trimAction.trimVolume.SettingsPane.ignoreLiquid=Ignorovat kapaliny		#### The toggle button title for ignoring liquids {MaxLength=30}
-resourcePack.editor.selectionTool.trimAction.trimVolume.SettingsPane.ignoreLiquid.tooltip=Ignorovat všechny kapalinové bloky při omezení 	#### {MaxLength=200}
-resourcePack.editor.selectionTool.trimAction.trimVolume.SettingsPane.onlyCollidable=Pouze kolizní bloky		#### The toggle button title for collision-only blocks {MaxLength=30}
-resourcePack.editor.selectionTool.trimAction.trimVolume.SettingsPane.onlyCollidable.tooltip=Při omezení výběru ignorovat všechny bloky bez kolize (listí, tráva atd.) 	#### {MaxLength=200}
-resourcePack.editor.selectionTool.quickAction.clearSelection.tooltip=Zruší aktuální oblast výběru	#
-resourcePack.editor.selectionTool.quickAction.clearSelection=Zrušit výběr	#
-resourcePack.editor.selectionTool.quickAction.deleteSelection.tooltip=Odebrat všechny bloky v aktuální oblasti výběru	#
-resourcePack.editor.selectionTool.quickAction.deleteSelection=Odstranit	#
-resourcePack.editor.selectionTool.quickAction.fillSelection.tooltip=Vyplnit aktuální oblast výběru pomocí momentálně zvoleného typu bloku	#
-resourcePack.editor.selectionTool.quickAction.fillSelection=Vyplnit	#
-resourcePack.editor.selectionTool.quickAction.title=Rychlé akce	#
-resourcePack.editor.selectionTool.selectionMode.adjacent=Přilehlý	#
-resourcePack.editor.selectionTool.selectionMode.fixedDistance=Pevná vzdálenost	#
-resourcePack.editor.selectionTool.selectionMode.mouseAndKeyboard=Volný styl	#
-resourcePack.editor.selectionTool.selectionMode=Režim	#
-resourcePack.editor.selectionTool.settingsPane.title=Výběr	#
-resourcePack.editor.selectionTool.toolRail.description=Kliknutím levým tlačítkem myši proveďte výběr; pomocí CTRL+D výběr zrušte	#
-resourcePack.editor.selectionTool.toolRail.title=Výběr	#
-resourcePack.editor.selectionTool.transformPane.origin.tooltip=Původní lokace výběru v souřadnicích světa.	#
-resourcePack.editor.selectionTool.transformPane.origin=Původ	#
-resourcePack.editor.selectionTool.transformPane.size=Velikost	#
-resourcePack.editor.selectionTool.transformPane.title=Transformovat	#
-
-
-resourcePack.editor.BlockMaskControl.trim.rootPane.title=Nastavení omezení		#### The window pane title for the settings for trim mode {MaxLength=30}
-resourcePack.editor.BlockMaskControl.trim.toggleGroup.title=Maskovací mód		#### The title of the toggle group {MaxLength=30}
-resourcePack.editor.BlockMaskControl.trim.toggleGroup.item.disabled.label=Vypnout filtry bloků			#### The title of the icon which disables block filters {MaxLength=30}
-resourcePack.editor.BlockMaskControl.trim.toggleGroup.item.disabled.tooltip=Vypnuto					#### The tooltip of the icon which disables block filters {MaxLength=100}
-resourcePack.editor.BlockMaskControl.trim.toggleGroup.item.mask.label=Maska								#### The title of the icon which masks block filters {MaxLength=30}
-resourcePack.editor.BlockMaskControl.trim.toggleGroup.item.mask.tooltip=Bloky, které odpovídají seznamu, budou ignorovány			#### Mask mode tooltip {MaxLength=100}
-resourcePack.editor.BlockMaskControl.trim.toggleGroup.item.replace.label=Nahradit						#### The title of the replace block filter {MaxLength=30}
-resourcePack.editor.BlockMaskControl.trim.toggleGroup.item.replace.tooltip=Bloky, které odpovídají seznamu, budou považovány za plné			#### Replace mode tooltip {MaxLength=100}
-
-
-resourcePack.editor.server.description=Serverové zdroje pro editory	#
-resourcePack.editor.server.name=Zdroje pro editory	#
-
-
-resourcePack.editor.toolRail.Terrain.title=Terén	#
-resourcePack.editor.toolRail.Terrain.keybinding.toggleTool=Zapnout nástroj Terén	#
-resourcePack.editor.toolRail.Terrain.keyBinding.switch=Přepnout režim terénu	#
-resourcePack.editor.toolRail.Terrain.Mode.title=Režim terénu	#
-resourcePack.editor.toolRail.Terrain.Smooth.mode.title=Režim vyhlazení	#
-resourcePack.editor.toolRail.Terrain.Smooth.tooltip=Vyhladí terén podle síly vyhlazování	#
-resourcePack.editor.toolRail.Terrain.SmoothStrength=Síla vyhlazování	#
-resourcePack.editor.toolRail.Terrain.Roughen.mode.title=Režim zdrsnění	#
-resourcePack.editor.toolRail.Terrain.Roughen.tooltip=Zdrsněte terén na základě síly zdrsnění	#
-resourcePack.editor.toolRail.Terrain.RoughenStrength=Síla zdrsnění	#
-resourcePack.editor.toolRail.Terrain.description=Nástroj terén slouží k vyhlazení nebo zdrsnění terénu	#
-
-
-resourcePack.editor.help.learnMore=Další informace	#
-
-resourcePack.editor.statusBar.connectedPlayers=Připojení hráči: %s	#
-
-
-resourcePack.editor.summonTool.summonSubPane.EntityPickerTitle=Typ entity	#
-
-
-resourcePack.editor.timeOfDay.12hrClock=12-hodinové hodiny	#
-resourcePack.editor.timeOfDay.24hrClock=24-hodinové hodiny	#
-resourcePack.editor.timeOfDay.clockType=Typ hodin	#
-resourcePack.editor.timeOfDay.currentTime=Aktuální čas	#
-resourcePack.editor.timeOfDay.customTime=Vlastní čas	#
-resourcePack.editor.timeOfDay.daylightCycle=Cyklus denního světla	#
-resourcePack.editor.timeOfDay.dropDown.day=Den	#
-resourcePack.editor.timeOfDay.dropDown.midnight=Půlnoc	#
-resourcePack.editor.timeOfDay.dropDown.night=Noc	#
-resourcePack.editor.timeOfDay.dropDown.none=Žádné	#
-resourcePack.editor.timeOfDay.dropDown.noon=Poledne	#
-resourcePack.editor.timeOfDay.dropDown.sunrise=Východ slunce	#
-resourcePack.editor.timeOfDay.dropDown.sunset=Západ slunce	#
-resourcePack.editor.timeOfDay.dropDown.custom=Vlastní		####"Custom" describes a dropdown that players can define the specific start time {MaxLength=20}
-resourcePack.editor.timeOfDay.dropDown.title=Předvolby	#
-resourcePack.editor.timeOfDay.menu.title=Nastavení denní doby	#
-resourcePack.editor.timeOfDay.minecraftClock=Minecraft hodiny	#
-resourcePack.editor.timeOfDay.title=Nastavení času	#
-
-
-resourcePack.editor.toolMode.keyBinding.console=Otevřít konzoli	#
-resourcePack.editor.toolMode.keyBinding.devConsole=Otevřít konzoli pro vývojáře	#
-resourcePack.editor.toolMode.keyBinding.hotbar1=Vybrat lištu předmětů 1	#
-resourcePack.editor.toolMode.keyBinding.hotbar2=Vybrat lištu předmětů 2	#
-resourcePack.editor.toolMode.keyBinding.hotbar3=Vybrat lištu předmětů 3	#
-resourcePack.editor.toolMode.keyBinding.hotbar4=Vybrat lištu předmětů 4	#
-resourcePack.editor.toolMode.keyBinding.hotbar5=Vybrat lištu předmětů 5	#
-resourcePack.editor.toolMode.keyBinding.hotbar6=Vybrat lištu předmětů 6	#
-resourcePack.editor.toolMode.keyBinding.hotbar7=Vybrat lištu předmětů 7	#
-resourcePack.editor.toolMode.keyBinding.hotbar8=Vybrat lištu předmětů 8	#
-resourcePack.editor.toolMode.keyBinding.hotbar9=Vybrat lištu předmětů 9	#
-resourcePack.editor.toolMode.keyBinding.reload=Načíst znovu 	####Represents a label for a key shortcut that reloads scripts and UI.{MaxLength=100}
-
-
-resourcePack.editor.toolRail.blockPalette.title=Paleta bloků (CTRL +P)	#
-resourcePack.editor.toolRail.blockPalette.tooltip=Nastavte si paletu oblíbených nebo nejčastěji používaných bloků	#
-resourcePack.editor.toolRail.flattenBrush.title=Vyrovnávací štětec	#
-resourcePack.editor.toolRail.flattenBrush.tooltip=Vertikálně vyrovná oblast podle výšky vybraného bloku	#
-resourcePack.editor.toolRail.flattenBrush.settings.heightThreshold=Hranice výšky	#
-resourcePack.editor.toolRail.flattenBrush.settings.radius=Poloměr	#
-resourcePack.editor.toolRail.floodFillSelectionTool.description=Vybere oblast, na kterou se právě díváte, pomocí algoritmu záplavového vyplňování.	#
-resourcePack.editor.toolRail.floodFillSelectionTool.title=Nástroj pro výběr záplavového vyplňování.	#
-resourcePack.editor.toolRail.line.keyBinding.delete=Vymazat obsah	#
-resourcePack.editor.toolRail.line.keyBinding.deleteAndClear=Vymazat obsah a zrušit výběr	#
-resourcePack.editor.toolRail.line.keyBinding.deselect=Zrušit výběr	#
-resourcePack.editor.toolRail.line.keyBinding.deselectAll=Zrušit výběr všech	#
-resourcePack.editor.toolRail.line.keyBinding.fill=Zaplnit obsah	#
-resourcePack.editor.toolRail.line.keyBinding.fillAndClear=Naplnit obsah a zrušit výběr	#
-resourcePack.editor.toolRail.line.keyBinding.moveBack=Posunout vybrané dozadu	#
-resourcePack.editor.toolRail.line.keyBinding.moveDown=Posunout vybrané dolů	#
-resourcePack.editor.toolRail.line.keyBinding.moveForward=Posunout vybrané dopředu	#
-resourcePack.editor.toolRail.line.keyBinding.moveLeft=Posunout vybrané doleva	#
-resourcePack.editor.toolRail.line.keyBinding.moveRight=Posunout vybrané doprava	#
-resourcePack.editor.toolRail.line.keyBinding.moveUp=Posunout vybrané nahoru	#
-resourcePack.editor.toolRail.line.keyBinding.selectAll=Vybrat všechny	#
-resourcePack.editor.toolRail.line.pane.algorithm.Direct=Nasměrovat	#
-resourcePack.editor.toolRail.line.pane.algorithm.Staggered=Stupňovité (ploty)	#
-resourcePack.editor.toolRail.line.pane.algorithm.title=Algoritmus	#
-resourcePack.editor.toolRail.line.pane.fillAction=Nástroj pro výběr	#
-resourcePack.editor.toolRail.line.pane.height.title=Výška	#
-resourcePack.editor.toolRail.line.pane.selectionMode.adjacent=Sousedící tvář	#
-resourcePack.editor.toolRail.line.pane.selectionMode.fixedDistance=Pevná vzdálenost	#
-resourcePack.editor.toolRail.line.pane.selectionMode.freeForm=Volný styl	#
-resourcePack.editor.toolRail.line.pane.selectionMode=Výběr	#
-resourcePack.editor.toolRail.line.pane.surfaceContour=Obrysy povrchu	#
-resourcePack.editor.toolRail.line.pane.width.title=Šířka	#
-resourcePack.editor.toolRail.line.title=Linie	#
-resourcePack.editor.toolRail.line.tooltip=Nástroj pro tvorbu řádků vytváří řádky bloků	#
-resourcePack.editor.toolRail.rulerTool.title=Nástroj pravítko	#
-resourcePack.editor.toolRail.rulerTool.tooltip=Změřit vzdálenost	#
-resourcePack.editor.toolRail.rulerTool.info.title=Měření	#
-
-
-resourcePack.editor.toolRail.smartFillTool.title=Chytrý nástroj pro vyplňování	#
-resourcePack.editor.toolRail.smartFillTool.tooltip=Kliknutím vyplníte propojenou sadu bloků	#
-resourcePack.editor.toolRail.smartFillTool.modes.fillVolume=Vyplnit hlasitost	#
-resourcePack.editor.toolRail.smartFillTool.areaLimit.title=Limit oblasti	#
-resourcePack.editor.toolRail.smartFillTool.areaLimit.tooltip=Maximální naplnitelná oblast	#
-
-
-resourcePack.editor.toolRail.summonTool.keyBinding.clear=Vymazat výběr	#
-resourcePack.editor.toolRail.summonTool.keyBinding.delete=Vymazat entitu	#
-resourcePack.editor.toolRail.summonTool.keyBinding.moveBack=Posunout vybrané dozadu	#
-resourcePack.editor.toolRail.summonTool.keyBinding.moveDown=Posunout vybrané dolů	#
-resourcePack.editor.toolRail.summonTool.keyBinding.moveForward=Posunout vybrané dopředu	#
-resourcePack.editor.toolRail.summonTool.keyBinding.moveLeft=Posunout vybrané doleva	#
-resourcePack.editor.toolRail.summonTool.keyBinding.moveRight=Posunout vybrané doprava	#
-resourcePack.editor.toolRail.summonTool.keyBinding.moveUp=Posunout vybrané nahoru	#
-resourcePack.editor.toolRail.summonTool.keyBinding.toggle=Zapnout nástroj Vyvolávání	#
-resourcePack.editor.toolRail.summonTool.pane.select=Vybrat režim	#
-resourcePack.editor.toolRail.summonTool.pane.title=Nástroj Vyvolávání	#
-resourcePack.editor.toolRail.summonTool.pane.type=Typ entity	#
-resourcePack.editor.toolRail.summonTool.tool.infoText=Pro výběr entity na ni klikněte. Pro vyvolání nové entity klikněte na mapu.	#
-resourcePack.editor.toolRail.summonTool.tool.selectSubPane.rotation=Natočení	#
-resourcePack.editor.toolRail.summonTool.tool.selectSubPane=Výběr entity	#
-resourcePack.editor.toolRail.summonTool.tool.summonSubPane=Líheň entit	#
-resourcePack.editor.toolRail.summonTool.tool.tip=Kliknutím vyvoláte entity	#
-resourcePack.editor.toolRail.summonTool.tool.title=Nástroj Vyvolávání	#
-
-resourcePack.editor.toolRail.workbenchSettings.title=Pracovní stůl	#
-resourcePack.editor.toolRail.workbenchTool.title=Pracovní stůl	#
-resourcePack.editor.toolRail.workbenchTool.description=Rychle změní stavu bloků	#
-resourcePack.editor.toolRail.workbenchTool.howToUse=Zvýraznění bloků ukáže dostupné akce pro změnu jejich stavu (otevřít/zavřít, rotace, převracení atd.). Zkuste také použít modifikační klávesy Shift a Control! Pozor, tato funkce funguje pouze na bloky s možností upravovat vlastnosti (např. dveře, ploty, schody atd.).		####	This text provides a description of the workbench tool and explans how the the user can highlight blocks in order to see the list of actions for changing that blocks state. {MaxLength="500"}
-resourcePack.editor.toolRail.workbenchTool.tooltip=Změnit stav bloků.	#
-resourcePack.editor.toolRail.workbenchTool.block=Zablokovat	#
-resourcePack.editor.toolRail.workbenchTool.leftClick=Klikněte levým tlačítkem.	#
-resourcePack.editor.toolRail.workbenchTool.shiftLeftClick=Shift + Levé tlačítko myši	#
-resourcePack.editor.toolRail.workbenchTool.controlLeftClick=CTRL + Levé tlačítko myši	#
-resourcePack.editor.toolRail.workbenchTool.shiftControlLeftClick=Shift + CTRL + Levé tlačítko myši	#
-
-resourcePack.editor.toolRail.workbenchTool.leftClickTooltip=Levé kliknutí na blok provede primární akci Pracovního stolu		####	This keybinding is a tool tip to convey that a left click will invoke the primary (1st) action of the workbench tool. {MaxLength="150"}
-resourcePack.editor.toolRail.workbenchTool.shiftLeftClickTooltip=Shift + levé kliknutí na blok provede druhou akci Pracovního stolu		####	This keybinding is a tool tip to convey that a shift + left click will invoke the primary (1st) action of the workbench tool. {MaxLength="150"}
-resourcePack.editor.toolRail.workbenchTool.controlLeftClickTooltip=Control + Levé kliknutí na blok provede třetí akci Pracovního stolu		####	This keybinding is a tool tip to convey that a control + left click will invoke the primary (1st) action of the workbench tool. {MaxLength="150"}
-resourcePack.editor.toolRail.workbenchTool.shiftControlLeftClickTooltip=Shift + Control + levé kliknutí na blok provede čtvrtou akci Pracovního stolu		####	TThis keybinding is a tool tip to convey that a shift + control + left click will invoke the primary (1st) action of the workbench tool. {MaxLength="150"}
-
-resourcePack.editor.toolRail.workbenchTool.stripWood=Odstranit kůru ze dřeva/vrátit kůru ze dřeva		####This string is intended to express whether the wood block has bark (unstripped) or doesn't have bark (stripped).{MaxLength=100}
-resourcePack.editor.toolRail.workbenchTool.ladderLocation=Umístění žebříku	#
-resourcePack.editor.toolRail.workbenchTool.autoAlign=Rovnat automaticky	#
-resourcePack.editor.toolRail.workbenchTool.autoAlignFacingDirection=Automatické nastavení směru pohledu		####This string is intended to express that the action will align the facing direction of the block with the player camera.{MaxLength=100}
-resourcePack.editor.toolRail.workbenchTool.autoAlignRotation=Automatické nastavení rotace		####This string is intended to express that the action will align the roatation of the block with the player camera.{MaxLength=100}
-
-resourcePack.editor.toolRail.workbenchTool.topSlotBitProp=Horní/Dolní	#
-resourcePack.editor.toolRail.workbenchTool.pillarAxisProp=Otočit	#
-resourcePack.editor.toolRail.workbenchTool.heightProp=Vrstvy	#
-resourcePack.editor.toolRail.workbenchTool.candlesProp=Počet svíček	#
-
-resourcePack.editor.toolRail.workbenchTool.turtleEggCountProp=Počet želvích vajíček	#
-resourcePack.editor.toolRail.workbenchTool.clusterCountProp=Počet mořských okurek	#
-resourcePack.editor.toolRail.workbenchTool.hangingProp=Zapnout zavěšení z jiného bloku	#
-resourcePack.editor.toolRail.workbenchTool.wallPostBitProp=Zapnout sloupek	#
-
-resourcePack.editor.toolRail.workbenchTool.upsideDownBitProp=Horní/Dolní	#
-resourcePack.editor.toolRail.workbenchTool.openBitProp=Otevřít/Zavřít	#
-resourcePack.editor.toolRail.workbenchTool.litProp=Rozsvíceno/Zhasnuto	#
-resourcePack.editor.toolRail.workbenchTool.dripstoneThicknessProp=Tloušťka krápníku	#
-
-resourcePack.editor.toolRail.workbenchTool.directionProp=Směr orientace	#
-resourcePack.editor.toolRail.workbenchTool.weirdoDirectionProp=Otočit	#
-resourcePack.editor.toolRail.workbenchTool.facingDirectionProp=Směr orientace	#
-resourcePack.editor.toolRail.workbenchTool.cardinalDirectionProp=Směr orientace	#
-
-resourcePack.editor.toolRail.workbenchTool.addCustomMapping=Přidat vlastní přiřazení		####This string is intended to express that this subpane is for adding custom block property mappings for the tool.{MaxLength=100}
-resourcePack.editor.toolRail.workbenchTool.blockProperty=Vlastnost bloku		####This string is intended to express that this field is for the Block Property.{MaxLength=50}
-resourcePack.editor.toolRail.workbenchTool.clickBinding=Přiřazení kliknutí		####This string is intended to express that this dropdown contains the click binding options (left click, shift + left click, etc).{MaxLength=50}
-resourcePack.editor.toolRail.workbenchTool.addMapping=Přidat přiřazení		####This string is intended to express that this button will add the custom mapping provided by the user.{MaxLength=50}
-resourcePack.editor.toolRail.workbenchTool.resetAllMappings=Resetovat všechna přiřazení		####This string is intended to express that this button will reset all custom mappings provided by the user.{MaxLength=50}
-
-resourcePack.editor.workbenchTool.keyBinding.primaryAction=Primární akce Pracovního stolu	####	This keybinding is to invoke the primary (1st) action of the workbench tool. {MaxLength="30"}
-resourcePack.editor.workbenchTool.keyBinding.secondaryAction=Druhá akce Pracovního stolu		#### This keybinding is to invoke the secondary (2nd) action of the workbench tool. {MaxLength="30"}
-resourcePack.editor.workbenchTool.keyBinding.tertiaryAction=Třetí akce Pracovního stolu		####	This keybinding is to invoke the tertiary (3rd) action of the workbench tool. {MaxLength="30"}
-resourcePack.editor.workbenchTool.keyBinding.quaternaryAction=Čtvrtá akce Pracovního stolu		#### This keybinding is to invoke the quaternary (4th) action of the workbench tool. {MaxLength="30"}
-
-
-resourcePack.editor.transaction.keyBinding.redo=Znovu	#
-resourcePack.editor.transaction.keyBinding.undo=Zpět	#
-
-
-resourcePack.editor.viewport.keyBinding.moveBack=Pohyb vzad	#
-resourcePack.editor.viewport.keyBinding.moveDown=Pohyb dolů	#
-resourcePack.editor.viewport.keyBinding.moveForward=Pohyb vpřed	#
-resourcePack.editor.viewport.keyBinding.moveLeft=Pohyb vlevo	#
-resourcePack.editor.viewport.keyBinding.moveRight=Pohyb vpravo	#
-resourcePack.editor.viewport.keyBinding.moveUp=Pohyb nahoru	#
-
-resourcePack.editor.viewport.keyBinding.incrementFlySpeed=Zvýšit rychlost letu	#
-resourcePack.editor.viewport.keyBinding.decrementFlySpeed=Snížit rychlost letu	#
-
-resourcePack.editor.viewSettings.compass.tip=Zobrazit směrový kompas	#
-resourcePack.editor.viewSettings.compass.title=Zobrazit kompas	#
-resourcePack.editor.viewSettings.chunk.tip=Zobrazit obrys hranic zákoutí na mapě	#
-resourcePack.editor.viewSettings.chunk.title=Zobrazit hranice Zákoutí	#
-resourcePack.editor.viewSettings.nightVision.tip=Zobrazte si svět, jako kdybyste měli noční vidění	#
-resourcePack.editor.viewSettings.nightVision.title=Noční vidění	#
-resourcePack.editor.viewSettings.invisible.tip=Zobrazit neviditelné bloky (např. prázdnotu, bariéry, atd.)	#
-resourcePack.editor.viewSettings.invisible.title=Zobrazit neviditelné bloky	#
-resourcePack.editor.viewSettings.flySpeed.tip=Zvyšte rychlost letu k rychlejšímu pohybu po mapě	#
-resourcePack.editor.viewSettings.flySpeed.title=Násobič rychlosti letu	#
-resourcePack.editor.viewSettings.menu=Nastavení	#
-resourcePack.editor.viewSettings.title=Nastavení	#
-
-resourcePack.editor.hotbar.defaultDisplayName=Výchozí	#
-
-resourcePack.editor.reloadScripts.response.tooMany=K serveru je připojeno příliš mnoho hráčů. Opětovné načtení skriptů je podporováno pouze u hostitelů s jedním připojeným hráčem.	#
-resourcePack.editor.reloadScripts.response.genericError=Při pokusu o opětovné načtení skriptů došlo k chybě.	#
-resourcePack.editor.reloadScripts.response.noAdminRights=Nemáte oprávnění k opětovnému načtení skriptů.	#
+﻿
+commands.editor.project.beginExport=Exportování...
+commands.editor.project.description=Manipulace s aktuálně načteným projektem
+commands.editor.project.export=export projektu
+commands.editor.project.exportComplete=Export dokončen, soubory zapsány do %s
+commands.editor.project.exportCopyFailed=Nepodařilo se zkopírovat data úrovně %s
+commands.editor.project.unknownSubcommand=Neznámý podpříkaz
+resourcePack.editor.actionBar.redo.tooltipDescription=Opakovat akci
+resourcePack.editor.actionBar.redo.tooltipTitle=Znovu
+resourcePack.editor.actionBar.redo=Znovu
+resourcePack.editor.actionBar.undo.tooltipDescription=Vrátit akci zpět
+resourcePack.editor.actionBar.undo.tooltipTitle=Zpět
+resourcePack.editor.actionBar.undo=Zpět
+resourcePack.editor.actionBar.fill=Vyplnit 
+resourcePack.editor.actionBar.fill.tooltipDescription=Vyplňte oblast výběru aktuálním blokem z lišty předmětů 
+resourcePack.editor.actionBar.fill.tooltipTitle=Vyplnit 
+resourcePack.editor.agfx.settings.error.title=Nastaly potíže…
+resourcePack.editor.agfx.pane.title=Editor nastavení
+resourcePack.editor.agfx.pane.settings_selector=Vybrat nastavení
+resourcePack.editor.agfx.pane.settings.title=Nastavení
+resourcePack.editor.agfx.pane.settings.revert_changes=Vrátit změny
+resourcePack.editor.agfx.pane.settings.export_to_clipboard=Exportovat do schránky
+resourcePack.editor.toolRail.blockInspectorSettings.title=Inspektor bloků   
+resourcePack.editor.toolRail.blockInspectorSettings.specifics=Specifika bloku   
+resourcePack.editor.toolRail.blockInspectorSettings.actions.refresh=Obnovit data bloku   
+resourcePack.editor.toolRail.blockInspectorSettings.actions.clear=Vymazat výběr   
+resourcePack.editor.toolRail.blockInspectorSettings.blockTags=Štítky bloku   
+resourcePack.editor.toolRail.blockInspectorSettings.blockProperties=Vlastnosti bloku   
+resourcePack.editor.toolRail.blockInspectorSettings.blockProperties.name=Název vlastnosti   
+resourcePack.editor.toolRail.blockInspectorSettings.blockProperties.value=Hodnota vlastnosti   
+resourcePack.editor.toolRail.blockInspectorTool.title=Inspektor bloků   
+resourcePack.editor.toolRail.blockInspectorTool.tooltip=Inspekce dat bloku   
+resourcePack.editor.toolRail.blockInspectorTool.pane.helpText=Kliknutím levým tlačítkem na blok zobrazíte a upravíte jeho vlastnosti   
+resourcePack.editor.blockInspector.toolRail.description=Kliknutím levým tlačítkem na blok zobrazíte a upravíte jeho vlastnosti   
+resourcePack.editor.blockPalette.addSearchItem=Použijte nalezený blok
+resourcePack.editor.blockPalette.blockPicker=Hledat
+resourcePack.editor.blockPalette.paletteDropdown.title=Paleta
+resourcePack.editor.blockPalette.title=Paleta bloků
+resourcePack.editor.brushPaint.inputContext.activateBrushPaint=Aktivovat Barevný štětec
+resourcePack.editor.brushPaint.inputContext.oneshot=Nabarvit jednou
+resourcePack.editor.brushPaint.inputContext.title=Barevný štětec
+resourcePack.editor.brushPaint.title=Barevný štětec
+resourcePack.editor.brushPaint.tooltip=Použijte štětce k nabarvení bloků ve světě
+resourcePack.editor.BrushPaintControl.brush.title=Štětec
+resourcePack.editor.BrushPaintControl.brushSettings.title=Nastavení štětce
+resourcePack.editor.BrushPaintControl.shapeSettings.title=Nastavení tvaru 
+resourcePack.editor.BrushPaintControl.fillConstraints.mask.title=Seznam masek
+resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.disabled.tooltip=Vypnout filtry bloků
+resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.disabled=Vypnuto
+resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.mask.tooltip=Bloky, které odpovídají seznamu, budou ignorovány a zůstanou beze změny
+resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.mask=Maska
+resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.replace=Nahradit
+resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.title=Filtr bloku štětce
+resourcePack.editor.BrushPaintControl.fillConstraints.replace.title=Seznam pro nahrazení
+resourcePack.editor.BrushPaintControl.fillConstraints.replace.tooltip=Bloky, které odpovídají seznamu, projdou změnami
+resourcePack.editor.BrushPaintControl.fillConstraints.title=Omezení vyplňování
+resourcePack.editor.BrushPaintControl.keybinding.maskMask=Režim masky – Maska
+resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetBack=Posunout odsazení dozadu
+resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetDown=Posunout odsazení dolů
+resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetForward=Posunout odsazení dopředu
+resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetLeft=Posunout odsazení doleva
+resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetRight=Posunout odsazení doprava
+resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetUp=Posunout odsazení nahoru
+resourcePack.editor.BrushPaintControl.keybinding.replaceMask=Režim masky – Nahradit
+resourcePack.editor.BrushPaintControl.offset.title=Odsazení
+resourcePack.editor.BrushPaintControl.offset.tooltip=Odsazení od pozice kurzoru
+resourcePack.editor.BrushPaintControl.rootPane.title=Nastavení štětce
+resourcePack.editor.brushShape.common.settings.axis=Osa vysunutí
+resourcePack.editor.brushShape.common.settings.height=Výška
+resourcePack.editor.brushShape.common.settings.length=Délka
+resourcePack.editor.brushShape.common.settings.radius=Poloměr
+resourcePack.editor.brushShape.common.settings.uniform=Jednotný
+resourcePack.editor.brushShape.common.settings.xAxis=Osa X
+resourcePack.editor.brushShape.common.settings.xAxisNeg=Osa -X
+resourcePack.editor.brushShape.common.settings.yAxis=Osa Y
+resourcePack.editor.brushShape.common.settings.yAxisNeg=Osa -Y
+resourcePack.editor.brushShape.common.settings.zAxis=Osa Z
+resourcePack.editor.brushShape.common.settings.zAxisNeg=Osa -Z
+resourcePack.editor.brushShape.cone.name=Kužel
+resourcePack.editor.brushShape.cone.settings.depth=Poloměr hloubky
+resourcePack.editor.brushShape.cone.settings.width=Poloměr šířky
+resourcePack.editor.brushShape.cuboid.name=Kvádr
+resourcePack.editor.brushShape.cuboid.settings.depth=Hloubka
+resourcePack.editor.brushShape.cuboid.settings.height=Výška
+resourcePack.editor.brushShape.cuboid.settings.width=Šířka
+resourcePack.editor.brushShape.cylinder.name=Válec
+resourcePack.editor.brushShape.cylinder.settings.depth_radius=Poloměr hloubky
+resourcePack.editor.brushShape.cylinder.settings.width_radius=Poloměr šířky
+resourcePack.editor.brushShape.ellipsoid.name=Elipsoid
+resourcePack.editor.brushShape.ellipsoid.settings.depth_radius=Poloměr hloubky
+resourcePack.editor.brushShape.ellipsoid.settings.height_radius=Poloměr výšky
+resourcePack.editor.brushShape.ellipsoid.settings.width_radius=Poloměr šířky
+resourcePack.editor.brushShape.pyramid.name=Pyramida
+resourcePack.editor.brushShape.pyramid.settings.depth=Hloubka
+resourcePack.editor.brushShape.pyramid.settings.height=Výška
+resourcePack.editor.brushShape.pyramid.settings.width=Šířka
+resourcePack.editor.brushShape.singleBlock.name=Jeden blok
+resourcePack.editor.brushShape.star.name=Hvězda 
+resourcePack.editor.brushShape.star.settings.includeVertical=Zahrnout svislé 
+resourcePack.editor.client.description=Klientské zdroje pro editory
+resourcePack.editor.client.name=Zdroje pro editory
+resourcePack.editor.ClipboardPreviewControl.keybinding.moveOriginBack=Posunout počátek dozadu
+resourcePack.editor.ClipboardPreviewControl.keybinding.moveOriginDown=Posunout počátek dolů
+resourcePack.editor.ClipboardPreviewControl.keybinding.moveOriginForward=Posunout počátek dopředu
+resourcePack.editor.ClipboardPreviewControl.keybinding.moveOriginLeft=Posunout počátek doleva
+resourcePack.editor.ClipboardPreviewControl.keybinding.moveOriginRight=Posunout počátek doprava
+resourcePack.editor.ClipboardPreviewControl.keybinding.moveOriginUp=Posunout počátek nahoru
+resourcePack.editor.ClipboardPreviewControl.keyBinding.nudgeOffsetBack=Posunout odsazení dozadu
+resourcePack.editor.ClipboardPreviewControl.keyBinding.nudgeOffsetDown=Posunout odsazení dolů
+resourcePack.editor.ClipboardPreviewControl.keyBinding.nudgeOffsetForward=Posunout odsazení dopředu
+resourcePack.editor.ClipboardPreviewControl.keyBinding.nudgeOffsetLeft=Posunout odsazení doleva
+resourcePack.editor.ClipboardPreviewControl.keyBinding.nudgeOffsetRight=Posunout odsazení doprava
+resourcePack.editor.ClipboardPreviewControl.keyBinding.nudgeOffsetUp=Posunout odsazení nahoru
+resourcePack.editor.ClipboardPreviewControl.keybinding.rotateClockWise=Otočit náhled po směru hodinových ručiček
+resourcePack.editor.ClipboardPreviewControl.keybinding.rotateCounterClockWise=Otočit náhled proti směru hodinových ručiček
+resourcePack.editor.ClipboardPreviewControl.keybinding.toggleMirrorX=Zapnout zrcadlení X
+resourcePack.editor.ClipboardPreviewControl.keybinding.toggleMirrorZ=Zapnout zrcadlení Z
+resourcePack.editor.ClipboardPreviewControl.mirror.axis.x.tooltip=Zrcadlí předmět ve schránce kolem osy X v počáteční bodu
+resourcePack.editor.ClipboardPreviewControl.mirror.axis.x=Zrcadlení (osa X)
+resourcePack.editor.ClipboardPreviewControl.mirror.axis.z.tooltip=Zrcadlí předmět ve schránce kolem osy Z v počáteční bodu
+resourcePack.editor.ClipboardPreviewControl.mirror.axis.z=Zrcadlení (osa Z)
+resourcePack.editor.ClipboardPreviewControl.offset.title=Odsazení
+resourcePack.editor.ClipboardPreviewControl.offset.tooltip=Dodatečné odsazení od umisťovacího bodu až k počátečnímu bodu položky ve schránce
+resourcePack.editor.ClipboardPreviewControl.origin.title=Počátek
+resourcePack.editor.ClipboardPreviewControl.origin.tooltip=Počáteční bod položky ve schránce. Používá se jako kotva při umístění, ale také jako bod, kolem kterého se schránka otáčí a kolem kterého se zrcadlí
+resourcePack.editor.ClipboardPreviewControl.placement.title=Možnosti
+resourcePack.editor.ClipboardPreviewControl.rootPane.title=Informace o schránce
+resourcePack.editor.ClipboardPreviewControl.rotation.180=180°
+resourcePack.editor.ClipboardPreviewControl.rotation.270=270°
+resourcePack.editor.ClipboardPreviewControl.rotation.90=90°
+resourcePack.editor.ClipboardPreviewControl.rotation.none=Žádný
+resourcePack.editor.ClipboardPreviewControl.rotation.title=Otočení
+resourcePack.editor.ClipboardPreviewControl.rotation.tooltip=Počet otočení okolo osy Y v počáteční bodu
+resourcePack.editor.ClipboardPreviewControl.structureSize.title=Velikost schránky
+resourcePack.editor.copypaste.actionbar.copy.title=Kopírovat
+resourcePack.editor.copypaste.actionbar.copy.tooltip=Kopírovat výběr do schránky
+resourcePack.editor.copypaste.actionbar.copy.tooltipDescription=Zkopíruje obsah aktuální oblasti výběru do schránky, aniž by se obsah výběru jakkoliv měnil
+resourcePack.editor.copypaste.actionbar.cut.title=Vyjmout
+resourcePack.editor.copypaste.actionbar.cut.tooltip=Vyjmout/přesunout výběr do schránky
+resourcePack.editor.copypaste.actionbar.cut.tooltipDescription=Zkopíruje obsah aktuální oblasti výběru do schránky a během tohoto procesu se odstraní obsah výběru
+resourcePack.editor.copypaste.keyBinding.copy=Kopírovat výběr do schránky
+resourcePack.editor.copypaste.keyBinding.cut=Vyjmout/přesunout výběr do schránky
+resourcePack.editor.copypaste.keyBinding.paste=Vložit obsah schránky do světa
+resourcePack.editor.copypaste.menu.copy.title=Kopírovat vybrané
+resourcePack.editor.copypaste.menu.cut.title=Vyjmout vybrané
+resourcePack.editor.core.keyBinding.showGameMenu=Zobrazit herní nabídku
+resourcePack.editor.core.keyBinding.showLogPanel=Zobrazit panel záznamů
+resourcePack.editor.CursorModeControl.cursorTargetMode.block.tooltip=Blok pod kurzorem myši
+resourcePack.editor.CursorModeControl.cursorTargetMode.block=Blok
+resourcePack.editor.CursorModeControl.cursorTargetMode.face.tooltip=Blok přilehlý přímo k bloku pod kurzorem
+resourcePack.editor.CursorModeControl.cursorTargetMode.face=Přilehlý
+resourcePack.editor.CursorModeControl.cursorTargetMode.title=Cíl
+resourcePack.editor.CursorModeControl.cursorTargetMode.tooltip=Zvolte režim cíle kurzoru
+resourcePack.editor.CursorModeControl.fixedDistance.slider.title=Fixní vzdálenost kurzoru
+resourcePack.editor.CursorModeControl.fixedDistance.slider.tooltip=Upravte fixní vzdálenost od hráče, na kterém je kurzor bloku umístěn
+resourcePack.editor.CursorModeControl.keybinding.moveCursorBack=Pohnout kurzorem dozadu
+resourcePack.editor.CursorModeControl.keybinding.moveCursorDown=Pohnout kurzorem dolů
+resourcePack.editor.CursorModeControl.keybinding.moveCursorForward=Šťouchnutí vpřed
+resourcePack.editor.CursorModeControl.keybinding.moveCursorLeft=Pohnout kurzorem doleva
+resourcePack.editor.CursorModeControl.keybinding.moveCursorRight=Pohnout kurzorem doprava
+resourcePack.editor.CursorModeControl.keybinding.moveCursorUp=Pohnout kurzorem nahoru
+resourcePack.editor.CursorModeControl.keybinding.toggleBlockTargetMode=Přepnout Blokový/Přilehlý režim
+resourcePack.editor.CursorModeControl.keybinding.toggleFixedDistance=Přepnout režim fixní vzdálenosti
+resourcePack.editor.CursorModeControl.keybinding.toggleMouseTracking=Přepnout sledování myši
+resourcePack.editor.CursorModeControl.mouseControlMode.fixed=Pevná vzdálenost
+resourcePack.editor.CursorModeControl.mouseControlMode.keyboard=Pouze klávesnice
+resourcePack.editor.CursorModeControl.mouseControlMode.keyboardAndMouse=Myš a klávesnice
+resourcePack.editor.CursorModeControl.mouseControlMode.title=Metoda vstupu
+resourcePack.editor.CursorModeControl.mouseControlMode.tooltip=Vyberte metodu vstupu pro kurzor bloku ve světě
+resourcePack.editor.CursorModeControl.projectThroughWater.title=Prostupnost vodou
+resourcePack.editor.CursorModeControl.projectThroughWater.tooltip=Nastavení myši umožní prostupnost vodou a výběr prvků pod vodní hladinou
+resourcePack.editor.CursorModeControl.rootPane.title=Nastavení kurzoru
+resourcePack.editor.datatransferaccessors.atmospheric_scattering=Atmosférické světelné rozptýlení
+resourcePack.editor.datatransferaccessors.color_grading=Přechod barev
+resourcePack.editor.datatransferaccessors.lighting_group=Globální osvětlení
+resourcePack.editor.datatransferaccessors.pbr_fallbacks=PBR Fallbacks
+resourcePack.editor.datatransferaccessors.point_lights=Bodová světla
+resourcePack.editor.datatransferaccessors.water=Voda
+resourcePack.editor.datatransferaccessors.shadows=Stíny
+resourcePack.editor.deferredLightingSettings.menu.title=Nastavení pozdrženého osvětlení
+resourcePack.editor.delete.keyBinding=Odstranit vybraný obsah
+resourcePack.editor.toolRail.entityInspector.pane.title=Inspektor entit   
+resourcePack.editor.toolRail.entityInspector.tool.title=Inspektor entit   
+resourcePack.editor.toolRail.entityInspector.tool.tip=Inspekce dat entity   
+resourcePack.editor.toolRail.entityInspector.pane.helpText=Kliknutím levým tlačítkem na entitu zobrazíte a upravíte její vlastnosti   
+resourcePack.editor.entityInspector.toolRail.description=Kliknutím levým tlačítkem na entitu zobrazíte a upravíte její vlastnosti   
+resourcePack.editor.exportProject.exportType=Typ exportu
+resourcePack.editor.exportProject.exportType.playableWorld=Hratelný svět
+resourcePack.editor.exportProject.exportNotes=Poznámky k exportu
+resourcePack.editor.exportProject.exportNotes.export=Probíhá export   
+resourcePack.editor.exportProject.exportNotes.warning=Exportujete svět v%1. Exportované hratelné světy nelze spustit na verzích Minecraftu starších než v%1. Chcete-li převést světy na předchozí verze, použijte https://chunker.app/ (některé funkce nemusí být dostupné, pokud nebyly podporovány v dřívějších verzích)
+resourcePack.editor.exportProject.exportNotes.progress=Exportování světa...    
+resourcePack.editor.exportProject.exportNotes.exportSuccess=Svět byl úspěšně exportován    
+resourcePack.editor.exportProject.exportNotes.exportFailed=Export světa se nezdařil    
+resourcePack.editor.exportProject.generalSettings=Obecná nastavení
+resourcePack.editor.exportProject.generalSettings.worldName=Název světa
+resourcePack.editor.exportProject.generalSettings.gameMode=Herní režim
+resourcePack.editor.exportProject.generalSettings.difficulty=Obtížnost
+resourcePack.editor.exportProject.generalSettings.hardcore=Extrémně těžký
+resourcePack.editor.exportProject.initialPlaySettings=Počáteční nastavení   
+resourcePack.editor.exportProject.initialPlaySettings.spawnPosition=Bod vstupu světa   
+resourcePack.editor.exportProject.initialPlaySettings.startTime=Počáteční čas   
+resourcePack.editor.exportProject.initialPlaySettings.clockType=Typ hodin   
+resourcePack.editor.exportProject.initialPlaySettings.customStartTime=Vlastní čas zahájení   
+resourcePack.editor.exportProject.initialPlaySettings.weather=Počáteční počasí   
+resourcePack.editor.exportProject.advancedSettings=Pokročilá nastavení
+resourcePack.editor.exportProject.advancedSettings.startingMap=Počáteční mapa
+resourcePack.editor.exportProject.advancedSettings.bonusChest=Bonusová truhla
+resourcePack.editor.exportProject.advancedSettings.showCoordinates=Zobrazit souřadnice
+resourcePack.editor.exportProject.advancedSettings.showDaysPlayed=Zobrazit počet odehraných dnů
+resourcePack.editor.exportProject.advancedSettings.recipeUnlocking=Recept se odemyká
+resourcePack.editor.exportProject.advancedSettings.limitedCrafting=Omezená výroba   
+resourcePack.editor.exportProject.advancedSettings.fireSpreads=Oheň se šíří
+resourcePack.editor.exportProject.advancedSettings.tntExplodes=TNT vybuchuje
+resourcePack.editor.exportProject.advancedSettings.resawnBlocksExplode=Bloky znovuzrození explodují
+resourcePack.editor.exportProject.advancedSettings.mobLoot=Kořist ze stvoření
+resourcePack.editor.exportProject.advancedSettings.naturalRegeneration=Přirozená regenerace
+resourcePack.editor.exportProject.advancedSettings.tileDrops=Kořist z dlaždic
+resourcePack.editor.exportProject.advancedSettings.immediateRespawn=Okamžité znovuzrození
+resourcePack.editor.exportProject.advancedSettings.showDeathMessage=Zobrazit úmrtní hlášku   
+resourcePack.editor.exportProject.advancedSettings.respawnRadius=Rozsah znovuzrození
+resourcePack.editor.exportProject.advancedSettings.simulationDistance=Vzdálenost simulace
+resourcePack.editor.exportProject.advancedSettings.bedsWork=Postele fungují
+resourcePack.editor.exportProject.advancedSettings.requiredSleepingPlayers=Požadováno spících hráčů (%1$s)
+resourcePack.editor.exportProject.advancedSettings.requiredSleepingPlayers.onePlayerMessage=Pouze 1 hráč
+resourcePack.editor.exportProject.advancedSettings.showItemTags=Zobrazit značky předmětů   
+resourcePack.editor.exportProject.multiplayerSettings=Nastavení hry pro více hráčů
+resourcePack.editor.exportProject.multiplayerSettings.multiplayerGame=Hra pro více hráčů
+resourcePack.editor.exportProject.multiplayerSettings.playerAccess=Přístup hráčů
+resourcePack.editor.exportProject.multiplayerSettings.playerPermissions=Oprávnění hráčů
+resourcePack.editor.exportProject.multiplayerSettings.visibleToLAN=Viditelné pro hráče v síti LAN
+resourcePack.editor.exportProject.multiplayerSettings.friendlyFire=Střelba do vlastních
+resourcePack.editor.exportProject.cheatsSettings=Nastavení cheatů
+resourcePack.editor.exportProject.cheatsSettings.cheats=Cheaty
+resourcePack.editor.exportProject.cheatsSettings.daylightCycle=Cyklus denního světla
+resourcePack.editor.exportProject.cheatsSettings.keepInventory=Ponechat inventář
+resourcePack.editor.exportProject.cheatsSettings.mobSpawning=Výskyt stvoření
+resourcePack.editor.exportProject.cheatsSettings.mobGriefing=Obtěžování stvoření
+resourcePack.editor.exportProject.cheatsSettings.entitiesDropLoot=Entity po sobě zanechávají kořist
+resourcePack.editor.exportProject.cheatsSettings.weatherCycle=Cyklus počasí
+resourcePack.editor.exportProject.cheatsSettings.commandBlocks=Příkazové bloky
+resourcePack.editor.exportProject.cheatsSettings.commandBlockOutput=Výstup příkazového bloku   
+resourcePack.editor.exportProject.cheatsSettings.sendCommandFeedback=Odeslat zpětnou vazbu k příkazu   
+resourcePack.editor.exportProject.cheatsSettings.maxCommandChainLength=Max. délka příkazového řetězu   
+resourcePack.editor.exportProject.cheatsSettings.fireDamage=Poškození ohněm  
+resourcePack.editor.exportProject.cheatsSettings.freezeDamage=Poškození mrazem  
+resourcePack.editor.exportProject.cheatsSettings.fallDamage=Poškození pádem  
+resourcePack.editor.exportProject.cheatsSettings.drowningDamage=Poškození při topení  
+resourcePack.editor.exportProject.cheatsSettings.insomnia=Nespavost  
+resourcePack.editor.exportProject.cheatsSettings.showBorderEffect=Zobrazit efekt okraje  
+resourcePack.editor.exportProject.cheatsSettings.functionCommandLimit=Limit pro příkazy funkcí  
+resourcePack.editor.exportProject.cheatsSettings.educationFeatures=Funkce pro vzdělávání
+resourcePack.editor.exportProject.cheatsSettings.randomTickSpeed=Rychlost náhodného tikání
+resourcePack.editor.exportProject.export=Exportovat
+resourcePack.editor.exportProject.resetToDefault=Obnovit výchozí hodnoty
+resourcePack.editor.exportProject.gameMode.survival=Hra o přežití
+resourcePack.editor.exportProject.gameMode.creative=Tvořivá hra
+resourcePack.editor.exportProject.gameMode.adventure=Dobrodružství
+resourcePack.editor.exportProject.difficulty.peaceful=Mírumilovná
+resourcePack.editor.exportProject.difficulty.easy=Snadná
+resourcePack.editor.exportProject.difficulty.normal=Normální
+resourcePack.editor.exportProject.difficulty.hard=Těžká
+resourcePack.editor.exportProject.weather.default=Výchozí   
+resourcePack.editor.exportProject.weather.clear=Jasno   
+resourcePack.editor.exportProject.weather.rain=Déšť   
+resourcePack.editor.exportProject.weather.thunder=Hrom   
+resourcePack.editor.toolRail.ExtrudeTool.title=Tvarovací nástroj
+resourcePack.editor.toolRail.ExtrudeTool.tooltip=Tvarovací nástroj pro rozšiřování a snižování bloků
+resourcePack.editor.toolRail.ExtrudeTool.pane.ContiguousSelectionBlockListSubPane.title=Seznam bloků v přilehlém výběru
+resourcePack.editor.toolRail.ExtrudeTool.pane.TrailingBlocksSettingsSubPane.title=Nastavení pohyblivých bloků
+resourcePack.editor.toolRail.ExtrudeTool.pane.SampleLayerCount.title=Počet vzorových vrstev
+resourcePack.editor.toolRail.ExtrudeTool.pane.ContiguousSelectionSettings.title=Nastavení přilehlého výběru
+resourcePack.editor.toolRail.ExtrudeTool.pane.ContiguousSelectionType.title=Typ přilehlého výběru
+resourcePack.editor.toolRail.ExtrudeTool.pane.ContiguousSelectionType.SameBlocks=Stejné bloky
+resourcePack.editor.toolRail.ExtrudeTool.pane.ContiguousSelectionType.SameBlocksAndStates=Stejné bloky a skupenství
+resourcePack.editor.toolRail.ExtrudeTool.pane.ContiguousSelectionType.SolidBlocks=Pevné bloky
+resourcePack.editor.toolRail.ExtrudeTool.pane.ContiguousSelectionType.AllBlocks=Všechny bloky
+resourcePack.editor.toolRail.ExtrudeTool.pane.ContiguousSelectionType.CustomBlockList=Seznam speciálních bloků
+resourcePack.editor.toolRail.ExtrudeTool.pane.ToleranceLevel.title=Úroveň tolerance
+resourcePack.editor.toolRail.ExtrudeTool.pane.HasAdjacentBlocks.title=Obsahuje sousední bloky
+resourcePack.editor.toolRail.ExtrudeTool.pane.ExtruderSettings.title=Nastavení tvarovače
+resourcePack.editor.toolRail.ExtrudeTool.pane.Radius.title=Poloměr
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.title=Režim výběru
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.ContiguousSelection=Přilehlý výběr
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.MarqueeSelection=Výběr poutače
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.ContiguousSettings.title=Nastavení přilehlého výběru
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.TrailingBlocks.title=Pohyblivé bloky
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.TrailingBlocksSettings.title=Nastavení pohyblivých bloků
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.QuickExtrudeSettings.title=Nastavení rychlého tvarování
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.QuickExtrudeMode.title=Režim rychlého tvarování
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.QuickExtrudeMode.decrease.title=Snížit
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.QuickExtrudeMode.decrease.tooltip=Snížit tvarování
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.QuickExtrudeMode.expand.title=Rozšířit
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.QuickExtrudeMode.expand.tooltip=Rozšířit tvarování
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.LayerCount.title=Počet vrstev
+resourcePack.editor.toolRail.ExtrudeTool.pane.preview_warning=Poznámka: Předběžná vizualizace zobrazuje pouze první vrstvu 
+resourcePack.editor.toolRail.ExtrudeTool.pane.ExtrusionType.title=Typ tvarování
+resourcePack.editor.toolRail.ExtrudeTool.pane.ExtrusionType.Extrude=Tvarovat
+resourcePack.editor.toolRail.ExtrudeTool.pane.ExtrusionType.QuickExtrude=Rychlé tvarování
+resourcePack.editor.toolRail.ExtrudeTool.keyBinding.deselect=Zrušit výběr
+resourcePack.editor.toolRail.ExtrudeTool.keyBinding.toggleTool=Přepnout tvarovací nástroj
+resourcePack.editor.toolRail.FarmGenerator.tool.title=Generátor farmy
+resourcePack.editor.toolRail.FarmGenerator.tool.tooltip=Rychle vytvoří vlastní farmu
+resourcePack.editor.toolRail.FarmGenerator.pane.title=Generátor farmy
+resourcePack.editor.toolRail.FarmGenerator.pane.length=Délka
+resourcePack.editor.toolRail.FarmGenerator.pane.width=Šířka
+resourcePack.editor.toolRail.FarmGenerator.pane.fence=Plot
+resourcePack.editor.toolRail.FarmGenerator.pane.irrigation=Přidat zavlažování
+resourcePack.editor.toolRail.FarmGenerator.pane.irrigation.tooltip=Přidá na farmu bloky vody k zavlažení plodin.
+resourcePack.editor.toolRail.FarmGenerator.pane.crops.title=Plodiny
+resourcePack.editor.toolRail.FarmGenerator.pane.crops.wheat=Pšenice
+resourcePack.editor.toolRail.FarmGenerator.pane.crops.potato=Brambora
+resourcePack.editor.toolRail.FarmGenerator.pane.crops.beets=Řepa
+resourcePack.editor.toolRail.FarmGenerator.pane.crops.pumpkin=Dýně
+resourcePack.editor.toolRail.FarmGenerator.pane.crops.carrot=Mrkev
+resourcePack.editor.toolRail.FarmGenerator.pane.animals.title=Zvířata
+resourcePack.editor.toolRail.FarmGenerator.pane.animals.cow=Kráva
+resourcePack.editor.toolRail.FarmGenerator.pane.animals.sheep=Ovce
+resourcePack.editor.toolRail.FarmGenerator.pane.animals.pig=Prase
+resourcePack.editor.toolRail.FarmGenerator.keyBinding.toggleTool=Přepnout nástroj Generátor farmy
+resourcePack.editor.toolRail.FarmGenerator.keyBinding.place=Umístit farmu na kurzor
+resourcePack.editor.global.keyBinding.toggleMode=Přepnout režimy
+resourcePack.editor.goToMark.actionBar.tooltip.description=Panel nástrojů pro navigaci hráče
+resourcePack.editor.goToMark.actionBar.tooltip.title=Navigační Panel
+resourcePack.editor.goToMark.pane.goToSpawn=Přejít na počáteční bod
+resourcePack.editor.goToMark.pane.location=Umístění hráče
+resourcePack.editor.goToMark.pane.locationPane.delete=Odstranit uložené umístění
+resourcePack.editor.goToMark.pane.locationPane.dropdownLabel=Uložená lokace
+resourcePack.editor.goToMark.pane.locationPane.inputName=Nový název
+resourcePack.editor.goToMark.pane.locationPane.markColor=Barva značky umístění
+resourcePack.editor.goToMark.pane.locationPane.store=Uložit aktuální umístění jako ...
+resourcePack.editor.goToMark.pane.locationPane.teleport=Teleportování do uloženého umístění %1$s
+resourcePack.editor.goToMark.pane.locationPane.title=Uložená místa
+resourcePack.editor.goToMark.pane.mapSize=Velikost mapy
+resourcePack.editor.goToMark.pane.refreshMap=Obnovit mapu
+resourcePack.editor.goToMark.pane.setSpawn=Nastavit počáteční bod na aktuální
+resourcePack.editor.goToMark.pane.showMap=Otevření mapy
+resourcePack.editor.goToMark.pane.teleport=Teleportovat se na místo
+resourcePack.editor.goToMark.title=Navigační Panel
+resourcePack.editor.grapple.keyBinding.flyToCursor=Doletět ke kurzoru
+resourcePack.editor.grapple.keyBinding.flyToSelection=Doletět k výběru
+resourcePack.editor.locate.biome.find=Najít biom
+resourcePack.editor.locate.biome.title=Biom
+resourcePack.editor.locate.keyBinding.toggleTool=Zapnout nástroj Najít biom
+resourcePack.editor.locate.locatetype.biome=Biom
+resourcePack.editor.locate.locatetype.structure=Budova
+resourcePack.editor.locate.locatetype.title=Najít typ
+resourcePack.editor.locate.results.foundat.title=Nalezeno v
+resourcePack.editor.locate.results.foundat=Nalezeno v
+resourcePack.editor.locate.results.goto=Přejít na
+resourcePack.editor.locate.results.notfound.title=Žádné výsledky
+resourcePack.editor.locate.results.notfound=Nenalezeny žádné výsledky
+resourcePack.editor.locate.results.title=Výsledky
+resourcePack.editor.locate.structure.message=Vyhledávání budov není momentálně podporováno
+resourcePack.editor.locate.structure.title=Budova
+resourcePack.editor.locate.title=Nalézt
+resourcePack.editor.menuBar.edit.copy=Kopírovat
+resourcePack.editor.menuBar.edit.cut=Vyjmout
+resourcePack.editor.menuBar.edit.delete=Odstranit
+resourcePack.editor.menuBar.edit.deselect=Zrušit výběr
+resourcePack.editor.menuBar.edit.quickFill=Rychlé vyplnění
+resourcePack.editor.menuBar.edit.quickPaste=Rychlé vložení
+resourcePack.editor.menuBar.edit.redo=Znovu
+resourcePack.editor.menuBar.edit.undo=Zpět
+resourcePack.editor.menuBar.edit=Upravit
+resourcePack.editor.menuBar.experimental=Experimentální
+resourcePack.editor.menuBar.extensions=Rozšíření
+resourcePack.editor.menuBar.file.cursor.projectThroughLiquid=Prostupnost kapalinou
+resourcePack.editor.menuBar.file.cursor=Nastavení kurzoru
+resourcePack.editor.menuBar.file.export.project=Editor projektu
+resourcePack.editor.menuBar.file.export.world=Hratelný svět
+resourcePack.editor.menuBar.file.export=Exportovat
+resourcePack.editor.menuBar.file.pauseScreen=Herní nabídka
+resourcePack.editor.menuBar.file.settings=Nastavení uživatelského rozhraní
+resourcePack.editor.menuBar.file=Soubor
+resourcePack.editor.menuBar.help.tutorial=Výuka 
+resourcePack.editor.menuBar.help.documentation=Dokumentace
+resourcePack.editor.menuBar.help.feedback=Zpětná vazba
+resourcePack.editor.menuBar.help.quickStart=Rychlý úvod
+resourcePack.editor.menuBar.help=Nápověda
+resourcePack.editor.menuBar.locate=Nalézt
+resourcePack.editor.menuBar.parentMenu.weather.clear=Vymazat
+resourcePack.editor.menuBar.parentMenu.weather.rain=Déšť
+resourcePack.editor.menuBar.parentMenu.weather.thunder=Bouřka
+resourcePack.editor.menuBar.parentMenu.weather=Počasí
+resourcePack.editor.menuBar.view.blockPalette=Paleta bloků
+resourcePack.editor.menuBar.view.logging=Panel záznamů
+resourcePack.editor.menuBar.view.navigationLogging=Protokolování navigace
+resourcePack.editor.menuBar.view=Zobrazit
+resourcePack.editor.menuBar.worldOptions.changeDimension.end=Konec
+resourcePack.editor.menuBar.worldOptions.changeDimension.nether=Nether
+resourcePack.editor.menuBar.worldOptions.changeDimension.overworld=Běžný svět
+resourcePack.editor.menuBar.worldOptions.changeDimension=Změnit dimenzi
+resourcePack.editor.menuBar.worldOptions.pause.entities=Entity
+resourcePack.editor.menuBar.worldOptions.pause=Pozastavení
+resourcePack.editor.menuBar.worldOptions=Možnosti světa
+resourcePack.editor.navigation.keyBinding.add=Přidat navigační pozici
+resourcePack.editor.navigation.keyBinding.next=Přejít na další navigační pozici
+resourcePack.editor.navigation.keyBinding.previous=Přejít na předchozí navigační pozici
+resourcePack.editor.paste.pane.submitButton=Potvrdit vložení
+resourcePack.editor.paste.pane.title=Vložit
+resourcePack.editor.paste.pane.transform.mirrorX=Zrcadlit X
+resourcePack.editor.paste.pane.transform.mirrorZ=Zrcadlit Z
+resourcePack.editor.paste.pane.transform.origin.title=Odsazení
+resourcePack.editor.paste.pane.transform.rotation.180=180°
+resourcePack.editor.paste.pane.transform.rotation.270=270
+resourcePack.editor.paste.pane.transform.rotation.90=90°
+resourcePack.editor.paste.pane.transform.rotation.none=0°
+resourcePack.editor.paste.pane.transform.rotation.title=Otočit
+resourcePack.editor.paste.pane.transform.title=Transformovat
+resourcePack.editor.paste.toolRail.description=Kliknutím levým tlačítkem myši vyberte blok a poté přesně vložte položku schránky
+resourcePack.editor.paste.toolRail.title=Vložit náhled
+resourcePack.editor.pastepreview.inputContext.title=Vložit náhled
+resourcePack.editor.pastepreview.keyBinding.clearPreview=Vymazat náhled
+resourcePack.editor.pastepreview.keyBinding.copy=Kopírovat vybrané
+resourcePack.editor.pastepreview.keyBinding.cut=Vyjmout vybrané
+resourcePack.editor.pastepreview.keyBinding.moveBack=Posunout náhled dozadu
+resourcePack.editor.pastepreview.keyBinding.moveDown=Posunout náhled dolů
+resourcePack.editor.pastepreview.keyBinding.moveForward=Posunout náhled dopředu
+resourcePack.editor.pastepreview.keyBinding.moveLeft=Posunout náhled doleva
+resourcePack.editor.pastepreview.keyBinding.moveOffsetBack=Posunout odsazení dozadu
+resourcePack.editor.pastepreview.keyBinding.moveOffsetDown=Posunout odsazení dolů
+resourcePack.editor.pastepreview.keyBinding.moveOffsetForward=Posunout odsazení dopředu
+resourcePack.editor.pastepreview.keyBinding.moveOffsetLeft=Posunout odsazení doleva
+resourcePack.editor.pastepreview.keyBinding.moveOffsetRight=Posunout odsazení doprava
+resourcePack.editor.pastepreview.keyBinding.moveOffsetUp=Posunout odsazení nahoru
+resourcePack.editor.pastepreview.keyBinding.moveOriginBack=Posunout začátek dozadu
+resourcePack.editor.pastepreview.keyBinding.moveOriginDown=Posunout začátek dolů
+resourcePack.editor.pastepreview.keyBinding.moveOriginForward=Posunout začátek dopředu
+resourcePack.editor.pastepreview.keyBinding.moveOriginLeft=Posunout začátek doleva
+resourcePack.editor.pastepreview.keyBinding.moveOriginRight=Posunout začátek doprava
+resourcePack.editor.pastepreview.keyBinding.moveOriginUp=Posunout začátek nahoru
+resourcePack.editor.pastepreview.keyBinding.moveRight=Posunout náhled doprava
+resourcePack.editor.pastepreview.keyBinding.moveUp=Posunout náhled nahoru
+resourcePack.editor.pastepreview.keyBinding.paste=Vložit
+resourcePack.editor.pastepreview.keyBinding.pasteAtCursor=Vložit na kurzor
+resourcePack.editor.pastepreview.keyBinding.pastepreview=Vložit náhled
+resourcePack.editor.pastepreview.keyBinding.quickPaste=Rychlé vložení
+resourcePack.editor.pastepreview.keyBinding.rotateClockWise=Otočit náhled po směru hodinových ručiček
+resourcePack.editor.pastepreview.keyBinding.rotateCounterClockWise=Otočit náhled proti směru hodinových ručiček
+resourcePack.editor.pastepreview.keyBinding.toggleAdjacentTarget=Zapnout režim Zacílení na vedlejší položky
+resourcePack.editor.pastepreview.keyBinding.toggleBlockTarget=Zapnout režim Zacílení na blok
+resourcePack.editor.pastepreview.keyBinding.toggleFixedDistance=Povolit fixní vzdálenost
+resourcePack.editor.pastepreview.keyBinding.toggleMirrorX=Zapnout zrcadlení X
+resourcePack.editor.pastepreview.keyBinding.toggleMirrorZ=Zapnout zrcadlení Z
+resourcePack.editor.pastepreview.keyBinding.toggleMouseTracking=Přepnout sledování myši
+resourcePack.editor.pastepreview.pane.controls.cursor.fixed=Pevná vzdálenost
+resourcePack.editor.pastepreview.pane.controls.cursor.keyboard=Pouze klávesy
+resourcePack.editor.pastepreview.pane.controls.cursor.mouseandkeys=Myš a klávesnice
+resourcePack.editor.pastepreview.pane.controls.cursor.target.block=Zablokovat
+resourcePack.editor.pastepreview.pane.controls.cursor.target.face=Přilehlý
+resourcePack.editor.pastepreview.pane.controls.cursor.target.title=Terč
+resourcePack.editor.pastepreview.pane.controls.cursor=Ovládání
+resourcePack.editor.pastepreview.pane.controls.title=Ovládání kurzoru
+resourcePack.editor.pastepreview.pane.placement.mirrorX=Zrcadlit X
+resourcePack.editor.pastepreview.pane.placement.mirrorZ=Zrcadlit Z
+resourcePack.editor.pastepreview.pane.placement.offset=Odsazení
+resourcePack.editor.pastepreview.pane.placement.origin=Počátek
+resourcePack.editor.pastepreview.pane.placement.pastebutton=Vložit
+resourcePack.editor.pastepreview.pane.placement.rotation=Otáčení (okolo osy Y)
+resourcePack.editor.pastepreview.pane.placement.title=Nastavení umístění
+resourcePack.editor.pastepreview.pane.root.size=Velikost
+resourcePack.editor.pastepreview.pane.root.title=Vložit náhled
+resourcePack.editor.pastepreview.tool.tip=Pomocí myši upravte polohu náhledu schránky a kliknutím na tlačítko vložte do světa
+resourcePack.editor.pastepreview.tool.title=Vložit náhled
+resourcePack.editor.playerPositionExtension.dimension=Rozměr
+resourcePack.editor.playerPositionExtension.menu.player=Hráč
+resourcePack.editor.playerPositionExtension.menu.showPlayerSettings=Zobrazit nastavení přehrávače
+resourcePack.editor.playerPositionExtension.nether=Nether
+resourcePack.editor.playerPositionExtension.overworld=Běžný svět
+resourcePack.editor.playerPositionExtension.pane=Nastavení hráče
+resourcePack.editor.playerPositionExtension.theEnd=End
+resourcePack.editor.playerPositionExtension.worldSettings=Nastavení světa
+resourcePack.editor.playtest.AdvancedSettings.title=Pokročilá nastavení
+resourcePack.editor.playtest.Dialog.DaylightCycle=Cyklus denního světla
+resourcePack.editor.playtest.Dialog.Difficulty=Obtížnost
+resourcePack.editor.playtest.Dialog.GameMode=Herní režim
+resourcePack.editor.playtest.Dialog.OverrideSpawn=Objevit se na aktuálním místě
+resourcePack.editor.playtest.Dialog.ShowCoordinates=Zobrazit souřadnice
+resourcePack.editor.playtest.Dialog.TestButton=Testovací svět
+resourcePack.editor.playtest.Dialog.TimeOfDay=Denní doba
+resourcePack.editor.playtest.Dialog.Title=Nastavení testování
+resourcePack.editor.playtest.Dialog.Weather=Počasí
+resourcePack.editor.playtest.Dialog.WeatherCycle=Cyklus počasí
+resourcePack.editor.playtest.Menu.Title=Testovací svět
+resourcePack.editor.playtest.Title.Tooltip=Hrajte svůj projekt v editoru jako herní svět pro hru Minecraft. Do vašeho projektu nebudou uloženy žádné změny. Dostupné pouze při hostování jednoho hráče.
+resourcePack.editor.playtestResult.EditorSystemFailure=Systémová chyba editoru
+resourcePack.editor.playtestResult.InvalidLevelId=Neplatné Id úrovně
+resourcePack.editor.playtestResult.InvalidSessionHandle=Neplatná verze relace
+resourcePack.editor.playtestResult.OK=Povedlo se
+resourcePack.editor.playtestResult.PlayerNotFound=Hráč nebyl nalezen
+resourcePack.editor.playtestResult.ResponseTimeout=Časový limit pro odpověď vypršel
+resourcePack.editor.playtestResult.SessionInfoNotFound=Informace o relaci nebyly nalezeny
+resourcePack.editor.playtestResult.TooManyPlayers=Nemůžete otestovat svět, když hostujete ostatní hráče
+resourcePack.editor.playtestResult.UnspecifiedError=Neuvedená chyba
+resourcePack.editor.playtestResult.UnsupportedScenario=Abyste otestovali svět, musíte mít hosting editorského projektu
+resourcePack.editor.playtestResult.WorldExportBusy=Export světa je zaneprázdněn
+resourcePack.editor.playtestResult.WorldExportFailed=Export světa se nezdařil
+resourcePack.editor.menuBar.file.realmsPublish=Zveřejnit ve službě Realms   
+resourcePack.editor.realmsPublish.noActiveRealmsSubscription=Zveřejňování ve službě Realms vyžaduje aktivní předplatné služby Realms. Zahájit předplatné, nebo ho obnovit, pokud jeho platnost vypršela, můžete pomocí standardního klienta Minecraftu nebo na webu minecraft.net (po přihlášení ke svému účtu).    
+resourcePack.editor.realmsPublish.userNotLoggedIn=Aktivní předplatné služby Realms je vyžadováno pro zveřejnění do Říší. Chcete-li získat přístup ke všem dostupným předplatným služby Realms, musíte se přihlásit k účtu Microsoft.
+resourcePack.editor.realmsPublish.dedicatedServerWarning=Při použití dedikovaného serveru není publikování do služby Realms k dispozici.
+resourcePack.editor.realmsPublish.notSessionHostWarning=Do služby Realms může zveřejňovat pouze hostitel relace editoru.
+resourcePack.editor.realmsPublish.genericRealmsIssue=Došlo k problému se službou Realms, zkuste to znovu později.
+resourcePack.editor.realmsPublish.goToMinecraftWebsite=Jít na Minecraft.net  
+resourcePack.editor.realmsPublish.Refresh=Aktualizovat  
+resourcePack.editor.realmsPublish.Realm=Realm  
+resourcePack.editor.realmsPublish.RealmSlot=Slot pro Realm 
+resourcePack.editor.realmsPublish.EmptySlot=Prázdný slot
+resourcePack.editor.realmsPublish.PublishNotesTitle=Poznámka ke zveřejnění ve službě Realms   
+resourcePack.editor.realmsPublish.DownloadRealm=Stáhnout    
+resourcePack.editor.realmsPublish.PublishRealm=Publikovat  
+resourcePack.editor.realmsPublish.Confirm=Potvrdit   
+resourcePack.editor.realmsPublish.Cancel=Zrušit 
+resourcePack.editor.realmsPublish.Back=Zpět 
+resourcePack.editor.realmsPublish.PublishFailedNonCompliantWorldName=Zveřejnění do služby Realms se nezdařilo z důvodu neplatného jména světa. Aktualizujte název světa a zkuste to znovu.
+resourcePack.editor.realmsPublish.PublishFailed=Publikování ve službě Realms se nezdařilo. Zkuste to prosím později.   
+resourcePack.editor.realmsPublish.PublishSuccess=Publikování ve službě Realms bylo úspěšné    
+resourcePack.editor.realmsPublish.PublishConfirmationOptOut=Znovu se nedotazovat pro tuto Říši a relaci  
+resourcePack.editor.realmsPublish.PublishingToRealms=Publikuji svět do služby Realms…  
+resourcePack.editor.realmsPublish.UnableToPublishMissingRealm=Nelze publikovat do služby Realms. Nebyla zvolena žádná říše.    
+resourcePack.editor.realmsPublish.UnableToPublishMissingRealmSlot=Nelze publikovat do služby Realms. Nebyl zvolen žádný slot říše.   
+resourcePack.editor.realmsPublish.PublishConfirmationWarning=Tímto odstraníte aktuální svět z vybraného slotu a nahradíte jej aktuálním světem z Editoru (vybraný slot se zároveň stane aktivním slotem pro vaši říši). Členové vaší říše budou mít přístup k nově nahrazenému světu. Pokud chcete před zveřejněním svůj aktuální svět uložit, abyste zabránili ztrátě dat, zrušte tento dialog a ještě před volbou „Publikovat“ vyberte možnost „Stáhnout“. Výběrem možnosti „Potvrdit“ pokračujte a nahraďte svůj aktuální svět.    
+resourcePack.editor.realmsPublish.DownloadSuccess=Stahování světa z Realms proběhlo úspěšně    
+resourcePack.editor.realmsPublish.DownloadFailed=Stahování světa z Realms se nezdařilo 
+resourcePack.editor.realmsPublish.DownloadingFromRealms=Stahování světa z Realms…    
+resourcePack.editor.toolRail.RepeaterTool.title=Opakovací nástroj
+resourcePack.editor.toolRail.RepeaterTool.tooltip=Nástroj pro opakování oblasti výběru
+resourcePack.editor.toolRail.RepeaterTool.pane.Spacing=Rozestupy
+resourcePack.editor.toolRail.RepeaterTool.pane.Repetitions=Opakování
+resourcePack.editor.toolRail.RepeaterTool.pane.Preview=Náhled
+resourcePack.editor.toolRail.RepeaterTool.pane.Clear=Vymazat
+resourcePack.editor.toolRail.RepeaterTool.pane.Apply=Použít
+resourcePack.editor.toolRail.RepeaterTool.statusMessage.noSelection=Pro výběr obsahu, který chcete zopakovat, použijte Nástroj pro výběr
+resourcePack.editor.toolRail.RepeaterTool.pane.Mode=Režim
+resourcePack.editor.toolRail.RepeaterTool.mode.Line=Linie
+resourcePack.editor.toolRail.RepeaterTool.mode.Grid=Mřížka
+resourcePack.editor.toolRail.RepeaterTool.pane.RepeatType=Typ opakování
+resourcePack.editor.toolRail.RepeaterTool.repeat.Uniform=Standardní
+resourcePack.editor.toolRail.RepeaterTool.pane.RepeatAlongX=Opakovat po X
+resourcePack.editor.toolRail.RepeaterTool.pane.RepeatAlongY=Opakovat po Y
+resourcePack.editor.toolRail.RepeaterTool.pane.RepeatAlongZ=Opakovat po Z
+resourcePack.editor.toolRail.RepeaterTool.repeat.Separate=Rozdělit
+resourcePack.editor.toolRail.RepeaterTool.pane.XCount=Počet X
+resourcePack.editor.toolRail.RepeaterTool.pane.YCount=Počet Y
+resourcePack.editor.toolRail.RepeaterTool.pane.ZCount=Počet Z
+resourcePack.editor.selectionTool.deselect=Zrušit výběr
+resourcePack.editor.selectionTool.fillPane.fillAction=Nástroj pro výběr
+resourcePack.editor.selectionTool.fillPane.title=Nástroj pro výběr
+resourcePack.editor.selectionTool.keyBinding.deselect=Zrušit výběr
+resourcePack.editor.selectionTool.keyBinding.fill=Zaplnit výběr obsahu
+resourcePack.editor.selectionTool.keyBinding.growBack=Zvětšit vybrané směrem dozadu
+resourcePack.editor.selectionTool.keyBinding.growDown=Zvětšit vybrané směrem dolů
+resourcePack.editor.selectionTool.keyBinding.growForward=Zvětšit vybrané směrem dopředu
+resourcePack.editor.selectionTool.keyBinding.growLeft=Zvětšit vybrané směrem doleva
+resourcePack.editor.selectionTool.keyBinding.growRight=Zvětšit vybrané směrem doprava
+resourcePack.editor.selectionTool.keyBinding.growUp=Zvětšit vybrané směrem nahoru
+resourcePack.editor.selectionTool.keyBinding.moveAllSelectionBack=Posunout vše vybrané dozadu
+resourcePack.editor.selectionTool.keyBinding.moveAllSelectionDown=Posunout vše vybrané dolů
+resourcePack.editor.selectionTool.keyBinding.moveAllSelectionForward=Posunout vše vybrané dopředu
+resourcePack.editor.selectionTool.keyBinding.moveAllSelectionLeft=Posunout vše vybrané doleva
+resourcePack.editor.selectionTool.keyBinding.moveAllSelectionRight=Posunout vše vybrané doprava
+resourcePack.editor.selectionTool.keyBinding.moveAllSelectionUp=Posunout vše vybrané nahoru
+resourcePack.editor.selectionTool.keyBinding.moveCursorBack=Pohnout kurzorem dozadu
+resourcePack.editor.selectionTool.keyBinding.moveCursorDown=Pohnout kurzorem dolů
+resourcePack.editor.selectionTool.keyBinding.moveCursorForward=Posunout kurzor dopředu
+resourcePack.editor.selectionTool.keyBinding.moveCursorLeft=Posunout kurzor doleva
+resourcePack.editor.selectionTool.keyBinding.moveCursorRight=Pohnout kurzorem doprava
+resourcePack.editor.selectionTool.keyBinding.moveCursorUp=Pohnout kurzorem nahoru
+resourcePack.editor.selectionTool.keyBinding.moveSelectionBack=Posunout vybrané dozadu
+resourcePack.editor.selectionTool.keyBinding.moveSelectionDown=Posunout vybrané dolů
+resourcePack.editor.selectionTool.keyBinding.moveSelectionForward=Posunout vybrané dopředu
+resourcePack.editor.selectionTool.keyBinding.moveSelectionLeft=Posunout vybrané doleva
+resourcePack.editor.selectionTool.keyBinding.moveSelectionRight=Posunout vybrané doprava
+resourcePack.editor.selectionTool.keyBinding.moveSelectionUp=Posunout vybrané nahoru
+resourcePack.editor.selectionTool.keyBinding.shrinkBack=Zmenšit vybrané směrem dozadu
+resourcePack.editor.selectionTool.keyBinding.shrinkDown=Zmenšit vybrané směrem dolů
+resourcePack.editor.selectionTool.keyBinding.shrinkForward=Zmenšit vybrané směrem dopředu
+resourcePack.editor.selectionTool.keyBinding.shrinkLeft=Zmenšit vybrané směrem doleva
+resourcePack.editor.selectionTool.keyBinding.shrinkRight=Zmenšit vybrané směrem doprava
+resourcePack.editor.selectionTool.keyBinding.shrinkUp=Zmenšit vybrané směrem nahoru
+resourcePack.editor.selectionTool.keyBinding.toggleTool=Zapnout nástroj Výběr
+resourcePack.editor.selectionTool.keyBinding.select=Vybrat blok
+resourcePack.editor.selectionTool.keyBinding.selectMultiple=Vybrat další blok
+resourcePack.editor.selectionTool.keyBinding.trimVolume=Omezit výběr (ohraničení)
+resourcePack.editor.selectionTool.keyBinding.trimRemoveAir=Omezit výběr (Odebrat vzduch)
+resourcePack.editor.selectionTool.marquee.title=Výběr poutače
+resourcePack.editor.selectionTool.modeSelection.freehand.title=Režim volného štětce
+resourcePack.editor.selectionTool.modeSelection.freehand.tooltip=Vyberte bloky ve světě pomocí tvaru volného štětce
+resourcePack.editor.selectionTool.modeSelection.marquee.title=Režim poutače
+resourcePack.editor.selectionTool.modeSelection.marquee.tooltip=Vyberte bloky ve světě pomocí obdélníkového objemu
+resourcePack.editor.selectionTool.modeSelection.magic.title=Režim magického výběru
+resourcePack.editor.selectionTool.modeSelection.magic.tooltip=Výběr bloků ve světě pomocí vyhledávacího vzoru ze zvoleného původu
+resourcePack.editor.selectionTool.modeSelection.title=Režim výběru
+resourcePack.editor.selectionTool.projectThroughLiquid=Prostupnost kapalinou
+resourcePack.editor.selectionTool.trimAction.trimVolume=Omezit výběr
+resourcePack.editor.selectionTool.trimAction.trimVolume.tooltip=Omezit aktuální výběr na pouze pevné bloky   
+resourcePack.editor.selectionTool.trimAction.removeAir=Odebrat vzduch
+resourcePack.editor.selectionTool.trimAction.removeAir.tooltip=Odebrat vzduch z aktuálního výběru a zanechat pouze zadané bloky 
+resourcePack.editor.selectionTool.trimAction.trimVolume.SettingsPane.title=Nastavení omezení
+resourcePack.editor.selectionTool.trimAction.trimVolume.SettingsPane.ignoreLiquid=Ignorovat kapaliny
+resourcePack.editor.selectionTool.trimAction.trimVolume.SettingsPane.ignoreLiquid.tooltip=Ignorovat všechny kapalinové bloky při omezení 
+resourcePack.editor.selectionTool.trimAction.trimVolume.SettingsPane.onlyCollidable=Pouze kolizní bloky
+resourcePack.editor.selectionTool.trimAction.trimVolume.SettingsPane.onlyCollidable.tooltip=Při omezení výběru ignorovat všechny bloky bez kolize (listí, tráva atd.) 
+resourcePack.editor.selectionTool.quickAction.clearSelection.tooltip=Zruší aktuální oblast výběru
+resourcePack.editor.selectionTool.quickAction.clearSelection=Zrušit výběr
+resourcePack.editor.selectionTool.quickAction.deleteSelection.tooltip=Odebrat všechny bloky v aktuální oblasti výběru
+resourcePack.editor.selectionTool.quickAction.deleteSelection=Odstranit
+resourcePack.editor.selectionTool.quickAction.fillSelection.tooltip=Vyplnit aktuální oblast výběru pomocí momentálně zvoleného typu bloku
+resourcePack.editor.selectionTool.quickAction.fillSelection=Vyplnit
+resourcePack.editor.selectionTool.quickAction.title=Rychlé akce
+resourcePack.editor.selectionTool.selectionMode.adjacent=Přilehlý
+resourcePack.editor.selectionTool.selectionMode.fixedDistance=Pevná vzdálenost
+resourcePack.editor.selectionTool.selectionMode.mouseAndKeyboard=Volný styl
+resourcePack.editor.selectionTool.selectionMode=Režim
+resourcePack.editor.selectionTool.settingsPane.title=Výběr
+resourcePack.editor.selectionTool.toolRail.description=Kliknutím levým tlačítkem myši proveďte výběr; pomocí CTRL+D výběr zrušte
+resourcePack.editor.selectionTool.toolRail.title=Výběr
+resourcePack.editor.selectionTool.transformPane.origin.tooltip=Původní lokace výběru v souřadnicích světa.
+resourcePack.editor.selectionTool.transformPane.origin=Původ
+resourcePack.editor.selectionTool.transformPane.size=Velikost
+resourcePack.editor.selectionTool.transformPane.title=Transformovat
+resourcePack.editor.BlockMaskControl.trim.rootPane.title=Nastavení omezení
+resourcePack.editor.BlockMaskControl.trim.toggleGroup.title=Maskovací mód
+resourcePack.editor.BlockMaskControl.trim.toggleGroup.item.disabled.label=Vypnout filtry bloků
+resourcePack.editor.BlockMaskControl.trim.toggleGroup.item.disabled.tooltip=Vypnuto
+resourcePack.editor.BlockMaskControl.trim.toggleGroup.item.mask.label=Maska
+resourcePack.editor.BlockMaskControl.trim.toggleGroup.item.mask.tooltip=Bloky, které odpovídají seznamu, budou ignorovány
+resourcePack.editor.BlockMaskControl.trim.toggleGroup.item.replace.label=Nahradit
+resourcePack.editor.BlockMaskControl.trim.toggleGroup.item.replace.tooltip=Bloky, které odpovídají seznamu, budou považovány za plné
+resourcePack.editor.server.description=Serverové zdroje pro editory
+resourcePack.editor.server.name=Zdroje pro editory
+resourcePack.editor.toolRail.Terrain.title=Terén
+resourcePack.editor.toolRail.Terrain.keybinding.toggleTool=Zapnout nástroj Terén
+resourcePack.editor.toolRail.Terrain.keyBinding.switch=Přepnout režim terénu
+resourcePack.editor.toolRail.Terrain.Mode.title=Režim terénu
+resourcePack.editor.toolRail.Terrain.Smooth.mode.title=Režim vyhlazení
+resourcePack.editor.toolRail.Terrain.Smooth.tooltip=Vyhladí terén podle síly vyhlazování
+resourcePack.editor.toolRail.Terrain.SmoothStrength=Síla vyhlazování
+resourcePack.editor.toolRail.Terrain.Roughen.mode.title=Režim zdrsnění
+resourcePack.editor.toolRail.Terrain.Roughen.tooltip=Zdrsněte terén na základě síly zdrsnění
+resourcePack.editor.toolRail.Terrain.RoughenStrength=Síla zdrsnění
+resourcePack.editor.toolRail.Terrain.description=Nástroj terén slouží k vyhlazení nebo zdrsnění terénu
+resourcePack.editor.help.learnMore=Další informace
+resourcePack.editor.statusBar.connectedPlayers=Připojení hráči: %s
+resourcePack.editor.summonTool.summonSubPane.EntityPickerTitle=Typ entity
+resourcePack.editor.timeOfDay.12hrClock=12-hodinové hodiny
+resourcePack.editor.timeOfDay.24hrClock=24-hodinové hodiny
+resourcePack.editor.timeOfDay.clockType=Typ hodin
+resourcePack.editor.timeOfDay.currentTime=Aktuální čas
+resourcePack.editor.timeOfDay.customTime=Vlastní čas
+resourcePack.editor.timeOfDay.daylightCycle=Cyklus denního světla
+resourcePack.editor.timeOfDay.dropDown.day=Den
+resourcePack.editor.timeOfDay.dropDown.midnight=Půlnoc
+resourcePack.editor.timeOfDay.dropDown.night=Noc
+resourcePack.editor.timeOfDay.dropDown.none=Žádné
+resourcePack.editor.timeOfDay.dropDown.noon=Poledne
+resourcePack.editor.timeOfDay.dropDown.sunrise=Východ slunce
+resourcePack.editor.timeOfDay.dropDown.sunset=Západ slunce
+resourcePack.editor.timeOfDay.dropDown.custom=Vlastní
+resourcePack.editor.timeOfDay.dropDown.title=Předvolby
+resourcePack.editor.timeOfDay.menu.title=Nastavení denní doby
+resourcePack.editor.timeOfDay.minecraftClock=Minecraft hodiny
+resourcePack.editor.timeOfDay.title=Nastavení času
+resourcePack.editor.toolMode.keyBinding.console=Otevřít konzoli
+resourcePack.editor.toolMode.keyBinding.devConsole=Otevřít konzoli pro vývojáře
+resourcePack.editor.toolMode.keyBinding.hotbar1=Vybrat lištu předmětů 1
+resourcePack.editor.toolMode.keyBinding.hotbar2=Vybrat lištu předmětů 2
+resourcePack.editor.toolMode.keyBinding.hotbar3=Vybrat lištu předmětů 3
+resourcePack.editor.toolMode.keyBinding.hotbar4=Vybrat lištu předmětů 4
+resourcePack.editor.toolMode.keyBinding.hotbar5=Vybrat lištu předmětů 5
+resourcePack.editor.toolMode.keyBinding.hotbar6=Vybrat lištu předmětů 6
+resourcePack.editor.toolMode.keyBinding.hotbar7=Vybrat lištu předmětů 7
+resourcePack.editor.toolMode.keyBinding.hotbar8=Vybrat lištu předmětů 8
+resourcePack.editor.toolMode.keyBinding.hotbar9=Vybrat lištu předmětů 9
+resourcePack.editor.toolMode.keyBinding.reload=Načíst znovu 
+resourcePack.editor.toolRail.blockPalette.title=Paleta bloků (CTRL +P)
+resourcePack.editor.toolRail.blockPalette.tooltip=Nastavte si paletu oblíbených nebo nejčastěji používaných bloků
+resourcePack.editor.toolRail.flattenBrush.title=Vyrovnávací štětec
+resourcePack.editor.toolRail.flattenBrush.tooltip=Vertikálně vyrovná oblast podle výšky vybraného bloku
+resourcePack.editor.toolRail.flattenBrush.settings.heightThreshold=Hranice výšky
+resourcePack.editor.toolRail.flattenBrush.settings.radius=Poloměr
+resourcePack.editor.toolRail.floodFillSelectionTool.description=Vybere oblast, na kterou se právě díváte, pomocí algoritmu záplavového vyplňování.
+resourcePack.editor.toolRail.floodFillSelectionTool.title=Nástroj pro výběr záplavového vyplňování.
+resourcePack.editor.toolRail.line.keyBinding.delete=Vymazat obsah
+resourcePack.editor.toolRail.line.keyBinding.deleteAndClear=Vymazat obsah a zrušit výběr
+resourcePack.editor.toolRail.line.keyBinding.deselect=Zrušit výběr
+resourcePack.editor.toolRail.line.keyBinding.deselectAll=Zrušit výběr všech
+resourcePack.editor.toolRail.line.keyBinding.fill=Zaplnit obsah
+resourcePack.editor.toolRail.line.keyBinding.fillAndClear=Naplnit obsah a zrušit výběr
+resourcePack.editor.toolRail.line.keyBinding.moveBack=Posunout vybrané dozadu
+resourcePack.editor.toolRail.line.keyBinding.moveDown=Posunout vybrané dolů
+resourcePack.editor.toolRail.line.keyBinding.moveForward=Posunout vybrané dopředu
+resourcePack.editor.toolRail.line.keyBinding.moveLeft=Posunout vybrané doleva
+resourcePack.editor.toolRail.line.keyBinding.moveRight=Posunout vybrané doprava
+resourcePack.editor.toolRail.line.keyBinding.moveUp=Posunout vybrané nahoru
+resourcePack.editor.toolRail.line.keyBinding.selectAll=Vybrat všechny
+resourcePack.editor.toolRail.line.pane.algorithm.Direct=Nasměrovat
+resourcePack.editor.toolRail.line.pane.algorithm.Staggered=Stupňovité (ploty)
+resourcePack.editor.toolRail.line.pane.algorithm.title=Algoritmus
+resourcePack.editor.toolRail.line.pane.fillAction=Nástroj pro výběr
+resourcePack.editor.toolRail.line.pane.height.title=Výška
+resourcePack.editor.toolRail.line.pane.selectionMode.adjacent=Sousedící tvář
+resourcePack.editor.toolRail.line.pane.selectionMode.fixedDistance=Pevná vzdálenost
+resourcePack.editor.toolRail.line.pane.selectionMode.freeForm=Volný styl
+resourcePack.editor.toolRail.line.pane.selectionMode=Výběr
+resourcePack.editor.toolRail.line.pane.surfaceContour=Obrysy povrchu
+resourcePack.editor.toolRail.line.pane.width.title=Šířka
+resourcePack.editor.toolRail.line.title=Linie
+resourcePack.editor.toolRail.line.tooltip=Nástroj pro tvorbu řádků vytváří řádky bloků
+resourcePack.editor.toolRail.rulerTool.title=Nástroj pravítko
+resourcePack.editor.toolRail.rulerTool.tooltip=Změřit vzdálenost
+resourcePack.editor.toolRail.rulerTool.info.title=Měření
+resourcePack.editor.toolRail.smartFillTool.title=Chytrý nástroj pro vyplňování
+resourcePack.editor.toolRail.smartFillTool.tooltip=Kliknutím vyplníte propojenou sadu bloků
+resourcePack.editor.toolRail.smartFillTool.modes.fillVolume=Vyplnit hlasitost
+resourcePack.editor.toolRail.smartFillTool.areaLimit.title=Limit oblasti
+resourcePack.editor.toolRail.smartFillTool.areaLimit.tooltip=Maximální naplnitelná oblast
+resourcePack.editor.toolRail.summonTool.keyBinding.clear=Vymazat výběr
+resourcePack.editor.toolRail.summonTool.keyBinding.delete=Vymazat entitu
+resourcePack.editor.toolRail.summonTool.keyBinding.moveBack=Posunout vybrané dozadu
+resourcePack.editor.toolRail.summonTool.keyBinding.moveDown=Posunout vybrané dolů
+resourcePack.editor.toolRail.summonTool.keyBinding.moveForward=Posunout vybrané dopředu
+resourcePack.editor.toolRail.summonTool.keyBinding.moveLeft=Posunout vybrané doleva
+resourcePack.editor.toolRail.summonTool.keyBinding.moveRight=Posunout vybrané doprava
+resourcePack.editor.toolRail.summonTool.keyBinding.moveUp=Posunout vybrané nahoru
+resourcePack.editor.toolRail.summonTool.keyBinding.toggle=Zapnout nástroj Vyvolávání
+resourcePack.editor.toolRail.summonTool.pane.select=Vybrat režim
+resourcePack.editor.toolRail.summonTool.pane.title=Nástroj Vyvolávání
+resourcePack.editor.toolRail.summonTool.pane.type=Typ entity
+resourcePack.editor.toolRail.summonTool.tool.infoText=Pro výběr entity na ni klikněte. Pro vyvolání nové entity klikněte na mapu.
+resourcePack.editor.toolRail.summonTool.tool.selectSubPane.rotation=Natočení
+resourcePack.editor.toolRail.summonTool.tool.selectSubPane=Výběr entity
+resourcePack.editor.toolRail.summonTool.tool.summonSubPane=Líheň entit
+resourcePack.editor.toolRail.summonTool.tool.tip=Kliknutím vyvoláte entity
+resourcePack.editor.toolRail.summonTool.tool.title=Nástroj Vyvolávání
+resourcePack.editor.toolRail.workbenchSettings.title=Pracovní stůl
+resourcePack.editor.toolRail.workbenchTool.title=Pracovní stůl
+resourcePack.editor.toolRail.workbenchTool.description=Rychle změní stavu bloků
+resourcePack.editor.toolRail.workbenchTool.howToUse=Zvýraznění bloků ukáže dostupné akce pro změnu jejich stavu (otevřít/zavřít, rotace, převracení atd.). Zkuste také použít modifikační klávesy Shift a Control! Pozor, tato funkce funguje pouze na bloky s možností upravovat vlastnosti (např. dveře, ploty, schody atd.).
+resourcePack.editor.toolRail.workbenchTool.tooltip=Změnit stav bloků.
+resourcePack.editor.toolRail.workbenchTool.block=Zablokovat
+resourcePack.editor.toolRail.workbenchTool.leftClick=Klikněte levým tlačítkem.
+resourcePack.editor.toolRail.workbenchTool.shiftLeftClick=Shift + Levé tlačítko myši
+resourcePack.editor.toolRail.workbenchTool.controlLeftClick=CTRL + Levé tlačítko myši
+resourcePack.editor.toolRail.workbenchTool.shiftControlLeftClick=Shift + CTRL + Levé tlačítko myši
+resourcePack.editor.toolRail.workbenchTool.leftClickTooltip=Levé kliknutí na blok provede primární akci Pracovního stolu
+resourcePack.editor.toolRail.workbenchTool.shiftLeftClickTooltip=Shift + levé kliknutí na blok provede druhou akci Pracovního stolu
+resourcePack.editor.toolRail.workbenchTool.controlLeftClickTooltip=Control + Levé kliknutí na blok provede třetí akci Pracovního stolu
+resourcePack.editor.toolRail.workbenchTool.shiftControlLeftClickTooltip=Shift + Control + levé kliknutí na blok provede čtvrtou akci Pracovního stolu
+resourcePack.editor.toolRail.workbenchTool.stripWood=Odstranit kůru ze dřeva/vrátit kůru ze dřeva
+resourcePack.editor.toolRail.workbenchTool.ladderLocation=Umístění žebříku
+resourcePack.editor.toolRail.workbenchTool.autoAlign=Rovnat automaticky
+resourcePack.editor.toolRail.workbenchTool.autoAlignFacingDirection=Automatické nastavení směru pohledu
+resourcePack.editor.toolRail.workbenchTool.autoAlignRotation=Automatické nastavení rotace
+resourcePack.editor.toolRail.workbenchTool.topSlotBitProp=Horní/Dolní
+resourcePack.editor.toolRail.workbenchTool.pillarAxisProp=Otočit
+resourcePack.editor.toolRail.workbenchTool.heightProp=Vrstvy
+resourcePack.editor.toolRail.workbenchTool.candlesProp=Počet svíček
+resourcePack.editor.toolRail.workbenchTool.turtleEggCountProp=Počet želvích vajíček
+resourcePack.editor.toolRail.workbenchTool.clusterCountProp=Počet mořských okurek
+resourcePack.editor.toolRail.workbenchTool.hangingProp=Zapnout zavěšení z jiného bloku
+resourcePack.editor.toolRail.workbenchTool.wallPostBitProp=Zapnout sloupek
+resourcePack.editor.toolRail.workbenchTool.upsideDownBitProp=Horní/Dolní
+resourcePack.editor.toolRail.workbenchTool.openBitProp=Otevřít/Zavřít
+resourcePack.editor.toolRail.workbenchTool.litProp=Rozsvíceno/Zhasnuto
+resourcePack.editor.toolRail.workbenchTool.dripstoneThicknessProp=Tloušťka krápníku
+resourcePack.editor.toolRail.workbenchTool.directionProp=Směr orientace
+resourcePack.editor.toolRail.workbenchTool.weirdoDirectionProp=Otočit
+resourcePack.editor.toolRail.workbenchTool.facingDirectionProp=Směr orientace
+resourcePack.editor.toolRail.workbenchTool.cardinalDirectionProp=Směr orientace
+resourcePack.editor.toolRail.workbenchTool.addCustomMapping=Přidat vlastní přiřazení
+resourcePack.editor.toolRail.workbenchTool.blockProperty=Vlastnost bloku
+resourcePack.editor.toolRail.workbenchTool.clickBinding=Přiřazení kliknutí
+resourcePack.editor.toolRail.workbenchTool.addMapping=Přidat přiřazení
+resourcePack.editor.toolRail.workbenchTool.resetAllMappings=Resetovat všechna přiřazení
+resourcePack.editor.workbenchTool.keyBinding.primaryAction=Primární akce Pracovního stolu
+resourcePack.editor.workbenchTool.keyBinding.secondaryAction=Druhá akce Pracovního stolu
+resourcePack.editor.workbenchTool.keyBinding.tertiaryAction=Třetí akce Pracovního stolu
+resourcePack.editor.workbenchTool.keyBinding.quaternaryAction=Čtvrtá akce Pracovního stolu
+resourcePack.editor.transaction.keyBinding.redo=Znovu
+resourcePack.editor.transaction.keyBinding.undo=Zpět
+resourcePack.editor.viewport.keyBinding.moveBack=Pohyb vzad
+resourcePack.editor.viewport.keyBinding.moveDown=Pohyb dolů
+resourcePack.editor.viewport.keyBinding.moveForward=Pohyb vpřed
+resourcePack.editor.viewport.keyBinding.moveLeft=Pohyb vlevo
+resourcePack.editor.viewport.keyBinding.moveRight=Pohyb vpravo
+resourcePack.editor.viewport.keyBinding.moveUp=Pohyb nahoru
+resourcePack.editor.viewport.keyBinding.incrementFlySpeed=Zvýšit rychlost letu
+resourcePack.editor.viewport.keyBinding.decrementFlySpeed=Snížit rychlost letu
+resourcePack.editor.viewSettings.compass.tip=Zobrazit směrový kompas
+resourcePack.editor.viewSettings.compass.title=Zobrazit kompas
+resourcePack.editor.viewSettings.chunk.tip=Zobrazit obrys hranic zákoutí na mapě
+resourcePack.editor.viewSettings.chunk.title=Zobrazit hranice Zákoutí
+resourcePack.editor.viewSettings.nightVision.tip=Zobrazte si svět, jako kdybyste měli noční vidění
+resourcePack.editor.viewSettings.nightVision.title=Noční vidění
+resourcePack.editor.viewSettings.invisible.tip=Zobrazit neviditelné bloky (např. prázdnotu, bariéry, atd.)
+resourcePack.editor.viewSettings.invisible.title=Zobrazit neviditelné bloky
+resourcePack.editor.viewSettings.flySpeed.tip=Zvyšte rychlost letu k rychlejšímu pohybu po mapě
+resourcePack.editor.viewSettings.flySpeed.title=Násobič rychlosti letu
+resourcePack.editor.viewSettings.menu=Nastavení
+resourcePack.editor.viewSettings.title=Nastavení
+resourcePack.editor.hotbar.defaultDisplayName=Výchozí
+resourcePack.editor.reloadScripts.response.tooMany=K serveru je připojeno příliš mnoho hráčů. Opětovné načtení skriptů je podporováno pouze u hostitelů s jedním připojeným hráčem.
+resourcePack.editor.reloadScripts.response.genericError=Při pokusu o opětovné načtení skriptů došlo k chybě.
+resourcePack.editor.reloadScripts.response.noAdminRights=Nemáte oprávnění k opětovnému načtení skriptů.

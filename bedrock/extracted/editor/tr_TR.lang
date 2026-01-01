@@ -1,912 +1,806 @@
-﻿## Comments can be added anywhere on a valid line by starting with '##'
-##
-## Note, trailing spaces will NOT be trimmed. If you want room between the end of the string and the start of a
-## comment on the same line, use TABs.
-
-commands.editor.project.beginExport=Dışa aktarılıyor...	#
-commands.editor.project.description=Şu anda yüklü olan projeyi değiştir	#
-commands.editor.project.export=projeyi dışa aktar	#
-commands.editor.project.exportComplete=Dışa aktarma tamamlandı, dosyalar %s konumuna yazıldı	#
-commands.editor.project.exportCopyFailed=Seviye verisi %s kopyalanamadı	#
-commands.editor.project.unknownSubcommand=Bilinmeyen Alt Komut	#
-
-resourcePack.editor.actionBar.redo.tooltipDescription=Bir eylemi yinele	#
-resourcePack.editor.actionBar.redo.tooltipTitle=Yinele	#
-resourcePack.editor.actionBar.redo=Yinele	#
-resourcePack.editor.actionBar.undo.tooltipDescription=Bir eylemi geri al	#
-resourcePack.editor.actionBar.undo.tooltipTitle=Geri Al	#
-resourcePack.editor.actionBar.undo=Geri Al	#
-resourcePack.editor.actionBar.fill=Doldur 	####Label for an actionbar item that fills the selection with the current hotbar block.{MaxLength=100}
-resourcePack.editor.actionBar.fill.tooltipDescription=Seçim birimini geçerli hızlı erişim çubuğu blokuyla doldur 	####Tooltip description for an actionbar item that fills the selection with the current hotbar block.{MaxLength=100}
-resourcePack.editor.actionBar.fill.tooltipTitle=Doldur 	####Tooltip title for an actionbar item that fills the selection with the current hotbar block.{MaxLength=100}
-
-resourcePack.editor.agfx.settings.error.title=Hata(lar) oluştu...	#
-resourcePack.editor.agfx.pane.title=Ayarlar Düzenleyicisi	#
-resourcePack.editor.agfx.pane.settings_selector=Ayarları seç	#
-resourcePack.editor.agfx.pane.settings.title=Ayarlar	#
-resourcePack.editor.agfx.pane.settings.revert_changes=Değişiklikleri geri al	#
-resourcePack.editor.agfx.pane.settings.export_to_clipboard=Panoya aktar	#
-
-
-resourcePack.editor.toolRail.blockInspectorSettings.title=Blok İnceleme   	####This string is what is shown in the title bar of the Editor pane for inspecting blocks.{MaxLength=30}
-resourcePack.editor.toolRail.blockInspectorSettings.specifics=Blok Özellikleri   	####This string is the heading that contains the block tags and block properties subpane.{MaxLength=30}
-resourcePack.editor.toolRail.blockInspectorSettings.actions.refresh=Blok Verilerini Yenile   	####This string shown on a button for forcing an update to the block data state.{MaxLength=30}
-resourcePack.editor.toolRail.blockInspectorSettings.actions.clear=Seçimi Sil   	####This string shown on a button for clearing what block is currently selected.{MaxLength=30}
-resourcePack.editor.toolRail.blockInspectorSettings.blockTags=Blok Etiketleri   	####This string is a header for a panel that shows the block tags on the currently selected block.{MaxLength=30}
-resourcePack.editor.toolRail.blockInspectorSettings.blockProperties=Blok Özellikleri   	####This string is a header for a panel that shows the block properties on the currently selected block.{MaxLength=30}
-resourcePack.editor.toolRail.blockInspectorSettings.blockProperties.name=Özellik Adı   	####Within the block properties pane, this string goes before the property name.{MaxLength=30}
-resourcePack.editor.toolRail.blockInspectorSettings.blockProperties.value=Özellik Değeri   	####Within the block properties pane, this string goes before the property value.{MaxLength=30}
-resourcePack.editor.toolRail.blockInspectorTool.title=Blok İnceleme   	####This string is what is shown as the name of the block inspector tool.{MaxLength=30}
-resourcePack.editor.toolRail.blockInspectorTool.tooltip=Blok verilerini incele   	####This string is what is shown when hovering over the block inspector icon.{MaxLength=30}
-resourcePack.editor.toolRail.blockInspectorTool.pane.helpText=Özelliklerini görüntülemek ve düzenlemek için bir bloka sol tıklayın   	####This string is shown in the block inspector tool pane before the user clicks to describe how to use it.{MaxLength=100}
-resourcePack.editor.blockInspector.toolRail.description=Özelliklerini görüntülemek ve düzenlemek için bir bloka sol tıklayın   	####This string is shown in the tool tip to explain the function of the Block Inspector tool.{MaxLength=100}
-
-
-resourcePack.editor.blockPalette.addSearchItem=Bulunman Bloku Kullan	#
-resourcePack.editor.blockPalette.blockPicker=Ara	#
-resourcePack.editor.blockPalette.paletteDropdown.title=Palet	#
-resourcePack.editor.blockPalette.title=Blok Paleti	#
-
-
-resourcePack.editor.brushPaint.inputContext.activateBrushPaint=Fırça Boyasını Etkinleştir	#
-resourcePack.editor.brushPaint.inputContext.oneshot=Bir Kez Boya	#
-resourcePack.editor.brushPaint.inputContext.title=Fırça Boyası	#
-resourcePack.editor.brushPaint.title=Fırça Boyası	#
-resourcePack.editor.brushPaint.tooltip=Dünyadaki blokları boyamak için fırçaları kullanın	#
-
-
-resourcePack.editor.BrushPaintControl.brush.title=Fırça	#
-resourcePack.editor.BrushPaintControl.brushSettings.title=Fırça Ayarları	#
-resourcePack.editor.BrushPaintControl.shapeSettings.title=Şekil Ayarları 	####Represents an expander that has UI controls for brush shape settings.{MaxLength=100}
-resourcePack.editor.BrushPaintControl.fillConstraints.mask.title=Maske Listesi	#
-resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.disabled.tooltip=Blok Filtrelerini devre dışı bırak	#
-resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.disabled=Devre Dışı	#
-resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.mask.tooltip=Listeye uyan bloklar göz ardı edilir ve etkilenmez	#
-resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.mask=Maske	#
-resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.replace=Değiştir	#
-resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.title=Fırça Bloku Filtresi	#
-resourcePack.editor.BrushPaintControl.fillConstraints.replace.title=Değiştirme Listesi	#
-resourcePack.editor.BrushPaintControl.fillConstraints.replace.tooltip=Listeye uyan bloklar üzerinde işlem yapılır	#
-resourcePack.editor.BrushPaintControl.fillConstraints.title=Sınırları Doldur	#
-resourcePack.editor.BrushPaintControl.keybinding.maskMask=Maske Modu - Maske	#
-resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetBack=Kaydırmayı Geri İt	#
-resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetDown=Kaydırmayı Aşağı İt	#
-resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetForward=Kaydırmayı İleri İt	#
-resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetLeft=Kaydırmayı Sola İt	#
-resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetRight=Kaydırmayı Sağa İt	#
-resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetUp=Kaydırmayı Yukarı İt	#
-resourcePack.editor.BrushPaintControl.keybinding.replaceMask=Maske Modu - Değiştir	#
-resourcePack.editor.BrushPaintControl.offset.title=Uzaklık	#
-resourcePack.editor.BrushPaintControl.offset.tooltip=İmleç konumundan uzaklık	#
-resourcePack.editor.BrushPaintControl.rootPane.title=Fırça Ayarları	#
-
-
-resourcePack.editor.brushShape.common.settings.axis=Ekseni İzle	#
-resourcePack.editor.brushShape.common.settings.height=Yükseklik	#
-resourcePack.editor.brushShape.common.settings.length=Uzunluk	#
-resourcePack.editor.brushShape.common.settings.radius=Yarıçap	#
-resourcePack.editor.brushShape.common.settings.uniform=Tek Tip	#
-resourcePack.editor.brushShape.common.settings.xAxis=X Ekseni	#
-resourcePack.editor.brushShape.common.settings.xAxisNeg=-X Ekseni	#
-resourcePack.editor.brushShape.common.settings.yAxis=Y Ekseni	#
-resourcePack.editor.brushShape.common.settings.yAxisNeg=-Y Ekseni	#
-resourcePack.editor.brushShape.common.settings.zAxis=Z Ekseni	#
-resourcePack.editor.brushShape.common.settings.zAxisNeg=-Z Ekseni	#
-resourcePack.editor.brushShape.cone.name=Koni	#
-resourcePack.editor.brushShape.cone.settings.depth=Derinlik Yarıçapı	#
-resourcePack.editor.brushShape.cone.settings.width=Genişlik Yarıçapı	#
-resourcePack.editor.brushShape.cuboid.name=Küboid	#
-resourcePack.editor.brushShape.cuboid.settings.depth=Derinlik	#
-resourcePack.editor.brushShape.cuboid.settings.height=Yükseklik	#
-resourcePack.editor.brushShape.cuboid.settings.width=Genişlik	#
-resourcePack.editor.brushShape.cylinder.name=Silindir	#
-resourcePack.editor.brushShape.cylinder.settings.depth_radius=Derinlik Yarıçapı	#
-resourcePack.editor.brushShape.cylinder.settings.width_radius=Genişlik Yarıçapı	#
-resourcePack.editor.brushShape.ellipsoid.name=Elipsoit	#
-resourcePack.editor.brushShape.ellipsoid.settings.depth_radius=Derinlik Yarıçapı	#
-resourcePack.editor.brushShape.ellipsoid.settings.height_radius=Yükseklik Yarıçapı	#
-resourcePack.editor.brushShape.ellipsoid.settings.width_radius=Genişlik Yarıçapı	#
-resourcePack.editor.brushShape.pyramid.name=Piramit	#
-resourcePack.editor.brushShape.pyramid.settings.depth=Derinlik	#
-resourcePack.editor.brushShape.pyramid.settings.height=Yükseklik	#
-resourcePack.editor.brushShape.pyramid.settings.width=Genişlik	#
-resourcePack.editor.brushShape.singleBlock.name=Tek Blok	#
-resourcePack.editor.brushShape.star.name=Yıldız 	####Represent a star shaped brush.{MaxLength=100}
-resourcePack.editor.brushShape.star.settings.includeVertical=Dikeyi Dahil Et 	####Represents a toggle button label that removes vertical parts of a star brush if unchecked.{MaxLength=100}
-
-
-resourcePack.editor.client.description=Düzenleyici İstemci Kaynakları	#
-resourcePack.editor.client.name=Düzenleyici Kaynakları	#
-
-
-resourcePack.editor.ClipboardPreviewControl.keybinding.moveOriginBack=Başlangıç Noktasını Geri Taşı	#
-resourcePack.editor.ClipboardPreviewControl.keybinding.moveOriginDown=Başlangıç Noktasını Aşağı Taşı	#
-resourcePack.editor.ClipboardPreviewControl.keybinding.moveOriginForward=Başlangıç Noktasını İleri Taşı	#
-resourcePack.editor.ClipboardPreviewControl.keybinding.moveOriginLeft=Başlangıç Noktasını Sola Taşı	#
-resourcePack.editor.ClipboardPreviewControl.keybinding.moveOriginRight=Başlangıç Noktasını Sağa Taşı	#
-resourcePack.editor.ClipboardPreviewControl.keybinding.moveOriginUp=Başlangıç Noktasını Yukarı Taşı	#
-resourcePack.editor.ClipboardPreviewControl.keyBinding.nudgeOffsetBack=Kaydırmayı Geri İt	#
-resourcePack.editor.ClipboardPreviewControl.keyBinding.nudgeOffsetDown=Kaydırmayı Aşağı İt	#
-resourcePack.editor.ClipboardPreviewControl.keyBinding.nudgeOffsetForward=Kaydırmayı İleri İt	#
-resourcePack.editor.ClipboardPreviewControl.keyBinding.nudgeOffsetLeft=Kaydırmayı Sola İt	#
-resourcePack.editor.ClipboardPreviewControl.keyBinding.nudgeOffsetRight=Kaydırmayı Sağa İt	#
-resourcePack.editor.ClipboardPreviewControl.keyBinding.nudgeOffsetUp=Kaydırmayı Yukarı İt	#
-resourcePack.editor.ClipboardPreviewControl.keybinding.rotateClockWise=Ön İzlemeyi Saat Yönünde Döndür	#
-resourcePack.editor.ClipboardPreviewControl.keybinding.rotateCounterClockWise=Ön İzlemeyi Saat Yönünün Tersine Döndür	#
-resourcePack.editor.ClipboardPreviewControl.keybinding.toggleMirrorX=X'i Yansıt'ı Aç/Kapat	#
-resourcePack.editor.ClipboardPreviewControl.keybinding.toggleMirrorZ=Z'yi Yansıt'ı Aç/Kapat	#
-resourcePack.editor.ClipboardPreviewControl.mirror.axis.x.tooltip=Pano eşyasını X ekseni etrafında başlangıç ​​noktasında yansıtın	#
-resourcePack.editor.ClipboardPreviewControl.mirror.axis.x=Yansıtma (X ekseni)	#
-resourcePack.editor.ClipboardPreviewControl.mirror.axis.z.tooltip=Pano eşyasını Z ekseni etrafında başlangıç ​​noktasında yansıtın	#
-resourcePack.editor.ClipboardPreviewControl.mirror.axis.z=Yansıtma (Z ekseni)	#
-resourcePack.editor.ClipboardPreviewControl.offset.title=Uzaklık	#
-resourcePack.editor.ClipboardPreviewControl.offset.tooltip=Yerleştirme noktasından pano eşyası kaynağına ek uzaklık	#
-resourcePack.editor.ClipboardPreviewControl.origin.title=Başlangıç	#
-resourcePack.editor.ClipboardPreviewControl.origin.tooltip=Pano eşyası içindeki başlangıç ​​noktası.  Bu, hem bir yerleştirme çapası hem de panonun döndürüldüğü ve yansıtıldığı nokta olarak kullanılır	#
-resourcePack.editor.ClipboardPreviewControl.placement.title=Seçenekler	#
-resourcePack.editor.ClipboardPreviewControl.rootPane.title=Pano Bilgileri	#
-resourcePack.editor.ClipboardPreviewControl.rotation.180=180°	#
-resourcePack.editor.ClipboardPreviewControl.rotation.270=270°	#
-resourcePack.editor.ClipboardPreviewControl.rotation.90=90°	#
-resourcePack.editor.ClipboardPreviewControl.rotation.none=Yok	#
-resourcePack.editor.ClipboardPreviewControl.rotation.title=Dönüş	#
-resourcePack.editor.ClipboardPreviewControl.rotation.tooltip=Başlangıç noktasında Y ekseni etrafındaki dönüş miktarı	#
-resourcePack.editor.ClipboardPreviewControl.structureSize.title=Pano Boyutu	#
-
-
-resourcePack.editor.copypaste.actionbar.copy.title=Kopyala	#
-resourcePack.editor.copypaste.actionbar.copy.tooltip=Seçimi panoya kopyala	#
-resourcePack.editor.copypaste.actionbar.copy.tooltipDescription=Geçerli seçimin içeriğini panoya kopyalayın, seçimin içeriğini olduğu gibi bırakın	#
-resourcePack.editor.copypaste.actionbar.cut.title=Kes	#
-resourcePack.editor.copypaste.actionbar.cut.tooltip=Seçimi Kes/Panoya Taşı	#
-resourcePack.editor.copypaste.actionbar.cut.tooltipDescription=Geçerli seçimin içeriğini panoya kopyalayın ve işlem sırasında seçimin içeriğini kaldırın	#
-resourcePack.editor.copypaste.keyBinding.copy=Seçimi panoya kopyala	#
-resourcePack.editor.copypaste.keyBinding.cut=Seçimi Kes/Panoya Taşı	#
-resourcePack.editor.copypaste.keyBinding.paste=Panoyu dünyaya yapıştır	#
-resourcePack.editor.copypaste.menu.copy.title=Seçimi Kopyala	#
-resourcePack.editor.copypaste.menu.cut.title=Seçimi Kes	#
-
-
-resourcePack.editor.core.keyBinding.showGameMenu=Oyun Menüsünü Göster	#
-resourcePack.editor.core.keyBinding.showLogPanel=Kayıt Panelini Göster	#
-
-
-resourcePack.editor.CursorModeControl.cursorTargetMode.block.tooltip=Fare imlecinin altındaki blok	#
-resourcePack.editor.CursorModeControl.cursorTargetMode.block=Blok	#
-resourcePack.editor.CursorModeControl.cursorTargetMode.face.tooltip=İmlecin altındaki blokun yüzüne bitişik olan blok	#
-resourcePack.editor.CursorModeControl.cursorTargetMode.face=Bitişik	#
-resourcePack.editor.CursorModeControl.cursorTargetMode.title=Hedef	#
-resourcePack.editor.CursorModeControl.cursorTargetMode.tooltip=İmleç hedef modunu seçin	#
-resourcePack.editor.CursorModeControl.fixedDistance.slider.title=Sabit İmleç Mesafesi	#
-resourcePack.editor.CursorModeControl.fixedDistance.slider.tooltip=Blok imlecinin yerleştirildiği oyuncudan sabit mesafeyi ayarlayın	#
-resourcePack.editor.CursorModeControl.keybinding.moveCursorBack=İmleci Geri Taşı	#
-resourcePack.editor.CursorModeControl.keybinding.moveCursorDown=İmleci Aşağı Taşı	#
-resourcePack.editor.CursorModeControl.keybinding.moveCursorForward=İleri İtme	#
-resourcePack.editor.CursorModeControl.keybinding.moveCursorLeft=İmleci Sola Taşı	#
-resourcePack.editor.CursorModeControl.keybinding.moveCursorRight=İmleci Sağa Taşı	#
-resourcePack.editor.CursorModeControl.keybinding.moveCursorUp=İmleci Yukarı Taşı	#
-resourcePack.editor.CursorModeControl.keybinding.toggleBlockTargetMode=Blok/Bitişik Modunu Aç/Kapat	#
-resourcePack.editor.CursorModeControl.keybinding.toggleFixedDistance=Sabit Mesafe Modunu Aç/Kapat	#
-resourcePack.editor.CursorModeControl.keybinding.toggleMouseTracking=Fare İzlemeyi Aç/Kapat	#
-resourcePack.editor.CursorModeControl.mouseControlMode.fixed=Sabit Mesafe	#
-resourcePack.editor.CursorModeControl.mouseControlMode.keyboard=Yalnızca Klavye	#
-resourcePack.editor.CursorModeControl.mouseControlMode.keyboardAndMouse=Fare ve Tuşlar	#
-resourcePack.editor.CursorModeControl.mouseControlMode.title=Giriş Yöntemi	#
-resourcePack.editor.CursorModeControl.mouseControlMode.tooltip=Dünya blok imleci için giriş yöntemini seçin	#
-resourcePack.editor.CursorModeControl.projectThroughWater.title=Su ile Proje	#
-resourcePack.editor.CursorModeControl.projectThroughWater.tooltip=Fare ışın yayını, su altı unsurlarının seçilmesine olanak tanıyarak suyun içinden yansıtılır	#
-resourcePack.editor.CursorModeControl.rootPane.title=İmleç Ayarları	#
-
-
-resourcePack.editor.datatransferaccessors.atmospheric_scattering=Atmosferik Saçılma	#
-resourcePack.editor.datatransferaccessors.color_grading=Renk Derecelendirme	#
-resourcePack.editor.datatransferaccessors.lighting_group=Global Aydınlatma	#
-resourcePack.editor.datatransferaccessors.pbr_fallbacks=Fiziksel Tabanlı İşleme Geri Çekilmesi	#
-resourcePack.editor.datatransferaccessors.point_lights=Nokta Işıkları	#
-resourcePack.editor.datatransferaccessors.water=Su	#
-resourcePack.editor.datatransferaccessors.shadows=Gölgeler	#
-
-
-resourcePack.editor.deferredLightingSettings.menu.title=Ertelenmiş Aydınlatma Ayarları	#
-
-
-resourcePack.editor.delete.keyBinding=Seçim İçeriklerini Sil	#
-
-
-resourcePack.editor.toolRail.entityInspector.pane.title=Varlık İnceleme   	####This string is what is shown in the title bar of the Editor pane for modifying entities.{MaxLength=30}
-resourcePack.editor.toolRail.entityInspector.tool.title=Varlık İnceleme   	####This string is what is shown at the top of the Editor pane for modifying entities.{MaxLength=30}
-resourcePack.editor.toolRail.entityInspector.tool.tip=Varlık verilerini incele   	####This string is what is shown on the tool tip of Editor pane for modifying entities (gives context on what the tool does).{MaxLength=100}
-resourcePack.editor.toolRail.entityInspector.pane.helpText=Özelliklerini görüntülemek ve düzenlemek için bir varlığa sol tıklayın   	####This string is shown in the block inspector tool pane before the user clicks to describe how to use it.{MaxLength=100}
-resourcePack.editor.entityInspector.toolRail.description=Özelliklerini görüntülemek ve düzenlemek için bir varlığa sol tıklayın   	####This string is shown in the tool tip to explain the function of the Entity Inspector tool.{MaxLength=100}
-
-resourcePack.editor.exportProject.exportType=Dışa Aktarma Türü	#
-resourcePack.editor.exportProject.exportType.playableWorld=Oynanabilir Dünya	#
-resourcePack.editor.exportProject.exportNotes=Notları Dışa Aktar	#
-resourcePack.editor.exportProject.exportNotes.export=İlerleme Dışa Aktarılıyor   	####This string is intended to express that the title of export progress modal.{MaxLength=100}
-resourcePack.editor.exportProject.exportNotes.warning=Bir v%1 dünyasını dışa aktarıyorsunuz. Dışa aktarılan Oynanabilir dünyalar v%1 öncesi bir sürüm numarasına sahip Minecraft sürümlerinde kullanılamaz. Önceki sürüm numaralarına dönüştürmek için https://chunker.app/ adresini kullanın (önceki sürümlerde desteklenmiyorsa bazı işlevler kullanılamayabilir)	#
-resourcePack.editor.exportProject.exportNotes.progress=Dünya dışa aktarılıyor...    	####This string is intended to express that the progress message of exporting.{MaxLength=100}
-resourcePack.editor.exportProject.exportNotes.exportSuccess=Dünya başarıyla aktarıldı    	####This string is intended to express that export the world succeeded.{MaxLength=100}
-resourcePack.editor.exportProject.exportNotes.exportFailed=Dünya dışarı aktarılamadı    	####This string is intended to express that export the world failed.{MaxLength=100}
-resourcePack.editor.exportProject.generalSettings=Genel Ayarlar	#
-resourcePack.editor.exportProject.generalSettings.worldName=Dünya Adı	#
-resourcePack.editor.exportProject.generalSettings.gameMode=Oyun Modu	#
-resourcePack.editor.exportProject.generalSettings.difficulty=Zorluk	#
-resourcePack.editor.exportProject.generalSettings.hardcore=Zorlu	#
-resourcePack.editor.exportProject.initialPlaySettings=İlk Oyun Ayarları   	####This string is intended to express that the export category for inital play settings.{MaxLength=100}
-resourcePack.editor.exportProject.initialPlaySettings.spawnPosition=Dünya Doğma Noktası   	####This string is intended to express that player inistal spawn position.{MaxLength=100}
-resourcePack.editor.exportProject.initialPlaySettings.startTime=Başlama Zamanı   	####This string is intended to express that world start time.{MaxLength=100}
-resourcePack.editor.exportProject.initialPlaySettings.clockType=Saat Türü   	####This string is intended to express that start time with different clock type.{MaxLength=100}
-resourcePack.editor.exportProject.initialPlaySettings.customStartTime=Özel Başlama Zamanı   	####This string is intended to express that custom start time with Minecraft Cloke value.{MaxLength=100}
-resourcePack.editor.exportProject.initialPlaySettings.weather=Başlangıçtaki Hava Durumu   	####This string is intended to express that the custom start weather.{MaxLength=100}
-resourcePack.editor.exportProject.advancedSettings=Gelişmiş Ayarlar	#
-resourcePack.editor.exportProject.advancedSettings.startingMap=Başlangıç Haritası	#
-resourcePack.editor.exportProject.advancedSettings.bonusChest=Bonus Sandığı	#
-resourcePack.editor.exportProject.advancedSettings.showCoordinates=Koordinatları Göster	#
-resourcePack.editor.exportProject.advancedSettings.showDaysPlayed=Oynanan Günleri Göster	#
-resourcePack.editor.exportProject.advancedSettings.recipeUnlocking=Tarif Kilidini Açma	#
-resourcePack.editor.exportProject.advancedSettings.limitedCrafting=Sınırlı Eşya Yapma   	####Export pane checkbox label that enable to set crafting limit.{MaxLength=100}
-resourcePack.editor.exportProject.advancedSettings.fireSpreads=Ateş Yayılır	#
-resourcePack.editor.exportProject.advancedSettings.tntExplodes=TNT Patlar	#
-resourcePack.editor.exportProject.advancedSettings.resawnBlocksExplode=Yeniden Doğma Blokları Patlar	#
-resourcePack.editor.exportProject.advancedSettings.mobLoot=Mob Ganimeti	#
-resourcePack.editor.exportProject.advancedSettings.naturalRegeneration=Doğal Yenilenme	#
-resourcePack.editor.exportProject.advancedSettings.tileDrops=Kutucuk Ganimetleri	#
-resourcePack.editor.exportProject.advancedSettings.immediateRespawn=Anında Yeniden Doğma	#
-resourcePack.editor.exportProject.advancedSettings.showDeathMessage=Ölüm Mesajını Göster   	####Export pane checkbox label that show the death message when player die.{MaxLength=100}
-resourcePack.editor.exportProject.advancedSettings.respawnRadius=Yeniden Doğma Yarıçapı	#
-resourcePack.editor.exportProject.advancedSettings.simulationDistance=Simülasyon Uzaklığı	#
-resourcePack.editor.exportProject.advancedSettings.bedsWork=Yatak Çalışması	#
-resourcePack.editor.exportProject.advancedSettings.requiredSleepingPlayers=Gereken Uyuyan Oyuncu (%1$s)	#
-resourcePack.editor.exportProject.advancedSettings.requiredSleepingPlayers.onePlayerMessage=Sadece 1 oyuncu	#
-resourcePack.editor.exportProject.advancedSettings.showItemTags=Eşya Etiketlerini Göster   	####Export pane checkbox label that show item tags.{MaxLength=100}
-resourcePack.editor.exportProject.multiplayerSettings=Çok Oyunculu Oyun Ayarları	#
-resourcePack.editor.exportProject.multiplayerSettings.multiplayerGame=Çok Oyunculu Oyun	#
-resourcePack.editor.exportProject.multiplayerSettings.playerAccess=Oyuncu Erişimi	#
-resourcePack.editor.exportProject.multiplayerSettings.playerPermissions=Oyuncu İzinleri	#
-resourcePack.editor.exportProject.multiplayerSettings.visibleToLAN=LAN Oyuncuları için görünür	#
-resourcePack.editor.exportProject.multiplayerSettings.friendlyFire=Dost Ateşi	#
-resourcePack.editor.exportProject.cheatsSettings=Hile Ayarları	#
-resourcePack.editor.exportProject.cheatsSettings.cheats=Hileler	#
-resourcePack.editor.exportProject.cheatsSettings.daylightCycle=Gün Işığı Döngüsü	#
-resourcePack.editor.exportProject.cheatsSettings.keepInventory=Envanteri Koru	#
-resourcePack.editor.exportProject.cheatsSettings.mobSpawning=Mob Canlanması	#
-resourcePack.editor.exportProject.cheatsSettings.mobGriefing=Mob Üzüntüsü	#
-resourcePack.editor.exportProject.cheatsSettings.entitiesDropLoot=Varlıkların Ganimet Düşürmesi	#
-resourcePack.editor.exportProject.cheatsSettings.weatherCycle=Hava Döngüsü	#
-resourcePack.editor.exportProject.cheatsSettings.commandBlocks=Komut Blokları	#
-resourcePack.editor.exportProject.cheatsSettings.commandBlockOutput=Komut Bloku Çıktısı   	####Export pane checkbox label that enable to display the command output.{MaxLength=100}
-resourcePack.editor.exportProject.cheatsSettings.sendCommandFeedback=Komut Geri Bildirimi Gönder   	####This string is the heading for the 'send command feedback' setting when exporting a world.{MaxLength=100}
-resourcePack.editor.exportProject.cheatsSettings.maxCommandChainLength=Maksimum Komut Zinciri Uzunluğu   	####Export pane number that indicate the max length of the command, it defaults to 65536. It has a minimum of 0 and a max of 2147483647.{MaxLength=100}
-resourcePack.editor.exportProject.cheatsSettings.fireDamage=Ateş Hasarı  	####Export pane checkbox label that enable damage when the player on fire.{MaxLength=100}
-resourcePack.editor.exportProject.cheatsSettings.freezeDamage=Donma Hasarı  	####Export pane checkbox label that enable damage when the player freezes.{MaxLength=100}
-resourcePack.editor.exportProject.cheatsSettings.fallDamage=Düşme Hasarı  	####Export pane checkbox label that enable damage when the player falls.{MaxLength=100}
-resourcePack.editor.exportProject.cheatsSettings.drowningDamage=Boğulma Hasarı  	####Export pane checkbox label that enable damage when the player is drowning.{MaxLength=100}
-resourcePack.editor.exportProject.cheatsSettings.insomnia=Uykusuzluk  	####Export pane checkbox label that enable player insomnia status.{MaxLength=100}
-resourcePack.editor.exportProject.cheatsSettings.showBorderEffect=Kenarlık Efektini Göster  	####Export pane checkbox label that show border effect.{MaxLength=100}
-resourcePack.editor.exportProject.cheatsSettings.functionCommandLimit=İşlev Komutu Sınırı  	####Export pane checkbox label that the number of limition for the function command.{MaxLength=100}
-resourcePack.editor.exportProject.cheatsSettings.educationFeatures=Eğitim Özellikleri	#
-resourcePack.editor.exportProject.cheatsSettings.randomTickSpeed=Rastgele İşaretleme Hızı	#
-resourcePack.editor.exportProject.export=Dışa Aktar	#
-resourcePack.editor.exportProject.resetToDefault=Varsayılana Sıfırla	#
-resourcePack.editor.exportProject.gameMode.survival=Hayatta Kalma	#
-resourcePack.editor.exportProject.gameMode.creative=Yaratıcı	#
-resourcePack.editor.exportProject.gameMode.adventure=Macera	#
-resourcePack.editor.exportProject.difficulty.peaceful=Sakin	#
-resourcePack.editor.exportProject.difficulty.easy=Kolay	#
-resourcePack.editor.exportProject.difficulty.normal=Normal	#
-resourcePack.editor.exportProject.difficulty.hard=Zor	#
-resourcePack.editor.exportProject.weather.default=Varsayılan   	####This string is intended to express that the default weather .{MaxLength=100}
-resourcePack.editor.exportProject.weather.clear=Açık   	####This string is intended to express that the weather of Clear.{MaxLength=100}
-resourcePack.editor.exportProject.weather.rain=Yağmur   	####This string is intended to express that the weather of Rain.{MaxLength=100}
-resourcePack.editor.exportProject.weather.thunder=Gök Gürültüsü   	####This string is intended to express that the weather of Thunder.{MaxLength=100}
-
-
-
-resourcePack.editor.toolRail.ExtrudeTool.title=Ekstrüzyon Aleti	#
-resourcePack.editor.toolRail.ExtrudeTool.tooltip=Blokları genişletmek ve küçültmek için ekstrüzyon aleti	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.ContiguousSelectionBlockListSubPane.title=Bitişik Seçim Blok Listesi	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.TrailingBlocksSettingsSubPane.title=Takip Eden Blok Ayarları	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.SampleLayerCount.title=Örnek Katman Sayısı	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.ContiguousSelectionSettings.title=Bitişik Seçim Ayarları	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.ContiguousSelectionType.title=Bitişik Seçim Türü	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.ContiguousSelectionType.SameBlocks=Aynı Bloklar	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.ContiguousSelectionType.SameBlocksAndStates=Aynı Bloklar ve Durumlar	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.ContiguousSelectionType.SolidBlocks=Sert Bloklar	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.ContiguousSelectionType.AllBlocks=Tüm Bloklar	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.ContiguousSelectionType.CustomBlockList=Özel Blok Listesi	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.ToleranceLevel.title=Tolerans Seviyesi	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.HasAdjacentBlocks.title=Bitişik Bloklar Mevcut	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.ExtruderSettings.title=Ekstrüder Ayarları	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.Radius.title=Yarıçap	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.title=Seçim Modu	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.ContiguousSelection=Bitişik Seçim	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.MarqueeSelection=Çerçeve Seçimi	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.ContiguousSettings.title=Bitişik Seçim Ayarları	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.TrailingBlocks.title=Takip Eden Bloklar	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.TrailingBlocksSettings.title=Takip Eden Blok Ayarları	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.QuickExtrudeSettings.title=Hızlı Ekstrüzyon Ayarları	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.QuickExtrudeMode.title=Hızlı Ekstrüzyon Modu	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.QuickExtrudeMode.decrease.title=Azalt	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.QuickExtrudeMode.decrease.tooltip=Ekstrüzyonu Azalt	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.QuickExtrudeMode.expand.title=Genişlet	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.QuickExtrudeMode.expand.tooltip=Ekstrüzyonu Genişlet	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.LayerCount.title=Katman Sayısı	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.preview_warning=Not: Ön izleme görselleştirmesi yalnızca ilk katmanı gösterir 	#### {MaxLength="500"}, used to inform the user that the preview visualization for this tool is limited to a single layer.  This string is on screen whenever this tool is active
-resourcePack.editor.toolRail.ExtrudeTool.pane.ExtrusionType.title=Ekstrüzyon Türü	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.ExtrusionType.Extrude=Ekstrüzyon	#
-resourcePack.editor.toolRail.ExtrudeTool.pane.ExtrusionType.QuickExtrude=Hızlı Ekstrüzyon	#
-resourcePack.editor.toolRail.ExtrudeTool.keyBinding.deselect=Seçimi Kaldır	#
-resourcePack.editor.toolRail.ExtrudeTool.keyBinding.toggleTool=Ekstrüzyon Aletini Aç/Kapat	#
-
-
-resourcePack.editor.toolRail.FarmGenerator.tool.title=Çiftlik Oluşturucu	#
-resourcePack.editor.toolRail.FarmGenerator.tool.tooltip=Hemen özel bir çiftlik oluşturun	#
-resourcePack.editor.toolRail.FarmGenerator.pane.title=Çiftlik Oluşturucu	#
-resourcePack.editor.toolRail.FarmGenerator.pane.length=Uzunluk	#
-resourcePack.editor.toolRail.FarmGenerator.pane.width=Genişlik	#
-resourcePack.editor.toolRail.FarmGenerator.pane.fence=Çit	#
-resourcePack.editor.toolRail.FarmGenerator.pane.irrigation=Sulama ekleyin	#
-resourcePack.editor.toolRail.FarmGenerator.pane.irrigation.tooltip=Ekinleri sulamak için çiftliğe su blokları ekler.	#
-resourcePack.editor.toolRail.FarmGenerator.pane.crops.title=Ekinler	#
-resourcePack.editor.toolRail.FarmGenerator.pane.crops.wheat=Buğday	#
-resourcePack.editor.toolRail.FarmGenerator.pane.crops.potato=Patates	#
-resourcePack.editor.toolRail.FarmGenerator.pane.crops.beets=Pancar	#
-resourcePack.editor.toolRail.FarmGenerator.pane.crops.pumpkin=Balkabağı	#
-resourcePack.editor.toolRail.FarmGenerator.pane.crops.carrot=Havuç	#
-resourcePack.editor.toolRail.FarmGenerator.pane.animals.title=Hayvanlar	#
-resourcePack.editor.toolRail.FarmGenerator.pane.animals.cow=İnek	#
-resourcePack.editor.toolRail.FarmGenerator.pane.animals.sheep=Koyun	#
-resourcePack.editor.toolRail.FarmGenerator.pane.animals.pig=Domuz	#
-resourcePack.editor.toolRail.FarmGenerator.keyBinding.toggleTool=Çiftlik Oluşturucu Aletini Aç/Kapat	#
-resourcePack.editor.toolRail.FarmGenerator.keyBinding.place=Çiftliği İmlece Yerleştir	#
-
-
-resourcePack.editor.global.keyBinding.toggleMode=Modu Aç/Kapat	#
-
-
-resourcePack.editor.goToMark.actionBar.tooltip.description=Oyuncu gezinmesi için yardımcı program paneli	#
-resourcePack.editor.goToMark.actionBar.tooltip.title=Gezinme Paneli	#
-resourcePack.editor.goToMark.pane.goToSpawn=Doğma Noktasına gidin	#
-resourcePack.editor.goToMark.pane.location=Oyuncu Konumu	#
-resourcePack.editor.goToMark.pane.locationPane.delete=Saklanan Konumu silin	#
-resourcePack.editor.goToMark.pane.locationPane.dropdownLabel=Saklanan Konum	#
-resourcePack.editor.goToMark.pane.locationPane.inputName=Yeni İsim	#
-resourcePack.editor.goToMark.pane.locationPane.markColor=Konum İşareti Rengi	#
-resourcePack.editor.goToMark.pane.locationPane.store=Mevcut Konumu Şu Şekilde Saklayın...	#
-resourcePack.editor.goToMark.pane.locationPane.teleport=%1$s Saklanan Konumuna ışınlanın	#
-resourcePack.editor.goToMark.pane.locationPane.title=Saklanan Konumlar	#
-resourcePack.editor.goToMark.pane.mapSize=Harita Boyutu	#
-resourcePack.editor.goToMark.pane.refreshMap=Haritayı Yenile	#
-resourcePack.editor.goToMark.pane.setSpawn=Geçerli Doğma Noktası ayarlayın	#
-resourcePack.editor.goToMark.pane.showMap=Haritayı Göster	#
-resourcePack.editor.goToMark.pane.teleport=Konuma ışınlanın	#
-resourcePack.editor.goToMark.title=Gezinme Paneli	#
-
-
-resourcePack.editor.grapple.keyBinding.flyToCursor=İmlece Uç	#
-resourcePack.editor.grapple.keyBinding.flyToSelection=Seçime Uç	#
-
-
-resourcePack.editor.locate.biome.find=Biyomu Bulun	#
-resourcePack.editor.locate.biome.title=Biyom	#
-resourcePack.editor.locate.keyBinding.toggleTool=Biyom Aleti Bul'u Aç/Kapat	#
-resourcePack.editor.locate.locatetype.biome=Biyom	#
-resourcePack.editor.locate.locatetype.structure=Yapı	#
-resourcePack.editor.locate.locatetype.title=Türü Bul	#
-resourcePack.editor.locate.results.foundat.title=Şurada bulundu:	#
-resourcePack.editor.locate.results.foundat=Şurada bulundu:	#
-resourcePack.editor.locate.results.goto=Git:	#
-resourcePack.editor.locate.results.notfound.title=Sonuç Yok	#
-resourcePack.editor.locate.results.notfound=Sonuç Bulunamadı	#
-resourcePack.editor.locate.results.title=Sonuçlar	#
-resourcePack.editor.locate.structure.message=Yapı arama şu anda desteklenmiyor	#
-resourcePack.editor.locate.structure.title=Yapı	#
-resourcePack.editor.locate.title=Yerini Bul	#
-
-
-resourcePack.editor.menuBar.edit.copy=Kopyala	#
-resourcePack.editor.menuBar.edit.cut=Kes	#
-resourcePack.editor.menuBar.edit.delete=Sil	#
-resourcePack.editor.menuBar.edit.deselect=Seçimi Kaldır	#
-resourcePack.editor.menuBar.edit.quickFill=Hızlı Doldur	#
-resourcePack.editor.menuBar.edit.quickPaste=Hızlı Yapıştırma	#
-resourcePack.editor.menuBar.edit.redo=Yinele	#
-resourcePack.editor.menuBar.edit.undo=Geri Al	#
-resourcePack.editor.menuBar.edit=Düzenle	#
-resourcePack.editor.menuBar.experimental=Deneysel	#
-resourcePack.editor.menuBar.extensions=Uzatmalar	#
-resourcePack.editor.menuBar.file.cursor.projectThroughLiquid=Sıvı ile proje	#
-resourcePack.editor.menuBar.file.cursor=İmleç ayarları	#
-resourcePack.editor.menuBar.file.export.project=Düzenleyici Projesi	#
-resourcePack.editor.menuBar.file.export.world=Oynanabilir dünya	#
-resourcePack.editor.menuBar.file.export=Dışarı Aktar	#
-resourcePack.editor.menuBar.file.pauseScreen=Oyun menüsü	#
-resourcePack.editor.menuBar.file.settings=Kullanıcı arayüzü ayarları	#
-resourcePack.editor.menuBar.file=Dosya	#
-resourcePack.editor.menuBar.help.tutorial=Öğretici 	#### {MaxLength="500"} Represent menu bar item in help menu that activates editor tutorial when pressed
-resourcePack.editor.menuBar.help.documentation=Dokümantasyon	#
-resourcePack.editor.menuBar.help.feedback=Geri Bildirim	#
-resourcePack.editor.menuBar.help.quickStart=Hızlı başlangıç	#
-resourcePack.editor.menuBar.help=Yardım	#
-resourcePack.editor.menuBar.locate=Yerini Bul	#
-resourcePack.editor.menuBar.parentMenu.weather.clear=Açık	#
-resourcePack.editor.menuBar.parentMenu.weather.rain=Yağmur	#
-resourcePack.editor.menuBar.parentMenu.weather.thunder=Gök Gürültüsü	#
-resourcePack.editor.menuBar.parentMenu.weather=Hava durumu	#
-resourcePack.editor.menuBar.view.blockPalette=Blok Paleti	#
-resourcePack.editor.menuBar.view.logging=Kütük Paneli	#
-resourcePack.editor.menuBar.view.navigationLogging=Gezinme günlüğü	#
-resourcePack.editor.menuBar.view=Görüntüle	#
-resourcePack.editor.menuBar.worldOptions.changeDimension.end=End	#
-resourcePack.editor.menuBar.worldOptions.changeDimension.nether=Nether	#
-resourcePack.editor.menuBar.worldOptions.changeDimension.overworld=Dış Dünya	#
-resourcePack.editor.menuBar.worldOptions.changeDimension=Boyut değiştirme	#
-resourcePack.editor.menuBar.worldOptions.pause.entities=Varlıklar	#
-resourcePack.editor.menuBar.worldOptions.pause=Durdur	#
-resourcePack.editor.menuBar.worldOptions=Dünya Seçenekleri	#
-
-
-resourcePack.editor.navigation.keyBinding.add=Gezinme Konumu Ekle	#
-resourcePack.editor.navigation.keyBinding.next=Sonraki Gezinme Konumuna Git	#
-resourcePack.editor.navigation.keyBinding.previous=Önceki Gezinme Konumuna Git	#
-
-
-resourcePack.editor.paste.pane.submitButton=Yapıştırmayı Onayla	#
-resourcePack.editor.paste.pane.title=Yapıştır	#
-resourcePack.editor.paste.pane.transform.mirrorX=Ayna X	#
-resourcePack.editor.paste.pane.transform.mirrorZ=Ayna Z	#
-resourcePack.editor.paste.pane.transform.origin.title=Uzaklık	#
-resourcePack.editor.paste.pane.transform.rotation.180=180°	#
-resourcePack.editor.paste.pane.transform.rotation.270=270	#
-resourcePack.editor.paste.pane.transform.rotation.90=90°	#
-resourcePack.editor.paste.pane.transform.rotation.none=0°	#
-resourcePack.editor.paste.pane.transform.rotation.title=Döndür	#
-resourcePack.editor.paste.pane.transform.title=Dönüştür	#
-resourcePack.editor.paste.toolRail.description=Bir blok seçmek için fareye sol tıklama, ardından pano ögesini tam olarak yapıştırma	#
-resourcePack.editor.paste.toolRail.title=Ön İzlemeyi Yapıştır	#
-
-
-resourcePack.editor.pastepreview.inputContext.title=Ön İzlemeyi Yapıştır	#
-resourcePack.editor.pastepreview.keyBinding.clearPreview=Ön İzlemeyi Temizle	#
-resourcePack.editor.pastepreview.keyBinding.copy=Seçimi Kopyala	#
-resourcePack.editor.pastepreview.keyBinding.cut=Seçimi Kes	#
-resourcePack.editor.pastepreview.keyBinding.moveBack=Ön İzlemeyi Geri Taşı	#
-resourcePack.editor.pastepreview.keyBinding.moveDown=Ön İzlemeyi Aşağı Taşı	#
-resourcePack.editor.pastepreview.keyBinding.moveForward=Ön İzlemeyi İleri Taşı	#
-resourcePack.editor.pastepreview.keyBinding.moveLeft=Ön İzlemeyi Sola Taşı	#
-resourcePack.editor.pastepreview.keyBinding.moveOffsetBack=Kaydırmayı Geri Taşı	#
-resourcePack.editor.pastepreview.keyBinding.moveOffsetDown=Kaydırmayı Aşağı Taşı	#
-resourcePack.editor.pastepreview.keyBinding.moveOffsetForward=Kaydırmayı İleri Taşı	#
-resourcePack.editor.pastepreview.keyBinding.moveOffsetLeft=Kaydırmayı Sola Taşı	#
-resourcePack.editor.pastepreview.keyBinding.moveOffsetRight=Kaydırmayı Sağa Taşı	#
-resourcePack.editor.pastepreview.keyBinding.moveOffsetUp=Kaydırmayı Yukarı Taşı	#
-resourcePack.editor.pastepreview.keyBinding.moveOriginBack=Başlangıç Noktasını Geri Taşı	#
-resourcePack.editor.pastepreview.keyBinding.moveOriginDown=Başlangıç Noktasını Aşağı Taşı	#
-resourcePack.editor.pastepreview.keyBinding.moveOriginForward=Başlangıç Noktasını İleri Taşı	#
-resourcePack.editor.pastepreview.keyBinding.moveOriginLeft=Başlangıç Noktasını Sola Taşı	#
-resourcePack.editor.pastepreview.keyBinding.moveOriginRight=Başlangıç Noktasını Sağa Taşı	#
-resourcePack.editor.pastepreview.keyBinding.moveOriginUp=Başlangıç Noktasını Yukarı Taşı	#
-resourcePack.editor.pastepreview.keyBinding.moveRight=Ön İzlemeyi Sağa Taşı	#
-resourcePack.editor.pastepreview.keyBinding.moveUp=Ön İzlemeyi Yukarı Taşı	#
-resourcePack.editor.pastepreview.keyBinding.paste=Yapıştır	#
-resourcePack.editor.pastepreview.keyBinding.pasteAtCursor=İmleçte Yapıştır	#
-resourcePack.editor.pastepreview.keyBinding.pastepreview=Ön İzlemeyi Yapıştır	#
-resourcePack.editor.pastepreview.keyBinding.quickPaste=Hızlı Yapıştırma	#
-resourcePack.editor.pastepreview.keyBinding.rotateClockWise=Ön İzlemeyi Saat Yönünde Döndür	#
-resourcePack.editor.pastepreview.keyBinding.rotateCounterClockWise=Ön İzlemeyi Saat Yönünün Tersine Döndür	#
-resourcePack.editor.pastepreview.keyBinding.toggleAdjacentTarget=Bitişik Hedef Modunu Aç/Kapat	#
-resourcePack.editor.pastepreview.keyBinding.toggleBlockTarget=Hedef Modunu Engelle'yi Aç/Kapat	#
-resourcePack.editor.pastepreview.keyBinding.toggleFixedDistance=Sabit Mesafeyi Etkinleştir	#
-resourcePack.editor.pastepreview.keyBinding.toggleMirrorX=X'i Yansıt'ı Aç/Kapat	#
-resourcePack.editor.pastepreview.keyBinding.toggleMirrorZ=Z'yi Yansıt'ı Aç/Kapat	#
-resourcePack.editor.pastepreview.keyBinding.toggleMouseTracking=Fare İzlemeyi Aç/Kapat	#
-resourcePack.editor.pastepreview.pane.controls.cursor.fixed=Sabit Mesafe	#
-resourcePack.editor.pastepreview.pane.controls.cursor.keyboard=Yalnızca tuşlar	#
-resourcePack.editor.pastepreview.pane.controls.cursor.mouseandkeys=Fare ve Tuşlar	#
-resourcePack.editor.pastepreview.pane.controls.cursor.target.block=Engelle	#
-resourcePack.editor.pastepreview.pane.controls.cursor.target.face=Bitişik	#
-resourcePack.editor.pastepreview.pane.controls.cursor.target.title=Hedef	#
-resourcePack.editor.pastepreview.pane.controls.cursor=Kontrol	#
-resourcePack.editor.pastepreview.pane.controls.title=İmleç Kontrolleri	#
-resourcePack.editor.pastepreview.pane.placement.mirrorX=Ayna X	#
-resourcePack.editor.pastepreview.pane.placement.mirrorZ=Ayna Z	#
-resourcePack.editor.pastepreview.pane.placement.offset=Uzaklık	#
-resourcePack.editor.pastepreview.pane.placement.origin=Menşei	#
-resourcePack.editor.pastepreview.pane.placement.pastebutton=Yapıştır	#
-resourcePack.editor.pastepreview.pane.placement.rotation=Döndürme (Y)	#
-resourcePack.editor.pastepreview.pane.placement.title=Yerleştirme Ayarları	#
-resourcePack.editor.pastepreview.pane.root.size=Beden	#
-resourcePack.editor.pastepreview.pane.root.title=Ön İzlemeyi Yapıştır	#
-resourcePack.editor.pastepreview.tool.tip=Pano ön izlemesinin konumunu ayarlamak için fareyi kullanın ve dünyaya yapıştırmak için tıklayın	#
-resourcePack.editor.pastepreview.tool.title=Ön İzlemeyi Yapıştır	#
-
-
-resourcePack.editor.playerPositionExtension.dimension=Boyut	#
-resourcePack.editor.playerPositionExtension.menu.player=Oyuncu	#
-resourcePack.editor.playerPositionExtension.menu.showPlayerSettings=Oyuncu Ayarlarını Göster	#
-resourcePack.editor.playerPositionExtension.nether=Nether	#
-resourcePack.editor.playerPositionExtension.overworld=Dış Dünya	#
-resourcePack.editor.playerPositionExtension.pane=Oyuncu Ayarları	#
-resourcePack.editor.playerPositionExtension.theEnd=The End	#
-resourcePack.editor.playerPositionExtension.worldSettings=Dünya Ayarları	#
-
-
-resourcePack.editor.playtest.AdvancedSettings.title=Gelişmiş Ayarlar	#
-resourcePack.editor.playtest.Dialog.DaylightCycle=Gün Işığı Döngüsü	#
-resourcePack.editor.playtest.Dialog.Difficulty=Zorluk	#
-resourcePack.editor.playtest.Dialog.GameMode=Oyun Modu	#
-resourcePack.editor.playtest.Dialog.OverrideSpawn=Mevcut Lokasyonda Belir	#
-resourcePack.editor.playtest.Dialog.ShowCoordinates=Koordinatları Göster	#
-resourcePack.editor.playtest.Dialog.TestButton=Test Dünyası	#
-resourcePack.editor.playtest.Dialog.TimeOfDay=Günün Dilimi	#
-resourcePack.editor.playtest.Dialog.Title=Test Ayarları	#
-resourcePack.editor.playtest.Dialog.Weather=Hava durumu	#
-resourcePack.editor.playtest.Dialog.WeatherCycle=Hava Döngüsü	#
-resourcePack.editor.playtest.Menu.Title=Test Dünyası	#
-resourcePack.editor.playtest.Title.Tooltip=Düzenleyici projenizi oynanabilir bir Minecraft dünyası olarak test edin. Projenize hiçbir değişiklik kaydedilmeyecek. Yalnızca tek oyunculu bir proje sunuculuğu yaparken kullanılabilir.	#
-
-
-resourcePack.editor.playtestResult.EditorSystemFailure=Düzenleyici Sistemi Başarısız	#
-resourcePack.editor.playtestResult.InvalidLevelId=Geçersiz Seviye Kimliği	#
-resourcePack.editor.playtestResult.InvalidSessionHandle=Geçersiz Oturum Kolu	#
-resourcePack.editor.playtestResult.OK=Başarılı	#
-resourcePack.editor.playtestResult.PlayerNotFound=Oyuncu Bulunamadı	#
-resourcePack.editor.playtestResult.ResponseTimeout=Yanıt Zaman Aşımı	#
-resourcePack.editor.playtestResult.SessionInfoNotFound=Oturum Bilgisi Bulunamadı	#
-resourcePack.editor.playtestResult.TooManyPlayers=Başka oyunculara sunuculuk yaparken bir dünyayı test edemezsiniz	#
-resourcePack.editor.playtestResult.UnspecifiedError=Belirtilmemiş Hata	#
-resourcePack.editor.playtestResult.UnsupportedScenario=Dünyayı test etmek için düzenleyici projesi sunuculuğu yapıyor olmalısınız	#
-resourcePack.editor.playtestResult.WorldExportBusy=Dünya Dışa Aktarımı Meşgul	#
-resourcePack.editor.playtestResult.WorldExportFailed=Dünya Dışa Aktarımı Başarısız Oldu	#
-
-
-resourcePack.editor.menuBar.file.realmsPublish=Realms'ta Yayınla   	####This string is intended to express that the option is for opening the pane to publish your editor world to Realms.{MaxLength=100}
-resourcePack.editor.realmsPublish.noActiveRealmsSubscription=Realms'e Yayınlama için aktif bir Realms aboneliği gerekir. Realms'a abone olabilir veya süresi dolan abonelikleri standart Minecraft istemcisinden ya da hesabınıza giriş yaptıktan sonra minecraft.net web adresinden yenileyebilirsiniz.    	####This string is intended to express that the user doesn't have a active Realms subscription and the process they need to follow in order to be able to upload their editor world to their Realms subscription.{MaxLength=350}
-resourcePack.editor.realmsPublish.userNotLoggedIn=Realms'ta Yayınlama için aktif bir Realms aboneliği gereklidir. Mevcut bir Realms aboneliğine erişmek için bir Microsoft Hesabında oturum açmış olmanız gerekir.		####This string is intended to express that the user is not logged in currently and that they must be logged into their Microsoft account in order to proceed.{MaxLength=350}
-resourcePack.editor.realmsPublish.dedicatedServerWarning=Özelleştirilmiş Sunucu kullanıldığında Realms'ta Yayınla seçeneği kullanılamaz.		####This string is intended to express that the user is unable to use the Publish to Realms feature on a dedicated server.{MaxLength=350}
-resourcePack.editor.realmsPublish.notSessionHostWarning=Yalnızca Düzenleyici sunucu Realms'ta Yayınlama yapabilir.		####This string is intended to express that the user is unable to use the Publish to Realms when they are not the session host.{MaxLength=350}
-resourcePack.editor.realmsPublish.genericRealmsIssue=Realms hizmetiyle ilgili bir sorun oluştu, daha sonra yeniden deneyin.		####This string is intended to express that there is an issue with the realms service and to please try again later.{MaxLength=350}
-resourcePack.editor.realmsPublish.goToMinecraftWebsite=Minecraft.net adresine git  	####This string is intended to express that the link will take the user to Minecraft.net.{MaxLength=100}
-resourcePack.editor.realmsPublish.Refresh=Yenile  	####This string is intended to express that the button will refresh the pane to see if the user in now logged in.{MaxLength=100}
-resourcePack.editor.realmsPublish.Realm=Realm  	####This string is intended to express that the below dropdown contains all of the users Realms subscriptions.{MaxLength=100}
-resourcePack.editor.realmsPublish.RealmSlot=Realm yuvası 	####This string is intended to express that the dropdown contains all of the world slots in for the users selected realms subscription.{MaxLength=100}
-resourcePack.editor.realmsPublish.EmptySlot=Boş Yuva		####This string is intended to express that the Realm slot is empty.{MaxLength=100}
-resourcePack.editor.realmsPublish.PublishNotesTitle=Realms'ta Yayınlama Notu   	####This string is intended to express that the below field will contain additional information for the user about the publish to realms feature, including any warnings or issues.{MaxLength=150}
-resourcePack.editor.realmsPublish.DownloadRealm=İndir    	####This string is intended to express that the button will download the currently selected World from the realm slot.{MaxLength=100}
-resourcePack.editor.realmsPublish.PublishRealm=Yayınla  	####This string is intended to express that the button will publish the current world to the currently selected realm slot.{MaxLength=100}
-resourcePack.editor.realmsPublish.Confirm=Onayla   	####This string is intended to express that the button will confirm  the request to publish the world to realms.{MaxLength=100}
-resourcePack.editor.realmsPublish.Cancel=İptal 	####This string is intended to express that the button will cancel the request to publish the world to realms.{MaxLength=100}
-resourcePack.editor.realmsPublish.Back=Geri 	####This string is intended to express that the button will take the user back to the previous pane.{MaxLength=100}
-resourcePack.editor.realmsPublish.PublishFailedNonCompliantWorldName=Realms'ta Yayınlama geçersiz bir dünya adı nedeniyle başarısız oldu. Lütfen dünya adını güncelleyin ve tekrar deneyin.		####This string is intended to express that publishing the world to Realms failed due to an invalid world name that was entered by the player .{MaxLength=200}
-resourcePack.editor.realmsPublish.PublishFailed=Realms'ta yayınlama başarısız oldu. Lütfen daha sonra tekrar deneyin.   	####This string is intended to express that publishing the world to Realms failed and to please try again later.{MaxLength=200}
-resourcePack.editor.realmsPublish.PublishSuccess=Realms'ta başarıyla yayınlandı    	####This string is intended to express that publishing the world to Realms succeeded.{MaxLength=200}
-resourcePack.editor.realmsPublish.PublishConfirmationOptOut=Bu Realm ve oturum için bir daha sorma  	####This string is intended to express that the checkbox will opt the user out of confirming their publish to realms decisions.{MaxLength=100}
-resourcePack.editor.realmsPublish.PublishingToRealms=Dünya Realms'ta yayınlanma aşamasında...  	####This string is intended to express that the world is currently in the process of being published to Realms.{MaxLength=100}
-resourcePack.editor.realmsPublish.UnableToPublishMissingRealm=Realms'ta yayınlanamadı. Seçili Realm yok    	####This string is intended to express that the user is unable to publish their world because a realm to upload to has not been selected.{MaxLength=250}
-resourcePack.editor.realmsPublish.UnableToPublishMissingRealmSlot=Realms'ta yayınlanamadı. Seçili Realm Yuvası yok   	####This string is intended to express that the user is unable to publish their world because a realm slot to upload to has not been selected.{MaxLength=250}
-resourcePack.editor.realmsPublish.PublishConfirmationWarning=Bu işlem sonrasında mevcut dünyanız seçili yuvadan kaldırılacak ve yerine mevcut Düzenleyici dünyanız getirilecektir (seçilen yuva aynı zamanda Realm'ınız için etkin yuva hâline gelecektir). Realm'ınızın üyeleri yeni gelen dünyanıza erişebilecektir. Yayınlamadan önce veri kaybını önlemek için geçerli dünyanızı kaydetmek isterseniz bu iletişim kutusunu iptal edin ve “Yayınla” seçimini yapmadan önce “İndir” seçimini yapın. Devam etmek ve mevcut dünyanızı değiştirmek için “Onayla”yı seçin.    	####This string is intended to warn the user that if they publish their world to Realms, the world currently in that Realms slot will be deleted and unrecoverable. It also informs the user that members of the Realm will be able to access this world.{MaxLength=1000}
-resourcePack.editor.realmsPublish.DownloadSuccess=Dünya, Realms'tan başarıyla indirildi    	####This string is intended to express that downloading a world from Realms succeeded.{MaxLength=200}
-resourcePack.editor.realmsPublish.DownloadFailed=Dünya, Realms'tan indirilemedi 	####This string is intended to express that downloading a world from Realms failed.{MaxLength=200}
-resourcePack.editor.realmsPublish.DownloadingFromRealms=Dünya, Realms'tan indiriliyor...    	####This string is intended to express that we're in the middle of downloading a world from Realms and waiting for that operation to complete.{MaxLength=200}
-
-
-resourcePack.editor.toolRail.RepeaterTool.title=Yineleyici Alet	#
-resourcePack.editor.toolRail.RepeaterTool.tooltip=Seçim birimini yinelemek için alet	#
-resourcePack.editor.toolRail.RepeaterTool.pane.Spacing=Aralık	#
-resourcePack.editor.toolRail.RepeaterTool.pane.Repetitions=Yinelemeler	#
-resourcePack.editor.toolRail.RepeaterTool.pane.Preview=Ön İzleme	#
-resourcePack.editor.toolRail.RepeaterTool.pane.Clear=Temizle	#
-resourcePack.editor.toolRail.RepeaterTool.pane.Apply=Uygula	#
-resourcePack.editor.toolRail.RepeaterTool.statusMessage.noSelection=Tekrarlanacak birimi seçmek için Seçim aletini kullanın	#
-resourcePack.editor.toolRail.RepeaterTool.pane.Mode=Mod		####"Mode" describes a dropdown that contains the two different states the tool can be in. These are "Line" and "Grid" {MaxLength=20}
-resourcePack.editor.toolRail.RepeaterTool.mode.Line=Çizgi		####"Line" describes a straight, unbroken visual between two points {MaxLength=20}
-resourcePack.editor.toolRail.RepeaterTool.mode.Grid=Kafes		####"Grid" describes a visual consisting of parallel lines at regular intervals, broken up by perpendicular lines at regular intervals, like grid paper. {MaxLength=20}
-resourcePack.editor.toolRail.RepeaterTool.pane.RepeatType=Tekrarlama Türü		####"Repeat Type" describes a dropdown that contains the two types "Uniform" and "Separate" and represents how the repetitions along the three axes (plural of "axis") will be determined {MaxLength=40}
-resourcePack.editor.toolRail.RepeaterTool.repeat.Uniform=Tek Tip		####"Uniform" describes the repeat state of the Repeater Tool where it applies the same number of repetitions across all three axes (X, Y, and Z). "Uniform" was chosen as a short word that also means "consistent across multiple instances" {MaxLength=20}
-resourcePack.editor.toolRail.RepeaterTool.pane.RepeatAlongX=X Boyunca Tekrarla		####"Repeat Along" describes a checkbox and means to apply the number of Uniform Repetitions across a given axis. This one is the X axis. "X", "Y", and "Z" have a mathematical meaning and it may not be appropriate to translate unless the mathematical meaning is also translated. More info can be found at https://en.wikipedia.org/wiki/Coordinate_system {MaxLength=40}
-resourcePack.editor.toolRail.RepeaterTool.pane.RepeatAlongY=Y Boyunca Tekrarla		####See "Repeat Along X" but this is for the Y axis. {MaxLength=40}
-resourcePack.editor.toolRail.RepeaterTool.pane.RepeatAlongZ=Z Boyunca Tekrarla		####See "Repeat Along X" but this is for the Z axis. {MaxLength=40}
-resourcePack.editor.toolRail.RepeaterTool.repeat.Separate=Ayrı		####"Separate" describes the repeat state of the Repeater Tool where the number of repetitions along each axis is set using separate number input elements, rather than one single number input {MaxLength=20}
-resourcePack.editor.toolRail.RepeaterTool.pane.XCount=X Sayısı		####"X Count" describes a number input field and represents the number of repetitions along the X axis. "X", "Y", and "Z" have a mathematical meaning and it may not be appropriate to translate unless the mathematical meaning is also translated. More info can be found at https://en.wikipedia.org/wiki/Coordinate_system {MaxLength=20}
-resourcePack.editor.toolRail.RepeaterTool.pane.YCount=Y Sayısı		####See "X Count" but this is for the Y axis. {MaxLength=20}
-resourcePack.editor.toolRail.RepeaterTool.pane.ZCount=Z Sayısı		####See "X Count" but this is for the Z axis. {MaxLength=20}
-
-
-resourcePack.editor.selectionTool.deselect=Seçimi Kaldır	#
-resourcePack.editor.selectionTool.fillPane.fillAction=Seçim Aracını Doldur	#
-resourcePack.editor.selectionTool.fillPane.title=Seçim Aracını Doldur	#
-resourcePack.editor.selectionTool.keyBinding.deselect=Seçimi Kaldır	#
-resourcePack.editor.selectionTool.keyBinding.fill=Seçim İçeriklerini Doldur	#
-resourcePack.editor.selectionTool.keyBinding.growBack=Seçimi Arkaya Uzat	#
-resourcePack.editor.selectionTool.keyBinding.growDown=Seçimi Aşağı Uzat	#
-resourcePack.editor.selectionTool.keyBinding.growForward=Seçimi İleri Uzat	#
-resourcePack.editor.selectionTool.keyBinding.growLeft=Seçimi Sola Uzat	#
-resourcePack.editor.selectionTool.keyBinding.growRight=Seçimi Sağa Uzat	#
-resourcePack.editor.selectionTool.keyBinding.growUp=Seçimi Yukarı Uzat	#
-resourcePack.editor.selectionTool.keyBinding.moveAllSelectionBack=Tüm Seçimi Geri Taşı	#
-resourcePack.editor.selectionTool.keyBinding.moveAllSelectionDown=Tüm Seçimi Aşağı Taşı	#
-resourcePack.editor.selectionTool.keyBinding.moveAllSelectionForward=Tüm Seçimleri İleri Taşı	#
-resourcePack.editor.selectionTool.keyBinding.moveAllSelectionLeft=Tüm Seçimi Sola Taşı	#
-resourcePack.editor.selectionTool.keyBinding.moveAllSelectionRight=Tüm Seçimleri Sağa Taşı	#
-resourcePack.editor.selectionTool.keyBinding.moveAllSelectionUp=Tüm Seçimleri Yukarı Taşı	#
-resourcePack.editor.selectionTool.keyBinding.moveCursorBack=İmleci Geri Taşı	#
-resourcePack.editor.selectionTool.keyBinding.moveCursorDown=İmleci Aşağı Taşı	#
-resourcePack.editor.selectionTool.keyBinding.moveCursorForward=İmleci İleri Taşı	#
-resourcePack.editor.selectionTool.keyBinding.moveCursorLeft=İmleci Sola Taşı	#
-resourcePack.editor.selectionTool.keyBinding.moveCursorRight=İmleci Sağa Taşı	#
-resourcePack.editor.selectionTool.keyBinding.moveCursorUp=İmleci Yukarı Taşı	#
-resourcePack.editor.selectionTool.keyBinding.moveSelectionBack=Seçimi Geri Taşı	#
-resourcePack.editor.selectionTool.keyBinding.moveSelectionDown=Seçimi Aşağı Taşı	#
-resourcePack.editor.selectionTool.keyBinding.moveSelectionForward=Seçimi İleri Taşı	#
-resourcePack.editor.selectionTool.keyBinding.moveSelectionLeft=Seçimi Sola Taşı	#
-resourcePack.editor.selectionTool.keyBinding.moveSelectionRight=Seçimi Sağa Taşı	#
-resourcePack.editor.selectionTool.keyBinding.moveSelectionUp=Seçimi Yukarı Taşı	#
-resourcePack.editor.selectionTool.keyBinding.shrinkBack=Seçimi Arkaya Küçült	#
-resourcePack.editor.selectionTool.keyBinding.shrinkDown=Seçimi Aşağı Küçült	#
-resourcePack.editor.selectionTool.keyBinding.shrinkForward=Seçimi İleri Küçült	#
-resourcePack.editor.selectionTool.keyBinding.shrinkLeft=Seçim Sola Küçült	#
-resourcePack.editor.selectionTool.keyBinding.shrinkRight=Seçimi Sağa Küçült	#
-resourcePack.editor.selectionTool.keyBinding.shrinkUp=Seçim Yukarı Küçült	#
-resourcePack.editor.selectionTool.keyBinding.toggleTool=Seçim Aletini Aç/Kapat	#
-resourcePack.editor.selectionTool.keyBinding.select=Blok Seç			#### The action of adding a block to the selection volume using they keyboard {MaxLength="30"}
-resourcePack.editor.selectionTool.keyBinding.selectMultiple=Ek Blok Seç			#### The action of adding an additional block to the selection volume using the keyboard {MaxLength="30"}
-resourcePack.editor.selectionTool.keyBinding.trimVolume=Kırpma Seçimi (Sınırlar)					#### Keybinding description for Trim the current selection volume to fit only the solid blocks within {MaxLength=30}
-resourcePack.editor.selectionTool.keyBinding.trimRemoveAir=Trim Selection (Remove Air)			#### Keybinding description for Remove the air from the current selection volume leaving only specified blocks {MaxLength=30}
-resourcePack.editor.selectionTool.marquee.title=Çerçeve Seçimi	#
-resourcePack.editor.selectionTool.modeSelection.freehand.title=Serbest Fırça Modu	#
-resourcePack.editor.selectionTool.modeSelection.freehand.tooltip=Serbest fırça şeklini kullanarak dünyadaki blokları seçin	#
-resourcePack.editor.selectionTool.modeSelection.marquee.title=Çerçeve Modu	#
-resourcePack.editor.selectionTool.modeSelection.marquee.tooltip=Dikdörtgen bir hacim kullanarak dünyadaki blokları seçin	#
-resourcePack.editor.selectionTool.modeSelection.magic.title=Sihirli Seçim Modu			#### Magic Select mode is a mode that searches for contiguous matching blocks in a search radius {MaxLength=30}}
-resourcePack.editor.selectionTool.modeSelection.magic.tooltip=Dünyadaki blokları seçilen bir kaynaktan gelen arama modelini kullanarak seçin		#### Longer description of the magic select mode {MaxLength=150}}
-resourcePack.editor.selectionTool.modeSelection.title=Seçim Modu	#
-resourcePack.editor.selectionTool.projectThroughLiquid=Sıvı ile proje	#
-resourcePack.editor.selectionTool.trimAction.trimVolume=Kırpma Seçimi			#### Trim the current selection volume to fit only the solid blocks within {MaxLength=30}
-resourcePack.editor.selectionTool.trimAction.trimVolume.tooltip=Geçerli seçim hacmini yalnızca içindeki katı bloklara sığacak şekilde kırpın   	#### {MaxLength=200}
-resourcePack.editor.selectionTool.trimAction.removeAir=Havayı Kaldır			#### Remove the air from the current selection volume leaving only specified blocks {MaxLength=30}
-resourcePack.editor.selectionTool.trimAction.removeAir.tooltip=Yalnızca belirli blokları bırakın ve mevcut seçim hacmindeki havayı kaldırın 	#### {MaxLength=200}
-resourcePack.editor.selectionTool.trimAction.trimVolume.SettingsPane.title=Kırpma Ayarları		#### The window pane title for the settings for trim mode {MaxLength=30}
-resourcePack.editor.selectionTool.trimAction.trimVolume.SettingsPane.ignoreLiquid=Sıvıları Yok Say		#### The toggle button title for ignoring liquids {MaxLength=30}
-resourcePack.editor.selectionTool.trimAction.trimVolume.SettingsPane.ignoreLiquid.tooltip=Hacmi kırparken sıvı blokları yok sayın 	#### {MaxLength=200}
-resourcePack.editor.selectionTool.trimAction.trimVolume.SettingsPane.onlyCollidable=Sadece Çarpışma Blokları		#### The toggle button title for collision-only blocks {MaxLength=30}
-resourcePack.editor.selectionTool.trimAction.trimVolume.SettingsPane.onlyCollidable.tooltip=Hacmi kırparken çarpışma olmayan blokları (yapraklar, çimen vb.) yok sayın 	#### {MaxLength=200}
-resourcePack.editor.selectionTool.quickAction.clearSelection.tooltip=Geçerli seçimi kaldır	#
-resourcePack.editor.selectionTool.quickAction.clearSelection=Seçimi Kaldır	#
-resourcePack.editor.selectionTool.quickAction.deleteSelection.tooltip=Geçerli seçim biriminin içindeki tüm blokları kaldırın	#
-resourcePack.editor.selectionTool.quickAction.deleteSelection=Sil	#
-resourcePack.editor.selectionTool.quickAction.fillSelection.tooltip=Geçerli seçim birimini mevcut seçili blok türüyle doldur	#
-resourcePack.editor.selectionTool.quickAction.fillSelection=Doldur	#
-resourcePack.editor.selectionTool.quickAction.title=Hızlı Eylemler	#
-resourcePack.editor.selectionTool.selectionMode.adjacent=Bitişik	#
-resourcePack.editor.selectionTool.selectionMode.fixedDistance=Sabit Mesafe	#
-resourcePack.editor.selectionTool.selectionMode.mouseAndKeyboard=Serbest Form	#
-resourcePack.editor.selectionTool.selectionMode=Mod	#
-resourcePack.editor.selectionTool.settingsPane.title=Seçim	#
-resourcePack.editor.selectionTool.toolRail.description=Bir seçim oluşturmak için fareye sol tıkla; seçimi kaldırmak için CTRL+D	#
-resourcePack.editor.selectionTool.toolRail.title=Seçim	#
-resourcePack.editor.selectionTool.transformPane.origin.tooltip=Seçimin dünya koordinatlarındaki başlangıç ​​konumu	#
-resourcePack.editor.selectionTool.transformPane.origin=Menşei	#
-resourcePack.editor.selectionTool.transformPane.size=Boyut	#
-resourcePack.editor.selectionTool.transformPane.title=Dönüştür	#
-
-
-resourcePack.editor.BlockMaskControl.trim.rootPane.title=Kırpma Ayarları		#### The window pane title for the settings for trim mode {MaxLength=30}
-resourcePack.editor.BlockMaskControl.trim.toggleGroup.title=Maske Modu		#### The title of the toggle group {MaxLength=30}
-resourcePack.editor.BlockMaskControl.trim.toggleGroup.item.disabled.label=Disable Block Filters			#### The title of the icon which disables block filters {MaxLength=30}
-resourcePack.editor.BlockMaskControl.trim.toggleGroup.item.disabled.tooltip=Devre Dışı					#### The tooltip of the icon which disables block filters {MaxLength=100}
-resourcePack.editor.BlockMaskControl.trim.toggleGroup.item.mask.label=Maske								#### The title of the icon which masks block filters {MaxLength=30}
-resourcePack.editor.BlockMaskControl.trim.toggleGroup.item.mask.tooltip=Listeye uyan bloklar göz ardı edilir			#### Mask mode tooltip {MaxLength=100}
-resourcePack.editor.BlockMaskControl.trim.toggleGroup.item.replace.label=Değiştir						#### The title of the replace block filter {MaxLength=30}
-resourcePack.editor.BlockMaskControl.trim.toggleGroup.item.replace.tooltip=Listeye uyan bloklar katı olarak değerlendirilir			#### Replace mode tooltip {MaxLength=100}
-
-
-resourcePack.editor.server.description=Düzenleyici Sunucu Kaynakları	#
-resourcePack.editor.server.name=Düzenleyici Kaynakları	#
-
-
-resourcePack.editor.toolRail.Terrain.title=Arazi	#
-resourcePack.editor.toolRail.Terrain.keybinding.toggleTool=Arazi Aletini Aç/Kapat	#
-resourcePack.editor.toolRail.Terrain.keyBinding.switch=Arazi Modunu Değiştir	#
-resourcePack.editor.toolRail.Terrain.Mode.title=Arazi Modu	#
-resourcePack.editor.toolRail.Terrain.Smooth.mode.title=Pürüzsüz Modu	#
-resourcePack.editor.toolRail.Terrain.Smooth.tooltip=Pürüzsüzleştirme kuvvetine dayalı olarak arazi üzerinde pürüzsüzleştirme	#
-resourcePack.editor.toolRail.Terrain.SmoothStrength=Pürüzsüzlük Kuvveti	#
-resourcePack.editor.toolRail.Terrain.Roughen.mode.title=Pürüzlendirme Modu	#
-resourcePack.editor.toolRail.Terrain.Roughen.tooltip=Pürüzlendirme kuvvetine dayalı olarak araziyi pürüzlendirin	#
-resourcePack.editor.toolRail.Terrain.RoughenStrength=Pürüzlendirme Kuvveti	#
-resourcePack.editor.toolRail.Terrain.description=Arazi aleti, araziyi daha pürüzsüz veya pürüzlü hâle getirir	#
-
-
-resourcePack.editor.help.learnMore=Daha fazla bilgi	#
-
-resourcePack.editor.statusBar.connectedPlayers=%s Bağlı Oyuncu	#
-
-
-resourcePack.editor.summonTool.summonSubPane.EntityPickerTitle=Varlık Türü	#
-
-
-resourcePack.editor.timeOfDay.12hrClock=12 Saatlik Saat	#
-resourcePack.editor.timeOfDay.24hrClock=24 Saatlik Saat	#
-resourcePack.editor.timeOfDay.clockType=Saat Türü	#
-resourcePack.editor.timeOfDay.currentTime=Şimdiki Zaman	#
-resourcePack.editor.timeOfDay.customTime=Özel Zaman	#
-resourcePack.editor.timeOfDay.daylightCycle=Gün Işığı Döngüsü	#
-resourcePack.editor.timeOfDay.dropDown.day=Gün	#
-resourcePack.editor.timeOfDay.dropDown.midnight=Gece yarısı	#
-resourcePack.editor.timeOfDay.dropDown.night=Gece	#
-resourcePack.editor.timeOfDay.dropDown.none=Yok	#
-resourcePack.editor.timeOfDay.dropDown.noon=Öğlen	#
-resourcePack.editor.timeOfDay.dropDown.sunrise=Gün Doğumu	#
-resourcePack.editor.timeOfDay.dropDown.sunset=Gün Batımı	#
-resourcePack.editor.timeOfDay.dropDown.custom=Özel		####"Custom" describes a dropdown that players can define the specific start time {MaxLength=20}
-resourcePack.editor.timeOfDay.dropDown.title=Ön ayarlar	#
-resourcePack.editor.timeOfDay.menu.title=Günün Saati Ayarları	#
-resourcePack.editor.timeOfDay.minecraftClock=Minecraft Saati	#
-resourcePack.editor.timeOfDay.title=Zaman Ayarları	#
-
-
-resourcePack.editor.toolMode.keyBinding.console=Konsolu Aç	#
-resourcePack.editor.toolMode.keyBinding.devConsole=Geliştirici Konsolunu Aç	#
-resourcePack.editor.toolMode.keyBinding.hotbar1=Hızlı Erişim Çubuğu 1'i seç	#
-resourcePack.editor.toolMode.keyBinding.hotbar2=Hızlı Erişim Çubuğu 2'yi seç	#
-resourcePack.editor.toolMode.keyBinding.hotbar3=Hızlı Erişim Çubuğu 3'ü seç	#
-resourcePack.editor.toolMode.keyBinding.hotbar4=Hızlı Erişim Çubuğu 4'ü seç	#
-resourcePack.editor.toolMode.keyBinding.hotbar5=Hızlı Erişim Çubuğu 5'i seç	#
-resourcePack.editor.toolMode.keyBinding.hotbar6=Hızlı Erişim Çubuğu 6'yı seç	#
-resourcePack.editor.toolMode.keyBinding.hotbar7=Hızlı Erişim Çubuğu 7'yi seç	#
-resourcePack.editor.toolMode.keyBinding.hotbar8=Hızlı Erişim Çubuğu 8'i seç	#
-resourcePack.editor.toolMode.keyBinding.hotbar9=Hızlı Erişim Çubuğu 9'u seç	#
-resourcePack.editor.toolMode.keyBinding.reload=Yeniden Yükle 	####Represents a label for a key shortcut that reloads scripts and UI.{MaxLength=100}
-
-
-resourcePack.editor.toolRail.blockPalette.title=Blok Paleti (CTRL+P)	#
-resourcePack.editor.toolRail.blockPalette.tooltip=En sevdiğiniz veya en sık kullandığınız bloklardan bir paleti oluşturun	#
-resourcePack.editor.toolRail.flattenBrush.title=Düzleştirme Fırçası	#
-resourcePack.editor.toolRail.flattenBrush.tooltip=Bir alanı, seçili blokun yüksekliğine göre dikey olarak düzleştirin	#
-resourcePack.editor.toolRail.flattenBrush.settings.heightThreshold=Yükseklik Eşiği	#
-resourcePack.editor.toolRail.flattenBrush.settings.radius=Yarıçap	#
-resourcePack.editor.toolRail.floodFillSelectionTool.description=Doldurma algoritmasını kullanarak bakmakta olduğunuz alanı seçer.	#
-resourcePack.editor.toolRail.floodFillSelectionTool.title=Seçim Aracını Doldur.	#
-resourcePack.editor.toolRail.line.keyBinding.delete=İçerikleri Sil	#
-resourcePack.editor.toolRail.line.keyBinding.deleteAndClear=İçerikleri Sil ve Seçimi Kaldır	#
-resourcePack.editor.toolRail.line.keyBinding.deselect=Seçimi Kaldır	#
-resourcePack.editor.toolRail.line.keyBinding.deselectAll=Tümünün Seçimini Kaldır	#
-resourcePack.editor.toolRail.line.keyBinding.fill=İçerikleri Doldur	#
-resourcePack.editor.toolRail.line.keyBinding.fillAndClear=İçerikleri Doldur ve Seçimi Kaldır	#
-resourcePack.editor.toolRail.line.keyBinding.moveBack=Seçilenleri Arkaya Taşı	#
-resourcePack.editor.toolRail.line.keyBinding.moveDown=Seçilenleri Aşağı Taşı	#
-resourcePack.editor.toolRail.line.keyBinding.moveForward=Seçilenleri İleri Taşı	#
-resourcePack.editor.toolRail.line.keyBinding.moveLeft=Seçilenleri Sola Taşı	#
-resourcePack.editor.toolRail.line.keyBinding.moveRight=Seçilenleri Sağa Taşı	#
-resourcePack.editor.toolRail.line.keyBinding.moveUp=Seçilenleri Yukarı Taşı	#
-resourcePack.editor.toolRail.line.keyBinding.selectAll=Tümünü Seç	#
-resourcePack.editor.toolRail.line.pane.algorithm.Direct=Yönlendir	#
-resourcePack.editor.toolRail.line.pane.algorithm.Staggered=Kademeli (Çitler)	#
-resourcePack.editor.toolRail.line.pane.algorithm.title=Algoritma	#
-resourcePack.editor.toolRail.line.pane.fillAction=Seçim Aracını Doldur	#
-resourcePack.editor.toolRail.line.pane.height.title=Yükseklik	#
-resourcePack.editor.toolRail.line.pane.selectionMode.adjacent=Bitişik Yüz	#
-resourcePack.editor.toolRail.line.pane.selectionMode.fixedDistance=Sabit Mesafe	#
-resourcePack.editor.toolRail.line.pane.selectionMode.freeForm=Serbest Form	#
-resourcePack.editor.toolRail.line.pane.selectionMode=Seçim	#
-resourcePack.editor.toolRail.line.pane.surfaceContour=Yüzey Konturu	#
-resourcePack.editor.toolRail.line.pane.width.title=Genişlik	#
-resourcePack.editor.toolRail.line.title=Çizgi	#
-resourcePack.editor.toolRail.line.tooltip=Çizgi aracı blok çizgileri oluşturur	#
-resourcePack.editor.toolRail.rulerTool.title=Cetvel Aleti	#
-resourcePack.editor.toolRail.rulerTool.tooltip=Mesafeyi ölçün	#
-resourcePack.editor.toolRail.rulerTool.info.title=Ölçüm	#
-
-
-resourcePack.editor.toolRail.smartFillTool.title=Akıllı Doldurma Aracı	#
-resourcePack.editor.toolRail.smartFillTool.tooltip=Bağlı bir blok kümesini doldurmak için tıklayın	#
-resourcePack.editor.toolRail.smartFillTool.modes.fillVolume=Doldurma Hacmi	#
-resourcePack.editor.toolRail.smartFillTool.areaLimit.title=Alan Sınırı	#
-resourcePack.editor.toolRail.smartFillTool.areaLimit.tooltip=Doldurulacak maksimum alan	#
-
-
-resourcePack.editor.toolRail.summonTool.keyBinding.clear=Seçimi Sil	#
-resourcePack.editor.toolRail.summonTool.keyBinding.delete=Varlığı Sil	#
-resourcePack.editor.toolRail.summonTool.keyBinding.moveBack=Seçilenleri Arkaya Taşı	#
-resourcePack.editor.toolRail.summonTool.keyBinding.moveDown=Seçilenleri Aşağı Taşı	#
-resourcePack.editor.toolRail.summonTool.keyBinding.moveForward=Seçilenleri İleri Taşı	#
-resourcePack.editor.toolRail.summonTool.keyBinding.moveLeft=Seçilenleri Sola Taşı	#
-resourcePack.editor.toolRail.summonTool.keyBinding.moveRight=Seçilenleri Sağa Taşı	#
-resourcePack.editor.toolRail.summonTool.keyBinding.moveUp=Seçilenleri Yukarı Taşı	#
-resourcePack.editor.toolRail.summonTool.keyBinding.toggle=Çağırma Aletini Aç/Kapat	#
-resourcePack.editor.toolRail.summonTool.pane.select=Mod Seç	#
-resourcePack.editor.toolRail.summonTool.pane.title=Alet Çağır	#
-resourcePack.editor.toolRail.summonTool.pane.type=Varlık Türü	#
-resourcePack.editor.toolRail.summonTool.tool.infoText=Seçmek için bir varlığa, yeni bir varlık çağırmak için haritaya tıklayın	#
-resourcePack.editor.toolRail.summonTool.tool.selectSubPane.rotation=Dönüş	#
-resourcePack.editor.toolRail.summonTool.tool.selectSubPane=Varlık Seçimi	#
-resourcePack.editor.toolRail.summonTool.tool.summonSubPane=Varlık Çağırma	#
-resourcePack.editor.toolRail.summonTool.tool.tip=Varlıkları çağırmak için tıklayın	#
-resourcePack.editor.toolRail.summonTool.tool.title=Alet Çağır	#
-
-resourcePack.editor.toolRail.workbenchSettings.title=Tezgah	#
-resourcePack.editor.toolRail.workbenchTool.title=Tezgah	#
-resourcePack.editor.toolRail.workbenchTool.description=Blok durumlarını hızla değiştirin	#
-resourcePack.editor.toolRail.workbenchTool.howToUse=Durumlarını değiştirmek için kullanılabilecek eylemleri görmek üzere blokları vurgulayın (açık/kapalı, döndür, ters çevir, vb.). Shift ve Control tuşu değiştiricilerini de kullanmayı deneyin! Lütfen bu özelliğin yalnızca değiştirilebilir özelliklere sahip bloklarda (örneğin kapılar, çitler, merdivenler, vb.) çalıştığını unutmayın.		####	This text provides a description of the workbench tool and explans how the the user can highlight blocks in order to see the list of actions for changing that blocks state. {MaxLength="500"}
-resourcePack.editor.toolRail.workbenchTool.tooltip=Blok durumunu değiştirin	#
-resourcePack.editor.toolRail.workbenchTool.block=Engelle	#
-resourcePack.editor.toolRail.workbenchTool.leftClick=Sol Tıkla	#
-resourcePack.editor.toolRail.workbenchTool.shiftLeftClick=Shift + Sol Tık	#
-resourcePack.editor.toolRail.workbenchTool.controlLeftClick=CTRL + Sol Tık	#
-resourcePack.editor.toolRail.workbenchTool.shiftControlLeftClick=Shift + CTRL + Sol Tık	#
-
-resourcePack.editor.toolRail.workbenchTool.leftClickTooltip=Bir bloka Sol Tıklayınca birincil Tezgah eylemi gerçekleşir		####	This keybinding is a tool tip to convey that a left click will invoke the primary (1st) action of the workbench tool. {MaxLength="150"}
-resourcePack.editor.toolRail.workbenchTool.shiftLeftClickTooltip=Bir bloka Shift + Sol Tıklama yapınca ikincil Tezgah eylemi gerçekleşir		####	This keybinding is a tool tip to convey that a shift + left click will invoke the primary (1st) action of the workbench tool. {MaxLength="150"}
-resourcePack.editor.toolRail.workbenchTool.controlLeftClickTooltip=Bir bloka Control + Sol Tıklama yapınca üçüncül Tezgah eylemi gerçekleşir		####	This keybinding is a tool tip to convey that a control + left click will invoke the primary (1st) action of the workbench tool. {MaxLength="150"}
-resourcePack.editor.toolRail.workbenchTool.shiftControlLeftClickTooltip=Bir bloka Shift + Control + Sol Tıklama yapınca dördüncül Tezgah eylemi gerçekleşir		####	TThis keybinding is a tool tip to convey that a shift + control + left click will invoke the primary (1st) action of the workbench tool. {MaxLength="150"}
-
-resourcePack.editor.toolRail.workbenchTool.stripWood=Odunu soy/soyma		####This string is intended to express whether the wood block has bark (unstripped) or doesn't have bark (stripped).{MaxLength=100}
-resourcePack.editor.toolRail.workbenchTool.ladderLocation=Basamak konumu	#
-resourcePack.editor.toolRail.workbenchTool.autoAlign=Otomatik hizalama	#
-resourcePack.editor.toolRail.workbenchTool.autoAlignFacingDirection=Yönü Otomatik Hizalama		####This string is intended to express that the action will align the facing direction of the block with the player camera.{MaxLength=100}
-resourcePack.editor.toolRail.workbenchTool.autoAlignRotation=Dönüşü Otomatik Hizalama		####This string is intended to express that the action will align the roatation of the block with the player camera.{MaxLength=100}
-
-resourcePack.editor.toolRail.workbenchTool.topSlotBitProp=Üst/Alt	#
-resourcePack.editor.toolRail.workbenchTool.pillarAxisProp=Döndür	#
-resourcePack.editor.toolRail.workbenchTool.heightProp=Katmanlar	#
-resourcePack.editor.toolRail.workbenchTool.candlesProp=Mum Sayısı	#
-
-resourcePack.editor.toolRail.workbenchTool.turtleEggCountProp=Kaplumbağa Yumurtası Sayısı	#
-resourcePack.editor.toolRail.workbenchTool.clusterCountProp=Deniz Hıyarı Sayısı	#
-resourcePack.editor.toolRail.workbenchTool.hangingProp=Başka bir bloktan asılı kalmayı aç/kapat	#
-resourcePack.editor.toolRail.workbenchTool.wallPostBitProp=Çubuğu aç/kapat	#
-
-resourcePack.editor.toolRail.workbenchTool.upsideDownBitProp=Üst/Alt	#
-resourcePack.editor.toolRail.workbenchTool.openBitProp=Aç/Kapat	#
-resourcePack.editor.toolRail.workbenchTool.litProp=Işıklı/Işıksız	#
-resourcePack.editor.toolRail.workbenchTool.dripstoneThicknessProp=Damlataş Kalınlığı	#
-
-resourcePack.editor.toolRail.workbenchTool.directionProp=Bakış Yönü	#
-resourcePack.editor.toolRail.workbenchTool.weirdoDirectionProp=Döndür	#
-resourcePack.editor.toolRail.workbenchTool.facingDirectionProp=Bakış Yönü	#
-resourcePack.editor.toolRail.workbenchTool.cardinalDirectionProp=Bakış Yönü	#
-
-resourcePack.editor.toolRail.workbenchTool.addCustomMapping=Özel Haritalandırma Ekle		####This string is intended to express that this subpane is for adding custom block property mappings for the tool.{MaxLength=100}
-resourcePack.editor.toolRail.workbenchTool.blockProperty=Blok Özelliği		####This string is intended to express that this field is for the Block Property.{MaxLength=50}
-resourcePack.editor.toolRail.workbenchTool.clickBinding=Bağlamalara Tıkla		####This string is intended to express that this dropdown contains the click binding options (left click, shift + left click, etc).{MaxLength=50}
-resourcePack.editor.toolRail.workbenchTool.addMapping=Haritalandırma Ekle		####This string is intended to express that this button will add the custom mapping provided by the user.{MaxLength=50}
-resourcePack.editor.toolRail.workbenchTool.resetAllMappings=Tüm Haritalandırmaları Sıfırla		####This string is intended to express that this button will reset all custom mappings provided by the user.{MaxLength=50}
-
-resourcePack.editor.workbenchTool.keyBinding.primaryAction=Birincil Tezgah Eylemi		####	This keybinding is to invoke the primary (1st) action of the workbench tool. {MaxLength="30"}
-resourcePack.editor.workbenchTool.keyBinding.secondaryAction=İkincil Tezgah Eylemi		#### This keybinding is to invoke the secondary (2nd) action of the workbench tool. {MaxLength="30"}
-resourcePack.editor.workbenchTool.keyBinding.tertiaryAction=Üçüncül Tezgah Eylemi		####	This keybinding is to invoke the tertiary (3rd) action of the workbench tool. {MaxLength="30"}
-resourcePack.editor.workbenchTool.keyBinding.quaternaryAction=Dördüncül Tezgah Eylemi		#### This keybinding is to invoke the quaternary (4th) action of the workbench tool. {MaxLength="30"}
-
-
-resourcePack.editor.transaction.keyBinding.redo=Yinele	#
-resourcePack.editor.transaction.keyBinding.undo=Geri Al	#
-
-
-resourcePack.editor.viewport.keyBinding.moveBack=Geri Git	#
-resourcePack.editor.viewport.keyBinding.moveDown=Aşağı Taşı	#
-resourcePack.editor.viewport.keyBinding.moveForward=İleri Git	#
-resourcePack.editor.viewport.keyBinding.moveLeft=Sola Git	#
-resourcePack.editor.viewport.keyBinding.moveRight=Sağa Git	#
-resourcePack.editor.viewport.keyBinding.moveUp=Yukarı Taşı	#
-
-resourcePack.editor.viewport.keyBinding.incrementFlySpeed=Uçuş Hızını Artırın	#
-resourcePack.editor.viewport.keyBinding.decrementFlySpeed=Uçuş Hızını Azaltın	#
-
-resourcePack.editor.viewSettings.compass.tip=Yön pusulasını göster	#
-resourcePack.editor.viewSettings.compass.title=Pusulayı göster	#
-resourcePack.editor.viewSettings.chunk.tip=Haritadaki chunk sınırlarının dış hatlarını göster	#
-resourcePack.editor.viewSettings.chunk.title=Chunk Sınırlarını Göster	#
-resourcePack.editor.viewSettings.nightVision.tip=Dünyayı gece görüşü varmış gibi göster	#
-resourcePack.editor.viewSettings.nightVision.title=Gece Görüşü	#
-resourcePack.editor.viewSettings.invisible.tip=Görünmez blokları (boşluk, bariyerler vb.) göster	#
-resourcePack.editor.viewSettings.invisible.title=Görünmez Blokları Göster	#
-resourcePack.editor.viewSettings.flySpeed.tip=Haritada daha hızlı manevra yapmak için Uçuş Hızını artırın	#
-resourcePack.editor.viewSettings.flySpeed.title=Uçuş Hızı Çarpanı	#
-resourcePack.editor.viewSettings.menu=Ayarlar	#
-resourcePack.editor.viewSettings.title=Ayarlar	#
-
-resourcePack.editor.hotbar.defaultDisplayName=Varsayılan	#
-
-resourcePack.editor.reloadScripts.response.tooMany=Sunucuya çok fazla oyuncu bağlı. Komut dosyasının yeniden yüklenmesi, yalnızca tek bir oyuncunun bağlı olduğu sunucularda desteklenir.	#
-resourcePack.editor.reloadScripts.response.genericError=Komut dosyaları yeniden yüklenmeye çalışılırken bir hata oluştu.	#
-resourcePack.editor.reloadScripts.response.noAdminRights=Komut dosyalarını yeniden yükleme izniniz yok.	#
+﻿
+commands.editor.project.beginExport=Dışa aktarılıyor...
+commands.editor.project.description=Şu anda yüklü olan projeyi değiştir
+commands.editor.project.export=projeyi dışa aktar
+commands.editor.project.exportComplete=Dışa aktarma tamamlandı, dosyalar %s konumuna yazıldı
+commands.editor.project.exportCopyFailed=Seviye verisi %s kopyalanamadı
+commands.editor.project.unknownSubcommand=Bilinmeyen Alt Komut
+resourcePack.editor.actionBar.redo.tooltipDescription=Bir eylemi yinele
+resourcePack.editor.actionBar.redo.tooltipTitle=Yinele
+resourcePack.editor.actionBar.redo=Yinele
+resourcePack.editor.actionBar.undo.tooltipDescription=Bir eylemi geri al
+resourcePack.editor.actionBar.undo.tooltipTitle=Geri Al
+resourcePack.editor.actionBar.undo=Geri Al
+resourcePack.editor.actionBar.fill=Doldur 
+resourcePack.editor.actionBar.fill.tooltipDescription=Seçim birimini geçerli hızlı erişim çubuğu blokuyla doldur 
+resourcePack.editor.actionBar.fill.tooltipTitle=Doldur 
+resourcePack.editor.agfx.settings.error.title=Hata(lar) oluştu...
+resourcePack.editor.agfx.pane.title=Ayarlar Düzenleyicisi
+resourcePack.editor.agfx.pane.settings_selector=Ayarları seç
+resourcePack.editor.agfx.pane.settings.title=Ayarlar
+resourcePack.editor.agfx.pane.settings.revert_changes=Değişiklikleri geri al
+resourcePack.editor.agfx.pane.settings.export_to_clipboard=Panoya aktar
+resourcePack.editor.toolRail.blockInspectorSettings.title=Blok İnceleme   
+resourcePack.editor.toolRail.blockInspectorSettings.specifics=Blok Özellikleri   
+resourcePack.editor.toolRail.blockInspectorSettings.actions.refresh=Blok Verilerini Yenile   
+resourcePack.editor.toolRail.blockInspectorSettings.actions.clear=Seçimi Sil   
+resourcePack.editor.toolRail.blockInspectorSettings.blockTags=Blok Etiketleri   
+resourcePack.editor.toolRail.blockInspectorSettings.blockProperties=Blok Özellikleri   
+resourcePack.editor.toolRail.blockInspectorSettings.blockProperties.name=Özellik Adı   
+resourcePack.editor.toolRail.blockInspectorSettings.blockProperties.value=Özellik Değeri   
+resourcePack.editor.toolRail.blockInspectorTool.title=Blok İnceleme   
+resourcePack.editor.toolRail.blockInspectorTool.tooltip=Blok verilerini incele   
+resourcePack.editor.toolRail.blockInspectorTool.pane.helpText=Özelliklerini görüntülemek ve düzenlemek için bir bloka sol tıklayın   
+resourcePack.editor.blockInspector.toolRail.description=Özelliklerini görüntülemek ve düzenlemek için bir bloka sol tıklayın   
+resourcePack.editor.blockPalette.addSearchItem=Bulunman Bloku Kullan
+resourcePack.editor.blockPalette.blockPicker=Ara
+resourcePack.editor.blockPalette.paletteDropdown.title=Palet
+resourcePack.editor.blockPalette.title=Blok Paleti
+resourcePack.editor.brushPaint.inputContext.activateBrushPaint=Fırça Boyasını Etkinleştir
+resourcePack.editor.brushPaint.inputContext.oneshot=Bir Kez Boya
+resourcePack.editor.brushPaint.inputContext.title=Fırça Boyası
+resourcePack.editor.brushPaint.title=Fırça Boyası
+resourcePack.editor.brushPaint.tooltip=Dünyadaki blokları boyamak için fırçaları kullanın
+resourcePack.editor.BrushPaintControl.brush.title=Fırça
+resourcePack.editor.BrushPaintControl.brushSettings.title=Fırça Ayarları
+resourcePack.editor.BrushPaintControl.shapeSettings.title=Şekil Ayarları 
+resourcePack.editor.BrushPaintControl.fillConstraints.mask.title=Maske Listesi
+resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.disabled.tooltip=Blok Filtrelerini devre dışı bırak
+resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.disabled=Devre Dışı
+resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.mask.tooltip=Listeye uyan bloklar göz ardı edilir ve etkilenmez
+resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.mask=Maske
+resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.replace=Değiştir
+resourcePack.editor.BrushPaintControl.fillConstraints.maskMode.title=Fırça Bloku Filtresi
+resourcePack.editor.BrushPaintControl.fillConstraints.replace.title=Değiştirme Listesi
+resourcePack.editor.BrushPaintControl.fillConstraints.replace.tooltip=Listeye uyan bloklar üzerinde işlem yapılır
+resourcePack.editor.BrushPaintControl.fillConstraints.title=Sınırları Doldur
+resourcePack.editor.BrushPaintControl.keybinding.maskMask=Maske Modu - Maske
+resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetBack=Kaydırmayı Geri İt
+resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetDown=Kaydırmayı Aşağı İt
+resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetForward=Kaydırmayı İleri İt
+resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetLeft=Kaydırmayı Sola İt
+resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetRight=Kaydırmayı Sağa İt
+resourcePack.editor.BrushPaintControl.keyBinding.nudgeOffsetUp=Kaydırmayı Yukarı İt
+resourcePack.editor.BrushPaintControl.keybinding.replaceMask=Maske Modu - Değiştir
+resourcePack.editor.BrushPaintControl.offset.title=Uzaklık
+resourcePack.editor.BrushPaintControl.offset.tooltip=İmleç konumundan uzaklık
+resourcePack.editor.BrushPaintControl.rootPane.title=Fırça Ayarları
+resourcePack.editor.brushShape.common.settings.axis=Ekseni İzle
+resourcePack.editor.brushShape.common.settings.height=Yükseklik
+resourcePack.editor.brushShape.common.settings.length=Uzunluk
+resourcePack.editor.brushShape.common.settings.radius=Yarıçap
+resourcePack.editor.brushShape.common.settings.uniform=Tek Tip
+resourcePack.editor.brushShape.common.settings.xAxis=X Ekseni
+resourcePack.editor.brushShape.common.settings.xAxisNeg=-X Ekseni
+resourcePack.editor.brushShape.common.settings.yAxis=Y Ekseni
+resourcePack.editor.brushShape.common.settings.yAxisNeg=-Y Ekseni
+resourcePack.editor.brushShape.common.settings.zAxis=Z Ekseni
+resourcePack.editor.brushShape.common.settings.zAxisNeg=-Z Ekseni
+resourcePack.editor.brushShape.cone.name=Koni
+resourcePack.editor.brushShape.cone.settings.depth=Derinlik Yarıçapı
+resourcePack.editor.brushShape.cone.settings.width=Genişlik Yarıçapı
+resourcePack.editor.brushShape.cuboid.name=Küboid
+resourcePack.editor.brushShape.cuboid.settings.depth=Derinlik
+resourcePack.editor.brushShape.cuboid.settings.height=Yükseklik
+resourcePack.editor.brushShape.cuboid.settings.width=Genişlik
+resourcePack.editor.brushShape.cylinder.name=Silindir
+resourcePack.editor.brushShape.cylinder.settings.depth_radius=Derinlik Yarıçapı
+resourcePack.editor.brushShape.cylinder.settings.width_radius=Genişlik Yarıçapı
+resourcePack.editor.brushShape.ellipsoid.name=Elipsoit
+resourcePack.editor.brushShape.ellipsoid.settings.depth_radius=Derinlik Yarıçapı
+resourcePack.editor.brushShape.ellipsoid.settings.height_radius=Yükseklik Yarıçapı
+resourcePack.editor.brushShape.ellipsoid.settings.width_radius=Genişlik Yarıçapı
+resourcePack.editor.brushShape.pyramid.name=Piramit
+resourcePack.editor.brushShape.pyramid.settings.depth=Derinlik
+resourcePack.editor.brushShape.pyramid.settings.height=Yükseklik
+resourcePack.editor.brushShape.pyramid.settings.width=Genişlik
+resourcePack.editor.brushShape.singleBlock.name=Tek Blok
+resourcePack.editor.brushShape.star.name=Yıldız 
+resourcePack.editor.brushShape.star.settings.includeVertical=Dikeyi Dahil Et 
+resourcePack.editor.client.description=Düzenleyici İstemci Kaynakları
+resourcePack.editor.client.name=Düzenleyici Kaynakları
+resourcePack.editor.ClipboardPreviewControl.keybinding.moveOriginBack=Başlangıç Noktasını Geri Taşı
+resourcePack.editor.ClipboardPreviewControl.keybinding.moveOriginDown=Başlangıç Noktasını Aşağı Taşı
+resourcePack.editor.ClipboardPreviewControl.keybinding.moveOriginForward=Başlangıç Noktasını İleri Taşı
+resourcePack.editor.ClipboardPreviewControl.keybinding.moveOriginLeft=Başlangıç Noktasını Sola Taşı
+resourcePack.editor.ClipboardPreviewControl.keybinding.moveOriginRight=Başlangıç Noktasını Sağa Taşı
+resourcePack.editor.ClipboardPreviewControl.keybinding.moveOriginUp=Başlangıç Noktasını Yukarı Taşı
+resourcePack.editor.ClipboardPreviewControl.keyBinding.nudgeOffsetBack=Kaydırmayı Geri İt
+resourcePack.editor.ClipboardPreviewControl.keyBinding.nudgeOffsetDown=Kaydırmayı Aşağı İt
+resourcePack.editor.ClipboardPreviewControl.keyBinding.nudgeOffsetForward=Kaydırmayı İleri İt
+resourcePack.editor.ClipboardPreviewControl.keyBinding.nudgeOffsetLeft=Kaydırmayı Sola İt
+resourcePack.editor.ClipboardPreviewControl.keyBinding.nudgeOffsetRight=Kaydırmayı Sağa İt
+resourcePack.editor.ClipboardPreviewControl.keyBinding.nudgeOffsetUp=Kaydırmayı Yukarı İt
+resourcePack.editor.ClipboardPreviewControl.keybinding.rotateClockWise=Ön İzlemeyi Saat Yönünde Döndür
+resourcePack.editor.ClipboardPreviewControl.keybinding.rotateCounterClockWise=Ön İzlemeyi Saat Yönünün Tersine Döndür
+resourcePack.editor.ClipboardPreviewControl.keybinding.toggleMirrorX=X'i Yansıt'ı Aç/Kapat
+resourcePack.editor.ClipboardPreviewControl.keybinding.toggleMirrorZ=Z'yi Yansıt'ı Aç/Kapat
+resourcePack.editor.ClipboardPreviewControl.mirror.axis.x.tooltip=Pano eşyasını X ekseni etrafında başlangıç ​​noktasında yansıtın
+resourcePack.editor.ClipboardPreviewControl.mirror.axis.x=Yansıtma (X ekseni)
+resourcePack.editor.ClipboardPreviewControl.mirror.axis.z.tooltip=Pano eşyasını Z ekseni etrafında başlangıç ​​noktasında yansıtın
+resourcePack.editor.ClipboardPreviewControl.mirror.axis.z=Yansıtma (Z ekseni)
+resourcePack.editor.ClipboardPreviewControl.offset.title=Uzaklık
+resourcePack.editor.ClipboardPreviewControl.offset.tooltip=Yerleştirme noktasından pano eşyası kaynağına ek uzaklık
+resourcePack.editor.ClipboardPreviewControl.origin.title=Başlangıç
+resourcePack.editor.ClipboardPreviewControl.origin.tooltip=Pano eşyası içindeki başlangıç ​​noktası.  Bu, hem bir yerleştirme çapası hem de panonun döndürüldüğü ve yansıtıldığı nokta olarak kullanılır
+resourcePack.editor.ClipboardPreviewControl.placement.title=Seçenekler
+resourcePack.editor.ClipboardPreviewControl.rootPane.title=Pano Bilgileri
+resourcePack.editor.ClipboardPreviewControl.rotation.180=180°
+resourcePack.editor.ClipboardPreviewControl.rotation.270=270°
+resourcePack.editor.ClipboardPreviewControl.rotation.90=90°
+resourcePack.editor.ClipboardPreviewControl.rotation.none=Yok
+resourcePack.editor.ClipboardPreviewControl.rotation.title=Dönüş
+resourcePack.editor.ClipboardPreviewControl.rotation.tooltip=Başlangıç noktasında Y ekseni etrafındaki dönüş miktarı
+resourcePack.editor.ClipboardPreviewControl.structureSize.title=Pano Boyutu
+resourcePack.editor.copypaste.actionbar.copy.title=Kopyala
+resourcePack.editor.copypaste.actionbar.copy.tooltip=Seçimi panoya kopyala
+resourcePack.editor.copypaste.actionbar.copy.tooltipDescription=Geçerli seçimin içeriğini panoya kopyalayın, seçimin içeriğini olduğu gibi bırakın
+resourcePack.editor.copypaste.actionbar.cut.title=Kes
+resourcePack.editor.copypaste.actionbar.cut.tooltip=Seçimi Kes/Panoya Taşı
+resourcePack.editor.copypaste.actionbar.cut.tooltipDescription=Geçerli seçimin içeriğini panoya kopyalayın ve işlem sırasında seçimin içeriğini kaldırın
+resourcePack.editor.copypaste.keyBinding.copy=Seçimi panoya kopyala
+resourcePack.editor.copypaste.keyBinding.cut=Seçimi Kes/Panoya Taşı
+resourcePack.editor.copypaste.keyBinding.paste=Panoyu dünyaya yapıştır
+resourcePack.editor.copypaste.menu.copy.title=Seçimi Kopyala
+resourcePack.editor.copypaste.menu.cut.title=Seçimi Kes
+resourcePack.editor.core.keyBinding.showGameMenu=Oyun Menüsünü Göster
+resourcePack.editor.core.keyBinding.showLogPanel=Kayıt Panelini Göster
+resourcePack.editor.CursorModeControl.cursorTargetMode.block.tooltip=Fare imlecinin altındaki blok
+resourcePack.editor.CursorModeControl.cursorTargetMode.block=Blok
+resourcePack.editor.CursorModeControl.cursorTargetMode.face.tooltip=İmlecin altındaki blokun yüzüne bitişik olan blok
+resourcePack.editor.CursorModeControl.cursorTargetMode.face=Bitişik
+resourcePack.editor.CursorModeControl.cursorTargetMode.title=Hedef
+resourcePack.editor.CursorModeControl.cursorTargetMode.tooltip=İmleç hedef modunu seçin
+resourcePack.editor.CursorModeControl.fixedDistance.slider.title=Sabit İmleç Mesafesi
+resourcePack.editor.CursorModeControl.fixedDistance.slider.tooltip=Blok imlecinin yerleştirildiği oyuncudan sabit mesafeyi ayarlayın
+resourcePack.editor.CursorModeControl.keybinding.moveCursorBack=İmleci Geri Taşı
+resourcePack.editor.CursorModeControl.keybinding.moveCursorDown=İmleci Aşağı Taşı
+resourcePack.editor.CursorModeControl.keybinding.moveCursorForward=İleri İtme
+resourcePack.editor.CursorModeControl.keybinding.moveCursorLeft=İmleci Sola Taşı
+resourcePack.editor.CursorModeControl.keybinding.moveCursorRight=İmleci Sağa Taşı
+resourcePack.editor.CursorModeControl.keybinding.moveCursorUp=İmleci Yukarı Taşı
+resourcePack.editor.CursorModeControl.keybinding.toggleBlockTargetMode=Blok/Bitişik Modunu Aç/Kapat
+resourcePack.editor.CursorModeControl.keybinding.toggleFixedDistance=Sabit Mesafe Modunu Aç/Kapat
+resourcePack.editor.CursorModeControl.keybinding.toggleMouseTracking=Fare İzlemeyi Aç/Kapat
+resourcePack.editor.CursorModeControl.mouseControlMode.fixed=Sabit Mesafe
+resourcePack.editor.CursorModeControl.mouseControlMode.keyboard=Yalnızca Klavye
+resourcePack.editor.CursorModeControl.mouseControlMode.keyboardAndMouse=Fare ve Tuşlar
+resourcePack.editor.CursorModeControl.mouseControlMode.title=Giriş Yöntemi
+resourcePack.editor.CursorModeControl.mouseControlMode.tooltip=Dünya blok imleci için giriş yöntemini seçin
+resourcePack.editor.CursorModeControl.projectThroughWater.title=Su ile Proje
+resourcePack.editor.CursorModeControl.projectThroughWater.tooltip=Fare ışın yayını, su altı unsurlarının seçilmesine olanak tanıyarak suyun içinden yansıtılır
+resourcePack.editor.CursorModeControl.rootPane.title=İmleç Ayarları
+resourcePack.editor.datatransferaccessors.atmospheric_scattering=Atmosferik Saçılma
+resourcePack.editor.datatransferaccessors.color_grading=Renk Derecelendirme
+resourcePack.editor.datatransferaccessors.lighting_group=Global Aydınlatma
+resourcePack.editor.datatransferaccessors.pbr_fallbacks=Fiziksel Tabanlı İşleme Geri Çekilmesi
+resourcePack.editor.datatransferaccessors.point_lights=Nokta Işıkları
+resourcePack.editor.datatransferaccessors.water=Su
+resourcePack.editor.datatransferaccessors.shadows=Gölgeler
+resourcePack.editor.deferredLightingSettings.menu.title=Ertelenmiş Aydınlatma Ayarları
+resourcePack.editor.delete.keyBinding=Seçim İçeriklerini Sil
+resourcePack.editor.toolRail.entityInspector.pane.title=Varlık İnceleme   
+resourcePack.editor.toolRail.entityInspector.tool.title=Varlık İnceleme   
+resourcePack.editor.toolRail.entityInspector.tool.tip=Varlık verilerini incele   
+resourcePack.editor.toolRail.entityInspector.pane.helpText=Özelliklerini görüntülemek ve düzenlemek için bir varlığa sol tıklayın   
+resourcePack.editor.entityInspector.toolRail.description=Özelliklerini görüntülemek ve düzenlemek için bir varlığa sol tıklayın   
+resourcePack.editor.exportProject.exportType=Dışa Aktarma Türü
+resourcePack.editor.exportProject.exportType.playableWorld=Oynanabilir Dünya
+resourcePack.editor.exportProject.exportNotes=Notları Dışa Aktar
+resourcePack.editor.exportProject.exportNotes.export=İlerleme Dışa Aktarılıyor   
+resourcePack.editor.exportProject.exportNotes.warning=Bir v%1 dünyasını dışa aktarıyorsunuz. Dışa aktarılan Oynanabilir dünyalar v%1 öncesi bir sürüm numarasına sahip Minecraft sürümlerinde kullanılamaz. Önceki sürüm numaralarına dönüştürmek için https://chunker.app/ adresini kullanın (önceki sürümlerde desteklenmiyorsa bazı işlevler kullanılamayabilir)
+resourcePack.editor.exportProject.exportNotes.progress=Dünya dışa aktarılıyor...    
+resourcePack.editor.exportProject.exportNotes.exportSuccess=Dünya başarıyla aktarıldı    
+resourcePack.editor.exportProject.exportNotes.exportFailed=Dünya dışarı aktarılamadı    
+resourcePack.editor.exportProject.generalSettings=Genel Ayarlar
+resourcePack.editor.exportProject.generalSettings.worldName=Dünya Adı
+resourcePack.editor.exportProject.generalSettings.gameMode=Oyun Modu
+resourcePack.editor.exportProject.generalSettings.difficulty=Zorluk
+resourcePack.editor.exportProject.generalSettings.hardcore=Zorlu
+resourcePack.editor.exportProject.initialPlaySettings=İlk Oyun Ayarları   
+resourcePack.editor.exportProject.initialPlaySettings.spawnPosition=Dünya Doğma Noktası   
+resourcePack.editor.exportProject.initialPlaySettings.startTime=Başlama Zamanı   
+resourcePack.editor.exportProject.initialPlaySettings.clockType=Saat Türü   
+resourcePack.editor.exportProject.initialPlaySettings.customStartTime=Özel Başlama Zamanı   
+resourcePack.editor.exportProject.initialPlaySettings.weather=Başlangıçtaki Hava Durumu   
+resourcePack.editor.exportProject.advancedSettings=Gelişmiş Ayarlar
+resourcePack.editor.exportProject.advancedSettings.startingMap=Başlangıç Haritası
+resourcePack.editor.exportProject.advancedSettings.bonusChest=Bonus Sandığı
+resourcePack.editor.exportProject.advancedSettings.showCoordinates=Koordinatları Göster
+resourcePack.editor.exportProject.advancedSettings.showDaysPlayed=Oynanan Günleri Göster
+resourcePack.editor.exportProject.advancedSettings.recipeUnlocking=Tarif Kilidini Açma
+resourcePack.editor.exportProject.advancedSettings.limitedCrafting=Sınırlı Eşya Yapma   
+resourcePack.editor.exportProject.advancedSettings.fireSpreads=Ateş Yayılır
+resourcePack.editor.exportProject.advancedSettings.tntExplodes=TNT Patlar
+resourcePack.editor.exportProject.advancedSettings.resawnBlocksExplode=Yeniden Doğma Blokları Patlar
+resourcePack.editor.exportProject.advancedSettings.mobLoot=Mob Ganimeti
+resourcePack.editor.exportProject.advancedSettings.naturalRegeneration=Doğal Yenilenme
+resourcePack.editor.exportProject.advancedSettings.tileDrops=Kutucuk Ganimetleri
+resourcePack.editor.exportProject.advancedSettings.immediateRespawn=Anında Yeniden Doğma
+resourcePack.editor.exportProject.advancedSettings.showDeathMessage=Ölüm Mesajını Göster   
+resourcePack.editor.exportProject.advancedSettings.respawnRadius=Yeniden Doğma Yarıçapı
+resourcePack.editor.exportProject.advancedSettings.simulationDistance=Simülasyon Uzaklığı
+resourcePack.editor.exportProject.advancedSettings.bedsWork=Yatak Çalışması
+resourcePack.editor.exportProject.advancedSettings.requiredSleepingPlayers=Gereken Uyuyan Oyuncu (%1$s)
+resourcePack.editor.exportProject.advancedSettings.requiredSleepingPlayers.onePlayerMessage=Sadece 1 oyuncu
+resourcePack.editor.exportProject.advancedSettings.showItemTags=Eşya Etiketlerini Göster   
+resourcePack.editor.exportProject.multiplayerSettings=Çok Oyunculu Oyun Ayarları
+resourcePack.editor.exportProject.multiplayerSettings.multiplayerGame=Çok Oyunculu Oyun
+resourcePack.editor.exportProject.multiplayerSettings.playerAccess=Oyuncu Erişimi
+resourcePack.editor.exportProject.multiplayerSettings.playerPermissions=Oyuncu İzinleri
+resourcePack.editor.exportProject.multiplayerSettings.visibleToLAN=LAN Oyuncuları için görünür
+resourcePack.editor.exportProject.multiplayerSettings.friendlyFire=Dost Ateşi
+resourcePack.editor.exportProject.cheatsSettings=Hile Ayarları
+resourcePack.editor.exportProject.cheatsSettings.cheats=Hileler
+resourcePack.editor.exportProject.cheatsSettings.daylightCycle=Gün Işığı Döngüsü
+resourcePack.editor.exportProject.cheatsSettings.keepInventory=Envanteri Koru
+resourcePack.editor.exportProject.cheatsSettings.mobSpawning=Mob Canlanması
+resourcePack.editor.exportProject.cheatsSettings.mobGriefing=Mob Üzüntüsü
+resourcePack.editor.exportProject.cheatsSettings.entitiesDropLoot=Varlıkların Ganimet Düşürmesi
+resourcePack.editor.exportProject.cheatsSettings.weatherCycle=Hava Döngüsü
+resourcePack.editor.exportProject.cheatsSettings.commandBlocks=Komut Blokları
+resourcePack.editor.exportProject.cheatsSettings.commandBlockOutput=Komut Bloku Çıktısı   
+resourcePack.editor.exportProject.cheatsSettings.sendCommandFeedback=Komut Geri Bildirimi Gönder   
+resourcePack.editor.exportProject.cheatsSettings.maxCommandChainLength=Maksimum Komut Zinciri Uzunluğu   
+resourcePack.editor.exportProject.cheatsSettings.fireDamage=Ateş Hasarı  
+resourcePack.editor.exportProject.cheatsSettings.freezeDamage=Donma Hasarı  
+resourcePack.editor.exportProject.cheatsSettings.fallDamage=Düşme Hasarı  
+resourcePack.editor.exportProject.cheatsSettings.drowningDamage=Boğulma Hasarı  
+resourcePack.editor.exportProject.cheatsSettings.insomnia=Uykusuzluk  
+resourcePack.editor.exportProject.cheatsSettings.showBorderEffect=Kenarlık Efektini Göster  
+resourcePack.editor.exportProject.cheatsSettings.functionCommandLimit=İşlev Komutu Sınırı  
+resourcePack.editor.exportProject.cheatsSettings.educationFeatures=Eğitim Özellikleri
+resourcePack.editor.exportProject.cheatsSettings.randomTickSpeed=Rastgele İşaretleme Hızı
+resourcePack.editor.exportProject.export=Dışa Aktar
+resourcePack.editor.exportProject.resetToDefault=Varsayılana Sıfırla
+resourcePack.editor.exportProject.gameMode.survival=Hayatta Kalma
+resourcePack.editor.exportProject.gameMode.creative=Yaratıcı
+resourcePack.editor.exportProject.gameMode.adventure=Macera
+resourcePack.editor.exportProject.difficulty.peaceful=Sakin
+resourcePack.editor.exportProject.difficulty.easy=Kolay
+resourcePack.editor.exportProject.difficulty.normal=Normal
+resourcePack.editor.exportProject.difficulty.hard=Zor
+resourcePack.editor.exportProject.weather.default=Varsayılan   
+resourcePack.editor.exportProject.weather.clear=Açık   
+resourcePack.editor.exportProject.weather.rain=Yağmur   
+resourcePack.editor.exportProject.weather.thunder=Gök Gürültüsü   
+resourcePack.editor.toolRail.ExtrudeTool.title=Ekstrüzyon Aleti
+resourcePack.editor.toolRail.ExtrudeTool.tooltip=Blokları genişletmek ve küçültmek için ekstrüzyon aleti
+resourcePack.editor.toolRail.ExtrudeTool.pane.ContiguousSelectionBlockListSubPane.title=Bitişik Seçim Blok Listesi
+resourcePack.editor.toolRail.ExtrudeTool.pane.TrailingBlocksSettingsSubPane.title=Takip Eden Blok Ayarları
+resourcePack.editor.toolRail.ExtrudeTool.pane.SampleLayerCount.title=Örnek Katman Sayısı
+resourcePack.editor.toolRail.ExtrudeTool.pane.ContiguousSelectionSettings.title=Bitişik Seçim Ayarları
+resourcePack.editor.toolRail.ExtrudeTool.pane.ContiguousSelectionType.title=Bitişik Seçim Türü
+resourcePack.editor.toolRail.ExtrudeTool.pane.ContiguousSelectionType.SameBlocks=Aynı Bloklar
+resourcePack.editor.toolRail.ExtrudeTool.pane.ContiguousSelectionType.SameBlocksAndStates=Aynı Bloklar ve Durumlar
+resourcePack.editor.toolRail.ExtrudeTool.pane.ContiguousSelectionType.SolidBlocks=Sert Bloklar
+resourcePack.editor.toolRail.ExtrudeTool.pane.ContiguousSelectionType.AllBlocks=Tüm Bloklar
+resourcePack.editor.toolRail.ExtrudeTool.pane.ContiguousSelectionType.CustomBlockList=Özel Blok Listesi
+resourcePack.editor.toolRail.ExtrudeTool.pane.ToleranceLevel.title=Tolerans Seviyesi
+resourcePack.editor.toolRail.ExtrudeTool.pane.HasAdjacentBlocks.title=Bitişik Bloklar Mevcut
+resourcePack.editor.toolRail.ExtrudeTool.pane.ExtruderSettings.title=Ekstrüder Ayarları
+resourcePack.editor.toolRail.ExtrudeTool.pane.Radius.title=Yarıçap
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.title=Seçim Modu
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.ContiguousSelection=Bitişik Seçim
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.MarqueeSelection=Çerçeve Seçimi
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.ContiguousSettings.title=Bitişik Seçim Ayarları
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.TrailingBlocks.title=Takip Eden Bloklar
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.TrailingBlocksSettings.title=Takip Eden Blok Ayarları
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.QuickExtrudeSettings.title=Hızlı Ekstrüzyon Ayarları
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.QuickExtrudeMode.title=Hızlı Ekstrüzyon Modu
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.QuickExtrudeMode.decrease.title=Azalt
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.QuickExtrudeMode.decrease.tooltip=Ekstrüzyonu Azalt
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.QuickExtrudeMode.expand.title=Genişlet
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.QuickExtrudeMode.expand.tooltip=Ekstrüzyonu Genişlet
+resourcePack.editor.toolRail.ExtrudeTool.pane.SelectionMode.LayerCount.title=Katman Sayısı
+resourcePack.editor.toolRail.ExtrudeTool.pane.preview_warning=Not: Ön izleme görselleştirmesi yalnızca ilk katmanı gösterir 
+resourcePack.editor.toolRail.ExtrudeTool.pane.ExtrusionType.title=Ekstrüzyon Türü
+resourcePack.editor.toolRail.ExtrudeTool.pane.ExtrusionType.Extrude=Ekstrüzyon
+resourcePack.editor.toolRail.ExtrudeTool.pane.ExtrusionType.QuickExtrude=Hızlı Ekstrüzyon
+resourcePack.editor.toolRail.ExtrudeTool.keyBinding.deselect=Seçimi Kaldır
+resourcePack.editor.toolRail.ExtrudeTool.keyBinding.toggleTool=Ekstrüzyon Aletini Aç/Kapat
+resourcePack.editor.toolRail.FarmGenerator.tool.title=Çiftlik Oluşturucu
+resourcePack.editor.toolRail.FarmGenerator.tool.tooltip=Hemen özel bir çiftlik oluşturun
+resourcePack.editor.toolRail.FarmGenerator.pane.title=Çiftlik Oluşturucu
+resourcePack.editor.toolRail.FarmGenerator.pane.length=Uzunluk
+resourcePack.editor.toolRail.FarmGenerator.pane.width=Genişlik
+resourcePack.editor.toolRail.FarmGenerator.pane.fence=Çit
+resourcePack.editor.toolRail.FarmGenerator.pane.irrigation=Sulama ekleyin
+resourcePack.editor.toolRail.FarmGenerator.pane.irrigation.tooltip=Ekinleri sulamak için çiftliğe su blokları ekler.
+resourcePack.editor.toolRail.FarmGenerator.pane.crops.title=Ekinler
+resourcePack.editor.toolRail.FarmGenerator.pane.crops.wheat=Buğday
+resourcePack.editor.toolRail.FarmGenerator.pane.crops.potato=Patates
+resourcePack.editor.toolRail.FarmGenerator.pane.crops.beets=Pancar
+resourcePack.editor.toolRail.FarmGenerator.pane.crops.pumpkin=Balkabağı
+resourcePack.editor.toolRail.FarmGenerator.pane.crops.carrot=Havuç
+resourcePack.editor.toolRail.FarmGenerator.pane.animals.title=Hayvanlar
+resourcePack.editor.toolRail.FarmGenerator.pane.animals.cow=İnek
+resourcePack.editor.toolRail.FarmGenerator.pane.animals.sheep=Koyun
+resourcePack.editor.toolRail.FarmGenerator.pane.animals.pig=Domuz
+resourcePack.editor.toolRail.FarmGenerator.keyBinding.toggleTool=Çiftlik Oluşturucu Aletini Aç/Kapat
+resourcePack.editor.toolRail.FarmGenerator.keyBinding.place=Çiftliği İmlece Yerleştir
+resourcePack.editor.global.keyBinding.toggleMode=Modu Aç/Kapat
+resourcePack.editor.goToMark.actionBar.tooltip.description=Oyuncu gezinmesi için yardımcı program paneli
+resourcePack.editor.goToMark.actionBar.tooltip.title=Gezinme Paneli
+resourcePack.editor.goToMark.pane.goToSpawn=Doğma Noktasına gidin
+resourcePack.editor.goToMark.pane.location=Oyuncu Konumu
+resourcePack.editor.goToMark.pane.locationPane.delete=Saklanan Konumu silin
+resourcePack.editor.goToMark.pane.locationPane.dropdownLabel=Saklanan Konum
+resourcePack.editor.goToMark.pane.locationPane.inputName=Yeni İsim
+resourcePack.editor.goToMark.pane.locationPane.markColor=Konum İşareti Rengi
+resourcePack.editor.goToMark.pane.locationPane.store=Mevcut Konumu Şu Şekilde Saklayın...
+resourcePack.editor.goToMark.pane.locationPane.teleport=%1$s Saklanan Konumuna ışınlanın
+resourcePack.editor.goToMark.pane.locationPane.title=Saklanan Konumlar
+resourcePack.editor.goToMark.pane.mapSize=Harita Boyutu
+resourcePack.editor.goToMark.pane.refreshMap=Haritayı Yenile
+resourcePack.editor.goToMark.pane.setSpawn=Geçerli Doğma Noktası ayarlayın
+resourcePack.editor.goToMark.pane.showMap=Haritayı Göster
+resourcePack.editor.goToMark.pane.teleport=Konuma ışınlanın
+resourcePack.editor.goToMark.title=Gezinme Paneli
+resourcePack.editor.grapple.keyBinding.flyToCursor=İmlece Uç
+resourcePack.editor.grapple.keyBinding.flyToSelection=Seçime Uç
+resourcePack.editor.locate.biome.find=Biyomu Bulun
+resourcePack.editor.locate.biome.title=Biyom
+resourcePack.editor.locate.keyBinding.toggleTool=Biyom Aleti Bul'u Aç/Kapat
+resourcePack.editor.locate.locatetype.biome=Biyom
+resourcePack.editor.locate.locatetype.structure=Yapı
+resourcePack.editor.locate.locatetype.title=Türü Bul
+resourcePack.editor.locate.results.foundat.title=Şurada bulundu:
+resourcePack.editor.locate.results.foundat=Şurada bulundu:
+resourcePack.editor.locate.results.goto=Git:
+resourcePack.editor.locate.results.notfound.title=Sonuç Yok
+resourcePack.editor.locate.results.notfound=Sonuç Bulunamadı
+resourcePack.editor.locate.results.title=Sonuçlar
+resourcePack.editor.locate.structure.message=Yapı arama şu anda desteklenmiyor
+resourcePack.editor.locate.structure.title=Yapı
+resourcePack.editor.locate.title=Yerini Bul
+resourcePack.editor.menuBar.edit.copy=Kopyala
+resourcePack.editor.menuBar.edit.cut=Kes
+resourcePack.editor.menuBar.edit.delete=Sil
+resourcePack.editor.menuBar.edit.deselect=Seçimi Kaldır
+resourcePack.editor.menuBar.edit.quickFill=Hızlı Doldur
+resourcePack.editor.menuBar.edit.quickPaste=Hızlı Yapıştırma
+resourcePack.editor.menuBar.edit.redo=Yinele
+resourcePack.editor.menuBar.edit.undo=Geri Al
+resourcePack.editor.menuBar.edit=Düzenle
+resourcePack.editor.menuBar.experimental=Deneysel
+resourcePack.editor.menuBar.extensions=Uzatmalar
+resourcePack.editor.menuBar.file.cursor.projectThroughLiquid=Sıvı ile proje
+resourcePack.editor.menuBar.file.cursor=İmleç ayarları
+resourcePack.editor.menuBar.file.export.project=Düzenleyici Projesi
+resourcePack.editor.menuBar.file.export.world=Oynanabilir dünya
+resourcePack.editor.menuBar.file.export=Dışarı Aktar
+resourcePack.editor.menuBar.file.pauseScreen=Oyun menüsü
+resourcePack.editor.menuBar.file.settings=Kullanıcı arayüzü ayarları
+resourcePack.editor.menuBar.file=Dosya
+resourcePack.editor.menuBar.help.tutorial=Öğretici 
+resourcePack.editor.menuBar.help.documentation=Dokümantasyon
+resourcePack.editor.menuBar.help.feedback=Geri Bildirim
+resourcePack.editor.menuBar.help.quickStart=Hızlı başlangıç
+resourcePack.editor.menuBar.help=Yardım
+resourcePack.editor.menuBar.locate=Yerini Bul
+resourcePack.editor.menuBar.parentMenu.weather.clear=Açık
+resourcePack.editor.menuBar.parentMenu.weather.rain=Yağmur
+resourcePack.editor.menuBar.parentMenu.weather.thunder=Gök Gürültüsü
+resourcePack.editor.menuBar.parentMenu.weather=Hava durumu
+resourcePack.editor.menuBar.view.blockPalette=Blok Paleti
+resourcePack.editor.menuBar.view.logging=Kütük Paneli
+resourcePack.editor.menuBar.view.navigationLogging=Gezinme günlüğü
+resourcePack.editor.menuBar.view=Görüntüle
+resourcePack.editor.menuBar.worldOptions.changeDimension.end=End
+resourcePack.editor.menuBar.worldOptions.changeDimension.nether=Nether
+resourcePack.editor.menuBar.worldOptions.changeDimension.overworld=Dış Dünya
+resourcePack.editor.menuBar.worldOptions.changeDimension=Boyut değiştirme
+resourcePack.editor.menuBar.worldOptions.pause.entities=Varlıklar
+resourcePack.editor.menuBar.worldOptions.pause=Durdur
+resourcePack.editor.menuBar.worldOptions=Dünya Seçenekleri
+resourcePack.editor.navigation.keyBinding.add=Gezinme Konumu Ekle
+resourcePack.editor.navigation.keyBinding.next=Sonraki Gezinme Konumuna Git
+resourcePack.editor.navigation.keyBinding.previous=Önceki Gezinme Konumuna Git
+resourcePack.editor.paste.pane.submitButton=Yapıştırmayı Onayla
+resourcePack.editor.paste.pane.title=Yapıştır
+resourcePack.editor.paste.pane.transform.mirrorX=Ayna X
+resourcePack.editor.paste.pane.transform.mirrorZ=Ayna Z
+resourcePack.editor.paste.pane.transform.origin.title=Uzaklık
+resourcePack.editor.paste.pane.transform.rotation.180=180°
+resourcePack.editor.paste.pane.transform.rotation.270=270
+resourcePack.editor.paste.pane.transform.rotation.90=90°
+resourcePack.editor.paste.pane.transform.rotation.none=0°
+resourcePack.editor.paste.pane.transform.rotation.title=Döndür
+resourcePack.editor.paste.pane.transform.title=Dönüştür
+resourcePack.editor.paste.toolRail.description=Bir blok seçmek için fareye sol tıklama, ardından pano ögesini tam olarak yapıştırma
+resourcePack.editor.paste.toolRail.title=Ön İzlemeyi Yapıştır
+resourcePack.editor.pastepreview.inputContext.title=Ön İzlemeyi Yapıştır
+resourcePack.editor.pastepreview.keyBinding.clearPreview=Ön İzlemeyi Temizle
+resourcePack.editor.pastepreview.keyBinding.copy=Seçimi Kopyala
+resourcePack.editor.pastepreview.keyBinding.cut=Seçimi Kes
+resourcePack.editor.pastepreview.keyBinding.moveBack=Ön İzlemeyi Geri Taşı
+resourcePack.editor.pastepreview.keyBinding.moveDown=Ön İzlemeyi Aşağı Taşı
+resourcePack.editor.pastepreview.keyBinding.moveForward=Ön İzlemeyi İleri Taşı
+resourcePack.editor.pastepreview.keyBinding.moveLeft=Ön İzlemeyi Sola Taşı
+resourcePack.editor.pastepreview.keyBinding.moveOffsetBack=Kaydırmayı Geri Taşı
+resourcePack.editor.pastepreview.keyBinding.moveOffsetDown=Kaydırmayı Aşağı Taşı
+resourcePack.editor.pastepreview.keyBinding.moveOffsetForward=Kaydırmayı İleri Taşı
+resourcePack.editor.pastepreview.keyBinding.moveOffsetLeft=Kaydırmayı Sola Taşı
+resourcePack.editor.pastepreview.keyBinding.moveOffsetRight=Kaydırmayı Sağa Taşı
+resourcePack.editor.pastepreview.keyBinding.moveOffsetUp=Kaydırmayı Yukarı Taşı
+resourcePack.editor.pastepreview.keyBinding.moveOriginBack=Başlangıç Noktasını Geri Taşı
+resourcePack.editor.pastepreview.keyBinding.moveOriginDown=Başlangıç Noktasını Aşağı Taşı
+resourcePack.editor.pastepreview.keyBinding.moveOriginForward=Başlangıç Noktasını İleri Taşı
+resourcePack.editor.pastepreview.keyBinding.moveOriginLeft=Başlangıç Noktasını Sola Taşı
+resourcePack.editor.pastepreview.keyBinding.moveOriginRight=Başlangıç Noktasını Sağa Taşı
+resourcePack.editor.pastepreview.keyBinding.moveOriginUp=Başlangıç Noktasını Yukarı Taşı
+resourcePack.editor.pastepreview.keyBinding.moveRight=Ön İzlemeyi Sağa Taşı
+resourcePack.editor.pastepreview.keyBinding.moveUp=Ön İzlemeyi Yukarı Taşı
+resourcePack.editor.pastepreview.keyBinding.paste=Yapıştır
+resourcePack.editor.pastepreview.keyBinding.pasteAtCursor=İmleçte Yapıştır
+resourcePack.editor.pastepreview.keyBinding.pastepreview=Ön İzlemeyi Yapıştır
+resourcePack.editor.pastepreview.keyBinding.quickPaste=Hızlı Yapıştırma
+resourcePack.editor.pastepreview.keyBinding.rotateClockWise=Ön İzlemeyi Saat Yönünde Döndür
+resourcePack.editor.pastepreview.keyBinding.rotateCounterClockWise=Ön İzlemeyi Saat Yönünün Tersine Döndür
+resourcePack.editor.pastepreview.keyBinding.toggleAdjacentTarget=Bitişik Hedef Modunu Aç/Kapat
+resourcePack.editor.pastepreview.keyBinding.toggleBlockTarget=Hedef Modunu Engelle'yi Aç/Kapat
+resourcePack.editor.pastepreview.keyBinding.toggleFixedDistance=Sabit Mesafeyi Etkinleştir
+resourcePack.editor.pastepreview.keyBinding.toggleMirrorX=X'i Yansıt'ı Aç/Kapat
+resourcePack.editor.pastepreview.keyBinding.toggleMirrorZ=Z'yi Yansıt'ı Aç/Kapat
+resourcePack.editor.pastepreview.keyBinding.toggleMouseTracking=Fare İzlemeyi Aç/Kapat
+resourcePack.editor.pastepreview.pane.controls.cursor.fixed=Sabit Mesafe
+resourcePack.editor.pastepreview.pane.controls.cursor.keyboard=Yalnızca tuşlar
+resourcePack.editor.pastepreview.pane.controls.cursor.mouseandkeys=Fare ve Tuşlar
+resourcePack.editor.pastepreview.pane.controls.cursor.target.block=Engelle
+resourcePack.editor.pastepreview.pane.controls.cursor.target.face=Bitişik
+resourcePack.editor.pastepreview.pane.controls.cursor.target.title=Hedef
+resourcePack.editor.pastepreview.pane.controls.cursor=Kontrol
+resourcePack.editor.pastepreview.pane.controls.title=İmleç Kontrolleri
+resourcePack.editor.pastepreview.pane.placement.mirrorX=Ayna X
+resourcePack.editor.pastepreview.pane.placement.mirrorZ=Ayna Z
+resourcePack.editor.pastepreview.pane.placement.offset=Uzaklık
+resourcePack.editor.pastepreview.pane.placement.origin=Menşei
+resourcePack.editor.pastepreview.pane.placement.pastebutton=Yapıştır
+resourcePack.editor.pastepreview.pane.placement.rotation=Döndürme (Y)
+resourcePack.editor.pastepreview.pane.placement.title=Yerleştirme Ayarları
+resourcePack.editor.pastepreview.pane.root.size=Beden
+resourcePack.editor.pastepreview.pane.root.title=Ön İzlemeyi Yapıştır
+resourcePack.editor.pastepreview.tool.tip=Pano ön izlemesinin konumunu ayarlamak için fareyi kullanın ve dünyaya yapıştırmak için tıklayın
+resourcePack.editor.pastepreview.tool.title=Ön İzlemeyi Yapıştır
+resourcePack.editor.playerPositionExtension.dimension=Boyut
+resourcePack.editor.playerPositionExtension.menu.player=Oyuncu
+resourcePack.editor.playerPositionExtension.menu.showPlayerSettings=Oyuncu Ayarlarını Göster
+resourcePack.editor.playerPositionExtension.nether=Nether
+resourcePack.editor.playerPositionExtension.overworld=Dış Dünya
+resourcePack.editor.playerPositionExtension.pane=Oyuncu Ayarları
+resourcePack.editor.playerPositionExtension.theEnd=The End
+resourcePack.editor.playerPositionExtension.worldSettings=Dünya Ayarları
+resourcePack.editor.playtest.AdvancedSettings.title=Gelişmiş Ayarlar
+resourcePack.editor.playtest.Dialog.DaylightCycle=Gün Işığı Döngüsü
+resourcePack.editor.playtest.Dialog.Difficulty=Zorluk
+resourcePack.editor.playtest.Dialog.GameMode=Oyun Modu
+resourcePack.editor.playtest.Dialog.OverrideSpawn=Mevcut Lokasyonda Belir
+resourcePack.editor.playtest.Dialog.ShowCoordinates=Koordinatları Göster
+resourcePack.editor.playtest.Dialog.TestButton=Test Dünyası
+resourcePack.editor.playtest.Dialog.TimeOfDay=Günün Dilimi
+resourcePack.editor.playtest.Dialog.Title=Test Ayarları
+resourcePack.editor.playtest.Dialog.Weather=Hava durumu
+resourcePack.editor.playtest.Dialog.WeatherCycle=Hava Döngüsü
+resourcePack.editor.playtest.Menu.Title=Test Dünyası
+resourcePack.editor.playtest.Title.Tooltip=Düzenleyici projenizi oynanabilir bir Minecraft dünyası olarak test edin. Projenize hiçbir değişiklik kaydedilmeyecek. Yalnızca tek oyunculu bir proje sunuculuğu yaparken kullanılabilir.
+resourcePack.editor.playtestResult.EditorSystemFailure=Düzenleyici Sistemi Başarısız
+resourcePack.editor.playtestResult.InvalidLevelId=Geçersiz Seviye Kimliği
+resourcePack.editor.playtestResult.InvalidSessionHandle=Geçersiz Oturum Kolu
+resourcePack.editor.playtestResult.OK=Başarılı
+resourcePack.editor.playtestResult.PlayerNotFound=Oyuncu Bulunamadı
+resourcePack.editor.playtestResult.ResponseTimeout=Yanıt Zaman Aşımı
+resourcePack.editor.playtestResult.SessionInfoNotFound=Oturum Bilgisi Bulunamadı
+resourcePack.editor.playtestResult.TooManyPlayers=Başka oyunculara sunuculuk yaparken bir dünyayı test edemezsiniz
+resourcePack.editor.playtestResult.UnspecifiedError=Belirtilmemiş Hata
+resourcePack.editor.playtestResult.UnsupportedScenario=Dünyayı test etmek için düzenleyici projesi sunuculuğu yapıyor olmalısınız
+resourcePack.editor.playtestResult.WorldExportBusy=Dünya Dışa Aktarımı Meşgul
+resourcePack.editor.playtestResult.WorldExportFailed=Dünya Dışa Aktarımı Başarısız Oldu
+resourcePack.editor.menuBar.file.realmsPublish=Realms'ta Yayınla   
+resourcePack.editor.realmsPublish.noActiveRealmsSubscription=Realms'e Yayınlama için aktif bir Realms aboneliği gerekir. Realms'a abone olabilir veya süresi dolan abonelikleri standart Minecraft istemcisinden ya da hesabınıza giriş yaptıktan sonra minecraft.net web adresinden yenileyebilirsiniz.    
+resourcePack.editor.realmsPublish.userNotLoggedIn=Realms'ta Yayınlama için aktif bir Realms aboneliği gereklidir. Mevcut bir Realms aboneliğine erişmek için bir Microsoft Hesabında oturum açmış olmanız gerekir.
+resourcePack.editor.realmsPublish.dedicatedServerWarning=Özelleştirilmiş Sunucu kullanıldığında Realms'ta Yayınla seçeneği kullanılamaz.
+resourcePack.editor.realmsPublish.notSessionHostWarning=Yalnızca Düzenleyici sunucu Realms'ta Yayınlama yapabilir.
+resourcePack.editor.realmsPublish.genericRealmsIssue=Realms hizmetiyle ilgili bir sorun oluştu, daha sonra yeniden deneyin.
+resourcePack.editor.realmsPublish.goToMinecraftWebsite=Minecraft.net adresine git  
+resourcePack.editor.realmsPublish.Refresh=Yenile  
+resourcePack.editor.realmsPublish.Realm=Realm  
+resourcePack.editor.realmsPublish.RealmSlot=Realm yuvası 
+resourcePack.editor.realmsPublish.EmptySlot=Boş Yuva
+resourcePack.editor.realmsPublish.PublishNotesTitle=Realms'ta Yayınlama Notu   
+resourcePack.editor.realmsPublish.DownloadRealm=İndir    
+resourcePack.editor.realmsPublish.PublishRealm=Yayınla  
+resourcePack.editor.realmsPublish.Confirm=Onayla   
+resourcePack.editor.realmsPublish.Cancel=İptal 
+resourcePack.editor.realmsPublish.Back=Geri 
+resourcePack.editor.realmsPublish.PublishFailedNonCompliantWorldName=Realms'ta Yayınlama geçersiz bir dünya adı nedeniyle başarısız oldu. Lütfen dünya adını güncelleyin ve tekrar deneyin.
+resourcePack.editor.realmsPublish.PublishFailed=Realms'ta yayınlama başarısız oldu. Lütfen daha sonra tekrar deneyin.   
+resourcePack.editor.realmsPublish.PublishSuccess=Realms'ta başarıyla yayınlandı    
+resourcePack.editor.realmsPublish.PublishConfirmationOptOut=Bu Realm ve oturum için bir daha sorma  
+resourcePack.editor.realmsPublish.PublishingToRealms=Dünya Realms'ta yayınlanma aşamasında...  
+resourcePack.editor.realmsPublish.UnableToPublishMissingRealm=Realms'ta yayınlanamadı. Seçili Realm yok    
+resourcePack.editor.realmsPublish.UnableToPublishMissingRealmSlot=Realms'ta yayınlanamadı. Seçili Realm Yuvası yok   
+resourcePack.editor.realmsPublish.PublishConfirmationWarning=Bu işlem sonrasında mevcut dünyanız seçili yuvadan kaldırılacak ve yerine mevcut Düzenleyici dünyanız getirilecektir (seçilen yuva aynı zamanda Realm'ınız için etkin yuva hâline gelecektir). Realm'ınızın üyeleri yeni gelen dünyanıza erişebilecektir. Yayınlamadan önce veri kaybını önlemek için geçerli dünyanızı kaydetmek isterseniz bu iletişim kutusunu iptal edin ve “Yayınla” seçimini yapmadan önce “İndir” seçimini yapın. Devam etmek ve mevcut dünyanızı değiştirmek için “Onayla”yı seçin.    
+resourcePack.editor.realmsPublish.DownloadSuccess=Dünya, Realms'tan başarıyla indirildi    
+resourcePack.editor.realmsPublish.DownloadFailed=Dünya, Realms'tan indirilemedi 
+resourcePack.editor.realmsPublish.DownloadingFromRealms=Dünya, Realms'tan indiriliyor...    
+resourcePack.editor.toolRail.RepeaterTool.title=Yineleyici Alet
+resourcePack.editor.toolRail.RepeaterTool.tooltip=Seçim birimini yinelemek için alet
+resourcePack.editor.toolRail.RepeaterTool.pane.Spacing=Aralık
+resourcePack.editor.toolRail.RepeaterTool.pane.Repetitions=Yinelemeler
+resourcePack.editor.toolRail.RepeaterTool.pane.Preview=Ön İzleme
+resourcePack.editor.toolRail.RepeaterTool.pane.Clear=Temizle
+resourcePack.editor.toolRail.RepeaterTool.pane.Apply=Uygula
+resourcePack.editor.toolRail.RepeaterTool.statusMessage.noSelection=Tekrarlanacak birimi seçmek için Seçim aletini kullanın
+resourcePack.editor.toolRail.RepeaterTool.pane.Mode=Mod
+resourcePack.editor.toolRail.RepeaterTool.mode.Line=Çizgi
+resourcePack.editor.toolRail.RepeaterTool.mode.Grid=Kafes
+resourcePack.editor.toolRail.RepeaterTool.pane.RepeatType=Tekrarlama Türü
+resourcePack.editor.toolRail.RepeaterTool.repeat.Uniform=Tek Tip
+resourcePack.editor.toolRail.RepeaterTool.pane.RepeatAlongX=X Boyunca Tekrarla
+resourcePack.editor.toolRail.RepeaterTool.pane.RepeatAlongY=Y Boyunca Tekrarla
+resourcePack.editor.toolRail.RepeaterTool.pane.RepeatAlongZ=Z Boyunca Tekrarla
+resourcePack.editor.toolRail.RepeaterTool.repeat.Separate=Ayrı
+resourcePack.editor.toolRail.RepeaterTool.pane.XCount=X Sayısı
+resourcePack.editor.toolRail.RepeaterTool.pane.YCount=Y Sayısı
+resourcePack.editor.toolRail.RepeaterTool.pane.ZCount=Z Sayısı
+resourcePack.editor.selectionTool.deselect=Seçimi Kaldır
+resourcePack.editor.selectionTool.fillPane.fillAction=Seçim Aracını Doldur
+resourcePack.editor.selectionTool.fillPane.title=Seçim Aracını Doldur
+resourcePack.editor.selectionTool.keyBinding.deselect=Seçimi Kaldır
+resourcePack.editor.selectionTool.keyBinding.fill=Seçim İçeriklerini Doldur
+resourcePack.editor.selectionTool.keyBinding.growBack=Seçimi Arkaya Uzat
+resourcePack.editor.selectionTool.keyBinding.growDown=Seçimi Aşağı Uzat
+resourcePack.editor.selectionTool.keyBinding.growForward=Seçimi İleri Uzat
+resourcePack.editor.selectionTool.keyBinding.growLeft=Seçimi Sola Uzat
+resourcePack.editor.selectionTool.keyBinding.growRight=Seçimi Sağa Uzat
+resourcePack.editor.selectionTool.keyBinding.growUp=Seçimi Yukarı Uzat
+resourcePack.editor.selectionTool.keyBinding.moveAllSelectionBack=Tüm Seçimi Geri Taşı
+resourcePack.editor.selectionTool.keyBinding.moveAllSelectionDown=Tüm Seçimi Aşağı Taşı
+resourcePack.editor.selectionTool.keyBinding.moveAllSelectionForward=Tüm Seçimleri İleri Taşı
+resourcePack.editor.selectionTool.keyBinding.moveAllSelectionLeft=Tüm Seçimi Sola Taşı
+resourcePack.editor.selectionTool.keyBinding.moveAllSelectionRight=Tüm Seçimleri Sağa Taşı
+resourcePack.editor.selectionTool.keyBinding.moveAllSelectionUp=Tüm Seçimleri Yukarı Taşı
+resourcePack.editor.selectionTool.keyBinding.moveCursorBack=İmleci Geri Taşı
+resourcePack.editor.selectionTool.keyBinding.moveCursorDown=İmleci Aşağı Taşı
+resourcePack.editor.selectionTool.keyBinding.moveCursorForward=İmleci İleri Taşı
+resourcePack.editor.selectionTool.keyBinding.moveCursorLeft=İmleci Sola Taşı
+resourcePack.editor.selectionTool.keyBinding.moveCursorRight=İmleci Sağa Taşı
+resourcePack.editor.selectionTool.keyBinding.moveCursorUp=İmleci Yukarı Taşı
+resourcePack.editor.selectionTool.keyBinding.moveSelectionBack=Seçimi Geri Taşı
+resourcePack.editor.selectionTool.keyBinding.moveSelectionDown=Seçimi Aşağı Taşı
+resourcePack.editor.selectionTool.keyBinding.moveSelectionForward=Seçimi İleri Taşı
+resourcePack.editor.selectionTool.keyBinding.moveSelectionLeft=Seçimi Sola Taşı
+resourcePack.editor.selectionTool.keyBinding.moveSelectionRight=Seçimi Sağa Taşı
+resourcePack.editor.selectionTool.keyBinding.moveSelectionUp=Seçimi Yukarı Taşı
+resourcePack.editor.selectionTool.keyBinding.shrinkBack=Seçimi Arkaya Küçült
+resourcePack.editor.selectionTool.keyBinding.shrinkDown=Seçimi Aşağı Küçült
+resourcePack.editor.selectionTool.keyBinding.shrinkForward=Seçimi İleri Küçült
+resourcePack.editor.selectionTool.keyBinding.shrinkLeft=Seçim Sola Küçült
+resourcePack.editor.selectionTool.keyBinding.shrinkRight=Seçimi Sağa Küçült
+resourcePack.editor.selectionTool.keyBinding.shrinkUp=Seçim Yukarı Küçült
+resourcePack.editor.selectionTool.keyBinding.toggleTool=Seçim Aletini Aç/Kapat
+resourcePack.editor.selectionTool.keyBinding.select=Blok Seç
+resourcePack.editor.selectionTool.keyBinding.selectMultiple=Ek Blok Seç
+resourcePack.editor.selectionTool.keyBinding.trimVolume=Kırpma Seçimi (Sınırlar)
+resourcePack.editor.selectionTool.keyBinding.trimRemoveAir=Trim Selection (Remove Air)
+resourcePack.editor.selectionTool.marquee.title=Çerçeve Seçimi
+resourcePack.editor.selectionTool.modeSelection.freehand.title=Serbest Fırça Modu
+resourcePack.editor.selectionTool.modeSelection.freehand.tooltip=Serbest fırça şeklini kullanarak dünyadaki blokları seçin
+resourcePack.editor.selectionTool.modeSelection.marquee.title=Çerçeve Modu
+resourcePack.editor.selectionTool.modeSelection.marquee.tooltip=Dikdörtgen bir hacim kullanarak dünyadaki blokları seçin
+resourcePack.editor.selectionTool.modeSelection.magic.title=Sihirli Seçim Modu
+resourcePack.editor.selectionTool.modeSelection.magic.tooltip=Dünyadaki blokları seçilen bir kaynaktan gelen arama modelini kullanarak seçin
+resourcePack.editor.selectionTool.modeSelection.title=Seçim Modu
+resourcePack.editor.selectionTool.projectThroughLiquid=Sıvı ile proje
+resourcePack.editor.selectionTool.trimAction.trimVolume=Kırpma Seçimi
+resourcePack.editor.selectionTool.trimAction.trimVolume.tooltip=Geçerli seçim hacmini yalnızca içindeki katı bloklara sığacak şekilde kırpın   
+resourcePack.editor.selectionTool.trimAction.removeAir=Havayı Kaldır
+resourcePack.editor.selectionTool.trimAction.removeAir.tooltip=Yalnızca belirli blokları bırakın ve mevcut seçim hacmindeki havayı kaldırın 
+resourcePack.editor.selectionTool.trimAction.trimVolume.SettingsPane.title=Kırpma Ayarları
+resourcePack.editor.selectionTool.trimAction.trimVolume.SettingsPane.ignoreLiquid=Sıvıları Yok Say
+resourcePack.editor.selectionTool.trimAction.trimVolume.SettingsPane.ignoreLiquid.tooltip=Hacmi kırparken sıvı blokları yok sayın 
+resourcePack.editor.selectionTool.trimAction.trimVolume.SettingsPane.onlyCollidable=Sadece Çarpışma Blokları
+resourcePack.editor.selectionTool.trimAction.trimVolume.SettingsPane.onlyCollidable.tooltip=Hacmi kırparken çarpışma olmayan blokları (yapraklar, çimen vb.) yok sayın 
+resourcePack.editor.selectionTool.quickAction.clearSelection.tooltip=Geçerli seçimi kaldır
+resourcePack.editor.selectionTool.quickAction.clearSelection=Seçimi Kaldır
+resourcePack.editor.selectionTool.quickAction.deleteSelection.tooltip=Geçerli seçim biriminin içindeki tüm blokları kaldırın
+resourcePack.editor.selectionTool.quickAction.deleteSelection=Sil
+resourcePack.editor.selectionTool.quickAction.fillSelection.tooltip=Geçerli seçim birimini mevcut seçili blok türüyle doldur
+resourcePack.editor.selectionTool.quickAction.fillSelection=Doldur
+resourcePack.editor.selectionTool.quickAction.title=Hızlı Eylemler
+resourcePack.editor.selectionTool.selectionMode.adjacent=Bitişik
+resourcePack.editor.selectionTool.selectionMode.fixedDistance=Sabit Mesafe
+resourcePack.editor.selectionTool.selectionMode.mouseAndKeyboard=Serbest Form
+resourcePack.editor.selectionTool.selectionMode=Mod
+resourcePack.editor.selectionTool.settingsPane.title=Seçim
+resourcePack.editor.selectionTool.toolRail.description=Bir seçim oluşturmak için fareye sol tıkla; seçimi kaldırmak için CTRL+D
+resourcePack.editor.selectionTool.toolRail.title=Seçim
+resourcePack.editor.selectionTool.transformPane.origin.tooltip=Seçimin dünya koordinatlarındaki başlangıç ​​konumu
+resourcePack.editor.selectionTool.transformPane.origin=Menşei
+resourcePack.editor.selectionTool.transformPane.size=Boyut
+resourcePack.editor.selectionTool.transformPane.title=Dönüştür
+resourcePack.editor.BlockMaskControl.trim.rootPane.title=Kırpma Ayarları
+resourcePack.editor.BlockMaskControl.trim.toggleGroup.title=Maske Modu
+resourcePack.editor.BlockMaskControl.trim.toggleGroup.item.disabled.label=Disable Block Filters
+resourcePack.editor.BlockMaskControl.trim.toggleGroup.item.disabled.tooltip=Devre Dışı
+resourcePack.editor.BlockMaskControl.trim.toggleGroup.item.mask.label=Maske
+resourcePack.editor.BlockMaskControl.trim.toggleGroup.item.mask.tooltip=Listeye uyan bloklar göz ardı edilir
+resourcePack.editor.BlockMaskControl.trim.toggleGroup.item.replace.label=Değiştir
+resourcePack.editor.BlockMaskControl.trim.toggleGroup.item.replace.tooltip=Listeye uyan bloklar katı olarak değerlendirilir
+resourcePack.editor.server.description=Düzenleyici Sunucu Kaynakları
+resourcePack.editor.server.name=Düzenleyici Kaynakları
+resourcePack.editor.toolRail.Terrain.title=Arazi
+resourcePack.editor.toolRail.Terrain.keybinding.toggleTool=Arazi Aletini Aç/Kapat
+resourcePack.editor.toolRail.Terrain.keyBinding.switch=Arazi Modunu Değiştir
+resourcePack.editor.toolRail.Terrain.Mode.title=Arazi Modu
+resourcePack.editor.toolRail.Terrain.Smooth.mode.title=Pürüzsüz Modu
+resourcePack.editor.toolRail.Terrain.Smooth.tooltip=Pürüzsüzleştirme kuvvetine dayalı olarak arazi üzerinde pürüzsüzleştirme
+resourcePack.editor.toolRail.Terrain.SmoothStrength=Pürüzsüzlük Kuvveti
+resourcePack.editor.toolRail.Terrain.Roughen.mode.title=Pürüzlendirme Modu
+resourcePack.editor.toolRail.Terrain.Roughen.tooltip=Pürüzlendirme kuvvetine dayalı olarak araziyi pürüzlendirin
+resourcePack.editor.toolRail.Terrain.RoughenStrength=Pürüzlendirme Kuvveti
+resourcePack.editor.toolRail.Terrain.description=Arazi aleti, araziyi daha pürüzsüz veya pürüzlü hâle getirir
+resourcePack.editor.help.learnMore=Daha fazla bilgi
+resourcePack.editor.statusBar.connectedPlayers=%s Bağlı Oyuncu
+resourcePack.editor.summonTool.summonSubPane.EntityPickerTitle=Varlık Türü
+resourcePack.editor.timeOfDay.12hrClock=12 Saatlik Saat
+resourcePack.editor.timeOfDay.24hrClock=24 Saatlik Saat
+resourcePack.editor.timeOfDay.clockType=Saat Türü
+resourcePack.editor.timeOfDay.currentTime=Şimdiki Zaman
+resourcePack.editor.timeOfDay.customTime=Özel Zaman
+resourcePack.editor.timeOfDay.daylightCycle=Gün Işığı Döngüsü
+resourcePack.editor.timeOfDay.dropDown.day=Gün
+resourcePack.editor.timeOfDay.dropDown.midnight=Gece yarısı
+resourcePack.editor.timeOfDay.dropDown.night=Gece
+resourcePack.editor.timeOfDay.dropDown.none=Yok
+resourcePack.editor.timeOfDay.dropDown.noon=Öğlen
+resourcePack.editor.timeOfDay.dropDown.sunrise=Gün Doğumu
+resourcePack.editor.timeOfDay.dropDown.sunset=Gün Batımı
+resourcePack.editor.timeOfDay.dropDown.custom=Özel
+resourcePack.editor.timeOfDay.dropDown.title=Ön ayarlar
+resourcePack.editor.timeOfDay.menu.title=Günün Saati Ayarları
+resourcePack.editor.timeOfDay.minecraftClock=Minecraft Saati
+resourcePack.editor.timeOfDay.title=Zaman Ayarları
+resourcePack.editor.toolMode.keyBinding.console=Konsolu Aç
+resourcePack.editor.toolMode.keyBinding.devConsole=Geliştirici Konsolunu Aç
+resourcePack.editor.toolMode.keyBinding.hotbar1=Hızlı Erişim Çubuğu 1'i seç
+resourcePack.editor.toolMode.keyBinding.hotbar2=Hızlı Erişim Çubuğu 2'yi seç
+resourcePack.editor.toolMode.keyBinding.hotbar3=Hızlı Erişim Çubuğu 3'ü seç
+resourcePack.editor.toolMode.keyBinding.hotbar4=Hızlı Erişim Çubuğu 4'ü seç
+resourcePack.editor.toolMode.keyBinding.hotbar5=Hızlı Erişim Çubuğu 5'i seç
+resourcePack.editor.toolMode.keyBinding.hotbar6=Hızlı Erişim Çubuğu 6'yı seç
+resourcePack.editor.toolMode.keyBinding.hotbar7=Hızlı Erişim Çubuğu 7'yi seç
+resourcePack.editor.toolMode.keyBinding.hotbar8=Hızlı Erişim Çubuğu 8'i seç
+resourcePack.editor.toolMode.keyBinding.hotbar9=Hızlı Erişim Çubuğu 9'u seç
+resourcePack.editor.toolMode.keyBinding.reload=Yeniden Yükle 
+resourcePack.editor.toolRail.blockPalette.title=Blok Paleti (CTRL+P)
+resourcePack.editor.toolRail.blockPalette.tooltip=En sevdiğiniz veya en sık kullandığınız bloklardan bir paleti oluşturun
+resourcePack.editor.toolRail.flattenBrush.title=Düzleştirme Fırçası
+resourcePack.editor.toolRail.flattenBrush.tooltip=Bir alanı, seçili blokun yüksekliğine göre dikey olarak düzleştirin
+resourcePack.editor.toolRail.flattenBrush.settings.heightThreshold=Yükseklik Eşiği
+resourcePack.editor.toolRail.flattenBrush.settings.radius=Yarıçap
+resourcePack.editor.toolRail.floodFillSelectionTool.description=Doldurma algoritmasını kullanarak bakmakta olduğunuz alanı seçer.
+resourcePack.editor.toolRail.floodFillSelectionTool.title=Seçim Aracını Doldur.
+resourcePack.editor.toolRail.line.keyBinding.delete=İçerikleri Sil
+resourcePack.editor.toolRail.line.keyBinding.deleteAndClear=İçerikleri Sil ve Seçimi Kaldır
+resourcePack.editor.toolRail.line.keyBinding.deselect=Seçimi Kaldır
+resourcePack.editor.toolRail.line.keyBinding.deselectAll=Tümünün Seçimini Kaldır
+resourcePack.editor.toolRail.line.keyBinding.fill=İçerikleri Doldur
+resourcePack.editor.toolRail.line.keyBinding.fillAndClear=İçerikleri Doldur ve Seçimi Kaldır
+resourcePack.editor.toolRail.line.keyBinding.moveBack=Seçilenleri Arkaya Taşı
+resourcePack.editor.toolRail.line.keyBinding.moveDown=Seçilenleri Aşağı Taşı
+resourcePack.editor.toolRail.line.keyBinding.moveForward=Seçilenleri İleri Taşı
+resourcePack.editor.toolRail.line.keyBinding.moveLeft=Seçilenleri Sola Taşı
+resourcePack.editor.toolRail.line.keyBinding.moveRight=Seçilenleri Sağa Taşı
+resourcePack.editor.toolRail.line.keyBinding.moveUp=Seçilenleri Yukarı Taşı
+resourcePack.editor.toolRail.line.keyBinding.selectAll=Tümünü Seç
+resourcePack.editor.toolRail.line.pane.algorithm.Direct=Yönlendir
+resourcePack.editor.toolRail.line.pane.algorithm.Staggered=Kademeli (Çitler)
+resourcePack.editor.toolRail.line.pane.algorithm.title=Algoritma
+resourcePack.editor.toolRail.line.pane.fillAction=Seçim Aracını Doldur
+resourcePack.editor.toolRail.line.pane.height.title=Yükseklik
+resourcePack.editor.toolRail.line.pane.selectionMode.adjacent=Bitişik Yüz
+resourcePack.editor.toolRail.line.pane.selectionMode.fixedDistance=Sabit Mesafe
+resourcePack.editor.toolRail.line.pane.selectionMode.freeForm=Serbest Form
+resourcePack.editor.toolRail.line.pane.selectionMode=Seçim
+resourcePack.editor.toolRail.line.pane.surfaceContour=Yüzey Konturu
+resourcePack.editor.toolRail.line.pane.width.title=Genişlik
+resourcePack.editor.toolRail.line.title=Çizgi
+resourcePack.editor.toolRail.line.tooltip=Çizgi aracı blok çizgileri oluşturur
+resourcePack.editor.toolRail.rulerTool.title=Cetvel Aleti
+resourcePack.editor.toolRail.rulerTool.tooltip=Mesafeyi ölçün
+resourcePack.editor.toolRail.rulerTool.info.title=Ölçüm
+resourcePack.editor.toolRail.smartFillTool.title=Akıllı Doldurma Aracı
+resourcePack.editor.toolRail.smartFillTool.tooltip=Bağlı bir blok kümesini doldurmak için tıklayın
+resourcePack.editor.toolRail.smartFillTool.modes.fillVolume=Doldurma Hacmi
+resourcePack.editor.toolRail.smartFillTool.areaLimit.title=Alan Sınırı
+resourcePack.editor.toolRail.smartFillTool.areaLimit.tooltip=Doldurulacak maksimum alan
+resourcePack.editor.toolRail.summonTool.keyBinding.clear=Seçimi Sil
+resourcePack.editor.toolRail.summonTool.keyBinding.delete=Varlığı Sil
+resourcePack.editor.toolRail.summonTool.keyBinding.moveBack=Seçilenleri Arkaya Taşı
+resourcePack.editor.toolRail.summonTool.keyBinding.moveDown=Seçilenleri Aşağı Taşı
+resourcePack.editor.toolRail.summonTool.keyBinding.moveForward=Seçilenleri İleri Taşı
+resourcePack.editor.toolRail.summonTool.keyBinding.moveLeft=Seçilenleri Sola Taşı
+resourcePack.editor.toolRail.summonTool.keyBinding.moveRight=Seçilenleri Sağa Taşı
+resourcePack.editor.toolRail.summonTool.keyBinding.moveUp=Seçilenleri Yukarı Taşı
+resourcePack.editor.toolRail.summonTool.keyBinding.toggle=Çağırma Aletini Aç/Kapat
+resourcePack.editor.toolRail.summonTool.pane.select=Mod Seç
+resourcePack.editor.toolRail.summonTool.pane.title=Alet Çağır
+resourcePack.editor.toolRail.summonTool.pane.type=Varlık Türü
+resourcePack.editor.toolRail.summonTool.tool.infoText=Seçmek için bir varlığa, yeni bir varlık çağırmak için haritaya tıklayın
+resourcePack.editor.toolRail.summonTool.tool.selectSubPane.rotation=Dönüş
+resourcePack.editor.toolRail.summonTool.tool.selectSubPane=Varlık Seçimi
+resourcePack.editor.toolRail.summonTool.tool.summonSubPane=Varlık Çağırma
+resourcePack.editor.toolRail.summonTool.tool.tip=Varlıkları çağırmak için tıklayın
+resourcePack.editor.toolRail.summonTool.tool.title=Alet Çağır
+resourcePack.editor.toolRail.workbenchSettings.title=Tezgah
+resourcePack.editor.toolRail.workbenchTool.title=Tezgah
+resourcePack.editor.toolRail.workbenchTool.description=Blok durumlarını hızla değiştirin
+resourcePack.editor.toolRail.workbenchTool.howToUse=Durumlarını değiştirmek için kullanılabilecek eylemleri görmek üzere blokları vurgulayın (açık/kapalı, döndür, ters çevir, vb.). Shift ve Control tuşu değiştiricilerini de kullanmayı deneyin! Lütfen bu özelliğin yalnızca değiştirilebilir özelliklere sahip bloklarda (örneğin kapılar, çitler, merdivenler, vb.) çalıştığını unutmayın.
+resourcePack.editor.toolRail.workbenchTool.tooltip=Blok durumunu değiştirin
+resourcePack.editor.toolRail.workbenchTool.block=Engelle
+resourcePack.editor.toolRail.workbenchTool.leftClick=Sol Tıkla
+resourcePack.editor.toolRail.workbenchTool.shiftLeftClick=Shift + Sol Tık
+resourcePack.editor.toolRail.workbenchTool.controlLeftClick=CTRL + Sol Tık
+resourcePack.editor.toolRail.workbenchTool.shiftControlLeftClick=Shift + CTRL + Sol Tık
+resourcePack.editor.toolRail.workbenchTool.leftClickTooltip=Bir bloka Sol Tıklayınca birincil Tezgah eylemi gerçekleşir
+resourcePack.editor.toolRail.workbenchTool.shiftLeftClickTooltip=Bir bloka Shift + Sol Tıklama yapınca ikincil Tezgah eylemi gerçekleşir
+resourcePack.editor.toolRail.workbenchTool.controlLeftClickTooltip=Bir bloka Control + Sol Tıklama yapınca üçüncül Tezgah eylemi gerçekleşir
+resourcePack.editor.toolRail.workbenchTool.shiftControlLeftClickTooltip=Bir bloka Shift + Control + Sol Tıklama yapınca dördüncül Tezgah eylemi gerçekleşir
+resourcePack.editor.toolRail.workbenchTool.stripWood=Odunu soy/soyma
+resourcePack.editor.toolRail.workbenchTool.ladderLocation=Basamak konumu
+resourcePack.editor.toolRail.workbenchTool.autoAlign=Otomatik hizalama
+resourcePack.editor.toolRail.workbenchTool.autoAlignFacingDirection=Yönü Otomatik Hizalama
+resourcePack.editor.toolRail.workbenchTool.autoAlignRotation=Dönüşü Otomatik Hizalama
+resourcePack.editor.toolRail.workbenchTool.topSlotBitProp=Üst/Alt
+resourcePack.editor.toolRail.workbenchTool.pillarAxisProp=Döndür
+resourcePack.editor.toolRail.workbenchTool.heightProp=Katmanlar
+resourcePack.editor.toolRail.workbenchTool.candlesProp=Mum Sayısı
+resourcePack.editor.toolRail.workbenchTool.turtleEggCountProp=Kaplumbağa Yumurtası Sayısı
+resourcePack.editor.toolRail.workbenchTool.clusterCountProp=Deniz Hıyarı Sayısı
+resourcePack.editor.toolRail.workbenchTool.hangingProp=Başka bir bloktan asılı kalmayı aç/kapat
+resourcePack.editor.toolRail.workbenchTool.wallPostBitProp=Çubuğu aç/kapat
+resourcePack.editor.toolRail.workbenchTool.upsideDownBitProp=Üst/Alt
+resourcePack.editor.toolRail.workbenchTool.openBitProp=Aç/Kapat
+resourcePack.editor.toolRail.workbenchTool.litProp=Işıklı/Işıksız
+resourcePack.editor.toolRail.workbenchTool.dripstoneThicknessProp=Damlataş Kalınlığı
+resourcePack.editor.toolRail.workbenchTool.directionProp=Bakış Yönü
+resourcePack.editor.toolRail.workbenchTool.weirdoDirectionProp=Döndür
+resourcePack.editor.toolRail.workbenchTool.facingDirectionProp=Bakış Yönü
+resourcePack.editor.toolRail.workbenchTool.cardinalDirectionProp=Bakış Yönü
+resourcePack.editor.toolRail.workbenchTool.addCustomMapping=Özel Haritalandırma Ekle
+resourcePack.editor.toolRail.workbenchTool.blockProperty=Blok Özelliği
+resourcePack.editor.toolRail.workbenchTool.clickBinding=Bağlamalara Tıkla
+resourcePack.editor.toolRail.workbenchTool.addMapping=Haritalandırma Ekle
+resourcePack.editor.toolRail.workbenchTool.resetAllMappings=Tüm Haritalandırmaları Sıfırla
+resourcePack.editor.workbenchTool.keyBinding.primaryAction=Birincil Tezgah Eylemi
+resourcePack.editor.workbenchTool.keyBinding.secondaryAction=İkincil Tezgah Eylemi
+resourcePack.editor.workbenchTool.keyBinding.tertiaryAction=Üçüncül Tezgah Eylemi
+resourcePack.editor.workbenchTool.keyBinding.quaternaryAction=Dördüncül Tezgah Eylemi
+resourcePack.editor.transaction.keyBinding.redo=Yinele
+resourcePack.editor.transaction.keyBinding.undo=Geri Al
+resourcePack.editor.viewport.keyBinding.moveBack=Geri Git
+resourcePack.editor.viewport.keyBinding.moveDown=Aşağı Taşı
+resourcePack.editor.viewport.keyBinding.moveForward=İleri Git
+resourcePack.editor.viewport.keyBinding.moveLeft=Sola Git
+resourcePack.editor.viewport.keyBinding.moveRight=Sağa Git
+resourcePack.editor.viewport.keyBinding.moveUp=Yukarı Taşı
+resourcePack.editor.viewport.keyBinding.incrementFlySpeed=Uçuş Hızını Artırın
+resourcePack.editor.viewport.keyBinding.decrementFlySpeed=Uçuş Hızını Azaltın
+resourcePack.editor.viewSettings.compass.tip=Yön pusulasını göster
+resourcePack.editor.viewSettings.compass.title=Pusulayı göster
+resourcePack.editor.viewSettings.chunk.tip=Haritadaki chunk sınırlarının dış hatlarını göster
+resourcePack.editor.viewSettings.chunk.title=Chunk Sınırlarını Göster
+resourcePack.editor.viewSettings.nightVision.tip=Dünyayı gece görüşü varmış gibi göster
+resourcePack.editor.viewSettings.nightVision.title=Gece Görüşü
+resourcePack.editor.viewSettings.invisible.tip=Görünmez blokları (boşluk, bariyerler vb.) göster
+resourcePack.editor.viewSettings.invisible.title=Görünmez Blokları Göster
+resourcePack.editor.viewSettings.flySpeed.tip=Haritada daha hızlı manevra yapmak için Uçuş Hızını artırın
+resourcePack.editor.viewSettings.flySpeed.title=Uçuş Hızı Çarpanı
+resourcePack.editor.viewSettings.menu=Ayarlar
+resourcePack.editor.viewSettings.title=Ayarlar
+resourcePack.editor.hotbar.defaultDisplayName=Varsayılan
+resourcePack.editor.reloadScripts.response.tooMany=Sunucuya çok fazla oyuncu bağlı. Komut dosyasının yeniden yüklenmesi, yalnızca tek bir oyuncunun bağlı olduğu sunucularda desteklenir.
+resourcePack.editor.reloadScripts.response.genericError=Komut dosyaları yeniden yüklenmeye çalışılırken bir hata oluştu.
+resourcePack.editor.reloadScripts.response.noAdminRights=Komut dosyalarını yeniden yükleme izniniz yok.
