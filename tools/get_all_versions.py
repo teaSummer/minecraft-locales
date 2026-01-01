@@ -34,14 +34,14 @@ def main() -> None:
     from bedrock import extract, merge  # pyright: ignore[reportMissingImports]
     from java import update  # pyright: ignore[reportMissingImports]
 
-    # java_data = update.get_version_manifest()
-    # java_versions = [version["id"] for version in java_data["versions"]]
-    # java_versions = java_versions[: java_versions.index("b1.0") + 1]
-    # java_versions.reverse()
-    # print("=" * 60)
-    # for jev in java_versions:
-    #     if update.main(jev, java_data):
-    #         commit("Minecraft: Java Edition", jev, base_dir)
+    java_data = update.get_version_manifest()
+    java_versions = [version["id"] for version in java_data["versions"]]
+    java_versions = java_versions[: java_versions.index("b1.0") + 1]
+    java_versions.reverse()
+    print("=" * 60)
+    for jev in java_versions:
+        if update.main(jev, java_data):
+            commit("Minecraft: Java Edition", jev, base_dir)
 
     bedrock_data = extract.get_mcappx_versions()
     bedrock_versions = [
@@ -52,7 +52,6 @@ def main() -> None:
             for variation in data["Variations"]
         )
     ]
-    bedrock_versions = bedrock_versions[bedrock_versions.index("1.19.0.30") :]
     print("=" * 60)
     for bev in bedrock_versions:
         if extract.main(bev, bedrock_data):
