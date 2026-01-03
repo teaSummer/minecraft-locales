@@ -35,32 +35,62 @@ jobs:
         env:
           DOTNET_CLI_WORKLOAD_UPDATE_NOTIFY_DISABLE: true
         run: |
-          uv sync --locked
+          uv sync
           git submodule update --init
           cd tools/XvdTool.Streaming
           dotnet publish XvdTool.Streaming/XvdTool.Streaming.csproj -c Release -o ./x64 -r win-x64 --no-self-contained -nowarn:ca1416,ca2022,cs0168
 
       - name: Update language files
-        id: update
         env:
+          BEDROCK_EDITION: ~~
           CIK_DATA: ${{ secrets.CIK_DATA }}
           EXPORT_LANGUAGES: ${{ inputs.export_languages }}
+          JAVA_EDITION: ~~
         run: |
-          git config user.name "GitHub Actions"
+          git config user.name 'GitHub Actions'
           git config user.email 41898282+github-actions[bot]@users.noreply.github.com
           uv run scripts/java/update.py
-          if (%JAVA_EDITION%==/) {
-            git checkout -- versions.json
-          } else {
+          if ($env:JAVA_CHANGED -eq 'True') {
             git add .
-            git commit -m "Update Minecraft: Java Edition %JAVA_EDITION% locales"
-          }
-          uv run scripts/bedrock/extract.py
-          if (%BEDROCK_EDITION%==/) {
-            git checkout -- versions.json
+            git commit -m "Update Minecraft: Java Edition $env:JAVA_EDITION locales"
           } else {
+            git checkout -- versions.json
+          }
+          $JAVA_COMMIT = git log --grep '^Update Minecraft: Java Edition .* locales$' -1 --format=%H
+          uv run scripts/bedrock/extract.py
+          if ($env:BEDROCK_CHANGED -eq 'True') {
             uv run scripts/bedrock/merge.py
             git add .
-            git commit -m "Update Minecraft: Bedrock Edition %BEDROCK_EDITION% locales"
+            git commit -m "Update Minecraft: Bedrock Edition $env:BEDROCK_EDITION locales"
+          } else {
+            git checkout -- versions.json
           }
-          git push || true
+          $BEDROCK_COMMIT = git log --grep '^Update Minecraft: Bedrock Edition .* locales$' -1 --format=%H
+          git push
+          git submodule deinit tools/XvdTool.Streaming
+          git clean -fdx
+          git fetch origin history:history
+          git switch --force history
+          $data = Get-Content -path data.json
+          $readme = Get-Content -path README.md
+          if (-not ($readme | Select-String -pattern "<!--JE-->$env:JAVA_EDITION" -quiet)) {
+            $data = $data.replace('"java": {', """java"": {
+              ""$env:JAVA_EDITION"": ""$env:JAVA_COMMIT"",")
+            $readme = $readme.replace('|:----------:|:----------:|
+          | <!--JE-->', "|:----------:|-----------:|
+          | <!--JE-->$env:JAVA_EDITION | $env:JAVA_COMMIT |
+          | <!--JE-->")
+          }
+          if (-not ($readme | Select-String -pattern "<!--BE-->$env:BEDROCK_EDITION" -quiet)) {
+            $data = $data.replace('"bedrock": {', """bedrock"": {
+              ""$env:BEDROCK_EDITION"": ""$env:BEDROCK_COMMIT"",")
+            $readme = $readme.replace('|:----------:|:----------:|
+          | <!--BE-->', "|:----------:|:----------:|
+          | <!--BE-->$env:BEDROCK_EDITION | $env:BEDROCK_COMMIT |
+          | <!--BE-->")
+          }
+          Set-Content -path data.json -value $data
+          Set-Content -path README.md -value $readme
+          git add .
+          git commit -m 'Record history'
+          git push --set-upstream origin history

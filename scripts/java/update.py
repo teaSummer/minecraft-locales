@@ -7,6 +7,7 @@ import datetime
 import hashlib
 import os
 import re
+import subprocess
 import sys
 from pathlib import Path
 from typing import IO
@@ -299,8 +300,8 @@ def main(target_version: str | None = None, metadata: dict | None = None) -> boo
         )
 
     if os.getenv("GITHUB_ACTIONS"):
-        with open(os.getenv("JAVA_EDITION"), "a") as env:
-            env.write(f"{version if changed else '/'}\n")
+        subprocess.run(["setx", "JAVA_CHANGED", str(changed)])
+        subprocess.run(["setx", "JAVA_EDITION", version])
 
     print("\n" + "=" * 60)
     print("Version information saved:")

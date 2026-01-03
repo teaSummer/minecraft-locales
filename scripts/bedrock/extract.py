@@ -702,8 +702,8 @@ def main(target_version: str | None = None, metadata: dict | None = None) -> boo
         tmp_file.replace(versions_file)
 
     if os.getenv("GITHUB_ACTIONS"):
-        with open(os.getenv("BEDROCK_EDITION"), "a") as env:
-            env.write(f"{version if changed else '/'}\n")
+        subprocess.run(["setx", "BEDROCK_CHANGED", str(changed)])
+        subprocess.run(["setx", "BEDROCK_EDITION", version])
 
     print("Version information saved:")
     print(f"  development: {version}")
