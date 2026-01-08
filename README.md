@@ -7,6 +7,8 @@ A collection of Minecraft language files, including translations for all support
 - *Minecraft: Java Edition*
 - *Minecraft: Bedrock Edition* (with *Minecraft Education* and *Minecraft: Pocket Edition* language files)
 
+To get language files of older versions, see [history branch](https://github.com/teaSummer/minecraft-locales/blob/history/README.md).
+
 ## File Structure
 
 Here's a breakdown of the repository's file structure:
@@ -19,6 +21,7 @@ Here's a breakdown of the repository's file structure:
 - `tools/`: Contains the tool for processing packages.
 
 ## Local Running
+
 To run the script locally, you need to have the following installed:
 
 - [Python 3.11+](https://www.python.org/downloads)
@@ -37,11 +40,11 @@ To run the script locally, you need to have the following installed:
 2. **Create a virtual environment and install dependencies:**
 
     ``` bash
-    uv venv
-    uv sync --locked
+    uv venv && uv sync
     git submodule update --init
     cd tools/XvdTool.Streaming
     dotnet publish XvdTool.Streaming/XvdTool.Streaming.csproj -c Release -o ./x64 -r win-x64 --no-self-contained -nowarn:ca1416,ca2022,cs0168
+    cd ../..
     ```
 
 3. **Activate the virtual environment:**
@@ -62,7 +65,7 @@ To run the script locally, you need to have the following installed:
 
 The `CIK_DATA` secret must be configured to update *Minecraft: Bedrock Edition* locales.
 
-To obtain `CIK_DATA`, you need run `python tools/extract_cik.py` on a Windows machine with *Minecraft: Bedrock Edition* (release and beta) installed.
+To obtain `CIK_DATA`, you need run `python tools/extract_cik.py` on a Windows machine with *Minecraft: Bedrock Edition* (release and Preview) installed.
 
 ## Ends
 * Inspiration: [SkyEye_FAST](https://github.com/SkyEye-FAST)

@@ -20,6 +20,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v6
+        with:
+          submodules: true
 
       - name: Set up .NET
         uses: actions/setup-dotnet@v5
@@ -35,32 +37,55 @@ jobs:
         env:
           DOTNET_CLI_WORKLOAD_UPDATE_NOTIFY_DISABLE: true
         run: |
-          uv sync --locked
-          git submodule update --init
+          uv sync
           cd tools/XvdTool.Streaming
           dotnet publish XvdTool.Streaming/XvdTool.Streaming.csproj -c Release -o ./x64 -r win-x64 --no-self-contained -nowarn:ca1416,ca2022,cs0168
 
       - name: Update language files
-        id: update
         env:
           CIK_DATA: ${{ secrets.CIK_DATA }}
           EXPORT_LANGUAGES: ${{ inputs.export_languages }}
         run: |
-          git config user.name "GitHub Actions"
+          git config user.name 'GitHub Actions'
           git config user.email 41898282+github-actions[bot]@users.noreply.github.com
           uv run scripts/java/update.py
-          if (%JAVA_EDITION%==/) {
-            git checkout -- versions.json
-          } else {
+          $JAVA_CHANGED = [Environment]::GetEnvironmentVariable('JAVA_CHANGED', 'User')
+          $JAVA_EDITION = [Environment]::GetEnvironmentVariable('JAVA_EDITION', 'User')
+          if ($JAVA_CHANGED) {
             git add .
-            git commit -m "Update Minecraft: Java Edition %JAVA_EDITION% locales"
-          }
-          uv run scripts/bedrock/extract.py
-          if (%BEDROCK_EDITION%==/) {
-            git checkout -- versions.json
+            git commit -m "Update Minecraft: Java Edition $JAVA_EDITION locales"
           } else {
+            git checkout -- versions.json
+          }
+          $JAVA_COMMIT = git log --grep '^Update Minecraft: Java Edition .* locales$' -1 --format=%H
+          uv run scripts/bedrock/extract.py
+          $BEDROCK_CHANGED = [Environment]::GetEnvironmentVariable('BEDROCK_CHANGED', 'User')
+          $BEDROCK_EDITION = [Environment]::GetEnvironmentVariable('BEDROCK_EDITION', 'User')
+          if ($BEDROCK_CHANGED) {
             uv run scripts/bedrock/merge.py
             git add .
-            git commit -m "Update Minecraft: Bedrock Edition %BEDROCK_EDITION% locales"
+            git commit -m "Update Minecraft: Bedrock Edition $BEDROCK_EDITION locales"
+          } else {
+            git checkout -- versions.json
           }
-          git push || true
+          $BEDROCK_COMMIT = git log --grep '^Update Minecraft: Bedrock Edition .* locales$' -1 --format=%H
+          git push
+          git submodule deinit tools/XvdTool.Streaming
+          git clean -fdx
+          git fetch origin history:history
+          git switch --force history
+          $data = Get-Content -path data.json
+          $readme = Get-Content -path README.md
+          if (-not ($readme | Select-String -pattern "<!--JE-->$JAVA_EDITION" -quiet)) {
+            $data = $data.replace('"java": {', """java"": {`r`n    ""$JAVA_EDITION"": ""$JAVA_COMMIT"",")
+            $readme = $readme.replace('| <!--JE-->', "| <!--JE-->$JAVA_EDITION | [``$JAVA_COMMIT``](https://github.com/teaSummer/minecraft-locales/tree/$JAVA_COMMIT) |`r`n| ")
+          }
+          if (-not ($readme | Select-String -pattern "<!--BE-->$BEDROCK_EDITION" -quiet)) {
+            $data = $data.replace('"bedrock": {', """bedrock"": {`r`n    ""$BEDROCK_EDITION"": ""$BEDROCK_COMMIT"",")
+            $readme = $readme.replace('| <!--BE-->', "| <!--BE-->$BEDROCK_EDITION | [``$BEDROCK_COMMIT``](https://github.com/teaSummer/minecraft-locales/tree/$BEDROCK_COMMIT) |`r`n| ")
+          }
+          Set-Content -path data.json -value $data
+          Set-Content -path README.md -value $readme
+          git add .
+          git commit -m 'Record history'
+          git push --set-upstream origin history
