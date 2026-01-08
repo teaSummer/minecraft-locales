@@ -5,7 +5,8 @@ If the version ID you need is between **22w42a** and **1.21.11** and the target 
 
 | Version ID | Commit SHA |
 |:----------:|:----------:|
-| <!--JE-->26.1-snapshot-1 | [`cb187da25280aa34dcf4c5e45a2ef07e0fbcb43a`](https://github.com/teaSummer/minecraft-locales/tree/cb187da25280aa34dcf4c5e45a2ef07e0fbcb43a) |
+| <!--JE-->26.1-snapshot-2 | [`3117668b22a243b1d46103bad25712378af35105`](https://github.com/teaSummer/minecraft-locales/tree/3117668b22a243b1d46103bad25712378af35105) |
+| 26.1-snapshot-1 | [`cb187da25280aa34dcf4c5e45a2ef07e0fbcb43a`](https://github.com/teaSummer/minecraft-locales/tree/cb187da25280aa34dcf4c5e45a2ef07e0fbcb43a) |
 | 1.21.11 | [`4384c7fae5ffe04048b30103f46d906c4a4d2c02`](https://github.com/teaSummer/minecraft-locales/tree/4384c7fae5ffe04048b30103f46d906c4a4d2c02) |
 | 1.21.11-rc3 | [`4384c7fae5ffe04048b30103f46d906c4a4d2c02`](https://github.com/teaSummer/minecraft-locales/tree/4384c7fae5ffe04048b30103f46d906c4a4d2c02) |
 | 1.21.11-rc2 | [`4384c7fae5ffe04048b30103f46d906c4a4d2c02`](https://github.com/teaSummer/minecraft-locales/tree/4384c7fae5ffe04048b30103f46d906c4a4d2c02) |
@@ -869,7 +870,8 @@ If the version ID you need is between **22w42a** and **1.21.11** and the target 
 
 | Version ID | Commit SHA |
 |:----------:|:----------:|
-| <!--BE-->26.0.26 | [`975a3f0f57dc62b8fd65157735c6612f536928a0`](https://github.com/teaSummer/minecraft-locales/tree/975a3f0f57dc62b8fd65157735c6612f536928a0) |
+| <!--BE-->26.0.27 | [`18ceed6c7ca2a5616d374f4fb334993428c977e0`](https://github.com/teaSummer/minecraft-locales/tree/18ceed6c7ca2a5616d374f4fb334993428c977e0) |
+| 26.0.26 | [`975a3f0f57dc62b8fd65157735c6612f536928a0`](https://github.com/teaSummer/minecraft-locales/tree/975a3f0f57dc62b8fd65157735c6612f536928a0) |
 | 26.0.25 | [`245722274c2e6b7aadf6a08e9bd3551a5a3ef6f0`](https://github.com/teaSummer/minecraft-locales/tree/245722274c2e6b7aadf6a08e9bd3551a5a3ef6f0) |
 | 26.0.24 | [`cdd3ebc44a2c5cdae8b7e2f9b34e2d73279f2e92`](https://github.com/teaSummer/minecraft-locales/tree/cdd3ebc44a2c5cdae8b7e2f9b34e2d73279f2e92) |
 | 1.21.131 | [`ec53686b5a08d568adef568381aa796b5159d16b`](https://github.com/teaSummer/minecraft-locales/tree/ec53686b5a08d568adef568381aa796b5159d16b) |
