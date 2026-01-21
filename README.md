@@ -872,7 +872,8 @@ If the version ID you need is between **22w42a** and **1.21.11** and the target 
 
 | Version ID | Commit SHA |
 |:----------:|:----------:|
-| <!--BE-->26.0.28 | [`c9d535005818dfcdbe323cf50d46ff521fee66c2`](https://github.com/teaSummer/minecraft-locales/tree/c9d535005818dfcdbe323cf50d46ff521fee66c2) |
+| <!--BE-->26.0.29 | [`86c61a1d1c7a815d8b69d31b4180240b745fcc7f`](https://github.com/teaSummer/minecraft-locales/tree/86c61a1d1c7a815d8b69d31b4180240b745fcc7f) |
+| 26.0.28 | [`c9d535005818dfcdbe323cf50d46ff521fee66c2`](https://github.com/teaSummer/minecraft-locales/tree/c9d535005818dfcdbe323cf50d46ff521fee66c2) |
 | 1.21.132 | [`7b8cb92ed52af7be516b4dd88f77a59ed1ea740d`](https://github.com/teaSummer/minecraft-locales/tree/7b8cb92ed52af7be516b4dd88f77a59ed1ea740d) |
 | 26.0.27 | [`18ceed6c7ca2a5616d374f4fb334993428c977e0`](https://github.com/teaSummer/minecraft-locales/tree/18ceed6c7ca2a5616d374f4fb334993428c977e0) |
 | 26.0.26 | [`975a3f0f57dc62b8fd65157735c6612f536928a0`](https://github.com/teaSummer/minecraft-locales/tree/975a3f0f57dc62b8fd65157735c6612f536928a0) |
