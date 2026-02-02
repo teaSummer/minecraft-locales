@@ -10,17 +10,17 @@ from pathlib import Path
 import orjson
 
 MERGE_ORDER: tuple[str] = (
-    "beta",
-    "chemistry",
-    "editor",
-    "education",
-    "education_*",
-    "experimental_*",
-    "oreui",
-    "persona",
-    "previewapp",
     "vanilla",
     "vanilla_*",
+    "previewapp",
+    "beta",
+    "experimental_*",
+    "oreui",
+    "editor",
+    "persona",
+    "chemistry",
+    "education",
+    "education_*",
 )
 
 
