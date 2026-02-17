@@ -5,7 +5,8 @@ If the version ID you need is between **22w42a** and **1.21.11** and the target 
 
 | Version ID | Commit SHA |
 |:----------:|:----------:|
-| <!--JE-->26.1-snapshot-7 | [`cf612e3b9fdfd3942168ca9866d94a8cb32767ce`](https://github.com/teaSummer/minecraft-locales/tree/cf612e3b9fdfd3942168ca9866d94a8cb32767ce) |
+| <!--JE-->26.1-snapshot-8 | [`235d04c44c37d6bd76175f6ac1ab5f2410432e28`](https://github.com/teaSummer/minecraft-locales/tree/235d04c44c37d6bd76175f6ac1ab5f2410432e28) |
+| 26.1-snapshot-7 | [`cf612e3b9fdfd3942168ca9866d94a8cb32767ce`](https://github.com/teaSummer/minecraft-locales/tree/cf612e3b9fdfd3942168ca9866d94a8cb32767ce) |
 | 26.1-snapshot-6 | [`f3010a27709b7dbc7d6efababf38a93281f939f1`](https://github.com/teaSummer/minecraft-locales/tree/f3010a27709b7dbc7d6efababf38a93281f939f1) |
 | 26.1-snapshot-5 | [`388b1495c9fd07b8d31d0b956a0a63dde4f5dd80`](https://github.com/teaSummer/minecraft-locales/tree/388b1495c9fd07b8d31d0b956a0a63dde4f5dd80) |
 | 26.1-snapshot-4 | [`f9003ea743649655ab28ad97f30afc1050246cea`](https://github.com/teaSummer/minecraft-locales/tree/f9003ea743649655ab28ad97f30afc1050246cea) |
