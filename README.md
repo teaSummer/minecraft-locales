@@ -1,7 +1,7 @@
 # Minecraft
 ## Java Edition
 
-If the version ID you need is between **22w42a** and **1.21.11** and the target file is not `en_us.json`, there may be a better choice to use [InventivetalentDev/minecraft-assets](https://github.com/InventivetalentDev/minecraft-assets) instead.
+If the version ID you need is between **22w42a** and **1.21.11** and the target file is not `en_us.json`, there may be a better choice to use [misode/mcmeta](https://github.com/misode/mcmeta/tree/assets) or [InventivetalentDev/minecraft-assets](https://github.com/InventivetalentDev/minecraft-assets) instead.
 
 | Version ID | Commit SHA |
 |:----------:|:----------:|
