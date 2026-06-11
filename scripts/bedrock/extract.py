@@ -5,28 +5,23 @@ language files from them, converting .lang files to both .lang and .json formats
 Supports both UWP (.appx) and GDK (.msixvc) package formats.
 """
 
+from base64 import b64decode
 import datetime
 import hashlib
 import os
+from pathlib import Path
 import shutil
 import subprocess
 import sys
-import zipfile
-from base64 import b64decode
-from pathlib import Path
 from typing import IO
 from xml.dom import minidom
+import zipfile
 
+import dotenv
 import mclang
 import orjson
 import requests
 import urllib3
-
-EXPORT_LANGUAGES = [
-    l.strip() for l in os.getenv("EXPORT_LANGUAGES", "").split(",") if l
-]
-# Example value: ["en-US"], an empty list for all languages.
-# EXPORT_LANGUAGES = []
 
 
 def get_mcappx_versions() -> dict:
@@ -229,11 +224,11 @@ def export_files_to_structure(zip_path: Path, output_dir: Path) -> dict:
             files = zip_file.namelist()
             for e in files:
                 if (
-                    EXPORT_LANGUAGES
+                    export_languages
                     and e.replace("_", "-")
                     .removesuffix(".lang")
                     .removesuffix("-pocket")
-                    not in EXPORT_LANGUAGES
+                    not in export_languages
                 ):
                     continue
                 if (
@@ -279,11 +274,11 @@ def export_files_to_structure(zip_path: Path, output_dir: Path) -> dict:
                             f"{inner_dir}/{inner_entry.removeprefix('texts/')}"
                         )
                         if inner_entry.endswith(".lang") and (
-                            not EXPORT_LANGUAGES
+                            not export_languages
                             or relative_path.replace("_", "-")
                             .removeprefix(inner_dir + "/")
                             .removesuffix(".lang")
-                            in EXPORT_LANGUAGES
+                            in export_languages
                         ):
                             hash_dict[relative_path] = get_file_hash(
                                 inner_zip.open(inner_entry)
@@ -438,9 +433,9 @@ def process_extracted_langs(resource_packs_dir: Path, output_dir: Path) -> dict:
         for lang in texts_dir.iterdir():
             if (
                 not lang.name.endswith(".lang")
-                or EXPORT_LANGUAGES
+                or export_languages
                 and lang.name.replace("_", "-").removesuffix(".lang")
-                not in EXPORT_LANGUAGES
+                not in export_languages
             ):
                 continue
 
@@ -630,6 +625,7 @@ def main(target_version: str | None = None, metadata: dict | None = None) -> boo
     print(f"Output directory: {output_dir}")
 
     changed = False
+    version = None
     max_retries = 3
     retry_count = 0
 
@@ -702,8 +698,20 @@ def main(target_version: str | None = None, metadata: dict | None = None) -> boo
         tmp_file.replace(versions_file)
 
     if os.getenv("GITHUB_ACTIONS"):
-        subprocess.run(["pwsh", "-c", f"[Environment]::SetEnvironmentVariable('BEDROCK_CHANGED', ${changed}, 'User')"])
-        subprocess.run(["pwsh", "-c", f"[Environment]::SetEnvironmentVariable('BEDROCK_EDITION', '{version}', 'User')"])
+        subprocess.run(
+            [
+                "pwsh",
+                "-c",
+                f"[Environment]::SetEnvironmentVariable('BEDROCK_CHANGED', ${changed}, 'User')",
+            ]
+        )
+        subprocess.run(
+            [
+                "pwsh",
+                "-c",
+                f"[Environment]::SetEnvironmentVariable('BEDROCK_EDITION', '{version}', 'User')",
+            ]
+        )
 
     print("Version information saved:")
     print(f"  development: {version}")
@@ -716,4 +724,8 @@ def main(target_version: str | None = None, metadata: dict | None = None) -> boo
 
 
 if __name__ == "__main__":
+    dotenv.load_dotenv()
+    export_languages = [
+        l.strip() for l in os.getenv("EXPORT_LANGUAGES", "").split(",") if l
+    ]
     main()

@@ -4,12 +4,13 @@ This script merges multiple language JSON files from different resource packs
 into consolidated files.
 """
 
-import sys
 from pathlib import Path
+import sys
+from typing import Sequence
 
 import orjson
 
-MERGE_ORDER: tuple[str] = (
+MERGE_ORDER: Sequence[str] = (
     "vanilla",
     "vanilla_*",
     "previewapp",

@@ -63,6 +63,7 @@ jobs:
           $BEDROCK_EDITION = [Environment]::GetEnvironmentVariable('BEDROCK_EDITION', 'User')
           if ($BEDROCK_CHANGED) {
             uv run scripts/bedrock/merge.py
+            uv run scripts/bedrock/provider.py
             git add .
             git commit -m "Update Minecraft: Bedrock Edition $BEDROCK_EDITION locales"
           } else {

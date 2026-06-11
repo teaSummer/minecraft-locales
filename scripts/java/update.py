@@ -6,22 +6,17 @@ A script to update and filter Minecraft language files automatically.
 import datetime
 import hashlib
 import os
-import re
+from pathlib import Path
 import subprocess
 import sys
-from pathlib import Path
 from typing import IO
 from zipfile import ZipFile
 
+import dotenv
 import mclang
+import regex as re
 import requests
 import orjson
-
-EXPORT_LANGUAGES = [
-    l.strip() for l in os.getenv("EXPORT_LANGUAGES", "").split(",") if l
-]
-# Example value: ["en-US"], an empty list for all languages.
-# EXPORT_LANGUAGES = []
 
 
 def get_version_manifest() -> dict:
@@ -133,7 +128,7 @@ def process_version(
             if (
                 filepath not in files
                 or filepath != "lang/stats_US.lang"
-                and EXPORT_LANGUAGES
+                and export_languages
                 and re.sub(
                     "-[a-z]+",
                     lambda x: x.group(0).upper(),
@@ -142,7 +137,7 @@ def process_version(
                     .removesuffix(".json")
                     .removesuffix(".lang"),
                 )
-                not in EXPORT_LANGUAGES
+                not in export_languages
             ):
                 continue
             entry = filepath.rsplit("/", 1)[-1]
@@ -189,12 +184,12 @@ def process_version(
         for key in asset_objects.keys()
         if key.startswith("lang/") or key.startswith("minecraft/lang/")
     )
-    if EXPORT_LANGUAGES:
+    if export_languages:
         if lang_source == "en_US.lang":
             lang_files = tuple(
                 l
                 for l in lang_files
-                if l.replace("_", "-").removesuffix(".lang") in EXPORT_LANGUAGES
+                if l.replace("_", "-").removesuffix(".lang") in export_languages
             )
         if lang_source == "en_us.json":
             lang_files = tuple(
@@ -205,7 +200,7 @@ def process_version(
                     lambda x: x.group(0).upper(),
                     l.replace("_", "-").removesuffix(".json"),
                 )
-                in EXPORT_LANGUAGES
+                in export_languages
             )
         if lang_source == "en_us.lang":
             lang_files = tuple(
@@ -216,7 +211,7 @@ def process_version(
                     lambda x: x.group(0).upper(),
                     l.replace("_", "-").removesuffix(".lang"),
                 )
-                in EXPORT_LANGUAGES
+                in export_languages
             )
     for lang in lang_files:
         if lang == lang_source:
@@ -315,4 +310,8 @@ def main(target_version: str | None = None, metadata: dict | None = None) -> boo
 
 
 if __name__ == "__main__":
+    dotenv.load_dotenv()
+    export_languages = [
+        l.strip() for l in os.getenv("EXPORT_LANGUAGES", "").split(",") if l
+    ]
     main()
