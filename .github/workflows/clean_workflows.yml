@@ -1,0 +1,17 @@
+name: Clean workflows
+on:
+  workflow_dispatch:
+
+permissions:
+  actions: write
+
+jobs:
+  clean_up:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Clean up
+        uses: ophub/delete-releases-workflows@v0.1.0
+        with:
+          delete_workflows: true
+          workflows_keep_day: 15
+          gh_token: ${{ github.token }}

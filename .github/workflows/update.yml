@@ -5,7 +5,7 @@ permissions:
 
 on:
   schedule:
-    - cron: 0 */2 * * *
+    - cron: 0/5 * * * *
   workflow_dispatch:
     inputs:
       export_languages:
@@ -29,7 +29,7 @@ jobs:
           dotnet-version: 9.0.x
 
       - name: Set up Python and uv
-        uses: astral-sh/setup-uv@v7
+        uses: astral-sh/setup-uv@v8.2.0
         with:
           python-version: 3.11
 
@@ -44,7 +44,11 @@ jobs:
       - name: Update language files
         env:
           CIK_DATA: ${{ secrets.CIK_DATA }}
-          EXPORT_LANGUAGES: ${{ inputs.export_languages }}
+          EXPORT_LANGUAGES: ${{ inputs.export_languages || secrets.EXPORT_LANGUAGES }}
+          WIKI_USERAGENT: ${{ secrets.WIKI_USERAGENT }}
+          WIKI_BOT_USERNAME: ${{ secrets.WIKI_BOT_USERNAME }}
+          WIKI_BOT_PASSWORD: ${{ secrets.WIKI_BOT_PASSWORD }}
+          EDIT_AS_BOT: ${{ secrets.EDIT_AS_BOT }}
         run: |
           git config user.name 'GitHub Actions'
           git config user.email 41898282+github-actions[bot]@users.noreply.github.com
@@ -52,6 +56,7 @@ jobs:
           $JAVA_CHANGED = [Environment]::GetEnvironmentVariable('JAVA_CHANGED', 'User')
           $JAVA_EDITION = [Environment]::GetEnvironmentVariable('JAVA_EDITION', 'User')
           if ($JAVA_CHANGED) {
+            # uv run scripts/java/provider.py
             git add .
             git commit -m "Update Minecraft: Java Edition $JAVA_EDITION locales"
           } else {
@@ -70,23 +75,25 @@ jobs:
             git checkout -- versions.json
           }
           $BEDROCK_COMMIT = git log --grep '^Update Minecraft: Bedrock Edition .* locales$' -1 --format=%H
-          git push
-          git submodule deinit tools/XvdTool.Streaming
-          git clean -fdx
-          git fetch origin history:history
-          git switch --force history
-          $data = Get-Content -path data.json
-          $readme = Get-Content -path README.md
-          if (-not ($readme | Select-String -pattern "<!--JE-->$JAVA_EDITION \|" -quiet)) {
-            $data = $data.replace('"java": {', """java"": {`r`n    ""$JAVA_EDITION"": ""$JAVA_COMMIT"",")
-            $readme = $readme.replace('| <!--JE-->', "| <!--JE-->$JAVA_EDITION | [``$JAVA_COMMIT``](https://github.com/teaSummer/minecraft-locales/tree/$JAVA_COMMIT) |`r`n| ")
+          if ( $JAVA_CHANGED -or $BEDROCK_CHANGED ) {
+            git push
+            git submodule deinit tools/XvdTool.Streaming
+            git clean -fdx
+            git fetch origin history:history
+            git switch --force history
+            $data = Get-Content -path data.json
+            $readme = Get-Content -path README.md
+            if ( $JAVA_CHANGED -and -not ($readme | Select-String -pattern "<!--JE-->$JAVA_EDITION \|" -quiet)) {
+              $data = $data.replace('"java": {', """java"": {`r`n    ""$JAVA_EDITION"": ""$JAVA_COMMIT"",")
+              $readme = $readme.replace('| <!--JE-->', "| <!--JE-->$JAVA_EDITION | [``$JAVA_COMMIT``](https://github.com/teaSummer/minecraft-locales/tree/$JAVA_COMMIT) |`r`n| ")
+            }
+            if ( $BEDROCK_CHANGED -and -not ($readme | Select-String -pattern "<!--BE-->$BEDROCK_EDITION \|" -quiet)) {
+              $data = $data.replace('"bedrock": {', """bedrock"": {`r`n    ""$BEDROCK_EDITION"": ""$BEDROCK_COMMIT"",")
+              $readme = $readme.replace('| <!--BE-->', "| <!--BE-->$BEDROCK_EDITION | [``$BEDROCK_COMMIT``](https://github.com/teaSummer/minecraft-locales/tree/$BEDROCK_COMMIT) |`r`n| ")
+            }
+            Set-Content -path data.json -value $data
+            Set-Content -path README.md -value $readme
+            git add .
+            git commit -m 'Record history'
+            git push --set-upstream origin history
           }
-          if (-not ($readme | Select-String -pattern "<!--BE-->$BEDROCK_EDITION \|" -quiet)) {
-            $data = $data.replace('"bedrock": {', """bedrock"": {`r`n    ""$BEDROCK_EDITION"": ""$BEDROCK_COMMIT"",")
-            $readme = $readme.replace('| <!--BE-->', "| <!--BE-->$BEDROCK_EDITION | [``$BEDROCK_COMMIT``](https://github.com/teaSummer/minecraft-locales/tree/$BEDROCK_COMMIT) |`r`n| ")
-          }
-          Set-Content -path data.json -value $data
-          Set-Content -path README.md -value $readme
-          git add .
-          git commit -m 'Record history'
-          git push --set-upstream origin history

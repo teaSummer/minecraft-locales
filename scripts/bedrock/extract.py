@@ -5,7 +5,7 @@ language files from them, converting .lang files to both .lang and .json formats
 Supports both UWP (.appx) and GDK (.msixvc) package formats.
 """
 
-from base64 import b64decode
+import base64
 import datetime
 import hashlib
 import os
@@ -144,11 +144,11 @@ def get_appx_file(
     document = minidom.parseString(response.text)
 
     for node in document.getElementsByTagName("FileLocation"):
-        temp_url = node.getElementsByTagName("Url")[0].firstChild.nodeValue
-        if (
-            len(temp_url) != 99
-            and temp_url.find("tlu.dl.delivery.mp.microsoft.com") != -1
-        ):
+        temp_url = node.getElementsByTagName("Url")[0].firstChild
+        assert temp_url
+        temp_url = temp_url.nodeValue
+        assert temp_url
+        if len(temp_url) != 99 and "tlu.dl.delivery.mp.microsoft.com" in temp_url:
             download_url = temp_url
 
     if download_url and download_file(download_url, output_path):
@@ -156,7 +156,7 @@ def get_appx_file(
 
 
 def process_lang(
-    zip_file: zipfile.ZipFile, entry: zipfile.ZipInfo, relative_path: str
+    zip_file: zipfile.ZipFile, entry: str | zipfile.ZipInfo, relative_path: Path
 ) -> bool:
     """Process a single language file from zip archive.
 
@@ -483,7 +483,11 @@ def process_gdk_package(msixvc_file: Path, package_type: str, output_dir: Path) 
 
     if os.getenv("CIK_DATA"):
         cik_version = 0 if package_type == "Release" else 1
-        cik_data = b64decode(os.getenv("CIK_DATA")).decode().split("&")[cik_version]
+        cik_data = (
+            base64.b64decode(str(os.getenv("CIK_DATA")))
+            .decode()
+            .split("&")[cik_version]
+        )
         print("\nUsing CIK from environment variables")
         try:
             cik_hex, cik_guid = cik_data.split("@")
@@ -626,6 +630,9 @@ def main(target_version: str | None = None, metadata: dict | None = None) -> boo
 
     changed = False
     version = None
+    package_file = None
+    build_type = None
+    package_type = None
     max_retries = 3
     retry_count = 0
 
@@ -640,7 +647,14 @@ def main(target_version: str | None = None, metadata: dict | None = None) -> boo
             print(f"Failed to get version information")
             continue
 
+        response = requests.get(
+            "https://raw.githubusercontent.com/teaSummer/minecraft-locales/history/data.json"
+        )
+        response.raise_for_status()
+        recorded = response.json()["bedrock"]
         version, package_type, build_type, download_info, version_id = version_data
+        if version in recorded:
+            return changed
 
         package_file = None
         if build_type == "UWP":
@@ -660,6 +674,7 @@ def main(target_version: str | None = None, metadata: dict | None = None) -> boo
 
     print("\n" + "=" * 60)
     hash_dict = {}
+    assert package_file and package_type
     if build_type == "GDK":
         hash_dict = process_gdk_package(package_file, package_type, output_dir)
     else:

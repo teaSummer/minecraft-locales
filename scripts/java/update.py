@@ -35,7 +35,7 @@ def get_version_manifest() -> dict:
     return response.json()
 
 
-def get_response(url: str) -> requests.Response | None:
+def get_response(url: str) -> requests.Response:
     """Get HTTP response and handle exceptions and retry logic.
 
     Args:
@@ -116,6 +116,7 @@ def process_version(
     client_url = client["downloads"]["client"]["url"]
     client_sha1 = client["downloads"]["client"]["sha1"]
     jar_path = target_dir / f"Java_Edition_{target_version}.jar"
+    lang_source = None
     if not jar_path.exists():
         print(f'Downloading "client.jar" ({client_sha1})...')
         get_file(client_url, jar_path.name, jar_path, client_sha1)
@@ -154,6 +155,7 @@ def process_version(
 
     def process_langs() -> None:
         """Process .lang files."""
+        assert lang_source
         if not lang_source.endswith(".lang"):
             return
         for lang in target_dir.iterdir():
@@ -161,7 +163,8 @@ def process_version(
                 continue
             lang.with_suffix(".json").write_bytes(
                 orjson.dumps(
-                    mclang.loads(lang.read_bytes()), option=orjson.OPT_INDENT_2
+                    mclang.loads(lang.read_text(encoding="utf-8")),
+                    option=orjson.OPT_INDENT_2,
                 )
             )
 
@@ -266,7 +269,12 @@ def main(target_version: str | None = None, metadata: dict | None = None) -> boo
         retry_count += 1
         try:
             version_manifest = metadata or get_version_manifest()
+            recorded = get_response(
+                "https://raw.githubusercontent.com/teaSummer/minecraft-locales/history/data.json"
+            ).json()["java"]
             version = version or version_manifest["latest"]["snapshot"]
+            if version in recorded:
+                return changed
             version_data = process_version(
                 version, version_manifest["versions"], output_dir
             )
@@ -276,6 +284,7 @@ def main(target_version: str | None = None, metadata: dict | None = None) -> boo
     else:
         return changed
 
+    assert version_data
     version_data_to_save = {
         "java": {
             "update_time": datetime.datetime.now(datetime.UTC).isoformat(),
@@ -295,8 +304,20 @@ def main(target_version: str | None = None, metadata: dict | None = None) -> boo
         )
 
     if os.getenv("GITHUB_ACTIONS"):
-        subprocess.run(["pwsh", "-c", f"[Environment]::SetEnvironmentVariable('JAVA_CHANGED', ${changed}, 'User')"])
-        subprocess.run(["pwsh", "-c", f"[Environment]::SetEnvironmentVariable('JAVA_EDITION', '{version}', 'User')"])
+        subprocess.run(
+            [
+                "pwsh",
+                "-c",
+                f"[Environment]::SetEnvironmentVariable('JAVA_CHANGED', ${changed}, 'User')",
+            ]
+        )
+        subprocess.run(
+            [
+                "pwsh",
+                "-c",
+                f"[Environment]::SetEnvironmentVariable('JAVA_EDITION', '{version}', 'User')",
+            ]
+        )
 
     print("\n" + "=" * 60)
     print("Version information saved:")
